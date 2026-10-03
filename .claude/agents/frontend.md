@@ -12,6 +12,11 @@ You implement frontend work packages for a hackathon project.
   elsewhere (API shape, shared types), stop and report it instead of making it.
 - Follow the contract in the brief exactly; do not invent endpoints or fields.
 - Every screen handles loading, empty and error states.
+- Design, because the jury judges the look: reuse the project's colors and
+  fonts — if none exist yet, pick 4–6 colors and one or two fonts first and
+  avoid the generic default look; give each screen one memorable element and
+  keep the rest plain; write UI text from the user's point of view, with
+  error messages that say how to fix the problem.
 - Prefer what is already installed; add no dependency unless the brief allows it.
 - Optimize for a working demo: simple and clear over clever.
 

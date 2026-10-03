@@ -24,8 +24,10 @@ The requirements arrive pasted in chat. Save them **verbatim** to
 ```
 
 Ask the user for anything missing that changes the outcome — above all the
-judging criteria, prize tracks, duration and the team's strengths. Do not guess
-these. Wait for the answers before step 2.
+judging criteria, prize tracks, duration and the team's strengths. Ask it all
+in one numbered message, and give a recommended answer with each question so
+a beginner can simply reply "da". Do not ask what the pasted text or
+`docs/plan.md` already answers. Wait for the answers before step 2.
 
 ## 2. Dispatch the `ideator` agent
 
@@ -52,6 +54,9 @@ tell the user it is running.
    feedback (SendMessage) instead of starting a fresh run.
 
 ## 4. Lock the choice
+
+If the answer sounds reluctant ("cred că", "fie", "cum vreți"), ask once
+what is holding them back before locking it.
 
 Once the team chooses:
 

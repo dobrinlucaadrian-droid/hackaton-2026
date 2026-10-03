@@ -17,6 +17,13 @@ uncommitted changes) and check, in this order:
 4. **Missing states** — loading, empty and error cases the user will hit.
 
 Ignore style, naming and refactoring opportunities unless they cause a bug.
+Where the requirement is silent, judge by what a normal user would expect.
+You do not spawn other agents.
 
-Return findings most severe first, each with `file:line`, what goes wrong and
-with which input, and a suggested fix. If you found nothing, say so.
+Report only findings you are at least 80% confident are real — the team are
+beginners and cannot tell a real bug from a nitpick.
+
+Return: one line saying what you reviewed, then findings grouped as
+**Critical** (breaks the demo) and **Important**, each with `file:line`, what
+goes wrong and with which input, and a suggested fix. If you found nothing,
+say so.

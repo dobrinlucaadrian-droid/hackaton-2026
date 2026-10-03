@@ -28,7 +28,8 @@ Most of the usage must be left for building. Stay inside these limits:
 ## Phase 1 — Obvious list
 
 In 3–5 bullets: the ideas most teams will build for this theme. These are
-banned as they stand.
+out as they stand; one may come back only with a named twist that makes it
+clearly different.
 
 ## Phase 2 — Diverge (12 ideas max)
 
@@ -38,10 +39,19 @@ data source, a sponsor API used in an unusual way, an idea transferred from
 another industry, the inverted problem, local context (Romania / the event's
 city), a capability that is new only now.
 
+No lazy "apply X to Y" ideas (e.g. "AI chatbot for <theme>") unless the
+combination reveals something surprising.
+
 ## Phase 3 — Shortlist 5
 
 Keep the 5 that best fit the criteria, can be demoed in the available time,
 and have a moment that makes judges react.
+
+Kill test: each shortlisted idea must fit in one sentence naming who it is
+for, what it does and the surprising moment. If it cannot be said in one
+sentence, cut it and take the next idea — before spending searches on it.
+Prefer ideas whose demo still works if an uncertain part (a dataset, an API)
+turns out weaker than hoped.
 
 ## Phase 4 — Originality check
 
@@ -57,19 +67,30 @@ replacing it with extra web searches.
 
 Verdict per idea: **Saturated** (drop, or name the twist), **Exists,
 differentiable** (one-sentence differentiator), or **Novel** (nothing close
-in the results). Only report what the results actually show.
+in the results). Only report what the results actually show, and state the
+queries used next to each verdict — "Novel" means "nothing found for these
+two queries", not proof that nothing exists.
 
 ## Phase 5 — Debate the top 3
 
-For each: the strongest case for it, the critic's best attempt to kill it
-(buildable in time? data available? fragile demo? "so what"?), and the scope
-change that survives. If nothing survives, replace it with the next idea.
+For each:
+
+1. **Advocate** — the strongest case for it.
+2. **Pre-mortem** — "It is demo time and this failed. Why?" List the causes
+   (not buildable in time, data missing, fragile demo, judges say "so what",
+   off-theme) and label each: **Tiger** (real, will hurt), **Paper tiger**
+   (looks scary, probably fine) or **Elephant** (the thing nobody wants to
+   say). Only Tigers and Elephants go in the report.
+3. **Rebuttal** — the scope change that survives. If nothing survives,
+   replace the idea with the next one.
 
 ## Phase 6 — Score
 
 1–10 per judging criterion (weighted if weights are given), plus originality,
 feasibility in time and demo impact. If no criteria are given use: impact,
-originality, technical execution, design/UX, presentation.
+originality, technical execution, design/UX, presentation, equally weighted.
+The total is the weighted average of the judging criteria; feasibility and
+demo impact break ties — on a tie, the clearest 30-second demo moment wins.
 
 ## Report
 
@@ -80,13 +101,13 @@ originality, technical execution, design/UX, presentation.
 - Problem / for whom:
 - MVP and demo moment:
 - Why it can win:
-- Originality: <verdict> — <closest match, link> — <differentiator>
-- Biggest risk → mitigation:
+- Originality: <verdict> — <closest match, link> — <differentiator> — queries: <...>
+- Biggest risk (Tiger/Elephant) → mitigation:
 - Suggested stack / sponsor tech:
 - Score: <total> (<per-criterion scores>)
 ### 2. ...
 ### 3. ...
-## Also considered (one line each)
+## Eliminated (idea — one-line reason; so they are not proposed again)
 ```
 
 Be honest in the ranking: a solid idea that can be demoed beats a brilliant

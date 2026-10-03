@@ -13,6 +13,10 @@ Before writing code, ask the user until these are unambiguous:
 - What data it needs and where that data comes from (real, mocked, seeded).
 - What "done" means for the demo — and what is explicitly out of scope.
 
+Ask everything in one numbered list, each question with a recommended
+answer, then wait. If the answer is "cum crezi tu", state your choice and get
+an explicit "da" before building.
+
 ## 2. Read the conventions
 
 Read `CLAUDE.md` and one existing feature of the same kind. Copy its file
