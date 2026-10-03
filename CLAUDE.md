@@ -54,5 +54,5 @@ _TBD — install / dev / test / build / deploy commands go here._
 ## Agents (`.claude/agents`)
 
 `frontend`, `backend`, `tester`, `reviewer`, `researcher` — normally dispatched
-by `/foreman`; `researcher` also by `/researcher`. `ideator` (opus) is
-dispatched by `/ideate` at the start.
+by `/foreman`; `researcher` also by `/researcher`. `ideator` (sonnet,
+capped search budget) is dispatched by `/ideate` at the start.

@@ -36,8 +36,10 @@ Send the `ideator` agent (`.claude/agents/ideator.md`) a brief containing:
   ideas already on their mind to be evaluated alongside the new ones).
 
 The agent brainstorms, checks originality on GitHub and the web, debates and
-scores, and returns a report with a top 3. This takes a while — let it run in
-the background and tell the user it is running.
+scores, and returns a report with a top 3. It runs on a capped budget (see
+the agent file) so most of the usage stays available for building — do not
+raise those limits unless the team asks. Let it run in the background and
+tell the user it is running.
 
 ## 3. Present the top 3
 
@@ -46,8 +48,8 @@ the background and tell the user it is running.
    verdict, biggest risk, score. Mention the obvious ideas that were rejected
    as "what other teams will build".
 3. Ask the team to choose. They may also combine ideas or ask for another
-   round with new constraints — then re-run step 2 with that feedback,
-   continuing the same agent if possible.
+   round with new constraints — then continue the same agent with that
+   feedback (SendMessage) instead of starting a fresh run.
 
 ## 4. Lock the choice
 
