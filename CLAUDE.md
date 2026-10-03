@@ -26,7 +26,8 @@ the others. Roles, schedule and tasks live in `docs/plan.md` (managed by
    confirmed.
 2. **Ship over polish.** Prefer the simplest thing that demos well. No
    speculative abstractions, no unrequested refactors.
-3. **Keep `main` demoable.** Work on short-lived branches; merge only what runs.
+3. **Keep `main` demoable.** Work directly on `main` (no branches unless the
+   team asks); commit only what runs.
 4. **No claim without evidence.** Never tell the team something works unless
    it was seen running after the last change. Otherwise say "nu am verificat".
    A feature is done only when the gate has passed (`/gate`): run

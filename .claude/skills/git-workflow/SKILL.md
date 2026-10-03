@@ -1,6 +1,6 @@
 ---
 name: git-workflow
-description: Fast, consistent git flow for the hackathon — branch, commit, push, open a PR. Use when asked to commit, save progress, push, branch, or open a PR.
+description: Fast, consistent git flow for the hackathon — commit and push directly on main. Use when asked to commit, save progress, push, branch, or open a PR.
 ---
 
 # Git workflow
@@ -9,8 +9,12 @@ Goal: `main` always runs and can be demoed at any moment.
 
 ## Branches
 
-- `main` — demoable at all times. Never commit broken code to it.
-- `feat/<short-name>`, `fix/<short-name>` — short-lived, one concern each.
+- Work directly on `main`. The team are beginners on one computer; branches
+  only confuse them. Do not create branches unless the team asks.
+- `main` stays demoable: the pre-commit gate refuses commits that fail the
+  checks, so commit only what runs.
+- Only if several people commit from different computers: one short-lived
+  `feat/<short-name>` branch per person, merged through the Pilot.
 
 ## Commit
 
@@ -21,12 +25,11 @@ Goal: `main` always runs and can be demoed at any moment.
    Types: `feat`, `fix`, `chore`, `docs`, `refactor`, `test`.
 4. Commit small and often — a commit is a restore point during a hackathon.
 
-## Push / PR
+## Push
 
-1. `git push -u origin <branch>`.
-2. `gh pr create --fill` for anything a teammate should see; for a trivial
-   change with the team's agreement, merge straight to `main`.
-3. Before merging to `main`: the app starts and the main demo flow works.
+1. `git push origin main`.
+2. No pull requests in the single-computer setup. With per-person branches,
+   `gh pr create --fill` and merge once the gate passes.
 
 ## Do not
 
