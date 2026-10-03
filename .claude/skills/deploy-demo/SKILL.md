@@ -23,14 +23,22 @@ Publishing puts the app on the public internet.
 
 ## Before deploying
 
-1. `vercel whoami` — if it is not logged in, stop and ask the Pilot to run
-   `vercel login` in a terminal. You never log in or type credentials.
+1. `vercel whoami` — it should print the account name. If it is logged out,
+   start `vercel login` yourself **in the background**, read the
+   `https://vercel.com/oauth/device?user_code=…` address it prints, and give
+   it to the Pilot to open and approve in the browser. You never type
+   credentials; the Pilot approves, you only wait for the command to finish.
+   The Pilot cannot run `vercel` in their own terminal: on this computer the
+   CLI and its login exist only inside the Claude app.
 2. Working tree clean, on `main`, pushed.
 3. The gate passes (`node scripts/gate.mjs`), including the production build.
 4. Environment variables: compare the names in `.env.example` with
-   `vercel env ls`. For each missing one, give the Pilot the exact command to
-   run in a terminal — `vercel env add NAME production` — so they paste the
-   value themselves. You never see or type secret values.
+   `vercel env ls`. For each missing one, send the Pilot to the Vercel
+   website — the project → Settings → Environment Variables — to add the
+   name and paste the value there themselves, for "Production". You never
+   see or type secret values, and they are never pasted in chat. For a
+   brand-new project, do the first deploy first so the project exists, then
+   add the variables and redeploy.
 
 ## Deploy
 
@@ -42,10 +50,14 @@ vercel deploy --prod --yes --cwd apps/<app>
 
 - The first run creates and links the Vercel project (`--yes` accepts the
   defaults). `.vercel/` is gitignored.
-- `--prod` matters: only the production address is public. Preview addresses
-  ask visitors to log in to Vercel, so the jury could not open them.
-- The command prints the address. Record it and the deploy command in
-  `CLAUDE.md` (Commands) and in `README.md`.
+- The public address is the short one on the `Aliased` line
+  (`productionUrl`, e.g. `https://<project>.vercel.app`). The long
+  per-deployment address (`<project>-<hash>-<team>.vercel.app`) asks
+  visitors to log in to Vercel — never give that one to the team or the jury.
+- Verify by content, not by status: request the short address and check that
+  the page contains the app's own text. A Vercel login page also answers 200.
+- Record the short address and the deploy command in `CLAUDE.md` (Commands)
+  and in `README.md`.
 - If the build fails on Vercel: `vercel inspect <url> --logs`, then
   `/debugging`. After 3 failed attempts stop and offer the fallback below.
 
