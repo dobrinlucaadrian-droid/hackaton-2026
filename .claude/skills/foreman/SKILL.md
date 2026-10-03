@@ -49,6 +49,7 @@ Files you may edit: <exact paths>
 Do NOT touch: <paths owned by others>
 Contract: <types / endpoints, pasted in full>
 Context: <exact error text or requirement — never "fix it">
+Map: <the lines of docs/MAP.md for the files involved, so the agent does not explore>
 Return: files changed, how to verify, open issues — max 10 lines
 ```
 
@@ -68,6 +69,7 @@ Follow `/token-budget` for model choice.
 
 ## 5. Report
 
+Add the entry to `docs/LEDGER.md` (the agents do not write it — you do).
 Tell the user what was built, what was verified and how, and what is still
 open. Report failures as failures. Never say "merge" or "gata" for something
 that was not seen running after the last change.

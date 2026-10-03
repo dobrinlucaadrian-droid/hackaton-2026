@@ -1,7 +1,11 @@
 #!/bin/sh
-# Quality gate: blocks the commit when a check fails. See scripts/gate.mjs.
+# Refreshes the codebase map and the ledger's commit list, then runs the quality
+# gate, which blocks the commit when a check fails. See scripts/map.mjs, scripts/gate.mjs.
 if ! command -v node >/dev/null 2>&1; then
-  echo "ATENTIE: node nu a fost gasit - poarta de verificare NU a rulat."
+  echo "ATENTIE: node nu a fost gasit - harta si poarta de verificare NU au rulat."
   exit 0
 fi
+node scripts/map.mjs
+git add docs/MAP.md
+[ -f docs/LEDGER.md ] && git add docs/LEDGER.md
 exec node scripts/gate.mjs --commit

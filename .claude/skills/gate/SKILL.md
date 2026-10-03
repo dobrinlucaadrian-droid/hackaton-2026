@@ -15,8 +15,9 @@ node scripts/gate.mjs
 ```
 
 It checks: no passwords or keys in the code, no `.env` / `node_modules` /
-huge files about to be saved, build passes, tests pass, the app starts and
-the main page answers. Each line is `TRECUT`, `PICAT` or `NEVERIFICAT`.
+huge files about to be saved, the ledger has a new entry for the changed
+code (`docs/LEDGER.md` — write it before running the gate), build passes,
+tests pass, the app starts and the main page answers. Each line is `TRECUT`, `PICAT` or `NEVERIFICAT`.
 
 `NEVERIFICAT` on build, tests or start means `gate.config.json` has no
 commands yet. As soon as the stack exists, fill it in:

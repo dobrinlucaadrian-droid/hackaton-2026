@@ -32,7 +32,19 @@ the others. Roles, schedule and tasks live in `docs/plan.md` (managed by
    A feature is done only when the gate has passed (`/gate`): run
    `node scripts/gate.mjs` and walk the flow. One PICAT stops the work. Never
    weaken or bypass the gate (`--no-verify`, deleting tests, editing the script).
-5. **Never commit secrets.** Keys live in `.env` (gitignored); document each one
+5. **Map before search.** Read `docs/MAP.md` before looking for anything in
+   the code, and open only the files it points to — no exploratory Glob/Grep
+   or reading whole folders. The map is regenerated at every commit
+   (`node scripts/map.mjs` to refresh it now); never edit it by hand. Every
+   new code file starts with a one-line comment saying what it does — that
+   line is what the map shows.
+6. **Keep the ledger.** `docs/LEDGER.md` records what the team is after, where
+   and what was done. At the start of a session read its "Acum lucrăm la"
+   section instead of rediscovering the state. After every task add a short
+   entry at the top of "Jurnal" (Cerut / Făcut / Fișiere / Poartă / Urmează,
+   in Romanian) and update "Acum lucrăm la". The gate fails when code changed
+   without a new entry. The commit list at the bottom is generated.
+7. **Never commit secrets.** Keys live in `.env` (gitignored); document each one
    in `.env.example`.
 
 ## Layout
@@ -40,7 +52,9 @@ the others. Roles, schedule and tasks live in `docs/plan.md` (managed by
 ```
 apps/       runnable applications (frontend, backend, ...)
 packages/   code shared between apps
-docs/       pitch, architecture notes, demo script
+docs/       MAP.md (generated code map), LEDGER.md (what was done and what is
+            next), plan.md, challenge.md, ideas.md, ghid.html, pitch
+scripts/    gate.mjs (quality gate), map.mjs (map + ledger commit list)
 .claude/    skills and agents (see below)
 ```
 

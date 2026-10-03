@@ -29,7 +29,7 @@ const gitList = (args) => git([...args, '-z']).split('\0').filter(Boolean);
 function isCode(p) {
   if (/^(docs|\.claude|\.githooks)\//.test(p)) return false;
   if (/\.md$/i.test(p) || p.endsWith('.gitkeep')) return false;
-  return !['.gitignore', '.env.example', 'scripts/gate.mjs', CONFIG_FILE].includes(p);
+  return !['.gitignore', '.gitattributes', '.env.example', 'scripts/gate.mjs', 'scripts/map.mjs', CONFIG_FILE].includes(p);
 }
 
 function fingerprint() {
@@ -133,6 +133,21 @@ function checkFiles() {
   else add('TRECUT', 'Fisiere care nu se salveaza', 'nimic nepotrivit');
 }
 
+// Code changes need a new ledger entry. The generated commit list does not count as one.
+function checkLedger() {
+  const name = 'Registru (docs/LEDGER.md)';
+  const changed = mode === 'commit'
+    ? gitList(['diff', '--cached', '--name-only'])
+    : [...gitList(['diff', 'HEAD', '--name-only']), ...gitList(['ls-files', '-o', '--exclude-standard'])];
+  if (!changed.some(isCode)) return add('TRECUT', name, 'niciun cod schimbat');
+  const body = (text) => text.replace(/<!-- commits:start -->[\s\S]*?<!-- commits:end -->/, '').replace(/\r/g, '');
+  let now = '';
+  if (mode === 'commit') now = git(['show', ':docs/LEDGER.md']);
+  else { try { now = fs.readFileSync('docs/LEDGER.md', 'utf8'); } catch { /* missing */ } }
+  if (now && body(now) !== body(git(['show', 'HEAD:docs/LEDGER.md']))) add('TRECUT', name, 'intrare noua');
+  else add('PICAT', name, 'cod schimbat fara intrare noua - scrie in docs/LEDGER.md ce s-a facut si ce urmeaza');
+}
+
 // Apps come from gate.config.json; when it lists none, detect package.json / pytest projects.
 function findApps() {
   const config = readJson(CONFIG_FILE, {});
@@ -194,6 +209,7 @@ async function checkStart(app) {
 // --------------------------------------------------------------------- main
 checkSecrets();
 checkFiles();
+checkLedger();
 
 const apps = findApps();
 if (!apps.length) {

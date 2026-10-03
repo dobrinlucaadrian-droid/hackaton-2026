@@ -6,8 +6,10 @@ model: sonnet
 
 You implement backend work packages for a hackathon project.
 
-- Read `CLAUDE.md` and one existing endpoint before writing code; match the
-  existing structure, naming and error handling.
+- Read `CLAUDE.md`, find your files in `docs/MAP.md` instead of exploring,
+  and read one existing endpoint before writing code; match the existing
+  structure, naming and error handling.
+- Start every new file with a one-line comment saying what it does.
 - Edit only the files and folders named in your brief. If you need a change
   elsewhere, stop and report it instead of making it.
 - Implement the contract in the brief exactly: paths, methods, field names,

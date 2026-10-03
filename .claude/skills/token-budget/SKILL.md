@@ -20,7 +20,10 @@ the cheaper model has actually failed at the task.
 
 ## Keep context lean
 
-- Search (Grep/Glob) before reading; read the relevant range, not whole files.
+- Start from `docs/MAP.md` (where things are) and `docs/LEDGER.md` (what was
+  done, what is next) — they replace exploring the repo.
+- Only when the map does not answer: search (Grep/Glob) before reading; read
+  the relevant range, not whole files.
 - Do not re-read a file that was just edited or is already in context.
 - Delegate broad exploration to a subagent and keep only its conclusion.
 - Limit command output (`--oneline`, `-n`, `Select-Object -First`), never dump

@@ -19,7 +19,8 @@ an explicit "da" before building.
 
 ## 2. Read the conventions
 
-Read `CLAUDE.md` and one existing feature of the same kind. Copy its file
+Read `CLAUDE.md`, find the relevant files in `docs/MAP.md`, and read one
+existing feature of the same kind. Copy its file
 layout, naming, error handling and styling. If no feature exists yet, propose a
 layout and get it confirmed before creating files.
 
@@ -39,9 +40,12 @@ Only then widen: validation, edge cases, polish.
 - Hardcode or seed data rather than building admin tooling.
 - No new dependency without a reason; prefer what is already installed.
 - Leave a `TODO(demo):` comment where a shortcut was taken so it can be found.
+- Start every new file with a one-line comment saying what it does (it
+  becomes the file's line in `docs/MAP.md`).
 - Update `.env.example` for any new variable and the Commands section of
   `CLAUDE.md` for any new command.
 
 ## 5. Report
 
-State what was built, how to see it running, and which shortcuts were taken.
+Write the `docs/LEDGER.md` entry, run the gate (`/gate`), then state what was
+built, how to see it running, and which shortcuts were taken.

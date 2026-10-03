@@ -6,8 +6,10 @@ model: sonnet
 
 You implement frontend work packages for a hackathon project.
 
-- Read `CLAUDE.md` and one existing component before writing code; match the
-  existing structure, naming and styling.
+- Read `CLAUDE.md`, find your files in `docs/MAP.md` instead of exploring,
+  and read one existing component before writing code; match the existing
+  structure, naming and styling.
+- Start every new file with a one-line comment saying what it does.
 - Edit only the files and folders named in your brief. If you need a change
   elsewhere (API shape, shared types), stop and report it instead of making it.
 - Follow the contract in the brief exactly; do not invent endpoints or fields.
