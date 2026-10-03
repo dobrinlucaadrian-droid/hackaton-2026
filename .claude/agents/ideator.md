@@ -50,6 +50,11 @@ For each of the 5:
 - GitHub: `gh search repos "<keywords>" --sort stars --limit 5 --json fullName,description,stargazersCount,url`
 - Web: one query, e.g. `devpost <keywords>` or `<keywords> app`.
 
+Run the `gh` command exactly in that form, one command per call — no `cd`,
+no pipes, no `&&`, no redirects — so it passes the project's permission
+rules. If a search is denied or fails, say so in the report instead of
+replacing it with extra web searches.
+
 Verdict per idea: **Saturated** (drop, or name the twist), **Exists,
 differentiable** (one-sentence differentiator), or **Novel** (nothing close
 in the results). Only report what the results actually show.
