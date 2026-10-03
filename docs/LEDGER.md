@@ -5,9 +5,10 @@ lista de commit-uri de la final se reface singură.
 
 ## Acum lucrăm la
 
-- **Scop:** pregătirea proiectului înainte de hackathon
-- **Unde:** `.claude/`, `scripts/`, `docs/`
-- **Urmează:** când se anunță tema → `/ideate`
+- **Scop:** proiectul e pregătit; se așteaptă tema hackathonului
+- **Unde:** nu există încă aplicație (`apps/` e gol)
+- **Urmează:** când se anunță tema → `/ideate`, apoi `/foreman` (stack compatibil cu Vercel)
+- **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
 
 ## Jurnal
 
@@ -20,16 +21,45 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-04 — deploy prin Vercel CLI
+- Cerut: echipa nu știe să facă deploy; Claude să se ocupe de tot
+- Făcut: Vercel CLI instalat și logat; `/deploy-demo` rescris (întreabă o dată „public acum?”, apoi republică singur; dă doar adresa scurtă; verifică prin conținut); regulă de stack compatibil cu Vercel; deploy de probă reușit la https://hackaton-proba.vercel.app
+- Fișiere: `.claude/skills/deploy-demo/SKILL.md`, `.claude/skills/foreman/SKILL.md`, `.claude/settings.json`, `CLAUDE.md`, `docs/ghid.html`
+- Poartă: TRECUT pe parole și fișiere; pagina de probă verificată că se deschide fără logare. NEVERIFICAT: fluxul complet din skill și un deploy cu aplicație reală cu build
+- Urmează: primul deploy real la hackathon, cu `/deploy-demo`
+
+### 2026-10-04 — testarea mesajelor din ghid
+- Cerut: mesajele gata făcute din ghid să fie încercate în sesiuni reale
+- Făcut: 7 mesaje testate pe o aplicație de probă, într-o copie separată (unde am rămas, funcționalitate nouă, depanare, poartă, salvare, deploy, pitch); reparat hook-ul de final, care cerea poarta și fără cod schimbat; lista de la deploy folosește acum TRECUT / PICAT / NEVERIFICAT
+- Fișiere: `scripts/gate.mjs`, `.claude/skills/gate/SKILL.md`, `.claude/skills/deploy-demo/SKILL.md`
+- Poartă: TRECUT în copia de test (build, teste, pornire). NEVERIFICAT: pagina în browser; economia de tokeni pe un proiect mare
+- Urmează: —
+
+### 2026-10-03 — hartă, registru și ghid la zi
+- Cerut: sesiunile viitoare să nu ardă tokeni pe navigare și să știe ce s-a făcut
+- Făcut: `docs/MAP.md` generat automat (etapă, skilluri, agenți, cod) și încărcat în fiecare sesiune; `docs/LEDGER.md` obligatoriu prin poartă; lucru direct pe `main`; ghidul actualizat, cu mesaje care trimit la hartă și registru
+- Fișiere: `scripts/map.mjs`, `scripts/gate.mjs`, `.githooks/pre-commit`, `CLAUDE.md`, `docs/ghid.html`, `.claude/skills/git-workflow/SKILL.md`
+- Poartă: TRECUT; refuzul commit-ului fără intrare în registru verificat în copia de test
+- Urmează: —
+
+### 2026-10-03 — porți de verificare și repetiție completă
+- Cerut: un tester cu porți, fiindcă echipa poate rata lucruri
+- Făcut: `scripts/gate.mjs`, blocare la commit și la finalul răspunsului, skill `/gate`, agent `tester` întărit; repetiție completă cu aplicația de probă „Strada Mea”
+- Fișiere: `scripts/gate.mjs`, `.githooks/pre-commit`, `.claude/settings.json`, `.claude/skills/gate/SKILL.md`, `.claude/agents/tester.md`, `gate.config.json`
+- Poartă: TRECUT în repetiție (build, teste, pornire), după două greșeli reparate
+- Urmează: —
+
 ### 2026-10-03 — pregătirea proiectului
 - Cerut: folder gata de hackathon, cu skilluri, agenți și verificări
-- Făcut: skilluri și agenți Claude, poartă de verificare, hartă a codului, registru, ghid pentru echipă
-- Fișiere: `.claude/`, `scripts/gate.mjs`, `scripts/map.mjs`, `docs/ghid.html`, `CLAUDE.md`
+- Făcut: repo git + GitHub privat; skilluri (`ideate`, `foreman`, `scaffold-feature`, `researcher`, `debugging`, `coordonator`, `git-workflow`, `pitch`, `token-budget`) și agenți; ghid pentru echipă; îmbunătățiri din cercetarea pe GitHub
+- Fișiere: `.claude/`, `docs/ghid.html`, `CLAUDE.md`
 - Poartă: TRECUT pe parole și fișiere; build / teste / pornire NEVERIFICAT (nu există încă aplicație)
 - Urmează: tema hackathonului → `/ideate`
 
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 00:12 `be94cb3` fix: Vercel login and env vars work from inside the Claude app only
 - 2026-10-04 00:09 `23b8667` feat: deploy through Vercel CLI, stack must be Vercel-compatible
 - 2026-10-04 00:05 `9b25b99` docs: deploy checklist reports in the gate's TRECUT/PICAT/NEVERIFICAT words
 - 2026-10-04 00:02 `63186a4` fix: stop hook asks for the gate only on uncommitted code changes

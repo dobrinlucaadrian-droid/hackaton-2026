@@ -115,6 +115,7 @@ function orientation(hasCode) {
     '2. Read "Acum lucrăm la" and the newest "Jurnal" entry in `docs/LEDGER.md` instead of rediscovering the state.',
     '3. Find code through the "Code" section below — no exploratory searching.',
     '4. After any code change: add a `docs/LEDGER.md` entry, then `node scripts/gate.mjs`.',
+    '5. Work directly on `main`. Deploy only through `/deploy-demo` (Vercel CLI, which works only from inside the Claude app); the stack must run on Vercel.',
     '',
     '| File | What it holds | Exists |',
     '| --- | --- | --- |',
