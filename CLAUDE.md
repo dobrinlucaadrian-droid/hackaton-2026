@@ -41,7 +41,9 @@ _TBD — install / dev / test / build / deploy commands go here._
 | `/pitch` | README, project description, pitch outline |
 | `/token-budget` | choosing models and keeping context lean |
 | `/foreman` | split a large task and delegate it to the agents below |
+| `/researcher` | find GitHub repos and code examples the project needs |
 
 ## Agents (`.claude/agents`)
 
-`frontend`, `backend`, `tester`, `reviewer` — normally dispatched by `/foreman`.
+`frontend`, `backend`, `tester`, `reviewer`, `researcher` — normally dispatched
+by `/foreman`; `researcher` also by `/researcher`.

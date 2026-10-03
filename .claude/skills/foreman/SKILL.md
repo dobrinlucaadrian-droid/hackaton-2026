@@ -35,6 +35,7 @@ Agents live in `.claude/agents`:
 | `backend` | API, data, integrations | sonnet |
 | `tester` | running the app and tests, reporting failures | haiku |
 | `reviewer` | read-only review of the diff | sonnet |
+| `researcher` | GitHub research before a package that needs an unfamiliar library or API | sonnet |
 
 Send independent packages in a single message so they run in parallel. Each
 brief contains: goal, exact files/folders owned, the contract, constraints,
