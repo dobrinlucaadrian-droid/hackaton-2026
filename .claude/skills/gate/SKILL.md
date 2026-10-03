@@ -67,5 +67,6 @@ or **poarta a picat**, and what they have to do next.
 - **Commit** — the git pre-commit hook runs `node scripts/gate.mjs --commit`
   (secrets, files, build, tests) and refuses the commit on PICAT. It needs
   `git config core.hooksPath .githooks` once per computer.
-- **End of a turn** — the Claude Code Stop hook asks for a gate run when code
-  changed since the last passed gate.
+- **End of a turn** — the Claude Code Stop hook asks for a gate run when there
+  is uncommitted code that changed since the last passed gate. When it fires,
+  add the gate table to your answer; do not drop what the team asked for.

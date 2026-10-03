@@ -64,14 +64,17 @@ if (mode === 'stop') {
   let input = {};
   try { input = parseJson(await readStdin()); } catch { /* no or invalid stdin */ }
   // stop_hook_active: Claude is already continuing because of this hook. Never block twice.
-  const fp = input.stop_hook_active ? null : fingerprint();
+  // Only uncommitted code needs a gate run: committed code already passed the pre-commit gate.
+  const dirty = [...gitList(['diff', 'HEAD', '--name-only']), ...gitList(['ls-files', '-o', '--exclude-standard'])].some(isCode);
+  const fp = input.stop_hook_active || !dirty ? null : fingerprint();
   if (fp && readJson(STATE_FILE, {}).fingerprint !== fp) {
     process.stdout.write(JSON.stringify({
       decision: 'block',
       reason:
         'Quality gate: code changed since the last passed gate. Before finishing, follow the `gate` skill: ' +
         'run `node scripts/gate.mjs`, walk the changed feature and the main demo flow, and show the team the ' +
-        'TRECUT / PICAT / NEVERIFICAT table in Romanian. Fix what is PICAT, or say clearly what is still broken.',
+        'TRECUT / PICAT / NEVERIFICAT table in Romanian. Fix what is PICAT, or say clearly what is still broken. ' +
+        'Then still give the team the answer they asked for — the gate table is an addition, not a replacement.',
     }));
   }
   process.exit(0);
