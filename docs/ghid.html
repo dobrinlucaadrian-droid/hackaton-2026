@@ -106,8 +106,8 @@
   }
   .note { border-left: 3px solid var(--accent); padding-left: 12px; color: var(--muted); }
   .help h2 { margin-bottom: 8px; }
-  .help dt { font-weight: 600; margin-top: 12px; }
-  .help dd { margin: 4px 0 0; }
+  .help dt, .roles dt { font-weight: 600; margin-top: 12px; }
+  .help dd, .roles dd { margin: 4px 0 0; }
 </style>
 </head>
 <body>
@@ -125,11 +125,24 @@
     <h2>Reguli de aur</h2>
     <ul>
       <li><b>Claude te va întreba lucruri înainte să lucreze.</b> E normal și e făcut special așa. Răspunde clar; dacă nu știi, spune „nu știu, alege tu varianta recomandată”.</li>
-      <li><b>Salvează des</b> (pasul 7) — măcar o dată pe oră și mereu când ceva merge.</li>
+      <li><b>Salvează des</b> (pasul 8) — măcar o dată pe oră și mereu când ceva merge.</li>
       <li><b>Dacă Claude o ia pe o direcție greșită</b>, apasă <code>Esc</code> ca să-l oprești și spune-i ce vrei de fapt.</li>
       <li><b>Nu pune niciodată parole sau chei API în chat</b> dacă nu e nevoie; când trebuie o cheie, Claude îți spune unde s-o pui (în fișierul <code>.env</code>).</li>
       <li><b>Un demo simplu care merge bate o idee genială care crapă.</b></li>
+      <li><b>Când nu mai știți ce să faceți</b>, sau vă certați, scrie <code>/coordonator ce facem acum?</code></li>
     </ul>
+  </section>
+
+  <section class="card">
+    <h2>Cine ce face</h2>
+    <p>Nimeni în afară de Pilot nu trebuie să știe să programeze. Rolurile se pot schimba oricând.</p>
+    <dl class="roles">
+      <dt>Pilotul (tu)</dt><dd>Scrie lui Claude, citește răspunsurile cu voce tare, urmează ghidul ăsta.</dd>
+      <dt>Testerul</dt><dd>După fiecare lucru nou, folosește aplicația ca un om obișnuit și notează exact ce s-a stricat: ce a apăsat, ce aștepta, ce s-a întâmplat.</dd>
+      <dt>Designerul</dt><dd>Numele proiectului, culori, logo (de ex. în Canva), textele din aplicație, date de exemplu care arată reale.</dd>
+      <dt>Prezentatorul</dt><dd>Povestea problemei, slide-urile, repetă prezentarea cu cronometrul; el vorbește în fața juriului.</dd>
+      <dt>Cronometrorul</dt><dd>Urmărește ora și programul, citește regulile, vorbește cu organizatorii și mentorii, se asigură că proiectul e predat la timp.</dd>
+    </dl>
   </section>
 
   <!-- 1 -->
@@ -142,7 +155,20 @@
 
   <!-- 2 -->
   <section class="card" data-step>
-    <div class="step-head"><span class="num">2</span><div><h2>Dă-i lui Claude cerințele</h2><div class="when">Imediat ce organizatorii anunță tema</div></div></div>
+    <div class="step-head"><span class="num">2</span><div><h2>Organizează echipa</h2><div class="when">La început, cu toată echipa de față (se poate și înainte să se anunțe tema)</div></div></div>
+    <p>Claude vă împarte rolurile (vezi „Cine ce face” mai jos), face programul pe ore și dă fiecăruia prima sarcină. Citește-le cu voce tare.</p>
+    <div class="prompt"><pre>/coordonator
+Suntem echipa și abia am ajuns. Organizează-ne: întreabă-mă ce ai nevoie să știi despre noi, apoi împarte rolurile, fă programul și spune-i fiecăruia ce are de făcut.</pre><button class="copy" type="button">Copiază</button></div>
+    <label class="check"><input type="checkbox" data-id="s2c1"><span>Fiecare știe ce rol are și care e prima lui sarcină.</span></label>
+    <div class="label">Check-in — la fiecare 1–2 ore, până la final</div>
+    <div class="prompt"><pre>/coordonator
+Check-in. Ora acum: [ora]. Ce am terminat: [...]. Unde ne-am blocat: [...]. Ce facem mai departe, fiecare?</pre><button class="copy" type="button">Copiază</button></div>
+    <label class="check"><input type="checkbox" data-id="s2c2"><span>Am pus o alarmă pe telefon pentru check-in la fiecare 2 ore.</span></label>
+  </section>
+
+  <!-- 3 -->
+  <section class="card" data-step>
+    <div class="step-head"><span class="num">3</span><div><h2>Dă-i lui Claude cerințele</h2><div class="when">Imediat ce organizatorii anunță tema</div></div></div>
     <p>Copiază tot textul cu tema și regulile (de pe site, din prezentare, din mesajul organizatorilor) și pune-l în locul indicat.</p>
     <div class="prompt"><pre>/ideate
 Acestea sunt cerințele hackathonului:
@@ -156,9 +182,9 @@ Echipa: [câți sunteți și ce știe fiecare să facă]</pre><button class="cop
     <p class="note">Dacă nu găsești criteriile de jurizare, întreabă un organizator — sunt foarte importante pentru alegerea ideii.</p>
   </section>
 
-  <!-- 3 -->
+  <!-- 4 -->
   <section class="card" data-step>
-    <div class="step-head"><span class="num">3</span><div><h2>Alegeți ideea</h2><div class="when">Prima oră</div></div></div>
+    <div class="step-head"><span class="num">4</span><div><h2>Alegeți ideea</h2><div class="when">Prima oră</div></div></div>
     <p>Claude caută idei originale și vă dă un <b>top 3</b>. Citiți-le împreună cu echipa și alegeți una.</p>
     <div class="label">Dacă vă place una</div>
     <div class="prompt"><pre>Alegem ideea [1 / 2 / 3]. Notează alegerea și spune-mi ce urmează.</pre><button class="copy" type="button">Copiază</button></div>
@@ -167,19 +193,19 @@ Echipa: [câți sunteți și ce știe fiecare să facă]</pre><button class="cop
     <label class="check"><input type="checkbox" data-id="s3a"><span>Am ales ideea și Claude a notat-o.</span></label>
   </section>
 
-  <!-- 4 -->
+  <!-- 5 -->
   <section class="card" data-step>
-    <div class="step-head"><span class="num">4</span><div><h2>Planul de construcție</h2><div class="when">Imediat după alegerea ideii</div></div></div>
+    <div class="step-head"><span class="num">5</span><div><h2>Planul de construcție</h2><div class="when">Imediat după alegerea ideii</div></div></div>
     <div class="prompt"><pre>/foreman
 Fă planul pentru construirea ideii alese. Vreau întâi cea mai simplă versiune care se poate arăta la demo, apoi lucrurile în plus. Alege tu tehnologiile potrivite și explică-mi pe scurt de ce. Pune-mi întrebări înainte să începi.</pre><button class="copy" type="button">Copiază</button></div>
     <label class="check"><input type="checkbox" data-id="s4a"><span>Am primit planul și l-am aprobat.</span></label>
     <label class="check"><input type="checkbox" data-id="s4b"><span>Proiectul de bază e creat și pornește (Claude îți arată cum îl deschizi în browser).</span></label>
   </section>
 
-  <!-- 5 -->
+  <!-- 6 -->
   <section class="card" data-step>
-    <div class="step-head"><span class="num">5</span><div><h2>Construiește, bucată cu bucată</h2><div class="when">Cea mai mare parte din timp</div></div></div>
-    <p>Fă câte o funcționalitate pe rând. După fiecare, verifică în browser că merge, apoi salvează (pasul 7).</p>
+    <div class="step-head"><span class="num">6</span><div><h2>Construiește, bucată cu bucată</h2><div class="when">Cea mai mare parte din timp</div></div></div>
+    <p>Fă câte o funcționalitate pe rând. După fiecare, verifică în browser că merge, apoi salvează (pasul 8).</p>
     <div class="label">Funcționalitate nouă</div>
     <div class="prompt"><pre>/scaffold-feature
 Vreau să adăugăm: [descrie ce trebuie să vadă și să facă utilizatorul, pas cu pas].</pre><button class="copy" type="button">Copiază</button></div>
@@ -196,25 +222,25 @@ Caută pe GitHub cea mai bună soluție pentru: [ex. „hartă interactivă”, 
     <label class="check"><input type="checkbox" data-id="s5c"><span>Arată bine (măcar pagina principală).</span></label>
   </section>
 
-  <!-- 6 -->
+  <!-- 7 -->
   <section class="card" data-step>
-    <div class="step-head"><span class="num">6</span><div><h2>Testează</h2><div class="when">După fiecare bucată mare și înainte de demo</div></div></div>
+    <div class="step-head"><span class="num">7</span><div><h2>Testează</h2><div class="when">După fiecare bucată mare și înainte de demo</div></div></div>
     <div class="prompt"><pre>Folosește agentul tester ca să pornească aplicația și să încerce tot drumul din demo. Apoi folosește agentul reviewer ca să caute greșeli care ar putea strica demo-ul. Spune-mi ce ai găsit înainte să repari ceva.</pre><button class="copy" type="button">Copiază</button></div>
     <label class="check"><input type="checkbox" data-id="s6a"><span>Testul a trecut, problemele găsite sunt reparate.</span></label>
   </section>
 
-  <!-- 7 -->
+  <!-- 8 -->
   <section class="card" data-step>
-    <div class="step-head"><span class="num">7</span><div><h2>Salvează progresul pe GitHub</h2><div class="when">Măcar o dată pe oră — și oricând ceva merge</div></div></div>
+    <div class="step-head"><span class="num">8</span><div><h2>Salvează progresul pe GitHub</h2><div class="when">Măcar o dată pe oră — și oricând ceva merge</div></div></div>
     <div class="prompt"><pre>/git-workflow
 Salvează progresul cu un commit și fă push pe GitHub.</pre><button class="copy" type="button">Copiază</button></div>
     <p class="note">Claude te întreabă înainte de push — răspunde „da”. Dacă vreodată totul se strică, poți reveni la ultima versiune salvată (vezi „Dacă te blochezi”).</p>
     <label class="check"><input type="checkbox" data-id="s7a"><span>Am salvat cel puțin o dată.</span></label>
   </section>
 
-  <!-- 8 -->
+  <!-- 9 -->
   <section class="card" data-step>
-    <div class="step-head"><span class="num">8</span><div><h2>Pune aplicația online</h2><div class="when">Cu cel puțin 3 ore înainte de final</div></div></div>
+    <div class="step-head"><span class="num">9</span><div><h2>Pune aplicația online</h2><div class="when">Cu cel puțin 3 ore înainte de final</div></div></div>
     <div class="prompt"><pre>/deploy-demo
 Pune aplicația online ca s-o poată deschide juriul, apoi treci prin lista de verificări dinainte de demo.</pre><button class="copy" type="button">Copiază</button></div>
     <p class="note">Poate fi nevoie să-ți faci cont pe un site (ex. Vercel). Contul îl faci <b>tu</b>, Claude îți spune unde.</p>
@@ -222,18 +248,18 @@ Pune aplicația online ca s-o poată deschide juriul, apoi treci prin lista de v
     <label class="check"><input type="checkbox" data-id="s8b"><span>Am un plan B: aplicația pornită local + un video cu demo-ul.</span></label>
   </section>
 
-  <!-- 9 -->
+  <!-- 10 -->
   <section class="card" data-step>
-    <div class="step-head"><span class="num">9</span><div><h2>Pregătește prezentarea</h2><div class="when">Ultimele 2–3 ore</div></div></div>
+    <div class="step-head"><span class="num">10</span><div><h2>Pregătește prezentarea</h2><div class="when">Ultimele 2–3 ore</div></div></div>
     <div class="prompt"><pre>/pitch
 Pregătește prezentarea. Avem [X] minute de prezentare. Fă README-ul, planul prezentării cu ce spun pe fiecare parte, scenariul pentru demo și textul pentru înscrierea proiectului.</pre><button class="copy" type="button">Copiază</button></div>
     <label class="check"><input type="checkbox" data-id="s9a"><span>Am repetat prezentarea măcar o dată, cu cronometru.</span></label>
     <label class="check"><input type="checkbox" data-id="s9b"><span>Am exersat demo-ul pe aplicația online.</span></label>
   </section>
 
-  <!-- 10 -->
+  <!-- 11 -->
   <section class="card" data-step>
-    <div class="step-head"><span class="num">10</span><div><h2>Predă proiectul</h2><div class="when">Înainte de termen — nu în ultimul minut</div></div></div>
+    <div class="step-head"><span class="num">11</span><div><h2>Predă proiectul</h2><div class="when">Înainte de termen — nu în ultimul minut</div></div></div>
     <div class="prompt"><pre>Ajută-mă să predau proiectul. Regulile de predare sunt: [lipește ce cer organizatorii]. Verifică ce lipsește și fă un ultim commit și push.</pre><button class="copy" type="button">Copiază</button></div>
     <p class="note">Repo-ul pe GitHub e <b>privat</b>. Dacă organizatorii cer link la cod, spune-i lui Claude să-l facă public — te va întreba înainte.</p>
     <label class="check"><input type="checkbox" data-id="s10a"><span>Proiectul e predat.</span></label>
