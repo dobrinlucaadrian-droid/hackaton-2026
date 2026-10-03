@@ -31,10 +31,18 @@ _TBD — fill in once the theme is announced._
 
 _TBD — install / dev / test / build / deploy commands go here._
 
+## Workflow
+
+1. Requirements arrive → `/ideate` (saves `docs/challenge.md`, top 3 ideas in
+   `docs/ideas.md`, the team chooses).
+2. Plan and build → `/foreman`, `/scaffold-feature`, `/researcher` as needed.
+3. Ship → `/deploy-demo`, then `/pitch`.
+
 ## Skills (`.claude/skills`)
 
 | Skill | Use it for |
 | --- | --- |
+| `/ideate` | turn the challenge into a top 3 of original, winnable ideas |
 | `/git-workflow` | branch, commit, push, PR |
 | `/scaffold-feature` | add a feature end to end following project conventions |
 | `/deploy-demo` | deploy and run the pre-demo checklist |
@@ -46,4 +54,5 @@ _TBD — install / dev / test / build / deploy commands go here._
 ## Agents (`.claude/agents`)
 
 `frontend`, `backend`, `tester`, `reviewer`, `researcher` — normally dispatched
-by `/foreman`; `researcher` also by `/researcher`.
+by `/foreman`; `researcher` also by `/researcher`. `ideator` (opus) is
+dispatched by `/ideate` at the start.
