@@ -66,6 +66,18 @@ scripts/    gate.mjs (quality gate), map.mjs (map + ledger commit list)
 
 _TBD — fill in once the theme is announced._
 
+**Constraint: the app must run on Vercel**, because Claude deploys it with the
+Vercel CLI (`/deploy-demo`) and the team cannot deploy any other way. Choose:
+
+- Next.js (pages + API routes), or a static site plus serverless functions in
+  `api/`. One app, in `apps/<name>`.
+- No long-running server process (`node server.js`, Express listening on a
+  port, websockets servers, background workers).
+- No writing to local files or SQLite at runtime — the filesystem is
+  read-only and not shared. Use seeded JSON read at build/request time, or a
+  hosted database (Supabase, Neon) if data must change.
+- Secrets only through environment variables set with `vercel env add`.
+
 ## Commands
 
 _TBD — install / dev / test / build / deploy commands go here._ When the
@@ -75,6 +87,8 @@ stack is chosen, also fill in `gate.config.json` (see `/gate`).
   app starts). Runs automatically at the end of a turn when code changed.
 - `git config core.hooksPath .githooks` — once per computer; makes every
   commit run the gate and refuse on failure.
+- `vercel deploy --prod --yes --cwd apps/<app>` — publish (see
+  `/deploy-demo` for the approval rule). `vercel whoami` checks the login.
 
 ## Workflow
 

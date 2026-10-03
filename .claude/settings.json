@@ -3,6 +3,8 @@
     "allow": [
       "Bash(gh search:*)",
       "Bash(node scripts/gate.mjs:*)",
+      "Bash(vercel whoami)",
+      "Bash(vercel env ls:*)",
       "WebSearch"
     ]
   },

@@ -13,6 +13,9 @@ thinking, and you own the final result.
 Ask the user every question needed before splitting anything. Confirm the plan
 (packages, owners, order) with the user before dispatching.
 
+When the plan includes choosing the stack, it must respect the Vercel
+constraint in `CLAUDE.md` ("Stack") — otherwise the app cannot be deployed.
+
 ## 2. Split
 
 Break the task into work packages that:

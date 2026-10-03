@@ -30,6 +30,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 00:05 `9b25b99` docs: deploy checklist reports in the gate's TRECUT/PICAT/NEVERIFICAT words
 - 2026-10-04 00:02 `63186a4` fix: stop hook asks for the gate only on uncommitted code changes
 - 2026-10-03 23:53 `cdd9525` docs: guide prompts point Claude at the map and ledger
 - 2026-10-03 23:51 `733b7e4` docs: update team guide; map now orients new sessions and loads via CLAUDE.md

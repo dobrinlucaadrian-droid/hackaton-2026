@@ -1,33 +1,59 @@
 ---
 name: deploy-demo
-description: Deploy the project and run the pre-demo checklist. Use when asked to deploy, publish, get a public URL, or prepare for the demo or presentation.
+description: Deploy the project to Vercel with the Vercel CLI and run the pre-demo checklist. Use when asked to deploy, publish, put the app online, get a public URL, or prepare for the demo or presentation.
 ---
 
 # Deploy and demo readiness
 
-Deploying is outward-facing: confirm the target and the branch with the user
-before running any deploy command.
+The team cannot deploy on their own — you do all of it with the Vercel CLI,
+which is installed and logged in on this computer. The app is built to run on
+Vercel (see "Stack" in `CLAUDE.md`).
 
-## Pick the target
+## Approval
 
-Use what `CLAUDE.md` records. If nothing is recorded yet, propose one and ask:
+Publishing puts the app on the public internet.
 
-| Project shape | Usual quick target |
-| --- | --- |
-| Next.js / static frontend | Vercel or Netlify |
-| Node or Python API | Render, Railway or Fly.io |
-| Needs a database | the host's managed Postgres, or Supabase / Neon |
-| Deploy is not working in time | local run + a tunnel (e.g. `cloudflared`) |
+- **First deploy:** ask once, in Romanian — "Public acum aplicația pe
+  internet, la o adresă pe care o poate deschide oricine?" — and wait for
+  "da". Then write the approval in `CLAUDE.md` under Commands:
+  `Deploy approved by the team on <date>`.
+- **Later deploys:** if that line exists, redeploy without asking whenever the
+  team asks for a deploy and the gate passes.
+- Never deploy when the gate has a PICAT.
 
-Record the chosen target and the exact deploy command in `CLAUDE.md`.
+## Before deploying
+
+1. `vercel whoami` — if it is not logged in, stop and ask the Pilot to run
+   `vercel login` in a terminal. You never log in or type credentials.
+2. Working tree clean, on `main`, pushed.
+3. The gate passes (`node scripts/gate.mjs`), including the production build.
+4. Environment variables: compare the names in `.env.example` with
+   `vercel env ls`. For each missing one, give the Pilot the exact command to
+   run in a terminal — `vercel env add NAME production` — so they paste the
+   value themselves. You never see or type secret values.
 
 ## Deploy
 
-1. Working tree clean, on `main`, pushed.
-2. The gate passes (`node scripts/gate.mjs`), including the production build.
-3. Every variable in `.env.example` is set on the host. The user enters
-   secret values themselves.
-4. Deploy, then open the public URL and walk the demo flow.
+Run from the app's folder (the one in `gate.config.json`), one command per call:
+
+```bash
+vercel deploy --prod --yes --cwd apps/<app>
+```
+
+- The first run creates and links the Vercel project (`--yes` accepts the
+  defaults). `.vercel/` is gitignored.
+- `--prod` matters: only the production address is public. Preview addresses
+  ask visitors to log in to Vercel, so the jury could not open them.
+- The command prints the address. Record it and the deploy command in
+  `CLAUDE.md` (Commands) and in `README.md`.
+- If the build fails on Vercel: `vercel inspect <url> --logs`, then
+  `/debugging`. After 3 failed attempts stop and offer the fallback below.
+
+## Fallback
+
+If Vercel does not work in time: run the app locally on the presentation
+laptop and have the team record a video of the demo flow. Say plainly that
+there is no public address.
 
 ## Pre-demo checklist
 
@@ -38,6 +64,9 @@ Record the chosen target and the exact deploy command in `CLAUDE.md`.
 5. Works on the screen size the presentation will use
 6. Fallback ready: local build running, plus a recorded video of the flow
 7. README has the URL and run instructions
+
+Check what you can yourself: request the public URL and the API routes from
+`docs/MAP.md` and confirm status 200 and real content, not an error page.
 
 Report it as one table in Romanian, in the same words as the gate (`/gate`),
 with the gate script's own lines on top:
