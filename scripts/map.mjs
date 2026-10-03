@@ -23,7 +23,7 @@ const git = (args) => spawnSync('git', args, { encoding: 'utf8', maxBuffer: 64 *
 function isMapped(p) {
   if (/^(docs|\.claude|\.githooks|scripts)\//.test(p)) return false;
   if (p.endsWith('.gitkeep') || /(^|\/)(package-lock\.json|pnpm-lock\.yaml|yarn\.lock)$/.test(p)) return false;
-  if (!p.includes('/') && (/\.md$/i.test(p) || p.startsWith('.git') || p === 'gate.config.json')) return false;
+  if (!p.includes('/') && (/\.md$/i.test(p) || p.startsWith('.git') || p === 'gate.config.json' || p === 'ghid.html')) return false;
   return true;
 }
 
@@ -102,7 +102,7 @@ function orientation(hasCode) {
     ['docs/challenge.md', 'the hackathon requirements and the chosen idea'],
     ['docs/ideas.md', 'the ideation report (top 3 and eliminated ideas)'],
     ['docs/plan.md', 'team roles, schedule and task board'],
-    ['docs/ghid.html', 'step-by-step guide for the team (Romanian)'],
+    ['ghid.html', 'step-by-step guide for the team (Romanian)'],
     ['gate.config.json', 'build / test / start commands the gate runs'],
   ];
 

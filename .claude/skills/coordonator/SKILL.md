@@ -32,7 +32,7 @@ with Designer); if more, double up Tester and Designer.
 
 | Role | Does | Needs |
 | --- | --- | --- |
-| **Pilot** | Types to Claude, reads answers aloud, follows `docs/ghid.html` | this PC |
+| **Pilot** | Types to Claude, reads answers aloud, follows `ghid.html` | this PC |
 | **Tester** | After every new feature, uses the app like a real user and writes down exactly what broke: what they clicked, what they expected, what happened | phone or laptop |
 | **Designer & conținut** | Project name, colors, logo (e.g. Canva), all the texts in the app, demo data that looks real, screenshots | phone or laptop |
 | **Prezentator** | Owns the pitch: the story of the problem, the slides, rehearsing with a timer; speaks to the jury | phone or laptop, paper |

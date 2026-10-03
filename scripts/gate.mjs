@@ -29,7 +29,7 @@ const gitList = (args) => git([...args, '-z']).split('\0').filter(Boolean);
 function isCode(p) {
   if (/^(docs|\.claude|\.githooks)\//.test(p)) return false;
   if (/\.md$/i.test(p) || p.endsWith('.gitkeep')) return false;
-  return !['.gitignore', '.gitattributes', '.env.example', 'scripts/gate.mjs', 'scripts/map.mjs', CONFIG_FILE].includes(p);
+  return !['.gitignore', '.gitattributes', '.env.example', 'scripts/gate.mjs', 'scripts/map.mjs', 'ghid.html', CONFIG_FILE].includes(p);
 }
 
 function fingerprint() {

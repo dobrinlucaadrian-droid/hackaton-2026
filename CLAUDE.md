@@ -11,7 +11,7 @@ Monorepo for the hackathon project. The stack is not decided yet — update the
 Five beginners with little or no coding experience, not used to working
 together. One of them (the Pilot) types to Claude and passes instructions to
 the others. Roles, schedule and tasks live in `docs/plan.md` (managed by
-`/coordonator`). The step-by-step guide for the Pilot is `docs/ghid.html`.
+`/coordonator`). The step-by-step guide for the Pilot is `ghid.html`.
 
 ## Rules
 
@@ -57,7 +57,8 @@ the others. Roles, schedule and tasks live in `docs/plan.md` (managed by
 apps/       runnable applications (frontend, backend, ...)
 packages/   code shared between apps
 docs/       MAP.md (generated code map), LEDGER.md (what was done and what is
-            next), plan.md, challenge.md, ideas.md, ghid.html, pitch
+            next), plan.md, challenge.md, ideas.md, pitch
+ghid.html   step-by-step guide for the team (Romanian) - open in a browser
 scripts/    gate.mjs (quality gate), map.mjs (map + ledger commit list)
 .claude/    skills and agents (see below)
 ```
