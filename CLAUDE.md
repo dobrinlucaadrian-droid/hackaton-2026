@@ -1,5 +1,8 @@
 # Hackathon 2026
 
+Project map, loaded every session — current stage, where the state lives,
+skills, agents, scripts and code files: @docs/MAP.md
+
 Monorepo for the hackathon project. The stack is not decided yet — update the
 "Stack" and "Commands" sections as soon as it is.
 
@@ -82,24 +85,7 @@ stack is chosen, also fill in `gate.config.json` (see `/gate`).
 2. Plan and build → `/foreman`, `/scaffold-feature`, `/researcher` as needed.
 3. Ship → `/deploy-demo`, then `/pitch`.
 
-## Skills (`.claude/skills`)
+## Skills and agents
 
-| Skill | Use it for |
-| --- | --- |
-| `/coordonator` | organize the team: roles, schedule, tasks, check-ins |
-| `/ideate` | turn the challenge into a top 3 of original, winnable ideas |
-| `/git-workflow` | branch, commit, push, PR |
-| `/scaffold-feature` | add a feature end to end following project conventions |
-| `/deploy-demo` | deploy and run the pre-demo checklist |
-| `/pitch` | README, project description, pitch outline |
-| `/token-budget` | choosing models and keeping context lean |
-| `/foreman` | split a large task and delegate it to the agents below |
-| `/researcher` | find GitHub repos and code examples the project needs |
-| `/gate` | quality gate after every feature: TRECUT / PICAT / NEVERIFICAT |
-| `/debugging` | find the cause of a bug step by step instead of guessing |
-
-## Agents (`.claude/agents`)
-
-`frontend`, `backend`, `tester`, `reviewer`, `researcher` — normally dispatched
-by `/foreman`; `researcher` also by `/researcher`. `ideator` (sonnet,
-capped search budget) is dispatched by `/ideate` at the start.
+Listed in the project map (`docs/MAP.md`, loaded above), generated from the
+files in `.claude/skills` and `.claude/agents`.

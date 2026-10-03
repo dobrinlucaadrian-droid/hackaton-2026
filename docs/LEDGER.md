@@ -30,6 +30,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-03 23:48 `8878279` docs: work directly on main, no branches by default
 - 2026-10-03 23:45 `18dd146` feat: add generated codebase map and ledger, enforced by the gate
 - 2026-10-03 23:38 `ff87e15` chore: keep git hooks on LF line endings
 - 2026-10-03 23:38 `bc6faeb` feat: add quality gate script, commit and Stop hooks, gate skill
