@@ -214,7 +214,7 @@ Echipa: [câți sunteți și ce știe fiecare să facă]</pre><button class="cop
   <section class="card" data-step>
     <div class="step-head"><span class="num">5</span><div><h2>Planul de construcție</h2><div class="when">Imediat după alegerea ideii</div></div></div>
     <div class="prompt"><pre>/foreman
-Fă planul pentru construirea ideii alese. Vreau întâi cea mai simplă versiune care se poate arăta la demo, apoi lucrurile în plus. Alege tu tehnologiile potrivite, cât mai simple, și explică-mi pe scurt de ce. După ce există scheletul aplicației, completează gate.config.json ca poarta să verifice build, teste și pornirea. Pune-mi întrebări înainte să începi.</pre><button class="copy" type="button">Copiază</button></div>
+Fă planul pentru construirea ideii alese. Vreau întâi cea mai simplă versiune care se poate arăta la demo, apoi lucrurile în plus. Alege tu tehnologiile potrivite, cât mai simple, și explică-mi pe scurt de ce. După ce există scheletul aplicației, completează gate.config.json ca poarta să verifice build, teste și pornirea. Pornește de la hartă (docs/MAP.md) și de la registru (docs/LEDGER.md), nu căuta prin tot proiectul. Pune-mi întrebări înainte să începi.</pre><button class="copy" type="button">Copiază</button></div>
     <label class="check"><input type="checkbox" data-id="s4a"><span>Am primit planul și l-am aprobat.</span></label>
     <label class="check"><input type="checkbox" data-id="s4b"><span>Proiectul de bază e creat și pornește (Claude îți arată cum îl deschizi în browser).</span></label>
     <label class="check"><input type="checkbox" data-id="s4c"><span>În tabelul porții, build, teste și pornire nu mai apar ca NEVERIFICAT.</span></label>
@@ -226,19 +226,19 @@ Fă planul pentru construirea ideii alese. Vreau întâi cea mai simplă versiun
     <p>Fă câte o funcționalitate pe rând. După fiecare, Claude rulează singur poarta și scrie în registru. Apoi <b>Testerul o încearcă în browser</b> — Claude nu vede cum arată pagina — și abia după aceea salvezi (pasul 8).</p>
     <div class="label">Funcționalitate nouă</div>
     <div class="prompt"><pre>/scaffold-feature
-Vreau să adăugăm: [descrie ce trebuie să vadă și să facă utilizatorul, pas cu pas].</pre><button class="copy" type="button">Copiază</button></div>
+Vreau să adăugăm: [descrie ce trebuie să vadă și să facă utilizatorul, pas cu pas]. Găsește fișierele potrivite din hartă (docs/MAP.md), fără să cauți prin tot codul.</pre><button class="copy" type="button">Copiază</button></div>
     <div class="label">Când ceva nu merge</div>
     <div class="prompt"><pre>/debugging
-Nu merge: [ce ai făcut] și [ce s-a întâmplat / ce eroare apare]. Găsește cauza și repar-o, apoi verifică singur că merge.</pre><button class="copy" type="button">Copiază</button></div>
+Nu merge: [ce ai făcut] și [ce s-a întâmplat / ce eroare apare]. Uită-te în hartă (docs/MAP.md) ca să vezi ce fișiere sunt implicate, găsește cauza și repar-o, apoi verifică singur că merge.</pre><button class="copy" type="button">Copiază</button></div>
     <div class="label">Când trebuie o librărie sau un serviciu pe care nu-l știi</div>
     <div class="prompt"><pre>/researcher
 Caută pe GitHub cea mai bună soluție pentru: [ex. „hartă interactivă”, „login cu Google”, „recunoaștere vocală”].</pre><button class="copy" type="button">Copiază</button></div>
     <div class="label">Mai multe lucruri deodată</div>
     <div class="prompt"><pre>/foreman
-Împarte și fă în paralel: [lista de lucruri]. Verifică la final că totul merge împreună.</pre><button class="copy" type="button">Copiază</button></div>
+Împarte și fă în paralel: [lista de lucruri]. Dă-le agenților rândurile din hartă (docs/MAP.md) pentru fișierele lor, ca să nu caute singuri. Verifică la final că totul merge împreună.</pre><button class="copy" type="button">Copiază</button></div>
     <div class="label">Când Testerul găsește ceva stricat în browser</div>
     <div class="prompt"><pre>/debugging
-Testerul a găsit o problemă: a apăsat [ce], se aștepta la [ce], dar s-a întâmplat [ce]. Găsește cauza și repar-o.</pre><button class="copy" type="button">Copiază</button></div>
+Testerul a găsit o problemă: a apăsat [ce], se aștepta la [ce], dar s-a întâmplat [ce]. Uită-te în hartă (docs/MAP.md) ca să vezi ce fișiere sunt implicate, găsește cauza și repar-o.</pre><button class="copy" type="button">Copiază</button></div>
     <label class="check"><input type="checkbox" data-id="s5a"><span>Funcționalitatea principală (cea din demo) merge.</span></label>
     <label class="check"><input type="checkbox" data-id="s5b"><span>Am date de exemplu, ca ecranele să nu fie goale la demo.</span></label>
     <label class="check"><input type="checkbox" data-id="s5c"><span>Arată bine (măcar pagina principală).</span></label>
@@ -248,7 +248,7 @@ Testerul a găsit o problemă: a apăsat [ce], se aștepta la [ce], dar s-a înt
   <section class="card" data-step>
     <div class="step-head"><span class="num">7</span><div><h2>Testează</h2><div class="when">După fiecare bucată mare și înainte de demo</div></div></div>
     <div class="prompt"><pre>/gate
-Rulează poarta de verificare pe tot ce am făcut și încearcă tot drumul din demo. Apoi folosește agentul reviewer ca să caute greșeli care ar putea strica demo-ul. Arată-mi tabelul cu ce a trecut și ce a picat înainte să repari ceva.</pre><button class="copy" type="button">Copiază</button></div>
+Rulează poarta de verificare pe tot ce am făcut și încearcă tot drumul din demo (rutele și paginile sunt în harta docs/MAP.md). Apoi folosește agentul reviewer ca să caute greșeli care ar putea strica demo-ul. Arată-mi tabelul cu ce a trecut și ce a picat înainte să repari ceva.</pre><button class="copy" type="button">Copiază</button></div>
     <p class="note">Claude rulează singur poarta după fiecare lucru nou și la fiecare salvare. Dacă vezi <b>PICAT</b>, nu mergeți mai departe până nu e reparat. <b>NEVERIFICAT</b> înseamnă că nu a putut verifica — întreabă-l de ce.</p>
     <label class="check"><input type="checkbox" data-id="s6a"><span>Testul a trecut, problemele găsite sunt reparate.</span></label>
   </section>
@@ -257,7 +257,7 @@ Rulează poarta de verificare pe tot ce am făcut și încearcă tot drumul din 
   <section class="card" data-step>
     <div class="step-head"><span class="num">8</span><div><h2>Salvează progresul pe GitHub</h2><div class="when">Măcar o dată pe oră — și oricând ceva merge</div></div></div>
     <div class="prompt"><pre>/git-workflow
-Salvează progresul cu un commit și fă push pe GitHub.</pre><button class="copy" type="button">Copiază</button></div>
+Salvează progresul cu un commit și fă push pe GitHub. Verifică întâi că registrul (docs/LEDGER.md) are intrarea pentru ce am făcut.</pre><button class="copy" type="button">Copiază</button></div>
     <p class="note">Claude te întreabă înainte de push — răspunde „da”. Dacă salvarea e refuzată, înseamnă că poarta a găsit ceva PICAT: vezi „Dacă te blochezi”. Dacă vreodată totul se strică, poți reveni la ultima versiune salvată.</p>
     <label class="check"><input type="checkbox" data-id="s7a"><span>Am salvat cel puțin o dată.</span></label>
   </section>
@@ -266,7 +266,7 @@ Salvează progresul cu un commit și fă push pe GitHub.</pre><button class="cop
   <section class="card" data-step>
     <div class="step-head"><span class="num">9</span><div><h2>Pune aplicația online</h2><div class="when">Cu cel puțin 3 ore înainte de final</div></div></div>
     <div class="prompt"><pre>/deploy-demo
-Pune aplicația online ca s-o poată deschide juriul, apoi treci prin lista de verificări dinainte de demo.</pre><button class="copy" type="button">Copiază</button></div>
+Pune aplicația online ca s-o poată deschide juriul, apoi treci prin lista de verificări dinainte de demo. Ia comenzile de pornire și build din hartă (docs/MAP.md).</pre><button class="copy" type="button">Copiază</button></div>
     <p class="note">Poate fi nevoie să-ți faci cont pe un site (ex. Vercel). Contul îl faci <b>tu</b>, Claude îți spune unde.</p>
     <label class="check"><input type="checkbox" data-id="s8a"><span>Am un link public care merge (verificat dintr-o fereastră incognito).</span></label>
     <label class="check"><input type="checkbox" data-id="s8b"><span>Am un plan B: aplicația pornită local + un video cu demo-ul.</span></label>
@@ -276,7 +276,7 @@ Pune aplicația online ca s-o poată deschide juriul, apoi treci prin lista de v
   <section class="card" data-step>
     <div class="step-head"><span class="num">10</span><div><h2>Pregătește prezentarea</h2><div class="when">Ultimele 2–3 ore</div></div></div>
     <div class="prompt"><pre>/pitch
-Pregătește prezentarea. Avem [X] minute de prezentare. Fă README-ul, planul prezentării cu ce spun pe fiecare parte, scenariul pentru demo și textul pentru înscrierea proiectului.</pre><button class="copy" type="button">Copiază</button></div>
+Pregătește prezentarea. Avem [X] minute de prezentare. Fă README-ul, planul prezentării cu ce spun pe fiecare parte, scenariul pentru demo și textul pentru înscrierea proiectului. Ia ce am construit din registru (docs/LEDGER.md) și din hartă (docs/MAP.md); descrie doar ce există cu adevărat.</pre><button class="copy" type="button">Copiază</button></div>
     <label class="check"><input type="checkbox" data-id="s9a"><span>Am repetat prezentarea măcar o dată, cu cronometru.</span></label>
     <label class="check"><input type="checkbox" data-id="s9b"><span>Am exersat demo-ul pe aplicația online.</span></label>
   </section>
@@ -284,7 +284,7 @@ Pregătește prezentarea. Avem [X] minute de prezentare. Fă README-ul, planul p
   <!-- 11 -->
   <section class="card" data-step>
     <div class="step-head"><span class="num">11</span><div><h2>Predă proiectul</h2><div class="when">Înainte de termen — nu în ultimul minut</div></div></div>
-    <div class="prompt"><pre>Ajută-mă să predau proiectul. Regulile de predare sunt: [lipește ce cer organizatorii]. Verifică ce lipsește și fă un ultim commit și push.</pre><button class="copy" type="button">Copiază</button></div>
+    <div class="prompt"><pre>Ajută-mă să predau proiectul. Regulile de predare sunt: [lipește ce cer organizatorii]. Verifică ce lipsește, folosind harta (docs/MAP.md) și registrul (docs/LEDGER.md), și fă un ultim commit și push.</pre><button class="copy" type="button">Copiază</button></div>
     <p class="note">Repo-ul pe GitHub e <b>privat</b>. Dacă organizatorii cer link la cod, spune-i lui Claude să-l facă public — te va întreba înainte.</p>
     <label class="check"><input type="checkbox" data-id="s10a"><span>Proiectul e predat.</span></label>
   </section>
@@ -311,7 +311,7 @@ Pregătește prezentarea. Avem [X] minute de prezentare. Fă README-ul, planul p
       <dt>Claude face altceva decât vrei</dt>
       <dd>Apasă <code>Esc</code>, apoi scrie ce vrei, cât mai concret: ce trebuie să vadă utilizatorul și ce trebuie să se întâmple.</dd>
       <dt>Totul s-a stricat și nu mai merge nimic</dt>
-      <dd><div class="prompt"><pre>Aplicația nu mai merge. Arată-mi ce s-a schimbat de la ultima salvare care funcționa și propune-mi cum revenim. Nu șterge nimic fără să mă întrebi.</pre><button class="copy" type="button">Copiază</button></div></dd>
+      <dd><div class="prompt"><pre>Aplicația nu mai merge. Uită-te în registru (docs/LEDGER.md) la ultima intrare cu poarta TRECUT, arată-mi ce s-a schimbat de atunci și propune-mi cum revenim. Nu șterge nimic fără să mă întrebi.</pre><button class="copy" type="button">Copiază</button></div></dd>
       <dt>Apare un mesaj că s-a terminat limita de folosire</dt>
       <dd>Așteaptă până se resetează (mesajul îți spune când). Ca să nu se întâmple: lucrează pe bucăți mici și folosește <code>/token-budget</code> dacă vezi că se consumă repede.</dd>
       <dt>Salvarea e refuzată sau poarta arată PICAT</dt>
