@@ -61,7 +61,8 @@ Follow `/token-budget` for model choice.
 1. Read what each agent changed (`git diff --stat`, then the diff) — an
    agent's "done" is a claim, not evidence.
 2. Resolve mismatches against the contract.
-3. Run the app and the main flow yourself, or send `tester`.
+3. Run the gate (`/gate`): `node scripts/gate.mjs`, then walk the new flow
+   and the main demo flow yourself or send `tester`. One PICAT stops the work.
 4. Send `reviewer` on the combined diff for anything non-trivial.
 5. Fix or re-dispatch; continue an existing agent rather than starting a new one.
 

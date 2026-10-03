@@ -226,7 +226,9 @@ Caută pe GitHub cea mai bună soluție pentru: [ex. „hartă interactivă”, 
   <!-- 7 -->
   <section class="card" data-step>
     <div class="step-head"><span class="num">7</span><div><h2>Testează</h2><div class="when">După fiecare bucată mare și înainte de demo</div></div></div>
-    <div class="prompt"><pre>Folosește agentul tester ca să pornească aplicația și să încerce tot drumul din demo. Apoi folosește agentul reviewer ca să caute greșeli care ar putea strica demo-ul. Spune-mi ce ai găsit înainte să repari ceva.</pre><button class="copy" type="button">Copiază</button></div>
+    <div class="prompt"><pre>/gate
+Rulează poarta de verificare pe tot ce am făcut și încearcă tot drumul din demo. Apoi folosește agentul reviewer ca să caute greșeli care ar putea strica demo-ul. Arată-mi tabelul cu ce a trecut și ce a picat înainte să repari ceva.</pre><button class="copy" type="button">Copiază</button></div>
+    <p class="note">Claude rulează singur poarta după fiecare lucru nou și la fiecare salvare. Dacă vezi <b>PICAT</b>, nu mergeți mai departe până nu e reparat. <b>NEVERIFICAT</b> înseamnă că nu a putut verifica — întreabă-l de ce.</p>
     <label class="check"><input type="checkbox" data-id="s6a"><span>Testul a trecut, problemele găsite sunt reparate.</span></label>
   </section>
 

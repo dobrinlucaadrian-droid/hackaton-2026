@@ -29,6 +29,9 @@ the others. Roles, schedule and tasks live in `docs/plan.md` (managed by
 3. **Keep `main` demoable.** Work on short-lived branches; merge only what runs.
 4. **No claim without evidence.** Never tell the team something works unless
    it was seen running after the last change. Otherwise say "nu am verificat".
+   A feature is done only when the gate has passed (`/gate`): run
+   `node scripts/gate.mjs` and walk the flow. One PICAT stops the work. Never
+   weaken or bypass the gate (`--no-verify`, deleting tests, editing the script).
 5. **Never commit secrets.** Keys live in `.env` (gitignored); document each one
    in `.env.example`.
 
@@ -47,7 +50,13 @@ _TBD — fill in once the theme is announced._
 
 ## Commands
 
-_TBD — install / dev / test / build / deploy commands go here._
+_TBD — install / dev / test / build / deploy commands go here._ When the
+stack is chosen, also fill in `gate.config.json` (see `/gate`).
+
+- `node scripts/gate.mjs` — full quality gate (secrets, files, build, tests,
+  app starts). Runs automatically at the end of a turn when code changed.
+- `git config core.hooksPath .githooks` — once per computer; makes every
+  commit run the gate and refuse on failure.
 
 ## Workflow
 
@@ -71,6 +80,7 @@ _TBD — install / dev / test / build / deploy commands go here._
 | `/token-budget` | choosing models and keeping context lean |
 | `/foreman` | split a large task and delegate it to the agents below |
 | `/researcher` | find GitHub repos and code examples the project needs |
+| `/gate` | quality gate after every feature: TRECUT / PICAT / NEVERIFICAT |
 | `/debugging` | find the cause of a bug step by step instead of guessing |
 
 ## Agents (`.claude/agents`)

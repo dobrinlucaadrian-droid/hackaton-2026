@@ -2,7 +2,21 @@
   "permissions": {
     "allow": [
       "Bash(gh search:*)",
+      "Bash(node scripts/gate.mjs:*)",
       "WebSearch"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node scripts/gate.mjs --stop-hook",
+            "timeout": 20
+          }
+        ]
+      }
     ]
   }
 }

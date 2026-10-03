@@ -33,6 +33,7 @@ Thumbs.db
 
 # Claude Code local settings
 .claude/settings.local.json
+.claude/.gate-state.json
 
 # Deploy
 .vercel/

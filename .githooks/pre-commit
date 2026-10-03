@@ -1,0 +1,7 @@
+#!/bin/sh
+# Quality gate: blocks the commit when a check fails. See scripts/gate.mjs.
+if ! command -v node >/dev/null 2>&1; then
+  echo "ATENTIE: node nu a fost gasit - poarta de verificare NU a rulat."
+  exit 0
+fi
+exec node scripts/gate.mjs --commit
