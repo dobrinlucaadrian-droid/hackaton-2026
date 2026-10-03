@@ -16,6 +16,11 @@ the others. Roles, schedule and tasks live in `docs/plan.md` (managed by
    is unavoidable, explain it in a few words. Say briefly what you are doing
    and end with exactly what the human must do next. Code, file names and
    commit messages stay in English.
+0b. **Keep the team pointed at the next step, cheaply.** `/coordonator` is
+   optional — nothing depends on it. When a task finishes, end with at most
+   one line: the next step and, if known, time left to the next milestone. If
+   `docs/plan.md` exists, tick off finished tasks in it. Do not run full
+   check-ins unprompted.
 1. **Ask before building.** Before implementing or executing anything, ask every
    clarifying question needed. Never start work in a direction the team has not
    confirmed.
