@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ghid Hackathon</title>
+<style>
+  :root {
+    --bg: #f7f6f2;
+    --surface: #ffffff;
+    --text: #1d1c1a;
+    --muted: #5f5c55;
+    --border: #e2dfd6;
+    --accent: #c4562d;
+    --accent-soft: #fbeee8;
+    --ok: #2f7a4a;
+    --ok-soft: #e7f3eb;
+    --code-bg: #f1efe9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1a1918;
+      --surface: #242321;
+      --text: #ecebe6;
+      --muted: #a9a59c;
+      --border: #3a3834;
+      --accent: #e8825a;
+      --accent-soft: #3a2a22;
+      --ok: #6cc28b;
+      --ok-soft: #22332a;
+      --code-bg: #2d2b28;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 820px; margin: 0 auto; padding: 32px 16px 80px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.3rem; margin: 0 0 4px; }
+  p { margin: 8px 0; }
+  .lead { color: var(--muted); margin-bottom: 24px; }
+  .progress {
+    position: sticky; top: 0; z-index: 5;
+    background: var(--bg);
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 24px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .bar { flex: 1; height: 8px; background: var(--border); border-radius: 99px; overflow: hidden; }
+  .bar > div { height: 100%; width: 0; background: var(--ok); transition: width .2s; }
+  .progress span { font-size: .9rem; color: var(--muted); white-space: nowrap; }
+  .progress button {
+    font: inherit; font-size: .85rem;
+    background: none; border: 1px solid var(--border); color: var(--muted);
+    border-radius: 6px; padding: 4px 10px; cursor: pointer;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 16px 0;
+  }
+  .rules { background: var(--accent-soft); border-color: transparent; }
+  .rules ul { margin: 8px 0 0; padding-left: 20px; }
+  .step-head { display: flex; gap: 12px; align-items: baseline; }
+  .num {
+    flex: none;
+    width: 32px; height: 32px; border-radius: 50%;
+    background: var(--accent); color: #fff;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-weight: 700;
+  }
+  .when { font-size: .85rem; color: var(--muted); }
+  .prompt { position: relative; margin: 12px 0; }
+  .prompt pre {
+    margin: 0;
+    background: var(--code-bg);
+    border-radius: 8px;
+    padding: 14px 14px 14px 14px;
+    padding-right: 90px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font: 14px/1.5 ui-monospace, "Cascadia Code", Consolas, monospace;
+  }
+  .copy {
+    position: absolute; top: 8px; right: 8px;
+    font: inherit; font-size: .8rem;
+    background: var(--surface); color: var(--text);
+    border: 1px solid var(--border); border-radius: 6px;
+    padding: 4px 10px; cursor: pointer;
+  }
+  .copy.done { color: var(--ok); border-color: var(--ok); }
+  .label { font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin-top: 14px; }
+  .check { display: flex; gap: 10px; align-items: flex-start; padding: 6px 0; cursor: pointer; }
+  .check input { width: 18px; height: 18px; margin-top: 3px; accent-color: var(--ok); flex: none; }
+  .check.on span { color: var(--muted); text-decoration: line-through; }
+  code {
+    background: var(--code-bg); border-radius: 4px; padding: 1px 5px;
+    font: .9em ui-monospace, "Cascadia Code", Consolas, monospace;
+  }
+  .note { border-left: 3px solid var(--accent); padding-left: 12px; color: var(--muted); }
+  .help h2 { margin-bottom: 8px; }
+  .help dt { font-weight: 600; margin-top: 12px; }
+  .help dd { margin: 4px 0 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Ghid pentru hackathon</h1>
+  <p class="lead">Urmează pașii în ordine. La fiecare pas ai un mesaj gata făcut: apasă <b>Copiază</b>, lipește-l în Claude și completează ce e între [paranteze drepte]. Bifează pașii pe măsură ce îi termini — bifele rămân salvate.</p>
+
+  <div class="progress">
+    <div class="bar"><div id="bar"></div></div>
+    <span id="count">0 / 0</span>
+    <button id="reset" type="button">Resetează bifele</button>
+  </div>
+
+  <section class="card rules">
+    <h2>Reguli de aur</h2>
+    <ul>
+      <li><b>Claude te va întreba lucruri înainte să lucreze.</b> E normal și e făcut special așa. Răspunde clar; dacă nu știi, spune „nu știu, alege tu varianta recomandată”.</li>
+      <li><b>Salvează des</b> (pasul 7) — măcar o dată pe oră și mereu când ceva merge.</li>
+      <li><b>Dacă Claude o ia pe o direcție greșită</b>, apasă <code>Esc</code> ca să-l oprești și spune-i ce vrei de fapt.</li>
+      <li><b>Nu pune niciodată parole sau chei API în chat</b> dacă nu e nevoie; când trebuie o cheie, Claude îți spune unde s-o pui (în fișierul <code>.env</code>).</li>
+      <li><b>Un demo simplu care merge bate o idee genială care crapă.</b></li>
+    </ul>
+  </section>
+
+  <!-- 1 -->
+  <section class="card" data-step>
+    <div class="step-head"><span class="num">1</span><div><h2>Deschide proiectul</h2><div class="when">Înainte să înceapă hackathonul</div></div></div>
+    <label class="check"><input type="checkbox" data-id="s1a"><span>Deschide aplicația <b>Claude</b> pe calculator, mergi la tabul <b>Code</b> și alege folderul <code>C:\CODING\HACKATON_2026</code>.</span></label>
+    <label class="check"><input type="checkbox" data-id="s1b"><span>Trimite mesajul de mai jos ca să verifici că totul e pregătit.</span></label>
+    <div class="prompt"><pre>Verifică te rog că proiectul e pregătit pentru hackathon: că e la zi cu GitHub, că git, gh și node funcționează, și că vezi skillurile ideate, foreman, scaffold-feature, researcher, git-workflow, deploy-demo și pitch. Nu modifica nimic, doar spune-mi ce merge și ce nu.</pre><button class="copy" type="button">Copiază</button></div>
+  </section>
+
+  <!-- 2 -->
+  <section class="card" data-step>
+    <div class="step-head"><span class="num">2</span><div><h2>Dă-i lui Claude cerințele</h2><div class="when">Imediat ce organizatorii anunță tema</div></div></div>
+    <p>Copiază tot textul cu tema și regulile (de pe site, din prezentare, din mesajul organizatorilor) și pune-l în locul indicat.</p>
+    <div class="prompt"><pre>/ideate
+Acestea sunt cerințele hackathonului:
+
+[LIPEȘTE AICI TOT TEXTUL CU TEMA, REGULILE, CRITERIILE DE JURIZARE ȘI PREMIILE]
+
+Durata hackathonului: [ex. 24 de ore]
+Echipa: [câți sunteți și ce știe fiecare să facă]</pre><button class="copy" type="button">Copiază</button></div>
+    <label class="check"><input type="checkbox" data-id="s2a"><span>Am trimis cerințele.</span></label>
+    <label class="check"><input type="checkbox" data-id="s2b"><span>Am răspuns la întrebările lui Claude (criterii de jurizare, premii, ce știe echipa).</span></label>
+    <p class="note">Dacă nu găsești criteriile de jurizare, întreabă un organizator — sunt foarte importante pentru alegerea ideii.</p>
+  </section>
+
+  <!-- 3 -->
+  <section class="card" data-step>
+    <div class="step-head"><span class="num">3</span><div><h2>Alegeți ideea</h2><div class="when">Prima oră</div></div></div>
+    <p>Claude caută idei originale și vă dă un <b>top 3</b>. Citiți-le împreună cu echipa și alegeți una.</p>
+    <div class="label">Dacă vă place una</div>
+    <div class="prompt"><pre>Alegem ideea [1 / 2 / 3]. Notează alegerea și spune-mi ce urmează.</pre><button class="copy" type="button">Copiază</button></div>
+    <div class="label">Dacă nu vă place niciuna</div>
+    <div class="prompt"><pre>Nu ne convinge niciuna. Vrem încă o rundă de idei, dar: [ce vreți altfel, ex. „ceva legat de școală”, „fără hardware”, „mai simplu de construit”].</pre><button class="copy" type="button">Copiază</button></div>
+    <label class="check"><input type="checkbox" data-id="s3a"><span>Am ales ideea și Claude a notat-o.</span></label>
+  </section>
+
+  <!-- 4 -->
+  <section class="card" data-step>
+    <div class="step-head"><span class="num">4</span><div><h2>Planul de construcție</h2><div class="when">Imediat după alegerea ideii</div></div></div>
+    <div class="prompt"><pre>/foreman
+Fă planul pentru construirea ideii alese. Vreau întâi cea mai simplă versiune care se poate arăta la demo, apoi lucrurile în plus. Alege tu tehnologiile potrivite și explică-mi pe scurt de ce. Pune-mi întrebări înainte să începi.</pre><button class="copy" type="button">Copiază</button></div>
+    <label class="check"><input type="checkbox" data-id="s4a"><span>Am primit planul și l-am aprobat.</span></label>
+    <label class="check"><input type="checkbox" data-id="s4b"><span>Proiectul de bază e creat și pornește (Claude îți arată cum îl deschizi în browser).</span></label>
+  </section>
+
+  <!-- 5 -->
+  <section class="card" data-step>
+    <div class="step-head"><span class="num">5</span><div><h2>Construiește, bucată cu bucată</h2><div class="when">Cea mai mare parte din timp</div></div></div>
+    <p>Fă câte o funcționalitate pe rând. După fiecare, verifică în browser că merge, apoi salvează (pasul 7).</p>
+    <div class="label">Funcționalitate nouă</div>
+    <div class="prompt"><pre>/scaffold-feature
+Vreau să adăugăm: [descrie ce trebuie să vadă și să facă utilizatorul, pas cu pas].</pre><button class="copy" type="button">Copiază</button></div>
+    <div class="label">Când ceva nu merge</div>
+    <div class="prompt"><pre>Nu merge: [ce ai făcut] și [ce s-a întâmplat / ce eroare apare]. Găsește cauza și repar-o, apoi verifică singur că merge.</pre><button class="copy" type="button">Copiază</button></div>
+    <div class="label">Când trebuie o librărie sau un serviciu pe care nu-l știi</div>
+    <div class="prompt"><pre>/researcher
+Caută pe GitHub cea mai bună soluție pentru: [ex. „hartă interactivă”, „login cu Google”, „recunoaștere vocală”].</pre><button class="copy" type="button">Copiază</button></div>
+    <div class="label">Mai multe lucruri deodată</div>
+    <div class="prompt"><pre>/foreman
+Împarte și fă în paralel: [lista de lucruri]. Verifică la final că totul merge împreună.</pre><button class="copy" type="button">Copiază</button></div>
+    <label class="check"><input type="checkbox" data-id="s5a"><span>Funcționalitatea principală (cea din demo) merge.</span></label>
+    <label class="check"><input type="checkbox" data-id="s5b"><span>Am date de exemplu, ca ecranele să nu fie goale la demo.</span></label>
+    <label class="check"><input type="checkbox" data-id="s5c"><span>Arată bine (măcar pagina principală).</span></label>
+  </section>
+
+  <!-- 6 -->
+  <section class="card" data-step>
+    <div class="step-head"><span class="num">6</span><div><h2>Testează</h2><div class="when">După fiecare bucată mare și înainte de demo</div></div></div>
+    <div class="prompt"><pre>Folosește agentul tester ca să pornească aplicația și să încerce tot drumul din demo. Apoi folosește agentul reviewer ca să caute greșeli care ar putea strica demo-ul. Spune-mi ce ai găsit înainte să repari ceva.</pre><button class="copy" type="button">Copiază</button></div>
+    <label class="check"><input type="checkbox" data-id="s6a"><span>Testul a trecut, problemele găsite sunt reparate.</span></label>
+  </section>
+
+  <!-- 7 -->
+  <section class="card" data-step>
+    <div class="step-head"><span class="num">7</span><div><h2>Salvează progresul pe GitHub</h2><div class="when">Măcar o dată pe oră — și oricând ceva merge</div></div></div>
+    <div class="prompt"><pre>/git-workflow
+Salvează progresul cu un commit și fă push pe GitHub.</pre><button class="copy" type="button">Copiază</button></div>
+    <p class="note">Claude te întreabă înainte de push — răspunde „da”. Dacă vreodată totul se strică, poți reveni la ultima versiune salvată (vezi „Dacă te blochezi”).</p>
+    <label class="check"><input type="checkbox" data-id="s7a"><span>Am salvat cel puțin o dată.</span></label>
+  </section>
+
+  <!-- 8 -->
+  <section class="card" data-step>
+    <div class="step-head"><span class="num">8</span><div><h2>Pune aplicația online</h2><div class="when">Cu cel puțin 3 ore înainte de final</div></div></div>
+    <div class="prompt"><pre>/deploy-demo
+Pune aplicația online ca s-o poată deschide juriul, apoi treci prin lista de verificări dinainte de demo.</pre><button class="copy" type="button">Copiază</button></div>
+    <p class="note">Poate fi nevoie să-ți faci cont pe un site (ex. Vercel). Contul îl faci <b>tu</b>, Claude îți spune unde.</p>
+    <label class="check"><input type="checkbox" data-id="s8a"><span>Am un link public care merge (verificat dintr-o fereastră incognito).</span></label>
+    <label class="check"><input type="checkbox" data-id="s8b"><span>Am un plan B: aplicația pornită local + un video cu demo-ul.</span></label>
+  </section>
+
+  <!-- 9 -->
+  <section class="card" data-step>
+    <div class="step-head"><span class="num">9</span><div><h2>Pregătește prezentarea</h2><div class="when">Ultimele 2–3 ore</div></div></div>
+    <div class="prompt"><pre>/pitch
+Pregătește prezentarea. Avem [X] minute de prezentare. Fă README-ul, planul prezentării cu ce spun pe fiecare parte, scenariul pentru demo și textul pentru înscrierea proiectului.</pre><button class="copy" type="button">Copiază</button></div>
+    <label class="check"><input type="checkbox" data-id="s9a"><span>Am repetat prezentarea măcar o dată, cu cronometru.</span></label>
+    <label class="check"><input type="checkbox" data-id="s9b"><span>Am exersat demo-ul pe aplicația online.</span></label>
+  </section>
+
+  <!-- 10 -->
+  <section class="card" data-step>
+    <div class="step-head"><span class="num">10</span><div><h2>Predă proiectul</h2><div class="when">Înainte de termen — nu în ultimul minut</div></div></div>
+    <div class="prompt"><pre>Ajută-mă să predau proiectul. Regulile de predare sunt: [lipește ce cer organizatorii]. Verifică ce lipsește și fă un ultim commit și push.</pre><button class="copy" type="button">Copiază</button></div>
+    <p class="note">Repo-ul pe GitHub e <b>privat</b>. Dacă organizatorii cer link la cod, spune-i lui Claude să-l facă public — te va întreba înainte.</p>
+    <label class="check"><input type="checkbox" data-id="s10a"><span>Proiectul e predat.</span></label>
+  </section>
+
+  <section class="card help">
+    <h2>Dacă te blochezi</h2>
+    <dl>
+      <dt>Claude face altceva decât vrei</dt>
+      <dd>Apasă <code>Esc</code>, apoi scrie ce vrei, cât mai concret: ce trebuie să vadă utilizatorul și ce trebuie să se întâmple.</dd>
+      <dt>Totul s-a stricat și nu mai merge nimic</dt>
+      <dd><div class="prompt"><pre>Aplicația nu mai merge. Arată-mi ce s-a schimbat de la ultima salvare care funcționa și propune-mi cum revenim. Nu șterge nimic fără să mă întrebi.</pre><button class="copy" type="button">Copiază</button></div></dd>
+      <dt>Apare un mesaj că s-a terminat limita de folosire</dt>
+      <dd>Așteaptă până se resetează (mesajul îți spune când). Ca să nu se întâmple: lucrează pe bucăți mici și folosește <code>/token-budget</code> dacă vezi că se consumă repede.</dd>
+      <dt>Nu știi ce să răspunzi la o întrebare a lui Claude</dt>
+      <dd>Scrie: „Nu știu, alege tu varianta recomandată și explică-mi pe scurt de ce.”</dd>
+    </dl>
+  </section>
+</main>
+
+<script>
+(function () {
+  var KEY = "ghid-hackathon-bife";
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('.check input'));
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { state = {}; }
+
+  function save() {
+    try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {}
+  }
+  function render() {
+    var done = 0;
+    boxes.forEach(function (b) {
+      b.checked = !!state[b.dataset.id];
+      b.closest('.check').classList.toggle('on', b.checked);
+      if (b.checked) done++;
+    });
+    document.getElementById('count').textContent = done + ' / ' + boxes.length;
+    document.getElementById('bar').style.width = (boxes.length ? done / boxes.length * 100 : 0) + '%';
+  }
+  boxes.forEach(function (b) {
+    b.addEventListener('change', function () { state[b.dataset.id] = b.checked; save(); render(); });
+  });
+  document.getElementById('reset').addEventListener('click', function () {
+    if (confirm('Ștergi toate bifele?')) { state = {}; save(); render(); }
+  });
+  render();
+
+  document.querySelectorAll('.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = btn.parentNode.querySelector('pre').textContent;
+      function ok() {
+        btn.textContent = 'Copiat ✓'; btn.classList.add('done');
+        setTimeout(function () { btn.textContent = 'Copiază'; btn.classList.remove('done'); }, 1500);
+      }
+      function fallback() {
+        var ta = document.createElement('textarea');
+        ta.value = text; document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); ok(); } catch (e) {}
+        document.body.removeChild(ta);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(ok, fallback);
+      } else { fallback(); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
