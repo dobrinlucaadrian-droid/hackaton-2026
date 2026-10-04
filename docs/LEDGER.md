@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-04 22:50 — profilul de liceu mutat în test
+- Cerut: de pe pagina de start a testului să dispară lista de profiluri de liceu și să fie adăugată în test. Înainte: pagina principală fără specializări publicată la cererea echipei (prima încercare de publicare a dat eroare, a doua a reușit)
+- Făcut: `/test` are doar titlul, cei 3 pași și butonul „Începe testul”; profilul de liceu e acum primul pas din test („Primul pas — Ce profil de liceu urmezi?”), urmat de cele 12 întrebări, pasul bonus și „Unde vrei să studiezi?”; `/quiz` deschis direct pornește de la profil
+- Fișiere: `apps/web/app/test/page.tsx`, `apps/web/app/quiz/page.tsx`
+- Poartă: TRECUT (build, 55 teste, pornire); parcurs într-un browser separat, pe laptop și la lățime de telefon: start → profil (12 variante în 3 grupe) → Înapoi păstrează alegerea → 12 întrebări → pas bonus → unde → rezultat cu motivul despre profil → „Reia testul”; `/quiz` și `/rezultat` deschise direct; fără erori în consolă. Nepublicat
+- Urmează: publicare la cererea echipei; `/pitch`
+
 ### 2026-10-04 19:30 — specializările scoase de pe pagina principală
 - Cerut: pe pagina principală să nu mai apară specializările; să rămână strict pe pagina de specializări. Înainte: repo-ul GitHub făcut public la cererea echipei (istoricul verificat: fără chei sau parole)
 - Făcut: secțiunea „Ce poți studia” cu cele 10 cartonașe scoasă din `/`; rămâne pe `/specializari`, la care se ajunge din meniul de sus
@@ -206,6 +213,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 22:30 `564932a` feat: keep specializations only on their own page, not on the home page
 - 2026-10-04 18:02 `97391c5` docs: record the published decluttered version in the ledger
 - 2026-10-04 17:57 `9a716e4` feat: declutter pages - short home, specialization pages, collapsed result cards, compact filters and sheet
 - 2026-10-04 17:24 `9b62030` docs: presentation moved to 2026-10-05
@@ -235,5 +243,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 00:13 `3d0f662` docs: bring ledger and map up to date
 - 2026-10-04 00:12 `be94cb3` fix: Vercel login and env vars work from inside the Claude app only
 - 2026-10-04 00:09 `23b8667` feat: deploy through Vercel CLI, stack must be Vercel-compatible
-- 2026-10-04 00:05 `9b25b99` docs: deploy checklist reports in the gate's TRECUT/PICAT/NEVERIFICAT words
 <!-- commits:end -->

@@ -1,11 +1,11 @@
 "use client";
-// Quiz screen: one question per step with progress, encouragement and a floating illustration, then the "where" step.
+// Quiz screen: the high-school profile first, then one question per step with progress and encouragement, the activities step and the "where" step.
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Books, Cap, Diploma, Sparkle } from "@/components/Illustrations";
 import { ActivitiesStep } from "@/components/ActivitiesStep";
 import { Notice, Shell } from "@/components/Shell";
-import { questions } from "@/lib/data";
+import { profiles, questions } from "@/lib/data";
 import { loadDraft, saveDraft, type Draft } from "@/lib/session";
 import type { StudyPlace } from "@/lib/types";
 
@@ -15,8 +15,14 @@ const places: { value: StudyPlace; label: string }[] = [
   { value: "any", label: "Oriunde" },
 ];
 
-/** Short cheer under the progress bar, computed from how far along the student is. */
+const profileGroups = Array.from(new Set(profiles.map((p) => p.filiera))).map((f) => ({
+  name: f,
+  items: profiles.filter((p) => p.filiera === f),
+}));
+
+/** Short cheer under the progress bar, computed from how far along the student is (step counts questions only). */
 function encouragement(step: number, count: number): string {
+  if (step < 0) return "Începem cu liceul tău.";
   if (step === count) return "Ai terminat întrebările! Spune-ne și ce ai făcut până acum.";
   if (step > count) return "Aproape gata! Mai spune-ne un singur lucru.";
   if (step === 0) return "Bun început!";
@@ -42,13 +48,6 @@ export default function QuizPage() {
   }, []);
 
   if (!draft) return <Shell><p className="mt-10 text-center text-ink-soft">Se încarcă...</p></Shell>;
-  if (!draft.profileId) {
-    return (
-      <Shell>
-        <Notice title="Hai să începem de la început" text="Nu știm încă ce profil de liceu urmezi. Alege-l pe prima pagină." href="/test" cta="Alege profilul" />
-      </Shell>
-    );
-  }
   if (questions.length === 0) {
     return (
       <Shell>
@@ -57,15 +56,24 @@ export default function QuizPage() {
     );
   }
 
-  const total = questions.length + 2; // questions + activities step + where step
-  const isActivities = step === questions.length;
-  const isWhere = step > questions.length;
-  const q = questions[step];
+  // Steps: 0 = high-school profile, 1..N = questions, N+1 = activities, N+2 = where.
+  const total = questions.length + 3;
+  const qi = step - 1; // index of the current question
+  const isProfile = step === 0;
+  const isActivities = qi === questions.length;
+  const isWhere = qi > questions.length;
+  const q = questions[qi];
   const Art = ART[step % ART.length];
 
   function update(next: Draft): boolean {
     setDraft(next);
     return saveDraft(next);
+  }
+
+  function pickProfile(profileId: string) {
+    if (!draft) return;
+    update({ ...draft, profileId });
+    setStep(1);
   }
 
   function pickChoice(index: number) {
@@ -76,6 +84,10 @@ export default function QuizPage() {
 
   function pickWhere(where: StudyPlace) {
     if (!draft) return;
+    if (!draft.profileId) {
+      setStep(0); // the profile is needed for the result
+      return;
+    }
     saveDraft({ ...draft, where });
     router.push("/rezultat");
   }
@@ -90,7 +102,7 @@ export default function QuizPage() {
       <div className="mt-2 flex items-start justify-between gap-4">
         <div className="flex-1">
           <p className="text-sm font-extrabold text-primary">
-            {isWhere ? "Ultimul pas" : isActivities ? "Pasul bonus" : `Întrebarea ${step + 1} din ${questions.length}`}
+            {isProfile ? "Primul pas" : isWhere ? "Ultimul pas" : isActivities ? "Pasul bonus" : `Întrebarea ${qi + 1} din ${questions.length}`}
           </p>
           <div
             role="progressbar"
@@ -106,7 +118,7 @@ export default function QuizPage() {
             />
           </div>
           <p className="mt-2 font-bold text-teal-ink" aria-live="polite">
-            {encouragement(step, questions.length)}
+            {encouragement(qi, questions.length)}
           </p>
         </div>
         <div key={step} className="float slide-in shrink-0">
@@ -116,10 +128,35 @@ export default function QuizPage() {
 
       <div key={step} className="slide-in">
         <h1 className="mt-6 text-3xl font-black leading-tight tracking-tight text-ink sm:text-4xl">
-          {isWhere ? "Unde vrei să studiezi?" : isActivities ? "Ce ai făcut până acum?" : q.text}
+          {isProfile ? "Ce profil de liceu urmezi?" : isWhere ? "Unde vrei să studiezi?" : isActivities ? "Ce ai făcut până acum?" : q.text}
         </h1>
 
-        {isActivities ? (
+        {isProfile ? (
+          <div className="mt-2">
+            {profileGroups.map((g) => (
+              <fieldset key={g.name} className="mt-5">
+                <legend className="text-sm font-extrabold uppercase tracking-wide text-primary">{g.name}</legend>
+                <div className="mt-2 grid gap-2 sm:grid-cols-2">
+                  {g.items.map((pr) => (
+                    <button
+                      key={pr.id}
+                      type="button"
+                      aria-pressed={pr.id === draft.profileId}
+                      onClick={() => pickProfile(pr.id)}
+                      className={`opt min-h-12 rounded-2xl border-2 px-4 py-3 text-left font-semibold ${
+                        pr.id === draft.profileId
+                          ? "border-primary bg-primary-tint text-primary-dark"
+                          : "border-transparent bg-card text-ink-soft ring-1 ring-line hover:ring-primary/50"
+                      }`}
+                    >
+                      {pr.name}
+                    </button>
+                  ))}
+                </div>
+              </fieldset>
+            ))}
+          </div>
+        ) : isActivities ? (
           <>
             <p className="mt-2 text-ink-soft">
               Concursuri, voluntariat, activități — ne ajută să te cunoaștem mai bine. Poți sări peste.
@@ -179,7 +216,7 @@ export default function QuizPage() {
             onClick={() => router.push("/test")}
             className="min-h-11 rounded-full border-2 border-primary px-5 py-2 font-bold text-primary hover:bg-primary-tint"
           >
-            ← Schimbă profilul
+            ← Înapoi la început
           </button>
         )}
       </div>

@@ -83,7 +83,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/quiz  (1 files)
 
-- `page.tsx` (189) — Quiz screen: one question per step with progress, encouragement and a floating illustration, then the "where" step.. Routes: /quiz. Exports: QuizPage
+- `page.tsx` (226) — Quiz screen: the high-school profile first, then one question per step with progress and encouragement, the activities step and the "where" step.. Routes: /quiz. Exports: QuizPage
 
 ### apps/web/app/rezultat  (1 files)
 
@@ -103,7 +103,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/test  (1 files)
 
-- `page.tsx` (128) — Test start screen (moved from the home page): big headline, 3-step explanation and the high-school profile picker.. Routes: /test. Exports: Home
+- `page.tsx` (82) — Test start screen: big headline, the 3-step explanation and the button that starts the quiz (the profile is asked inside the quiz).. Routes: /test. Exports: Home
 
 ### apps/web/app/universitati/[id]  (1 files)
 
