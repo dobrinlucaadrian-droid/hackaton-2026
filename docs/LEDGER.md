@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-04 17:55 — reparații după verificarea codului
+- Cerut: verificarea întregii lucrări înainte de publicare (`reviewer`)
+- Făcut: nimic grav găsit; reparate trei lucruri mici în căutare: linkurile din lista lumii se afișează doar dacă sunt adrese web obișnuite; cât se încarcă lista apare „Se caută…”, iar dacă nu se poate încărca apare un mesaj clar; `?prestigiu=national` nu mai e numărat ca filtru
+- Fișiere: `apps/web/components/UniversitySearch.tsx`
+- Poartă: TRECUT (build, 55 teste, pornire); în browser: căutarea „oxford” (mesajul de încărcare, apoi rezultatele), adrese cu valori greșite (stare goală prietenoasă), filtre România + fără taxă + cămin (10 rezultate), panoul de filtre, butonul Înapoi al browserului
+- Urmează: publicare cu acordul echipei; `/pitch`
+
 ### 2026-10-04 17:40 — pagină principală, căutare, filtre top 10 și fișe de universități
 - Cerut: pagină principală cu lupă de căutare, toate specializările cu detalii, filtre (țară, specializare, buget, prestigiu, admitere, burse, cămin, certificate) cu top 10, fișă cu informații utile pentru fiecare universitate (admitere, avantaje, dezavantaje), Ivy League și cât mai multe universități din România; testul pe pagina lui, iar după test specializările potrivite și drumul spre universitățile care le au. Echipa a anunțat că ora prezentării s-a schimbat și că nu mai e grabă
 - Făcut: `/` pagină principală (căutare, butoane spre test și top 10, 206 specializări în 10 categorii cu filtru); `/test` testul; `/universitati` căutare + filtre + top 10, cu starea în adresă; `/universitati/[id]` fișa (119 universități: 62 din România, 57 din străinătate, cele 8 Ivy League); lista lumii (10.248, doar nume, țară, site) la căutare; la rezultat: 3 specializări potrivite pe domeniu și buton spre universități; meniu sus pe toate paginile; pagină 404 în română
@@ -178,6 +185,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 17:19 `46b3584` feat: home page with search, specializations, top-10 filters and university profile sheets
 - 2026-10-04 15:48 `a30bf9b` feat: add Zara Faflei's opinion and photo
 - 2026-10-04 15:36 `140f3a3` feat: show students from the same university side by side
 - 2026-10-04 15:32 `53386e1` feat: add two more student opinions
@@ -207,5 +215,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-03 23:53 `cdd9525` docs: guide prompts point Claude at the map and ledger
 - 2026-10-03 23:51 `733b7e4` docs: update team guide; map now orients new sessions and loads via CLAUDE.md
 - 2026-10-03 23:48 `8878279` docs: work directly on main, no branches by default
-- 2026-10-03 23:45 `18dd146` feat: add generated codebase map and ledger, enforced by the gate
 <!-- commits:end -->

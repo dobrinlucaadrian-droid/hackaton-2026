@@ -13,16 +13,18 @@ const PRESTIGE_CHOICES: Prestige[] = ["ivy", "top", "international"];
 const PRESTIGE_CHIP: Record<string, string> = { ivy: "Ivy League", top: "De top mondial", international: "Cunoscută internațional" };
 
 let worldCache: WorldUniversity[] | null = null;
-async function loadWorld(): Promise<WorldUniversity[]> {
+/** Loads the world list once; resolves to null when it cannot be loaded (the next search retries). */
+async function loadWorld(): Promise<WorldUniversity[] | null> {
   if (worldCache) return worldCache;
   try {
     const res = await fetch("/world-universities.json");
-    if (!res.ok) return [];
+    if (!res.ok) return null;
     const data: unknown = await res.json();
-    worldCache = Array.isArray(data) ? (data as WorldUniversity[]) : [];
+    if (!Array.isArray(data)) return null;
+    worldCache = data as WorldUniversity[];
     return worldCache;
   } catch {
-    return [];
+    return null;
   }
 }
 
@@ -41,7 +43,7 @@ function readFilters(p: URLSearchParams): Filters {
   const buget = pick<Budget>(p.get("buget"), BUDGET_LABEL);
   if (buget) f.budget = buget;
   const prestigiu = pick<Prestige>(p.get("prestigiu"), PRESTIGE_LABEL);
-  if (prestigiu) f.prestige = prestigiu;
+  if (prestigiu && prestigiu !== "national") f.prestige = prestigiu;
   const admitere = pick<AdmissionType>(p.get("admitere"), ADMISSION_LABEL);
   if (admitere) f.admissionType = admitere;
   if (p.get("burse") === "1") f.scholarships = true;
@@ -96,7 +98,7 @@ export function UniversitySearch() {
   const filters = useMemo(() => readFilters(params), [params]);
   const activeCount = Object.keys(filters).length;
   const [panel, setPanel] = useState(false);
-  const [world, setWorld] = useState<{ q: string; items: WorldUniversity[] } | null>(null);
+  const [world, setWorld] = useState<{ q: string; items: WorldUniversity[]; failed: boolean } | null>(null);
 
   function go(next: URLSearchParams) {
     const s = next.toString();
@@ -132,15 +134,18 @@ export function UniversitySearch() {
     if (!wantWorld) return;
     let cancelled = false;
     loadWorld().then((list) => {
-      if (!cancelled) setWorld({ q, items: searchWorld(list, q, 20) });
+      if (!cancelled) setWorld({ q, items: list ? searchWorld(list, q, 20) : [], failed: list === null });
     });
     return () => {
       cancelled = true;
     };
   }, [wantWorld, q]);
-  const worldItems = wantWorld && world?.q === q ? world.items : [];
+  const worldReady = wantWorld && world?.q === q;
+  const worldFailed = worldReady && world?.failed === true;
+  const worldItems = worldReady && world ? world.items : [];
   const known = new Set(results.map((u) => u.name.toLowerCase()));
-  const worldShown = worldItems.filter((w) => !known.has(w.n.toLowerCase()));
+  // The world list is third-party data: only plain web links are shown.
+  const worldShown = worldItems.filter((w) => /^https?:\/\//i.test(w.w) && !known.has(w.n.toLowerCase()));
 
   const grouped = categories
     .map((c) => ({ c, ds: c.domainIds.map((id) => domains.find((d) => d.id === id)).filter((d): d is NonNullable<typeof d> => !!d) }))
@@ -305,6 +310,10 @@ export function UniversitySearch() {
           <h2 id="alte-uni" className="text-2xl font-black tracking-tight text-ink">Alte universități din lume</h2>
           {activeCount > 0 ? (
             <p className="mt-2 text-ink-soft">Lista de mai jos nu poate fi filtrată. Șterge filtrele ca să o vezi.</p>
+          ) : !worldReady ? (
+            <p className="mt-2 text-ink-soft">Se caută în lista universităților din lume…</p>
+          ) : worldFailed ? (
+            <p className="mt-2 text-ink-soft">Lista completă a universităților din lume nu s-a putut încărca. Încearcă din nou peste puțin timp.</p>
           ) : worldShown.length === 0 ? (
             <p className="mt-2 text-ink-soft">Nu am găsit alte universități pentru această căutare.</p>
           ) : (

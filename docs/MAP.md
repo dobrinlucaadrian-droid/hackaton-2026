@@ -119,7 +119,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `UniversityBadges.tsx` (23) — Small coloured badges for a university's prestige and budget level, shared by result cards and the profile sheet.. Exports: PrestigeBadge, BudgetBadge
 - `UniversityCard.tsx` (73) — One university result card: badges, matching domain chips, short about text, admission/scholarship/dorm rows and a link to the full sheet.. Exports: UniversityCard
 - `UniversityList.tsx` (56) — Labelled list of universities with links; shows 5 first and a "Vezi toate" toggle.. Exports: UniversityList
-- `UniversitySearch.tsx` (331) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
+- `UniversitySearch.tsx` (340) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
 - `WhatIf.tsx` (69) — Collapsible "Ce-ar fi dacă?" panel: one slider per inclination, controlled by the result page.. Exports: WhatIf
 - `domainStyle.ts` (67) — Colour family and emoji for every study domain id, used on the result cards.. Exports: FAMILY_CLASSES, domainStyle
 
