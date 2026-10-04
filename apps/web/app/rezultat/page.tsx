@@ -2,6 +2,8 @@
 // Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { Confetti } from "@/components/Confetti";
+import { Diploma, Sparkle } from "@/components/Illustrations";
 import { MatchCard } from "@/components/MatchCard";
 import { Notice, Shell } from "@/components/Shell";
 import { WhatIf } from "@/components/WhatIf";
@@ -49,7 +51,7 @@ export default function ResultPage() {
     }
   }, [state, values, changed]);
 
-  if (state.status === "loading") return <Shell><p className="mt-10 text-center text-navy-soft">Se încarcă...</p></Shell>;
+  if (state.status === "loading") return <Shell><p className="mt-10 text-center text-ink-soft">Se încarcă...</p></Shell>;
   if (state.status === "empty") {
     return (
       <Shell>
@@ -69,9 +71,15 @@ export default function ResultPage() {
 
   return (
     <Shell wide>
-      <div className="mx-auto max-w-2xl text-center">
-        <h1 className="text-3xl font-extrabold text-navy sm:text-4xl">Domeniile tale potrivite</h1>
-        <p className="mt-2 text-navy-soft">Iată cele 3 domenii care ți se potrivesc cel mai bine.</p>
+      <Confetti />
+      <div className="rise mx-auto max-w-2xl text-center">
+        <div className="flex items-center justify-center gap-3">
+          <Sparkle className="twinkle h-6 w-6 fill-teal" />
+          <Diploma className="float h-16 w-16" />
+          <Sparkle className="twinkle h-5 w-5 fill-violet" />
+        </div>
+        <h1 className="mt-2 text-4xl font-black tracking-tighter text-ink sm:text-5xl">Domeniile tale potrivite</h1>
+        <p className="mt-2 text-ink-soft">Iată cele 3 domenii care ți se potrivesc cel mai bine.</p>
       </div>
 
       {values && (
@@ -85,7 +93,7 @@ export default function ResultPage() {
 
       {changed && (
         <p className="mx-auto mt-6 max-w-2xl text-center">
-          <span className="inline-block rounded-full bg-burgundy px-4 py-1 text-sm font-bold text-cream">
+          <span className="inline-block rounded-full bg-violet-ink px-4 py-1 text-sm font-bold text-white">
             Rezultat modificat de tine
           </span>
         </p>
@@ -93,7 +101,7 @@ export default function ResultPage() {
 
       <div className="mx-auto mt-6 flex max-w-2xl flex-col gap-6">
         {shown.map((m, i) => (
-          <div key={m.domain.id}>
+          <div key={m.domain.id} className="rise" style={{ animationDelay: `${i * 120}ms` }}>
             <div key={i} className={changed ? "card-flash" : undefined}>
               <MatchCard match={m} rank={i + 1} />
             </div>
@@ -101,12 +109,12 @@ export default function ResultPage() {
         ))}
       </div>
 
-      <p className="mx-auto mt-8 max-w-2xl rounded-2xl bg-burgundy-tint p-4 text-sm text-burgundy-dark" role="note">
+      <p className="mx-auto mt-8 max-w-2xl rounded-2xl bg-primary-tint p-4 text-sm text-primary-dark" role="note">
         Informațiile sunt orientative. Verifică mereu site-ul facultății pentru condiții, termene și taxe actuale.
       </p>
 
       <div className="mt-8 text-center">
-        <Link href="/" onClick={clearDraft} className="inline-block rounded-2xl bg-burgundy px-8 py-3 font-bold text-cream hover:bg-burgundy-dark">
+        <Link href="/" onClick={clearDraft} className="inline-flex min-h-12 items-center rounded-full border-2 border-primary px-8 py-3 font-black text-primary hover:bg-primary-tint">
           Reia testul
         </Link>
       </div>

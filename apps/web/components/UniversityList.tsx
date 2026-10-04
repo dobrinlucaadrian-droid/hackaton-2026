@@ -10,19 +10,19 @@ export function UniversityList({ title, items, abroad }: { title: string; items:
   const shown = all ? items : items.slice(0, LIMIT);
   return (
     <div className="mt-4">
-      <h4 className="text-sm font-semibold uppercase tracking-wide text-burgundy-dark">{title}</h4>
+      <h4 className="text-sm font-semibold uppercase tracking-wide text-primary-dark">{title}</h4>
       <ul className="mt-2 space-y-2">
         {shown.map((u) => (
-          <li key={u.id} className="rounded-xl bg-sand px-4 py-3">
+          <li key={u.id} className="rounded-xl bg-paper px-4 py-3">
             <a
               href={u.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-burgundy-dark underline decoration-burgundy/40 underline-offset-2 hover:text-burgundy-dark"
+              className="font-semibold text-primary-dark underline decoration-primary/40 underline-offset-2 hover:text-primary-dark"
             >
               {u.name}
             </a>
-            <p className="text-sm text-navy-soft">
+            <p className="text-sm text-ink-soft">
               {abroad ? `${u.city}, ${u.country}` : u.city}
               {abroad && u.language ? ` · limba: ${u.language}` : ""}
               {abroad && u.tuition ? ` · taxe: ${u.tuition}` : ""}
@@ -35,7 +35,7 @@ export function UniversityList({ title, items, abroad }: { title: string; items:
           type="button"
           onClick={() => setAll(!all)}
           aria-expanded={all}
-          className="mt-2 rounded-lg px-3 py-1 text-sm font-semibold text-burgundy-dark hover:bg-burgundy-tint"
+          className="mt-2 rounded-lg px-3 py-1 text-sm font-semibold text-primary-dark hover:bg-primary-tint"
         >
           {all ? "Arată mai puține" : `Vezi toate (${items.length})`}
         </button>

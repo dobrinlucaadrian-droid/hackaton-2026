@@ -76,28 +76,31 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/app  (4 files)
 
 - `favicon.ico`
-- `globals.css` (43) — _no description: add a first-line comment_
+- `globals.css` (127) — _no description: add a first-line comment_
 - `layout.tsx` (31) — _no description: add a first-line comment_. Exports: metadata, RootLayout
-- `page.tsx` (111) — Start screen: tagline, 3-step explanation and the high-school profile picker.. Routes: /. Exports: Home
+- `page.tsx` (128) — Start screen: big headline with hero illustration, 3-step explanation and the high-school profile picker.. Routes: /. Exports: Home
 
 ### apps/web/app/quiz  (1 files)
 
-- `page.tsx` (121) — Quiz screen: one question per step, then the "where do you want to study" step.. Routes: /quiz. Exports: QuizPage
+- `page.tsx` (156) — Quiz screen: one question per step with progress, encouragement and a floating illustration, then the "where" step.. Routes: /quiz. Exports: QuizPage
 
 ### apps/web/app/rezultat  (1 files)
 
-- `page.tsx` (116) — Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /rezultat. Exports: ResultPage
+- `page.tsx` (124) — Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /rezultat. Exports: ResultPage
 
 ### apps/web/app/studenti  (1 files)
 
-- `page.tsx` (53) — Student voices: real opinions from students and graduates (name, faculty, year or graduate, their words).. Routes: /studenti. Exports: metadata, Students
+- `page.tsx` (63) — Student voices: real opinions from students and graduates (name, faculty, year or graduate, their words).. Routes: /studenti. Exports: metadata, Students
 
-### apps/web/components  (4 files)
+### apps/web/components  (7 files)
 
-- `MatchCard.tsx` (103) — One result card: domain, percent ring, reasons, admission, careers and the university lists.. Exports: MatchCard
-- `Shell.tsx` (38) — Page frame shared by all screens: header with the UniPath logo and a centered content column.. Exports: Shell, Notice
+- `Confetti.tsx` (41) — A short burst of cool-coloured confetti, shown once when mounted and removed after about 3 seconds.. Exports: Confetti
+- `Illustrations.tsx` (88) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots and the start-page hero.. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene
+- `MatchCard.tsx` (113) — One result card: tinted header band with emoji and animated percent ring, reasons, admission, careers and universities.. Exports: MatchCard
+- `Shell.tsx` (40) — Page frame shared by all screens: header with the UniPath logo and three-dots motif, and a centered content column.. Exports: Shell, Notice
 - `UniversityList.tsx` (46) — Labelled list of universities with links; shows 5 first and a "Vezi toate" toggle.. Exports: UniversityList
 - `WhatIf.tsx` (69) — Collapsible "Ce-ar fi dacă?" panel: one slider per inclination, controlled by the result page.. Exports: WhatIf
+- `domainStyle.ts` (67) — Colour family and emoji for every study domain id, used on the result cards.. Exports: FAMILY_CLASSES, domainStyle
 
 ### apps/web/data  (5 files)
 
@@ -115,6 +118,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `session.ts` (42) — Keeps the student's answers in sessionStorage between pages (safe on the server).. Exports: loadDraft, saveDraft, clearDraft, toAnswers
 - `types.ts` (82) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
 
-### apps/web/public  (1 files)
+### apps/web/public  (2 files)
 
 - `logo.jpg`
+- `logo.png`

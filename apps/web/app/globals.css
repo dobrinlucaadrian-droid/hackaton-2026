@@ -1,16 +1,27 @@
 @import "tailwindcss";
 
-/* Palette: beige, burgundy and navy, sampled from the logo (public/logo.jpg). Tune the whole site here. */
+/* Cool palette: paper, card, ink, one strong primary and four accents (each with a tint and a dark ink for text). Tune the whole site here. */
 @theme {
-  --color-beige: #f0e3d2;
-  --color-cream: #fbf5ea;
-  --color-sand: #e6d7c2;
-  --color-line: #d6c6ad;
-  --color-navy: #1a2a4c;
-  --color-navy-soft: #3d4a66;
-  --color-burgundy: #61122d;
-  --color-burgundy-dark: #480b20;
-  --color-burgundy-tint: #f1dfe3;
+  --color-paper: #f2f6fc;
+  --color-card: #ffffff;
+  --color-line: #d3dcee;
+  --color-ink: #1a2a4c;
+  --color-ink-soft: #44557a;
+  --color-primary: #3b5bdb;
+  --color-primary-dark: #2c46b0;
+  --color-primary-tint: #e3e9fc;
+  --color-teal: #0ca5a5;
+  --color-teal-ink: #06676a;
+  --color-teal-tint: #d8f3f2;
+  --color-sky: #1e9be0;
+  --color-sky-ink: #0b62a0;
+  --color-sky-tint: #dbeffc;
+  --color-violet: #7c5ce0;
+  --color-violet-ink: #523aba;
+  --color-violet-tint: #e8e2fb;
+  --color-mint: #2bb673;
+  --color-mint-ink: #12744a;
+  --color-mint-tint: #d9f4e6;
 }
 
 @theme inline {
@@ -19,24 +30,97 @@
 }
 
 body {
-  background: var(--color-beige);
-  color: var(--color-navy);
+  background: var(--color-paper);
+  color: var(--color-ink);
   font-family: var(--font-sans);
 }
 
+/* Halftone dots fading in from two corners. */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  width: min(80vw, 640px);
+  height: min(80vw, 640px);
+  pointer-events: none;
+  background-image: radial-gradient(circle, var(--color-primary) 1.3px, transparent 1.8px);
+  background-size: 14px 14px;
+  opacity: 0.22;
+}
+body::before {
+  top: 0;
+  left: 0;
+  mask-image: radial-gradient(circle at 0 0, #000, transparent 70%);
+}
+body::after {
+  right: 0;
+  bottom: 0;
+  mask-image: radial-gradient(circle at 100% 100%, #000, transparent 70%);
+}
+
 :focus-visible {
-  outline: 3px solid var(--color-burgundy);
+  outline: 3px solid var(--color-primary);
   outline-offset: 2px;
 }
 
-/* What-if sliders: burgundy thumb/track and a short highlight when a card changes. */
+/* What-if sliders. */
 input[type="range"] {
-  accent-color: var(--color-burgundy);
-  height: 2rem;
+  accent-color: var(--color-primary);
+  height: 2.25rem;
   cursor: pointer;
 }
+
+/* Motion (all switched off below for reduced motion). */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes slide-in {
+  from { opacity: 0; transform: translateX(28px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1.5deg); }
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
 @keyframes card-flash {
-  0% { transform: scale(0.97); opacity: 0.4; box-shadow: 0 0 0 4px var(--color-burgundy-tint); }
+  0% { transform: scale(0.97); opacity: 0.4; box-shadow: 0 0 0 4px var(--color-primary-tint); }
   100% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 0 transparent; }
 }
+@keyframes ring-in {
+  from { stroke-dashoffset: var(--c); }
+}
+@keyframes confetti-fall {
+  0% { transform: translate3d(0, -10vh, 0) rotate(0deg); opacity: 1; }
+  100% { transform: translate3d(var(--dx), 105vh, 0) rotate(var(--rot)); opacity: 0; }
+}
+.rise { animation: rise 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both; animation-delay: var(--d, 0ms); }
+.slide-in { animation: slide-in 0.35s ease-out both; }
+.float { animation: float 6s ease-in-out infinite; }
+.twinkle { animation: twinkle 2.4s ease-in-out infinite; animation-delay: var(--d, 0ms); }
 .card-flash { animation: card-flash 0.5s ease-out; }
+.ring-anim { animation: ring-in 1.1s ease-out both; transition: stroke-dashoffset 0.5s ease; }
+.confetti-piece {
+  position: absolute;
+  top: 0;
+  animation: confetti-fall var(--t, 2s) ease-in both;
+  animation-delay: var(--d, 0ms);
+}
+.bar-anim { transition: width 0.5s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.opt { transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease; }
+.opt:hover { transform: translateY(-2px) scale(1.01); box-shadow: 0 8px 20px -8px rgb(59 91 219 / 0.45); }
+.opt:active { transform: scale(0.97); }
+
+@media (prefers-reduced-motion: reduce) {
+  .rise, .slide-in, .float, .twinkle, .card-flash, .ring-anim, .confetti-piece, .opt, .bar-anim {
+    animation: none !important;
+    transition: none !important;
+  }
+  .opt:hover, .opt:active { transform: none; }
+  .confetti-piece { display: none; }
+}

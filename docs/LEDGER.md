@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-04 14:20 — aspect nou, vesel, în culori reci
+- Cerut: site mai vesel și colorat, în stilul unui șablon arătat de echipă (titluri groase, fundal cu puncte, desene, animații), dar în culori reci cu mai multe nuanțe
+- Făcut: paletă rece (bleumarin, albastru, turcoaz, violet, albastru-cer, mentă) cu nume noi de culori; culoare și emoji pe familii de domenii; desene proprii (tocă, drum, cărți, diplomă, steluțe); animații scurte, confetti la rezultat; mesaje de încurajare în test; logo cu fundal transparent (`public/logo.png`). Funcționarea e neschimbată
+- Fișiere: `apps/web/app/globals.css`, `apps/web/app/**/page.tsx`, `apps/web/components/**` (noi: `Illustrations.tsx`, `Confetti.tsx`, `domainStyle.ts`), `apps/web/public/logo.png`
+- Poartă: TRECUT (build, 18 teste, pornire); în browser, pe laptop și la 375px: tot traseul, cursoare, revenire, „Reia testul”, pagina studenților, nimic nu iese din ecran, fără erori în consolă. NEVERIFICAT: cum arată ecranele întregi de întrebări și rezultat (unealta de capturi prinde doar un colț; văzut întreg doar ecranul de start) — de privit de echipă. Nepublicat
+- Urmează: echipa se uită și aprobă → republicare; părerile studenților; `/pitch`
+
 ### 2026-10-04 13:55 — buton „Înapoi” pe pagina studenților
 - Cerut: buton de mers înapoi pe pagina „Ce spun studenții”
 - Făcut: butonul „← Înapoi”, sus pe pagină, duce la pagina de început
@@ -115,6 +122,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 13:37 `da25839` feat: back button on the student voices page
 - 2026-10-04 13:35 `6aabf5a` fix: slider changes made at the same instant no longer overwrite each other
 - 2026-10-04 13:31 `ba2ae6b` docs: phone test confirmed by the team
 - 2026-10-04 13:29 `fe42b3d` feat: student voices page, empty until the team brings real opinions
@@ -144,5 +152,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-03 23:07 `15c0a6e` docs: add step-by-step hackathon guide in Romanian
 - 2026-10-03 23:03 `24660c9` chore: cap ideator budget and switch it to sonnet
 - 2026-10-03 23:01 `e83842b` feat: add ideate skill and ideator agent for choosing the idea
-- 2026-10-03 22:56 `b14577a` feat: add researcher skill and agent for GitHub research
 <!-- commits:end -->
