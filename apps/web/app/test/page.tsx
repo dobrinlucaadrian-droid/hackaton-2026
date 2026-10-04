@@ -32,7 +32,7 @@ export default function QuestionnaireStart() {
         </div>
         <h1 className="mt-3 text-4xl font-black tracking-tighter text-ink sm:text-5xl">Chestionarul UniPath</h1>
         <p className="mx-auto mt-3 max-w-md text-lg text-ink-soft">
-          Răspunzi la {questions.length} întrebări scurte și afli ce domenii ți se potrivesc. Durează cam 5 minute.
+          Răspunzi la {questions.length} situații din viața de zi cu zi și afli ce domenii ți se potrivesc. Durează cam 6 minute.
         </p>
         <button
           type="button"

@@ -113,7 +113,9 @@ export default function ResultPage() {
       </div>
 
       <p className="mx-auto mt-8 max-w-2xl rounded-2xl bg-primary-tint p-4 text-sm text-primary-dark" role="note">
-        Informațiile sunt orientative. Verifică mereu site-ul facultății pentru condiții, termene și taxe actuale.
+        Chestionarul nu este un test psihologic validat: rezultatul e un punct de pornire, nu un verdict. Vorbește și cu
+        consilierul școlar, cu părinții și cu studenți de la facultățile care te atrag. Informațiile sunt orientative —
+        verifică mereu site-ul facultății pentru condiții, termene și taxe actuale.
       </p>
 
       <div className="mt-8 text-center">

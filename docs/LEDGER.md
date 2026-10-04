@@ -5,7 +5,7 @@ lista de commit-uri de la final se reface singură.
 
 ## Acum lucrăm la
 
-- **Scop:** UniPath — ghid între liceu și facultate (tema „The Middle Man”). Prezentarea e mâine, 2026-10-05 (ora nu a fost spusă)
+- **Scop:** UniPath — ghid între liceu și facultate (tema „The Middle Man”). Prezentarea e azi, 2026-10-05 (ora nu a fost spusă)
 - **Unde:** aplicația e în `apps/web` (pagini: `/`, `/specializari`, `/specializari/[categorie]`, `/universitati`, `/universitati/[id]`, `/test`, `/quiz`, `/rezultat`, `/studenti`), publicată la https://unipath-taupe-mu.vercel.app
 - **Urmează:** `/pitch` — prezentarea și scenariul de demo (prezentarea e pe 2026-10-05). Pagina studenților are 14 păreri reale; fără poză: Alexandru Badea și Alexa Munteanu
 - **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
@@ -20,6 +20,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-05 01:23 — chestionar nou: 18 situații, pe baza unei documentări
+- Cerut: întrebări mai complexe și mai interesante în chestionar, documentate din cât mai multe surse, ca rezultatul să fie cât mai precis; echipa a ales 18 întrebări, cu un singur răspuns pe întrebare, de tip situație/dilemă
+- Făcut: cele 12 întrebări vechi înlocuite cu 18 situații concrete din viața unui licean (proiect de grup, internet picat, regulă nedreaptă, job de vară…), fiecare cu 4–5 variante; documentare din 17 surse deschise (modelul Holland RIASEC, O*NET Interest Profiler, Open RIASEC, studii despre întrebările cu alegere forțată, surse românești de consiliere) păstrată în `docs/quiz-research.md`; nu am copiat întrebări din testele existente (au licențe), sunt scrise de la zero; ponderile echilibrate ca nicio înclinație să nu fie favorizată de răspunsuri la întâmplare (înainte „lucru cu oamenii” ieșea prea des); fiecare înclinație e acum principală în cel puțin 7 variante; pagina de start spune „18 situații… cam 6 minute”; pe pagina de rezultat scrie cinstit că nu e un test psihologic validat, ci un punct de pornire. Testul care cerea „10–12 întrebări” a fost schimbat la noua cerință a echipei (16–20) și s-a adăugat unul care cere minimum 6 variante principale pe înclinație
+- Fișiere: `apps/web/data/questions.json`, `apps/web/lib/match.test.ts`, `apps/web/app/test/page.tsx`, `apps/web/app/rezultat/page.tsx`, `docs/quiz-research.md` (nou)
+- Poartă: TRECUT (build, 58 teste, pornire); simulare cu 30.000 de elevi cu răspunsuri la întâmplare: toate cele 40 de domenii pot ieși pe locul 1; 10 elevi „tip” (câte unul pe înclinație) primesc domenii logice (ex. logică → Informatică, Fizică, Matematică; grijă → Asistență medicală, Medicină, Medicină veterinară); chestionarul parcurs cap-coadă într-un browser separat, pe laptop și la lățime de telefon: 18 întrebări diferite, pasul bonus, „unde”, rezultat, „Reia chestionarul”, fără erori. NEVERIFICAT: pe un telefon real; cu liceeni reali (chestionarul nu e validat științific)
+- Urmează: publicare la cererea echipei; `/pitch`
 
 ### 2026-10-05 02:40 — „Surprinde-mă” înlocuit cu alegerea după interese
 - Cerut: echipei nu îi place jocul cu specializarea la întâmplare: UniPath ghidează liceenii spre ce li se potrivește, nu „dă cu zarul”. Înainte: versiunea cu un singur logo și cu „Surprinde-mă” publicată la cererea echipei
@@ -283,6 +290,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-05 00:59 `482966a` feat: replace the random card with a guided interest picker on the specializations page
 - 2026-10-05 00:51 `4c91def` feat: illustration and a surprise-me card on the specializations page
 - 2026-10-05 00:48 `86d84fe` feat: keep a single logo on the home page
 - 2026-10-05 00:27 `3551c80` feat: questionnaire start page with its own title and the start button on top
@@ -312,5 +320,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 13:35 `6aabf5a` fix: slider changes made at the same instant no longer overwrite each other
 - 2026-10-04 13:31 `ba2ae6b` docs: phone test confirmed by the team
 - 2026-10-04 13:29 `fe42b3d` feat: student voices page, empty until the team brings real opinions
-- 2026-10-04 13:13 `45755bb` docs: add QR code for the public address
 <!-- commits:end -->

@@ -64,14 +64,23 @@ describe("seeded data", () => {
     }
   });
 
-  it("has 10-12 questions with 3-5 options each and unique ids", () => {
-    expect(questions.length).toBeGreaterThanOrEqual(10);
-    expect(questions.length).toBeLessThanOrEqual(12);
+  // The team chose 18 scenario questions on 2026-10-05 (was 10-12): at least 3-4 items per trait are needed for a usable short scale.
+  it("has 16-20 questions with 4-5 options each and unique ids", () => {
+    expect(questions.length).toBeGreaterThanOrEqual(16);
+    expect(questions.length).toBeLessThanOrEqual(20);
     expect(new Set(questions.map((q) => q.id)).size).toBe(questions.length);
     for (const q of questions) {
-      expect(q.options.length).toBeGreaterThanOrEqual(3);
+      expect(q.options.length).toBeGreaterThanOrEqual(4);
       expect(q.options.length).toBeLessThanOrEqual(5);
+      expect(q.text.trim().length).toBeGreaterThan(0);
+      for (const o of q.options) expect(o.label.trim().length).toBeGreaterThan(0);
     }
+  });
+
+  it("every trait is the main trait of at least 6 options, so no inclination depends on one or two questions", () => {
+    const main: Record<string, number> = Object.fromEntries(TRAIT_IDS.map((t) => [t, 0]));
+    for (const q of questions) for (const o of q.options) for (const [t, v] of Object.entries(o.traits)) if (v === 3) main[t]++;
+    for (const t of TRAIT_IDS) expect(main[t], t).toBeGreaterThanOrEqual(6);
   });
 
   it("covers every trait in the questions", () => {

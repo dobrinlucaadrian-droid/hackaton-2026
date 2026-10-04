@@ -87,7 +87,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/rezultat  (1 files)
 
-- `page.tsx` (127) — Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /rezultat. Exports: ResultPage
+- `page.tsx` (129) — Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /rezultat. Exports: ResultPage
 
 ### apps/web/app/specializari/[categorie]  (1 files)
 
@@ -140,7 +140,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `categories.json` (13) — JSON array, 10 items
 - `domains.json` (43) — JSON array, 40 items
 - `profiles.json` (15) — JSON array, 12 items
-- `questions.json` (130) — JSON array, 12 items
+- `questions.json` (729) — JSON array, 18 items
 - `specializations.json` (209) — JSON array, 206 items
 - `testimonials.json` (99) — JSON array, 14 items
 - `universities-abroad.json` (3203) — JSON array, 57 items
@@ -151,7 +151,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `activities.test.ts` (57) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
 - `activities.ts` (73) — Activities a student can add (competitions, volunteering, extracurriculars): labels, areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, describeActivity
 - `data.ts` (19) — Loads the seeded JSON (profiles, questions, domains, universities, specializations, categories, testimonials) as typed arrays.. Exports: profiles, questions, domains, universities, specializations, categories, testimonials
-- `match.test.ts` (194) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
+- `match.test.ts` (203) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
 - `match.ts` (182) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: TRAITS, TRAIT_LABEL, matchDomains, studentTraits, matchByTraits
 - `session.ts` (106) — Keeps the student's answers (and optional activities with photos) in sessionStorage between pages (safe on the server).. Exports: loadDraft, saveDraft, clearDraft, toAnswers, shrinkImage
 - `types.ts` (162) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
