@@ -56,14 +56,14 @@ export default function ResultPage() {
   if (state.status === "empty") {
     return (
       <Shell>
-        <Notice title="Nu avem încă rezultate" text="Răspunde mai întâi la întrebări și apoi îți arătăm domeniile potrivite." href="/test" cta="Începe testul" />
+        <Notice title="Nu avem încă rezultate" text="Răspunde mai întâi la întrebări și apoi îți arătăm domeniile potrivite." href="/test" cta="Începe chestionarul" />
       </Shell>
     );
   }
   if (state.status === "error") {
     return (
       <Shell>
-        <Notice title="Ceva nu a mers" text="Nu am putut calcula rezultatele. Reia testul și încearcă din nou." href="/test" cta="Reia testul" />
+        <Notice title="Ceva nu a mers" text="Nu am putut calcula rezultatele. Reia chestionarul și încearcă din nou." href="/test" cta="Reia chestionarul" />
       </Shell>
     );
   }
@@ -118,7 +118,7 @@ export default function ResultPage() {
 
       <div className="mt-8 text-center">
         <Link href="/test" onClick={clearDraft} className="inline-flex min-h-12 items-center rounded-full border-2 border-primary px-8 py-3 font-black text-primary hover:bg-primary-tint">
-          Reia testul
+          Reia chestionarul
         </Link>
       </div>
     </Shell>

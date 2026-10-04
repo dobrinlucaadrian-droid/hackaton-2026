@@ -7,7 +7,7 @@ const LINKS = [
   ["/", "Acasă"],
   ["/specializari", "Specializări"],
   ["/universitati", "Universități"],
-  ["/test", "Test"],
+  ["/test", "Chestionar"],
   ["/studenti", "Studenți"],
 ] as const;
 

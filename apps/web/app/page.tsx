@@ -21,7 +21,7 @@ export default function Home() {
               href="/test"
               className="inline-flex min-h-12 items-center justify-center rounded-2xl bg-primary px-6 py-3 font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark active:scale-[0.98]"
             >
-              Fă testul de personalitate
+              Completează chestionarul
             </Link>
             <Link
               href="/universitati"

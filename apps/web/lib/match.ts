@@ -133,7 +133,7 @@ function rank(
       const shared = TRAITS.some((t) => (profile.traits[t] ?? 0) >= 2 && dv[t] >= 2);
       if (shared) reasons.push(`Profilul tău de liceu (${profile.name}) te pregătește bine pentru acest domeniu.`);
     }
-    if (reasons.length < 2) reasons.push("Domeniul se potrivește cu ce ai ales în test.");
+    if (reasons.length < 2) reasons.push("Domeniul se potrivește cu ce ai ales în chestionar.");
 
     const offered = universities.filter((u) => u.domainIds.includes(domain.id));
     const ro = offered.filter((u) => u.region === "ro").sort((a, b) => a.city.localeCompare(b.city, "ro") || a.name.localeCompare(b.name, "ro"));

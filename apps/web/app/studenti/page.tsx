@@ -32,7 +32,7 @@ export default function Students() {
           href="/test"
           className="inline-block rounded-2xl bg-primary px-6 py-3 font-bold text-white shadow-lg shadow-primary/30 hover:bg-primary-dark"
         >
-          Fă testul și află ce ți se potrivește
+          Completează chestionarul și află ce ți se potrivește
         </Link>
       </div>
     </Shell>

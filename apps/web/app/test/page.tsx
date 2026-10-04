@@ -9,7 +9,7 @@ import { Shell } from "@/components/Shell";
 import { saveDraft } from "@/lib/session";
 
 const steps = [
-  ["1", "Alegi profilul de liceu", "E prima întrebare din test.", "bg-primary-tint text-primary-dark"],
+  ["1", "Alegi profilul de liceu", "E prima întrebare din chestionar.", "bg-primary-tint text-primary-dark"],
   ["2", "Răspunzi la întrebări", "Sunt scurte și nu există răspunsuri greșite.", "bg-teal-tint text-teal-ink"],
   ["3", "Primești 3 domenii", "Cu procente, motive și facultăți unde poți studia.", "bg-violet-tint text-violet-ink"],
 ];
@@ -72,7 +72,7 @@ export default function Home() {
             onClick={start}
             className="min-h-14 w-full rounded-2xl bg-primary px-6 py-4 text-lg font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark active:scale-[0.98] disabled:cursor-not-allowed disabled:bg-line disabled:text-ink-soft disabled:shadow-none"
           >
-            Începe testul
+            Începe chestionarul
           </button>
         </div>
       </div>

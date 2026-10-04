@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-04 23:35 — „test” devine „chestionar”
+- Cerut: cuvântul „test” să fie înlocuit cu „chestionar”. Înainte: versiunea cu căutarea de la „Studenți” și pagina principală fără bara de căutare publicată la cererea echipei și verificată pe adresa publică
+- Făcut: în meniu „Chestionar”; butoanele „Completează chestionarul”, „Începe chestionarul”, „Reia chestionarul”; textele care vorbeau despre testul nostru. Adresa paginii rămâne `/test`. Cuvântul „test” rămâne acolo unde e vorba de testele de admitere ale universităților
+- Fișiere: `apps/web/components/NavLinks.tsx`, `apps/web/app/{page,test/page,rezultat/page,studenti/page}.tsx`, `apps/web/lib/match.ts`
+- Poartă: TRECUT (build, 55 teste, pornire); traseul complet parcurs într-un browser separat, pe laptop și la lățime de telefon, cu butoanele noi; pagina principală văzută în captură la lățime de telefon. Nepublicat
+- Urmează: publicare la cererea echipei; `/pitch`
+
 ### 2026-10-04 23:20 — bara de căutare scoasă de pe pagina principală
 - Cerut: de pe prima pagină să dispară bara de căutare
 - Făcut: căsuța de căutare scoasă din `/`; căutarea de universități rămâne pe `/universitati` (din meniu sau din butonul „Găsește top 10 universități”)
@@ -227,6 +234,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 23:02 `46df569` feat: remove the search box from the home page
 - 2026-10-04 22:57 `956d89f` feat: search student opinions by faculty or university
 - 2026-10-04 22:45 `9ca0e28` feat: ask the high-school profile as the first step of the test
 - 2026-10-04 22:30 `564932a` feat: keep specializations only on their own page, not on the home page
@@ -256,5 +264,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 12:06 `6a9379d` docs: confirm data coverage by study domain
 - 2026-10-04 12:05 `72dd44b` docs: lock the chosen idea, ideation report and stack
 - 2026-10-04 00:14 `018e7d7` docs: move the team guide to the repo root
-- 2026-10-04 00:13 `3d0f662` docs: bring ledger and map up to date
 <!-- commits:end -->
