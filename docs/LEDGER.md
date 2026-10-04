@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-05 01:55 — un singur logo pe pagina principală
+- Cerut: pe pagina de început apăreau două logouri; unul să dispară. Înainte: pagina nouă de start a chestionarului publicată la cererea echipei; ideea cu previzualizarea locală pentru telefon a fost abandonată de echipă, iar setarea începută a fost anulată
+- Făcut: scos logoul mare de deasupra titlului; rămâne cel din antet, prezent pe toate paginile; titlul „Ghidul tău între liceu și facultate” e acum titlul principal al paginii
+- Fișiere: `apps/web/app/page.tsx`
+- Poartă: TRECUT (build, 57 teste, pornire); pagina văzută în captură pe laptop și la lățime de telefon, cu un singur logo. Nepublicat
+- Urmează: publicare la cererea echipei; `/pitch`
+
 ### 2026-10-05 01:20 — pagina de start a chestionarului, cu titlu propriu
 - Cerut: pagina „Chestionar” arăta la fel ca pagina principală; echipa a aprobat propunerea: titlu propriu, fără logoul mare, desenul mare și butonul „Ce spun studenții”, cu butonul de pornire sus. Înainte: „UniPath în cifre” publicat la cererea echipei
 - Făcut: `/test` are titlul „Chestionarul UniPath”, o frază despre ce urmează (numărul de întrebări e luat din date), butonul „Începe chestionarul” imediat sub titlu, cei 3 pași și nota „Nu îți cerem nume sau cont”
@@ -262,6 +269,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-05 00:27 `3551c80` feat: questionnaire start page with its own title and the start button on top
 - 2026-10-05 00:12 `2c00f9b` feat: UniPath in numbers on the home page
 - 2026-10-04 23:47 `f1683ad` feat: Politehnica faculties and programmes on its sheet, 12 more Romanian universities
 - 2026-10-04 23:32 `803b972` feat: seven more student opinions with photos, and Anton Mocanu's photo
@@ -291,5 +299,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 13:13 `45755bb` docs: add QR code for the public address
 - 2026-10-04 13:05 `a89bbaa` feat: what-if sliders on the result page; record deploy address
 - 2026-10-04 12:54 `34e9f2e` feat: show the team logo and match the palette to it
-- 2026-10-04 12:40 `5082a83` feat: UniPath demo version - profile, quiz and matched study domains
 <!-- commits:end -->

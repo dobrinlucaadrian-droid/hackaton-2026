@@ -1,5 +1,4 @@
 // Home page: the hero with the two main actions and "UniPath în cifre" (counts taken from the data); search and specializations have their own pages.
-import Image from "next/image";
 import Link from "next/link";
 import { HeroScene } from "@/components/Illustrations";
 import { Shell } from "@/components/Shell";
@@ -22,12 +21,9 @@ export default function Home() {
     <Shell wide>
       <section className="mt-2 grid items-center gap-4 md:grid-cols-2">
         <div className="rise text-center md:text-left">
-          <h1>
-            <Image src="/logo.png" alt="UniPath" width={1254} height={1254} priority className="mx-auto -my-6 h-auto w-40 md:mx-0 md:-ml-3" />
-          </h1>
-          <p className="mt-4 text-4xl font-black uppercase leading-[0.95] tracking-tighter text-ink sm:text-5xl lg:text-6xl">
+          <h1 className="mt-4 text-4xl font-black uppercase leading-[0.95] tracking-tighter text-ink sm:text-5xl lg:text-6xl">
             Ghidul tău între <span className="text-primary">liceu</span> și <span className="text-teal">facultate</span>
-          </p>
+          </h1>
           <p className="mx-auto mt-4 max-w-md text-lg text-ink-soft md:mx-0">afli ce să studiezi și unde.</p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center md:justify-start">
             <Link
