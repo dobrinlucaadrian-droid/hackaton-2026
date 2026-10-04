@@ -1,6 +1,7 @@
 "use client";
 // Start screen: tagline, 3-step explanation and the high-school profile picker.
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Shell } from "@/components/Shell";
@@ -42,6 +43,12 @@ export default function Home() {
         <p className="mx-auto mt-4 max-w-md text-lg text-navy-soft">
           Ghidul tău între liceu și facultate: afli ce să studiezi și unde.
         </p>
+        <Link
+          href="/studenti"
+          className="mt-5 inline-block rounded-2xl border-2 border-burgundy px-5 py-2.5 font-semibold text-burgundy transition hover:bg-burgundy-tint"
+        >
+          Ce spun studenții
+        </Link>
       </section>
 
       <ol className="mt-8 grid gap-3 sm:grid-cols-3">

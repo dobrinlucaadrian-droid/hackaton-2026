@@ -71,3 +71,11 @@ export type Match = {
   universitiesRo: University[]; // empty when where === "abroad"
   universitiesAbroad: University[]; // empty when where === "ro"
 };
+
+/** A real opinion from a student or graduate, shown with their consent. */
+export type Testimonial = {
+  name: string; // exactly as the person agreed to be shown
+  faculty: string; // faculty and university, as given by the team
+  status: string; // e.g. "studentă în anul 3", "absolvent"
+  text: string; // their own words
+};

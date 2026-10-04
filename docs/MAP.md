@@ -78,7 +78,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `favicon.ico`
 - `globals.css` (43) — _no description: add a first-line comment_
 - `layout.tsx` (31) — _no description: add a first-line comment_. Exports: metadata, RootLayout
-- `page.tsx` (104) — Start screen: tagline, 3-step explanation and the high-school profile picker.. Routes: /. Exports: Home
+- `page.tsx` (111) — Start screen: tagline, 3-step explanation and the high-school profile picker.. Routes: /. Exports: Home
 
 ### apps/web/app/quiz  (1 files)
 
@@ -88,6 +88,10 @@ _Open only the files listed here; a file's description is its first comment line
 
 - `page.tsx` (116) — Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /rezultat. Exports: ResultPage
 
+### apps/web/app/studenti  (1 files)
+
+- `page.tsx` (47) — Student voices: real opinions from students and graduates (name, faculty, year or graduate, their words).. Routes: /studenti. Exports: metadata, Students
+
 ### apps/web/components  (4 files)
 
 - `MatchCard.tsx` (103) — One result card: domain, percent ring, reasons, admission, careers and the university lists.. Exports: MatchCard
@@ -95,20 +99,21 @@ _Open only the files listed here; a file's description is its first comment line
 - `UniversityList.tsx` (46) — Labelled list of universities with links; shows 5 first and a "Vezi toate" toggle.. Exports: UniversityList
 - `WhatIf.tsx` (69) — Collapsible "Ce-ar fi dacă?" panel: one slider per inclination, controlled by the result page.. Exports: WhatIf
 
-### apps/web/data  (4 files)
+### apps/web/data  (5 files)
 
 - `domains.json` (43) — JSON array, 40 items
 - `profiles.json` (15) — JSON array, 12 items
 - `questions.json` (130) — JSON array, 12 items
+- `testimonials.json` (2) — JSON array, 0 items
 - `universities.json` (2048) — JSON array, 88 items
 
 ### apps/web/lib  (5 files)
 
-- `data.ts` (12) — Loads the seeded JSON (profiles, questions, domains, universities) as typed arrays.. Exports: profiles, questions, domains, universities
+- `data.ts` (14) — Loads the seeded JSON (profiles, questions, domains, universities, testimonials) as typed arrays.. Exports: profiles, questions, domains, universities, testimonials
 - `match.test.ts` (194) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
 - `match.ts` (154) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: TRAITS, TRAIT_LABEL, matchDomains, studentTraits, matchByTraits
 - `session.ts` (42) — Keeps the student's answers in sessionStorage between pages (safe on the server).. Exports: loadDraft, saveDraft, clearDraft, toAnswers
-- `types.ts` (74) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
+- `types.ts` (82) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
 
 ### apps/web/public  (1 files)
 

@@ -7,7 +7,7 @@ lista de commit-uri de la final se reface singură.
 
 - **Scop:** site care ghidează liceenii spre facultatea potrivită (tema „The Middle Man”); predare azi, 2026-10-04, la 18:00
 - **Unde:** aplicația e în `apps/web`, publicată la https://unipath-taupe-mu.vercel.app
-- **Urmează:** terminat „Ce-ar fi dacă?” (cursoare pe pagina de rezultat), republicare, apoi `/pitch`
+- **Urmează:** echipa trimite părerile studenților (nume, facultate, an/absolvent, text) → `apps/web/data/testimonials.json` → republicare; apoi `/pitch`. Deschis: site-ul nu s-a deschis pe telefonul Pilotului (cauză necunoscută)
 - **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
 
 ## Jurnal
@@ -20,6 +20,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-04 13:40 — pagina „Ce spun studenții” (fără păreri încă)
+- Cerut: buton pe pagina de început spre păreri reale de la studenți și absolvenți: nume, facultate, an sau absolvent, ce au de spus; fără poze; deocamdată fără niciun conținut
+- Făcut: pagina `/studenti`, butonul „Ce spun studenții” pe start, fișierul gol `data/testimonials.json` în care se pun părerile când le aduce echipa; „Ce-ar fi dacă?” terminat, verificat și publicat între timp
+- Fișiere: `apps/web/app/studenti/page.tsx`, `apps/web/app/page.tsx`, `apps/web/data/testimonials.json`, `apps/web/lib/types.ts`, `apps/web/lib/data.ts`
+- Poartă: TRECUT; văzut în browser: butonul duce la pagină, mesajul pentru lista goală, cartonașul la 375px cu un text de probă (șters apoi). Nepublicat
+- Urmează: echipa trimite părerile → le pun în fișier → poartă → republicare
 
 ### 2026-10-04 13:05 — publicare online și „Ce-ar fi dacă?” (în lucru)
 - Cerut: test pe telefon; funcția cu cursoare „Ce-ar fi dacă?”
@@ -94,6 +101,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 13:13 `45755bb` docs: add QR code for the public address
 - 2026-10-04 13:05 `a89bbaa` feat: what-if sliders on the result page; record deploy address
 - 2026-10-04 12:54 `34e9f2e` feat: show the team logo and match the palette to it
 - 2026-10-04 12:40 `5082a83` feat: UniPath demo version - profile, quiz and matched study domains
