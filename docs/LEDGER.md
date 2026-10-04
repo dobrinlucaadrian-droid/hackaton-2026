@@ -7,7 +7,7 @@ lista de commit-uri de la final se reface singură.
 
 - **Scop:** UniPath — ghid între liceu și facultate (tema „The Middle Man”). Prezentarea e mâine, 2026-10-05 (ora nu a fost spusă)
 - **Unde:** aplicația e în `apps/web` (pagini: `/`, `/specializari`, `/specializari/[categorie]`, `/universitati`, `/universitati/[id]`, `/test`, `/quiz`, `/rezultat`, `/studenti`), publicată la https://unipath-taupe-mu.vercel.app
-- **Urmează:** publicat versiunea aerisită (cu acordul echipei), apoi `/pitch`
+- **Urmează:** `/pitch` — prezentarea și scenariul de demo (prezentarea e pe 2026-10-05). Aplicația publicată e la zi cu `main`
 - **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
 
 ## Jurnal
@@ -20,6 +20,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-04 19:00 — versiunea aerisită publicată
+- Cerut: publicarea versiunii aerisite, ca echipa să o verifice pe telefon; apoi salvarea progresului
+- Făcut: publicat la https://unipath-taupe-mu.vercel.app (aceeași adresă, același cod QR); nicio schimbare de cod față de intrarea de mai jos
+- Fișiere: `docs/LEDGER.md`
+- Poartă: TRECUT înainte de publicare; pe adresa publică: toate paginile se deschid, pagina principală e scurtă, categoria „Business și economie” (domenii pliabile), test → rezultat (primul loc deschis, 2 și 3 pliate) → universități → fișă; fără erori în consolă (avertismentul de „hydration” nu apare în producție). NEVERIFICAT: pe telefonul echipei; folosirea doar din tastatură; corectitudinea fișelor (orientative)
+- Urmează: `/pitch` (prezentarea e pe 2026-10-05)
 
 ### 2026-10-04 18:40 — pagini aerisite, aceeași informație
 - Cerut: site-ul să nu mai pară încărcat, dar să cuprindă aceleași informații (`/researcher`, apoi aprobarea echipei pentru toate cele 5 schimbări; „compară două universități” amânat)
@@ -192,6 +199,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 17:57 `9a716e4` feat: declutter pages - short home, specialization pages, collapsed result cards, compact filters and sheet
 - 2026-10-04 17:24 `9b62030` docs: presentation moved to 2026-10-05
 - 2026-10-04 17:22 `6092918` fix: world-list link check, loading and failure messages, ignore prestige=national
 - 2026-10-04 17:19 `46b3584` feat: home page with search, specializations, top-10 filters and university profile sheets
@@ -221,5 +229,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 00:09 `23b8667` feat: deploy through Vercel CLI, stack must be Vercel-compatible
 - 2026-10-04 00:05 `9b25b99` docs: deploy checklist reports in the gate's TRECUT/PICAT/NEVERIFICAT words
 - 2026-10-04 00:02 `63186a4` fix: stop hook asks for the gate only on uncommitted code changes
-- 2026-10-03 23:53 `cdd9525` docs: guide prompts point Claude at the map and ledger
 <!-- commits:end -->
