@@ -5,6 +5,7 @@ import { categories, domains } from "@/lib/data";
 import { normalize, specializationsFor } from "@/lib/universities";
 import { CategoryTiles } from "./CategoryTiles";
 import { DomainDetails } from "./DomainDetails";
+import { SurpriseSpecialization } from "./SurpriseSpecialization";
 
 export function SpecializationsBrowser() {
   const [query, setQuery] = useState("");
@@ -48,6 +49,7 @@ export function SpecializationsBrowser() {
       {!q ? (
         <div className="mt-5">
           <CategoryTiles />
+          <SurpriseSpecialization />
         </div>
       ) : view.length === 0 ? (
         <div className="mt-4 rounded-2xl bg-card p-6 text-center ring-1 ring-line" role="status">

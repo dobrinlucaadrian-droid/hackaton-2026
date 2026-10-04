@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-05 02:15 — pagina „Specializări”: desen și „Surprinde-mă”
+- Cerut: pagina de specializări să aibă din nou un desen sau ceva interactiv, la alegerea lui Claude
+- Făcut: desenul cu cărți lângă titlu; sub categorii, cartonașul „Nu știi de unde să începi?” cu butonul „Surprinde-mă”, care arată o specializare la întâmplare (domeniu, descriere, link spre universitățile unde se studiază) și nu repetă aceeași specializare de două ori la rând; cartonașul dispare cât timp elevul caută ceva
+- Fișiere: `apps/web/components/SurpriseSpecialization.tsx` (nou), `apps/web/components/SpecializationsBrowser.tsx`, `apps/web/app/specializari/page.tsx`
+- Poartă: TRECUT (build, 57 teste, pornire); într-un browser separat, pe laptop și la lățime de telefon: butonul arată o specializare cu link corect, 13 apăsări au dat 13 specializări diferite, căutarea „finante” merge în continuare; pagina văzută în captură pe laptop; fără erori în consolă. Nepublicat (nici schimbarea cu un singur logo)
+- Urmează: publicare la cererea echipei; `/pitch`
+
 ### 2026-10-05 01:55 — un singur logo pe pagina principală
 - Cerut: pe pagina de început apăreau două logouri; unul să dispară. Înainte: pagina nouă de start a chestionarului publicată la cererea echipei; ideea cu previzualizarea locală pentru telefon a fost abandonată de echipă, iar setarea începută a fost anulată
 - Făcut: scos logoul mare de deasupra titlului; rămâne cel din antet, prezent pe toate paginile; titlul „Ghidul tău între liceu și facultate” e acum titlul principal al paginii
@@ -269,6 +276,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-05 00:48 `86d84fe` feat: keep a single logo on the home page
 - 2026-10-05 00:27 `3551c80` feat: questionnaire start page with its own title and the start button on top
 - 2026-10-05 00:12 `2c00f9b` feat: UniPath in numbers on the home page
 - 2026-10-04 23:47 `f1683ad` feat: Politehnica faculties and programmes on its sheet, 12 more Romanian universities
@@ -298,5 +306,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 13:29 `fe42b3d` feat: student voices page, empty until the team brings real opinions
 - 2026-10-04 13:13 `45755bb` docs: add QR code for the public address
 - 2026-10-04 13:05 `a89bbaa` feat: what-if sliders on the result page; record deploy address
-- 2026-10-04 12:54 `34e9f2e` feat: show the team logo and match the palette to it
 <!-- commits:end -->
