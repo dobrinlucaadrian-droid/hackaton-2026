@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-04 13:50 — poartă completă cerută de echipă + o reparație mică la cursoare
+- Cerut: `/gate`
+- Făcut: parcurs tot site-ul local; găsit și reparat: dacă două cursoare se mișcau în aceeași clipă, prima mișcare se pierdea (un om cu un singur deget nu ajungea acolo)
+- Fișiere: `apps/web/app/rezultat/page.tsx`
+- Poartă: TRECUT — build, 18 teste, pornire; în browser: pagini deschise direct fără răspunsuri, start → 12 întrebări → „În străinătate” → rezultat, „Vezi toate”, linkuri în filă nouă, cursoare (3 mutate deodată), revenire, „Reia testul”, pagina studenților goală; fără erori în consolă. NEVERIFICAT acum: butonul „Înapoi” din întrebări; versiunea publică (nerepublicată după ultimele două schimbări)
+- Urmează: părerile studenților → republicare; `/pitch`
+
 ### 2026-10-04 13:40 — pagina „Ce spun studenții” (fără păreri încă)
 - Cerut: buton pe pagina de început spre păreri reale de la studenți și absolvenți: nume, facultate, an sau absolvent, ce au de spus; fără poze; deocamdată fără niciun conținut
 - Făcut: pagina `/studenti`, butonul „Ce spun studenții” pe start, fișierul gol `data/testimonials.json` în care se pun părerile când le aduce echipa; „Ce-ar fi dacă?” terminat, verificat și publicat între timp
@@ -101,6 +108,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 13:31 `ba2ae6b` docs: phone test confirmed by the team
 - 2026-10-04 13:29 `fe42b3d` feat: student voices page, empty until the team brings real opinions
 - 2026-10-04 13:13 `45755bb` docs: add QR code for the public address
 - 2026-10-04 13:05 `a89bbaa` feat: what-if sliders on the result page; record deploy address

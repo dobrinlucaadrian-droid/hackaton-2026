@@ -78,7 +78,7 @@ export default function ResultPage() {
         <WhatIf
           values={values}
           changed={changed}
-          onChange={(id, v) => setValues({ ...values, [id]: v })}
+          onChange={(id, v) => setValues((cur) => (cur ? { ...cur, [id]: v } : cur))}
           onReset={() => setValues(initial)}
         />
       )}
