@@ -5,9 +5,9 @@ lista de commit-uri de la final se reface singură.
 
 ## Acum lucrăm la
 
-- **Scop:** proiectul e pregătit; se așteaptă tema hackathonului
-- **Unde:** nu există încă aplicație (`apps/` e gol)
-- **Urmează:** când se anunță tema → `/ideate`, apoi `/foreman` (stack compatibil cu Vercel)
+- **Scop:** site care ghidează liceenii spre facultatea potrivită (tema „The Middle Man”); predare azi, 2026-10-04, la 18:00
+- **Unde:** ideea e fixată în `docs/challenge.md` („Chosen idea”); nu există încă aplicație (`apps/` e gol)
+- **Urmează:** echipa confirmă cum acoperim „toate facultățile din România” și numele → `/foreman` (Next.js în `apps/web`)
 - **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
 
 ## Jurnal
@@ -20,6 +20,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-04 12:10 — alegerea ideii
+- Cerut: idei pentru tema „The Middle Man” (start-up sau aplicație)
+- Făcut: cerințele salvate; trei runde de idei cu agentul `ideator`; echipa a ales o idee proprie — ghid de facultate pentru liceeni; stack fixat (Next.js, fără chei, date scrise dinainte)
+- Fișiere: `docs/challenge.md`, `docs/ideas.md`, `CLAUDE.md`
+- Poartă: NEVERIFICAT pe build / teste / pornire (nu există încă aplicație); originalitatea ideii alese nu a fost căutată
+- Urmează: confirmarea acoperirii facultăților și a numelui, apoi `/foreman`
 
 ### 2026-10-04 — deploy prin Vercel CLI
 - Cerut: echipa nu știe să facă deploy; Claude să se ocupe de tot
@@ -59,6 +66,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 00:14 `018e7d7` docs: move the team guide to the repo root
 - 2026-10-04 00:13 `3d0f662` docs: bring ledger and map up to date
 - 2026-10-04 00:12 `be94cb3` fix: Vercel login and env vars work from inside the Claude app only
 - 2026-10-04 00:09 `23b8667` feat: deploy through Vercel CLI, stack must be Vercel-compatible

@@ -65,7 +65,10 @@ scripts/    gate.mjs (quality gate), map.mjs (map + ledger commit list)
 
 ## Stack
 
-_TBD — fill in once the theme is announced._
+Chosen 2026-10-04 for the university-guide idea (`docs/challenge.md`):
+Next.js (one app in `apps/web`), pages only — no API routes, no API keys, no
+database. Programme data is seeded JSON inside the app; matching is
+rule-based and runs in the browser.
 
 **Constraint: the app must run on Vercel**, because Claude deploys it with the
 Vercel CLI (`/deploy-demo`) and the team cannot deploy any other way. Choose:
