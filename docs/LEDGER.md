@@ -7,7 +7,7 @@ lista de commit-uri de la final se reface singură.
 
 - **Scop:** site care ghidează liceenii spre facultatea potrivită (tema „The Middle Man”); predare azi, 2026-10-04, la 18:00
 - **Unde:** aplicația e în `apps/web`, publicată la https://unipath-taupe-mu.vercel.app
-- **Urmează:** echipa trimite părerile studenților (nume, facultate, an/absolvent, text) → `apps/web/data/testimonials.json` → republicare; apoi `/pitch`. Pilotul a confirmat la 13:30 că site-ul se deschide pe telefon prin codul QR (`docs/qr-unipath.png`)
+- **Urmează:** părerile studenților (nume, facultate, an/absolvent, text) → `apps/web/data/testimonials.json` → republicare; apoi `/pitch`. Aspect: design vesel în culorile logoului (bleumarin, burgundi) plus auriu
 - **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
 
 ## Jurnal
@@ -20,6 +20,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-04 15:05 — culorile logoului, plus auriu
+- Cerut: același design, dar în culorile logoului plus încă una la alegerea lui Claude
+- Făcut: versiunea cu aspectul nou și activitățile publicată la cererea echipei; apoi paleta schimbată doar din `globals.css`: bleumarin (text), burgundi (butoane), fundal crem cald, plus auriu ca a treia culoare; confetti în aceleași culori; capturi de ecran în `docs/screens`
+- Fișiere: `apps/web/app/globals.css`, `apps/web/components/Confetti.tsx`, `docs/screens/*.png`
+- Poartă: TRECUT (build, 24 teste, pornire); văzute în capturi întregi: start, întrebare, activități, rezultat (laptop și telefon), pagina studenților
+- Urmează: republicare; părerile studenților; `/pitch`
 
 ### 2026-10-04 14:40 — activitățile elevului luate în calcul
 - Cerut: după cele 12 întrebări, un pas în care liceanul își pune concursurile, voluntariatul și activitățile extra, cu poza diplomei, luate în calcul la potrivire
@@ -129,6 +136,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 14:43 `79f354e` docs: add screenshots of each screen
 - 2026-10-04 14:35 `7392526` feat: activities step - competitions, volunteering and diploma photo feed the matching
 - 2026-10-04 13:59 `b40f794` feat: cheerful cool-colour redesign with illustrations and animations
 - 2026-10-04 13:37 `da25839` feat: back button on the student voices page
@@ -158,5 +166,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-03 23:21 `0e6b41d` fix: let ideator run gh search, pre-approve read-only searches
 - 2026-10-03 23:14 `686d90a` docs: make coordonator optional, add cheap next-step rule
 - 2026-10-03 23:12 `764afdd` feat: add coordonator skill, team roles and Romanian-language rule
-- 2026-10-03 23:07 `15c0a6e` docs: add step-by-step hackathon guide in Romanian
 <!-- commits:end -->

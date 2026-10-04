@@ -2,7 +2,7 @@
 // A short burst of cool-coloured confetti, shown once when mounted and removed after about 3 seconds.
 import { useEffect, useState, type CSSProperties } from "react";
 
-const COLORS = ["#3b5bdb", "#0ca5a5", "#1e9be0", "#7c5ce0", "#2bb673"];
+const COLORS = ["#61122d", "#1a2a4c", "#c8962e", "#9a3553", "#35508a"];
 
 // Deterministic pseudo-random so server and client render the same markup.
 const r = (i: number, k: number) => (((Math.sin(i * 12.9898 + k * 78.233) * 43758.5453) % 1) + 1) % 1;

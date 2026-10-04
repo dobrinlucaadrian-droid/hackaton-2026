@@ -1,27 +1,29 @@
 @import "tailwindcss";
 
-/* Cool palette: paper, card, ink, one strong primary and four accents (each with a tint and a dark ink for text). Tune the whole site here. */
+/* Logo palette: navy ink and burgundy primary on warm paper, plus gold as the one extra colour.
+   The four accent names are kept from the earlier cool palette; they now hold shades of gold, navy and burgundy:
+   teal = gold, sky = navy blue, violet = rose burgundy, mint = slate navy. Tune the whole site here. */
 @theme {
-  --color-paper: #f2f6fc;
-  --color-card: #ffffff;
-  --color-line: #d3dcee;
+  --color-paper: #f6efe4;
+  --color-card: #fffdf9;
+  --color-line: #e0d3c0;
   --color-ink: #1a2a4c;
-  --color-ink-soft: #44557a;
-  --color-primary: #3b5bdb;
-  --color-primary-dark: #2c46b0;
-  --color-primary-tint: #e3e9fc;
-  --color-teal: #0ca5a5;
-  --color-teal-ink: #06676a;
-  --color-teal-tint: #d8f3f2;
-  --color-sky: #1e9be0;
-  --color-sky-ink: #0b62a0;
-  --color-sky-tint: #dbeffc;
-  --color-violet: #7c5ce0;
-  --color-violet-ink: #523aba;
-  --color-violet-tint: #e8e2fb;
-  --color-mint: #2bb673;
-  --color-mint-ink: #12744a;
-  --color-mint-tint: #d9f4e6;
+  --color-ink-soft: #4a5674;
+  --color-primary: #61122d;
+  --color-primary-dark: #480b20;
+  --color-primary-tint: #f3e1e6;
+  --color-teal: #c8962e;
+  --color-teal-ink: #7a5a12;
+  --color-teal-tint: #f9eed3;
+  --color-sky: #35508a;
+  --color-sky-ink: #1a2a4c;
+  --color-sky-tint: #e2e8f4;
+  --color-violet: #9a3553;
+  --color-violet-ink: #61122d;
+  --color-violet-tint: #f6e3e9;
+  --color-mint: #5b6f9c;
+  --color-mint-ink: #2a3b63;
+  --color-mint-tint: #e6ebf5;
 }
 
 @theme inline {

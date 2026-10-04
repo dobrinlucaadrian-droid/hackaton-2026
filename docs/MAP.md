@@ -76,7 +76,7 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/app  (4 files)
 
 - `favicon.ico`
-- `globals.css` (127) — _no description: add a first-line comment_
+- `globals.css` (129) — _no description: add a first-line comment_
 - `layout.tsx` (31) — _no description: add a first-line comment_. Exports: metadata, RootLayout
 - `page.tsx` (128) — Start screen: big headline with hero illustration, 3-step explanation and the high-school profile picker.. Routes: /. Exports: Home
 
