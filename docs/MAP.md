@@ -109,7 +109,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `domains.json` (43) — JSON array, 40 items
 - `profiles.json` (15) — JSON array, 12 items
 - `questions.json` (130) — JSON array, 12 items
-- `testimonials.json` (42) — JSON array, 6 items
+- `testimonials.json` (49) — JSON array, 7 items
 - `universities.json` (2048) — JSON array, 88 items
 
 ### apps/web/lib  (7 files)
@@ -127,8 +127,9 @@ _Open only the files listed here; a file's description is its first comment line
 - `logo.jpg`
 - `logo.png`
 
-### apps/web/public/studenti  (3 files)
+### apps/web/public/studenti  (4 files)
 
 - `mihai-florea.jpg`
 - `tudor-demusca.jpg`
 - `victoria-dumitru.jpg`
+- `zara-faflei.jpg`

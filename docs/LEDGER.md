@@ -7,7 +7,7 @@ lista de commit-uri de la final se reface singură.
 
 - **Scop:** site care ghidează liceenii spre facultatea potrivită (tema „The Middle Man”); predare azi, 2026-10-04, la 18:00
 - **Unde:** aplicația e în `apps/web`, publicată la https://unipath-taupe-mu.vercel.app
-- **Urmează:** `/pitch` (prezentarea și scenariul de demo). Pagina studenților are 6 păreri reale; fără poză: Alexandru Badea, Anton Mocanu, Alexa Munteanu
+- **Urmează:** `/pitch` (prezentarea și scenariul de demo). Pagina studenților are 7 păreri reale; fără poză: Alexandru Badea, Anton Mocanu, Alexa Munteanu
 - **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
 
 ## Jurnal
@@ -20,6 +20,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-04 16:15 — Zara Faflei, a șaptea părere
+- Cerut: adăugarea Zarei Faflei (Sciences Po Paris), cu poza trimisă de Pilot
+- Făcut: părerea pusă exact cum a fost dată; poza decupată pe față (320px). Asistentul AI cerut între timp a fost abandonat de echipă (ar fi cerut o cheie plătită)
+- Fișiere: `apps/web/data/testimonials.json`, `apps/web/public/studenti/zara-faflei.jpg`
+- Poartă: TRECUT (build, teste, pornire); pagina văzută într-o captură
+- Urmează: republicare; `/pitch`
 
 ### 2026-10-04 16:00 — studenții de la aceeași universitate, unul lângă altul
 - Cerut: pe pagina „Ce spun studenții”, cei de la aceeași facultate să apară unul lângă altul
@@ -164,6 +171,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 15:36 `140f3a3` feat: show students from the same university side by side
 - 2026-10-04 15:32 `53386e1` feat: add two more student opinions
 - 2026-10-04 15:25 `dfe2825` feat: add Victoria Dumitru's photo to her opinion
 - 2026-10-04 15:18 `b51f84f` feat: four real student opinions with photos on the student voices page
@@ -193,5 +201,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-03 23:48 `8878279` docs: work directly on main, no branches by default
 - 2026-10-03 23:45 `18dd146` feat: add generated codebase map and ledger, enforced by the gate
 - 2026-10-03 23:38 `ff87e15` chore: keep git hooks on LF line endings
-- 2026-10-03 23:38 `bc6faeb` feat: add quality gate script, commit and Stop hooks, gate skill
 <!-- commits:end -->
