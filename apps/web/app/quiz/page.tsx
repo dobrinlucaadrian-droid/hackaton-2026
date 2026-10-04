@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Books, Cap, Diploma, Sparkle } from "@/components/Illustrations";
+import { ActivitiesStep } from "@/components/ActivitiesStep";
 import { Notice, Shell } from "@/components/Shell";
 import { questions } from "@/lib/data";
 import { loadDraft, saveDraft, type Draft } from "@/lib/session";
@@ -16,7 +17,8 @@ const places: { value: StudyPlace; label: string }[] = [
 
 /** Short cheer under the progress bar, computed from how far along the student is. */
 function encouragement(step: number, count: number): string {
-  if (step >= count) return "Aproape gata! Mai spune-ne un singur lucru.";
+  if (step === count) return "Ai terminat întrebările! Spune-ne și ce ai făcut până acum.";
+  if (step > count) return "Aproape gata! Mai spune-ne un singur lucru.";
   if (step === 0) return "Bun început!";
   if (step === count - 1) return "Ultima întrebare!";
   const p = step / count;
@@ -55,14 +57,15 @@ export default function QuizPage() {
     );
   }
 
-  const total = questions.length + 1; // questions + where step
-  const isWhere = step >= questions.length;
+  const total = questions.length + 2; // questions + activities step + where step
+  const isActivities = step === questions.length;
+  const isWhere = step > questions.length;
   const q = questions[step];
   const Art = ART[step % ART.length];
 
-  function update(next: Draft) {
+  function update(next: Draft): boolean {
     setDraft(next);
-    saveDraft(next);
+    return saveDraft(next);
   }
 
   function pickChoice(index: number) {
@@ -87,7 +90,7 @@ export default function QuizPage() {
       <div className="mt-2 flex items-start justify-between gap-4">
         <div className="flex-1">
           <p className="text-sm font-extrabold text-primary">
-            {isWhere ? "Ultimul pas" : `Întrebarea ${step + 1} din ${questions.length}`}
+            {isWhere ? "Ultimul pas" : isActivities ? "Pasul bonus" : `Întrebarea ${step + 1} din ${questions.length}`}
           </p>
           <div
             role="progressbar"
@@ -113,22 +116,52 @@ export default function QuizPage() {
 
       <div key={step} className="slide-in">
         <h1 className="mt-6 text-3xl font-black leading-tight tracking-tight text-ink sm:text-4xl">
-          {isWhere ? "Unde vrei să studiezi?" : q.text}
+          {isWhere ? "Unde vrei să studiezi?" : isActivities ? "Ce ai făcut până acum?" : q.text}
         </h1>
 
-        <div className="mt-6 flex flex-col gap-3">
-          {isWhere
-            ? places.map((p) => (
-                <button key={p.value} type="button" onClick={() => pickWhere(p.value)} className={optionClass(draft.where === p.value)}>
-                  {p.label}
-                </button>
-              ))
-            : q.options.map((o, i) => (
-                <button key={i} type="button" onClick={() => pickChoice(i)} className={optionClass(draft.choices[q.id] === i)}>
-                  {o.label}
-                </button>
-              ))}
-        </div>
+        {isActivities ? (
+          <>
+            <p className="mt-2 text-ink-soft">
+              Concursuri, voluntariat, activități — ne ajută să te cunoaștem mai bine. Poți sări peste.
+            </p>
+            <div className="mt-6">
+              <ActivitiesStep
+                activities={draft.activities ?? []}
+                onChange={(list) => update({ ...draft, activities: list })}
+              />
+            </div>
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+              <button
+                type="button"
+                onClick={() => setStep(step + 1)}
+                className="min-h-12 flex-1 rounded-2xl bg-primary px-6 py-3 text-lg font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark"
+              >
+                Continuă
+              </button>
+              <button
+                type="button"
+                onClick={() => setStep(step + 1)}
+                className="min-h-12 rounded-2xl border-2 border-primary px-6 py-3 font-bold text-primary hover:bg-primary-tint"
+              >
+                Sar peste
+              </button>
+            </div>
+          </>
+        ) : (
+          <div className="mt-6 flex flex-col gap-3">
+            {isWhere
+              ? places.map((p) => (
+                  <button key={p.value} type="button" onClick={() => pickWhere(p.value)} className={optionClass(draft.where === p.value)}>
+                    {p.label}
+                  </button>
+                ))
+              : q.options.map((o, i) => (
+                  <button key={i} type="button" onClick={() => pickChoice(i)} className={optionClass(draft.choices[q.id] === i)}>
+                    {o.label}
+                  </button>
+                ))}
+          </div>
+        )}
       </div>
 
       <div className="mt-8">

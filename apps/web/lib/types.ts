@@ -58,10 +58,22 @@ export type University = {
   tuition?: string; // abroad only, general, no amounts
 };
 
+export type ActivityKind = "concurs" | "voluntariat" | "extra";
+export type ActivityLevel = "scoala" | "judet" | "national" | "international";
+
+/** A competition, volunteering or extracurricular activity the student adds after the questions. */
+export type Activity = {
+  kind: ActivityKind;
+  areaId: string; // id from ACTIVITY_AREAS in lib/activities.ts
+  level?: ActivityLevel; // only meaningful for kind "concurs"
+  name?: string; // optional free text, e.g. "Olimpiada de biologie"
+};
+
 export type Answers = {
   profileId: string;
   where: StudyPlace;
   choices: Record<string, number>; // question id -> index of the picked option
+  activities?: Activity[];
 };
 
 export type Match = {

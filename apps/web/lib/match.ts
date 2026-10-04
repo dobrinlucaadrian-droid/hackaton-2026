@@ -1,6 +1,7 @@
 // Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).
+import { MAX_ACTIVITIES, activityArea, activityTraits, describeActivity } from "./activities";
 import { domains, profiles, questions, universities } from "./data";
-import type { Answers, Match, Profile, StudyPlace, TraitId, TraitWeights } from "./types";
+import type { Activity, Answers, Match, Profile, StudyPlace, TraitId, TraitWeights } from "./types";
 
 export const TRAITS: TraitId[] = ["logic", "tehnic", "stiinte", "ingrijire", "oameni", "limbaj", "creativ", "business", "societate", "miscare"];
 
@@ -70,7 +71,13 @@ function cosine(a: Vec, b: Vec): number {
   return TRAITS.reduce((s, t) => s + a[t] * b[t], 0) / (na * nb);
 }
 
-/** Student vector (profile + picked options) and the vector of picked options alone. */
+/** The valid activities from the answers, capped at MAX_ACTIVITIES. */
+function validActivities(answers: Answers): Activity[] {
+  const list = Array.isArray(answers?.activities) ? answers.activities : [];
+  return list.filter((a) => a && Object.keys(activityTraits(a)).length > 0).slice(0, MAX_ACTIVITIES);
+}
+
+/** Student vector (profile + picked options + activities) and the vector of picks and activities alone. */
 function vectors(answers: Answers): { student: Vec; picks: Vec; profile: Profile | undefined } {
   const profile = profiles.find((p) => p.id === answers?.profileId);
   const picks = emptyVec();
@@ -78,6 +85,7 @@ function vectors(answers: Answers): { student: Vec; picks: Vec; profile: Profile
     const idx = answers?.choices?.[q.id];
     if (typeof idx === "number") addWeights(picks, q.options[idx]?.traits);
   }
+  for (const a of validActivities(answers)) addWeights(picks, activityTraits(a));
   const profileVec = profile ? unit(toVec(profile.traits)) : emptyVec();
   const pickVec = unit(picks);
   const share = profile ? PROFILE_SHARE : 0;
@@ -87,7 +95,13 @@ function vectors(answers: Answers): { student: Vec; picks: Vec; profile: Profile
 }
 
 /** Ranks all domains against a student vector and builds the top 3 matches. */
-function rank(student: Vec, liked: Vec, profile: Profile | undefined, where: StudyPlace | undefined): Match[] {
+function rank(
+  student: Vec,
+  liked: Vec,
+  profile: Profile | undefined,
+  where: StudyPlace | undefined,
+  activities: Activity[] = [],
+): Match[] {
   const scored = domains
     .map((domain) => {
       const dv = toVec(domain.traits);
@@ -108,6 +122,13 @@ function rank(student: Vec, liked: Vec, profile: Profile | undefined, where: Stu
       .sort((a, b) => dv[b] * (student[b] + 0.001) - dv[a] * (student[a] + 0.001))
       .slice(0, 2);
     const reasons = ranked.map((t) => TRAIT_REASON[t]);
+    // The activity that overlaps most with this domain (if any) becomes the first reason.
+    let best: { a: Activity; score: number } | undefined;
+    for (const a of activities) {
+      const score = cosine(toVec(activityArea(a)?.traits ?? {}), dv);
+      if (score >= 0.5 && (!best || score > best.score)) best = { a, score };
+    }
+    if (best) reasons.unshift(`Ai deja experiență care contează aici: ${describeActivity(best.a)}.`);
     if (profile) {
       const shared = TRAITS.some((t) => (profile.traits[t] ?? 0) >= 2 && dv[t] >= 2);
       if (shared) reasons.push(`Profilul tău de liceu (${profile.name}) te pregătește bine pentru acest domeniu.`);
@@ -129,7 +150,7 @@ function rank(student: Vec, liked: Vec, profile: Profile | undefined, where: Stu
 
 export function matchDomains(answers: Answers): Match[] {
   const { student, picks, profile } = vectors(answers);
-  return rank(student, picks, profile, answers?.where);
+  return rank(student, picks, profile, answers?.where, validActivities(answers));
 }
 
 /** The student's inclinations from profile + answers, each an integer 0..100 (strongest = 100; all 0 when there are no answers). */

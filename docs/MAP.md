@@ -82,18 +82,20 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/quiz  (1 files)
 
-- `page.tsx` (156) — Quiz screen: one question per step with progress, encouragement and a floating illustration, then the "where" step.. Routes: /quiz. Exports: QuizPage
+- `page.tsx` (189) — Quiz screen: one question per step with progress, encouragement and a floating illustration, then the "where" step.. Routes: /quiz. Exports: QuizPage
 
 ### apps/web/app/rezultat  (1 files)
 
-- `page.tsx` (124) — Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /rezultat. Exports: ResultPage
+- `page.tsx` (127) — Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /rezultat. Exports: ResultPage
 
 ### apps/web/app/studenti  (1 files)
 
 - `page.tsx` (63) — Student voices: real opinions from students and graduates (name, faculty, year or graduate, their words).. Routes: /studenti. Exports: metadata, Students
 
-### apps/web/components  (7 files)
+### apps/web/components  (9 files)
 
+- `ActivitiesStep.tsx` (227) — Quiz step "Ce ai făcut până acum?": add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
+- `ActivitiesSummary.tsx` (33) — Read-only list of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
 - `Confetti.tsx` (41) — A short burst of cool-coloured confetti, shown once when mounted and removed after about 3 seconds.. Exports: Confetti
 - `Illustrations.tsx` (88) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots and the start-page hero.. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene
 - `MatchCard.tsx` (113) — One result card: tinted header band with emoji and animated percent ring, reasons, admission, careers and universities.. Exports: MatchCard
@@ -110,13 +112,15 @@ _Open only the files listed here; a file's description is its first comment line
 - `testimonials.json` (2) — JSON array, 0 items
 - `universities.json` (2048) — JSON array, 88 items
 
-### apps/web/lib  (5 files)
+### apps/web/lib  (7 files)
 
+- `activities.test.ts` (57) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
+- `activities.ts` (73) — Activities a student can add (competitions, volunteering, extracurriculars): labels, areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, describeActivity
 - `data.ts` (14) — Loads the seeded JSON (profiles, questions, domains, universities, testimonials) as typed arrays.. Exports: profiles, questions, domains, universities, testimonials
 - `match.test.ts` (194) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
-- `match.ts` (154) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: TRAITS, TRAIT_LABEL, matchDomains, studentTraits, matchByTraits
-- `session.ts` (42) — Keeps the student's answers in sessionStorage between pages (safe on the server).. Exports: loadDraft, saveDraft, clearDraft, toAnswers
-- `types.ts` (82) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
+- `match.ts` (175) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: TRAITS, TRAIT_LABEL, matchDomains, studentTraits, matchByTraits
+- `session.ts` (106) — Keeps the student's answers (and optional activities with photos) in sessionStorage between pages (safe on the server).. Exports: loadDraft, saveDraft, clearDraft, toAnswers, shrinkImage
+- `types.ts` (94) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
 
 ### apps/web/public  (2 files)
 

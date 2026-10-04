@@ -2,13 +2,14 @@
 // Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { ActivitiesSummary } from "@/components/ActivitiesSummary";
 import { Confetti } from "@/components/Confetti";
 import { Diploma, Sparkle } from "@/components/Illustrations";
 import { MatchCard } from "@/components/MatchCard";
 import { Notice, Shell } from "@/components/Shell";
 import { WhatIf } from "@/components/WhatIf";
 import { TRAITS, matchByTraits, matchDomains, studentTraits } from "@/lib/match";
-import { clearDraft, loadDraft, toAnswers } from "@/lib/session";
+import { clearDraft, loadDraft, toAnswers, type StoredActivity } from "@/lib/session";
 import type { Answers, Match, TraitId } from "@/lib/types";
 
 type Traits = Record<TraitId, number>;
@@ -81,6 +82,8 @@ export default function ResultPage() {
         <h1 className="mt-2 text-4xl font-black tracking-tighter text-ink sm:text-5xl">Domeniile tale potrivite</h1>
         <p className="mt-2 text-ink-soft">Iată cele 3 domenii care ți se potrivesc cel mai bine.</p>
       </div>
+
+      <ActivitiesSummary activities={(state.answers.activities ?? []) as StoredActivity[]} />
 
       {values && (
         <WhatIf
