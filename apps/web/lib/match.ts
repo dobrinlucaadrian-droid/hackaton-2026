@@ -1,6 +1,6 @@
 // Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).
 import { MAX_ACTIVITIES, activityArea, activityTraits, describeActivity } from "./activities";
-import { domains, profiles, questions, universities } from "./data";
+import { domains, profiles, questions, specializations, universities } from "./data";
 import type { Activity, Answers, Match, Profile, StudyPlace, TraitId, TraitWeights } from "./types";
 
 export const TRAITS: TraitId[] = ["logic", "tehnic", "stiinte", "ingrijire", "oameni", "limbaj", "creativ", "business", "societate", "miscare"];
@@ -144,6 +144,13 @@ function rank(
       reasons: reasons.slice(0, 3),
       universitiesRo: where === "abroad" ? [] : ro,
       universitiesAbroad: where === "ro" ? [] : abroad,
+      // The domain's specializations, closest to the student's inclinations first.
+      specializations: specializations
+        .filter((s) => s.domainId === domain.id)
+        .map((s) => ({ s, sim: cosine(student, toVec(s.traits)) }))
+        .sort((a, b) => b.sim - a.sim)
+        .slice(0, 3)
+        .map((x) => x.s),
     };
   });
 }

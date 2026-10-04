@@ -5,9 +5,9 @@ lista de commit-uri de la final se reface singură.
 
 ## Acum lucrăm la
 
-- **Scop:** site care ghidează liceenii spre facultatea potrivită (tema „The Middle Man”); predare azi, 2026-10-04, la 18:00
-- **Unde:** aplicația e în `apps/web`, publicată la https://unipath-taupe-mu.vercel.app
-- **Urmează:** `/pitch` (prezentarea și scenariul de demo). Pagina studenților are 7 păreri reale; fără poză: Alexandru Badea, Anton Mocanu, Alexa Munteanu
+- **Scop:** UniPath — ghid între liceu și facultate (tema „The Middle Man”). Ora prezentării s-a schimbat (nu mai e 18:00; ora nouă nu a fost spusă)
+- **Unde:** aplicația e în `apps/web` (pagini: `/`, `/test`, `/quiz`, `/rezultat`, `/universitati`, `/universitati/[id]`, `/studenti`), publicată la https://unipath-taupe-mu.vercel.app
+- **Urmează:** reparat ce găsește `reviewer`, publicat versiunea cu căutare, filtre și fișe; apoi `/pitch`
 - **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
 
 ## Jurnal
@@ -20,6 +20,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-04 17:40 — pagină principală, căutare, filtre top 10 și fișe de universități
+- Cerut: pagină principală cu lupă de căutare, toate specializările cu detalii, filtre (țară, specializare, buget, prestigiu, admitere, burse, cămin, certificate) cu top 10, fișă cu informații utile pentru fiecare universitate (admitere, avantaje, dezavantaje), Ivy League și cât mai multe universități din România; testul pe pagina lui, iar după test specializările potrivite și drumul spre universitățile care le au. Echipa a anunțat că ora prezentării s-a schimbat și că nu mai e grabă
+- Făcut: `/` pagină principală (căutare, butoane spre test și top 10, 206 specializări în 10 categorii cu filtru); `/test` testul; `/universitati` căutare + filtre + top 10, cu starea în adresă; `/universitati/[id]` fișa (119 universități: 62 din România, 57 din străinătate, cele 8 Ivy League); lista lumii (10.248, doar nume, țară, site) la căutare; la rezultat: 3 specializări potrivite pe domeniu și buton spre universități; meniu sus pe toate paginile; pagină 404 în română
+- Fișiere: `apps/web/lib/{types,data,match,universities}.ts`, `apps/web/lib/universities*.test.ts`, `apps/web/data/{universities-ro,universities-abroad,specializations,categories}.json`, `apps/web/public/world-universities.json`, `apps/web/app/**`, `apps/web/components/**`
+- Poartă: TRECUT (build, 55 teste, pornire); văzute în capturi: pagina principală, top 10, filtrul Ivy League, căutarea „cluj” la lățime de telefon, fișa Harvard; parcurs în browser: test → rezultat cu specializări → „Vezi universitățile” → top 10 → fișă; fără erori în consolă. NEVERIFICAT: corectitudinea fișelor (verificate online doar regulile SAT/ACT și de ajutor financiar la cele 10 universități din SUA și existența câtorva universități românești noi; restul din cunoștințe generale, marcat „orientativ” pe site); butonul Înapoi al browserului pe pagina de filtre; folosirea doar din tastatură
+- Urmează: `reviewer` pe tot diff-ul, reparații, publicare cu acordul echipei; `/pitch`
 
 ### 2026-10-04 16:15 — Zara Faflei, a șaptea părere
 - Cerut: adăugarea Zarei Faflei (Sciences Po Paris), cu poza trimisă de Pilot
@@ -171,6 +178,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 15:48 `a30bf9b` feat: add Zara Faflei's opinion and photo
 - 2026-10-04 15:36 `140f3a3` feat: show students from the same university side by side
 - 2026-10-04 15:32 `53386e1` feat: add two more student opinions
 - 2026-10-04 15:25 `dfe2825` feat: add Victoria Dumitru's photo to her opinion
@@ -200,5 +208,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-03 23:51 `733b7e4` docs: update team guide; map now orients new sessions and loads via CLAUDE.md
 - 2026-10-03 23:48 `8878279` docs: work directly on main, no branches by default
 - 2026-10-03 23:45 `18dd146` feat: add generated codebase map and ledger, enforced by the gate
-- 2026-10-03 23:38 `ff87e15` chore: keep git hooks on LF line endings
 <!-- commits:end -->

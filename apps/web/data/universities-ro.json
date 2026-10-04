@@ -1,0 +1,2738 @@
+[
+  {
+    "id": "unibuc",
+    "name": "Universitatea din București",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://unibuc.ro",
+    "domainIds": [
+      "informatica",
+      "matematica",
+      "fizica",
+      "chimie",
+      "biologie",
+      "geografie-mediu",
+      "business-management",
+      "drept",
+      "stiinte-politice-relatii-internationale",
+      "administratie-publica",
+      "comunicare-jurnalism",
+      "psihologie",
+      "sociologie-asistenta-sociala",
+      "stiintele-educatiei",
+      "litere-limbi-straine",
+      "istorie",
+      "filosofie",
+      "teologie"
+    ],
+    "about": "Cea mai veche universitate de stat din București, cu facultăți de științe, drept, litere și științe sociale. Este cunoscută pentru tradiție și pentru gama mare de specializări.",
+    "prestige": "international",
+    "budget": "gratuit",
+    "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
+    "dorms": true,
+    "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Foarte multe specializări, deci poți schimba direcția mai ușor",
+      "Nume cunoscut în țară și peste hotare, util pe CV",
+      "Sediu în centrul Capitalei, cu viață culturală bogată"
+    ],
+    "cons": [
+      "Orașul e scump, mai ales chiria",
+      "Facultățile sunt aglomerate, cu grupe mari",
+      "Cămine puține față de numărul de studenți"
+    ]
+  },
+  {
+    "id": "upb",
+    "name": "Universitatea Națională de Știință și Tehnologie POLITEHNICA București",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://upb.ro",
+    "domainIds": [
+      "calculatoare-it",
+      "inginerie-electrica-electronica",
+      "inginerie-mecanica",
+      "inginerie-chimica-materiale",
+      "energie-petrol-mediu",
+      "marina-transporturi"
+    ],
+    "about": "Cea mai mare universitate tehnică din țară, cu facultăți de inginerie și calculatoare în București, plus campusul din Pitești, după fuziunea cu Universitatea din Pitești. Este cunoscută pentru absolvenții căutați de companii.",
+    "prestige": "international",
+    "budget": "gratuit",
+    "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
+    "admissionTypes": [
+      "examen",
+      "bac"
+    ],
+    "admission": "Intri de obicei cu un examen sau cu o probă la matematică și fizică, ori cu media de la bacalaureat; regulile diferă pe facultăți, așa că verifică ghidul de admitere.",
+    "scholarships": true,
+    "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+    "dorms": true,
+    "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Studenții ei sunt foarte căutați de firmele din IT și inginerie",
+      "Multe facultăți tehnice într-un singur loc",
+      "Campus mare cu cămine și activități studențești"
+    ],
+    "cons": [
+      "Cursurile sunt grele și mulți studenți rămân în urmă",
+      "Facultățile mari au grupe aglomerate",
+      "Campusul din Capitală e departe de centru"
+    ]
+  },
+  {
+    "id": "ase-bucuresti",
+    "name": "Academia de Studii Economice din București",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://ase.ro",
+    "domainIds": [
+      "economie-finante",
+      "business-management",
+      "marketing",
+      "turism-servicii",
+      "administratie-publica",
+      "informatica",
+      "drept"
+    ],
+    "about": "Cea mai cunoscută universitate de economie din țară, cu facultăți de finanțe, management, marketing și informatică economică. Este recunoscută de angajatori din domeniul financiar.",
+    "prestige": "international",
+    "budget": "gratuit",
+    "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+    "scholarships": true,
+    "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
+    "dorms": true,
+    "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Diplomă apreciată în bănci, firme și consultanță",
+      "Multe programe pentru afaceri și finanțe",
+      "Parteneriate cu firme pentru stagii și internship-uri"
+    ],
+    "cons": [
+      "Concurență mare la facultățile căutate",
+      "Mulți studenți pe an, deci grupe mari",
+      "Chiriile din București cresc costurile"
+    ]
+  },
+  {
+    "id": "umf-carol-davila",
+    "name": "Universitatea de Medicină și Farmacie „Carol Davila” din București",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://umfcd.ro",
+    "domainIds": [
+      "medicina",
+      "medicina-dentara",
+      "farmacie",
+      "asistenta-medicala"
+    ],
+    "about": "Cea mai mare universitate de medicină din țară, cu facultăți de medicină, stomatologie, farmacie și asistență medicală. Are spitale universitare mari în București.",
+    "prestige": "international",
+    "budget": "gratuit",
+    "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
+    "admissionTypes": [
+      "examen"
+    ],
+    "admission": "La medicină, stomatologie și farmacie se dă de regulă un examen scris, în special la biologie și chimie; la alte specializări modul de admitere poate fi diferit. Se cere și un certificat medical.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
+    "dorms": true,
+    "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
+    "certificates": [
+      "bac",
+      "medical"
+    ],
+    "pros": [
+      "Practică în spitale mari și variate din Capitală",
+      "Diplomă recunoscută în Europa",
+      "Multe specializări medicale în același loc"
+    ],
+    "cons": [
+      "Admitere foarte competitivă",
+      "Programul este încărcat și cere multă învățare",
+      "Chiria și traiul în București sunt scumpe"
+    ]
+  },
+  {
+    "id": "snspa",
+    "name": "Școala Națională de Studii Politice și Administrative",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://snspa.ro",
+    "domainIds": [
+      "stiinte-politice-relatii-internationale",
+      "administratie-publica",
+      "comunicare-jurnalism",
+      "business-management"
+    ],
+    "about": "Școală de stat axată pe științe politice, administrație, comunicare și management public. Este potrivită dacă vrei o carieră în instituții, diplomație sau comunicare.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+    "scholarships": true,
+    "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+    "dorms": true,
+    "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Specializare clară în administrație și politică",
+      "Grupe mai mici decât la universitățile mari",
+      "Legături cu instituții publice și organizații"
+    ],
+    "cons": [
+      "Nu are mare varietate de domenii",
+      "Poți rămâne cu o diplomă îngustă dacă te răzgândești",
+      "Locuri puține la buget"
+    ]
+  },
+  {
+    "id": "uauim",
+    "name": "Universitatea de Arhitectură și Urbanism „Ion Mincu”",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://uauim.ro",
+    "domainIds": [
+      "arhitectura"
+    ],
+    "about": "Principala școală de arhitectură din București, numită după arhitectul Ion Mincu. Pregătește arhitecți, urbaniști și specialiști în peisagistică.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
+    "admissionTypes": [
+      "aptitudini",
+      "dosar"
+    ],
+    "admission": "Intri pe baza unor probe practice sau de talent, adesea cu un portofoliu sau o prezentare; bacalaureatul contează și el. Detaliile diferă pe specializare.",
+    "scholarships": true,
+    "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
+    "dorms": true,
+    "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
+    "certificates": [
+      "bac",
+      "portofoliu"
+    ],
+    "pros": [
+      "Singura facultate dedicată doar arhitecturii în Capitală",
+      "Atelier practic și proiecte încă din primul an",
+      "Diplomă apreciată în țară și în Europa"
+    ],
+    "cons": [
+      "Programul este lung și solicitant (6 ani)",
+      "Mult timp petrecut la proiecte, uneori noaptea",
+      "Materialele pentru machete costă"
+    ]
+  },
+  {
+    "id": "utcb",
+    "name": "Universitatea Tehnică de Construcții București",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://utcb.ro",
+    "domainIds": [
+      "inginerie-civila"
+    ],
+    "about": "Universitate tehnică de stat pentru construcții, cu facultăți de construcții civile, hidrotehnică, geodezie și instalații. Pregătește ingineri pentru șantiere și proiectare.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
+    "admissionTypes": [
+      "examen",
+      "bac"
+    ],
+    "admission": "Intri de obicei cu un examen sau cu o probă la matematică și fizică, ori cu media de la bacalaureat; regulile diferă pe facultăți, așa că verifică ghidul de admitere.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
+    "dorms": true,
+    "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Domeniul construcțiilor are mereu cerere de ingineri",
+      "Specializări clare și practice",
+      "Legături strânse cu firme de construcții"
+    ],
+    "cons": [
+      "Mai puține domenii față de o universitate mare",
+      "Matematica și fizica sunt grele",
+      "Munca pe șantier poate fi solicitantă"
+    ]
+  },
+  {
+    "id": "usamv-bucuresti",
+    "name": "Universitatea de Științe Agronomice și Medicină Veterinară din București",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.usamv.ro",
+    "domainIds": [
+      "agronomie-silvicultura",
+      "medicina-veterinara",
+      "business-management"
+    ],
+    "about": "Universitate de stat pentru agricultură, horticultură, medicină veterinară și zootehnie. Are ferme și laboratoare proprii pentru practică.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Se poate intra cu media de la bacalaureat sau cu un examen, în funcție de facultate; la medicină veterinară se cere de regulă și probă la biologie. Verifică ghidul.",
+    "scholarships": true,
+    "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+    "dorms": true,
+    "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Practică la fermă și în laboratoare proprii",
+      "Domeniu cu nevoie reală de specialiști",
+      "Campus verde în București"
+    ],
+    "cons": [
+      "Poate presupune muncă în afara orașului",
+      "Mai puține facultăți decât alte universități",
+      "Prestigiul este mai mic în afara domeniului"
+    ]
+  },
+  {
+    "id": "unatc",
+    "name": "Universitatea Națională de Artă Teatrală și Cinematografică „I.L. Caragiale”",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://unatc.ro",
+    "domainIds": [
+      "teatru-film"
+    ],
+    "about": "Cea mai importantă școală de teatru și film din țară, numită după I.L. Caragiale. Pregătește actori, regizori, operatori și scenariști.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
+    "admissionTypes": [
+      "aptitudini",
+      "interviu"
+    ],
+    "admission": "Admiterea se face prin probe de talent și un interviu, nu doar prin note; ți se cere să arăți ce știi să faci. Detaliile diferă pe specializare.",
+    "scholarships": true,
+    "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
+    "dorms": true,
+    "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Profesori actori și regizori cunoscuți",
+      "Mult exercițiu practic, pe scenă sau la cameră",
+      "Poți lucra la filme și spectacole încă din facultate"
+    ],
+    "cons": [
+      "Admitere foarte grea, cu puține locuri",
+      "Meseria are venituri nesigure",
+      "Programul este intens și neregulat"
+    ]
+  },
+  {
+    "id": "unmb",
+    "name": "Universitatea Națională de Muzică din București",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://unmb.ro",
+    "domainIds": [
+      "muzica"
+    ],
+    "about": "Universitate de stat pentru muzică, cu programe de interpretare, compoziție și muzicologie. Studenții cântă în concerte și audiții.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
+    "admissionTypes": [
+      "aptitudini",
+      "interviu"
+    ],
+    "admission": "Admiterea se face prin probe de talent și un interviu, nu doar prin note; ți se cere să arăți ce știi să faci. Detaliile diferă pe specializare.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
+    "dorms": true,
+    "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Lecții individuale cu profesori muzicieni",
+      "Multe concerte și ocazii să cânți în public",
+      "Cămin și bibliotecă muzicală proprie"
+    ],
+    "cons": [
+      "Cere ani de studiu muzical înainte de admitere",
+      "Piața muncii e mică pentru muzicieni",
+      "Mult timp de exercițiu zilnic"
+    ]
+  },
+  {
+    "id": "unarte",
+    "name": "Universitatea Națională de Arte București",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.unarte.org",
+    "domainIds": [
+      "arte-vizuale-design"
+    ],
+    "about": "Universitate de stat pentru arte plastice, design și arte decorative, cu ateliere de pictură, grafică, sculptură și design. Pregătește artiști și designeri.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
+    "admissionTypes": [
+      "aptitudini",
+      "dosar"
+    ],
+    "admission": "Intri pe baza unor probe practice sau de talent, adesea cu un portofoliu sau o prezentare; bacalaureatul contează și el. Detaliile diferă pe specializare.",
+    "scholarships": true,
+    "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+    "dorms": true,
+    "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
+    "certificates": [
+      "bac",
+      "portofoliu"
+    ],
+    "pros": [
+      "Ateliere cu mult spațiu și materiale pentru practică",
+      "Domenii creative variate: pictură, design, modă",
+      "Expoziții și proiecte încă din facultate"
+    ],
+    "cons": [
+      "Admitere cu probe de desen, cu concurență mare",
+      "Venituri nesigure la început de carieră",
+      "Materialele artistice pot costa"
+    ]
+  },
+  {
+    "id": "unefs",
+    "name": "Universitatea Națională de Educație Fizică și Sport București",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://unefs.ro",
+    "domainIds": [
+      "sport-kinetoterapie"
+    ],
+    "about": "Universitate de stat pentru educație fizică și sport, cu programe de antrenor, profesor de sport și kinetoterapie. Are săli și baze sportive proprii.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
+    "admissionTypes": [
+      "aptitudini",
+      "bac"
+    ],
+    "admission": "Pe lângă media de la bacalaureat, ai de trecut probe fizice sau sportive și ai nevoie de un certificat medical. Detaliile diferă pe specializare.",
+    "scholarships": true,
+    "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
+    "dorms": true,
+    "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
+    "certificates": [
+      "bac",
+      "medical"
+    ],
+    "pros": [
+      "Baze sportive proprii pentru antrenament",
+      "Pregătire pentru meserii active: antrenor, kinetoterapeut",
+      "Colegi pasionați de mișcare"
+    ],
+    "cons": [
+      "Se cere condiție fizică bună la admitere",
+      "Specializare îngustă, la sport și mișcare",
+      "Locurile de muncă pot fi sezoniere"
+    ]
+  },
+  {
+    "id": "academia-politie",
+    "name": "Academia de Poliție „Alexandru Ioan Cuza”",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.academiadepolitie.ro",
+    "domainIds": [
+      "militar-politie",
+      "drept"
+    ],
+    "about": "Instituție de stat care pregătește ofițeri de poliție, jandarmi și specialiști în ordine publică, cu studii de drept și științe polițienești. Studenții sunt și angajați ai sistemului.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
+    "admissionTypes": [
+      "examen",
+      "aptitudini"
+    ],
+    "admission": "Admiterea cere probe scrise, probe fizice și control medical, ca la orice instituție militară; se aplică reguli stricte de intrare. Cere informații de la instituție.",
+    "scholarships": true,
+    "scholarshipsNote": "Primești cazare, hrană și o indemnizație lunară pe durata studiilor, în plus față de bursele obișnuite.",
+    "dorms": true,
+    "dormsNote": "Cazarea și masa sunt asigurate în unitate, de regulă pe toată perioada studiilor.",
+    "certificates": [
+      "bac",
+      "medical"
+    ],
+    "pros": [
+      "Ai job sigur după absolvire",
+      "Primești cazare și hrană în timpul studiilor",
+      "Pregătire de drept și practică pe teren"
+    ],
+    "cons": [
+      "Disciplină strictă și program riguros",
+      "După absolvire lucrezi un număr de ani în sistem",
+      "Probele fizice și medicale elimină mulți candidați"
+    ]
+  },
+  {
+    "id": "atm",
+    "name": "Academia Tehnică Militară „Ferdinand I”",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.mta.ro",
+    "domainIds": [
+      "militar-politie",
+      "inginerie-mecanica",
+      "inginerie-electrica-electronica",
+      "calculatoare-it"
+    ],
+    "about": "Instituție militară de stat care pregătește ofițeri-ingineri în domenii precum electronică, mecanică, informatică și construcții militare. Studenții primesc și pregătire militară.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
+    "admissionTypes": [
+      "examen",
+      "aptitudini"
+    ],
+    "admission": "Admiterea cere probe scrise, probe fizice și control medical, ca la orice instituție militară; se aplică reguli stricte de intrare. Cere informații de la instituție.",
+    "scholarships": true,
+    "scholarshipsNote": "Primești cazare, hrană și o indemnizație lunară pe durata studiilor, în plus față de bursele obișnuite.",
+    "dorms": true,
+    "dormsNote": "Cazarea și masa sunt asigurate în unitate, de regulă pe toată perioada studiilor.",
+    "certificates": [
+      "bac",
+      "medical"
+    ],
+    "pros": [
+      "Studii tehnice plus pregătire militară",
+      "Cazare, hrană și indemnizație asigurate",
+      "Ai post garantat în armată după absolvire"
+    ],
+    "cons": [
+      "Viața de cazarmă e strictă, cu program fix",
+      "Ești obligat să lucrezi în armată un număr de ani",
+      "Admitere cu probe fizice și medicale"
+    ]
+  },
+  {
+    "id": "ubb-cluj",
+    "name": "Universitatea Babeș-Bolyai",
+    "city": "Cluj-Napoca",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.ubbcluj.ro",
+    "domainIds": [
+      "informatica",
+      "matematica",
+      "fizica",
+      "chimie",
+      "biologie",
+      "geografie-mediu",
+      "economie-finante",
+      "business-management",
+      "drept",
+      "stiinte-politice-relatii-internationale",
+      "administratie-publica",
+      "comunicare-jurnalism",
+      "psihologie",
+      "sociologie-asistenta-sociala",
+      "stiintele-educatiei",
+      "litere-limbi-straine",
+      "istorie",
+      "filosofie",
+      "teologie",
+      "sport-kinetoterapie",
+      "teatru-film"
+    ],
+    "about": "Cea mai mare universitate din țară, cu predare în română, maghiară și germană, pe zeci de facultăți. Este cunoscută pentru cercetare și pentru oferta largă de specializări.",
+    "prestige": "international",
+    "budget": "gratuit",
+    "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+    "scholarships": true,
+    "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
+    "dorms": true,
+    "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Cea mai variată ofertă de facultăți din țară",
+      "Predare și în maghiară sau germană, pe unele programe",
+      "Oraș tânăr, plin de evenimente studențești"
+    ],
+    "cons": [
+      "Cluj-Napoca este un oraș scump",
+      "Concurență mare la facultățile populare",
+      "Cămine insuficiente față de numărul de studenți"
+    ]
+  },
+  {
+    "id": "utcn",
+    "name": "Universitatea Tehnică din Cluj-Napoca",
+    "city": "Cluj-Napoca",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.utcluj.ro",
+    "domainIds": [
+      "calculatoare-it",
+      "inginerie-electrica-electronica",
+      "inginerie-mecanica",
+      "inginerie-civila",
+      "arhitectura",
+      "inginerie-chimica-materiale",
+      "energie-petrol-mediu"
+    ],
+    "about": "Universitate tehnică de stat, cu facultăți de automatică, electronică, construcții, mecanică și arhitectură. Este una dintre cele mai bune școli de inginerie din țară.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
+    "admissionTypes": [
+      "examen",
+      "bac"
+    ],
+    "admission": "Intri de obicei cu un examen sau cu o probă la matematică și fizică, ori cu media de la bacalaureat; regulile diferă pe facultăți, așa că verifică ghidul de admitere.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
+    "dorms": true,
+    "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Foarte apreciată de firmele de IT din Cluj",
+      "Profesori și laboratoare bune pentru calculatoare",
+      "Mulți studenți fac practică în companii încă din facultate"
+    ],
+    "cons": [
+      "Cursurile sunt grele și cer multă muncă",
+      "Chiriile din Cluj sunt mari",
+      "Admitere competitivă la calculatoare"
+    ]
+  },
+  {
+    "id": "umf-cluj",
+    "name": "Universitatea de Medicină și Farmacie „Iuliu Hațieganu” din Cluj-Napoca",
+    "city": "Cluj-Napoca",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.umfcluj.ro",
+    "domainIds": [
+      "medicina",
+      "medicina-dentara",
+      "farmacie",
+      "asistenta-medicala",
+      "sport-kinetoterapie"
+    ],
+    "about": "Universitate de medicină și farmacie din Cluj, cu programe și în limbile română, maghiară și engleză. Este printre cele mai apreciate școli medicale din țară.",
+    "prestige": "international",
+    "budget": "gratuit",
+    "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
+    "admissionTypes": [
+      "examen"
+    ],
+    "admission": "La medicină, stomatologie și farmacie se dă de regulă un examen scris, în special la biologie și chimie; la alte specializări modul de admitere poate fi diferit. Se cere și un certificat medical.",
+    "scholarships": true,
+    "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+    "dorms": true,
+    "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
+    "certificates": [
+      "bac",
+      "medical"
+    ],
+    "pros": [
+      "Spitale clinice mari în același oraș",
+      "Predare și în maghiară sau engleză la unele programe",
+      "Absolvenți apreciați în țară și în străinătate"
+    ],
+    "cons": [
+      "Admitere grea, cu multă concurență",
+      "Programul este încărcat",
+      "Traiul în Cluj este scump"
+    ]
+  },
+  {
+    "id": "usamv-cluj",
+    "name": "Universitatea de Științe Agricole și Medicină Veterinară din Cluj-Napoca",
+    "city": "Cluj-Napoca",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.usamvcluj.ro",
+    "domainIds": [
+      "agronomie-silvicultura",
+      "medicina-veterinara"
+    ],
+    "about": "Universitate de stat pentru agricultură, horticultură, medicină veterinară și tehnologii alimentare. Are ferme didactice și un campus cu spații verzi.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Se poate intra cu media de la bacalaureat sau cu un examen, în funcție de facultate; la medicină veterinară se cere de regulă și probă la biologie. Verifică ghidul.",
+    "scholarships": true,
+    "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
+    "dorms": true,
+    "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Practică în ferme și laboratoare proprii",
+      "Domenii cu cerere în agricultură și industria alimentară",
+      "Oraș mare cu multe oportunități de lucru"
+    ],
+    "cons": [
+      "Mai puține domenii decât universitățile mari",
+      "Practica poate însemna ore pe câmp sau la fermă",
+      "Chiria în Cluj este scumpă"
+    ]
+  },
+  {
+    "id": "uad-cluj",
+    "name": "Universitatea de Artă și Design din Cluj-Napoca",
+    "city": "Cluj-Napoca",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.uad.ro",
+    "domainIds": [
+      "arte-vizuale-design"
+    ],
+    "about": "Universitate de stat pentru arte plastice, design și arte decorative, cu ateliere de pictură, sculptură, grafică și design. Este una dintre școlile de artă cunoscute din țară.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
+    "admissionTypes": [
+      "aptitudini",
+      "dosar"
+    ],
+    "admission": "Intri pe baza unor probe practice sau de talent, adesea cu un portofoliu sau o prezentare; bacalaureatul contează și el. Detaliile diferă pe specializare.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
+    "dorms": true,
+    "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
+    "certificates": [
+      "bac",
+      "portofoliu"
+    ],
+    "pros": [
+      "Ateliere bine dotate pentru creație",
+      "Domenii variate: design, fotografie, grafică, ceramică",
+      "Scenă artistică activă în Cluj"
+    ],
+    "cons": [
+      "Admitere cu probe practice și concurență mare",
+      "Venituri nesigure după absolvire",
+      "Materialele pentru proiecte pot costa"
+    ]
+  },
+  {
+    "id": "amgd-cluj",
+    "name": "Academia Națională de Muzică „Gheorghe Dima” din Cluj-Napoca",
+    "city": "Cluj-Napoca",
+    "country": "România",
+    "region": "ro",
+    "website": "https://anmgd.ro",
+    "domainIds": [
+      "muzica"
+    ],
+    "about": "Academie de stat pentru muzică, cu programe de interpretare, compoziție și pedagogie muzicală. Poartă numele compozitorului Gheorghe Dima.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
+    "admissionTypes": [
+      "aptitudini",
+      "interviu"
+    ],
+    "admission": "Admiterea se face prin probe de talent și un interviu, nu doar prin note; ți se cere să arăți ce știi să faci. Detaliile diferă pe specializare.",
+    "scholarships": true,
+    "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+    "dorms": true,
+    "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Lecții individuale cu profesori de specialitate",
+      "Concerte și proiecte în orașul cultural al Transilvaniei",
+      "Cămin dedicat studenților"
+    ],
+    "cons": [
+      "Cere pregătire muzicală serioasă dinainte",
+      "Piața muncii este mică pentru muzicieni",
+      "Mult exercițiu individual zilnic"
+    ]
+  },
+  {
+    "id": "uaic",
+    "name": "Universitatea „Alexandru Ioan Cuza” din Iași",
+    "city": "Iași",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.uaic.ro",
+    "domainIds": [
+      "informatica",
+      "matematica",
+      "fizica",
+      "chimie",
+      "biologie",
+      "geografie-mediu",
+      "economie-finante",
+      "business-management",
+      "drept",
+      "stiinte-politice-relatii-internationale",
+      "psihologie",
+      "sociologie-asistenta-sociala",
+      "stiintele-educatiei",
+      "litere-limbi-straine",
+      "istorie",
+      "filosofie",
+      "teologie",
+      "sport-kinetoterapie"
+    ],
+    "about": "Cea mai veche universitate din țară, înființată în 1860, cu facultăți de științe, drept, litere, economie și multe altele. Este un centru universitar important în Moldova.",
+    "prestige": "international",
+    "budget": "gratuit",
+    "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+    "scholarships": true,
+    "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
+    "dorms": true,
+    "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Are tradiție și prestigiu mare, din 1860",
+      "Ofertă largă de specializări într-un singur oraș",
+      "Iașul este mai ieftin decât Capitala și Clujul"
+    ],
+    "cons": [
+      "Facultățile căutate sunt aglomerate",
+      "Orașul este departe de vest și de Capitală",
+      "Cămine puține față de cerere"
+    ]
+  },
+  {
+    "id": "tuiasi",
+    "name": "Universitatea Tehnică „Gheorghe Asachi” din Iași",
+    "city": "Iași",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.tuiasi.ro",
+    "domainIds": [
+      "calculatoare-it",
+      "inginerie-electrica-electronica",
+      "inginerie-mecanica",
+      "inginerie-civila",
+      "arhitectura",
+      "inginerie-chimica-materiale",
+      "energie-petrol-mediu",
+      "business-management"
+    ],
+    "about": "Universitate tehnică de stat, cu facultăți de automatică, electronică, construcții, mecanică, chimie și arhitectură. Este cea mai mare școală de inginerie din Moldova.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
+    "admissionTypes": [
+      "examen",
+      "bac"
+    ],
+    "admission": "Intri de obicei cu un examen sau cu o probă la matematică și fizică, ori cu media de la bacalaureat; regulile diferă pe facultăți, așa că verifică ghidul de admitere.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
+    "dorms": true,
+    "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Ofertă tehnică variată, de la IT la construcții",
+      "Costuri de trai mai mici decât în Cluj sau București",
+      "Firme de IT din Iași angajează mulți absolvenți"
+    ],
+    "cons": [
+      "Matematica și fizica cer mult efort",
+      "Unele clădiri și laboratoare sunt mai vechi",
+      "Concurență pentru locurile la buget la calculatoare"
+    ]
+  },
+  {
+    "id": "umf-iasi",
+    "name": "Universitatea de Medicină și Farmacie „Grigore T. Popa” Iași",
+    "city": "Iași",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.umfiasi.ro",
+    "domainIds": [
+      "medicina",
+      "medicina-dentara",
+      "farmacie",
+      "asistenta-medicala",
+      "sport-kinetoterapie"
+    ],
+    "about": "Universitate de medicină din Iași, cu medicină, stomatologie, farmacie și asistență medicală. Este una dintre cele mai mari școli medicale din țară.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
+    "admissionTypes": [
+      "examen"
+    ],
+    "admission": "La medicină, stomatologie și farmacie se dă de regulă un examen scris, în special la biologie și chimie; la alte specializări modul de admitere poate fi diferit. Se cere și un certificat medical.",
+    "scholarships": true,
+    "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+    "dorms": true,
+    "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
+    "certificates": [
+      "bac",
+      "medical"
+    ],
+    "pros": [
+      "Spitale universitare mari în Iași",
+      "Costuri de trai mai mici decât în alte orașe mari",
+      "Programe în română și în engleză"
+    ],
+    "cons": [
+      "Admitere competitivă",
+      "Programul este încărcat",
+      "Pot fi mulți studenți la un curs"
+    ]
+  },
+  {
+    "id": "iuls",
+    "name": "Universitatea pentru Științele Vieții „Ion Ionescu de la Brad” din Iași",
+    "city": "Iași",
+    "country": "România",
+    "region": "ro",
+    "website": "https://iuls.ro",
+    "domainIds": [
+      "agronomie-silvicultura",
+      "medicina-veterinara"
+    ],
+    "about": "Universitate de stat pentru agricultură, horticultură, zootehnie și medicină veterinară, cu ferme de practică. Poartă numele agronomului Ion Ionescu de la Brad.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Se poate intra cu media de la bacalaureat sau cu un examen, în funcție de facultate; la medicină veterinară se cere de regulă și probă la biologie. Verifică ghidul.",
+    "scholarships": true,
+    "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
+    "dorms": true,
+    "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Ferme și stațiuni proprii pentru practică",
+      "Domenii cu cerere în agricultură și alimentație",
+      "Iași oferă traiul mai ieftin decât alte orașe mari"
+    ],
+    "cons": [
+      "Mai puține domenii decât la o universitate mare",
+      "Practica poate fi în afara orașului",
+      "Prestigiul este mai mic în afara domeniului"
+    ]
+  },
+  {
+    "id": "arte-iasi",
+    "name": "Universitatea Națională de Arte „George Enescu” Iași",
+    "city": "Iași",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.arteiasi.ro",
+    "domainIds": [
+      "arte-vizuale-design",
+      "muzica",
+      "teatru-film"
+    ],
+    "about": "Universitate de stat pentru arte, cu programe de muzică, arte plastice, design și teatru. Poartă numele compozitorului George Enescu.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
+    "admissionTypes": [
+      "aptitudini",
+      "interviu"
+    ],
+    "admission": "Admiterea se face prin probe de talent și un interviu, nu doar prin note; ți se cere să arăți ce știi să faci. Detaliile diferă pe specializare.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
+    "dorms": true,
+    "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Reunește muzica, artele vizuale și teatrul",
+      "Grupe mici și atenție de la profesori",
+      "Viață culturală bogată în Iași"
+    ],
+    "cons": [
+      "Admitere cu probe de talent, cu locuri puține",
+      "Venituri nesigure în artă",
+      "Dotările diferă de la un domeniu la altul"
+    ]
+  },
+  {
+    "id": "uvt",
+    "name": "Universitatea de Vest din Timișoara",
+    "city": "Timișoara",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.uvt.ro",
+    "domainIds": [
+      "informatica",
+      "matematica",
+      "fizica",
+      "chimie",
+      "biologie",
+      "geografie-mediu",
+      "economie-finante",
+      "business-management",
+      "drept",
+      "stiinte-politice-relatii-internationale",
+      "comunicare-jurnalism",
+      "psihologie",
+      "sociologie-asistenta-sociala",
+      "litere-limbi-straine",
+      "istorie",
+      "filosofie",
+      "teologie",
+      "arte-vizuale-design",
+      "muzica",
+      "teatru-film",
+      "sport-kinetoterapie"
+    ],
+    "about": "Universitate de stat din Timișoara, cu facultăți de științe, litere, economie, drept, arte și altele. Este un centru universitar deschis spre Vestul Europei.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+    "scholarships": true,
+    "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+    "dorms": true,
+    "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Ofertă variată, de la informatică la arte",
+      "Oraș multicultural, aproape de granița cu Europa de Vest",
+      "Mulți studenți străini, deci mediu internațional"
+    ],
+    "cons": [
+      "Concurență pentru locurile la buget la unele facultăți",
+      "Cămine cu locuri limitate",
+      "Chiria în Timișoara a crescut"
+    ]
+  },
+  {
+    "id": "upt",
+    "name": "Universitatea Politehnica Timișoara",
+    "city": "Timișoara",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.upt.ro",
+    "domainIds": [
+      "calculatoare-it",
+      "inginerie-electrica-electronica",
+      "inginerie-mecanica",
+      "inginerie-civila",
+      "arhitectura",
+      "inginerie-chimica-materiale",
+      "business-management",
+      "comunicare-jurnalism"
+    ],
+    "about": "Universitate tehnică de stat din Timișoara, cu facultăți de automatică, electronică, mecanică, construcții, chimie și arhitectură. Este cunoscută pentru legăturile cu industria din vest.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
+    "admissionTypes": [
+      "examen",
+      "bac"
+    ],
+    "admission": "Intri de obicei cu un examen sau cu o probă la matematică și fizică, ori cu media de la bacalaureat; regulile diferă pe facultăți, așa că verifică ghidul de admitere.",
+    "scholarships": true,
+    "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
+    "dorms": true,
+    "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Companii mari din Timișoara angajează absolvenți",
+      "Laboratoare moderne la unele facultăți",
+      "Oraș dinamic și tânăr"
+    ],
+    "cons": [
+      "Cursurile sunt dificile",
+      "Chiria în Timișoara este în creștere",
+      "Aglomerație la facultățile populare"
+    ]
+  },
+  {
+    "id": "umft",
+    "name": "Universitatea de Medicină și Farmacie „Victor Babeș” din Timișoara",
+    "city": "Timișoara",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.umft.ro",
+    "domainIds": [
+      "medicina",
+      "medicina-dentara",
+      "farmacie",
+      "asistenta-medicala"
+    ],
+    "about": "Universitate de medicină din Timișoara, cu medicină, stomatologie, farmacie și asistență medicală. Oferă programe și în engleză și germană.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
+    "admissionTypes": [
+      "examen"
+    ],
+    "admission": "La medicină, stomatologie și farmacie se dă de regulă un examen scris, în special la biologie și chimie; la alte specializări modul de admitere poate fi diferit. Se cere și un certificat medical.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
+    "dorms": true,
+    "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
+    "certificates": [
+      "bac",
+      "medical"
+    ],
+    "pros": [
+      "Programe în română, engleză și germană",
+      "Spitale universitare în oraș",
+      "Studenți internaționali, deci mediu mixt"
+    ],
+    "cons": [
+      "Admitere foarte competitivă",
+      "Programul este solicitant",
+      "Traiul în Timișoara costă mai mult"
+    ]
+  },
+  {
+    "id": "usvt",
+    "name": "Universitatea de Științele Vieții „Regele Mihai I” din Timișoara",
+    "city": "Timișoara",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.usvt.ro",
+    "domainIds": [
+      "agronomie-silvicultura",
+      "medicina-veterinara",
+      "business-management",
+      "turism-servicii"
+    ],
+    "about": "Universitate de stat pentru agricultură, horticultură, medicină veterinară și turism rural, în Timișoara. Are ferme și stațiuni de cercetare proprii.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Se poate intra cu media de la bacalaureat sau cu un examen, în funcție de facultate; la medicină veterinară se cere de regulă și probă la biologie. Verifică ghidul.",
+    "scholarships": true,
+    "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+    "dorms": true,
+    "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Ferme și laboratoare proprii pentru practică",
+      "Include și domenii noi precum turismul rural",
+      "Oraș cu piață a muncii dezvoltată"
+    ],
+    "cons": [
+      "Mai puține domenii decât la o universitate mare",
+      "Practica poate fi în afara orașului",
+      "Prestigiu mai mic în afara domeniului"
+    ]
+  },
+  {
+    "id": "unitbv",
+    "name": "Universitatea Transilvania din Brașov",
+    "city": "Brașov",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.unitbv.ro",
+    "domainIds": [
+      "calculatoare-it",
+      "informatica",
+      "matematica",
+      "inginerie-electrica-electronica",
+      "inginerie-mecanica",
+      "inginerie-civila",
+      "agronomie-silvicultura",
+      "economie-finante",
+      "business-management",
+      "marketing",
+      "turism-servicii",
+      "drept",
+      "psihologie",
+      "sociologie-asistenta-sociala",
+      "stiintele-educatiei",
+      "litere-limbi-straine",
+      "muzica",
+      "medicina",
+      "asistenta-medicala",
+      "sport-kinetoterapie",
+      "comunicare-jurnalism",
+      "arte-vizuale-design",
+      "inginerie-chimica-materiale"
+    ],
+    "about": "Universitate de stat mare din Brașov, cu facultăți de inginerie, silvicultură, economie, medicină, drept și muzică. Este cunoscută pentru ofertă variată și campus modern.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+    "scholarships": true,
+    "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
+    "dorms": true,
+    "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Ofertă foarte variată, de la silvicultură la medicină",
+      "Oraș la munte, ideal pentru sporturi de iarnă",
+      "Campus cu cămine și facultăți apropiate"
+    ],
+    "cons": [
+      "Brașovul este mai departe de marile centre de cercetare",
+      "Iarna este lungă și rece",
+      "Cămine puține față de numărul de cereri"
+    ]
+  },
+  {
+    "id": "ucv",
+    "name": "Universitatea din Craiova",
+    "city": "Craiova",
+    "country": "România",
+    "region": "ro",
+    "website": "https://ucv.ro",
+    "domainIds": [
+      "calculatoare-it",
+      "informatica",
+      "matematica",
+      "fizica",
+      "chimie",
+      "inginerie-electrica-electronica",
+      "inginerie-mecanica",
+      "economie-finante",
+      "business-management",
+      "drept",
+      "stiinte-politice-relatii-internationale",
+      "administratie-publica",
+      "litere-limbi-straine",
+      "istorie",
+      "stiintele-educatiei",
+      "sport-kinetoterapie",
+      "agronomie-silvicultura",
+      "psihologie",
+      "sociologie-asistenta-sociala",
+      "teologie"
+    ],
+    "about": "Universitate de stat din Craiova, cu facultăți de științe, inginerie, economie, drept și litere. Este principalul centru universitar din sudul Olteniei.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
+    "dorms": true,
+    "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Ofertă variată pentru sudul țării",
+      "Costuri de trai mai mici decât în orașele mari",
+      "Grupe uneori mai mici, cu mai multă atenție"
+    ],
+    "cons": [
+      "Oraș cu mai puține oportunități de angajare în IT",
+      "Prestigiu mai mic decât al marilor universități",
+      "Unele facultăți au laboratoare vechi"
+    ]
+  },
+  {
+    "id": "umf-craiova",
+    "name": "Universitatea de Medicină și Farmacie din Craiova",
+    "city": "Craiova",
+    "country": "România",
+    "region": "ro",
+    "website": "https://umfcv.ro",
+    "domainIds": [
+      "medicina",
+      "medicina-dentara",
+      "farmacie",
+      "asistenta-medicala"
+    ],
+    "about": "Universitate de medicină din Craiova, cu medicină, stomatologie, farmacie și asistență medicală. Este principala școală medicală din sudul Olteniei.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
+    "admissionTypes": [
+      "examen"
+    ],
+    "admission": "La medicină, stomatologie și farmacie se dă de regulă un examen scris, în special la biologie și chimie; la alte specializări modul de admitere poate fi diferit. Se cere și un certificat medical.",
+    "scholarships": true,
+    "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+    "dorms": true,
+    "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
+    "certificates": [
+      "bac",
+      "medical"
+    ],
+    "pros": [
+      "Spital universitar în Craiova",
+      "Costuri de trai mai mici decât în orașele mari",
+      "Grupe mai mici, cu mai multă atenție"
+    ],
+    "cons": [
+      "Admitere competitivă",
+      "Program încărcat",
+      "Oraș mai mic, cu viață culturală limitată"
+    ]
+  },
+  {
+    "id": "ovidius",
+    "name": "Universitatea „Ovidius” din Constanța",
+    "city": "Constanța",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.univ-ovidius.ro",
+    "domainIds": [
+      "matematica",
+      "informatica",
+      "fizica",
+      "chimie",
+      "biologie",
+      "geografie-mediu",
+      "drept",
+      "economie-finante",
+      "business-management",
+      "litere-limbi-straine",
+      "istorie",
+      "stiintele-educatiei",
+      "psihologie",
+      "teologie",
+      "sport-kinetoterapie",
+      "medicina",
+      "medicina-dentara",
+      "farmacie",
+      "inginerie-civila",
+      "inginerie-mecanica",
+      "arte-vizuale-design",
+      "comunicare-jurnalism",
+      "turism-servicii",
+      "administratie-publica",
+      "agronomie-silvicultura",
+      "stiinte-politice-relatii-internationale",
+      "marina-transporturi"
+    ],
+    "about": "Universitate de stat din Constanța, cu facultăți de drept, litere, medicină, științe, economie și altele. Are avantajul orașului de la mare.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+    "scholarships": true,
+    "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
+    "dorms": true,
+    "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Studiezi lângă mare, cu viață de vară",
+      "Multe facultăți, inclusiv medicină și drept",
+      "Oraș cu port și turism, deci oportunități de job"
+    ],
+    "cons": [
+      "Iarna orașul e mai liniștit",
+      "Cămine cu locuri limitate",
+      "Prestigiu mai mic decât al universităților din marile centre"
+    ]
+  },
+  {
+    "id": "umc",
+    "name": "Universitatea Maritimă din Constanța",
+    "city": "Constanța",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.cmu-edu.eu",
+    "domainIds": [
+      "marina-transporturi",
+      "inginerie-electrica-electronica",
+      "inginerie-mecanica"
+    ],
+    "about": "Universitate de stat din Constanța care pregătește ofițeri de marină civilă și ingineri navali. Studenții fac practică pe nave.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
+    "admissionTypes": [
+      "examen",
+      "bac"
+    ],
+    "admission": "Intri de obicei cu un examen sau cu o probă la matematică și fizică, ori cu media de la bacalaureat; regulile diferă pe facultăți, așa că verifică ghidul de admitere.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
+    "dorms": true,
+    "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Practică pe nave și posibilitate de a lucra în străinătate",
+      "Profesie cu salarii mari pentru navigatori",
+      "Specializare clară, cu piață globală"
+    ],
+    "cons": [
+      "Viața pe mare înseamnă luni departe de casă",
+      "Se cere condiție medicală bună",
+      "Domeniu foarte specializat"
+    ]
+  },
+  {
+    "id": "anmb",
+    "name": "Academia Navală „Mircea cel Bătrân”",
+    "city": "Constanța",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.anmb.ro",
+    "domainIds": [
+      "militar-politie",
+      "marina-transporturi"
+    ],
+    "about": "Instituție militară de stat din Constanța care pregătește ofițeri pentru Marina Militară. Studenții primesc și pregătire navală.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
+    "admissionTypes": [
+      "examen",
+      "aptitudini"
+    ],
+    "admission": "Admiterea cere probe scrise, probe fizice și control medical, ca la orice instituție militară; se aplică reguli stricte de intrare. Cere informații de la instituție.",
+    "scholarships": true,
+    "scholarshipsNote": "Primești cazare, hrană și o indemnizație lunară pe durata studiilor, în plus față de bursele obișnuite.",
+    "dorms": true,
+    "dormsNote": "Cazarea și masa sunt asigurate în unitate, de regulă pe toată perioada studiilor.",
+    "certificates": [
+      "bac",
+      "medical"
+    ],
+    "pros": [
+      "Locuri de muncă sigure în Marina Militară",
+      "Cazare și hrană asigurate pe durata studiilor",
+      "Pregătire practică pe nave"
+    ],
+    "cons": [
+      "Viață strictă, cu disciplină militară",
+      "Ești obligat să lucrezi în armată un număr de ani",
+      "Admitere cu probe fizice și medicale"
+    ]
+  },
+  {
+    "id": "ulbs",
+    "name": "Universitatea „Lucian Blaga” din Sibiu",
+    "city": "Sibiu",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.ulbsibiu.ro",
+    "domainIds": [
+      "calculatoare-it",
+      "informatica",
+      "inginerie-mecanica",
+      "inginerie-electrica-electronica",
+      "medicina",
+      "asistenta-medicala",
+      "drept",
+      "economie-finante",
+      "business-management",
+      "marketing",
+      "litere-limbi-straine",
+      "istorie",
+      "stiintele-educatiei",
+      "teologie",
+      "agronomie-silvicultura",
+      "comunicare-jurnalism",
+      "sociologie-asistenta-sociala",
+      "psihologie",
+      "matematica",
+      "arte-vizuale-design"
+    ],
+    "about": "Universitate de stat din Sibiu, cu facultăți de inginerie, medicină, drept, litere, teologie și economie. Este cunoscută pentru atmosfera orașului vechi.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+    "scholarships": true,
+    "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
+    "dorms": true,
+    "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Oraș frumos, sigur și ușor de străbătut pe jos",
+      "Ofertă variată, inclusiv medicină și inginerie",
+      "Parteneriate cu firme din zonă"
+    ],
+    "cons": [
+      "Oraș mai mic, cu mai puține oportunități decât Clujul",
+      "Concurență pentru locurile la buget la medicină",
+      "Cămine insuficiente"
+    ]
+  },
+  {
+    "id": "ugal",
+    "name": "Universitatea „Dunărea de Jos” din Galați",
+    "city": "Galați",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.ugal.ro",
+    "domainIds": [
+      "calculatoare-it",
+      "inginerie-mecanica",
+      "inginerie-electrica-electronica",
+      "marina-transporturi",
+      "inginerie-chimica-materiale",
+      "economie-finante",
+      "business-management",
+      "drept",
+      "litere-limbi-straine",
+      "istorie",
+      "stiintele-educatiei",
+      "sport-kinetoterapie",
+      "medicina",
+      "asistenta-medicala",
+      "administratie-publica",
+      "filosofie",
+      "teologie",
+      "farmacie",
+      "arte-vizuale-design",
+      "agronomie-silvicultura"
+    ],
+    "about": "Universitate de stat din Galați, cu facultăți de inginerie navală, calculatoare, drept, litere și medicină. Este cunoscută pentru domeniile legate de Dunăre și industrie.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
+    "dorms": true,
+    "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Specializare în inginerie navală și industrială",
+      "Costuri de trai mici",
+      "Oraș la Dunăre cu port și industrie"
+    ],
+    "cons": [
+      "Oraș mai puțin dezvoltat economic decât marile centre",
+      "Mai puține oportunități în IT",
+      "Prestigiu mai mic decât al marilor universități"
+    ]
+  },
+  {
+    "id": "uoradea",
+    "name": "Universitatea din Oradea",
+    "city": "Oradea",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.uoradea.ro",
+    "domainIds": [
+      "medicina",
+      "medicina-dentara",
+      "farmacie",
+      "asistenta-medicala",
+      "informatica",
+      "matematica",
+      "fizica",
+      "chimie",
+      "biologie",
+      "geografie-mediu",
+      "inginerie-electrica-electronica",
+      "inginerie-mecanica",
+      "inginerie-civila",
+      "arhitectura",
+      "economie-finante",
+      "business-management",
+      "drept",
+      "stiinte-politice-relatii-internationale",
+      "litere-limbi-straine",
+      "istorie",
+      "stiintele-educatiei",
+      "teologie",
+      "sport-kinetoterapie",
+      "arte-vizuale-design",
+      "muzica",
+      "psihologie",
+      "sociologie-asistenta-sociala",
+      "comunicare-jurnalism",
+      "energie-petrol-mediu",
+      "turism-servicii"
+    ],
+    "about": "Universitate de stat din Oradea, cu medicină, științe, inginerie, drept, arte și teologie. Este centrul universitar din nord-vestul țării.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+    "scholarships": true,
+    "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+    "dorms": true,
+    "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Oraș frumos, curat și în dezvoltare",
+      "Aproape de granița cu Ungaria",
+      "Ofertă variată, de la medicină la arte"
+    ],
+    "cons": [
+      "Mai puține firme mari de IT decât în Cluj",
+      "Prestigiu mai mic decât al marilor universități",
+      "Cămine cu locuri limitate"
+    ]
+  },
+  {
+    "id": "umfst",
+    "name": "Universitatea de Medicină, Farmacie, Științe și Tehnologie „George Emil Palade” din Târgu Mureș",
+    "city": "Târgu Mureș",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.umfst.ro",
+    "domainIds": [
+      "medicina",
+      "medicina-dentara",
+      "farmacie",
+      "asistenta-medicala",
+      "calculatoare-it",
+      "litere-limbi-straine",
+      "economie-finante",
+      "drept"
+    ],
+    "about": "Universitate de medicină și științe din Târgu Mureș, cu programe în română, maghiară și engleză. Poartă numele lui George Emil Palade, laureat Nobel.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
+    "admissionTypes": [
+      "examen"
+    ],
+    "admission": "La medicină, stomatologie și farmacie se dă de regulă un examen scris, în special la biologie și chimie; la alte specializări modul de admitere poate fi diferit. Se cere și un certificat medical.",
+    "scholarships": true,
+    "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
+    "dorms": true,
+    "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
+    "certificates": [
+      "bac",
+      "medical"
+    ],
+    "pros": [
+      "Programe în română, maghiară și engleză",
+      "Spitale universitare în oraș",
+      "Domenii noi, precum IT medical și inginerie"
+    ],
+    "cons": [
+      "Admitere competitivă la medicină",
+      "Oraș mic, cu viață culturală limitată",
+      "Programul este încărcat"
+    ]
+  },
+  {
+    "id": "usv-suceava",
+    "name": "Universitatea „Ștefan cel Mare” din Suceava",
+    "city": "Suceava",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.usv.ro",
+    "domainIds": [
+      "calculatoare-it",
+      "informatica",
+      "inginerie-electrica-electronica",
+      "inginerie-mecanica",
+      "agronomie-silvicultura",
+      "economie-finante",
+      "business-management",
+      "drept",
+      "administratie-publica",
+      "litere-limbi-straine",
+      "istorie",
+      "stiintele-educatiei",
+      "sport-kinetoterapie",
+      "asistenta-medicala",
+      "comunicare-jurnalism",
+      "psihologie",
+      "biologie",
+      "geografie-mediu",
+      "sociologie-asistenta-sociala",
+      "medicina"
+    ],
+    "about": "Universitate de stat din Suceava, cu facultăți de inginerie, economie, litere, drept și silvicultură. Este centrul universitar din nordul Moldovei.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
+    "dorms": true,
+    "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Costuri de trai mici",
+      "Facultate de silvicultură puternică, în zonă cu păduri",
+      "Grupe mici, cu atenție la studenți"
+    ],
+    "cons": [
+      "Oraș mic, cu mai puține joburi de început",
+      "Prestigiu mai mic decât al marilor universități",
+      "Mulți studenți pleacă în alte orașe după absolvire"
+    ]
+  },
+  {
+    "id": "upg",
+    "name": "Universitatea Petrol-Gaze din Ploiești",
+    "city": "Ploiești",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.upg-ploiesti.ro",
+    "domainIds": [
+      "energie-petrol-mediu",
+      "inginerie-mecanica",
+      "inginerie-electrica-electronica",
+      "economie-finante",
+      "business-management",
+      "litere-limbi-straine",
+      "inginerie-chimica-materiale"
+    ],
+    "about": "Universitate tehnică de stat din Ploiești, specializată în petrol, gaze, energie și mediu. Pregătește ingineri pentru industrie.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
+    "admissionTypes": [
+      "examen",
+      "bac"
+    ],
+    "admission": "Intri de obicei cu un examen sau cu o probă la matematică și fizică, ori cu media de la bacalaureat; regulile diferă pe facultăți, așa că verifică ghidul de admitere.",
+    "scholarships": true,
+    "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+    "dorms": true,
+    "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Specializare rară în petrol și gaze, cu cerere în industrie",
+      "Aproape de București, ușor de ajuns",
+      "Firme din domeniu angajează absolvenți"
+    ],
+    "cons": [
+      "Domeniul petrolului scade în favoarea energiei verzi",
+      "Ofertă mai îngustă decât la o universitate mare",
+      "Orașul nu are viață studențească la fel de activă"
+    ]
+  },
+  {
+    "id": "uab",
+    "name": "Universitatea „1 Decembrie 1918” din Alba Iulia",
+    "city": "Alba Iulia",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.uab.ro",
+    "domainIds": [
+      "istorie",
+      "litere-limbi-straine",
+      "drept",
+      "teologie",
+      "economie-finante",
+      "stiintele-educatiei",
+      "informatica",
+      "calculatoare-it",
+      "sociologie-asistenta-sociala"
+    ],
+    "about": "Universitate de stat din Alba Iulia, cu facultăți de istorie, drept, teologie, economie și informatică. Este o universitate mai mică, într-un oraș istoric.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+    "scholarships": true,
+    "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
+    "dorms": true,
+    "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Oraș istoric, liniștit și sigur",
+      "Grupe mici, cu atenție de la profesori",
+      "Costuri de trai mici"
+    ],
+    "cons": [
+      "Oraș mic, cu viață studențească modestă",
+      "Ofertă mai restrânsă față de universitățile mari",
+      "Mai puține oportunități de angajare locale"
+    ]
+  },
+  {
+    "id": "valahia",
+    "name": "Universitatea „Valahia” din Târgoviște",
+    "city": "Târgoviște",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.valahia.ro",
+    "domainIds": [
+      "calculatoare-it",
+      "inginerie-electrica-electronica",
+      "inginerie-mecanica",
+      "economie-finante",
+      "business-management",
+      "drept",
+      "istorie",
+      "litere-limbi-straine",
+      "stiintele-educatiei",
+      "teologie",
+      "stiinte-politice-relatii-internationale",
+      "administratie-publica"
+    ],
+    "about": "Universitate de stat din Târgoviște, cu facultăți de inginerie, economie, drept, științe umaniste și teologie. Este centrul universitar al județului Dâmbovița.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
+    "dorms": true,
+    "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Aproape de București, ușor de navetat",
+      "Costuri de trai mici într-un oraș istoric",
+      "Grupe mai mici, cu atenție la studenți"
+    ],
+    "cons": [
+      "Ofertă mai restrânsă decât la universitățile mari",
+      "Mai puține oportunități de angajare locale",
+      "Viața studențească este modestă"
+    ]
+  },
+  {
+    "id": "ub-bacau",
+    "name": "Universitatea „Vasile Alecsandri” din Bacău",
+    "city": "Bacău",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.ub.ro",
+    "domainIds": [
+      "calculatoare-it",
+      "informatica",
+      "inginerie-mecanica",
+      "inginerie-electrica-electronica",
+      "economie-finante",
+      "business-management",
+      "litere-limbi-straine",
+      "stiintele-educatiei",
+      "sport-kinetoterapie",
+      "biologie"
+    ],
+    "about": "Universitate de stat din Bacău, cu facultăți de inginerie, științe, litere, economie și educație fizică. Este principalul centru universitar din sudul Moldovei.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+    "scholarships": true,
+    "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+    "dorms": true,
+    "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Ofertă tehnică și de științe într-un oraș accesibil",
+      "Costuri de trai mici",
+      "Parteneriate cu firme din industria locală"
+    ],
+    "cons": [
+      "Orașul are mai puține joburi în IT",
+      "Prestigiu mai mic decât al marilor universități",
+      "Mulți tineri pleacă spre alte orașe după facultate"
+    ]
+  },
+  {
+    "id": "uav-arad",
+    "name": "Universitatea „Aurel Vlaicu” din Arad",
+    "city": "Arad",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.uav.ro",
+    "domainIds": [
+      "calculatoare-it",
+      "informatica",
+      "matematica",
+      "inginerie-mecanica",
+      "inginerie-electrica-electronica",
+      "economie-finante",
+      "business-management",
+      "litere-limbi-straine",
+      "istorie",
+      "stiintele-educatiei",
+      "sport-kinetoterapie",
+      "teologie",
+      "arte-vizuale-design",
+      "muzica"
+    ],
+    "about": "Universitate de stat din Arad, cu facultăți de inginerie, economie, științe umaniste, educație fizică, teologie și arte. Se află lângă granița de vest.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+    "scholarships": true,
+    "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
+    "dorms": true,
+    "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Aproape de Timișoara și de granița cu Ungaria",
+      "Oraș liniștit, cu costuri moderate",
+      "Ofertă variată, inclusiv arte și teologie"
+    ],
+    "cons": [
+      "Mai puține opțiuni decât la o universitate mare",
+      "Prestigiu mai mic decât al celor din marile centre",
+      "Viață studențească mai restrânsă"
+    ]
+  },
+  {
+    "id": "utgjiu",
+    "name": "Universitatea „Constantin Brâncuși” din Târgu Jiu",
+    "city": "Târgu Jiu",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.utgjiu.ro",
+    "domainIds": [
+      "inginerie-mecanica",
+      "inginerie-electrica-electronica",
+      "economie-finante",
+      "business-management",
+      "drept",
+      "administratie-publica",
+      "litere-limbi-straine",
+      "stiintele-educatiei",
+      "sport-kinetoterapie",
+      "asistenta-medicala",
+      "psihologie"
+    ],
+    "about": "Universitate de stat din Târgu Jiu, orașul lui Brâncuși, cu facultăți de inginerie, economie, drept, litere și științe medicale. Este centrul universitar al Gorjului.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
+    "admissionTypes": [
+      "bac",
+      "examen"
+    ],
+    "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
+    "dorms": true,
+    "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Costuri de trai foarte mici",
+      "Grupe mici și profesori accesibili",
+      "Oraș cu Ansamblul Brâncuși, plin de cultură"
+    ],
+    "cons": [
+      "Oraș mic, cu puține joburi pentru absolvenți",
+      "Ofertă mai restrânsă",
+      "Prestigiu național mai redus"
+    ]
+  },
+  {
+    "id": "upet",
+    "name": "Universitatea din Petroșani",
+    "city": "Petroșani",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.upet.ro",
+    "domainIds": [
+      "energie-petrol-mediu",
+      "inginerie-mecanica",
+      "inginerie-electrica-electronica",
+      "business-management",
+      "economie-finante",
+      "administratie-publica"
+    ],
+    "about": "Universitate de stat din Petroșani, cunoscută pentru facultatea de mine și pentru inginerie electrică și mecanică. Are și programe de economie și administrație.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
+    "admissionTypes": [
+      "examen",
+      "bac"
+    ],
+    "admission": "Intri de obicei cu un examen sau cu o probă la matematică și fizică, ori cu media de la bacalaureat; regulile diferă pe facultăți, așa că verifică ghidul de admitere.",
+    "scholarships": true,
+    "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+    "dorms": true,
+    "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Una dintre puținele școli de mine din țară",
+      "Situată în Valea Jiului, aproape de munte",
+      "Grupe mici, cu atenție la studenți"
+    ],
+    "cons": [
+      "Industria minieră este în scădere",
+      "Oraș mic și departe de centrele mari",
+      "Ofertă redusă, doar trei facultăți"
+    ]
+  },
+  {
+    "id": "aft-sibiu",
+    "name": "Academia Forțelor Terestre „Nicolae Bălcescu”",
+    "city": "Sibiu",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.armyacademy.ro",
+    "domainIds": [
+      "militar-politie"
+    ],
+    "about": "Instituție militară de stat din Sibiu care pregătește ofițeri pentru Forțele Terestre. Studenții primesc pregătire militară și studii de specialitate.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
+    "admissionTypes": [
+      "examen",
+      "aptitudini"
+    ],
+    "admission": "Admiterea cere probe scrise, probe fizice și control medical, ca la orice instituție militară; se aplică reguli stricte de intrare. Cere informații de la instituție.",
+    "scholarships": true,
+    "scholarshipsNote": "Primești cazare, hrană și o indemnizație lunară pe durata studiilor, în plus față de bursele obișnuite.",
+    "dorms": true,
+    "dormsNote": "Cazarea și masa sunt asigurate în unitate, de regulă pe toată perioada studiilor.",
+    "certificates": [
+      "bac",
+      "medical"
+    ],
+    "pros": [
+      "Post garantat în armată după absolvire",
+      "Cazare, hrană și indemnizație asigurate",
+      "Pregătire practică și disciplină, utile în viață"
+    ],
+    "cons": [
+      "Viață strictă, cu program militar",
+      "Ești obligat să lucrezi în armată un număr de ani",
+      "Probele fizice și medicale sunt eliminatorii"
+    ]
+  },
+  {
+    "id": "afa-brasov",
+    "name": "Academia Forțelor Aeriene „Henri Coandă”",
+    "city": "Brașov",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.afahc.ro",
+    "domainIds": [
+      "militar-politie",
+      "marina-transporturi"
+    ],
+    "about": "Instituție militară de stat din Brașov care pregătește ofițeri pentru Forțele Aeriene și specialiști în aviație și management aerian. Poartă numele pionierului aviației Henri Coandă.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
+    "admissionTypes": [
+      "examen",
+      "aptitudini"
+    ],
+    "admission": "Admiterea cere probe scrise, probe fizice și control medical, ca la orice instituție militară; se aplică reguli stricte de intrare. Cere informații de la instituție.",
+    "scholarships": true,
+    "scholarshipsNote": "Primești cazare, hrană și o indemnizație lunară pe durata studiilor, în plus față de bursele obișnuite.",
+    "dorms": true,
+    "dormsNote": "Cazarea și masa sunt asigurate în unitate, de regulă pe toată perioada studiilor.",
+    "certificates": [
+      "bac",
+      "medical"
+    ],
+    "pros": [
+      "Pregătire în aviație și apărare aeriană",
+      "Cazare, hrană și indemnizație asigurate",
+      "Post garantat în armată"
+    ],
+    "cons": [
+      "Viață strictă, cu disciplină militară",
+      "Ești obligat să lucrezi în armată un număr de ani",
+      "Se cer teste medicale foarte exigente"
+    ]
+  },
+  {
+    "id": "unap",
+    "name": "Universitatea Națională de Apărare „Carol I”",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.unap.ro",
+    "domainIds": [
+      "militar-politie"
+    ],
+    "about": "Instituție militară de stat din București pentru pregătirea și perfecționarea ofițerilor, mai ales la nivel de master, doctorat și cursuri. Se adresează mai ales celor care sunt deja în armată.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
+    "admissionTypes": [
+      "examen",
+      "aptitudini"
+    ],
+    "admission": "Admiterea cere probe scrise, probe fizice și control medical, ca la orice instituție militară; se aplică reguli stricte de intrare. Cere informații de la instituție.",
+    "scholarships": true,
+    "scholarshipsNote": "Primești cazare, hrană și o indemnizație lunară pe durata studiilor, în plus față de bursele obișnuite.",
+    "dorms": true,
+    "dormsNote": "Cazarea și masa sunt asigurate în unitate, de regulă pe toată perioada studiilor.",
+    "certificates": [
+      "bac",
+      "medical"
+    ],
+    "pros": [
+      "Studii avansate în apărare și securitate",
+      "Legături cu structurile militare din țară și din străinătate",
+      "Cursuri și masterate utile pentru cariera militară"
+    ],
+    "cons": [
+      "Nu este o facultate obișnuită pentru absolvenți de liceu",
+      "Se adresează în special celor deja în armată",
+      "Ofertă limitată la domeniul militar"
+    ]
+  },
+  {
+    "id": "uat-tgmures",
+    "name": "Universitatea de Arte din Târgu Mureș",
+    "city": "Târgu Mureș",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.uat.ro",
+    "domainIds": [
+      "teatru-film"
+    ],
+    "about": "Universitate de stat din Târgu Mureș, cu programe de teatru, păpuși-marionete și comunicare audiovizuală. Predă în română și în maghiară.",
+    "prestige": "national",
+    "budget": "gratuit",
+    "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
+    "admissionTypes": [
+      "aptitudini",
+      "interviu"
+    ],
+    "admission": "Admiterea se face prin probe de talent și un interviu, nu doar prin note; ți se cere să arăți ce știi să faci. Detaliile diferă pe specializare.",
+    "scholarships": true,
+    "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
+    "dorms": true,
+    "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Școală de teatru cu tradiție, în română și maghiară",
+      "Grupe mici, cu mult exercițiu practic",
+      "Teatru universitar propriu pentru spectacole"
+    ],
+    "cons": [
+      "Admitere cu probe de talent, cu puține locuri",
+      "Meseria are venituri nesigure",
+      "Domeniu foarte îngust"
+    ]
+  },
+  {
+    "id": "rau",
+    "name": "Universitatea Româno-Americană",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.rau.ro",
+    "domainIds": [
+      "economie-finante",
+      "business-management",
+      "drept",
+      "informatica",
+      "turism-servicii",
+      "marketing"
+    ],
+    "about": "Universitate privată din București, cu facultăți de drept, management-marketing, informatică managerială și turism. A fost înființată în anii ’90 cu sprijin american.",
+    "prestige": "national",
+    "budget": "mediu",
+    "budgetNote": "Taxele sunt mai ridicate decât la o facultate cu taxă mică, mai ales la medicină; întreabă ce rate sunt posibile.",
+    "admissionTypes": [
+      "dosar",
+      "bac"
+    ],
+    "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+    "dorms": false,
+    "dormsNote": "Nu te baza pe cămin: întreabă la admitere sau caută o chirie în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Admitere simplă, fără examen greu",
+      "Programe orientate spre afaceri, drept și IT",
+      "Grupe mai mici decât la universitățile de stat mari"
+    ],
+    "cons": [
+      "Plătești taxă de școlarizare",
+      "Prestigiu mai mic la unii angajatori decât al unei universități de stat mari",
+      "Ofertă mai restrânsă de domenii"
+    ]
+  },
+  {
+    "id": "utm",
+    "name": "Universitatea „Titu Maiorescu”",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.utm.ro",
+    "domainIds": [
+      "medicina",
+      "medicina-dentara",
+      "drept",
+      "psihologie",
+      "economie-finante"
+    ],
+    "about": "Universitate privată din București, cunoscută pentru facultatea de medicină și cea de medicină dentară, plus drept și psihologie. Poartă numele criticului Titu Maiorescu.",
+    "prestige": "national",
+    "budget": "mediu",
+    "budgetNote": "Este universitate privată și plătești taxă de școlarizare; la programele cu laborator sau practică taxa este mai mare.",
+    "admissionTypes": [
+      "dosar",
+      "bac"
+    ],
+    "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+    "dorms": false,
+    "dormsNote": "Nu te baza pe cămin: întreabă la admitere sau caută o chirie în oraș.",
+    "certificates": [
+      "bac",
+      "medical"
+    ],
+    "pros": [
+      "Ai șansa să studiezi medicină fără concurența de la buget",
+      "Spitale partenere pentru practică",
+      "Admitere mai accesibilă decât la universitățile de stat"
+    ],
+    "cons": [
+      "Taxele sunt mari, mai ales la medicină",
+      "Diploma nu are același prestigiu ca la UMF-urile de stat",
+      "Cămine sau burse limitate"
+    ]
+  },
+  {
+    "id": "univnt",
+    "name": "Universitatea „Nicolae Titulescu”",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.univnt.ro",
+    "domainIds": [
+      "drept",
+      "economie-finante",
+      "business-management",
+      "administratie-publica"
+    ],
+    "about": "Universitate privată din București, specializată în drept și științe economice și administrative. Poartă numele diplomatului Nicolae Titulescu.",
+    "prestige": "national",
+    "budget": "mic",
+    "budgetNote": "Nu are locuri la buget, dar taxele sunt în general accesibile, iar le poți plăti în rate.",
+    "admissionTypes": [
+      "dosar",
+      "bac"
+    ],
+    "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+    "dorms": false,
+    "dormsNote": "Nu te baza pe cămin: întreabă la admitere sau caută o chirie în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Specializare în drept și administrație",
+      "Admitere accesibilă, bazată pe dosar",
+      "Program flexibil, potrivit și dacă lucrezi"
+    ],
+    "cons": [
+      "Plătești taxă de școlarizare",
+      "Prestigiu mai mic decât al facultăților de stat",
+      "Ofertă restrânsă de domenii"
+    ]
+  },
+  {
+    "id": "ucdc",
+    "name": "Universitatea Creștină „Dimitrie Cantemir”",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.ucdc.ro",
+    "domainIds": [
+      "drept",
+      "administratie-publica",
+      "economie-finante",
+      "business-management",
+      "litere-limbi-straine",
+      "stiintele-educatiei",
+      "turism-servicii"
+    ],
+    "about": "Universitate privată cu facultăți în București, Cluj-Napoca și Timișoara, pentru drept, economie, limbi străine și educație. Poartă numele învățatului Dimitrie Cantemir.",
+    "prestige": "national",
+    "budget": "mic",
+    "budgetNote": "Este universitate privată, deci plătești taxă; în general este mai mică decât în universitățile private din vestul Europei.",
+    "admissionTypes": [
+      "dosar",
+      "bac"
+    ],
+    "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+    "dorms": false,
+    "dormsNote": "Nu te baza pe cămin: întreabă la admitere sau caută o chirie în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Prezentă în trei orașe mari",
+      "Admitere accesibilă, bazată pe dosar",
+      "Program potrivit și pentru cei care lucrează"
+    ],
+    "cons": [
+      "Plătești taxă de școlarizare",
+      "Prestigiu mai mic decât al universităților de stat mari",
+      "Mai puțină cercetare și practică"
+    ]
+  },
+  {
+    "id": "spiru-haret",
+    "name": "Universitatea „Spiru Haret”",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.spiruharet.ro",
+    "domainIds": [
+      "drept",
+      "economie-finante",
+      "business-management",
+      "psihologie",
+      "sociologie-asistenta-sociala",
+      "litere-limbi-straine",
+      "stiintele-educatiei",
+      "comunicare-jurnalism",
+      "informatica",
+      "sport-kinetoterapie",
+      "muzica",
+      "arte-vizuale-design"
+    ],
+    "about": "Una dintre cele mai mari universități private din țară, cu filiale în mai multe orașe și cu multe domenii. Poartă numele matematicianului și reformatorului școlar Spiru Haret.",
+    "prestige": "national",
+    "budget": "mic",
+    "budgetNote": "Nu are locuri la buget, dar taxele sunt în general accesibile, iar le poți plăti în rate.",
+    "admissionTypes": [
+      "dosar",
+      "bac"
+    ],
+    "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+    "dorms": false,
+    "dormsNote": "Nu te baza pe cămin: întreabă la admitere sau caută o chirie în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Prezentă în mai multe orașe, aproape de casă",
+      "Ofertă largă de specializări",
+      "Admitere simplă și taxe accesibile"
+    ],
+    "cons": [
+      "Plătești taxă de școlarizare",
+      "Nu toate programele au aceeași reputație la angajatori",
+      "Verifică dacă specializarea aleasă este acreditată"
+    ]
+  },
+  {
+    "id": "sapientia",
+    "name": "Universitatea Sapientia",
+    "city": "Cluj-Napoca",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.sapientia.ro",
+    "domainIds": [
+      "calculatoare-it",
+      "inginerie-mecanica",
+      "inginerie-electrica-electronica",
+      "economie-finante",
+      "business-management",
+      "litere-limbi-straine",
+      "stiintele-educatiei",
+      "agronomie-silvicultura",
+      "comunicare-jurnalism"
+    ],
+    "about": "Universitate privată cu predare în limba maghiară, cu campusuri la Cluj-Napoca, Târgu Mureș și Miercurea Ciuc. Se adresează în special tinerilor maghiari din România.",
+    "prestige": "national",
+    "budget": "mic",
+    "budgetNote": "Este universitate privată, deci plătești taxă; în general este mai mică decât în universitățile private din vestul Europei.",
+    "admissionTypes": [
+      "dosar",
+      "bac"
+    ],
+    "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+    "dorms": true,
+    "dormsNote": "Are cămine sau cazare pentru studenți; locurile sunt limitate, așa că întreabă din timp.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Studiezi în maghiară, cu campusuri în Transilvania",
+      "Grupe mici și atmosferă de comunitate",
+      "Programe tehnice și de științe aplicate"
+    ],
+    "cons": [
+      "Se predă în maghiară, nu în română",
+      "Plătești taxă, dar poate exista sprijin financiar",
+      "Ofertă mai restrânsă decât la universitățile mari"
+    ]
+  },
+  {
+    "id": "uvvg",
+    "name": "Universitatea de Vest „Vasile Goldiș” din Arad",
+    "city": "Arad",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.uvvg.ro",
+    "domainIds": [
+      "medicina",
+      "medicina-dentara",
+      "farmacie",
+      "asistenta-medicala",
+      "drept",
+      "economie-finante",
+      "informatica",
+      "sport-kinetoterapie",
+      "stiintele-educatiei"
+    ],
+    "about": "Universitate privată din Arad, cunoscută pentru facultățile de medicină, medicină dentară și farmacie. Are și drept, economie și informatică.",
+    "prestige": "national",
+    "budget": "mediu",
+    "budgetNote": "Taxele sunt mai ridicate decât la o facultate cu taxă mică, mai ales la medicină; întreabă ce rate sunt posibile.",
+    "admissionTypes": [
+      "dosar",
+      "bac"
+    ],
+    "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+    "dorms": true,
+    "dormsNote": "Are cămine sau cazare pentru studenți; locurile sunt limitate, așa că întreabă din timp.",
+    "certificates": [
+      "bac",
+      "medical"
+    ],
+    "pros": [
+      "Poți studia medicină la un oraș mai mic, fără concurența de la buget",
+      "Clinici și spitale partenere în zonă",
+      "Aproape de Timișoara și de granița cu Ungaria"
+    ],
+    "cons": [
+      "Taxele sunt mari, mai ales la medicină",
+      "Prestigiu mai mic decât al UMF-urilor de stat",
+      "Oraș mic, cu oferta culturală restrânsă"
+    ]
+  },
+  {
+    "id": "upa-iasi",
+    "name": "Universitatea „Petre Andrei” din Iași",
+    "city": "Iași",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.upa.ro",
+    "domainIds": [
+      "drept",
+      "economie-finante",
+      "stiinte-politice-relatii-internationale",
+      "administratie-publica",
+      "psihologie",
+      "sociologie-asistenta-sociala",
+      "stiintele-educatiei"
+    ],
+    "about": "Universitate privată din Iași, cu facultăți de drept, economie, științe politice, psihologie și asistență socială. Este una dintre cele mai cunoscute școli private din Moldova.",
+    "prestige": "national",
+    "budget": "mic",
+    "budgetNote": "Este universitate privată, deci plătești taxă; în general este mai mică decât în universitățile private din vestul Europei.",
+    "admissionTypes": [
+      "dosar",
+      "bac"
+    ],
+    "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+    "dorms": false,
+    "dormsNote": "Nu te baza pe cămin: întreabă la admitere sau caută o chirie în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Specializări în științe sociale și drept",
+      "Admitere accesibilă, pe bază de dosar",
+      "Grupe mici, cu mai multă atenție"
+    ],
+    "cons": [
+      "Plătești taxă de școlarizare",
+      "Prestigiu mai mic decât al UAIC",
+      "Ofertă restrânsă, doar două facultăți"
+    ]
+  },
+  {
+    "id": "hyperion",
+    "name": "Universitatea Hyperion din București",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.hyperion.ro",
+    "domainIds": [
+      "informatica",
+      "calculatoare-it",
+      "drept",
+      "economie-finante",
+      "psihologie",
+      "stiintele-educatiei",
+      "comunicare-jurnalism",
+      "arte-vizuale-design"
+    ],
+    "about": "Universitate privată din București, înființată în 1990, cu facultăți de drept, economie, jurnalism, psihologie, științe exacte și arte. Se mândrește cu grupe mici.",
+    "prestige": "national",
+    "budget": "mic",
+    "budgetNote": "Nu are locuri la buget, dar taxele sunt în general accesibile, iar le poți plăti în rate.",
+    "admissionTypes": [
+      "dosar",
+      "bac"
+    ],
+    "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+    "dorms": false,
+    "dormsNote": "Nu te baza pe cămin: întreabă la admitere sau caută o chirie în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Ofertă variată pentru o universitate privată",
+      "Facultate de jurnalism și de arte în Capitală",
+      "Grupe mici și profesori accesibili"
+    ],
+    "cons": [
+      "Plătești taxă de școlarizare",
+      "Prestigiu mai mic decât al universităților de stat",
+      "Practica depinde mult de facultate"
+    ]
+  },
+  {
+    "id": "ueb",
+    "name": "Universitatea Ecologică din București",
+    "city": "București",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.ueb.ro",
+    "domainIds": [
+      "drept",
+      "economie-finante",
+      "business-management",
+      "geografie-mediu"
+    ],
+    "about": "Universitate privată din București, cu facultăți de drept, economie și management ecologic. Pune accent pe mediu și dezvoltare durabilă.",
+    "prestige": "national",
+    "budget": "mic",
+    "budgetNote": "Este universitate privată, deci plătești taxă; în general este mai mică decât în universitățile private din vestul Europei.",
+    "admissionTypes": [
+      "dosar",
+      "bac"
+    ],
+    "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+    "dorms": false,
+    "dormsNote": "Nu te baza pe cămin: întreabă la admitere sau caută o chirie în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Specializare în mediu și management ecologic",
+      "Admitere accesibilă, pe bază de dosar",
+      "Program potrivit și pentru cei care lucrează"
+    ],
+    "cons": [
+      "Plătești taxă de școlarizare",
+      "Prestigiu mai mic decât al universităților de stat",
+      "Ofertă restrânsă de domenii"
+    ]
+  },
+  {
+    "id": "danubius",
+    "name": "Universitatea Internațională Danubius",
+    "city": "Galați",
+    "country": "România",
+    "region": "ro",
+    "website": "https://www.univ-danubius.ro",
+    "domainIds": [
+      "drept",
+      "business-management",
+      "stiinte-politice-relatii-internationale",
+      "comunicare-jurnalism",
+      "arte-vizuale-design",
+      "stiintele-educatiei"
+    ],
+    "about": "Universitate privată din Galați (fostă „Danubius”), cu facultăți de drept, afaceri, media și design, științele vieții și educație. Se află în sud-estul Moldovei.",
+    "prestige": "national",
+    "budget": "mic",
+    "budgetNote": "Nu are locuri la buget, dar taxele sunt în general accesibile, iar le poți plăti în rate.",
+    "admissionTypes": [
+      "dosar",
+      "bac"
+    ],
+    "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+    "scholarships": true,
+    "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+    "dorms": false,
+    "dormsNote": "Nu te baza pe cămin: întreabă la admitere sau caută o chirie în oraș.",
+    "certificates": [
+      "bac"
+    ],
+    "pros": [
+      "Oferă programe moderne: media, design și tehnologie",
+      "Admitere accesibilă, pe bază de dosar",
+      "Grupe mici, cu atenție la studenți"
+    ],
+    "cons": [
+      "Plătești taxă de școlarizare",
+      "Prestigiu mai mic decât al universităților de stat",
+      "Oraș cu mai puține oportunități decât marile centre"
+    ]
+  }
+]

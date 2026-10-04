@@ -1,12 +1,12 @@
 // Page frame shared by all screens: header with the UniPath logo and three-dots motif, and a centered content column.
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { ThreeDots } from "./Illustrations";
+import { NavLinks } from "./NavLinks";
 
 export function Shell({ children, wide = false }: { children: ReactNode; wide?: boolean }) {
   return (
     <div className="relative flex flex-1 flex-col">
-      <header className="mx-auto flex w-full max-w-5xl items-center justify-between px-5 py-5">
+      <header className="mx-auto flex w-full max-w-5xl flex-wrap items-center justify-between gap-x-4 gap-y-1 px-5 py-4">
         <Link href="/" className="flex items-center gap-2 rounded-lg font-bold tracking-tight text-ink">
           <span
             aria-hidden
@@ -16,7 +16,7 @@ export function Shell({ children, wide = false }: { children: ReactNode; wide?: 
             Uni<span className="text-primary">Path</span>
           </span>
         </Link>
-        <ThreeDots className="h-3 w-12" />
+        <NavLinks />
       </header>
       <main className={`mx-auto w-full flex-1 px-5 pb-16 ${wide ? "max-w-5xl" : "max-w-2xl"}`}>{children}</main>
     </div>

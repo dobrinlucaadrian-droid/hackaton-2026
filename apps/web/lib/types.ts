@@ -46,6 +46,19 @@ export type Domain = {
   careers: string[]; // 3-5 typical jobs
 };
 
+/** How widely a university is known. "ivy" is only for the eight Ivy League universities. */
+export type Prestige = "ivy" | "top" | "international" | "national";
+
+/** Tuition level for a Romanian (EU) student, per year, in general terms:
+ *  gratuit = no tuition or state-funded places; mic = low; mediu = medium; mare = high. */
+export type Budget = "gratuit" | "mic" | "mediu" | "mare";
+
+/** How admission to bachelor programmes usually works. */
+export type AdmissionType = "examen" | "bac" | "dosar" | "interviu" | "aptitudini" | "test-standardizat";
+
+/** Documents or certificates usually needed when applying. */
+export type CertificateId = "bac" | "engleza" | "alta-limba" | "sat-act" | "portofoliu" | "motivatie" | "recomandari" | "medical";
+
 export type University = {
   id: string;
   name: string;
@@ -56,6 +69,54 @@ export type University = {
   domainIds: string[];
   language?: string; // abroad only, general
   tuition?: string; // abroad only, general, no amounts
+  // Profile sheet — indicative information, written in Romanian for a teenager, no exact amounts or grades.
+  about: string; // 1-2 sentences: what the university is and is known for
+  prestige: Prestige;
+  budget: Budget;
+  budgetNote: string; // one sentence explaining the cost for a Romanian student
+  admissionTypes: AdmissionType[]; // at least one
+  admission: string; // 1-2 sentences: how admission works in general
+  scholarships: boolean; // scholarships or financial aid a Romanian student can realistically get
+  scholarshipsNote: string;
+  dorms: boolean; // student housing offered by the university
+  dormsNote: string;
+  certificates: CertificateId[];
+  pros: string[]; // 2-3 short advantages
+  cons: string[]; // 2-3 short disadvantages
+};
+
+/** A bachelor specialization inside a study domain, e.g. "Finanțe și bănci" inside "economie-finante". */
+export type Specialization = {
+  id: string;
+  domainId: string;
+  name: string;
+  short: string; // 1-2 sentences: what you study and what it leads to
+  traits: TraitWeights; // 0..3, used to rank specializations for a student
+};
+
+/** A group of study domains shown together on the home page, e.g. "Business și economie". */
+export type Category = {
+  id: string;
+  name: string;
+  emoji: string;
+  short: string; // one sentence
+  domainIds: string[];
+};
+
+/** An entry of the world list (name, country, website only), used for search. */
+export type WorldUniversity = { n: string; c: string; w: string };
+
+/** Filters for the "top 10" search; an absent field means "any". */
+export type Filters = {
+  country?: string; // exact `country` value
+  region?: "ro" | "abroad";
+  domainId?: string;
+  budget?: Budget; // this level or cheaper
+  prestige?: Prestige; // "ivy" = Ivy only; "top" = ivy + top; "international" = ivy + top + international
+  admissionType?: AdmissionType;
+  scholarships?: boolean; // true = only with scholarships
+  dorms?: boolean; // true = only with student housing
+  withoutCertificate?: CertificateId; // exclude universities that need this certificate
 };
 
 export type ActivityKind = "concurs" | "voluntariat" | "extra";
@@ -82,6 +143,7 @@ export type Match = {
   reasons: string[]; // 2-3 short Romanian sentences: why it fits this student
   universitiesRo: University[]; // empty when where === "abroad"
   universitiesAbroad: University[]; // empty when where === "ro"
+  specializations: Specialization[]; // up to 3 specializations of this domain that fit the student best, best first
 };
 
 /** A real opinion from a student or graduate, shown with their consent. */

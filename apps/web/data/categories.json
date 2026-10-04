@@ -1,0 +1,12 @@
+[
+  {"id":"sanatate","name":"Sănătate","emoji":"🩺","short":"Medici, farmaciști, asistenți și toți cei care îngrijesc oameni și animale.","domainIds":["medicina","medicina-dentara","farmacie","medicina-veterinara","asistenta-medicala"]},
+  {"id":"it","name":"IT și informatică","emoji":"💻","short":"Programare, calculatoare, date și tehnologie digitală.","domainIds":["informatica","calculatoare-it"]},
+  {"id":"inginerie","name":"Inginerie și tehnologie","emoji":"⚙️","short":"Mașini, clădiri, electronică, materiale și energie.","domainIds":["inginerie-electrica-electronica","inginerie-mecanica","inginerie-civila","inginerie-chimica-materiale","energie-petrol-mediu"]},
+  {"id":"stiinte","name":"Științe exacte și ale naturii","emoji":"🔬","short":"Matematică, fizică, chimie, biologie și natură.","domainIds":["matematica","fizica","chimie","biologie","geografie-mediu","agronomie-silvicultura"]},
+  {"id":"business","name":"Business și economie","emoji":"💼","short":"Bani, firme, piețe și cum se conduc ele.","domainIds":["economie-finante","business-management","marketing"]},
+  {"id":"drept-politica","name":"Drept, politică și administrație","emoji":"⚖️","short":"Legi, instituții, politică și relații între țări.","domainIds":["drept","stiinte-politice-relatii-internationale","administratie-publica"]},
+  {"id":"sociale-educatie","name":"Științe sociale și educație","emoji":"🧠","short":"Oameni, societate, comunicare și educație.","domainIds":["comunicare-jurnalism","psihologie","sociologie-asistenta-sociala","stiintele-educatiei"]},
+  {"id":"umaniste","name":"Litere, istorie și filosofie","emoji":"📚","short":"Limbi, texte, trecut, idei și credință.","domainIds":["litere-limbi-straine","istorie","filosofie","teologie"]},
+  {"id":"arte","name":"Arte, arhitectură și spectacol","emoji":"🎨","short":"Design, clădiri, muzică, film și teatru.","domainIds":["arhitectura","arte-vizuale-design","muzica","teatru-film"]},
+  {"id":"sport-servicii","name":"Sport, apărare, transport și turism","emoji":"🏃","short":"Mișcare, siguranță, călătorii și servicii.","domainIds":["sport-kinetoterapie","militar-politie","marina-transporturi","turism-servicii"]}
+]

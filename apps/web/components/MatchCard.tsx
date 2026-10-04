@@ -1,6 +1,7 @@
 // One result card: tinted header band with emoji and animated percent ring, reasons, admission, careers and universities.
 import type { CSSProperties } from "react";
-import type { Match, University } from "@/lib/types";
+import Link from "next/link";
+import type { Match, StudyPlace, University } from "@/lib/types";
 import { FAMILY_CLASSES, domainStyle } from "./domainStyle";
 import { UniversityList } from "./UniversityList";
 
@@ -29,11 +30,12 @@ function Ring({ percent, stroke }: { percent: number; stroke: string }) {
   );
 }
 
-export function MatchCard({ match, rank }: { match: Match; rank: number }) {
+export function MatchCard({ match, rank, where }: { match: Match; rank: number; where?: StudyPlace }) {
   const best = rank === 1;
   const { domain } = match;
   const { family, emoji } = domainStyle(domain.id);
   const f = FAMILY_CLASSES[family];
+  const region = where === "ro" ? "&regiune=ro" : where === "abroad" ? "&regiune=abroad" : "";
   const hasUnis = match.universitiesRo.length > 0 || match.universitiesAbroad.length > 0;
   const lists: { title: string; items: University[]; abroad: boolean }[] = [
     { title: "În România", items: match.universitiesRo, abroad: false },
@@ -76,6 +78,20 @@ export function MatchCard({ match, rank }: { match: Match; rank: number }) {
           </section>
         )}
 
+        {match.specializations.length > 0 && (
+          <section className="mt-5">
+            <h3 className="font-extrabold text-ink">Specializări care ți se potrivesc</h3>
+            <ul className="mt-2 space-y-2">
+              {match.specializations.map((s) => (
+                <li key={s.id} className={`rounded-xl ${f.band} px-4 py-3`}>
+                  <p className={`font-bold ${f.text}`}>{s.name}</p>
+                  {s.short && <p className="text-sm text-ink-soft">{s.short}</p>}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
         <section className="mt-5">
           <h3 className="font-extrabold text-ink">Ce îți trebuie la admitere</h3>
           <p className="mt-2 text-ink-soft">{domain.admission}</p>
@@ -106,6 +122,13 @@ export function MatchCard({ match, rank }: { match: Match; rank: number }) {
             </p>
           )}
         </section>
+
+        <Link
+          href={`/universitati?domeniu=${domain.id}${region}`}
+          className="mt-6 inline-flex min-h-12 w-full items-center justify-center rounded-2xl bg-primary px-6 py-3 text-center font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark active:scale-[0.98]"
+        >
+          Vezi universitățile pentru acest domeniu
+        </Link>
       </div>
     </article>
   );

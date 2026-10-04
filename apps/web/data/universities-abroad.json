@@ -1,0 +1,3202 @@
+[
+ {
+  "id": "rug",
+  "name": "University of Groningen",
+  "city": "Groningen",
+  "country": "Olanda",
+  "region": "abroad",
+  "website": "https://www.rug.nl",
+  "domainIds": [
+   "medicina",
+   "farmacie",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "geografie-mediu",
+   "economie-finante",
+   "business-management",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "teologie"
+  ],
+  "language": "engleză și neerlandeză; multe programe de licență în engleză",
+  "tuition": "cu taxă pentru studenții din UE (taxă legală, mai mică decât pentru non-UE)",
+  "about": "Universitate veche și respectată din nordul Olandei, într-un oraș mic, plin de studenți. Este cunoscută pentru cercetare și pentru multele programe în engleză.",
+  "prestige": "international",
+  "budget": "mediu",
+  "budgetNote": "Taxa de școlarizare pentru cetățenii UE este stabilită de stat și e moderată, dar costul vieții, mai ales chiria, e ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici prin platforma națională Studielink, cu diploma de bacalaureat și dovada nivelului de engleză. Unele programe au selecție sau număr limitat de locuri (numerus fixus).",
+  "scholarships": false,
+  "scholarshipsNote": "Pentru studenții din UE bursele sunt puține; verifică pe site-ul universității ce burse poți primi.",
+  "dorms": true,
+  "dormsNote": "Universitatea te ajută cu cazarea, dar în orașele olandeze lipsesc camere; caută din timp, imediat după admitere.",
+  "certificates": [
+   "bac",
+   "engleza"
+  ],
+  "pros": [
+   "Oraș studențesc prietenos, mai ieftin decât Amsterdam",
+   "Multe programe de licență în engleză",
+   "Ofertă largă, de la științe la litere"
+  ],
+  "cons": [
+   "Iernile sunt reci, ploioase și vântoase",
+   "Camerele de închiriat se ocupă repede",
+   "Orașul e departe de capitală și de aeroporturile mari"
+  ]
+ },
+ {
+  "id": "uva",
+  "name": "University of Amsterdam",
+  "city": "Amsterdam",
+  "country": "Olanda",
+  "region": "abroad",
+  "website": "https://www.uva.nl",
+  "domainIds": [
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "economie-finante",
+   "business-management",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "comunicare-jurnalism",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "stiintele-educatiei",
+   "medicina"
+  ],
+  "language": "engleză și neerlandeză; multe programe de licență în engleză",
+  "tuition": "cu taxă pentru studenții din UE (taxă legală, mai mică decât pentru non-UE)",
+  "about": "Universitate mare în centrul Amsterdamului, cunoscută pentru științe sociale, economie, drept și științe. Ai multe programe în engleză și un oraș internațional.",
+  "prestige": "international",
+  "budget": "mediu",
+  "budgetNote": "Taxa de școlarizare pentru cetățenii UE este stabilită de stat și e moderată, dar costul vieții, mai ales chiria, e ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici prin platforma națională Studielink, cu diploma de bacalaureat și dovada nivelului de engleză. Unele programe au selecție sau număr limitat de locuri (numerus fixus).",
+  "scholarships": false,
+  "scholarshipsNote": "Pentru studenții din UE bursele sunt puține; verifică pe site-ul universității ce burse poți primi.",
+  "dorms": true,
+  "dormsNote": "Universitatea te ajută cu cazarea, dar în orașele olandeze lipsesc camere; caută din timp, imediat după admitere.",
+  "certificates": [
+   "bac",
+   "engleza"
+  ],
+  "pros": [
+   "Oraș internațional, cu multe oportunități de stagii",
+   "Programe puternice în științe sociale și economie",
+   "Mulți studenți străini, ușor de legat prietenii"
+  ],
+  "cons": [
+   "Chiriile din Amsterdam sunt foarte mari",
+   "Lipsa camerelor este cea mai mare problemă",
+   "Unele programe populare au locuri limitate"
+  ]
+ },
+ {
+  "id": "vu-amsterdam",
+  "name": "Vrije Universiteit Amsterdam",
+  "city": "Amsterdam",
+  "country": "Olanda",
+  "region": "abroad",
+  "website": "https://vu.nl",
+  "domainIds": [
+   "medicina",
+   "medicina-dentara",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "economie-finante",
+   "business-management",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "teologie"
+  ],
+  "language": "engleză și neerlandeză; multe programe de licență în engleză",
+  "tuition": "cu taxă pentru studenții din UE (taxă legală, mai mică decât pentru non-UE)",
+  "about": "Universitate din Amsterdam cu un campus modern în zona de afaceri. Este apreciată pentru științe, economie, drept și programe interdisciplinare.",
+  "prestige": "international",
+  "budget": "mediu",
+  "budgetNote": "Taxa de școlarizare pentru cetățenii UE este stabilită de stat și e moderată, dar costul vieții, mai ales chiria, e ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici prin platforma națională Studielink, cu diploma de bacalaureat și dovada nivelului de engleză. Unele programe au selecție sau număr limitat de locuri (numerus fixus).",
+  "scholarships": false,
+  "scholarshipsNote": "Pentru studenții din UE bursele sunt puține; verifică pe site-ul universității ce burse poți primi.",
+  "dorms": true,
+  "dormsNote": "Universitatea te ajută cu cazarea, dar în orașele olandeze lipsesc camere; caută din timp, imediat după admitere.",
+  "certificates": [
+   "bac",
+   "engleza"
+  ],
+  "pros": [
+   "Campus compact lângă centrul de afaceri",
+   "Programe de științe și economie bine văzute",
+   "Atmosferă mai relaxată decât la alte universități mari"
+  ],
+  "cons": [
+   "Chirie scumpă și camere puține în Amsterdam",
+   "Multe cursuri sunt în grupuri mari",
+   "Trebuie să te organizezi singur cu cazarea"
+  ]
+ },
+ {
+  "id": "tu-delft",
+  "name": "Delft University of Technology (TU Delft)",
+  "city": "Delft",
+  "country": "Olanda",
+  "region": "abroad",
+  "website": "https://www.tudelft.nl",
+  "domainIds": [
+   "informatica",
+   "calculatoare-it",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "arhitectura",
+   "inginerie-chimica-materiale",
+   "matematica",
+   "fizica",
+   "marina-transporturi"
+  ],
+  "language": "engleză și neerlandeză; multe programe de licență în engleză",
+  "tuition": "cu taxă pentru studenții din UE (taxă legală, mai mică decât pentru non-UE)",
+  "about": "Cea mai cunoscută universitate tehnică din Olanda, specializată în inginerie, arhitectură și tehnologie. Este apreciată de angajatori din toată Europa.",
+  "prestige": "international",
+  "budget": "mediu",
+  "budgetNote": "Taxa de școlarizare pentru cetățenii UE este stabilită de stat și e moderată, dar costul vieții, mai ales chiria, e ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici prin platforma națională Studielink, cu diploma de bacalaureat și dovada nivelului de engleză. Unele programe au selecție sau număr limitat de locuri (numerus fixus).",
+  "scholarships": false,
+  "scholarshipsNote": "Pentru studenții din UE bursele sunt puține; verifică pe site-ul universității ce burse poți primi.",
+  "dorms": true,
+  "dormsNote": "Universitatea te ajută cu cazarea, dar în orașele olandeze lipsesc camere; caută din timp, imediat după admitere.",
+  "certificates": [
+   "bac",
+   "engleza"
+  ],
+  "pros": [
+   "Renume puternic în inginerie și arhitectură",
+   "Legături strânse cu companii mari",
+   "Orașul Delft este mic și liniștit"
+  ],
+  "cons": [
+   "Programa este grea și cere multă muncă",
+   "Camerele din Delft și din Haga sunt rare",
+   "Mai puțin potrivită dacă vrei un oraș mare"
+  ]
+ },
+ {
+  "id": "tu-eindhoven",
+  "name": "Eindhoven University of Technology (TU/e)",
+  "city": "Eindhoven",
+  "country": "Olanda",
+  "region": "abroad",
+  "website": "https://www.tue.nl",
+  "domainIds": [
+   "informatica",
+   "calculatoare-it",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "arhitectura",
+   "inginerie-chimica-materiale",
+   "matematica",
+   "fizica"
+  ],
+  "language": "engleză și neerlandeză; multe programe de licență în engleză",
+  "tuition": "cu taxă pentru studenții din UE (taxă legală, mai mică decât pentru non-UE)",
+  "about": "Universitate tehnică în inima unei regiuni de înaltă tehnologie, cu legături strânse cu industria. Este cunoscută pentru inginerie, fizică și informatică.",
+  "prestige": "international",
+  "budget": "mediu",
+  "budgetNote": "Taxa de școlarizare pentru cetățenii UE este stabilită de stat și e moderată, dar costul vieții, mai ales chiria, e ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici prin platforma națională Studielink, cu diploma de bacalaureat și dovada nivelului de engleză. Unele programe au selecție sau număr limitat de locuri (numerus fixus).",
+  "scholarships": false,
+  "scholarshipsNote": "Pentru studenții din UE bursele sunt puține; verifică pe site-ul universității ce burse poți primi.",
+  "dorms": true,
+  "dormsNote": "Universitatea te ajută cu cazarea, dar în orașele olandeze lipsesc camere; caută din timp, imediat după admitere.",
+  "certificates": [
+   "bac",
+   "engleza"
+  ],
+  "pros": [
+   "Colaborări cu companii de tehnologie din zonă",
+   "Proiecte practice încă din primii ani",
+   "Costuri mai mici decât în orașele mari din vest"
+  ],
+  "cons": [
+   "Eindhoven e un oraș industrial, mai puțin pitoresc",
+   "Studiile sunt solicitante",
+   "Cazarea se găsește greu la început de an"
+  ]
+ },
+ {
+  "id": "eur",
+  "name": "Erasmus University Rotterdam",
+  "city": "Rotterdam",
+  "country": "Olanda",
+  "region": "abroad",
+  "website": "https://www.eur.nl",
+  "domainIds": [
+   "medicina",
+   "economie-finante",
+   "business-management",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "comunicare-jurnalism",
+   "filosofie"
+  ],
+  "language": "engleză și neerlandeză; multe programe de licență în engleză",
+  "tuition": "cu taxă pentru studenții din UE (taxă legală, mai mică decât pentru non-UE)",
+  "about": "Universitate din Rotterdam, un oraș portuar modern, renumită pentru economie, afaceri, management și drept. Este un nume bine cunoscut în domeniul business.",
+  "prestige": "international",
+  "budget": "mediu",
+  "budgetNote": "Taxa de școlarizare pentru cetățenii UE este stabilită de stat și e moderată, dar costul vieții, mai ales chiria, e ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici prin platforma națională Studielink, cu diploma de bacalaureat și dovada nivelului de engleză. Unele programe au selecție sau număr limitat de locuri (numerus fixus).",
+  "scholarships": false,
+  "scholarshipsNote": "Pentru studenții din UE bursele sunt puține; verifică pe site-ul universității ce burse poți primi.",
+  "dorms": true,
+  "dormsNote": "Universitatea te ajută cu cazarea, dar în orașele olandeze lipsesc camere; caută din timp, imediat după admitere.",
+  "certificates": [
+   "bac",
+   "engleza"
+  ],
+  "pros": [
+   "Renume bun în economie și management",
+   "Oraș dinamic, mai ieftin decât Amsterdam",
+   "Programe în engleză cu mulți colegi străini"
+  ],
+  "cons": [
+   "Rotterdam este mai puțin turistic și mai industrial",
+   "Cererea mare pentru camere ridică prețurile",
+   "Admiterea la unele programe poate fi selectivă"
+  ]
+ },
+ {
+  "id": "maastricht",
+  "name": "Maastricht University",
+  "city": "Maastricht",
+  "country": "Olanda",
+  "region": "abroad",
+  "website": "https://www.maastrichtuniversity.nl",
+  "domainIds": [
+   "medicina",
+   "economie-finante",
+   "business-management",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "litere-limbi-straine",
+   "istorie"
+  ],
+  "language": "engleză și neerlandeză; multe programe de licență în engleză",
+  "tuition": "cu taxă pentru studenții din UE (taxă legală, mai mică decât pentru non-UE)",
+  "about": "Universitate foarte internațională din sudul Olandei, cunoscută pentru învățarea pe bază de proiecte în grupuri mici. Are o ofertă puternică în medicină, drept și afaceri.",
+  "prestige": "international",
+  "budget": "mediu",
+  "budgetNote": "Taxa de școlarizare pentru cetățenii UE este stabilită de stat și e moderată, dar costul vieții, mai ales chiria, e ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici prin platforma națională Studielink, cu diploma de bacalaureat și dovada nivelului de engleză. Unele programe au selecție sau număr limitat de locuri (numerus fixus).",
+  "scholarships": false,
+  "scholarshipsNote": "Pentru studenții din UE bursele sunt puține; verifică pe site-ul universității ce burse poți primi.",
+  "dorms": true,
+  "dormsNote": "Universitatea te ajută cu cazarea, dar în orașele olandeze lipsesc camere; caută din timp, imediat după admitere.",
+  "certificates": [
+   "bac",
+   "engleza"
+  ],
+  "pros": [
+   "Predare pe proiecte, în grupuri mici",
+   "Peste jumătate din studenți sunt străini",
+   "Oraș mic, aproape de Belgia și Germania"
+  ],
+  "cons": [
+   "Munca în grup nu e pe gustul tuturor",
+   "Oraș liniștit, departe de marile centre",
+   "Camerele sunt greu de găsit"
+  ]
+ },
+ {
+  "id": "leiden",
+  "name": "Leiden University",
+  "city": "Leiden",
+  "country": "Olanda",
+  "region": "abroad",
+  "website": "https://www.universiteitleiden.nl",
+  "domainIds": [
+   "medicina",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "teologie"
+  ],
+  "language": "engleză și neerlandeză; multe programe de licență în engleză",
+  "tuition": "cu taxă pentru studenții din UE (taxă legală, mai mică decât pentru non-UE)",
+  "about": "Cea mai veche universitate din Olanda, într-un oraș istoric aproape de Haga și Amsterdam. Este apreciată pentru drept, științe, istorie și relații internaționale.",
+  "prestige": "international",
+  "budget": "mediu",
+  "budgetNote": "Taxa de școlarizare pentru cetățenii UE este stabilită de stat și e moderată, dar costul vieții, mai ales chiria, e ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici prin platforma națională Studielink, cu diploma de bacalaureat și dovada nivelului de engleză. Unele programe au selecție sau număr limitat de locuri (numerus fixus).",
+  "scholarships": false,
+  "scholarshipsNote": "Pentru studenții din UE bursele sunt puține; verifică pe site-ul universității ce burse poți primi.",
+  "dorms": true,
+  "dormsNote": "Universitatea te ajută cu cazarea, dar în orașele olandeze lipsesc camere; caută din timp, imediat după admitere.",
+  "certificates": [
+   "bac",
+   "engleza"
+  ],
+  "pros": [
+   "Tradiție lungă și reputație academică bună",
+   "Aproape de Haga, Amsterdam și aeroportul Schiphol",
+   "Orașul vechi cu canale este foarte plăcut"
+  ],
+  "cons": [
+   "Camerele din Leiden sunt foarte puține",
+   "Poți ajunge să faci naveta dacă nu găsești cazare",
+   "Unele programe au locuri limitate"
+  ]
+ },
+ {
+  "id": "utrecht",
+  "name": "Utrecht University",
+  "city": "Utrecht",
+  "country": "Olanda",
+  "region": "abroad",
+  "website": "https://www.uu.nl",
+  "domainIds": [
+   "medicina",
+   "medicina-veterinara",
+   "farmacie",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "geografie-mediu",
+   "economie-finante",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "teologie",
+   "stiintele-educatiei"
+  ],
+  "language": "engleză și neerlandeză; multe programe de licență în engleză",
+  "tuition": "cu taxă pentru studenții din UE (taxă legală, mai mică decât pentru non-UE)",
+  "about": "Universitate mare, în centrul Olandei, bine plasată în clasamentele europene. Oferă foarte multe programe, de la științe la litere și drept.",
+  "prestige": "international",
+  "budget": "mediu",
+  "budgetNote": "Taxa de școlarizare pentru cetățenii UE este stabilită de stat și e moderată, dar costul vieții, mai ales chiria, e ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici prin platforma națională Studielink, cu diploma de bacalaureat și dovada nivelului de engleză. Unele programe au selecție sau număr limitat de locuri (numerus fixus).",
+  "scholarships": false,
+  "scholarshipsNote": "Pentru studenții din UE bursele sunt puține; verifică pe site-ul universității ce burse poți primi.",
+  "dorms": true,
+  "dormsNote": "Universitatea te ajută cu cazarea, dar în orașele olandeze lipsesc camere; caută din timp, imediat după admitere.",
+  "certificates": [
+   "bac",
+   "engleza"
+  ],
+  "pros": [
+   "Ofertă foarte largă de programe",
+   "Oraș studențesc plin de viață, bine conectat",
+   "Cercetare de calitate în multe domenii"
+  ],
+  "cons": [
+   "Utrecht e printre cele mai grele orașe pentru găsit cameră",
+   "Facultățile mari pot fi impersonale",
+   "Costul vieții este peste media europeană"
+  ]
+ },
+ {
+  "id": "twente",
+  "name": "University of Twente",
+  "city": "Enschede",
+  "country": "Olanda",
+  "region": "abroad",
+  "website": "https://www.utwente.nl",
+  "domainIds": [
+   "informatica",
+   "calculatoare-it",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "inginerie-chimica-materiale",
+   "matematica",
+   "fizica",
+   "business-management",
+   "psihologie"
+  ],
+  "language": "engleză și neerlandeză; multe programe de licență în engleză",
+  "tuition": "cu taxă pentru studenții din UE (taxă legală, mai mică decât pentru non-UE)",
+  "about": "Universitate tehnică cu un campus verde lângă orașul Enschede, în estul Olandei. Se bazează pe tehnologie, inovație și proiecte practice.",
+  "prestige": "international",
+  "budget": "mediu",
+  "budgetNote": "Taxa de școlarizare pentru cetățenii UE este stabilită de stat și e moderată, dar costul vieții, mai ales chiria, e ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici prin platforma națională Studielink, cu diploma de bacalaureat și dovada nivelului de engleză. Unele programe au selecție sau număr limitat de locuri (numerus fixus).",
+  "scholarships": false,
+  "scholarshipsNote": "Pentru studenții din UE bursele sunt puține; verifică pe site-ul universității ce burse poți primi.",
+  "dorms": true,
+  "dormsNote": "Universitatea te ajută cu cazarea, dar în orașele olandeze lipsesc camere; caută din timp, imediat după admitere.",
+  "certificates": [
+   "bac",
+   "engleza"
+  ],
+  "pros": [
+   "Campus închis, cu cămine chiar pe teren",
+   "Programe tehnice și de management cu proiecte reale",
+   "Atmosferă prietenoasă, comunitate unită"
+  ],
+  "cons": [
+   "Locul este izolat față de marile orașe",
+   "Viață de noapte și oferte culturale mai slabe",
+   "Poate părea retras dacă îți place un oraș mare"
+  ]
+ },
+ {
+  "id": "ku",
+  "name": "University of Copenhagen",
+  "city": "Copenhaga",
+  "country": "Danemarca",
+  "region": "abroad",
+  "website": "https://www.ku.dk",
+  "domainIds": [
+   "medicina",
+   "medicina-veterinara",
+   "farmacie",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "geografie-mediu",
+   "economie-finante",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "sociologie-asistenta-sociala",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "teologie",
+   "agronomie-silvicultura"
+  ],
+  "language": "daneză la majoritatea programelor de licență; unele programe de licență în engleză",
+  "tuition": "fără taxă de școlarizare pentru studenții din UE",
+  "about": "Cea mai mare și mai veche universitate din Danemarca, în centrul Copenhagăi. Este puternică în medicină, științe, drept și științe sociale.",
+  "prestige": "international",
+  "budget": "gratuit",
+  "budgetNote": "Studenții din UE nu plătesc taxă de școlarizare; costul vieții în Danemarca este însă ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici online prin platforma națională Optagelse.dk, pe baza notelor din bacalaureat. Unele programe au număr limitat de locuri și cer daneză sau engleză.",
+  "scholarships": true,
+  "scholarshipsNote": "Studenții UE care lucrează câteva ore pe săptămână pot primi ajutor lunar de la stat (SU), cu condiții stricte.",
+  "dorms": true,
+  "dormsNote": "Există cămine și ajutor la cazare, dar găsirea unei camere e grea, mai ales în Copenhaga.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "alta-limba"
+  ],
+  "pros": [
+   "Fără taxă de școlarizare pentru studenții din UE",
+   "Cercetare de nivel înalt în științe și medicină",
+   "Copenhaga este un oraș sigur și modern"
+  ],
+  "cons": [
+   "Majoritatea licențelor sunt în daneză",
+   "Camere greu de găsit și scumpe în Copenhaga",
+   "Mult de studiat pe cont propriu"
+  ]
+ },
+ {
+  "id": "aarhus",
+  "name": "Aarhus University",
+  "city": "Aarhus",
+  "country": "Danemarca",
+  "region": "abroad",
+  "website": "https://www.au.dk",
+  "domainIds": [
+   "medicina",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "economie-finante",
+   "business-management",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "teologie",
+   "agronomie-silvicultura",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila"
+  ],
+  "language": "daneză la majoritatea programelor de licență; unele programe de licență în engleză",
+  "tuition": "fără taxă de școlarizare pentru studenții din UE",
+  "about": "Universitate mare, într-un oraș vesel, al doilea ca mărime din Danemarca. Oferă o ofertă largă de programe și o viață studențească activă.",
+  "prestige": "international",
+  "budget": "gratuit",
+  "budgetNote": "Studenții din UE nu plătesc taxă de școlarizare; costul vieții în Danemarca este însă ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici online prin platforma națională Optagelse.dk, pe baza notelor din bacalaureat. Unele programe au număr limitat de locuri și cer daneză sau engleză.",
+  "scholarships": true,
+  "scholarshipsNote": "Studenții UE care lucrează câteva ore pe săptămână pot primi ajutor lunar de la stat (SU), cu condiții stricte.",
+  "dorms": true,
+  "dormsNote": "Există cămine și ajutor la cazare, dar găsirea unei camere e grea, mai ales în Copenhaga.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "alta-limba"
+  ],
+  "pros": [
+   "Fără taxă de școlarizare pentru cetățenii UE",
+   "Oraș mai ieftin și mai prietenos decât capitala",
+   "Programe variate, de la științe la litere"
+  ],
+  "cons": [
+   "Multe licențe cer daneză",
+   "Cazarea se găsește destul de greu",
+   "Iernile sunt lungi și întunecate"
+  ]
+ },
+ {
+  "id": "dtu",
+  "name": "Technical University of Denmark (DTU)",
+  "city": "Lyngby",
+  "country": "Danemarca",
+  "region": "abroad",
+  "website": "https://www.dtu.dk",
+  "domainIds": [
+   "calculatoare-it",
+   "informatica",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "inginerie-chimica-materiale",
+   "energie-petrol-mediu",
+   "fizica",
+   "matematica"
+  ],
+  "language": "daneză la majoritatea programelor de licență; unele programe de licență în engleză",
+  "tuition": "fără taxă de școlarizare pentru studenții din UE",
+  "about": "Principala universitate tehnică din Danemarca, la nord de Copenhaga. Este cunoscută pentru inginerie, tehnologie și legături strânse cu industria.",
+  "prestige": "international",
+  "budget": "gratuit",
+  "budgetNote": "Studenții din UE nu plătesc taxă de școlarizare; costul vieții în Danemarca este însă ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici online prin platforma națională Optagelse.dk, pe baza notelor din bacalaureat. Unele programe au număr limitat de locuri și cer daneză sau engleză.",
+  "scholarships": true,
+  "scholarshipsNote": "Studenții UE care lucrează câteva ore pe săptămână pot primi ajutor lunar de la stat (SU), cu condiții stricte.",
+  "dorms": true,
+  "dormsNote": "Există cămine și ajutor la cazare, dar găsirea unei camere e grea, mai ales în Copenhaga.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "alta-limba"
+  ],
+  "pros": [
+   "Fără taxă pentru studenții din UE",
+   "Legături cu firme din energie verde și IT",
+   "Campus mare, cu laboratoare moderne"
+  ],
+  "cons": [
+   "Foarte puține licențe în engleză",
+   "Lyngby e mai retras decât centrul Copenhagăi",
+   "Costul vieții este ridicat"
+  ]
+ },
+ {
+  "id": "aalborg",
+  "name": "Aalborg University",
+  "city": "Aalborg",
+  "country": "Danemarca",
+  "region": "abroad",
+  "website": "https://www.aau.dk",
+  "domainIds": [
+   "informatica",
+   "calculatoare-it",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "arhitectura",
+   "business-management",
+   "economie-finante",
+   "medicina",
+   "psihologie",
+   "comunicare-jurnalism",
+   "stiinte-politice-relatii-internationale",
+   "sociologie-asistenta-sociala"
+  ],
+  "language": "daneză la majoritatea programelor de licență; unele programe de licență în engleză",
+  "tuition": "fără taxă de școlarizare pentru studenții din UE",
+  "about": "Universitate cunoscută pentru învățarea pe bază de proiecte în grup, în nordul Danemarcei. Este apreciată pentru inginerie, tehnologie și științe sociale.",
+  "prestige": "international",
+  "budget": "gratuit",
+  "budgetNote": "Studenții din UE nu plătesc taxă de școlarizare; costul vieții în Danemarca este însă ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici online prin platforma națională Optagelse.dk, pe baza notelor din bacalaureat. Unele programe au număr limitat de locuri și cer daneză sau engleză.",
+  "scholarships": true,
+  "scholarshipsNote": "Studenții UE care lucrează câteva ore pe săptămână pot primi ajutor lunar de la stat (SU), cu condiții stricte.",
+  "dorms": true,
+  "dormsNote": "Există cămine și ajutor la cazare, dar găsirea unei camere e grea, mai ales în Copenhaga.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "alta-limba"
+  ],
+  "pros": [
+   "Mult lucru practic, în proiecte de echipă",
+   "Fără taxă pentru studenții din UE",
+   "Oraș mic și mai ieftin ca Copenhaga"
+  ],
+  "cons": [
+   "Proiectele de grup cer multă colaborare",
+   "Oraș mic, cu mai puține oportunități",
+   "Multe programe sunt predate în daneză"
+  ]
+ },
+ {
+  "id": "sdu",
+  "name": "University of Southern Denmark (SDU)",
+  "city": "Odense",
+  "country": "Danemarca",
+  "region": "abroad",
+  "website": "https://www.sdu.dk",
+  "domainIds": [
+   "medicina",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "economie-finante",
+   "business-management",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "litere-limbi-straine",
+   "istorie",
+   "inginerie-mecanica",
+   "inginerie-electrica-electronica",
+   "sport-kinetoterapie"
+  ],
+  "language": "daneză la majoritatea programelor de licență; unele programe de licență în engleză",
+  "tuition": "fără taxă de școlarizare pentru studenții din UE",
+  "about": "Universitate cu mai multe campusuri în sudul Danemarcei, cu centrul în Odense. Oferă programe în științe, sănătate, afaceri și inginerie.",
+  "prestige": "international",
+  "budget": "gratuit",
+  "budgetNote": "Studenții din UE nu plătesc taxă de școlarizare; costul vieții în Danemarca este însă ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici online prin platforma națională Optagelse.dk, pe baza notelor din bacalaureat. Unele programe au număr limitat de locuri și cer daneză sau engleză.",
+  "scholarships": true,
+  "scholarshipsNote": "Studenții UE care lucrează câteva ore pe săptămână pot primi ajutor lunar de la stat (SU), cu condiții stricte.",
+  "dorms": true,
+  "dormsNote": "Există cămine și ajutor la cazare, dar găsirea unei camere e grea, mai ales în Copenhaga.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "alta-limba"
+  ],
+  "pros": [
+   "Fără taxă pentru studenții din UE",
+   "Oraș studențesc liniștit și mai accesibil",
+   "Programe solide în sănătate și inginerie"
+  ],
+  "cons": [
+   "Odense este mai mic și mai puțin cunoscut",
+   "Multe licențe sunt în daneză",
+   "Departe de Copenhaga"
+  ]
+ },
+ {
+  "id": "oxford",
+  "name": "University of Oxford",
+  "city": "Oxford",
+  "country": "Marea Britanie",
+  "region": "abroad",
+  "website": "https://www.ox.ac.uk",
+  "domainIds": [
+   "medicina",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "geografie-mediu",
+   "economie-finante",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "teologie",
+   "inginerie-mecanica",
+   "inginerie-electrica-electronica",
+   "inginerie-chimica-materiale"
+  ],
+  "language": "engleză",
+  "tuition": "taxe ridicate pentru studenții din UE după Brexit",
+  "about": "Una dintre cele mai vechi și mai prestigioase universități din lume, cu sistem de colegii și predare în grupuri foarte mici. Este cunoscută pentru excelența academică.",
+  "prestige": "top",
+  "budget": "mare",
+  "budgetNote": "După Brexit, studenții din UE plătesc taxe de școlarizare ridicate, iar viața în Marea Britanie este scumpă.",
+  "admissionTypes": [
+   "dosar",
+   "examen",
+   "interviu"
+  ],
+  "admission": "Aplici prin UCAS, devreme (cu aproape un an înainte), cu note, scrisoare personală și recomandări. Majoritatea programelor cer un test de admitere și interviu.",
+  "scholarships": false,
+  "scholarshipsNote": "Pentru studenții UE bursele sunt foarte puține și competitive; verifică pe site ce poți primi.",
+  "dorms": true,
+  "dormsNote": "Primii ani se locuiește de obicei în cămine ale universității; aplică la timp pentru a avea loc.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Predare individuală în grupuri foarte mici (tutoriale)",
+   "Diplomă cunoscută în toată lumea",
+   "Cămin pentru primii ani, cu loc de obicei garantat"
+  ],
+  "cons": [
+   "Selecție extrem de dură: test și interviu",
+   "Taxe mari pentru studenții din UE",
+   "Ritm de studiu intens, cu multă muncă săptămânală"
+  ]
+ },
+ {
+  "id": "cambridge",
+  "name": "University of Cambridge",
+  "city": "Cambridge",
+  "country": "Marea Britanie",
+  "region": "abroad",
+  "website": "https://www.cam.ac.uk",
+  "domainIds": [
+   "medicina",
+   "medicina-veterinara",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "geografie-mediu",
+   "economie-finante",
+   "drept",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "teologie",
+   "arhitectura",
+   "inginerie-mecanica",
+   "inginerie-electrica-electronica",
+   "inginerie-chimica-materiale"
+  ],
+  "language": "engleză",
+  "tuition": "taxe ridicate pentru studenții din UE după Brexit",
+  "about": "Universitate veche și renumită, formată din colegii, cu o tradiție puternică în științe, matematică și inginerie. Se numără printre cele mai bune din lume.",
+  "prestige": "top",
+  "budget": "mare",
+  "budgetNote": "După Brexit, studenții din UE plătesc taxe de școlarizare ridicate, iar viața în Marea Britanie este scumpă.",
+  "admissionTypes": [
+   "dosar",
+   "examen",
+   "interviu"
+  ],
+  "admission": "Aplici prin UCAS, devreme, cu note, scrisoare personală și recomandări. Multe programe cer un test de admitere și interviu.",
+  "scholarships": true,
+  "scholarshipsNote": "Există câteva burse pentru studenții internaționali, dar sunt puține și foarte disputate.",
+  "dorms": true,
+  "dormsNote": "Primii ani se locuiește de obicei în cămine ale universității; aplică la timp pentru a avea loc.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Foarte puternică în matematică, științe și inginerie",
+   "Sistem de colegii cu sprijin personal",
+   "Oraș studențesc mic și istoric"
+  ],
+  "cons": [
+   "Selecție extrem de dură, cu test și interviu",
+   "Taxe mari pentru studenții din UE",
+   "Săptămâni scurte, dar foarte încărcate"
+  ]
+ },
+ {
+  "id": "imperial",
+  "name": "Imperial College London",
+  "city": "Londra",
+  "country": "Marea Britanie",
+  "region": "abroad",
+  "website": "https://www.imperial.ac.uk",
+  "domainIds": [
+   "medicina",
+   "informatica",
+   "calculatoare-it",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "business-management",
+   "inginerie-mecanica",
+   "inginerie-electrica-electronica",
+   "inginerie-civila",
+   "inginerie-chimica-materiale",
+   "energie-petrol-mediu"
+  ],
+  "language": "engleză",
+  "tuition": "taxe ridicate pentru studenții din UE după Brexit",
+  "about": "Universitate din Londra, specializată în știință, inginerie, medicină și afaceri. Este printre cele mai bine văzute din lume în aceste domenii.",
+  "prestige": "top",
+  "budget": "mare",
+  "budgetNote": "După Brexit, studenții din UE plătesc taxe de școlarizare ridicate, iar viața în Marea Britanie este scumpă.",
+  "admissionTypes": [
+   "dosar",
+   "examen",
+   "interviu"
+  ],
+  "admission": "Aplici prin UCAS, cu notele din bacalaureat și scrisoare personală. Unele programe (matematică, medicină) cer un test și un interviu.",
+  "scholarships": false,
+  "scholarshipsNote": "Bursele pentru studenții din UE sunt puține; verifică pe site opțiunile curente.",
+  "dorms": true,
+  "dormsNote": "Primii ani se locuiește de obicei în cămine ale universității; aplică la timp pentru a avea loc.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Renume mondial în inginerie și științe",
+   "Campus în centrul Londrei, lângă muzee",
+   "Legături strânse cu firme și cercetare"
+  ],
+  "cons": [
+   "Londra este foarte scumpă",
+   "Programele sunt grele și competitive",
+   "Taxe mari pentru studenții din UE"
+  ]
+ },
+ {
+  "id": "ucl",
+  "name": "University College London (UCL)",
+  "city": "Londra",
+  "country": "Marea Britanie",
+  "region": "abroad",
+  "website": "https://www.ucl.ac.uk",
+  "domainIds": [
+   "medicina",
+   "farmacie",
+   "informatica",
+   "calculatoare-it",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "geografie-mediu",
+   "economie-finante",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "arhitectura",
+   "inginerie-mecanica",
+   "inginerie-electrica-electronica",
+   "inginerie-civila",
+   "inginerie-chimica-materiale",
+   "arte-vizuale-design",
+   "stiintele-educatiei"
+  ],
+  "language": "engleză",
+  "tuition": "taxe ridicate pentru studenții din UE după Brexit",
+  "about": "Universitate mare din centrul Londrei, cu ofertă extrem de largă de programe. Este cunoscută pentru cercetare în multe domenii, de la arhitectură la științe.",
+  "prestige": "top",
+  "budget": "mare",
+  "budgetNote": "După Brexit, studenții din UE plătesc taxe de școlarizare ridicate, iar viața în Marea Britanie este scumpă.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici prin platforma UCAS, cu notele din bacalaureat, o scrisoare personală și recomandări. Cererile se depun cu mult timp înainte, de obicei cu aproape un an.",
+  "scholarships": true,
+  "scholarshipsNote": "Există burse de merit pentru studenți internaționali, dar sunt puține și foarte disputate.",
+  "dorms": true,
+  "dormsNote": "Primii ani se locuiește de obicei în cămine ale universității; aplică la timp pentru a avea loc.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Ofertă imensă de programe într-un singur loc",
+   "Londra oferă stagii și evenimente",
+   "Studenți din foarte multe țări"
+  ],
+  "cons": [
+   "Chiria în Londra este foarte mare",
+   "Campusul este împrăștiat prin oraș",
+   "Taxe mari pentru studenții din UE"
+  ]
+ },
+ {
+  "id": "kcl",
+  "name": "King's College London",
+  "city": "Londra",
+  "country": "Marea Britanie",
+  "region": "abroad",
+  "website": "https://www.kcl.ac.uk",
+  "domainIds": [
+   "medicina",
+   "medicina-dentara",
+   "farmacie",
+   "asistenta-medicala",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "economie-finante",
+   "business-management",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "teologie"
+  ],
+  "language": "engleză",
+  "tuition": "taxe ridicate pentru studenții din UE după Brexit",
+  "about": "Universitate din Londra, cu campusuri pe malul Tamisei. Este cunoscută pentru medicină, drept, științe politice și științe umaniste.",
+  "prestige": "international",
+  "budget": "mare",
+  "budgetNote": "După Brexit, studenții din UE plătesc taxe de școlarizare ridicate, iar viața în Marea Britanie este scumpă.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici prin platforma UCAS, cu notele din bacalaureat, o scrisoare personală și recomandări. Cererile se depun cu mult timp înainte, de obicei cu aproape un an.",
+  "scholarships": true,
+  "scholarshipsNote": "Există burse de merit pentru studenți internaționali, dar sunt puține și foarte disputate.",
+  "dorms": true,
+  "dormsNote": "Primii ani se locuiește de obicei în cămine ale universității; aplică la timp pentru a avea loc.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Poziție centrală, lângă instituții importante",
+   "Programe bune în drept și științe politice",
+   "Multe oportunități de stagii în oraș"
+  ],
+  "cons": [
+   "Costul vieții în Londra este ridicat",
+   "Cămine puține pentru toți studenții",
+   "Taxe mari pentru studenții din UE"
+  ]
+ },
+ {
+  "id": "edinburgh",
+  "name": "University of Edinburgh",
+  "city": "Edinburgh",
+  "country": "Marea Britanie",
+  "region": "abroad",
+  "website": "https://www.ed.ac.uk",
+  "domainIds": [
+   "medicina",
+   "medicina-veterinara",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "geografie-mediu",
+   "economie-finante",
+   "business-management",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "teologie",
+   "inginerie-civila",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-chimica-materiale",
+   "arhitectura",
+   "arte-vizuale-design",
+   "muzica"
+  ],
+  "language": "engleză",
+  "tuition": "taxe ridicate pentru studenții din UE după Brexit",
+  "about": "Universitate istorică din capitala Scoției, apreciată pentru cercetare, științe, litere și informatică. Orașul este unul dintre cele mai frumoase din Europa.",
+  "prestige": "international",
+  "budget": "mare",
+  "budgetNote": "După Brexit, studenții din UE plătesc taxe de școlarizare ridicate, iar viața în Marea Britanie este scumpă.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici prin platforma UCAS, cu notele din bacalaureat, o scrisoare personală și recomandări. Cererile se depun cu mult timp înainte, de obicei cu aproape un an.",
+  "scholarships": true,
+  "scholarshipsNote": "Există burse de merit pentru studenți internaționali, dar sunt puține și foarte disputate.",
+  "dorms": true,
+  "dormsNote": "Primii ani se locuiește de obicei în cămine ale universității; aplică la timp pentru a avea loc.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Oraș istoric, plăcut pentru studenți",
+   "Programe puternice în informatică și științe umaniste",
+   "Costuri de trai mai mici decât în Londra"
+  ],
+  "cons": [
+   "Taxe mari pentru studenții din UE",
+   "Vremea este rece și ploioasă",
+   "Chiriile cresc repede în sezonul festivalurilor"
+  ]
+ },
+ {
+  "id": "manchester",
+  "name": "University of Manchester",
+  "city": "Manchester",
+  "country": "Marea Britanie",
+  "region": "abroad",
+  "website": "https://www.manchester.ac.uk",
+  "domainIds": [
+   "medicina",
+   "medicina-dentara",
+   "farmacie",
+   "asistenta-medicala",
+   "informatica",
+   "calculatoare-it",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "geografie-mediu",
+   "economie-finante",
+   "business-management",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "arhitectura",
+   "inginerie-mecanica",
+   "inginerie-electrica-electronica",
+   "inginerie-civila",
+   "inginerie-chimica-materiale"
+  ],
+  "language": "engleză",
+  "tuition": "taxe ridicate pentru studenții din UE după Brexit",
+  "about": "Universitate mare, într-un oraș industrial și creativ din nordul Angliei. Oferă foarte multe programe și este bine văzută de angajatori.",
+  "prestige": "international",
+  "budget": "mare",
+  "budgetNote": "După Brexit, studenții din UE plătesc taxe de școlarizare ridicate, iar viața în Marea Britanie este scumpă.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici prin platforma UCAS, cu notele din bacalaureat, o scrisoare personală și recomandări. Cererile se depun cu mult timp înainte, de obicei cu aproape un an.",
+  "scholarships": true,
+  "scholarshipsNote": "Există burse de merit pentru studenți internaționali, dar sunt puține și foarte disputate.",
+  "dorms": true,
+  "dormsNote": "Primii ani se locuiește de obicei în cămine ale universității; aplică la timp pentru a avea loc.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Ofertă largă de programe, în multe domenii",
+   "Oraș studențesc cu muzică și cultură",
+   "Costuri mai mici decât în Londra"
+  ],
+  "cons": [
+   "Taxe mari pentru studenții din UE",
+   "Vreme mohorâtă și ploioasă",
+   "Universitate foarte mare, uneori impersonală"
+  ]
+ },
+ {
+  "id": "warwick",
+  "name": "University of Warwick",
+  "city": "Coventry",
+  "country": "Marea Britanie",
+  "region": "abroad",
+  "website": "https://warwick.ac.uk",
+  "domainIds": [
+   "informatica",
+   "calculatoare-it",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "economie-finante",
+   "business-management",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "inginerie-mecanica",
+   "inginerie-electrica-electronica",
+   "inginerie-civila"
+  ],
+  "language": "engleză",
+  "tuition": "taxe ridicate pentru studenții din UE după Brexit",
+  "about": "Universitate cu campus verde lângă Coventry, cunoscută pentru economie, afaceri, matematică și științe sociale. Este puternică în clasamentele britanice.",
+  "prestige": "international",
+  "budget": "mare",
+  "budgetNote": "După Brexit, studenții din UE plătesc taxe de școlarizare ridicate, iar viața în Marea Britanie este scumpă.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici prin platforma UCAS, cu notele din bacalaureat, o scrisoare personală și recomandări. Cererile se depun cu mult timp înainte, de obicei cu aproape un an.",
+  "scholarships": true,
+  "scholarshipsNote": "Există burse de merit pentru studenți internaționali, dar sunt puține și foarte disputate.",
+  "dorms": true,
+  "dormsNote": "Primii ani se locuiește de obicei în cămine ale universității; aplică la timp pentru a avea loc.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Campus mare, cu viață studențească activă",
+   "Renume bun în economie și matematică",
+   "Aproape de Birmingham și Londra cu trenul"
+  ],
+  "cons": [
+   "Campusul este departe de centrul orașului",
+   "Taxe mari pentru studenții din UE",
+   "Coventry e mai puțin atractiv decât alte orașe"
+  ]
+ },
+ {
+  "id": "tum",
+  "name": "Technische Universität München (TUM)",
+  "city": "München",
+  "country": "Germania",
+  "region": "abroad",
+  "website": "https://www.tum.de",
+  "domainIds": [
+   "medicina",
+   "informatica",
+   "calculatoare-it",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "arhitectura",
+   "economie-finante",
+   "business-management",
+   "agronomie-silvicultura",
+   "sport-kinetoterapie",
+   "stiinte-politice-relatii-internationale"
+  ],
+  "language": "germană; unele programe în engleză",
+  "tuition": "fără taxe de școlarizare sau taxe foarte mici la universitățile publice",
+  "about": "Cea mai cunoscută universitate tehnică din Germania, în München. Este renumită pentru inginerie, informatică, științe naturale și legături cu industria.",
+  "prestige": "international",
+  "budget": "gratuit",
+  "budgetNote": "Universitățile publice nu cer taxă de școlarizare, doar o contribuție semestrială mică; costul vieții este mediu spre ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici direct la universitate sau prin uni-assist, unde se verifică recunoașterea diplomei de bacalaureat. Multe programe au selecție după note (numerus clausus).",
+  "scholarships": true,
+  "scholarshipsNote": "Există burse de merit și programe de sprijin, dar locurile sunt limitate.",
+  "dorms": true,
+  "dormsNote": "Căminele studențești sunt ieftine, dar cererea e mare și apar liste de așteptare; aplică devreme.",
+  "certificates": [
+   "bac",
+   "alta-limba",
+   "engleza"
+  ],
+  "pros": [
+   "Renume mare în inginerie și informatică",
+   "Fără taxă de școlarizare",
+   "Legături cu firme precum BMW și Siemens"
+  ],
+  "cons": [
+   "München este cel mai scump oraș din Germania",
+   "Multe licențe cer germană",
+   "Selecție și exigență mari la unele programe"
+  ]
+ },
+ {
+  "id": "lmu",
+  "name": "Ludwig-Maximilians-Universität München (LMU)",
+  "city": "München",
+  "country": "Germania",
+  "region": "abroad",
+  "website": "https://www.lmu.de",
+  "domainIds": [
+   "medicina",
+   "medicina-dentara",
+   "medicina-veterinara",
+   "farmacie",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "geografie-mediu",
+   "economie-finante",
+   "business-management",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "comunicare-jurnalism",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "teologie",
+   "stiintele-educatiei"
+  ],
+  "language": "germană; unele programe în engleză",
+  "tuition": "fără taxe de școlarizare sau taxe foarte mici la universitățile publice",
+  "about": "Universitate clasică din München, foarte bine văzută în Germania. Oferă programe în medicină, drept, științe, științe sociale și umaniste.",
+  "prestige": "international",
+  "budget": "gratuit",
+  "budgetNote": "Universitățile publice nu cer taxă de școlarizare, doar o contribuție semestrială mică; costul vieții este mediu spre ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici direct la universitate sau prin uni-assist, unde se verifică recunoașterea diplomei de bacalaureat. Multe programe au selecție după note (numerus clausus).",
+  "scholarships": true,
+  "scholarshipsNote": "Există burse de merit (de exemplu Deutschlandstipendium), dar locurile sunt puține.",
+  "dorms": true,
+  "dormsNote": "Căminele studențești sunt ieftine, dar cererea e mare și apar liste de așteptare; aplică devreme.",
+  "certificates": [
+   "bac",
+   "alta-limba",
+   "engleza"
+  ],
+  "pros": [
+   "Universitate cunoscută, cu ofertă foarte largă",
+   "Fără taxă de școlarizare",
+   "Oraș frumos, aproape de Alpi"
+  ],
+  "cons": [
+   "Chirii foarte mari în München",
+   "Multe programe cer germană bună",
+   "Facultăți mari, cu mulți studenți"
+  ]
+ },
+ {
+  "id": "heidelberg",
+  "name": "Universität Heidelberg",
+  "city": "Heidelberg",
+  "country": "Germania",
+  "region": "abroad",
+  "website": "https://www.uni-heidelberg.de",
+  "domainIds": [
+   "medicina",
+   "medicina-dentara",
+   "farmacie",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "geografie-mediu",
+   "economie-finante",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "teologie"
+  ],
+  "language": "germană; unele programe în engleză",
+  "tuition": "fără taxe de școlarizare sau taxe foarte mici la universitățile publice",
+  "about": "Cea mai veche universitate din Germania, într-un oraș mic și pitoresc. Este apreciată pentru medicină, științe și științe umaniste.",
+  "prestige": "international",
+  "budget": "gratuit",
+  "budgetNote": "Universitățile publice nu cer taxă de școlarizare, doar o contribuție semestrială mică; costul vieții este mediu spre ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici direct la universitate sau prin uni-assist, unde se verifică recunoașterea diplomei de bacalaureat. Multe programe au selecție după note (numerus clausus).",
+  "scholarships": true,
+  "scholarshipsNote": "Există burse de merit (de exemplu Deutschlandstipendium), dar locurile sunt puține.",
+  "dorms": true,
+  "dormsNote": "Căminele studențești sunt ieftine, dar cererea e mare și apar liste de așteptare; aplică devreme.",
+  "certificates": [
+   "bac",
+   "alta-limba",
+   "engleza"
+  ],
+  "pros": [
+   "Cea mai veche universitate germană, cu tradiție",
+   "Oraș mic, sigur și studențesc",
+   "Fără taxă de școlarizare"
+  ],
+  "cons": [
+   "Majoritatea programelor sunt în germană",
+   "Oraș mic, cu oferte limitate de locuri de muncă",
+   "Cazarea e greu de găsit la început de an"
+  ]
+ },
+ {
+  "id": "rwth",
+  "name": "RWTH Aachen University",
+  "city": "Aachen",
+  "country": "Germania",
+  "region": "abroad",
+  "website": "https://www.rwth-aachen.de",
+  "domainIds": [
+   "informatica",
+   "calculatoare-it",
+   "matematica",
+   "fizica",
+   "chimie",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "arhitectura",
+   "inginerie-chimica-materiale",
+   "energie-petrol-mediu",
+   "business-management",
+   "medicina",
+   "litere-limbi-straine"
+  ],
+  "language": "germană; unele programe în engleză",
+  "tuition": "fără taxe de școlarizare sau taxe foarte mici la universitățile publice",
+  "about": "Universitate tehnică mare, în vestul Germaniei, apreciată pentru inginerie și legăturile cu industria. Este printre primele alegeri pentru ingineri germani.",
+  "prestige": "international",
+  "budget": "gratuit",
+  "budgetNote": "Universitățile publice nu cer taxă de școlarizare, doar o contribuție semestrială mică; costul vieții este mediu spre ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici direct la universitate sau prin uni-assist, unde se verifică recunoașterea diplomei de bacalaureat. Multe programe au selecție după note (numerus clausus).",
+  "scholarships": true,
+  "scholarshipsNote": "Există burse de merit (de exemplu Deutschlandstipendium), dar locurile sunt puține.",
+  "dorms": true,
+  "dormsNote": "Căminele studențești sunt ieftine, dar cererea e mare și apar liste de așteptare; aplică devreme.",
+  "certificates": [
+   "bac",
+   "alta-limba",
+   "engleza"
+  ],
+  "pros": [
+   "Renume foarte bun în inginerie",
+   "Fără taxă de școlarizare",
+   "Oraș studențesc ieftin față de München"
+  ],
+  "cons": [
+   "Cursurile sunt mai ales în germană",
+   "Programele tehnice sunt grele, cu mulți care renunță",
+   "Aachen este mic și mai puțin cosmopolit"
+  ]
+ },
+ {
+  "id": "hu-berlin",
+  "name": "Humboldt-Universität zu Berlin",
+  "city": "Berlin",
+  "country": "Germania",
+  "region": "abroad",
+  "website": "https://www.hu-berlin.de",
+  "domainIds": [
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "geografie-mediu",
+   "economie-finante",
+   "business-management",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "comunicare-jurnalism",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "teologie",
+   "stiintele-educatiei",
+   "agronomie-silvicultura"
+  ],
+  "language": "germană; unele programe în engleză",
+  "tuition": "fără taxe de școlarizare sau taxe foarte mici la universitățile publice",
+  "about": "Universitate istorică din centrul Berlinului, cunoscută pentru științe umaniste, științe sociale, drept și științe naturale. Orașul oferă o viață culturală bogată.",
+  "prestige": "international",
+  "budget": "gratuit",
+  "budgetNote": "Universitățile publice nu cer taxă de școlarizare, doar o contribuție semestrială mică; costul vieții este mediu spre ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici direct la universitate sau prin uni-assist, unde se verifică recunoașterea diplomei de bacalaureat. Multe programe au selecție după note (numerus clausus).",
+  "scholarships": true,
+  "scholarshipsNote": "Există burse de merit (de exemplu Deutschlandstipendium), dar locurile sunt puține.",
+  "dorms": true,
+  "dormsNote": "Căminele studențești sunt ieftine, dar cererea e mare și apar liste de așteptare; aplică devreme.",
+  "certificates": [
+   "bac",
+   "alta-limba",
+   "engleza"
+  ],
+  "pros": [
+   "În mijlocul capitalei, cu viață culturală bogată",
+   "Fără taxă de școlarizare",
+   "Tradiție puternică în științe umaniste"
+  ],
+  "cons": [
+   "Birocrația se descurcă greu fără germană",
+   "Locuințele din Berlin au devenit scumpe",
+   "Facultăți mari, cu sprijin personal limitat"
+  ]
+ },
+ {
+  "id": "univie",
+  "name": "Universität Wien",
+  "city": "Viena",
+  "country": "Austria",
+  "region": "abroad",
+  "website": "https://www.univie.ac.at",
+  "domainIds": [
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "farmacie",
+   "geografie-mediu",
+   "economie-finante",
+   "business-management",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "comunicare-jurnalism",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "teologie",
+   "stiintele-educatiei",
+   "sport-kinetoterapie"
+  ],
+  "language": "germană; unele programe în engleză",
+  "tuition": "fără taxă de școlarizare pentru studenții din UE în durata normală de studiu (doar o mică contribuție pentru asociația studenților); taxă după depășirea duratei",
+  "about": "Cea mai veche universitate din lumea vorbitoare de germană, în centrul Vienei. Este mare, cu ofertă foarte variată de programe.",
+  "prestige": "international",
+  "budget": "gratuit",
+  "budgetNote": "Pentru cetățenii UE nu se plătește taxă de școlarizare în durata normală a studiilor, doar o contribuție mică; după aceea apare o taxă.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Te înscrii direct la universitate, de obicei online, cu diploma de bacalaureat și dovada limbii germane. La unele programe, ca medicina, se dă un test de admitere.",
+  "scholarships": false,
+  "scholarshipsNote": "Burse pentru studenții din UE sunt puține; ajutorul de la stat e greu de obținut din afara țării.",
+  "dorms": true,
+  "dormsNote": "Există cămine studențești, însă locurile sunt limitate; mulți studenți închiriază camere în apartamente comune.",
+  "certificates": [
+   "bac",
+   "alta-limba"
+  ],
+  "pros": [
+   "Fără taxă în durata normală de studiu",
+   "Ofertă foarte largă de programe",
+   "Viena este un oraș sigur, cu viață culturală bogată"
+  ],
+  "cons": [
+   "Majoritatea programelor sunt în germană",
+   "Sunt mulți studenți și cursurile sunt aglomerate",
+   "La unele programe (medicină) există test dificil"
+  ]
+ },
+ {
+  "id": "tu-wien",
+  "name": "TU Wien",
+  "city": "Viena",
+  "country": "Austria",
+  "region": "abroad",
+  "website": "https://www.tuwien.ac.at",
+  "domainIds": [
+   "informatica",
+   "calculatoare-it",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "arhitectura",
+   "inginerie-chimica-materiale",
+   "matematica",
+   "fizica",
+   "energie-petrol-mediu"
+  ],
+  "language": "germană; unele programe în engleză",
+  "tuition": "fără taxă de școlarizare pentru studenții din UE în durata normală de studiu (doar o mică contribuție pentru asociația studenților); taxă după depășirea duratei",
+  "about": "Universitatea tehnică din Viena, apreciată pentru inginerie, informatică, arhitectură și fizică. Este un nume bun în Europa Centrală.",
+  "prestige": "international",
+  "budget": "gratuit",
+  "budgetNote": "Pentru cetățenii UE nu se plătește taxă de școlarizare în durata normală a studiilor, doar o contribuție mică; după aceea apare o taxă.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Te înscrii direct la universitate, de obicei online, cu diploma de bacalaureat și dovada limbii germane. La unele programe, ca medicina, se dă un test de admitere.",
+  "scholarships": false,
+  "scholarshipsNote": "Burse pentru studenții din UE sunt puține; ajutorul de la stat e greu de obținut din afara țării.",
+  "dorms": true,
+  "dormsNote": "Există cămine studențești, însă locurile sunt limitate; mulți studenți închiriază camere în apartamente comune.",
+  "certificates": [
+   "bac",
+   "alta-limba"
+  ],
+  "pros": [
+   "Fără taxă în durata normală de studiu",
+   "Programe puternice în informatică și arhitectură",
+   "Oraș ieftin față de alte capitale vestice"
+  ],
+  "cons": [
+   "Programele sunt în principal în germană",
+   "Studiile tehnice sunt grele și lungi",
+   "Locuri limitate în unele programe"
+  ]
+ },
+ {
+  "id": "wu-wien",
+  "name": "WU Wien (Wirtschaftsuniversität Wien)",
+  "city": "Viena",
+  "country": "Austria",
+  "region": "abroad",
+  "website": "https://www.wu.ac.at",
+  "domainIds": [
+   "economie-finante",
+   "business-management",
+   "marketing",
+   "drept"
+  ],
+  "language": "germană; unele programe în engleză",
+  "tuition": "fără taxă de școlarizare pentru studenții din UE în durata normală de studiu (doar o mică contribuție pentru asociația studenților); taxă după depășirea duratei",
+  "about": "Universitatea de economie și afaceri din Viena, una dintre cele mai mari școli de business din Europa. Este cunoscută pentru economie și management.",
+  "prestige": "international",
+  "budget": "gratuit",
+  "budgetNote": "Pentru cetățenii UE nu se plătește taxă de școlarizare în durata normală a studiilor, doar o contribuție mică; după aceea apare o taxă.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Te înscrii direct la universitate, de obicei online, cu diploma de bacalaureat și dovada limbii germane. La unele programe, ca medicina, se dă un test de admitere.",
+  "scholarships": false,
+  "scholarshipsNote": "Burse pentru studenții din UE sunt puține; ajutorul de la stat e greu de obținut din afara țării.",
+  "dorms": true,
+  "dormsNote": "Există cămine studențești, însă locurile sunt limitate; mulți studenți închiriază camere în apartamente comune.",
+  "certificates": [
+   "bac",
+   "alta-limba"
+  ],
+  "pros": [
+   "Fără taxă în durata normală de studiu",
+   "Campus modern, făcut pentru studenți",
+   "Diplomă respectată în Europa Centrală"
+  ],
+  "cons": [
+   "Admiterea poate avea un test de selecție",
+   "Ofertă mai îngustă, doar business și drept economic",
+   "Majoritatea programelor sunt în germană"
+  ]
+ },
+ {
+  "id": "unibo",
+  "name": "Università di Bologna",
+  "city": "Bologna",
+  "country": "Italia",
+  "region": "abroad",
+  "website": "https://www.unibo.it",
+  "domainIds": [
+   "medicina",
+   "medicina-dentara",
+   "farmacie",
+   "medicina-veterinara",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "geografie-mediu",
+   "economie-finante",
+   "business-management",
+   "marketing",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "stiintele-educatiei",
+   "arhitectura",
+   "agronomie-silvicultura",
+   "sport-kinetoterapie",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "inginerie-chimica-materiale"
+  ],
+  "language": "italiană; unele programe în engleză",
+  "tuition": "cu taxă, în funcție de venitul familiei, pentru studenții din UE",
+  "about": "Cea mai veche universitate din lume, în Bologna, un oraș studențesc plin de viață. Oferă programe în foarte multe domenii, inclusiv medicină și litere.",
+  "prestige": "international",
+  "budget": "mic",
+  "budgetNote": "Taxa se calculează după venitul familiei, iar la universitățile publice rămâne în general mică spre medie.",
+  "admissionTypes": [
+   "examen",
+   "dosar"
+  ],
+  "admission": "Te pre-înscrii pe platforma Universitaly și aplici la universitate. Multe programe cer un test de admitere (de exemplu TOLC) sau au număr limitat de locuri.",
+  "scholarships": true,
+  "scholarshipsNote": "Regiunile oferă burse și reduceri de taxă după venit, inclusiv pentru studenți din UE.",
+  "dorms": true,
+  "dormsNote": "Cămine publice există, dar sunt puține; mulți studenți închiriază camere în oraș.",
+  "certificates": [
+   "bac",
+   "alta-limba",
+   "engleza"
+  ],
+  "pros": [
+   "Universitate foarte veche și respectată",
+   "Oraș studențesc ieftin și vesel",
+   "Ofertă mare de programe în multe domenii"
+  ],
+  "cons": [
+   "Birocrație lentă și multe formulare",
+   "Multe cursuri sunt în italiană",
+   "Chiriile din Bologna au crescut mult"
+  ]
+ },
+ {
+  "id": "polimi",
+  "name": "Politecnico di Milano",
+  "city": "Milano",
+  "country": "Italia",
+  "region": "abroad",
+  "website": "https://www.polimi.it",
+  "domainIds": [
+   "calculatoare-it",
+   "informatica",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "arhitectura",
+   "inginerie-chimica-materiale",
+   "energie-petrol-mediu",
+   "arte-vizuale-design",
+   "matematica",
+   "fizica"
+  ],
+  "language": "italiană; unele programe în engleză",
+  "tuition": "cu taxă, în funcție de venitul familiei, pentru studenții din UE",
+  "about": "Cea mai mare universitate tehnică din Italia, în Milano. Este renumită pentru inginerie, arhitectură și design.",
+  "prestige": "international",
+  "budget": "mediu",
+  "budgetNote": "Taxa depinde de venitul familiei și poate fi mai mare decât la alte universități publice italiene; Milano e scump.",
+  "admissionTypes": [
+   "examen",
+   "dosar"
+  ],
+  "admission": "Te pre-înscrii pe platforma Universitaly și aplici la universitate. Multe programe cer un test de admitere (de exemplu TOLC) sau au număr limitat de locuri.",
+  "scholarships": true,
+  "scholarshipsNote": "Regiunile oferă burse și reduceri de taxă după venit, inclusiv pentru studenți din UE.",
+  "dorms": true,
+  "dormsNote": "Cămine publice există, dar sunt puține; mulți studenți închiriază camere în oraș.",
+  "certificates": [
+   "bac",
+   "alta-limba",
+   "engleza"
+  ],
+  "pros": [
+   "Renume foarte bun în inginerie, arhitectură și design",
+   "Milano oferă legături cu firme și industrie",
+   "Programe în engleză pentru unele licențe"
+  ],
+  "cons": [
+   "Milano este un oraș scump",
+   "Admiterea poate cere un test, cu locuri limitate",
+   "Studiile tehnice sunt grele"
+  ]
+ },
+ {
+  "id": "polito",
+  "name": "Politecnico di Torino",
+  "city": "Torino",
+  "country": "Italia",
+  "region": "abroad",
+  "website": "https://www.polito.it",
+  "domainIds": [
+   "calculatoare-it",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "arhitectura",
+   "inginerie-chimica-materiale",
+   "energie-petrol-mediu",
+   "matematica",
+   "fizica",
+   "arte-vizuale-design"
+  ],
+  "language": "italiană; unele programe în engleză",
+  "tuition": "cu taxă, în funcție de venitul familiei, pentru studenții din UE",
+  "about": "Universitate tehnică din Torino, apreciată pentru inginerie, arhitectură și design. Are legături strânse cu industria auto și tehnologie.",
+  "prestige": "international",
+  "budget": "mic",
+  "budgetNote": "Taxa se calculează după venitul familiei, iar la universitățile publice rămâne în general mică spre medie.",
+  "admissionTypes": [
+   "examen",
+   "dosar"
+  ],
+  "admission": "Te pre-înscrii pe platforma Universitaly și aplici la universitate. Multe programe cer un test de admitere (de exemplu TOLC) sau au număr limitat de locuri.",
+  "scholarships": true,
+  "scholarshipsNote": "Regiunile oferă burse și reduceri de taxă după venit, inclusiv pentru studenți din UE.",
+  "dorms": true,
+  "dormsNote": "Cămine publice există, dar sunt puține; mulți studenți închiriază camere în oraș.",
+  "certificates": [
+   "bac",
+   "alta-limba",
+   "engleza"
+  ],
+  "pros": [
+   "Renume bun în inginerie, auto și arhitectură",
+   "Torino este mai ieftin decât Milano",
+   "Multe cămine și servicii pentru studenți"
+  ],
+  "cons": [
+   "Cursurile sunt mai ales în italiană",
+   "Admiterea cere un test, cu locuri limitate",
+   "Orașul e mai puțin cosmopolit decât alte capitale"
+  ]
+ },
+ {
+  "id": "sapienza",
+  "name": "Sapienza Università di Roma",
+  "city": "Roma",
+  "country": "Italia",
+  "region": "abroad",
+  "website": "https://www.uniroma1.it",
+  "domainIds": [
+   "medicina",
+   "medicina-dentara",
+   "farmacie",
+   "asistenta-medicala",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "geografie-mediu",
+   "economie-finante",
+   "business-management",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "comunicare-jurnalism",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "stiintele-educatiei",
+   "arhitectura",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "inginerie-chimica-materiale"
+  ],
+  "language": "italiană; unele programe în engleză",
+  "tuition": "cu taxă, în funcție de venitul familiei, pentru studenții din UE",
+  "about": "Una dintre cele mai mari universități din Europa, în centrul Romei. Oferă o gamă foarte largă de programe, de la medicină la litere.",
+  "prestige": "international",
+  "budget": "mic",
+  "budgetNote": "Taxa se calculează după venitul familiei, iar la universitățile publice rămâne în general mică spre medie.",
+  "admissionTypes": [
+   "examen",
+   "dosar"
+  ],
+  "admission": "Te pre-înscrii pe platforma Universitaly și aplici la universitate. Multe programe cer un test de admitere (de exemplu TOLC) sau au număr limitat de locuri.",
+  "scholarships": true,
+  "scholarshipsNote": "Regiunile oferă burse și reduceri de taxă după venit, inclusiv pentru studenți din UE.",
+  "dorms": true,
+  "dormsNote": "Cămine publice există, dar sunt puține; mulți studenți închiriază camere în oraș.",
+  "certificates": [
+   "bac",
+   "alta-limba",
+   "engleza"
+  ],
+  "pros": [
+   "Ofertă imensă de programe și domenii",
+   "Studiezi în Roma, oraș cu istorie și cultură",
+   "Taxe mici în funcție de venit"
+  ],
+  "cons": [
+   "Universitate foarte mare, cu cursuri aglomerate",
+   "Birocrație complicată",
+   "Majoritatea programelor sunt în italiană"
+  ]
+ },
+ {
+  "id": "unipd",
+  "name": "Università di Padova",
+  "city": "Padova",
+  "country": "Italia",
+  "region": "abroad",
+  "website": "https://www.unipd.it",
+  "domainIds": [
+   "medicina",
+   "farmacie",
+   "medicina-veterinara",
+   "asistenta-medicala",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "geografie-mediu",
+   "economie-finante",
+   "business-management",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "stiintele-educatiei",
+   "agronomie-silvicultura",
+   "sport-kinetoterapie",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "inginerie-chimica-materiale"
+  ],
+  "language": "italiană; unele programe în engleză",
+  "tuition": "cu taxă, în funcție de venitul familiei, pentru studenții din UE",
+  "about": "Universitate veche din Padova, apropiată de Veneția. Este cunoscută pentru medicină, științe, inginerie și științe umaniste.",
+  "prestige": "international",
+  "budget": "mic",
+  "budgetNote": "Taxa se calculează după venitul familiei, iar la universitățile publice rămâne în general mică spre medie.",
+  "admissionTypes": [
+   "examen",
+   "dosar"
+  ],
+  "admission": "Te pre-înscrii pe platforma Universitaly și aplici la universitate. Multe programe cer un test de admitere (de exemplu TOLC) sau au număr limitat de locuri.",
+  "scholarships": true,
+  "scholarshipsNote": "Regiunile oferă burse și reduceri de taxă după venit, inclusiv pentru studenți din UE.",
+  "dorms": true,
+  "dormsNote": "Cămine publice există, dar sunt puține; mulți studenți închiriază camere în oraș.",
+  "certificates": [
+   "bac",
+   "alta-limba",
+   "engleza"
+  ],
+  "pros": [
+   "Universitate prestigioasă, cu tradiție lungă",
+   "Oraș studențesc ieftin, lângă Veneția",
+   "Programe solide în medicină și inginerie"
+  ],
+  "cons": [
+   "Cursurile sunt mai ales în italiană",
+   "Admiterea la unele programe cere test",
+   "Cămine puține, cu cerere mare"
+  ]
+ },
+ {
+  "id": "bocconi",
+  "name": "Università Bocconi",
+  "city": "Milano",
+  "country": "Italia",
+  "region": "abroad",
+  "website": "https://www.unibocconi.it",
+  "domainIds": [
+   "economie-finante",
+   "business-management",
+   "marketing",
+   "drept",
+   "stiinte-politice-relatii-internationale"
+  ],
+  "language": "engleză și italiană; programe de licență atât în engleză, cât și în italiană",
+  "tuition": "universitate privată, cu taxă ridicată (cu burse și reduceri în funcție de venit)",
+  "about": "Universitate privată din Milano, specializată în economie, finanțe și management. Este una dintre cele mai cunoscute școli de business din Europa.",
+  "prestige": "international",
+  "budget": "mare",
+  "budgetNote": "Fiind privată, are taxă ridicată, dar oferă burse și reduceri în funcție de merit și de venit.",
+  "admissionTypes": [
+   "examen",
+   "dosar"
+  ],
+  "admission": "Aplici online la Bocconi, cu notele din bacalaureat și un test de admitere (testul Bocconi sau SAT/ACT). Se iau în calcul și rezultatele din liceu.",
+  "scholarships": true,
+  "scholarshipsNote": "Universitatea oferă burse de merit și ajutor pe baza venitului familiei.",
+  "dorms": true,
+  "dormsNote": "Bocconi are cămine proprii, dar locurile sunt limitate; Milano are chirii mari.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "alta-limba"
+  ],
+  "pros": [
+   "Renume foarte bun în economie și finanțe",
+   "Rețea puternică de absolvenți și firme",
+   "Licențe atât în engleză, cât și în italiană"
+  ],
+  "cons": [
+   "Taxă foarte mare, deși există burse",
+   "Milano este un oraș scump",
+   "Ofertă îngustă: doar economie și domenii apropiate"
+  ]
+ },
+ {
+  "id": "sorbonne",
+  "name": "Sorbonne Université",
+  "city": "Paris",
+  "country": "Franța",
+  "region": "abroad",
+  "website": "https://www.sorbonne-universite.fr",
+  "domainIds": [
+   "medicina",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie"
+  ],
+  "language": "franceză; puține programe în engleză",
+  "tuition": "taxă de școlarizare foarte mică, stabilită de stat, pentru studenții din UE",
+  "about": "Universitate istorică din centrul Parisului, cu tradiție lungă în științe, medicină și științe umaniste. Este un nume cunoscut în toată lumea.",
+  "prestige": "international",
+  "budget": "mic",
+  "budgetNote": "Taxa de școlarizare la universitățile publice este mică și stabilită de stat; viața în Paris e însă scumpă.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici prin platforma Parcoursup sau prin procedura pentru studenții străini, cu notele din bacalaureat și dovada limbii franceze. Selecția se face pe dosar.",
+  "scholarships": false,
+  "scholarshipsNote": "Ajutoarele de stat sunt greu accesibile fără rezidență fiscală în Franța; poți încerca burse din programe europene.",
+  "dorms": true,
+  "dormsNote": "Există cămine (CROUS), dar locurile sunt limitate; găsirea unui loc în Paris este dificilă.",
+  "certificates": [
+   "bac",
+   "alta-limba"
+  ],
+  "pros": [
+   "Taxă mică, stabilită de stat",
+   "Studiezi în centrul Parisului",
+   "Tradiție puternică în științe umaniste și științe"
+  ],
+  "cons": [
+   "Cursurile sunt în franceză, cu puține programe în engleză",
+   "Chiriile din Paris sunt foarte mari",
+   "Facultățile sunt mari și uneori impersonale"
+  ]
+ },
+ {
+  "id": "sciences-po",
+  "name": "Sciences Po",
+  "city": "Paris",
+  "country": "Franța",
+  "region": "abroad",
+  "website": "https://www.sciencespo.fr",
+  "domainIds": [
+   "stiinte-politice-relatii-internationale",
+   "economie-finante",
+   "drept",
+   "sociologie-asistenta-sociala",
+   "istorie"
+  ],
+  "language": "franceză și engleză; programe de licență în ambele limbi",
+  "tuition": "cu taxă, în funcție de venitul familiei, pentru studenții din UE",
+  "about": "Universitate selectivă din Paris, specializată în științe politice, relații internaționale, drept și economie. Este cunoscută pentru formarea viitorilor lideri.",
+  "prestige": "international",
+  "budget": "mare",
+  "budgetNote": "Taxa depinde de venitul familiei și poate ajunge destul de mare; costul vieții în Paris este ridicat.",
+  "admissionTypes": [
+   "dosar",
+   "interviu"
+  ],
+  "admission": "Aplici online cu notele din bacalaureat, un eseu și motivații; urmează de obicei un interviu. Selecția este competitivă.",
+  "scholarships": true,
+  "scholarshipsNote": "Universitatea oferă ajutor financiar după venit, inclusiv pentru unii studenți din UE.",
+  "dorms": true,
+  "dormsNote": "Sciences Po ajută la cazare prin parteneri, dar locurile sunt limitate; Parisul este scump.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "alta-limba",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Renume foarte bun în științe politice și relații internaționale",
+   "Programe de licență în engleză și franceză",
+   "Rețea puternică de absolvenți și un an de studiu în străinătate"
+  ],
+  "cons": [
+   "Taxa poate fi mare pentru familii cu venit mare",
+   "Selecție dură, cu eseuri și interviu",
+   "Ofertă îngustă, în științe sociale"
+  ]
+ },
+ {
+  "id": "insa-lyon",
+  "name": "INSA Lyon",
+  "city": "Lyon",
+  "country": "Franța",
+  "region": "abroad",
+  "website": "https://www.insa-lyon.fr",
+  "domainIds": [
+   "calculatoare-it",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "inginerie-chimica-materiale",
+   "energie-petrol-mediu"
+  ],
+  "language": "franceză; unele programe în engleză",
+  "tuition": "taxă de școlarizare foarte mică, stabilită de stat, pentru studenții din UE",
+  "about": "Școală de inginerie din Lyon, cu un program de cinci ani. Este bine văzută de angajatori și apreciată pentru ingineria aplicată.",
+  "prestige": "international",
+  "budget": "mic",
+  "budgetNote": "Taxa de școlarizare la universitățile publice este mică și stabilită de stat; viața în Paris e însă scumpă.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici prin platforma Parcoursup sau prin procedura pentru studenții străini, cu notele din bacalaureat și dovada limbii franceze. Selecția se face pe dosar.",
+  "scholarships": false,
+  "scholarshipsNote": "Ajutoarele de stat sunt greu accesibile fără rezidență fiscală în Franța; poți încerca burse din programe europene.",
+  "dorms": true,
+  "dormsNote": "Există cămine (CROUS), dar locurile sunt limitate; găsirea unui loc în Paris este dificilă.",
+  "certificates": [
+   "bac",
+   "alta-limba"
+  ],
+  "pros": [
+   "Taxă mică, stabilită de stat",
+   "Campus cu cămine și activități studențești",
+   "Legături bune cu industria din zonă"
+  ],
+  "cons": [
+   "Cursurile sunt în franceză, cu puține excepții",
+   "Programa este grea și lungă",
+   "Locuri limitate și selecție pe dosar"
+  ]
+ },
+ {
+  "id": "ku-leuven",
+  "name": "KU Leuven",
+  "city": "Leuven",
+  "country": "Belgia",
+  "region": "abroad",
+  "website": "https://www.kuleuven.be",
+  "domainIds": [
+   "medicina",
+   "medicina-dentara",
+   "farmacie",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "economie-finante",
+   "business-management",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "teologie",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "arhitectura",
+   "sport-kinetoterapie"
+  ],
+  "language": "neerlandeză la licență; mai multe programe în engleză la master",
+  "tuition": "taxă moderată, reglementată (Flandra), pentru studenții din UE",
+  "about": "Cea mai veche și mai mare universitate din Belgia, în orașul studențesc Leuven. Este apreciată pentru cercetare și pentru științe, drept și medicină.",
+  "prestige": "international",
+  "budget": "mic",
+  "budgetNote": "Taxa pentru cetățenii UE în Flandra este moderată și stabilită de stat; costul vieții este mediu.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Te înscrii direct la universitate, online, cu diploma de bacalaureat recunoscută și dovada limbii de predare. Unele programe, ca medicina, au un test de admitere.",
+  "scholarships": false,
+  "scholarshipsNote": "Burse pentru studenții din UE există doar în cazuri limitate; verifică pe site-ul universității.",
+  "dorms": true,
+  "dormsNote": "Universitatea are un serviciu de cazare și cămine, dar locurile sunt limitate la început de an.",
+  "certificates": [
+   "bac",
+   "alta-limba",
+   "engleza"
+  ],
+  "pros": [
+   "Renume bun în cercetare și științe",
+   "Oraș studențesc mic, cu viață activă",
+   "Taxă moderată pentru cetățenii UE"
+  ],
+  "cons": [
+   "Licențele sunt în neerlandeză, cu puține în engleză",
+   "Test de admitere la medicină, foarte selectiv",
+   "Chiriile și cămine ocupate repede la început de an"
+  ]
+ },
+ {
+  "id": "eth-zurich",
+  "name": "ETH Zürich",
+  "city": "Zürich",
+  "country": "Elveția",
+  "region": "abroad",
+  "website": "https://ethz.ch",
+  "domainIds": [
+   "informatica",
+   "calculatoare-it",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "arhitectura",
+   "agronomie-silvicultura",
+   "geografie-mediu",
+   "energie-petrol-mediu"
+  ],
+  "language": "germană la licență; engleză la master",
+  "tuition": "taxă mai mare pentru studenții internaționali (inclusiv din UE) decât pentru cei din Elveția, majorată din 2025",
+  "about": "Universitate tehnică de top din Elveția, apreciată în toată lumea pentru științe, inginerie, matematică și informatică.",
+  "prestige": "top",
+  "budget": "mic",
+  "budgetNote": "Taxa de școlarizare este mică în comparație cu alte țări, dar studenții internaționali plătesc mai mult decât cei elvețieni, iar viața în Elveția este foarte scumpă.",
+  "admissionTypes": [
+   "dosar",
+   "examen"
+  ],
+  "admission": "Aplici online cu diploma de bacalaureat; pentru unele diplome străine se cere un examen de admitere. Verifică pe site dacă bacalaureatul tău e acceptat direct.",
+  "scholarships": false,
+  "scholarshipsNote": "Burse pentru licență sunt puține; costul vieții trebuie acoperit în mare parte de familie.",
+  "dorms": true,
+  "dormsNote": "Există cămine prin fundații studențești, însă locurile sunt limitate și cererea este mare.",
+  "certificates": [
+   "bac",
+   "alta-limba",
+   "engleza"
+  ],
+  "pros": [
+   "Una dintre cele mai bune universități tehnice din lume",
+   "Laboratoare și cercetare de nivel înalt",
+   "Legături cu companii și institute de cercetare"
+  ],
+  "cons": [
+   "Zürich este foarte scump",
+   "Licențele sunt în germană",
+   "Studiile sunt grele, cu examene dure"
+  ]
+ },
+ {
+  "id": "epfl",
+  "name": "EPFL",
+  "city": "Lausanne",
+  "country": "Elveția",
+  "region": "abroad",
+  "website": "https://www.epfl.ch",
+  "domainIds": [
+   "informatica",
+   "calculatoare-it",
+   "matematica",
+   "fizica",
+   "chimie",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "arhitectura",
+   "inginerie-chimica-materiale"
+  ],
+  "language": "franceză la licență; engleză la master",
+  "tuition": "taxă mai mare pentru studenții internaționali (inclusiv din UE) decât pentru cei din Elveția, majorată din 2025",
+  "about": "Universitate tehnică de top din Lausanne, cunoscută pentru inginerie, științe și informatică. Campusul este lângă Lacul Geneva.",
+  "prestige": "top",
+  "budget": "mic",
+  "budgetNote": "Taxa de școlarizare este mică în comparație cu alte țări, dar studenții internaționali plătesc mai mult decât cei elvețieni, iar viața în Elveția este foarte scumpă.",
+  "admissionTypes": [
+   "dosar",
+   "examen"
+  ],
+  "admission": "Aplici online cu diploma de bacalaureat; pentru unele diplome străine se cere un examen de admitere. Verifică pe site dacă bacalaureatul tău e acceptat direct.",
+  "scholarships": false,
+  "scholarshipsNote": "Burse pentru licență sunt puține; costul vieții trebuie acoperit în mare parte de familie.",
+  "dorms": true,
+  "dormsNote": "Există cămine prin fundații studențești, însă locurile sunt limitate și cererea este mare.",
+  "certificates": [
+   "bac",
+   "alta-limba",
+   "engleza"
+  ],
+  "pros": [
+   "Renume foarte bun în inginerie și informatică",
+   "Campus modern, lângă lac și munți",
+   "Mediu internațional, cu mulți cercetători"
+  ],
+  "cons": [
+   "Licențele sunt în franceză",
+   "Costul vieții este foarte ridicat",
+   "Primul an are examene dure care elimină mulți"
+  ]
+ },
+ {
+  "id": "lund",
+  "name": "Lund University",
+  "city": "Lund",
+  "country": "Suedia",
+  "region": "abroad",
+  "website": "https://www.lunduniversity.lu.se",
+  "domainIds": [
+   "medicina",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "geografie-mediu",
+   "economie-finante",
+   "business-management",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "comunicare-jurnalism",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "teologie",
+   "arhitectura",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "inginerie-chimica-materiale"
+  ],
+  "language": "suedeză la licență; câteva programe în engleză",
+  "tuition": "fără taxă de școlarizare pentru studenții din UE",
+  "about": "Una dintre cele mai vechi universități din Suedia, într-un oraș mic și studențesc. Oferă programe în științe, drept, economie și umaniste.",
+  "prestige": "international",
+  "budget": "gratuit",
+  "budgetNote": "Studenții din UE nu plătesc taxă de școlarizare la universitățile publice; costul vieții este mediu spre ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici online prin platforma națională universityadmissions.se, în funcție de notele din bacalaureat și cerințele programului. Pentru programele în suedeză se cere dovada limbii.",
+  "scholarships": false,
+  "scholarshipsNote": "Burse pentru studenții UE sunt rare; trebuie să-ți acoperi singur cheltuielile de trai.",
+  "dorms": true,
+  "dormsNote": "Cămine există, dar cererea e mare și cozile sunt lungi, mai ales în Stockholm.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "alta-limba"
+  ],
+  "pros": [
+   "Fără taxă de școlarizare pentru studenții UE",
+   "Oraș studențesc mic, sigur și prietenos",
+   "Renume bun în cercetare"
+  ],
+  "cons": [
+   "Majoritatea licențelor sunt în suedeză",
+   "Cămine cu cozi lungi",
+   "Iernile sunt lungi și întunecate"
+  ]
+ },
+ {
+  "id": "kth",
+  "name": "KTH Royal Institute of Technology",
+  "city": "Stockholm",
+  "country": "Suedia",
+  "region": "abroad",
+  "website": "https://www.kth.se",
+  "domainIds": [
+   "calculatoare-it",
+   "informatica",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "arhitectura",
+   "inginerie-chimica-materiale",
+   "energie-petrol-mediu",
+   "matematica",
+   "fizica"
+  ],
+  "language": "suedeză la licență; mai multe programe în engleză la master",
+  "tuition": "fără taxă de școlarizare pentru studenții din UE",
+  "about": "Universitate tehnică din Stockholm, apreciată pentru inginerie și tehnologie. Este un nume cunoscut în Europa de Nord.",
+  "prestige": "international",
+  "budget": "gratuit",
+  "budgetNote": "Studenții din UE nu plătesc taxă de școlarizare la universitățile publice; costul vieții este mediu spre ridicat.",
+  "admissionTypes": [
+   "dosar"
+  ],
+  "admission": "Aplici online prin platforma națională universityadmissions.se, în funcție de notele din bacalaureat și cerințele programului. Pentru programele în suedeză se cere dovada limbii.",
+  "scholarships": false,
+  "scholarshipsNote": "Burse pentru studenții UE sunt rare; trebuie să-ți acoperi singur cheltuielile de trai.",
+  "dorms": true,
+  "dormsNote": "Cămine există, dar cererea e mare și cozile sunt lungi, mai ales în Stockholm.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "alta-limba"
+  ],
+  "pros": [
+   "Fără taxă pentru studenții din UE",
+   "Renume bun în inginerie și tehnologie",
+   "Stockholm are multe firme de tehnologie"
+  ],
+  "cons": [
+   "Licențele sunt în principal în suedeză",
+   "Criza de locuințe din Stockholm este serioasă",
+   "Costul vieții este ridicat"
+  ]
+ },
+ {
+  "id": "ub-barcelona",
+  "name": "Universitat de Barcelona",
+  "city": "Barcelona",
+  "country": "Spania",
+  "region": "abroad",
+  "website": "https://www.ub.edu",
+  "domainIds": [
+   "medicina",
+   "medicina-dentara",
+   "farmacie",
+   "asistenta-medicala",
+   "informatica",
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "geografie-mediu",
+   "economie-finante",
+   "business-management",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "comunicare-jurnalism",
+   "litere-limbi-straine",
+   "istorie",
+   "filosofie",
+   "stiintele-educatiei",
+   "arte-vizuale-design"
+  ],
+  "language": "spaniolă și catalană; puține programe în engleză",
+  "tuition": "taxă mică, stabilită de regiune (diferă între regiuni), pentru studenții din UE",
+  "about": "Cea mai mare universitate din Barcelona, cu tradiție lungă, apreciată pentru medicină, științe, drept și științe umaniste.",
+  "prestige": "international",
+  "budget": "mic",
+  "budgetNote": "Taxa este mică, stabilită de regiune, iar costul vieții în Spania este mai mic decât în vestul Europei.",
+  "admissionTypes": [
+   "bac"
+  ],
+  "admission": "Cetățenii români se înscriu prin UNEDasiss, care validează diploma de bacalaureat; admiterea depinde de media ta și de numărul de locuri. Poți da și probe suplimentare ca să urci media.",
+  "scholarships": false,
+  "scholarshipsNote": "Bursele de stat sunt greu accesibile pentru studenții UE; verifică opțiunile universității.",
+  "dorms": true,
+  "dormsNote": "Există rezidențe studențești, dar locurile sunt puține; mulți studenți închiriază apartamente în oraș.",
+  "certificates": [
+   "bac",
+   "alta-limba",
+   "engleza"
+  ],
+  "pros": [
+   "Studiezi în Barcelona, oraș cu mare și cultură",
+   "Taxă mică față de alte țări",
+   "Ofertă foarte largă de programe"
+  ],
+  "cons": [
+   "Cursurile sunt în spaniolă și catalană",
+   "Birocrația pentru validarea bacalaureatului durează",
+   "Chiriile din Barcelona au crescut mult"
+  ]
+ },
+ {
+  "id": "harvard",
+  "name": "Harvard University",
+  "city": "Cambridge (Massachusetts)",
+  "country": "SUA",
+  "region": "abroad",
+  "website": "https://www.harvard.edu",
+  "domainIds": [
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "informatica",
+   "calculatoare-it",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "economie-finante",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "istorie",
+   "filosofie",
+   "litere-limbi-straine",
+   "arte-vizuale-design",
+   "muzica",
+   "teatru-film",
+   "geografie-mediu"
+  ],
+  "language": "engleză",
+  "tuition": "taxă foarte mare, dar ajutor financiar în funcție de nevoie",
+  "about": "Cea mai veche universitate din SUA și una dintre cele mai cunoscute din lume. Oferă studii de licență în arte liberale, cu mare libertate de alegere a materiilor.",
+  "prestige": "ivy",
+  "budget": "mare",
+  "budgetNote": "Prețul afișat este foarte mare, dar ajutorul financiar în funcție de nevoie îl poate reduce mult.",
+  "admissionTypes": [
+   "dosar",
+   "interviu",
+   "test-standardizat"
+  ],
+  "admission": "Aplici prin Common App, cu notele din liceu, eseuri, recomandări și activități. SAT sau ACT este obligatoriu, iar un interviu cu un absolvent poate fi propus.",
+  "scholarships": true,
+  "scholarshipsNote": "Admiterea nu ține cont de bani, iar universitatea acoperă toată nevoia dovedită, prin burse care nu se returnează, inclusiv pentru străini.",
+  "dorms": true,
+  "dormsNote": "Studenții din licență locuiesc în case-cămin în campus, cu loc asigurat pentru toți anii.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "sat-act",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Ajutor financiar generos, în funcție de nevoie, și pentru străini",
+   "Rețea de absolvenți cunoscută în toată lumea",
+   "Poți alege specializarea abia după primul an"
+  ],
+  "cons": [
+   "Selecție extrem de dură, cu foarte puține locuri",
+   "Prețul afișat este uriaș, iar procesul de aplicare lung",
+   "Necesită SAT/ACT, eseuri și activități extra"
+  ]
+ },
+ {
+  "id": "yale",
+  "name": "Yale University",
+  "city": "New Haven",
+  "country": "SUA",
+  "region": "abroad",
+  "website": "https://www.yale.edu",
+  "domainIds": [
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "informatica",
+   "calculatoare-it",
+   "inginerie-mecanica",
+   "inginerie-electrica-electronica",
+   "economie-finante",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "istorie",
+   "filosofie",
+   "litere-limbi-straine",
+   "arte-vizuale-design",
+   "muzica",
+   "teatru-film",
+   "arhitectura",
+   "geografie-mediu"
+  ],
+  "language": "engleză",
+  "tuition": "taxă foarte mare, dar ajutor financiar în funcție de nevoie",
+  "about": "Universitate veche din New Haven, cunoscută pentru umaniste, arte, științe sociale și viața în colegii rezidențiale. Este una dintre cele mai selective din SUA.",
+  "prestige": "ivy",
+  "budget": "mare",
+  "budgetNote": "Prețul afișat este foarte mare, dar ajutorul financiar în funcție de nevoie îl poate reduce mult.",
+  "admissionTypes": [
+   "dosar",
+   "interviu",
+   "test-standardizat"
+  ],
+  "admission": "Aplici prin Common App, cu notele din liceu, eseuri, recomandări și activități. Din ciclul 2026–27 se cere SAT sau ACT; un interviu cu un absolvent poate avea loc.",
+  "scholarships": true,
+  "scholarshipsNote": "Admiterea nu ține cont de bani, iar universitatea acoperă nevoia dovedită, prin burse care nu se returnează, inclusiv pentru străini.",
+  "dorms": true,
+  "dormsNote": "Toți studenții din licență sunt repartizați în unul dintre colegiile rezidențiale, cu cazare în campus.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "sat-act",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Sistem de colegii rezidențiale, ca o mică comunitate",
+   "Foarte puternică în arte, drept-pregătire și umaniste",
+   "Ajutor financiar în funcție de nevoie, și pentru străini"
+  ],
+  "cons": [
+   "Selecție extrem de dură",
+   "Prețul afișat este foarte mare",
+   "Orașul New Haven este mic și mai puțin cosmopolit"
+  ]
+ },
+ {
+  "id": "princeton",
+  "name": "Princeton University",
+  "city": "Princeton (New Jersey)",
+  "country": "SUA",
+  "region": "abroad",
+  "website": "https://www.princeton.edu",
+  "domainIds": [
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "informatica",
+   "calculatoare-it",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "inginerie-chimica-materiale",
+   "economie-finante",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "istorie",
+   "filosofie",
+   "litere-limbi-straine",
+   "arhitectura",
+   "arte-vizuale-design",
+   "muzica",
+   "geografie-mediu"
+  ],
+  "language": "engleză",
+  "tuition": "taxă foarte mare, dar ajutor financiar în funcție de nevoie",
+  "about": "Universitate mică și foarte selectivă, concentrată pe licență. Este cunoscută pentru matematică, fizică, științe sociale și pentru lucrarea de absolvire obligatorie.",
+  "prestige": "ivy",
+  "budget": "mare",
+  "budgetNote": "Prețul afișat este foarte mare, dar ajutorul financiar în funcție de nevoie îl poate reduce mult.",
+  "admissionTypes": [
+   "dosar",
+   "interviu",
+   "test-standardizat"
+  ],
+  "admission": "Aplici prin Common App, cu notele din liceu, eseuri, recomandări și activități. Se cere SAT sau ACT; absolvenții pot propune un interviu.",
+  "scholarships": true,
+  "scholarshipsNote": "Admiterea nu ține cont de bani, iar universitatea acoperă toată nevoia dovedită cu burse care nu se returnează, fără limită pentru străini.",
+  "dorms": true,
+  "dormsNote": "Locuința în campus este asigurată pentru studenții din licență, în colegii rezidențiale.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "sat-act",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Ajutor financiar foarte generos, fără limită pentru străini",
+   "Accent mare pe licență și pe lucrări de cercetare proprii",
+   "Campus frumos, cu comunitate unită"
+  ],
+  "cons": [
+   "Selecție extrem de dură",
+   "Orașul Princeton este foarte mic și liniștit",
+   "Ofertă fără medicină, drept sau business la licență"
+  ]
+ },
+ {
+  "id": "columbia",
+  "name": "Columbia University",
+  "city": "New York",
+  "country": "SUA",
+  "region": "abroad",
+  "website": "https://www.columbia.edu",
+  "domainIds": [
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "informatica",
+   "calculatoare-it",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "inginerie-chimica-materiale",
+   "economie-finante",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "istorie",
+   "filosofie",
+   "litere-limbi-straine",
+   "arhitectura",
+   "arte-vizuale-design",
+   "muzica",
+   "teatru-film",
+   "comunicare-jurnalism"
+  ],
+  "language": "engleză",
+  "tuition": "taxă foarte mare, dar ajutor financiar în funcție de nevoie",
+  "about": "Universitate din New York, cunoscută pentru programa comună de bază (Core Curriculum) și pentru legăturile cu orașul. Este puternică în științe, jurnalism, afaceri și arte.",
+  "prestige": "ivy",
+  "budget": "mare",
+  "budgetNote": "Prețul afișat este foarte mare, dar ajutorul financiar în funcție de nevoie îl poate reduce mult.",
+  "admissionTypes": [
+   "dosar",
+   "interviu",
+   "test-standardizat"
+  ],
+  "admission": "Aplici prin Common App, cu notele din liceu, eseuri, recomandări și activități. SAT/ACT este opțional pentru 2026–27, dar devine obligatoriu din ciclul 2027–28; poate urma un interviu cu un absolvent.",
+  "scholarships": true,
+  "scholarshipsNote": "Universitatea oferă ajutor financiar și străinilor, iar pentru ei admiterea poate ține cont de nevoia financiară (need-aware).",
+  "dorms": true,
+  "dormsNote": "Locuința în campus este asigurată pentru primii ani de licență; chiria din New York e foarte mare.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "sat-act",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Campus în New York, cu stagii și oportunități la tot pasul",
+   "Programa de bază te pune în contact cu idei din multe domenii",
+   "Programe puternice în jurnalism, științe sociale și inginerie"
+  ],
+  "cons": [
+   "Selecție extrem de dură",
+   "Prețul afișat și costul vieții din New York sunt foarte mari",
+   "Campusul este în oraș, nu un loc izolat"
+  ]
+ },
+ {
+  "id": "upenn",
+  "name": "University of Pennsylvania",
+  "city": "Philadelphia",
+  "country": "SUA",
+  "region": "abroad",
+  "website": "https://www.upenn.edu",
+  "domainIds": [
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "informatica",
+   "calculatoare-it",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-chimica-materiale",
+   "economie-finante",
+   "business-management",
+   "marketing",
+   "asistenta-medicala",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "comunicare-jurnalism",
+   "istorie",
+   "filosofie",
+   "litere-limbi-straine",
+   "arte-vizuale-design",
+   "arhitectura"
+  ],
+  "language": "engleză",
+  "tuition": "taxă foarte mare, dar ajutor financiar în funcție de nevoie",
+  "about": "Universitate din Philadelphia, cunoscută pentru școala de business Wharton, dar și pentru inginerie, asistență medicală și științe. Are o atmosferă practică și ambițioasă.",
+  "prestige": "ivy",
+  "budget": "mare",
+  "budgetNote": "Prețul afișat este foarte mare, dar ajutorul financiar în funcție de nevoie îl poate reduce mult.",
+  "admissionTypes": [
+   "dosar",
+   "interviu",
+   "test-standardizat"
+  ],
+  "admission": "Aplici prin Common App, cu notele din liceu, eseuri, recomandări și activități. Se cere SAT sau ACT; un interviu cu un absolvent poate fi propus.",
+  "scholarships": true,
+  "scholarshipsNote": "Universitatea acoperă toată nevoia dovedită cu burse care nu se returnează, dar pentru străini admiterea ține cont de nevoia financiară (need-aware).",
+  "dorms": true,
+  "dormsNote": "Primul an se locuiește în campus; apoi mulți studenți aleg cămine sau apartamente în apropiere.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "sat-act",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Wharton, una dintre cele mai cunoscute școli de business",
+   "Poți combina domenii, de exemplu business și inginerie",
+   "Campus în oraș, cu viață studențească activă"
+  ],
+  "cons": [
+   "Selecție extrem de dură, mai ales pentru străini",
+   "Pentru străini, cererea de ajutor poate scădea șansele",
+   "Cultură foarte competitivă și orientată spre carieră"
+  ]
+ },
+ {
+  "id": "brown",
+  "name": "Brown University",
+  "city": "Providence (Rhode Island)",
+  "country": "SUA",
+  "region": "abroad",
+  "website": "https://www.brown.edu",
+  "domainIds": [
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "informatica",
+   "calculatoare-it",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "economie-finante",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "istorie",
+   "filosofie",
+   "litere-limbi-straine",
+   "arte-vizuale-design",
+   "muzica",
+   "teatru-film",
+   "geografie-mediu"
+  ],
+  "language": "engleză",
+  "tuition": "taxă foarte mare, dar ajutor financiar în funcție de nevoie",
+  "about": "Universitate din Providence, cunoscută pentru Curriculumul Deschis: nu ai materii obligatorii, ci îți alegi singur drumul. Este apreciată pentru libertate și creativitate.",
+  "prestige": "ivy",
+  "budget": "mare",
+  "budgetNote": "Prețul afișat este foarte mare, dar ajutorul financiar în funcție de nevoie îl poate reduce mult.",
+  "admissionTypes": [
+   "dosar",
+   "interviu",
+   "test-standardizat"
+  ],
+  "admission": "Aplici prin Common App, cu notele din liceu, eseuri, recomandări și activități. SAT sau ACT este obligatoriu pentru cei care aplică acum; interviul cu un absolvent este posibil.",
+  "scholarships": true,
+  "scholarshipsNote": "Admiterea este need-blind și pentru studenții străini în ultimii ani, iar universitatea acoperă nevoia dovedită prin burse care nu se returnează.",
+  "dorms": true,
+  "dormsNote": "Studenții din licență locuiesc în campus în primii ani, cu cămine mixte și comunități mici.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "sat-act",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Curriculum deschis: îți alegi singur materiile",
+   "Atmosferă prietenoasă, mai relaxată decât la alte Ivy",
+   "Ajutor financiar în funcție de nevoie, și pentru străini"
+  ],
+  "cons": [
+   "Selecție extrem de dură",
+   "Libertatea cere disciplină și alegeri responsabile",
+   "Orașul Providence este mai mic decât New York sau Boston"
+  ]
+ },
+ {
+  "id": "dartmouth",
+  "name": "Dartmouth College",
+  "city": "Hanover (New Hampshire)",
+  "country": "SUA",
+  "region": "abroad",
+  "website": "https://home.dartmouth.edu",
+  "domainIds": [
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "informatica",
+   "calculatoare-it",
+   "economie-finante",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "istorie",
+   "filosofie",
+   "litere-limbi-straine",
+   "arte-vizuale-design",
+   "muzica",
+   "teatru-film",
+   "geografie-mediu"
+  ],
+  "language": "engleză",
+  "tuition": "taxă foarte mare, dar ajutor financiar în funcție de nevoie",
+  "about": "Cea mai mică universitate Ivy League, într-un oraș mic, înconjurat de păduri. Este cunoscută pentru predare apropiată de studenți și pentru comunitatea unită.",
+  "prestige": "ivy",
+  "budget": "mare",
+  "budgetNote": "Prețul afișat este foarte mare, dar ajutorul financiar în funcție de nevoie îl poate reduce mult.",
+  "admissionTypes": [
+   "dosar",
+   "interviu",
+   "test-standardizat"
+  ],
+  "admission": "Aplici prin Common App, cu notele din liceu, eseuri, recomandări și activități. Se cere SAT/ACT, iar elevii din afara SUA pot folosi și alte rezultate (de exemplu IB sau A-levels); interviu cu un absolvent posibil.",
+  "scholarships": true,
+  "scholarshipsNote": "Admiterea este need-blind și pentru studenții străini, iar universitatea acoperă nevoia dovedită prin burse care nu se returnează.",
+  "dorms": true,
+  "dormsNote": "Aproape toți studenții din licență locuiesc în campus, cu cazare asigurată în primii ani.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "sat-act",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Predare apropiată, cu profesori ușor de abordat",
+   "Comunitate unită și viață la aer liber",
+   "Ajutor financiar în funcție de nevoie, și pentru străini"
+  ],
+  "cons": [
+   "Selecție extrem de dură",
+   "Oraș izolat, departe de metropole",
+   "Iernile sunt lungi și foarte reci"
+  ]
+ },
+ {
+  "id": "cornell",
+  "name": "Cornell University",
+  "city": "Ithaca (New York)",
+  "country": "SUA",
+  "region": "abroad",
+  "website": "https://www.cornell.edu",
+  "domainIds": [
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "informatica",
+   "calculatoare-it",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "inginerie-chimica-materiale",
+   "agronomie-silvicultura",
+   "arhitectura",
+   "economie-finante",
+   "business-management",
+   "turism-servicii",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "istorie",
+   "litere-limbi-straine",
+   "arte-vizuale-design",
+   "geografie-mediu"
+  ],
+  "language": "engleză",
+  "tuition": "taxă foarte mare, dar ajutor financiar în funcție de nevoie",
+  "about": "Cea mai mare universitate Ivy League, cu foarte multe domenii: inginerie, agricultură, arhitectură, business și științe. Campusul este mare, într-un oraș de lângă lacuri.",
+  "prestige": "ivy",
+  "budget": "mare",
+  "budgetNote": "Prețul afișat este foarte mare, dar ajutorul financiar în funcție de nevoie îl poate reduce mult.",
+  "admissionTypes": [
+   "dosar",
+   "test-standardizat"
+  ],
+  "admission": "Aplici prin Common App, cu notele din liceu, eseuri, recomandări și activități. Se aplică la o anumită facultate din Cornell; SAT sau ACT este obligatoriu din ciclul 2026.",
+  "scholarships": true,
+  "scholarshipsNote": "Universitatea acoperă nevoia dovedită prin burse care nu se returnează, dar pentru străini admiterea este need-aware: cererea de ajutor poate conta.",
+  "dorms": true,
+  "dormsNote": "Primul an se locuiește în campus; mulți studenți apoi aleg cămine sau apartamente în Ithaca.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "sat-act",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Cea mai largă ofertă de domenii dintre Ivy League",
+   "Campus mare, cu peisaje frumoase și lacuri",
+   "Programe puternice în inginerie, agricultură și hotelierie"
+  ],
+  "cons": [
+   "Pentru străini, cererea de ajutor poate scădea șansele",
+   "Ithaca este un oraș izolat, cu ierni dure",
+   "Cultură competitivă, cu multă presiune"
+  ]
+ },
+ {
+  "id": "mit",
+  "name": "Massachusetts Institute of Technology",
+  "city": "Cambridge (Massachusetts)",
+  "country": "SUA",
+  "region": "abroad",
+  "website": "https://www.mit.edu",
+  "domainIds": [
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "informatica",
+   "calculatoare-it",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "inginerie-chimica-materiale",
+   "energie-petrol-mediu",
+   "arhitectura",
+   "economie-finante",
+   "business-management"
+  ],
+  "language": "engleză",
+  "tuition": "taxă foarte mare, dar ajutor financiar în funcție de nevoie",
+  "about": "Una dintre cele mai bune universități tehnice din lume, lângă Boston. Este cunoscută pentru inginerie, informatică, fizică și pentru cultura de a construi lucruri noi.",
+  "prestige": "top",
+  "budget": "mare",
+  "budgetNote": "Prețul afișat este foarte mare, dar ajutorul financiar în funcție de nevoie îl poate reduce mult.",
+  "admissionTypes": [
+   "dosar",
+   "interviu",
+   "test-standardizat"
+  ],
+  "admission": "Aplici prin platforma MIT, cu note, eseuri, recomandări și interviu cu un absolvent. SAT sau ACT este obligatoriu și pentru străini.",
+  "scholarships": true,
+  "scholarshipsNote": "Admiterea nu ține cont de bani și pentru străini, iar universitatea acoperă toată nevoia dovedită prin burse care nu se returnează.",
+  "dorms": true,
+  "dormsNote": "Majoritatea studenților locuiesc în cămine din campus, cu cazare asigurată în primii ani.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "sat-act",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Renume mondial în inginerie, informatică și științe",
+   "Ajutor financiar în funcție de nevoie, și pentru străini",
+   "Poți face cercetare reală încă din primul an"
+  ],
+  "cons": [
+   "Selecție extrem de dură",
+   "Programa este foarte grea, cu multă muncă",
+   "Mai puțin potrivit dacă preferi domenii umaniste"
+  ]
+ },
+ {
+  "id": "stanford",
+  "name": "Stanford University",
+  "city": "Stanford (California)",
+  "country": "SUA",
+  "region": "abroad",
+  "website": "https://www.stanford.edu",
+  "domainIds": [
+   "matematica",
+   "fizica",
+   "chimie",
+   "biologie",
+   "informatica",
+   "calculatoare-it",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "inginerie-chimica-materiale",
+   "energie-petrol-mediu",
+   "economie-finante",
+   "stiinte-politice-relatii-internationale",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "comunicare-jurnalism",
+   "istorie",
+   "filosofie",
+   "litere-limbi-straine",
+   "arte-vizuale-design",
+   "muzica",
+   "teatru-film",
+   "geografie-mediu"
+  ],
+  "language": "engleză",
+  "tuition": "taxă foarte mare, dar ajutor financiar în funcție de nevoie",
+  "about": "Universitate din California, în inima Silicon Valley. Este cunoscută pentru informatică, inginerie, antreprenoriat și pentru legăturile strânse cu firmele de tehnologie.",
+  "prestige": "top",
+  "budget": "mare",
+  "budgetNote": "Prețul afișat este foarte mare, dar ajutorul financiar în funcție de nevoie îl poate reduce mult.",
+  "admissionTypes": [
+   "dosar",
+   "test-standardizat"
+  ],
+  "admission": "Aplici prin Common App, cu notele din liceu, eseuri, recomandări și activități. SAT sau ACT este obligatoriu pentru cei care intră din 2026.",
+  "scholarships": true,
+  "scholarshipsNote": "Universitatea oferă ajutor financiar și străinilor, dar pentru ei admiterea ține cont de nevoia financiară (need-aware), iar fondurile sunt limitate.",
+  "dorms": true,
+  "dormsNote": "Aproape toți studenții din licență locuiesc în campus, cu cazare asigurată în mai mulți ani.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "sat-act",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Legături strânse cu firme și start-up-uri din Silicon Valley",
+   "Campus foarte mare, cu soare și multe activități",
+   "Poți combina informatica cu științe umaniste"
+  ],
+  "cons": [
+   "Selecție extrem de dură, mai ales pentru străini",
+   "Pentru străini, cererea de ajutor poate scădea șansele",
+   "Costul vieții în California este foarte ridicat"
+  ]
+ },
+ {
+  "id": "ie-university",
+  "name": "IE University",
+  "city": "Segovia și Madrid",
+  "country": "Spania",
+  "region": "abroad",
+  "website": "https://www.ie.edu/university/",
+  "domainIds": [
+   "business-management",
+   "economie-finante",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "informatica",
+   "calculatoare-it",
+   "arhitectura",
+   "arte-vizuale-design",
+   "comunicare-jurnalism",
+   "psihologie"
+  ],
+  "language": "engleză și spaniolă; multe programe de licență în engleză",
+  "tuition": "universitate privată, cu taxă ridicată (cu burse de merit)",
+  "about": "Universitate privată din Spania, cu campusuri în Segovia și Madrid, foarte internațională și axată pe business, drept și tehnologie.",
+  "prestige": "international",
+  "budget": "mare",
+  "budgetNote": "Fiind privată, taxa de școlarizare este ridicată; burse de merit pot reduce o parte din cost.",
+  "admissionTypes": [
+   "dosar",
+   "examen",
+   "interviu"
+  ],
+  "admission": "Aplici direct online, cu notele din bacalaureat, un eseu de motivație și dovada nivelului de engleză. Urmează un test propriu de admitere și un interviu personal.",
+  "scholarships": true,
+  "scholarshipsNote": "La admitere ești luat în calcul automat pentru burse de merit, care pot acoperi o parte mare din taxă.",
+  "dorms": true,
+  "dormsNote": "Universitatea are rezidențe în Segovia și Madrid; în Madrid, chiriile din oraș sunt competitive, deci rezervă din timp.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "motivatie",
+   "recomandari"
+  ],
+  "pros": [
+   "Studenți din peste o sută de țări, foarte internațional",
+   "Programe în engleză și legături cu firme",
+   "Campus modern, în orașe spaniole atractive"
+  ],
+  "cons": [
+   "Taxa este foarte mare, chiar cu burse",
+   "Segovia este un oraș mic și liniștit",
+   "Mai puțin cunoscută decât universitățile clasice, în unele țări"
+  ]
+ }
+]

@@ -56,14 +56,14 @@ export default function ResultPage() {
   if (state.status === "empty") {
     return (
       <Shell>
-        <Notice title="Nu avem încă rezultate" text="Răspunde mai întâi la întrebări și apoi îți arătăm domeniile potrivite." href="/" cta="Începe testul" />
+        <Notice title="Nu avem încă rezultate" text="Răspunde mai întâi la întrebări și apoi îți arătăm domeniile potrivite." href="/test" cta="Începe testul" />
       </Shell>
     );
   }
   if (state.status === "error") {
     return (
       <Shell>
-        <Notice title="Ceva nu a mers" text="Nu am putut calcula rezultatele. Reia testul și încearcă din nou." href="/" cta="Reia testul" />
+        <Notice title="Ceva nu a mers" text="Nu am putut calcula rezultatele. Reia testul și încearcă din nou." href="/test" cta="Reia testul" />
       </Shell>
     );
   }
@@ -106,7 +106,7 @@ export default function ResultPage() {
         {shown.map((m, i) => (
           <div key={m.domain.id} className="rise" style={{ animationDelay: `${i * 120}ms` }}>
             <div key={i} className={changed ? "card-flash" : undefined}>
-              <MatchCard match={m} rank={i + 1} />
+              <MatchCard match={m} rank={i + 1} where={state.answers.where} />
             </div>
           </div>
         ))}
@@ -117,7 +117,7 @@ export default function ResultPage() {
       </p>
 
       <div className="mt-8 text-center">
-        <Link href="/" onClick={clearDraft} className="inline-flex min-h-12 items-center rounded-full border-2 border-primary px-8 py-3 font-black text-primary hover:bg-primary-tint">
+        <Link href="/test" onClick={clearDraft} className="inline-flex min-h-12 items-center rounded-full border-2 border-primary px-8 py-3 font-black text-primary hover:bg-primary-tint">
           Reia testul
         </Link>
       </div>

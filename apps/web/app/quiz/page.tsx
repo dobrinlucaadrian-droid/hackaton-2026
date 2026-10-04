@@ -45,14 +45,14 @@ export default function QuizPage() {
   if (!draft.profileId) {
     return (
       <Shell>
-        <Notice title="Hai să începem de la început" text="Nu știm încă ce profil de liceu urmezi. Alege-l pe prima pagină." href="/" cta="Alege profilul" />
+        <Notice title="Hai să începem de la început" text="Nu știm încă ce profil de liceu urmezi. Alege-l pe prima pagină." href="/test" cta="Alege profilul" />
       </Shell>
     );
   }
   if (questions.length === 0) {
     return (
       <Shell>
-        <Notice title="Ceva nu a mers" text="Nu am găsit întrebările. Reîncarcă pagina sau încearcă din nou mai târziu." href="/" cta="Înapoi la start" />
+        <Notice title="Ceva nu a mers" text="Nu am găsit întrebările. Reîncarcă pagina sau încearcă din nou mai târziu." href="/test" cta="Înapoi la start" />
       </Shell>
     );
   }
@@ -176,7 +176,7 @@ export default function QuizPage() {
         ) : (
           <button
             type="button"
-            onClick={() => router.push("/")}
+            onClick={() => router.push("/test")}
             className="min-h-11 rounded-full border-2 border-primary px-5 py-2 font-bold text-primary hover:bg-primary-tint"
           >
             ← Schimbă profilul

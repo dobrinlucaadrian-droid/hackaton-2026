@@ -1,5 +1,6 @@
 "use client";
 // Labelled list of universities with links; shows 5 first and a "Vezi toate" toggle.
+import Link from "next/link";
 import { useState } from "react";
 import type { University } from "@/lib/types";
 
@@ -14,14 +15,23 @@ export function UniversityList({ title, items, abroad }: { title: string; items:
       <ul className="mt-2 space-y-2">
         {shown.map((u) => (
           <li key={u.id} className="rounded-xl bg-paper px-4 py-3">
-            <a
-              href={u.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-primary-dark underline decoration-primary/40 underline-offset-2 hover:text-primary-dark"
-            >
-              {u.name}
-            </a>
+            <div className="flex items-start justify-between gap-3">
+              <Link
+                href={`/universitati/${u.id}`}
+                className="font-semibold text-primary-dark underline decoration-primary/40 underline-offset-2 hover:text-primary-dark"
+              >
+                {u.name}
+              </Link>
+              <a
+                href={u.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Site-ul ${u.name} (se deschide într-o pagină nouă)`}
+                className="shrink-0 rounded-lg px-2 py-1 text-sm font-semibold text-ink-soft hover:text-primary"
+              >
+                Site ↗
+              </a>
+            </div>
             <p className="text-sm text-ink-soft">
               {abroad ? `${u.city}, ${u.country}` : u.city}
               {abroad && u.language ? ` · limba: ${u.language}` : ""}
