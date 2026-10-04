@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-04 19:30 — specializările scoase de pe pagina principală
+- Cerut: pe pagina principală să nu mai apară specializările; să rămână strict pe pagina de specializări. Înainte: repo-ul GitHub făcut public la cererea echipei (istoricul verificat: fără chei sau parole)
+- Făcut: secțiunea „Ce poți studia” cu cele 10 cartonașe scoasă din `/`; rămâne pe `/specializari`, la care se ajunge din meniul de sus
+- Fișiere: `apps/web/app/page.tsx`
+- Poartă: TRECUT (build, 55 teste, pornire); pagina principală văzută în captură pe laptop și telefon; `/specializari` are în continuare cele 10 categorii. Nepublicat
+- Urmează: publicare la cererea echipei; `/pitch`
+
 ### 2026-10-04 19:00 — versiunea aerisită publicată
 - Cerut: publicarea versiunii aerisite, ca echipa să o verifice pe telefon; apoi salvarea progresului
 - Făcut: publicat la https://unipath-taupe-mu.vercel.app (aceeași adresă, același cod QR); nicio schimbare de cod față de intrarea de mai jos
@@ -199,6 +206,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 18:02 `97391c5` docs: record the published decluttered version in the ledger
 - 2026-10-04 17:57 `9a716e4` feat: declutter pages - short home, specialization pages, collapsed result cards, compact filters and sheet
 - 2026-10-04 17:24 `9b62030` docs: presentation moved to 2026-10-05
 - 2026-10-04 17:22 `6092918` fix: world-list link check, loading and failure messages, ignore prestige=national
@@ -228,5 +236,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 00:12 `be94cb3` fix: Vercel login and env vars work from inside the Claude app only
 - 2026-10-04 00:09 `23b8667` feat: deploy through Vercel CLI, stack must be Vercel-compatible
 - 2026-10-04 00:05 `9b25b99` docs: deploy checklist reports in the gate's TRECUT/PICAT/NEVERIFICAT words
-- 2026-10-04 00:02 `63186a4` fix: stop hook asks for the gate only on uncommitted code changes
 <!-- commits:end -->

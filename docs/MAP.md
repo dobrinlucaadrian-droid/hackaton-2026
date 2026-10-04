@@ -79,7 +79,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `globals.css` (129) — _no description: add a first-line comment_
 - `layout.tsx` (31) — _no description: add a first-line comment_. Exports: metadata, RootLayout
 - `not-found.tsx` (11) — Friendly 404 page shown for unknown routes and unknown university ids.. Exports: NotFound
-- `page.tsx` (69) — Home page: search box, hero with the two main actions, and the browsable list of all specializations.. Routes: /. Exports: Home
+- `page.tsx` (55) — Home page: search box and the hero with the two main actions; specializations live on /specializari.. Routes: /. Exports: Home
 
 ### apps/web/app/quiz  (1 files)
 
