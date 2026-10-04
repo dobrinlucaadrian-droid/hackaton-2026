@@ -94,6 +94,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 13:05 `a89bbaa` feat: what-if sliders on the result page; record deploy address
 - 2026-10-04 12:54 `34e9f2e` feat: show the team logo and match the palette to it
 - 2026-10-04 12:40 `5082a83` feat: UniPath demo version - profile, quiz and matched study domains
 - 2026-10-04 12:13 `933cc25` docs: add universities abroad and named university lists to scope
