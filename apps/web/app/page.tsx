@@ -1,5 +1,6 @@
 "use client";
 // Start screen: tagline, 3-step explanation and the high-school profile picker.
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Shell } from "@/components/Shell";
@@ -34,9 +35,9 @@ export default function Home() {
 
   return (
     <Shell>
-      <section className="pt-4 text-center">
-        <h1 className="bg-gradient-to-r from-burgundy to-burgundy-dark bg-clip-text text-5xl font-extrabold tracking-tight text-transparent sm:text-6xl">
-          UniPath
+      <section className="text-center">
+        <h1>
+          <Image src="/logo.jpg" alt="UniPath" width={1254} height={1254} priority className="mx-auto -my-8 h-auto w-60 sm:w-72" />
         </h1>
         <p className="mx-auto mt-4 max-w-md text-lg text-navy-soft">
           Ghidul tău între liceu și facultate: afli ce să studiezi și unde.

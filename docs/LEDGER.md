@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-04 13:00 — logoul echipei în site
+- Cerut: logoul UniPath trimis de echipă să apară în site
+- Făcut: logoul pus în antet (emblema) și mare pe ecranul de start; culorile site-ului luate exact din logo (bej, bleumarin, burgundi)
+- Fișiere: `apps/web/public/logo.jpg`, `apps/web/components/Shell.tsx`, `apps/web/app/page.tsx`, `apps/web/app/globals.css`
+- Poartă: TRECUT (build, teste, pornire); ecranul de start văzut în browser pe laptop cu logoul afișat
+- Urmează: publicare pentru test pe telefon, apoi funcțiile în plus alese de echipă
+
 ### 2026-10-04 12:50 — UniPath, versiunea simplă de demo
 - Cerut: cea mai simplă versiune de arătat; nume UniPath; culori bej, burgundi, bleumarin
 - Făcut: 40 de domenii, 12 profiluri, 12 întrebări, regula de potrivire cu teste; 3 ecrane (start, întrebări, rezultat) în culorile noi; lista de 88 de universități pusă în site după verificarea online (România aproape toată, străinătatea doar regulile de taxe și limbă pe țări)
@@ -80,6 +87,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 12:40 `5082a83` feat: UniPath demo version - profile, quiz and matched study domains
 - 2026-10-04 12:13 `933cc25` docs: add universities abroad and named university lists to scope
 - 2026-10-04 12:06 `6a9379d` docs: confirm data coverage by study domain
 - 2026-10-04 12:05 `72dd44b` docs: lock the chosen idea, ideation report and stack

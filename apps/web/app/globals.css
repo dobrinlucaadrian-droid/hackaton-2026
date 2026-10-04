@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
-/* Palette: beige, burgundy and navy. Tune the whole site here. */
+/* Palette: beige, burgundy and navy, sampled from the logo (public/logo.jpg). Tune the whole site here. */
 @theme {
-  --color-beige: #f5efe4;
-  --color-cream: #fffaf0;
-  --color-sand: #ebe2d0;
-  --color-line: #ddd1ba;
-  --color-navy: #14213d;
+  --color-beige: #f0e3d2;
+  --color-cream: #fbf5ea;
+  --color-sand: #e6d7c2;
+  --color-line: #d6c6ad;
+  --color-navy: #1a2a4c;
   --color-navy-soft: #3d4a66;
-  --color-burgundy: #7b1e3a;
-  --color-burgundy-dark: #5c1229;
+  --color-burgundy: #61122d;
+  --color-burgundy-dark: #480b20;
   --color-burgundy-tint: #f1dfe3;
 }
 

@@ -78,7 +78,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `favicon.ico`
 - `globals.css` (31) — _no description: add a first-line comment_
 - `layout.tsx` (31) — _no description: add a first-line comment_. Exports: metadata, RootLayout
-- `page.tsx` (103) — Start screen: tagline, 3-step explanation and the high-school profile picker.. Routes: /. Exports: Home
+- `page.tsx` (104) — Start screen: tagline, 3-step explanation and the high-school profile picker.. Routes: /. Exports: Home
 
 ### apps/web/app/quiz  (1 files)
 
@@ -91,7 +91,7 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/components  (3 files)
 
 - `MatchCard.tsx` (103) — One result card: domain, percent ring, reasons, admission, careers and the university lists.. Exports: MatchCard
-- `Shell.tsx` (38) — Page frame shared by all screens: gradient header with the UniPath logo and a centered content column.. Exports: Shell, Notice
+- `Shell.tsx` (38) — Page frame shared by all screens: header with the UniPath logo and a centered content column.. Exports: Shell, Notice
 - `UniversityList.tsx` (46) — Labelled list of universities with links; shows 5 first and a "Vezi toate" toggle.. Exports: UniversityList
 
 ### apps/web/data  (4 files)
@@ -108,3 +108,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `match.ts` (112) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: matchDomains
 - `session.ts` (42) — Keeps the student's answers in sessionStorage between pages (safe on the server).. Exports: loadDraft, saveDraft, clearDraft, toAnswers
 - `types.ts` (74) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
+
+### apps/web/public  (1 files)
+
+- `logo.jpg`
