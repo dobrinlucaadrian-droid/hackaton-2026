@@ -1,17 +1,12 @@
-// Home page: search box and the hero with the two main actions; specializations live on /specializari.
+// Home page: the hero with the two main actions; search lives on /universitati and specializations on /specializari.
 import Image from "next/image";
 import Link from "next/link";
 import { HeroScene } from "@/components/Illustrations";
-import { SearchBox } from "@/components/SearchBox";
 import { Shell } from "@/components/Shell";
 
 export default function Home() {
   return (
     <Shell wide>
-      <div className="mx-auto max-w-2xl">
-        <SearchBox />
-      </div>
-
       <section className="mt-2 grid items-center gap-4 md:grid-cols-2">
         <div className="rise text-center md:text-left">
           <h1>

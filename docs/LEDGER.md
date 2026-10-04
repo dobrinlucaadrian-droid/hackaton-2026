@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-04 23:20 — bara de căutare scoasă de pe pagina principală
+- Cerut: de pe prima pagină să dispară bara de căutare
+- Făcut: căsuța de căutare scoasă din `/`; căutarea de universități rămâne pe `/universitati` (din meniu sau din butonul „Găsește top 10 universități”)
+- Fișiere: `apps/web/app/page.tsx`
+- Poartă: TRECUT (build, 55 teste, pornire); pagina principală văzută în captură pe laptop și la lățime de telefon, fără căsuța de căutare; `/universitati` are în continuare căutarea. Nepublicat
+- Urmează: publicare la cererea echipei (împreună cu căutarea de la „Studenți”); `/pitch`
+
 ### 2026-10-04 23:10 — căutare pe pagina studenților
 - Cerut: la „Studenți”, o bară de căutare cu lupă: omul caută o facultate și vede părerea studentului de acolo, sau pe toate dacă sunt mai multe. Înainte: versiunea cu profilul în test publicată la cererea echipei și parcursă pe adresa publică
 - Făcut: căsuță de căutare cu lupă pe `/studenti`; filtrează pe loc după universitate, facultate, oraș sau prescurtare (și fără diacritice); arată câte păreri s-au găsit; grupul de la aceeași universitate rămâne alăturat; când nu avem nicio părere apare un mesaj și un buton spre căutarea din „Universități”
@@ -220,6 +227,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 22:57 `956d89f` feat: search student opinions by faculty or university
 - 2026-10-04 22:45 `9ca0e28` feat: ask the high-school profile as the first step of the test
 - 2026-10-04 22:30 `564932a` feat: keep specializations only on their own page, not on the home page
 - 2026-10-04 18:02 `97391c5` docs: record the published decluttered version in the ledger
@@ -249,5 +257,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 12:05 `72dd44b` docs: lock the chosen idea, ideation report and stack
 - 2026-10-04 00:14 `018e7d7` docs: move the team guide to the repo root
 - 2026-10-04 00:13 `3d0f662` docs: bring ledger and map up to date
-- 2026-10-04 00:12 `be94cb3` fix: Vercel login and env vars work from inside the Claude app only
 <!-- commits:end -->
