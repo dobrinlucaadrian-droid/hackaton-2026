@@ -5,7 +5,7 @@ lista de commit-uri de la final se reface singură.
 
 ## Acum lucrăm la
 
-- **Scop:** UniPath — ghid între liceu și facultate (tema „The Middle Man”). Ora prezentării s-a schimbat (nu mai e 18:00; ora nouă nu a fost spusă)
+- **Scop:** UniPath — ghid între liceu și facultate (tema „The Middle Man”). Prezentarea e mâine, 2026-10-05 (ora nu a fost spusă)
 - **Unde:** aplicația e în `apps/web` (pagini: `/`, `/test`, `/quiz`, `/rezultat`, `/universitati`, `/universitati/[id]`, `/studenti`), publicată la https://unipath-taupe-mu.vercel.app
 - **Urmează:** reparat ce găsește `reviewer`, publicat versiunea cu căutare, filtre și fișe; apoi `/pitch`
 - **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
@@ -185,6 +185,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 17:22 `6092918` fix: world-list link check, loading and failure messages, ignore prestige=national
 - 2026-10-04 17:19 `46b3584` feat: home page with search, specializations, top-10 filters and university profile sheets
 - 2026-10-04 15:48 `a30bf9b` feat: add Zara Faflei's opinion and photo
 - 2026-10-04 15:36 `140f3a3` feat: show students from the same university side by side
@@ -214,5 +215,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 00:02 `63186a4` fix: stop hook asks for the gate only on uncommitted code changes
 - 2026-10-03 23:53 `cdd9525` docs: guide prompts point Claude at the map and ledger
 - 2026-10-03 23:51 `733b7e4` docs: update team guide; map now orients new sessions and loads via CLAUDE.md
-- 2026-10-03 23:48 `8878279` docs: work directly on main, no branches by default
 <!-- commits:end -->

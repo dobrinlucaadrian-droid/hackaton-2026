@@ -22,7 +22,7 @@
 - Prize tracks and sponsor APIs/tech: none
 - Hard rules (required tech, banned things, submission format): deliverable is a presentation or an application; nothing else stated. The organizers did not explain the theme further — free interpretation.
 - Deliverable chosen by the team: a simple application that runs online, plus a short presentation about it.
-- Duration and deadline: submission at 18:00 on 2026-10-04 (same day).
+- Duration and deadline: originally submission at 18:00 on 2026-10-04; changed by the organizers — the presentation is on 2026-10-05 (hour not given yet).
 - Team preferences: no preferred domains, no ideas in mind, nothing to avoid.
 - Team: size, strengths, tech each person is fast in: five beginners with little or no coding experience; Claude writes the code, the app must run on Vercel
 
