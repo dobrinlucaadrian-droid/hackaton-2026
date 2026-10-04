@@ -1,8 +1,21 @@
-// Home page: the hero with the two main actions; search lives on /universitati and specializations on /specializari.
+// Home page: the hero with the two main actions and "UniPath în cifre" (counts taken from the data); search and specializations have their own pages.
 import Image from "next/image";
 import Link from "next/link";
 import { HeroScene } from "@/components/Illustrations";
 import { Shell } from "@/components/Shell";
+import { specializations, testimonials, universities } from "@/lib/data";
+import worldList from "@/public/world-universities.json";
+
+const nf = new Intl.NumberFormat("ro-RO");
+// Rounded down to the thousand, shown as "10.000+".
+const worldCount = Math.floor((worldList as unknown[]).length / 1000) * 1000;
+
+const numbers: { value: string; label: string; href: string; tone: string }[] = [
+  { value: nf.format(universities.length), label: "universități cu fișă completă", href: "/universitati", tone: "text-primary" },
+  { value: nf.format(specializations.length), label: "specializări explicate pe înțeles", href: "/specializari", tone: "text-teal-ink" },
+  { value: nf.format(testimonials.length), label: "păreri de la studenți adevărați", href: "/studenti", tone: "text-sky" },
+  { value: `${nf.format(worldCount)}+`, label: "universități din lume la căutare", href: "/universitati", tone: "text-violet" },
+];
 
 export default function Home() {
   return (
@@ -44,6 +57,24 @@ export default function Home() {
         <HeroScene className="float mx-auto w-full max-w-[9rem] sm:max-w-sm md:max-w-none" />
       </section>
 
+      <section aria-labelledby="in-cifre" className="rise mx-auto mt-12 max-w-4xl">
+        <h2 id="in-cifre" className="text-center text-3xl font-black tracking-tight text-ink">
+          UniPath în cifre
+        </h2>
+        <ul className="mt-5 grid grid-cols-2 gap-3 lg:grid-cols-4">
+          {numbers.map((n) => (
+            <li key={n.label}>
+              <Link
+                href={n.href}
+                className="opt flex h-full min-h-28 flex-col justify-center rounded-3xl bg-card p-4 text-center shadow-sm ring-1 ring-line hover:ring-primary/50"
+              >
+                <span className={`text-3xl font-black tracking-tight sm:text-4xl ${n.tone}`}>{n.value}</span>
+                <span className="mt-1 text-sm font-semibold text-ink-soft">{n.label}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
     </Shell>
   );
 }

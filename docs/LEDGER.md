@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-05 01:00 — „UniPath în cifre” pe pagina principală
+- Cerut: pagina principală părea goală; ceva în partea de jos, la alegerea lui Claude. Din trei propuneri, echipa a ales-o pe a doua: „UniPath în cifre”. Înainte: versiunea cu Politehnica și cele 12 universități noi publicată la cererea echipei și verificată pe adresa publică
+- Făcut: patru cartonașe sub partea de sus a paginii principale, cu numere calculate din date (nu scrise de mână): universități cu fișă completă, specializări, păreri de la studenți, universități din lume la căutare; fiecare duce la pagina lui
+- Fișiere: `apps/web/app/page.tsx`
+- Poartă: TRECUT (build, 57 teste, pornire); pagina văzută în captură pe laptop și la lățime de telefon: 131, 206, 14, 10.000+. Nepublicat
+- Urmează: publicare la cererea echipei; `/pitch`
+
 ### 2026-10-05 00:40 — Politehnica cu toate facultățile și încă 12 universități din România
 - Cerut: încă 10–15 facultăți din România, inclusiv Politehnica plus toate specializările ei. Lămurit cu echipa: Politehnica București primește pe fișă lista tuturor facultăților și specializărilor de licență; 12 universități noi, acreditate, verificate online; lista de facultăți doar la Politehnica. Înainte: versiunea cu 14 studenți publicată la cererea echipei
 - Făcut: câmp nou opțional `faculties`; secțiunea pliabilă „Facultăți și specializări” pe fișă; Politehnica București are 22 de facultăți (16 în București, 6 la Centrul Universitar Pitești) cu 132 de specializări, luate de pe paginile facultăților de pe upb.ro; căutarea găsește după facultate sau specializare și pune universitatea respectivă prima; 12 universități private noi: „Constantin Brâncoveanu” Pitești, „Andrei Șaguna” Constanța, „George Bacovia” Bacău, Emanuel, Partium și Agora din Oradea, „Tibiscus” Timișoara, Apollonia Iași, Athenaeum, Bioterra și Artifex din București, Adventus Cernica. Total: 74 de universități din România, 131 cu fișă
@@ -248,6 +255,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 23:47 `f1683ad` feat: Politehnica faculties and programmes on its sheet, 12 more Romanian universities
 - 2026-10-04 23:32 `803b972` feat: seven more student opinions with photos, and Anton Mocanu's photo
 - 2026-10-04 23:10 `3d2e96b` feat: call the personality test a questionnaire (chestionar) in the UI
 - 2026-10-04 23:02 `46df569` feat: remove the search box from the home page
@@ -277,5 +285,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 12:54 `34e9f2e` feat: show the team logo and match the palette to it
 - 2026-10-04 12:40 `5082a83` feat: UniPath demo version - profile, quiz and matched study domains
 - 2026-10-04 12:13 `933cc25` docs: add universities abroad and named university lists to scope
-- 2026-10-04 12:06 `6a9379d` docs: confirm data coverage by study domain
 <!-- commits:end -->
