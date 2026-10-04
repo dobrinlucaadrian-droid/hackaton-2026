@@ -109,7 +109,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `domains.json` (43) — JSON array, 40 items
 - `profiles.json` (15) — JSON array, 12 items
 - `questions.json` (130) — JSON array, 12 items
-- `testimonials.json` (26) — JSON array, 4 items
+- `testimonials.json` (36) — JSON array, 6 items
 - `universities.json` (2048) — JSON array, 88 items
 
 ### apps/web/lib  (7 files)

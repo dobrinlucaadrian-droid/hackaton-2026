@@ -7,7 +7,7 @@ lista de commit-uri de la final se reface singură.
 
 - **Scop:** site care ghidează liceenii spre facultatea potrivită (tema „The Middle Man”); predare azi, 2026-10-04, la 18:00
 - **Unde:** aplicația e în `apps/web`, publicată la https://unipath-taupe-mu.vercel.app
-- **Urmează:** `/pitch` (prezentarea și scenariul de demo). Pagina studenților are 4 păreri reale; lui Alexandru Badea îi lipsește poza
+- **Urmează:** `/pitch` (prezentarea și scenariul de demo). Pagina studenților are 6 păreri reale; fără poză: Alexandru Badea, Anton Mocanu, Alexa Munteanu
 - **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
 
 ## Jurnal
@@ -20,6 +20,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-04 15:50 — încă doi studenți
+- Cerut: adăugarea a încă două păreri reale date de Pilot
+- Făcut: Anton Mocanu (IE University) și Alexa Munteanu (Universitatea din Amsterdam — Politică, Economie și Filozofie), fără poze (inițială în cerc); la textul Alexei corectate doar greșelile de tastare și diacriticele
+- Fișiere: `apps/web/data/testimonials.json`
+- Poartă: TRECUT (build, teste, pornire); pagina văzută într-o captură la lățime de telefon, cu șase cartonașe
+- Urmează: republicare; `/pitch`
 
 ### 2026-10-04 15:35 — poza Victoriei Dumitru
 - Cerut: poza Victoriei Dumitru atașată la părerea ei
@@ -150,6 +157,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 15:25 `dfe2825` feat: add Victoria Dumitru's photo to her opinion
 - 2026-10-04 15:18 `b51f84f` feat: four real student opinions with photos on the student voices page
 - 2026-10-04 14:56 `dbc0fef` feat: logo palette (navy, burgundy) plus gold on the new design
 - 2026-10-04 14:43 `79f354e` docs: add screenshots of each screen
@@ -179,5 +187,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-03 23:38 `ff87e15` chore: keep git hooks on LF line endings
 - 2026-10-03 23:38 `bc6faeb` feat: add quality gate script, commit and Stop hooks, gate skill
 - 2026-10-03 23:26 `4327ebd` feat: improve skills from GitHub research, add debugging skill
-- 2026-10-03 23:21 `0e6b41d` fix: let ideator run gh search, pre-approve read-only searches
 <!-- commits:end -->
