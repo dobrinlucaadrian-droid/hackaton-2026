@@ -99,7 +99,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/studenti  (1 files)
 
-- `page.tsx` (123) — Student voices: real opinions from students and graduates; people from the same university are shown side by side.. Routes: /studenti. Exports: metadata, Students
+- `page.tsx` (41) — Student voices: real opinions from students and graduates, with a search by faculty or university.. Routes: /studenti. Exports: metadata, Students
 
 ### apps/web/app/test  (1 files)
 
@@ -113,7 +113,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 - `page.tsx` (20) — University finder page: search box, filters and top 10 results (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
 
-### apps/web/components  (17 files)
+### apps/web/components  (18 files)
 
 - `ActivitiesStep.tsx` (227) — Quiz step "Ce ai făcut până acum?": add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
 - `ActivitiesSummary.tsx` (33) — Read-only list of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
@@ -126,6 +126,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `SearchBox.tsx` (45) — Search box with a magnifier icon; submits to /universitati?q=... or calls onSearch when given.. Exports: SearchBox
 - `Shell.tsx` (40) — Page frame shared by all screens: header with the UniPath logo and three-dots motif, and a centered content column.. Exports: Shell, Notice
 - `SpecializationsBrowser.tsx` (80) — /specializari body: a text filter over all categories, domains and specializations; without text it shows the category tiles.. Exports: SpecializationsBrowser
+- `StudentVoices.tsx` (186) — Student opinions with a search box: type a faculty or university and see every opinion we have from there.. Exports: StudentVoices
 - `UniversityBadges.tsx` (23) — Small coloured badges for a university's prestige and budget level, shared by result cards and the profile sheet.. Exports: PrestigeBadge, BudgetBadge
 - `UniversityCard.tsx` (61) — Compact university result card: name, place, badges, three short facts and a link to the full sheet (the whole card is clickable).. Exports: UniversityCard
 - `UniversityList.tsx` (48) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList

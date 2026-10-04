@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-04 23:10 — căutare pe pagina studenților
+- Cerut: la „Studenți”, o bară de căutare cu lupă: omul caută o facultate și vede părerea studentului de acolo, sau pe toate dacă sunt mai multe. Înainte: versiunea cu profilul în test publicată la cererea echipei și parcursă pe adresa publică
+- Făcut: căsuță de căutare cu lupă pe `/studenti`; filtrează pe loc după universitate, facultate, oraș sau prescurtare (și fără diacritice); arată câte păreri s-au găsit; grupul de la aceeași universitate rămâne alăturat; când nu avem nicio părere apare un mesaj și un buton spre căutarea din „Universități”
+- Fișiere: `apps/web/components/StudentVoices.tsx` (nou), `apps/web/app/studenti/page.tsx`
+- Poartă: TRECUT (build, 55 teste, pornire); într-un browser separat, pe laptop și la lățime de telefon: fără text 7 păreri; „ie” → 2 (Mihai Florea, Anton Mocanu); „cambridge”, „drept”, „ase”, „amsterdam”, „sciences po” → câte una; „bucuresti” → 2; „harvard” → mesajul fără rezultat cu link spre Universități; fără erori în consolă. Nepublicat
+- Urmează: publicare la cererea echipei; `/pitch`
+
 ### 2026-10-04 22:50 — profilul de liceu mutat în test
 - Cerut: de pe pagina de start a testului să dispară lista de profiluri de liceu și să fie adăugată în test. Înainte: pagina principală fără specializări publicată la cererea echipei (prima încercare de publicare a dat eroare, a doua a reușit)
 - Făcut: `/test` are doar titlul, cei 3 pași și butonul „Începe testul”; profilul de liceu e acum primul pas din test („Primul pas — Ce profil de liceu urmezi?”), urmat de cele 12 întrebări, pasul bonus și „Unde vrei să studiezi?”; `/quiz` deschis direct pornește de la profil
@@ -213,6 +220,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 22:45 `9ca0e28` feat: ask the high-school profile as the first step of the test
 - 2026-10-04 22:30 `564932a` feat: keep specializations only on their own page, not on the home page
 - 2026-10-04 18:02 `97391c5` docs: record the published decluttered version in the ledger
 - 2026-10-04 17:57 `9a716e4` feat: declutter pages - short home, specialization pages, collapsed result cards, compact filters and sheet
@@ -242,5 +250,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 00:14 `018e7d7` docs: move the team guide to the repo root
 - 2026-10-04 00:13 `3d0f662` docs: bring ledger and map up to date
 - 2026-10-04 00:12 `be94cb3` fix: Vercel login and env vars work from inside the Claude app only
-- 2026-10-04 00:09 `23b8667` feat: deploy through Vercel CLI, stack must be Vercel-compatible
 <!-- commits:end -->
