@@ -44,7 +44,7 @@ export default function Students() {
                 {t.photo ? (
                   <Image
                     src={t.photo}
-                    alt={`Poza lui ${t.name}`}
+                    alt={`Poză: ${t.name}`}
                     width={320}
                     height={320}
                     loading="eager"

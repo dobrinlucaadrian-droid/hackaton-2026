@@ -7,7 +7,7 @@ lista de commit-uri de la final se reface singură.
 
 - **Scop:** site care ghidează liceenii spre facultatea potrivită (tema „The Middle Man”); predare azi, 2026-10-04, la 18:00
 - **Unde:** aplicația e în `apps/web`, publicată la https://unipath-taupe-mu.vercel.app
-- **Urmează:** `/pitch` (prezentarea și scenariul de demo). Pagina studenților are 4 păreri reale; lui Alexandru Badea și Victoriei Dumitru le lipsesc pozele
+- **Urmează:** `/pitch` (prezentarea și scenariul de demo). Pagina studenților are 4 păreri reale; lui Alexandru Badea îi lipsește poza
 - **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
 
 ## Jurnal
@@ -20,6 +20,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-04 15:35 — poza Victoriei Dumitru
+- Cerut: poza Victoriei Dumitru atașată la părerea ei
+- Făcut: poza decupată pe față (320px) și pusă pe cartonașul ei; textul alternativ al pozelor reformulat neutru
+- Fișiere: `apps/web/public/studenti/victoria-dumitru.jpg`, `apps/web/data/testimonials.json`, `apps/web/app/studenti/page.tsx`
+- Poartă: TRECUT (build, teste, pornire); pagina văzută într-o captură la lățime de telefon, cu cele trei poze
+- Urmează: republicare; `/pitch`
 
 ### 2026-10-04 15:25 — părerile studenților pe pagină
 - Cerut: patru studenți reali (păreri și poze date de Pilot, cu acordul lor): numele și facultatea sus, părerea jos, poza în lateral; fără an de studiu
@@ -143,6 +150,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 15:18 `b51f84f` feat: four real student opinions with photos on the student voices page
 - 2026-10-04 14:56 `dbc0fef` feat: logo palette (navy, burgundy) plus gold on the new design
 - 2026-10-04 14:43 `79f354e` docs: add screenshots of each screen
 - 2026-10-04 14:35 `7392526` feat: activities step - competitions, volunteering and diploma photo feed the matching
@@ -172,5 +180,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-03 23:38 `bc6faeb` feat: add quality gate script, commit and Stop hooks, gate skill
 - 2026-10-03 23:26 `4327ebd` feat: improve skills from GitHub research, add debugging skill
 - 2026-10-03 23:21 `0e6b41d` fix: let ideator run gh search, pre-approve read-only searches
-- 2026-10-03 23:14 `686d90a` docs: make coordonator optional, add cheap next-step rule
 <!-- commits:end -->
