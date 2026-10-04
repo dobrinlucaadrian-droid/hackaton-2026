@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-05 01:20 — pagina de start a chestionarului, cu titlu propriu
+- Cerut: pagina „Chestionar” arăta la fel ca pagina principală; echipa a aprobat propunerea: titlu propriu, fără logoul mare, desenul mare și butonul „Ce spun studenții”, cu butonul de pornire sus. Înainte: „UniPath în cifre” publicat la cererea echipei
+- Făcut: `/test` are titlul „Chestionarul UniPath”, o frază despre ce urmează (numărul de întrebări e luat din date), butonul „Începe chestionarul” imediat sub titlu, cei 3 pași și nota „Nu îți cerem nume sau cont”
+- Fișiere: `apps/web/app/test/page.tsx`
+- Poartă: TRECUT (build, 57 teste, pornire); pagina văzută în captură la lățime de telefon; traseul start → profil → prima întrebare parcurs într-un browser separat, pe laptop și telefon; fără erori în consolă. NEVERIFICAT: captura de laptop a paginii. Nepublicat
+- Urmează: publicare la cererea echipei; `/pitch`
+
 ### 2026-10-05 01:00 — „UniPath în cifre” pe pagina principală
 - Cerut: pagina principală părea goală; ceva în partea de jos, la alegerea lui Claude. Din trei propuneri, echipa a ales-o pe a doua: „UniPath în cifre”. Înainte: versiunea cu Politehnica și cele 12 universități noi publicată la cererea echipei și verificată pe adresa publică
 - Făcut: patru cartonașe sub partea de sus a paginii principale, cu numere calculate din date (nu scrise de mână): universități cu fișă completă, specializări, păreri de la studenți, universități din lume la căutare; fiecare duce la pagina lui
@@ -255,6 +262,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-05 00:12 `2c00f9b` feat: UniPath in numbers on the home page
 - 2026-10-04 23:47 `f1683ad` feat: Politehnica faculties and programmes on its sheet, 12 more Romanian universities
 - 2026-10-04 23:32 `803b972` feat: seven more student opinions with photos, and Anton Mocanu's photo
 - 2026-10-04 23:10 `3d2e96b` feat: call the personality test a questionnaire (chestionar) in the UI
@@ -284,5 +292,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 13:05 `a89bbaa` feat: what-if sliders on the result page; record deploy address
 - 2026-10-04 12:54 `34e9f2e` feat: show the team logo and match the palette to it
 - 2026-10-04 12:40 `5082a83` feat: UniPath demo version - profile, quiz and matched study domains
-- 2026-10-04 12:13 `933cc25` docs: add universities abroad and named university lists to scope
 <!-- commits:end -->

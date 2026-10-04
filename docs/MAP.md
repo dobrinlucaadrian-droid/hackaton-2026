@@ -103,7 +103,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/test  (1 files)
 
-- `page.tsx` (82) — Test start screen: big headline, the 3-step explanation and the button that starts the quiz (the profile is asked inside the quiz).. Routes: /test. Exports: Home
+- `page.tsx` (70) — Questionnaire start screen: its own title, the 3-step explanation and the button that starts the quiz (the profile is asked inside the quiz).. Routes: /test. Exports: QuestionnaireStart
 
 ### apps/web/app/universitati/[id]  (1 files)
 
