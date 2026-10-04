@@ -83,7 +83,11 @@ export type University = {
   certificates: CertificateId[];
   pros: string[]; // 2-3 short advantages
   cons: string[]; // 2-3 short disadvantages
+  faculties?: Faculty[]; // optional: the real faculties with their bachelor programmes, from the official site
 };
+
+/** One faculty of a university with its bachelor (licență) study programmes, official names. */
+export type Faculty = { name: string; programs: string[] };
 
 /** A bachelor specialization inside a study domain, e.g. "Finanțe și bănci" inside "economie-finante". */
 export type Specialization = {

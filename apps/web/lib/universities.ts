@@ -106,8 +106,8 @@ const ALIASES: Record<string, string> = {
   "hu-berlin": "humboldt",
 };
 
-type Rank = 0 | 1 | 2 | 3;
-type Index = { u: University; name: string; alias: string[]; keywords: string[]; about: string[] };
+type Rank = 0 | 1 | 2 | 3 | 4;
+type Index = { u: University; name: string; alias: string[]; own: string[]; keywords: string[]; about: string[] };
 
 const tokens = (text: string): string[] => normalize(text).replace(/[^a-z0-9]+/g, " ").split(" ").filter(Boolean);
 
@@ -127,7 +127,9 @@ function buildIndex(u: University): Index {
   const keywordText = u.domainIds
     .flatMap((id) => [domainName.get(id) ?? "", ...specializationsFor(id).map((s) => s.name)])
     .join(" ");
-  return { u, name: normalize(u.name), alias: tokens(aliasText), keywords: tokens(keywordText), about: tokens(u.about ?? "") };
+  // the university's own faculties and bachelor programmes, when we have them: they rank above generic domain words
+  const ownText = (u.faculties ?? []).flatMap((f) => [f.name, ...f.programs]).join(" ");
+  return { u, name: normalize(u.name), alias: tokens(aliasText), own: tokens(ownText), keywords: tokens(keywordText), about: tokens(u.about ?? "") };
 }
 
 let index: Index[] | null = null;
@@ -146,8 +148,9 @@ const hasPrefix = (list: string[], word: string) => list.some((t) => t.startsWit
 function wordRank(e: Index, word: string): Rank | null {
   if (e.name.includes(word)) return 0;
   if (hasPrefix(e.alias, word)) return 1;
-  if (hasPrefix(e.keywords, word)) return 2;
-  if (hasPrefix(e.about, word)) return 3;
+  if (hasPrefix(e.own, word)) return 2;
+  if (hasPrefix(e.keywords, word)) return 3;
+  if (hasPrefix(e.about, word)) return 4;
   return null;
 }
 

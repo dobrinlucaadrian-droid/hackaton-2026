@@ -107,7 +107,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/universitati/[id]  (1 files)
 
-- `page.tsx` (247) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
+- `page.tsx` (281) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/universitati  (1 files)
 
@@ -143,7 +143,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `specializations.json` (209) — JSON array, 206 items
 - `testimonials.json` (99) — JSON array, 14 items
 - `universities-abroad.json` (3203) — JSON array, 57 items
-- `universities-ro.json` (2739) — JSON array, 62 items
+- `universities-ro.json` (3487) — JSON array, 74 items
 
 ### apps/web/lib  (10 files)
 
@@ -153,10 +153,10 @@ _Open only the files listed here; a file's description is its first comment line
 - `match.test.ts` (194) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
 - `match.ts` (182) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: TRAITS, TRAIT_LABEL, matchDomains, studentTraits, matchByTraits
 - `session.ts` (106) — Keeps the student's answers (and optional activities with photos) in sessionStorage between pages (safe on the server).. Exports: loadDraft, saveDraft, clearDraft, toAnswers, shrinkImage
-- `types.ts` (158) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
-- `universities.data.test.ts` (62) — Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
+- `types.ts` (162) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
+- `universities.data.test.ts` (82) — Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
 - `universities.test.ts` (190) — Tests the specializations and categories data and the university search/filter logic.
-- `universities.ts` (223) — Search and filter over the universities with a profile sheet, plus labels for the filter values.. Exports: PRESTIGE_LABEL, BUDGET_LABEL, ADMISSION_LABEL, CERTIFICATE_LABEL, normalize, countries, universityById, specializationsFor, …
+- `universities.ts` (226) — Search and filter over the universities with a profile sheet, plus labels for the filter values.. Exports: PRESTIGE_LABEL, BUDGET_LABEL, ADMISSION_LABEL, CERTIFICATE_LABEL, normalize, countries, universityById, specializationsFor, …
 
 ### apps/web/public  (3 files)
 

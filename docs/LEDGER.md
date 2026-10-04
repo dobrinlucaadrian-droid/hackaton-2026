@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-05 00:40 — Politehnica cu toate facultățile și încă 12 universități din România
+- Cerut: încă 10–15 facultăți din România, inclusiv Politehnica plus toate specializările ei. Lămurit cu echipa: Politehnica București primește pe fișă lista tuturor facultăților și specializărilor de licență; 12 universități noi, acreditate, verificate online; lista de facultăți doar la Politehnica. Înainte: versiunea cu 14 studenți publicată la cererea echipei
+- Făcut: câmp nou opțional `faculties`; secțiunea pliabilă „Facultăți și specializări” pe fișă; Politehnica București are 22 de facultăți (16 în București, 6 la Centrul Universitar Pitești) cu 132 de specializări, luate de pe paginile facultăților de pe upb.ro; căutarea găsește după facultate sau specializare și pune universitatea respectivă prima; 12 universități private noi: „Constantin Brâncoveanu” Pitești, „Andrei Șaguna” Constanța, „George Bacovia” Bacău, Emanuel, Partium și Agora din Oradea, „Tibiscus” Timișoara, Apollonia Iași, Athenaeum, Bioterra și Artifex din București, Adventus Cernica. Total: 74 de universități din România, 131 cu fișă
+- Fișiere: `apps/web/lib/types.ts`, `apps/web/lib/universities.ts`, `apps/web/lib/universities.data.test.ts`, `apps/web/app/universitati/[id]/page.tsx`, `apps/web/data/universities-ro.json`
+- Poartă: TRECUT (build, 57 teste, pornire); fișa Politehnicii văzută în captură pe laptop; într-un browser separat, pe laptop și telefon: secțiunea are 22 de rânduri, „Automatică și Calculatoare” se deschide cu 3 specializări; „aerospatiala”, „mecatronica” → Politehnica prima; „bacovia”, „partium”, „apollonia” găsite; fără erori în consolă. NEVERIFICAT: la Politehnica, „Media Digitală” și „Jurnalism” de la Departamentul de Formare pentru Cariera Didactică (nu e sigur că sunt programe de licență); la universitățile noi, 9 din 12 verificate doar din rezultate de căutare, bursele și căminele neconfirmate (trecute „nu”, cu îndemnul de a întreba la secretariat). Nepublicat
+- Urmează: publicare la cererea echipei; `/pitch`
+
 ### 2026-10-05 00:10 — încă șapte studenți și poza lui Anton Mocanu
 - Cerut: adăugarea a șapte păreri reale (texte în capturi de mesaje, cu poze) și poza lui Anton Mocanu; echipa are acordul lor pentru publicare. Înainte: versiunea cu „chestionar” publicată la cererea echipei și parcursă pe adresa publică
 - Făcut: Bianca Mermezan (Drept, UBB), Robert Radoi (ESADE), Eliza Florescu (Institut Lyfe, Lyon), Irene Enculescu (Drept, Université Jean Moulin Lyon 3), Julie Vuillaume (Medicină, Lyon), David Vasile (Bocconi), Ariana Vișan (Arhitectură, La Salle Barcelona), toți cu poză decupată pe față; poza lui Anton Mocanu. Texte transcrise din capturi exact; la Robert Radoi adăugate doar diacriticele care lipseau. Căutarea de la „Studenți” găsește și după oraș sau țară
@@ -241,6 +248,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 23:32 `803b972` feat: seven more student opinions with photos, and Anton Mocanu's photo
 - 2026-10-04 23:10 `3d2e96b` feat: call the personality test a questionnaire (chestionar) in the UI
 - 2026-10-04 23:02 `46df569` feat: remove the search box from the home page
 - 2026-10-04 22:57 `956d89f` feat: search student opinions by faculty or university
@@ -270,5 +278,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 12:40 `5082a83` feat: UniPath demo version - profile, quiz and matched study domains
 - 2026-10-04 12:13 `933cc25` docs: add universities abroad and named university lists to scope
 - 2026-10-04 12:06 `6a9379d` docs: confirm data coverage by study domain
-- 2026-10-04 12:05 `72dd44b` docs: lock the chosen idea, ideation report and stack
 <!-- commits:end -->

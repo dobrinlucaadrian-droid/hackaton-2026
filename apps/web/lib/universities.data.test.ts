@@ -59,3 +59,23 @@ describe("integrated university data", () => {
     expect(res.every((u) => u.region === "ro" && u.budget === "gratuit")).toBe(true);
   });
 });
+
+describe("Politehnica București faculties", () => {
+  const upb = universityById("upb");
+
+  it("lists its faculties with bachelor programmes", () => {
+    expect(upb?.faculties?.length).toBeGreaterThanOrEqual(15);
+    for (const f of upb?.faculties ?? []) {
+      expect(f.name.trim().length).toBeGreaterThan(0);
+      expect(f.programs.length).toBeGreaterThan(0);
+      for (const p of f.programs) expect(p.trim().length).toBeGreaterThan(0);
+    }
+    expect(upb?.faculties?.some((f) => f.name === "Facultatea de Automatică și Calculatoare")).toBe(true);
+  });
+
+  it("is found by its short name, by a faculty and by a programme", () => {
+    expect(searchUniversities("politehnica bucuresti")[0]?.id).toBe("upb");
+    expect(searchUniversities("aerospatiala").some((u) => u.id === "upb")).toBe(true);
+    expect(searchUniversities("mecatronica").some((u) => u.id === "upb")).toBe(true);
+  });
+});

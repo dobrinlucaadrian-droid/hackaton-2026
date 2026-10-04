@@ -66,6 +66,8 @@ export default async function UniversityPage({ params }: Props) {
   const certs = u.certificates.map((c) => CERTIFICATE_LABEL[c]).filter(Boolean);
   const admission = u.admissionTypes.map((a) => ADMISSION_LABEL[a]).filter(Boolean);
   const hasPros = u.pros.length > 0 || u.cons.length > 0;
+  const faculties = u.faculties ?? [];
+  const programCount = faculties.reduce((n, f) => n + f.programs.length, 0);
   const anchors: [string, string][] = [
     ["admitere", "Admitere"],
     ["costuri", "Costuri"],
@@ -197,6 +199,38 @@ export default async function UniversityPage({ params }: Props) {
                   </ul>
                 </details>
               )}
+            </Section>
+          )}
+          {faculties.length > 0 && (
+            <Section title="Facultăți și specializări">
+              <p className="text-sm text-ink-soft">
+                {faculties.length} facultăți{programCount > 0 ? ` · ${programCount} specializări de licență` : ""}, după site-ul oficial al
+                universității. Apasă pe o facultate ca să-i vezi specializările.
+              </p>
+              <ul className="mt-3 space-y-2">
+                {faculties.map((f) => (
+                  <li key={f.name}>
+                    {f.programs.length > 0 ? (
+                      <details className="group rounded-2xl bg-paper px-4 py-1">
+                        <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 font-bold text-ink [&::-webkit-details-marker]:hidden">
+                          <span>{f.name}</span>
+                          <span className="flex shrink-0 items-center gap-2 text-sm font-semibold text-ink-soft">
+                            {f.programs.length}
+                            <span aria-hidden className="text-primary-dark transition-transform group-open:rotate-180">▾</span>
+                          </span>
+                        </summary>
+                        <ul className="mb-3 list-disc space-y-1 pl-5 text-sm marker:text-primary">
+                          {f.programs.map((p) => (
+                            <li key={p}>{p}</li>
+                          ))}
+                        </ul>
+                      </details>
+                    ) : (
+                      <p className="flex min-h-11 items-center rounded-2xl bg-paper px-4 font-bold text-ink">{f.name}</p>
+                    )}
+                  </li>
+                ))}
+              </ul>
             </Section>
           )}
         </Group>
