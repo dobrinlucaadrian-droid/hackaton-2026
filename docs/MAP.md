@@ -90,7 +90,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/studenti  (1 files)
 
-- `page.tsx` (47) — Student voices: real opinions from students and graduates (name, faculty, year or graduate, their words).. Routes: /studenti. Exports: metadata, Students
+- `page.tsx` (53) — Student voices: real opinions from students and graduates (name, faculty, year or graduate, their words).. Routes: /studenti. Exports: metadata, Students
 
 ### apps/web/components  (4 files)
 

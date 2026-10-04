@@ -8,7 +8,13 @@ export const metadata = { title: "Ce spun studenții — UniPath" };
 export default function Students() {
   return (
     <Shell>
-      <section className="pt-4 text-center">
+      <Link
+        href="/"
+        className="inline-block rounded-2xl border-2 border-burgundy px-4 py-2 font-semibold text-burgundy transition hover:bg-burgundy-tint"
+      >
+        ← Înapoi
+      </Link>
+      <section className="pt-6 text-center">
         <h1 className="text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">Ce spun studenții</h1>
         <p className="mx-auto mt-3 max-w-md text-navy-soft">
           Păreri adevărate de la studenți și absolvenți, despre facultatea lor.

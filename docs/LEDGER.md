@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-04 13:55 — buton „Înapoi” pe pagina studenților
+- Cerut: buton de mers înapoi pe pagina „Ce spun studenții”
+- Făcut: butonul „← Înapoi”, sus pe pagină, duce la pagina de început
+- Fișiere: `apps/web/app/studenti/page.tsx`
+- Poartă: TRECUT; văzut în browser la 375px și apăsat: duce la start. Nepublicat
+- Urmează: părerile studenților → republicare; `/pitch`
+
 ### 2026-10-04 13:50 — poartă completă cerută de echipă + o reparație mică la cursoare
 - Cerut: `/gate`
 - Făcut: parcurs tot site-ul local; găsit și reparat: dacă două cursoare se mișcau în aceeași clipă, prima mișcare se pierdea (un om cu un singur deget nu ajungea acolo)
@@ -108,6 +115,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 13:35 `6aabf5a` fix: slider changes made at the same instant no longer overwrite each other
 - 2026-10-04 13:31 `ba2ae6b` docs: phone test confirmed by the team
 - 2026-10-04 13:29 `fe42b3d` feat: student voices page, empty until the team brings real opinions
 - 2026-10-04 13:13 `45755bb` docs: add QR code for the public address
@@ -137,5 +145,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-03 23:03 `24660c9` chore: cap ideator budget and switch it to sonnet
 - 2026-10-03 23:01 `e83842b` feat: add ideate skill and ideator agent for choosing the idea
 - 2026-10-03 22:56 `b14577a` feat: add researcher skill and agent for GitHub research
-- 2026-10-03 22:44 `be03fe3` chore: initialize hackathon monorepo with Claude skills and agents
 <!-- commits:end -->
