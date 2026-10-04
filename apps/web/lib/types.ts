@@ -114,6 +114,7 @@ export type WorldUniversity = { n: string; c: string; w: string };
 export type Filters = {
   country?: string; // exact `country` value
   region?: "ro" | "abroad";
+  city?: string; // exact `city` value (Romanian cities from the questionnaire)
   domainId?: string;
   budget?: Budget; // this level or cheaper
   prestige?: Prestige; // "ivy" = Ivy only; "top" = ivy + top; "international" = ivy + top + international
@@ -137,6 +138,7 @@ export type Activity = {
 export type Answers = {
   profileId: string;
   where: StudyPlace;
+  city?: string; // Romanian city the student wants to study in; missing = any city
   choices: Record<string, number>; // question id -> index of the picked option
   activities?: Activity[];
 };
@@ -145,7 +147,8 @@ export type Match = {
   domain: Domain;
   percent: number; // 0..100, integer
   reasons: string[]; // 2-3 short Romanian sentences: why it fits this student
-  universitiesRo: University[]; // empty when where === "abroad"
+  universitiesRo: University[]; // empty when where === "abroad"; only the chosen city when it has this domain
+  cityMissing?: string; // the chosen city, when it has no university for this domain (universitiesRo then lists other cities)
   universitiesAbroad: University[]; // empty when where === "ro"
   specializations: Specialization[]; // up to 3 specializations of this domain that fit the student best, best first
 };

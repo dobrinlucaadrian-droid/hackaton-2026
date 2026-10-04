@@ -46,7 +46,7 @@ export default function ResultPage() {
     if (state.status !== "ok") return [];
     if (!changed || !values) return state.matches;
     try {
-      return matchByTraits(values, state.answers.where, state.answers.profileId);
+      return matchByTraits(values, state.answers.where, state.answers.profileId, state.answers.city);
     } catch {
       return state.matches;
     }
@@ -80,7 +80,10 @@ export default function ResultPage() {
           <Sparkle className="twinkle h-5 w-5 fill-violet" />
         </div>
         <h1 className="mt-2 text-4xl font-black tracking-tighter text-ink sm:text-5xl">Domeniile tale potrivite</h1>
-        <p className="mt-2 text-ink-soft">Iată cele 3 domenii care ți se potrivesc cel mai bine.</p>
+        <p className="mt-2 text-ink-soft">
+          Iată cele 3 domenii care ți se potrivesc cel mai bine.
+          {state.answers.city ? ` Universitățile din România sunt din orașul ales de tine: ${state.answers.city}.` : ""}
+        </p>
       </div>
 
       <ActivitiesSummary activities={(state.answers.activities ?? []) as StoredActivity[]} />
@@ -106,7 +109,7 @@ export default function ResultPage() {
         {shown.map((m, i) => (
           <div key={m.domain.id} className="rise" style={{ animationDelay: `${i * 120}ms` }}>
             <div key={i} className={changed ? "card-flash" : undefined}>
-              <MatchCard match={m} rank={i + 1} where={state.answers.where} />
+              <MatchCard match={m} rank={i + 1} where={state.answers.where} city={state.answers.city} />
             </div>
           </div>
         ))}

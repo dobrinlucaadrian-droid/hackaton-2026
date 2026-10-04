@@ -38,6 +38,8 @@ function readFilters(p: URLSearchParams): Filters {
   if (tara) f.country = tara;
   const regiune = p.get("regiune");
   if (regiune === "ro" || regiune === "abroad") f.region = regiune;
+  const oras = p.get("oras");
+  if (oras) f.city = oras;
   const domeniu = p.get("domeniu");
   if (domeniu) f.domainId = domeniu;
   const buget = pick<Budget>(p.get("buget"), BUDGET_LABEL);
@@ -56,6 +58,7 @@ function readFilters(p: URLSearchParams): Filters {
 const PARAM_OF: Record<keyof Filters, string> = {
   country: "tara",
   region: "regiune",
+  city: "oras",
   domainId: "domeniu",
   budget: "buget",
   prestige: "prestigiu",
@@ -157,6 +160,7 @@ export function UniversitySearch() {
   const hiddenCount = (["budget", "prestige", "admissionType", "scholarships", "dorms", "withoutCertificate"] as const).filter((k) => filters[k] !== undefined).length;
   const chips: { key: keyof Filters; label: string }[] = [];
   if (filters.region) chips.push({ key: "region", label: filters.region === "ro" ? "În România" : "În străinătate" });
+  if (filters.city) chips.push({ key: "city", label: `Oraș: ${filters.city}` });
   if (filters.country) chips.push({ key: "country", label: filters.country });
   if (filters.domainId) chips.push({ key: "domainId", label: domains.find((d) => d.id === filters.domainId)?.name ?? filters.domainId });
   if (filters.budget) chips.push({ key: "budget", label: BUDGET_LABEL[filters.budget] });

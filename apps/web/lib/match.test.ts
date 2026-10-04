@@ -200,3 +200,45 @@ describe("what-if matching by traits", async () => {
     for (const m of res) expect(Number.isNaN(m.percent)).toBe(false);
   });
 });
+
+describe("chosen city", async () => {
+  const { romanianCities } = await import("./universities");
+  const base = answersFor("real-mate-info", ["logic", "tehnic"]);
+
+  it("lists only Romanian universities from the chosen city", () => {
+    const res = matchDomains({ ...base, where: "ro", city: "București" });
+    expect(res.some((m) => m.universitiesRo.length > 0 && !m.cityMissing)).toBe(true);
+    for (const m of res) {
+      if (m.cityMissing) continue;
+      expect(m.universitiesRo.length).toBeGreaterThan(0);
+      expect(m.universitiesRo.every((u) => u.city === "București")).toBe(true);
+    }
+  });
+
+  it("falls back to other cities, and says so, when the city has no university for the domain", () => {
+    for (const city of romanianCities()) {
+      for (const m of matchDomains({ ...base, where: "any", city })) {
+        if (m.cityMissing) {
+          expect(m.cityMissing).toBe(city);
+          expect(m.universitiesRo.every((u) => u.city !== city)).toBe(true);
+        } else {
+          expect(m.universitiesRo.every((u) => u.city === city)).toBe(true);
+        }
+      }
+    }
+  });
+
+  it("does not change the domains or the universities abroad", () => {
+    const plain = matchDomains({ ...base, where: "any" });
+    const withCity = matchDomains({ ...base, where: "any", city: "Alba Iulia" });
+    expect(withCity.map((m) => m.domain.id)).toEqual(plain.map((m) => m.domain.id));
+    expect(withCity.map((m) => m.universitiesAbroad.length)).toEqual(plain.map((m) => m.universitiesAbroad.length));
+  });
+
+  it("offers every Romanian city that has a university, Bucharest first", () => {
+    const list = romanianCities();
+    expect(list[0]).toBe("București");
+    expect(list).toContain("Alba Iulia");
+    expect(new Set(list).size).toBe(list.length);
+  });
+});

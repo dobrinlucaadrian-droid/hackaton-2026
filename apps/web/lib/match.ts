@@ -101,6 +101,7 @@ function rank(
   profile: Profile | undefined,
   where: StudyPlace | undefined,
   activities: Activity[] = [],
+  city?: string,
 ): Match[] {
   const scored = domains
     .map((domain) => {
@@ -138,11 +139,15 @@ function rank(
     const offered = universities.filter((u) => u.domainIds.includes(domain.id));
     const ro = offered.filter((u) => u.region === "ro").sort((a, b) => a.city.localeCompare(b.city, "ro") || a.name.localeCompare(b.name, "ro"));
     const abroad = offered.filter((u) => u.region === "abroad");
+    // With a chosen city only that city's universities are listed; other cities appear only when it has none for this domain.
+    const inCity = city ? ro.filter((u) => u.city === city) : ro;
+    const cityMissing = !!city && where !== "abroad" && inCity.length === 0;
     return {
       domain,
       percent,
       reasons: reasons.slice(0, 3),
-      universitiesRo: where === "abroad" ? [] : ro,
+      universitiesRo: where === "abroad" ? [] : cityMissing ? ro : inCity,
+      ...(cityMissing ? { cityMissing: city } : {}),
       universitiesAbroad: where === "ro" ? [] : abroad,
       // The domain's specializations, closest to the student's inclinations first.
       specializations: specializations
@@ -157,7 +162,7 @@ function rank(
 
 export function matchDomains(answers: Answers): Match[] {
   const { student, picks, profile } = vectors(answers);
-  return rank(student, picks, profile, answers?.where, validActivities(answers));
+  return rank(student, picks, profile, answers?.where, validActivities(answers), answers?.city);
 }
 
 /** The student's inclinations from profile + answers, each an integer 0..100 (strongest = 100; all 0 when there are no answers). */
@@ -170,12 +175,12 @@ export function studentTraits(answers: Answers): Record<TraitId, number> {
 }
 
 /** Top 3 matches for an arbitrary trait vector (values 0..100), e.g. from the "what if" sliders. */
-export function matchByTraits(traits: Record<TraitId, number>, where: StudyPlace, profileId?: string): Match[] {
+export function matchByTraits(traits: Record<TraitId, number>, where: StudyPlace, profileId?: string, city?: string): Match[] {
   const vec = emptyVec();
   for (const t of TRAITS) {
     const v = Number(traits?.[t]);
     vec[t] = Number.isFinite(v) && v > 0 ? v : 0;
   }
   const profile = profiles.find((p) => p.id === profileId);
-  return rank(vec, vec, profile, where);
+  return rank(vec, vec, profile, where, [], city);
 }

@@ -6,6 +6,7 @@ export type StoredActivity = Activity & { photo?: string };
 export type Draft = {
   profileId?: string;
   where?: StudyPlace;
+  city?: string;
   choices: Record<string, number>;
   activities?: StoredActivity[];
 };
@@ -37,6 +38,7 @@ export function loadDraft(): Draft {
       return {
         profileId: d.profileId,
         where: d.where,
+        ...(typeof d.city === "string" && d.city ? { city: d.city } : {}),
         choices: d.choices ?? {},
         activities: cleanActivities(d.activities),
       };
@@ -72,6 +74,7 @@ export function toAnswers(d: Draft): Answers | null {
   return {
     profileId: d.profileId,
     where: d.where,
+    ...(d.city && d.where !== "abroad" ? { city: d.city } : {}),
     choices: d.choices,
     ...(activities.length ? { activities } : {}),
   };

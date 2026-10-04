@@ -83,11 +83,11 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/quiz  (1 files)
 
-- `page.tsx` (226) — Quiz screen: the high-school profile first, then one question per step with progress and encouragement, the activities step and the "where" step.. Routes: /quiz. Exports: QuizPage
+- `page.tsx` (267) — Quiz screen: the high-school profile first, then one question per step with progress and encouragement, the activities step and the "where" step (with the Romanian city).. Routes: /quiz. Exports: QuizPage
 
 ### apps/web/app/rezultat  (1 files)
 
-- `page.tsx` (129) — Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /rezultat. Exports: ResultPage
+- `page.tsx` (132) — Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /rezultat. Exports: ResultPage
 
 ### apps/web/app/specializari/[categorie]  (1 files)
 
@@ -122,7 +122,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `DomainDetails.tsx` (41) — One study domain as a native <details>: summary with emoji, name, count and chevron; inside the short text, specializations and a link to universities.. Exports: DomainDetails
 - `Illustrations.tsx` (88) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots and the start-page hero.. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene
 - `InterestPicker.tsx` (129) — "Ce îți place?": the student picks up to three interests and sees the specializations that fit them best, ranked, with links to universities.. Exports: InterestPicker
-- `MatchCard.tsx` (168) — One result card: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
+- `MatchCard.tsx` (176) — One result card: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
 - `NavLinks.tsx` (39) — Header navigation links with the current page highlighted.. Exports: NavLinks
 - `SearchBox.tsx` (45) — Search box with a magnifier icon; submits to /universitati?q=... or calls onSearch when given.. Exports: SearchBox
 - `Shell.tsx` (40) — Page frame shared by all screens: header with the UniPath logo and three-dots motif, and a centered content column.. Exports: Shell, Notice
@@ -131,7 +131,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `UniversityBadges.tsx` (23) — Small coloured badges for a university's prestige and budget level, shared by result cards and the profile sheet.. Exports: PrestigeBadge, BudgetBadge
 - `UniversityCard.tsx` (61) — Compact university result card: name, place, badges, three short facts and a link to the full sheet (the whole card is clickable).. Exports: UniversityCard
 - `UniversityList.tsx` (48) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList
-- `UniversitySearch.tsx` (377) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
+- `UniversitySearch.tsx` (381) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
 - `WhatIf.tsx` (69) — Collapsible "Ce-ar fi dacă?" panel: one slider per inclination, controlled by the result page.. Exports: WhatIf
 - `domainStyle.ts` (67) — Colour family and emoji for every study domain id, used on the result cards.. Exports: FAMILY_CLASSES, domainStyle
 
@@ -151,13 +151,13 @@ _Open only the files listed here; a file's description is its first comment line
 - `activities.test.ts` (57) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
 - `activities.ts` (73) — Activities a student can add (competitions, volunteering, extracurriculars): labels, areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, describeActivity
 - `data.ts` (19) — Loads the seeded JSON (profiles, questions, domains, universities, specializations, categories, testimonials) as typed arrays.. Exports: profiles, questions, domains, universities, specializations, categories, testimonials
-- `match.test.ts` (203) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
-- `match.ts` (182) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: TRAITS, TRAIT_LABEL, matchDomains, studentTraits, matchByTraits
-- `session.ts` (106) — Keeps the student's answers (and optional activities with photos) in sessionStorage between pages (safe on the server).. Exports: loadDraft, saveDraft, clearDraft, toAnswers, shrinkImage
-- `types.ts` (162) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
+- `match.test.ts` (245) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
+- `match.ts` (187) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: TRAITS, TRAIT_LABEL, matchDomains, studentTraits, matchByTraits
+- `session.ts` (109) — Keeps the student's answers (and optional activities with photos) in sessionStorage between pages (safe on the server).. Exports: loadDraft, saveDraft, clearDraft, toAnswers, shrinkImage
+- `types.ts` (165) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
 - `universities.data.test.ts` (82) — Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
 - `universities.test.ts` (190) — Tests the specializations and categories data and the university search/filter logic.
-- `universities.ts` (226) — Search and filter over the universities with a profile sheet, plus labels for the filter values.. Exports: PRESTIGE_LABEL, BUDGET_LABEL, ADMISSION_LABEL, CERTIFICATE_LABEL, normalize, countries, universityById, specializationsFor, …
+- `universities.ts` (234) — Search and filter over the universities with a profile sheet, plus labels for the filter values.. Exports: PRESTIGE_LABEL, BUDGET_LABEL, ADMISSION_LABEL, CERTIFICATE_LABEL, normalize, countries, romanianCities, universityById, …
 
 ### apps/web/public  (3 files)
 

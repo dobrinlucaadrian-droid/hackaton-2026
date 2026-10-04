@@ -53,6 +53,13 @@ export function countries(): string[] {
   return all.includes("România") ? ["România", ...rest] : rest;
 }
 
+/** Romanian cities that have at least one university, the ones with most universities first. */
+export function romanianCities(): string[] {
+  const count = new Map<string, number>();
+  for (const u of universities) if (u.region === "ro") count.set(u.city, (count.get(u.city) ?? 0) + 1);
+  return [...count.keys()].sort((a, b) => count.get(b)! - count.get(a)! || a.localeCompare(b, "ro"));
+}
+
 export function universityById(id: string): University | undefined {
   return universities.find((u) => u.id === id);
 }
@@ -189,6 +196,7 @@ export function filterUniversities(filters: Filters, limit = 10): University[] {
     .filter((u) => {
       if (filters.country && u.country !== filters.country) return false;
       if (filters.region && u.region !== filters.region) return false;
+      if (filters.city && u.city !== filters.city) return false;
       if (filters.domainId && !u.domainIds.includes(filters.domainId)) return false;
       if (maxBudget >= 0 && BUDGET_ORDER.indexOf(u.budget) > maxBudget) return false;
       if (maxPrestige >= 0 && PRESTIGE_ORDER.indexOf(u.prestige) > maxPrestige) return false;

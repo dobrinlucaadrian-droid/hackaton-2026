@@ -1,5 +1,5 @@
 "use client";
-// Quiz screen: the high-school profile first, then one question per step with progress and encouragement, the activities step and the "where" step.
+// Quiz screen: the high-school profile first, then one question per step with progress and encouragement, the activities step and the "where" step (with the Romanian city).
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Books, Cap, Diploma, Sparkle } from "@/components/Illustrations";
@@ -7,6 +7,7 @@ import { ActivitiesStep } from "@/components/ActivitiesStep";
 import { Notice, Shell } from "@/components/Shell";
 import { profiles, questions } from "@/lib/data";
 import { loadDraft, saveDraft, type Draft } from "@/lib/session";
+import { romanianCities } from "@/lib/universities";
 import type { StudyPlace } from "@/lib/types";
 
 const places: { value: StudyPlace; label: string }[] = [
@@ -14,6 +15,8 @@ const places: { value: StudyPlace; label: string }[] = [
   { value: "abroad", label: "În străinătate" },
   { value: "any", label: "Oriunde" },
 ];
+
+const cities = romanianCities();
 
 const profileGroups = Array.from(new Set(profiles.map((p) => p.filiera))).map((f) => ({
   name: f,
@@ -41,6 +44,7 @@ export default function QuizPage() {
   const router = useRouter();
   const [draft, setDraft] = useState<Draft | null>(null);
   const [step, setStep] = useState(0);
+  const [askCity, setAskCity] = useState(false); // second half of the last step: the Romanian city
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
@@ -88,7 +92,18 @@ export default function QuizPage() {
       setStep(0); // the profile is needed for the result
       return;
     }
-    saveDraft({ ...draft, where });
+    if (where === "abroad") {
+      saveDraft({ ...draft, where, city: undefined });
+      router.push("/rezultat");
+      return;
+    }
+    update({ ...draft, where });
+    setAskCity(true);
+  }
+
+  function pickCity(city: string | undefined) {
+    if (!draft) return;
+    saveDraft({ ...draft, city });
     router.push("/rezultat");
   }
 
@@ -128,7 +143,7 @@ export default function QuizPage() {
 
       <div key={step} className="slide-in">
         <h1 className="mt-6 text-3xl font-black leading-tight tracking-tight text-ink sm:text-4xl">
-          {isProfile ? "Ce profil de liceu urmezi?" : isWhere ? "Unde vrei să studiezi?" : isActivities ? "Ce ai făcut până acum?" : q.text}
+          {isProfile ? "Ce profil de liceu urmezi?" : isWhere ? (askCity ? "În ce oraș vrei să studiezi?" : "Unde vrei să studiezi?") : isActivities ? "Ce ai făcut până acum?" : q.text}
         </h1>
 
         {isProfile ? (
@@ -184,6 +199,32 @@ export default function QuizPage() {
               </button>
             </div>
           </>
+        ) : isWhere && askCity ? (
+          <>
+            <p className="mt-2 text-ink-soft">
+              Alege orașul tău sau cel în care vrei să înveți. Îți arătăm universitățile din România doar din acel oraș.
+            </p>
+            <button type="button" onClick={() => pickCity(undefined)} className={`mt-5 ${optionClass(false)}`}>
+              Oricare oraș
+            </button>
+            <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3" data-cities>
+              {cities.map((c) => (
+                <button
+                  key={c}
+                  type="button"
+                  aria-pressed={draft.city === c}
+                  onClick={() => pickCity(c)}
+                  className={`opt min-h-12 rounded-2xl border-2 px-4 py-3 text-left font-semibold ${
+                    draft.city === c
+                      ? "border-primary bg-primary-tint text-primary-dark"
+                      : "border-transparent bg-card text-ink ring-1 ring-line hover:ring-primary/50"
+                  }`}
+                >
+                  {c}
+                </button>
+              ))}
+            </div>
+          </>
         ) : (
           <div className="mt-6 flex flex-col gap-3">
             {isWhere
@@ -205,7 +246,7 @@ export default function QuizPage() {
         {step > 0 ? (
           <button
             type="button"
-            onClick={() => setStep(step - 1)}
+            onClick={() => (isWhere && askCity ? setAskCity(false) : setStep(step - 1))}
             className="min-h-11 rounded-full border-2 border-primary px-5 py-2 font-bold text-primary hover:bg-primary-tint"
           >
             ← Înapoi

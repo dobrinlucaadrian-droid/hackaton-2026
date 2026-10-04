@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-05 01:35 — orașul în chestionar: universități doar din orașul ales
+- Cerut: chestionarul să întrebe și orașul, ca elevul care alege București să nu primească universități din Alba Iulia. Echipa a ales: întrebarea la ultimul pas, listă doar cu orașele în care avem universități, iar dacă orașul nu are nimic pentru domeniu arătăm alte orașe cu mesaj clar
+- Făcut: la ultimul pas, după „În România” sau „Oriunde”, apare „În ce oraș vrei să studiezi?” cu „Oricare oraș” și cele 21 de orașe din datele noastre (București primul); la „În străinătate” nu se mai întreabă. Pe rezultat, lista din România se numește „În București” și are doar universități din orașul ales; dacă orașul nu are nimic pentru un domeniu, apare „În Alba Iulia nu am găsit universități pentru acest domeniu. Iată din alte orașe:”. Linkurile „Vezi toate” și butonul mare duc la căutare cu filtru nou de oraș (`oras=`), care se poate scoate. Domeniile potrivite și universitățile din străinătate nu se schimbă. „Ce-ar fi dacă?” păstrează orașul
+- Fișiere: `apps/web/app/quiz/page.tsx`, `apps/web/app/rezultat/page.tsx`, `apps/web/components/MatchCard.tsx`, `apps/web/components/UniversitySearch.tsx`, `apps/web/lib/match.ts`, `apps/web/lib/session.ts`, `apps/web/lib/types.ts`, `apps/web/lib/universities.ts`, `apps/web/lib/match.test.ts`
+- Poartă: TRECUT (build, 62 de teste, pornire); într-un browser separat, pe laptop și la lățime de telefon: România + București → doar universități din București, pagina de căutare arată 8 universități, niciuna din alt oraș; Oriunde + Alba Iulia → Informatică din Alba Iulia, iar la Inginerie civilă și mecanică mesajul și alte orașe; „Oricare oraș” și „În străinătate” merg ca înainte; „Înapoi” de la oraș revine la „Unde vrei să studiezi?”; fără erori. NEVERIFICAT: pe un telefon real
+- Urmează: publicare la cererea echipei; `/pitch`
+
 ### 2026-10-05 01:23 — chestionar nou: 18 situații, pe baza unei documentări
 - Cerut: întrebări mai complexe și mai interesante în chestionar, documentate din cât mai multe surse, ca rezultatul să fie cât mai precis; echipa a ales 18 întrebări, cu un singur răspuns pe întrebare, de tip situație/dilemă
 - Făcut: cele 12 întrebări vechi înlocuite cu 18 situații concrete din viața unui licean (proiect de grup, internet picat, regulă nedreaptă, job de vară…), fiecare cu 4–5 variante; documentare din 17 surse deschise (modelul Holland RIASEC, O*NET Interest Profiler, Open RIASEC, studii despre întrebările cu alegere forțată, surse românești de consiliere) păstrată în `docs/quiz-research.md`; nu am copiat întrebări din testele existente (au licențe), sunt scrise de la zero; ponderile echilibrate ca nicio înclinație să nu fie favorizată de răspunsuri la întâmplare (înainte „lucru cu oamenii” ieșea prea des); fiecare înclinație e acum principală în cel puțin 7 variante; pagina de start spune „18 situații… cam 6 minute”; pe pagina de rezultat scrie cinstit că nu e un test psihologic validat, ci un punct de pornire. Testul care cerea „10–12 întrebări” a fost schimbat la noua cerință a echipei (16–20) și s-a adăugat unul care cere minimum 6 variante principale pe înclinație
@@ -290,6 +297,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-05 01:24 `6d6fbdf` feat: 18 researched scenario questions in the questionnaire, balanced across the ten traits
 - 2026-10-05 00:59 `482966a` feat: replace the random card with a guided interest picker on the specializations page
 - 2026-10-05 00:51 `4c91def` feat: illustration and a surprise-me card on the specializations page
 - 2026-10-05 00:48 `86d84fe` feat: keep a single logo on the home page
@@ -319,5 +327,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 13:37 `da25839` feat: back button on the student voices page
 - 2026-10-04 13:35 `6aabf5a` fix: slider changes made at the same instant no longer overwrite each other
 - 2026-10-04 13:31 `ba2ae6b` docs: phone test confirmed by the team
-- 2026-10-04 13:29 `fe42b3d` feat: student voices page, empty until the team brings real opinions
 <!-- commits:end -->

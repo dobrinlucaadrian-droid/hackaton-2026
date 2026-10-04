@@ -43,15 +43,18 @@ function Row({ title, children }: { title: string; children: ReactNode }) {
   );
 }
 
-export function MatchCard({ match, rank, where }: { match: Match; rank: number; where?: StudyPlace }) {
+export function MatchCard({ match, rank, where, city }: { match: Match; rank: number; where?: StudyPlace; city?: string }) {
   const best = rank === 1;
   const { domain } = match;
   const { family, emoji } = domainStyle(domain.id);
   const f = FAMILY_CLASSES[family];
   const regionParam = where === "ro" ? "&regiune=ro" : where === "abroad" ? "&regiune=abroad" : "";
+  // The chosen city is used in titles and links only when it really has universities for this domain.
+  const inCity = city && !match.cityMissing ? city : undefined;
+  const cityParam = inCity ? `&oras=${encodeURIComponent(inCity)}` : "";
   const hasUnis = match.universitiesRo.length > 0 || match.universitiesAbroad.length > 0;
   const lists: { title: string; items: University[]; abroad: boolean }[] = [
-    { title: "În România", items: match.universitiesRo, abroad: false },
+    { title: inCity ? `În ${inCity}` : match.cityMissing ? "În alte orașe din România" : "În România", items: match.universitiesRo, abroad: false },
     { title: "În străinătate", items: match.universitiesAbroad, abroad: true },
   ];
   const base = `/universitati?domeniu=${domain.id}`;
@@ -100,11 +103,16 @@ export function MatchCard({ match, rank, where }: { match: Match; rank: number; 
 
       <section className="border-t border-line pt-4">
         <h3 className="font-extrabold text-ink">Unde poți studia</h3>
+        {match.cityMissing && match.universitiesRo.length > 0 && (
+          <p className="mt-2 rounded-xl bg-primary-tint px-4 py-3 text-sm text-primary-dark" role="note">
+            În {match.cityMissing} nu am găsit universități pentru acest domeniu. Iată din alte orașe:
+          </p>
+        )}
         {hasUnis ? (
           lists
             .filter((l) => l.items.length > 0)
             .map((l) => (
-              <UniversityList key={l.title} title={l.title} items={l.items} abroad={l.abroad} allHref={`${base}&regiune=${l.abroad ? "abroad" : "ro"}`} />
+              <UniversityList key={l.title} title={l.title} items={l.items} abroad={l.abroad} allHref={`${base}&regiune=${l.abroad ? "abroad" : `ro${cityParam}`}`} />
             ))
         ) : (
           <p className="mt-2 text-ink-soft">
@@ -114,7 +122,7 @@ export function MatchCard({ match, rank, where }: { match: Match; rank: number; 
       </section>
 
       <Link
-        href={`${base}${regionParam}`}
+        href={`${base}${regionParam}${where === "ro" ? cityParam : ""}`}
         className="mt-2 inline-flex min-h-12 w-full items-center justify-center rounded-2xl bg-primary px-6 py-3 text-center font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark active:scale-[0.98]"
       >
         Vezi universitățile pentru acest domeniu
