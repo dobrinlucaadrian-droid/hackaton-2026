@@ -90,7 +90,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/studenti  (1 files)
 
-- `page.tsx` (63) — Student voices: real opinions from students and graduates (name, faculty, year or graduate, their words).. Routes: /studenti. Exports: metadata, Students
+- `page.tsx` (88) — Student voices: real opinions from students and graduates (name, faculty, year or graduate, their words).. Routes: /studenti. Exports: metadata, Students
 
 ### apps/web/components  (9 files)
 
@@ -109,7 +109,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `domains.json` (43) — JSON array, 40 items
 - `profiles.json` (15) — JSON array, 12 items
 - `questions.json` (130) — JSON array, 12 items
-- `testimonials.json` (2) — JSON array, 0 items
+- `testimonials.json` (25) — JSON array, 4 items
 - `universities.json` (2048) — JSON array, 88 items
 
 ### apps/web/lib  (7 files)
@@ -120,9 +120,14 @@ _Open only the files listed here; a file's description is its first comment line
 - `match.test.ts` (194) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
 - `match.ts` (175) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: TRAITS, TRAIT_LABEL, matchDomains, studentTraits, matchByTraits
 - `session.ts` (106) — Keeps the student's answers (and optional activities with photos) in sessionStorage between pages (safe on the server).. Exports: loadDraft, saveDraft, clearDraft, toAnswers, shrinkImage
-- `types.ts` (94) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
+- `types.ts` (95) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
 
 ### apps/web/public  (2 files)
 
 - `logo.jpg`
 - `logo.png`
+
+### apps/web/public/studenti  (2 files)
+
+- `mihai-florea.jpg`
+- `tudor-demusca.jpg`

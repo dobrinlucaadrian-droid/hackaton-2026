@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "name": "Alexandru Badea",
+    "faculty": "University of Cambridge",
+    "text": "Cambridge are un sistem de învățământ solid, bazat pe grupuri mici și pe profesori care chiar îți urmăresc progresul, iar accentul e pe a gândi singur, nu pe a bifa examene. Oportunitățile sunt pe măsură: acces la cercetare, la alumni din toate domeniile și la o rețea care cântărește mult când aplici la joburi sau la master. Mai sunt și o grămadă de societăți și proiecte în care te poți implica, deci nu e doar cursuri. Nu e ușor, dar înveți și crești enorm."
+  },
+  {
+    "name": "Victoria Dumitru",
+    "faculty": "Facultatea de Drept, Universitatea din București",
+    "text": "Facultatea de Drept din cadrul Universității din București a fost un vis de-al meu de când eram mică. Chiar dacă dreptul în sine este limitat la jurisdicția unei țări, exceptând dreptul internațional, Facultatea de Drept din cadrul UNIBUC a început un parteneriat cu Universitatea din Sorbona, deschizându-se astfel Colegiul Francez cu scopul de a încuraja studenții străini, cât și pe cei români într-o colaborare cu frumoase rezultate.\n\nDin propria experiență, pot spune că, în ceea ce privește admiterea, aceasta constă într-un proces continuu de muncă susținută și pregătire de-a lungul clasei a 12-a și uneori chiar încă din clasa a 11-a. Este nevoie de perseverență și multă voință, însă rezultatul este pe măsură. Odată ce am intrat la drept, am cunoscut oameni de o cu totul altă factură, oameni pasionați de acest domeniu și în special oameni curioși de a trăi experiențe noi, de a-și face prieteni, atât în mediul universitar prin intermediul asociațiilor de studenți care oferă o multitudine de oportunități, cât și în afara acestuia prin clasicele hangout-uri la cafenele și prin parcuri unde își au începutul prietenii de o viață."
+  },
+  {
+    "name": "Mihai Florea",
+    "faculty": "IE University",
+    "photo": "/studenti/mihai-florea.jpg",
+    "text": "Am ales IE University în primul rând pentru mediul foarte internațional, unde ai ocazia să îți faci prieteni din toată lumea și să descoperi culturi și perspective diferite. Mi-a plăcut foarte mult și faptul că IE încurajează antreprenoriatul și îi susține pe studenți să își dezvolte propriile idei și proiecte. Procesul de admitere a fost simplu, intuitiv și bine organizat, iar acum pot spune că experiența mea aici este una foarte frumoasă și că mă bucur mult că am ales IE."
+  },
+  {
+    "name": "Tudor Demușcă",
+    "faculty": "Facultatea de Management, ASE București",
+    "photo": "/studenti/tudor-demusca.jpg",
+    "text": "Am ales Facultatea de Management din cadrul ASE București, în primul rând pentru reputația universității și pentru oportunitățile pe care le oferă studenților. Mi-a plăcut foarte mult faptul că programul pune accent pe dezvoltarea abilităților de leadership, organizare și antreprenoriat, oferindu-mi o bază solidă pentru viitor. De asemenea, consider că mediul universitar de la ASE este un loc ideal pentru a cunoaște oameni noi, pentru a face schimb de idei și pentru a mă dezvolta atât pe plan personal, cât și profesional. Sunt bucuros că am ales această facultate și privesc cu entuziasm experiențele și oportunitățile care urmează."
+  }
+]

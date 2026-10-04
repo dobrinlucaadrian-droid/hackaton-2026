@@ -1,4 +1,5 @@
 // Student voices: real opinions from students and graduates (name, faculty, year or graduate, their words).
+import Image from "next/image";
 import Link from "next/link";
 import { Books, Cap, Sparkle } from "@/components/Illustrations";
 import { Shell } from "@/components/Shell";
@@ -39,11 +40,35 @@ export default function Students() {
               style={{ animationDelay: `${i * 80}ms` }}
               className="rise rounded-3xl bg-card p-6 shadow-sm ring-1 ring-line"
             >
-              <p className="text-lg font-extrabold text-ink">{t.name}</p>
-              <p className="mt-1 text-sm font-bold text-primary">
-                {t.faculty} · {t.status}
-              </p>
-              <blockquote className="mt-4 border-l-4 border-teal pl-4 text-ink-soft">„{t.text}”</blockquote>
+              <div className="flex items-center gap-4">
+                {t.photo ? (
+                  <Image
+                    src={t.photo}
+                    alt={`Poza lui ${t.name}`}
+                    width={320}
+                    height={320}
+                    loading="eager"
+                    className="h-20 w-20 shrink-0 rounded-full object-cover ring-2 ring-teal"
+                  />
+                ) : (
+                  <span
+                    aria-hidden
+                    className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-primary-tint text-3xl font-black text-primary ring-2 ring-teal"
+                  >
+                    {t.name.charAt(0)}
+                  </span>
+                )}
+                <div>
+                  <p className="text-xl font-extrabold text-ink">{t.name}</p>
+                  <p className="mt-1 text-sm font-bold text-primary">
+                    {t.faculty}
+                    {t.status ? ` · ${t.status}` : ""}
+                  </p>
+                </div>
+              </div>
+              <blockquote className="mt-4 whitespace-pre-line border-l-4 border-teal pl-4 text-ink-soft">
+                „{t.text}”
+              </blockquote>
             </li>
           ))}
         </ul>

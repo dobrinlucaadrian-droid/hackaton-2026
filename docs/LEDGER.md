@@ -7,7 +7,7 @@ lista de commit-uri de la final se reface singură.
 
 - **Scop:** site care ghidează liceenii spre facultatea potrivită (tema „The Middle Man”); predare azi, 2026-10-04, la 18:00
 - **Unde:** aplicația e în `apps/web`, publicată la https://unipath-taupe-mu.vercel.app
-- **Urmează:** părerile studenților (nume, facultate, an/absolvent, text) → `apps/web/data/testimonials.json` → republicare; apoi `/pitch`. Aspect: design vesel în culorile logoului (bleumarin, burgundi) plus auriu
+- **Urmează:** `/pitch` (prezentarea și scenariul de demo). Pagina studenților are 4 păreri reale; lui Alexandru Badea și Victoriei Dumitru le lipsesc pozele
 - **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
 
 ## Jurnal
@@ -20,6 +20,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-04 15:25 — părerile studenților pe pagină
+- Cerut: patru studenți reali (păreri și poze date de Pilot, cu acordul lor): numele și facultatea sus, părerea jos, poza în lateral; fără an de studiu
+- Făcut: Alexandru Badea (University of Cambridge), Victoria Dumitru (Drept, Universitatea din București), Mihai Florea (IE University), Tudor Demușcă (Management, ASE București); poze rotunde în stânga pentru Mihai și Tudor (decupate pe față, 320px), inițială în cerc pentru ceilalți doi; textele puse cum au fost date, corectate doar greșelile de tastare și diacriticele
+- Fișiere: `apps/web/data/testimonials.json`, `apps/web/public/studenti/*.jpg`, `apps/web/app/studenti/page.tsx`, `apps/web/lib/types.ts`
+- Poartă: TRECUT (build, 24 teste, pornire); pagina văzută întreagă într-o captură la lățime de telefon, cu ambele poze
+- Urmează: republicare; `/pitch`
 
 ### 2026-10-04 15:05 — culorile logoului, plus auriu
 - Cerut: același design, dar în culorile logoului plus încă una la alegerea lui Claude
@@ -136,6 +143,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 14:56 `dbc0fef` feat: logo palette (navy, burgundy) plus gold on the new design
 - 2026-10-04 14:43 `79f354e` docs: add screenshots of each screen
 - 2026-10-04 14:35 `7392526` feat: activities step - competitions, volunteering and diploma photo feed the matching
 - 2026-10-04 13:59 `b40f794` feat: cheerful cool-colour redesign with illustrations and animations
@@ -165,5 +173,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-03 23:26 `4327ebd` feat: improve skills from GitHub research, add debugging skill
 - 2026-10-03 23:21 `0e6b41d` fix: let ideator run gh search, pre-approve read-only searches
 - 2026-10-03 23:14 `686d90a` docs: make coordonator optional, add cheap next-step rule
-- 2026-10-03 23:12 `764afdd` feat: add coordonator skill, team roles and Romanian-language rule
 <!-- commits:end -->
