@@ -7,7 +7,7 @@ lista de commit-uri de la final se reface singură.
 
 - **Scop:** site care ghidează liceenii spre facultatea potrivită (tema „The Middle Man”); predare azi, 2026-10-04, la 18:00
 - **Unde:** aplicația e în `apps/web`, publicată la https://unipath-taupe-mu.vercel.app
-- **Urmează:** echipa trimite părerile studenților (nume, facultate, an/absolvent, text) → `apps/web/data/testimonials.json` → republicare; apoi `/pitch`. Deschis: site-ul nu s-a deschis pe telefonul Pilotului (cauză necunoscută)
+- **Urmează:** echipa trimite părerile studenților (nume, facultate, an/absolvent, text) → `apps/web/data/testimonials.json` → republicare; apoi `/pitch`. Pilotul a confirmat la 13:30 că site-ul se deschide pe telefon prin codul QR (`docs/qr-unipath.png`)
 - **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
 
 ## Jurnal
@@ -101,6 +101,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 13:29 `fe42b3d` feat: student voices page, empty until the team brings real opinions
 - 2026-10-04 13:13 `45755bb` docs: add QR code for the public address
 - 2026-10-04 13:05 `a89bbaa` feat: what-if sliders on the result page; record deploy address
 - 2026-10-04 12:54 `34e9f2e` feat: show the team logo and match the palette to it
