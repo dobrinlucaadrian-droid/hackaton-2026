@@ -129,6 +129,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 14:35 `7392526` feat: activities step - competitions, volunteering and diploma photo feed the matching
 - 2026-10-04 13:59 `b40f794` feat: cheerful cool-colour redesign with illustrations and animations
 - 2026-10-04 13:37 `da25839` feat: back button on the student voices page
 - 2026-10-04 13:35 `6aabf5a` fix: slider changes made at the same instant no longer overwrite each other
@@ -158,5 +159,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-03 23:14 `686d90a` docs: make coordonator optional, add cheap next-step rule
 - 2026-10-03 23:12 `764afdd` feat: add coordonator skill, team roles and Romanian-language rule
 - 2026-10-03 23:07 `15c0a6e` docs: add step-by-step hackathon guide in Romanian
-- 2026-10-03 23:03 `24660c9` chore: cap ideator budget and switch it to sonnet
 <!-- commits:end -->
