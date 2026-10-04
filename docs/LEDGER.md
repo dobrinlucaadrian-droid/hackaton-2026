@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-04 16:00 — studenții de la aceeași universitate, unul lângă altul
+- Cerut: pe pagina „Ce spun studenții”, cei de la aceeași facultate să apară unul lângă altul
+- Făcut: părerile sunt grupate pe universitate (câmp nou `university` în date); un grup cu mai mulți studenți are un titlu mic și cartonașele alăturate pe ecran lat, unul sub altul pe telefon (acum: Mihai Florea și Anton Mocanu, IE University)
+- Fișiere: `apps/web/app/studenti/page.tsx`, `apps/web/data/testimonials.json`, `apps/web/lib/types.ts`
+- Poartă: TRECUT (build, teste, pornire); pagina văzută în capturi pe laptop și la lățime de telefon
+- Urmează: republicare; `/pitch`
+
 ### 2026-10-04 15:50 — încă doi studenți
 - Cerut: adăugarea a încă două păreri reale date de Pilot
 - Făcut: Anton Mocanu (IE University) și Alexa Munteanu (Universitatea din Amsterdam — Politică, Economie și Filozofie), fără poze (inițială în cerc); la textul Alexei corectate doar greșelile de tastare și diacriticele
@@ -157,6 +164,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 15:32 `53386e1` feat: add two more student opinions
 - 2026-10-04 15:25 `dfe2825` feat: add Victoria Dumitru's photo to her opinion
 - 2026-10-04 15:18 `b51f84f` feat: four real student opinions with photos on the student voices page
 - 2026-10-04 14:56 `dbc0fef` feat: logo palette (navy, burgundy) plus gold on the new design
@@ -186,5 +194,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-03 23:45 `18dd146` feat: add generated codebase map and ledger, enforced by the gate
 - 2026-10-03 23:38 `ff87e15` chore: keep git hooks on LF line endings
 - 2026-10-03 23:38 `bc6faeb` feat: add quality gate script, commit and Stop hooks, gate skill
-- 2026-10-03 23:26 `4327ebd` feat: improve skills from GitHub research, add debugging skill
 <!-- commits:end -->

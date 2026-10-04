@@ -88,6 +88,7 @@ export type Match = {
 export type Testimonial = {
   name: string; // exactly as the person agreed to be shown
   faculty: string; // faculty and university, as given by the team
+  university?: string; // used to show people from the same university side by side; defaults to `faculty`
   status?: string; // optional, e.g. "studentă în anul 3", "absolvent"
   photo?: string; // optional path under public/, shown with the person's consent
   text: string; // their own words; paragraphs separated by a blank line
