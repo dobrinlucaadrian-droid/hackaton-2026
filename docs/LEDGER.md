@@ -6,8 +6,8 @@ lista de commit-uri de la final se reface singură.
 ## Acum lucrăm la
 
 - **Scop:** UniPath — ghid între liceu și facultate (tema „The Middle Man”). Prezentarea e mâine, 2026-10-05 (ora nu a fost spusă)
-- **Unde:** aplicația e în `apps/web` (pagini: `/`, `/test`, `/quiz`, `/rezultat`, `/universitati`, `/universitati/[id]`, `/studenti`), publicată la https://unipath-taupe-mu.vercel.app
-- **Urmează:** reparat ce găsește `reviewer`, publicat versiunea cu căutare, filtre și fișe; apoi `/pitch`
+- **Unde:** aplicația e în `apps/web` (pagini: `/`, `/specializari`, `/specializari/[categorie]`, `/universitati`, `/universitati/[id]`, `/test`, `/quiz`, `/rezultat`, `/studenti`), publicată la https://unipath-taupe-mu.vercel.app
+- **Urmează:** publicat versiunea aerisită (cu acordul echipei), apoi `/pitch`
 - **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
 
 ## Jurnal
@@ -20,6 +20,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-04 18:40 — pagini aerisite, aceeași informație
+- Cerut: site-ul să nu mai pară încărcat, dar să cuprindă aceleași informații (`/researcher`, apoi aprobarea echipei pentru toate cele 5 schimbări; „compară două universități” amânat)
+- Făcut: pagina principală scurtă (lupă, două butoane, 10 cartonașe de categorii); pagini noi `/specializari` și `/specializari/[categorie]` cu domeniile pliabile și căutarea de specializări; la rezultat primul loc deschis, locurile 2 și 3 pliate, admitere / meserii / specializări pe rânduri pliabile, câte 3 universități și „Vezi toate”; la `/universitati` două filtre la vedere, „Mai multe filtre”, etichete de filtre active, cartonașe scurte, lista lumii pliată; fișa universității în 4 grupe cu bară fixă de sus; „Specializări” în meniu; titlul lung de pe cartonașul de rezultat nu mai iese din cadru pe telefon. Versiunea dinainte (cu căutare, filtre și fișe) fusese publicată la cererea echipei
+- Fișiere: `apps/web/app/page.tsx`, `apps/web/app/specializari/**`, `apps/web/app/universitati/[id]/page.tsx`, `apps/web/components/{CategoryTiles,DomainDetails,SpecializationsBrowser,MatchCard,UniversityList,UniversityCard,UniversitySearch,NavLinks}.tsx`
+- Poartă: TRECUT (build, 55 teste, pornire); capturi întregi pe laptop și telefon pentru pagina principală, top 10, rezultat, fișă; la 375px în browser: test → rezultat (cartonașe pliate care se deschid, rânduri pliabile, „Vezi toate”, cursoare, „Reia testul”), fișa (cele 4 ancore ajung sub bară), căutarea de specializări. Un avertisment de „hydration” pe `/specializari` apare doar pe serverul de dezvoltare (HTML vechi păstrat de el), nu în build-ul de producție — de reverificat după publicare. NEVERIFICAT: folosirea doar din tastatură; nepublicat
+- Urmează: publicare cu acordul echipei; `/pitch` (prezentarea e pe 2026-10-05)
 
 ### 2026-10-04 17:55 — reparații după verificarea codului
 - Cerut: verificarea întregii lucrări înainte de publicare (`reviewer`)
@@ -185,6 +192,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 17:24 `9b62030` docs: presentation moved to 2026-10-05
 - 2026-10-04 17:22 `6092918` fix: world-list link check, loading and failure messages, ignore prestige=national
 - 2026-10-04 17:19 `46b3584` feat: home page with search, specializations, top-10 filters and university profile sheets
 - 2026-10-04 15:48 `a30bf9b` feat: add Zara Faflei's opinion and photo
@@ -214,5 +222,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 00:05 `9b25b99` docs: deploy checklist reports in the gate's TRECUT/PICAT/NEVERIFICAT words
 - 2026-10-04 00:02 `63186a4` fix: stop hook asks for the gate only on uncommitted code changes
 - 2026-10-03 23:53 `cdd9525` docs: guide prompts point Claude at the map and ledger
-- 2026-10-03 23:51 `733b7e4` docs: update team guide; map now orients new sessions and loads via CLAUDE.md
 <!-- commits:end -->

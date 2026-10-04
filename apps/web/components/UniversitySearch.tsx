@@ -154,10 +154,57 @@ export function UniversitySearch() {
   const rest = domains.filter((d) => !inCat.has(d.id));
 
   const countryList = countries();
+  const hiddenCount = (["budget", "prestige", "admissionType", "scholarships", "dorms", "withoutCertificate"] as const).filter((k) => filters[k] !== undefined).length;
+  const chips: { key: keyof Filters; label: string }[] = [];
+  if (filters.region) chips.push({ key: "region", label: filters.region === "ro" ? "În România" : "În străinătate" });
+  if (filters.country) chips.push({ key: "country", label: filters.country });
+  if (filters.domainId) chips.push({ key: "domainId", label: domains.find((d) => d.id === filters.domainId)?.name ?? filters.domainId });
+  if (filters.budget) chips.push({ key: "budget", label: BUDGET_LABEL[filters.budget] });
+  if (filters.prestige) chips.push({ key: "prestige", label: PRESTIGE_CHIP[filters.prestige] });
+  if (filters.admissionType) chips.push({ key: "admissionType", label: ADMISSION_LABEL[filters.admissionType] });
+  if (filters.scholarships) chips.push({ key: "scholarships", label: "Are burse" });
+  if (filters.dorms) chips.push({ key: "dorms", label: "Are cămin" });
+  if (filters.withoutCertificate) chips.push({ key: "withoutCertificate", label: `Fără: ${CERTIFICATE_LABEL[filters.withoutCertificate]}` });
 
   return (
     <div>
       <SearchBox key={q} initial={q} id="cauta-uni" onSearch={(v) => setParam("q", v || undefined)} />
+
+      <div className="mt-4 grid gap-4 sm:grid-cols-2">
+        <div>
+          <label htmlFor="f-tara" className="text-sm font-extrabold uppercase tracking-wide text-primary">Țara</label>
+          <select id="f-tara" value={filters.country ?? ""} onChange={(e) => setParam("tara", e.target.value || undefined)} className={selectClass}>
+            <option value="">Oricare</option>
+            {countryList.map((c) => (
+              <option key={c} value={c}>{c}</option>
+            ))}
+          </select>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <Chip on={filters.region === "ro"} onClick={() => toggle("region", "ro", filters.region)}>În România</Chip>
+            <Chip on={filters.region === "abroad"} onClick={() => toggle("region", "abroad", filters.region)}>În străinătate</Chip>
+          </div>
+        </div>
+        <div>
+          <label htmlFor="f-domeniu" className="text-sm font-extrabold uppercase tracking-wide text-primary">Domeniu</label>
+          <select id="f-domeniu" value={filters.domainId ?? ""} onChange={(e) => setParam("domeniu", e.target.value || undefined)} className={selectClass}>
+            <option value="">Oricare</option>
+            {grouped.map(({ c, ds }) => (
+              <optgroup key={c.id} label={c.name}>
+                {ds.map((d) => (
+                  <option key={d.id} value={d.id}>{d.name}</option>
+                ))}
+              </optgroup>
+            ))}
+            {rest.length > 0 && (
+              <optgroup label="Alte domenii">
+                {rest.map((d) => (
+                  <option key={d.id} value={d.id}>{d.name}</option>
+                ))}
+              </optgroup>
+            )}
+          </select>
+        </div>
+      </div>
 
       <div className="mt-3 flex flex-wrap items-center gap-3">
         <button
@@ -170,8 +217,8 @@ export function UniversitySearch() {
           <svg aria-hidden viewBox="0 0 24 24" className="h-5 w-5 fill-none stroke-current" strokeWidth="2.2" strokeLinecap="round">
             <path d="M4 6h16M7 12h10M10 18h4" />
           </svg>
-          Filtre
-          {activeCount > 0 && <span className="rounded-full bg-primary px-2 py-0.5 text-xs text-white">{activeCount}</span>}
+          Mai multe filtre
+          {hiddenCount > 0 && <span className="rounded-full bg-primary px-2 py-0.5 text-xs text-white">{hiddenCount}</span>}
         </button>
         {activeCount > 0 && (
           <button type="button" onClick={clearFilters} className="min-h-11 rounded-full px-3 font-bold text-ink-soft underline underline-offset-2 hover:text-primary">
@@ -188,46 +235,10 @@ export function UniversitySearch() {
           className="slide-in z-40 mt-3 space-y-5 bg-card p-5 shadow-sm ring-1 ring-line max-sm:fixed max-sm:inset-x-0 max-sm:bottom-0 max-sm:mt-0 max-sm:max-h-[88vh] max-sm:overflow-y-auto max-sm:rounded-t-3xl sm:rounded-3xl"
         >
           <div className="flex items-center justify-between sm:hidden">
-            <h2 className="text-xl font-black text-ink">Filtre</h2>
+            <h2 className="text-xl font-black text-ink">Mai multe filtre</h2>
             <button type="button" onClick={() => setPanel(false)} className="min-h-11 rounded-full bg-primary px-5 font-bold text-white">
               Gata
             </button>
-          </div>
-
-          <div className="grid gap-4 sm:grid-cols-2">
-            <div>
-              <label htmlFor="f-tara" className="text-sm font-extrabold uppercase tracking-wide text-primary">Țara</label>
-              <select id="f-tara" value={filters.country ?? ""} onChange={(e) => setParam("tara", e.target.value || undefined)} className={selectClass}>
-                <option value="">Oricare</option>
-                {countryList.map((c) => (
-                  <option key={c} value={c}>{c}</option>
-                ))}
-              </select>
-              <div className="mt-2 flex flex-wrap gap-2">
-                <Chip on={filters.region === "ro"} onClick={() => toggle("region", "ro", filters.region)}>În România</Chip>
-                <Chip on={filters.region === "abroad"} onClick={() => toggle("region", "abroad", filters.region)}>În străinătate</Chip>
-              </div>
-            </div>
-            <div>
-              <label htmlFor="f-domeniu" className="text-sm font-extrabold uppercase tracking-wide text-primary">Specializare / domeniu</label>
-              <select id="f-domeniu" value={filters.domainId ?? ""} onChange={(e) => setParam("domeniu", e.target.value || undefined)} className={selectClass}>
-                <option value="">Oricare</option>
-                {grouped.map(({ c, ds }) => (
-                  <optgroup key={c.id} label={c.name}>
-                    {ds.map((d) => (
-                      <option key={d.id} value={d.id}>{d.name}</option>
-                    ))}
-                  </optgroup>
-                ))}
-                {rest.length > 0 && (
-                  <optgroup label="Alte domenii">
-                    {rest.map((d) => (
-                      <option key={d.id} value={d.id}>{d.name}</option>
-                    ))}
-                  </optgroup>
-                )}
-              </select>
-            </div>
           </div>
 
           <Group title="Buget (cel mult)">
@@ -276,6 +287,24 @@ export function UniversitySearch() {
         </section>
       )}
 
+      {chips.length > 0 && (
+        <ul className="mt-4 flex flex-wrap gap-2" aria-label="Filtre active">
+          {chips.map((c) => (
+            <li key={c.key}>
+              <button
+                type="button"
+                onClick={() => setParam(PARAM_OF[c.key], undefined)}
+                aria-label={`Scoate filtrul ${c.label}`}
+                className="inline-flex min-h-11 items-center gap-2 rounded-full bg-primary-tint px-4 text-sm font-bold text-primary-dark transition hover:bg-primary hover:text-white"
+              >
+                {c.label}
+                <span aria-hidden>✕</span>
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+
       <p className="mt-4 rounded-2xl bg-primary-tint p-3 text-sm text-primary-dark" role="note">{NOTE}</p>
 
       <h2 className="mt-6 text-2xl font-black tracking-tight text-ink" aria-live="polite">
@@ -306,10 +335,17 @@ export function UniversitySearch() {
       )}
 
       {q && (
-        <section className="mt-10" aria-labelledby="alte-uni">
-          <h2 id="alte-uni" className="text-2xl font-black tracking-tight text-ink">Alte universități din lume</h2>
+        <details className="group mt-10 rounded-3xl bg-card shadow-sm ring-1 ring-line">
+          <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-2 px-5 py-3 [&::-webkit-details-marker]:hidden">
+            <h2 id="alte-uni" className="text-xl font-black tracking-tight text-ink">
+              Alte universități din lume
+              {activeCount === 0 && worldReady && !worldFailed ? ` (${worldShown.length})` : ""}
+            </h2>
+            <span aria-hidden className="text-primary transition-transform group-open:rotate-180">▾</span>
+          </summary>
+          <div className="px-5 pb-5">
           {activeCount > 0 ? (
-            <p className="mt-2 text-ink-soft">Lista de mai jos nu poate fi filtrată. Șterge filtrele ca să o vezi.</p>
+            <p className="text-ink-soft">Lista de mai jos nu poate fi filtrată. Șterge filtrele ca să o vezi.</p>
           ) : !worldReady ? (
             <p className="mt-2 text-ink-soft">Se caută în lista universităților din lume…</p>
           ) : worldFailed ? (
@@ -332,7 +368,8 @@ export function UniversitySearch() {
               </ul>
             </>
           )}
-        </section>
+          </div>
+        </details>
       )}
     </div>
   );

@@ -22,10 +22,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <section className="mt-6 rounded-3xl bg-card p-5 shadow-sm ring-1 ring-line sm:p-6">
-      <h2 className="text-xl font-black tracking-tight text-ink">{title}</h2>
+    <section className="rounded-3xl bg-card p-5 shadow-sm ring-1 ring-line sm:p-6">
+      <h3 className="text-xl font-black tracking-tight text-ink">{title}</h3>
       <div className="mt-2 space-y-2 text-ink-soft">{children}</div>
     </section>
+  );
+}
+
+function Group({ id, title, children }: { id: string; title: string; children: React.ReactNode }) {
+  return (
+    <section id={id} aria-labelledby={`${id}-t`} className="mt-8 scroll-mt-20">
+      <h2 id={`${id}-t`} className="text-2xl font-black tracking-tight text-ink">
+        {title}
+      </h2>
+      <div className="mt-3 space-y-4">{children}</div>
+    </section>
+  );
+}
+
+function Tile({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="rounded-2xl bg-card p-4 shadow-sm ring-1 ring-line">
+      <p className="text-xs font-extrabold uppercase tracking-wide text-primary">{label}</p>
+      <p className="mt-1 font-bold leading-snug text-ink">{value}</p>
+    </div>
   );
 }
 
@@ -45,6 +65,13 @@ export default async function UniversityPage({ params }: Props) {
   const specs = uniDomains.flatMap((d) => specializationsFor(d.id).map((s) => ({ ...s, domainName: d.name })));
   const certs = u.certificates.map((c) => CERTIFICATE_LABEL[c]).filter(Boolean);
   const admission = u.admissionTypes.map((a) => ADMISSION_LABEL[a]).filter(Boolean);
+  const hasPros = u.pros.length > 0 || u.cons.length > 0;
+  const anchors: [string, string][] = [
+    ["admitere", "Admitere"],
+    ["costuri", "Costuri"],
+    ["despre", "Despre"],
+    ...(hasPros ? ([["plusuri", "Plusuri și minusuri"]] as [string, string][]) : []),
+  ];
 
   return (
     <Shell wide>
@@ -65,110 +92,138 @@ export default async function UniversityPage({ params }: Props) {
           {u.about && <p className="mt-4 text-lg text-ink">{u.about}</p>}
         </header>
 
-        {(admission.length > 0 || u.admission) && (
-          <Section title="Cum intri">
-            {admission.length > 0 && (
-              <ul className="flex flex-wrap gap-2">
-                {admission.map((a) => (
-                  <li key={a} className="rounded-full bg-primary-tint px-3 py-1 text-sm font-semibold text-primary-dark">{a}</li>
-                ))}
-              </ul>
-            )}
-            {u.admission && <p>{u.admission}</p>}
-          </Section>
-        )}
-
-        <Section title="Cât costă">
-          <p>
-            <span className="font-bold text-ink">{BUDGET_LABEL[u.budget]}</span>
-            {u.budgetNote ? ` — ${u.budgetNote}` : ""}
-          </p>
-          {u.tuition && <p>Taxe: {u.tuition}</p>}
-        </Section>
-
-        {u.language && (
-          <Section title="Limba de predare">
-            <p>{u.language}</p>
-          </Section>
-        )}
-
-        <div className="grid gap-0 sm:grid-cols-2 sm:gap-6">
-          <Section title="Burse">
-            <Yes on={u.scholarships} />
-            {u.scholarshipsNote && <p>{u.scholarshipsNote}</p>}
-          </Section>
-          <Section title="Cămin">
-            <Yes on={u.dorms} />
-            {u.dormsNote && <p>{u.dormsNote}</p>}
-          </Section>
+        <div className="mt-5 grid gap-3 sm:grid-cols-3">
+          <Tile label="Admitere" value={admission.length ? admission.join(", ") : "Vezi detaliile mai jos"} />
+          <Tile label="Cost" value={BUDGET_LABEL[u.budget]} />
+          <Tile label="Burse și cămin" value={`Burse: ${u.scholarships ? "da" : "nu"} · Cămin: ${u.dorms ? "da" : "nu"}`} />
         </div>
 
-        {certs.length > 0 && (
-          <Section title="Ce acte și certificate îți trebuie">
-            <ul className="list-disc space-y-1 pl-5 marker:text-primary">
-              {certs.map((c) => (
-                <li key={c}>{c}</li>
-              ))}
-            </ul>
-          </Section>
-        )}
+        <nav aria-label="Secțiunile fișei" className="sticky top-0 z-20 -mx-5 mt-5 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden bg-paper/95 px-5 py-2 backdrop-blur">
+          <ul className="flex gap-2 whitespace-nowrap">
+            {anchors.map(([a, label]) => (
+              <li key={a}>
+                <a href={`#${a}`} className="inline-flex min-h-11 items-center rounded-full bg-card px-4 text-sm font-bold text-primary-dark ring-1 ring-line transition hover:bg-primary-tint">
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
-        {(u.pros.length > 0 || u.cons.length > 0) && (
-          <div className="grid gap-0 sm:grid-cols-2 sm:gap-6">
-            {u.pros.length > 0 && (
-              <Section title="Avantaje">
-                <ul className="list-disc space-y-1 pl-5 marker:text-teal">
-                  {u.pros.map((p) => (
-                    <li key={p}>{p}</li>
-                  ))}
-                </ul>
-              </Section>
-            )}
-            {u.cons.length > 0 && (
-              <Section title="Dezavantaje">
-                <ul className="list-disc space-y-1 pl-5 marker:text-violet">
-                  {u.cons.map((c) => (
-                    <li key={c}>{c}</li>
-                  ))}
-                </ul>
-              </Section>
-            )}
-          </div>
-        )}
-
-        {uniDomains.length > 0 && (
-          <Section title="Ce poți studia aici">
-            <ul className="flex flex-wrap gap-2">
-              {uniDomains.map((d) => {
-                const { family, emoji } = domainStyle(d.id);
-                return (
-                  <li key={d.id}>
-                    <Link
-                      href={`/universitati?domeniu=${d.id}`}
-                      className={`inline-flex min-h-11 items-center rounded-full px-4 text-sm font-semibold transition hover:opacity-80 ${FAMILY_CLASSES[family].chip}`}
-                    >
-                      <span aria-hidden className="mr-1">{emoji}</span>
-                      {d.name}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-            {specs.length > 0 && (
-              <details className="mt-3 rounded-2xl bg-paper p-4">
-                <summary className="min-h-11 cursor-pointer font-bold text-primary-dark">Vezi specializările din aceste domenii ({specs.length})</summary>
-                <ul className="mt-3 space-y-3">
-                  {specs.map((s) => (
-                    <li key={s.id} className="border-l-4 border-line pl-3">
-                      <p className="text-sm font-bold text-ink">{s.name}</p>
-                      <p className="text-xs text-ink-soft">{s.domainName}</p>
-                      <p className="text-sm">{s.short}</p>
+        <Group id="admitere" title="Admitere">
+          {(admission.length > 0 || u.admission) && (
+            <Section title="Cum intri">
+              {admission.length > 0 && (
+                <ul className="flex flex-wrap gap-2">
+                  {admission.map((a) => (
+                    <li key={a} className="rounded-full bg-primary-tint px-3 py-1 text-sm font-semibold text-primary-dark">
+                      {a}
                     </li>
                   ))}
                 </ul>
-              </details>
-            )}
+              )}
+              {u.admission && <p>{u.admission}</p>}
+            </Section>
+          )}
+          {certs.length > 0 && (
+            <Section title="Ce acte și certificate îți trebuie">
+              <ul className="list-disc space-y-1 pl-5 marker:text-primary">
+                {certs.map((c) => (
+                  <li key={c}>{c}</li>
+                ))}
+              </ul>
+            </Section>
+          )}
+        </Group>
+
+        <Group id="costuri" title="Costuri">
+          <Section title="Cât costă">
+            <p>
+              <span className="font-bold text-ink">{BUDGET_LABEL[u.budget]}</span>
+              {u.budgetNote ? ` — ${u.budgetNote}` : ""}
+            </p>
+            {u.tuition && <p>Taxe: {u.tuition}</p>}
           </Section>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <Section title="Burse">
+              <Yes on={u.scholarships} />
+              {u.scholarshipsNote && <p>{u.scholarshipsNote}</p>}
+            </Section>
+            <Section title="Cămin">
+              <Yes on={u.dorms} />
+              {u.dormsNote && <p>{u.dormsNote}</p>}
+            </Section>
+          </div>
+        </Group>
+
+        <Group id="despre" title="Despre">
+          {u.language && (
+            <Section title="Limba de predare">
+              <p>{u.language}</p>
+            </Section>
+          )}
+          {uniDomains.length > 0 && (
+            <Section title="Ce poți studia aici">
+              <ul className="flex flex-wrap gap-2">
+                {uniDomains.map((d) => {
+                  const { family, emoji } = domainStyle(d.id);
+                  return (
+                    <li key={d.id}>
+                      <Link
+                        href={`/universitati?domeniu=${d.id}`}
+                        className={`inline-flex min-h-11 items-center rounded-full px-4 text-sm font-semibold transition hover:opacity-80 ${FAMILY_CLASSES[family].chip}`}
+                      >
+                        <span aria-hidden className="mr-1">{emoji}</span>
+                        {d.name}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+              {specs.length > 0 && (
+                <details className="group mt-3 rounded-2xl bg-paper p-4">
+                  <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-2 font-bold text-primary-dark [&::-webkit-details-marker]:hidden">
+                    Vezi specializările din aceste domenii ({specs.length})
+                    <span aria-hidden className="transition-transform group-open:rotate-180">▾</span>
+                  </summary>
+                  <ul className="mt-3 space-y-3">
+                    {specs.map((s) => (
+                      <li key={s.id} className="border-l-4 border-line pl-3">
+                        <p className="text-sm font-bold text-ink">{s.name}</p>
+                        <p className="text-xs text-ink-soft">{s.domainName}</p>
+                        <p className="text-sm">{s.short}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              )}
+            </Section>
+          )}
+        </Group>
+
+        {hasPros && (
+          <Group id="plusuri" title="Plusuri și minusuri">
+            <div className="grid gap-4 sm:grid-cols-2">
+              {u.pros.length > 0 && (
+                <Section title="Avantaje">
+                  <ul className="list-disc space-y-1 pl-5 marker:text-teal">
+                    {u.pros.map((p) => (
+                      <li key={p}>{p}</li>
+                    ))}
+                  </ul>
+                </Section>
+              )}
+              {u.cons.length > 0 && (
+                <Section title="Dezavantaje">
+                  <ul className="list-disc space-y-1 pl-5 marker:text-violet">
+                    {u.cons.map((c) => (
+                      <li key={c}>{c}</li>
+                    ))}
+                  </ul>
+                </Section>
+              )}
+            </div>
+          </Group>
         )}
 
         <div className="mt-8 text-center">

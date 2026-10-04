@@ -1,14 +1,11 @@
-"use client";
-// Labelled list of universities with links; shows 5 first and a "Vezi toate" toggle.
+// Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.
 import Link from "next/link";
-import { useState } from "react";
 import type { University } from "@/lib/types";
 
-const LIMIT = 5;
+const LIMIT = 3;
 
-export function UniversityList({ title, items, abroad }: { title: string; items: University[]; abroad: boolean }) {
-  const [all, setAll] = useState(false);
-  const shown = all ? items : items.slice(0, LIMIT);
+export function UniversityList({ title, items, abroad, allHref }: { title: string; items: University[]; abroad: boolean; allHref: string }) {
+  const shown = items.slice(0, LIMIT);
   return (
     <div className="mt-4">
       <h4 className="text-sm font-semibold uppercase tracking-wide text-primary-dark">{title}</h4>
@@ -41,14 +38,9 @@ export function UniversityList({ title, items, abroad }: { title: string; items:
         ))}
       </ul>
       {items.length > LIMIT && (
-        <button
-          type="button"
-          onClick={() => setAll(!all)}
-          aria-expanded={all}
-          className="mt-2 rounded-lg px-3 py-1 text-sm font-semibold text-primary-dark hover:bg-primary-tint"
-        >
-          {all ? "Arată mai puține" : `Vezi toate (${items.length})`}
-        </button>
+        <Link href={allHref} className="mt-1 inline-flex min-h-11 items-center rounded-lg px-1 text-sm font-bold text-primary underline decoration-primary/40 underline-offset-2 hover:text-primary-dark">
+          Vezi toate ({items.length}) →
+        </Link>
       )}
     </div>
   );

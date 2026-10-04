@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 
 const LINKS = [
   ["/", "Acasă"],
+  ["/specializari", "Specializări"],
   ["/universitati", "Universități"],
   ["/test", "Test"],
   ["/studenti", "Studenți"],
@@ -13,7 +14,7 @@ const LINKS = [
 export function NavLinks() {
   const path = usePathname();
   return (
-    <nav aria-label="Navigare principală" className="-mx-1 overflow-x-auto">
+    <nav aria-label="Navigare principală" className="-mx-1 max-w-full overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       <ul className="flex items-center gap-1 whitespace-nowrap px-1">
         {LINKS.map(([href, label]) => {
           const on = href === "/" ? path === "/" : path === href || path.startsWith(`${href}/`);

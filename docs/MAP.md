@@ -79,7 +79,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `globals.css` (129) — _no description: add a first-line comment_
 - `layout.tsx` (31) — _no description: add a first-line comment_. Exports: metadata, RootLayout
 - `not-found.tsx` (11) — Friendly 404 page shown for unknown routes and unknown university ids.. Exports: NotFound
-- `page.tsx` (57) — Home page: search box, hero with the two main actions, and the browsable list of all specializations.. Routes: /. Exports: Home
+- `page.tsx` (69) — Home page: search box, hero with the two main actions, and the browsable list of all specializations.. Routes: /. Exports: Home
 
 ### apps/web/app/quiz  (1 files)
 
@@ -88,6 +88,14 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/app/rezultat  (1 files)
 
 - `page.tsx` (127) — Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /rezultat. Exports: ResultPage
+
+### apps/web/app/specializari/[categorie]  (1 files)
+
+- `page.tsx` (48) — One category: its study domains as collapsible rows with their specializations.. Routes: /specializari/[categorie]. Exports: generateStaticParams, generateMetadata, CategoryPage
+
+### apps/web/app/specializari  (1 files)
+
+- `page.tsx` (17) — All study fields: category tiles, or filtered domains and specializations when the student types.. Routes: /specializari. Exports: metadata, SpecializationsPage
 
 ### apps/web/app/studenti  (1 files)
 
@@ -99,27 +107,29 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/universitati/[id]  (1 files)
 
-- `page.tsx` (192) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
+- `page.tsx` (247) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/universitati  (1 files)
 
 - `page.tsx` (20) — University finder page: search box, filters and top 10 results (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
 
-### apps/web/components  (15 files)
+### apps/web/components  (17 files)
 
 - `ActivitiesStep.tsx` (227) — Quiz step "Ce ai făcut până acum?": add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
 - `ActivitiesSummary.tsx` (33) — Read-only list of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
+- `CategoryTiles.tsx` (29) — Grid of category tiles (emoji, name, domain and specialization counts), each linking to its category page.. Exports: CategoryTiles
 - `Confetti.tsx` (41) — A short burst of cool-coloured confetti, shown once when mounted and removed after about 3 seconds.. Exports: Confetti
+- `DomainDetails.tsx` (41) — One study domain as a native <details>: summary with emoji, name, count and chevron; inside the short text, specializations and a link to universities.. Exports: DomainDetails
 - `Illustrations.tsx` (88) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots and the start-page hero.. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene
-- `MatchCard.tsx` (136) — One result card: tinted header band with emoji and animated percent ring, reasons, admission, careers and universities.. Exports: MatchCard
-- `NavLinks.tsx` (38) — Header navigation links with the current page highlighted.. Exports: NavLinks
+- `MatchCard.tsx` (168) — One result card: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
+- `NavLinks.tsx` (39) — Header navigation links with the current page highlighted.. Exports: NavLinks
 - `SearchBox.tsx` (45) — Search box with a magnifier icon; submits to /universitati?q=... or calls onSearch when given.. Exports: SearchBox
 - `Shell.tsx` (40) — Page frame shared by all screens: header with the UniPath logo and three-dots motif, and a centered content column.. Exports: Shell, Notice
-- `SpecializationsBrowser.tsx` (125) — "Toate specializările": categories as accordions with their domains and specializations, plus a live text filter.. Exports: SpecializationsBrowser
+- `SpecializationsBrowser.tsx` (80) — /specializari body: a text filter over all categories, domains and specializations; without text it shows the category tiles.. Exports: SpecializationsBrowser
 - `UniversityBadges.tsx` (23) — Small coloured badges for a university's prestige and budget level, shared by result cards and the profile sheet.. Exports: PrestigeBadge, BudgetBadge
-- `UniversityCard.tsx` (73) — One university result card: badges, matching domain chips, short about text, admission/scholarship/dorm rows and a link to the full sheet.. Exports: UniversityCard
-- `UniversityList.tsx` (56) — Labelled list of universities with links; shows 5 first and a "Vezi toate" toggle.. Exports: UniversityList
-- `UniversitySearch.tsx` (340) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
+- `UniversityCard.tsx` (61) — Compact university result card: name, place, badges, three short facts and a link to the full sheet (the whole card is clickable).. Exports: UniversityCard
+- `UniversityList.tsx` (48) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList
+- `UniversitySearch.tsx` (377) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
 - `WhatIf.tsx` (69) — Collapsible "Ce-ar fi dacă?" panel: one slider per inclination, controlled by the result page.. Exports: WhatIf
 - `domainStyle.ts` (67) — Colour family and emoji for every study domain id, used on the result cards.. Exports: FAMILY_CLASSES, domainStyle
 

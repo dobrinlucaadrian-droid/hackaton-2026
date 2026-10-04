@@ -4,7 +4,7 @@ import Link from "next/link";
 import { HeroScene } from "@/components/Illustrations";
 import { SearchBox } from "@/components/SearchBox";
 import { Shell } from "@/components/Shell";
-import { SpecializationsBrowser } from "@/components/SpecializationsBrowser";
+import { CategoryTiles } from "@/components/CategoryTiles";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         <SearchBox />
       </div>
 
-      <section className="mt-4 grid items-center gap-6 md:grid-cols-2">
+      <section className="mt-2 grid items-center gap-4 md:grid-cols-2">
         <div className="rise text-center md:text-left">
           <h1>
             <Image src="/logo.png" alt="UniPath" width={1254} height={1254} priority className="mx-auto -my-6 h-auto w-40 md:mx-0 md:-ml-3" />
@@ -47,10 +47,22 @@ export default function Home() {
             Ce spun studenții
           </Link>
         </div>
-        <HeroScene className="float mx-auto w-full max-w-sm md:max-w-none" />
+        <HeroScene className="float mx-auto w-full max-w-[9rem] sm:max-w-sm md:max-w-none" />
       </section>
 
-      <SpecializationsBrowser />
+      <section aria-labelledby="ce-poti-studia" className="mx-auto mt-8 max-w-4xl">
+        <h2 id="ce-poti-studia" className="text-3xl font-black tracking-tight text-ink">
+          Ce poți studia
+        </h2>
+        <p className="mt-1 mb-4 text-ink-soft">Alege o categorie și vezi domeniile din ea.</p>
+        <CategoryTiles />
+        <Link
+          href="/specializari"
+          className="mt-4 inline-flex min-h-11 items-center font-bold text-primary underline decoration-primary/40 underline-offset-2 hover:text-primary-dark"
+        >
+          Vezi toate specializările →
+        </Link>
+      </section>
     </Shell>
   );
 }
