@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-05 02:40 — „Surprinde-mă” înlocuit cu alegerea după interese
+- Cerut: echipei nu îi place jocul cu specializarea la întâmplare: UniPath ghidează liceenii spre ce li se potrivește, nu „dă cu zarul”. Înainte: versiunea cu un singur logo și cu „Surprinde-mă” publicată la cererea echipei
+- Făcut: jocul la întâmplare scos cu totul; în locul lui, „Nu știi de unde să începi?”: elevul alege până la 3 lucruri care i se potrivesc (cele 10 înclinații din chestionar) și vede primele 6 specializări apropiate de alegerile lui, în ordine, cu procent de potrivire, descriere și link spre universități, plus un îndemn spre chestionarul complet. Aceeași alegere dă mereu același rezultat
+- Fișiere: `apps/web/components/InterestPicker.tsx` (nou), `apps/web/components/SurpriseSpecialization.tsx` (șters), `apps/web/components/SpecializationsBrowser.tsx`, `apps/web/app/specializari/page.tsx`
+- Poartă: TRECUT (build, 57 teste, pornire); într-un browser separat, pe laptop și la lățime de telefon: fără alegeri nu apare nimic; „Grijă pentru alții” + „Științe și natură” → Medicină veterinară, Medicină dentară, Medicină generală; + „Lucru cu oamenii” → Asistență medicală, Moașe, Psihologie clinică; „Logică” + „Tehnică” → Calculatoare, Electronică, Informatică; „Creativitate” → Arte plastice, Interpretare muzicală; la 3 alegeri celelalte butoane se blochează; fără erori în consolă; pagina văzută în captură pe laptop. Nepublicat
+- Urmează: publicare la cererea echipei; `/pitch`
+
 ### 2026-10-05 02:15 — pagina „Specializări”: desen și „Surprinde-mă”
 - Cerut: pagina de specializări să aibă din nou un desen sau ceva interactiv, la alegerea lui Claude
 - Făcut: desenul cu cărți lângă titlu; sub categorii, cartonașul „Nu știi de unde să începi?” cu butonul „Surprinde-mă”, care arată o specializare la întâmplare (domeniu, descriere, link spre universitățile unde se studiază) și nu repetă aceeași specializare de două ori la rând; cartonașul dispare cât timp elevul caută ceva
@@ -276,6 +283,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-05 00:51 `4c91def` feat: illustration and a surprise-me card on the specializations page
 - 2026-10-05 00:48 `86d84fe` feat: keep a single logo on the home page
 - 2026-10-05 00:27 `3551c80` feat: questionnaire start page with its own title and the start button on top
 - 2026-10-05 00:12 `2c00f9b` feat: UniPath in numbers on the home page
@@ -305,5 +313,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 13:31 `ba2ae6b` docs: phone test confirmed by the team
 - 2026-10-04 13:29 `fe42b3d` feat: student voices page, empty until the team brings real opinions
 - 2026-10-04 13:13 `45755bb` docs: add QR code for the public address
-- 2026-10-04 13:05 `a89bbaa` feat: what-if sliders on the result page; record deploy address
 <!-- commits:end -->

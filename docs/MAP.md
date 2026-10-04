@@ -95,7 +95,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/specializari  (1 files)
 
-- `page.tsx` (27) — All study fields: category tiles and a "surprise me" card, or filtered domains and specializations when the student types.. Routes: /specializari. Exports: metadata, SpecializationsPage
+- `page.tsx` (27) — All study fields: category tiles and a "what do you like" picker, or filtered domains and specializations when the student types.. Routes: /specializari. Exports: metadata, SpecializationsPage
 
 ### apps/web/app/studenti  (1 files)
 
@@ -121,13 +121,13 @@ _Open only the files listed here; a file's description is its first comment line
 - `Confetti.tsx` (41) — A short burst of cool-coloured confetti, shown once when mounted and removed after about 3 seconds.. Exports: Confetti
 - `DomainDetails.tsx` (41) — One study domain as a native <details>: summary with emoji, name, count and chevron; inside the short text, specializations and a link to universities.. Exports: DomainDetails
 - `Illustrations.tsx` (88) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots and the start-page hero.. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene
+- `InterestPicker.tsx` (129) — "Ce îți place?": the student picks up to three interests and sees the specializations that fit them best, ranked, with links to universities.. Exports: InterestPicker
 - `MatchCard.tsx` (168) — One result card: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
 - `NavLinks.tsx` (39) — Header navigation links with the current page highlighted.. Exports: NavLinks
 - `SearchBox.tsx` (45) — Search box with a magnifier icon; submits to /universitati?q=... or calls onSearch when given.. Exports: SearchBox
 - `Shell.tsx` (40) — Page frame shared by all screens: header with the UniPath logo and three-dots motif, and a centered content column.. Exports: Shell, Notice
 - `SpecializationsBrowser.tsx` (82) — /specializari body: a text filter over all categories, domains and specializations; without text it shows the category tiles.. Exports: SpecializationsBrowser
 - `StudentVoices.tsx` (193) — Student opinions with a search box: type a faculty or university and see every opinion we have from there.. Exports: StudentVoices
-- `SurpriseSpecialization.tsx` (68) — "Surprinde-mă": a button that shows one specialization picked at random, with its domain, a short description and a link to universities.. Exports: SurpriseSpecialization
 - `UniversityBadges.tsx` (23) — Small coloured badges for a university's prestige and budget level, shared by result cards and the profile sheet.. Exports: PrestigeBadge, BudgetBadge
 - `UniversityCard.tsx` (61) — Compact university result card: name, place, badges, three short facts and a link to the full sheet (the whole card is clickable).. Exports: UniversityCard
 - `UniversityList.tsx` (48) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList

@@ -1,4 +1,4 @@
-// All study fields: category tiles and a "surprise me" card, or filtered domains and specializations when the student types.
+// All study fields: category tiles and a "what do you like" picker, or filtered domains and specializations when the student types.
 import type { Metadata } from "next";
 import { Books, Sparkle } from "@/components/Illustrations";
 import { Shell } from "@/components/Shell";
