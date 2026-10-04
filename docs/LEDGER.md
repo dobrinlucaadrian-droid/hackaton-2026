@@ -7,7 +7,7 @@ lista de commit-uri de la final se reface singură.
 
 - **Scop:** site care ghidează liceenii spre facultatea potrivită (tema „The Middle Man”); predare azi, 2026-10-04, la 18:00
 - **Unde:** ideea e fixată în `docs/challenge.md` („Chosen idea”); nu există încă aplicație (`apps/` e gol)
-- **Urmează:** `/foreman` — construim site-ul (Next.js în `apps/web`); acoperim toate domeniile de studiu (35–40), cu orașe și universități de stat, nu fiecare facultate; numele e încă nedecis
+- **Urmează:** `/foreman` — construim site-ul (Next.js în `apps/web`); acoperim toate domeniile de studiu (35–40), cu universități pe nume din România și din străinătate (lista e în `docs/challenge.md`, neverificată); numele e încă nedecis
 - **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
 
 ## Jurnal
@@ -66,6 +66,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 12:06 `6a9379d` docs: confirm data coverage by study domain
 - 2026-10-04 12:05 `72dd44b` docs: lock the chosen idea, ideation report and stack
 - 2026-10-04 00:14 `018e7d7` docs: move the team guide to the repo root
 - 2026-10-04 00:13 `3d0f662` docs: bring ledger and map up to date
