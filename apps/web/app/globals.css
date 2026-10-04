@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* Palette: beige, burgundy and navy. Tune the whole site here. */
+@theme {
+  --color-beige: #f5efe4;
+  --color-cream: #fffaf0;
+  --color-sand: #ebe2d0;
+  --color-line: #ddd1ba;
+  --color-navy: #14213d;
+  --color-navy-soft: #3d4a66;
+  --color-burgundy: #7b1e3a;
+  --color-burgundy-dark: #5c1229;
+  --color-burgundy-tint: #f1dfe3;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--color-beige);
+  color: var(--color-navy);
+  font-family: var(--font-sans);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-burgundy);
+  outline-offset: 2px;
+}

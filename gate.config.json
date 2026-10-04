@@ -1,3 +1,12 @@
 {
-  "apps": []
+  "apps": [
+    {
+      "name": "web",
+      "dir": "apps/web",
+      "build": "npm run build",
+      "test": "npm test",
+      "start": "npm run dev",
+      "url": "http://localhost:3000"
+    }
+  ]
 }

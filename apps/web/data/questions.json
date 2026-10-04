@@ -1,0 +1,129 @@
+[
+  {
+    "id": "materie-preferata",
+    "text": "Ce materie îți place cel mai mult?",
+    "options": [
+      { "label": "Matematică sau informatică", "traits": { "logic": 3, "tehnic": 1 } },
+      { "label": "Biologie sau chimie", "traits": { "stiinte": 3, "ingrijire": 1 } },
+      { "label": "Română sau limbi străine", "traits": { "limbaj": 3 } },
+      { "label": "Istorie sau geografie", "traits": { "societate": 3, "miscare": 1 } },
+      { "label": "Desen, muzică sau educație fizică", "traits": { "creativ": 2, "miscare": 2 } }
+    ]
+  },
+  {
+    "id": "weekend-liber",
+    "text": "Ai o zi liberă. Ce faci cel mai bine?",
+    "options": [
+      { "label": "Construiesc sau repar ceva", "traits": { "tehnic": 3, "logic": 1 } },
+      { "label": "Desenez, cânt sau creez ceva", "traits": { "creativ": 3 } },
+      { "label": "Ies cu prietenii și ajut pe cineva", "traits": { "oameni": 3, "ingrijire": 1 } },
+      { "label": "Fac sport sau ies în natură", "traits": { "miscare": 3, "stiinte": 1 } },
+      { "label": "Citesc sau scriu", "traits": { "limbaj": 3, "societate": 1 } }
+    ]
+  },
+  {
+    "id": "cu-ce-lucrezi",
+    "text": "Cu ce ți-ar plăcea să lucrezi?",
+    "options": [
+      { "label": "Cu cifre și probleme de logică", "traits": { "logic": 3 } },
+      { "label": "Cu oameni", "traits": { "oameni": 3 } },
+      { "label": "Cu mașini, aparate sau calculatoare", "traits": { "tehnic": 3 } },
+      { "label": "Cu idei și cuvinte", "traits": { "limbaj": 2, "societate": 1, "creativ": 1 } }
+    ]
+  },
+  {
+    "id": "loc-de-munca",
+    "text": "Unde ți-ar plăcea să lucrezi?",
+    "options": [
+      { "label": "La birou sau într-un laborator", "traits": { "logic": 1, "stiinte": 2, "tehnic": 1 } },
+      { "label": "Pe teren, afară", "traits": { "miscare": 3, "stiinte": 1 } },
+      { "label": "Într-un spital sau o școală", "traits": { "ingrijire": 2, "oameni": 2 } },
+      { "label": "Într-un studio sau pe scenă", "traits": { "creativ": 3, "oameni": 1 } },
+      { "label": "Într-o firmă, printre colegi", "traits": { "business": 2, "oameni": 1, "logic": 1 } }
+    ]
+  },
+  {
+    "id": "cum-lucrezi",
+    "text": "Cum îți place să lucrezi?",
+    "options": [
+      { "label": "Singur, în liniște", "traits": { "logic": 2, "limbaj": 1, "tehnic": 1 } },
+      { "label": "În echipă, cu mulți oameni", "traits": { "oameni": 2, "business": 1, "miscare": 1 } },
+      { "label": "Conduc și îi organizez pe ceilalți", "traits": { "business": 3, "oameni": 1 } },
+      { "label": "Liber, cu ideile mele", "traits": { "creativ": 3 } }
+    ]
+  },
+  {
+    "id": "prieteni-spun",
+    "text": "Ce spun prietenii despre tine?",
+    "options": [
+      { "label": "Ești isteț la calcule", "traits": { "logic": 3 } },
+      { "label": "Știi să asculți și să ajuți", "traits": { "oameni": 2, "ingrijire": 2 } },
+      { "label": "Vorbești frumos și convingător", "traits": { "limbaj": 2, "societate": 1, "business": 1 } },
+      { "label": "Ești creativ și original", "traits": { "creativ": 3 } },
+      { "label": "Ești energic și sportiv", "traits": { "miscare": 3 } }
+    ]
+  },
+  {
+    "id": "ce-vrei-de-la-job",
+    "text": "Ce îți dorești cel mai mult de la o meserie?",
+    "options": [
+      { "label": "Să ajut oamenii sau animalele", "traits": { "ingrijire": 3, "oameni": 1 } },
+      { "label": "Să câștig bine și să am o afacere", "traits": { "business": 3 } },
+      { "label": "Să inventez sau să descopăr lucruri noi", "traits": { "stiinte": 2, "tehnic": 1, "logic": 1 } },
+      { "label": "Să fiu creativ în fiecare zi", "traits": { "creativ": 3 } },
+      { "label": "Să schimb ceva în societate", "traits": { "societate": 3, "oameni": 1 } }
+    ]
+  },
+  {
+    "id": "problema-grea",
+    "text": "Ai o problemă grea. Ce faci prima dată?",
+    "options": [
+      { "label": "O sparg în pași logici", "traits": { "logic": 3 } },
+      { "label": "Încerc, testez și repar", "traits": { "tehnic": 3 } },
+      { "label": "Vorbesc cu cineva despre ea", "traits": { "oameni": 3 } },
+      { "label": "Caut cum funcționează în realitate", "traits": { "stiinte": 3 } }
+    ]
+  },
+  {
+    "id": "ziar-sau-site",
+    "text": "Ce articol ai citi cel mai repede?",
+    "options": [
+      { "label": "O descoperire din știință sau tehnologie", "traits": { "stiinte": 2, "tehnic": 2 } },
+      { "label": "O știre despre politică sau legi", "traits": { "societate": 3, "limbaj": 1 } },
+      { "label": "Cum câștigi bani și faci o afacere", "traits": { "business": 3, "logic": 1 } },
+      { "label": "Povestea unui artist sau a unui sportiv", "traits": { "creativ": 2, "miscare": 2 } },
+      { "label": "Cum să ai grijă de sănătatea ta", "traits": { "ingrijire": 3, "stiinte": 1 } }
+    ]
+  },
+  {
+    "id": "proiect-scoala",
+    "text": "Ce proiect de școală ți-ar plăcea?",
+    "options": [
+      { "label": "O aplicație sau un robot", "traits": { "tehnic": 3, "logic": 1 } },
+      { "label": "Un experiment în laborator", "traits": { "stiinte": 3 } },
+      { "label": "O piesă de teatru sau un film scurt", "traits": { "creativ": 3, "limbaj": 1 } },
+      { "label": "Un plan de afacere", "traits": { "business": 3, "logic": 1 } },
+      { "label": "O dezbatere sau un eseu", "traits": { "limbaj": 3, "societate": 1 } }
+    ]
+  },
+  {
+    "id": "ritm-zi",
+    "text": "Cum arată o zi bună pentru tine?",
+    "options": [
+      { "label": "Mă mișc și fac sport", "traits": { "miscare": 3 } },
+      { "label": "Stau cu oameni și vorbim mult", "traits": { "oameni": 3, "limbaj": 1 } },
+      { "label": "Rezolv ceva dificil, singur", "traits": { "logic": 2, "tehnic": 1, "stiinte": 1 } },
+      { "label": "Fac ceva frumos cu mâinile mele", "traits": { "creativ": 2, "tehnic": 1, "miscare": 1 } }
+    ]
+  },
+  {
+    "id": "gruparea-ta",
+    "text": "Într-un grup, ce rol ai de obicei?",
+    "options": [
+      { "label": "Cel care organizează totul", "traits": { "business": 2, "societate": 1, "oameni": 1 } },
+      { "label": "Cel care are idei noi", "traits": { "creativ": 2, "tehnic": 1, "stiinte": 1 } },
+      { "label": "Cel care are grijă de ceilalți", "traits": { "ingrijire": 3, "oameni": 1 } },
+      { "label": "Cel care află cum merg lucrurile", "traits": { "logic": 2, "stiinte": 2 } }
+    ]
+  }
+]

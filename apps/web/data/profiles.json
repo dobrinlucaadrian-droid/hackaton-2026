@@ -1,0 +1,14 @@
+[
+  { "id": "real-mate-info", "filiera": "Teoretică", "name": "Real — Matematică-Informatică", "traits": { "logic": 3, "tehnic": 2, "stiinte": 1 } },
+  { "id": "real-stiinte-naturii", "filiera": "Teoretică", "name": "Real — Științe ale naturii", "traits": { "stiinte": 3, "ingrijire": 2, "logic": 1 } },
+  { "id": "uman-filologie", "filiera": "Teoretică", "name": "Uman — Filologie", "traits": { "limbaj": 3, "creativ": 1, "societate": 1 } },
+  { "id": "uman-stiinte-sociale", "filiera": "Teoretică", "name": "Uman — Științe sociale", "traits": { "societate": 3, "oameni": 2, "limbaj": 1 } },
+  { "id": "tehnologic-tehnic", "filiera": "Tehnologică", "name": "Tehnologic — Tehnic", "traits": { "tehnic": 3, "logic": 1, "miscare": 1 } },
+  { "id": "tehnologic-servicii", "filiera": "Tehnologică", "name": "Tehnologic — Servicii", "traits": { "business": 2, "oameni": 2, "limbaj": 1 } },
+  { "id": "tehnologic-resurse-mediu", "filiera": "Tehnologică", "name": "Tehnologic — Resurse naturale și protecția mediului", "traits": { "stiinte": 2, "miscare": 2, "tehnic": 1 } },
+  { "id": "voc-artistic", "filiera": "Vocațională", "name": "Vocațional — Artistic", "traits": { "creativ": 3, "limbaj": 1 } },
+  { "id": "voc-sportiv", "filiera": "Vocațională", "name": "Vocațional — Sportiv", "traits": { "miscare": 3, "oameni": 1, "ingrijire": 1 } },
+  { "id": "voc-pedagogic", "filiera": "Vocațională", "name": "Vocațional — Pedagogic", "traits": { "oameni": 3, "limbaj": 1, "ingrijire": 1 } },
+  { "id": "voc-teologic", "filiera": "Vocațională", "name": "Vocațional — Teologic", "traits": { "oameni": 2, "societate": 2, "limbaj": 1 } },
+  { "id": "voc-militar", "filiera": "Vocațională", "name": "Vocațional — Militar", "traits": { "miscare": 3, "societate": 1, "oameni": 1 } }
+]

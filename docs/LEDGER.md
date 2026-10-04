@@ -21,6 +21,20 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-04 12:50 — UniPath, versiunea simplă de demo
+- Cerut: cea mai simplă versiune de arătat; nume UniPath; culori bej, burgundi, bleumarin
+- Făcut: 40 de domenii, 12 profiluri, 12 întrebări, regula de potrivire cu teste; 3 ecrane (start, întrebări, rezultat) în culorile noi; lista de 88 de universități pusă în site după verificarea online (România aproape toată, străinătatea doar regulile de taxe și limbă pe țări)
+- Fișiere: `apps/web/data/*.json`, `apps/web/lib/match.ts`, `apps/web/lib/match.test.ts`, `apps/web/lib/session.ts`, `apps/web/app/**`, `apps/web/components/**`
+- Poartă: TRECUT (parole, fișiere, registru, build, 12 teste, pornire); fluxul parcurs în browser pe laptop (profil militar → 12 întrebări → „În străinătate” → rezultat, inclusiv cazul fără universități) și ecranul de start la 375px. NEVERIFICAT: ecranele de întrebări și rezultat la 375px văzute de mine; universitățile din străinătate (site, nume, domenii) online
+- Urmează: `reviewer`, salvare, `/deploy-demo`, apoi paginile în plus
+
+### 2026-10-04 12:30 — scheletul site-ului UniPath (în lucru)
+- Cerut: construirea site-ului ales (ghid de facultate), cu universități din România și din străinătate, culori reci, numele UniPath
+- Făcut: aplicație Next.js în `apps/web`, contractul de date, teste (vitest), poarta configurată; agenții `backend` (date + potrivire) și `frontend` (ecrane) lucrează în paralel; lista de 88 de universități e ciornă, în curs de verificare online
+- Fișiere: `apps/web/` (schelet, `lib/types.ts`, `lib/data.ts`, `lib/match.ts`, `data/*.json`), `gate.config.json`
+- Poartă: rulată în timp ce agenții încă scriu — rezultatul e orientativ; fluxul nu a fost parcurs
+- Urmează: integrare, poartă completă, parcurs fluxul, `reviewer`, apoi `/deploy-demo`
+
 ### 2026-10-04 12:10 — alegerea ideii
 - Cerut: idei pentru tema „The Middle Man” (start-up sau aplicație)
 - Făcut: cerințele salvate; trei runde de idei cu agentul `ideator`; echipa a ales o idee proprie — ghid de facultate pentru liceeni; stack fixat (Next.js, fără chei, date scrise dinainte)
@@ -66,6 +80,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 12:13 `933cc25` docs: add universities abroad and named university lists to scope
 - 2026-10-04 12:06 `6a9379d` docs: confirm data coverage by study domain
 - 2026-10-04 12:05 `72dd44b` docs: lock the chosen idea, ideation report and stack
 - 2026-10-04 00:14 `018e7d7` docs: move the team guide to the repo root
