@@ -39,7 +39,7 @@ Chosen by the team on 2026-10-04, after three ideation rounds (`docs/ideas.md`).
 - **MVP scope:**
   - One web app, 3 screens, in Romanian.
   - Rule-based scoring, no AI and no API key.
-  - Seeded JSON of study programmes covering all of Romania (the team asked for all faculties in the country) — exact shape of that coverage to be confirmed before the build.
+  - Seeded JSON covering all study domains in Romania (about 35–40: medicine, law, computer science, engineering, economics, letters, arts, sport, theology, agronomy…), each with the big cities and state universities where it can be studied. Admission requirements are written in general terms per domain, with a "check the faculty's website" note. Confirmed by the team on 2026-10-04 instead of listing every faculty, which could not be verified in time.
   - No accounts, no database.
 - **Out of scope:** AI-generated advice, user accounts, saving results, universities abroad, live admission data (grades, number of places), payments, a mobile app.
 - Team: size, strengths, tech each person is fast in: five beginners with little or no coding experience; Claude writes the code, the app must run on Vercel
