@@ -6,8 +6,8 @@ lista de commit-uri de la final se reface singură.
 ## Acum lucrăm la
 
 - **Scop:** site care ghidează liceenii spre facultatea potrivită (tema „The Middle Man”); predare azi, 2026-10-04, la 18:00
-- **Unde:** ideea e fixată în `docs/challenge.md` („Chosen idea”); nu există încă aplicație (`apps/` e gol)
-- **Urmează:** `/foreman` — construim site-ul (Next.js în `apps/web`); acoperim toate domeniile de studiu (35–40), cu universități pe nume din România și din străinătate (lista e în `docs/challenge.md`, neverificată); numele e încă nedecis
+- **Unde:** aplicația e în `apps/web`, publicată la https://unipath-taupe-mu.vercel.app
+- **Urmează:** terminat „Ce-ar fi dacă?” (cursoare pe pagina de rezultat), republicare, apoi `/pitch`
 - **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
 
 ## Jurnal
@@ -20,6 +20,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-04 13:05 — publicare online și „Ce-ar fi dacă?” (în lucru)
+- Cerut: test pe telefon; funcția cu cursoare „Ce-ar fi dacă?”
+- Făcut: site publicat la https://unipath-taupe-mu.vercel.app (proiect Vercel `unipath`), aprobarea notată în `CLAUDE.md`; calculul pentru cursoare (`studentTraits`, `matchByTraits`) cu 6 teste noi; ecranul cu cursoare e în lucru la agentul `frontend`
+- Fișiere: `apps/web/lib/match.ts`, `apps/web/lib/match.test.ts`, `apps/web/.gitignore`, `CLAUDE.md`, `README.md`
+- Poartă: versiunea publică parcursă la 375px (start → 12 întrebări → rezultat), fără erori în consolă; funcția nouă NEVERIFICATĂ în browser și nepublicată
+- Urmează: integrarea cursoarelor, poartă, republicare
 
 ### 2026-10-04 13:00 — logoul echipei în site
 - Cerut: logoul UniPath trimis de echipă să apară în site
@@ -87,6 +94,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 12:54 `34e9f2e` feat: show the team logo and match the palette to it
 - 2026-10-04 12:40 `5082a83` feat: UniPath demo version - profile, quiz and matched study domains
 - 2026-10-04 12:13 `933cc25` docs: add universities abroad and named university lists to scope
 - 2026-10-04 12:06 `6a9379d` docs: confirm data coverage by study domain

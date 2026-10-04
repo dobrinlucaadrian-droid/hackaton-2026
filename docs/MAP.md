@@ -76,7 +76,7 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/app  (4 files)
 
 - `favicon.ico`
-- `globals.css` (31) — _no description: add a first-line comment_
+- `globals.css` (43) — _no description: add a first-line comment_
 - `layout.tsx` (31) — _no description: add a first-line comment_. Exports: metadata, RootLayout
 - `page.tsx` (104) — Start screen: tagline, 3-step explanation and the high-school profile picker.. Routes: /. Exports: Home
 
@@ -86,13 +86,14 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/rezultat  (1 files)
 
-- `page.tsx` (73) — Result screen: top 3 study domains computed in the browser from the saved answers.. Routes: /rezultat. Exports: ResultPage
+- `page.tsx` (116) — Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /rezultat. Exports: ResultPage
 
-### apps/web/components  (3 files)
+### apps/web/components  (4 files)
 
 - `MatchCard.tsx` (103) — One result card: domain, percent ring, reasons, admission, careers and the university lists.. Exports: MatchCard
 - `Shell.tsx` (38) — Page frame shared by all screens: header with the UniPath logo and a centered content column.. Exports: Shell, Notice
 - `UniversityList.tsx` (46) — Labelled list of universities with links; shows 5 first and a "Vezi toate" toggle.. Exports: UniversityList
+- `WhatIf.tsx` (69) — Collapsible "Ce-ar fi dacă?" panel: one slider per inclination, controlled by the result page.. Exports: WhatIf
 
 ### apps/web/data  (4 files)
 
@@ -104,8 +105,8 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/lib  (5 files)
 
 - `data.ts` (12) — Loads the seeded JSON (profiles, questions, domains, universities) as typed arrays.. Exports: profiles, questions, domains, universities
-- `match.test.ts` (144) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
-- `match.ts` (112) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: matchDomains
+- `match.test.ts` (194) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
+- `match.ts` (154) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: TRAITS, TRAIT_LABEL, matchDomains, studentTraits, matchByTraits
 - `session.ts` (42) — Keeps the student's answers in sessionStorage between pages (safe on the server).. Exports: loadDraft, saveDraft, clearDraft, toAnswers
 - `types.ts` (74) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
 

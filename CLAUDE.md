@@ -84,8 +84,14 @@ Vercel CLI (`/deploy-demo`) and the team cannot deploy any other way. Choose:
 
 ## Commands
 
-_TBD — install / dev / test / build / deploy commands go here._ When the
-stack is chosen, also fill in `gate.config.json` (see `/gate`).
+Deploy approved by the team on 2026-10-04.
+
+- Public address: https://unipath-taupe-mu.vercel.app (Vercel project `unipath`)
+- `npm install --prefix apps/web` — install
+- `npm run dev --prefix apps/web` — run locally at http://localhost:3000
+- `npm test --prefix apps/web` — tests (vitest)
+- `npm run build --prefix apps/web` — production build
+- `vercel deploy --prod --yes --cwd apps/web` — publish
 
 - `node scripts/gate.mjs` — full quality gate (secrets, files, build, tests,
   app starts). Runs automatically at the end of a turn when code changed.

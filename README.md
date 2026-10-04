@@ -1,6 +1,8 @@
-# Hackathon 2026
+# UniPath
 
-> One-line description of the project — TBD.
+> The middle man between high school and university: a Romanian website that guides high-school students to the study domain that fits them.
+
+**Live demo:** https://unipath-taupe-mu.vercel.app
 
 ## Problem
 
@@ -13,10 +15,12 @@ TBD
 ## Getting started
 
 ```bash
-cp .env.example .env
+npm install --prefix apps/web
+npm run dev --prefix apps/web   # http://localhost:3000
+npm test --prefix apps/web
 ```
 
-Install and run commands — TBD once the stack is chosen.
+No environment variables or API keys are needed. Deploy: `vercel deploy --prod --yes --cwd apps/web`.
 
 ## Project layout
 

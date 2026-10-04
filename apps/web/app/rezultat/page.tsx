@@ -1,18 +1,24 @@
 "use client";
-// Result screen: top 3 study domains computed in the browser from the saved answers.
+// Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { clearDraft } from "@/lib/session";
+import { useEffect, useMemo, useState } from "react";
 import { MatchCard } from "@/components/MatchCard";
 import { Notice, Shell } from "@/components/Shell";
-import { matchDomains } from "@/lib/match";
-import { loadDraft, toAnswers } from "@/lib/session";
-import type { Match } from "@/lib/types";
+import { WhatIf } from "@/components/WhatIf";
+import { TRAITS, matchByTraits, matchDomains, studentTraits } from "@/lib/match";
+import { clearDraft, loadDraft, toAnswers } from "@/lib/session";
+import type { Answers, Match, TraitId } from "@/lib/types";
 
-type State = { status: "loading" } | { status: "empty" } | { status: "error" } | { status: "ok"; matches: Match[] };
+type Traits = Record<TraitId, number>;
+type State =
+  | { status: "loading" }
+  | { status: "empty" }
+  | { status: "error" }
+  | { status: "ok"; answers: Answers; matches: Match[]; initial: Traits };
 
 export default function ResultPage() {
   const [state, setState] = useState<State>({ status: "loading" });
+  const [values, setValues] = useState<Traits | null>(null);
 
   useEffect(() => {
     const answers = toAnswers(loadDraft());
@@ -23,11 +29,25 @@ export default function ResultPage() {
     }
     try {
       const matches = matchDomains(answers);
-      setState(matches.length ? { status: "ok", matches } : { status: "error" });
+      const initial = studentTraits(answers);
+      setValues(initial);
+      setState(matches.length ? { status: "ok", answers, matches, initial } : { status: "error" });
     } catch {
       setState({ status: "error" });
     }
   }, []);
+
+  const changed = state.status === "ok" && values !== null && TRAITS.some((t) => values[t] !== state.initial[t]);
+
+  const shown = useMemo(() => {
+    if (state.status !== "ok") return [];
+    if (!changed || !values) return state.matches;
+    try {
+      return matchByTraits(values, state.answers.where, state.answers.profileId);
+    } catch {
+      return state.matches;
+    }
+  }, [state, values, changed]);
 
   if (state.status === "loading") return <Shell><p className="mt-10 text-center text-navy-soft">Se încarcă...</p></Shell>;
   if (state.status === "empty") {
@@ -45,6 +65,8 @@ export default function ResultPage() {
     );
   }
 
+  const initial = state.initial;
+
   return (
     <Shell wide>
       <div className="mx-auto max-w-2xl text-center">
@@ -52,9 +74,30 @@ export default function ResultPage() {
         <p className="mt-2 text-navy-soft">Iată cele 3 domenii care ți se potrivesc cel mai bine.</p>
       </div>
 
-      <div className="mx-auto mt-8 flex max-w-2xl flex-col gap-6">
-        {state.matches.map((m, i) => (
-          <MatchCard key={m.domain.id} match={m} rank={i + 1} />
+      {values && (
+        <WhatIf
+          values={values}
+          changed={changed}
+          onChange={(id, v) => setValues({ ...values, [id]: v })}
+          onReset={() => setValues(initial)}
+        />
+      )}
+
+      {changed && (
+        <p className="mx-auto mt-6 max-w-2xl text-center">
+          <span className="inline-block rounded-full bg-burgundy px-4 py-1 text-sm font-bold text-cream">
+            Rezultat modificat de tine
+          </span>
+        </p>
+      )}
+
+      <div className="mx-auto mt-6 flex max-w-2xl flex-col gap-6">
+        {shown.map((m, i) => (
+          <div key={m.domain.id}>
+            <div key={i} className={changed ? "card-flash" : undefined}>
+              <MatchCard match={m} rank={i + 1} />
+            </div>
+          </div>
         ))}
       </div>
 

@@ -141,3 +141,53 @@ describe("matchDomains", () => {
     expect(matchDomains({ profileId: "", where: "ro", choices: {} }).length).toBe(3);
   });
 });
+
+describe("what-if matching by traits", async () => {
+  const { TRAITS, TRAIT_LABEL, matchByTraits, studentTraits } = await import("./match");
+  const answers: Answers = {
+    profileId: "real-mate-info",
+    where: "any",
+    choices: Object.fromEntries(questions.map((q) => [q.id, 0])),
+  };
+
+  it("has a label for every trait", () => {
+    expect([...TRAITS].sort()).toEqual([...TRAIT_IDS].sort());
+    for (const t of TRAITS) expect(TRAIT_LABEL[t].length).toBeGreaterThan(0);
+  });
+
+  it("studentTraits returns integers 0..100 with the strongest at 100", () => {
+    const traits = studentTraits(answers);
+    const values = TRAITS.map((t) => traits[t]);
+    for (const v of values) {
+      expect(Number.isInteger(v)).toBe(true);
+      expect(v).toBeGreaterThanOrEqual(0);
+      expect(v).toBeLessThanOrEqual(100);
+    }
+    expect(Math.max(...values)).toBe(100);
+  });
+
+  it("studentTraits is all zeros with no answers and an unknown profile", () => {
+    const traits = studentTraits({ profileId: "nope", where: "any", choices: {} });
+    expect(TRAITS.every((t) => traits[t] === 0)).toBe(true);
+  });
+
+  it("matchByTraits on the student's own traits gives the same top domain as matchDomains", () => {
+    const own = matchByTraits(studentTraits(answers), "any", answers.profileId);
+    expect(own).toHaveLength(3);
+    expect(own[0].domain.id).toBe(matchDomains(answers)[0].domain.id);
+  });
+
+  it("pure creativity ranks an arts domain first and respects where", () => {
+    const zero = Object.fromEntries(TRAITS.map((t) => [t, 0])) as Record<(typeof TRAITS)[number], number>;
+    const res = matchByTraits({ ...zero, creativ: 100 }, "ro");
+    expect(["arte-vizuale-design", "muzica", "teatru-film", "arhitectura"]).toContain(res[0].domain.id);
+    expect(res.every((m) => m.universitiesAbroad.length === 0)).toBe(true);
+  });
+
+  it("all-zero traits do not throw and give 3 matches without NaN", () => {
+    const zero = Object.fromEntries(TRAITS.map((t) => [t, 0])) as Record<(typeof TRAITS)[number], number>;
+    const res = matchByTraits(zero, "any");
+    expect(res).toHaveLength(3);
+    for (const m of res) expect(Number.isNaN(m.percent)).toBe(false);
+  });
+});

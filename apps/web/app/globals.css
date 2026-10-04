@@ -28,3 +28,15 @@ body {
   outline: 3px solid var(--color-burgundy);
   outline-offset: 2px;
 }
+
+/* What-if sliders: burgundy thumb/track and a short highlight when a card changes. */
+input[type="range"] {
+  accent-color: var(--color-burgundy);
+  height: 2rem;
+  cursor: pointer;
+}
+@keyframes card-flash {
+  0% { transform: scale(0.97); opacity: 0.4; box-shadow: 0 0 0 4px var(--color-burgundy-tint); }
+  100% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 0 transparent; }
+}
+.card-flash { animation: card-flash 0.5s ease-out; }
