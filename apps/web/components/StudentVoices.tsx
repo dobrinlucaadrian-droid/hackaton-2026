@@ -25,6 +25,13 @@ const EXTRA_WORDS: Record<string, string> = {
   "ASE București": "academia de studii economice",
   "Universitatea din Amsterdam": "uva olanda amsterdam university",
   "Sciences Po Paris": "franta",
+  "Universitatea Babeș-Bolyai": "ubb cluj napoca",
+  ESADE: "barcelona spania business",
+  "Institut Lyfe": "franta gastronomie ospitalitate",
+  "Université Jean Moulin Lyon 3": "franta",
+  "Medicină, Lyon (Franța)": "medicina",
+  "Universitatea Bocconi": "milano italia",
+  "La Salle Barcelona": "spania",
 };
 
 type Group = { university: string; people: Testimonial[] };

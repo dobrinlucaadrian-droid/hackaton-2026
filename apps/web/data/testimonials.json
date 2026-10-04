@@ -30,6 +30,7 @@
     "name": "Anton Mocanu",
     "faculty": "IE University",
     "university": "IE University",
+    "photo": "/studenti/anton-mocanu.jpg",
     "text": "Am ales IE University deoarece mi-am dorit să studiez într-un mediu internațional, să cunosc oameni din culturi diferite și să am parte de experiențe noi. Procesul de aplicare a fost interesant și m-a ajutat să îmi clarific obiectivele și ceea ce îmi doresc de la facultate. Acum, că am ajuns în Madrid și am început cursurile, sunt mulțumit de experiență. Am cunoscut oameni noi, am început să mă adaptez la un stil de viață diferit și am devenit mai independent. În mare parte, așteptările mele s-au îndeplinit, mai ales în ceea ce privește mediul internațional și oportunitățile de dezvoltare personală, deși acomodarea cu un oraș nou necesită timp."
   },
   {
@@ -44,5 +45,54 @@
     "university": "Sciences Po Paris",
     "photo": "/studenti/zara-faflei.jpg",
     "text": "Am ales Sciences Po Paris deoarece este o facultate care îmi deschide foarte multe oportunități, în domeniul politicii, dar nu numai.\nOferă un sistem de învățământ pluridisciplinar, în care nu înveți doar despre sistemele politice, ci studiezi și arta și explorezi alte teme.\n\nViața în Paris, oamenii pe care îi cunoști și mediul internațional te ajută să te dezvolți într-un mod unic. Este o experiență pe care aș alege-o fără ezitare."
+  },
+  {
+    "name": "Bianca Mermezan",
+    "faculty": "Facultatea de Drept, Universitatea Babeș-Bolyai",
+    "university": "Universitatea Babeș-Bolyai",
+    "photo": "/studenti/bianca-mermezan.jpg",
+    "text": "Am ales Facultatea de Drept UBB deoarece mi-am dorit să urmez un domeniu care mi se potrivește și să înțeleg mai bine cum funcționează sistemul juridic. Admiterea a reprezentat primul pas și a constat în 50% media de la Bacalaureat și 50% proba de raționament logic, care a durat o oră și a avut 60 de întrebări tip grilă. Proba urmărește să testeze capacitatea de analiză, identificarea relațiilor logice și modul în care sunt rezolvate probleme pe baza informațiilor oferite. După admitere, trecerea la facultate a fost o schimbare, mai ales prin volumul de materie și ritmul de lucru. În anul I, am început cu materii precum Drept constituțional, Drept civil și Teoria generală a dreptului, care mi-au oferit o primă imagine asupra domeniului pe care am ales să îl studiez. Până acum, experiența este una pozitivă, iar faptul că încep să înțeleg mai bine noțiunile pe care le întâlnesc mă face să cred că alegerea Dreptului la UBB a fost una potrivită pentru mine."
+  },
+  {
+    "name": "Robert Radoi",
+    "faculty": "ESADE",
+    "university": "ESADE",
+    "photo": "/studenti/robert-radoi.jpg",
+    "text": "Am ales ESADE deoarece este o facultate cu o reputație internațională foarte bună și oferă un mediu dinamic, multicultural și orientat spre dezvoltare. Îmi place și faptul că urmez un dual degree care îmi dă posibilitatea să-mi extind orizonturile și să cunosc oameni noi, nu doar în finanțe sau economie, dar și în politică. Procesul de admitere a fost destul de simplu, cu niște criterii mai lejere față de alte facultăți. Pentru mine, este locul potrivit pentru a crește atât profesional, cât și personal."
+  },
+  {
+    "name": "Eliza Florescu",
+    "faculty": "Institut Lyfe, Lyon",
+    "university": "Institut Lyfe",
+    "photo": "/studenti/eliza-florescu.jpg",
+    "text": "Am ales să plec la facultate la Institut Lyfe din Lyon pentru a-mi dezvolta pasiunea pentru gastronomie și ospitalitate și pentru a o transforma într-o carieră. Îmi doresc să învăț prin practică, să îmi dezvolt creativitatea și să înțeleg cum se conduce o afacere în acest domeniu.\n\nAceastă experiență mă ajută să devin mai independent, mai organizat și mai sigur pe mine. Institut Lyfe îmi oferă ocazia să îmi dezvolt abilitățile profesionale, să cunosc oameni din țări diferite și să descopăr noi perspective. În plus, viața la Lyon îmi permite să explorez cultura și gastronomia franceză și să mă pregătesc pentru oportunități internaționale."
+  },
+  {
+    "name": "Irene Enculescu",
+    "faculty": "Drept, Université Jean Moulin Lyon 3",
+    "university": "Université Jean Moulin Lyon 3",
+    "photo": "/studenti/irene-enculescu.jpg",
+    "text": "Am ales să studiez Dreptul la Université Jean Moulin Lyon 3 deoarece mi s-a părut o universitate foarte potrivită pentru studenții internaționali și pentru domeniul pe care mi l-am ales. Dreptul m-a atras deoarece este un domeniu complex și important, care îți oferă posibilitatea de a înțelege mai bine societatea, regulile după care funcționează și modul în care pot fi protejate drepturile oamenilor. Îmi place faptul că acest domeniu îmi dezvoltă gândirea critică, capacitatea de analiză și abilitatea de a argumenta."
+  },
+  {
+    "name": "Julie Vuillaume",
+    "faculty": "Medicină, Lyon (Franța)",
+    "university": "Medicină, Lyon (Franța)",
+    "photo": "/studenti/julie-vuillaume.jpg",
+    "text": "Am ales să fac medicină fiindcă sunt pasionată de biologie și de științe în general. Totuși, nu am fost dintotdeauna atrasă de domeniul științific: înainte de liceu, am urmat un profil uman, iar biologia am descoperit-o destul de târziu.\nMedicina este o profesie profund umană, care presupune empatie și responsabilitate socială, aspecte care se potrivesc foarte bine cu personalitatea mea.\nAm ales să studiez medicina în Franța deoarece spitalele publice sunt mult mai dezvoltate, iar formarea medicală este mai orientată spre cercetare, oferind oportunități care depășesc practica medicală propriu-zisă. În paralel cu studiile de medicină pe care le urmez la Lyon, fac și un master în cercetare biomedicală, cu scopul de a obține o diplomă de tip MD-PhD. Recomand profund experiența."
+  },
+  {
+    "name": "David Vasile",
+    "faculty": "International Economics and Finance, Universitatea Bocconi",
+    "university": "Universitatea Bocconi",
+    "photo": "/studenti/david-vasile.jpg",
+    "text": "Am ales International Economics and Finance la Bocconi pentru perspectiva globală și rigoarea academică pe care le oferă. După prima lună, experiența mi-a confirmat așteptările: mediul internațional, diversitatea perspectivelor și exigența cursurilor îmi stimulează constant curiozitatea și susceptibilitatea față de idei noi. Adaptarea la Milano și la un ritm academic intens m-a făcut deja mai autonom și mai disciplinat. Deși sunt abia la început, simt că Bocconi este mediul potrivit pentru a-mi dezvolta atât gândirea analitică, cât și maturitatea personală."
+  },
+  {
+    "name": "Ariana Vișan",
+    "faculty": "Arhitectură, La Salle Barcelona",
+    "university": "La Salle Barcelona",
+    "photo": "/studenti/ariana-visan.jpg",
+    "text": "Mă numesc Vișan Ariana și am fost admisă la Arhitectură la La Salle, în Barcelona. Procesul de admitere a constat în prezentarea unui portofoliu și susținerea unui interviu. Am ales La Salle pentru programul internațional și pentru oportunitatea de a studia arhitectura în Barcelona."
   }
 ]

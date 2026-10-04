@@ -7,7 +7,7 @@ lista de commit-uri de la final se reface singură.
 
 - **Scop:** UniPath — ghid între liceu și facultate (tema „The Middle Man”). Prezentarea e mâine, 2026-10-05 (ora nu a fost spusă)
 - **Unde:** aplicația e în `apps/web` (pagini: `/`, `/specializari`, `/specializari/[categorie]`, `/universitati`, `/universitati/[id]`, `/test`, `/quiz`, `/rezultat`, `/studenti`), publicată la https://unipath-taupe-mu.vercel.app
-- **Urmează:** `/pitch` — prezentarea și scenariul de demo (prezentarea e pe 2026-10-05). Aplicația publicată e la zi cu `main`
+- **Urmează:** `/pitch` — prezentarea și scenariul de demo (prezentarea e pe 2026-10-05). Pagina studenților are 14 păreri reale; fără poză: Alexandru Badea și Alexa Munteanu
 - **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
 
 ## Jurnal
@@ -20,6 +20,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-05 00:10 — încă șapte studenți și poza lui Anton Mocanu
+- Cerut: adăugarea a șapte păreri reale (texte în capturi de mesaje, cu poze) și poza lui Anton Mocanu; echipa are acordul lor pentru publicare. Înainte: versiunea cu „chestionar” publicată la cererea echipei și parcursă pe adresa publică
+- Făcut: Bianca Mermezan (Drept, UBB), Robert Radoi (ESADE), Eliza Florescu (Institut Lyfe, Lyon), Irene Enculescu (Drept, Université Jean Moulin Lyon 3), Julie Vuillaume (Medicină, Lyon), David Vasile (Bocconi), Ariana Vișan (Arhitectură, La Salle Barcelona), toți cu poză decupată pe față; poza lui Anton Mocanu. Texte transcrise din capturi exact; la Robert Radoi adăugate doar diacriticele care lipseau. Căutarea de la „Studenți” găsește și după oraș sau țară
+- Fișiere: `apps/web/data/testimonials.json`, `apps/web/public/studenti/*.jpg` (8 noi), `apps/web/components/StudentVoices.tsx`
+- Poartă: TRECUT (build, 55 teste, pornire); pagina văzută întreagă în captură pe laptop, cu 14 păreri și 12 poze; căutarea încercată: „drept” → 3, „lyon” → 3, „barcelona” → 2, „ubb”, „bocconi”, „esade”, „medicina” → câte una; fără erori în consolă. Rămase de confirmat de echipă: că fiecare poză e a persoanei lângă care a fost trimisă; forma la masculin din textul Elizei Florescu; scrierea numelui „Radoi”; universitatea Juliei Vuillaume (pe cartonaș: „Medicină, Lyon (Franța)”). Nepublicat
+- Urmează: publicare la cererea echipei; `/pitch`
 
 ### 2026-10-04 23:35 — „test” devine „chestionar”
 - Cerut: cuvântul „test” să fie înlocuit cu „chestionar”. Înainte: versiunea cu căutarea de la „Studenți” și pagina principală fără bara de căutare publicată la cererea echipei și verificată pe adresa publică
@@ -234,6 +241,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-04 23:10 `3d2e96b` feat: call the personality test a questionnaire (chestionar) in the UI
 - 2026-10-04 23:02 `46df569` feat: remove the search box from the home page
 - 2026-10-04 22:57 `956d89f` feat: search student opinions by faculty or university
 - 2026-10-04 22:45 `9ca0e28` feat: ask the high-school profile as the first step of the test
@@ -263,5 +271,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 12:13 `933cc25` docs: add universities abroad and named university lists to scope
 - 2026-10-04 12:06 `6a9379d` docs: confirm data coverage by study domain
 - 2026-10-04 12:05 `72dd44b` docs: lock the chosen idea, ideation report and stack
-- 2026-10-04 00:14 `018e7d7` docs: move the team guide to the repo root
 <!-- commits:end -->
