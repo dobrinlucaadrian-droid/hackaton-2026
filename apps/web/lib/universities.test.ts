@@ -187,3 +187,22 @@ describe("searchWorld", () => {
     expect(searchWorld(withKnown, ubb.name).length).toBe(0);
   });
 });
+
+describe("student opinions per university", async () => {
+  const { testimonialsFor, universityIdOf } = await import("./testimonials");
+  const { testimonials, universities } = await import("./data");
+
+  it("every linked opinion points to a university that has a sheet", () => {
+    for (const t of testimonials) {
+      const id = universityIdOf(t);
+      if (id) expect(universities.some((u) => u.id === id), id).toBe(true);
+    }
+  });
+
+  it("finds the opinions of a university and nothing for one without opinions", () => {
+    expect(testimonialsFor("ase-bucuresti").map((t) => t.name)).toContain("Tudor Demușcă");
+    expect(testimonialsFor("umf-carol-davila").length).toBeGreaterThanOrEqual(2);
+    expect(testimonialsFor("bocconi").length).toBeGreaterThanOrEqual(2);
+    expect(testimonialsFor("harvard")).toEqual([]);
+  });
+});

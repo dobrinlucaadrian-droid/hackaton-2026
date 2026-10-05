@@ -107,13 +107,13 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/universitati/[id]  (1 files)
 
-- `page.tsx` (276) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
+- `page.tsx` (294) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/universitati  (1 files)
 
 - `page.tsx` (20) — University finder page: search box, filters and top 10 results (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
 
-### apps/web/components  (21 files)
+### apps/web/components  (22 files)
 
 - `ActivitiesStep.tsx` (227) — Quiz step "Ce ai făcut până acum?": add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
 - `ActivitiesSummary.tsx` (33) — Read-only list of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
@@ -128,9 +128,10 @@ _Open only the files listed here; a file's description is its first comment line
 - `SearchBox.tsx` (45) — Search box with a magnifier icon; submits to /universitati?q=... or calls onSearch when given.. Exports: SearchBox
 - `Shell.tsx` (40) — Page frame shared by all screens: header with the UniPath logo and three-dots motif, and a centered content column.. Exports: Shell, Notice
 - `SpecializationsBrowser.tsx` (82) — /specializari body: a text filter over all categories, domains and specializations; without text it shows the category tiles.. Exports: SpecializationsBrowser
-- `StudentVoices.tsx` (201) — Student opinions with a search box: type a faculty or university and see every opinion we have from there.. Exports: StudentVoices
+- `StudentCard.tsx` (38) — One student opinion: photo (or initial), name, faculty and their own words. Used on the students page and on university sheets.. Exports: StudentCard
+- `StudentVoices.tsx` (167) — Student opinions with a search box: type a faculty or university and see every opinion we have from there.. Exports: StudentVoices
 - `UniversityBadges.tsx` (23) — Small coloured badges for a university's prestige and budget level, shared by result cards and the profile sheet.. Exports: PrestigeBadge, BudgetBadge
-- `UniversityCard.tsx` (61) — Compact university result card: name, place, badges, three short facts and a link to the full sheet (the whole card is clickable).. Exports: UniversityCard
+- `UniversityCard.tsx` (69) — Compact university result card: name, place, badges, three short facts, how many student opinions we have and a link to the full sheet (the whole card is clickable).. Exports: UniversityCard
 - `UniversityDomains.tsx` (87) — "Ce poți studia aici" on a university sheet: tapping a domain opens, on the same page, its specializations and the subjects per year.. Exports: UniversityDomains
 - `UniversityList.tsx` (48) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList
 - `UniversitySearch.tsx` (381) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
@@ -150,7 +151,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `universities-abroad.json` (3203) — JSON array, 57 items
 - `universities-ro.json` (3487) — JSON array, 74 items
 
-### apps/web/lib  (12 files)
+### apps/web/lib  (13 files)
 
 - `activities.test.ts` (57) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
 - `activities.ts` (73) — Activities a student can add (competitions, volunteering, extracurriculars): labels, areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, describeActivity
@@ -160,9 +161,10 @@ _Open only the files listed here; a file's description is its first comment line
 - `match.test.ts` (245) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
 - `match.ts` (187) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: TRAITS, TRAIT_LABEL, matchDomains, studentTraits, matchByTraits
 - `session.ts` (109) — Keeps the student's answers (and optional activities with photos) in sessionStorage between pages (safe on the server).. Exports: loadDraft, saveDraft, clearDraft, toAnswers, shrinkImage
+- `testimonials.ts` (29) — Links student opinions to the universities that have a profile sheet, so the search and the sheets can show them.. Exports: universityIdOf, testimonialsFor
 - `types.ts` (180) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
 - `universities.data.test.ts` (82) — Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
-- `universities.test.ts` (190) — Tests the specializations and categories data and the university search/filter logic.
+- `universities.test.ts` (209) — Tests the specializations and categories data and the university search/filter logic.
 - `universities.ts` (234) — Search and filter over the universities with a profile sheet, plus labels for the filter values.. Exports: PRESTIGE_LABEL, BUDGET_LABEL, ADMISSION_LABEL, CERTIFICATE_LABEL, normalize, countries, romanianCities, universityById, …
 
 ### apps/web/public  (3 files)

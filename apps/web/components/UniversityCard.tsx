@@ -1,13 +1,15 @@
-// Compact university result card: name, place, badges, three short facts and a link to the full sheet (the whole card is clickable).
+// Compact university result card: name, place, badges, three short facts, how many student opinions we have and a link to the full sheet (the whole card is clickable).
 import Link from "next/link";
 import { domains } from "@/lib/data";
 import type { University } from "@/lib/types";
+import { testimonialsFor } from "@/lib/testimonials";
 import { ADMISSION_LABEL } from "@/lib/universities";
 import { FAMILY_CLASSES, domainStyle } from "./domainStyle";
 import { BudgetBadge, PrestigeBadge } from "./UniversityBadges";
 
 export function UniversityCard({ u, rank, domainId }: { u: University; rank?: number; domainId?: string }) {
   const admission = u.admissionTypes.map((a) => ADMISSION_LABEL[a]).filter(Boolean).join(", ");
+  const opinions = testimonialsFor(u.id).length;
   const domain = domainId && u.domainIds.includes(domainId) ? domains.find((d) => d.id === domainId) : undefined;
   return (
     <article className="relative h-full rounded-3xl bg-card p-5 shadow-sm ring-1 ring-line transition hover:ring-primary/50 focus-within:ring-2 focus-within:ring-primary">
@@ -31,6 +33,12 @@ export function UniversityCard({ u, rank, domainId }: { u: University; rank?: nu
           <span className={`rounded-full px-3 py-1 text-xs font-semibold ${FAMILY_CLASSES[domainStyle(domain.id).family].chip}`}>
             <span aria-hidden>{domainStyle(domain.id).emoji} </span>
             {domain.name}
+          </span>
+        )}
+        {opinions > 0 && (
+          <span data-opinions className="rounded-full bg-teal/15 px-3 py-1 text-xs font-bold text-teal-ink">
+            <span aria-hidden>💬 </span>
+            {opinions === 1 ? "o părere de la un student" : `${opinions} păreri de la studenți`}
           </span>
         )}
       </div>

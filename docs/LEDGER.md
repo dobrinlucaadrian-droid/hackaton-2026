@@ -21,6 +21,14 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-05 11:19 — părerile studenților în căutarea de universități
+- Cerut: când cauți o universitate (ex. ASE), să apară și părerea studenților, dacă avem una în aplicație. Echipa a ales ambele locuri: semn pe cardul din rezultate și părerile întregi pe fișă. Înainte: cei 3 studenți noi și deschiderea domeniului pe loc publicate, cum s-a stabilit cu echipa
+- Făcut: pe cardul universității din rezultate apare „💬 o părere de la un student” / „N păreri de la studenți”; pe fișa universității apare secțiunea „Ce spun studenții” (poză, nume, facultate, textul întreg) cu buton în bara de sus și link spre toate părerile. Cardul unei păreri e acum o singură componentă, folosită și pe pagina „Studenți”. Legate 11 universități care au fișă: Cambridge, Universitatea din București, IE University, ASE, Universitatea din Amsterdam, Sciences Po, UBB, Bocconi, Columbia, UMF „Carol Davila”, UVT
+- De știut: 10 păreri sunt de la universități care nu au fișă în aplicație (ESADE, Institut Lyfe, Lyon 3, Medicină Lyon, La Salle Barcelona, Wisconsin–Madison, Les Roches, Paris-Saclay, Inholland, Universidad Europea); ele apar doar pe pagina „Studenți”
+- Fișiere: `apps/web/lib/testimonials.ts` (nou), `apps/web/components/StudentCard.tsx` (nou), `apps/web/components/StudentVoices.tsx`, `apps/web/components/UniversityCard.tsx`, `apps/web/app/universitati/[id]/page.tsx`, `apps/web/lib/universities.test.ts`
+- Poartă: TRECUT (build, 70 de teste, pornire); într-un browser separat, pe laptop și la lățime de telefon: căutarea „ASE” → cardul are „o părere de la un student”, „bocconi” și „carol davila” → „2 păreri”, „harvard” → fără semn; fișa ASE arată părerea lui Tudor Demușcă cu poză, fișa „Carol Davila” pe ambele Andre, fișa Harvard nu are secțiunea; pagina „Studenți” are tot 24 de păreri; fără erori. Observat: pe serverul de dezvoltare, la încărcări repetate una după alta, lista de rezultate rămânea uneori goală; aceeași succesiune pe adresa publică a mers de fiecare dată. NEVERIFICAT: pe un telefon real
+- Urmează: publicare la cererea echipei; `/pitch`
+
 ### 2026-10-05 11:07 — încă 3 studenți pe pagina „Ce spun studenții”
 - Cerut: echipa a trimis încă 3 studenți (texte reale, cu acordul lor) și a spus „poți începe”
 - Făcut: adăugate Andreea Lixandru (Universidad Europea, Spania), Andra Mehedintu (Medicină, UMF „Carol Davila”, absolventă — apare lângă Andra Drăghici, aceeași universitate) și Anastasia Cerempei (International Economics and Finance, Bocconi, anul 2 — apare lângă David Vasile); pozele decupate pătrat pe față. Schimbări în texte, anunțate echipei: diacritice puse la Andra și Anastasia fără să se schimbe vreun cuvânt, numele scos de la sfârșitul textului, „mulțumit” corectat în „mulțumită” la Andreea. Pagina are acum 24 de păreri
@@ -328,6 +336,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-05 11:07 `fdc7024` feat: add three more student opinions with photos
 - 2026-10-05 11:02 `7c6d654` fix: open a domain in place on the university sheet instead of leaving the page
 - 2026-10-05 10:53 `c75b5eb` feat: subjects per year for every domain and official curriculum links
 - 2026-10-05 10:20 `1aa0610` fix: spell the student's name Drăghici
@@ -357,5 +366,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 15:25 `dfe2825` feat: add Victoria Dumitru's photo to her opinion
 - 2026-10-04 15:18 `b51f84f` feat: four real student opinions with photos on the student voices page
 - 2026-10-04 14:56 `dbc0fef` feat: logo palette (navy, burgundy) plus gold on the new design
-- 2026-10-04 14:43 `79f354e` docs: add screenshots of each screen
 <!-- commits:end -->
