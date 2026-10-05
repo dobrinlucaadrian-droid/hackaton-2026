@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-05 11:28 — logoul echipei în previzualizarea linkului și în filă
+- Cerut: când linkul aplicației e trimis pe WhatsApp apărea triunghiul negru (iconița implicită) în loc de logoul ales de echipă. Înainte: părerile din căutare publicate la cererea echipei; răspunsurile la grila de jurizare salvate în `docs/raspunsuri-juriu.md`
+- Făcut: iconița implicită înlocuită cu emblema din logo (toca și scutul) pentru fila din browser și pentru ecranul telefonului; adăugată imaginea de previzualizare a linkului (logoul întreg pe fundalul crem, 1200×630) și datele de previzualizare (titlu, descriere, adresa publică)
+- Fișiere: `apps/web/app/favicon.ico`, `apps/web/app/icon.png` (nou), `apps/web/app/apple-icon.png` (nou), `apps/web/app/opengraph-image.png` (nou), `apps/web/app/opengraph-image.alt.txt` (nou), `apps/web/app/layout.tsx`
+- Poartă: TRECUT (build, 70 de teste, pornire); pe calculator pagina trimite iconițele noi și imaginea de previzualizare; imaginile văzute. NEVERIFICAT: cum arată în WhatsApp — aplicațiile de mesaje țin minte o vreme previzualizarea veche a unui link
+- Urmează: `/pitch`
+
 ### 2026-10-05 11:19 — părerile studenților în căutarea de universități
 - Cerut: când cauți o universitate (ex. ASE), să apară și părerea studenților, dacă avem una în aplicație. Echipa a ales ambele locuri: semn pe cardul din rezultate și părerile întregi pe fișă. Înainte: cei 3 studenți noi și deschiderea domeniului pe loc publicate, cum s-a stabilit cu echipa
 - Făcut: pe cardul universității din rezultate apare „💬 o părere de la un student” / „N păreri de la studenți”; pe fișa universității apare secțiunea „Ce spun studenții” (poză, nume, facultate, textul întreg) cu buton în bara de sus și link spre toate părerile. Cardul unei păreri e acum o singură componentă, folosită și pe pagina „Studenți”. Legate 11 universități care au fișă: Cambridge, Universitatea din București, IE University, ASE, Universitatea din Amsterdam, Sciences Po, UBB, Bocconi, Columbia, UMF „Carol Davila”, UVT
@@ -336,6 +343,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-05 11:24 `f9a8e9a` docs: answers to the judging criteria
 - 2026-10-05 11:19 `763e331` feat: show student opinions in university search results and on university sheets
 - 2026-10-05 11:07 `fdc7024` feat: add three more student opinions with photos
 - 2026-10-05 11:02 `7c6d654` fix: open a domain in place on the university sheet instead of leaving the page
@@ -365,5 +373,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 15:36 `140f3a3` feat: show students from the same university side by side
 - 2026-10-04 15:32 `53386e1` feat: add two more student opinions
 - 2026-10-04 15:25 `dfe2825` feat: add Victoria Dumitru's photo to her opinion
-- 2026-10-04 15:18 `b51f84f` feat: four real student opinions with photos on the student voices page
 <!-- commits:end -->

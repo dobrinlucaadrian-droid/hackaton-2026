@@ -73,12 +73,16 @@ _Open only the files listed here; a file's description is its first comment line
 - `postcss.config.mjs` (8) — _no description: add a first-line comment_
 - `tsconfig.json` (35) — JSON; keys: compilerOptions, include, exclude
 
-### apps/web/app  (5 files)
+### apps/web/app  (9 files)
 
+- `apple-icon.png`
 - `favicon.ico`
 - `globals.css` (129) — _no description: add a first-line comment_
-- `layout.tsx` (31) — _no description: add a first-line comment_. Exports: metadata, RootLayout
+- `icon.png`
+- `layout.tsx` (36) — _no description: add a first-line comment_. Exports: metadata, RootLayout
 - `not-found.tsx` (11) — Friendly 404 page shown for unknown routes and unknown university ids.. Exports: NotFound
+- `opengraph-image.alt.txt` (1) — _no description: add a first-line comment_
+- `opengraph-image.png`
 - `page.tsx` (77) — Home page: the hero with the two main actions and "UniPath în cifre" (counts taken from the data); search and specializations have their own pages.. Routes: /. Exports: Home
 
 ### apps/web/app/quiz  (1 files)
