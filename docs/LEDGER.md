@@ -5,10 +5,10 @@ lista de commit-uri de la final se reface singură.
 
 ## Acum lucrăm la
 
-- **Scop:** UniPath — ghid între liceu și facultate (tema „The Middle Man”). Prezentarea e azi, 2026-10-05 (ora nu a fost spusă)
-- **Unde:** aplicația e în `apps/web` (pagini: `/`, `/specializari`, `/specializari/[categorie]`, `/universitati`, `/universitati/[id]`, `/test`, `/quiz`, `/rezultat`, `/studenti`), publicată la https://unipath-taupe-mu.vercel.app
-- **Urmează:** faza de producție pe ramura `production` (plan în `docs/production-plan.md`): pasul 1 — contul Convex al echipei, apoi tabelele și regulile de acces. Prezentarea a avut loc pe 2026-10-05; `main` rămâne cum a fost prezentat
-- **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
+- **Scop:** UniPath — ghid între liceu și facultate. Hackathonul s-a încheiat (prezentare pe 2026-10-05); acum se construiește versiunea de producție: conturi, bază de date Convex, păreri moderate, securitate
+- **Unde:** versiunea de producție e pe ramura `production` (nepublicată; rulează local cu `npm run dev --prefix apps/web` și folosește baza Convex de dezvoltare, proiectul „unipath”). Versiunea prezentată e pe `main`, publică la https://unipath-taupe-mu.vercel.app, și nu se atinge până nu cere echipa. Planul: `docs/production-plan.md`
+- **Urmează:** de continuat exact de aici, pe ramura `production`: pasul 4 (antete de securitate și CSP, scanare de chei și pachete la fiecare salvare, verificare de cod) și pasul 5 (pagina de confidențialitate), amândouă local. Apoi „nivelul următor”, cu echipa: cheie Resend NOUĂ pusă de echipă în Convex ca `AUTH_RESEND_KEY` (cea lipită în conversație trebuie ștearsă din Resend), domeniu pentru email, setarea Google, chei Turnstile reale, lista `ADMIN_EMAILS`, baza de producție și publicarea pe o adresă de probă. Pașii 1–3 sunt gata și verificați local
+- **De știut:** Vercel CLI și Convex CLI sunt logate doar din aplicația Claude (Vercel: cont `dobrinlucaadrian-7970`; Convex: echipa `dobrinlucaadrian`, proiect `unipath`, bază de dezvoltare `adjoining-duck-455`). `apps/web/.env.local` (adresa Convex și cheia publică de probă Turnstile) NU e în Git: dacă lipsește, `npx convex dev --once` în `apps/web` îl reface, iar `NEXT_PUBLIC_TURNSTILE_SITE_KEY` de probă este `1x00000000000000000000AA`. Pe baza de dezvoltare sunt puse `AUTH_DEV_LOG_LINKS=1` (linkul de conectare apare în `npx convex logs`), cheile de probă Turnstile și `ADMIN_EMAILS=admin.test@example.com`. Echipa vrea să lucrez cât mai mult local înainte să-i cer conturi sau chei
 
 ## Jurnal
 
@@ -384,6 +384,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-06 01:15 `20dc009` feat: public review form with bot check and rate limit, and the moderation page
 - 2026-10-06 01:05 `a21a479` feat: development-only sign-in links in the function log; sign-in verified end to end
 - 2026-10-06 00:27 `ce65453` feat: passwordless sign-in, account page and saving the result
 - 2026-10-06 00:06 `b4aeabc` feat: Convex schema, shared access rules and access tests
@@ -413,5 +414,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 18:02 `97391c5` docs: record the published decluttered version in the ledger
 - 2026-10-04 17:57 `9a716e4` feat: declutter pages - short home, specialization pages, collapsed result cards, compact filters and sheet
 - 2026-10-04 17:24 `9b62030` docs: presentation moved to 2026-10-05
-- 2026-10-04 17:22 `6092918` fix: world-list link check, loading and failure messages, ignore prestige=national
 <!-- commits:end -->
