@@ -107,13 +107,13 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/universitati/[id]  (1 files)
 
-- `page.tsx` (301) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
+- `page.tsx` (276) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/universitati  (1 files)
 
 - `page.tsx` (20) — University finder page: search box, filters and top 10 results (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
 
-### apps/web/components  (20 files)
+### apps/web/components  (21 files)
 
 - `ActivitiesStep.tsx` (227) — Quiz step "Ce ai făcut până acum?": add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
 - `ActivitiesSummary.tsx` (33) — Read-only list of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
@@ -131,6 +131,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `StudentVoices.tsx` (200) — Student opinions with a search box: type a faculty or university and see every opinion we have from there.. Exports: StudentVoices
 - `UniversityBadges.tsx` (23) — Small coloured badges for a university's prestige and budget level, shared by result cards and the profile sheet.. Exports: PrestigeBadge, BudgetBadge
 - `UniversityCard.tsx` (61) — Compact university result card: name, place, badges, three short facts and a link to the full sheet (the whole card is clickable).. Exports: UniversityCard
+- `UniversityDomains.tsx` (87) — "Ce poți studia aici" on a university sheet: tapping a domain opens, on the same page, its specializations and the subjects per year.. Exports: UniversityDomains
 - `UniversityList.tsx` (48) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList
 - `UniversitySearch.tsx` (381) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
 - `WhatIf.tsx` (69) — Collapsible "Ce-ar fi dacă?" panel: one slider per inclination, controlled by the result page.. Exports: WhatIf

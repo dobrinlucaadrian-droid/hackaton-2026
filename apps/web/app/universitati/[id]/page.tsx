@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Shell } from "@/components/Shell";
 import { BudgetBadge, PrestigeBadge } from "@/components/UniversityBadges";
-import { FAMILY_CLASSES, domainStyle } from "@/components/domainStyle";
+import { UniversityDomains } from "@/components/UniversityDomains";
 import { curriculumLinkFor } from "@/lib/curricula";
 import { domains, universities } from "@/lib/data";
 import { ADMISSION_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, specializationsFor, universityById } from "@/lib/universities";
@@ -64,7 +64,6 @@ export default async function UniversityPage({ params }: Props) {
   if (!u) notFound();
   const uniDomains = u.domainIds.map((d) => domains.find((x) => x.id === d)).filter((d): d is NonNullable<typeof d> => !!d);
   const planLink = u.region === "ro" ? curriculumLinkFor(u.id) : undefined;
-  const specs = uniDomains.flatMap((d) => specializationsFor(d.id).map((s) => ({ ...s, domainName: d.name })));
   const certs = u.certificates.map((c) => CERTIFICATE_LABEL[c]).filter(Boolean);
   const admission = u.admissionTypes.map((a) => ADMISSION_LABEL[a]).filter(Boolean);
   const hasPros = u.pros.length > 0 || u.cons.length > 0;
@@ -186,39 +185,15 @@ export default async function UniversityPage({ params }: Props) {
           )}
           {uniDomains.length > 0 && (
             <Section title="Ce poți studia aici">
-              <ul className="flex flex-wrap gap-2">
-                {uniDomains.map((d) => {
-                  const { family, emoji } = domainStyle(d.id);
-                  return (
-                    <li key={d.id}>
-                      <Link
-                        href={`/universitati?domeniu=${d.id}`}
-                        className={`inline-flex min-h-11 items-center rounded-full px-4 text-sm font-semibold transition hover:opacity-80 ${FAMILY_CLASSES[family].chip}`}
-                      >
-                        <span aria-hidden className="mr-1">{emoji}</span>
-                        {d.name}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-              {specs.length > 0 && (
-                <details className="group mt-3 rounded-2xl bg-paper p-4">
-                  <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-2 font-bold text-primary-dark [&::-webkit-details-marker]:hidden">
-                    Vezi specializările din aceste domenii ({specs.length})
-                    <span aria-hidden className="transition-transform group-open:rotate-180">▾</span>
-                  </summary>
-                  <ul className="mt-3 space-y-3">
-                    {specs.map((s) => (
-                      <li key={s.id} className="border-l-4 border-line pl-3">
-                        <p className="text-sm font-bold text-ink">{s.name}</p>
-                        <p className="text-xs text-ink-soft">{s.domainName}</p>
-                        <p className="text-sm">{s.short}</p>
-                      </li>
-                    ))}
-                  </ul>
-                </details>
-              )}
+              <UniversityDomains
+                showPlan={u.region === "ro"}
+                items={uniDomains.map((d) => ({
+                  id: d.id,
+                  name: d.name,
+                  short: d.short,
+                  specs: specializationsFor(d.id).map((x) => ({ id: x.id, name: x.name, short: x.short })),
+                }))}
+              />
             </Section>
           )}
           {faculties.length > 0 && (
