@@ -59,19 +59,20 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### (root)  (1 files)
 
-- `.env.example` (3) — env vars: none yet
+- `.env.example` (11) — env vars: CONVEX_DEPLOYMENT, NEXT_PUBLIC_CONVEX_URL, NEXT_PUBLIC_CONVEX_SITE_URL
 
-### apps/web  (9 files)
+### apps/web  (10 files)
 
 - `.gitignore`
 - `AGENTS.md` (10) — BEGIN:nextjs-agent-rules
 - `CLAUDE.md` (2) — _no description: add a first-line comment_
 - `README.md` (37) — _no description: add a first-line comment_
-- `eslint.config.mjs` (19) — _no description: add a first-line comment_
+- `eslint.config.mjs` (21) — _no description: add a first-line comment_
 - `next.config.ts` (8) — _no description: add a first-line comment_
 - `package.json` (35) — package "web"; scripts: dev, build, start, lint, test
 - `postcss.config.mjs` (8) — _no description: add a first-line comment_
 - `tsconfig.json` (35) — JSON; keys: compilerOptions, include, exclude
+- `vitest.config.ts` (9) — Vitest setup: the Convex function tests run with convex-test, which must be bundled by Vitest.
 
 ### apps/web/app  (9 files)
 
@@ -142,9 +143,25 @@ _Open only the files listed here; a file's description is its first comment line
 - `WhatIf.tsx` (69) — Collapsible "Ce-ar fi dacă?" panel: one slider per inclination, controlled by the result page.. Exports: WhatIf
 - `domainStyle.ts` (67) — Colour family and emoji for every study domain id, used on the result cards.. Exports: FAMILY_CLASSES, domainStyle
 
-### apps/web/convex  (1 files)
+### apps/web/convex/_generated  (5 files)
 
-- `schema.ts` (5) — Database tables for UniPath (filled in step by step).
+- `api.d.ts` (58) — Generated `api` utility.
+- `api.js` (24) — Generated `api` utility.. Exports: api, internal, components
+- `dataModel.d.ts` (61) — Generated data model types.
+- `server.d.ts` (163) — Generated utilities for implementing server-side Convex query and mutation functions.
+- `server.js` (102) — Generated utilities for implementing server-side Convex query and mutation functions.. Exports: query, internalQuery, mutation, internalMutation, action, internalAction, httpAction, env
+
+### apps/web/convex  (9 files)
+
+- `access.test.ts` (114) — @vitest-environment edge-runtime
+- `access.ts` (34) — Shared access rules: every function that needs a signed-in user or an administrator is built from these wrappers, so the check cannot be forgotten.. Exports: userQuery, userMutation, adminQuery, adminMutation
+- `auth.config.ts` (12) — Tells Convex which issuer signs the session tokens (this deployment itself, through Convex Auth).
+- `auth.ts` (7) — Convex Auth setup. Sign-in methods (email magic link, Google) are added in the accounts step; until then nobody can sign in.
+- `http.ts` (9) — HTTP routes of the Convex backend: only the ones Convex Auth needs for sign-in.
+- `results.ts` (74) — A student's saved questionnaire result: each signed-in user can save, read and delete only their own.. Exports: mine, save, remove
+- `reviews.ts` (112) — Student reviews: anyone can read the approved ones; only administrators see the queue and approve or reject. New reviews enter only through an internal function.. Exports: LIMITS, listApproved, listByState, moderate, insertPending
+- `schema.ts` (51) — Database tables for UniPath: users (from Convex Auth, plus a server-written role), saved questionnaire results and student reviews.. Exports: reviewState
+- `tsconfig.json` (26) — JSON (invalid)
 
 ### apps/web/data  (10 files)
 

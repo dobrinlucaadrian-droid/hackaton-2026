@@ -21,6 +21,14 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-06 00:06 — producție, pasul 1: proiectul Convex, tabelele și regulile de acces
+- Cerut: pasul 1 din planul confirmat de echipă (temelia). Echipa și-a făcut contul Convex și a autorizat calculatorul din browser
+- Făcut: proiectul Convex „unipath” (bază de date de dezvoltare, în contul echipei); tabelele `users` (cu rol scris doar de server), `results` (rezultatul salvat al elevului) și `reviews` (păreri, cu stare în așteptare / aprobată / respinsă), plus tabelele Convex Auth; regulile comune de acces într-un singur loc (`convex/access.ts`): funcții pentru utilizator conectat și funcții doar pentru administrator; funcțiile pentru rezultat (salvează, citește, șterge — doar al tău) și pentru păreri (lista publică doar cu cele aprobate și fără câmpuri interne; coada și aprobarea doar pentru administratori; adăugarea unei păreri doar printr-o funcție internă, mereu „în așteptare”). Convex Auth e pus fără nicio metodă de conectare, deci încă nu se poate conecta nimeni. Aplicația (paginile) nu folosește încă baza de date
+- Fișiere: `apps/web/convex/` (`schema.ts`, `access.ts`, `results.ts`, `reviews.ts`, `auth.ts`, `auth.config.ts`, `http.ts`, `access.test.ts`, `tsconfig.json`, `_generated/`), `apps/web/vitest.config.ts` (nou), `apps/web/eslint.config.mjs`
+- Poartă: TRECUT (build, 78 de teste, pornire) pe ramura `production`. Cele 8 teste noi verifică regulile de acces: neconectat → refuzat; elevul A nu vede și nu schimbă rezultatul elevului B; nu se poate trimite id-ul altui utilizator; coada și aprobarea sunt refuzate oricui nu e administrator în baza de date, chiar dacă își zice „admin”; o părere nouă e mereu în așteptare și nu apare public; lista publică nu conține câmpuri de moderare. Pe baza reală de dezvoltare: tabelele există, lista publică întoarce o listă goală, iar funcțiile protejate răspund „Trebuie să fii conectat”. NEVERIFICAT: conectarea unui utilizator real (nu există încă metodă de conectare); nimic din pagini nu folosește încă baza de date
+- Urmează: pasul 2 — conturi: echipa face cont la Resend (emailul cu linkul de conectare) și setarea Google; apoi conectarea în pagini și salvarea rezultatului
+- De știut: adresa bazei de date stă în `apps/web/.env.local`, care nu se salvează în Git; cheile de conectare vor sta în Convex, nu în cod
+
 ### 2026-10-06 00:00 — faza de producție, pasul 1 (început): ramura `production`, plan și pachete
 - Cerut: după prezentare, echipa vrea să treacă de la demo la o versiune de producție: conturi pentru utilizatori, bază de date și păreri de studenți păstrate în ea, cu verificări de securitate; agentul de cercetare să caute proiecte de referință pe GitHub. Hotărâri luate cu echipa: bază de date Convex; conectare cu link pe email și Google (Convex Auth); conturi pentru elevi și pentru echipă; păreri prin formular public, aprobate de echipă; lucru pe o copie separată
 - Făcut: ramura `production` (`main` și adresa publică rămân neatinse); cercetarea și planul în 5 pași, cu lista de 18 verificări de securitate și punctele neverificate, în `docs/production-plan.md`; instalate și fixate la versiune exactă pachetele Convex (`convex`, `@convex-dev/auth`, `convex-helpers`, `@convex-dev/rate-limiter`, `convex-test`); început dosarul `apps/web/convex` cu o schemă goală; secțiunea „Stack” din `CLAUDE.md` actualizată. Încă nu există conturi, tabele sau funcții
@@ -351,6 +359,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-06 00:00 `2c23414` chore: start the production phase with Convex packages and the plan
 - 2026-10-05 11:28 `81704e7` feat: use the team logo for the site icon and the link preview
 - 2026-10-05 11:24 `f9a8e9a` docs: answers to the judging criteria
 - 2026-10-05 11:19 `763e331` feat: show student opinions in university search results and on university sheets
@@ -380,5 +389,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 17:19 `46b3584` feat: home page with search, specializations, top-10 filters and university profile sheets
 - 2026-10-04 15:48 `a30bf9b` feat: add Zara Faflei's opinion and photo
 - 2026-10-04 15:36 `140f3a3` feat: show students from the same university side by side
-- 2026-10-04 15:32 `53386e1` feat: add two more student opinions
 <!-- commits:end -->
