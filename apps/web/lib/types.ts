@@ -162,3 +162,18 @@ export type Testimonial = {
   photo?: string; // optional path under public/, shown with the person's consent
   text: string; // their own words; paragraphs separated by a blank line
 };
+
+/** One official curriculum used as the example for a study domain. */
+export type Curriculum = {
+  domainId: string;
+  years: number; // length of the programme
+  plan: { year: number; subjects: string[] }[]; // main subjects of each year, as named in the source
+  source: { university: string; program: string; url: string; academicYear?: string }; // the official plan the subjects come from
+};
+
+/** The official page where a Romanian university publishes its curricula. */
+export type CurriculumLink = {
+  id: string; // university id
+  url: string;
+  kind: "plans" | "programs"; // "plans" = the curricula themselves; "programs" = the list of programmes that leads to them
+};

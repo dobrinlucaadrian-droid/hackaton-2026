@@ -1,0 +1,2189 @@
+[
+  {
+    "domainId": "medicina",
+    "years": 6,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Anatomie și embriologie",
+          "Biofizică",
+          "Biochimie",
+          "Genetică",
+          "Biologie celulară și moleculară",
+          "Fiziologie"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Anatomie și embriologie",
+          "Histologie",
+          "Microbiologie – bacteriologie",
+          "Fiziologie",
+          "Biochimie clinică",
+          "Informatică medicală și biostatistică"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Semiologie medicală",
+          "Igienă",
+          "Farmacologie",
+          "Fiziopatologie",
+          "Imunologie",
+          "Anatomie patologică",
+          "Microbiologie – virusologie și parazitologie"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Cardiologie",
+          "Pneumologie",
+          "Gastroenterologie",
+          "Chirurgie generală și semiologie chirurgicală",
+          "Ortopedie și traumatologie",
+          "Oncologie medicală",
+          "Radiologie și imagistică medicală"
+        ]
+      },
+      {
+        "year": 5,
+        "subjects": [
+          "Reumatologie",
+          "Nefrologie",
+          "Pediatrie și puericultură",
+          "Chirurgie generală",
+          "Neurologie",
+          "Urologie",
+          "Endocrinologie și diabet zaharat"
+        ]
+      },
+      {
+        "year": 6,
+        "subjects": [
+          "Boli infecțioase",
+          "Oftalmologie",
+          "Psihiatrie",
+          "Otorinolaringologie",
+          "Dermatovenerologie",
+          "Obstetrică-ginecologie",
+          "Medicină de familie"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea de Medicină și Farmacie „Carol Davila” din București",
+      "program": "Medicină",
+      "url": "https://umfcd.ro/educatie/facultati-si-resurse/facultatea-de-medicina/",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "medicina-dentara",
+    "years": 6,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Anatomie și embriologie",
+          "Fiziologie",
+          "Biochimie",
+          "Histologie",
+          "Morfologia dinților și a arcadelor dentare",
+          "Biologie celulară și moleculară",
+          "Biofizică"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Materiale dentare",
+          "Anatomie patologică",
+          "Fiziopatologie și imunologie",
+          "Microbiologie",
+          "Tehnologia protezelor dentare",
+          "Parodontologie",
+          "Genetică"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Odontoterapie restauratoare",
+          "Medicină internă",
+          "Farmacologie",
+          "Protetică dentară",
+          "Endodonție",
+          "Prevenție oro-dentară",
+          "Radiologie și imagistică medicală"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Odontoterapie restauratoare",
+          "Ocluzologie",
+          "Pedodonție",
+          "Endodonție",
+          "Chirurgie orală și maxilo-facială",
+          "Boli infecțioase și epidemiologie",
+          "Pediatrie"
+        ]
+      },
+      {
+        "year": 5,
+        "subjects": [
+          "Chirurgie orală și maxilo-facială",
+          "Parodontologie",
+          "Reabilitare orală",
+          "Implantologie stomatologică",
+          "Ortodonție și ortopedie dento-facială",
+          "Managementul cabinetului dentar",
+          "Dermatovenerologie"
+        ]
+      },
+      {
+        "year": 6,
+        "subjects": [
+          "Chirurgie orală și maxilo-facială",
+          "Implantologie stomatologică",
+          "Ortodonție și ortopedie dento-facială",
+          "Protetică dentară",
+          "Patologie orală",
+          "Pedodonție",
+          "Sănătate orală și comunitară"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea de Medicină și Farmacie „Iuliu Hațieganu” din Cluj-Napoca",
+      "program": "Medicină dentară",
+      "url": "https://cdn.umfcluj.ro/uploads/2023/03/Plan-de-invatamant-Medicina-Dentara-2024-2025-RO.pdf",
+      "academicYear": "2024-2025"
+    }
+  },
+  {
+    "domainId": "farmacie",
+    "years": 5,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Chimie generală și anorganică",
+          "Botanică farmaceutică",
+          "Fizică farmaceutică",
+          "Biologie celulară și moleculară",
+          "Anatomie umană",
+          "Fiziologie umană"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Chimie analitică și instrumentală",
+          "Chimie organică",
+          "Chimie fizică",
+          "Fiziologie umană și fiziopatologie",
+          "Microbiologie",
+          "Imunologie"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Tehnologie farmaceutică",
+          "Chimie farmaceutică și terapeutică",
+          "Farmacognozie",
+          "Biochimie farmaceutică",
+          "Farmacologie",
+          "Medicamente biologice"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Tehnologie farmaceutică",
+          "Farmacologie și farmacoterapie",
+          "Chimie farmaceutică și terapeutică",
+          "Patologie clinică",
+          "Legislație farmaceutică",
+          "Toxicologie"
+        ]
+      },
+      {
+        "year": 5,
+        "subjects": [
+          "Analiza medicamentului",
+          "Industria medicamentului",
+          "Farmacie clinică",
+          "Biofarmacie",
+          "Asistență farmaceutică",
+          "Comunicarea cu pacientul"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea de Medicină și Farmacie „Victor Babeș” din Timișoara",
+      "program": "Farmacie",
+      "url": "https://umft.ro/wp-content/uploads/2025/07/Plan-de-invatamant-aplicabil-FARMACIE-RO-2025-2026.pdf",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "medicina-veterinara",
+    "years": 6,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Anatomie",
+          "Histologie și embriologie",
+          "Chimie",
+          "Biochimie",
+          "Biologie animală",
+          "Genetică",
+          "Fizică"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Anatomie",
+          "Microbiologie",
+          "Fiziologie",
+          "Fiziopatologie",
+          "Biochimie",
+          "Creșterea animalelor"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Imunologie",
+          "Epidemiologie",
+          "Semiologie",
+          "Anatomie patologică",
+          "Farmacologie",
+          "Parazitologie și boli parazitare",
+          "Anesteziologie"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Clinică medicală",
+          "Clinică chirurgicală",
+          "Boli infecțioase și medicină preventivă",
+          "Reproducție",
+          "Obstetrică",
+          "Toxicologie",
+          "Oncologie"
+        ]
+      },
+      {
+        "year": 5,
+        "subjects": [
+          "Clinică medicală",
+          "Clinică chirurgicală",
+          "Boli infecțioase și medicină preventivă",
+          "Tulburări de reproducție",
+          "Radiologie și imagistică",
+          "Medicină veterinară de urgență",
+          "Inspecția produselor alimentare de origine animală"
+        ]
+      },
+      {
+        "year": 6,
+        "subjects": [
+          "Medicină legală și diagnostic necropsic",
+          "Farmacie",
+          "Legislație în medicina veterinară",
+          "Deontologie",
+          "Terapeutică",
+          "Managementul bolilor animalelor de rentă",
+          "Managementul bolilor animalelor de companie"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea de Științe Agronomice și Medicină Veterinară din București – Facultatea de Medicină Veterinară",
+      "program": "Medicină veterinară în limba română",
+      "url": "https://fmvb.ro/medicina-veterinara/",
+      "academicYear": "2022-2023"
+    }
+  },
+  {
+    "domainId": "asistenta-medicala",
+    "years": 4,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Anatomie",
+          "Fiziologie",
+          "Biochimie",
+          "Microbiologie",
+          "Fiziopatologie",
+          "Farmacologie",
+          "Nursing general"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Medicină internă",
+          "Chirurgie generală",
+          "Nursing clinic",
+          "Radiologie și imagistică medicală",
+          "Laborator clinic și conservarea probelor"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Urgențe medicale și prim ajutor",
+          "Boli infecțioase",
+          "Pediatrie și îngrijiri în pediatrie",
+          "Neurologie",
+          "Anestezie și terapie intensivă",
+          "Epidemiologie",
+          "Sănătate publică și management"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Psihiatrie",
+          "Obstetrică-ginecologie",
+          "Îngrijiri în patologia medicală",
+          "Îngrijiri în patologia chirurgicală",
+          "Îngrijiri în patologia pediatrică",
+          "Îngrijiri în patologia cronică",
+          "Aspecte juridice ale profesiei"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea de Medicină, Farmacie, Științe și Tehnologie „George Emil Palade” din Târgu Mureș",
+      "program": "Asistență medicală generală",
+      "url": "https://www.umfst.ro/fileadmin/f_medicina/plan_inv/2025-2026/Plan_invatamant_AMG_2025-2029.pdf",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "informatica",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Analiză matematică",
+          "Fundamentele algebrice ale informaticii",
+          "Algoritmi fundamentali",
+          "Fundamentele programării",
+          "Logică matematică și computațională",
+          "Programare orientată pe obiecte",
+          "Structuri de date"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Algoritmica grafurilor",
+          "Limbaje formale și compilatoare",
+          "Baze de date",
+          "Inteligență artificială",
+          "Rețele de calculatoare",
+          "Metode avansate de programare",
+          "Calcul numeric"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Inginerie software",
+          "Interfețe om-calculator",
+          "Dezvoltarea aplicațiilor Web",
+          "Managementul proiectelor informatice",
+          "Programare paralelă, concurentă și distribuită",
+          "Probabilități și statistică"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Transilvania din Brașov",
+      "program": "Informatică",
+      "url": "https://mateinfo.unitbv.ro/images/2025/Planuri_invatamant/Informatica_2025_2028.pdf",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "calculatoare-it",
+    "years": 4,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Analiză matematică",
+          "Algebră liniară, geometrie analitică și ecuații diferențiale",
+          "Programarea calculatoarelor și limbaje de programare",
+          "Proiectare logică",
+          "Structuri de date și algoritmi",
+          "Metode numerice",
+          "Electrotehnică"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Programare orientată pe obiecte",
+          "Sisteme de operare",
+          "Analiza algoritmilor",
+          "Proiectarea algoritmilor",
+          "Paradigme de programare",
+          "Protocoale de comunicații",
+          "Structura și organizarea calculatoarelor"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Limbaje formale și automate",
+          "Rețele locale de calculatoare",
+          "Elemente de grafică pe calculator",
+          "Algoritmi paraleli și distribuiți",
+          "Proiectarea cu microprocesoare",
+          "Inteligență artificială",
+          "Baze de date"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Arhitecturi și prelucrări paralele",
+          "Proiectarea rețelelor",
+          "Evaluarea performanțelor",
+          "Sisteme încorporate",
+          "Procesarea semnalelor",
+          "Proiect tehnic de specialitate în calculatoare"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Națională de Știință și Tehnologie POLITEHNICA București – Facultatea de Automatică și Calculatoare",
+      "program": "Calculatoare și tehnologia informației",
+      "url": "https://acs.wiki.upb.ro/lib/exe/fetch.php?media=programe%3Alicenta%3A2025_29_pli_l_03_fac_cti_calculatoare_desc.pdf",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "inginerie-electrica-electronica",
+    "years": 4,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Analiză matematică",
+          "Algebră liniară, geometrie analitică și diferențială",
+          "Fizică",
+          "Bazele electrotehnicii",
+          "Materiale pentru electronică",
+          "Programarea calculatoarelor",
+          "Dispozitive electronice"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Analiza și sinteza circuitelor",
+          "Semnale și sisteme",
+          "Circuite integrate analogice",
+          "Circuite integrate digitale",
+          "Prelucrarea digitală a semnalelor",
+          "Microcontrolere",
+          "Măsurări în electronică și telecomunicații"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Electronică de putere",
+          "Comunicații de date",
+          "Aparate electronice de măsură și control",
+          "Teoria transmisiunii informației",
+          "Protocoale de comunicații",
+          "Radiocomunicații",
+          "Transmisii telefonice"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Testarea echipamentelor electronice pentru telecomunicații",
+          "Ingineria traficului",
+          "Software pentru telecomunicații",
+          "Proiect de software pentru telecomunicații",
+          "Management și marketing",
+          "Proiect de dezvoltare"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Politehnica Timișoara",
+      "program": "Tehnologii și sisteme de telecomunicații",
+      "url": "http://arhiva.upt.ro/img/files/2023-2024/PI/Etcti/licenta/Plan_inv_licenta_TST_2023-2027.pdf",
+      "academicYear": "2023-2027"
+    }
+  },
+  {
+    "domainId": "inginerie-mecanica",
+    "years": 4,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Analiză matematică",
+          "Geometrie descriptivă",
+          "Chimie",
+          "Știința și ingineria materialelor",
+          "Programarea calculatoarelor",
+          "Fizică",
+          "Mecanică"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Desen tehnic și infografică",
+          "Mecanică",
+          "Rezistența materialelor",
+          "Electronică aplicată",
+          "Mecanica fluidelor și mașini",
+          "Mecanisme",
+          "Organe de mașini"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Termotehnică și mașini termice",
+          "Vibrații mecanice",
+          "Acționări hidraulice și pneumatice",
+          "Organe de mașini",
+          "Dinamica autovehiculelor",
+          "Calculul și construcția autovehiculelor",
+          "Metoda elementului finit"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Sisteme electrice și electronice ale autovehiculelor",
+          "Tehnologii de fabricare și asamblare a autovehiculelor",
+          "Calculul și construcția autovehiculelor",
+          "Calculul și construcția motoarelor cu ardere internă",
+          "Caracteristici funcționale ale sistemelor de furnizare a energiei la autovehicule",
+          "Elaborarea proiectului de diplomă"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Transilvania din Brașov",
+      "program": "Autovehicule rutiere",
+      "url": "https://mecanica.unitbv.ro/images/programe-studii/2025-2027-2029/Autovehicule_rutiere_2025-2029.pdf",
+      "academicYear": "2025-2029"
+    }
+  },
+  {
+    "domainId": "inginerie-civila",
+    "years": 4,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Analiză matematică",
+          "Algebră liniară și geometrie analitică",
+          "Geometrie descriptivă",
+          "Chimie",
+          "Fizică",
+          "Mecanică",
+          "Materiale de construcții"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Mecanică",
+          "Rezistența materialelor",
+          "Hidraulică",
+          "Statica construcțiilor",
+          "Beton armat și precomprimat",
+          "Geologie inginerească",
+          "Elemente de arhitectură"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Beton armat și precomprimat",
+          "Statica construcțiilor",
+          "Geotehnică",
+          "Construcții din lemn",
+          "Construcții civile",
+          "Introducere în metoda elementelor finite",
+          "Dinamica construcțiilor și inginerie seismică"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Construcții din beton armat",
+          "Construcții metalice",
+          "Management în construcții",
+          "Tehnologia lucrărilor de construcții",
+          "Mecanica zidăriilor",
+          "Instalații în construcții",
+          "Siguranța construcțiilor"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Tehnică de Construcții București",
+      "program": "Construcții civile, industriale și agricole",
+      "url": "https://civile.utcb.ro/wp-content/uploads/2020/11/PLAN-INVATAMANT-CCIA-2020-2021.pdf",
+      "academicYear": "2020-2021"
+    }
+  },
+  {
+    "domainId": "arhitectura",
+    "years": 6,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Atelier de proiectare arhitecturală",
+          "Istoria așezărilor în Europa",
+          "Teoria proiectului",
+          "Geometrie descriptivă",
+          "Materiale de construcții",
+          "Studiul formei",
+          "Introducere în teoria structurilor"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Atelier de proiectare arhitecturală",
+          "Construcții de arhitectură din lemn și oțel",
+          "Structuri de construcții",
+          "Istoria arhitecturii moderne",
+          "Analiză urbană morfo-tipologică",
+          "Proiectare asistată de calculator",
+          "Construcții de arhitectură din zidărie și beton"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Atelier de proiectare arhitecturală",
+          "Inginerie structurală",
+          "Tehnica proiectării urbane",
+          "Detalii de arhitectură",
+          "Introducere în fizica clădirilor",
+          "Teorii ale arhitecturii moderne și contemporane",
+          "Instalații pentru clădiri"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Atelier de proiectare arhitecturală",
+          "Proiectare urbană",
+          "Exigențe și performanțe în construcții",
+          "Protejarea patrimoniului",
+          "Compoziție urbană",
+          "Structuri speciale",
+          "Restaurare – teorie și proiectare"
+        ]
+      },
+      {
+        "year": 5,
+        "subjects": [
+          "Atelier de proiectare arhitecturală",
+          "Proiectare urbană",
+          "Atelier de proiectare tehnologică",
+          "Arhitectură comparată",
+          "Drept urbanistic",
+          "Estetică",
+          "Proceduri administrative în profesia de arhitect"
+        ]
+      },
+      {
+        "year": 6,
+        "subjects": [
+          "Practică în birouri de arhitectură",
+          "Teoria cercetării – etică și integritate academică",
+          "Studiu – fundamentarea proiectului de diplomă",
+          "Elaborarea proiectului de diplomă",
+          "Practica arhitecturală și societatea"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea de Arhitectură și Urbanism „Ion Mincu” din București",
+      "program": "Arhitectură",
+      "url": "https://www.uauim.ro/en/faculties/architecture/architecture/curricula/1/",
+      "academicYear": "2026-2027"
+    }
+  },
+  {
+    "domainId": "inginerie-chimica-materiale",
+    "years": 4,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Algebră liniară, geometrie analitică",
+          "Bazele chimiei analitice",
+          "Bazele chimiei anorganice",
+          "Informatică aplicată",
+          "Analiză matematică",
+          "Chimie analitică și analiză instrumentală",
+          "Fizică"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Bazele chimiei organice",
+          "Termodinamică chimică",
+          "Protecția mediului",
+          "Electrotehnică și electronică",
+          "Chimie organică",
+          "Bazele ingineriei chimice",
+          "Știința materialelor anorganice și compozite"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Cinetică chimică și fenomene de suprafață",
+          "Electrochimie teoretică și aplicată",
+          "Fenomene de transfer termic",
+          "Fenomene de transfer de impuls",
+          "Operații hidrodinamice",
+          "Operații de transfer termic",
+          "Microbiologie industrială"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Operații de transfer de masă",
+          "Reactoare chimice și biochimice",
+          "Procese unitare chimice și biochimice",
+          "Simulatoare de procese chimice și biochimice",
+          "Optimizarea proceselor chimice și biochimice",
+          "Automatizarea proceselor în industria chimică",
+          "Proiectarea instalațiilor chimice și biochimice"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Națională de Știință și Tehnologie POLITEHNICA București – Facultatea de Inginerie Chimică și Biotehnologii",
+      "program": "Ingineria și informatica proceselor chimice și biochimice",
+      "url": "https://chimie.upb.ro/administrare/content/doc/educatie/programe-de-studii-de-licenta/inginerie-chimica/ingineria-si-informatica-proceselor-chimice-si-biochimice/plan-de-invatamant/2025-2029/ro/files/doc.pdf",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "energie-petrol-mediu",
+    "years": 4,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Analiză matematică",
+          "Informatică aplicată",
+          "Chimie generală",
+          "Geometrie descriptivă și desen tehnic",
+          "Algebră liniară, geometrie analitică și diferențială",
+          "Tehnologia materialelor",
+          "Mecanică"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Mecanică",
+          "Fizică",
+          "Geologie generală și stratigrafică",
+          "Termotehnică și mașini termice",
+          "Rezistența materialelor",
+          "Electrotehnică și mașini electrice",
+          "Chimie fizică"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Hidraulică generală",
+          "Fizica zăcămintelor de hidrocarburi",
+          "Fluide de foraj și cimenturi de sondă",
+          "Extracția gazelor",
+          "Geofizică de sondă",
+          "Hidraulică subterană",
+          "Geologia zăcămintelor de hidrocarburi"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Forajul sondelor",
+          "Extracția petrolului",
+          "Proiectarea exploatării zăcămintelor de hidrocarburi",
+          "Investigații hidrodinamice",
+          "Exploatarea secundară a zăcămintelor",
+          "Protecția mediului",
+          "Elaborarea proiectului de diplomă"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Petrol-Gaze din Ploiești",
+      "program": "Inginerie de petrol și gaze",
+      "url": "https://ipg.upg-ploiesti.ro/images/F_165_Plan_de_invatamant_LIPGZ_2025-2029_1.pdf",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "matematica",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Algebră 1 (algebră liniară)",
+          "Analiză matematică 1 (analiză pe R)",
+          "Geometrie 1 (geometrie analitică)",
+          "Algoritmi și programare",
+          "Logică matematică și teoria mulțimilor",
+          "Structuri de date",
+          "Analiză matematică 2"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Analiză complexă",
+          "Ecuații diferențiale",
+          "Mecanică teoretică",
+          "Topologie",
+          "Analiză reală",
+          "Teoria probabilităților",
+          "Geometrie 3 (geometria diferențială)"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Teoria numerelor",
+          "Ecuații cu derivate parțiale",
+          "Analiză funcțională",
+          "Statistică matematică",
+          "Tehnici de optimizare",
+          "Astronomie",
+          "Elaborarea lucrării de licență"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Babeș-Bolyai din Cluj-Napoca",
+      "program": "Matematică",
+      "url": "https://www.cs.ubbcluj.ro/files/curricula/2025/planuri/licenta-2025-2028/Matematica%20romana%202025-2028.pdf",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "fizica",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Analiză reală",
+          "Algebră, geometrie și ecuații diferențiale",
+          "Mecanică fizică",
+          "Fizică moleculară și căldură",
+          "Electricitate și magnetism",
+          "Ecuațiile fizicii matematice",
+          "Analiză complexă"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Optică",
+          "Mecanică analitică",
+          "Electrodinamică și teoria relativității",
+          "Bazele fizicii atomice",
+          "Mecanică cuantică",
+          "Electronică",
+          "Fizica nucleului"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Mecanică cuantică",
+          "Fizica moleculei",
+          "Fizica solidului",
+          "Fizica particulelor elementare",
+          "Spectroscopie și laseri",
+          "Elaborarea lucrării de licență"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea din București",
+      "program": "Fizică",
+      "url": "https://www.fizica.unibuc.ro/Fizica/Studii/Licenta/F-Ro/Docs/PI_Fizica_RO_2024-2025.pdf",
+      "academicYear": "2024-2025"
+    }
+  },
+  {
+    "domainId": "chimie",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Chimie generală",
+          "Chimie analitică calitativă și cantitativă",
+          "Bazele chimiei organice",
+          "Calcul diferențial și integral",
+          "Fizică",
+          "Chimia nemetalelor",
+          "Termodinamică chimică"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Structura atomilor și moleculelor",
+          "Chimia metalelor",
+          "Compuși organici multifuncționali și heterocicli",
+          "Analiză instrumentală",
+          "Chimie coordinativă",
+          "Electrochimie",
+          "Tehnologie chimică"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Cataliză și catalizatori",
+          "Cromatografie",
+          "Chimia macromoleculelor și coloizilor",
+          "Compuși naturali",
+          "Chimie supramoleculară",
+          "Activitate de cercetare pentru lucrarea de licență"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea din București",
+      "program": "Chimie",
+      "url": "https://chimie.unibuc.ro/index.php/oferta-educationala/52-ciclul-i-studii-universitare-de-licenta/53-planuri-de-invatamant",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "biologie",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Sistematica și biologia nevertebratelor",
+          "Citologie vegetală",
+          "Anatomia și igiena omului",
+          "Biofizică",
+          "Biologie celulară",
+          "Histologie și embriologie animală",
+          "Morfologie și anatomie vegetală"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Botanică sistematică",
+          "Microbiologie generală",
+          "Ecologie generală",
+          "Biochimie",
+          "Biologia vertebratelor",
+          "Imunobiologie",
+          "Biochimia metabolismului"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Genetică generală",
+          "Fiziologia vegetală",
+          "Funcții de relație la animale",
+          "Fiziologia nutriției și dezvoltării plantelor",
+          "Genomică",
+          "Metodologia elaborării lucrării de licență"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea de Vest din Timișoara",
+      "program": "Biologie",
+      "url": "https://cbg.uvt.ro/wp-content/uploads/2025/09/Plan-invatamant-Biologie_2025-2028.pdf",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "geografie-mediu",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Geografie fizică generală",
+          "Cartografie, topografie și fotogrametrie",
+          "Geografia populației",
+          "Geografie umană generală",
+          "Meteorologie și climatologie",
+          "Hidrologie și oceanografie",
+          "Geografie economică"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Geomorfologie",
+          "Biogeografie",
+          "Geografie urbană și rurală",
+          "Geografia solurilor",
+          "Geografia Europei",
+          "Geografie socială",
+          "Teledetecție"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Geografia turismului",
+          "Geografia fizică a României",
+          "Geografia umană a României",
+          "Organizarea spațiului",
+          "Geografia mediului",
+          "Geografie regională",
+          "Geografia hazardelor și riscurilor naturale"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea de Vest din Timișoara",
+      "program": "Geografie",
+      "url": "https://cbg.uvt.ro/wp-content/uploads/2025/09/Plan-invatamant-licenta-Geografie_2025-2028_FINAL.pdf",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "agronomie-silvicultura",
+    "years": 4,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Matematică și statistică",
+          "Biochimie",
+          "Biofizică și agrometeorologie",
+          "Topografie și desen tehnic",
+          "Baza energetică și mașini agricole",
+          "Botanică",
+          "Pedologie"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Fiziologia plantelor",
+          "Genetică",
+          "Entomologie",
+          "Fitopatologie",
+          "Agrochimie",
+          "Agrotehnică",
+          "Microbiologie"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Tehnică experimentală",
+          "Îmbunătățiri funciare",
+          "Fitotehnie",
+          "Tehnologii horticole",
+          "Cultura pajiștilor și a plantelor furajere",
+          "Ameliorarea plantelor și producere de sămânță",
+          "Contabilitate și gestiune economică"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Cultura pajiștilor și a plantelor furajere",
+          "Ameliorarea plantelor și producere de sămânță",
+          "Condiționarea și păstrarea produselor agricole",
+          "Zootehnie",
+          "Fitotehnie",
+          "Management",
+          "Marketing"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea de Științe Agronomice și Medicină Veterinară din București",
+      "program": "Agricultură",
+      "url": "https://agro-bucuresti.ro/en/invatamant-cu-frecventa/"
+    }
+  },
+  {
+    "domainId": "economie-finante",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Microeconomie",
+          "Macroeconomie",
+          "Management",
+          "Finanțe publice",
+          "Matematici aplicate în economie",
+          "Bazele contabilității",
+          "Dreptul afacerilor"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Statistică descriptivă",
+          "Contabilitate financiară",
+          "Baze de date și programe",
+          "Finanțele întreprinderii",
+          "Piețe financiare",
+          "Asigurări",
+          "Instituții și mecanisme monetare"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Finanțe corporative avansate",
+          "Bazele econometriei",
+          "Buget și trezorerie publică",
+          "Management financiar",
+          "Analiză financiară",
+          "Finanțe internaționale",
+          "Gestiunea portofoliului"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Babeș-Bolyai din Cluj-Napoca",
+      "program": "Finanțe și bănci",
+      "url": "https://econ.ubbcluj.ro/planuri_invatamant/licenta/zi_2025_2026/FB%20Finante%20Banci%202025-2026.pdf",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "business-management",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Microeconomie",
+          "Macroeconomie",
+          "Management",
+          "Matematici aplicate în economie",
+          "Bazele contabilității",
+          "Informatică economică",
+          "Dreptul afacerilor"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Contabilitate financiară",
+          "Finanțele întreprinderii",
+          "Statistică descriptivă",
+          "Managementul resurselor umane",
+          "Managementul producției",
+          "Managementul serviciilor"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Management strategic",
+          "Managementul proiectelor",
+          "Managementul muncii",
+          "Logistică",
+          "Management operațional"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Babeș-Bolyai din Cluj-Napoca",
+      "program": "Management",
+      "url": "https://econ.ubbcluj.ro/planuri_invatamant/licenta/zi_2025_2026/MG%20Management%202025-2026.pdf",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "marketing",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Microeconomie",
+          "Macroeconomie",
+          "Management",
+          "Bazele marketingului",
+          "Dreptul afacerilor",
+          "Informatică economică",
+          "Matematici aplicate în economie"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Contabilitate financiară",
+          "Finanțele întreprinderii",
+          "Statistică descriptivă",
+          "Comportamentul consumatorului",
+          "Cercetări de marketing",
+          "Marketingul micilor afaceri"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Marketing operațional",
+          "Marketingul serviciilor",
+          "Branding",
+          "Marketing online",
+          "Merchandising",
+          "Marketing în social media"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Babeș-Bolyai din Cluj-Napoca",
+      "program": "Marketing",
+      "url": "https://econ.ubbcluj.ro/planuri_invatamant/licenta/zi_2025_2026/MK%20Marketing%202025-2026.pdf",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "drept",
+    "years": 4,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Teoria generală a dreptului",
+          "Drept constituțional",
+          "Introducere în dreptul civil",
+          "Drept civil. Persoanele",
+          "Istoria dreptului românesc",
+          "Drept roman",
+          "Drept civil. Actul juridic"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Drept civil. Faptul juridic",
+          "Drept administrativ II",
+          "Drept penal – partea generală I",
+          "Drept internațional public",
+          "Drept civil. Obligații",
+          "Dreptul Uniunii Europene I",
+          "Drept fiscal"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Drept civil. Contracte speciale",
+          "Drept comercial",
+          "Drept penal – partea specială",
+          "Drept procesual penal",
+          "Dreptul Uniunii Europene II",
+          "Drept procesual civil I"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Drept procesual civil",
+          "Drept procesual penal III",
+          "Drept internațional privat",
+          "Drept civil. Succesiuni",
+          "Dreptul familiei",
+          "Dreptul muncii",
+          "Practică de specialitate"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea din București",
+      "program": "Drept (planul pentru învățământ la distanță)",
+      "url": "https://drept.unibuc.ro/documente/2026/ID/Plan%20inv.%20ID-2.10.2026-final.pdf",
+      "academicYear": "2026-2027"
+    }
+  },
+  {
+    "domainId": "stiinte-politice-relatii-internationale",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Concepte fundamentale în știința politică",
+          "Concepte fundamentale în sociologie",
+          "Istoria gândirii sociale și politice",
+          "Introducere în studiile europene",
+          "Instituții politice",
+          "Introducere în relațiile internaționale",
+          "Metode de cercetare socială și politică"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Politici publice",
+          "Ideologii politice",
+          "Filosofie politică",
+          "Politică comparată",
+          "Instituțiile Uniunii Europene",
+          "Politica europeană"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Studii de securitate",
+          "Politica românească",
+          "Comportamentul votantului",
+          "Politică americană",
+          "Etică politică",
+          "Elaborarea și implementarea proiectelor"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Școala Națională de Studii Politice și Administrative",
+      "program": "Științe Politice",
+      "url": "https://admitere.snspa.ro/de-ce-aleg-snspa/oferta-educationala/licenta/stiinte-politice/"
+    }
+  },
+  {
+    "domainId": "administratie-publica",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Introducere în administrația publică",
+          "Sociologie",
+          "Introducere în științe politice",
+          "Metode și tehnici de cercetare în științele sociale",
+          "Economie politică",
+          "Drept pentru administrația publică",
+          "Sistem constituțional și instituții politice în România"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Drept administrativ",
+          "Finanțe publice",
+          "Dezvoltare regională",
+          "Management financiar",
+          "Teorii organizaționale",
+          "Sisteme administrative comparate"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Managementul resurselor umane",
+          "Politici publice",
+          "Managementul public",
+          "Uniunea Europeană: mecanisme și instituții",
+          "Evaluarea programelor și performanțelor",
+          "Etica în administrația publică",
+          "Managementul proiectelor în organizații publice și non-profit"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Babeș-Bolyai din Cluj-Napoca",
+      "program": "Administrație publică",
+      "url": "https://amp.fspac.ubbcluj.ro/wp-content/uploads/2026/09/Plan_inv_licenta_AP_RO_ZI_2026.pdf",
+      "academicYear": "2026-2027"
+    }
+  },
+  {
+    "domainId": "comunicare-jurnalism",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Limba română. Discursul jurnalistic",
+          "Presa în istoria culturii românești",
+          "Introducere în științele limbajului și comunicării",
+          "Introducere în sistemul mass-media",
+          "Genuri și specii jurnalistice",
+          "Mass-media românești actuale",
+          "Abilități IT pentru jurnaliști"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Metode de cercetare în științele sociale",
+          "Broadcasting TV",
+          "Abilități practice. Mass-media",
+          "Etică și deontologie jurnalistică",
+          "Mass-media în era digitală",
+          "Broadcasting Radio",
+          "Tehnici de lucru specializate"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Practică de specialitate",
+          "Tehnici mediatice",
+          "Comunicare vizuală. Design jurnalistic",
+          "Comunicare publică. Relații publice"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea „Alexandru Ioan Cuza” din Iași",
+      "program": "Jurnalism",
+      "url": "https://litere.uaic.ro/wp-content/uploads/2025/05/1.-Planuri-de-invatamant-LICENTA-2024-2025.pdf",
+      "academicYear": "2024-2027"
+    }
+  },
+  {
+    "domainId": "psihologie",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Fundamentele psihologiei",
+          "Metodologia cercetării psihologice",
+          "Istoria psihologiei",
+          "Neuropsihologie",
+          "Statistică aplicată în psihologie",
+          "Psihologia dezvoltării",
+          "Psihologie experimentală"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Psihologia personalității",
+          "Psihologie cognitivă",
+          "Dinamica grupurilor",
+          "Introducere în psihologia sănătății",
+          "Psihologia muncii",
+          "Introducere în psihoterapie",
+          "Psihologia învățării"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Psihologia educației",
+          "Psihopatologie",
+          "Psihologie managerială",
+          "Psihoterapii experiențiale",
+          "Psihologia relațiilor de cuplu și a familiei",
+          "Consiliere educațională și vocațională"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea din București",
+      "program": "Psihologie",
+      "url": "https://fpse.unibuc.ro/wp-content/uploads/2026/05/PSIHO.pdf",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "sociologie-asistenta-sociala",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Sociologie generală",
+          "Metode și tehnici de cercetare sociologică",
+          "Introducere în antropologie",
+          "Teorii sociologice moderne",
+          "Statistică socială și analiza datelor"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Teorii sociologice contemporane",
+          "Socioantropologia muncii",
+          "Metode cantitative avansate",
+          "Psihologie socială",
+          "Metode calitative de cercetare sociologică",
+          "Politici sociale"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Sociologie urbană",
+          "Sociologie rurală",
+          "Stratificare și mobilitate socială",
+          "Demografie și sociologia populației",
+          "Sociologia comunicării și mass-media"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Babeș-Bolyai din Cluj-Napoca",
+      "program": "Sociologie",
+      "url": "https://socasis.ubbcluj.ro/wp-content/uploads/2025/07/Plan-invatamant-Sociologie-2025-2026.pdf",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "stiintele-educatiei",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Fundamentele pedagogiei",
+          "Fundamentele psihologiei",
+          "Fundamentele psihopedagogiei speciale",
+          "Teoria și metodologia curriculumului",
+          "Istoria ideilor educaționale",
+          "Educație timpurie",
+          "Psihologia dezvoltării"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Teoria și metodologia instruirii",
+          "Metodologia cercetării în științele educației",
+          "Psihologia educației",
+          "Teoria și metodologia evaluării",
+          "Consiliere educațională",
+          "Politici educaționale și sociale",
+          "Sociologia educației"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Management educațional",
+          "Consiliere și orientare în carieră",
+          "Pedagogie comparată și alternative educaționale",
+          "Pedagogia învățământului superior",
+          "Educația adulților",
+          "Educație europeană"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea din București",
+      "program": "Pedagogie",
+      "url": "https://fpse.unibuc.ro/wp-content/uploads/Planuri%20invatamant/Licenta/Stiinte%20ale%20educatiei/2025-2028/PEDA.pdf",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "litere-limbi-straine",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Introducere în teoria literaturii",
+          "Introducere în literatura comparată",
+          "Introducere în lingvistică",
+          "Limba română (I): Lexicologie și semantică",
+          "Limba română (II): Fonetică și dialectologie",
+          "Etnologie și folclor",
+          "Introducere în scrierea academică"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Literatura română (II): Marii clasici",
+          "Literatura română (IV): Proza interbelică",
+          "Limba română (III): Morfologie",
+          "Limba română (IV): Sintaxă",
+          "Limba română (V): Istoria limbii române"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Literatura română (V): Poezia interbelică",
+          "Literatura română (VI): Literatura română postbelică",
+          "Limba română (VI): Istoria limbii române literare",
+          "Metodologia cercetării științifice și utilizarea noilor tehnologii"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea „Alexandru Ioan Cuza” din Iași",
+      "program": "Limba și literatura română – Limba și literatura modernă",
+      "url": "https://litere.uaic.ro/wp-content/uploads/2025/05/1.-Planuri-de-invatamant-LICENTA-2024-2025.pdf",
+      "academicYear": "2024-2027"
+    }
+  },
+  {
+    "domainId": "istorie",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Introducere în istoria veche universală",
+          "Introducere în istoria veche a României",
+          "Preistorie generală",
+          "Științele auxiliare ale istoriei",
+          "Introducere în istoria medie universală",
+          "Introducere în istoria medie a României",
+          "Istoria Bizanțului"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Introducere în istoria modernă universală",
+          "Introducere în istoria modernă a României",
+          "Introducere în istoria contemporană universală",
+          "Introducere în istoria contemporană a României",
+          "Istoria relațiilor internaționale în secolul XX",
+          "Istoria integrării europene",
+          "Istoria mentalităților colective"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Istoria și teoria artei",
+          "Introducere în teoria istoriei",
+          "Introducere în arheologie",
+          "Scriere academică",
+          "Logică și argumentare"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Babeș-Bolyai din Cluj-Napoca",
+      "program": "Istorie",
+      "url": "https://hiphi.ubbcluj.ro/Public/File/planuri/2025/Istorie_ro_FINAL.pdf",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "filosofie",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Propedeutic filosofic",
+          "Logică generală",
+          "Istoria filosofiei antice",
+          "Istoria filosofiei medievale",
+          "Istoria filosofiei românești",
+          "Filosofie socială",
+          "Filosofie politică"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Etică",
+          "Logică simbolică",
+          "Filosofia modernității timpurii",
+          "Teoria cunoașterii",
+          "Epistemologie",
+          "Filosofie clasică germană",
+          "Etică aplicată"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Estetică",
+          "Filosofie contemporană (secolul XIX)",
+          "Filosofia culturii",
+          "Metafizică",
+          "Filosofie contemporană (secolul XX)",
+          "Filosofia artei",
+          "Filosofia religiei"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Babeș-Bolyai din Cluj-Napoca",
+      "program": "Filosofie",
+      "url": "https://hiphi.ubbcluj.ro/Public/File/planuri/2025/Filosofie_ro_FINAL.pdf",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "teologie",
+    "years": 4,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Studiul Vechiului Testament",
+          "Studiul Noului Testament",
+          "Istoria Bisericii Ortodoxe Române",
+          "Istoria bisericească universală",
+          "Muzică bisericească și ritual",
+          "Limba greacă",
+          "Patrologie și literatură post-patristică"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Studiul Vechiului Testament",
+          "Studiul Noului Testament",
+          "Istoria Bisericii Ortodoxe Române",
+          "Istoria bisericească universală",
+          "Patrologie și literatură post-patristică",
+          "Istoria și spiritualitatea Bizanțului"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Teologie dogmatică ortodoxă",
+          "Morala creștină",
+          "Misiologie ortodoxă",
+          "Drept canonic ortodox",
+          "Teologie liturgică",
+          "Catehetică",
+          "Istoria și filosofia religiilor"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Teologie dogmatică ortodoxă",
+          "Spiritualitate ortodoxă: Ascetică și Mistică",
+          "Misiologie ortodoxă",
+          "Omiletică",
+          "Drept canonic ortodox",
+          "Recitativ liturgic și oratorie"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Babeș-Bolyai din Cluj-Napoca",
+      "program": "Teologie Ortodoxă Pastorală",
+      "url": "https://ot.ubbcluj.ro/wp-content/uploads/2025/06/Plan_TOP_FINALsemnat.pdf",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "arte-vizuale-design",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Studiul desenului",
+          "Studiul culorii",
+          "Studiul compoziției",
+          "Cromatologie, tehnicile picturii de șevalet",
+          "Procesarea imaginii pe calculator"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Tehnici de reprezentare bi și tridimensionale",
+          "Studiul culorii pentru pictură",
+          "Practică de specialitate",
+          "Cromatologie, tehnicile picturii de șevalet, restaurare"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Studiul culorii pentru pictură",
+          "Formă, culoare, concept în pictură",
+          "Studiul desenului pentru pictură",
+          "Compoziția picturii",
+          "Tehnologia picturii de șevalet și restaurare",
+          "Elaborarea lucrării de licență"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Națională de Arte București",
+      "program": "Arte plastice – Pictură",
+      "url": "https://unarte.org/en/faculty-of-fine-arts/painting/",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "muzica",
+    "years": 4,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Canto",
+          "Acompaniament canto",
+          "Arta actorului și mișcare scenică",
+          "Pian general",
+          "Teorie-solfegiu-dictat",
+          "Istoria muzicii și a stilurilor muzicale",
+          "Dicția și declamația spectacolului muzical"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Canto",
+          "Operă",
+          "Lied-oratoriu",
+          "Pian general",
+          "Teorie-solfegiu-dictat",
+          "Armonie și analize armonice",
+          "Istoria muzicii și a stilurilor muzicale"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Canto",
+          "Acompaniament canto",
+          "Forme muzicale și analiză",
+          "Teorie-solfegiu-dictat",
+          "Istoria muzicii și a stilurilor muzicale",
+          "Elemente de polifonie"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Canto",
+          "Acompaniament canto",
+          "Estetică muzicală",
+          "Cercetare și documentare",
+          "Practică artistică"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Națională de Muzică din București",
+      "program": "Interpretare muzicală – Canto",
+      "url": "https://www.unmb.ro/oferta-educationala/licenta-facultatea-de-interpretare-muzicala/interpretare-muzicala-canto/"
+    }
+  },
+  {
+    "domainId": "teatru-film",
+    "years": 4,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Istoria culturii și civilizației",
+          "Filosofie",
+          "Analiza procesului scenic",
+          "Introducere în arta actorului",
+          "Vorbire scenică",
+          "Tehnică vocală",
+          "Teatru fizic și limbajul corporal în arta actorului"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Teatrul universal",
+          "Teoria teatrului",
+          "Teatrul românesc",
+          "Atelier de creație teatrală",
+          "Analiza procesului scenic",
+          "Vorbire scenică",
+          "Tehnică vocală"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Teatrul universal",
+          "Teatrul românesc",
+          "Atelier de creație teatrală",
+          "Commedia dell'arte",
+          "Lupte scenice",
+          "Arta actorului de film",
+          "Estetică"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Estetică",
+          "Strategii creative în teatrul contemporan",
+          "Atelier de creație teatrală",
+          "Scriere dramatică",
+          "Management și antreprenoriat cultural",
+          "Elaborarea lucrării de licență"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Națională de Artă Teatrală și Cinematografică „I. L. Caragiale” București",
+      "program": "Artele spectacolului",
+      "url": "https://unatc.ro/devunatc/departament/artele-spectacolului/"
+    }
+  },
+  {
+    "domainId": "sport-kinetoterapie",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Anatomie",
+          "Fiziologie",
+          "Biomecanica",
+          "Kinesiologie",
+          "Igienă și prim ajutor",
+          "Teoria activităților motrice",
+          "Biochimie"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Anatomie III",
+          "Semiologie",
+          "Fiziopatologie",
+          "Masaj",
+          "Bazele generale ale fizioterapiei",
+          "Metode de evaluare în fizioterapie",
+          "Fiziologia efortului"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Fizioterapia în afecțiunile ortopedico-traumatice",
+          "Fizioterapia în geriatrie-gerontologie",
+          "Fizioterapia în afecțiunile respiratorii",
+          "Fizioterapia în pediatrie",
+          "Fizioterapia în afecțiunile neurologice",
+          "Fizioterapia în afecțiunile cardiovasculare",
+          "Kinetoprofilaxia"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea din Craiova",
+      "program": "Kinetoterapie și motricitate specială",
+      "url": "https://efs.ucv.ro/pdf/structura/2025-2026/PLAN_INV_LICENTA_KTC-2025-2026.pdf",
+      "academicYear": "2025-2026"
+    }
+  },
+  {
+    "domainId": "militar-politie",
+    "years": 4,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Științe militare",
+          "Psihosociologie militară",
+          "Pedagogie militară",
+          "Teoria organizației",
+          "Securitate și intelligence",
+          "Fundamente ale securității naționale",
+          "Istorie militară"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Leadership și schimbare organizațională",
+          "Probabilități și statistică",
+          "Didactica specialității militare",
+          "Tactica subunităților de manevră 1"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Tehnici de comunicare și de negociere",
+          "Drept internațional umanitar",
+          "Managementul organizației militare",
+          "Modelarea și simularea acțiunilor militare",
+          "Relații civili-militari",
+          "Interoperabilitate în acțiunile militare",
+          "Securitate cibernetică"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Conducerea subunităților militare",
+          "Standarde și proceduri operaționale de stat major",
+          "Scenarii tactice ale operațiilor subunităților de manevră",
+          "Elaborarea lucrării de licență"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Academia Forțelor Terestre „Nicolae Bălcescu” din Sibiu",
+      "program": "Leadership militar",
+      "url": "https://armyacademy.ro/fsm/file/ghid/ghid_lm_2023_2027.pdf",
+      "academicYear": "2023-2027"
+    }
+  },
+  {
+    "domainId": "marina-transporturi",
+    "years": 4,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Analiză matematică",
+          "Fizică",
+          "Desen tehnic și infografic",
+          "Informatică aplicată",
+          "Bazele navigației",
+          "Marinărie",
+          "Limba engleză"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Mecanică",
+          "Rezistența materialelor",
+          "Electrotehnică și mașini electrice",
+          "Teoria și construcția navei",
+          "Hidrodinamică",
+          "Navigație astronomică",
+          "Proceduri de executare a cartului de navigație"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Echipamente și sisteme de navigație",
+          "Meteorologie și oceanografie",
+          "Leadership",
+          "Porturi și căi navigabile",
+          "Drept maritim internațional",
+          "Comunicații navale",
+          "Navigație radar"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Tehnica transportului maritim",
+          "Manevra navei",
+          "Navigație electronică",
+          "Navigație fluvială",
+          "Căutare și salvare pe mare",
+          "Planificarea și executarea voiajului",
+          "Protecția mediului marin"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Academia Navală „Mircea cel Bătrân”",
+      "program": "Navigație și transport maritim și fluvial",
+      "url": "https://www.anmb.ro/ro/files/admitere/2024/admitere/Prezentare%20licenta%20NTMF-IF2.pdf"
+    }
+  },
+  {
+    "domainId": "turism-servicii",
+    "years": 3,
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Microeconomie",
+          "Macroeconomie",
+          "Management",
+          "Bazele contabilității",
+          "Bazele marketingului",
+          "Dreptul afacerilor",
+          "Conceperea și designul serviciilor"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Contabilitate financiară",
+          "Finanțele întreprinderii",
+          "Economia comerțului",
+          "Economia turismului",
+          "Cercetări de marketing în turism și comerț",
+          "Inovare și automatizare în servicii"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Politici de marketing",
+          "Marketingul serviciilor",
+          "Marketing în comerț",
+          "Marketing în turism",
+          "Turism rural",
+          "Turism internațional",
+          "Instrumente și tehnici de promovare"
+        ]
+      }
+    ],
+    "source": {
+      "university": "Universitatea Babeș-Bolyai din Cluj-Napoca",
+      "program": "Economia comerțului, turismului și serviciilor",
+      "url": "https://econ.ubbcluj.ro/planuri_invatamant/licenta/zi_2025_2026/ECTS%20Economia%20comertului,%20turismului%20si%20serviciilor%202025-2026.pdf",
+      "academicYear": "2025-2026"
+    }
+  }
+]

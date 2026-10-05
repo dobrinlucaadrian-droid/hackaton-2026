@@ -21,6 +21,14 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-05 10:53 — planuri de învățământ: materii pe ani și linkuri oficiale
+- Cerut: la fiecare facultate să apară planul de învățământ (ce materii se studiază în fiecare an) și linkul spre plan. Echipa a ales: materii pe ani la cele 40 de domenii + link pe fișa fiecărei universități din România; unde nu se găsește un link verificat, fără link; străinătatea nu acum
+- Făcut: „Ce înveți, an cu an” la toate cele 40 de domenii (pe paginile de specializări și pe cardurile din rezultatul chestionarului): 4–7 materii pe fiecare an, citite dintr-un plan de învățământ oficial al unei universități de stat (ex. Medicină — UMF „Carol Davila”, Informatică — Transilvania Brașov, Drept — Universitatea din București), cu numele programului, universitatea, anul planului și link spre planul oficial; sub materii scrie că e un exemplu și că materiile diferă de la o facultate la alta. Pe fișa universităților din România: secțiunea „Planuri de învățământ” cu link spre site-ul oficial la 57 din 74 (9 duc direct la planuri, 48 la lista programelor de studii, de unde se ajunge la planuri; textul linkului spune care din două). Fiecare link a fost deschis de două ori (la căutare și la o verificare automată separată); linkurile care duceau doar la pagina principală, pe alt site sau nu se deschideau au fost scoase
+- De știut: la domeniile largi exemplul e de la o singură specializare (Inginerie mecanică = Autovehicule rutiere, Brașov; Energie, petrol, mediu = Petrol și gaze, Ploiești; Arte = Pictură; Muzică = Canto; Teatru-film = Actorie; Militar = Academia Forțelor Terestre; Sociologie fără Asistență socială; Științe politice fără Relații internaționale); la Drept planul e cel de la învățământ la distanță; la Inginerie civilă planul e din 2020-2021; la Arhitectură materiile sunt traduse din engleză. Fără link (17): USAMV București și Cluj, UNArte, Academia de Poliție, ATM, TU Iași, Transilvania Brașov, UMF Craiova, ULBS Sibiu, Dunărea de Jos Galați, Universitatea din Craiova, UNAp, Nicolae Titulescu, Andrei Șaguna, Partium, Athenaeum, Bioterra
+- Fișiere: `apps/web/data/curricula.json` (nou), `apps/web/data/curriculum-links.json` (nou), `apps/web/lib/curricula.ts` (nou), `apps/web/lib/curricula.test.ts` (nou), `apps/web/components/CurriculumPlan.tsx` (nou), `apps/web/components/DomainDetails.tsx`, `apps/web/components/MatchCard.tsx`, `apps/web/app/universitati/[id]/page.tsx`, `apps/web/lib/types.ts`
+- Poartă: TRECUT (build, 68 de teste, pornire); într-un browser separat, pe laptop și la lățime de telefon: categoria Sănătate — 5 domenii din 5 au planul, Medicină are 6 ani cu 6–7 materii; fișa UPT are link direct la planuri, fișa Universității din București la programele de studii, TU Iași și Harvard nu au secțiunea; pe rezultat toate cele 3 carduri au „Ce înveți, an cu an”; fără erori. NEVERIFICAT: că fiecare materie e copiată exact din plan (am verificat că linkurile se deschid, nu am recitit eu toate cele 40 de planuri); pe un telefon real
+- Urmează: publicare la cererea echipei; `/pitch`
+
 ### 2026-10-05 10:18 — încă 7 studenți pe pagina „Ce spun studenții”
 - Cerut: echipa a trimis 7 studenți noi (texte reale, cu acordul lor) și a spus „poți începe”; ce lipsea să fie lăsat deoparte
 - Făcut: adăugați Ruxandra Marmandiu (Columbia University), Bianca Donici (Communication Arts, University of Wisconsin–Madison, fără poză), Carina (Les Roches, doar prenumele, fără poză), Andra Drăghici (Medicină Dentară, UMF „Carol Davila”), Luca Gutumanu (Drept, Paris-Saclay), Maya Mirt (Asistență Medicală, Hogeschool Inholland Amsterdam), Andreea Birca Nadolu (Studii de Securitate, Universitatea de Vest din Timișoara); pozele decupate pătrat pe față (cea a Mayei luminată puțin); căutarea găsește și după „columbia”, „wisconsin”, „carol davila”, „saclay”, „inholland”, „uvt”, „olanda”. Texte neschimbate, cu două excepții anunțate echipei: la Bianca Donici scos „Mă numesc Donici Bianca și” și corectat „literatura in teatru” în „literatura și teatrul”. Pagina principală arată acum 21 de păreri
@@ -305,6 +313,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-05 10:20 `1aa0610` fix: spell the student's name Drăghici
 - 2026-10-05 10:19 `4e9ff71` feat: add seven more student opinions with photos
 - 2026-10-05 01:35 `65cbccc` feat: ask the city in the questionnaire and list only universities from that city
 - 2026-10-05 01:24 `6d6fbdf` feat: 18 researched scenario questions in the questionnaire, balanced across the ten traits
@@ -334,5 +343,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 14:43 `79f354e` docs: add screenshots of each screen
 - 2026-10-04 14:35 `7392526` feat: activities step - competitions, volunteering and diploma photo feed the matching
 - 2026-10-04 13:59 `b40f794` feat: cheerful cool-colour redesign with illustrations and animations
-- 2026-10-04 13:37 `da25839` feat: back button on the student voices page
 <!-- commits:end -->

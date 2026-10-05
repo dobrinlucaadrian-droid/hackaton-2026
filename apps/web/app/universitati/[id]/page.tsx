@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { Shell } from "@/components/Shell";
 import { BudgetBadge, PrestigeBadge } from "@/components/UniversityBadges";
 import { FAMILY_CLASSES, domainStyle } from "@/components/domainStyle";
+import { curriculumLinkFor } from "@/lib/curricula";
 import { domains, universities } from "@/lib/data";
 import { ADMISSION_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, specializationsFor, universityById } from "@/lib/universities";
 
@@ -62,6 +63,7 @@ export default async function UniversityPage({ params }: Props) {
   const u = universityById(id);
   if (!u) notFound();
   const uniDomains = u.domainIds.map((d) => domains.find((x) => x.id === d)).filter((d): d is NonNullable<typeof d> => !!d);
+  const planLink = u.region === "ro" ? curriculumLinkFor(u.id) : undefined;
   const specs = uniDomains.flatMap((d) => specializationsFor(d.id).map((s) => ({ ...s, domainName: d.name })));
   const certs = u.certificates.map((c) => CERTIFICATE_LABEL[c]).filter(Boolean);
   const admission = u.admissionTypes.map((a) => ADMISSION_LABEL[a]).filter(Boolean);
@@ -159,6 +161,24 @@ export default async function UniversityPage({ params }: Props) {
         </Group>
 
         <Group id="despre" title="Despre">
+          {planLink && (
+            <Section title="Planuri de învățământ">
+              <p>
+                {planLink.kind === "plans"
+                  ? "Universitatea publică pe site-ul ei planurile de învățământ: materiile din fiecare an."
+                  : "Pe site-ul universității găsești lista programelor de studii; de acolo ajungi la planul de învățământ al fiecărei facultăți."}
+              </p>
+              <a
+                href={planLink.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-plan-link
+                className="mt-1 inline-flex min-h-11 items-center font-bold text-primary underline decoration-primary/40 underline-offset-2 hover:text-primary-dark"
+              >
+                {planLink.kind === "plans" ? "Vezi planurile de învățământ pe site-ul oficial ↗" : "Vezi programele de studii pe site-ul oficial ↗"}
+              </a>
+            </Section>
+          )}
           {u.language && (
             <Section title="Limba de predare">
               <p>{u.language}</p>

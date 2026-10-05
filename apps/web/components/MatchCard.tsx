@@ -2,6 +2,8 @@
 import type { CSSProperties, ReactNode } from "react";
 import Link from "next/link";
 import type { Match, StudyPlace, University } from "@/lib/types";
+import { curriculumFor } from "@/lib/curricula";
+import { CurriculumPlan } from "./CurriculumPlan";
 import { FAMILY_CLASSES, domainStyle } from "./domainStyle";
 import { UniversityList } from "./UniversityList";
 
@@ -98,6 +100,12 @@ export function MatchCard({ match, rank, where, city }: { match: Match; rank: nu
               </li>
             ))}
           </ul>
+        </Row>
+      )}
+
+      {curriculumFor(domain.id) && (
+        <Row title="Ce înveți, an cu an">
+          <CurriculumPlan domainId={domain.id} />
         </Row>
       )}
 

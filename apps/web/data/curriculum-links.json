@@ -1,0 +1,287 @@
+[
+  {
+    "id": "unibuc",
+    "url": "https://unibuc.ro/studii/programe-de-studii/licenta/",
+    "kind": "programs"
+  },
+  {
+    "id": "upb",
+    "url": "https://upb.ro/facultati/",
+    "kind": "programs"
+  },
+  {
+    "id": "ase-bucuresti",
+    "url": "https://ase.ro/admitere/licenta/",
+    "kind": "plans"
+  },
+  {
+    "id": "umf-carol-davila",
+    "url": "https://umfcd.ro/educatie/facultati-si-resurse/",
+    "kind": "programs"
+  },
+  {
+    "id": "snspa",
+    "url": "https://snspa.ro/licenta/",
+    "kind": "programs"
+  },
+  {
+    "id": "uauim",
+    "url": "https://uauim.ro/facultati/",
+    "kind": "programs"
+  },
+  {
+    "id": "utcb",
+    "url": "https://utcb.ro/studiaza/",
+    "kind": "programs"
+  },
+  {
+    "id": "unatc",
+    "url": "https://student.unatc.ro/informatii-programe/",
+    "kind": "plans"
+  },
+  {
+    "id": "unmb",
+    "url": "https://www.unmb.ro/oferta-educationala/",
+    "kind": "programs"
+  },
+  {
+    "id": "unefs",
+    "url": "https://admitere.unefs.ro/licenta",
+    "kind": "programs"
+  },
+  {
+    "id": "ubb-cluj",
+    "url": "https://www.ubbcluj.ro/ro/programe_academice/licenta/",
+    "kind": "programs"
+  },
+  {
+    "id": "utcn",
+    "url": "https://utcluj.ro/student-la-utcn/facultati",
+    "kind": "programs"
+  },
+  {
+    "id": "umf-cluj",
+    "url": "https://umfcluj.ro/programe-studii/licenta/",
+    "kind": "programs"
+  },
+  {
+    "id": "uad-cluj",
+    "url": "https://www.uad.ro/studenti/cursuri_examene/planuri_invatamant/",
+    "kind": "plans"
+  },
+  {
+    "id": "amgd-cluj",
+    "url": "https://anmgd.ro/admitere/licenta/",
+    "kind": "programs"
+  },
+  {
+    "id": "uaic",
+    "url": "https://www.uaic.ro/studii/",
+    "kind": "programs"
+  },
+  {
+    "id": "umf-iasi",
+    "url": "https://www.umfiasi.ro/ro/academic/programe-de-studii/licenta/Pagini/default.aspx",
+    "kind": "programs"
+  },
+  {
+    "id": "iuls",
+    "url": "https://iuls.ro/academic/studii-universitare-de-licenta/",
+    "kind": "programs"
+  },
+  {
+    "id": "arte-iasi",
+    "url": "https://www.arteiasi.ro/acreditarea-programelor-de-studii/",
+    "kind": "programs"
+  },
+  {
+    "id": "uvt",
+    "url": "https://uvt.ro/educatie/studii-la-uvt/studii-universitare-de-licenta/",
+    "kind": "programs"
+  },
+  {
+    "id": "upt",
+    "url": "https://www.upt.ro/educatie/licenta/planuri-de-invatamant",
+    "kind": "plans"
+  },
+  {
+    "id": "umft",
+    "url": "https://www.umft.ro/en/study-plans/",
+    "kind": "plans"
+  },
+  {
+    "id": "usvt",
+    "url": "https://usvt.ro/courses",
+    "kind": "programs"
+  },
+  {
+    "id": "ovidius",
+    "url": "https://www.univ-ovidius.ro/educatie/licenta/",
+    "kind": "programs"
+  },
+  {
+    "id": "umc",
+    "url": "https://cmu-edu.eu/navigatie/programe-de-studii/",
+    "kind": "programs"
+  },
+  {
+    "id": "anmb",
+    "url": "https://www.anmb.ro/admitere",
+    "kind": "programs"
+  },
+  {
+    "id": "uoradea",
+    "url": "https://www.uoradea.ro/facultati/",
+    "kind": "programs"
+  },
+  {
+    "id": "umfst",
+    "url": "https://umfst.ro/programe/",
+    "kind": "programs"
+  },
+  {
+    "id": "usv-suceava",
+    "url": "https://usv.ro/academic/programe-academice/programe-licenta-zi",
+    "kind": "programs"
+  },
+  {
+    "id": "upg",
+    "url": "https://www.upg-ploiesti.ro/index.php/programe-licenta/",
+    "kind": "programs"
+  },
+  {
+    "id": "uab",
+    "url": "https://www.uab.ro/admitere/programe-de-studiu/",
+    "kind": "programs"
+  },
+  {
+    "id": "valahia",
+    "url": "https://www.valahia.ro/facultati-uvt/",
+    "kind": "programs"
+  },
+  {
+    "id": "ub-bacau",
+    "url": "https://www.ub.ro/ghid-de-studii",
+    "kind": "programs"
+  },
+  {
+    "id": "uav-arad",
+    "url": "https://www.uav.ro/academic/cicluri-programe-studii",
+    "kind": "programs"
+  },
+  {
+    "id": "utgjiu",
+    "url": "https://www.utgjiu.ro/studii-de-licenta/",
+    "kind": "programs"
+  },
+  {
+    "id": "upet",
+    "url": "https://www.upet.ro/educatie/programe-studii-licenta/",
+    "kind": "plans"
+  },
+  {
+    "id": "aft-sibiu",
+    "url": "https://www.armyacademy.ro/admitere_licenta.php",
+    "kind": "programs"
+  },
+  {
+    "id": "afa-brasov",
+    "url": "https://www.afahc.ro/ro/programe_studii/admitere_licenta.html",
+    "kind": "programs"
+  },
+  {
+    "id": "uat-tgmures",
+    "url": "https://www.uat.ro/facultati-si-programe-de-studiu",
+    "kind": "programs"
+  },
+  {
+    "id": "rau",
+    "url": "https://www.rau.ro/gaseste-un-program/",
+    "kind": "programs"
+  },
+  {
+    "id": "utm",
+    "url": "https://www.utm.ro/admitere-2026-1/",
+    "kind": "programs"
+  },
+  {
+    "id": "ucdc",
+    "url": "https://www.ucdc.ro/oferta-educationala/",
+    "kind": "programs"
+  },
+  {
+    "id": "spiru-haret",
+    "url": "https://spiruharet.ro/prezentare-licenta/",
+    "kind": "programs"
+  },
+  {
+    "id": "sapientia",
+    "url": "https://sapientia.ro/ro/educatie/programe-de-studiu-de-licenta",
+    "kind": "programs"
+  },
+  {
+    "id": "uvvg",
+    "url": "https://www.uvvg.ro/vreau-sa-studiez/",
+    "kind": "programs"
+  },
+  {
+    "id": "upa-iasi",
+    "url": "https://www.upa.ro/admitere-2026-2027/",
+    "kind": "programs"
+  },
+  {
+    "id": "hyperion",
+    "url": "https://www.hyperion.ro/admitere/licenta",
+    "kind": "programs"
+  },
+  {
+    "id": "ueb",
+    "url": "https://ueb.ro/programe/licenta/",
+    "kind": "programs"
+  },
+  {
+    "id": "danubius",
+    "url": "https://univ-danubius.ro/studenti/utile/planuri-de-invatamant-facultati",
+    "kind": "programs"
+  },
+  {
+    "id": "ucb-pitesti",
+    "url": "https://www.univcb.ro/planuri-de-invatamant",
+    "kind": "plans"
+  },
+  {
+    "id": "george-bacovia",
+    "url": "https://www.ugb.ro/index.php/studii-2/studii-de-licenta/",
+    "kind": "programs"
+  },
+  {
+    "id": "emanuel-oradea",
+    "url": "https://emanuel.ro/programe-academice",
+    "kind": "plans"
+  },
+  {
+    "id": "agora-oradea",
+    "url": "https://www.univagora.ro/facultati/academic/licenta-masterat/",
+    "kind": "programs"
+  },
+  {
+    "id": "tibiscus",
+    "url": "https://tibiscus.ro/facultati/",
+    "kind": "programs"
+  },
+  {
+    "id": "apollonia",
+    "url": "https://www.univapollonia.ro/licenta/",
+    "kind": "programs"
+  },
+  {
+    "id": "artifex",
+    "url": "https://www.artifex.org.ro/oferta-educationala/planuri-de-invatamant/",
+    "kind": "plans"
+  },
+  {
+    "id": "adventus",
+    "url": "https://uadventus.ro/ciclul-i-studii-universitare-de-licenta/",
+    "kind": "programs"
+  }
+]
