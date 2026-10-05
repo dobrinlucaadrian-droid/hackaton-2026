@@ -23,10 +23,10 @@ lista de commit-uri de la final se reface singură.
 
 ### 2026-10-05 10:18 — încă 7 studenți pe pagina „Ce spun studenții”
 - Cerut: echipa a trimis 7 studenți noi (texte reale, cu acordul lor) și a spus „poți începe”; ce lipsea să fie lăsat deoparte
-- Făcut: adăugați Ruxandra Marmandiu (Columbia University), Bianca Donici (Communication Arts, University of Wisconsin–Madison, fără poză), Carina (Les Roches, doar prenumele, fără poză), Andra Draghici (Medicină Dentară, UMF „Carol Davila”), Luca Gutumanu (Drept, Paris-Saclay), Maya Mirt (Asistență Medicală, Hogeschool Inholland Amsterdam), Andreea Birca Nadolu (Studii de Securitate, Universitatea de Vest din Timișoara); pozele decupate pătrat pe față (cea a Mayei luminată puțin); căutarea găsește și după „columbia”, „wisconsin”, „carol davila”, „saclay”, „inholland”, „uvt”, „olanda”. Texte neschimbate, cu două excepții anunțate echipei: la Bianca Donici scos „Mă numesc Donici Bianca și” și corectat „literatura in teatru” în „literatura și teatrul”. Pagina principală arată acum 21 de păreri
+- Făcut: adăugați Ruxandra Marmandiu (Columbia University), Bianca Donici (Communication Arts, University of Wisconsin–Madison, fără poză), Carina (Les Roches, doar prenumele, fără poză), Andra Drăghici (Medicină Dentară, UMF „Carol Davila”), Luca Gutumanu (Drept, Paris-Saclay), Maya Mirt (Asistență Medicală, Hogeschool Inholland Amsterdam), Andreea Birca Nadolu (Studii de Securitate, Universitatea de Vest din Timișoara); pozele decupate pătrat pe față (cea a Mayei luminată puțin); căutarea găsește și după „columbia”, „wisconsin”, „carol davila”, „saclay”, „inholland”, „uvt”, „olanda”. Texte neschimbate, cu două excepții anunțate echipei: la Bianca Donici scos „Mă numesc Donici Bianca și” și corectat „literatura in teatru” în „literatura și teatrul”. Pagina principală arată acum 21 de păreri
 - Fișiere: `apps/web/data/testimonials.json`, `apps/web/components/StudentVoices.tsx`, `apps/web/public/studenti/` (5 poze noi)
 - Poartă: TRECUT (build, 62 de teste, pornire); într-un browser separat, pe laptop și la lățime de telefon: 21 de păreri, fiecare student nou găsit după universitatea lui, „drept” → 4, „medicina” → 2, fără erori; pozele văzute în captură. NEVERIFICAT: pe un telefon real
-- De confirmat de echipă: numele de familie al Carinei, ce studiază și campusul; ce studiază Ruxandra; scrierea „Draghici/Drăghici” și „Birca Nadolu”; că „UVT” înseamnă Universitatea de Vest din Timișoara
+- De confirmat de echipă: numele de familie al Carinei, ce studiază și campusul; ce studiază Ruxandra; scrierea „Birca Nadolu” (echipa a confirmat ulterior „Drăghici”, corectat); că „UVT” înseamnă Universitatea de Vest din Timișoara
 - Urmează: publicare la cererea echipei; `/pitch`
 
 ### 2026-10-05 01:35 — orașul în chestionar: universități doar din orașul ales
@@ -305,6 +305,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-05 10:19 `4e9ff71` feat: add seven more student opinions with photos
 - 2026-10-05 01:35 `65cbccc` feat: ask the city in the questionnaire and list only universities from that city
 - 2026-10-05 01:24 `6d6fbdf` feat: 18 researched scenario questions in the questionnaire, balanced across the ten traits
 - 2026-10-05 00:59 `482966a` feat: replace the random card with a guided interest picker on the specializations page
@@ -334,5 +335,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 14:35 `7392526` feat: activities step - competitions, volunteering and diploma photo feed the matching
 - 2026-10-04 13:59 `b40f794` feat: cheerful cool-colour redesign with illustrations and animations
 - 2026-10-04 13:37 `da25839` feat: back button on the student voices page
-- 2026-10-04 13:35 `6aabf5a` fix: slider changes made at the same instant no longer overwrite each other
 <!-- commits:end -->
