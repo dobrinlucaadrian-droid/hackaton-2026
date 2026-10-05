@@ -39,6 +39,7 @@ const EXTRA_WORDS: Record<string, string> = {
   "Universitatea Paris-Saclay": "franta paris saclay",
   "Hogeschool Inholland": "olanda amsterdam asistenta medicala",
   "Universitatea de Vest din Timișoara": "uvt securitate",
+  "Universidad Europea": "spania madrid valencia europeana",
 };
 
 type Group = { university: string; people: Testimonial[] };

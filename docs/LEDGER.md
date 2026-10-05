@@ -7,7 +7,7 @@ lista de commit-uri de la final se reface singură.
 
 - **Scop:** UniPath — ghid între liceu și facultate (tema „The Middle Man”). Prezentarea e azi, 2026-10-05 (ora nu a fost spusă)
 - **Unde:** aplicația e în `apps/web` (pagini: `/`, `/specializari`, `/specializari/[categorie]`, `/universitati`, `/universitati/[id]`, `/test`, `/quiz`, `/rezultat`, `/studenti`), publicată la https://unipath-taupe-mu.vercel.app
-- **Urmează:** `/pitch` — prezentarea și scenariul de demo (prezentarea e pe 2026-10-05). Pagina studenților are 21 de păreri reale; fără poză: Alexandru Badea, Alexa Munteanu, Bianca Donici și Carina
+- **Urmează:** `/pitch` — prezentarea și scenariul de demo (prezentarea e pe 2026-10-05). Pagina studenților are 24 de păreri reale; fără poză: Alexandru Badea, Alexa Munteanu, Bianca Donici și Carina
 - **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
 
 ## Jurnal
@@ -20,6 +20,14 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-05 11:07 — încă 3 studenți pe pagina „Ce spun studenții”
+- Cerut: echipa a trimis încă 3 studenți (texte reale, cu acordul lor) și a spus „poți începe”
+- Făcut: adăugate Andreea Lixandru (Universidad Europea, Spania), Andra Mehedintu (Medicină, UMF „Carol Davila”, absolventă — apare lângă Andra Drăghici, aceeași universitate) și Anastasia Cerempei (International Economics and Finance, Bocconi, anul 2 — apare lângă David Vasile); pozele decupate pătrat pe față. Schimbări în texte, anunțate echipei: diacritice puse la Andra și Anastasia fără să se schimbe vreun cuvânt, numele scos de la sfârșitul textului, „mulțumit” corectat în „mulțumită” la Andreea. Pagina are acum 24 de păreri
+- Fișiere: `apps/web/data/testimonials.json`, `apps/web/components/StudentVoices.tsx`, `apps/web/public/studenti/` (3 poze noi)
+- Poartă: TRECUT (build, 68 de teste, pornire); într-un browser separat, pe laptop și la lățime de telefon: 24 de păreri; „carol davila” → Andra Drăghici și Andra Mehedintu, alături; „bocconi” → David Vasile și Anastasia Cerempei, alături; „europea” → Andreea Lixandru; fără erori. NEVERIFICAT: pe un telefon real
+- De confirmat de echipă: ce studiază Andreea și în ce oraș; scrierea „Mehedintu/Mehedințu”; rămân și cele dinainte (Carina, Ruxandra)
+- Urmează: publicare la cererea echipei; `/pitch`
 
 ### 2026-10-05 11:02 — fișa universității: domeniul se deschide pe loc
 - Cerut: pe fișa unei universități, la „Ce poți studia aici”, apăsarea pe „Informatică” scotea elevul din pagină (îl ducea la căutare) în loc să-i arate ce informatică se poate studia. Înainte: planurile de învățământ publicate la cererea echipei
@@ -320,6 +328,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-05 11:02 `7c6d654` fix: open a domain in place on the university sheet instead of leaving the page
 - 2026-10-05 10:53 `c75b5eb` feat: subjects per year for every domain and official curriculum links
 - 2026-10-05 10:20 `1aa0610` fix: spell the student's name Drăghici
 - 2026-10-05 10:19 `4e9ff71` feat: add seven more student opinions with photos
@@ -349,5 +358,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 15:18 `b51f84f` feat: four real student opinions with photos on the student voices page
 - 2026-10-04 14:56 `dbc0fef` feat: logo palette (navy, burgundy) plus gold on the new design
 - 2026-10-04 14:43 `79f354e` docs: add screenshots of each screen
-- 2026-10-04 14:35 `7392526` feat: activities step - competitions, volunteering and diploma photo feed the matching
 <!-- commits:end -->
