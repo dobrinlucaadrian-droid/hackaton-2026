@@ -336,6 +336,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-05 11:19 `763e331` feat: show student opinions in university search results and on university sheets
 - 2026-10-05 11:07 `fdc7024` feat: add three more student opinions with photos
 - 2026-10-05 11:02 `7c6d654` fix: open a domain in place on the university sheet instead of leaving the page
 - 2026-10-05 10:53 `c75b5eb` feat: subjects per year for every domain and official curriculum links
@@ -365,5 +366,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 15:32 `53386e1` feat: add two more student opinions
 - 2026-10-04 15:25 `dfe2825` feat: add Victoria Dumitru's photo to her opinion
 - 2026-10-04 15:18 `b51f84f` feat: four real student opinions with photos on the student voices page
-- 2026-10-04 14:56 `dbc0fef` feat: logo palette (navy, burgundy) plus gold on the new design
 <!-- commits:end -->
