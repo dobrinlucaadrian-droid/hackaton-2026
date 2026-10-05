@@ -7,7 +7,7 @@ lista de commit-uri de la final se reface singură.
 
 - **Scop:** UniPath — ghid între liceu și facultate (tema „The Middle Man”). Prezentarea e azi, 2026-10-05 (ora nu a fost spusă)
 - **Unde:** aplicația e în `apps/web` (pagini: `/`, `/specializari`, `/specializari/[categorie]`, `/universitati`, `/universitati/[id]`, `/test`, `/quiz`, `/rezultat`, `/studenti`), publicată la https://unipath-taupe-mu.vercel.app
-- **Urmează:** `/pitch` — prezentarea și scenariul de demo (prezentarea e pe 2026-10-05). Pagina studenților are 14 păreri reale; fără poză: Alexandru Badea și Alexa Munteanu
+- **Urmează:** `/pitch` — prezentarea și scenariul de demo (prezentarea e pe 2026-10-05). Pagina studenților are 21 de păreri reale; fără poză: Alexandru Badea, Alexa Munteanu, Bianca Donici și Carina
 - **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
 
 ## Jurnal
@@ -20,6 +20,14 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-05 10:18 — încă 7 studenți pe pagina „Ce spun studenții”
+- Cerut: echipa a trimis 7 studenți noi (texte reale, cu acordul lor) și a spus „poți începe”; ce lipsea să fie lăsat deoparte
+- Făcut: adăugați Ruxandra Marmandiu (Columbia University), Bianca Donici (Communication Arts, University of Wisconsin–Madison, fără poză), Carina (Les Roches, doar prenumele, fără poză), Andra Draghici (Medicină Dentară, UMF „Carol Davila”), Luca Gutumanu (Drept, Paris-Saclay), Maya Mirt (Asistență Medicală, Hogeschool Inholland Amsterdam), Andreea Birca Nadolu (Studii de Securitate, Universitatea de Vest din Timișoara); pozele decupate pătrat pe față (cea a Mayei luminată puțin); căutarea găsește și după „columbia”, „wisconsin”, „carol davila”, „saclay”, „inholland”, „uvt”, „olanda”. Texte neschimbate, cu două excepții anunțate echipei: la Bianca Donici scos „Mă numesc Donici Bianca și” și corectat „literatura in teatru” în „literatura și teatrul”. Pagina principală arată acum 21 de păreri
+- Fișiere: `apps/web/data/testimonials.json`, `apps/web/components/StudentVoices.tsx`, `apps/web/public/studenti/` (5 poze noi)
+- Poartă: TRECUT (build, 62 de teste, pornire); într-un browser separat, pe laptop și la lățime de telefon: 21 de păreri, fiecare student nou găsit după universitatea lui, „drept” → 4, „medicina” → 2, fără erori; pozele văzute în captură. NEVERIFICAT: pe un telefon real
+- De confirmat de echipă: numele de familie al Carinei, ce studiază și campusul; ce studiază Ruxandra; scrierea „Draghici/Drăghici” și „Birca Nadolu”; că „UVT” înseamnă Universitatea de Vest din Timișoara
+- Urmează: publicare la cererea echipei; `/pitch`
 
 ### 2026-10-05 01:35 — orașul în chestionar: universități doar din orașul ales
 - Cerut: chestionarul să întrebe și orașul, ca elevul care alege București să nu primească universități din Alba Iulia. Echipa a ales: întrebarea la ultimul pas, listă doar cu orașele în care avem universități, iar dacă orașul nu are nimic pentru domeniu arătăm alte orașe cu mesaj clar
@@ -297,6 +305,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-05 01:35 `65cbccc` feat: ask the city in the questionnaire and list only universities from that city
 - 2026-10-05 01:24 `6d6fbdf` feat: 18 researched scenario questions in the questionnaire, balanced across the ten traits
 - 2026-10-05 00:59 `482966a` feat: replace the random card with a guided interest picker on the specializations page
 - 2026-10-05 00:51 `4c91def` feat: illustration and a surprise-me card on the specializations page
@@ -326,5 +335,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 13:59 `b40f794` feat: cheerful cool-colour redesign with illustrations and animations
 - 2026-10-04 13:37 `da25839` feat: back button on the student voices page
 - 2026-10-04 13:35 `6aabf5a` fix: slider changes made at the same instant no longer overwrite each other
-- 2026-10-04 13:31 `ba2ae6b` docs: phone test confirmed by the team
 <!-- commits:end -->

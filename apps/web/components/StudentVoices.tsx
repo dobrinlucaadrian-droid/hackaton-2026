@@ -32,6 +32,13 @@ const EXTRA_WORDS: Record<string, string> = {
   "Medicină, Lyon (Franța)": "medicina",
   "Universitatea Bocconi": "milano italia",
   "La Salle Barcelona": "spania",
+  "Columbia University": "ivy league america statele unite usa",
+  "University of Wisconsin–Madison": "wisconsin madison america statele unite usa comunicare",
+  "Les Roches": "elvetia spania ospitalitate hotel",
+  "UMF „Carol Davila” București": "umfcd stomatologie medicina",
+  "Universitatea Paris-Saclay": "franta paris saclay",
+  "Hogeschool Inholland": "olanda amsterdam asistenta medicala",
+  "Universitatea de Vest din Timișoara": "uvt securitate",
 };
 
 type Group = { university: string; people: Testimonial[] };

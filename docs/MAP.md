@@ -127,7 +127,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `SearchBox.tsx` (45) — Search box with a magnifier icon; submits to /universitati?q=... or calls onSearch when given.. Exports: SearchBox
 - `Shell.tsx` (40) — Page frame shared by all screens: header with the UniPath logo and three-dots motif, and a centered content column.. Exports: Shell, Notice
 - `SpecializationsBrowser.tsx` (82) — /specializari body: a text filter over all categories, domains and specializations; without text it shows the category tiles.. Exports: SpecializationsBrowser
-- `StudentVoices.tsx` (193) — Student opinions with a search box: type a faculty or university and see every opinion we have from there.. Exports: StudentVoices
+- `StudentVoices.tsx` (200) — Student opinions with a search box: type a faculty or university and see every opinion we have from there.. Exports: StudentVoices
 - `UniversityBadges.tsx` (23) — Small coloured badges for a university's prestige and budget level, shared by result cards and the profile sheet.. Exports: PrestigeBadge, BudgetBadge
 - `UniversityCard.tsx` (61) — Compact university result card: name, place, badges, three short facts and a link to the full sheet (the whole card is clickable).. Exports: UniversityCard
 - `UniversityList.tsx` (48) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList
@@ -142,7 +142,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `profiles.json` (15) — JSON array, 12 items
 - `questions.json` (729) — JSON array, 18 items
 - `specializations.json` (209) — JSON array, 206 items
-- `testimonials.json` (99) — JSON array, 14 items
+- `testimonials.json` (146) — JSON array, 21 items
 - `universities-abroad.json` (3203) — JSON array, 57 items
 - `universities-ro.json` (3487) — JSON array, 74 items
 
@@ -165,8 +165,10 @@ _Open only the files listed here; a file's description is its first comment line
 - `logo.png`
 - `world-universities.json`
 
-### apps/web/public/studenti  (12 files)
+### apps/web/public/studenti  (17 files)
 
+- `andra-draghici.jpg`
+- `andreea-birca-nadolu.jpg`
 - `anton-mocanu.jpg`
 - `ariana-visan.jpg`
 - `bianca-mermezan.jpg`
@@ -174,8 +176,11 @@ _Open only the files listed here; a file's description is its first comment line
 - `eliza-florescu.jpg`
 - `irene-enculescu.jpg`
 - `julie-vuillaume.jpg`
+- `luca-gutumanu.jpg`
+- `maya-mirt.jpg`
 - `mihai-florea.jpg`
 - `robert-radoi.jpg`
+- `ruxandra-marmandiu.jpg`
 - `tudor-demusca.jpg`
 - `victoria-dumitru.jpg`
 - `zara-faflei.jpg`
