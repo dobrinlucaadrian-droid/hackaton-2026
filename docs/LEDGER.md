@@ -7,7 +7,7 @@ lista de commit-uri de la final se reface singură.
 
 - **Scop:** UniPath — ghid între liceu și facultate (tema „The Middle Man”). Prezentarea e azi, 2026-10-05 (ora nu a fost spusă)
 - **Unde:** aplicația e în `apps/web` (pagini: `/`, `/specializari`, `/specializari/[categorie]`, `/universitati`, `/universitati/[id]`, `/test`, `/quiz`, `/rezultat`, `/studenti`), publicată la https://unipath-taupe-mu.vercel.app
-- **Urmează:** `/pitch` — prezentarea și scenariul de demo (prezentarea e pe 2026-10-05). Pagina studenților are 24 de păreri reale; fără poză: Alexandru Badea, Alexa Munteanu, Bianca Donici și Carina
+- **Urmează:** faza de producție pe ramura `production` (plan în `docs/production-plan.md`): pasul 1 — contul Convex al echipei, apoi tabelele și regulile de acces. Prezentarea a avut loc pe 2026-10-05; `main` rămâne cum a fost prezentat
 - **De știut:** Vercel CLI e logat doar în aplicația Claude (cont `dobrinlucaadrian-7970`); proiectul de probă `hackaton-proba` din Vercel se poate șterge
 
 ## Jurnal
@@ -20,6 +20,14 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-06 00:00 — faza de producție, pasul 1 (început): ramura `production`, plan și pachete
+- Cerut: după prezentare, echipa vrea să treacă de la demo la o versiune de producție: conturi pentru utilizatori, bază de date și păreri de studenți păstrate în ea, cu verificări de securitate; agentul de cercetare să caute proiecte de referință pe GitHub. Hotărâri luate cu echipa: bază de date Convex; conectare cu link pe email și Google (Convex Auth); conturi pentru elevi și pentru echipă; păreri prin formular public, aprobate de echipă; lucru pe o copie separată
+- Făcut: ramura `production` (`main` și adresa publică rămân neatinse); cercetarea și planul în 5 pași, cu lista de 18 verificări de securitate și punctele neverificate, în `docs/production-plan.md`; instalate și fixate la versiune exactă pachetele Convex (`convex`, `@convex-dev/auth`, `convex-helpers`, `@convex-dev/rate-limiter`, `convex-test`); început dosarul `apps/web/convex` cu o schemă goală; secțiunea „Stack” din `CLAUDE.md` actualizată. Încă nu există conturi, tabele sau funcții
+- Fișiere: `docs/production-plan.md` (nou), `CLAUDE.md`, `apps/web/package.json`, `apps/web/package-lock.json`, `apps/web/convex/schema.ts` (nou)
+- Poartă: TRECUT (build, 70 de teste, pornire) pe ramura `production`; `npm audit` pe pachetele aplicației: 0 probleme cunoscute. NEVERIFICAT: orice legătură cu Convex (nu există încă cont)
+- Urmează: echipa își face contul Convex și autorizează calculatorul (link dat de Claude); apoi tabelele și regulile comune de acces, cu teste
+- De știut: nu am verificat dacă datele pot sta în UE la Convex; partea juridică pentru minori trebuie văzută de un adult care se pricepe
 
 ### 2026-10-05 11:28 — logoul echipei în previzualizarea linkului și în filă
 - Cerut: când linkul aplicației e trimis pe WhatsApp apărea triunghiul negru (iconița implicită) în loc de logoul ales de echipă. Înainte: părerile din căutare publicate la cererea echipei; răspunsurile la grila de jurizare salvate în `docs/raspunsuri-juriu.md`
@@ -343,6 +351,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-05 11:28 `81704e7` feat: use the team logo for the site icon and the link preview
 - 2026-10-05 11:24 `f9a8e9a` docs: answers to the judging criteria
 - 2026-10-05 11:19 `763e331` feat: show student opinions in university search results and on university sheets
 - 2026-10-05 11:07 `fdc7024` feat: add three more student opinions with photos
@@ -372,5 +381,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 15:48 `a30bf9b` feat: add Zara Faflei's opinion and photo
 - 2026-10-04 15:36 `140f3a3` feat: show students from the same university side by side
 - 2026-10-04 15:32 `53386e1` feat: add two more student opinions
-- 2026-10-04 15:25 `dfe2825` feat: add Victoria Dumitru's photo to her opinion
 <!-- commits:end -->

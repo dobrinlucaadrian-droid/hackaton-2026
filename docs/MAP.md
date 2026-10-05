@@ -69,7 +69,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `README.md` (37) — _no description: add a first-line comment_
 - `eslint.config.mjs` (19) — _no description: add a first-line comment_
 - `next.config.ts` (8) — _no description: add a first-line comment_
-- `package.json` (29) — package "web"; scripts: dev, build, start, lint, test
+- `package.json` (35) — package "web"; scripts: dev, build, start, lint, test
 - `postcss.config.mjs` (8) — _no description: add a first-line comment_
 - `tsconfig.json` (35) — JSON; keys: compilerOptions, include, exclude
 
@@ -141,6 +141,10 @@ _Open only the files listed here; a file's description is its first comment line
 - `UniversitySearch.tsx` (381) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
 - `WhatIf.tsx` (69) — Collapsible "Ce-ar fi dacă?" panel: one slider per inclination, controlled by the result page.. Exports: WhatIf
 - `domainStyle.ts` (67) — Colour family and emoji for every study domain id, used on the result cards.. Exports: FAMILY_CLASSES, domainStyle
+
+### apps/web/convex  (1 files)
+
+- `schema.ts` (5) — Database tables for UniPath (filled in step by step).
 
 ### apps/web/data  (10 files)
 

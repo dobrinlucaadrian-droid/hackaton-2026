@@ -70,6 +70,16 @@ Next.js (one app in `apps/web`), pages only — no API routes, no API keys, no
 database. Programme data is seeded JSON inside the app; matching is
 rule-based and runs in the browser.
 
+**Production phase (decided 2026-10-05, after the presentation; branch
+`production`):** user accounts, a database and moderated student reviews are
+being added. Backend and database: Convex (functions in `apps/web/convex`).
+Sign-in: Convex Auth with an email magic link (Resend) and Google, no
+passwords. Reviews come through a public form and are shown only after an
+administrator approves them. The plan, the security checklist and the open
+points are in `docs/production-plan.md`. `main` and the public address stay
+as presented until the team says otherwise; nothing from `production` is
+deployed to the public address without the team asking.
+
 **Constraint: the app must run on Vercel**, because Claude deploys it with the
 Vercel CLI (`/deploy-demo`) and the team cannot deploy any other way. Choose:
 
