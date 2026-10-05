@@ -18,6 +18,11 @@ const magicLink = Resend({
   from: process.env.AUTH_EMAIL_FROM ?? "UniPath <onboarding@resend.dev>",
   maxAge: 15 * 60, // the link works for 15 minutes
   async sendVerificationRequest({ identifier: email, url, provider }) {
+    // Development only (AUTH_DEV_LOG_LINKS=1 is set just on the dev deployment): write the link to the function log instead of emailing it.
+    if (process.env.AUTH_DEV_LOG_LINKS === "1") {
+      console.log(`[dev sign-in link] ${email} ${url}`);
+      return;
+    }
     const res = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: { Authorization: `Bearer ${provider.apiKey}`, "Content-Type": "application/json" },

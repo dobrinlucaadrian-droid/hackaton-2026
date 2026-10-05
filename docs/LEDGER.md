@@ -21,6 +21,14 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-06 01:05 — producție, pasul 2: conectarea probată cap-coadă pe baza de dezvoltare
+- Cerut: echipa a cerut să lucrez întâi local, fără să depind de ea, și abia apoi să trecem la nivelul următor (chei și servicii reale)
+- Făcut: comutator doar pentru dezvoltare (`AUTH_DEV_LOG_LINKS=1`, pus numai pe baza de dezvoltare): linkul de conectare se scrie în jurnalul funcțiilor în loc să plece pe email, ca fluxul să poată fi probat fără cheia Resend. În producție comutatorul nu se pune, iar emailul pleacă prin Resend
+- Fișiere: `apps/web/convex/auth.ts`, `apps/web/convex/account.ts`
+- Poartă: TRECUT (build, 80 de teste, pornire). Probă reală într-un browser separat, la lățime de telefon, pe baza de dezvoltare: chestionar → „Salvează în contul meu” → conectare cu email de probă → linkul deschis → „Contul meu” arată emailul și cele 3 domenii, salvate automat (Medicină dentară, Medicină, Farmacie; Iași); `/conectare` când ești conectat duce la cont; deconectarea închide accesul la `/cont`; același link folosit a doua oară NU mai conectează; al doilea link merge și rezultatul e tot acolo; „Șterge contul” cere confirmare, iar după ea baza de date are 0 utilizatori, 0 rezultate, 0 sesiuni, 0 conturi de conectare; fără erori. NEVERIFICAT: trimiterea reală a emailului prin Resend; Google; pe un telefon real
+- De știut: cheia Resend lipită de echipă în conversație nu a fost folosită și trebuie înlocuită cu una nouă înainte de a fi pusă în Convex
+- Urmează: pasul 3 (păreri: formular public, coadă de aprobare, pagină de administrare), tot local
+
 ### 2026-10-06 00:27 — producție, pasul 2 (în lucru): conectare, „Contul meu”, salvarea rezultatului
 - Cerut: pasul 2 din plan (conturi). Echipa și-a făcut cont la Resend; administratorii nu sunt încă hotărâți
 - Făcut: conectare fără parolă cu link pe email (text în română, valabil 15 minute, trimis prin Resend) și buton Google care apare doar după ce e configurat; pagina `/conectare`; pagina `/cont` („Contul meu”: emailul, rezultatul salvat, deconectare, ștergerea contului cu tot ce ține de el); pe rezultat, „Salvează în contul meu” (dacă elevul nu e conectat, rezultatul rămâne pe dispozitiv până se conectează și se salvează apoi singur); în meniu „Conectare” / „Contul meu”; `proxy.ts` trimite vizitatorii neconectați de la `/cont` la `/conectare` (verificarea adevărată e în funcțiile Convex). Rolul de administrator e pus doar de server, după emailul verificat, din setarea `ADMIN_EMAILS` (goală deocamdată). Cheile de semnare a sesiunilor au fost generate și puse direct în Convex, fără să apară în cod sau în conversație
@@ -367,6 +375,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-06 00:27 `ce65453` feat: passwordless sign-in, account page and saving the result
 - 2026-10-06 00:06 `b4aeabc` feat: Convex schema, shared access rules and access tests
 - 2026-10-06 00:00 `2c23414` chore: start the production phase with Convex packages and the plan
 - 2026-10-05 11:28 `81704e7` feat: use the team logo for the site icon and the link preview
@@ -396,5 +405,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 17:24 `9b62030` docs: presentation moved to 2026-10-05
 - 2026-10-04 17:22 `6092918` fix: world-list link check, loading and failure messages, ignore prestige=national
 - 2026-10-04 17:19 `46b3584` feat: home page with search, specializations, top-10 filters and university profile sheets
-- 2026-10-04 15:48 `a30bf9b` feat: add Zara Faflei's opinion and photo
 <!-- commits:end -->

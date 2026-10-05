@@ -22,7 +22,7 @@ export const signInMethods = query({
   args: {},
   returns: v.object({ email: v.boolean(), google: v.boolean() }),
   handler: async () => ({
-    email: !!process.env.AUTH_RESEND_KEY,
+    email: !!process.env.AUTH_RESEND_KEY || process.env.AUTH_DEV_LOG_LINKS === "1",
     google: !!process.env.AUTH_GOOGLE_ID && !!process.env.AUTH_GOOGLE_SECRET,
   }),
 });

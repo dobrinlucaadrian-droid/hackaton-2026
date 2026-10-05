@@ -168,7 +168,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `access.ts` (34) — Shared access rules: every function that needs a signed-in user or an administrator is built from these wrappers, so the check cannot be forgotten.. Exports: userQuery, userMutation, adminQuery, adminMutation
 - `account.ts` (55) — The signed-in user's own account: who they are, which sign-in methods exist, and deleting the account with everything saved in it.. Exports: me, signInMethods, remove
 - `auth.config.ts` (12) — Tells Convex which issuer signs the session tokens (this deployment itself, through Convex Auth).
-- `auth.ts` (50) — Convex Auth setup: sign-in with an email magic link (sent through Resend) and, when configured, Google. No passwords are stored.. Exports: adminEmails
+- `auth.ts` (55) — Convex Auth setup: sign-in with an email magic link (sent through Resend) and, when configured, Google. No passwords are stored.. Exports: adminEmails
 - `http.ts` (9) — HTTP routes of the Convex backend: only the ones Convex Auth needs for sign-in.
 - `results.ts` (74) — A student's saved questionnaire result: each signed-in user can save, read and delete only their own.. Exports: mine, save, remove
 - `reviews.ts` (112) — Student reviews: anyone can read the approved ones; only administrators see the queue and approve or reject. New reviews enter only through an internal function.. Exports: LIMITS, listApproved, listByState, moderate, insertPending
