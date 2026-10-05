@@ -21,6 +21,14 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-06 00:27 — producție, pasul 2 (în lucru): conectare, „Contul meu”, salvarea rezultatului
+- Cerut: pasul 2 din plan (conturi). Echipa și-a făcut cont la Resend; administratorii nu sunt încă hotărâți
+- Făcut: conectare fără parolă cu link pe email (text în română, valabil 15 minute, trimis prin Resend) și buton Google care apare doar după ce e configurat; pagina `/conectare`; pagina `/cont` („Contul meu”: emailul, rezultatul salvat, deconectare, ștergerea contului cu tot ce ține de el); pe rezultat, „Salvează în contul meu” (dacă elevul nu e conectat, rezultatul rămâne pe dispozitiv până se conectează și se salvează apoi singur); în meniu „Conectare” / „Contul meu”; `proxy.ts` trimite vizitatorii neconectați de la `/cont` la `/conectare` (verificarea adevărată e în funcțiile Convex). Rolul de administrator e pus doar de server, după emailul verificat, din setarea `ADMIN_EMAILS` (goală deocamdată). Cheile de semnare a sesiunilor au fost generate și puse direct în Convex, fără să apară în cod sau în conversație
+- Fișiere: `apps/web/convex/auth.ts`, `apps/web/convex/account.ts` (nou), `apps/web/convex/access.test.ts`, `apps/web/proxy.ts` (nou), `apps/web/app/conectare/page.tsx` (nou), `apps/web/app/cont/page.tsx` (nou), `apps/web/components/ConvexClientProvider.tsx` (nou), `apps/web/components/SaveResult.tsx` (nou), `apps/web/components/NavLinks.tsx`, `apps/web/lib/pendingSave.ts` (nou), `apps/web/app/layout.tsx`, `apps/web/app/rezultat/page.tsx`, `apps/web/package.json`, `.env.example`
+- Poartă: TRECUT (build, 80 de teste, pornire) pe ramura `production`. Teste noi: „eu” e gol pentru vizitatori și nu spune „administrator” decât dacă așa scrie în baza de date; ștergerea contului scoate doar datele acelui utilizator. Într-un browser separat, pe laptop și la lățime de telefon: `/conectare` se deschide și spune cinstit că emailul nu e încă pornit (butonul e dezactivat); `/cont` neconectat duce la `/conectare`; paginile vechi merg ca înainte; după chestionar, „Salvează în contul meu” păstrează rezultatul pe dispozitiv și duce la conectare; fără erori. NEVERIFICAT: conectarea reală cu link pe email, salvarea în cont, pagina „Contul meu” conectat și ștergerea contului din pagină (lipsește cheia Resend); Google
+- De știut: toate paginile sunt acum generate la cerere, nu dinainte (sesiunea se citește la fiecare vizită) — de măsurat și optimizat înainte de lansare. Fără domeniu verificat în Resend, emailul se poate trimite doar către adresa contului Resend
+- Urmează: echipa pune cheia Resend în Convex (`AUTH_RESEND_KEY`); apoi probă reală de conectare, salvare și ștergere de cont; apoi pasul 3 (păreri)
+
 ### 2026-10-06 00:06 — producție, pasul 1: proiectul Convex, tabelele și regulile de acces
 - Cerut: pasul 1 din planul confirmat de echipă (temelia). Echipa și-a făcut contul Convex și a autorizat calculatorul din browser
 - Făcut: proiectul Convex „unipath” (bază de date de dezvoltare, în contul echipei); tabelele `users` (cu rol scris doar de server), `results` (rezultatul salvat al elevului) și `reviews` (păreri, cu stare în așteptare / aprobată / respinsă), plus tabelele Convex Auth; regulile comune de acces într-un singur loc (`convex/access.ts`): funcții pentru utilizator conectat și funcții doar pentru administrator; funcțiile pentru rezultat (salvează, citește, șterge — doar al tău) și pentru păreri (lista publică doar cu cele aprobate și fără câmpuri interne; coada și aprobarea doar pentru administratori; adăugarea unei păreri doar printr-o funcție internă, mereu „în așteptare”). Convex Auth e pus fără nicio metodă de conectare, deci încă nu se poate conecta nimeni. Aplicația (paginile) nu folosește încă baza de date
@@ -359,6 +367,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-06 00:06 `b4aeabc` feat: Convex schema, shared access rules and access tests
 - 2026-10-06 00:00 `2c23414` chore: start the production phase with Convex packages and the plan
 - 2026-10-05 11:28 `81704e7` feat: use the team logo for the site icon and the link preview
 - 2026-10-05 11:24 `f9a8e9a` docs: answers to the judging criteria
@@ -388,5 +397,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 17:22 `6092918` fix: world-list link check, loading and failure messages, ignore prestige=national
 - 2026-10-04 17:19 `46b3584` feat: home page with search, specializations, top-10 filters and university profile sheets
 - 2026-10-04 15:48 `a30bf9b` feat: add Zara Faflei's opinion and photo
-- 2026-10-04 15:36 `140f3a3` feat: show students from the same university side by side
 <!-- commits:end -->

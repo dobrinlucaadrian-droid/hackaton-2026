@@ -111,3 +111,27 @@ describe("reviews", () => {
     await expect(t.mutation(internal.reviews.insertPending, { ...REVIEW, text: "x".repeat(3001) })).rejects.toThrow("prea lungă");
   });
 });
+
+describe("account", () => {
+  it("me is null for visitors and never says admin unless the database does", async () => {
+    const { t, alice, admin, as } = await setup();
+    expect(await t.query(api.account.me, {})).toBeNull();
+    expect(await as(alice).query(api.account.me, {})).toEqual({ email: "alice@example.com", isAdmin: false });
+    expect(await as(admin).query(api.account.me, {})).toEqual({ email: "admin@example.com", isAdmin: true });
+  });
+
+  it("deleting the account removes that user's data and nobody else's", async () => {
+    const { t, alice, bob, as } = await setup();
+    await as(alice).mutation(api.results.save, RESULT);
+    await as(bob).mutation(api.results.save, RESULT);
+    await expect(t.mutation(api.account.remove, {})).rejects.toThrow("Trebuie să fii conectat");
+
+    await as(alice).mutation(api.account.remove, {});
+    const left = await t.run(async (ctx) => ({ users: await ctx.db.query("users").collect(), results: await ctx.db.query("results").collect() }));
+    expect(left.users.map((u) => u.email).sort()).toEqual(["admin@example.com", "bob@example.com"]);
+    expect(left.results).toHaveLength(1);
+    expect(left.results[0].userId).toBe(bob);
+    // The deleted user's old session can no longer read anything.
+    expect(await as(alice).query(api.account.me, {})).toBeNull();
+  });
+});

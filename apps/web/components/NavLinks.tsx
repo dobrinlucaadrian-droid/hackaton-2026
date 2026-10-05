@@ -1,5 +1,6 @@
 "use client";
-// Header navigation links with the current page highlighted.
+// Header navigation links with the current page highlighted; the last one is "Conectare" or "Contul meu".
+import { useConvexAuth } from "convex/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -13,10 +14,12 @@ const LINKS = [
 
 export function NavLinks() {
   const path = usePathname();
+  const { isAuthenticated } = useConvexAuth();
+  const account = isAuthenticated ? (["/cont", "Contul meu"] as const) : (["/conectare", "Conectare"] as const);
   return (
     <nav aria-label="Navigare principală" className="-mx-1 max-w-full overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       <ul className="flex items-center gap-1 whitespace-nowrap px-1">
-        {LINKS.map(([href, label]) => {
+        {[...LINKS, account].map(([href, label]) => {
           const on = href === "/" ? path === "/" : path === href || path.startsWith(`${href}/`);
           return (
             <li key={href}>

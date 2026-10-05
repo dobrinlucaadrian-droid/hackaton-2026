@@ -6,6 +6,7 @@ import { ActivitiesSummary } from "@/components/ActivitiesSummary";
 import { Confetti } from "@/components/Confetti";
 import { Diploma, Sparkle } from "@/components/Illustrations";
 import { MatchCard } from "@/components/MatchCard";
+import { SaveResult } from "@/components/SaveResult";
 import { Notice, Shell } from "@/components/Shell";
 import { WhatIf } from "@/components/WhatIf";
 import { TRAITS, matchByTraits, matchDomains, studentTraits } from "@/lib/match";
@@ -114,6 +115,16 @@ export default function ResultPage() {
           </div>
         ))}
       </div>
+
+      <SaveResult
+        result={{
+          profileId: state.answers.profileId,
+          where: state.answers.where,
+          ...(state.answers.city ? { city: state.answers.city } : {}),
+          choices: state.answers.choices,
+          topDomains: state.matches.map((m) => m.domain.id),
+        }}
+      />
 
       <p className="mx-auto mt-8 max-w-2xl rounded-2xl bg-primary-tint p-4 text-sm text-primary-dark" role="note">
         Chestionarul nu este un test psihologic validat: rezultatul e un punct de pornire, nu un verdict. Vorbește și cu

@@ -59,9 +59,9 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### (root)  (1 files)
 
-- `.env.example` (11) — env vars: CONVEX_DEPLOYMENT, NEXT_PUBLIC_CONVEX_URL, NEXT_PUBLIC_CONVEX_SITE_URL
+- `.env.example` (19) — env vars: CONVEX_DEPLOYMENT, NEXT_PUBLIC_CONVEX_URL, NEXT_PUBLIC_CONVEX_SITE_URL
 
-### apps/web  (10 files)
+### apps/web  (11 files)
 
 - `.gitignore`
 - `AGENTS.md` (10) — BEGIN:nextjs-agent-rules
@@ -69,8 +69,9 @@ _Open only the files listed here; a file's description is its first comment line
 - `README.md` (37) — _no description: add a first-line comment_
 - `eslint.config.mjs` (21) — _no description: add a first-line comment_
 - `next.config.ts` (8) — _no description: add a first-line comment_
-- `package.json` (35) — package "web"; scripts: dev, build, start, lint, test
+- `package.json` (36) — package "web"; scripts: dev, build, start, lint, test
 - `postcss.config.mjs` (8) — _no description: add a first-line comment_
+- `proxy.ts` (21) — Runs before every page: keeps the sign-in session fresh and sends visitors who are not signed in away from the account page.. Exports: config
 - `tsconfig.json` (35) — JSON; keys: compilerOptions, include, exclude
 - `vitest.config.ts` (9) — Vitest setup: the Convex function tests run with convex-test, which must be bundled by Vitest.
 
@@ -80,11 +81,19 @@ _Open only the files listed here; a file's description is its first comment line
 - `favicon.ico`
 - `globals.css` (129) — _no description: add a first-line comment_
 - `icon.png`
-- `layout.tsx` (36) — _no description: add a first-line comment_. Exports: metadata, RootLayout
+- `layout.tsx` (42) — _no description: add a first-line comment_. Exports: metadata, RootLayout
 - `not-found.tsx` (11) — Friendly 404 page shown for unknown routes and unknown university ids.. Exports: NotFound
 - `opengraph-image.alt.txt` (1) — _no description: add a first-line comment_
 - `opengraph-image.png`
 - `page.tsx` (77) — Home page: the hero with the two main actions and "UniPath în cifre" (counts taken from the data); search and specializations have their own pages.. Routes: /. Exports: Home
+
+### apps/web/app/conectare  (1 files)
+
+- `page.tsx` (105) — Sign-in page: the student types an email and receives a sign-in link; a Google button appears when Google sign-in is configured. No passwords.. Routes: /conectare. Exports: SignInPage
+
+### apps/web/app/cont  (1 files)
+
+- `page.tsx` (154) — "Contul meu": shows who is signed in and the saved questionnaire result, and lets the student sign out or delete the account.. Routes: /cont. Exports: AccountPage
 
 ### apps/web/app/quiz  (1 files)
 
@@ -92,7 +101,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/rezultat  (1 files)
 
-- `page.tsx` (132) — Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /rezultat. Exports: ResultPage
+- `page.tsx` (143) — Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /rezultat. Exports: ResultPage
 
 ### apps/web/app/specializari/[categorie]  (1 files)
 
@@ -118,18 +127,20 @@ _Open only the files listed here; a file's description is its first comment line
 
 - `page.tsx` (20) — University finder page: search box, filters and top 10 results (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
 
-### apps/web/components  (22 files)
+### apps/web/components  (24 files)
 
 - `ActivitiesStep.tsx` (227) — Quiz step "Ce ai făcut până acum?": add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
 - `ActivitiesSummary.tsx` (33) — Read-only list of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
 - `CategoryTiles.tsx` (29) — Grid of category tiles (emoji, name, domain and specialization counts), each linking to its category page.. Exports: CategoryTiles
 - `Confetti.tsx` (41) — A short burst of cool-coloured confetti, shown once when mounted and removed after about 3 seconds.. Exports: Confetti
+- `ConvexClientProvider.tsx` (12) — Connects the pages to the Convex database and keeps the sign-in session available to every component.. Exports: ConvexClientProvider
 - `CurriculumPlan.tsx` (38) — "Ce înveți, an cu an": the main subjects of each study year for a domain, taken from one official curriculum, with a link to it.. Exports: CurriculumPlan
 - `DomainDetails.tsx` (54) — One study domain as a native <details>: summary with emoji, name, count and chevron; inside the short text, specializations, the subjects per year and a link to universities.. Exports: DomainDetails
 - `Illustrations.tsx` (88) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots and the start-page hero.. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene
 - `InterestPicker.tsx` (129) — "Ce îți place?": the student picks up to three interests and sees the specializations that fit them best, ranked, with links to universities.. Exports: InterestPicker
 - `MatchCard.tsx` (184) — One result card: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
-- `NavLinks.tsx` (39) — Header navigation links with the current page highlighted.. Exports: NavLinks
+- `NavLinks.tsx` (42) — Header navigation links with the current page highlighted; the last one is "Conectare" or "Contul meu".. Exports: NavLinks
+- `SaveResult.tsx` (59) — "Salvează în contul meu" on the result page: saves the result when the student is signed in, otherwise keeps it on the device and sends them to sign in.. Exports: SaveResult
 - `SearchBox.tsx` (45) — Search box with a magnifier icon; submits to /universitati?q=... or calls onSearch when given.. Exports: SearchBox
 - `Shell.tsx` (40) — Page frame shared by all screens: header with the UniPath logo and three-dots motif, and a centered content column.. Exports: Shell, Notice
 - `SpecializationsBrowser.tsx` (82) — /specializari body: a text filter over all categories, domains and specializations; without text it shows the category tiles.. Exports: SpecializationsBrowser
@@ -145,18 +156,19 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/convex/_generated  (5 files)
 
-- `api.d.ts` (58) — Generated `api` utility.
+- `api.d.ts` (60) — Generated `api` utility.
 - `api.js` (24) — Generated `api` utility.. Exports: api, internal, components
 - `dataModel.d.ts` (61) — Generated data model types.
 - `server.d.ts` (163) — Generated utilities for implementing server-side Convex query and mutation functions.
 - `server.js` (102) — Generated utilities for implementing server-side Convex query and mutation functions.. Exports: query, internalQuery, mutation, internalMutation, action, internalAction, httpAction, env
 
-### apps/web/convex  (9 files)
+### apps/web/convex  (10 files)
 
-- `access.test.ts` (114) — @vitest-environment edge-runtime
+- `access.test.ts` (138) — @vitest-environment edge-runtime
 - `access.ts` (34) — Shared access rules: every function that needs a signed-in user or an administrator is built from these wrappers, so the check cannot be forgotten.. Exports: userQuery, userMutation, adminQuery, adminMutation
+- `account.ts` (55) — The signed-in user's own account: who they are, which sign-in methods exist, and deleting the account with everything saved in it.. Exports: me, signInMethods, remove
 - `auth.config.ts` (12) — Tells Convex which issuer signs the session tokens (this deployment itself, through Convex Auth).
-- `auth.ts` (7) — Convex Auth setup. Sign-in methods (email magic link, Google) are added in the accounts step; until then nobody can sign in.
+- `auth.ts` (50) — Convex Auth setup: sign-in with an email magic link (sent through Resend) and, when configured, Google. No passwords are stored.. Exports: adminEmails
 - `http.ts` (9) — HTTP routes of the Convex backend: only the ones Convex Auth needs for sign-in.
 - `results.ts` (74) — A student's saved questionnaire result: each signed-in user can save, read and delete only their own.. Exports: mine, save, remove
 - `reviews.ts` (112) — Student reviews: anyone can read the approved ones; only administrators see the queue and approve or reject. New reviews enter only through an internal function.. Exports: LIMITS, listApproved, listByState, moderate, insertPending
@@ -176,7 +188,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `universities-abroad.json` (3203) — JSON array, 57 items
 - `universities-ro.json` (3487) — JSON array, 74 items
 
-### apps/web/lib  (13 files)
+### apps/web/lib  (14 files)
 
 - `activities.test.ts` (57) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
 - `activities.ts` (73) — Activities a student can add (competitions, volunteering, extracurriculars): labels, areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, describeActivity
@@ -185,6 +197,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `data.ts` (19) — Loads the seeded JSON (profiles, questions, domains, universities, specializations, categories, testimonials) as typed arrays.. Exports: profiles, questions, domains, universities, specializations, categories, testimonials
 - `match.test.ts` (245) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
 - `match.ts` (187) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: TRAITS, TRAIT_LABEL, matchDomains, studentTraits, matchByTraits
+- `pendingSave.ts` (34) — Keeps a questionnaire result on this device while the student signs in (the email link may open in another tab), so it can be saved to the account afterwards.. Exports: setPendingResult, takePendingResult
 - `session.ts` (109) — Keeps the student's answers (and optional activities with photos) in sessionStorage between pages (safe on the server).. Exports: loadDraft, saveDraft, clearDraft, toAnswers, shrinkImage
 - `testimonials.ts` (29) — Links student opinions to the universities that have a profile sheet, so the search and the sheets can show them.. Exports: universityIdOf, testimonialsFor
 - `types.ts` (180) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
