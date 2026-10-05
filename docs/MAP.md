@@ -59,7 +59,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### (root)  (1 files)
 
-- `.env.example` (19) — env vars: CONVEX_DEPLOYMENT, NEXT_PUBLIC_CONVEX_URL, NEXT_PUBLIC_CONVEX_SITE_URL
+- `.env.example` (24) — env vars: CONVEX_DEPLOYMENT, NEXT_PUBLIC_CONVEX_URL, NEXT_PUBLIC_CONVEX_SITE_URL, NEXT_PUBLIC_TURNSTILE_SITE_KEY
 
 ### apps/web  (11 files)
 
@@ -71,9 +71,13 @@ _Open only the files listed here; a file's description is its first comment line
 - `next.config.ts` (8) — _no description: add a first-line comment_
 - `package.json` (36) — package "web"; scripts: dev, build, start, lint, test
 - `postcss.config.mjs` (8) — _no description: add a first-line comment_
-- `proxy.ts` (21) — Runs before every page: keeps the sign-in session fresh and sends visitors who are not signed in away from the account page.. Exports: config
+- `proxy.ts` (21) — Runs before every page: keeps the sign-in session fresh and sends visitors who are not signed in away from the account and administration pages.. Exports: config
 - `tsconfig.json` (35) — JSON; keys: compilerOptions, include, exclude
 - `vitest.config.ts` (9) — Vitest setup: the Convex function tests run with convex-test, which must be bundled by Vitest.
+
+### apps/web/app/admin/pareri  (1 files)
+
+- `page.tsx` (101) — Administration page for student opinions: the team reads what came through the form and approves or rejects it. Only administrators get any data.. Routes: /admin/pareri. Exports: AdminReviewsPage
 
 ### apps/web/app  (9 files)
 
@@ -113,7 +117,11 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/studenti  (1 files)
 
-- `page.tsx` (41) — Student voices: real opinions from students and graduates, with a search by faculty or university.. Routes: /studenti. Exports: metadata, Students
+- `page.tsx` (47) — Student voices: real opinions from students and graduates, with a search by faculty or university.. Routes: /studenti. Exports: metadata, Students
+
+### apps/web/app/studenti/parere  (1 files)
+
+- `page.tsx` (138) — Public form where a student writes an opinion about their faculty. No account needed; the opinion appears only after the team approves it.. Routes: /studenti/parere. Exports: ReviewFormPage
 
 ### apps/web/app/test  (1 files)
 
@@ -121,13 +129,13 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/universitati/[id]  (1 files)
 
-- `page.tsx` (294) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
+- `page.tsx` (282) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/universitati  (1 files)
 
 - `page.tsx` (20) — University finder page: search box, filters and top 10 results (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
 
-### apps/web/components  (24 files)
+### apps/web/components  (26 files)
 
 - `ActivitiesStep.tsx` (227) — Quiz step "Ce ai făcut până acum?": add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
 - `ActivitiesSummary.tsx` (33) — Read-only list of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
@@ -145,33 +153,36 @@ _Open only the files listed here; a file's description is its first comment line
 - `Shell.tsx` (40) — Page frame shared by all screens: header with the UniPath logo and three-dots motif, and a centered content column.. Exports: Shell, Notice
 - `SpecializationsBrowser.tsx` (82) — /specializari body: a text filter over all categories, domains and specializations; without text it shows the category tiles.. Exports: SpecializationsBrowser
 - `StudentCard.tsx` (38) — One student opinion: photo (or initial), name, faculty and their own words. Used on the students page and on university sheets.. Exports: StudentCard
-- `StudentVoices.tsx` (167) — Student opinions with a search box: type a faculty or university and see every opinion we have from there.. Exports: StudentVoices
+- `StudentVoices.tsx` (168) — Student opinions with a search box: type a faculty or university and see every opinion we have from there.. Exports: StudentVoices
+- `Turnstile.tsx` (38) — Cloudflare Turnstile bot check: shows the widget and reports its token; the token is verified on the server before anything is stored.. Exports: Turnstile
 - `UniversityBadges.tsx` (23) — Small coloured badges for a university's prestige and budget level, shared by result cards and the profile sheet.. Exports: PrestigeBadge, BudgetBadge
 - `UniversityCard.tsx` (69) — Compact university result card: name, place, badges, three short facts, how many student opinions we have and a link to the full sheet (the whole card is clickable).. Exports: UniversityCard
 - `UniversityDomains.tsx` (87) — "Ce poți studia aici" on a university sheet: tapping a domain opens, on the same page, its specializations and the subjects per year.. Exports: UniversityDomains
 - `UniversityList.tsx` (48) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList
+- `UniversityOpinions.tsx` (32) — "Ce spun studenții" on a university sheet: the opinions about this university, including approved ones from the database. Renders nothing when there are none.. Exports: UniversityOpinions
 - `UniversitySearch.tsx` (381) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
 - `WhatIf.tsx` (69) — Collapsible "Ce-ar fi dacă?" panel: one slider per inclination, controlled by the result page.. Exports: WhatIf
 - `domainStyle.ts` (67) — Colour family and emoji for every study domain id, used on the result cards.. Exports: FAMILY_CLASSES, domainStyle
 
 ### apps/web/convex/_generated  (5 files)
 
-- `api.d.ts` (60) — Generated `api` utility.
+- `api.d.ts` (62) — Generated `api` utility.
 - `api.js` (24) — Generated `api` utility.. Exports: api, internal, components
 - `dataModel.d.ts` (61) — Generated data model types.
 - `server.d.ts` (163) — Generated utilities for implementing server-side Convex query and mutation functions.
 - `server.js` (102) — Generated utilities for implementing server-side Convex query and mutation functions.. Exports: query, internalQuery, mutation, internalMutation, action, internalAction, httpAction, env
 
-### apps/web/convex  (10 files)
+### apps/web/convex  (11 files)
 
-- `access.test.ts` (138) — @vitest-environment edge-runtime
+- `access.test.ts` (189) — @vitest-environment edge-runtime
 - `access.ts` (34) — Shared access rules: every function that needs a signed-in user or an administrator is built from these wrappers, so the check cannot be forgotten.. Exports: userQuery, userMutation, adminQuery, adminMutation
 - `account.ts` (55) — The signed-in user's own account: who they are, which sign-in methods exist, and deleting the account with everything saved in it.. Exports: me, signInMethods, remove
 - `auth.config.ts` (12) — Tells Convex which issuer signs the session tokens (this deployment itself, through Convex Auth).
 - `auth.ts` (55) — Convex Auth setup: sign-in with an email magic link (sent through Resend) and, when configured, Google. No passwords are stored.. Exports: adminEmails
+- `convex.config.ts` (9) — Convex app setup: installs the rate-limiter component used by the public review form.
 - `http.ts` (9) — HTTP routes of the Convex backend: only the ones Convex Auth needs for sign-in.
 - `results.ts` (74) — A student's saved questionnaire result: each signed-in user can save, read and delete only their own.. Exports: mine, save, remove
-- `reviews.ts` (112) — Student reviews: anyone can read the approved ones; only administrators see the queue and approve or reject. New reviews enter only through an internal function.. Exports: LIMITS, listApproved, listByState, moderate, insertPending
+- `reviews.ts` (154) — Student reviews: anyone can read the approved ones and send a new one through the checked public form; only administrators see the queue and approve or reject.. Exports: LIMITS, listApproved, listByState, moderate, insertPending, insertLimited, submit
 - `schema.ts` (51) — Database tables for UniPath: users (from Convex Auth, plus a server-written role), saved questionnaire results and student reviews.. Exports: reviewState
 - `tsconfig.json` (26) — JSON (invalid)
 
@@ -188,7 +199,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `universities-abroad.json` (3203) — JSON array, 57 items
 - `universities-ro.json` (3487) — JSON array, 74 items
 
-### apps/web/lib  (14 files)
+### apps/web/lib  (15 files)
 
 - `activities.test.ts` (57) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
 - `activities.ts` (73) — Activities a student can add (competitions, volunteering, extracurriculars): labels, areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, describeActivity
@@ -200,10 +211,11 @@ _Open only the files listed here; a file's description is its first comment line
 - `pendingSave.ts` (34) — Keeps a questionnaire result on this device while the student signs in (the email link may open in another tab), so it can be saved to the account afterwards.. Exports: setPendingResult, takePendingResult
 - `session.ts` (109) — Keeps the student's answers (and optional activities with photos) in sessionStorage between pages (safe on the server).. Exports: loadDraft, saveDraft, clearDraft, toAnswers, shrinkImage
 - `testimonials.ts` (29) — Links student opinions to the universities that have a profile sheet, so the search and the sheets can show them.. Exports: universityIdOf, testimonialsFor
-- `types.ts` (180) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
+- `types.ts` (181) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
 - `universities.data.test.ts` (82) — Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
 - `universities.test.ts` (209) — Tests the specializations and categories data and the university search/filter logic.
 - `universities.ts` (234) — Search and filter over the universities with a profile sheet, plus labels for the filter values.. Exports: PRESTIGE_LABEL, BUDGET_LABEL, ADMISSION_LABEL, CERTIFICATE_LABEL, normalize, countries, romanianCities, universityById, …
+- `useTestimonials.ts` (34) — All student opinions the pages can show: the ones gathered by the team (in the app's data) plus the approved ones from the database.. Exports: useTestimonials, useTestimonialsFor
 
 ### apps/web/public  (3 files)
 

@@ -19,7 +19,7 @@ const UNIVERSITY_ID: Record<string, string> = {
 
 /** The id of the university an opinion is about, or undefined when that university has no sheet in the app. */
 export function universityIdOf(t: Testimonial): string | undefined {
-  return UNIVERSITY_ID[t.university ?? t.faculty];
+  return t.universityId ?? UNIVERSITY_ID[t.university ?? t.faculty];
 }
 
 /** All student opinions about one university, in the order they were added. */

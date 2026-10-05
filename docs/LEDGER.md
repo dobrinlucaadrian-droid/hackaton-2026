@@ -21,6 +21,15 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-06 01:14 — producție, pasul 3: formularul de păreri și pagina de aprobare (local)
+- Cerut: pasul 3 din plan, lucrat local pe baza de dezvoltare, fără chei reale
+- Făcut: formular public `/studenti/parere` (nume, universitate din listă sau „alta”, facultate, an, text, bifă de acord și de 18 ani), fără cont; pe server: verificare anti-robot (Cloudflare Turnstile), câmp-capcană pentru roboți, limită de 20 de păreri pe oră pentru tot site-ul, verificarea lungimilor, iar părerea intră mereu „în așteptare”; pagină `/admin/pareri` doar pentru administratori (în așteptare / aprobate / respinse, „Aprobă”, „Respinge”, „Scoate de pe site”); părerile aprobate apar pe `/studenti`, pe fișa universității și în semnul din căutare, lângă cele 24 adunate de echipă. Textul se afișează doar ca text simplu
+- Abatere de la plan, anunțată echipei: cele 24 de păreri existente rămân în fișierele aplicației (cu pozele lor) și se afișează împreună cu cele din baza de date; nu le-am mutat în bază. Formularul nu primește încă poze
+- Fișiere: `apps/web/convex/reviews.ts`, `apps/web/convex/convex.config.ts` (nou), `apps/web/convex/access.test.ts`, `apps/web/app/studenti/parere/page.tsx` (nou), `apps/web/app/admin/pareri/page.tsx` (nou), `apps/web/components/Turnstile.tsx` (nou), `apps/web/components/UniversityOpinions.tsx` (nou), `apps/web/lib/useTestimonials.ts` (nou), `apps/web/components/StudentVoices.tsx`, `apps/web/components/UniversityCard.tsx`, `apps/web/app/universitati/[id]/page.tsx`, `apps/web/app/studenti/page.tsx`, `apps/web/lib/testimonials.ts`, `apps/web/lib/types.ts`, `apps/web/proxy.ts`, `.env.example`
+- Poartă: TRECUT (build, 84 de teste, pornire). Prima rulare a dat PICAT la „Parole / chei”: un text inventat dintr-un test semăna cu o cheie; l-am scurtat, poarta nu a fost atinsă. Teste noi pentru formular: părerea verificată intră „în așteptare”; refuz când verificarea anti-robot pică, lipsește sau formularul nu e configurat; câmpul-capcană completat = nimic salvat; starea nu poate fi trimisă din afară; a 21-a părere într-o oră e refuzată. Probă reală într-un browser separat, la lățime de telefon, pe baza de dezvoltare: formularul ține butonul dezactivat până sunt completate câmpurile, acordul și verificarea anti-robot; după trimitere apare „Mulțumim”; părerea NU apare public; un elev conectat primește „Nu ai acces aici” la `/admin/pareri` și nu vede părerea; neconectat → `/conectare`; administratorul de test o vede în coadă și o aprobă; apoi apare pe `/studenti` (25), pe fișa ASE (2 păreri) și în semnul din căutare; un `<script>` pus în text apare ca text și nu rulează; „Scoate de pe site” o ascunde din nou (24); fără erori. NEVERIFICAT: chei Turnstile reale; pe un telefon real
+- De știut: pe dezvoltare verificarea anti-robot folosește cheile publice de probă ale Cloudflare, care trec mereu; pentru producție trebuie chei reale. Limita de 20 pe oră e pentru tot site-ul, nu pe persoană. Administratorul de pe dezvoltare e o adresă de probă
+- Urmează: pasul 4 (antete de securitate, scanare de chei și pachete la fiecare salvare, verificare de cod) și pasul 5 (confidențialitate), apoi „nivelul următor”: chei reale și baza de producție, cu echipa
+
 ### 2026-10-06 01:05 — producție, pasul 2: conectarea probată cap-coadă pe baza de dezvoltare
 - Cerut: echipa a cerut să lucrez întâi local, fără să depind de ea, și abia apoi să trecem la nivelul următor (chei și servicii reale)
 - Făcut: comutator doar pentru dezvoltare (`AUTH_DEV_LOG_LINKS=1`, pus numai pe baza de dezvoltare): linkul de conectare se scrie în jurnalul funcțiilor în loc să plece pe email, ca fluxul să poată fi probat fără cheia Resend. În producție comutatorul nu se pune, iar emailul pleacă prin Resend
@@ -375,6 +384,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-06 01:05 `a21a479` feat: development-only sign-in links in the function log; sign-in verified end to end
 - 2026-10-06 00:27 `ce65453` feat: passwordless sign-in, account page and saving the result
 - 2026-10-06 00:06 `b4aeabc` feat: Convex schema, shared access rules and access tests
 - 2026-10-06 00:00 `2c23414` chore: start the production phase with Convex packages and the plan
@@ -404,5 +414,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 17:57 `9a716e4` feat: declutter pages - short home, specialization pages, collapsed result cards, compact filters and sheet
 - 2026-10-04 17:24 `9b62030` docs: presentation moved to 2026-10-05
 - 2026-10-04 17:22 `6092918` fix: world-list link check, loading and failure messages, ignore prestige=national
-- 2026-10-04 17:19 `46b3584` feat: home page with search, specializations, top-10 filters and university profile sheets
 <!-- commits:end -->

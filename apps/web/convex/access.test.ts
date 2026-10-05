@@ -1,8 +1,9 @@
 // @vitest-environment edge-runtime
 // Tests the access rules of the Convex functions: who may read and change what.
 /// <reference types="vite/client" />
+import rateLimiterTest from "@convex-dev/rate-limiter/test";
 import { convexTest } from "convex-test";
-import { describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import { api, internal } from "./_generated/api";
 import type { Id } from "./_generated/dataModel";
 import schema from "./schema";
@@ -19,6 +20,7 @@ const REVIEW = {
 
 async function setup() {
   const t = convexTest(schema, modules);
+  rateLimiterTest.register(t);
   const [alice, bob, admin] = await t.run(async (ctx) => [
     await ctx.db.insert("users", { email: "alice@example.com" }),
     await ctx.db.insert("users", { email: "bob@example.com" }),
@@ -133,5 +135,54 @@ describe("account", () => {
     expect(left.results[0].userId).toBe(bob);
     // The deleted user's old session can no longer read anything.
     expect(await as(alice).query(api.account.me, {})).toBeNull();
+  });
+});
+
+describe("public review form", () => {
+  afterEach(() => {
+    vi.unstubAllGlobals();
+    vi.unstubAllEnvs();
+  });
+  const botCheck = (success: boolean) => vi.stubGlobal("fetch", vi.fn(async () => new Response(JSON.stringify({ success }), { status: 200 })));
+  const FORM = { ...REVIEW, token: "widget-ok" };
+
+  it("stores a checked review as pending, never as public", async () => {
+    const { t } = await setup();
+    vi.stubEnv("TURNSTILE_SECRET_KEY", "test-secret");
+    botCheck(true);
+    await t.action(api.reviews.submit, FORM);
+    const rows = await t.run((ctx) => ctx.db.query("reviews").collect());
+    expect(rows).toHaveLength(1);
+    expect(rows[0].state).toBe("pending");
+    expect(await t.query(api.reviews.listApproved, {})).toEqual([]);
+  });
+
+  it("refuses when the bot check fails, is missing, or the form is not configured", async () => {
+    const { t } = await setup();
+    await expect(t.action(api.reviews.submit, FORM)).rejects.toThrow("nu este încă pornit");
+    vi.stubEnv("TURNSTILE_SECRET_KEY", "test-secret");
+    botCheck(false);
+    await expect(t.action(api.reviews.submit, FORM)).rejects.toThrow("anti-robot nu a trecut");
+    await expect(t.action(api.reviews.submit, { ...FORM, token: "" })).rejects.toThrow("anti-robot lipsește");
+    expect(await t.run((ctx) => ctx.db.query("reviews").collect())).toHaveLength(0);
+  });
+
+  it("silently drops submissions that fill the hidden field, and cannot set the state from outside", async () => {
+    const { t } = await setup();
+    vi.stubEnv("TURNSTILE_SECRET_KEY", "test-secret");
+    botCheck(true);
+    await t.action(api.reviews.submit, { ...FORM, website: "http://spam.example" });
+    expect(await t.run((ctx) => ctx.db.query("reviews").collect())).toHaveLength(0);
+    // @ts-expect-error state is not an accepted argument
+    await expect(t.action(api.reviews.submit, { ...FORM, state: "approved" })).rejects.toThrow();
+  });
+
+  it("stops after 20 reviews in an hour", async () => {
+    const { t } = await setup();
+    vi.stubEnv("TURNSTILE_SECRET_KEY", "test-secret");
+    botCheck(true);
+    for (let i = 0; i < 20; i++) await t.action(api.reviews.submit, FORM);
+    await expect(t.action(api.reviews.submit, FORM)).rejects.toThrow("foarte multe păreri");
+    expect(await t.run((ctx) => ctx.db.query("reviews").collect())).toHaveLength(20);
   });
 });

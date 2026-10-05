@@ -2,14 +2,14 @@
 import Link from "next/link";
 import { domains } from "@/lib/data";
 import type { University } from "@/lib/types";
-import { testimonialsFor } from "@/lib/testimonials";
+import { useTestimonialsFor } from "@/lib/useTestimonials";
 import { ADMISSION_LABEL } from "@/lib/universities";
 import { FAMILY_CLASSES, domainStyle } from "./domainStyle";
 import { BudgetBadge, PrestigeBadge } from "./UniversityBadges";
 
 export function UniversityCard({ u, rank, domainId }: { u: University; rank?: number; domainId?: string }) {
   const admission = u.admissionTypes.map((a) => ADMISSION_LABEL[a]).filter(Boolean).join(", ");
-  const opinions = testimonialsFor(u.id).length;
+  const opinions = useTestimonialsFor(u.id).length;
   const domain = domainId && u.domainIds.includes(domainId) ? domains.find((d) => d.id === domainId) : undefined;
   return (
     <article className="relative h-full rounded-3xl bg-card p-5 shadow-sm ring-1 ring-line transition hover:ring-primary/50 focus-within:ring-2 focus-within:ring-primary">

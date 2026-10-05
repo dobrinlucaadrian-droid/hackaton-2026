@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Books, Sparkle } from "@/components/Illustrations";
 import { StudentCard } from "@/components/StudentCard";
-import { testimonials } from "@/lib/data";
+import { useTestimonials } from "@/lib/useTestimonials";
 import type { Testimonial } from "@/lib/types";
 
 /** Lower-cases, strips diacritics and punctuation, so "bucuresti" finds "București". */
@@ -66,6 +66,7 @@ function matches(t: Testimonial, query: string): boolean {
 }
 
 export function StudentVoices() {
+  const testimonials = useTestimonials();
   const [query, setQuery] = useState("");
   const q = query.trim();
   const found = testimonials.filter((t) => matches(t, q));

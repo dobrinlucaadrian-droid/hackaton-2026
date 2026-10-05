@@ -22,6 +22,12 @@ export default function Students() {
           <p className="mx-auto mt-3 max-w-md text-ink-soft">
             Păreri adevărate de la studenți și absolvenți, despre facultatea lor.
           </p>
+          <Link
+            href="/studenti/parere"
+            className="mt-2 inline-flex min-h-11 items-center font-bold text-primary underline decoration-primary/40 underline-offset-2 hover:text-primary-dark"
+          >
+            Ești student? Scrie și tu o părere →
+          </Link>
         </section>
       </div>
 

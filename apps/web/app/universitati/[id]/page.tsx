@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Shell } from "@/components/Shell";
-import { StudentCard } from "@/components/StudentCard";
+import { UniversityOpinions } from "@/components/UniversityOpinions";
 import { BudgetBadge, PrestigeBadge } from "@/components/UniversityBadges";
 import { UniversityDomains } from "@/components/UniversityDomains";
 import { curriculumLinkFor } from "@/lib/curricula";
@@ -234,19 +234,7 @@ export default async function UniversityPage({ params }: Props) {
           )}
         </Group>
 
-        {opinions.length > 0 && (
-          <Group id="studenti" title="Ce spun studenții">
-            <p className="text-ink-soft">
-              {opinions.length === 1 ? "O părere reală de la un student de aici." : `${opinions.length} păreri reale de la studenți de aici.`}
-            </p>
-            {opinions.map((t) => (
-              <StudentCard key={`${t.name}-${t.faculty}`} t={t} as="div" />
-            ))}
-            <Link href="/studenti" className="inline-flex min-h-11 items-center font-bold text-primary underline decoration-primary/40 underline-offset-2 hover:text-primary-dark">
-              Vezi părerile de la toate universitățile →
-            </Link>
-          </Group>
-        )}
+        <UniversityOpinions universityId={u.id} />
 
         {hasPros && (
           <Group id="plusuri" title="Plusuri și minusuri">
