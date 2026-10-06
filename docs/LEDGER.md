@@ -21,6 +21,15 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-07 01:11 — producție, pasul 4: antete de securitate, scanări automate, pachet de conectare actualizat
+- Cerut: pasul 4 din plan, local: antete de securitate, scanare de chei și pachete la fiecare salvare, verificare de cod
+- Făcut: (1) politică de conținut (CSP) pusă la fiecare cerere în `proxy.ts`: scripturile rulează doar cu un cod unic pe cerere, conexiunile sunt permise doar către site, baza Convex și verificarea anti-robot, site-ul nu poate fi pus în ramă pe alt site; plus antetele `X-Content-Type-Options`, `Referrer-Policy`, `X-Frame-Options`, `Permissions-Policy`, `Strict-Transport-Security` în `next.config.ts`. (2) Pe GitHub, la fiecare salvare și săptămânal: căutare de chei scăpate în tot istoricul (gitleaks), verificarea pachetelor (`npm audit`), verificarea tipurilor și testele; scanare de cod CodeQL; Dependabot pentru actualizări de pachete. (3) `@auth/core` trecut de la 0.41.1 la 0.41.3: verificarea de pachete a găsit o vulnerabilitate critică cunoscută în versiunea veche (printre altele, la validarea adreselor de email)
+- Găsit și reparat pe parcurs: regula `upgrade-insecure-requests` strica deconectarea când versiunea de producție rula local, fără conexiune securizată; acum se trimite doar pe conexiune securizată
+- Fișiere: `apps/web/proxy.ts`, `apps/web/next.config.ts`, `apps/web/lib/csp.ts` (nou), `apps/web/lib/csp.test.ts` (nou), `apps/web/package.json`, `apps/web/package-lock.json`, `.github/workflows/security.yml` (nou), `.github/workflows/codeql.yml` (nou), `.github/dependabot.yml` (nou)
+- Poartă: TRECUT (build, 88 de teste, pornire). Teste noi pentru politica de conținut (scripturi doar cu codul cererii, fără „inline” sau „eval” în producție; conexiuni doar către site, Convex și verificarea anti-robot; fără rame). Verificat pe site-ul local, în mod dezvoltare și construit ca pentru producție: antetele sunt trimise, toate scripturile paginii poartă codul, 11 pagini parcurse fără nicio încălcare a politicii; proba completă de conectare (salvare, link, cont, deconectare, link refolosit refuzat, ștergerea contului) și cea de păreri (trimitere, aprobare, afișare, scoatere) trec cu regulile noi și cu pachetul actualizat. `npm audit` pe pachetele site-ului: 0 probleme. NEVERIFICAT la momentul scrierii: rularea scanărilor pe GitHub (se văd după urcare); politica pe adresa reală, cu conexiune securizată
+- De știut: rămâne un avertisment „high” doar într-o unealtă de dezvoltare (`braces`, adus de verificatorul de stil al Next.js); nu ajunge în site și nu are reparație fără a strica unealta. Stilurile din pagină sunt permise „inline” (bare de progres, animații); niciun text scris de utilizatori nu ajunge într-un stil
+- Urmează: pasul 5 (pagina de confidențialitate), apoi „nivelul următor” cu echipa
+
 ### 2026-10-06 01:14 — producție, pasul 3: formularul de păreri și pagina de aprobare (local)
 - Cerut: pasul 3 din plan, lucrat local pe baza de dezvoltare, fără chei reale
 - Făcut: formular public `/studenti/parere` (nume, universitate din listă sau „alta”, facultate, an, text, bifă de acord și de 18 ani), fără cont; pe server: verificare anti-robot (Cloudflare Turnstile), câmp-capcană pentru roboți, limită de 20 de păreri pe oră pentru tot site-ul, verificarea lungimilor, iar părerea intră mereu „în așteptare”; pagină `/admin/pareri` doar pentru administratori (în așteptare / aprobate / respinse, „Aprobă”, „Respinge”, „Scoate de pe site”); părerile aprobate apar pe `/studenti`, pe fișa universității și în semnul din căutare, lângă cele 24 adunate de echipă. Textul se afișează doar ca text simplu
@@ -384,6 +393,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-06 01:59 `e44ee5f` docs: record where the production work stops for the day
 - 2026-10-06 01:15 `20dc009` feat: public review form with bot check and rate limit, and the moderation page
 - 2026-10-06 01:05 `a21a479` feat: development-only sign-in links in the function log; sign-in verified end to end
 - 2026-10-06 00:27 `ce65453` feat: passwordless sign-in, account page and saving the result
@@ -413,5 +423,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 22:30 `564932a` feat: keep specializations only on their own page, not on the home page
 - 2026-10-04 18:02 `97391c5` docs: record the published decluttered version in the ledger
 - 2026-10-04 17:57 `9a716e4` feat: declutter pages - short home, specialization pages, collapsed result cards, compact filters and sheet
-- 2026-10-04 17:24 `9b62030` docs: presentation moved to 2026-10-05
 <!-- commits:end -->

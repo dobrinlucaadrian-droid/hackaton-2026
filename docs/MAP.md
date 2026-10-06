@@ -61,6 +61,15 @@ _Open only the files listed here; a file's description is its first comment line
 
 - `.env.example` (24) — env vars: CONVEX_DEPLOYMENT, NEXT_PUBLIC_CONVEX_URL, NEXT_PUBLIC_CONVEX_SITE_URL, NEXT_PUBLIC_TURNSTILE_SITE_KEY
 
+### .github  (1 files)
+
+- `dependabot.yml` (16) — Dependabot: GitHub proposes updates when a package the app uses gets a security fix or a new version.
+
+### .github/workflows  (2 files)
+
+- `codeql.yml` (30) — CodeQL: GitHub's code scanner looks for security bugs in the TypeScript code on every push, pull request and once a week.
+- `security.yml` (45) — Security checks on every push and pull request: leaked secrets, known-vulnerable packages, type errors and the automatic tests (including the access rules).
+
 ### apps/web  (11 files)
 
 - `.gitignore`
@@ -68,10 +77,10 @@ _Open only the files listed here; a file's description is its first comment line
 - `CLAUDE.md` (2) — _no description: add a first-line comment_
 - `README.md` (37) — _no description: add a first-line comment_
 - `eslint.config.mjs` (21) — _no description: add a first-line comment_
-- `next.config.ts` (8) — _no description: add a first-line comment_
+- `next.config.ts` (25) — Next.js configuration: security headers sent with every response (the content security policy itself is added per request in proxy.ts).
 - `package.json` (36) — package "web"; scripts: dev, build, start, lint, test
 - `postcss.config.mjs` (8) — _no description: add a first-line comment_
-- `proxy.ts` (21) — Runs before every page: keeps the sign-in session fresh and sends visitors who are not signed in away from the account and administration pages.. Exports: config
+- `proxy.ts` (35) — Runs before every page: adds the content security policy, keeps the sign-in session fresh and sends visitors who are not signed in away from the account and administration pages.. Exports: proxy, config
 - `tsconfig.json` (35) — JSON; keys: compilerOptions, include, exclude
 - `vitest.config.ts` (9) — Vitest setup: the Convex function tests run with convex-test, which must be bundled by Vitest.
 
@@ -199,10 +208,12 @@ _Open only the files listed here; a file's description is its first comment line
 - `universities-abroad.json` (3203) — JSON array, 57 items
 - `universities-ro.json` (3487) — JSON array, 74 items
 
-### apps/web/lib  (15 files)
+### apps/web/lib  (17 files)
 
 - `activities.test.ts` (57) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
 - `activities.ts` (73) — Activities a student can add (competitions, volunteering, extracurriculars): labels, areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, describeActivity
+- `csp.test.ts` (38) — Tests the Content-Security-Policy builder: scripts only with the nonce, the database and the bot check allowed, nothing else.
+- `csp.ts` (34) — Builds the Content-Security-Policy header: the list of places the browser may load scripts, styles, images and data from.. Exports: buildCsp
 - `curricula.test.ts` (60) — Tests the curricula data: every plan belongs to a real domain, covers its years in order and links to an official web page.
 - `curricula.ts` (18) — Curricula data: for each study domain one official "plan de învățământ" (subjects per year), and for Romanian universities the official page with their curricula.. Exports: curricula, curriculumLinks, curriculumFor, curriculumLinkFor
 - `data.ts` (19) — Loads the seeded JSON (profiles, questions, domains, universities, specializations, categories, testimonials) as typed arrays.. Exports: profiles, questions, domains, universities, specializations, categories, testimonials

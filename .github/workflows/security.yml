@@ -1,0 +1,44 @@
+# Security checks on every push and pull request: leaked secrets, known-vulnerable packages, type errors and the automatic tests (including the access rules).
+name: Security checks
+
+on:
+  push:
+    branches: [main, production]
+  pull_request:
+  schedule:
+    - cron: "17 5 * * 1" # every Monday morning, to catch newly published vulnerabilities
+
+permissions:
+  contents: read
+
+jobs:
+  secrets:
+    name: Leaked secrets (gitleaks)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # the whole history, not only the last commit
+      - name: Scan the repository history
+        run: docker run --rm -v "$PWD:/repo" ghcr.io/gitleaks/gitleaks:latest detect --source /repo --redact --no-banner
+
+  app:
+    name: Packages, types and tests
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - run: npm ci
+      - name: Known vulnerabilities in the packages the site ships
+        run: npm audit --omit=dev --audit-level=high
+      - name: Type check
+        run: npx tsc --noEmit
+      - name: Tests (matching, data, access rules, public form)
+        run: npm test
