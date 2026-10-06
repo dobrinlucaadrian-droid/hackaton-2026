@@ -1,4 +1,4 @@
-// Page frame shared by all screens: header with the UniPath logo and three-dots motif, and a centered content column.
+// Page frame shared by all screens: header with the UniPath logo, a centered content column and a footer with the privacy link.
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { NavLinks } from "./NavLinks";
@@ -19,6 +19,11 @@ export function Shell({ children, wide = false }: { children: ReactNode; wide?: 
         <NavLinks />
       </header>
       <main className={`mx-auto w-full flex-1 px-5 pb-16 ${wide ? "max-w-5xl" : "max-w-2xl"}`}>{children}</main>
+      <footer className="mx-auto w-full max-w-5xl px-5 pb-8 text-center text-sm text-ink-soft">
+        <Link href="/confidentialitate" className="inline-flex min-h-11 items-center font-bold underline decoration-primary/40 underline-offset-2 hover:text-primary-dark">
+          Confidențialitate
+        </Link>
+      </footer>
     </div>
   );
 }

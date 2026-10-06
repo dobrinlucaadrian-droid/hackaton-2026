@@ -39,6 +39,7 @@ jobs:
       - name: Known vulnerabilities in the packages the site ships
         run: npm audit --omit=dev --audit-level=high
       - name: Type check
-        run: npx tsc --noEmit
+        # Next.js generates the page and layout types that the code refers to.
+        run: npx next typegen && npx tsc --noEmit
       - name: Tests (matching, data, access rules, public form)
         run: npm test

@@ -21,6 +21,14 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-07 01:14 — producție, pasul 5: pagina de confidențialitate; scanările de pe GitHub
+- Cerut: pasul 5 din plan (confidențialitate), local; verificarea că scanările automate rulează pe GitHub
+- Făcut: pagina `/confidentialitate`, în română simplă: ce nu păstrăm fără cont, ce păstrăm cu cont (email, rezultatul salvat, datele conectării), ce păstrăm la o părere, cum se șterg datele, ce servicii folosim (Convex, Resend, Cloudflare Turnstile, Vercel, Google), cookie-uri, contact; marcată vizibil „Versiune de lucru” până la verificarea juridică; adresa de contact e lăsată goală intenționat (pagina spune că va fi adăugată); link în subsolul tuturor paginilor, pe pagina de conectare și lângă bifa de acord din formularul de păreri. Pe GitHub: prima rulare a scanărilor a arătat căutarea de chei în tot istoricul TRECUTĂ și CodeQL TRECUT, iar verificarea tipurilor PICATĂ din cauza configurării (lipsea generarea tipurilor Next.js înainte de verificare); am adăugat pasul lipsă
+- Fișiere: `apps/web/app/confidentialitate/page.tsx` (nou), `apps/web/components/Shell.tsx`, `apps/web/app/conectare/page.tsx`, `apps/web/app/studenti/parere/page.tsx`, `.github/workflows/security.yml`
+- Poartă: TRECUT (build, 88 de teste, pornire). Într-un browser separat, pe laptop și la lățime de telefon: linkul din subsol duce la pagină, cele 7 secțiuni apar, nota „Versiune de lucru” e vizibilă, linkurile de pe conectare și din formular există; fără erori. Scanările de pe GitHub după reparație: de văzut la următoarea urcare
+- De făcut de un om înainte de lansare: verificarea juridică a textului (minori, acordul părinților, vârsta de la care un elev își poate da singur acordul), adresa de contact, unde ține Convex datele, acordurile cu furnizorii
+- Urmează: „nivelul următor”, cu echipa: cheie Resend nouă și domeniu, Google, chei Turnstile reale, lista de administratori, baza de producție, adresă de probă
+
 ### 2026-10-07 01:11 — producție, pasul 4: antete de securitate, scanări automate, pachet de conectare actualizat
 - Cerut: pasul 4 din plan, local: antete de securitate, scanare de chei și pachete la fiecare salvare, verificare de cod
 - Făcut: (1) politică de conținut (CSP) pusă la fiecare cerere în `proxy.ts`: scripturile rulează doar cu un cod unic pe cerere, conexiunile sunt permise doar către site, baza Convex și verificarea anti-robot, site-ul nu poate fi pus în ramă pe alt site; plus antetele `X-Content-Type-Options`, `Referrer-Policy`, `X-Frame-Options`, `Permissions-Policy`, `Strict-Transport-Security` în `next.config.ts`. (2) Pe GitHub, la fiecare salvare și săptămânal: căutare de chei scăpate în tot istoricul (gitleaks), verificarea pachetelor (`npm audit`), verificarea tipurilor și testele; scanare de cod CodeQL; Dependabot pentru actualizări de pachete. (3) `@auth/core` trecut de la 0.41.1 la 0.41.3: verificarea de pachete a găsit o vulnerabilitate critică cunoscută în versiunea veche (printre altele, la validarea adreselor de email)
@@ -393,6 +401,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-07 01:11 `cd08d1a` feat: security headers and CSP, CI security scans, patched auth package
 - 2026-10-06 01:59 `e44ee5f` docs: record where the production work stops for the day
 - 2026-10-06 01:15 `20dc009` feat: public review form with bot check and rate limit, and the moderation page
 - 2026-10-06 01:05 `a21a479` feat: development-only sign-in links in the function log; sign-in verified end to end
@@ -422,5 +431,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 22:45 `9ca0e28` feat: ask the high-school profile as the first step of the test
 - 2026-10-04 22:30 `564932a` feat: keep specializations only on their own page, not on the home page
 - 2026-10-04 18:02 `97391c5` docs: record the published decluttered version in the ledger
-- 2026-10-04 17:57 `9a716e4` feat: declutter pages - short home, specialization pages, collapsed result cards, compact filters and sheet
 <!-- commits:end -->

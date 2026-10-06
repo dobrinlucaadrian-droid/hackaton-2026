@@ -124,7 +124,9 @@ export default function ReviewFormPage() {
         </div>
         <label className="flex cursor-pointer items-start gap-3 rounded-2xl bg-paper p-4 ring-1 ring-line">
           <input type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} className="mt-1 h-5 w-5 shrink-0 accent-primary" />
-          <span className="text-sm text-ink">Sunt de acord ca numele meu și părerea mea să fie publicate pe UniPath. Am cel puțin 18 ani.</span>
+          <span className="text-sm text-ink">Sunt de acord ca numele meu și părerea mea să fie publicate pe UniPath. Am cel puțin 18 ani.{" "}
+            <Link href="/confidentialitate" className="font-bold text-primary underline underline-offset-2" target="_blank">Ce date păstrăm</Link>
+          </span>
         </label>
         <Turnstile onToken={onToken} />
         {error && <p className="text-sm font-bold text-primary-dark" role="alert">{error}</p>}

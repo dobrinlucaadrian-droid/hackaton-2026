@@ -68,7 +68,7 @@ _Open only the files listed here; a file's description is its first comment line
 ### .github/workflows  (2 files)
 
 - `codeql.yml` (30) — CodeQL: GitHub's code scanner looks for security bugs in the TypeScript code on every push, pull request and once a week.
-- `security.yml` (45) — Security checks on every push and pull request: leaked secrets, known-vulnerable packages, type errors and the automatic tests (including the access rules).
+- `security.yml` (46) — Security checks on every push and pull request: leaked secrets, known-vulnerable packages, type errors and the automatic tests (including the access rules).
 
 ### apps/web  (11 files)
 
@@ -102,7 +102,11 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/conectare  (1 files)
 
-- `page.tsx` (105) — Sign-in page: the student types an email and receives a sign-in link; a Google button appears when Google sign-in is configured. No passwords.. Routes: /conectare. Exports: SignInPage
+- `page.tsx` (107) — Sign-in page: the student types an email and receives a sign-in link; a Google button appears when Google sign-in is configured. No passwords.. Routes: /conectare. Exports: SignInPage
+
+### apps/web/app/confidentialitate  (1 files)
+
+- `page.tsx` (91) — Privacy page: in plain Romanian, what UniPath stores, why, who processes it and how to delete it. Working draft until a legal check.. Routes: /confidentialitate. Exports: metadata, PrivacyPage
 
 ### apps/web/app/cont  (1 files)
 
@@ -130,7 +134,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/studenti/parere  (1 files)
 
-- `page.tsx` (138) — Public form where a student writes an opinion about their faculty. No account needed; the opinion appears only after the team approves it.. Routes: /studenti/parere. Exports: ReviewFormPage
+- `page.tsx` (140) — Public form where a student writes an opinion about their faculty. No account needed; the opinion appears only after the team approves it.. Routes: /studenti/parere. Exports: ReviewFormPage
 
 ### apps/web/app/test  (1 files)
 
@@ -159,7 +163,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `NavLinks.tsx` (42) — Header navigation links with the current page highlighted; the last one is "Conectare" or "Contul meu".. Exports: NavLinks
 - `SaveResult.tsx` (59) — "Salvează în contul meu" on the result page: saves the result when the student is signed in, otherwise keeps it on the device and sends them to sign in.. Exports: SaveResult
 - `SearchBox.tsx` (45) — Search box with a magnifier icon; submits to /universitati?q=... or calls onSearch when given.. Exports: SearchBox
-- `Shell.tsx` (40) — Page frame shared by all screens: header with the UniPath logo and three-dots motif, and a centered content column.. Exports: Shell, Notice
+- `Shell.tsx` (45) — Page frame shared by all screens: header with the UniPath logo, a centered content column and a footer with the privacy link.. Exports: Shell, Notice
 - `SpecializationsBrowser.tsx` (82) — /specializari body: a text filter over all categories, domains and specializations; without text it shows the category tiles.. Exports: SpecializationsBrowser
 - `StudentCard.tsx` (38) — One student opinion: photo (or initial), name, faculty and their own words. Used on the students page and on university sheets.. Exports: StudentCard
 - `StudentVoices.tsx` (168) — Student opinions with a search box: type a faculty or university and see every opinion we have from there.. Exports: StudentVoices

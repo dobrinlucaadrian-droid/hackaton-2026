@@ -2,6 +2,7 @@
 // Sign-in page: the student types an email and receives a sign-in link; a Google button appears when Google sign-in is configured. No passwords.
 import { useAuthActions } from "@convex-dev/auth/react";
 import { useQuery } from "convex/react";
+import Link from "next/link";
 import { useState } from "react";
 import { Shell } from "@/components/Shell";
 import { api } from "@/convex/_generated/api";
@@ -96,7 +97,8 @@ export default function SignInPage() {
         )}
 
         <p className="mt-6 text-sm text-ink-soft" role="note">
-          Păstrăm doar adresa ta de email și rezultatul chestionarului. Îți poți șterge contul oricând, din pagina „Contul meu”.
+          Păstrăm doar adresa ta de email și rezultatul chestionarului. Îți poți șterge contul oricând, din pagina „Contul meu”.{" "}
+          <Link href="/confidentialitate" className="font-bold text-primary underline underline-offset-2">Află mai multe</Link>
         </p>
       </div>
     </Shell>
