@@ -7,7 +7,7 @@ lista de commit-uri de la final se reface singură.
 
 - **Scop:** UniPath — ghid între liceu și facultate. Hackathonul s-a încheiat (prezentare pe 2026-10-05); acum se construiește versiunea de producție: conturi, bază de date Convex, păreri moderate, securitate
 - **Unde:** versiunea de producție e pe ramura `production` (nepublicată; rulează local cu `npm run dev --prefix apps/web` și folosește baza Convex de dezvoltare, proiectul „unipath”). Versiunea prezentată e pe `main`, publică la https://unipath-taupe-mu.vercel.app, și nu se atinge până nu cere echipa. Planul: `docs/production-plan.md`
-- **Urmează:** de continuat exact de aici, pe ramura `production`: pasul 4 (antete de securitate și CSP, scanare de chei și pachete la fiecare salvare, verificare de cod) și pasul 5 (pagina de confidențialitate), amândouă local. Apoi „nivelul următor”, cu echipa: cheie Resend NOUĂ pusă de echipă în Convex ca `AUTH_RESEND_KEY` (cea lipită în conversație trebuie ștearsă din Resend), domeniu pentru email, setarea Google, chei Turnstile reale, lista `ADMIN_EMAILS`, baza de producție și publicarea pe o adresă de probă. Pașii 1–3 sunt gata și verificați local
+- **Urmează:** pașii 1–5 din `docs/production-plan.md` sunt făcuți și verificați local pe ramura `production`. Rămâne „nivelul următor”, cu echipa: cheie Resend NOUĂ pusă de echipă în Convex ca `AUTH_RESEND_KEY` (cea lipită în conversație trebuie ștearsă din Resend) și un domeniu pentru email; setarea Google; chei Turnstile reale; lista `ADMIN_EMAILS`; adresa de contact și verificarea juridică a paginii de confidențialitate; baza de producție Convex și publicarea pe o adresă de probă. De măsurat: viteza paginilor, acum generate la fiecare vizită
 - **De știut:** Vercel CLI și Convex CLI sunt logate doar din aplicația Claude (Vercel: cont `dobrinlucaadrian-7970`; Convex: echipa `dobrinlucaadrian`, proiect `unipath`, bază de dezvoltare `adjoining-duck-455`). `apps/web/.env.local` (adresa Convex și cheia publică de probă Turnstile) NU e în Git: dacă lipsește, `npx convex dev --once` în `apps/web` îl reface, iar `NEXT_PUBLIC_TURNSTILE_SITE_KEY` de probă este `1x00000000000000000000AA`. Pe baza de dezvoltare sunt puse `AUTH_DEV_LOG_LINKS=1` (linkul de conectare apare în `npx convex logs`), cheile de probă Turnstile și `ADMIN_EMAILS=admin.test@example.com`. Echipa vrea să lucrez cât mai mult local înainte să-i cer conturi sau chei
 
 ## Jurnal
@@ -25,7 +25,7 @@ lista de commit-uri de la final se reface singură.
 - Cerut: pasul 5 din plan (confidențialitate), local; verificarea că scanările automate rulează pe GitHub
 - Făcut: pagina `/confidentialitate`, în română simplă: ce nu păstrăm fără cont, ce păstrăm cu cont (email, rezultatul salvat, datele conectării), ce păstrăm la o părere, cum se șterg datele, ce servicii folosim (Convex, Resend, Cloudflare Turnstile, Vercel, Google), cookie-uri, contact; marcată vizibil „Versiune de lucru” până la verificarea juridică; adresa de contact e lăsată goală intenționat (pagina spune că va fi adăugată); link în subsolul tuturor paginilor, pe pagina de conectare și lângă bifa de acord din formularul de păreri. Pe GitHub: prima rulare a scanărilor a arătat căutarea de chei în tot istoricul TRECUTĂ și CodeQL TRECUT, iar verificarea tipurilor PICATĂ din cauza configurării (lipsea generarea tipurilor Next.js înainte de verificare); am adăugat pasul lipsă
 - Fișiere: `apps/web/app/confidentialitate/page.tsx` (nou), `apps/web/components/Shell.tsx`, `apps/web/app/conectare/page.tsx`, `apps/web/app/studenti/parere/page.tsx`, `.github/workflows/security.yml`
-- Poartă: TRECUT (build, 88 de teste, pornire). Într-un browser separat, pe laptop și la lățime de telefon: linkul din subsol duce la pagină, cele 7 secțiuni apar, nota „Versiune de lucru” e vizibilă, linkurile de pe conectare și din formular există; fără erori. Scanările de pe GitHub după reparație: de văzut la următoarea urcare
+- Poartă: TRECUT (build, 88 de teste, pornire). Într-un browser separat, pe laptop și la lățime de telefon: linkul din subsol duce la pagină, cele 7 secțiuni apar, nota „Versiune de lucru” e vizibilă, linkurile de pe conectare și din formular există; fără erori. Scanările de pe GitHub după reparație (văzute rulând pe `c76d79c`): căutarea de chei în tot istoricul TRECUT, pachete + tipuri + teste TRECUT, CodeQL TRECUT cu 4 semnalări, toate în scripturile locale de lucru (`scripts/gate.mjs`, `scripts/map.mjs`), niciuna în aplicație; nu le-am atins (poarta nu se modifică)
 - De făcut de un om înainte de lansare: verificarea juridică a textului (minori, acordul părinților, vârsta de la care un elev își poate da singur acordul), adresa de contact, unde ține Convex datele, acordurile cu furnizorii
 - Urmează: „nivelul următor”, cu echipa: cheie Resend nouă și domeniu, Google, chei Turnstile reale, lista de administratori, baza de producție, adresă de probă
 
@@ -401,6 +401,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-07 01:14 `c76d79c` feat: privacy page; generate route types before the CI type check
 - 2026-10-07 01:11 `cd08d1a` feat: security headers and CSP, CI security scans, patched auth package
 - 2026-10-06 01:59 `e44ee5f` docs: record where the production work stops for the day
 - 2026-10-06 01:15 `20dc009` feat: public review form with bot check and rate limit, and the moderation page
@@ -430,5 +431,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 22:57 `956d89f` feat: search student opinions by faculty or university
 - 2026-10-04 22:45 `9ca0e28` feat: ask the high-school profile as the first step of the test
 - 2026-10-04 22:30 `564932a` feat: keep specializations only on their own page, not on the home page
-- 2026-10-04 18:02 `97391c5` docs: record the published decluttered version in the ledger
 <!-- commits:end -->
