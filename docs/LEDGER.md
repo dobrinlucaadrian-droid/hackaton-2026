@@ -7,7 +7,7 @@ lista de commit-uri de la final se reface singură.
 
 - **Scop:** UniPath — ghid între liceu și facultate. Hackathonul s-a încheiat (prezentare pe 2026-10-05); acum se construiește versiunea de producție: conturi, bază de date Convex, păreri moderate, securitate
 - **Unde:** versiunea de producție e pe ramura `production` (nepublicată; rulează local cu `npm run dev --prefix apps/web` și folosește baza Convex de dezvoltare, proiectul „unipath”). Versiunea prezentată e pe `main`, publică la https://unipath-taupe-mu.vercel.app, și nu se atinge până nu cere echipa. Planul: `docs/production-plan.md`
-- **Urmează:** pașii 1–5 din `docs/production-plan.md` sunt făcuți și verificați local pe ramura `production`. Rămâne „nivelul următor”, cu echipa: cheie Resend NOUĂ pusă de echipă în Convex ca `AUTH_RESEND_KEY` (cea lipită în conversație trebuie ștearsă din Resend) și un domeniu pentru email; setarea Google; chei Turnstile reale; lista `ADMIN_EMAILS`; adresa de contact și verificarea juridică a paginii de confidențialitate; baza de producție Convex și publicarea pe o adresă de probă. De măsurat: viteza paginilor, acum generate la fiecare vizită
+- **Urmează:** ordinea hotărâtă de echipă pe 2026-10-08 (vezi `docs/ultimii-pasi.md`): (1) baza de date completă cu universități, facultăți și programe de studii — ACUM, după ce echipa răspunde la întrebările de clarificare; (2) calitate tehnică; (3) ultimii pași: chei reale, domeniu, administratori, baza de producție, lansare. Pașii 1–5 din `docs/production-plan.md` sunt făcuți și verificați local pe ramura `production`
 - **De știut:** Vercel CLI și Convex CLI sunt logate doar din aplicația Claude (Vercel: cont `dobrinlucaadrian-7970`; Convex: echipa `dobrinlucaadrian`, proiect `unipath`, bază de dezvoltare `adjoining-duck-455`). `apps/web/.env.local` (adresa Convex și cheia publică de probă Turnstile) NU e în Git: dacă lipsește, `npx convex dev --once` în `apps/web` îl reface, iar `NEXT_PUBLIC_TURNSTILE_SITE_KEY` de probă este `1x00000000000000000000AA`. Pe baza de dezvoltare sunt puse `AUTH_DEV_LOG_LINKS=1` (linkul de conectare apare în `npx convex logs`), cheile de probă Turnstile și `ADMIN_EMAILS=admin.test@example.com`. Echipa vrea să lucrez cât mai mult local înainte să-i cer conturi sau chei
 
 ## Jurnal
@@ -20,6 +20,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-08 00:01 — schimbare de ordine: întâi baza de date completă, cheile reale la final
+- Cerut: echipa a observat că pașii cu chei reale sunt pași de producție și a hotărât ordinea: întâi un proiect cât mai bun tehnic, începând cu o bază de date completă (universități, facultăți, programe de studii), apoi acești pași, la final; să existe un fișier .md care spune că sunt cam ultimii pași. A cerut și deschiderea paginii de chei în Claude in Chrome
+- Făcut: `docs/ultimii-pasi.md` — ordinea de lucru (1. baza de date completă, 2. calitate tehnică, 3. ultimii pași) și fiecare pas final scris pe rând, cu cine îl face (cheia Resend, domeniu, administratori, Turnstile, Google, confidențialitate, baza de producție, adresa de probă și lansarea). Claude in Chrome nu era conectat (două încercări), deci pagina de chei nu a fost deschisă
+- Fișiere: `docs/ultimii-pasi.md` (nou)
+- Poartă: NEVERIFICAT (doar documente; niciun cod schimbat)
+- Urmează: întrebări către echipă despre baza de date completă (ce universități, ce câmpuri, de unde datele), apoi construirea ei
 
 ### 2026-10-07 01:14 — producție, pasul 5: pagina de confidențialitate; scanările de pe GitHub
 - Cerut: pasul 5 din plan (confidențialitate), local; verificarea că scanările automate rulează pe GitHub
@@ -401,6 +408,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-07 01:16 `4e39abf` docs: record the CI scan results and what is left for the next level
 - 2026-10-07 01:14 `c76d79c` feat: privacy page; generate route types before the CI type check
 - 2026-10-07 01:11 `cd08d1a` feat: security headers and CSP, CI security scans, patched auth package
 - 2026-10-06 01:59 `e44ee5f` docs: record where the production work stops for the day
@@ -430,5 +438,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 23:02 `46df569` feat: remove the search box from the home page
 - 2026-10-04 22:57 `956d89f` feat: search student opinions by faculty or university
 - 2026-10-04 22:45 `9ca0e28` feat: ask the high-school profile as the first step of the test
-- 2026-10-04 22:30 `564932a` feat: keep specializations only on their own page, not on the home page
 <!-- commits:end -->
