@@ -57,9 +57,10 @@ _Open only the files listed here; a file's description is its first comment line
 
 - **web** in `apps/web` — start: `npm run dev` → http://localhost:3000; test: `npm test`; build: `npm run build`
 
-### (root)  (1 files)
+### (root)  (2 files)
 
 - `.env.example` (24) — env vars: CONVEX_DEPLOYMENT, NEXT_PUBLIC_CONVEX_URL, NEXT_PUBLIC_CONVEX_SITE_URL, NEXT_PUBLIC_TURNSTILE_SITE_KEY
+- `cs.html` (1) — page "Data Home | College Scorecard"
 
 ### .github  (1 files)
 

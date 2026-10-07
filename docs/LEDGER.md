@@ -408,6 +408,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-08 00:01 `914f800` docs: final launch steps and the new order of work
 - 2026-10-07 01:16 `4e39abf` docs: record the CI scan results and what is left for the next level
 - 2026-10-07 01:14 `c76d79c` feat: privacy page; generate route types before the CI type check
 - 2026-10-07 01:11 `cd08d1a` feat: security headers and CSP, CI security scans, patched auth package
@@ -437,5 +438,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 23:10 `3d2e96b` feat: call the personality test a questionnaire (chestionar) in the UI
 - 2026-10-04 23:02 `46df569` feat: remove the search box from the home page
 - 2026-10-04 22:57 `956d89f` feat: search student opinions by faculty or university
-- 2026-10-04 22:45 `9ca0e28` feat: ask the high-school profile as the first step of the test
 <!-- commits:end -->
