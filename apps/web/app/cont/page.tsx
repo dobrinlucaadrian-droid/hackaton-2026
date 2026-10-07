@@ -1,5 +1,5 @@
 "use client";
-// "Contul meu": shows who is signed in and the saved questionnaire result, and lets the student sign out or delete the account.
+// "Contul meu": shows who is signed in (name and email, the name can be changed) and the saved questionnaire result, and lets the student sign out or delete the account.
 import { useAuthActions } from "@convex-dev/auth/react";
 import { useConvexAuth, useMutation, useQuery } from "convex/react";
 import Link from "next/link";
@@ -9,7 +9,8 @@ import { Shell } from "@/components/Shell";
 import { domainStyle } from "@/components/domainStyle";
 import { api } from "@/convex/_generated/api";
 import { domains, profiles } from "@/lib/data";
-import { takePendingResult } from "@/lib/pendingSave";
+import { cleanName } from "@/lib/name";
+import { takePendingName, takePendingResult } from "@/lib/pendingSave";
 
 const WHERE_LABEL = { ro: "În România", abroad: "În străinătate", any: "Oriunde" } as const;
 
@@ -22,6 +23,9 @@ export default function AccountPage() {
   const save = useMutation(api.results.save);
   const removeResult = useMutation(api.results.remove);
   const removeAccount = useMutation(api.account.remove);
+  const setName = useMutation(api.account.setName);
+  const [nameDraft, setNameDraft] = useState<string | null>(null); // null = not editing
+  const [nameError, setNameError] = useState<string | null>(null);
   const [confirming, setConfirming] = useState(false);
   const [busy, setBusy] = useState(false);
   const [note, setNote] = useState<string | null>(null);
@@ -31,13 +35,15 @@ export default function AccountPage() {
   useEffect(() => {
     if (!isAuthenticated || savedPending.current) return;
     savedPending.current = true;
+    const pendingName = takePendingName();
+    if (pendingName) setName({ name: pendingName }).catch(() => undefined);
     const pending = takePendingResult();
     if (pending) {
       save(pending)
         .then(() => setNote("Am salvat rezultatul tău în cont."))
         .catch(() => setNote("Nu am putut salva rezultatul. Reia chestionarul și încearcă din nou."));
     }
-  }, [isAuthenticated, save]);
+  }, [isAuthenticated, save, setName]);
 
   useEffect(() => {
     if (!isLoading && !isAuthenticated) router.replace("/conectare");
@@ -59,14 +65,32 @@ export default function AccountPage() {
     }
   }
 
+  async function saveName(e: React.FormEvent) {
+    e.preventDefault();
+    if (nameDraft === null) return;
+    const fullName = cleanName(nameDraft);
+    if (!fullName) {
+      setNameError("Scrie numele tău complet (prenume și nume).");
+      return;
+    }
+    setNameError(null);
+    try {
+      await setName({ name: fullName });
+      setNameDraft(null);
+    } catch {
+      setNameError("Scrie numele tău complet (prenume și nume).");
+    }
+  }
+
   const profile = result ? profiles.find((p) => p.id === result.profileId) : undefined;
   const top = result ? result.topDomains.map((id) => domains.find((d) => d.id === id)).filter((d): d is NonNullable<typeof d> => !!d) : [];
 
   return (
     <Shell>
       <h1 className="mt-4 text-4xl font-black tracking-tighter text-ink">Contul meu</h1>
-      <p className="mt-2 text-ink-soft">
-        Ești conectat ca <span className="font-bold text-ink">{me?.email ?? "utilizator"}</span>
+      <p className="mt-2 text-ink-soft" data-who>
+        {me?.name ? <>Bună, <span className="font-bold text-ink">{me.name}</span>! </> : null}
+        Ești conectat cu <span className="font-bold text-ink">{me?.email ?? "contul tău"}</span>
         {me?.isAdmin ? " · administrator" : ""}.
       </p>
       {note && (
@@ -119,6 +143,39 @@ export default function AccountPage() {
 
       <section className="mt-6 rounded-3xl bg-card p-6 shadow-sm ring-1 ring-line" aria-labelledby="cont-setari">
         <h2 id="cont-setari" className="text-2xl font-black tracking-tight text-ink">Cont</h2>
+        <div className="mt-3" data-name-box>
+          <p className="text-sm font-extrabold uppercase tracking-wide text-primary">Numele tău</p>
+          {nameDraft === null && me?.name ? (
+            <p className="mt-1 flex flex-wrap items-center gap-3 text-ink">
+              <span className="font-bold">{me.name}</span>
+              <button type="button" onClick={() => setNameDraft(me.name ?? "")} className="min-h-11 font-bold text-primary underline underline-offset-2">
+                Schimbă
+              </button>
+            </p>
+          ) : (
+            <form onSubmit={saveName} className="mt-1 flex flex-wrap items-start gap-2" noValidate>
+              <input
+                aria-label="Numele tău complet"
+                autoComplete="name"
+                maxLength={80}
+                value={nameDraft ?? ""}
+                onChange={(e) => setNameDraft(e.target.value)}
+                placeholder="Prenume și nume"
+                className="min-h-11 min-w-0 flex-1 rounded-xl border-2 border-transparent bg-paper px-4 text-ink ring-1 ring-line focus:border-primary focus:outline-none"
+              />
+              <button type="submit" className="min-h-11 rounded-full bg-primary px-5 font-black text-white hover:bg-primary-dark">
+                Salvează
+              </button>
+              {me?.name && (
+                <button type="button" onClick={() => { setNameDraft(null); setNameError(null); }} className="min-h-11 rounded-full px-3 font-bold text-ink-soft underline underline-offset-2">
+                  Renunță
+                </button>
+              )}
+              {!me?.name && !nameError && <p className="w-full text-sm text-ink-soft">Nu avem încă numele tău. Scrie-l aici.</p>}
+              {nameError && <p className="w-full text-sm font-bold text-primary-dark" role="alert">{nameError}</p>}
+            </form>
+          )}
+        </div>
         <div className="mt-4 flex flex-wrap gap-3">
           <button
             type="button"
@@ -136,7 +193,7 @@ export default function AccountPage() {
         {confirming && (
           <div className="mt-4 rounded-2xl bg-primary-tint p-4" role="alertdialog" aria-labelledby="sterge-titlu">
             <p id="sterge-titlu" className="font-extrabold text-primary-dark">Sigur vrei să ștergi contul?</p>
-            <p className="mt-1 text-sm text-primary-dark">Ștergem adresa de email și rezultatul salvat. Nu se poate anula.</p>
+            <p className="mt-1 text-sm text-primary-dark">Ștergem numele, adresa de email și rezultatul salvat. Nu se poate anula.</p>
             <div className="mt-3 flex flex-wrap gap-3">
               <button type="button" disabled={busy} onClick={() => void deleteAccount()} className="min-h-11 rounded-full bg-primary px-5 font-black text-white hover:bg-primary-dark disabled:opacity-50">
                 {busy ? "Se șterge..." : "Da, șterge contul"}

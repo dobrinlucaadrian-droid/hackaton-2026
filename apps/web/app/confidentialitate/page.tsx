@@ -40,11 +40,12 @@ export default function PrivacyPage() {
       <Block title="Dacă îți faci cont">
         <p>Păstrăm doar:</p>
         <ul className="list-disc space-y-1 pl-5 marker:text-primary">
+          <li>numele tău complet, așa cum îl scrii la conectare;</li>
           <li>adresa ta de email, ca să te poți conecta;</li>
           <li>rezultatul chestionarului pe care alegi să-l salvezi: profilul de liceu, răspunsurile, unde vrei să studiezi și cele trei domenii potrivite;</li>
           <li>datele tehnice ale conectării (când te-ai conectat și până când e valabilă sesiunea).</li>
         </ul>
-        <p>Nu îți cerem numele, școala, vârsta sau adresa. Nu folosim parole: te conectezi cu un link primit pe email sau cu Google, dacă alegi asta.</p>
+        <p>Nu îți cerem școala, vârsta, adresa sau numărul de telefon. Numele îl poți schimba oricând din „Contul meu”. Nu folosim parole: te conectezi cu un link primit pe email sau cu Google, dacă alegi asta.</p>
         <p>Dacă ești minor, vorbește cu un părinte sau cu tutorele tău înainte să îți faci cont.</p>
       </Block>
 
@@ -55,7 +56,7 @@ export default function PrivacyPage() {
 
       <Block title="Cum ștergi datele">
         <p>
-          Din pagina <Link href="/cont" className="font-bold text-primary underline underline-offset-2">Contul meu</Link> poți șterge rezultatul salvat sau tot contul. Ștergerea contului scoate adresa de email, rezultatul și datele de conectare și nu se poate anula.
+          Din pagina <Link href="/cont" className="font-bold text-primary underline underline-offset-2">Contul meu</Link> poți șterge rezultatul salvat sau tot contul. Ștergerea contului scoate numele, adresa de email, rezultatul și datele de conectare și nu se poate anula.
         </p>
       </Block>
 

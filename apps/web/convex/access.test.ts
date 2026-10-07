@@ -186,3 +186,32 @@ describe("public review form", () => {
     expect(await t.run((ctx) => ctx.db.query("reviews").collect())).toHaveLength(20);
   });
 });
+
+describe("full name", () => {
+  it("each user saves only their own name; visitors are refused", async () => {
+    const { t, alice, bob, as } = await setup();
+    await expect(t.mutation(api.account.setName, { name: "Ana Pop" })).rejects.toThrow("Trebuie să fii conectat");
+    await as(alice).mutation(api.account.setName, { name: "  Ana   Maria  Pop " });
+    expect(await as(alice).query(api.account.me, {})).toEqual({ name: "Ana Maria Pop", email: "alice@example.com", isAdmin: false });
+    expect((await as(bob).query(api.account.me, {}))?.name).toBeUndefined();
+    // @ts-expect-error a user id is not an accepted argument
+    await expect(as(alice).mutation(api.account.setName, { name: "Alt Nume", userId: bob })).rejects.toThrow();
+    expect((await t.run((ctx) => ctx.db.get(bob)))?.name).toBeUndefined();
+  });
+
+  it("refuses names that are empty, too long, or not a name", async () => {
+    const { alice, as } = await setup();
+    for (const bad of ["", "  ", "ab", "x".repeat(81), "12345", "Ana <script>", "http://spam.example", "ana@example.com"]) {
+      await expect(as(alice).mutation(api.account.setName, { name: bad }), bad).rejects.toThrow("numele tău complet");
+    }
+    await as(alice).mutation(api.account.setName, { name: "Ștefan-Andrei O'Neil" });
+    expect((await as(alice).query(api.account.me, {}))?.name).toBe("Ștefan-Andrei O'Neil");
+  });
+
+  it("the name is gone when the account is deleted", async () => {
+    const { t, alice, as } = await setup();
+    await as(alice).mutation(api.account.setName, { name: "Ana Pop" });
+    await as(alice).mutation(api.account.remove, {});
+    expect(await t.run((ctx) => ctx.db.get(alice))).toBeNull();
+  });
+});

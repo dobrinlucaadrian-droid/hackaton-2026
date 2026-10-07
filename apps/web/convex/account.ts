@@ -1,19 +1,32 @@
-// The signed-in user's own account: who they are, which sign-in methods exist, and deleting the account with everything saved in it.
+// The signed-in user's own account: who they are (name and email), which sign-in methods exist, and deleting the account with everything saved in it.
 import { getAuthUserId } from "@convex-dev/auth/server";
-import { v } from "convex/values";
+import { ConvexError, v } from "convex/values";
 import { query } from "./_generated/server";
+import { cleanName } from "../lib/name";
 import { userMutation } from "./access";
 
-/** The signed-in user (email and whether they are an administrator), or null when nobody is signed in. */
+/** The signed-in user (name, email and whether they are an administrator), or null when nobody is signed in. */
 export const me = query({
   args: {},
-  returns: v.union(v.object({ email: v.optional(v.string()), isAdmin: v.boolean() }), v.null()),
+  returns: v.union(v.object({ name: v.optional(v.string()), email: v.optional(v.string()), isAdmin: v.boolean() }), v.null()),
   handler: async (ctx) => {
     const userId = await getAuthUserId(ctx);
     if (userId === null) return null;
     const user = await ctx.db.get(userId);
     if (!user) return null;
-    return { ...(user.email ? { email: user.email } : {}), isAdmin: user.role === "admin" };
+    return { ...(user.name ? { name: user.name } : {}), ...(user.email ? { email: user.email } : {}), isAdmin: user.role === "admin" };
+  },
+});
+
+/** Saves the signed-in user's own full name. */
+export const setName = userMutation({
+  args: { name: v.string() },
+  returns: v.null(),
+  handler: async (ctx, { name }) => {
+    const clean = cleanName(name);
+    if (!clean) throw new ConvexError("Scrie numele tău complet (prenume și nume).");
+    await ctx.db.patch(ctx.userId, { name: clean });
+    return null;
   },
 });
 

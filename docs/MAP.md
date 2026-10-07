@@ -57,10 +57,9 @@ _Open only the files listed here; a file's description is its first comment line
 
 - **web** in `apps/web` — start: `npm run dev` → http://localhost:3000; test: `npm test`; build: `npm run build`
 
-### (root)  (2 files)
+### (root)  (1 files)
 
 - `.env.example` (24) — env vars: CONVEX_DEPLOYMENT, NEXT_PUBLIC_CONVEX_URL, NEXT_PUBLIC_CONVEX_SITE_URL, NEXT_PUBLIC_TURNSTILE_SITE_KEY
-- `cs.html` (1) — page "Data Home | College Scorecard"
 
 ### .github  (1 files)
 
@@ -103,15 +102,15 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/conectare  (1 files)
 
-- `page.tsx` (107) — Sign-in page: the student types an email and receives a sign-in link; a Google button appears when Google sign-in is configured. No passwords.. Routes: /conectare. Exports: SignInPage
+- `page.tsx` (147) — Sign-in page: the visitor types their full name and email and receives a sign-in link, which also creates the account the first time. A Google button appears when Google sign-in is configured. No passwords.. Routes: /conectare. Exports: SignInPage
 
 ### apps/web/app/confidentialitate  (1 files)
 
-- `page.tsx` (91) — Privacy page: in plain Romanian, what UniPath stores, why, who processes it and how to delete it. Working draft until a legal check.. Routes: /confidentialitate. Exports: metadata, PrivacyPage
+- `page.tsx` (92) — Privacy page: in plain Romanian, what UniPath stores, why, who processes it and how to delete it. Working draft until a legal check.. Routes: /confidentialitate. Exports: metadata, PrivacyPage
 
 ### apps/web/app/cont  (1 files)
 
-- `page.tsx` (154) — "Contul meu": shows who is signed in and the saved questionnaire result, and lets the student sign out or delete the account.. Routes: /cont. Exports: AccountPage
+- `page.tsx` (211) — "Contul meu": shows who is signed in (name and email, the name can be changed) and the saved questionnaire result, and lets the student sign out or delete the account.. Routes: /cont. Exports: AccountPage
 
 ### apps/web/app/quiz  (1 files)
 
@@ -188,9 +187,9 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/convex  (11 files)
 
-- `access.test.ts` (189) — @vitest-environment edge-runtime
+- `access.test.ts` (218) — @vitest-environment edge-runtime
 - `access.ts` (34) — Shared access rules: every function that needs a signed-in user or an administrator is built from these wrappers, so the check cannot be forgotten.. Exports: userQuery, userMutation, adminQuery, adminMutation
-- `account.ts` (55) — The signed-in user's own account: who they are, which sign-in methods exist, and deleting the account with everything saved in it.. Exports: me, signInMethods, remove
+- `account.ts` (68) — The signed-in user's own account: who they are (name and email), which sign-in methods exist, and deleting the account with everything saved in it.. Exports: me, setName, signInMethods, remove
 - `auth.config.ts` (12) — Tells Convex which issuer signs the session tokens (this deployment itself, through Convex Auth).
 - `auth.ts` (55) — Convex Auth setup: sign-in with an email magic link (sent through Resend) and, when configured, Google. No passwords are stored.. Exports: adminEmails
 - `convex.config.ts` (9) — Convex app setup: installs the rate-limiter component used by the public review form.
@@ -213,7 +212,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `universities-abroad.json` (3203) — JSON array, 57 items
 - `universities-ro.json` (3487) — JSON array, 74 items
 
-### apps/web/lib  (17 files)
+### apps/web/lib  (18 files)
 
 - `activities.test.ts` (57) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
 - `activities.ts` (73) — Activities a student can add (competitions, volunteering, extracurriculars): labels, areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, describeActivity
@@ -224,7 +223,8 @@ _Open only the files listed here; a file's description is its first comment line
 - `data.ts` (19) — Loads the seeded JSON (profiles, questions, domains, universities, specializations, categories, testimonials) as typed arrays.. Exports: profiles, questions, domains, universities, specializations, categories, testimonials
 - `match.test.ts` (245) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
 - `match.ts` (187) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: TRAITS, TRAIT_LABEL, matchDomains, studentTraits, matchByTraits
-- `pendingSave.ts` (34) — Keeps a questionnaire result on this device while the student signs in (the email link may open in another tab), so it can be saved to the account afterwards.. Exports: setPendingResult, takePendingResult
+- `name.ts` (12) — The one rule for a person's full name, used by the sign-in form, the account page and the server.. Exports: NAME_MAX, cleanName
+- `pendingSave.ts` (55) — Keeps a questionnaire result on this device while the student signs in (the email link may open in another tab), so it can be saved to the account afterwards.. Exports: setPendingResult, takePendingResult, setPendingName, takePendingName
 - `session.ts` (109) — Keeps the student's answers (and optional activities with photos) in sessionStorage between pages (safe on the server).. Exports: loadDraft, saveDraft, clearDraft, toAnswers, shrinkImage
 - `testimonials.ts` (29) — Links student opinions to the universities that have a profile sheet, so the search and the sheets can show them.. Exports: universityIdOf, testimonialsFor
 - `types.ts` (181) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.

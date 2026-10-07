@@ -31,3 +31,24 @@ export function takePendingResult(): PendingResult | null {
     return null;
   }
 }
+
+const NAME_KEY = "unipath-pending-name";
+
+/** Remembers the full name typed on the sign-in form until the email link has been opened. */
+export function setPendingName(name: string): void {
+  try {
+    window.localStorage.setItem(NAME_KEY, name);
+  } catch {
+    // ignore: storage blocked
+  }
+}
+
+export function takePendingName(): string | null {
+  try {
+    const name = window.localStorage.getItem(NAME_KEY);
+    if (name !== null) window.localStorage.removeItem(NAME_KEY);
+    return name && name.trim() ? name : null;
+  } catch {
+    return null;
+  }
+}

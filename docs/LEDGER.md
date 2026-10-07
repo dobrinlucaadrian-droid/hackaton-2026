@@ -21,6 +21,14 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-08 02:47 — conturi cu nume complet și email
+- Cerut: utilizatorii să se poată conecta cu nume complet și email, iar noi să salvăm aceste date și să le creăm cont pe platformă. Înainte: cercetarea surselor oficiale de date pentru baza de universități și programe a fost salvată în `docs/db-sources.md`; planul pe țări așteaptă confirmarea echipei
+- Făcut: formularul de conectare cere „Numele tău complet” și „Adresa ta de email”; la prima conectare se creează contul, iar numele se salvează în el imediat după deschiderea linkului din email (conectarea rămâne fără parolă). „Contul meu” salută cu numele, îl arată și îl lasă schimbat; dacă lipsește (de exemplu la un cont vechi), îl cere acolo. Regula pentru nume e una singură, folosită în formular, în cont și pe server (`lib/name.ts`): 3–80 de caractere, cel puțin o literă, fără linkuri sau simboluri de cod. Ștergerea contului șterge și numele. Pagina de confidențialitate spune acum că păstrăm numele complet. Șters un fișier rătăcit (`cs.html`) lăsat în rădăcina proiectului de agentul de cercetare
+- Fișiere: `apps/web/app/conectare/page.tsx`, `apps/web/app/cont/page.tsx`, `apps/web/app/confidentialitate/page.tsx`, `apps/web/convex/account.ts`, `apps/web/convex/access.test.ts`, `apps/web/lib/name.ts` (nou), `apps/web/lib/pendingSave.ts`
+- Poartă: TRECUT (build, 91 de teste, pornire). Teste noi: fiecare utilizator își salvează doar numele lui, vizitatorii sunt refuzați, numele goale, prea lungi sau care nu sunt nume sunt refuzate, numele dispare la ștergerea contului. Probă reală într-un browser separat, la lățime de telefon, pe baza de dezvoltare: fără nume sau cu „ab” formularul nu trimite nimic și nu se creează cont; cu „Maria Ionescu” și email → link → „Contul meu” spune „Bună, Maria Ionescu!” și numele e în baza de date; schimbat în „Maria-Elena Ionescu” (un nume cu cod e refuzat); la a doua conectare numele e tot acolo; după ștergerea contului utilizatorul nu mai există în bază; fără erori. NEVERIFICAT: email real prin Resend; Google; pe un telefon real
+- De știut: păstrăm acum numele real al utilizatorilor, dintre care mulți sunt minori; asta mărește răspunderea pentru protecția datelor și trebuie văzut la verificarea juridică (vezi `docs/ultimii-pasi.md`, pasul 6). Cu Google, numele vine din contul Google
+- Urmează: confirmarea echipei pentru planul bazei de date (România din lista oficială, apoi alte țări)
+
 ### 2026-10-08 00:01 — schimbare de ordine: întâi baza de date completă, cheile reale la final
 - Cerut: echipa a observat că pașii cu chei reale sunt pași de producție și a hotărât ordinea: întâi un proiect cât mai bun tehnic, începând cu o bază de date completă (universități, facultăți, programe de studii), apoi acești pași, la final; să existe un fișier .md care spune că sunt cam ultimii pași. A cerut și deschiderea paginii de chei în Claude in Chrome
 - Făcut: `docs/ultimii-pasi.md` — ordinea de lucru (1. baza de date completă, 2. calitate tehnică, 3. ultimii pași) și fiecare pas final scris pe rând, cu cine îl face (cheia Resend, domeniu, administratori, Turnstile, Google, confidențialitate, baza de producție, adresa de probă și lansarea). Claude in Chrome nu era conectat (două încercări), deci pagina de chei nu a fost deschisă
@@ -408,6 +416,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-08 00:16 `a1fd781` docs: research on official and open data sources for universities and programmes
 - 2026-10-08 00:01 `914f800` docs: final launch steps and the new order of work
 - 2026-10-07 01:16 `4e39abf` docs: record the CI scan results and what is left for the next level
 - 2026-10-07 01:14 `c76d79c` feat: privacy page; generate route types before the CI type check
@@ -437,5 +446,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-04 23:32 `803b972` feat: seven more student opinions with photos, and Anton Mocanu's photo
 - 2026-10-04 23:10 `3d2e96b` feat: call the personality test a questionnaire (chestionar) in the UI
 - 2026-10-04 23:02 `46df569` feat: remove the search box from the home page
-- 2026-10-04 22:57 `956d89f` feat: search student opinions by faculty or university
 <!-- commits:end -->
