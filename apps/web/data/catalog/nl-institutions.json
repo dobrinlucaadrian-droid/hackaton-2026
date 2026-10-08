@@ -1,5 +1,16 @@
 [
  {
+  "id": "buas",
+  "country": "NL",
+  "source": "DUO RIO 2026-10",
+  "name": "Breda University of Applied Sciences",
+  "officialName": "Breda University of Applied Sciences",
+  "city": "Breda",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 12
+ },
+ {
   "id": "eur",
   "country": "NL",
   "source": "DUO RIO 2026-10",
@@ -9,6 +20,53 @@
   "kind": "public",
   "hasSheet": true,
   "programs": 21
+ },
+ {
+  "id": "fontys",
+  "country": "NL",
+  "source": "DUO RIO 2026-10",
+  "name": "Fontys Hogeschool",
+  "officialName": "Fontys Hogeschool",
+  "city": "Eindhoven",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "https://fontys.nl",
+  "programs": 97
+ },
+ {
+  "id": "han",
+  "country": "NL",
+  "source": "DUO RIO 2026-10",
+  "name": "Hogeschool van Arnhem en Nijmegen",
+  "officialName": "Hogeschool van Arnhem en Nijmegen",
+  "city": "Arnhem",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 66
+ },
+ {
+  "id": "hanze",
+  "country": "NL",
+  "source": "DUO RIO 2026-10",
+  "name": "Hanzehogeschool Groningen",
+  "officialName": "Hanzehogeschool Groningen",
+  "city": "Groningen",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "http://www.hanze.nl",
+  "programs": 46
+ },
+ {
+  "id": "inholland",
+  "country": "NL",
+  "source": "DUO RIO 2026-10",
+  "name": "Hogeschool Inholland",
+  "officialName": "Hogeschool Inholland",
+  "city": "Rotterdam",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "http://www.inholland.nl",
+  "programs": 68
  },
  {
   "id": "leiden",
@@ -91,17 +149,6 @@
   "programs": 58
  },
  {
-  "id": "nl-breda-university-of-applied-sciences",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "Breda University of Applied Sciences",
-  "officialName": "Breda University of Applied Sciences",
-  "city": "Breda",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 12
- },
- {
   "id": "nl-capabel-hogeschool",
   "country": "NL",
   "source": "DUO RIO 2026-10",
@@ -124,17 +171,6 @@
   "programs": 11
  },
  {
-  "id": "nl-christelijke-hogeschool-windesheim",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "Christelijke Hogeschool Windesheim",
-  "officialName": "Christelijke Hogeschool Windesheim",
-  "city": "Zwolle",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 63
- },
- {
   "id": "nl-codarts-hogeschool-voor-de-kunsten",
   "country": "NL",
   "source": "DUO RIO 2026-10",
@@ -145,18 +181,6 @@
   "hasSheet": false,
   "website": "https://www.codarts.nl",
   "programs": 5
- },
- {
-  "id": "nl-de-haagse-hogeschool",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "De Haagse Hogeschool",
-  "officialName": "De Haagse Hogeschool",
-  "city": "'s-Gravenhage",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "https://www.dehaagsehogeschool.nl",
-  "programs": 36
  },
  {
   "id": "nl-design-academy-eindhoven",
@@ -216,18 +240,6 @@
   "programs": 3
  },
  {
-  "id": "nl-fontys-hogeschool",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "Fontys Hogeschool",
-  "officialName": "Fontys Hogeschool",
-  "city": "Eindhoven",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "https://fontys.nl",
-  "programs": 97
- },
- {
   "id": "nl-gerrit-rietveld-academie",
   "country": "NL",
   "source": "DUO RIO 2026-10",
@@ -262,18 +274,6 @@
   "hasSheet": false,
   "website": "https://habeoplus.nl",
   "programs": 3
- },
- {
-  "id": "nl-hanzehogeschool-groningen",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "Hanzehogeschool Groningen",
-  "officialName": "Hanzehogeschool Groningen",
-  "city": "Groningen",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "http://www.hanze.nl",
-  "programs": 46
  },
  {
   "id": "nl-has-green-academy",
@@ -320,18 +320,6 @@
   "kind": "public",
   "hasSheet": false,
   "programs": 5
- },
- {
-  "id": "nl-hogeschool-inholland",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "Hogeschool Inholland",
-  "officialName": "Hogeschool Inholland",
-  "city": "Rotterdam",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "http://www.inholland.nl",
-  "programs": 68
  },
  {
   "id": "nl-hogeschool-ipabo-amsterdam-alkmaar",
@@ -455,17 +443,6 @@
   "kind": "public",
   "hasSheet": false,
   "programs": 52
- },
- {
-  "id": "nl-hogeschool-van-arnhem-en-nijmegen",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "Hogeschool van Arnhem en Nijmegen",
-  "officialName": "Hogeschool van Arnhem en Nijmegen",
-  "city": "Arnhem",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 66
  },
  {
   "id": "nl-hogeschool-van-hall-larenstein",
@@ -720,30 +697,6 @@
   "programs": 1
  },
  {
-  "id": "nl-radboud-universiteit-nijmegen",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "Radboud Universiteit Nijmegen",
-  "officialName": "Radboud Universiteit Nijmegen",
-  "city": "Nijmegen",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "https://www.ru.nl",
-  "programs": 39
- },
- {
-  "id": "nl-saxion-hogeschool",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "Saxion Hogeschool",
-  "officialName": "Saxion Hogeschool",
-  "city": "Enschede",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "http://www.saxion.nl",
-  "programs": 60
- },
- {
   "id": "nl-schoevers",
   "country": "NL",
   "source": "DUO RIO 2026-10",
@@ -905,17 +858,6 @@
   "programs": 2
  },
  {
-  "id": "nl-tilburg-university",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "Tilburg University",
-  "officialName": "Tilburg University",
-  "city": "Tilburg",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 23
- },
- {
   "id": "nl-tio",
   "country": "NL",
   "source": "DUO RIO 2026-10",
@@ -972,17 +914,6 @@
   "programs": 2
  },
  {
-  "id": "nl-wageningen-university",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "Wageningen University",
-  "officialName": "Wageningen University",
-  "city": "Wageningen",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 21
- },
- {
   "id": "nl-wittenborg-university-of-applied-sciences-b-v",
   "country": "NL",
   "source": "DUO RIO 2026-10",
@@ -995,16 +926,16 @@
   "programs": 2
  },
  {
-  "id": "nl-zuyd-hogeschool",
+  "id": "radboud",
   "country": "NL",
   "source": "DUO RIO 2026-10",
-  "name": "Zuyd Hogeschool",
-  "officialName": "Zuyd Hogeschool",
-  "city": "Heerlen",
+  "name": "Radboud Universiteit Nijmegen",
+  "officialName": "Radboud Universiteit Nijmegen",
+  "city": "Nijmegen",
   "kind": "public",
-  "hasSheet": false,
-  "website": "https://www.zuyd.nl",
-  "programs": 36
+  "hasSheet": true,
+  "website": "https://www.ru.nl",
+  "programs": 39
  },
  {
   "id": "rug",
@@ -1017,6 +948,41 @@
   "hasSheet": true,
   "website": "https://www.rug.nl",
   "programs": 52
+ },
+ {
+  "id": "saxion",
+  "country": "NL",
+  "source": "DUO RIO 2026-10",
+  "name": "Saxion Hogeschool",
+  "officialName": "Saxion Hogeschool",
+  "city": "Enschede",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "http://www.saxion.nl",
+  "programs": 60
+ },
+ {
+  "id": "the-hague-uas",
+  "country": "NL",
+  "source": "DUO RIO 2026-10",
+  "name": "De Haagse Hogeschool",
+  "officialName": "De Haagse Hogeschool",
+  "city": "'s-Gravenhage",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "https://www.dehaagsehogeschool.nl",
+  "programs": 36
+ },
+ {
+  "id": "tilburg-university",
+  "country": "NL",
+  "source": "DUO RIO 2026-10",
+  "name": "Tilburg University",
+  "officialName": "Tilburg University",
+  "city": "Tilburg",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 23
  },
  {
   "id": "tu-delft",
@@ -1086,5 +1052,39 @@
   "kind": "public",
   "hasSheet": true,
   "programs": 45
+ },
+ {
+  "id": "wageningen",
+  "country": "NL",
+  "source": "DUO RIO 2026-10",
+  "name": "Wageningen University",
+  "officialName": "Wageningen University",
+  "city": "Wageningen",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 21
+ },
+ {
+  "id": "windesheim",
+  "country": "NL",
+  "source": "DUO RIO 2026-10",
+  "name": "Christelijke Hogeschool Windesheim",
+  "officialName": "Christelijke Hogeschool Windesheim",
+  "city": "Zwolle",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 63
+ },
+ {
+  "id": "zuyd",
+  "country": "NL",
+  "source": "DUO RIO 2026-10",
+  "name": "Zuyd Hogeschool",
+  "officialName": "Zuyd Hogeschool",
+  "city": "Heerlen",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "https://www.zuyd.nl",
+  "programs": 36
  }
 ]

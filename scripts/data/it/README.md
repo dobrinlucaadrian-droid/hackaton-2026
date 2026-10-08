@@ -25,7 +25,7 @@ Italian Open Data License v2.0 (IODL 2.0), as stated in the dataset's CKAN metad
 - One row per course x university x seat x degree type x language x delivery. The source lists an inter-class course (one course that belongs to two degree classes, for example L-8 and L-9, or L-18 and L-33) once per class: these 76 pairs are merged into one row each. One more pair is merged because it differs only in access type (Giurisprudenza at Bergamo, "accesso libero" and "locale"). 77 rows removed in total.
 - Not merged, because they are different offers: the same course name in Italian and in English (5 medicine courses), conventional and distance versions (4), the three-year and the single-cycle Architettura at Iuav Venezia, and Tor Vergata's two medicine courses with a seat abroad (their keys end in "-2").
 - Institutions: the 92 universities that have kept rows, joined to `atenei.csv` by operative name. Public = `StataleLibera` S, private = L (telematic universities are private). City = the university's seat; programme city = `SedeCorso_Comune` (title-cased; the source placeholder "Comune Estero", 2 rows, is replaced by the institution seat).
-- Reused app sheets (hasSheet true): unibo, polimi, polito, sapienza, unipd, bocconi.
+- Reused app sheets (hasSheet true): unibo, polimi, polito, sapienza, unipd, bocconi, unipi, unina, unive, unige, tor-vergata, roma-tre, units, univr, luiss, unicatt, unipr, unibz.
 
 ## Field choices
 

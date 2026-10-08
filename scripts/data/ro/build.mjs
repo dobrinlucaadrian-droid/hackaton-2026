@@ -20,22 +20,13 @@ const SHEET = {
   "2|11": "unefs", "2|12": "snspa", "2|13": "uab", "2|14": "uav-arad", "2|15": "ub-bacau", "2|16": "unitbv", "2|17": "utcn", "2|18": "usamv-cluj", "2|19": "ubb-cluj", "2|20": "umf-cluj",
   "2|21": "amgd-cluj", "2|22": "uad-cluj", "2|23": "ovidius", "2|24": "umc", "2|25": "ucv", "2|26": "umf-craiova", "2|27": "ugal", "2|28": "tuiasi", "2|29": "iuls", "2|30": "uaic",
   "2|31": "umf-iasi", "2|32": "arte-iasi", "2|33": "uoradea", "2|34": "upet", "2|35": "upg", "2|36": "ulbs", "2|37": "usv-suceava", "2|38": "valahia", "2|39": "utgjiu", "2|40": "umfst",
-  "2|41": "uat-tgmures", "2|42": "upt", "2|43": "usvt", "2|44": "uvt", "2|45": "umft", "2|46": "atm", "2|47": "unap", "2|49": "academia-politie", "2|50": "afa-brasov", "2|51": "anmb", "2|52": "aft-sibiu",
-  "3|1": "ucdc", "3|2": "utm", "3|3": "univnt", "3|4": "rau", "3|5": "hyperion", "3|6": "spiru-haret", "3|7": "bioterra", "3|8": "ueb", "3|9": "athenaeum", "3|10": "artifex",
-  "3|14": "uvvg", "3|15": "george-bacovia", "3|19": "sapientia", "3|20": "andrei-saguna", "3|21": "danubius", "3|23": "upa-iasi", "3|24": "apollonia", "3|26": "agora-oradea", "3|27": "emanuel-oradea",
-  "3|28": "partium", "3|29": "ucb-pitesti", "3|32": "tibiscus", "3|33": "adventus",
+  "2|41": "uat-tgmures", "2|42": "upt", "2|43": "usvt", "2|44": "uvt", "2|45": "umft", "2|46": "atm", "2|47": "unap", "2|48": "ani-bucuresti", "2|49": "academia-politie", "2|50": "afa-brasov", "2|51": "anmb", "2|52": "aft-sibiu",
+  "3|1": "ucdc", "3|2": "utm", "3|3": "univnt", "3|4": "rau", "3|5": "hyperion", "3|6": "spiru-haret", "3|7": "bioterra", "3|8": "ueb", "3|9": "athenaeum", "3|10": "artifex", "3|11": "itb-bucuresti", "3|12": "itp-bucuresti",
+  "3|14": "uvvg", "3|15": "george-bacovia", "3|17": "bogdan-voda", "3|18": "itp-cluj", "3|19": "sapientia", "3|20": "andrei-saguna", "3|21": "danubius", "3|23": "upa-iasi", "3|24": "apollonia", "3|25": "dragan-lugoj", "3|26": "agora-oradea", "3|27": "emanuel-oradea",
+  "3|28": "partium", "3|29": "ucb-pitesti", "3|31": "cantemir-tgmures", "3|32": "tibiscus", "3|33": "adventus", "3|34": "timotheus", "3|35": "ioan-slavici",
 };
-// Institutions in the official list that have no sheet in the app yet: id, display name and city written by hand from the official title.
+// Institutions in the official list that have no sheet in the app ("tomis" deliberately has none): id, display name and city written by hand from the official title.
 const NEW = {
-  "2|48": { id: "ani-bucuresti", name: "Academia Națională de Informații „Mihai Viteazul”", city: "București" },
-  "3|11": { id: "itb-bucuresti", name: "Institutul Teologic Baptist din București", city: "București" },
-  "3|12": { id: "itp-bucuresti", name: "Institutul Teologic Penticostal din București", city: "București" },
-  "3|17": { id: "bogdan-voda", name: "Universitatea „Bogdan Vodă” din Cluj-Napoca", city: "Cluj-Napoca" },
-  "3|18": { id: "itp-cluj", name: "Institutul Teologic Protestant din Cluj-Napoca", city: "Cluj-Napoca" },
-  "3|25": { id: "dragan-lugoj", name: "Universitatea Europeană „Drăgan” din Lugoj", city: "Lugoj" },
-  "3|31": { id: "cantemir-tgmures", name: "Universitatea „Dimitrie Cantemir” din Târgu Mureș", city: "Târgu Mureș" },
-  "3|34": { id: "timotheus", name: "Institutul Teologic Creștin după Evanghelie „Timotheus” din București", city: "București" },
-  "3|35": { id: "ioan-slavici", name: "Universitatea „Ioan Slavici” din Timișoara", city: "Timișoara" },
   "3|36": { id: "tomis", name: "Universitatea „Tomis” din Constanța", city: "Constanța" },
 };
 const officialTitle = (s) => ro(s).replace(/\s+(credite de|maxim de|Număr de|Număr).*$/i, "").replace(/\s+\d+$/, "").replace(/\s+-\s+înființată prin Legea.*$/i, "").replace(/\s+-\s+Învățământ universitar.*$/i, "").trim();

@@ -33,17 +33,6 @@
   "programs": 30
  },
  {
-  "id": "it-libera-universita-di-bolzano",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Libera Università di Bolzano",
-  "officialName": "Libera Università di Bolzano",
-  "city": "Bolzano",
-  "kind": "private",
-  "hasSheet": false,
-  "programs": 15
- },
- {
   "id": "it-libera-universita-di-lingue-e-comunicazione-iulm",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
@@ -99,17 +88,6 @@
   "programs": 36
  },
  {
-  "id": "it-luiss-libera-universita-internazionale-degli-studi-sociali-guido-carli",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Luiss - Libera Università internazionale degli studi sociali Guido Carli di Roma",
-  "officialName": "Luiss - Libera Università internazionale degli studi sociali Guido Carli di Roma",
-  "city": "Roma",
-  "kind": "private",
-  "hasSheet": false,
-  "programs": 8
- },
- {
   "id": "it-politecnico-di-bari",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
@@ -132,17 +110,6 @@
   "programs": 10
  },
  {
-  "id": "it-universita-ca-foscari-venezia",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università Ca' Foscari Venezia",
-  "officialName": "Università Ca' Foscari Venezia",
-  "city": "Venezia",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 22
- },
- {
   "id": "it-universita-campus-bio-medico-di-roma",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
@@ -163,17 +130,6 @@
   "kind": "private",
   "hasSheet": false,
   "programs": 2
- },
- {
-  "id": "it-universita-cattolica-del-sacro-cuore",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università Cattolica del \"Sacro Cuore\"",
-  "officialName": "Università Cattolica del \"Sacro Cuore\"",
-  "city": "Milano",
-  "kind": "private",
-  "hasSheet": false,
-  "programs": 75
  },
  {
   "id": "it-universita-degli-studi-carlo-bo-di-urbino",
@@ -385,17 +341,6 @@
   "programs": 38
  },
  {
-  "id": "it-universita-degli-studi-di-genova",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università degli studi di Genova",
-  "officialName": "Università degli studi di Genova",
-  "city": "Genova",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 82
- },
- {
   "id": "it-universita-degli-studi-di-l-aquila",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
@@ -462,17 +407,6 @@
   "programs": 53
  },
  {
-  "id": "it-universita-degli-studi-di-napoli-federico-ii",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università degli studi di Napoli Federico II",
-  "officialName": "Università degli studi di Napoli Federico II",
-  "city": "Napoli",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 89
- },
- {
   "id": "it-universita-degli-studi-di-napoli-parthenope",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
@@ -493,17 +427,6 @@
   "kind": "public",
   "hasSheet": false,
   "programs": 105
- },
- {
-  "id": "it-universita-degli-studi-di-parma",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università degli studi di Parma",
-  "officialName": "Università degli studi di Parma",
-  "city": "Parma",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 58
  },
  {
   "id": "it-universita-degli-studi-di-pavia",
@@ -537,17 +460,6 @@
   "kind": "public",
   "hasSheet": false,
   "programs": 1
- },
- {
-  "id": "it-universita-degli-studi-di-roma-tor-vergata",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università degli studi di Roma Tor Vergata",
-  "officialName": "Università degli studi di Roma Tor Vergata",
-  "city": "Roma",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 70
  },
  {
   "id": "it-universita-degli-studi-di-salerno",
@@ -616,17 +528,6 @@
   "programs": 27
  },
  {
-  "id": "it-universita-degli-studi-di-trieste",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università degli studi di Trieste",
-  "officialName": "Università degli studi di Trieste",
-  "city": "Trieste",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 42
- },
- {
   "id": "it-universita-degli-studi-di-udine",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
@@ -636,17 +537,6 @@
   "kind": "public",
   "hasSheet": false,
   "programs": 43
- },
- {
-  "id": "it-universita-degli-studi-di-verona",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università degli studi di Verona",
-  "officialName": "Università degli studi di Verona",
-  "city": "Verona",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 55
  },
  {
   "id": "it-universita-degli-studi-gabriele-d-annunzio-di-chieti-e-pescara",
@@ -693,17 +583,6 @@
   "programs": 15
  },
  {
-  "id": "it-universita-degli-studi-roma-tre",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università degli studi Roma Tre",
-  "officialName": "Università degli studi Roma Tre",
-  "city": "Roma",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 37
- },
- {
   "id": "it-universita-degli-studi-suor-orsola-benincasa-di-napoli",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
@@ -746,17 +625,6 @@
   "kind": "private",
   "hasSheet": false,
   "programs": 5
- },
- {
-  "id": "it-universita-di-pisa",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università di Pisa",
-  "officialName": "Università di Pisa",
-  "city": "Pisa",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 75
  },
  {
   "id": "it-universita-di-scienze-gastronomiche",
@@ -957,6 +825,17 @@
   "programs": 12
  },
  {
+  "id": "luiss",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Luiss - Libera Università internazionale degli studi sociali Guido Carli di Roma",
+  "officialName": "Luiss - Libera Università internazionale degli studi sociali Guido Carli di Roma",
+  "city": "Roma",
+  "kind": "private",
+  "hasSheet": true,
+  "programs": 8
+ },
+ {
   "id": "polimi",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
@@ -979,6 +858,17 @@
   "programs": 24
  },
  {
+  "id": "roma-tre",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università degli studi Roma Tre",
+  "officialName": "Università degli studi Roma Tre",
+  "city": "Roma",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 37
+ },
+ {
   "id": "sapienza",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
@@ -988,6 +878,17 @@
   "kind": "public",
   "hasSheet": true,
   "programs": 175
+ },
+ {
+  "id": "tor-vergata",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università degli studi di Roma Tor Vergata",
+  "officialName": "Università degli studi di Roma Tor Vergata",
+  "city": "Roma",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 70
  },
  {
   "id": "unibo",
@@ -1001,6 +902,50 @@
   "programs": 117
  },
  {
+  "id": "unibz",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Libera Università di Bolzano",
+  "officialName": "Libera Università di Bolzano",
+  "city": "Bolzano",
+  "kind": "private",
+  "hasSheet": true,
+  "programs": 15
+ },
+ {
+  "id": "unicatt",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università Cattolica del \"Sacro Cuore\"",
+  "officialName": "Università Cattolica del \"Sacro Cuore\"",
+  "city": "Milano",
+  "kind": "private",
+  "hasSheet": true,
+  "programs": 75
+ },
+ {
+  "id": "unige",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università degli studi di Genova",
+  "officialName": "Università degli studi di Genova",
+  "city": "Genova",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 82
+ },
+ {
+  "id": "unina",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università degli studi di Napoli Federico II",
+  "officialName": "Università degli studi di Napoli Federico II",
+  "city": "Napoli",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 89
+ },
+ {
   "id": "unipd",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
@@ -1010,5 +955,60 @@
   "kind": "public",
   "hasSheet": true,
   "programs": 127
+ },
+ {
+  "id": "unipi",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università di Pisa",
+  "officialName": "Università di Pisa",
+  "city": "Pisa",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 75
+ },
+ {
+  "id": "unipr",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università degli studi di Parma",
+  "officialName": "Università degli studi di Parma",
+  "city": "Parma",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 58
+ },
+ {
+  "id": "units",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università degli studi di Trieste",
+  "officialName": "Università degli studi di Trieste",
+  "city": "Trieste",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 42
+ },
+ {
+  "id": "unive",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università Ca' Foscari Venezia",
+  "officialName": "Università Ca' Foscari Venezia",
+  "city": "Venezia",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 22
+ },
+ {
+  "id": "univr",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università degli studi di Verona",
+  "officialName": "Università degli studi di Verona",
+  "city": "Verona",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 55
  }
 ]

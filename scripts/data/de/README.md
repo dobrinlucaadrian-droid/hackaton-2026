@@ -25,7 +25,7 @@ Outcome: BUILT from DEQAR open data. Programmes are accredited first-cycle progr
 
 ## Counts
 
-311 institutions (70 marked private, the rest unknown), 4062 programmes, 152 cities. 1281 programmes (32%) have no app domain. Sheets reused: tum, lmu, hu-berlin (heidelberg and rwth have no currently valid first-cycle report in DEQAR, so they are absent).
+311 institutions (70 marked private, the rest unknown), 4062 programmes, 152 cities. 1281 programmes (32%) have no app domain. Sheets reused: tum, lmu, hu-berlin, fu-berlin, uni-hamburg, uni-koeln, uni-freiburg, uni-goettingen, uni-tuebingen, uni-mannheim, uni-bonn (heidelberg, rwth, kit, tu-berlin, tu-dresden, uni-frankfurt, uni-stuttgart and uni-leipzig have no currently valid first-cycle report in DEQAR, so they are absent).
 
 ## Limits
 

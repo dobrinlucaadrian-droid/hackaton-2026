@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-09 02:55 — salvare pe GitHub: fișele noi, separat de panoul de statistici
+- Cerut: `/git-workflow` — salvarea lucrului de azi
+- Făcut: lucrul a fost salvat în două părți, ca să poată fi urmărit ușor: întâi panoul de statistici și caseta de pe pagina principală, apoi cele 74 de fișe noi cu legătura lor la catalog (descrise în intrarea „74 de fișe complete noi” de mai jos). Niciun fișier nou față de acea intrare
+- Fișiere: cele din intrarea „74 de fișe complete noi”
+- Poartă: rulată la salvare
+- Urmează: verificările automate de pe GitHub; apoi ce hotărăște echipa (alte țări pentru fișe, numele site-ului, ultimii pași)
+
 ### 2026-10-09 02:51 — 74 de fișe complete noi de universități (205 în total)
 - Cerut: „te rog să mai aduni informații pentru a avea cât mai multe cu fișă completă”; echipa a ales: cele 10 instituții din România rămase fără fișă și destinațiile preferate de români, circa 80 de fișe, scrise ca la cele existente, cu sursa notată
 - Făcut: 74 de fișe noi: România 9 (acum 83 din 84 de instituții din lista oficială au fișă), Olanda 12, Marea Britanie 15, Germania 14, Italia 12, Austria 8, Danemarca 4. Fiecare fișă e scrisă din site-ul oficial al universității și din pagini oficiale de stat; paginile folosite sunt păstrate în `apps/web/data/university-sources.json`. Fișele din România, Olanda, Germania, Italia și Austria sunt legate de catalogul oficial, deci arată și lista de programe de licență. Fără sume exacte și fără medii de admitere
@@ -490,6 +497,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-09 02:55 `17842ce` feat: admin statistics panel, anonymous usage counters and home tile
 - 2026-10-08 23:46 `6cf706f` feat: completeness pass on the catalogue: Spain nationwide, France 2026, cleanups
 - 2026-10-08 04:02 `ce1a3d5` ci: stop the secret scan from flagging programme identifiers in the catalogue data
 - 2026-10-08 03:56 `4e1429c` ci: print which rule and file each secret-scan finding is in
@@ -519,5 +527,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-05 01:35 `65cbccc` feat: ask the city in the questionnaire and list only universities from that city
 - 2026-10-05 01:24 `6d6fbdf` feat: 18 researched scenario questions in the questionnaire, balanced across the ten traits
 - 2026-10-05 00:59 `482966a` feat: replace the random card with a guided interest picker on the specializations page
-- 2026-10-05 00:51 `4c91def` feat: illustration and a surprise-me card on the specializations page
 <!-- commits:end -->

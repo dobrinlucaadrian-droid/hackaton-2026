@@ -8,7 +8,8 @@ const SOURCE = "MUR USTAT offerta formativa 2025";
 const OUT = new URL("../../../apps/web/data/catalog/", import.meta.url);
 
 // Existing app sheets: MUR "NomeOperativo" -> app id
-const SHEETS = { "Bologna": "unibo", "Milano Politecnico": "polimi", "Torino Politecnico": "polito", "Roma La Sapienza": "sapienza", "Padova": "unipd", "Milano Bocconi": "bocconi" };
+const SHEETS = { "Bologna": "unibo", "Milano Politecnico": "polimi", "Torino Politecnico": "polito", "Roma La Sapienza": "sapienza", "Padova": "unipd", "Milano Bocconi": "bocconi",
+  "Pisa": "unipi", "Napoli Federico II": "unina", "Ca' Foscari Venezia": "unive", "Genova": "unige", "Roma Tor Vergata": "tor-vergata", "Roma Tre": "roma-tre", "Trieste": "units", "Verona": "univr", "Roma Luiss": "luiss", "Milano Cattolica": "unicatt", "Parma": "unipr", "Bolzano": "unibz" };
 const SHEET_IDS = new Set(Object.values(SHEETS));
 
 // ---- helpers

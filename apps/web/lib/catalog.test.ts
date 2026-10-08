@@ -78,7 +78,7 @@ describe("catalogue: Romania (HG 606/2026, academic year 2026-2027)", () => {
   it("links every Romanian university sheet to the official list, and the other way round", () => {
     const ro = universities.filter((u) => u.region === "ro").map((u) => u.id);
     for (const id of ro) expect(institutions.some((i) => i.id === id && i.hasSheet), id).toBe(true);
-    expect(institutions.filter((i) => !i.hasSheet)).toHaveLength(10);
+    expect(institutions.filter((i) => !i.hasSheet)).toHaveLength(1);
     expect(catalogCountryOfSheet("upb")?.cc).toBe("RO");
     expect(catalogCountryOfSheet("nu-exista")).toBeUndefined();
   });

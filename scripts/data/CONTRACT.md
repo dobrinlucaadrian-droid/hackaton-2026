@@ -31,7 +31,7 @@ Check with: `node scripts/data/validate.mjs <cc>` — it must print `VALID`.
 }
 ```
 
-Existing sheets: `apps/web/data/universities-abroad.json` has 57 universities abroad (fields `id`, `name`, `city`, `country` in Romanian).
+Existing sheets: `apps/web/data/universities-abroad.json` has the universities abroad (fields `id`, `name`, `city`, `country` in Romanian).
 When an institution in the dataset is clearly the same as one of them, use that sheet's `id` as the institution id and set `hasSheet: true`.
 
 ## Programme

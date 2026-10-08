@@ -79,3 +79,16 @@ describe("Politehnica București faculties", () => {
     expect(searchUniversities("mecatronica").some((u) => u.id === "upb")).toBe(true);
   });
 });
+
+describe("sources of the newer profile sheets", () => {
+  it("every listed sheet exists and points to official web pages", async () => {
+    const sources = (await import("../data/university-sources.json")).default as Record<string, string[]>;
+    const ids = new Set(universities.map((u) => u.id));
+    expect(Object.keys(sources).length).toBeGreaterThanOrEqual(74);
+    for (const [id, urls] of Object.entries(sources)) {
+      expect(ids.has(id), id).toBe(true);
+      expect(urls.length, id).toBeGreaterThan(0);
+      for (const url of urls) expect(url, id).toMatch(/^https?:\/\/[^\s]+$/);
+    }
+  });
+});

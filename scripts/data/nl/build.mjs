@@ -124,7 +124,8 @@ function domainOf(text) {
 }
 
 // ---------- institutions ----------
-const SHEETS = { "21PC": "rug", "21PK": "uva", "21PL": "vu-amsterdam", "21PF": "tu-delft", "21PG": "tu-eindhoven", "21PE": "eur", "21PJ": "maastricht", "21PB": "leiden", "21PD": "utrecht", "21PH": "twente" };
+const SHEETS = { "21PC": "rug", "21PK": "uva", "21PL": "vu-amsterdam", "21PF": "tu-delft", "21PG": "tu-eindhoven", "21PE": "eur", "21PJ": "maastricht", "21PB": "leiden", "21PD": "utrecht", "21PH": "twente",
+  "21PN": "tilburg-university", "21PM": "radboud", "21PI": "wageningen", "27UM": "the-hague-uas", "30GB": "fontys", "23AH": "saxion", "25KB": "han", "25BE": "hanze", "21UI": "buas", "25JX": "zuyd", "27PZ": "inholland", "01VU": "windesheim" };
 const seatOf = (oieCode) => {
   const rows = formeel.filter((f) => f.OIE_CODE === oieCode && !f.EINDDATUM && f.PLAATSNAAM);
   rows.sort((a, b) => (b.VESTIGINGSCODE.endsWith("00") ? 1 : 0) - (a.VESTIGINGSCODE.endsWith("00") ? 1 : 0));

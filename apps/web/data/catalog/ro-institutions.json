@@ -523,7 +523,7 @@
     "name": "Academia Națională de Informații „Mihai Viteazul”",
     "officialName": "ACADEMIA NAȚIONALĂ DE INFORMAȚII \"MIHAI VITEAZUL\" DIN BUCUREȘTI",
     "city": "București",
-    "hasSheet": false,
+    "hasSheet": true,
     "programs": 2,
     "kind": "public"
   },
@@ -688,7 +688,7 @@
     "name": "Institutul Teologic Baptist din București",
     "officialName": "INSTITUTUL TEOLOGIC BAPTIST DIN BUCUREȘTI",
     "city": "București",
-    "hasSheet": false,
+    "hasSheet": true,
     "programs": 2,
     "kind": "private"
   },
@@ -699,7 +699,7 @@
     "name": "Institutul Teologic Penticostal din București",
     "officialName": "INSTITUTUL TEOLOGIC PENTICOSTAL DIN BUCUREȘTI",
     "city": "București",
-    "hasSheet": false,
+    "hasSheet": true,
     "programs": 1,
     "kind": "private"
   },
@@ -732,7 +732,7 @@
     "name": "Universitatea „Bogdan Vodă” din Cluj-Napoca",
     "officialName": "UNIVERSITATEA \"BOGDAN VODĂ\" DIN CLUJ-NAPOCA",
     "city": "Cluj-Napoca",
-    "hasSheet": false,
+    "hasSheet": true,
     "programs": 6,
     "kind": "private"
   },
@@ -743,7 +743,7 @@
     "name": "Institutul Teologic Protestant din Cluj-Napoca",
     "officialName": "INSTITUTUL TEOLOGIC PROTESTANT DIN CLUJ-NAPOCA",
     "city": "Cluj-Napoca",
-    "hasSheet": false,
+    "hasSheet": true,
     "programs": 1,
     "kind": "private"
   },
@@ -809,7 +809,7 @@
     "name": "Universitatea Europeană „Drăgan” din Lugoj",
     "officialName": "UNIVERSITATEA EUROPEANĂ \"DRĂGAN\" DIN LUGOJ",
     "city": "Lugoj",
-    "hasSheet": false,
+    "hasSheet": true,
     "programs": 2,
     "kind": "private"
   },
@@ -864,7 +864,7 @@
     "name": "Universitatea „Dimitrie Cantemir” din Târgu Mureș",
     "officialName": "UNIVERSITATEA \"DIMITRIE CANTEMIR\" DIN TÂRGU MUREȘ",
     "city": "Târgu Mureș",
-    "hasSheet": false,
+    "hasSheet": true,
     "programs": 5,
     "kind": "private"
   },
@@ -897,7 +897,7 @@
     "name": "Institutul Teologic Creștin după Evanghelie „Timotheus” din București",
     "officialName": "INSTITUTUL TEOLOGIC CREȘTIN DUPĂ EVANGHELIE \"TIMOTHEUS\" DIN BUCUREȘTI",
     "city": "București",
-    "hasSheet": false,
+    "hasSheet": true,
     "programs": 1,
     "kind": "private"
   },
@@ -908,7 +908,7 @@
     "name": "Universitatea „Ioan Slavici” din Timișoara",
     "officialName": "UNIVERSITATEA \"IOAN SLAVICI\" DIN TIMIȘOARA",
     "city": "Timișoara",
-    "hasSheet": false,
+    "hasSheet": true,
     "programs": 3,
     "kind": "private"
   },

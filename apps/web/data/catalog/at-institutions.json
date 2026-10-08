@@ -264,17 +264,6 @@
   "programs": 8
  },
  {
-  "id": "at-imc-krems-university-of-applied-sciences",
-  "country": "AT",
-  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
-  "name": "IMC Krems University of Applied Sciences",
-  "officialName": "IMC Krems University of Applied Sciences",
-  "city": "Krems",
-  "kind": "unknown",
-  "hasSheet": false,
-  "programs": 12
- },
- {
   "id": "at-karl-landsteiner-privatuniversitat-fur-gesundheitswissenschaften-gmbh",
   "country": "AT",
   "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
@@ -506,17 +495,6 @@
   "programs": 3
  },
  {
-  "id": "at-technische-universitat-graz",
-  "country": "AT",
-  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
-  "name": "Technische Universität Graz",
-  "officialName": "Technische Universität Graz",
-  "city": "Graz",
-  "kind": "unknown",
-  "hasSheet": false,
-  "programs": 17
- },
- {
   "id": "at-umit-tirol-private-universitat-fur-gesundheitswissenschaften-und-technologie-",
   "country": "AT",
   "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
@@ -537,17 +515,6 @@
   "kind": "unknown",
   "hasSheet": false,
   "programs": 3
- },
- {
-  "id": "at-universitat-fur-bodenkultur-wien",
-  "country": "AT",
-  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
-  "name": "Universität für Bodenkultur Wien",
-  "officialName": "Universität für Bodenkultur Wien",
-  "city": "Wien",
-  "kind": "unknown",
-  "hasSheet": false,
-  "programs": 6
  },
  {
   "id": "at-universitat-fur-musik-und-darstellende-kunst-graz",
@@ -572,50 +539,6 @@
   "programs": 10
  },
  {
-  "id": "at-universitat-graz",
-  "country": "AT",
-  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
-  "name": "Universität Graz",
-  "officialName": "Universität Graz",
-  "city": "Graz",
-  "kind": "unknown",
-  "hasSheet": false,
-  "programs": 24
- },
- {
-  "id": "at-universitat-innsbruck",
-  "country": "AT",
-  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
-  "name": "Universität Innsbruck",
-  "officialName": "Universität Innsbruck",
-  "city": "Innsbruck",
-  "kind": "unknown",
-  "hasSheet": false,
-  "programs": 31
- },
- {
-  "id": "at-universitat-klagenfurt",
-  "country": "AT",
-  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
-  "name": "Universität Klagenfurt",
-  "officialName": "Universität Klagenfurt",
-  "city": "Klagenfurt",
-  "kind": "unknown",
-  "hasSheet": false,
-  "programs": 12
- },
- {
-  "id": "at-universitat-linz",
-  "country": "AT",
-  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
-  "name": "Universität Linz",
-  "officialName": "Universität Linz",
-  "city": "Linz",
-  "kind": "unknown",
-  "hasSheet": false,
-  "programs": 16
- },
- {
   "id": "at-universitat-mozarteum-salzburg",
   "country": "AT",
   "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
@@ -625,17 +548,6 @@
   "kind": "unknown",
   "hasSheet": false,
   "programs": 9
- },
- {
-  "id": "at-universitat-salzburg",
-  "country": "AT",
-  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
-  "name": "Universität Salzburg",
-  "officialName": "Universität Salzburg",
-  "city": "Salzburg",
-  "kind": "unknown",
-  "hasSheet": false,
-  "programs": 28
  },
  {
   "id": "at-veterinarmedizinische-universitat-wien",
@@ -660,6 +572,50 @@
   "programs": 2
  },
  {
+  "id": "boku-wien",
+  "country": "AT",
+  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
+  "name": "Universität für Bodenkultur Wien",
+  "officialName": "Universität für Bodenkultur Wien",
+  "city": "Wien",
+  "kind": "unknown",
+  "hasSheet": true,
+  "programs": 6
+ },
+ {
+  "id": "imc-krems",
+  "country": "AT",
+  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
+  "name": "IMC Krems University of Applied Sciences",
+  "officialName": "IMC Krems University of Applied Sciences",
+  "city": "Krems",
+  "kind": "unknown",
+  "hasSheet": true,
+  "programs": 12
+ },
+ {
+  "id": "jku-linz",
+  "country": "AT",
+  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
+  "name": "Universität Linz",
+  "officialName": "Universität Linz",
+  "city": "Linz",
+  "kind": "unknown",
+  "hasSheet": true,
+  "programs": 16
+ },
+ {
+  "id": "tu-graz",
+  "country": "AT",
+  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
+  "name": "Technische Universität Graz",
+  "officialName": "Technische Universität Graz",
+  "city": "Graz",
+  "kind": "unknown",
+  "hasSheet": true,
+  "programs": 17
+ },
+ {
   "id": "tu-wien",
   "country": "AT",
   "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
@@ -669,6 +625,50 @@
   "kind": "unknown",
   "hasSheet": true,
   "programs": 15
+ },
+ {
+  "id": "uni-graz",
+  "country": "AT",
+  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
+  "name": "Universität Graz",
+  "officialName": "Universität Graz",
+  "city": "Graz",
+  "kind": "unknown",
+  "hasSheet": true,
+  "programs": 24
+ },
+ {
+  "id": "uni-innsbruck",
+  "country": "AT",
+  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
+  "name": "Universität Innsbruck",
+  "officialName": "Universität Innsbruck",
+  "city": "Innsbruck",
+  "kind": "unknown",
+  "hasSheet": true,
+  "programs": 31
+ },
+ {
+  "id": "uni-klagenfurt",
+  "country": "AT",
+  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
+  "name": "Universität Klagenfurt",
+  "officialName": "Universität Klagenfurt",
+  "city": "Klagenfurt",
+  "kind": "unknown",
+  "hasSheet": true,
+  "programs": 12
+ },
+ {
+  "id": "uni-salzburg",
+  "country": "AT",
+  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
+  "name": "Universität Salzburg",
+  "officialName": "Universität Salzburg",
+  "city": "Salzburg",
+  "kind": "unknown",
+  "hasSheet": true,
+  "programs": 28
  },
  {
   "id": "univie",

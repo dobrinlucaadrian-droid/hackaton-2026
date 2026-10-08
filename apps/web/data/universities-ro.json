@@ -3482,5 +3482,364 @@
             "Se potrivește mai ales celor din comunitatea adventistă",
             "Un singur domeniu și foarte puține locuri"
         ]
+    },
+    {
+        "id": "ani-bucuresti",
+        "name": "Academia Națională de Informații „Mihai Viteazul”",
+        "city": "București",
+        "country": "România",
+        "region": "ro",
+        "website": "https://www.animv.ro",
+        "domainIds": [
+            "militar-politie"
+        ],
+        "about": "Instituție de stat din București care ține de Serviciul Român de Informații (SRI) și pregătește ofițeri de informații. Licența durează trei ani și are două direcții: ofițer operativ și ofițer analist.",
+        "prestige": "national",
+        "budget": "gratuit",
+        "budgetNote": "Locurile sunt la buget, deci nu plătești taxă de școlarizare; dacă renunți pe parcurs, contractul de studii prevede că dai înapoi cheltuielile de întreținere și de instruire.",
+        "admissionTypes": [
+            "examen",
+            "interviu"
+        ],
+        "admission": "Întâi treci printr-o selecție făcută de SRI: interviuri, teste, examinare psihologică, examinare medicală și verificări de securitate. Abia apoi dai concursul de la academie, cu un test de cultură generală și un test de aptitudini; te înscrii din iarnă și există o limită de vârstă.",
+        "scholarships": true,
+        "scholarshipsNote": "Ghidul studentului spune că instituția asigură cazarea, masa și echipamentul pentru toți studenții militari.",
+        "dorms": true,
+        "dormsNote": "Academia are spații de cazare în campus pentru studenți; în timpul concursului de admitere candidații nu primesc însă cazare.",
+        "certificates": [
+            "bac",
+            "medical"
+        ],
+        "pros": [
+            "Nu plătești taxă, iar cazarea și masa sunt asigurate",
+            "După absolvire ești repartizat într-o unitate a SRI",
+            "Pregătire rară în țară: analiză și operațiuni de informații"
+        ],
+        "cons": [
+            "Selecție lungă, cu verificări medicale, psihologice și de securitate",
+            "Ești student militar, cu reguli stricte și multe restricții",
+            "Trebuie să accepți să lucrezi oriunde în țară"
+        ]
+    },
+    {
+        "id": "itb-bucuresti",
+        "name": "Institutul Teologic Baptist din București",
+        "city": "București",
+        "country": "România",
+        "region": "ro",
+        "website": "https://itb.ro",
+        "domainIds": [
+            "teologie"
+        ],
+        "about": "Școală confesională de nivel universitar, aflată sub autoritatea spirituală a Uniunii Baptiste din România, care pregătește slujitori pentru bisericile baptiste. Are o singură licență, teologie baptistă pastorală, la zi și la distanță.",
+        "prestige": "national",
+        "budget": "mic",
+        "budgetNote": "Nu are locuri la buget, dar taxa anuală este mică și se poate plăti în rate; site-ul spune că institutul acoperă cea mai mare parte din costul real al școlarizării.",
+        "admissionTypes": [
+            "interviu",
+            "bac"
+        ],
+        "admission": "Întâi este o probă orală eliminatorie: un interviu și întrebări din Mărturisirea de credință baptistă. Apoi se notează un eseu trimis la dosar, iar media de la bacalaureat contează și ea; ai nevoie de recomandări de la biserica ta.",
+        "scholarships": true,
+        "scholarshipsNote": "Toți studenții primesc sprijin financiar pentru taxă, cazare și cantină; pe lângă acesta există o bursă de merit și câteva burse sociale.",
+        "dorms": true,
+        "dormsNote": "Are cămin și cantină la sediul din Str. Berzei, pentru studenții de la teologie pastorală, și încă un cămin mai mare în oraș.",
+        "certificates": [
+            "bac",
+            "recomandari",
+            "motivatie",
+            "medical"
+        ],
+        "pros": [
+            "Costuri mici, cu sprijin la taxă, cazare și masă",
+            "Cămin și cantină chiar la sediu",
+            "Poți studia și la distanță"
+        ],
+        "cons": [
+            "Se potrivește doar celor care vor să slujească în biserici baptiste",
+            "Ai nevoie de recomandări de la pastor și de la biserică",
+            "Un singur program și foarte puține locuri la zi"
+        ]
+    },
+    {
+        "id": "itp-bucuresti",
+        "name": "Institutul Teologic Penticostal din București",
+        "city": "București",
+        "country": "România",
+        "region": "ro",
+        "website": "https://www.itpbucuresti.ro",
+        "domainIds": [
+            "teologie"
+        ],
+        "about": "Institut teologic privat din București, acreditat prin lege în 2008, care pregătește slujitori pentru bisericile penticostale. Licența în teologie penticostală pastorală durează patru ani.",
+        "prestige": "national",
+        "budget": "mic",
+        "budgetNote": "Nu are locuri la buget; taxa anuală este mică față de alte facultăți private, iar cazarea și masa se plătesc separat.",
+        "admissionTypes": [
+            "examen",
+            "interviu"
+        ],
+        "admission": "Sunt două probe: un interviu cu vorbit în public, care este eliminatoriu, și o probă scrisă de cunoștințe biblice. Trebuie să fii membru botezat al unei biserici penticostale și să ai recomandări de la biserică.",
+        "scholarships": true,
+        "scholarshipsNote": "Candidatul cu cea mai mare notă la proba scrisă primește bursă; frații care studiază în același timp plătesc taxă redusă și există sprijin pentru cazare și masă, în limita fondurilor.",
+        "dorms": true,
+        "dormsNote": "Are cămin cu camere de trei-patru persoane, cu baie proprie, și cantină în zilele de curs; ambele se plătesc.",
+        "certificates": [
+            "bac",
+            "recomandari",
+            "motivatie",
+            "medical"
+        ],
+        "pros": [
+            "Cămin și cantină în institut",
+            "Taxă mică și reduceri pentru frați",
+            "Grupă mică, într-o comunitate unită"
+        ],
+        "cons": [
+            "Este doar pentru membri botezați ai bisericilor penticostale",
+            "Un singur program de licență",
+            "Diploma te pregătește mai ales pentru slujirea în biserică"
+        ]
+    },
+    {
+        "id": "bogdan-voda",
+        "name": "Universitatea „Bogdan Vodă” din Cluj-Napoca",
+        "city": "Cluj-Napoca",
+        "country": "România",
+        "region": "ro",
+        "website": "https://www.ubv.ro",
+        "domainIds": [
+            "drept",
+            "business-management",
+            "sport-kinetoterapie"
+        ],
+        "about": "Universitate privată din Cluj-Napoca, cu peste 30 de ani de activitate și trei facultăți: Drept, Științe Economice și Educație Fizică și Sport.",
+        "prestige": "national",
+        "budget": "mic",
+        "budgetNote": "Taxa de școlarizare se plătește; nu există locuri la buget.",
+        "admissionTypes": [
+            "bac",
+            "aptitudini"
+        ],
+        "admission": "La Drept și la Științe Economice contează media de la bacalaureat și media anilor de liceu. La Educație Fizică și Sport dai și o probă practică sportivă, eliminatorie: alergare de viteză, săritură în lungime de pe loc și flotări.",
+        "scholarships": true,
+        "scholarshipsNote": "Universitatea are un regulament de burse și alte forme de sprijin pentru studenți; întreabă la secretariat ce condiții trebuie să îndeplinești.",
+        "dorms": false,
+        "dormsNote": "Pe site nu am găsit informații despre un cămin; întreabă la admitere sau caută o chirie în oraș.",
+        "certificates": [
+            "bac",
+            "medical"
+        ],
+        "pros": [
+            "Admitere fără examen scris la Drept și la Științe Economice",
+            "Poți studia sport într-un mare oraș studențesc",
+            "Are și cursuri cu frecvență redusă"
+        ],
+        "cons": [
+            "Plătești taxă de școlarizare",
+            "Doar trei facultăți, cu puține programe",
+            "Mai puțin cunoscută decât universitățile de stat din Cluj"
+        ]
+    },
+    {
+        "id": "itp-cluj",
+        "name": "Institutul Teologic Protestant din Cluj-Napoca",
+        "city": "Cluj-Napoca",
+        "country": "România",
+        "region": "ro",
+        "website": "https://proteo.hu",
+        "domainIds": [
+            "teologie"
+        ],
+        "about": "Institut teologic din centrul Clujului care pregătește pastori pentru bisericile reformată, evanghelică-luterană și unitariană din Transilvania. Licența în teologie protestantă pastorală durează patru ani și se face în limba maghiară.",
+        "prestige": "national",
+        "budget": "mic",
+        "budgetNote": "Paginile de admitere vorbesc despre o taxă de înscriere și despre costul internatului și al mesei, anunțate înainte de înscriere; întreabă la secretariat ce plătești pe an.",
+        "admissionTypes": [
+            "examen",
+            "aptitudini",
+            "interviu"
+        ],
+        "admission": "La linia reformată participi întâi la o tabără de preadmitere cu interviu, apoi dai probe orale din Biblie și din catehism, o probă de cânt bisericesc și limba maghiară. Trebuie să fii membru al bisericii și să ai recomandarea comunității tale; fiecare biserică are propriile reguli.",
+        "scholarships": true,
+        "scholarshipsNote": "Există burse de studiu, de merit, de performanță și sociale, oferite de biserici și de fundații partenere din Ungaria, Olanda și alte țări.",
+        "dorms": true,
+        "dormsNote": "Institutul are internat în clădirea proprie pentru studenții reformați și luterani; studenții unitarieni stau într-un cămin separat.",
+        "certificates": [
+            "bac",
+            "alta-limba",
+            "recomandari",
+            "medical"
+        ],
+        "pros": [
+            "Internat chiar în clădirea institutului, în centrul Clujului",
+            "Multe tipuri de burse, plus burse de studiu în Europa de Vest",
+            "Trei tradiții protestante în aceeași școală"
+        ],
+        "cons": [
+            "Se predă și se dă admiterea în limba maghiară",
+            "Este doar pentru membri ai bisericilor care susțin institutul",
+            "Un singur program, care te pregătește pentru a fi pastor"
+        ]
+    },
+    {
+        "id": "dragan-lugoj",
+        "name": "Universitatea Europeană „Drăgan” din Lugoj",
+        "city": "Lugoj",
+        "country": "România",
+        "region": "ro",
+        "website": "https://www.universitateaeuropeanadragan.ro",
+        "domainIds": [
+            "drept",
+            "economie-finante"
+        ],
+        "about": "Universitate privată din Lugoj, județul Timiș, care a început cursurile în anul universitar 1992/1993. Are două facultăți: Drept și Științe Economice.",
+        "prestige": "national",
+        "budget": "mic",
+        "budgetNote": "Taxa de școlarizare se plătește, în rate; nu există locuri la buget.",
+        "admissionTypes": [
+            "bac",
+            "dosar"
+        ],
+        "admission": "Nu dai examen: depui dosarul, iar media de admitere este media de la bacalaureat. Candidații sunt admiși în ordinea mediilor, în limita locurilor.",
+        "scholarships": true,
+        "scholarshipsNote": "Regulamentul de admitere prevede reduceri de taxă, de exemplu pentru elevii cu premii la olimpiade și concursuri, și scutiri de taxa de înscriere pentru unele categorii.",
+        "dorms": false,
+        "dormsNote": "Pe site nu am găsit informații despre un cămin; întreabă la admitere sau caută o chirie în oraș.",
+        "certificates": [
+            "bac",
+            "medical"
+        ],
+        "pros": [
+            "Admitere simplă, pe baza mediei de la bacalaureat",
+            "Reduceri de taxă pentru rezultate la olimpiade și concursuri",
+            "Oraș mic și liniștit, aproape de Timișoara"
+        ],
+        "cons": [
+            "Plătești taxă de școlarizare",
+            "Doar două programe de licență",
+            "Oraș mic, cu mai puține locuri de practică și de muncă"
+        ]
+    },
+    {
+        "id": "cantemir-tgmures",
+        "name": "Universitatea „Dimitrie Cantemir” din Târgu Mureș",
+        "city": "Târgu Mureș",
+        "country": "România",
+        "region": "ro",
+        "website": "https://cantemir.ro",
+        "domainIds": [
+            "drept",
+            "psihologie",
+            "medicina-dentara",
+            "geografie-mediu",
+            "turism-servicii"
+        ],
+        "about": "Universitate privată din Târgu Mureș, cu facultăți de medicină dentară, drept, științe economice, geografie și psihologie. Are propriul cămin studențesc.",
+        "prestige": "national",
+        "budget": "mediu",
+        "budgetNote": "Taxa de școlarizare se plătește, în rate; nu există locuri la buget, iar medicina dentară costă mult mai mult decât celelalte programe.",
+        "admissionTypes": [
+            "bac",
+            "examen"
+        ],
+        "admission": "La Drept, Psihologie, Geografia turismului și Economia comerțului, turismului și serviciilor intri pe baza mediei de la bacalaureat. La Medicină dentară dai un test grilă, după o bibliografie publicată de facultate.",
+        "scholarships": false,
+        "scholarshipsNote": "Pe paginile de admitere și de taxe nu am găsit burse sau reduceri; întreabă la secretariat.",
+        "dorms": true,
+        "dormsNote": "Are cămin propriu în Târgu Mureș, cu camere de trei paturi și baie în cameră; depui cererea la centrul de admitere.",
+        "certificates": [
+            "bac",
+            "medical"
+        ],
+        "pros": [
+            "Cămin propriu, cu baie în fiecare cameră",
+            "Poți face medicină dentară la o universitate privată",
+            "Admitere pe baza mediei de la bacalaureat la majoritatea programelor"
+        ],
+        "cons": [
+            "Plătești taxă de școlarizare, mare la medicină dentară",
+            "Câte un singur program de licență la fiecare facultate",
+            "Mai puțin cunoscută decât universitatea de stat din oraș"
+        ]
+    },
+    {
+        "id": "timotheus",
+        "name": "Institutul Teologic Creștin după Evanghelie „Timotheus” din București",
+        "city": "București",
+        "country": "România",
+        "region": "ro",
+        "website": "https://timotheus.ro",
+        "domainIds": [
+            "teologie"
+        ],
+        "about": "Institut teologic de nivel universitar din București, înființat în 1992 de Biserica Creștină după Evanghelie din România. Are o licență de patru ani în teologie pastorală.",
+        "prestige": "national",
+        "budget": "mic",
+        "budgetNote": "Este o școală privată, fără locuri la buget; site-ul vorbește doar despre taxa de înscriere, așa că întreabă la secretariat ce plătești pe an.",
+        "admissionTypes": [
+            "interviu",
+            "bac"
+        ],
+        "admission": "Te înscrii online, apoi ai un interviu eliminatoriu, tot online. Scrii și un eseu pe o temă dată, iar la medie contează nota eseului și media de la bacalaureat; membrii bisericii au nevoie de o recomandare.",
+        "scholarships": true,
+        "scholarshipsNote": "Site-ul spune că institutul acordă burse de merit și burse de studii; detaliile se cer la secretariat.",
+        "dorms": false,
+        "dormsNote": "Pe site nu am găsit informații despre cazare; întreabă la secretariat înainte să te înscrii.",
+        "certificates": [
+            "bac",
+            "recomandari",
+            "motivatie",
+            "medical"
+        ],
+        "pros": [
+            "Înscriere și interviu online",
+            "Există burse de merit și de studii",
+            "Grupă mică, cu atenție la fiecare student"
+        ],
+        "cons": [
+            "Se potrivește mai ales celor din Biserica Creștină după Evanghelie",
+            "Un singur program de licență",
+            "Nu am găsit pe site informații despre cazare"
+        ]
+    },
+    {
+        "id": "ioan-slavici",
+        "name": "Universitatea „Ioan Slavici” din Timișoara",
+        "city": "Timișoara",
+        "country": "România",
+        "region": "ro",
+        "website": "https://islavici.ro",
+        "domainIds": [
+            "economie-finante",
+            "calculatoare-it"
+        ],
+        "about": "Universitate privată din Timișoara, înființată în anul 2000 în cadrul fundației cu același nume. Are o facultate de inginerie, cu tehnologia informației, și una de științe economice.",
+        "prestige": "national",
+        "budget": "mic",
+        "budgetNote": "Taxa de școlarizare se plătește, în rate; nu există locuri la buget, iar la inginerie taxa este ceva mai mare decât la economie.",
+        "admissionTypes": [
+            "dosar",
+            "interviu"
+        ],
+        "admission": "Nu dai examen scris: te înscrii, susții un interviu, iar comisia evaluează dosarele și face clasamentul. Sunt două sesiuni, vara și toamna.",
+        "scholarships": true,
+        "scholarshipsNote": "Studenții cu rezultate bune pot primi reduceri de taxă, parțiale sau totale, și premii anuale.",
+        "dorms": true,
+        "dormsNote": "Universitatea are cămine de tip hotel, cu prioritate pentru studenții proprii, și o cantină-restaurant.",
+        "certificates": [
+            "bac",
+            "medical"
+        ],
+        "pros": [
+            "Cămine proprii și cantină",
+            "Poți studia tehnologia informației la o universitate privată",
+            "Reduceri de taxă pentru rezultate bune"
+        ],
+        "cons": [
+            "Plătești taxă de școlarizare",
+            "Doar trei programe de licență",
+            "Mai puțin cunoscută decât universitățile de stat din Timișoara"
+        ]
     }
 ]

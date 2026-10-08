@@ -72,18 +72,6 @@
   "programs": 10
  },
  {
-  "id": "de-albert-ludwigs-universitat-freiburg",
-  "country": "DE",
-  "source": "DEQAR open data CSV 2026-10-08",
-  "name": "Albert-Ludwigs-Universität Freiburg",
-  "officialName": "Albert-Ludwigs-Universität Freiburg",
-  "city": "Freiburg im Breisgau",
-  "kind": "unknown",
-  "hasSheet": false,
-  "website": "http://www.uni-freiburg.de/",
-  "programs": 2
- },
- {
   "id": "de-alice-salomon-hochschule-berlin",
   "country": "DE",
   "source": "DEQAR open data CSV 2026-10-08",
@@ -502,18 +490,6 @@
   "hasSheet": false,
   "website": "https://www.dhsh.de/",
   "programs": 4
- },
- {
-  "id": "de-eberhard-karls-universitat-tubingen",
-  "country": "DE",
-  "source": "DEQAR open data CSV 2026-10-08",
-  "name": "Eberhard Karls Universität Tübingen",
-  "officialName": "Eberhard Karls Universität Tübingen",
-  "city": "Tübingen",
-  "kind": "unknown",
-  "hasSheet": false,
-  "website": "http://www.uni-tuebingen.de/",
-  "programs": 1
  },
  {
   "id": "de-ebs-universitat-fur-wirtschaft-und-recht",
@@ -1042,30 +1018,6 @@
   "hasSheet": false,
   "website": "http://www.fthgiessen.de",
   "programs": 1
- },
- {
-  "id": "de-freie-universitat-berlin",
-  "country": "DE",
-  "source": "DEQAR open data CSV 2026-10-08",
-  "name": "Freie Universität Berlin",
-  "officialName": "Freie Universität Berlin",
-  "city": "Berlin",
-  "kind": "unknown",
-  "hasSheet": false,
-  "website": "http://www.fu-berlin.de",
-  "programs": 1
- },
- {
-  "id": "de-georg-august-universitat-gottingen",
-  "country": "DE",
-  "source": "DEQAR open data CSV 2026-10-08",
-  "name": "Georg-August-Universität Göttingen",
-  "officialName": "Georg-August-Universität Göttingen",
-  "city": "Göttingen",
-  "kind": "unknown",
-  "hasSheet": false,
-  "website": "http://www.uni-goettingen.de",
-  "programs": 2
  },
  {
   "id": "de-german-international-university",
@@ -2916,18 +2868,6 @@
   "programs": 1
  },
  {
-  "id": "de-rheinische-friedrich-wilhelms-universitat-bonn",
-  "country": "DE",
-  "source": "DEQAR open data CSV 2026-10-08",
-  "name": "Rheinische Friedrich-Wilhelms-Universität Bonn",
-  "officialName": "Rheinische Friedrich-Wilhelms-Universität Bonn",
-  "city": "Bonn",
-  "kind": "unknown",
-  "hasSheet": false,
-  "website": "http://www.uni-bonn.de",
-  "programs": 91
- },
- {
   "id": "de-ruhr-universitat-bochum",
   "country": "DE",
   "source": "DEQAR open data CSV 2026-10-08",
@@ -3468,18 +3408,6 @@
   "programs": 9
  },
  {
-  "id": "de-universitat-hamburg",
-  "country": "DE",
-  "source": "DEQAR open data CSV 2026-10-08",
-  "name": "Universität Hamburg",
-  "officialName": "Universität Hamburg",
-  "city": "Hamburg",
-  "kind": "unknown",
-  "hasSheet": false,
-  "website": "http://www.uni-hamburg.de",
-  "programs": 2
- },
- {
   "id": "de-universitat-kassel",
   "country": "DE",
   "source": "DEQAR open data CSV 2026-10-08",
@@ -3502,18 +3430,6 @@
   "hasSheet": false,
   "website": "http://www.uni-lübeck.de",
   "programs": 16
- },
- {
-  "id": "de-universitat-mannheim",
-  "country": "DE",
-  "source": "DEQAR open data CSV 2026-10-08",
-  "name": "Universität Mannheim",
-  "officialName": "Universität Mannheim",
-  "city": "Mannheim",
-  "kind": "unknown",
-  "hasSheet": false,
-  "website": "https://www.uni-mannheim.de/en/",
-  "programs": 35
  },
  {
   "id": "de-universitat-osnabruck",
@@ -3586,18 +3502,6 @@
   "hasSheet": false,
   "website": "http://www.uni-wh.de",
   "programs": 11
- },
- {
-  "id": "de-universitat-zu-koln",
-  "country": "DE",
-  "source": "DEQAR open data CSV 2026-10-08",
-  "name": "Universität zu Köln",
-  "officialName": "Universität zu Köln",
-  "city": "Cologne",
-  "kind": "unknown",
-  "hasSheet": false,
-  "website": "http://www.uni-koeln.de",
-  "programs": 3
  },
  {
   "id": "de-verwaltungs-fachhochschule-gustrow",
@@ -3696,6 +3600,18 @@
   "programs": 1
  },
  {
+  "id": "fu-berlin",
+  "country": "DE",
+  "source": "DEQAR open data CSV 2026-10-08",
+  "name": "Freie Universität Berlin",
+  "officialName": "Freie Universität Berlin",
+  "city": "Berlin",
+  "kind": "unknown",
+  "hasSheet": true,
+  "website": "http://www.fu-berlin.de",
+  "programs": 1
+ },
+ {
   "id": "hu-berlin",
   "country": "DE",
   "source": "DEQAR open data CSV 2026-10-08",
@@ -3730,5 +3646,89 @@
   "hasSheet": true,
   "website": "https://www.tum.de/",
   "programs": 8
+ },
+ {
+  "id": "uni-bonn",
+  "country": "DE",
+  "source": "DEQAR open data CSV 2026-10-08",
+  "name": "Rheinische Friedrich-Wilhelms-Universität Bonn",
+  "officialName": "Rheinische Friedrich-Wilhelms-Universität Bonn",
+  "city": "Bonn",
+  "kind": "unknown",
+  "hasSheet": true,
+  "website": "http://www.uni-bonn.de",
+  "programs": 91
+ },
+ {
+  "id": "uni-freiburg",
+  "country": "DE",
+  "source": "DEQAR open data CSV 2026-10-08",
+  "name": "Albert-Ludwigs-Universität Freiburg",
+  "officialName": "Albert-Ludwigs-Universität Freiburg",
+  "city": "Freiburg im Breisgau",
+  "kind": "unknown",
+  "hasSheet": true,
+  "website": "http://www.uni-freiburg.de/",
+  "programs": 2
+ },
+ {
+  "id": "uni-goettingen",
+  "country": "DE",
+  "source": "DEQAR open data CSV 2026-10-08",
+  "name": "Georg-August-Universität Göttingen",
+  "officialName": "Georg-August-Universität Göttingen",
+  "city": "Göttingen",
+  "kind": "unknown",
+  "hasSheet": true,
+  "website": "http://www.uni-goettingen.de",
+  "programs": 2
+ },
+ {
+  "id": "uni-hamburg",
+  "country": "DE",
+  "source": "DEQAR open data CSV 2026-10-08",
+  "name": "Universität Hamburg",
+  "officialName": "Universität Hamburg",
+  "city": "Hamburg",
+  "kind": "unknown",
+  "hasSheet": true,
+  "website": "http://www.uni-hamburg.de",
+  "programs": 2
+ },
+ {
+  "id": "uni-koeln",
+  "country": "DE",
+  "source": "DEQAR open data CSV 2026-10-08",
+  "name": "Universität zu Köln",
+  "officialName": "Universität zu Köln",
+  "city": "Cologne",
+  "kind": "unknown",
+  "hasSheet": true,
+  "website": "http://www.uni-koeln.de",
+  "programs": 3
+ },
+ {
+  "id": "uni-mannheim",
+  "country": "DE",
+  "source": "DEQAR open data CSV 2026-10-08",
+  "name": "Universität Mannheim",
+  "officialName": "Universität Mannheim",
+  "city": "Mannheim",
+  "kind": "unknown",
+  "hasSheet": true,
+  "website": "https://www.uni-mannheim.de/en/",
+  "programs": 35
+ },
+ {
+  "id": "uni-tuebingen",
+  "country": "DE",
+  "source": "DEQAR open data CSV 2026-10-08",
+  "name": "Eberhard Karls Universität Tübingen",
+  "officialName": "Eberhard Karls Universität Tübingen",
+  "city": "Tübingen",
+  "kind": "unknown",
+  "hasSheet": true,
+  "website": "http://www.uni-tuebingen.de/",
+  "programs": 1
  }
 ]

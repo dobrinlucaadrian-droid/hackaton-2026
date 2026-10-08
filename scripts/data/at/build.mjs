@@ -106,7 +106,8 @@ function writeOut(institutions, programs) {
   console.log(`${CC}: ${insts.length} institutions, ${prog.length} programmes written`);
 }
 
-const SHEETS = { "Universität Wien": "univie", "Technische Universität Wien": "tu-wien", "Wirtschaftsuniversität Wien": "wu-wien" };
+const SHEETS = { "Universität Wien": "univie", "Technische Universität Wien": "tu-wien", "Wirtschaftsuniversität Wien": "wu-wien",
+  "Universität Graz": "uni-graz", "Technische Universität Graz": "tu-graz", "Universität Innsbruck": "uni-innsbruck", "Universität Salzburg": "uni-salzburg", "Universität Linz": "jku-linz", "Universität für Bodenkultur Wien": "boku-wien", "Universität Klagenfurt": "uni-klagenfurt", "IMC Krems University of Applied Sciences": "imc-krems" };
 const lower = new Set(["an", "der", "am", "bei", "in", "im", "und", "ob", "dem"]);
 function cityFromUrl(u) {
   const m = /-(\d+(?:-\d+)*)-([a-z0-9-]+?)\.(?:de|en)\.html/.exec(u || ""); if (!m) return null;
