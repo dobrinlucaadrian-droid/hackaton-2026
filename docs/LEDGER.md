@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-08 03:56 — verificarea de secrete de pe GitHub: aflăm ce a găsit
+- Cerut: lucru autonom peste noapte; după salvarea catalogului, verificarea automată „Leaked secrets” de pe GitHub a picat cu 2.364 de semnalări
+- Făcut: verificarea scrie acum, când pică, regula și fișierul fiecărei semnalări (valorile rămân ascunse), ca să vedem dacă sunt secrete adevărate sau date din catalog luate drept secrete
+- Fișiere: `.github/workflows/security.yml`
+- Poartă: rulată la salvare
+- Urmează: citim rezultatul și reparăm cauza, fără să ascundem secrete adevărate
+
 ### 2026-10-08 03:49 — baza de date, etapa C încheiată: 11 țări, 96.215 programe
 - Cerut: continuarea lucrului autonom peste noapte pe celelalte țări
 - Făcut: adăugate Polonia (9.083 de programe, registrul RAD-on, CC0), Olanda (3.768, DUO, CC BY), Spania — doar Comunitatea Valenciană (481, Generalitat Valenciana, CC BY), Irlanda (2.433), Belgia — doar Flandra (643) și Austria (520), ultimele trei din datele deschise Europass ale Comisiei Europene. Total în baza de dezvoltare: 3.843 de instituții și 96.215 programe de licență din 11 țări. Pagina principală arată numărul de programe și de țări; la țările a căror sursă dă doar un cod de domeniu, fișa universității grupează programele după domeniile aplicației. Starea pe țări, ce nu s-a putut și ce ar debloca fiecare caz sunt în `docs/catalog-status.md`
@@ -444,6 +451,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-08 03:49 `2f23ae9` feat: catalogue for eleven countries, status report and home page totals
 - 2026-10-08 03:38 `2a332f4` feat: multi-country programme catalogue from official open datasets
 - 2026-10-08 03:13 `a9edb12` feat: Romanian catalogue of institutions and bachelor programmes from the official list
 - 2026-10-08 02:47 `a381c2f` feat: ask for the full name at sign-in and keep it on the account
@@ -473,5 +481,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-05 00:48 `86d84fe` feat: keep a single logo on the home page
 - 2026-10-05 00:27 `3551c80` feat: questionnaire start page with its own title and the start button on top
 - 2026-10-05 00:12 `2c00f9b` feat: UniPath in numbers on the home page
-- 2026-10-04 23:47 `f1683ad` feat: Politehnica faculties and programmes on its sheet, 12 more Romanian universities
 <!-- commits:end -->

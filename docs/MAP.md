@@ -68,7 +68,7 @@ _Open only the files listed here; a file's description is its first comment line
 ### .github/workflows  (2 files)
 
 - `codeql.yml` (30) — CodeQL: GitHub's code scanner looks for security bugs in the TypeScript code on every push, pull request and once a week.
-- `security.yml` (46) — Security checks on every push and pull request: leaked secrets, known-vulnerable packages, type errors and the automatic tests (including the access rules).
+- `security.yml` (52) — Security checks on every push and pull request: leaked secrets, known-vulnerable packages, type errors and the automatic tests (including the access rules).
 
 ### apps/web  (11 files)
 

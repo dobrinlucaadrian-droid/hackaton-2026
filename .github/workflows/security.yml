@@ -20,7 +20,13 @@ jobs:
         with:
           fetch-depth: 0 # the whole history, not only the last commit
       - name: Scan the repository history
-        run: docker run --rm -v "$PWD:/repo" ghcr.io/gitleaks/gitleaks:latest detect --source /repo --redact --no-banner
+        run: docker run --rm -v "$PWD:/repo" ghcr.io/gitleaks/gitleaks:latest detect --source /repo --redact --no-banner --report-format json --report-path /repo/gitleaks-report.json
+      - name: Summary of findings (rule and file only; the values stay redacted)
+        if: failure()
+        run: |
+          jq -r '.[] | "\(.RuleID)\t\(.File)"' gitleaks-report.json | sort | uniq -c | sort -rn | head -40
+          echo "--- by rule"; jq -r '.[].RuleID' gitleaks-report.json | sort | uniq -c | sort -rn
+          echo "--- outside the catalogue data"; jq -r '.[] | select(.File | startswith("apps/web/data/catalog/") | not) | "\(.RuleID)\t\(.File):\(.StartLine)\t\(.Commit[0:7])"' gitleaks-report.json | head -40
 
   app:
     name: Packages, types and tests
