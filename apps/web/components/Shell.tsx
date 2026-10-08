@@ -23,6 +23,10 @@ export function Shell({ children, wide = false }: { children: ReactNode; wide?: 
         <Link href="/confidentialitate" className="inline-flex min-h-11 items-center font-bold underline decoration-primary/40 underline-offset-2 hover:text-primary-dark">
           Confidențialitate
         </Link>
+        <span aria-hidden className="mx-2">·</span>
+        <Link href="/surse" className="inline-flex min-h-11 items-center font-bold underline decoration-primary/40 underline-offset-2 hover:text-primary-dark">
+          Surse de date
+        </Link>
       </footer>
     </div>
   );

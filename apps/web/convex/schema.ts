@@ -1,4 +1,4 @@
-// Database tables for UniPath: users (from Convex Auth, plus a server-written role), saved questionnaire results and student reviews.
+// Database tables for UniPath: users (from Convex Auth, plus a server-written role), saved questionnaire results, student reviews and the catalogue of institutions and programmes.
 import { authTables } from "@convex-dev/auth/server";
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
@@ -31,6 +31,49 @@ export default defineSchema({
     topDomains: v.array(v.string()), // the three domain ids shown to the student
     savedAt: v.number(),
   }).index("by_user", ["userId"]),
+
+  // Institutions from official national lists (Romania: the yearly Government Decision). Loaded with `npx convex import`, never written by users.
+  institutions: defineTable({
+    id: v.string(), // same id as the university sheet when the app has one
+    country: v.string(), // ISO code, e.g. "RO"
+    source: v.string(), // the legal act the data comes from
+    name: v.string(),
+    officialName: v.string(),
+    city: v.string(),
+    kind: v.string(), // "stat" | "particular"
+    hasSheet: v.boolean(),
+    listNo: v.number(),
+    faculties: v.number(),
+    programs: v.number(),
+  })
+    .index("by_public_id", ["id"])
+    .index("by_country", ["country"]),
+
+  // Bachelor-level study programmes from the same lists, one row per programme.
+  programs: defineTable({
+    key: v.string(),
+    country: v.string(),
+    institutionId: v.string(),
+    institutionName: v.string(),
+    city: v.string(), // where the courses are held
+    faculty: v.string(),
+    domain: v.string(), // official study domain
+    domainId: v.string(), // one of the app's 40 study domains (our own mapping)
+    name: v.string(),
+    language: v.string(),
+    location: v.optional(v.string()),
+    status: v.union(v.literal("A"), v.literal("AP")),
+    form: v.union(v.literal("IF"), v.literal("IFR"), v.literal("ID")),
+    credits: v.number(),
+    years: v.number(),
+    maxStudents: v.number(),
+    source: v.string(),
+    search: v.string(), // lower-case text without diacritics
+  })
+    .index("by_key", ["key"])
+    .index("by_institution", ["institutionId"])
+    .index("by_domain_country_city", ["domainId", "country", "city"])
+    .searchIndex("search", { searchField: "search", filterFields: ["country", "city", "domainId"] }),
 
   // Student reviews: sent through the public form, shown only when an administrator approves them.
   reviews: defineTable({

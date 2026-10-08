@@ -178,3 +178,38 @@ export type CurriculumLink = {
   url: string;
   kind: "plans" | "programs"; // "plans" = the curricula themselves; "programs" = the list of programmes that leads to them
 };
+
+/** An institution from an official national list of higher-education institutions. */
+export type CatalogInstitution = {
+  id: string; // same id as the university sheet when there is one
+  name: string; // display name
+  officialName: string; // as printed in the official list
+  city: string;
+  kind: "stat" | "particular";
+  hasSheet: boolean; // true when the app has a full profile sheet for it
+  listNo: number; // its number in the official list
+  faculties: number;
+  programs: number;
+};
+
+/** One bachelor-level study programme from an official national list. */
+export type CatalogProgram = {
+  key: string; // unique and stable
+  country: string; // ISO code, e.g. "RO"
+  institutionId: string;
+  institutionName: string;
+  city: string; // where the courses are held
+  faculty: string;
+  domain: string; // official study domain
+  domainId: string; // one of the app's 40 study domains (our own mapping)
+  name: string;
+  language: string;
+  location?: string; // only when the list prints a place next to the programme
+  status: "A" | "AP"; // accredited / provisionally authorised
+  form: "IF" | "IFR" | "ID"; // full-time / reduced attendance / distance learning
+  credits: number;
+  years: number;
+  maxStudents: number; // the most students that may be enrolled in the first year
+  source: string; // the legal act the row comes from
+  search: string; // lower-case text without diacritics, for searching
+};

@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { OfficialPrograms } from "@/components/OfficialPrograms";
 import { Shell } from "@/components/Shell";
 import { UniversityOpinions } from "@/components/UniversityOpinions";
 import { BudgetBadge, PrestigeBadge } from "@/components/UniversityBadges";
@@ -200,7 +201,8 @@ export default async function UniversityPage({ params }: Props) {
               />
             </Section>
           )}
-          {faculties.length > 0 && (
+          {u.region === "ro" && <OfficialPrograms institutionId={u.id} city={u.city} />}
+          {u.region !== "ro" && faculties.length > 0 && (
             <Section title="Facultăți și specializări">
               <p className="text-sm text-ink-soft">
                 {faculties.length} facultăți{programCount > 0 ? ` · ${programCount} specializări de licență` : ""}, după site-ul oficial al
