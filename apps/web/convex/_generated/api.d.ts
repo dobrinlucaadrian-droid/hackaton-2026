@@ -10,6 +10,7 @@
 
 import type * as access from "../access.js";
 import type * as account from "../account.js";
+import type * as analytics from "../analytics.js";
 import type * as auth from "../auth.js";
 import type * as catalog from "../catalog.js";
 import type * as http from "../http.js";
@@ -25,6 +26,7 @@ import type {
 declare const fullApi: ApiFromModules<{
   access: typeof access;
   account: typeof account;
+  analytics: typeof analytics;
   auth: typeof auth;
   catalog: typeof catalog;
   http: typeof http;

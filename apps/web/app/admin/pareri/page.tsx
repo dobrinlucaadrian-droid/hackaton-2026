@@ -78,7 +78,8 @@ export default function AdminReviewsPage() {
       <h1 className="mt-4 text-4xl font-black tracking-tighter text-ink">Păreri de aprobat</h1>
       <p className="mt-2 text-ink-soft">
         Citește fiecare părere. Aprob-o doar dacă e reală, respectuoasă și fără date personale ale altor oameni.{" "}
-        <Link href="/studenti" className="font-bold text-primary underline underline-offset-2">Vezi pagina publică →</Link>
+        <Link href="/studenti" className="font-bold text-primary underline underline-offset-2">Vezi pagina publică →</Link>{" "}
+        <Link href="/admin/statistici" className="font-bold text-primary underline underline-offset-2">Statistici și mentenanță →</Link>
       </p>
       <div className="mt-5 flex flex-wrap gap-2" role="tablist" aria-label="Starea părerilor">
         {TABS.map(([id, text]) => (

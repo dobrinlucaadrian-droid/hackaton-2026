@@ -1,8 +1,11 @@
+// Root layout: fonts, page metadata, the database connection and the anonymous visit counter shared by every page.
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ConvexAuthNextjsServerProvider } from "@convex-dev/auth/nextjs/server";
 import { ConvexClientProvider } from "@/components/ConvexClientProvider";
+import { VisitTracker } from "@/components/VisitTracker";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +28,9 @@ export const metadata: Metadata = {
   openGraph: { title: "UniPath", description, siteName: "UniPath", locale: "ro_RO", type: "website", url: "/" },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/">) {
+  // Vercel adds the visitor's country (two letters) to every request; nothing else about the visitor is read.
+  const country = (await headers()).get("x-vercel-ip-country") ?? undefined;
   return (
     <ConvexAuthNextjsServerProvider>
     <html
@@ -33,7 +38,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">
-        <ConvexClientProvider>{children}</ConvexClientProvider>
+        <ConvexClientProvider>
+          <VisitTracker country={country} />
+          {children}
+        </ConvexClientProvider>
       </body>
     </html>
     </ConvexAuthNextjsServerProvider>

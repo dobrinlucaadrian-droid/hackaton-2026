@@ -86,7 +86,11 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/admin/pareri  (1 files)
 
-- `page.tsx` (101) — Administration page for student opinions: the team reads what came through the form and approves or rejects it. Only administrators get any data.. Routes: /admin/pareri. Exports: AdminReviewsPage
+- `page.tsx` (102) — Administration page for student opinions: the team reads what came through the form and approves or rejects it. Only administrators get any data.. Routes: /admin/pareri. Exports: AdminReviewsPage
+
+### apps/web/app/admin/statistici  (1 files)
+
+- `page.tsx` (244) — Administration page with statistics and maintenance: visits, where they come from, finished questionnaires and how people answered, the state of the database, and a CSV download. Only administrators get any data.. Routes: /admin/statistici. Exports: AdminStatsPage
 
 ### apps/web/app  (9 files)
 
@@ -94,7 +98,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `favicon.ico`
 - `globals.css` (129) — _no description: add a first-line comment_
 - `icon.png`
-- `layout.tsx` (42) — _no description: add a first-line comment_. Exports: metadata, RootLayout
+- `layout.tsx` (50) — Root layout: fonts, page metadata, the database connection and the anonymous visit counter shared by every page.. Exports: metadata, RootLayout
 - `not-found.tsx` (11) — Friendly 404 page shown for unknown routes and unknown university ids.. Exports: NotFound
 - `opengraph-image.alt.txt` (1) — _no description: add a first-line comment_
 - `opengraph-image.png`
@@ -106,11 +110,11 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/confidentialitate  (1 files)
 
-- `page.tsx` (92) — Privacy page: in plain Romanian, what UniPath stores, why, who processes it and how to delete it. Working draft until a legal check.. Routes: /confidentialitate. Exports: metadata, PrivacyPage
+- `page.tsx` (101) — Privacy page: in plain Romanian, what UniPath stores, why, who processes it and how to delete it. Working draft until a legal check.. Routes: /confidentialitate. Exports: metadata, PrivacyPage
 
 ### apps/web/app/cont  (1 files)
 
-- `page.tsx` (211) — "Contul meu": shows who is signed in (name and email, the name can be changed) and the saved questionnaire result, and lets the student sign out or delete the account.. Routes: /cont. Exports: AccountPage
+- `page.tsx` (217) — "Contul meu": shows who is signed in (name and email, the name can be changed) and the saved questionnaire result, and lets the student sign out or delete the account.. Routes: /cont. Exports: AccountPage
 
 ### apps/web/app/programe  (1 files)
 
@@ -122,7 +126,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/rezultat  (1 files)
 
-- `page.tsx` (143) — Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /rezultat. Exports: ResultPage
+- `page.tsx` (161) — Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /rezultat. Exports: ResultPage
 
 ### apps/web/app/specializari/[categorie]  (1 files)
 
@@ -146,7 +150,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/test  (1 files)
 
-- `page.tsx` (70) — Questionnaire start screen: its own title, the 3-step explanation and the button that starts the quiz (the profile is asked inside the quiz).. Routes: /test. Exports: QuestionnaireStart
+- `page.tsx` (78) — Questionnaire start screen: its own title, the 3-step explanation and the button that starts the quiz (the profile is asked inside the quiz).. Routes: /test. Exports: QuestionnaireStart
 
 ### apps/web/app/universitati/[id]  (1 files)
 
@@ -156,7 +160,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 - `page.tsx` (26) — University finder page: search box, filters and top 10 results (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
 
-### apps/web/components  (30 files)
+### apps/web/components  (31 files)
 
 - `ActivitiesStep.tsx` (227) — Quiz step "Ce ai făcut până acum?": add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
 - `ActivitiesSummary.tsx` (33) — Read-only list of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
@@ -186,22 +190,25 @@ _Open only the files listed here; a file's description is its first comment line
 - `UniversityList.tsx` (48) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList
 - `UniversityOpinions.tsx` (32) — "Ce spun studenții" on a university sheet: the opinions about this university, including approved ones from the database. Renders nothing when there are none.. Exports: UniversityOpinions
 - `UniversitySearch.tsx` (381) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
+- `VisitTracker.tsx` (38) — Counts page views anonymously: sends only the page path and, on the first page of a visit, the country and the site the visitor came from. No cookie, no stored id.. Exports: VisitTracker
 - `WhatIf.tsx` (69) — Collapsible "Ce-ar fi dacă?" panel: one slider per inclination, controlled by the result page.. Exports: WhatIf
 - `domainStyle.ts` (67) — Colour family and emoji for every study domain id, used on the result cards.. Exports: FAMILY_CLASSES, domainStyle
 
 ### apps/web/convex/_generated  (5 files)
 
-- `api.d.ts` (64) — Generated `api` utility.
+- `api.d.ts` (66) — Generated `api` utility.
 - `api.js` (24) — Generated `api` utility.. Exports: api, internal, components
 - `dataModel.d.ts` (61) — Generated data model types.
 - `server.d.ts` (163) — Generated utilities for implementing server-side Convex query and mutation functions.
 - `server.js` (102) — Generated utilities for implementing server-side Convex query and mutation functions.. Exports: query, internalQuery, mutation, internalMutation, action, internalAction, httpAction, env
 
-### apps/web/convex  (13 files)
+### apps/web/convex  (15 files)
 
 - `access.test.ts` (218) — @vitest-environment edge-runtime
 - `access.ts` (34) — Shared access rules: every function that needs a signed-in user or an administrator is built from these wrappers, so the check cannot be forgotten.. Exports: userQuery, userMutation, adminQuery, adminMutation
 - `account.ts` (68) — The signed-in user's own account: who they are (name and email), which sign-in methods exist, and deleting the account with everything saved in it.. Exports: me, setName, signInMethods, remove
+- `analytics.test.ts` (110) — @vitest-environment edge-runtime
+- `analytics.ts` (214) — Anonymous usage statistics: page views and finished questionnaires are counted without any name, cookie, IP address or visitor id; only administrators read the numbers.. Exports: PUBLIC_MIN, trackVisit, recordQuizRun, quizCount, overview
 - `auth.config.ts` (12) — Tells Convex which issuer signs the session tokens (this deployment itself, through Convex Auth).
 - `auth.ts` (55) — Convex Auth setup: sign-in with an email magic link (sent through Resend) and, when configured, Google. No passwords are stored.. Exports: adminEmails
 - `catalog.test.ts` (76) — @vitest-environment edge-runtime
@@ -210,7 +217,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `http.ts` (9) — HTTP routes of the Convex backend: only the ones Convex Auth needs for sign-in.
 - `results.ts` (74) — A student's saved questionnaire result: each signed-in user can save, read and delete only their own.. Exports: mine, save, remove
 - `reviews.ts` (154) — Student reviews: anyone can read the approved ones and send a new one through the checked public form; only administrators see the queue and approve or reject.. Exports: LIMITS, listApproved, listByState, moderate, insertPending, insertLimited, submit
-- `schema.ts` (93) — Database tables for UniPath: users (from Convex Auth, plus a server-written role), saved questionnaire results, student reviews and the catalogue of institutions and programmes.. Exports: reviewState
+- `schema.ts` (118) — Database tables for UniPath: users (from Convex Auth, plus a server-written role), saved questionnaire results, student reviews, the catalogue of institutions and programmes, and anonymous usage statistics.. Exports: reviewState
 - `tsconfig.json` (26) — JSON (invalid)
 
 ### apps/web/data/catalog  (23 files)
@@ -227,7 +234,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `fr-programs.jsonl.gz`
 - `ie-institutions.json` (498) — JSON array, 45 items
 - `ie-programs.json`
-- `index.json` (1643) — JSON array, 11 items
+- `index.json` (1692) — JSON array, 11 items
 - `it-institutions.json` (1015) — JSON array, 92 items
 - `it-programs.json`
 - `nl-institutions.json` (1091) — JSON array, 95 items
@@ -239,7 +246,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `us-institutions.json`
 - `us-programs.jsonl.gz`
 
-### apps/web/data  (10 files)
+### apps/web/data  (11 files)
 
 - `categories.json` (13) — JSON array, 10 items
 - `curricula.json` (2190) — JSON array, 40 items
@@ -249,8 +256,9 @@ _Open only the files listed here; a file's description is its first comment line
 - `questions.json` (729) — JSON array, 18 items
 - `specializations.json` (209) — JSON array, 206 items
 - `testimonials.json` (169) — JSON array, 24 items
-- `universities-abroad.json` (3203) — JSON array, 57 items
-- `universities-ro.json` (3487) — JSON array, 74 items
+- `universities-abroad.json` (6771) — JSON array, 122 items
+- `universities-ro.json` (3846) — JSON array, 83 items
+- `university-sources.json` (455) — JSON; keys: ani-bucuresti, itb-bucuresti, itp-bucuresti, bogdan-voda, itp-cluj, dragan-lugoj, cantemir-tgmures, timotheus
 
 ### apps/web/lib  (20 files)
 
@@ -270,7 +278,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `session.ts` (109) — Keeps the student's answers (and optional activities with photos) in sessionStorage between pages (safe on the server).. Exports: loadDraft, saveDraft, clearDraft, toAnswers, shrinkImage
 - `testimonials.ts` (29) — Links student opinions to the universities that have a profile sheet, so the search and the sheets can show them.. Exports: universityIdOf, testimonialsFor
 - `types.ts` (230) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
-- `universities.data.test.ts` (82) — Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
+- `universities.data.test.ts` (95) — Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
 - `universities.test.ts` (209) — Tests the specializations and categories data and the university search/filter logic.
 - `universities.ts` (234) — Search and filter over the universities with a profile sheet, plus labels for the filter values.. Exports: PRESTIGE_LABEL, BUDGET_LABEL, ADMISSION_LABEL, CERTIFICATE_LABEL, normalize, countries, romanianCities, universityById, …
 - `useTestimonials.ts` (34) — All student opinions the pages can show: the ones gathered by the team (in the app's data) plus the approved ones from the database.. Exports: useTestimonials, useTestimonialsFor

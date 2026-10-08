@@ -1,4 +1,4 @@
-// Database tables for UniPath: users (from Convex Auth, plus a server-written role), saved questionnaire results, student reviews and the catalogue of institutions and programmes.
+// Database tables for UniPath: users (from Convex Auth, plus a server-written role), saved questionnaire results, student reviews, the catalogue of institutions and programmes, and anonymous usage statistics.
 import { authTables } from "@convex-dev/auth/server";
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
@@ -73,6 +73,31 @@ export default defineSchema({
     .index("by_institution", ["institutionId"])
     .index("by_domain_country_city", ["domainId", "country", "city"])
     .searchIndex("search", { searchField: "search", filterFields: ["country", "city", "domainId"] }),
+
+  // One finished questionnaire, stored without any name, account or device id. Used only for statistics.
+  quizRuns: defineTable({
+    day: v.string(), // "YYYY-MM-DD", Romanian time
+    profileId: v.string(),
+    where: v.union(v.literal("ro"), v.literal("abroad"), v.literal("any")),
+    city: v.optional(v.string()),
+    choices: v.record(v.string(), v.number()), // question id -> index of the picked option
+    topDomains: v.array(v.string()),
+  }).index("by_day", ["day"]),
+
+  // Anonymous counters per day: page views, visits, countries, referring sites, finished questionnaires. No IP address, no cookie, no visitor id.
+  dailyStats: defineTable({
+    day: v.string(), // "YYYY-MM-DD", Romanian time
+    kind: v.string(), // views | visits | path | country | ref | quiz
+    key: v.string(),
+    count: v.number(),
+  }).index("by_day_kind_key", ["day", "kind", "key"]),
+
+  // All-time questionnaire counters: total, per profile, per place, per city, per result domain and per answer.
+  quizStats: defineTable({
+    kind: v.string(), // total | profile | where | city | top1 | top | answer
+    key: v.string(),
+    count: v.number(),
+  }).index("by_kind_key", ["kind", "key"]),
 
   // Student reviews: sent through the public form, shown only when an administrator approves them.
   reviews: defineTable({

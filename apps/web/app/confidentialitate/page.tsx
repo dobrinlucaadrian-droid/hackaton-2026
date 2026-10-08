@@ -72,6 +72,15 @@ export default function PrivacyPage() {
         <p>Nu avem reclame și nu folosim unelte care te urmăresc de pe un site pe altul.</p>
       </Block>
 
+      <Block title="Statistici anonime">
+        <p>Ca să știm dacă site-ul e folosit și ce să îmbunătățim, numărăm:</p>
+        <ul className="list-disc space-y-1 pl-5 marker:text-primary">
+          <li>câte pagini sunt deschise în fiecare zi, din ce țară și de pe ce site a venit vizita (de exemplu „google.com”);</li>
+          <li>fiecare chestionar terminat: profilul de liceu, răspunsurile, unde vrei să studiezi și cele trei domenii rezultate.</li>
+        </ul>
+        <p>Aceste numărători nu conțin numele tău, adresa de email, adresa IP sau vreun cod care să te recunoască și nu folosesc cookie-uri. Nu pot fi legate de tine sau de contul tău. Pozele și numele activităților din chestionar nu pleacă de pe dispozitivul tău.</p>
+      </Block>
+
       <Block title="Cookie-uri și date păstrate în browser">
         <p>Când ești conectat, site-ul păstrează în browser un cookie de sesiune, ca să te recunoască. Fără el nu ai putea rămâne conectat. Verificarea anti-robot de la formularul de păreri poate folosi propriile cookie-uri tehnice.</p>
         <p>Dacă apeși „Salvează în contul meu” înainte să te conectezi, rezultatul stă pe dispozitivul tău până termini conectarea, apoi e șters de acolo.</p>

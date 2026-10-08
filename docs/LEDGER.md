@@ -21,6 +21,30 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-09 02:51 — 74 de fișe complete noi de universități (205 în total)
+- Cerut: „te rog să mai aduni informații pentru a avea cât mai multe cu fișă completă”; echipa a ales: cele 10 instituții din România rămase fără fișă și destinațiile preferate de români, circa 80 de fișe, scrise ca la cele existente, cu sursa notată
+- Făcut: 74 de fișe noi: România 9 (acum 83 din 84 de instituții din lista oficială au fișă), Olanda 12, Marea Britanie 15, Germania 14, Italia 12, Austria 8, Danemarca 4. Fiecare fișă e scrisă din site-ul oficial al universității și din pagini oficiale de stat; paginile folosite sunt păstrate în `apps/web/data/university-sources.json`. Fișele din România, Olanda, Germania, Italia și Austria sunt legate de catalogul oficial, deci arată și lista de programe de licență. Fără sume exacte și fără medii de admitere
+- Lăsată deoparte: Universitatea „Tomis” din Constanța — nu am găsit un site oficial care să funcționeze, deci nu am putut confirma admiterea, bursele și căminul
+- Fișiere: `apps/web/data/universities-ro.json`, `apps/web/data/universities-abroad.json`, `apps/web/data/university-sources.json` (nou), `apps/web/data/catalog/` (instituțiile și programele pentru `ro`, `nl`, `de`, `it`, `at`, plus `index.json`), `scripts/data/{ro,nl,de,it,at}/build.mjs` și README-urile lor, `apps/web/lib/catalog.test.ts`, `apps/web/lib/universities.data.test.ts`
+- Poartă: TRECUT (120 de teste); toate cele 11 țări VALID; văzute în browser: pagina principală cu 205 fișe, fișa Fontys și fișa „Dimitrie Cantemir” Târgu Mureș cu lista de programe, căutarea „bristol”
+- De verificat de un om: prestigiul, nivelul de cost și plusurile/minusurile sunt aprecieri orientative; la unele fișe o parte din detalii (burse în Germania, câteva cămine, câteva cerințe de limbă) vin din rezumatul paginii oficiale din motorul de căutare, nu din pagina deschisă; lista de domenii e parțială la câteva universități (Nottingham, Napoli, Verona, Klagenfurt, Tilburg). Fișele din Marea Britanie și Danemarca nu au listă de programe, fiindcă aceste țări nu sunt în catalog
+- Urmează: salvarea pe GitHub când cere echipa; apoi alte țări (Spania, Franța, Polonia, Irlanda) dacă echipa vrea mai multe fișe
+
+### 2026-10-09 00:45 — pagina principală: numărul de instituții în loc de numărul de programe
+- Cerut: „în loc de programe de licență, vreau să afișezi pe pagina principală numărul de facultăți/instituții”
+- Făcut: caseta din „UniPath în cifre” arată acum „4.117 universități și instituții din 11 țări, din date oficiale” (numărul vine din catalog și se schimbă singur); duce tot la căutarea de programe
+- Fișiere: `apps/web/app/page.tsx`
+- Poartă: TRECUT (119 teste); pagina principală văzută în browser cu textul nou
+- Urmează: salvarea pe GitHub când cere echipa
+
+### 2026-10-09 00:35 — panou de administrare cu statistici și mentenanță; contor public la chestionar
+- Cerut: un panou pentru administratori cu câte accesări are site-ul, de unde vin, câți au terminat chestionarul și cine a răspuns ce, plus mentenanță; iar pe pagina chestionarului, pentru elevi, câți l-au făcut înaintea lor. Echipa a ales: numărătoare proprie anonimă, toate răspunsurile salvate anonim, pentru elevi doar numărul, la mentenanță starea bazei de date și descărcarea statisticilor
+- Făcut: pagina nouă `/admin/statistici` (doar pentru administratori): afișări și vizite pe zile, țări, site-uri de pe care vin vizitele, cele mai văzute pagini, chestionare terminate, domeniile rezultate, profilul, orașul, răspunsurile la fiecare întrebare, starea bazei de date și buton de descărcare CSV. Site-ul numără fiecare pagină deschisă fără cookie, fără adresă IP și fără vreun cod al vizitatorului; țara vine de la Vercel (local apare „necunoscută”). La afișarea rezultatului, chestionarul terminat se salvează o singură dată, fără nume sau cont. Pagina chestionarului arată „N elevi au făcut deja chestionarul” abia de la 50 în sus. Textul „răspunsurile rămân pe dispozitivul tău” a fost corectat, iar pagina de confidențialitate are o secțiune nouă „Statistici anonime”
+- Fișiere: `apps/web/convex/analytics.ts` și `analytics.test.ts` (noi), `apps/web/convex/schema.ts`, `apps/web/app/admin/statistici/page.tsx` (nou), `apps/web/components/VisitTracker.tsx` (nou), `apps/web/app/layout.tsx`, `apps/web/app/rezultat/page.tsx`, `apps/web/app/test/page.tsx`, `apps/web/app/confidentialitate/page.tsx`, `apps/web/app/cont/page.tsx`, `apps/web/app/admin/pareri/page.tsx`
+- Poartă: TRECUT (119 teste); parcurse în browser pe baza de dezvoltare: un chestionar terminat și numărat o singură dată, panoul de statistici cu contul de probă de administrator, pagina chestionarului și pagina de confidențialitate
+- Neverificat: țara reală a vizitelor (se vede doar pe varianta publicată pe Vercel); contorul public afișat (în baza de dezvoltare e un singur chestionar; pragul de 50 e verificat doar prin test automat); descărcarea fișierului CSV
+- Urmează: echipa hotărăște pragul de afișare a contorului (acum 50); la lansare, tabelele noi se creează singure în baza de producție
+
 ### 2026-10-08 23:46 — baza de date: verificare de completitudine pe 11 țări și reparații
 - Cerut: „poți să mai cauți informații despre facultățile din România și restul țărilor, ca să ne asigurăm că le avem pe toate integral”; apoi echipa a aprobat pașii 1 (curățenie) și 2 (completări din surse deschise)
 - Făcut: fiecare țară a fost comparată cu liste oficiale independente și cu site-urile câtorva universități. România era completă (neschimbată). Spania a trecut de la o regiune la toată țara (91 de universități, 4.302 programe). Franța: oferta 2026 plus licențele profesionale (7.104). SUA: 118 campusuri secundare adăugate (65.202). Olanda, Polonia, Belgia, Italia, Irlanda: scoase dublurile, rândurile vechi și cele care nu erau licențe; adăugate programele integrate din Irlanda. Total în baza de dezvoltare: 4.117 instituții și 100.186 programe. Germania (circa 35%) și Austria rămân parțiale: nu există surse deschise, trebuie cerut acordul
@@ -466,6 +490,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-08 23:46 `6cf706f` feat: completeness pass on the catalogue: Spain nationwide, France 2026, cleanups
 - 2026-10-08 04:02 `ce1a3d5` ci: stop the secret scan from flagging programme identifiers in the catalogue data
 - 2026-10-08 03:56 `4e1429c` ci: print which rule and file each secret-scan finding is in
 - 2026-10-08 03:49 `2f23ae9` feat: catalogue for eleven countries, status report and home page totals
@@ -495,5 +520,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-05 01:24 `6d6fbdf` feat: 18 researched scenario questions in the questionnaire, balanced across the ten traits
 - 2026-10-05 00:59 `482966a` feat: replace the random card with a guided interest picker on the specializations page
 - 2026-10-05 00:51 `4c91def` feat: illustration and a surprise-me card on the specializations page
-- 2026-10-05 00:48 `86d84fe` feat: keep a single logo on the home page
 <!-- commits:end -->

@@ -1,5 +1,6 @@
 "use client";
 // Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.
+import { useMutation } from "convex/react";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { ActivitiesSummary } from "@/components/ActivitiesSummary";
@@ -9,11 +10,13 @@ import { MatchCard } from "@/components/MatchCard";
 import { SaveResult } from "@/components/SaveResult";
 import { Notice, Shell } from "@/components/Shell";
 import { WhatIf } from "@/components/WhatIf";
+import { api } from "@/convex/_generated/api";
 import { TRAITS, matchByTraits, matchDomains, studentTraits } from "@/lib/match";
 import { clearDraft, loadDraft, toAnswers, type StoredActivity } from "@/lib/session";
 import type { Answers, Match, TraitId } from "@/lib/types";
 
 type Traits = Record<TraitId, number>;
+const COUNTED_KEY = "unipath-counted";
 type State =
   | { status: "loading" }
   | { status: "empty" }
@@ -23,6 +26,7 @@ type State =
 export default function ResultPage() {
   const [state, setState] = useState<State>({ status: "loading" });
   const [values, setValues] = useState<Traits | null>(null);
+  const recordRun = useMutation(api.analytics.recordQuizRun);
 
   useEffect(() => {
     const answers = toAnswers(loadDraft());
@@ -36,10 +40,24 @@ export default function ResultPage() {
       const initial = studentTraits(answers);
       setValues(initial);
       setState(matches.length ? { status: "ok", answers, matches, initial } : { status: "error" });
+      if (matches.length) countOnce(answers, matches.map((m) => m.domain.id));
     } catch {
       setState({ status: "error" });
     }
-  }, []);
+    // Counts this finished questionnaire once, anonymously: the same answers are not counted again on reload.
+    function countOnce(answers: Answers, topDomains: string[]) {
+      const mark = JSON.stringify([answers.profileId, answers.where, answers.city ?? "", answers.choices]);
+      try {
+        if (window.sessionStorage.getItem(COUNTED_KEY) === mark) return;
+        window.sessionStorage.setItem(COUNTED_KEY, mark);
+      } catch {
+        return; // storage blocked: better not counted than counted on every reload
+      }
+      recordRun({ profileId: answers.profileId, where: answers.where, ...(answers.city ? { city: answers.city } : {}), choices: answers.choices, topDomains }).catch(() => {
+        // statistics must never break the result page
+      });
+    }
+  }, [recordRun]);
 
   const changed = state.status === "ok" && values !== null && TRAITS.some((t) => values[t] !== state.initial[t]);
 

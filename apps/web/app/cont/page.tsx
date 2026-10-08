@@ -93,6 +93,12 @@ export default function AccountPage() {
         Ești conectat cu <span className="font-bold text-ink">{me?.email ?? "contul tău"}</span>
         {me?.isAdmin ? " · administrator" : ""}.
       </p>
+      {me?.isAdmin && (
+        <p className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm" data-admin-links>
+          <Link href="/admin/statistici" className="font-bold text-primary underline underline-offset-2">Statistici și mentenanță →</Link>
+          <Link href="/admin/pareri" className="font-bold text-primary underline underline-offset-2">Păreri de aprobat →</Link>
+        </p>
+      )}
       {note && (
         <p className="mt-4 rounded-2xl bg-primary-tint p-4 text-sm font-bold text-primary-dark" role="status">
           {note}
