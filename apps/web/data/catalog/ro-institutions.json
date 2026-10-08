@@ -6,11 +6,9 @@
     "name": "Universitatea Națională de Știință și Tehnologie POLITEHNICA București",
     "officialName": "UNIVERSITATEA NAȚIONALĂ DE ȘTIINȚĂ ȘI TEHNOLOGIE POLITEHNICA BUCUREȘTI",
     "city": "București",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 1,
-    "faculties": 21,
-    "programs": 163
+    "programs": 163,
+    "kind": "public"
   },
   {
     "id": "utcb",
@@ -19,11 +17,9 @@
     "name": "Universitatea Tehnică de Construcții București",
     "officialName": "UNIVERSITATEA TEHNICĂ DE CONSTRUCȚII DIN BUCUREȘTI",
     "city": "București",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 2,
-    "faculties": 7,
-    "programs": 18
+    "programs": 18,
+    "kind": "public"
   },
   {
     "id": "uauim",
@@ -32,11 +28,9 @@
     "name": "Universitatea de Arhitectură și Urbanism „Ion Mincu”",
     "officialName": "UNIVERSITATEA DE ARHITECTURĂ ȘI URBANISM \"ION MINCU\" DIN BUCUREȘTI",
     "city": "București",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 3,
-    "faculties": 3,
-    "programs": 9
+    "programs": 9,
+    "kind": "public"
   },
   {
     "id": "usamv-bucuresti",
@@ -45,11 +39,9 @@
     "name": "Universitatea de Științe Agronomice și Medicină Veterinară din București",
     "officialName": "UNIVERSITATEA DE ȘTIINȚE AGRONOMICE ȘI MEDICINĂ VETERINARĂ DIN BUCUREȘTI",
     "city": "București",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 4,
-    "faculties": 7,
-    "programs": 34
+    "programs": 34,
+    "kind": "public"
   },
   {
     "id": "unibuc",
@@ -58,11 +50,9 @@
     "name": "Universitatea din București",
     "officialName": "UNIVERSITATEA DIN BUCUREȘTI",
     "city": "București",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 5,
-    "faculties": 20,
-    "programs": 104
+    "programs": 104,
+    "kind": "public"
   },
   {
     "id": "umf-carol-davila",
@@ -71,11 +61,9 @@
     "name": "Universitatea de Medicină și Farmacie „Carol Davila” din București",
     "officialName": "UNIVERSITATEA DE MEDICINĂ ȘI FARMACIE \"CAROL DAVILA\" DIN BUCUREȘTI",
     "city": "București",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 6,
-    "faculties": 4,
-    "programs": 14
+    "programs": 14,
+    "kind": "public"
   },
   {
     "id": "ase-bucuresti",
@@ -84,11 +72,9 @@
     "name": "Academia de Studii Economice din București",
     "officialName": "ACADEMIA DE STUDII ECONOMICE DIN BUCUREȘTI",
     "city": "București",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 7,
-    "faculties": 12,
-    "programs": 36
+    "programs": 36,
+    "kind": "public"
   },
   {
     "id": "unmb",
@@ -97,11 +83,9 @@
     "name": "Universitatea Națională de Muzică din București",
     "officialName": "UNIVERSITATEA NAȚIONALĂ DE MUZICĂ DIN BUCUREȘTI",
     "city": "București",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 8,
-    "faculties": 2,
-    "programs": 7
+    "programs": 7,
+    "kind": "public"
   },
   {
     "id": "unarte",
@@ -110,11 +94,9 @@
     "name": "Universitatea Națională de Arte București",
     "officialName": "UNIVERSITATEA NAȚIONALĂ DE ARTE DIN BUCUREȘTI",
     "city": "București",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 9,
-    "faculties": 3,
-    "programs": 13
+    "programs": 13,
+    "kind": "public"
   },
   {
     "id": "unatc",
@@ -123,11 +105,9 @@
     "name": "Universitatea Națională de Artă Teatrală și Cinematografică „I.L. Caragiale”",
     "officialName": "UNIVERSITATEA NAȚIONALĂ DE ARTĂ TEATRALĂ ȘI CINEMATOGRAFICĂ \"I. L. CARAGIALE\" DIN BUCUREȘTI",
     "city": "București",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 10,
-    "faculties": 2,
-    "programs": 14
+    "programs": 14,
+    "kind": "public"
   },
   {
     "id": "unefs",
@@ -136,11 +116,9 @@
     "name": "Universitatea Națională de Educație Fizică și Sport București",
     "officialName": "UNIVERSITATEA NAȚIONALĂ DE EDUCAȚIE FIZICĂ ȘI SPORT DIN BUCUREȘTI",
     "city": "București",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 11,
-    "faculties": 2,
-    "programs": 8
+    "programs": 8,
+    "kind": "public"
   },
   {
     "id": "snspa",
@@ -149,11 +127,9 @@
     "name": "Școala Națională de Studii Politice și Administrative",
     "officialName": "ȘCOALA NAȚIONALĂ DE STUDII POLITICE ȘI ADMINISTRATIVE DIN BUCUREȘTI",
     "city": "București",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 12,
-    "faculties": 4,
-    "programs": 11
+    "programs": 11,
+    "kind": "public"
   },
   {
     "id": "uab",
@@ -162,11 +138,9 @@
     "name": "Universitatea „1 Decembrie 1918” din Alba Iulia",
     "officialName": "UNIVERSITATEA \"1 DECEMBRIE 1918\" DIN ALBA IULIA",
     "city": "Alba Iulia",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 13,
-    "faculties": 5,
-    "programs": 40
+    "programs": 40,
+    "kind": "public"
   },
   {
     "id": "uav-arad",
@@ -175,11 +149,9 @@
     "name": "Universitatea „Aurel Vlaicu” din Arad",
     "officialName": "UNIVERSITATEA \"AUREL VLAICU\" DIN ARAD",
     "city": "Arad",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 14,
-    "faculties": 9,
-    "programs": 38
+    "programs": 38,
+    "kind": "public"
   },
   {
     "id": "ub-bacau",
@@ -188,11 +160,9 @@
     "name": "Universitatea „Vasile Alecsandri” din Bacău",
     "officialName": "UNIVERSITATEA „VASILE ALECSANDRI\" DIN BACĂU",
     "city": "Bacău",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 15,
-    "faculties": 5,
-    "programs": 48
+    "programs": 48,
+    "kind": "public"
   },
   {
     "id": "unitbv",
@@ -201,11 +171,9 @@
     "name": "Universitatea Transilvania din Brașov",
     "officialName": "UNIVERSITATEA \"TRANSILVANIA\" DIN BRAȘOV",
     "city": "Brașov",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 16,
-    "faculties": 18,
-    "programs": 99
+    "programs": 99,
+    "kind": "public"
   },
   {
     "id": "utcn",
@@ -214,11 +182,9 @@
     "name": "Universitatea Tehnică din Cluj-Napoca",
     "officialName": "UNIVERSITATEA TEHNICĂ DIN CLUJ–NAPOCA",
     "city": "Cluj-Napoca",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 17,
-    "faculties": 12,
-    "programs": 96
+    "programs": 96,
+    "kind": "public"
   },
   {
     "id": "usamv-cluj",
@@ -227,11 +193,9 @@
     "name": "Universitatea de Științe Agricole și Medicină Veterinară din Cluj-Napoca",
     "officialName": "UNIVERSITATEA DE ȘTIINȚE AGRICOLE ȘI MEDICINĂ VETERINARĂ DIN CLUJ-NAPOCA",
     "city": "Cluj-Napoca",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 18,
-    "faculties": 6,
-    "programs": 29
+    "programs": 29,
+    "kind": "public"
   },
   {
     "id": "ubb-cluj",
@@ -240,11 +204,9 @@
     "name": "Universitatea Babeș-Bolyai",
     "officialName": "UNIVERSITATEA \"BABEȘ-BOLYAI\" DIN CLUJ-NAPOCA",
     "city": "Cluj-Napoca",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 19,
-    "faculties": 23,
-    "programs": 277
+    "programs": 277,
+    "kind": "public"
   },
   {
     "id": "umf-cluj",
@@ -253,11 +215,9 @@
     "name": "Universitatea de Medicină și Farmacie „Iuliu Hațieganu” din Cluj-Napoca",
     "officialName": "UNIVERSITATEA DE MEDICINĂ ȘI FARMACIE \"IULIU HAȚIEGANU\" DIN CLUJ-NAPOCA",
     "city": "Cluj-Napoca",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 20,
-    "faculties": 4,
-    "programs": 17
+    "programs": 17,
+    "kind": "public"
   },
   {
     "id": "amgd-cluj",
@@ -266,11 +226,9 @@
     "name": "Academia Națională de Muzică „Gheorghe Dima” din Cluj-Napoca",
     "officialName": "ACADEMIA NAȚIONALĂ DE MUZICĂ \"GHEORGHE DIMA\" DIN CLUJ-NAPOCA",
     "city": "Cluj-Napoca",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 21,
-    "faculties": 2,
-    "programs": 17
+    "programs": 17,
+    "kind": "public"
   },
   {
     "id": "uad-cluj",
@@ -279,11 +237,9 @@
     "name": "Universitatea de Artă și Design din Cluj-Napoca",
     "officialName": "UNIVERSITATEA DE ARTĂ ȘI DESIGN DIN CLUJ-NAPOCA",
     "city": "Cluj-Napoca",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 22,
-    "faculties": 2,
-    "programs": 11
+    "programs": 11,
+    "kind": "public"
   },
   {
     "id": "ovidius",
@@ -292,11 +248,9 @@
     "name": "Universitatea „Ovidius” din Constanța",
     "officialName": "UNIVERSITATEA \"OVIDIUS\" DIN CONSTANȚA",
     "city": "Constanța",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 23,
-    "faculties": 16,
-    "programs": 81
+    "programs": 81,
+    "kind": "public"
   },
   {
     "id": "umc",
@@ -305,11 +259,9 @@
     "name": "Universitatea Maritimă din Constanța",
     "officialName": "UNIVERSITATEA MARITIMĂ DIN CONSTANȚA",
     "city": "Constanța",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 24,
-    "faculties": 2,
-    "programs": 15
+    "programs": 15,
+    "kind": "public"
   },
   {
     "id": "ucv",
@@ -318,11 +270,9 @@
     "name": "Universitatea din Craiova",
     "officialName": "UNIVERSITATEA DIN CRAIOVA",
     "city": "Craiova",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 25,
-    "faculties": 13,
-    "programs": 96
+    "programs": 96,
+    "kind": "public"
   },
   {
     "id": "umf-craiova",
@@ -331,11 +281,9 @@
     "name": "Universitatea de Medicină și Farmacie din Craiova",
     "officialName": "UNIVERSITATEA DE MEDICINĂ ȘI FARMACIE DIN CRAIOVA",
     "city": "Craiova",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 26,
-    "faculties": 4,
-    "programs": 11
+    "programs": 11,
+    "kind": "public"
   },
   {
     "id": "ugal",
@@ -344,11 +292,9 @@
     "name": "Universitatea „Dunărea de Jos” din Galați",
     "officialName": "UNIVERSITATEA \"DUNĂREA DE JOS\" DIN GALAȚI",
     "city": "Galați",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 27,
-    "faculties": 15,
-    "programs": 95
+    "programs": 95,
+    "kind": "public"
   },
   {
     "id": "tuiasi",
@@ -357,11 +303,9 @@
     "name": "Universitatea Tehnică „Gheorghe Asachi” din Iași",
     "officialName": "UNIVERSITATEA TEHNICĂ \"GHEORGHE ASACHI\" DIN IAȘI",
     "city": "Iași",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 28,
-    "faculties": 11,
-    "programs": 61
+    "programs": 61,
+    "kind": "public"
   },
   {
     "id": "iuls",
@@ -370,11 +314,9 @@
     "name": "Universitatea pentru Științele Vieții „Ion Ionescu de la Brad” din Iași",
     "officialName": "UNIVERSITATEA PENTRU ȘTIINȚELE VIEȚII \"ION IONESCU DE LA BRAD\" DIN IAȘI",
     "city": "Iași",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 29,
-    "faculties": 4,
-    "programs": 21
+    "programs": 21,
+    "kind": "public"
   },
   {
     "id": "uaic",
@@ -383,11 +325,9 @@
     "name": "Universitatea „Alexandru Ioan Cuza” din Iași",
     "officialName": "UNIVERSITATEA \"ALEXANDRU IOAN CUZA\" DIN IAȘI",
     "city": "Iași",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 30,
-    "faculties": 15,
-    "programs": 90
+    "programs": 90,
+    "kind": "public"
   },
   {
     "id": "umf-iasi",
@@ -396,11 +336,9 @@
     "name": "Universitatea de Medicină și Farmacie „Grigore T. Popa” Iași",
     "officialName": "UNIVERSITATEA DE MEDICINĂ ȘI FARMACIE \"GRIGORE T. POPA\" DIN IAȘI",
     "city": "Iași",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 31,
-    "faculties": 5,
-    "programs": 19
+    "programs": 19,
+    "kind": "public"
   },
   {
     "id": "arte-iasi",
@@ -409,11 +347,9 @@
     "name": "Universitatea Națională de Arte „George Enescu” Iași",
     "officialName": "UNIVERSITATEA NAȚIONALĂ DE ARTE \"GEORGE ENESCU\" DIN IAȘI",
     "city": "Iași",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 32,
-    "faculties": 3,
-    "programs": 24
+    "programs": 24,
+    "kind": "public"
   },
   {
     "id": "uoradea",
@@ -422,11 +358,9 @@
     "name": "Universitatea din Oradea",
     "officialName": "UNIVERSITATEA DIN ORADEA",
     "city": "Oradea",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 33,
-    "faculties": 15,
-    "programs": 105
+    "programs": 105,
+    "kind": "public"
   },
   {
     "id": "upet",
@@ -435,11 +369,9 @@
     "name": "Universitatea din Petroșani",
     "officialName": "UNIVERSITATEA DIN PETROȘANI",
     "city": "Petroșani",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 34,
-    "faculties": 3,
-    "programs": 23
+    "programs": 23,
+    "kind": "public"
   },
   {
     "id": "upg",
@@ -448,11 +380,9 @@
     "name": "Universitatea Petrol-Gaze din Ploiești",
     "officialName": "UNIVERSITATEA PETROL-GAZE DIN PLOIEȘTI",
     "city": "Ploiești",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 35,
-    "faculties": 5,
-    "programs": 34
+    "programs": 34,
+    "kind": "public"
   },
   {
     "id": "ulbs",
@@ -461,11 +391,9 @@
     "name": "Universitatea „Lucian Blaga” din Sibiu",
     "officialName": "UNIVERSITATEA \"LUCIAN BLAGA\" DIN SIBIU",
     "city": "Sibiu",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 36,
-    "faculties": 9,
-    "programs": 87
+    "programs": 87,
+    "kind": "public"
   },
   {
     "id": "usv-suceava",
@@ -474,11 +402,9 @@
     "name": "Universitatea „Ștefan cel Mare” din Suceava",
     "officialName": "UNIVERSITATEA \"ȘTEFAN CEL MARE\" DIN SUCEAVA",
     "city": "Suceava",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 37,
-    "faculties": 11,
-    "programs": 75
+    "programs": 75,
+    "kind": "public"
   },
   {
     "id": "valahia",
@@ -487,11 +413,9 @@
     "name": "Universitatea „Valahia” din Târgoviște",
     "officialName": "UNIVERSITATEA \"VALAHIA\" DIN TÂRGOVIȘTE",
     "city": "Târgoviște",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 38,
-    "faculties": 10,
-    "programs": 39
+    "programs": 39,
+    "kind": "public"
   },
   {
     "id": "utgjiu",
@@ -500,11 +424,9 @@
     "name": "Universitatea „Constantin Brâncuși” din Târgu Jiu",
     "officialName": "UNIVERSITATEA \"CONSTANTIN BRÂNCUȘI\" DIN TÂRGU JIU",
     "city": "Târgu Jiu",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 39,
-    "faculties": 4,
-    "programs": 22
+    "programs": 22,
+    "kind": "public"
   },
   {
     "id": "umfst",
@@ -513,11 +435,9 @@
     "name": "Universitatea de Medicină, Farmacie, Științe și Tehnologie „George Emil Palade” din Târgu Mureș",
     "officialName": "UNIVERSITATEA DE MEDICINĂ, FARMACIE, ȘTIINȚE ȘI TEHNOLOGIE „GEORGE EMIL PALADE\" DIN TÂRGU MUREȘ",
     "city": "Târgu Mureș",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 40,
-    "faculties": 7,
-    "programs": 54
+    "programs": 54,
+    "kind": "public"
   },
   {
     "id": "uat-tgmures",
@@ -526,11 +446,9 @@
     "name": "Universitatea de Arte din Târgu Mureș",
     "officialName": "UNIVERSITATEA DE ARTE DIN TÂRGU MUREȘ",
     "city": "Târgu Mureș",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 41,
-    "faculties": 2,
-    "programs": 16
+    "programs": 16,
+    "kind": "public"
   },
   {
     "id": "upt",
@@ -539,11 +457,9 @@
     "name": "Universitatea Politehnica Timișoara",
     "officialName": "UNIVERSITATEA POLITEHNICA TIMIȘOARA",
     "city": "Timișoara",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 42,
-    "faculties": 11,
-    "programs": 63
+    "programs": 63,
+    "kind": "public"
   },
   {
     "id": "usvt",
@@ -552,11 +468,9 @@
     "name": "Universitatea de Științele Vieții „Regele Mihai I” din Timișoara",
     "officialName": "UNIVERSITATEA DE ȘTIINȚELE VIEȚII „REGELE MIHAI I\" DIN TIMIȘOARA",
     "city": "Timișoara",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 43,
-    "faculties": 6,
-    "programs": 33
+    "programs": 33,
+    "kind": "public"
   },
   {
     "id": "uvt",
@@ -565,11 +479,9 @@
     "name": "Universitatea de Vest din Timișoara",
     "officialName": "UNIVERSITATEA DE VEST DIN TIMIȘOARA",
     "city": "Timișoara",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 44,
-    "faculties": 12,
-    "programs": 90
+    "programs": 90,
+    "kind": "public"
   },
   {
     "id": "umft",
@@ -578,11 +490,9 @@
     "name": "Universitatea de Medicină și Farmacie „Victor Babeș” din Timișoara",
     "officialName": "UNIVERSITATEA DE MEDICINĂ ȘI FARMACIE \"VICTOR BABEȘ\" DIN TIMIȘOARA",
     "city": "Timișoara",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 45,
-    "faculties": 4,
-    "programs": 18
+    "programs": 18,
+    "kind": "public"
   },
   {
     "id": "atm",
@@ -591,11 +501,9 @@
     "name": "Academia Tehnică Militară „Ferdinand I”",
     "officialName": "ACADEMIA TEHNICĂ MILITARĂ „FERDINAND I\" DIN BUCUREȘTI",
     "city": "București",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 46,
-    "faculties": 4,
-    "programs": 16
+    "programs": 16,
+    "kind": "public"
   },
   {
     "id": "unap",
@@ -604,11 +512,9 @@
     "name": "Universitatea Națională de Apărare „Carol I”",
     "officialName": "UNIVERSITATEA NAȚIONALĂ DE APĂRARE \"CAROL I\" DIN BUCUREȘTI",
     "city": "București",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 47,
-    "faculties": 2,
-    "programs": 6
+    "programs": 6,
+    "kind": "public"
   },
   {
     "id": "ani-bucuresti",
@@ -617,11 +523,9 @@
     "name": "Academia Națională de Informații „Mihai Viteazul”",
     "officialName": "ACADEMIA NAȚIONALĂ DE INFORMAȚII \"MIHAI VITEAZUL\" DIN BUCUREȘTI",
     "city": "București",
-    "kind": "stat",
     "hasSheet": false,
-    "listNo": 48,
-    "faculties": 2,
-    "programs": 2
+    "programs": 2,
+    "kind": "public"
   },
   {
     "id": "academia-politie",
@@ -630,11 +534,9 @@
     "name": "Academia de Poliție „Alexandru Ioan Cuza”",
     "officialName": "ACADEMIA DE POLIȚIE \"ALEXANDRU IOAN CUZA\" DIN BUCUREȘTI",
     "city": "București",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 49,
-    "faculties": 2,
-    "programs": 5
+    "programs": 5,
+    "kind": "public"
   },
   {
     "id": "afa-brasov",
@@ -643,11 +545,9 @@
     "name": "Academia Forțelor Aeriene „Henri Coandă”",
     "officialName": "ACADEMIA FORȚELOR AERIENE \"HENRI COANDĂ\" DIN BRAȘOV",
     "city": "Brașov",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 50,
-    "faculties": 2,
-    "programs": 6
+    "programs": 6,
+    "kind": "public"
   },
   {
     "id": "anmb",
@@ -656,11 +556,9 @@
     "name": "Academia Navală „Mircea cel Bătrân”",
     "officialName": "ACADEMIA NAVALĂ \"MIRCEA CEL BĂTRÂN\" DIN CONSTANȚA",
     "city": "Constanța",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 51,
-    "faculties": 2,
-    "programs": 6
+    "programs": 6,
+    "kind": "public"
   },
   {
     "id": "aft-sibiu",
@@ -669,11 +567,9 @@
     "name": "Academia Forțelor Terestre „Nicolae Bălcescu”",
     "officialName": "ACADEMIA FORȚELOR TERESTRE \"NICOLAE BĂLCESCU\" DIN SIBIU",
     "city": "Sibiu",
-    "kind": "stat",
     "hasSheet": true,
-    "listNo": 52,
-    "faculties": 3,
-    "programs": 11
+    "programs": 11,
+    "kind": "public"
   },
   {
     "id": "ucdc",
@@ -682,11 +578,9 @@
     "name": "Universitatea Creștină „Dimitrie Cantemir”",
     "officialName": "UNIVERSITATEA CREȘTINĂ \"DIMITRIE CANTEMIR\" DIN BUCUREȘTI",
     "city": "București",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 1,
-    "faculties": 6,
-    "programs": 14
+    "programs": 14,
+    "kind": "private"
   },
   {
     "id": "utm",
@@ -695,11 +589,9 @@
     "name": "Universitatea „Titu Maiorescu”",
     "officialName": "UNIVERSITATEA \"TITU MAIORESCU\" DIN BUCUREȘTI",
     "city": "București",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 2,
-    "faculties": 10,
-    "programs": 26
+    "programs": 26,
+    "kind": "private"
   },
   {
     "id": "univnt",
@@ -708,11 +600,9 @@
     "name": "Universitatea „Nicolae Titulescu”",
     "officialName": "UNIVERSITATEA \"NICOLAE TITULESCU\" DIN BUCUREȘTI",
     "city": "București",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 3,
-    "faculties": 3,
-    "programs": 9
+    "programs": 9,
+    "kind": "private"
   },
   {
     "id": "rau",
@@ -721,11 +611,9 @@
     "name": "Universitatea Româno-Americană",
     "officialName": "UNIVERSITATEA ROMÂNO-AMERICANĂ DIN BUCUREȘTI",
     "city": "București",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 4,
-    "faculties": 10,
-    "programs": 23
+    "programs": 23,
+    "kind": "private"
   },
   {
     "id": "hyperion",
@@ -734,11 +622,9 @@
     "name": "Universitatea Hyperion din București",
     "officialName": "UNIVERSITATEA \"HYPERION\" DIN BUCUREȘTI",
     "city": "București",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 5,
-    "faculties": 7,
-    "programs": 25
+    "programs": 25,
+    "kind": "private"
   },
   {
     "id": "spiru-haret",
@@ -747,11 +633,9 @@
     "name": "Universitatea „Spiru Haret”",
     "officialName": "UNIVERSITATEA \"SPIRU HARET\" DIN BUCUREȘTI",
     "city": "București",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 6,
-    "faculties": 11,
-    "programs": 34
+    "programs": 34,
+    "kind": "private"
   },
   {
     "id": "bioterra",
@@ -760,11 +644,9 @@
     "name": "Universitatea Bioterra din București",
     "officialName": "UNIVERSITATEA \"BIOTERRA\" DIN BUCUREȘTI",
     "city": "București",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 7,
-    "faculties": 5,
-    "programs": 12
+    "programs": 12,
+    "kind": "private"
   },
   {
     "id": "ueb",
@@ -773,11 +655,9 @@
     "name": "Universitatea Ecologică din București",
     "officialName": "UNIVERSITATEA ECOLOGICĂ DIN BUCUREȘTI",
     "city": "București",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 8,
-    "faculties": 6,
-    "programs": 13
+    "programs": 13,
+    "kind": "private"
   },
   {
     "id": "athenaeum",
@@ -786,11 +666,9 @@
     "name": "Universitatea „Athenaeum” din București",
     "officialName": "UNIVERSITATEA \"ATHENAEUM\" DIN BUCUREȘTI",
     "city": "București",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 9,
-    "faculties": 2,
-    "programs": 4
+    "programs": 4,
+    "kind": "private"
   },
   {
     "id": "artifex",
@@ -799,11 +677,9 @@
     "name": "Universitatea „Artifex” din București",
     "officialName": "UNIVERSITATEA \"ARTIFEX\" DIN BUCUREȘTI",
     "city": "București",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 10,
-    "faculties": 2,
-    "programs": 5
+    "programs": 5,
+    "kind": "private"
   },
   {
     "id": "itb-bucuresti",
@@ -812,11 +688,9 @@
     "name": "Institutul Teologic Baptist din București",
     "officialName": "INSTITUTUL TEOLOGIC BAPTIST DIN BUCUREȘTI",
     "city": "București",
-    "kind": "particular",
     "hasSheet": false,
-    "listNo": 11,
-    "faculties": 1,
-    "programs": 2
+    "programs": 2,
+    "kind": "private"
   },
   {
     "id": "itp-bucuresti",
@@ -825,11 +699,9 @@
     "name": "Institutul Teologic Penticostal din București",
     "officialName": "INSTITUTUL TEOLOGIC PENTICOSTAL DIN BUCUREȘTI",
     "city": "București",
-    "kind": "particular",
     "hasSheet": false,
-    "listNo": 12,
-    "faculties": 1,
-    "programs": 1
+    "programs": 1,
+    "kind": "private"
   },
   {
     "id": "uvvg",
@@ -838,11 +710,9 @@
     "name": "Universitatea de Vest „Vasile Goldiș” din Arad",
     "officialName": "UNIVERSITATEA DE VEST \"VASILE GOLDIȘ\" DIN ARAD",
     "city": "Arad",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 14,
-    "faculties": 6,
-    "programs": 33
+    "programs": 33,
+    "kind": "private"
   },
   {
     "id": "george-bacovia",
@@ -851,11 +721,9 @@
     "name": "Universitatea „George Bacovia” din Bacău",
     "officialName": "UNIVERSITATEA \"GEORGE BACOVIA\" DIN BACĂU",
     "city": "Bacău",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 15,
-    "faculties": 1,
-    "programs": 5
+    "programs": 5,
+    "kind": "private"
   },
   {
     "id": "bogdan-voda",
@@ -864,11 +732,9 @@
     "name": "Universitatea „Bogdan Vodă” din Cluj-Napoca",
     "officialName": "UNIVERSITATEA \"BOGDAN VODĂ\" DIN CLUJ-NAPOCA",
     "city": "Cluj-Napoca",
-    "kind": "particular",
     "hasSheet": false,
-    "listNo": 17,
-    "faculties": 3,
-    "programs": 6
+    "programs": 6,
+    "kind": "private"
   },
   {
     "id": "itp-cluj",
@@ -877,11 +743,9 @@
     "name": "Institutul Teologic Protestant din Cluj-Napoca",
     "officialName": "INSTITUTUL TEOLOGIC PROTESTANT DIN CLUJ-NAPOCA",
     "city": "Cluj-Napoca",
-    "kind": "particular",
     "hasSheet": false,
-    "listNo": 18,
-    "faculties": 1,
-    "programs": 1
+    "programs": 1,
+    "kind": "private"
   },
   {
     "id": "sapientia",
@@ -890,11 +754,9 @@
     "name": "Universitatea Sapientia",
     "officialName": "UNIVERSITATEA \"SAPIENTIA\" DIN CLUJ-NAPOCA",
     "city": "Cluj-Napoca",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 19,
-    "faculties": 4,
-    "programs": 37
+    "programs": 37,
+    "kind": "private"
   },
   {
     "id": "andrei-saguna",
@@ -903,11 +765,9 @@
     "name": "Universitatea „Andrei Șaguna” din Constanța",
     "officialName": "UNIVERSITATEA \"ANDREI ȘAGUNA\" DIN CONSTANȚA",
     "city": "Constanța",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 20,
-    "faculties": 2,
-    "programs": 5
+    "programs": 5,
+    "kind": "private"
   },
   {
     "id": "danubius",
@@ -916,11 +776,9 @@
     "name": "Universitatea Internațională Danubius",
     "officialName": "UNIVERSITATEA INTERNAȚIONALĂ DANUBIUS",
     "city": "Galați",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 21,
-    "faculties": 5,
-    "programs": 17
+    "programs": 17,
+    "kind": "private"
   },
   {
     "id": "upa-iasi",
@@ -929,11 +787,9 @@
     "name": "Universitatea „Petre Andrei” din Iași",
     "officialName": "UNIVERSITATEA \"PETRE ANDREI\" DIN IAȘI",
     "city": "Iași",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 23,
-    "faculties": 2,
-    "programs": 8
+    "programs": 8,
+    "kind": "private"
   },
   {
     "id": "apollonia",
@@ -942,11 +798,9 @@
     "name": "Universitatea Apollonia din Iași",
     "officialName": "UNIVERSITATEA \"APOLLONIA\" DIN IAȘI",
     "city": "Iași",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 24,
-    "faculties": 2,
-    "programs": 7
+    "programs": 7,
+    "kind": "private"
   },
   {
     "id": "dragan-lugoj",
@@ -955,11 +809,9 @@
     "name": "Universitatea Europeană „Drăgan” din Lugoj",
     "officialName": "UNIVERSITATEA EUROPEANĂ \"DRĂGAN\" DIN LUGOJ",
     "city": "Lugoj",
-    "kind": "particular",
     "hasSheet": false,
-    "listNo": 25,
-    "faculties": 2,
-    "programs": 2
+    "programs": 2,
+    "kind": "private"
   },
   {
     "id": "agora-oradea",
@@ -968,11 +820,9 @@
     "name": "Universitatea Agora din Oradea",
     "officialName": "UNIVERSITATEA AGORA DIN MUNICIPIUL ORADEA",
     "city": "Oradea",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 26,
-    "faculties": 2,
-    "programs": 5
+    "programs": 5,
+    "kind": "private"
   },
   {
     "id": "emanuel-oradea",
@@ -981,11 +831,9 @@
     "name": "Universitatea Emanuel din Oradea",
     "officialName": "UNIVERSITATEA \"EMANUEL\" DIN ORADEA",
     "city": "Oradea",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 27,
-    "faculties": 2,
-    "programs": 6
+    "programs": 6,
+    "kind": "private"
   },
   {
     "id": "partium",
@@ -994,11 +842,9 @@
     "name": "Universitatea Creștină Partium",
     "officialName": "UNIVERSITATEA CREȘTINĂ \"PARTIUM\" DIN ORADEA",
     "city": "Oradea",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 28,
-    "faculties": 2,
-    "programs": 13
+    "programs": 13,
+    "kind": "private"
   },
   {
     "id": "ucb-pitesti",
@@ -1007,11 +853,9 @@
     "name": "Universitatea „Constantin Brâncoveanu” din Pitești",
     "officialName": "UNIVERSITATEA \"CONSTANTIN BRÂNCOVEANU\" DIN PITEȘTI",
     "city": "Pitești",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 29,
-    "faculties": 3,
-    "programs": 12
+    "programs": 12,
+    "kind": "private"
   },
   {
     "id": "cantemir-tgmures",
@@ -1020,11 +864,9 @@
     "name": "Universitatea „Dimitrie Cantemir” din Târgu Mureș",
     "officialName": "UNIVERSITATEA \"DIMITRIE CANTEMIR\" DIN TÂRGU MUREȘ",
     "city": "Târgu Mureș",
-    "kind": "particular",
     "hasSheet": false,
-    "listNo": 31,
-    "faculties": 5,
-    "programs": 5
+    "programs": 5,
+    "kind": "private"
   },
   {
     "id": "tibiscus",
@@ -1033,11 +875,9 @@
     "name": "Universitatea „Tibiscus” din Timișoara",
     "officialName": "UNIVERSITATEA \"TIBISCUS\" DIN TIMIȘOARA",
     "city": "Timișoara",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 32,
-    "faculties": 4,
-    "programs": 5
+    "programs": 5,
+    "kind": "private"
   },
   {
     "id": "adventus",
@@ -1046,11 +886,9 @@
     "name": "Universitatea Adventus din Cernica",
     "officialName": "UNIVERSITATEA ADVENTUS DIN CERNICA",
     "city": "Cernica",
-    "kind": "particular",
     "hasSheet": true,
-    "listNo": 33,
-    "faculties": 1,
-    "programs": 4
+    "programs": 4,
+    "kind": "private"
   },
   {
     "id": "timotheus",
@@ -1059,11 +897,9 @@
     "name": "Institutul Teologic Creștin după Evanghelie „Timotheus” din București",
     "officialName": "INSTITUTUL TEOLOGIC CREȘTIN DUPĂ EVANGHELIE \"TIMOTHEUS\" DIN BUCUREȘTI",
     "city": "București",
-    "kind": "particular",
     "hasSheet": false,
-    "listNo": 34,
-    "faculties": 1,
-    "programs": 1
+    "programs": 1,
+    "kind": "private"
   },
   {
     "id": "ioan-slavici",
@@ -1072,11 +908,9 @@
     "name": "Universitatea „Ioan Slavici” din Timișoara",
     "officialName": "UNIVERSITATEA \"IOAN SLAVICI\" DIN TIMIȘOARA",
     "city": "Timișoara",
-    "kind": "particular",
     "hasSheet": false,
-    "listNo": 35,
-    "faculties": 2,
-    "programs": 3
+    "programs": 3,
+    "kind": "private"
   },
   {
     "id": "tomis",
@@ -1085,10 +919,8 @@
     "name": "Universitatea „Tomis” din Constanța",
     "officialName": "UNIVERSITATEA \"TOMIS\" DIN CONSTANȚA",
     "city": "Constanța",
-    "kind": "particular",
     "hasSheet": false,
-    "listNo": 36,
-    "faculties": 1,
-    "programs": 3
+    "programs": 3,
+    "kind": "private"
   }
 ]

@@ -32,41 +32,40 @@ export default defineSchema({
     savedAt: v.number(),
   }).index("by_user", ["userId"]),
 
-  // Institutions from official national lists (Romania: the yearly Government Decision). Loaded with `npx convex import`, never written by users.
+  // Institutions from official or openly licensed national datasets (scripts/data/CONTRACT.md). Loaded with scripts/data/import.mjs, never written by users.
   institutions: defineTable({
     id: v.string(), // same id as the university sheet when the app has one
     country: v.string(), // ISO code, e.g. "RO"
-    source: v.string(), // the legal act the data comes from
+    source: v.string(),
     name: v.string(),
     officialName: v.string(),
     city: v.string(),
-    kind: v.string(), // "stat" | "particular"
+    kind: v.string(), // public | private | unknown
     hasSheet: v.boolean(),
-    listNo: v.number(),
-    faculties: v.number(),
+    website: v.optional(v.string()),
     programs: v.number(),
   })
     .index("by_public_id", ["id"])
     .index("by_country", ["country"]),
 
-  // Bachelor-level study programmes from the same lists, one row per programme.
+  // Bachelor-level study programmes from the same datasets, one row per programme. Only the fields the source has are present.
   programs: defineTable({
     key: v.string(),
     country: v.string(),
     institutionId: v.string(),
     institutionName: v.string(),
-    city: v.string(), // where the courses are held
-    faculty: v.string(),
-    domain: v.string(), // official study domain
-    domainId: v.string(), // one of the app's 40 study domains (our own mapping)
+    city: v.string(), // where the programme is taught
+    faculty: v.optional(v.string()),
+    domain: v.string(), // the source's own field-of-study label
+    domainId: v.optional(v.string()), // one of the app's 40 study domains (our own mapping); missing when none clearly fits
     name: v.string(),
     language: v.string(),
-    location: v.optional(v.string()),
-    status: v.union(v.literal("A"), v.literal("AP")),
-    form: v.union(v.literal("IF"), v.literal("IFR"), v.literal("ID")),
-    credits: v.number(),
-    years: v.number(),
-    maxStudents: v.number(),
+    form: v.optional(v.string()), // full-time | part-time | distance | dual
+    credits: v.optional(v.number()),
+    years: v.optional(v.number()),
+    maxStudents: v.optional(v.number()),
+    status: v.optional(v.string()),
+    url: v.optional(v.string()),
     source: v.string(),
     search: v.string(), // lower-case text without diacritics
   })

@@ -9,10 +9,10 @@ import schema from "./schema";
 
 const modules = import.meta.glob("./**/*.ts");
 
-const base = { country: "RO", faculty: "Facultatea de Test", domain: "Informatică", domainId: "informatica", language: "română", status: "A" as const, form: "IF" as const, credits: 180, years: 3, maxStudents: 100, source: "test" };
+const base = { country: "RO", faculty: "Facultatea de Test", domain: "Informatică", domainId: "informatica", language: "română", status: "acreditat", form: "full-time", credits: 180, years: 3, maxStudents: 100, source: "test" };
 const rows = [
   { ...base, key: "a", institutionId: "uni-a", institutionName: "Universitatea A", city: "Iași", name: "Informatică", search: "informatica informatica facultatea de test universitatea a iasi romana" },
-  { ...base, key: "b", institutionId: "uni-a", institutionName: "Universitatea A", city: "Iași", name: "Informatică aplicată", form: "ID" as const, search: "informatica aplicata informatica facultatea de test universitatea a iasi romana" },
+  { ...base, key: "b", institutionId: "uni-a", institutionName: "Universitatea A", city: "Iași", name: "Informatică aplicată", form: "distance", search: "informatica aplicata informatica facultatea de test universitatea a iasi romana" },
   { ...base, key: "c", institutionId: "uni-b", institutionName: "Universitatea B", city: "Cluj-Napoca", name: "Informatică", language: "engleză", search: "informatica informatica facultatea de test universitatea b cluj napoca engleza" },
   { ...base, key: "d", institutionId: "uni-b", institutionName: "Universitatea B", city: "Cluj-Napoca", name: "Drept", domain: "Drept", domainId: "drept", credits: 240, years: 4, search: "drept drept facultatea de test universitatea b cluj napoca romana" },
 ];
@@ -22,7 +22,11 @@ async function setup() {
   rateLimiterTest.register(t);
   await t.run(async (ctx) => {
     for (const r of rows) await ctx.db.insert("programs", r);
-    await ctx.db.insert("institutions", { id: "uni-a", country: "RO", source: "test", name: "Universitatea A", officialName: "UNIVERSITATEA A", city: "Iași", kind: "stat", hasSheet: true, listNo: 1, faculties: 1, programs: 2 });
+    await ctx.db.insert("institutions", { id: "uni-a", country: "RO", source: "test", name: "Universitatea A", officialName: "UNIVERSITATEA A", city: "Iași", kind: "public", hasSheet: true, programs: 2 });
+    // a programme without an app domain: searchable, but never listed under a domain
+    const { domainId, ...noDomain } = rows[0];
+    void domainId;
+    await ctx.db.insert("programs", { ...noDomain, key: "e", name: "Studii generale", search: "studii generale universitatea a iasi romana" });
   });
   return t;
 }
@@ -31,7 +35,8 @@ describe("catalogue queries", () => {
   it("lists the programmes of one institution, with display fields only", async () => {
     const t = await setup();
     const list = await t.query(api.catalog.programsOf, { institutionId: "uni-a" });
-    expect(list.map((p) => p.key).sort()).toEqual(["a", "b"]);
+    expect(list.map((p) => p.key).sort()).toEqual(["a", "b", "e"]);
+    expect(Object.keys(list[0])).not.toContain("source");
     expect(Object.keys(list[0])).not.toContain("search");
     expect(Object.keys(list[0])).not.toContain("_id");
     expect(await t.query(api.catalog.programsOf, { institutionId: "nu-exista" })).toEqual([]);
@@ -41,7 +46,7 @@ describe("catalogue queries", () => {
     const t = await setup();
     const all = await t.query(api.catalog.programsFor, { domainId: "informatica", country: "RO" });
     expect(all).toHaveLength(3);
-    expect(all[all.length - 1].form).toBe("ID");
+    expect(all[all.length - 1].form).toBe("distance");
     const iasi = await t.query(api.catalog.programsFor, { domainId: "informatica", country: "RO", city: "Iași" });
     expect(iasi.map((p) => p.key).sort()).toEqual(["a", "b"]);
     expect(await t.query(api.catalog.programsFor, { domainId: "informatica", country: "RO", city: "Oradea" })).toEqual([]);
@@ -55,6 +60,7 @@ describe("catalogue queries", () => {
     const cluj = await t.query(api.catalog.searchPrograms, { q: "informatica", city: "Cluj-Napoca" });
     expect(cluj.map((p) => p.key)).toEqual(["c"]);
     expect(await t.query(api.catalog.searchPrograms, { q: "x" })).toEqual([]);
+    expect((await t.query(api.catalog.searchPrograms, { q: "studii generale" })).map((p) => p.key)).toEqual(["e"]);
   });
 
   it("answers with nothing, not an error, for oversized or empty input", async () => {

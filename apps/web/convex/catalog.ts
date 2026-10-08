@@ -1,42 +1,46 @@
-// The catalogue of institutions and bachelor programmes from official national lists: public, read-only queries the pages use to list and search.
+// The catalogue of institutions and bachelor programmes from official national datasets: public, read-only queries the pages use to list and search.
 import { v } from "convex/values";
+import type { Doc } from "./_generated/dataModel";
 import { query } from "./_generated/server";
 
 const programView = v.object({
   key: v.string(),
+  country: v.string(),
   institutionId: v.string(),
   institutionName: v.string(),
   city: v.string(),
-  faculty: v.string(),
+  faculty: v.optional(v.string()),
   domain: v.string(),
-  domainId: v.string(),
+  domainId: v.optional(v.string()),
   name: v.string(),
   language: v.string(),
-  status: v.union(v.literal("A"), v.literal("AP")),
-  form: v.union(v.literal("IF"), v.literal("IFR"), v.literal("ID")),
-  credits: v.number(),
-  years: v.number(),
-  maxStudents: v.number(),
+  form: v.optional(v.string()),
+  credits: v.optional(v.number()),
+  years: v.optional(v.number()),
+  maxStudents: v.optional(v.number()),
+  status: v.optional(v.string()),
+  url: v.optional(v.string()),
 });
 
-type Row = { key: string; institutionId: string; institutionName: string; city: string; faculty: string; domain: string; domainId: string; name: string; language: string; status: "A" | "AP"; form: "IF" | "IFR" | "ID"; credits: number; years: number; maxStudents: number };
-/** Only the fields the pages show (not the search text or internal ids). */
-const view = (p: Row) => ({
-  key: p.key, institutionId: p.institutionId, institutionName: p.institutionName, city: p.city, faculty: p.faculty, domain: p.domain, domainId: p.domainId,
-  name: p.name, language: p.language, status: p.status, form: p.form, credits: p.credits, years: p.years, maxStudents: p.maxStudents,
-});
+/** Only the fields the pages show (not the search text, the source string or internal ids). */
+function view(p: Doc<"programs">) {
+  const { _id, _creationTime, search, source, ...rest } = p;
+  void _id; void _creationTime; void search; void source;
+  return rest;
+}
 
 const short = (s: string, max: number) => s.length > 0 && s.length <= max;
 /** Lower-case text without diacritics, the same shape as the stored search text. */
 const plain = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
+const FORM_ORDER: Record<string, number> = { "full-time": 0, dual: 1, "part-time": 2, distance: 3 };
 
-/** All bachelor programmes of one institution, in the order of the official list. */
+/** All bachelor programmes of one institution, in the order of the source. At most 600. */
 export const programsOf = query({
   args: { institutionId: v.string() },
   returns: v.array(programView),
   handler: async (ctx, { institutionId }) => {
-    if (!short(institutionId, 60)) return [];
-    const rows = await ctx.db.query("programs").withIndex("by_institution", (q) => q.eq("institutionId", institutionId)).take(400);
+    if (!short(institutionId, 80)) return [];
+    const rows = await ctx.db.query("programs").withIndex("by_institution", (q) => q.eq("institutionId", institutionId)).take(600);
     return rows.map(view);
   },
 });
@@ -46,24 +50,25 @@ export const programsFor = query({
   args: { domainId: v.string(), country: v.string(), city: v.optional(v.string()) },
   returns: v.array(programView),
   handler: async (ctx, { domainId, country, city }) => {
-    if (!short(domainId, 60) || !short(country, 3) || (city !== undefined && !short(city, 60))) return [];
+    if (!short(domainId, 60) || !short(country, 3) || (city !== undefined && !short(city, 80))) return [];
     const rows = await ctx.db
       .query("programs")
       .withIndex("by_domain_country_city", (q) => (city ? q.eq("domainId", domainId).eq("country", country).eq("city", city) : q.eq("domainId", domainId).eq("country", country)))
       .take(200);
-    const order = { IF: 0, IFR: 1, ID: 2 } as const;
-    return rows.sort((a, b) => order[a.form] - order[b.form] || a.city.localeCompare(b.city, "ro") || a.institutionName.localeCompare(b.institutionName, "ro")).map(view);
+    return rows
+      .sort((a, b) => (FORM_ORDER[a.form ?? "full-time"] ?? 9) - (FORM_ORDER[b.form ?? "full-time"] ?? 9) || a.city.localeCompare(b.city) || a.institutionName.localeCompare(b.institutionName))
+      .map(view);
   },
 });
 
-/** Free-text search over programme, domain, faculty, institution and city. At most 40 results. */
+/** Free-text search over programme, field, faculty, institution and city. At most 40 results. */
 export const searchPrograms = query({
   args: { q: v.string(), country: v.optional(v.string()), city: v.optional(v.string()), domainId: v.optional(v.string()) },
   returns: v.array(programView),
   handler: async (ctx, { q, country, city, domainId }) => {
     const text = plain(q).slice(0, 80);
     if (text.length < 2) return [];
-    if ((country && !short(country, 3)) || (city && !short(city, 60)) || (domainId && !short(domainId, 60))) return [];
+    if ((country && !short(country, 3)) || (city && !short(city, 80)) || (domainId && !short(domainId, 60))) return [];
     const rows = await ctx.db
       .query("programs")
       .withSearchIndex("search", (s) => {
@@ -78,13 +83,13 @@ export const searchPrograms = query({
   },
 });
 
-/** The institutions of a country from the official list, with how many faculties and programmes each has. */
+/** The institutions of a country, with how many programmes each has. At most 3,000. */
 export const institutions = query({
   args: { country: v.string() },
-  returns: v.array(v.object({ id: v.string(), name: v.string(), city: v.string(), kind: v.string(), hasSheet: v.boolean(), faculties: v.number(), programs: v.number() })),
+  returns: v.array(v.object({ id: v.string(), name: v.string(), city: v.string(), kind: v.string(), hasSheet: v.boolean(), programs: v.number() })),
   handler: async (ctx, { country }) => {
     if (!short(country, 3)) return [];
-    const rows = await ctx.db.query("institutions").withIndex("by_country", (q) => q.eq("country", country)).take(500);
-    return rows.map((i) => ({ id: i.id, name: i.name, city: i.city, kind: i.kind, hasSheet: i.hasSheet, faculties: i.faculties, programs: i.programs }));
+    const rows = await ctx.db.query("institutions").withIndex("by_country", (q) => q.eq("country", country)).take(3000);
+    return rows.map((i) => ({ id: i.id, name: i.name, city: i.city, kind: i.kind, hasSheet: i.hasSheet, programs: i.programs }));
   },
 });

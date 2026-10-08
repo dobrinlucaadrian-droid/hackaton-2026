@@ -4,7 +4,8 @@ import Link from "next/link";
 import type { Match, StudyPlace, University } from "@/lib/types";
 import { curriculumFor } from "@/lib/curricula";
 import { CurriculumPlan } from "./CurriculumPlan";
-import { DomainPrograms } from "./DomainPrograms";
+import { DomainAbroad, DomainPrograms } from "./DomainPrograms";
+import { catalogCountries } from "@/lib/catalog";
 import { FAMILY_CLASSES, domainStyle } from "./domainStyle";
 import { UniversityList } from "./UniversityList";
 
@@ -113,6 +114,11 @@ export function MatchCard({ match, rank, where, city }: { match: Match; rank: nu
       {where !== "abroad" && (
         <Row title={city ? `Programe de licență în ${city}` : "Programe de licență în România"}>
           <DomainPrograms domainId={domain.id} city={city} sheetIds={[...match.universitiesRo, ...match.universitiesAbroad].map((u) => u.id)} />
+        </Row>
+      )}
+      {where !== "ro" && catalogCountries.some((c) => c.cc !== "RO" && (c.domains[domain.id] ?? 0) > 0) && (
+        <Row title="Programe de licență în alte țări">
+          <DomainAbroad domainId={domain.id} />
         </Row>
       )}
 

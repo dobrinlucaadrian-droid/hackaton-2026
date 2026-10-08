@@ -7,6 +7,7 @@ import { Shell } from "@/components/Shell";
 import { UniversityOpinions } from "@/components/UniversityOpinions";
 import { BudgetBadge, PrestigeBadge } from "@/components/UniversityBadges";
 import { UniversityDomains } from "@/components/UniversityDomains";
+import { catalogCountryOfSheet } from "@/lib/catalog";
 import { curriculumLinkFor } from "@/lib/curricula";
 import { testimonialsFor } from "@/lib/testimonials";
 import { domains, universities } from "@/lib/data";
@@ -67,6 +68,7 @@ export default async function UniversityPage({ params }: Props) {
   if (!u) notFound();
   const uniDomains = u.domainIds.map((d) => domains.find((x) => x.id === d)).filter((d): d is NonNullable<typeof d> => !!d);
   const planLink = u.region === "ro" ? curriculumLinkFor(u.id) : undefined;
+  const catalog = catalogCountryOfSheet(u.id); // the country dataset that lists this university's programmes, if any
   const certs = u.certificates.map((c) => CERTIFICATE_LABEL[c]).filter(Boolean);
   const admission = u.admissionTypes.map((a) => ADMISSION_LABEL[a]).filter(Boolean);
   const hasPros = u.pros.length > 0 || u.cons.length > 0;
@@ -201,8 +203,8 @@ export default async function UniversityPage({ params }: Props) {
               />
             </Section>
           )}
-          {u.region === "ro" && <OfficialPrograms institutionId={u.id} city={u.city} />}
-          {u.region !== "ro" && faculties.length > 0 && (
+          {catalog && <OfficialPrograms institutionId={u.id} city={u.city} sourceLabel={catalog.source.attribution} year={catalog.source.year} hasCapacity={catalog.cc === "RO"} />}
+          {!catalog && faculties.length > 0 && (
             <Section title="Facultăți și specializări">
               <p className="text-sm text-ink-soft">
                 {faculties.length} facultăți{programCount > 0 ? ` · ${programCount} specializări de licență` : ""}, după site-ul oficial al

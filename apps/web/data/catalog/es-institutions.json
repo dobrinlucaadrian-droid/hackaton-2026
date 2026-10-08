@@ -1,0 +1,101 @@
+[
+ {
+  "id": "es-universitat-d-alacant",
+  "country": "ES",
+  "source": "Generalitat Valenciana - Grados y Másteres oficiales (CC BY), actualizado 2026-09-23, solo Comunitat Valenciana",
+  "name": "Universitat d'Alacant",
+  "officialName": "Universitat d'Alacant",
+  "city": "San Vicente del Raspeig",
+  "kind": "public",
+  "hasSheet": false,
+  "programs": 58
+ },
+ {
+  "id": "es-universitat-de-valencia-estudi-general",
+  "country": "ES",
+  "source": "Generalitat Valenciana - Grados y Másteres oficiales (CC BY), actualizado 2026-09-23, solo Comunitat Valenciana",
+  "name": "Universitat de València-Estudi General",
+  "officialName": "Universitat de València-Estudi General",
+  "city": "València",
+  "kind": "public",
+  "hasSheet": false,
+  "programs": 81
+ },
+ {
+  "id": "es-universidad-europea-de-valencia",
+  "country": "ES",
+  "source": "Generalitat Valenciana - Grados y Másteres oficiales (CC BY), actualizado 2026-09-23, solo Comunitat Valenciana",
+  "name": "Universidad Europea de Valencia",
+  "officialName": "Universidad Europea de Valencia",
+  "city": "València",
+  "kind": "private",
+  "hasSheet": false,
+  "programs": 34
+ },
+ {
+  "id": "es-universidad-internacional-de-valencia",
+  "country": "ES",
+  "source": "Generalitat Valenciana - Grados y Másteres oficiales (CC BY), actualizado 2026-09-23, solo Comunitat Valenciana",
+  "name": "Universidad Internacional de Valencia",
+  "officialName": "Universidad Internacional de Valencia",
+  "city": "València",
+  "kind": "private",
+  "hasSheet": false,
+  "programs": 29
+ },
+ {
+  "id": "es-universidad-catolica-de-valencia-san-vicente-martir",
+  "country": "ES",
+  "source": "Generalitat Valenciana - Grados y Másteres oficiales (CC BY), actualizado 2026-09-23, solo Comunitat Valenciana",
+  "name": "Universidad Católica de Valencia San Vicente Mártir",
+  "officialName": "Universidad Católica de Valencia San Vicente Mártir",
+  "city": "València",
+  "kind": "private",
+  "hasSheet": false,
+  "programs": 43
+ },
+ {
+  "id": "es-universidad-ceu-cardenal-herrera",
+  "country": "ES",
+  "source": "Generalitat Valenciana - Grados y Másteres oficiales (CC BY), actualizado 2026-09-23, solo Comunitat Valenciana",
+  "name": "Universidad CEU - Cardenal Herrera",
+  "officialName": "Universidad CEU - Cardenal Herrera",
+  "city": "Alfara del Patriarca",
+  "kind": "private",
+  "hasSheet": false,
+  "programs": 70
+ },
+ {
+  "id": "es-universidad-miguel-hernandez-de-elche",
+  "country": "ES",
+  "source": "Generalitat Valenciana - Grados y Másteres oficiales (CC BY), actualizado 2026-09-23, solo Comunitat Valenciana",
+  "name": "Universidad Miguel Hernández de Elche",
+  "officialName": "Universidad Miguel Hernández de Elche",
+  "city": "Elche",
+  "kind": "public",
+  "hasSheet": false,
+  "programs": 45
+ },
+ {
+  "id": "es-universitat-jaume-i",
+  "country": "ES",
+  "source": "Generalitat Valenciana - Grados y Másteres oficiales (CC BY), actualizado 2026-09-23, solo Comunitat Valenciana",
+  "name": "Universitat Jaume I",
+  "officialName": "Universitat Jaume I",
+  "city": "Castelló de la Plana",
+  "kind": "public",
+  "hasSheet": false,
+  "programs": 40
+ },
+ {
+  "id": "es-universitat-politecnica-de-valencia",
+  "country": "ES",
+  "source": "Generalitat Valenciana - Grados y Másteres oficiales (CC BY), actualizado 2026-09-23, solo Comunitat Valenciana",
+  "name": "Universitat Politècnica de València",
+  "officialName": "Universitat Politècnica de València",
+  "city": "València",
+  "kind": "public",
+  "hasSheet": false,
+  "programs": 81
+ }
+]

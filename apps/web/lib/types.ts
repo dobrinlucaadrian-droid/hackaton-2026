@@ -179,37 +179,51 @@ export type CurriculumLink = {
   kind: "plans" | "programs"; // "plans" = the curricula themselves; "programs" = the list of programmes that leads to them
 };
 
-/** An institution from an official national list of higher-education institutions. */
+/** An institution from an official or openly licensed national dataset (see scripts/data/CONTRACT.md). */
 export type CatalogInstitution = {
   id: string; // same id as the university sheet when there is one
+  country: string; // ISO code, e.g. "RO"
+  source: string;
   name: string; // display name
-  officialName: string; // as printed in the official list
+  officialName: string; // as written in the source
   city: string;
-  kind: "stat" | "particular";
+  kind: "public" | "private" | "unknown";
   hasSheet: boolean; // true when the app has a full profile sheet for it
-  listNo: number; // its number in the official list
-  faculties: number;
+  website?: string;
   programs: number;
 };
 
-/** One bachelor-level study programme from an official national list. */
+/** One bachelor-level study programme from the same datasets. Only the fields the source really has are present. */
 export type CatalogProgram = {
-  key: string; // unique and stable
-  country: string; // ISO code, e.g. "RO"
+  key: string; // unique and stable, starts with the country code
+  country: string;
   institutionId: string;
   institutionName: string;
-  city: string; // where the courses are held
-  faculty: string;
-  domain: string; // official study domain
-  domainId: string; // one of the app's 40 study domains (our own mapping)
-  name: string;
-  language: string;
-  location?: string; // only when the list prints a place next to the programme
-  status: "A" | "AP"; // accredited / provisionally authorised
-  form: "IF" | "IFR" | "ID"; // full-time / reduced attendance / distance learning
-  credits: number;
-  years: number;
-  maxStudents: number; // the most students that may be enrolled in the first year
-  source: string; // the legal act the row comes from
+  city: string; // where the programme is taught
+  faculty?: string;
+  domain: string; // the source's own field-of-study label
+  domainId: string | null; // one of the app's 40 study domains (our own mapping), or null when none clearly fits
+  name: string; // in the source language
+  language: string; // Romanian lower-case name, e.g. "engleză"
+  form?: "full-time" | "part-time" | "distance" | "dual";
+  credits?: number;
+  years?: number;
+  maxStudents?: number; // only when the source gives a capacity
+  status?: string; // accreditation status in the source's words
+  url?: string;
+  source: string;
   search: string; // lower-case text without diacritics, for searching
+};
+
+/** Summary of one country's catalogue (apps/web/data/catalog/index.json, built by scripts/data/index.mjs). */
+export type CatalogCountry = {
+  cc: string;
+  name: string; // Romanian country name
+  institutions: number;
+  programs: number;
+  withDomain: number;
+  cities: string[]; // the cities with most programmes first
+  sheetIds: string[]; // institutions that have a profile sheet in the app
+  domains: Record<string, number>; // programmes per app domain
+  source: { name: string; url: string; licence: string; attribution: string; year: string; note: string };
 };

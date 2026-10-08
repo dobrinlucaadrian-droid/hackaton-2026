@@ -114,7 +114,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/programe  (1 files)
 
-- `page.tsx` (42) — Programme finder: search the bachelor programmes of every Romanian university from the official government list.. Routes: /programe. Exports: metadata, ProgramsPage
+- `page.tsx` (35) — Programme finder: search the bachelor programmes of every country in the catalogue (official national datasets).. Routes: /programe. Exports: metadata, ProgramsPage
 
 ### apps/web/app/quiz  (1 files)
 
@@ -142,7 +142,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/surse  (1 files)
 
-- `page.tsx` (62) — Data sources page: where the catalogue of universities and programmes comes from, how it was built and what its limits are.. Routes: /surse. Exports: metadata, SourcesPage
+- `page.tsx` (81) — Data sources page: where the catalogue of universities and programmes comes from, country by country, how it was built and what its limits are.. Routes: /surse. Exports: metadata, SourcesPage
 
 ### apps/web/app/test  (1 files)
 
@@ -150,7 +150,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/universitati/[id]  (1 files)
 
-- `page.tsx` (284) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
+- `page.tsx` (286) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/universitati  (1 files)
 
@@ -165,14 +165,14 @@ _Open only the files listed here; a file's description is its first comment line
 - `ConvexClientProvider.tsx` (12) — Connects the pages to the Convex database and keeps the sign-in session available to every component.. Exports: ConvexClientProvider
 - `CurriculumPlan.tsx` (38) — "Ce înveți, an cu an": the main subjects of each study year for a domain, taken from one official curriculum, with a link to it.. Exports: CurriculumPlan
 - `DomainDetails.tsx` (54) — One study domain as a native <details>: summary with emoji, name, count and chevron; inside the short text, specializations, the subjects per year and a link to universities.. Exports: DomainDetails
-- `DomainPrograms.tsx` (41) — On a result card: real bachelor programmes of the matched study domain in Romania, in the student's chosen city when there is one.. Exports: DomainPrograms
+- `DomainPrograms.tsx` (65) — On a result card: real bachelor programmes of the matched study domain in Romania (in the student's chosen city when there is one), and how many the catalogue has in other countries.. Exports: DomainPrograms, DomainAbroad
 - `Illustrations.tsx` (88) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots and the start-page hero.. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene
 - `InterestPicker.tsx` (129) — "Ce îți place?": the student picks up to three interests and sees the specializations that fit them best, ranked, with links to universities.. Exports: InterestPicker
-- `MatchCard.tsx` (191) — One result card: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
+- `MatchCard.tsx` (197) — One result card: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
 - `NavLinks.tsx` (42) — Header navigation links with the current page highlighted; the last one is "Conectare" or "Contul meu".. Exports: NavLinks
-- `OfficialPrograms.tsx` (53) — "Facultăți și programe de licență" on a Romanian university sheet: every faculty and bachelor programme from the official government list, read from the database.. Exports: OfficialPrograms
-- `ProgramRow.tsx` (53) — One bachelor programme from the official list, as a compact row: name and small facts (language, study form, years, places, status).. Exports: FORM_LABEL, ProgramRow
-- `ProgramSearch.tsx` (81) — Search over the bachelor programmes of the official list: free text plus study domain and city; the state lives in the URL so links and Back work.. Exports: ProgramSearch
+- `OfficialPrograms.tsx` (60) — On a university sheet: every bachelor programme of the institution from its country's official dataset, grouped by faculty (or by field when the source has no faculties), read from the database.. Exports: OfficialPrograms
+- `ProgramRow.tsx` (68) — One bachelor programme from the catalogue, as a compact row: name and the small facts its source gives (language, study form, years, places, status).. Exports: FORM_LABEL, ProgramRow
+- `ProgramSearch.tsx` (100) — Search over the bachelor programmes of the catalogue: country, free text, study domain and city; the state lives in the URL so links and Back work.. Exports: ProgramSearch
 - `SaveResult.tsx` (59) — "Salvează în contul meu" on the result page: saves the result when the student is signed in, otherwise keeps it on the device and sends them to sign in.. Exports: SaveResult
 - `SearchBox.tsx` (45) — Search box with a magnifier icon; submits to /universitati?q=... or calls onSearch when given.. Exports: SearchBox
 - `Shell.tsx` (49) — Page frame shared by all screens: header with the UniPath logo, a centered content column and a footer with the privacy link.. Exports: Shell, Notice
@@ -204,16 +204,42 @@ _Open only the files listed here; a file's description is its first comment line
 - `account.ts` (68) — The signed-in user's own account: who they are (name and email), which sign-in methods exist, and deleting the account with everything saved in it.. Exports: me, setName, signInMethods, remove
 - `auth.config.ts` (12) — Tells Convex which issuer signs the session tokens (this deployment itself, through Convex Auth).
 - `auth.ts` (55) — Convex Auth setup: sign-in with an email magic link (sent through Resend) and, when configured, Google. No passwords are stored.. Exports: adminEmails
-- `catalog.test.ts` (70) — @vitest-environment edge-runtime
-- `catalog.ts` (91) — The catalogue of institutions and bachelor programmes from official national lists: public, read-only queries the pages use to list and search.. Exports: programsOf, programsFor, searchPrograms, institutions
+- `catalog.test.ts` (76) — @vitest-environment edge-runtime
+- `catalog.ts` (96) — The catalogue of institutions and bachelor programmes from official national datasets: public, read-only queries the pages use to list and search.. Exports: programsOf, programsFor, searchPrograms, institutions
 - `convex.config.ts` (9) — Convex app setup: installs the rate-limiter component used by the public review form.
 - `http.ts` (9) — HTTP routes of the Convex backend: only the ones Convex Auth needs for sign-in.
 - `results.ts` (74) — A student's saved questionnaire result: each signed-in user can save, read and delete only their own.. Exports: mine, save, remove
 - `reviews.ts` (154) — Student reviews: anyone can read the approved ones and send a new one through the checked public form; only administrators see the queue and approve or reject.. Exports: LIMITS, listApproved, listByState, moderate, insertPending, insertLimited, submit
-- `schema.ts` (94) — Database tables for UniPath: users (from Convex Auth, plus a server-written role), saved questionnaire results, student reviews and the catalogue of institutions and programmes.. Exports: reviewState
+- `schema.ts` (93) — Database tables for UniPath: users (from Convex Auth, plus a server-written role), saved questionnaire results, student reviews and the catalogue of institutions and programmes.. Exports: reviewState
 - `tsconfig.json` (26) — JSON (invalid)
 
-### apps/web/data  (12 files)
+### apps/web/data/catalog  (23 files)
+
+- `at-institutions.json` (696) — JSON array, 63 items
+- `at-programs.json`
+- `be-institutions.json` (291) — JSON array, 24 items
+- `be-programs.json`
+- `de-institutions.json` (3734) — JSON array, 311 items
+- `de-programs.json`
+- `es-institutions.json` (101) — JSON array, 9 items
+- `es-programs.json`
+- `fr-institutions.json` (9144) — JSON array, 831 items
+- `fr-programs.json`
+- `ie-institutions.json` (498) — JSON array, 45 items
+- `ie-programs.json`
+- `index.json` (1297) — JSON array, 8 items
+- `it-institutions.json` (1015) — JSON array, 92 items
+- `it-programs.json`
+- `nl-institutions.json` (1148) — JSON array, 100 items
+- `nl-programs.json`
+- `pl-institutions.json` (4104) — JSON array, 342 items
+- `pl-programs.jsonl.gz`
+- `ro-institutions.json` (927) — JSON array, 84 items
+- `ro-programs.json`
+- `us-institutions.json`
+- `us-programs.jsonl.gz`
+
+### apps/web/data  (10 files)
 
 - `categories.json` (13) — JSON array, 10 items
 - `curricula.json` (2190) — JSON array, 40 items
@@ -221,18 +247,17 @@ _Open only the files listed here; a file's description is its first comment line
 - `domains.json` (43) — JSON array, 40 items
 - `profiles.json` (15) — JSON array, 12 items
 - `questions.json` (729) — JSON array, 18 items
-- `ro-institutions.json` (1095) — JSON array, 84 items
-- `ro-programs.json`
 - `specializations.json` (209) — JSON array, 206 items
 - `testimonials.json` (169) — JSON array, 24 items
 - `universities-abroad.json` (3203) — JSON array, 57 items
 - `universities-ro.json` (3487) — JSON array, 74 items
 
-### apps/web/lib  (19 files)
+### apps/web/lib  (20 files)
 
 - `activities.test.ts` (57) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
 - `activities.ts` (73) — Activities a student can add (competitions, volunteering, extracurriculars): labels, areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, describeActivity
-- `catalog.test.ts` (88) — Tests the Romanian catalogue built from the official government list: institutions and bachelor programmes are complete and consistent.
+- `catalog.test.ts` (123) — Tests the programme catalogue files: every country follows the shared contract, the summary matches the files, and Romania matches the official list.
+- `catalog.ts` (20) — The per-country summary of the programme catalogue (counts, cities, sources), small enough to ship to the browser; the programmes themselves stay in the database.. Exports: catalogCountries, catalogTotals, catalogCountryOfSheet, catalogSheetIds
 - `csp.test.ts` (38) — Tests the Content-Security-Policy builder: scripts only with the nonce, the database and the bot check allowed, nothing else.
 - `csp.ts` (34) — Builds the Content-Security-Policy header: the list of places the browser may load scripts, styles, images and data from.. Exports: buildCsp
 - `curricula.test.ts` (60) — Tests the curricula data: every plan belongs to a real domain, covers its years in order and links to an official web page.
@@ -244,7 +269,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `pendingSave.ts` (55) — Keeps a questionnaire result on this device while the student signs in (the email link may open in another tab), so it can be saved to the account afterwards.. Exports: setPendingResult, takePendingResult, setPendingName, takePendingName
 - `session.ts` (109) — Keeps the student's answers (and optional activities with photos) in sessionStorage between pages (safe on the server).. Exports: loadDraft, saveDraft, clearDraft, toAnswers, shrinkImage
 - `testimonials.ts` (29) — Links student opinions to the universities that have a profile sheet, so the search and the sheets can show them.. Exports: universityIdOf, testimonialsFor
-- `types.ts` (216) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
+- `types.ts` (230) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
 - `universities.data.test.ts` (82) — Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
 - `universities.test.ts` (209) — Tests the specializations and categories data and the university search/filter logic.
 - `universities.ts` (234) — Search and filter over the universities with a profile sheet, plus labels for the filter values.. Exports: PRESTIGE_LABEL, BUDGET_LABEL, ADMISSION_LABEL, CERTIFICATE_LABEL, normalize, countries, romanianCities, universityById, …

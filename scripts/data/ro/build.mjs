@@ -183,20 +183,27 @@ const out = programs.map(({ page, facultyNo, id, institutionId, ...p }) => {
   const inName = p.faculty.match(/(?:din|,|-|–|\()\s*(Brăila|Alexandria|Hunedoara|Cluj-Napoca|Târgu Jiu|Brașov|Câmpulung|Craiova|Constanța|Buzău|Miercurea Ciuc|Târgu Mureș|Sfântu Gheorghe|Râmnicu Vâlcea)\)?$/);
   const known = UPB_PITESTI.has(`${institutionId}|${p.faculty}`) ? "Pitești" : UTCN_BAIA_MARE.has(`${institutionId}|${p.faculty}`) ? "Baia Mare" : null;
   const city = (p.location ?? (inName && inName[1] !== inst.city ? inName[1] : known ?? inst.city)).replace("Sighetu-Marmației", "Sighetu Marmației").replace("Chișinău, Republica Moldova", "Chișinău");
+  const { location, status, form, ...rest } = p;
   return {
-    key: id,
+    key: `ro-${id}`,
     country: "RO",
     institutionId,
     institutionName: inst.name,
     city,
-    ...p,
+    ...rest,
+    // the shared vocabulary of the catalogue (see scripts/data/CONTRACT.md)
+    form: { IF: "full-time", IFR: "part-time", ID: "distance" }[form],
+    status: status === "A" ? "acreditat" : "autorizat provizoriu",
     source: SOURCE,
     // lower-case, without diacritics: what the search index looks through
     search: key(`${p.name} ${p.domain} ${p.faculty} ${inst.name} ${city} ${p.language}`),
   };
 });
-writeFileSync(WEB + "data/ro-institutions.json", JSON.stringify([...institutions.values()].sort((a, b) => (a.kind === b.kind ? a.listNo - b.listNo : a.kind === "stat" ? -1 : 1)), null, 2) + "\n");
-writeFileSync(WEB + "data/ro-programs.json", JSON.stringify(out, null, 1) + "\n");
+const instOut = [...institutions.values()]
+  .sort((a, b) => (a.kind === b.kind ? a.listNo - b.listNo : a.kind === "stat" ? -1 : 1))
+  .map(({ listNo, faculties, kind, ...i }) => ({ ...i, kind: kind === "stat" ? "public" : "private" }));
+writeFileSync(WEB + "data/catalog/ro-institutions.json", JSON.stringify(instOut, null, 2) + "\n");
+writeFileSync(WEB + "data/catalog/ro-programs.json", JSON.stringify(out, null, 1) + "\n");
 writeFileSync(new URL("build-problems.txt", import.meta.url), [...problems, ...gaps].join("\n") + "\n");
 
 const c = (f) => out.reduce((m, r) => ((m[r[f]] = (m[r[f]] || 0) + 1), m), {});
