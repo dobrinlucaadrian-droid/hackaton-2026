@@ -14,26 +14,26 @@
     "url": "https://dati-ustat.mur.gov.it/dataset/bed0c71e-9f86-4a0f-a266-963b6f7bbbd2",
     "licence": "Italian Open Data License v2.0 (IODL 2.0)",
     "attribution": "MUR – Ufficio di Statistica (dati-ustat.mur.gov.it), IODL 2.0; date adaptate de UniPath",
-    "year": "2025",
-    "note": "Lauree de trei ani și lauree cu ciclu unic (de exemplu Medicină, Drept). Sursa nu are facultăți, credite sau locuri. Unde apare, „status” arată tipul de acces la admitere."
+    "year": "2025/26",
+    "note": "Lauree de trei ani și lauree cu ciclu unic (de exemplu Medicină, Drept). Un curs încadrat în două clase de laurea apare o singură dată, cu ambele clase. Sursa nu are facultăți, credite sau locuri. Unde apare, „status” arată tipul de acces la admitere."
   },
   "us": {
     "country": "SUA",
-    "sourceName": "U.S. Department of Education, College Scorecard – „Most Recent Cohorts: Field of Study”",
+    "sourceName": "U.S. Department of Education, College Scorecard – „Most Recent Cohorts: Field of Study” (10 iunie 2026); pentru 9 instituții: NCES IPEDS, Completions 2023–24",
     "url": "https://collegescorecard.ed.gov/data/",
-    "licence": "date federale publicate pe un site .gov; nu am găsit o licență scrisă pentru setul de date",
-    "attribution": "U.S. Department of Education, College Scorecard",
-    "year": "date adunate până în 2019–2020",
-    "note": "Domeniile în care fiecare universitate de 4 ani (de stat sau privată non-profit) acordă diplome de licență. Numele sunt categorii oficiale de domenii (CIP), nu numele exact al programului de la fiecare universitate. Fără colegii comunitare, campusuri secundare și instituții cu scop lucrativ. În SUA medicina, stomatologia, farmacia, medicina veterinară și dreptul se studiază după licență."
+    "licence": "date federale publicate pe site-uri .gov; pentru College Scorecard nu am găsit o licență scrisă; pentru IPEDS, nces.ed.gov/help spune că informațiile de pe site-ul IES sunt în domeniul public",
+    "attribution": "U.S. Department of Education, College Scorecard; U.S. Department of Education, Institute of Education Sciences, NCES, IPEDS",
+    "year": "diplome raportate în ani recenți (sursa nu spune anii exacți); 2023–2024 pentru cele 9 instituții din IPEDS",
+    "note": "Domeniile în care fiecare universitate de 4 ani (de stat sau privată non-profit) acordă diplome de licență, inclusiv campusurile secundare și cele online care raportează separat. Numele sunt categorii oficiale de domenii (CIP), nu numele exact al programului de la fiecare universitate. La campusurile secundare apar doar domeniile cu cel puțin un absolvent. Fără colegii comunitare, instituții cu scop lucrativ și teritorii. În SUA medicina, stomatologia, farmacia, medicina veterinară și dreptul se studiază după licență."
   },
   "fr": {
     "country": "Franța",
-    "sourceName": "Parcoursup 2025 – Ministère de l’Enseignement supérieur et de la Recherche (date deschise)",
-    "url": "https://data.enseignementsup-recherche.gouv.fr/explore/dataset/fr-esr-parcoursup/",
+    "sourceName": "Parcoursup 2026 („Cartographie des formations Parcoursup”) și „Principaux diplômes et formations préparés dans les établissements publics” 2024-25 – Ministère de l’Enseignement supérieur, de la Recherche et de l’Espace (date deschise)",
+    "url": "https://data.enseignementsup-recherche.gouv.fr/explore/dataset/fr-esr-cartographie_formations_parcoursup/",
     "licence": "Licence Ouverte v2.0 (Etalab)",
-    "attribution": "Parcoursup 2025, Ministère de l’Enseignement supérieur et de la Recherche (data.enseignementsup-recherche.gouv.fr), Licence Ouverte v2.0; date reformatate de UniPath",
-    "year": "2025",
-    "note": "Licence, Licence accès santé, PASS, BUT, școli de inginerie și de afaceri cu admitere după bacalaureat, Sciences Po/IEP. Doar programele care recrutează prin Parcoursup; fără BTS, clase pregătitoare și școli de asistente. „Locuri” este capacitatea anunțată în Parcoursup. Sursa nu spune limba de predare; am trecut franceza."
+    "attribution": "Cartographie des formations Parcoursup 2026 și Principaux diplômes et formations préparés dans les établissements publics 2024-25, Ministère de l’Enseignement supérieur, de la Recherche et de l’Espace (data.enseignementsup-recherche.gouv.fr), Licence Ouverte v2.0; date reformatate de UniPath",
+    "year": "2026 (Parcoursup); 2024–2025 (licențe profesionale)",
+    "note": "Licence, Licence accès santé, PASS, BUT, școli de inginerie și de afaceri cu admitere după bacalaureat, Sciences Po/IEP – programele care recrutează prin Parcoursup. În plus, pentru universitățile de stat: licențele profesionale (un an, după doi ani de studii) și specializările de licență care în Parcoursup apar doar într-un „portail” comun. Fără BTS, clase pregătitoare, școli de asistente, de artă și de arhitectură. „Locuri” este capacitatea din Parcoursup 2025 pentru aceeași ofertă; rândurile din a doua sursă nu au locuri și nici link. Sursele nu spun limba de predare; am trecut franceza."
   },
   "de": {
     "country": "Germania",
@@ -51,16 +51,16 @@
     "licence": "CC0 1.0 (domeniu public)",
     "attribution": "RAD-on / POL-on (radon.nauka.gov.pl), CC0",
     "year": "octombrie 2026",
-    "note": "Studii de ciclul întâi și studii magistrale unitare (de exemplu Medicină, Drept) aflate în desfășurare. Sursa nu are locuri, taxe sau link spre program."
+    "note": "Studii de ciclul întâi și studii magistrale unitare (de exemplu Medicină, Drept) aflate în desfășurare, la instituții active; fără versiunile vechi ale aceluiași program. Sursa nu are locuri, taxe sau link spre program."
   },
   "es": {
-    "country": "Spania (doar Comunitatea Valenciană)",
-    "sourceName": "Generalitat Valenciana – „Grados y Másteres oficiales de la Comunitat Valenciana”",
-    "url": "https://dadesobertes.gva.es/",
-    "licence": "Creative Commons Attribution (CC BY)",
-    "attribution": "Generalitat Valenciana (dadesobertes.gva.es), Grados y Másteres oficiales de la Comunitat Valenciana, CC BY",
-    "year": "actualizat în septembrie 2026",
-    "note": "Acoperire parțială: doar cele 9 universități din Comunitatea Valenciană (Valencia, Alicante, Castellón, Elche). Pentru toată Spania nu am găsit o listă oficială deschisă care să aibă și orașul; registrul național (RUCT) se poate doar consulta, nu descărca. Sursa nu spune limba de predare; am trecut spaniola."
+    "country": "Spania",
+    "sourceName": "Ministerio de Ciencia, Innovación y Universidades – SIIU („Preinscripción a Grado”, 2025-26) și Registro de Universidades, Centros y Títulos (RUCT)",
+    "url": "https://www.ciencia.gob.es/Ministerio/Estadisticas/SIIU/UCT.html",
+    "licence": "aviz legal al ministerului: reutilizare permisă, comercială sau nu, cu citarea sursei; fără licență deschisă numită",
+    "attribution": "Elaboración propia con datos extraídos del catálogo de datos del Ministerio de Ciencia, Innovación y Universidades (ciencia.gob.es): SIIU 2025-26 y RUCT, octubre de 2026; linkuri pentru Comunitatea Valenciană: Generalitat Valenciana (dadesobertes.gva.es), CC BY. Ministerul nu susține acest site.",
+    "year": "2025–2026 (registru consultat în octombrie 2026)",
+    "note": "Universitățile de stat cu predare față în față: oferta reală de admitere, cu locuri (inclusiv duble specializări). Universitățile private și UNED: programele de Grado înscrise în registrul național și nestinse, care pot să nu fie deschise în acest an și nu au locuri. Orașul este localitatea facultății. Sursele nu spun limba de predare; am trecut spaniola, deși multe programe se predau și în catalană, bască, galiciană sau engleză."
   },
   "nl": {
     "country": "Olanda",
@@ -69,7 +69,7 @@
     "licence": "CC BY",
     "attribution": "DUO (Dienst Uitvoering Onderwijs), RIO open data, CC BY; prelucrat de UniPath, nu este un produs oficial DUO",
     "year": "octombrie 2026",
-    "note": "Programe de licență de la universități (WO) și de la școli superioare de științe aplicate (HBO). Pe lângă programele oferite, am inclus și programele cu licență de funcționare valabilă care nu au o ofertă înregistrată, fiindcă lista de oferte e incompletă la universități. Numele sunt în olandeză chiar și la programele predate în engleză; la o parte din programe sursa nu spune limba de predare."
+    "note": "Un rând pentru fiecare program de licență acreditat (cod CROHO), pe instituție și oraș, din registrul de licențe DUO; ofertele înregistrate dau doar orașul, limba și pagina. Numele sunt cele oficiale, în olandeză; la o parte din programe sursa nu spune limba de predare."
   },
   "ie": {
     "country": "Irlanda",
@@ -78,7 +78,7 @@
     "licence": "notă de reutilizare a Comisiei Europene (Decizia 2011/833/UE), conținut sub CC BY 4.0",
     "year": "descărcat în octombrie 2026",
     "attribution": "Europass (Comisia Europeană), date furnizate de QQI – Quality and Qualifications Ireland; adaptate de UniPath",
-    "note": "Programe de nivel licență din registrul irlandez. „Orașul” este zona administrativă din sursă, nu întotdeauna orașul campusului. Sursa nu are durata sau locurile. Datele de bază aparțin QQI; nu am găsit o licență separată pentru ele."
+    "note": "Programe de nivel licență din registrul irlandez, plus programele integrate cu admitere după liceu care se termină cu master. „Orașul” este zona administrativă din sursă, nu întotdeauna orașul campusului. Unele nume lungi sunt tăiate în sursă. Sursa nu are durata sau locurile. Datele de bază aparțin QQI; nu am găsit o licență separată pentru ele."
   },
   "be": {
     "country": "Belgia (doar Flandra)",
@@ -87,7 +87,7 @@
     "licence": "notă de reutilizare a Comisiei Europene (Decizia 2011/833/UE), conținut sub CC BY 4.0",
     "year": "descărcat în octombrie 2026",
     "attribution": "Europass (Comisia Europeană), date furnizate de AHOVOKS (Flandra); adaptate de UniPath",
-    "note": "Acoperire parțială: doar instituțiile din Flandra, cu programe în olandeză; Valonia și Bruxelles-ul francofon lipsesc. Orașul este sediul instituției. Sursa nu are coduri de domeniu, durata sau locurile; domeniul l-am dedus din numele programului. Datele de bază aparțin AHOVOKS; nu am găsit o licență separată pentru ele."
+    "note": "Acoperire parțială: doar instituțiile din Flandra, cu programe în olandeză; Valonia și Bruxelles-ul francofon lipsesc. Fără diplomele „bachelor după bachelor”. Câteva programe din registrul flamand (între ele cele ale Școlii Militare Regale) lipsesc din sursă. Orașul este sediul instituției. Sursa nu are coduri de domeniu, durata sau locurile; domeniul l-am dedus din numele programului. Datele de bază aparțin AHOVOKS; nu am găsit o licență separată pentru ele."
   },
   "at": {
     "country": "Austria",

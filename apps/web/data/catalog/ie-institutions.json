@@ -8,7 +8,7 @@
   "city": "Donegal",
   "kind": "unknown",
   "hasSheet": false,
-  "programs": 333
+  "programs": 334
  },
  {
   "id": "ie-carlow-college-st-patrick-s",
@@ -305,7 +305,7 @@
   "city": "Cork",
   "kind": "unknown",
   "hasSheet": false,
-  "programs": 206
+  "programs": 202
  },
  {
   "id": "ie-national-college-of-art-and-design",
@@ -382,7 +382,7 @@
   "city": "Waterford",
   "kind": "unknown",
   "hasSheet": false,
-  "programs": 276
+  "programs": 265
  },
  {
   "id": "ie-teagasc",
@@ -404,7 +404,7 @@
   "city": "Dublin",
   "kind": "unknown",
   "hasSheet": false,
-  "programs": 280
+  "programs": 263
  },
  {
   "id": "ie-technological-university-of-the-shannon",
@@ -415,7 +415,7 @@
   "city": "Limerick",
   "kind": "unknown",
   "hasSheet": false,
-  "programs": 222
+  "programs": 221
  },
  {
   "id": "ie-the-american-college-dublin",
@@ -448,7 +448,7 @@
   "city": "Dublin",
   "kind": "unknown",
   "hasSheet": false,
-  "programs": 143
+  "programs": 142
  },
  {
   "id": "ie-university-college-cork",

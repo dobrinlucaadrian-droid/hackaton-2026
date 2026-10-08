@@ -1,7 +1,7 @@
-// Builds the Netherlands catalogue (institutions + bachelor programmes) from the DUO RIO open data. Usage: node scripts/data/nl/build.mjs <folder with the downloaded CSV files>
+// Builds the Netherlands catalogue (institutions + one row per accredited bachelor programme per institution and city) from the DUO RIO open data. Usage: node scripts/data/nl/build.mjs <folder with the downloaded CSV files>
 // Needed files in the folder (see README.md): aangeboden_ho_opleidingen, ho_opleidingen, ho_opleidingserkenningen, ho_rel_oe (ho_relaties_opleidingseenheden),
 // ho_rel_oe_erk (ho_relaties_opleidingseenheden_erkenningen), onderwijsaanbieders, rel_aanb_inst (relaties_onderwijsaanbieders_onderwijsinstellingserkenningen),
-// oie (onderwijsinstellingserkenningen), onderwijslocaties, formeel (formele_instellingsadressen), contact (contactadressen),
+// ho_licenties (ho_onderwijslicenties), ho_onderwijsaccreditaties, oie (onderwijsinstellingserkenningen), onderwijslocaties, formeel (formele_instellingsadressen), contact (contactadressen),
 // rel_bestuur_aanb (relaties_onderwijsbesturen_onderwijsaanbieders) — all as .csv.
 import fs from "node:fs";
 import path from "node:path";
@@ -42,13 +42,12 @@ const latest = (rows, keyOf) => { const m = new Map(); for (const r of rows) { c
 const opl = latest(load("ho_opleidingen"), (o) => o.OPLEIDINGSEENHEIDCODE);
 const offers = latest(load("aangeboden_ho_opleidingen"), (a) => a.AANGEBODEN_OPLEIDINGCODE);
 const erkLatest = latest(load("ho_opleidingserkenningen"), (e) => e.UNIEKE_ERKENDEOPLEIDINGSCODE);
-const erkByCode = new Map(); for (const e of erkLatest.values()) { const p = erkByCode.get(e.ERKENDEOPLEIDINGSCODE); if (!p || e.BEGINDATUM_PERIODE > p.BEGINDATUM_PERIODE) erkByCode.set(e.ERKENDEOPLEIDINGSCODE, e); }
 const relErkList = load("ho_rel_oe_erk");
 const relErk = new Map(relErkList.map((r) => [r.OPLEIDINGSEENHEIDCODE, r]));
 // in the data the "VAN" side is the programme and the "NAAR" side its variant (specialisation)
 const variantOf = new Map(); for (const r of load("ho_rel_oe")) if (r.RELATIESOORT === "VARIANT_VAN" && cur(r.EINDDATUM)) variantOf.set(r.NAAR_OPLEIDINGSEENHEIDCODE, r.VAN_OPLEIDINGSEENHEIDCODE);
 const aanbieders = new Map(load("onderwijsaanbieders").map((a) => [a.ONDERWIJSAANBIEDERID, a]));
-const oieMap = new Map(load("oie").map((o) => [o.OIE_CODE, o]));
+const oieMap = latest(load("oie"), (o) => o.OIE_CODE);
 const relAanbOie = load("rel_aanb_inst").filter((r) => cur(r.EINDDATUM));
 const locations = new Map(load("onderwijslocaties").map((l) => [l.ONDERWIJSLOCATIECODE, l]));
 const formeel = load("formeel");
@@ -126,12 +125,6 @@ function domainOf(text) {
 
 // ---------- institutions ----------
 const SHEETS = { "21PC": "rug", "21PK": "uva", "21PL": "vu-amsterdam", "21PF": "tu-delft", "21PG": "tu-eindhoven", "21PE": "eur", "21PJ": "maastricht", "21PB": "leiden", "21PD": "utrecht", "21PH": "twente" };
-const RANK = { UNIV: 0, HBOS: 1, ERK_HBOS: 2 };
-function oieOf(aanbiederId) {
-  const mine = relAanbOie.filter((r) => r.ONDERWIJSAANBIEDERID === aanbiederId).map((r) => oieMap.get(r.OIE_CODE)).filter((o) => o && cur(o.EINDDATUM));
-  mine.sort((a, b) => (RANK[a.SOORT] ?? 9) - (RANK[b.SOORT] ?? 9));
-  return mine[0] || null;
-}
 const seatOf = (oieCode) => {
   const rows = formeel.filter((f) => f.OIE_CODE === oieCode && !f.EINDDATUM && f.PLAATSNAAM);
   rows.sort((a, b) => (b.VESTIGINGSCODE.endsWith("00") ? 1 : 0) - (a.VESTIGINGSCODE.endsWith("00") ? 1 : 0));
@@ -152,157 +145,151 @@ const websiteOf = (aanbiederId) => {
 };
 
 // ---------- programmes ----------
+// One row = one accredited bachelor programme (ISAT/CROHO code) of one recognised institution, per city where it is taught.
+// The backbone is the register of licences (ho_onderwijslicenties): one licence = one institution (OIE code) x one recognised programme.
+// The register of offers (aangeboden_ho_opleidingen) has one record per year, phase, specialisation, evening/day group and location; it is used
+// only to learn, for a licensed programme, the cities, the teaching languages, the forms and the web page. It never creates a row by itself.
 const LANG = { NLD: "olandeză", ENG: "engleză", DEU: "germană", FRA: "franceză", SPA: "spaniolă", ITA: "italiană", FRY: "frizonă" };
+const LANG_ORDER = Object.values(LANG);
+const langRank = (l) => (LANG_ORDER.includes(l) ? LANG_ORDER.indexOf(l) : 99);
 const FORM = { VOLTIJD: "full-time", DEELTIJD: "part-time", DUAAL: "dual" };
-const stats = { offers: 0, notBachelor: 0, notReal: 0, ended: 0, dup: 0 };
-const insts = new Map(); const progs = []; const seen = new Set(); const usedKeys = new Set();
-const aanbiederCount = new Map(); // oie -> set of aanbieder ids (for the faculty field)
+const FORM_ORDER = ["VOLTIJD", "DEELTIJD", "DUAAL"];
+const BACHELOR = ["HBO-BA", "WO-BA"];
+const DUTCH_HO = ["UNIV", "HBOS", "ERK_HBOS"]; // kinds of recognised Dutch higher-education institutions; anything else is a foreign partner of a joint degree
+// Two OIE codes that are one school in the source (same name, same town): the private legal entity is folded into the funded one.
+const MERGE = { "27VY": "22HH" }; // "Viaa" (Zwolle) -> "Stichting Hogeschool Viaa" (Zwolle)
+const instKey = (oieCode) => MERGE[oieCode] || oieCode;
+// Offer names that are not the degree programme itself (bridging, single modules, guest students); such offers are ignored for cities and languages.
+const NOT_A_DEGREE = /pre-?master|schakel|\bbootcamp\b|\bminors?\b|educatieve module|bijvak|keuzedeel|keuzevak|kopopleiding|contractonderwijs|losse module|^(deeltijd|voltijd) opleiding$/i;
 
-const prelim = [];
-for (const a of offers.values()) {
-  stats.offers++;
-  const o = opl.get(a.OPLEIDINGSEENHEIDCODE);
-  if (!o || !["HBO-BA", "WO-BA"].includes(o.NIVEAU)) { stats.notBachelor++; continue; }
-  if (/pre-?master|schakelprogramma|\bbootcamp\b|\bminors?\b|^(deeltijd|voltijd) opleiding$/i.test([a.EIGENNAAM, o.VOLLEDIGE_NAAM].join(" "))) { stats.notReal++; continue; }
-  if (!cur(a.EINDDATUM) || !cur(a.EINDDATUM_PERIODE) || !cur(o.EINDDATUM)) { stats.ended++; continue; }
-  const an = aanbieders.get(a.ONDERWIJSAANBIEDERID);
-  if (!an) continue;
-  const oie = oieOf(a.ONDERWIJSAANBIEDERID);
-  const iKey = oie ? oie.OIE_CODE : a.ONDERWIJSAANBIEDERID;
-  if (!aanbiederCount.has(iKey)) aanbiederCount.set(iKey, new Set());
-  aanbiederCount.get(iKey).add(a.ONDERWIJSAANBIEDERID);
-  prelim.push({ a, o, an, oie, iKey });
-}
-
-const nameUsed = new Set(); const instId = new Map();
-for (const { an, oie, iKey } of prelim) {
-  if (instId.has(iKey)) continue;
-  const name = tidy(oie ? oie.VOLLEDIGE_NAAM : an.NAAM);
-  let id = SHEETS[iKey] || "nl-" + slug(name);
-  if (!SHEETS[iKey] && nameUsed.has(id)) id += "-" + slug(iKey);
-  nameUsed.add(id); instId.set(iKey, { id, name, oie, an, hasSheet: !!SHEETS[iKey] });
-}
-
-for (const { a, o, an, oie, iKey } of prelim) {
-  const inst = instId.get(iKey);
-  // parent programme for a variant (credits, sector)
-  const parentCode = o.SOORT === "VARIANT" ? variantOf.get(o.OPLEIDINGSEENHEIDCODE) : null;
-  const parent = parentCode ? opl.get(parentCode) : null;
-  const erkRel = relErk.get(o.OPLEIDINGSEENHEIDCODE) || (parentCode && relErk.get(parentCode));
-  const erk = erkRel ? erkLatest.get(erkRel.UNIEKE_ERKENDEOPLEIDINGSCODE) || erkByCode.get(erkRel.ERKENDEOPLEIDINGSCODE) : null;
-  const sector = erk?.ONDERDEEL && SECTOR_LABEL[erk.ONDERDEEL] ? SECTOR_LABEL[erk.ONDERDEEL] : NO_SECTOR;
-
-  const name = tidy(a.EIGENNAAM || o.VOLLEDIGE_NAAM || o.KORTE_NAAM || a.EIGENNAAM_ENGELS || o.INTERNATIONALE_NAAM_ENGELS).replace(/\s*\(o\d+\)$/, "");
-  if (name.length < 2) continue;
-  const nameEn = tidy(a.EIGENNAAM_ENGELS || o.INTERNATIONALE_NAAM_ENGELS || parent?.INTERNATIONALE_NAAM_ENGELS);
-  const language = a.VOERTAAL ? a.VOERTAAL.split(",").map((c) => LANG[c.trim()] || c.trim().toLowerCase()).join(", ") : "nespecificată";
-  const form = FORM[a.VORM];
-  const loc = locations.get(a.ONDERWIJSLOCATIECODE);
-  const placeRaw = loc?.PLAATSNAAM;
-  const seat = oie ? cityName(seatOf(oie.OIE_CODE)) : "";
-  const city = cityName(placeRaw) || seat || "Nederland";
-  const dedupe = [o.OPLEIDINGSEENHEIDCODE, a.ONDERWIJSAANBIEDERID, a.ONDERWIJSLOCATIECODE, a.VORM, a.VOERTAAL, name].join("|");
-  if (seen.has(dedupe)) { stats.dup++; continue; }
-  seen.add(dedupe);
-
-  const text = ascii([name, nameEn, o.VOLLEDIGE_NAAM, o.KORTE_NAAM].join(" "));
-  const domainId = domainOf(ascii(name)) ?? domainOf(text);
-
-  const rawStudielast = o.STUDIELAST || parent?.STUDIELAST;
-  const credits = rawStudielast && /^\d+$/.test(rawStudielast) && (o.STUDIELASTEENHEID || parent?.STUDIELASTEENHEID) === "ECTS_PUNT" ? Number(rawStudielast) : undefined;
-  let years;
-  const n = Number(a.AFWIJKENDE_OPLEIDINGSDUUROMVANG);
-  if (n > 0 && a.AFWIJKENDE_OPLEIDINGSDUUREENHEID === "J") years = n;
-  else if (n > 0 && a.AFWIJKENDE_OPLEIDINGSDUUREENHEID === "M") years = Math.round((n / 12) * 10) / 10;
-  if (years !== undefined && (years < 1 || years > 8)) years = undefined;
-
-  const multi = (aanbiederCount.get(iKey)?.size || 0) > 1;
-  const facRaw = tidy(an.NAAM.replace(/^Radboud Universiteit Nijmegen \(RU\)\s*/, ""));
-  const faculty = multi && facRaw.toLowerCase() !== inst.name.toLowerCase() && facRaw.length >= 2 ? facRaw : undefined;
-  const url = urlOk(tidy(a.WEBSITE)) ? tidy(a.WEBSITE) : undefined;
-
-  const baseKey = ("nl-" + [slug(inst.id.startsWith("nl-") ? inst.id.slice(3) : inst.id), slug(name), slug(city), slug(language), form || "x"].join("--")).slice(0, 190);
-  let key = baseKey, i = 2;
-  while (usedKeys.has(key)) key = `${baseKey}-${i++}`;
-  usedKeys.add(key);
-
-  const search = [name, nameEn, sector !== NO_SECTOR ? sector : "", faculty || "", inst.name, city, placeRaw && cityName(placeRaw) !== city ? cityName(placeRaw) : "", language, o.NIVEAU === "WO-BA" ? "wo universiteit" : "hbo hogeschool applied sciences"]
-    .map(ascii).concat(CITY_ALIAS[ascii(city)] || []).join(" ").replace(/[^a-z0-9 ]+/g, " ").replace(/\s+/g, " ").trim().slice(0, 600);
-  const row = {
-    key, country: "NL", institutionId: inst.id, institutionName: inst.name, city, faculty, domain: sector, domainId, name, language, form, credits, years,
-    status: o.NIVEAU, url, source: SOURCE, search,
-  };
-  for (const k of Object.keys(row)) if (row[k] === undefined) delete row[k];
-  progs.push(row);
-}
-
-// ---------- licence-only rows ----------
-// Many universities register only a few "offered programmes" (aangeboden opleidingen). The register of licences (ho_onderwijslicenties) lists every
-// bachelor programme an institution is accredited to teach. Where no offer is registered for such a licence, add one row per form of study
-// (language unknown, city = seat of the institution).
+const stats = { lic: 0, notBachelor: 0, foreign: 0, future: 0, phasedOut: 0, noIntake: 0, noSeat: 0, dupLicence: 0 };
 const oesOfErk = new Map();
 for (const r of relErkList) { if (!oesOfErk.has(r.UNIEKE_ERKENDEOPLEIDINGSCODE)) oesOfErk.set(r.UNIEKE_ERKENDEOPLEIDINGSCODE, []); oesOfErk.get(r.UNIEKE_ERKENDEOPLEIDINGSCODE).push(r.OPLEIDINGSEENHEIDCODE); }
-const oieAlias = new Map(); const cover = new Set();
-for (const { a, o, iKey } of prelim) {
-  for (const r of relAanbOie.filter((r) => r.ONDERWIJSAANBIEDERID === a.ONDERWIJSAANBIEDERID)) if (!oieAlias.has(r.OIE_CODE)) oieAlias.set(r.OIE_CODE, iKey);
-  cover.add(iKey + "|" + o.OPLEIDINGSEENHEIDCODE);
-  const par = variantOf.get(o.OPLEIDINGSEENHEIDCODE); if (par) cover.add(iKey + "|" + par);
-}
-stats.licBachelor = 0; stats.licCovered = 0; stats.licInactive = 0; stats.licAdded = 0;
+
+// 1. licensed bachelor programmes
+const licensed = new Map(); // "<institution>|<ISAT code>" -> programme
+const byName = new Map(); // "<institution>|<ascii name>" -> programme, or null when two programmes of the institution share the name
+const normName = (s) => ascii(s).replace(/^b /, "").replace(/[^a-z0-9]+/g, " ").trim();
 for (const l of licences) {
-  const oes = (oesOfErk.get(l.UNIEKE_ERKENDEOPLEIDINGSCODE) || []).map((c) => opl.get(c)).filter((o) => o && o.SOORT === "OPLEIDING" && ["HBO-BA", "WO-BA"].includes(o.NIVEAU) && cur(o.EINDDATUM));
+  stats.lic++;
+  const erk = erkLatest.get(l.UNIEKE_ERKENDEOPLEIDINGSCODE);
+  const o = (oesOfErk.get(l.UNIEKE_ERKENDEOPLEIDINGSCODE) || []).map((c) => opl.get(c))
+    .find((o) => o && o.SOORT === "OPLEIDING" && BACHELOR.includes(o.NIVEAU) && o.GRAAD === "BACHELOR" && cur(o.EINDDATUM));
+  if (!o || !erk) { stats.notBachelor++; continue; } // master, associate degree, post-initial ...
+  const oie = oieMap.get(instKey(l.OIE_CODE));
+  if (!oie || !DUTCH_HO.includes(oie.SOORT) || !DUTCH_HO.includes(oieMap.get(l.OIE_CODE)?.SOORT)) { stats.foreign++; continue; }
+  if (l.BEGINDATUM > TODAY) { stats.future++; continue; } // licence starts later (programme not open yet)
   const ac = accred.get(l.LICENTIECODE);
-  for (const o of oes) {
-    stats.licBachelor++;
-    const iKey = oieAlias.get(l.OIE_CODE) || l.OIE_CODE;
-    if (cover.has(iKey + "|" + o.OPLEIDINGSEENHEIDCODE)) { stats.licCovered++; continue; }
-    if (ac && ((ac.AFBOUW_DATUM && !cur(ac.AFBOUW_DATUM)) || (ac.INTREKKINGSDATUM && !cur(ac.INTREKKINGSDATUM)) || (ac.VERVALDATUM && !cur(ac.VERVALDATUM)))) { stats.licInactive++; continue; }
-    const name = tidy(o.VOLLEDIGE_NAAM || o.KORTE_NAAM || o.INTERNATIONALE_NAAM_ENGELS).replace(/\s*\(o\d+\)$/, "");
-    if (name.length < 2 || /pre-?master|schakelprogramma|\bbootcamp\b|\bminors?\b/i.test(name)) continue;
-    const oie = oieMap.get(l.OIE_CODE);
-    if (!oie || !seatOf(l.OIE_CODE)) { stats.licNoSeat = (stats.licNoSeat || 0) + 1; continue; } // no Dutch seat = foreign partner of a joint degree
-    let inst = instId.get(iKey);
-    if (!inst) {
-      const iname = tidy(oie.VOLLEDIGE_NAAM); let id = SHEETS[iKey] || "nl-" + slug(iname);
-      if (!SHEETS[iKey] && nameUsed.has(id)) id += "-" + slug(iKey);
-      nameUsed.add(id); inst = { id, name: iname, oie, an: null, hasSheet: !!SHEETS[iKey] }; instId.set(iKey, inst);
-      aanbiederCount.set(iKey, new Set(relAanbOie.filter((r) => r.OIE_CODE === iKey).map((r) => r.ONDERWIJSAANBIEDERID)));
-    }
-    const nameEn = tidy(o.INTERNATIONALE_NAAM_ENGELS);
-    const erk = erkLatest.get(l.UNIEKE_ERKENDEOPLEIDINGSCODE);
-    const sector = erk?.ONDERDEEL && SECTOR_LABEL[erk.ONDERDEEL] ? SECTOR_LABEL[erk.ONDERDEEL] : NO_SECTOR;
-    const domainId = domainOf(ascii(name)) ?? domainOf(ascii([name, nameEn].join(" ")));
-    const credits = /^\d+$/.test(o.STUDIELAST) && o.STUDIELASTEENHEID === "ECTS_PUNT" ? Number(o.STUDIELAST) : undefined;
-    const city = cityName(seatOf(l.OIE_CODE));
-    const language = "nespecificată";
-    for (const vf of (l.VORM || "").split(",")) {
-      const form = FORM[vf.trim()];
-      const dd = ["lic", iKey, o.OPLEIDINGSEENHEIDCODE, form].join("|");
-      if (seen.has(dd)) { stats.dup++; continue; }
-      seen.add(dd);
-      const baseKey = ("nl-" + [slug(inst.id.startsWith("nl-") ? inst.id.slice(3) : inst.id), slug(name), slug(city), slug(language), form || "x"].join("--")).slice(0, 190);
-      let key = baseKey, i = 2;
-      while (usedKeys.has(key)) key = `${baseKey}-${i++}`;
-      usedKeys.add(key);
-      const search = [name, nameEn, sector !== NO_SECTOR ? sector : "", inst.name, city, language, o.NIVEAU === "WO-BA" ? "wo universiteit" : "hbo hogeschool applied sciences"]
-        .map(ascii).concat(CITY_ALIAS[ascii(city)] || []).join(" ").replace(/[^a-z0-9 ]+/g, " ").replace(/\s+/g, " ").trim().slice(0, 600);
-      const row = { key, country: "NL", institutionId: inst.id, institutionName: inst.name, city, domain: sector, domainId, name, language, form, credits, status: o.NIVEAU, source: SOURCE, search };
-      for (const k of Object.keys(row)) if (row[k] === undefined) delete row[k];
-      progs.push(row); stats.licAdded++;
-    }
+  if (ac && ((ac.AFBOUW_DATUM && !cur(ac.AFBOUW_DATUM)) || (ac.INTREKKINGSDATUM && !cur(ac.INTREKKINGSDATUM)) || (ac.VERVALDATUM && !cur(ac.VERVALDATUM)))) { stats.phasedOut++; continue; }
+  if (!cur(erk.EINDDATUM) || (erk.INSTROOM_EINDDATUM && !cur(erk.INSTROOM_EINDDATUM))) { stats.noIntake++; continue; } // no new students admitted any more
+  const seat = cityName(seatOf(oie.OIE_CODE));
+  if (!seat) { stats.noSeat++; continue; }
+  const name = tidy(o.VOLLEDIGE_NAAM || o.KORTE_NAAM || o.INTERNATIONALE_NAAM_ENGELS);
+  if (name.length < 2) continue;
+  const lforms = l.VORM.split(",").map((f) => f.trim()).filter((f) => FORM[f]);
+  const k = oie.OIE_CODE + "|" + erk.ERKENDEOPLEIDINGSCODE;
+  if (licensed.has(k)) { stats.dupLicence++; for (const f of lforms) licensed.get(k).forms.add(f); continue; }
+  const p = { oie, isat: erk.ERKENDEOPLEIDINGSCODE, o, erk, name, seat, forms: new Set(lforms), offers: [] };
+  licensed.set(k, p);
+  const nk = oie.OIE_CODE + "|" + normName(name);
+  byName.set(nk, byName.has(nk) ? null : p);
+}
+
+// 2. attach the current offers to the licensed programmes
+const offerStats = { bachelor: 0, ended: 0, notDegree: 0, byCode: 0, byName: 0, unmatched: 0 };
+const oiesOfAanbieder = new Map();
+for (const r of relAanbOie) { if (!oiesOfAanbieder.has(r.ONDERWIJSAANBIEDERID)) oiesOfAanbieder.set(r.ONDERWIJSAANBIEDERID, new Set()); oiesOfAanbieder.get(r.ONDERWIJSAANBIEDERID).add(instKey(r.OIE_CODE)); }
+// ISAT code of a programme unit: its own recognition, else the one of the programme it is a variant of
+const isatOf = (code) => { for (let c = code, i = 0; c && i < 4; c = variantOf.get(c), i++) { const r = relErk.get(c); if (r) return r.ERKENDEOPLEIDINGSCODE; } return null; };
+const aanbiedersOfInst = new Map();
+const unmatchedNames = {};
+for (const a of offers.values()) {
+  const o = opl.get(a.OPLEIDINGSEENHEIDCODE);
+  if (!o || !BACHELOR.includes(o.NIVEAU)) continue;
+  offerStats.bachelor++;
+  if (!cur(a.EINDDATUM) || !cur(a.EINDDATUM_PERIODE) || !cur(o.EINDDATUM) || (a.LAATSTE_INSTROOMDATUM && !cur(a.LAATSTE_INSTROOMDATUM))) { offerStats.ended++; continue; }
+  if (NOT_A_DEGREE.test([a.EIGENNAAM, o.VOLLEDIGE_NAAM].join(" "))) { offerStats.notDegree++; continue; }
+  const oies = [...(oiesOfAanbieder.get(a.ONDERWIJSAANBIEDERID) || [])];
+  const isat = isatOf(o.OPLEIDINGSEENHEIDCODE);
+  let hits = isat ? oies.map((c) => licensed.get(c + "|" + isat)).filter(Boolean) : [];
+  let direct = o.SOORT === "OPLEIDING";
+  if (hits.length) offerStats.byCode++;
+  else if (!isat) {
+    // some schools (Hogeschool Rotterdam, Hogeschool Leiden ...) register their offers on units of their own, without a link to the ISAT code:
+    // these are matched by the exact programme name inside the same institution, only to learn city and language
+    const parent = opl.get(variantOf.get(o.OPLEIDINGSEENHEIDCODE));
+    const names = [o.VOLLEDIGE_NAAM, parent?.VOLLEDIGE_NAAM, a.EIGENNAAM].filter(Boolean).map(normName);
+    for (const n of names) { hits = oies.map((c) => byName.get(c + "|" + n)).filter(Boolean); if (hits.length) break; }
+    if (hits.length) { offerStats.byName++; direct = normName(o.VOLLEDIGE_NAAM) === normName(hits[0].name); }
+  }
+  if (!hits.length) { offerStats.unmatched++; const n = (aanbieders.get(a.ONDERWIJSAANBIEDERID)?.NAAM || "?") + " | " + (a.EIGENNAAM || o.VOLLEDIGE_NAAM); unmatchedNames[n] = (unmatchedNames[n] || 0) + 1; continue; }
+  for (const p of hits) {
+    p.offers.push({ a, direct });
+    if (!aanbiedersOfInst.has(p.oie.OIE_CODE)) aanbiedersOfInst.set(p.oie.OIE_CODE, new Set());
+    aanbiedersOfInst.get(p.oie.OIE_CODE).add(a.ONDERWIJSAANBIEDERID);
+  }
+}
+
+// 3. institutions
+const nameUsed = new Set(); const instId = new Map();
+const displayName = (s) => tidy(s).replace(/^Stichting\s+(?=Hogeschool\b)/i, "").replace(/\s+B\.?V\.?$/i, "");
+for (const p of licensed.values()) {
+  const code = p.oie.OIE_CODE;
+  if (instId.has(code)) continue;
+  const officialName = tidy(p.oie.VOLLEDIGE_NAAM);
+  let id = SHEETS[code] || "nl-" + slug(officialName);
+  if (!SHEETS[code] && nameUsed.has(id)) id += "-" + slug(code);
+  nameUsed.add(id); instId.set(code, { id, name: displayName(officialName), officialName, oie: p.oie, hasSheet: !!SHEETS[code] });
+}
+
+// 4. rows
+const progs = []; const usedKeys = new Set();
+let withOffer = 0, extraCityRows = 0;
+for (const p of licensed.values()) {
+  const inst = instId.get(p.oie.OIE_CODE);
+  const { o, erk } = p;
+  const sector = erk.ONDERDEEL && SECTOR_LABEL[erk.ONDERDEEL] ? SECTOR_LABEL[erk.ONDERDEEL] : NO_SECTOR;
+  const nameEn = tidy(o.INTERNATIONALE_NAAM_ENGELS);
+  const domainId = domainOf(ascii(p.name)) ?? domainOf(ascii([p.name, nameEn, o.KORTE_NAAM].join(" ")));
+  const credits = /^\d+$/.test(o.STUDIELAST) && o.STUDIELASTEENHEID === "ECTS_PUNT" ? Number(o.STUDIELAST) : undefined;
+  if (p.offers.length) withOffer++;
+  const byCity = new Map(); // city -> offers there (an offer without a location counts for the seat)
+  for (const x of p.offers) { const c = cityName(locations.get(x.a.ONDERWIJSLOCATIECODE)?.PLAATSNAAM) || p.seat; if (!byCity.has(c)) byCity.set(c, []); byCity.get(c).push(x); }
+  if (!byCity.size) byCity.set(p.seat, []);
+  extraCityRows += byCity.size - 1;
+  const multiAanbieder = (aanbiedersOfInst.get(p.oie.OIE_CODE)?.size || 0) > 1;
+  for (const [city, list] of byCity) {
+    const langs = new Set(); for (const x of list) for (const c of (x.a.VOERTAAL || "").split(",")) if (c.trim()) langs.add(LANG[c.trim()] || c.trim().toLowerCase());
+    const language = langs.size ? [...langs].sort((a, b) => langRank(a) - langRank(b)).join(", ") : "nespecificată";
+    // forms: those of the licence; in a city with offers, the licensed forms actually offered there
+    const offered = new Set(list.map((x) => x.a.VORM).filter((f) => p.forms.has(f)));
+    const forms = FORM_ORDER.filter((f) => (offered.size ? offered : p.forms).has(f));
+    const form = FORM[forms[0]];
+    const own = list.filter((x) => x.direct);
+    const url = [...own, ...list].map((x) => tidy(x.a.WEBSITE)).find(urlOk);
+    const facs = new Set(list.map((x) => x.a.ONDERWIJSAANBIEDERID));
+    const facRaw = facs.size === 1 ? tidy((aanbieders.get([...facs][0])?.NAAM || "").replace(/^Radboud Universiteit Nijmegen \(RU\)\s*/, "")) : "";
+    const faculty = multiAanbieder && facRaw.length >= 2 && ![inst.name, inst.officialName].some((n) => n.toLowerCase() === facRaw.toLowerCase()) ? facRaw : undefined;
+
+    const key = "nl-" + [slug(inst.id.startsWith("nl-") ? inst.id.slice(3) : inst.id), slug(p.isat + " " + p.name).slice(0, 110), slug(city)].join("--");
+    if (usedKeys.has(key)) throw new Error("duplicate key " + key);
+    usedKeys.add(key);
+    const search = [p.name, nameEn, sector !== NO_SECTOR ? sector : "", faculty || "", inst.name, city, language, forms.map((f) => f.toLowerCase()).join(" "), o.NIVEAU === "WO-BA" ? "wo universiteit" : "hbo hogeschool applied sciences"]
+      .map(ascii).concat(CITY_ALIAS[ascii(city)] || []).join(" ").replace(/[^a-z0-9 ]+/g, " ").replace(/\s+/g, " ").trim().slice(0, 600);
+    const row = { key, country: "NL", institutionId: inst.id, institutionName: inst.name, city, faculty, domain: sector, domainId, name: p.name, language, form, credits, status: o.NIVEAU, url, source: SOURCE, search };
+    for (const k of Object.keys(row)) if (row[k] === undefined) delete row[k];
+    progs.push(row);
   }
 }
 
 // institutions file
 const counts = new Map(); for (const p of progs) counts.set(p.institutionId, (counts.get(p.institutionId) || 0) + 1);
 const institutions = [];
-for (const [iKey, v] of instId) {
+for (const [code, v] of instId) {
   const n = counts.get(v.id); if (!n) continue;
-  const seat = v.oie ? cityName(seatOf(v.oie.OIE_CODE)) : "";
-  const cities = {}; for (const p of progs) if (p.institutionId === v.id) cities[p.city] = (cities[p.city] || 0) + 1;
-  const city = seat || Object.entries(cities).sort((x, y) => y[1] - x[1])[0][0];
-  const web = [...(aanbiederCount.get(iKey) || [])].map(websiteOf).find(Boolean);
-  const inst = { id: v.id, country: "NL", source: SOURCE, name: v.name, officialName: v.name, city, kind: !v.oie || /politieacademie|defensie/i.test(v.name) ? "unknown" : v.oie.BEKOSTIGINGSCODE === "BEKOSTIGD" ? "public" : "private", hasSheet: v.hasSheet, website: web, programs: n };
+  const aanb = new Set([...(aanbiedersOfInst.get(code) || []), ...relAanbOie.filter((r) => instKey(r.OIE_CODE) === code).map((r) => r.ONDERWIJSAANBIEDERID)]);
+  const web = [...aanb].map(websiteOf).find(Boolean);
+  const inst = { id: v.id, country: "NL", source: SOURCE, name: v.name, officialName: v.officialName, city: cityName(seatOf(code)), kind: /politieacademie|defensie/i.test(v.name) ? "unknown" : v.oie.BEKOSTIGINGSCODE === "BEKOSTIGD" ? "public" : "private", hasSheet: v.hasSheet, website: web, programs: n };
   if (!inst.website) delete inst.website;
   institutions.push(inst);
 }
@@ -314,7 +301,12 @@ fs.writeFileSync(new URL("nl-institutions.json", OUT), JSON.stringify(institutio
 fs.writeFileSync(new URL("nl-programs.json", OUT), JSON.stringify(progs) + "\n");
 
 const nul = progs.filter((p) => p.domainId === null);
-console.log(`dataset offers (latest period each): ${stats.offers}; not bachelor: ${stats.notBachelor}; bridging/bootcamp/minor dropped: ${stats.notReal}; ended: ${stats.ended}; exact duplicates dropped: ${stats.dup}`);
-console.log(`licences (current bachelor programmes per institution): ${stats.licBachelor}; already covered by an offer: ${stats.licCovered}; phased out/withdrawn skipped: ${stats.licInactive}; foreign partner (no Dutch seat) skipped: ${stats.licNoSeat}; rows added from licences: ${stats.licAdded}`);
-console.log(`wrote ${institutions.length} institutions, ${progs.length} programmes (WO ${progs.filter((p) => p.status === "WO-BA").length}, HBO ${progs.filter((p) => p.status === "HBO-BA").length}); without domain: ${nul.length} (${Math.round((100 * nul.length) / progs.length)}%)`);
+const lev = (s) => [...licensed.values()].filter((p) => p.o.NIVEAU === s);
+const funded = (list) => list.filter((p) => p.erk.BEKOSTIGINGSCODE === "BEKOSTIGD" && p.oie.BEKOSTIGINGSCODE === "BEKOSTIGD").length;
+console.log(`current licences: ${stats.lic}; not a bachelor programme (master, associate degree ...): ${stats.notBachelor}; foreign partner of a joint degree: ${stats.foreign}; licence starts in the future: ${stats.future}; accreditation phased out/withdrawn/expired: ${stats.phasedOut}; closed for new students: ${stats.noIntake}; no Dutch seat: ${stats.noSeat}; second licence of a merged institution for the same programme: ${stats.dupLicence}`);
+console.log(`bachelor programmes kept (institution x ISAT code): ${licensed.size} = WO ${lev("WO-BA").length} (state-funded ${funded(lev("WO-BA"))}) + HBO ${lev("HBO-BA").length} (state-funded ${funded(lev("HBO-BA"))})`);
+console.log(`bachelor-level offer records: ${offerStats.bachelor}; ended: ${offerStats.ended}; not a degree (bridging, module, minor ...): ${offerStats.notDegree}; attached by ISAT code: ${offerStats.byCode}; attached by name: ${offerStats.byName}; no licensed programme found (ignored): ${offerStats.unmatched}`);
+console.log(`programmes with at least one offer: ${withOffer}; extra rows for further cities: ${extraCityRows}`);
+console.log(`wrote ${institutions.length} institutions, ${progs.length} programmes (WO ${progs.filter((p) => p.status === "WO-BA").length}, HBO ${progs.filter((p) => p.status === "HBO-BA").length}) in ${new Set(progs.map((p) => p.city)).size} cities; language unknown: ${progs.filter((p) => p.language === "nespecificată").length}; with url: ${progs.filter((p) => p.url).length}; with credits: ${progs.filter((p) => p.credits).length}; without domain: ${nul.length} (${Math.round((100 * nul.length) / progs.length)}%)`);
 if (process.env.REPORT_NULL) { const m = {}; for (const p of nul) m[p.name] = (m[p.name] || 0) + 1; console.log(Object.entries(m).sort((a, b) => b[1] - a[1]).slice(0, +process.env.REPORT_NULL).map(([k, v]) => `${v} ${k}`).join("\n")); }
+if (process.env.REPORT_UNMATCHED) console.log(Object.entries(unmatchedNames).sort((a, b) => b[1] - a[1]).slice(0, +process.env.REPORT_UNMATCHED).map(([k, v]) => `${v} ${k}`).join("\n"));

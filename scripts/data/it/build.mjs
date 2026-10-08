@@ -101,7 +101,9 @@ const TYPES = new Set(["Laurea", "Laurea Magistrale Ciclo Unico"]);
 const rows = offer.filter((r) => +r.ANNO === year && TYPES.has(r.TipoCorso));
 console.log(`source rows total ${offer.length}; year ${year}: ${offer.filter((r) => +r.ANNO === year).length}; kept (Laurea + ciclo unico): ${rows.length}`);
 
-const insts = new Map(); const progs = []; const usedKeys = new Set();
+// One row per course x university x seat x degree type x language x delivery. The source repeats an inter-class course
+// (one course that belongs to two degree classes, e.g. L-8 and L-9) once per class: those rows are merged and both classes are kept in "domain".
+const insts = new Map(); const progs = []; const usedKeys = new Set(); const groups = new Map(); let merged = 0;
 for (const r of rows) {
   const a = byOp.get(alnum(r.Ateneo));
   if (!a) throw new Error(`university not found in atenei.csv: ${r.Ateneo}`);
@@ -109,25 +111,43 @@ for (const r of rows) {
   const id = SHEETS[a.NomeOperativo] || ("it-" + slug(name).slice(0, 70).replace(/-$/, ""));
   const city = a.CITTA ? titleCase(a.CITTA) : titleCase(r.SedeCorso_Comune);
   if (!insts.has(id)) insts.set(id, { id, country: "IT", source: SOURCE, name, officialName: name, city, kind: a.StataleLibera === "S" ? "public" : "private", hasSheet: SHEET_IDS.has(id), programs: 0 });
-  const inst = insts.get(id); inst.programs++;
+  const inst = insts.get(id);
   const pname = tidyName(r.Corso);
   let pcity = titleCase(r.SedeCorso_Comune);
   if (!pcity || /^comune estero$/i.test(pcity)) pcity = inst.city; // source placeholder for seats abroad: fall back to the institution seat
   const lang = language(r.LINGUA);
   const form = formOf(r.DIDATTICA);
   const domainLabel = `${tidy(r.NomeClasse)} (${r.Classe})`;
+  if (!ACCESS[r.ACCESSO]) throw new Error(`unknown access "${r.ACCESSO}"`);
+  const domainId = domainFor(r.Classe, pname);
+  const gk = [id, slug(pname), r.SedeCorso_Comune, r.TipoCorso, lang, r.DIDATTICA].join("|"); // the source seat, so a seat abroad ("Comune Estero") stays its own row
+  const g = groups.get(gk);
+  if (g) { // same course listed again under another class (or, once, with another access type): keep one row
+    merged++;
+    if (!g.labels.includes(domainLabel)) g.labels.push(domainLabel);
+    if (!g.access.includes(ACCESS[r.ACCESSO])) g.access.push(ACCESS[r.ACCESSO]);
+    g.domainIds.push(domainId);
+    continue;
+  }
+  inst.programs++;
   let key = `${id.replace(/^it-/, "")}--${slug(r.Classe)}--${slug(pname).slice(0, 60)}--${slug(pcity)}--${slug(lang)}`.replace(/-+$/, "");
   if (form) key += "--distance"; else if (/blended/i.test(r.DIDATTICA)) key += "--blended";
   key = "it-" + key;
   let k = key, n = 2; while (usedKeys.has(k)) k = `${key}-${n++}`; usedKeys.add(k);
-  if (!ACCESS[r.ACCESSO]) throw new Error(`unknown access "${r.ACCESSO}"`);
-  const p = { key: k, country: "IT", institutionId: id, institutionName: name, city: pcity, domain: domainLabel, domainId: domainFor(r.Classe, pname), name: pname, language: lang };
+  const p = { key: k, country: "IT", institutionId: id, institutionName: name, city: pcity, domain: domainLabel, domainId, name: pname, language: lang };
   if (form) p.form = form;
   p.status = ACCESS[r.ACCESSO];
   p.source = SOURCE;
-  p.search = ascii([pname, domainLabel, name, pcity, lang].join(" "));
+  groups.set(gk, { p, labels: [domainLabel], access: [ACCESS[r.ACCESSO]], domainIds: [domainId] });
   progs.push(p);
 }
+for (const { p, labels, access, domainIds } of groups.values()) {
+  p.domain = labels.join("; "); // classes in the order of the source file
+  p.domainId = domainIds.find((d) => d !== null) ?? null; // the first class (in source order) that maps to an app domain
+  p.status = access.join(", ");
+  p.search = ascii([p.name, p.domain, p.institutionName, p.city, p.language].join(" "));
+}
+console.log(`rows merged into another row of the same course: ${merged}; inter-class courses: ${[...groups.values()].filter((g) => g.labels.length > 1).length}`);
 const instList = [...insts.values()].sort((x, y) => x.id.localeCompare(y.id));
 progs.sort((x, y) => x.key.localeCompare(y.key));
 writeFileSync(new URL("it-institutions.json", OUT), JSON.stringify(instList, null, 1) + "\n");

@@ -1,5 +1,5 @@
 // Builds the United States catalogue (institutions + bachelor fields of study) from the College Scorecard open data: node scripts/data/us/build.mjs <raw-folder>
-// <raw-folder> holds the two unzipped downloads (see README.md). Writes apps/web/data/catalog/us-institutions.json and us-programs.jsonl.gz.
+// <raw-folder> holds the unzipped downloads: the two Scorecard files and the two IPEDS files C2024_A and HD2024 (see README.md). Writes apps/web/data/catalog/us-institutions.json and us-programs.jsonl.gz.
 import { readFileSync, writeFileSync, existsSync, readdirSync, rmSync, statSync } from "node:fs";
 import { gzipSync } from "node:zlib";
 import { join } from "node:path";
@@ -8,12 +8,13 @@ import { DOMAIN_IDS } from "../isced.mjs";
 const raw = process.argv[2];
 if (!raw) { console.error("usage: node scripts/data/us/build.mjs <raw-folder>"); process.exit(1); }
 const SOURCE = "College Scorecard Field of Study 2026-06-10";
+const SOURCE_IPEDS = "IPEDS Completions 2023-24 (C2024_A, HD2024)"; // only for branch campuses whose Scorecard rows show no graduates
 const out = new URL("../../../apps/web/data/catalog/", import.meta.url);
 
 // Find the CSV files inside the raw folder (possibly in sub-folders).
 const find = (name) => {
   const walk = (d) => readdirSync(d, { withFileTypes: true }).flatMap((e) => e.name === "__MACOSX" ? [] : e.isDirectory() ? walk(join(d, e.name)) : [join(d, e.name)]);
-  const hit = walk(raw).find((f) => f.endsWith(name));
+  const hit = walk(raw).find((f) => f.toLowerCase().endsWith(name.toLowerCase()));
   if (!hit) { console.error(`missing ${name} under ${raw}`); process.exit(1); }
   return hit;
 };
@@ -32,7 +33,7 @@ function* csvRows(s) {
   if (v || f.length) { f.push(v); yield f; }
 }
 function readCsv(path) {
-  const it = csvRows(readFileSync(path, "utf8"));
+  const it = csvRows(readFileSync(path, "utf8").replace(/^﻿/, ""));
   const head = it.next().value;
   const ix = Object.fromEntries(head.map((n, i) => [n, i]));
   const rows = [];
@@ -144,18 +145,21 @@ const website = (u) => { u = tidy(u || ""); if (!u) return undefined; if (!/^htt
 // ---- Institutions ----
 const instRows = readCsv(find("Most-Recent-Cohorts-Institution.csv"));
 const stats = { institutionsInFile: instRows.length, notOperating: 0, branch: 0, notFourYear: 0, forProfit: 0, otherControl: 0, outsideStates: 0 };
-const keep = new Map();
+const keep = new Map();     // main campuses (MAIN = 1)
+const branches = new Map(); // branch and online campuses (MAIN = 0) that pass the same filters
 for (const g of instRows) {
   if (g("CURROPER") !== "1") { stats.notOperating++; continue; }
-  if (g("MAIN") !== "1") { stats.branch++; continue; }
-  if (g("ICLEVEL") !== "1") { stats.notFourYear++; continue; }
+  const main = g("MAIN") === "1";
+  if (!main) stats.branch++;
+  if (g("ICLEVEL") !== "1") { if (main) stats.notFourYear++; continue; }
   const control = g("CONTROL");
-  if (control === "3") { stats.forProfit++; continue; }
-  if (control !== "1" && control !== "2") { stats.otherControl++; continue; }
-  if (!STATES.has(g("STABBR"))) { stats.outsideStates++; continue; }
-  keep.set(g("UNITID"), { unitid: g("UNITID"), name: tidy(g("INSTNM")), city: `${tidy(g("CITY"))}, ${g("STABBR")}`, kind: control === "1" ? "public" : "private", website: website(g("INSTURL")) });
+  if (control === "3") { if (main) stats.forProfit++; continue; }
+  if (control !== "1" && control !== "2") { if (main) stats.otherControl++; continue; }
+  if (!STATES.has(g("STABBR"))) { if (main) stats.outsideStates++; continue; }
+  (main ? keep : branches).set(g("UNITID"), { unitid: g("UNITID"), branch: !main, name: tidy(g("INSTNM")), city: `${tidy(g("CITY"))}, ${g("STABBR")}`, kind: control === "1" ? "public" : "private", website: website(g("INSTURL")) });
 }
 stats.institutionsKept = keep.size;
+stats.branchCandidates = branches.size;
 
 // Ids: existing sheet ids, else "us-" + slug (+ unit id when the slug collides).
 const slugCount = new Map();
@@ -166,41 +170,94 @@ for (const i of keep.values()) {
   else { i.id = "us-" + slug(i.name).slice(0, 70); if (slugCount.get(slug(i.name)) > 1 || usedIds.has(i.id)) i.id += "-" + i.unitid; i.hasSheet = false; }
   usedIds.add(i.id);
 }
+// Branch campuses get their ids after the main campuses, so no existing id changes.
+const branchSlugs = new Map();
+for (const i of branches.values()) branchSlugs.set(slug(i.name), (branchSlugs.get(slug(i.name)) || 0) + 1);
+for (const i of branches.values()) {
+  i.id = "us-" + slug(i.name).slice(0, 70); i.hasSheet = false;
+  if (branchSlugs.get(slug(i.name)) > 1 || usedIds.has(i.id)) i.id += "-" + i.unitid;
+  usedIds.add(i.id);
+}
 const missingSheets = Object.entries(SHEETS).filter(([n]) => ![...keep.values()].some((i) => i.name === n)).map(([n]) => n);
+
+// ---- IPEDS Completions 2023-24: bachelor's degrees (AWLEVEL 5) per institution and 4-digit CIP; graduates summed over 6-digit codes and both majors ----
+const ipeds = new Map(); // UNITID -> Map(cip4 -> graduates); an institution is here only when it reported bachelor's degrees under its own id
+for (const g of readCsv(find("C2024_A.csv"))) {
+  if (g("AWLEVEL") !== "5" || g("CIPCODE").startsWith("99")) continue; // 99 = totals
+  const cip = g("CIPCODE").replace(".", "").slice(0, 4);
+  const m = ipeds.get(g("UNITID")) || ipeds.set(g("UNITID"), new Map()).get(g("UNITID"));
+  m.set(cip, (m.get(cip) || 0) + (Number(g("CTOTALT")) || 0));
+}
 
 // ---- Programmes (bachelor's degree, credential level 3) ----
 const fos = readCsv(find("Most-Recent-Cohorts-Field-of-Study.csv"));
 stats.fieldRowsInFile = fos.length;
 const programs = []; const seen = new Set(); const perInst = new Map();
 stats.bachelorRowsAtKeptInstitutions = 0; stats.droppedReservedOrHighSchool = 0;
-for (const g of fos) {
-  if (g("CREDLEV") !== "3") continue;
-  const inst = keep.get(g("UNITID"));
-  if (!inst) continue;
-  stats.bachelorRowsAtKeptInstitutions++;
-  const cip = g("CIPCODE");
-  const name = tidy(g("CIPDESC")).replace(/\.$/, "");
-  if (/^reserved$/i.test(name) || cip.startsWith("53")) { stats.droppedReservedOrHighSchool++; continue; } // not real bachelor fields
+stats.rowsDroppedNoBachelorInIpeds = 0; stats.branchRows = 0; stats.branchRowsNoOwnIpedsRecord = 0; stats.branchRowsWithoutGraduates = 0;
+const noIpeds = new Set(); const cipTitle = new Map();
+const add = (inst, cip, name, source) => {
   const family = FAMILY[cip.slice(0, 2)];
   if (!family) throw new Error(`no family title for CIP ${cip}`);
   const key = `us-${inst.id.replace(/^us-/, "")}--${cip}-${slug(name).slice(0, 60)}`.replace(/-+$/, "");
-  if (seen.has(key)) continue;
+  if (seen.has(key)) return;
   seen.add(key);
   perInst.set(inst.id, (perInst.get(inst.id) || 0) + 1);
   programs.push({
-    key, country: "US", institutionId: inst.id, institutionName: inst.name, city: inst.city, domain: family, domainId: domainOf(cip), name, language: "engleză", years: 4, source: SOURCE,
+    key, country: "US", institutionId: inst.id, institutionName: inst.name, city: inst.city, domain: family, domainId: domainOf(cip), name, language: "engleză", years: 4, source,
     search: ascii(`${name} ${family} ${inst.name} ${inst.city} engleza`),
   });
+};
+const graduates = (g) => Number(g("IPEDSCOUNT1")) > 0 || Number(g("IPEDSCOUNT2")) > 0;
+for (const g of fos) {
+  const cip = g("CIPCODE");
+  const name = tidy(g("CIPDESC")).replace(/\.$/, "");
+  if (!cipTitle.has(cip)) cipTitle.set(cip, name);
+  if (g("CREDLEV") !== "3") continue;
+  const inst = keep.get(g("UNITID")) || branches.get(g("UNITID"));
+  if (!inst) continue;
+  if (inst.branch) stats.branchRows++; else stats.bachelorRowsAtKeptInstitutions++;
+  if (/^reserved$/i.test(name) || cip.startsWith("53")) { if (!inst.branch) stats.droppedReservedOrHighSchool++; continue; } // not real bachelor fields
+  // No bachelor's degree record of its own in IPEDS 2023-24: a main campus then awards no bachelor's degrees; for a branch the Scorecard rows
+  // are its parent's list repeated (the same rows and counts on every sibling campus), so it is left out.
+  if (!ipeds.has(inst.unitid)) { if (inst.branch) stats.branchRowsNoOwnIpedsRecord++; else { stats.rowsDroppedNoBachelorInIpeds++; noIpeds.add(inst.name); } continue; }
+  // Branch campuses: only fields with at least one graduate in the two award years the Scorecard gives, because some systems list the
+  // main campus's whole programme list on every branch with zero graduates.
+  if (inst.branch && !graduates(g)) { stats.branchRowsWithoutGraduates++; continue; }
+  add(inst, cip, name, SOURCE);
+}
+
+// Branch campuses with an IPEDS record but no Scorecard row with graduates (new campuses): fields with graduates in IPEDS 2023-24, details from HD2024.
+const hd = new Map(readCsv(find("HD2024.csv")).map((g) => [g("UNITID"), g]));
+const fromIpeds = [];
+for (const inst of branches.values()) {
+  if (perInst.has(inst.id) || !ipeds.has(inst.unitid)) continue;
+  const h = hd.get(inst.unitid);
+  if (!h || h("ICLEVEL") !== "1" || h("DEGGRANT") !== "1" || h("CYACTIVE") !== "1" || !["1", "2"].includes(h("CONTROL")) || !STATES.has(h("STABBR"))) continue;
+  Object.assign(inst, { name: tidy(h("INSTNM")), city: `${tidy(h("CITY"))}, ${h("STABBR")}`, kind: h("CONTROL") === "1" ? "public" : "private", website: website(h("WEBADDR")), source: SOURCE_IPEDS });
+  for (const [cip, n] of ipeds.get(inst.unitid)) {
+    if (!(n > 0)) continue;
+    const name = cipTitle.get(cip);
+    if (!name || /^reserved$/i.test(name) || cip.startsWith("53")) { stats.ipedsRowsWithoutCipTitle = (stats.ipedsRowsWithoutCipTitle || 0) + 1; continue; }
+    add(inst, cip, name, SOURCE_IPEDS);
+  }
+  if (perInst.has(inst.id)) fromIpeds.push(`${inst.name} (${perInst.get(inst.id)})`);
 }
 programs.sort((a, b) => (a.key < b.key ? -1 : 1));
 
-const institutions = [...keep.values()].filter((i) => perInst.has(i.id)).map((i) => {
-  const o = { id: i.id, country: "US", source: SOURCE, name: i.name, officialName: i.name, city: i.city, kind: i.kind, hasSheet: i.hasSheet };
+const institutions = [...keep.values(), ...branches.values()].filter((i) => perInst.has(i.id)).map((i) => {
+  const o = { id: i.id, country: "US", source: i.source || SOURCE, name: i.name, officialName: i.name, city: i.city, kind: i.kind, hasSheet: i.hasSheet };
   if (i.website) o.website = i.website;
   o.programs = perInst.get(i.id);
   return o;
 }).sort((a, b) => (a.id < b.id ? -1 : 1));
-stats.institutionsWithoutBachelorRows = keep.size - institutions.length;
+stats.branchCampuses = [...branches.values()].filter((i) => perInst.has(i.id)).length;
+stats.mainCampuses = institutions.length - stats.branchCampuses;
+stats.mainCampusesWithoutBachelorRows = keep.size - stats.mainCampuses - noIpeds.size;
+stats.mainCampusesDroppedNoBachelorInIpeds = [...noIpeds].sort();
+stats.branchCampusesFromIpeds = fromIpeds;
+stats.rowsFromIpeds = programs.filter((p) => p.source === SOURCE_IPEDS).length;
+stats.publicInstitutions = institutions.filter((i) => i.kind === "public").length;
 
 writeFileSync(new URL("us-institutions.json", out), JSON.stringify(institutions, null, 1) + "\n");
 const jsonOld = new URL("us-programs.json", out);

@@ -66,8 +66,8 @@ function parseBlock(blk) {
   }
   return { id: m[1], types: (props["rdf:type"] || []).map((v) => v.raw), props };
 }
-const KEEP_TYPES = new Set(["elm:LearningOpportunity", "elm:Qualification", "elm:Organisation", "dct:Location", "elm:Address", "elm:Note", "elm:WebResource", "elm:CreditPoint", "dct:PeriodOfTime"]);
-const DROP_PROPS = new Set(["dct:description", "elm:learningOutcome", "elm:learningOutcomeSummary", "elm:additionalNote", "elm:supplementaryDocument", "elm:contactPoint", "adms:identifier", "elm:awardingOpportunity", "elm:grant"]);
+const KEEP_TYPES = new Set(["elm:LearningOpportunity", "elm:Qualification", "elm:Organisation", "dct:Location", "elm:Address", "elm:Note", "elm:WebResource", "elm:CreditPoint", "dct:PeriodOfTime", "elm:Identifier", "elm:LearningOutcome"]);
+const DROP_PROPS = new Set(["dct:description", "elm:learningOutcomeSummary", "elm:additionalNote", "elm:supplementaryDocument", "elm:contactPoint", "elm:awardingOpportunity", "elm:grant"]);
 function loadGraph() {
   const g = new Map();
   for (const f of readdirSync(raw).filter((f) => f.endsWith(".ttl")).sort()) {
@@ -128,20 +128,36 @@ const RULES = [
   [/toerisme|hotel|horeca|recreatie/, "turism-servicii"], [/luchtvaart|maritieme|nautische|scheepvaart/, "marina-transporturi"],
 ];
 const domainFromName = (n) => { const a = ascii(n); for (const [re, d] of RULES) if (re.test(a)) return d; return null; };
+// Advanced bachelors ("bachelor-na-bachelor", banaba: 60 credits, entry only with a bachelor degree) are not first degrees and are dropped.
+// The source has no field for the degree type (same EQF/NQF level and qualification type as an initial bachelor, no credits), so they are recognised by:
+// 1. the words "bachelor-na-bachelor" / "banaba" in the programme title, the qualification title or the qualification's learning outcomes;
+// 2. the qualification number (the source's own "OK-" identifier in the Flemish qualification structure) of the qualifications that are advanced bachelors.
+//    The list was checked by hand on 2026-10-08 against the degree type "Bachelor na bachelor" in the Flemish Higher Education Register (2026-27);
+//    it only removes rows, no data is taken from that register.
+const BANABA_TEXT = /bachelor[- ]na[- ]bachelor|\bbanaba\b/i;
+const BANABA_QUALIFICATIONS = new Set(["OK-0073", "OK-0076", "OK-0080", "OK-0109", "OK-0120", "OK-0164", "OK-0179", "OK-0180", "OK-0184", "OK-0188", "OK-0215", "OK-0222", "OK-0230", "OK-0231", "OK-0233", "OK-0256", "OK-0265", "OK-0286", "OK-0290", "OK-0516", "OK-0546", "OK-0675", "OK-0692"]);
+const qualificationNumber = (q, g) => (q?.props["adms:identifier"] || []).map((v) => lit(g.get(v.iri), "skos:notation")).find((n) => /^OK-\d+$/.test(n || ""));
+const isBanaba = (title, q, g) => BANABA_QUALIFICATIONS.has(qualificationNumber(q, g)) || BANABA_TEXT.test(title) || BANABA_TEXT.test(titleOf(q, "nl"))
+  || (q?.props["elm:learningOutcome"] || []).some((v) => BANABA_TEXT.test(lit(g.get(v.iri), "dct:title") || ""));
 const cityOf = (addrs) => { for (const a of addrs) { const m = /.*\b(\d{4})\s+([^\d]+?)\s+(?:België|Belgique|Belgium)\s*\.?$/.exec(a); if (m) return m[2].trim(); } return null; };
 await ensureRaw();
 const g = loadGraph();
-const institutions = new Map(), programs = []; const skipped = { status: 0, level: 0, notBachelor: 0, noCity: 0, noOrg: 0 };
-for (const lo of g.values()) {
+const institutions = new Map(), programs = []; const seen = new Set(); const skipped = { status: 0, level: 0, notBachelor: 0, advancedBachelor: 0, noCity: 0, noOrg: 0, duplicate: 0 };
+// Sorted by record id so that the row kept from a group of duplicates is always the same one.
+for (const lo of [...g.values()].sort((a, b) => a.id.localeCompare(b.id))) {
   if (!lo.types.includes("elm:LearningOpportunity")) continue;
   if (lit(lo, "elm:status") !== "released") { skipped.status++; continue; }
   const q = g.get(first(lo, "elm:learningAchievementSpecification")?.iri);
   if (last(first(q, "elm:EQFLevel")?.iri) !== "6") { skipped.level++; continue; }
   const title = titleOf(lo, "nl");
-  if (!/bachelor/i.test(title) || /na-bachelor|bachelor-na|na bachelor/i.test(title)) { skipped.notBachelor++; continue; }
+  if (!/bachelor/i.test(title)) { skipped.notBachelor++; continue; }
+  if (isBanaba(title, q, g)) { skipped.advancedBachelor++; continue; }
   const org = g.get(first(lo, "elm:providedBy")?.iri); const orgName = clean(lit(org, "rov:legalName")); if (!orgName) { skipped.noOrg++; continue; }
   const city = cityOf(fullAddress(first(org, "elm:location")?.iri, g)); if (!city) { skipped.noCity++; continue; }
   const instId = SHEETS[orgName] || `be-${slug(orgName)}`.slice(0, 80);
+  // The same programme of one institution appears several times (one record per campus or variant), but the source gives no campus, city or language
+  // that tells the records apart, so they are merged into one row.
+  const dupKey = `${instId}|${ascii(title)}`; if (seen.has(dupKey)) { skipped.duplicate++; continue; } seen.add(dupKey);
   if (!institutions.has(instId)) institutions.set(instId, { id: instId, country: CC, source: SOURCE, name: orgName, officialName: orgName, city, kind: "unknown", hasSheet: orgName in SHEETS, ...(webOf(org, g) ? { website: webOf(org, g) } : {}) });
   const code = iscedOf(q)[0];
   const language = LANG[last(first(lo, "elm:defaultLanguage")?.iri)] || "olandeză";

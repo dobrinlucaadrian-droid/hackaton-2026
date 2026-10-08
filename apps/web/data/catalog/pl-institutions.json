@@ -9,7 +9,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.ateneum.edu.pl",
-  "programs": 15
+  "programs": 14
  },
  {
   "id": "pl-akademia-bialska-im-jana-pawla-ii",
@@ -21,7 +21,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.akademiabialska.pl",
-  "programs": 40
+  "programs": 37
  },
  {
   "id": "pl-akademia-finansow-i-biznesu-vistula",
@@ -45,7 +45,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.agh.edu.pl",
-  "programs": 123
+  "programs": 98
  },
  {
   "id": "pl-akademia-gornoslaska-im-wojciecha-korfantego-w-katowicach",
@@ -57,7 +57,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.gwsh.pl",
-  "programs": 40
+  "programs": 39
  },
  {
   "id": "pl-akademia-handlowa-nauk-stosowanych-w-radomiu",
@@ -81,7 +81,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.ahe.lodz.pl",
-  "programs": 62
+  "programs": 56
  },
  {
   "id": "pl-akademia-humanitas",
@@ -105,7 +105,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.ajp.edu.pl",
-  "programs": 51
+  "programs": 50
  },
  {
   "id": "pl-akademia-jagiellonska-w-toruniu",
@@ -141,7 +141,7 @@
   "kind": "unknown",
   "hasSheet": false,
   "website": "http://www.pwt.wroc.pl/",
-  "programs": 7
+  "programs": 5
  },
  {
   "id": "pl-akademia-kujawsko-pomorska",
@@ -213,7 +213,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://al.edu.pl",
-  "programs": 36
+  "programs": 34
  },
  {
   "id": "pl-akademia-marynarki-wojennej-im-bohaterow-westerplatte",
@@ -261,7 +261,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.amisns.edu.pl",
-  "programs": 8
+  "programs": 6
  },
  {
   "id": "pl-akademia-muzyczna-im-feliksa-nowowiejskiego-w-bydgoszczy",
@@ -285,7 +285,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.amuz.lodz.pl/",
-  "programs": 14
+  "programs": 13
  },
  {
   "id": "pl-akademia-muzyczna-im-ignacego-jana-paderewskiego-w-poznaniu",
@@ -297,7 +297,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.amuz.edu.pl",
-  "programs": 15
+  "programs": 13
  },
  {
   "id": "pl-akademia-muzyczna-im-karola-lipinskiego-we-wroclawiu",
@@ -381,7 +381,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "https://www.wsgk.com.pl",
-  "programs": 11
+  "programs": 10
  },
  {
   "id": "pl-akademia-nauk-stosowanych-im-haliny-konopackiej-w-pruszkowie",
@@ -405,7 +405,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.ans-gniezno.edu.pl",
-  "programs": 13
+  "programs": 11
  },
  {
   "id": "pl-akademia-nauk-stosowanych-im-jana-amosa-komenskiego-w-lesznie",
@@ -429,7 +429,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.goluchowski.edu.pl",
-  "programs": 20
+  "programs": 13
  },
  {
   "id": "pl-akademia-nauk-stosowanych-im-ks-jerzego-popieluszki-w-grudziadzu",
@@ -441,7 +441,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://ansgrudziadz.pl",
-  "programs": 13
+  "programs": 12
  },
  {
   "id": "pl-akademia-nauk-stosowanych-im-prof-edwarda-lipinskiego-w-kielcach",
@@ -453,7 +453,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.lipinski.edu.pl",
-  "programs": 11
+  "programs": 10
  },
  {
   "id": "pl-akademia-nauk-stosowanych-im-stanislawa-staszica-w-pile",
@@ -477,7 +477,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.mazovia.edu.pl",
-  "programs": 16
+  "programs": 11
  },
  {
   "id": "pl-akademia-nauk-stosowanych-stefana-batorego",
@@ -489,7 +489,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://www.ansb.pl",
-  "programs": 26
+  "programs": 25
  },
  {
   "id": "pl-akademia-nauk-stosowanych-towarzystwa-wiedzy-powszechnej-w-szczecinie",
@@ -525,7 +525,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.ans-elblag.pl",
-  "programs": 24
+  "programs": 19
  },
  {
   "id": "pl-akademia-nauk-stosowanych-w-koninie",
@@ -549,7 +549,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.ans-ns.edu.pl",
-  "programs": 46
+  "programs": 39
  },
  {
   "id": "pl-akademia-nauk-stosowanych-w-nowym-targu",
@@ -573,7 +573,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://www.akademiarac.edu.pl",
-  "programs": 20
+  "programs": 19
  },
  {
   "id": "pl-akademia-nauk-stosowanych-w-walczu",
@@ -693,7 +693,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "https://ap.edu.pl/",
-  "programs": 17
+  "programs": 13
  },
  {
   "id": "pl-akademia-pozarnicza",
@@ -717,7 +717,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "https://akademiaslaska.pl/",
-  "programs": 34
+  "programs": 31
  },
  {
   "id": "pl-akademia-sztuk-pieknych-im-eugeniusza-gepperta-we-wroclawiu",
@@ -729,7 +729,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://asp.wroc.pl",
-  "programs": 24
+  "programs": 23
  },
  {
   "id": "pl-akademia-sztuk-pieknych-im-jana-matejki-w-krakowie",
@@ -765,7 +765,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.asp.gda.pl",
-  "programs": 11
+  "programs": 10
  },
  {
   "id": "pl-akademia-sztuk-pieknych-w-katowicach",
@@ -813,7 +813,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://www.akademiasztuki.eu/",
-  "programs": 28
+  "programs": 24
  },
  {
   "id": "pl-akademia-sztuki-wojennej",
@@ -837,7 +837,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.atar.edu.pl",
-  "programs": 54
+  "programs": 44
  },
  {
   "id": "pl-akademia-teatralna-im-aleksandra-zelwerowicza-w-warszawie",
@@ -861,7 +861,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.akademiaTa.pl",
-  "programs": 47
+  "programs": 46
  },
  {
   "id": "pl-akademia-techniczno-informatyczna-w-naukach-stosowanych",
@@ -909,7 +909,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.wsb.edu.pl",
-  "programs": 106
+  "programs": 90
  },
  {
   "id": "pl-akademia-wychowania-fizycznego-i-sportu-im-jedrzeja-sniadeckiego-w-gdansku",
@@ -921,7 +921,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.awf.gda.pl",
-  "programs": 14
+  "programs": 13
  },
  {
   "id": "pl-akademia-wychowania-fizycznego-im-eugeniusza-piaseckiego-w-poznaniu",
@@ -993,7 +993,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.akademiazamojska.edu.pl",
-  "programs": 21
+  "programs": 20
  },
  {
   "id": "pl-bielska-wyzsza-szkola-im-jozefa-tyszkiewicza-w-bielsku-bialej",
@@ -1005,7 +1005,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://tyszkiewicz.edu.pl",
-  "programs": 6
+  "programs": 4
  },
  {
   "id": "pl-bydgoska-szkola-wyzsza-w-bydgoszczy",
@@ -1065,7 +1065,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.cm.edu.pl",
-  "programs": 6
+  "programs": 3
  },
  {
   "id": "pl-collegium-verum",
@@ -1164,18 +1164,6 @@
   "programs": 11
  },
  {
-  "id": "pl-gdanska-wyzsza-szkola-humanistyczna-w-likwidacji",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Gdańska Wyższa Szkoła Humanistyczna w likwidacji",
-  "officialName": "Gdańska Wyższa Szkoła Humanistyczna w likwidacji",
-  "city": "Koszalin",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "http://www.gwsh.gda.pl",
-  "programs": 3
- },
- {
   "id": "pl-gdanski-uniwersytet-medyczny",
   "country": "PL",
   "source": "RAD-on POL-on 2026-10",
@@ -1221,7 +1209,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.kans.pl",
-  "programs": 15
+  "programs": 14
  },
  {
   "id": "pl-kaszubsko-pomorska-szkola-wyzsza-w-wejherowie",
@@ -1233,7 +1221,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.kpsw.pl",
-  "programs": 10
+  "programs": 9
  },
  {
   "id": "pl-katolicki-uniwersytet-lubelski-jana-pawla-ii",
@@ -1245,7 +1233,7 @@
   "kind": "unknown",
   "hasSheet": false,
   "website": "http://www.kul.pl",
-  "programs": 62
+  "programs": 61
  },
  {
   "id": "pl-koszalinska-wyzsza-szkola-nauk-humanistycznych-w-koszalinie",
@@ -1281,7 +1269,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.ksw.wloclawek.pl",
-  "programs": 14
+  "programs": 13
  },
  {
   "id": "pl-lingwistyczna-szkola-wyzsza-w-warszawie",
@@ -1305,7 +1293,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://www.law.mil.pl",
-  "programs": 13
+  "programs": 10
  },
  {
   "id": "pl-lubelska-akademia-wsei",
@@ -1317,7 +1305,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.wsei.pl",
-  "programs": 58
+  "programs": 53
  },
  {
   "id": "pl-lubelska-szkola-wyzsza-w-rykach",
@@ -1353,31 +1341,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://uczelniaoswiecim.edu.pl",
-  "programs": 27
- },
- {
-  "id": "pl-malopolska-wyzsza-szkola-ekonomiczna-w-likwidacji",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Małopolska Wyższa Szkoła Ekonomiczna w likwidacji",
-  "officialName": "Małopolska Wyższa Szkoła Ekonomiczna w likwidacji",
-  "city": "Tarnów",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "http://www.mwse.edu.pl",
-  "programs": 2
- },
- {
-  "id": "pl-menedzerska-akademia-nauk-stosowanych-w-warszawie",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Menedżerska Akademia Nauk Stosowanych w Warszawie",
-  "officialName": "Menedżerska Akademia Nauk Stosowanych w Warszawie",
-  "city": "Warszawa",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.mans.org.pl",
-  "programs": 4
+  "programs": 26
  },
  {
   "id": "pl-miedzynarodowa-akademia-nauk-stosowanych-w-lomzy",
@@ -1389,7 +1353,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.mans.edu.pl",
-  "programs": 17
+  "programs": 16
  },
  {
   "id": "pl-miedzynarodowa-uczelnia-nauk-spolecznych-medycznych-i-prawnych",
@@ -1424,7 +1388,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.nwsm.pl",
-  "programs": 10
+  "programs": 7
  },
  {
   "id": "pl-panstwowa-akademia-nauk-stosowanych-im-ignacego-moscickiego-w-ciechanowie",
@@ -1460,7 +1424,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.pans.tarnobrzeg.pl",
-  "programs": 7
+  "programs": 6
  },
  {
   "id": "pl-panstwowa-akademia-nauk-stosowanych-w-chelmie",
@@ -1472,7 +1436,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://panschelm.edu.pl",
-  "programs": 17
+  "programs": 16
  },
  {
   "id": "pl-panstwowa-akademia-nauk-stosowanych-w-glogowie",
@@ -1496,7 +1460,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://pans-koszalin.pl",
-  "programs": 13
+  "programs": 11
  },
  {
   "id": "pl-panstwowa-akademia-nauk-stosowanych-w-krosnie",
@@ -1508,7 +1472,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.pans.krosno.pl",
-  "programs": 38
+  "programs": 32
  },
  {
   "id": "pl-panstwowa-akademia-nauk-stosowanych-w-nysie",
@@ -1532,7 +1496,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://pansp.pl",
-  "programs": 13
+  "programs": 11
  },
  {
   "id": "pl-panstwowa-akademia-nauk-stosowanych-we-wloclawku",
@@ -1604,7 +1568,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://pb.edu.pl/",
-  "programs": 59
+  "programs": 54
  },
  {
   "id": "pl-politechnika-bydgoska-im-jana-i-jedrzeja-sniadeckich",
@@ -1616,7 +1580,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://www.pbs.edu.pl",
-  "programs": 68
+  "programs": 66
  },
  {
   "id": "pl-politechnika-czestochowska",
@@ -1640,7 +1604,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://pg.edu.pl",
-  "programs": 61
+  "programs": 53
  },
  {
   "id": "pl-politechnika-koszalinska",
@@ -1652,7 +1616,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.tu.koszalin.pl",
-  "programs": 56
+  "programs": 54
  },
  {
   "id": "pl-politechnika-krakowska-im-tadeusza-kosciuszki",
@@ -1664,7 +1628,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.pk.edu.pl",
-  "programs": 59
+  "programs": 55
  },
  {
   "id": "pl-politechnika-lodzka",
@@ -1676,7 +1640,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.p.lodz.pl",
-  "programs": 110
+  "programs": 100
  },
  {
   "id": "pl-politechnika-lubelska",
@@ -1688,7 +1652,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.pollub.pl",
-  "programs": 47
+  "programs": 45
  },
  {
   "id": "pl-politechnika-morska-w-szczecinie",
@@ -1700,7 +1664,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.pm.szczecin.pl",
-  "programs": 26
+  "programs": 25
  },
  {
   "id": "pl-politechnika-opolska",
@@ -1736,7 +1700,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.prz.edu.pl",
-  "programs": 52
+  "programs": 51
  },
  {
   "id": "pl-politechnika-slaska",
@@ -1748,7 +1712,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.polsl.pl",
-  "programs": 93
+  "programs": 87
  },
  {
   "id": "pl-politechnika-swietokrzyska",
@@ -1760,7 +1724,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.tu.kielce.pl/",
-  "programs": 49
+  "programs": 47
  },
  {
   "id": "pl-politechnika-warszawska",
@@ -1772,7 +1736,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.pw.edu.pl",
-  "programs": 94
+  "programs": 86
  },
  {
   "id": "pl-politechnika-wroclawska",
@@ -1784,7 +1748,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.pwr.edu.pl",
-  "programs": 89
+  "programs": 79
  },
  {
   "id": "pl-polsko-japonska-akademia-technik-komputerowych",
@@ -1796,7 +1760,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.pja.edu.pl",
-  "programs": 25
+  "programs": 23
  },
  {
   "id": "pl-pomorska-szkola-wyzsza-w-starogardzie-gdanskim",
@@ -1820,7 +1784,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.pum.edu.pl",
-  "programs": 23
+  "programs": 22
  },
  {
   "id": "pl-powislanska-akademia-nauk-stosowanych",
@@ -1832,7 +1796,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://powislanska.edu.pl",
-  "programs": 23
+  "programs": 15
  },
  {
   "id": "pl-powszechna-wyzsza-szkola-humanistyczna-pomerania-w-chojnicach",
@@ -1904,7 +1868,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.rsw.edu.pl",
-  "programs": 2
+  "programs": 1
  },
  {
   "id": "pl-slaska-wyzsza-szkola-medyczna-w-katowicach",
@@ -1916,7 +1880,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.swsm.pl",
-  "programs": 7
+  "programs": 6
  },
  {
   "id": "pl-slaski-uniwersytet-medyczny-w-katowicach",
@@ -1940,7 +1904,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "https://sopocka.edu.pl/",
-  "programs": 17
+  "programs": 16
  },
  {
   "id": "pl-spoleczna-akademia-nauk-z-siedziba-w-lodzi",
@@ -2000,7 +1964,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.sgh.waw.pl",
-  "programs": 20
+  "programs": 18
  },
  {
   "id": "pl-szkola-glowna-krajowa-z-siedziba-w-warszawie",
@@ -2059,7 +2023,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.wlodkowic.pl",
-  "programs": 18
+  "programs": 17
  },
  {
   "id": "pl-szkola-wyzsza-rzemiosl-artystycznych-i-zarzadzania-we-wroclawiu",
@@ -2239,7 +2203,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "https://uafm.edu.pl/",
-  "programs": 81
+  "programs": 79
  },
  {
   "id": "pl-uniwersytet-artystyczny-im-magdaleny-abakanowicz-w-poznaniu",
@@ -2251,7 +2215,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.uap.edu.pl",
-  "programs": 37
+  "programs": 36
  },
  {
   "id": "pl-uniwersytet-bielsko-bialski",
@@ -2263,7 +2227,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://ubb.edu.pl",
-  "programs": 51
+  "programs": 50
  },
  {
   "id": "pl-uniwersytet-civitas",
@@ -2299,7 +2263,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.ue.katowice.pl",
-  "programs": 56
+  "programs": 51
  },
  {
   "id": "pl-uniwersytet-ekonomiczny-w-krakowie",
@@ -2311,7 +2275,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.uek.krakow.pl",
-  "programs": 72
+  "programs": 70
  },
  {
   "id": "pl-uniwersytet-ekonomiczny-w-poznaniu",
@@ -2323,7 +2287,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.ue.poznan.pl",
-  "programs": 26
+  "programs": 23
  },
  {
   "id": "pl-uniwersytet-ekonomiczny-we-wroclawiu",
@@ -2335,7 +2299,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://uew.pl",
-  "programs": 47
+  "programs": 43
  },
  {
   "id": "pl-uniwersytet-gdanski",
@@ -2371,7 +2335,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.amu.edu.pl",
-  "programs": 187
+  "programs": 186
  },
  {
   "id": "pl-uniwersytet-jagiellonski-w-krakowie",
@@ -2395,7 +2359,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.ujd.edu.pl",
-  "programs": 73
+  "programs": 72
  },
  {
   "id": "pl-uniwersytet-jana-kochanowskiego-w-kielcach",
@@ -2419,7 +2383,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://uniwersytetkaliski.edu.pl/",
-  "programs": 48
+  "programs": 44
  },
  {
   "id": "pl-uniwersytet-kardynala-stefana-wyszynskiego-w-warszawie",
@@ -2431,7 +2395,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.uksw.edu.pl",
-  "programs": 66
+  "programs": 63
  },
  {
   "id": "pl-uniwersytet-kazimierza-wielkiego-w-bydgoszczy",
@@ -2443,7 +2407,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://ukw.edu.pl",
-  "programs": 97
+  "programs": 90
  },
  {
   "id": "pl-uniwersytet-komisji-edukacji-narodowej-w-krakowie",
@@ -2455,7 +2419,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.uken.krakow.pl",
-  "programs": 127
+  "programs": 125
  },
  {
   "id": "pl-uniwersytet-lodzki",
@@ -2467,7 +2431,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.uni.lodz.pl/index.php",
-  "programs": 134
+  "programs": 126
  },
  {
   "id": "pl-uniwersytet-marii-curie-sklodowskiej-w-lublinie",
@@ -2479,7 +2443,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.umcs.pl",
-  "programs": 112
+  "programs": 110
  },
  {
   "id": "pl-uniwersytet-medyczny-im-karola-marcinkowskiego-w-poznaniu",
@@ -2503,7 +2467,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.umw.edu.pl",
-  "programs": 26
+  "programs": 25
  },
  {
   "id": "pl-uniwersytet-medyczny-w-bialymstoku",
@@ -2515,7 +2479,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.umb.edu.pl",
-  "programs": 26
+  "programs": 25
  },
  {
   "id": "pl-uniwersytet-medyczny-w-lodzi",
@@ -2527,7 +2491,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.umed.pl",
-  "programs": 21
+  "programs": 20
  },
  {
   "id": "pl-uniwersytet-medyczny-w-lublinie",
@@ -2539,7 +2503,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.umlub.edu.pl",
-  "programs": 24
+  "programs": 23
  },
  {
   "id": "pl-uniwersytet-mikolaja-kopernika-w-toruniu",
@@ -2551,7 +2515,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://www.umk.pl",
-  "programs": 124
+  "programs": 122
  },
  {
   "id": "pl-uniwersytet-morski-w-gdyni",
@@ -2575,7 +2539,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.chopin.edu.pl",
-  "programs": 17
+  "programs": 16
  },
  {
   "id": "pl-uniwersytet-opolski",
@@ -2587,7 +2551,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://uni.opole.pl",
-  "programs": 86
+  "programs": 82
  },
  {
   "id": "pl-uniwersytet-papieski-jana-pawla-ii-w-krakowie",
@@ -2599,7 +2563,7 @@
   "kind": "unknown",
   "hasSheet": false,
   "website": "http://upjp2.edu.pl",
-  "programs": 24
+  "programs": 20
  },
  {
   "id": "pl-uniwersytet-pomorski-w-slupsku",
@@ -2623,7 +2587,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.up.edu.pl",
-  "programs": 70
+  "programs": 66
  },
  {
   "id": "pl-uniwersytet-przyrodniczy-w-poznaniu",
@@ -2635,7 +2599,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://puls.edu.pl/",
-  "programs": 48
+  "programs": 47
  },
  {
   "id": "pl-uniwersytet-przyrodniczy-we-wroclawiu",
@@ -2659,7 +2623,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.uniwersytetradom.pl",
-  "programs": 85
+  "programs": 83
  },
  {
   "id": "pl-uniwersytet-rolniczy-im-hugona-kollataja-w-krakowie",
@@ -2683,7 +2647,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.ur.edu.pl",
-  "programs": 97
+  "programs": 96
  },
  {
   "id": "pl-uniwersytet-slaski-w-katowicach",
@@ -2695,7 +2659,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.us.edu.pl",
-  "programs": 125
+  "programs": 122
  },
  {
   "id": "pl-uniwersytet-swps",
@@ -2707,7 +2671,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.swps.pl",
-  "programs": 80
+  "programs": 76
  },
  {
   "id": "pl-uniwersytet-szczecinski",
@@ -2719,7 +2683,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://usz.edu.pl/",
-  "programs": 115
+  "programs": 111
  },
  {
   "id": "pl-uniwersytet-vizja",
@@ -2755,7 +2719,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.uws.edu.pl",
-  "programs": 56
+  "programs": 51
  },
  {
   "id": "pl-uniwersytet-warminsko-mazurski-w-olsztynie",
@@ -2767,7 +2731,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.uwm.edu.pl",
-  "programs": 104
+  "programs": 103
  },
  {
   "id": "pl-uniwersytet-warszawski",
@@ -2779,7 +2743,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.uw.edu.pl",
-  "programs": 186
+  "programs": 159
  },
  {
   "id": "pl-uniwersytet-wroclawski",
@@ -2815,7 +2779,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.merito.pl",
-  "programs": 137
+  "programs": 135
  },
  {
   "id": "pl-uniwersytet-wsb-merito-w-toruniu",
@@ -2863,7 +2827,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.uz.zgora.pl",
-  "programs": 120
+  "programs": 118
  },
  {
   "id": "pl-viamoda-szkola-wyzsza-z-siedziba-w-warszawie",
@@ -2947,7 +2911,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.wumed.edu.pl",
-  "programs": 16
+  "programs": 13
  },
  {
   "id": "pl-warszawska-wyzsza-szkola-informatyki-w-warszawie",
@@ -2984,17 +2948,6 @@
   "hasSheet": false,
   "website": "http://www.wase.edu.pl",
   "programs": 16
- },
- {
-  "id": "pl-wielkopolska-uczelnia-techniczna-w-likwidacji",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Wielkopolska Uczelnia Techniczna w likwidacji",
-  "officialName": "Wielkopolska Uczelnia Techniczna w likwidacji",
-  "city": "Złotniki",
-  "kind": "private",
-  "hasSheet": false,
-  "programs": 2
  },
  {
   "id": "pl-wojskowa-akademia-techniczna-im-jaroslawa-dabrowskiego",
@@ -3186,7 +3139,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.wsb-nlu.edu.pl",
-  "programs": 29
+  "programs": 26
  },
  {
   "id": "pl-wyzsza-szkola-biznesu-w-gorzowie-wlkp",
@@ -3199,18 +3152,6 @@
   "hasSheet": false,
   "website": "http://www.wsb.gorzow.pl",
   "programs": 1
- },
- {
-  "id": "pl-wyzsza-szkola-cosinus-w-lodzi-z-siedziba-w-lodzi-w-likwidacji",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Wyższa Szkoła COSINUS w Łodzi z siedzibą w Łodzi w likwidacji",
-  "officialName": "Wyższa Szkoła COSINUS w Łodzi z siedzibą w Łodzi w likwidacji",
-  "city": "Łódź",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "http://www.ws.cosinus.pl",
-  "programs": 2
  },
  {
   "id": "pl-wyzsza-szkola-edukacja-w-sporcie-w-warszawie",
@@ -3247,18 +3188,6 @@
   "hasSheet": false,
   "website": "http://www.wse.edu.pl",
   "programs": 5
- },
- {
-  "id": "pl-wyzsza-szkola-ekonomiczna-z-siedziba-w-stalowej-woli-w-likwidacji",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Wyższa Szkoła Ekonomiczna z siedzibą w Stalowej Woli w likwidacji",
-  "officialName": "Wyższa Szkoła Ekonomiczna z siedzibą w Stalowej Woli w likwidacji",
-  "city": "Stalowa Wola",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "http://www.wse.stalowawola.pl",
-  "programs": 1
  },
  {
   "id": "pl-wyzsza-szkola-ekonomiczno-humanistyczna-w-bielsku-bialej",
@@ -3318,7 +3247,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.wsg.byd.pl",
-  "programs": 53
+  "programs": 47
  },
  {
   "id": "pl-wyzsza-szkola-hotelarstwa-i-gastronomii-w-poznaniu-w-restrukturyzacji",
@@ -3381,42 +3310,6 @@
   "programs": 1
  },
  {
-  "id": "pl-wyzsza-szkola-informatyki-i-umiejetnosci-w-likwidacji",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Wyższa Szkoła Informatyki i Umiejętności w likwidacji",
-  "officialName": "Wyższa Szkoła Informatyki i Umiejętności w likwidacji",
-  "city": "Łódź",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "http://www.wsinf.edu.pl",
-  "programs": 11
- },
- {
-  "id": "pl-wyzsza-szkola-informatyki-i-zarzadzania-copernicus-we-wroclawiu-w-likwidacji",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Wyższa Szkoła Informatyki i Zarządzania „COPERNICUS” we Wrocławiu w likwidacji",
-  "officialName": "Wyższa Szkoła Informatyki i Zarządzania „COPERNICUS” we Wrocławiu w likwidacji",
-  "city": "Wrocław",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "http://www.wsiz.wroc.pl",
-  "programs": 2
- },
- {
-  "id": "pl-wyzsza-szkola-informatyki-i-zarzadzania-im-prof-tadeusza-kotarbinskiego-z-sie",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Wyższa Szkoła Informatyki i Zarządzania im. Prof. Tadeusza Kotarbińskiego z siedzibą w Olsztynie",
-  "officialName": "Wyższa Szkoła Informatyki i Zarządzania im. Prof. Tadeusza Kotarbińskiego z siedzibą w Olsztynie",
-  "city": "Olsztyn",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "http://www.owsiiz.edu.pl",
-  "programs": 2
- },
- {
   "id": "pl-wyzsza-szkola-informatyki-i-zarzadzania-w-bielsku-bialej",
   "country": "PL",
   "source": "RAD-on POL-on 2026-10",
@@ -3441,30 +3334,6 @@
   "programs": 22
  },
  {
-  "id": "pl-wyzsza-szkola-informatyki-i-zdrowia-w-likwidacji",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Wyższa Szkoła Informatyki i Zdrowia w likwidacji",
-  "officialName": "Wyższa Szkoła Informatyki i Zdrowia w likwidacji",
-  "city": "Przemyśl",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://wsiiz-ai.edu.pl/",
-  "programs": 5
- },
- {
-  "id": "pl-wyzsza-szkola-integracji-europejskiej-w-likwidacji",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Wyższa Szkoła Integracji Europejskiej w likwidacji",
-  "officialName": "Wyższa Szkoła Integracji Europejskiej w likwidacji",
-  "city": "Szczecin",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "http://www.wsie.pl/",
-  "programs": 3
- },
- {
   "id": "pl-wyzsza-szkola-inzynierii-gospodarki-w-slupsku",
   "country": "PL",
   "source": "RAD-on POL-on 2026-10",
@@ -3475,18 +3344,6 @@
   "hasSheet": false,
   "website": "http://www.wsig-slupsk.pl",
   "programs": 2
- },
- {
-  "id": "pl-wyzsza-szkola-inzynieryjno-ekonomiczna-z-siedziba-w-rzeszowie-w-likwidacji",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Wyższa Szkoła Inżynieryjno-Ekonomiczna z siedzibą w Rzeszowie w likwidacji",
-  "officialName": "Wyższa Szkoła Inżynieryjno-Ekonomiczna z siedzibą w Rzeszowie w likwidacji",
-  "city": "Rzeszów",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "http://www.wsie.edu.pl",
-  "programs": 1
  },
  {
   "id": "pl-wyzsza-szkola-jezykow-obcych-im-samuela-bogumila-lindego-z-siedziba-w-poznani",
@@ -3510,7 +3367,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.wskm.edu.pl",
-  "programs": 15
+  "programs": 14
  },
  {
   "id": "pl-wyzsza-szkola-komunikacji-i-zarzadzania",
@@ -3570,7 +3427,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.wsl.edu.pl",
-  "programs": 8
+  "programs": 7
  },
  {
   "id": "pl-wyzsza-szkola-logistyki-w-poznaniu",
@@ -3606,7 +3463,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.wsmsosnowiec.pl",
-  "programs": 7
+  "programs": 5
  },
  {
   "id": "pl-wyzsza-szkola-medyczna-z-siedziba-w-bialymstoku",
@@ -3618,7 +3475,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.wsmed.edu.pl",
-  "programs": 10
+  "programs": 8
  },
  {
   "id": "pl-wyzsza-szkola-nauk-medycznych-w-warszawie",
@@ -3657,18 +3514,6 @@
   "programs": 6
  },
  {
-  "id": "pl-wyzsza-szkola-nauk-prawnych-i-administracji-im-leona-petrazyckiego-w-likwidac",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Wyższa Szkoła Nauk Prawnych i Administracji im. Leona Petrażyckiego w likwidacji",
-  "officialName": "Wyższa Szkoła Nauk Prawnych i Administracji im. Leona Petrażyckiego w likwidacji",
-  "city": "Wołomin",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "http://www.fuaw.pl",
-  "programs": 1
- },
- {
   "id": "pl-wyzsza-szkola-nauk-spolecznych-i-bezpieczenstwa",
   "country": "PL",
   "source": "RAD-on POL-on 2026-10",
@@ -3690,7 +3535,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.wsnsrs.edu.pl",
-  "programs": 3
+  "programs": 2
  },
  {
   "id": "pl-wyzsza-szkola-pedagogiczno-techniczna-w-koninie",
@@ -3714,7 +3559,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.wsps.pl/",
-  "programs": 13
+  "programs": 5
  },
  {
   "id": "pl-wyzsza-szkola-prawa-i-administracji-rzeszowska-szkola-wyzsza-z-siedziba-w-rze",
@@ -3762,7 +3607,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.wspa.pl",
-  "programs": 34
+  "programs": 30
  },
  {
   "id": "pl-wyzsza-szkola-przedsiebiorczosci-imienia-ksiecia-kazimierza-kujawskiego-z-sie",
@@ -3834,19 +3679,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.wssip.edu.pl",
-  "programs": 10
- },
- {
-  "id": "pl-wyzsza-szkola-techniczno-ekonomiczna-w-szczecinie-w-likwidacji-z-siedziba-w-s",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Wyższa Szkoła Techniczno-Ekonomiczna w Szczecinie w likwidacji z siedzibą w Szczecinie",
-  "officialName": "Wyższa Szkoła Techniczno-Ekonomiczna w Szczecinie w likwidacji z siedzibą w Szczecinie",
-  "city": "Szczecin",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "http://www.wste.szczecin.pl",
-  "programs": 1
+  "programs": 7
  },
  {
   "id": "pl-wyzsza-szkola-technik-komputerowych-i-telekomunikacji-w-kielcach",
@@ -3933,30 +3766,6 @@
   "programs": 2
  },
  {
-  "id": "pl-wyzsza-szkola-wspolpracy-miedzynarodowej-i-regionalnej-im-zygmunta-glogera-z",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Wyższa Szkoła Współpracy Międzynarodowej i Regionalnej im. Zygmunta Glogera z siedzibą w Wołominie w likwidacji",
-  "officialName": "Wyższa Szkoła Współpracy Międzynarodowej i Regionalnej im. Zygmunta Glogera z siedzibą w Wołominie w likwidacji",
-  "city": "Wołomin",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "http://www.fuaw.pl",
-  "programs": 3
- },
- {
-  "id": "pl-wyzsza-szkola-zarzadzania-i-administracji-w-likwidacji-z-siedziba-w-zamosciu",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Wyższa Szkoła Zarządzania i Administracji w likwidacji z siedzibą w Zamościu",
-  "officialName": "Wyższa Szkoła Zarządzania i Administracji w likwidacji z siedzibą w Zamościu",
-  "city": "Zamość",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "http://www.wszia.edu.pl",
-  "programs": 4
- },
- {
   "id": "pl-wyzsza-szkola-zarzadzania-i-bankowosci-akademia-nauk-stosowanych-w-krakowie",
   "country": "PL",
   "source": "RAD-on POL-on 2026-10",
@@ -3966,7 +3775,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.wszib.edu.pl",
-  "programs": 25
+  "programs": 23
  },
  {
   "id": "pl-wyzsza-szkola-zarzadzania-i-przedsiebiorczosci-z-siedziba-w-walbrzychu",
@@ -4002,7 +3811,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.wszop.edu.pl",
-  "programs": 18
+  "programs": 16
  },
  {
   "id": "pl-wyzsza-szkola-zarzadzania-srodowiskiem-w-tucholi",
@@ -4026,19 +3835,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.wsz.edu.pl/",
-  "programs": 5
- },
- {
-  "id": "pl-wyzsza-szkola-zawodowa-lodzkiej-korporacji-oswiatowej-w-lodzi-z-siedziba-w-lo",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Wyższa Szkoła Zawodowa Łódzkiej Korporacji Oświatowej w Łodzi z siedzibą w Łodzi w likwidacji",
-  "officialName": "Wyższa Szkoła Zawodowa Łódzkiej Korporacji Oświatowej w Łodzi z siedzibą w Łodzi w likwidacji",
-  "city": "Łódź",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "http://www.wszlko.edu.pl",
-  "programs": 1
+  "programs": 2
  },
  {
   "id": "pl-wyzsza-szkola-zawodowa-ochrony-zdrowia-twp-w-lomzy-z-siedziba-w-lomzy",
@@ -4098,6 +3895,6 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.zut.edu.pl",
-  "programs": 66
+  "programs": 61
  }
 ]

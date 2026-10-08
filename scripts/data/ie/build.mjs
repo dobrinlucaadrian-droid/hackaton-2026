@@ -66,8 +66,8 @@ function parseBlock(blk) {
   }
   return { id: m[1], types: (props["rdf:type"] || []).map((v) => v.raw), props };
 }
-const KEEP_TYPES = new Set(["elm:LearningOpportunity", "elm:Qualification", "elm:Organisation", "dct:Location", "elm:Address", "elm:Note", "elm:WebResource", "elm:CreditPoint", "dct:PeriodOfTime"]);
-const DROP_PROPS = new Set(["dct:description", "elm:learningOutcome", "elm:learningOutcomeSummary", "elm:additionalNote", "elm:supplementaryDocument", "elm:contactPoint", "adms:identifier", "elm:awardingOpportunity", "elm:grant"]);
+const KEEP_TYPES = new Set(["elm:LearningOpportunity", "elm:Qualification", "elm:Organisation", "dct:Location", "elm:Address", "elm:Note", "elm:WebResource", "elm:CreditPoint", "dct:PeriodOfTime", "elm:Identifier"]);
+const DROP_PROPS = new Set(["dct:description", "elm:learningOutcome", "elm:learningOutcomeSummary", "elm:additionalNote", "elm:supplementaryDocument", "elm:contactPoint", "elm:awardingOpportunity", "elm:grant"]);
 function loadGraph() {
   const g = new Map();
   for (const f of readdirSync(raw).filter((f) => f.endsWith(".ttl")).sort()) {
@@ -109,6 +109,15 @@ function writeOut(institutions, programs) {
 const SHEETS = {};
 const INCLUDE = /\bbachelor\b|\bB\.?\s?(?:A|Sc|Eng|Comm|Ed|Des|Mus|Sc\.)\b|\bBBS\b|\bBBA\b|\bBCL\b|\bLLB\b|\bBE\b|\bBN\b|\bBAI\b|honours degree|ordinary degree|\(hons\)/i;
 const EXCLUDE = /higher diploma|graduate diploma|postgraduate|certificate|diploma|micro-?credential|master|\bMSc\b|\bMA\b|\bMBA\b|\bPhD\b|doctor/i;
+// Integrated programmes entered from school that end with a master degree (EQF 7, Irish NFQ level 9) are first degrees for the student, so they are kept.
+// The source has no entry-route field; an EQF 7 record is kept only when the source itself marks it as undergraduate:
+// 1. its programme code is a Trinity-style code starting with "U" (Trinity College Dublin's own codes: U = undergraduate, P = postgraduate; "UI.." = undergraduate integrated), or
+// 2. its award title is a bachelor degree (for example "Bachelor of Veterinary in Medicine and Surgery") and its code is not a postgraduate ("P") one.
+// Every other EQF 7 record (taught and research masters, postgraduate diplomas and certificates) stays out.
+const codeOf = (lo, g) => (lo.props["adms:identifier"] || []).map((v) => lit(g.get(v.iri), "skos:notation")).find(Boolean) || "";
+const UNDERGRADUATE_CODE = /^U[A-Z]{3}-[A-Z]{4}-\d[A-Z]\b/, POSTGRADUATE_CODE = /^P[A-Z]{3}-[A-Z]{4}-\d[A-Z]\b/;
+const NOT_A_DEGREE = /certificate|diploma|micro-?credential/i;
+const isIntegrated = (code, both, qTitle) => !NOT_A_DEGREE.test(both) && (UNDERGRADUATE_CODE.test(code) || (/^bachelor\b/i.test(qTitle) && !POSTGRADUATE_CODE.test(code) && !EXCLUDE.test(both)));
 // The address of an Irish provider starts with its local-authority area ("Dublin City", "Cork City", "Limerick County", "Donegal"); that area is used as the city.
 const cityOf = (addrs) => {
   const a = addrs[0]; if (!a) return null; let c = clean(a.split(",")[0]);
@@ -117,18 +126,24 @@ const cityOf = (addrs) => {
 };
 await ensureRaw();
 const g = loadGraph();
-const institutions = new Map(), programs = []; const seen = new Set(); const skipped = { status: 0, level: 0, notBachelor: 0, noCity: 0, noOrg: 0, duplicate: 0 };
-for (const lo of g.values()) {
+const institutions = new Map(), programs = []; const seen = new Set(); const skipped = { status: 0, level: 0, masterLevelNotUndergraduate: 0, notBachelor: 0, noCity: 0, noOrg: 0, duplicate: 0 }; let integrated = 0;
+// Sorted by record id so that the row kept from a group of duplicates is always the same one.
+for (const lo of [...g.values()].sort((a, b) => a.id.localeCompare(b.id))) {
   if (!lo.types.includes("elm:LearningOpportunity")) continue;
   if (lit(lo, "elm:status") !== "released") { skipped.status++; continue; }
   const q = g.get(first(lo, "elm:learningAchievementSpecification")?.iri);
-  if (last(first(q, "elm:EQFLevel")?.iri) !== "6") { skipped.level++; continue; }
+  const eqf = last(first(q, "elm:EQFLevel")?.iri);
+  if (eqf !== "6" && eqf !== "7") { skipped.level++; continue; }
   const title = titleOf(lo, "en"), qTitle = titleOf(q, "en"), both = `${title} | ${qTitle}`;
-  if (!INCLUDE.test(both) || EXCLUDE.test(both)) { skipped.notBachelor++; continue; }
+  if (eqf === "7") { if (!isIntegrated(codeOf(lo, g), both, qTitle)) { skipped.masterLevelNotUndergraduate++; continue; } }
+  else if (!INCLUDE.test(both) || EXCLUDE.test(both)) { skipped.notBachelor++; continue; }
   const org = g.get(first(lo, "elm:providedBy")?.iri); const orgName = clean(lit(org, "rov:legalName")); if (!orgName) { skipped.noOrg++; continue; }
   const city = cityOf(fullAddress(first(org, "elm:location")?.iri, g)); if (!city) { skipped.noCity++; continue; }
   const instId = SHEETS[orgName] || `ie-${slug(orgName)}`.slice(0, 80);
-  const dupKey = `${instId}|${ascii(title)}|${ascii(qTitle)}`; if (seen.has(dupKey)) { skipped.duplicate++; continue; } seen.add(dupKey);
+  // One row per programme name of an institution: the same name with two awards (for example "Bachelor in Arts" and "Bachelor in Science"), two study modes
+  // or two intakes is the same programme for a student, and the source gives nothing to show that tells the records apart.
+  const dupKey = `${instId}|${ascii(title)}`; if (seen.has(dupKey)) { skipped.duplicate++; continue; } seen.add(dupKey);
+  if (eqf === "7") integrated++;
   if (!institutions.has(instId)) institutions.set(instId, { id: instId, country: CC, source: SOURCE, name: orgName, officialName: orgName, city, kind: "unknown", hasSheet: false });
   const codes = iscedOf(q), four = codes.find((c) => c.length === 4);
   const language = LANG[last(first(lo, "elm:defaultLanguage")?.iri)] || "engleză";
@@ -136,5 +151,5 @@ for (const lo of g.values()) {
   p.source = SOURCE; p.search = ascii([title, qTitle, orgName, city, language].join(" "));
   programs.push(p);
 }
-console.log("skipped", skipped);
+console.log("skipped", skipped, "integrated (EQF 7) rows kept:", integrated);
 writeOut(institutions, programs);

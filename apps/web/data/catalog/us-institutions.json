@@ -132,6 +132,18 @@
   "programs": 49
  },
  {
+  "id": "us-abilene-christian-university-undergraduate-online",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Abilene Christian University-Undergraduate Online",
+  "officialName": "Abilene Christian University-Undergraduate Online",
+  "city": "Addison, TX",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.acu.edu/academics/online/undergraduate",
+  "programs": 13
+ },
+ {
   "id": "us-abraham-baldwin-agricultural-college",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -322,6 +334,18 @@
   "hasSheet": false,
   "website": "https://www.albion.edu",
   "programs": 50
+ },
+ {
+  "id": "us-albizu-university-miami",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Albizu University-Miami",
+  "officialName": "Albizu University-Miami",
+  "city": "Miami, FL",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.albizu.edu",
+  "programs": 3
  },
  {
   "id": "us-albright-college",
@@ -720,6 +744,42 @@
   "programs": 10
  },
  {
+  "id": "us-antioch-university-los-angeles",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Antioch University-Los Angeles",
+  "officialName": "Antioch University-Los Angeles",
+  "city": "Culver City, CA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.antiochla.edu",
+  "programs": 1
+ },
+ {
+  "id": "us-antioch-university-santa-barbara",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Antioch University-Santa Barbara",
+  "officialName": "Antioch University-Santa Barbara",
+  "city": "Santa Barbara, CA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.antiochsb.edu",
+  "programs": 3
+ },
+ {
+  "id": "us-antioch-university-seattle",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Antioch University-Seattle",
+  "officialName": "Antioch University-Seattle",
+  "city": "Seattle, WA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.antiochseattle.edu",
+  "programs": 2
+ },
+ {
   "id": "us-appalachian-bible-college",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -802,6 +862,18 @@
   "hasSheet": false,
   "website": "https://www.asu.edu",
   "programs": 123
+ },
+ {
+  "id": "us-arizona-state-university-digital-immersion",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Arizona State University Digital Immersion",
+  "officialName": "Arizona State University Digital Immersion",
+  "city": "Scottsdale, AZ",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.asu.edu",
+  "programs": 60
  },
  {
   "id": "us-arkansas-baptist-college",
@@ -2040,6 +2112,18 @@
   "programs": 2
  },
  {
+  "id": "us-bloomfield-college-of-montclair-state-university",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Bloomfield College of Montclair State University",
+  "officialName": "Bloomfield College of Montclair State University",
+  "city": "Bloomfield, NJ",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.bloomfield.edu",
+  "programs": 21
+ },
+ {
   "id": "us-blue-mountain-christian-university",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -2230,6 +2314,18 @@
   "hasSheet": false,
   "website": "https://www.bowiestate.edu",
   "programs": 26
+ },
+ {
+  "id": "us-bowling-green-state-university-firelands",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Bowling Green State University-Firelands",
+  "officialName": "Bowling Green State University-Firelands",
+  "city": "Huron, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.firelands.bgsu.edu",
+  "programs": 3
  },
  {
   "id": "us-bowling-green-state-university-main-campus",
@@ -2448,6 +2544,18 @@
   "programs": 5
  },
  {
+  "id": "us-bryant-and-stratton-college-albany",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Bryant & Stratton College-Albany",
+  "officialName": "Bryant & Stratton College-Albany",
+  "city": "Albany, NY",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.bryantstratton.edu",
+  "programs": 2
+ },
+ {
   "id": "us-bryant-and-stratton-college-buffalo",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -2458,6 +2566,78 @@
   "hasSheet": false,
   "website": "https://www.bryantstratton.edu",
   "programs": 5
+ },
+ {
+  "id": "us-bryant-and-stratton-college-greece",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Bryant & Stratton College-Greece",
+  "officialName": "Bryant & Stratton College-Greece",
+  "city": "Rochester, NY",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.bryantstratton.edu",
+  "programs": 2
+ },
+ {
+  "id": "us-bryant-and-stratton-college-online",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Bryant & Stratton College-Online",
+  "officialName": "Bryant & Stratton College-Online",
+  "city": "Orchard Park, NY",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.bryantstratton.edu",
+  "programs": 8
+ },
+ {
+  "id": "us-bryant-and-stratton-college-parma",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Bryant & Stratton College-Parma",
+  "officialName": "Bryant & Stratton College-Parma",
+  "city": "Parma, OH",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.bryantstratton.edu",
+  "programs": 4
+ },
+ {
+  "id": "us-bryant-and-stratton-college-syracuse-north",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Bryant & Stratton College-Syracuse North",
+  "officialName": "Bryant & Stratton College-Syracuse North",
+  "city": "Liverpool, NY",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.bryantstratton.edu",
+  "programs": 3
+ },
+ {
+  "id": "us-bryant-and-stratton-college-virginia-beach",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Bryant & Stratton College-Virginia Beach",
+  "officialName": "Bryant & Stratton College-Virginia Beach",
+  "city": "Virginia Beach, VA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.bryantstratton.edu",
+  "programs": 8
+ },
+ {
+  "id": "us-bryant-and-stratton-college-wauwatosa",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Bryant & Stratton College-Wauwatosa",
+  "officialName": "Bryant & Stratton College-Wauwatosa",
+  "city": "Wauwatosa, WI",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.bryantstratton.edu",
+  "programs": 8
  },
  {
   "id": "us-bryant-university",
@@ -3334,6 +3514,18 @@
   "hasSheet": false,
   "website": "https://www.ccsu.edu",
   "programs": 55
+ },
+ {
+  "id": "us-central-methodist-university-college-of-graduate-and-extended-studies",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Central Methodist University-College of Graduate and Extended Studies",
+  "officialName": "Central Methodist University-College of Graduate and Extended Studies",
+  "city": "Fayette, MO",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.centralmethodist.edu",
+  "programs": 26
  },
  {
   "id": "us-central-methodist-university-college-of-liberal-arts-and-sciences",
@@ -4524,6 +4716,18 @@
   "programs": 41
  },
  {
+  "id": "us-concordia-university-ann-arbor",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Concordia University Ann Arbor",
+  "officialName": "Concordia University Ann Arbor",
+  "city": "Ann Arbor, MI",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.cuaa.edu",
+  "programs": 35
+ },
+ {
   "id": "us-concordia-university-chicago",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -5436,6 +5640,18 @@
   "programs": 57
  },
  {
+  "id": "us-drury-university-college-of-continuing-professional-studies",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Drury University-College of Continuing Professional Studies",
+  "officialName": "Drury University-College of Continuing Professional Studies",
+  "city": "Springfield, MO",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.drury.edu/go",
+  "programs": 17
+ },
+ {
   "id": "us-duke-university",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -5748,6 +5964,18 @@
   "programs": 1
  },
  {
+  "id": "us-edvance-college",
+  "country": "US",
+  "source": "IPEDS Completions 2023-24 (C2024_A, HD2024)",
+  "name": "EDvance College",
+  "officialName": "EDvance College",
+  "city": "San Francisco, CA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://edvance.edu",
+  "programs": 1
+ },
+ {
   "id": "us-edward-waters-university",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -5842,6 +6070,30 @@
   "hasSheet": false,
   "website": "https://daytonabeach.erau.edu",
   "programs": 29
+ },
+ {
+  "id": "us-embry-riddle-aeronautical-university-prescott",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Embry-Riddle Aeronautical University-Prescott",
+  "officialName": "Embry-Riddle Aeronautical University-Prescott",
+  "city": "Prescott, AZ",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://prescott.erau.edu",
+  "programs": 15
+ },
+ {
+  "id": "us-embry-riddle-aeronautical-university-worldwide",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Embry-Riddle Aeronautical University-Worldwide",
+  "officialName": "Embry-Riddle Aeronautical University-Worldwide",
+  "city": "Daytona Beach, FL",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://worldwide.erau.edu",
+  "programs": 11
  },
  {
   "id": "us-emerson-college",
@@ -6012,6 +6264,18 @@
   "programs": 46
  },
  {
+  "id": "us-evangel-university-college-of-online-learning",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Evangel University-College of Online Learning",
+  "officialName": "Evangel University-College of Online Learning",
+  "city": "Springfield, MO",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.evangel.edu",
+  "programs": 5
+ },
+ {
   "id": "us-everglades-university",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -6046,6 +6310,18 @@
   "hasSheet": false,
   "website": "https://fairfield.edu",
   "programs": 48
+ },
+ {
+  "id": "us-fairleigh-dickinson-university-florham-campus",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Fairleigh Dickinson University-Florham Campus",
+  "officialName": "Fairleigh Dickinson University-Florham Campus",
+  "city": "Madison, NJ",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.fdu.edu",
+  "programs": 29
  },
  {
   "id": "us-fairleigh-dickinson-university-metropolitan-campus",
@@ -7572,18 +7848,6 @@
   "programs": 38
  },
  {
-  "id": "us-hebrew-college",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Hebrew College",
-  "officialName": "Hebrew College",
-  "city": "Newton, MA",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://hebrewcollege.edu",
-  "programs": 1
- },
- {
   "id": "us-hebrew-theological-college",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -7704,6 +7968,66 @@
   "programs": 26
  },
  {
+  "id": "us-herzing-university-akron",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Herzing University-Akron",
+  "officialName": "Herzing University-Akron",
+  "city": "Akron, OH",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.herzing.edu",
+  "programs": 8
+ },
+ {
+  "id": "us-herzing-university-atlanta",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Herzing University-Atlanta",
+  "officialName": "Herzing University-Atlanta",
+  "city": "Atlanta, GA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.herzing.edu",
+  "programs": 10
+ },
+ {
+  "id": "us-herzing-university-birmingham",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Herzing University-Birmingham",
+  "officialName": "Herzing University-Birmingham",
+  "city": "Birmingham, AL",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.herzing.edu",
+  "programs": 7
+ },
+ {
+  "id": "us-herzing-university-brookfield",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Herzing University-Brookfield",
+  "officialName": "Herzing University-Brookfield",
+  "city": "Brookfield, WI",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.herzing.edu",
+  "programs": 8
+ },
+ {
+  "id": "us-herzing-university-kenosha",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Herzing University-Kenosha",
+  "officialName": "Herzing University-Kenosha",
+  "city": "Kenosha, WI",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.herzing.edu",
+  "programs": 6
+ },
+ {
   "id": "us-herzing-university-madison",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -7714,6 +8038,54 @@
   "hasSheet": false,
   "website": "https://www.herzing.edu",
   "programs": 15
+ },
+ {
+  "id": "us-herzing-university-minneapolis",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Herzing University-Minneapolis",
+  "officialName": "Herzing University-Minneapolis",
+  "city": "St. Louis Park, MN",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.herzing.edu",
+  "programs": 10
+ },
+ {
+  "id": "us-herzing-university-new-orleans",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Herzing University-New Orleans",
+  "officialName": "Herzing University-New Orleans",
+  "city": "Metairie, LA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.herzing.edu",
+  "programs": 11
+ },
+ {
+  "id": "us-herzing-university-orlando",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Herzing University-Orlando",
+  "officialName": "Herzing University-Orlando",
+  "city": "Winter Park, FL",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.herzing.edu",
+  "programs": 8
+ },
+ {
+  "id": "us-herzing-university-tampa",
+  "country": "US",
+  "source": "IPEDS Completions 2023-24 (C2024_A, HD2024)",
+  "name": "Herzing University-Tampa",
+  "officialName": "Herzing University-Tampa",
+  "city": "Tampa, FL",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://herzing.edu",
+  "programs": 2
  },
  {
   "id": "us-hesston-college",
@@ -8196,6 +8568,18 @@
   "programs": 35
  },
  {
+  "id": "us-indiana-institute-of-technology-college-of-professional-studies",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Indiana Institute of Technology-College of Professional Studies",
+  "officialName": "Indiana Institute of Technology-College of Professional Studies",
+  "city": "Fort Wayne, IN",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://cps.indianatech.edu",
+  "programs": 15
+ },
+ {
   "id": "us-indiana-state-university",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -8316,6 +8700,18 @@
   "programs": 64
  },
  {
+  "id": "us-indiana-wesleyan-university-national-and-global",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Indiana Wesleyan University-National & Global",
+  "officialName": "Indiana Wesleyan University-National & Global",
+  "city": "Marion, IN",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.indwes.edu",
+  "programs": 25
+ },
+ {
   "id": "us-institute-of-american-indian-and-alaska-native-culture-and-arts-develo",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -8326,18 +8722,6 @@
   "hasSheet": false,
   "website": "https://iaia.edu",
   "programs": 8
- },
- {
-  "id": "us-interdenominational-theological-center",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Interdenominational Theological Center",
-  "officialName": "Interdenominational Theological Center",
-  "city": "Atlanta, GA",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.itc.edu",
-  "programs": 1
  },
  {
   "id": "us-international-baptist-college-and-seminary",
@@ -8518,6 +8902,30 @@
   "hasSheet": false,
   "website": "https://www.jhu.edu",
   "programs": 60
+ },
+ {
+  "id": "us-johnson-and-wales-university-charlotte",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Johnson & Wales University-Charlotte",
+  "officialName": "Johnson & Wales University-Charlotte",
+  "city": "Charlotte, NC",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.jwu.edu/campuses/charlotte",
+  "programs": 13
+ },
+ {
+  "id": "us-johnson-and-wales-university-online",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Johnson & Wales University-Online",
+  "officialName": "Johnson & Wales University-Online",
+  "city": "Providence, RI",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://online.jwu.edu/?_ga=2.36357734.752362341.1629739669-391300583.1600981500",
+  "programs": 21
  },
  {
   "id": "us-johnson-and-wales-university-providence",
@@ -8712,15 +9120,39 @@
   "programs": 76
  },
  {
-  "id": "us-kenrick-glennon-seminary",
+  "id": "us-kent-state-university-at-ashtabula",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Kenrick Glennon Seminary",
-  "officialName": "Kenrick Glennon Seminary",
-  "city": "Saint Louis, MO",
-  "kind": "private",
+  "name": "Kent State University at Ashtabula",
+  "officialName": "Kent State University at Ashtabula",
+  "city": "Ashtabula, OH",
+  "kind": "public",
   "hasSheet": false,
-  "website": "https://www.kenrick.edu",
+  "website": "https://www.kent.edu/ashtabula",
+  "programs": 3
+ },
+ {
+  "id": "us-kent-state-university-at-east-liverpool",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Kent State University at East Liverpool",
+  "officialName": "Kent State University at East Liverpool",
+  "city": "East Liverpool, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.kent.edu/columbiana",
+  "programs": 2
+ },
+ {
+  "id": "us-kent-state-university-at-geauga",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Kent State University at Geauga",
+  "officialName": "Kent State University at Geauga",
+  "city": "Burton, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.kent.edu/geauga",
   "programs": 2
  },
  {
@@ -8734,6 +9166,54 @@
   "hasSheet": false,
   "website": "https://www.kent.edu",
   "programs": 97
+ },
+ {
+  "id": "us-kent-state-university-at-salem",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Kent State University at Salem",
+  "officialName": "Kent State University at Salem",
+  "city": "Salem, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.kent.edu/columbiana",
+  "programs": 5
+ },
+ {
+  "id": "us-kent-state-university-at-stark",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Kent State University at Stark",
+  "officialName": "Kent State University at Stark",
+  "city": "North Canton, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.kent.edu/stark",
+  "programs": 4
+ },
+ {
+  "id": "us-kent-state-university-at-trumbull",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Kent State University at Trumbull",
+  "officialName": "Kent State University at Trumbull",
+  "city": "Warren, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.kent.edu/trumbull",
+  "programs": 2
+ },
+ {
+  "id": "us-kent-state-university-at-tuscarawas",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Kent State University at Tuscarawas",
+  "officialName": "Kent State University at Tuscarawas",
+  "city": "New Philadelphia, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.kent.edu/tusc",
+  "programs": 5
  },
  {
   "id": "us-kentucky-christian-university",
@@ -10296,18 +10776,6 @@
   "programs": 9
  },
  {
-  "id": "us-mayo-clinic-college-of-medicine-and-science",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Mayo Clinic College of Medicine and Science",
-  "officialName": "Mayo Clinic College of Medicine and Science",
-  "city": "Rochester, MN",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://college.mayo.edu",
-  "programs": 1
- },
- {
   "id": "us-mayville-state-university",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -10644,6 +11112,30 @@
   "programs": 13
  },
  {
+  "id": "us-miami-university-hamilton",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Miami University-Hamilton",
+  "officialName": "Miami University-Hamilton",
+  "city": "Hamilton, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://miamioh.edu/regionals",
+  "programs": 20
+ },
+ {
+  "id": "us-miami-university-middletown",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Miami University-Middletown",
+  "officialName": "Miami University-Middletown",
+  "city": "Middletown, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://miamioh.edu/regionals",
+  "programs": 18
+ },
+ {
   "id": "us-miami-university-oxford",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -10774,6 +11266,18 @@
   "hasSheet": false,
   "website": "https://www.middlebury.edu/college",
   "programs": 42
+ },
+ {
+  "id": "us-middlebury-institute-of-international-studies-at-monterey",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Middlebury Institute of International Studies at Monterey",
+  "officialName": "Middlebury Institute of International Studies at Monterey",
+  "city": "Monterey, CA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.middlebury.edu/institute",
+  "programs": 1
  },
  {
   "id": "us-midland-college",
@@ -10930,6 +11434,18 @@
   "hasSheet": false,
   "website": "https://www.msoe.edu",
   "programs": 23
+ },
+ {
+  "id": "us-minerva-university",
+  "country": "US",
+  "source": "IPEDS Completions 2023-24 (C2024_A, HD2024)",
+  "name": "Minerva University",
+  "officialName": "Minerva University",
+  "city": "San Francisco, CA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://minerva.edu",
+  "programs": 5
  },
  {
   "id": "us-minneapolis-college-of-art-and-design",
@@ -11940,18 +12456,6 @@
   "programs": 1
  },
  {
-  "id": "us-new-york-college-of-traditional-chinese-medicine",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "New York College of Traditional Chinese Medicine",
-  "officialName": "New York College of Traditional Chinese Medicine",
-  "city": "Mineola, NY",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.nyctcm.edu",
-  "programs": 1
- },
- {
   "id": "us-new-york-institute-of-technology",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -12264,6 +12768,30 @@
   "programs": 76
  },
  {
+  "id": "us-northeastern-university-oakland",
+  "country": "US",
+  "source": "IPEDS Completions 2023-24 (C2024_A, HD2024)",
+  "name": "Northeastern University Oakland",
+  "officialName": "Northeastern University Oakland",
+  "city": "Oakland, CA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://oakland.northeastern.edu",
+  "programs": 17
+ },
+ {
+  "id": "us-northeastern-university-professional-programs",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Northeastern University Professional Programs",
+  "officialName": "Northeastern University Professional Programs",
+  "city": "Boston, MA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.northeastern.edu",
+  "programs": 30
+ },
+ {
   "id": "us-northern-arizona-university",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -12418,6 +12946,18 @@
   "hasSheet": false,
   "website": "https://www.northwestu.edu",
   "programs": 34
+ },
+ {
+  "id": "us-northwest-university-center-for-online-and-extended-education",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Northwest University-Center for Online and Extended Education",
+  "officialName": "Northwest University-Center for Online and Extended Education",
+  "city": "Kirkland, WA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.northwestu.edu",
+  "programs": 9
  },
  {
   "id": "us-northwestern-college",
@@ -12720,6 +13260,18 @@
   "programs": 51
  },
  {
+  "id": "us-ohio-state-university-lima-campus",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Ohio State University-Lima Campus",
+  "officialName": "Ohio State University-Lima Campus",
+  "city": "Lima, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://lima.osu.edu",
+  "programs": 10
+ },
+ {
   "id": "us-ohio-state-university-main-campus",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -12732,6 +13284,78 @@
   "programs": 129
  },
  {
+  "id": "us-ohio-state-university-mansfield-campus",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Ohio State University-Mansfield Campus",
+  "officialName": "Ohio State University-Mansfield Campus",
+  "city": "Mansfield, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://mansfield.osu.edu",
+  "programs": 9
+ },
+ {
+  "id": "us-ohio-state-university-marion-campus",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Ohio State University-Marion Campus",
+  "officialName": "Ohio State University-Marion Campus",
+  "city": "Marion, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://osumarion.osu.edu",
+  "programs": 8
+ },
+ {
+  "id": "us-ohio-state-university-newark-campus",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Ohio State University-Newark Campus",
+  "officialName": "Ohio State University-Newark Campus",
+  "city": "Newark, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://newark.osu.edu",
+  "programs": 7
+ },
+ {
+  "id": "us-ohio-university-chillicothe-campus",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Ohio University-Chillicothe Campus",
+  "officialName": "Ohio University-Chillicothe Campus",
+  "city": "Chillicothe, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.ohio.edu/chillicothe",
+  "programs": 12
+ },
+ {
+  "id": "us-ohio-university-eastern-campus",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Ohio University-Eastern Campus",
+  "officialName": "Ohio University-Eastern Campus",
+  "city": "Saint Clairsville, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.ohio.edu/eastern",
+  "programs": 11
+ },
+ {
+  "id": "us-ohio-university-lancaster-campus",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Ohio University-Lancaster Campus",
+  "officialName": "Ohio University-Lancaster Campus",
+  "city": "Lancaster, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.ohio.edu/lancaster",
+  "programs": 21
+ },
+ {
   "id": "us-ohio-university-main-campus",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -12742,6 +13366,30 @@
   "hasSheet": false,
   "website": "https://www.ohio.edu",
   "programs": 102
+ },
+ {
+  "id": "us-ohio-university-southern-campus",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Ohio University-Southern Campus",
+  "officialName": "Ohio University-Southern Campus",
+  "city": "Ironton, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.ohio.edu/southern",
+  "programs": 11
+ },
+ {
+  "id": "us-ohio-university-zanesville-campus",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Ohio University-Zanesville Campus",
+  "officialName": "Ohio University-Zanesville Campus",
+  "city": "Zanesville, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.ohio.edu/zanesville",
+  "programs": 15
  },
  {
   "id": "us-ohio-wesleyan-university",
@@ -12960,6 +13608,42 @@
   "programs": 4
  },
  {
+  "id": "us-ottawa-university-kansas-city",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Ottawa University-Kansas City",
+  "officialName": "Ottawa University-Kansas City",
+  "city": "Overland Park, KS",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.ottawa.edu",
+  "programs": 19
+ },
+ {
+  "id": "us-ottawa-university-milwaukee",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Ottawa University-Milwaukee",
+  "officialName": "Ottawa University-Milwaukee",
+  "city": "Brookfield, WI",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.ottawa.edu",
+  "programs": 12
+ },
+ {
+  "id": "us-ottawa-university-online",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Ottawa University-Online",
+  "officialName": "Ottawa University-Online",
+  "city": "Overland Park, KS",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.ottawa.edu",
+  "programs": 18
+ },
+ {
   "id": "us-ottawa-university-ottawa",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -12970,6 +13654,18 @@
   "hasSheet": false,
   "website": "https://www.ottawa.edu",
   "programs": 35
+ },
+ {
+  "id": "us-ottawa-university-surprise",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Ottawa University-Surprise",
+  "officialName": "Ottawa University-Surprise",
+  "city": "Surprise, AZ",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.ottawa.edu/ouaz/home",
+  "programs": 14
  },
  {
   "id": "us-otterbein-university",
@@ -13356,6 +14052,246 @@
   "programs": 141
  },
  {
+  "id": "us-pennsylvania-state-university-penn-state-abington",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-Penn State Abington",
+  "officialName": "Pennsylvania State University-Penn State Abington",
+  "city": "Abington, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://abington.psu.edu",
+  "programs": 26
+ },
+ {
+  "id": "us-pennsylvania-state-university-penn-state-altoona",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-Penn State Altoona",
+  "officialName": "Pennsylvania State University-Penn State Altoona",
+  "city": "Altoona, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://altoona.psu.edu",
+  "programs": 22
+ },
+ {
+  "id": "us-pennsylvania-state-university-penn-state-beaver",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-Penn State Beaver",
+  "officialName": "Pennsylvania State University-Penn State Beaver",
+  "city": "Monaca, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://beaver.psu.edu",
+  "programs": 11
+ },
+ {
+  "id": "us-pennsylvania-state-university-penn-state-berks",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-Penn State Berks",
+  "officialName": "Pennsylvania State University-Penn State Berks",
+  "city": "Reading, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://berks.psu.edu",
+  "programs": 25
+ },
+ {
+  "id": "us-pennsylvania-state-university-penn-state-brandywine",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-Penn State Brandywine",
+  "officialName": "Pennsylvania State University-Penn State Brandywine",
+  "city": "Media, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://brandywine.psu.edu",
+  "programs": 16
+ },
+ {
+  "id": "us-pennsylvania-state-university-penn-state-dubois",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-Penn State DuBois",
+  "officialName": "Pennsylvania State University-Penn State DuBois",
+  "city": "DuBois, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://dubois.psu.edu",
+  "programs": 8
+ },
+ {
+  "id": "us-pennsylvania-state-university-penn-state-erie-behrend-college",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-Penn State Erie-Behrend College",
+  "officialName": "Pennsylvania State University-Penn State Erie-Behrend College",
+  "city": "Erie, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://behrend.psu.edu",
+  "programs": 35
+ },
+ {
+  "id": "us-pennsylvania-state-university-penn-state-fayette-eberly",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-Penn State Fayette- Eberly",
+  "officialName": "Pennsylvania State University-Penn State Fayette- Eberly",
+  "city": "Lemont Furnace, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://fayette.psu.edu",
+  "programs": 10
+ },
+ {
+  "id": "us-pennsylvania-state-university-penn-state-greater-allegheny",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-Penn State Greater Allegheny",
+  "officialName": "Pennsylvania State University-Penn State Greater Allegheny",
+  "city": "McKeesport, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://greaterallegheny.psu.edu",
+  "programs": 9
+ },
+ {
+  "id": "us-pennsylvania-state-university-penn-state-harrisburg",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-Penn State Harrisburg",
+  "officialName": "Pennsylvania State University-Penn State Harrisburg",
+  "city": "Middletown, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://harrisburg.psu.edu",
+  "programs": 34
+ },
+ {
+  "id": "us-pennsylvania-state-university-penn-state-hazleton",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-Penn State Hazleton",
+  "officialName": "Pennsylvania State University-Penn State Hazleton",
+  "city": "Hazleton, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://hazleton.psu.edu",
+  "programs": 13
+ },
+ {
+  "id": "us-pennsylvania-state-university-penn-state-lehigh-valley",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-Penn State Lehigh Valley",
+  "officialName": "Pennsylvania State University-Penn State Lehigh Valley",
+  "city": "Center Valley, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://lehighvalley.psu.edu",
+  "programs": 15
+ },
+ {
+  "id": "us-pennsylvania-state-university-penn-state-mont-alto",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-Penn State Mont Alto",
+  "officialName": "Pennsylvania State University-Penn State Mont Alto",
+  "city": "Mont Alto, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://montalto.psu.edu",
+  "programs": 9
+ },
+ {
+  "id": "us-pennsylvania-state-university-penn-state-new-kensington",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-Penn State New Kensington",
+  "officialName": "Pennsylvania State University-Penn State New Kensington",
+  "city": "New Kensington, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://newkensington.psu.edu",
+  "programs": 9
+ },
+ {
+  "id": "us-pennsylvania-state-university-penn-state-schuylkill",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-Penn State Schuylkill",
+  "officialName": "Pennsylvania State University-Penn State Schuylkill",
+  "city": "Schuylkill Haven, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://schuylkill.psu.edu",
+  "programs": 10
+ },
+ {
+  "id": "us-pennsylvania-state-university-penn-state-scranton",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-Penn State Scranton",
+  "officialName": "Pennsylvania State University-Penn State Scranton",
+  "city": "Dunmore, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://scranton.psu.edu",
+  "programs": 14
+ },
+ {
+  "id": "us-pennsylvania-state-university-penn-state-shenango",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-Penn State Shenango",
+  "officialName": "Pennsylvania State University-Penn State Shenango",
+  "city": "Sharon, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://shenango.psu.edu",
+  "programs": 9
+ },
+ {
+  "id": "us-pennsylvania-state-university-penn-state-wilkes-barre",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-Penn State Wilkes-Barre",
+  "officialName": "Pennsylvania State University-Penn State Wilkes-Barre",
+  "city": "Dallas, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://wilkesbarre.psu.edu",
+  "programs": 12
+ },
+ {
+  "id": "us-pennsylvania-state-university-penn-state-york",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-Penn State York",
+  "officialName": "Pennsylvania State University-Penn State York",
+  "city": "York, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://york.psu.edu",
+  "programs": 13
+ },
+ {
+  "id": "us-pennsylvania-state-university-world-campus",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Pennsylvania State University-World Campus",
+  "officialName": "Pennsylvania State University-World Campus",
+  "city": "University Park, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://worldcampus.psu.edu",
+  "programs": 46
+ },
+ {
   "id": "us-pennsylvania-western-university",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -13560,6 +14496,18 @@
   "programs": 5
  },
  {
+  "id": "us-polytechnic-university-of-puerto-rico-orlando",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Polytechnic University of Puerto Rico-Orlando",
+  "officialName": "Polytechnic University of Puerto Rico-Orlando",
+  "city": "Orlando, FL",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.pupr.edu/orlando",
+  "programs": 6
+ },
+ {
   "id": "us-pomona-college",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -13594,6 +14542,18 @@
   "hasSheet": false,
   "website": "https://www.pdx.edu",
   "programs": 72
+ },
+ {
+  "id": "us-potomac-state-college-of-west-virginia-university",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Potomac State College of West Virginia University",
+  "officialName": "Potomac State College of West Virginia University",
+  "city": "Keyser, WV",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.potomacstatecollege.edu",
+  "programs": 1
  },
  {
   "id": "us-prairie-view-a-and-m-university",
@@ -14100,6 +15060,18 @@
   "programs": 2
  },
  {
+  "id": "us-remington-college-shreveport-campus",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Remington College-Shreveport Campus",
+  "officialName": "Remington College-Shreveport Campus",
+  "city": "Shreveport, LA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.remingtoncollege.edu/locations/shreveport-louisiana",
+  "programs": 1
+ },
+ {
   "id": "us-rensselaer-polytechnic-institute",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -14484,6 +15456,18 @@
   "programs": 17
  },
  {
+  "id": "us-rutgers-university-camden",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Rutgers University-Camden",
+  "officialName": "Rutgers University-Camden",
+  "city": "Camden, NJ",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://camden.rutgers.edu",
+  "programs": 31
+ },
+ {
   "id": "us-rutgers-university-new-brunswick",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -14494,6 +15478,18 @@
   "hasSheet": false,
   "website": "https://newbrunswick.rutgers.edu",
   "programs": 103
+ },
+ {
+  "id": "us-rutgers-university-newark",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Rutgers University-Newark",
+  "officialName": "Rutgers University-Newark",
+  "city": "Newark, NJ",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.newark.rutgers.edu",
+  "programs": 35
  },
  {
   "id": "us-sacred-heart-major-seminary",
@@ -14698,6 +15694,18 @@
   "hasSheet": false,
   "website": "https://www.sjcme.edu",
   "programs": 44
+ },
+ {
+  "id": "us-saint-joseph-s-university-lancaster",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Saint Joseph's University - Lancaster",
+  "officialName": "Saint Joseph's University - Lancaster",
+  "city": "Lancaster, PA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.sju.edu/lancaster",
+  "programs": 4
  },
  {
   "id": "us-saint-joseph-s-university-philadelphia",
@@ -15012,6 +16020,18 @@
   "programs": 79
  },
  {
+  "id": "us-san-francisco-bay-university",
+  "country": "US",
+  "source": "IPEDS Completions 2023-24 (C2024_A, HD2024)",
+  "name": "San Francisco Bay University",
+  "officialName": "San Francisco Bay University",
+  "city": "Fremont, CA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.sfbu.edu",
+  "programs": 1
+ },
+ {
   "id": "us-san-francisco-conservatory-of-music",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -15118,6 +16138,18 @@
   "hasSheet": false,
   "website": "https://www.sarahlawrence.edu",
   "programs": 1
+ },
+ {
+  "id": "us-sattler-college",
+  "country": "US",
+  "source": "IPEDS Completions 2023-24 (C2024_A, HD2024)",
+  "name": "Sattler College",
+  "officialName": "Sattler College",
+  "city": "Boston, MA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://sattler.edu",
+  "programs": 5
  },
  {
   "id": "us-savannah-college-of-art-and-design",
@@ -15442,6 +16474,18 @@
   "hasSheet": false,
   "website": "https://www.simmons.edu",
   "programs": 53
+ },
+ {
+  "id": "us-simon-s-rock-at-bard-college",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Simon's Rock at Bard College",
+  "officialName": "Simon's Rock at Bard College",
+  "city": "Barrytown, NY",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.simons-rock.edu",
+  "programs": 28
  },
  {
   "id": "us-simpson-college",
@@ -16210,6 +17254,18 @@
   "hasSheet": false,
   "website": "https://springfield.edu",
   "programs": 39
+ },
+ {
+  "id": "us-springfield-college-regional-online-and-continuing-education",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Springfield College-Regional Online and Continuing Education",
+  "officialName": "Springfield College-Regional Online and Continuing Education",
+  "city": "Springfield, MA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://springfield.edu/academics/online-programs",
+  "programs": 6
  },
  {
   "id": "us-st-bonaventure-university",
@@ -17364,6 +18420,18 @@
   "programs": 53
  },
  {
+  "id": "us-the-chicago-school-at-chicago",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "The Chicago School at Chicago",
+  "officialName": "The Chicago School at Chicago",
+  "city": "Chicago, IL",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.thechicagoschool.edu/in-the-community/locations",
+  "programs": 1
+ },
+ {
   "id": "us-the-chicago-school-at-los-angeles",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -17374,6 +18442,18 @@
   "hasSheet": false,
   "website": "https://www.thechicagoschool.edu/in-the-community/locations",
   "programs": 2
+ },
+ {
+  "id": "us-the-chicago-school-at-san-diego",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "The Chicago School at San Diego",
+  "officialName": "The Chicago School at San Diego",
+  "city": "San Diego, CA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.thechicagoschool.edu/in-the-community/locations",
+  "programs": 1
  },
  {
   "id": "us-the-christ-college-of-nursing-and-health-sciences",
@@ -17542,6 +18622,18 @@
   "hasSheet": false,
   "website": "https://www.sbts.edu",
   "programs": 7
+ },
+ {
+  "id": "us-the-southwestern-baptist-theological-seminary",
+  "country": "US",
+  "source": "IPEDS Completions 2023-24 (C2024_A, HD2024)",
+  "name": "The Southwestern Baptist Theological Seminary",
+  "officialName": "The Southwestern Baptist Theological Seminary",
+  "city": "Fort Worth, TX",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://swbts.edu",
+  "programs": 1
  },
  {
   "id": "us-the-university-of-alabama",
@@ -18000,15 +19092,15 @@
   "programs": 35
  },
  {
-  "id": "us-touro-university-california",
+  "id": "us-touro-university-nevada",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Touro University California",
-  "officialName": "Touro University California",
-  "city": "Vallejo, CA",
+  "name": "Touro University Nevada",
+  "officialName": "Touro University Nevada",
+  "city": "Henderson, NV",
   "kind": "private",
   "hasSheet": false,
-  "website": "https://www.tu.edu",
+  "website": "https://www.tun.touro.edu",
   "programs": 1
  },
  {
@@ -18082,6 +19174,18 @@
   "hasSheet": false,
   "website": "https://www.trine.edu",
   "programs": 36
+ },
+ {
+  "id": "us-trine-university-regional-non-traditional-campuses",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Trine University-Regional/Non-Traditional Campuses",
+  "officialName": "Trine University-Regional/Non-Traditional Campuses",
+  "city": "Angola, IN",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://trine.edu/online/index.aspx",
+  "programs": 12
  },
  {
   "id": "us-trinidad-state-college",
@@ -18552,6 +19656,18 @@
   "programs": 89
  },
  {
+  "id": "us-university-of-akron-wayne-college",
+  "country": "US",
+  "source": "IPEDS Completions 2023-24 (C2024_A, HD2024)",
+  "name": "University of Akron Wayne College",
+  "officialName": "University of Akron Wayne College",
+  "city": "Orrville, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://wayne.uakron.edu",
+  "programs": 4
+ },
+ {
   "id": "us-university-of-alabama-at-birmingham",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -18912,6 +20028,30 @@
   "programs": 52
  },
  {
+  "id": "us-university-of-cincinnati-blue-ash-college",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of Cincinnati-Blue Ash College",
+  "officialName": "University of Cincinnati-Blue Ash College",
+  "city": "Blue Ash, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.ucblueash.edu",
+  "programs": 2
+ },
+ {
+  "id": "us-university-of-cincinnati-clermont-college",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of Cincinnati-Clermont College",
+  "officialName": "University of Cincinnati-Clermont College",
+  "city": "Batavia, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.ucclermont.edu",
+  "programs": 1
+ },
+ {
   "id": "us-university-of-cincinnati-main-campus",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -19066,6 +20206,18 @@
   "hasSheet": false,
   "website": "https://www.ufl.edu",
   "programs": 93
+ },
+ {
+  "id": "us-university-of-florida-online",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of Florida-Online",
+  "officialName": "University of Florida-Online",
+  "city": "Gainesville, FL",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.ufonline.ufl.edu",
+  "programs": 23
  },
  {
   "id": "us-university-of-fort-lauderdale",
@@ -19692,6 +20844,18 @@
   "programs": 35
  },
  {
+  "id": "us-university-of-minnesota-rochester",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of Minnesota-Rochester",
+  "officialName": "University of Minnesota-Rochester",
+  "city": "Rochester, MN",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://r.umn.edu",
+  "programs": 1
+ },
+ {
   "id": "us-university-of-minnesota-twin-cities",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -19894,6 +21058,30 @@
   "hasSheet": false,
   "website": "https://www.une.edu",
   "programs": 40
+ },
+ {
+  "id": "us-university-of-new-hampshire-at-manchester",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of New Hampshire at Manchester",
+  "officialName": "University of New Hampshire at Manchester",
+  "city": "Manchester, NH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://manchester.unh.edu",
+  "programs": 17
+ },
+ {
+  "id": "us-university-of-new-hampshire-college-of-professional-studies-online",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of New Hampshire College of Professional Studies Online",
+  "officialName": "University of New Hampshire College of Professional Studies Online",
+  "city": "Manchester, NH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://cps.unh.edu/online",
+  "programs": 23
  },
  {
   "id": "us-university-of-new-hampshire-main-campus",
@@ -20172,6 +21360,18 @@
   "programs": 56
  },
  {
+  "id": "us-university-of-oklahoma-health-sciences-center",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of Oklahoma-Health Sciences Center",
+  "officialName": "University of Oklahoma-Health Sciences Center",
+  "city": "Oklahoma City, OK",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://ouhsc.edu",
+  "programs": 6
+ },
+ {
   "id": "us-university-of-oklahoma-norman-campus",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -20206,6 +21406,42 @@
   "hasSheet": false,
   "website": "https://www.upike.edu",
   "programs": 24
+ },
+ {
+  "id": "us-university-of-pittsburgh-bradford",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of Pittsburgh-Bradford",
+  "officialName": "University of Pittsburgh-Bradford",
+  "city": "Bradford, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.upb.pitt.edu",
+  "programs": 28
+ },
+ {
+  "id": "us-university-of-pittsburgh-greensburg",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of Pittsburgh-Greensburg",
+  "officialName": "University of Pittsburgh-Greensburg",
+  "city": "Greensburg, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.greensburg.pitt.edu",
+  "programs": 24
+ },
+ {
+  "id": "us-university-of-pittsburgh-johnstown",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of Pittsburgh-Johnstown",
+  "officialName": "University of Pittsburgh-Johnstown",
+  "city": "Johnstown, PA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.upj.pitt.edu",
+  "programs": 33
  },
  {
   "id": "us-university-of-pittsburgh-pittsburgh-campus",
@@ -20350,18 +21586,6 @@
   "hasSheet": false,
   "website": "https://www.stmary.edu",
   "programs": 30
- },
- {
-  "id": "us-university-of-saint-mary-of-the-lake",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "University of Saint Mary of the Lake",
-  "officialName": "University of Saint Mary of the Lake",
-  "city": "Mundelein, IL",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://usml.edu",
-  "programs": 1
  },
  {
   "id": "us-university-of-san-diego",
@@ -20652,6 +21876,18 @@
   "programs": 56
  },
  {
+  "id": "us-university-of-the-people",
+  "country": "US",
+  "source": "IPEDS Completions 2023-24 (C2024_A, HD2024)",
+  "name": "University of the People",
+  "officialName": "University of the People",
+  "city": "Pasadena, CA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.uopeople.edu",
+  "programs": 3
+ },
+ {
   "id": "us-university-of-the-southwest",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -20760,6 +21996,18 @@
   "programs": 27
  },
  {
+  "id": "us-university-of-washington-bothell-campus",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of Washington-Bothell Campus",
+  "officialName": "University of Washington-Bothell Campus",
+  "city": "Bothell, WA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.uwb.edu",
+  "programs": 32
+ },
+ {
   "id": "us-university-of-washington-seattle-campus",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -20770,6 +22018,18 @@
   "hasSheet": false,
   "website": "https://www.washington.edu",
   "programs": 139
+ },
+ {
+  "id": "us-university-of-washington-tacoma-campus",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of Washington-Tacoma Campus",
+  "officialName": "University of Washington-Tacoma Campus",
+  "city": "Tacoma, WA",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.tacoma.uw.edu",
+  "programs": 29
  },
  {
   "id": "us-university-of-west-alabama",
@@ -20880,6 +22140,18 @@
   "programs": 89
  },
  {
+  "id": "us-university-of-wisconsin-milwaukee-flex",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of Wisconsin-Milwaukee Flex",
+  "officialName": "University of Wisconsin-Milwaukee Flex",
+  "city": "Milwaukee, WI",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://flex.wisconsin.edu",
+  "programs": 4
+ },
+ {
   "id": "us-university-of-wisconsin-oshkosh",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -20902,6 +22174,18 @@
   "hasSheet": false,
   "website": "https://www.uwp.edu",
   "programs": 41
+ },
+ {
+  "id": "us-university-of-wisconsin-parkside-flex",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of Wisconsin-Parkside Flex",
+  "officialName": "University of Wisconsin-Parkside Flex",
+  "city": "Kenosha, WI",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://flex.wisconsin.edu",
+  "programs": 1
  },
  {
   "id": "us-university-of-wisconsin-platteville",
@@ -21528,6 +22812,18 @@
   "programs": 30
  },
  {
+  "id": "us-warner-pacific-university-professional-and-graduate-studies",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Warner Pacific University Professional and Graduate Studies",
+  "officialName": "Warner Pacific University Professional and Graduate Studies",
+  "city": "Portland, OR",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.warnerpacific.edu",
+  "programs": 8
+ },
+ {
   "id": "us-warner-university",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -21936,6 +23232,18 @@
   "programs": 9
  },
  {
+  "id": "us-west-virginia-university-institute-of-technology",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "West Virginia University Institute of Technology",
+  "officialName": "West Virginia University Institute of Technology",
+  "city": "Beckley, WV",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://www.wvutech.edu",
+  "programs": 24
+ },
+ {
   "id": "us-west-virginia-wesleyan-college",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -22246,6 +23554,18 @@
   "hasSheet": false,
   "website": "https://www.whitworth.edu",
   "programs": 43
+ },
+ {
+  "id": "us-whitworth-university-adult-degree-programs",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Whitworth University-Adult Degree Programs",
+  "officialName": "Whitworth University-Adult Degree Programs",
+  "city": "Spokane, WA",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "https://www.whitworth.edu/cms",
+  "programs": 5
  },
  {
   "id": "us-wichita-state-university",
@@ -22642,6 +23962,18 @@
   "hasSheet": false,
   "website": "https://www.wmu.edu",
   "programs": 5
+ },
+ {
+  "id": "us-wright-state-university-lake-campus",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Wright State University-Lake Campus",
+  "officialName": "Wright State University-Lake Campus",
+  "city": "Celina, OH",
+  "kind": "public",
+  "hasSheet": false,
+  "website": "https://lake.wright.edu",
+  "programs": 10
  },
  {
   "id": "us-wright-state-university-main-campus",

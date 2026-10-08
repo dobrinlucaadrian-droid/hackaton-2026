@@ -1,8 +1,11 @@
-// Turns the parsed rows of HG 606/2026 into the app's data files: Romanian institutions and their bachelor programmes, with checks.
+// Turns the parsed rows of HG 606/2026 into the app's data files: Romanian institutions and their bachelor programmes, with checks. Usage: node build.mjs [folder with rows.json and raw.json; default: this folder]
 import { readFileSync, writeFileSync } from "node:fs";
+import { pathToFileURL } from "node:url";
+import { resolve } from "node:path";
 const WEB = "C:/CODING/HACKATON_2026/apps/web/";
-const raw = JSON.parse(readFileSync(new URL("rows.json", import.meta.url), "utf8"));
-const pages = JSON.parse(readFileSync(new URL("raw.json", import.meta.url), "utf8"));
+const DATA = process.argv[2] ? pathToFileURL(resolve(process.argv[2]) + "/") : new URL("./", import.meta.url);
+const raw = JSON.parse(readFileSync(new URL("rows.json", DATA), "utf8"));
+const pages = JSON.parse(readFileSync(new URL("raw.json", DATA), "utf8"));
 const ours = JSON.parse(readFileSync(WEB + "data/universities-ro.json", "utf8"));
 const domainIds = new Set(JSON.parse(readFileSync(WEB + "data/domains.json", "utf8")).map((d) => d.id));
 
@@ -133,6 +136,11 @@ for (const r of raw) {
   if (!domainId || !domainIds.has(domainId)) problems.push(`domain not mapped: "${domain}" (${name})`);
   if (![180, 240, 300, 360].includes(credits)) problems.push(`odd credits ${r.credits} p${r.page} ${id} ${name}`);
   if (!Number.isFinite(max)) problems.push(`capacity not a number "${r.max}" p${r.page} ${id} ${name}`);
+  // Footnote "*)" in the capacity cell: "Specializări/programe de studii universitare de licență pentru care nu se organizează admitere în anul
+  // universitar 2026 – 2027". The list prints capacity 0 for exactly these rows; they stay in the catalogue with maxStudents 0, which the app
+  // shows as "fără locuri anul acesta". (The same mark next to a programme NAME means other things, see the README, and is only removed.)
+  const noAdmission = String(r.max).includes("*)");
+  if (noAdmission !== (max === 0)) problems.push(`no-admission mark and capacity 0 do not agree p${r.page} ${id} ${name} (max "${r.max}")`);
   const slug = key(name).replace(/ /g, "-").slice(0, 60);
   const baseId = `${id}--${slug}--${key(language).replace(/ /g, "-").slice(0, 12)}-${r.form.toLowerCase()}${location ? "-" + key(location).replace(/ /g, "-").slice(0, 16) : ""}`;
   const n = (seen.get(baseId) || 0) + 1; seen.set(baseId, n);
@@ -151,6 +159,7 @@ for (const r of raw) {
     credits,
     years: credits / 60,
     maxStudents: max,
+    noAdmission,
     page: r.page,
   });
 }
@@ -177,7 +186,7 @@ const SOURCE = "HG 606/2026";
 // Same for the three faculties of the North University Centre in Baia Mare, part of the Technical University of Cluj-Napoca (to confirm on utcluj.ro).
 const UTCN_BAIA_MARE = new Set(["Facultatea de Inginerie", "Facultatea de Litere", "Facultatea de Științe"].map((f) => `utcn|${f}`));
 const UPB_PITESTI = new Set(["Facultatea de Științe, Educație Fizică și Informatică", "Facultatea de Mecanică și Tehnologie", "Facultatea de Electronică, Comunicații și Calculatoare", "Facultatea de Științe Economice și Drept", "Facultatea de Științe ale Educației, Științe Sociale și Psihologie", "Facultatea de Teologie, Litere, Istorie și Arte"].map((f) => `upb|${f}`));
-const out = programs.map(({ page, facultyNo, id, institutionId, ...p }) => {
+const out = programs.map(({ page, facultyNo, noAdmission, id, institutionId, ...p }) => {
   const inst = institutions.get(institutionId);
   // Where the courses are held: the place written next to the programme, else the city in the faculty's name, else the institution's city.
   const inName = p.faculty.match(/(?:din|,|-|–|\()\s*(Brăila|Alexandria|Hunedoara|Cluj-Napoca|Târgu Jiu|Brașov|Câmpulung|Craiova|Constanța|Buzău|Miercurea Ciuc|Târgu Mureș|Sfântu Gheorghe|Râmnicu Vâlcea)\)?$/);
@@ -204,11 +213,12 @@ const instOut = [...institutions.values()]
   .map(({ listNo, faculties, kind, ...i }) => ({ ...i, kind: kind === "stat" ? "public" : "private" }));
 writeFileSync(WEB + "data/catalog/ro-institutions.json", JSON.stringify(instOut, null, 2) + "\n");
 writeFileSync(WEB + "data/catalog/ro-programs.json", JSON.stringify(out, null, 1) + "\n");
-writeFileSync(new URL("build-problems.txt", import.meta.url), [...problems, ...gaps].join("\n") + "\n");
+writeFileSync(new URL("build-problems.txt", DATA), [...problems, ...gaps].join("\n") + "\n");
 
 const c = (f) => out.reduce((m, r) => ((m[r[f]] = (m[r[f]] || 0) + 1), m), {});
 console.log(`institutions: ${institutions.size} (stat ${[...institutions.values()].filter((i) => i.kind === "stat").length}, particular ${[...institutions.values()].filter((i) => i.kind === "particular").length}; with sheet ${[...institutions.values()].filter((i) => i.hasSheet).length})`);
 console.log(`programmes: ${out.length} | status cells in the PDF: ${statusCells} | parsed rows: ${raw.length} | left out as master level: ${raw.length - out.length}`);
+console.log("no admission in 2026-2027 (mark *) in the capacity cell, capacity 0):", programs.filter((p) => p.noAdmission).map((p) => `${p.institutionId}: ${p.name}`).join("; "));
 console.log("status", c("status"), "form", c("form"), "credits", c("credits"));
 console.log("languages", c("language"));
 console.log("with location:", out.filter((p) => p.location).length, "| distinct faculties:", new Set(out.map((p) => p.institutionId + "|" + p.faculty)).size, "| distinct official domains:", new Set(out.map((p) => p.domain)).size);

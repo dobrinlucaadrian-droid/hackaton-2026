@@ -9,7 +9,7 @@
   "kind": "unknown",
   "hasSheet": false,
   "website": "http://www.ap.be",
-  "programs": 34
+  "programs": 30
  },
  {
   "id": "be-arteveldehogeschool",
@@ -21,7 +21,7 @@
   "kind": "unknown",
   "hasSheet": false,
   "website": "http://www.arteveldehs.be",
-  "programs": 26
+  "programs": 21
  },
  {
   "id": "be-brussels-school-of-governance-vesalius-college",
@@ -45,7 +45,7 @@
   "kind": "unknown",
   "hasSheet": false,
   "website": "http://www.erasmushogeschool.be",
-  "programs": 27
+  "programs": 24
  },
  {
   "id": "be-evangelische-theologische-faculteit-leuven",
@@ -81,7 +81,7 @@
   "kind": "unknown",
   "hasSheet": false,
   "website": "http://www.hogent.be",
-  "programs": 34
+  "programs": 28
  },
  {
   "id": "be-hogeschool-pxl",
@@ -93,7 +93,7 @@
   "kind": "unknown",
   "hasSheet": false,
   "website": "http://www.pxl.be",
-  "programs": 25
+  "programs": 22
  },
  {
   "id": "be-hogeschool-west-vlaanderen",
@@ -105,7 +105,7 @@
   "kind": "unknown",
   "hasSheet": false,
   "website": "http://www.howest.be",
-  "programs": 38
+  "programs": 33
  },
  {
   "id": "be-karel-de-grote-hogeschool-katholieke-hogeschool-antwerpen",
@@ -117,7 +117,7 @@
   "kind": "unknown",
   "hasSheet": false,
   "website": "http://www.kdg.be",
-  "programs": 24
+  "programs": 22
  },
  {
   "id": "be-katholieke-hogeschool-vives-noord",
@@ -129,7 +129,7 @@
   "kind": "unknown",
   "hasSheet": false,
   "website": "http://www.vives.be#103762",
-  "programs": 22
+  "programs": 20
  },
  {
   "id": "be-katholieke-hogeschool-vives-zuid",
@@ -141,7 +141,7 @@
   "kind": "unknown",
   "hasSheet": false,
   "website": "http://www.vives.be#103771",
-  "programs": 33
+  "programs": 24
  },
  {
   "id": "be-luca-school-of-arts",
@@ -153,7 +153,7 @@
   "kind": "unknown",
   "hasSheet": false,
   "website": "http://www.luca-arts.be/",
-  "programs": 14
+  "programs": 10
  },
  {
   "id": "be-odisee",
@@ -165,7 +165,7 @@
   "kind": "unknown",
   "hasSheet": false,
   "website": "http://www.odisee.be/",
-  "programs": 43
+  "programs": 27
  },
  {
   "id": "be-thomas-more-kempen",
@@ -177,7 +177,7 @@
   "kind": "unknown",
   "hasSheet": false,
   "website": "http://www.thomasmore.be#103581",
-  "programs": 30
+  "programs": 23
  },
  {
   "id": "be-thomas-more-mechelen-antwerpen",
@@ -189,7 +189,7 @@
   "kind": "unknown",
   "hasSheet": false,
   "website": "http://www.thomasmore.be#103598",
-  "programs": 34
+  "programs": 28
  },
  {
   "id": "be-transnationale-universiteit-limburg",
@@ -213,7 +213,7 @@
   "kind": "unknown",
   "hasSheet": false,
   "website": "https://www.ucll.be/#103648",
-  "programs": 26
+  "programs": 17
  },
  {
   "id": "be-uc-limburg",
@@ -225,7 +225,7 @@
   "kind": "unknown",
   "hasSheet": false,
   "website": "https://www.ucll.be/#103739",
-  "programs": 19
+  "programs": 14
  },
  {
   "id": "be-universiteit-antwerpen",
@@ -249,7 +249,7 @@
   "kind": "unknown",
   "hasSheet": false,
   "website": "http://www.ugent.be",
-  "programs": 50
+  "programs": 49
  },
  {
   "id": "be-universiteit-hasselt",
@@ -285,6 +285,6 @@
   "kind": "unknown",
   "hasSheet": true,
   "website": "http://www.kuleuven.be",
-  "programs": 76
+  "programs": 53
  }
 ]

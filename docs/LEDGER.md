@@ -7,7 +7,7 @@ lista de commit-uri de la final se reface singură.
 
 - **Scop:** UniPath — ghid între liceu și facultate. Hackathonul s-a încheiat (prezentare pe 2026-10-05); acum se construiește versiunea de producție: conturi, bază de date Convex, păreri moderate, securitate
 - **Unde:** versiunea de producție e pe ramura `production` (nepublicată; rulează local cu `npm run dev --prefix apps/web` și folosește baza Convex de dezvoltare, proiectul „unipath”). Versiunea prezentată e pe `main`, publică la https://unipath-taupe-mu.vercel.app, și nu se atinge până nu cere echipa. Planul: `docs/production-plan.md`
-- **Urmează:** ordinea hotărâtă de echipă (vezi `docs/ultimii-pasi.md`): (1) baza de date completă — FĂCUT pentru 11 țări (96.215 programe; starea pe țări în `docs/catalog-status.md`); rămân: Marea Britanie și alte țări fără date deschise, universitățile lumii din ROR, fișe pentru cele 10 instituții românești noi; (2) calitate tehnică (viteza paginilor, acum generate la fiecare vizită); (3) ultimii pași: chei reale, domeniu, administratori, baza de producție, lansare
+- **Urmează:** ordinea hotărâtă de echipă (vezi `docs/ultimii-pasi.md`): (1) baza de date completă — FĂCUT și verificat pentru 11 țări (100.186 programe; Germania și Austria parțiale; starea pe țări în `docs/catalog-status.md`); rămân: Marea Britanie și alte țări fără date deschise, universitățile lumii din ROR, fișe pentru cele 10 instituții românești noi; (2) calitate tehnică (viteza paginilor, acum generate la fiecare vizită); (3) ultimii pași: chei reale, domeniu, administratori, baza de producție, lansare
 - **De știut:** Vercel CLI și Convex CLI sunt logate doar din aplicația Claude (Vercel: cont `dobrinlucaadrian-7970`; Convex: echipa `dobrinlucaadrian`, proiect `unipath`, bază de dezvoltare `adjoining-duck-455`). `apps/web/.env.local` NU e în Git: dacă lipsește, `npx convex dev --once` în `apps/web` îl reface, iar `NEXT_PUBLIC_TURNSTILE_SITE_KEY` de probă este `1x00000000000000000000AA`. Catalogul se reîncarcă în Convex cu `node scripts/data/import.mjs`. Pe baza de dezvoltare sunt puse `AUTH_DEV_LOG_LINKS=1` (linkul de conectare apare în `npx convex logs`), cheile de probă Turnstile și `ADMIN_EMAILS=admin.test@example.com`. Echipa vrea să lucrez cât mai mult local înainte să-i cer conturi sau chei
 
 ## Jurnal
@@ -20,6 +20,14 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-08 23:46 — baza de date: verificare de completitudine pe 11 țări și reparații
+- Cerut: „poți să mai cauți informații despre facultățile din România și restul țărilor, ca să ne asigurăm că le avem pe toate integral”; apoi echipa a aprobat pașii 1 (curățenie) și 2 (completări din surse deschise)
+- Făcut: fiecare țară a fost comparată cu liste oficiale independente și cu site-urile câtorva universități. România era completă (neschimbată). Spania a trecut de la o regiune la toată țara (91 de universități, 4.302 programe). Franța: oferta 2026 plus licențele profesionale (7.104). SUA: 118 campusuri secundare adăugate (65.202). Olanda, Polonia, Belgia, Italia, Irlanda: scoase dublurile, rândurile vechi și cele care nu erau licențe; adăugate programele integrate din Irlanda. Total în baza de dezvoltare: 4.117 instituții și 100.186 programe. Germania (circa 35%) și Austria rămân parțiale: nu există surse deschise, trebuie cerut acordul
+- Fișiere: `apps/web/data/catalog/` (fișierele a nouă țări și `index.json`), `scripts/data/` (`sources.json`, `build.mjs` și `README.md` pentru `be`, `es`, `fr`, `ie`, `it`, `nl`, `pl`, `ro`, `us`; nou `es/fetch.mjs`), `docs/catalog-status.md`
+- Poartă: TRECUT (113 teste); toate cele 11 țări VALID; pagini parcurse pe baza de dezvoltare: căutarea de programe (Spania, Olanda), fișa Universitat de Barcelona, pagina de surse
+- De verificat de un om: licențele pentru SUA și Spania; lista belgiană de diplome scoase; detaliile sunt în `docs/catalog-status.md`
+- Urmează: hotărârea echipei despre cererile de acord (HRK Germania, ministerul austriac, ARES Belgia); universitățile lumii din ROR; fișe pentru cele 10 instituții românești noi
 
 ### 2026-10-08 04:02 — verificarea de secrete de pe GitHub: alarmă falsă pe datele catalogului
 - Cerut: lucru autonom peste noapte; verificarea „Leaked secrets” de pe GitHub pica după salvarea catalogului
@@ -458,6 +466,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-08 04:02 `ce1a3d5` ci: stop the secret scan from flagging programme identifiers in the catalogue data
 - 2026-10-08 03:56 `4e1429c` ci: print which rule and file each secret-scan finding is in
 - 2026-10-08 03:49 `2f23ae9` feat: catalogue for eleven countries, status report and home page totals
 - 2026-10-08 03:38 `2a332f4` feat: multi-country programme catalogue from official open datasets
@@ -487,5 +496,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-05 00:59 `482966a` feat: replace the random card with a guided interest picker on the specializations page
 - 2026-10-05 00:51 `4c91def` feat: illustration and a surprise-me card on the specializations page
 - 2026-10-05 00:48 `86d84fe` feat: keep a single logo on the home page
-- 2026-10-05 00:27 `3551c80` feat: questionnaire start page with its own title and the start button on top
 <!-- commits:end -->

@@ -118,7 +118,7 @@
   "city": "Bari",
   "kind": "public",
   "hasSheet": false,
-  "programs": 19
+  "programs": 18
  },
  {
   "id": "it-saint-camillus-international-university-of-health",
@@ -184,7 +184,7 @@
   "city": "Urbino",
   "kind": "public",
   "hasSheet": false,
-  "programs": 23
+  "programs": 21
  },
  {
   "id": "it-universita-degli-studi-del-molise",
@@ -195,7 +195,7 @@
   "city": "Campobasso",
   "kind": "public",
   "hasSheet": false,
-  "programs": 24
+  "programs": 22
  },
  {
   "id": "it-universita-degli-studi-del-piemonte-orientale-amedeo-avogadro",
@@ -228,7 +228,7 @@
   "city": "Varese",
   "kind": "public",
   "hasSheet": false,
-  "programs": 32
+  "programs": 30
  },
  {
   "id": "it-universita-degli-studi-della-basilicata",
@@ -250,7 +250,7 @@
   "city": "Caserta",
   "kind": "public",
   "hasSheet": false,
-  "programs": 63
+  "programs": 62
  },
  {
   "id": "it-universita-degli-studi-della-tuscia",
@@ -272,7 +272,7 @@
   "city": "Bari",
   "kind": "public",
   "hasSheet": false,
-  "programs": 85
+  "programs": 84
  },
  {
   "id": "it-universita-degli-studi-di-bergamo",
@@ -283,7 +283,7 @@
   "city": "Bergamo",
   "kind": "public",
   "hasSheet": false,
-  "programs": 21
+  "programs": 20
  },
  {
   "id": "it-universita-degli-studi-di-brescia",
@@ -294,7 +294,7 @@
   "city": "Brescia",
   "kind": "public",
   "hasSheet": false,
-  "programs": 49
+  "programs": 48
  },
  {
   "id": "it-universita-degli-studi-di-cagliari",
@@ -305,7 +305,7 @@
   "city": "Cagliari",
   "kind": "public",
   "hasSheet": false,
-  "programs": 60
+  "programs": 58
  },
  {
   "id": "it-universita-degli-studi-di-camerino",
@@ -316,7 +316,7 @@
   "city": "Camerino",
   "kind": "public",
   "hasSheet": false,
-  "programs": 22
+  "programs": 21
  },
  {
   "id": "it-universita-degli-studi-di-cassino-e-del-lazio-meridionale",
@@ -338,7 +338,7 @@
   "city": "Catania",
   "kind": "public",
   "hasSheet": false,
-  "programs": 63
+  "programs": 62
  },
  {
   "id": "it-universita-degli-studi-di-catanzaro-magna-grecia",
@@ -349,7 +349,7 @@
   "city": "Catanzaro",
   "kind": "public",
   "hasSheet": false,
-  "programs": 28
+  "programs": 27
  },
  {
   "id": "it-universita-degli-studi-di-ferrara",
@@ -360,7 +360,7 @@
   "city": "Ferrara",
   "kind": "public",
   "hasSheet": false,
-  "programs": 45
+  "programs": 44
  },
  {
   "id": "it-universita-degli-studi-di-firenze",
@@ -371,7 +371,7 @@
   "city": "Firenze",
   "kind": "public",
   "hasSheet": false,
-  "programs": 75
+  "programs": 73
  },
  {
   "id": "it-universita-degli-studi-di-foggia",
@@ -382,7 +382,7 @@
   "city": "Foggia",
   "kind": "public",
   "hasSheet": false,
-  "programs": 39
+  "programs": 38
  },
  {
   "id": "it-universita-degli-studi-di-genova",
@@ -393,7 +393,7 @@
   "city": "Genova",
   "kind": "public",
   "hasSheet": false,
-  "programs": 83
+  "programs": 82
  },
  {
   "id": "it-universita-degli-studi-di-l-aquila",
@@ -415,7 +415,7 @@
   "city": "Macerata",
   "kind": "public",
   "hasSheet": false,
-  "programs": 17
+  "programs": 16
  },
  {
   "id": "it-universita-degli-studi-di-messina",
@@ -426,7 +426,7 @@
   "city": "Messina",
   "kind": "public",
   "hasSheet": false,
-  "programs": 70
+  "programs": 67
  },
  {
   "id": "it-universita-degli-studi-di-milano",
@@ -437,7 +437,7 @@
   "city": "Milano",
   "kind": "public",
   "hasSheet": false,
-  "programs": 90
+  "programs": 89
  },
  {
   "id": "it-universita-degli-studi-di-milano-bicocca",
@@ -459,7 +459,7 @@
   "city": "Modena",
   "kind": "public",
   "hasSheet": false,
-  "programs": 56
+  "programs": 53
  },
  {
   "id": "it-universita-degli-studi-di-napoli-federico-ii",
@@ -470,7 +470,7 @@
   "city": "Napoli",
   "kind": "public",
   "hasSheet": false,
-  "programs": 90
+  "programs": 89
  },
  {
   "id": "it-universita-degli-studi-di-napoli-parthenope",
@@ -481,7 +481,7 @@
   "city": "Napoli",
   "kind": "public",
   "hasSheet": false,
-  "programs": 24
+  "programs": 23
  },
  {
   "id": "it-universita-degli-studi-di-palermo",
@@ -492,7 +492,7 @@
   "city": "Palermo",
   "kind": "public",
   "hasSheet": false,
-  "programs": 106
+  "programs": 105
  },
  {
   "id": "it-universita-degli-studi-di-parma",
@@ -514,7 +514,7 @@
   "city": "Pavia",
   "kind": "public",
   "hasSheet": false,
-  "programs": 55
+  "programs": 54
  },
  {
   "id": "it-universita-degli-studi-di-perugia",
@@ -525,7 +525,7 @@
   "city": "Perugia",
   "kind": "public",
   "hasSheet": false,
-  "programs": 58
+  "programs": 54
  },
  {
   "id": "it-universita-degli-studi-di-roma-foro-italico",
@@ -547,7 +547,7 @@
   "city": "Roma",
   "kind": "public",
   "hasSheet": false,
-  "programs": 71
+  "programs": 70
  },
  {
   "id": "it-universita-degli-studi-di-salerno",
@@ -569,7 +569,7 @@
   "city": "Sassari",
   "kind": "public",
   "hasSheet": false,
-  "programs": 43
+  "programs": 42
  },
  {
   "id": "it-universita-degli-studi-di-siena",
@@ -580,7 +580,7 @@
   "city": "Siena",
   "kind": "public",
   "hasSheet": false,
-  "programs": 44
+  "programs": 42
  },
  {
   "id": "it-universita-degli-studi-di-teramo",
@@ -602,7 +602,7 @@
   "city": "Torino",
   "kind": "public",
   "hasSheet": false,
-  "programs": 98
+  "programs": 97
  },
  {
   "id": "it-universita-degli-studi-di-trento",
@@ -613,7 +613,7 @@
   "city": "Trento",
   "kind": "public",
   "hasSheet": false,
-  "programs": 28
+  "programs": 27
  },
  {
   "id": "it-universita-degli-studi-di-trieste",
@@ -624,7 +624,7 @@
   "city": "Trieste",
   "kind": "public",
   "hasSheet": false,
-  "programs": 45
+  "programs": 42
  },
  {
   "id": "it-universita-degli-studi-di-udine",
@@ -635,7 +635,7 @@
   "city": "Udine",
   "kind": "public",
   "hasSheet": false,
-  "programs": 45
+  "programs": 43
  },
  {
   "id": "it-universita-degli-studi-di-verona",
@@ -657,7 +657,7 @@
   "city": "Chieti Scalo",
   "kind": "public",
   "hasSheet": false,
-  "programs": 45
+  "programs": 44
  },
  {
   "id": "it-universita-degli-studi-internazionali-di-roma-unint",
@@ -701,7 +701,7 @@
   "city": "Roma",
   "kind": "public",
   "hasSheet": false,
-  "programs": 40
+  "programs": 37
  },
  {
   "id": "it-universita-degli-studi-suor-orsola-benincasa-di-napoli",
@@ -734,7 +734,7 @@
   "city": "Arcavacata di Rende",
   "kind": "public",
   "hasSheet": false,
-  "programs": 50
+  "programs": 45
  },
  {
   "id": "it-universita-della-valle-d-aosta",
@@ -756,7 +756,7 @@
   "city": "Pisa",
   "kind": "public",
   "hasSheet": false,
-  "programs": 78
+  "programs": 75
  },
  {
   "id": "it-universita-di-scienze-gastronomiche",
@@ -811,7 +811,7 @@
   "city": "Perugia",
   "kind": "public",
   "hasSheet": false,
-  "programs": 5
+  "programs": 4
  },
  {
   "id": "it-universita-per-stranieri-di-siena",
@@ -833,7 +833,7 @@
   "city": "Ancona",
   "kind": "public",
   "hasSheet": false,
-  "programs": 45
+  "programs": 43
  },
  {
   "id": "it-universita-telematica-e-campus-di-novedrate-co",
@@ -855,7 +855,7 @@
   "city": "Benevento",
   "kind": "private",
   "hasSheet": false,
-  "programs": 8
+  "programs": 7
  },
  {
   "id": "it-universita-telematica-guglielmo-marconi-di-roma",
@@ -866,7 +866,7 @@
   "city": "Roma",
   "kind": "private",
   "hasSheet": false,
-  "programs": 13
+  "programs": 12
  },
  {
   "id": "it-universita-telematica-internazionale-uninettuno-di-roma",
@@ -965,7 +965,7 @@
   "city": "Milano",
   "kind": "public",
   "hasSheet": true,
-  "programs": 36
+  "programs": 30
  },
  {
   "id": "polito",
@@ -976,7 +976,7 @@
   "city": "Torino",
   "kind": "public",
   "hasSheet": true,
-  "programs": 25
+  "programs": 24
  },
  {
   "id": "sapienza",
@@ -998,7 +998,7 @@
   "city": "Bologna",
   "kind": "public",
   "hasSheet": true,
-  "programs": 119
+  "programs": 117
  },
  {
   "id": "unipd",
@@ -1009,6 +1009,6 @@
   "city": "Padova",
   "kind": "public",
   "hasSheet": true,
-  "programs": 130
+  "programs": 127
  }
 ]

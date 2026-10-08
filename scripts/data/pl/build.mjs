@@ -64,15 +64,47 @@ const { rows: courses, max: courseMax } = await fetchAll("courses", "courseUuid"
 const { rows: insts, max: instMax } = await fetchAll("institutions", "institutionUuid");
 const instByUuid = new Map(insts.map((i) => [i.institutionUuid, i]));
 
-const unknownLang = new Map(); const skipped = { level: 0, status: 0, noInstance: 0, instStatus: 0 };
+// Register notes at the end of a name ("[ustawa]", "(rozporządzenie)", "[obowiązująca do 2019-09-30]", "(od 1.10.2021)") are not part of the programme name.
+const NOTE = /\s*[\[(]\s*(ustawa|rozporządzenie|obowiązuj[^\])]*|od \d[^\])]*)[\])]\s*$/i;
+const cleanName = (s) => { const t = tidy(s); const u = tidy(t.replace(NOTE, "")); return u.length >= 2 ? u : t; };
+const same = (a, b) => cleanName(a).toLowerCase() === cleanName(b).toLowerCase();
+
+// Only the register's structured fields decide what is kept:
+//  - institution: its status in the institutions register must be "Działająca" (statusCode 1), not in liquidation, liquidated, transformed or struck off;
+//  - course record: status "prowadzone"; a record without instances has no start date, form or language yet (teaching not started) and is left out;
+//  - course instance: status "prowadzone" and not bridging studies (bridging = "Tak", short top-up courses for working nurses);
+//  - legacy versions inside one course record: an instance still carrying an earlier name of the course is dropped when the record has an instance
+//    under its current name, and for each form + language + degree title only the instance with the latest educationStartDate (the current curriculum) is kept.
+const unknownLang = new Map();
+const skipped = { level: 0, status: 0, noInstance: 0, instStatus: 0, bridging: 0, oldName: 0, oldVersion: 0, sameStart: 0, instInactive: 0, instInactiveRows: 0 };
+const inactive = new Map(), keptOldName = [];
 const rows = [];
 for (const c of new Map(courses.map((x) => [x.courseUuid, x])).values()) {
   if (!LEVELS.has(c.levelName)) { skipped.level++; continue; }
   if (c.currentStatusName !== "prowadzone") { skipped.status++; continue; }
   if (!c.courseInstances?.length) { skipped.noInstance++; continue; }
+  let running = [];
   for (const ci of c.courseInstances) {
     if (ci.statusName !== "prowadzone") { skipped.instStatus++; continue; }
-    rows.push({ c, ci });
+    if (ci.bridging === "Tak") { skipped.bridging++; continue; }
+    running.push(ci);
+  }
+  if (!running.length) continue;
+  const reg = instByUuid.get(c.mainInstitutionUuid);
+  if (reg?.statusCode !== "1") {
+    const k = `${tidy(c.mainInstitutionName)} [${reg?.status ?? "not in the institutions register"}]`;
+    if (!inactive.has(k)) skipped.instInactive++;
+    inactive.set(k, (inactive.get(k) || 0) + running.length); skipped.instInactiveRows += running.length; continue;
+  }
+  const current = running.filter((ci) => same(ci.courseName || c.courseName, c.courseName));
+  if (current.length) { skipped.oldName += running.length - current.length; running = current; }
+  else keptOldName.push(`${tidy(c.mainInstitutionName)}: ${tidy(c.courseName)} (instances named ${[...new Set(running.map((ci) => tidy(ci.courseName)))].join(", ")})`);
+  const groups = new Map();
+  for (const ci of running) { const k = [ci.formName, ci.languageName, ci.dual, ci.titleName].join("|"); if (!groups.has(k)) groups.set(k, []); groups.get(k).push(ci); }
+  for (const g of groups.values()) {
+    g.sort((a, b) => String(b.educationStartDate).localeCompare(String(a.educationStartDate)) || Number(b.courseInstanceCode) - Number(a.courseInstanceCode));
+    for (const ci of g.slice(1)) { if (ci.educationStartDate === g[0].educationStartDate) skipped.sameStart++; else skipped.oldVersion++; }
+    rows.push({ c, ci: g[0] });
   }
 }
 rows.sort((a, b) => String(a.ci.courseInstanceCode).localeCompare(String(b.ci.courseInstanceCode), "en", { numeric: true }) || a.ci.courseInstanceUuid.localeCompare(b.ci.courseInstanceUuid));
@@ -99,7 +131,7 @@ function institution(c) {
 const progs = [], keys = new Set(), seen = new Set(); let duplicates = 0;
 for (const { c, ci } of rows) {
   const inst = institution(c);
-  const name = tidy(ci.courseName || c.courseName);
+  const name = cleanName(c.courseName || ci.courseName);
   const langPl = tidy(ci.languageName).toLowerCase();
   const language = LANG[langPl] || (unknownLang.set(langPl, (unknownLang.get(langPl) || 0) + 1), langPl);
   const form = ci.dual === "Tak" ? "dual" : FORM[tidy(ci.formName)];
@@ -115,6 +147,9 @@ for (const { c, ci } of rows) {
   const base = `${inst.id}--${slug(name)}--${form ? form + "-" : ""}${slug(language)}`.slice(0, 190).replace(/-+$/, "");
   let key = base;
   if (keys.has(key)) key = `${base.slice(0, 170)}-${slug(city)}`.replace(/-+$/, "");
+  if (keys.has(key) && c.levelName === "jednolite magisterskie") key = `${base.slice(0, 170)}-jednolite-magisterskie`;
+  if (keys.has(key) && ci.titleName) key = `${base.slice(0, 170)}-${slug(ci.titleName)}`.replace(/-+$/, "");
+  if (keys.has(key) && faculty) key = `${base.slice(0, 140)}-${slug(faculty).slice(0, 45)}`.replace(/-+$/, "");
   if (keys.has(key)) key = `${base.slice(0, 170)}-${slug(ci.courseInstanceCode)}`;
   for (let k = 2; keys.has(key); k++) key = `${base.slice(0, 180)}-${k}`;
   keys.add(key);
@@ -130,9 +165,12 @@ const out = new URL("../../../apps/web/data/catalog/", import.meta.url);
 mkdirSync(out, { recursive: true });
 writeFileSync(new URL("pl-institutions.json", out), JSON.stringify(instList, null, 1) + "\n");
 // gzipped JSON Lines: the plain JSON is above the 5 MB per-file limit of the project gate (see scripts/data/CONTRACT.md)
-writeFileSync(new URL("pl-programs.jsonl.gzl.gz", out), gzipSync(progs.map((p) => JSON.stringify(p)).join("\n") + "\n"));
+writeFileSync(new URL("pl-programs.jsonl.gz", out), gzipSync(progs.map((p) => JSON.stringify(p)).join("\n") + "\n"));
 const unmapped = progs.filter((p) => p.domainId === null).length;
-console.log(`skipped: other level ${skipped.level}, course not running ${skipped.status}, no instances ${skipped.noInstance}, instance not running ${skipped.instStatus}`);
+console.log(`skipped: other level ${skipped.level}, course not running ${skipped.status}, no instances ${skipped.noInstance}, instance not running ${skipped.instStatus}, bridging ${skipped.bridging}`);
+console.log(`institutions not active in the register: ${skipped.instInactive} (${skipped.instInactiveRows} instances)`); for (const [k, v] of inactive) console.log(`  ${k}: ${v}`);
+console.log(`legacy inside a course record: instances under an earlier name ${skipped.oldName}, earlier curriculum versions ${skipped.oldVersion}, same start date and form/language ${skipped.sameStart}`);
+console.log(`course records with no instance under the current name (kept, shown under the current name): ${keptOldName.length}`); for (const k of keptOldName) console.log(`  ${k}`);
 console.log(`identical duplicate rows dropped: ${duplicates}`);
 console.log("unknown languages kept as source word:", [...unknownLang]);
 console.log(`PL: ${instList.length} institutions, ${progs.length} programmes, ${new Set(progs.map((p) => p.city)).size} cities, no domain ${unmapped} (${((100 * unmapped) / progs.length).toFixed(1)}%)`);

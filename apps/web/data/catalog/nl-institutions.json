@@ -8,7 +8,7 @@
   "city": "Rotterdam",
   "kind": "public",
   "hasSheet": true,
-  "programs": 35
+  "programs": 21
  },
  {
   "id": "leiden",
@@ -19,7 +19,7 @@
   "city": "Leiden",
   "kind": "public",
   "hasSheet": true,
-  "programs": 64
+  "programs": 53
  },
  {
   "id": "maastricht",
@@ -31,7 +31,7 @@
   "kind": "public",
   "hasSheet": true,
   "website": "https://www.maastrichtuniversity.nl",
-  "programs": 38
+  "programs": 27
  },
  {
   "id": "nl-aeres-hogeschool",
@@ -43,7 +43,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.aeres.nl",
-  "programs": 22
+  "programs": 9
  },
  {
   "id": "nl-amsterdamse-hogeschool-voor-de-kunsten",
@@ -54,7 +54,7 @@
   "city": "Amsterdam",
   "kind": "public",
   "hasSheet": false,
-  "programs": 102
+  "programs": 9
  },
  {
   "id": "nl-artemis-academie",
@@ -76,7 +76,7 @@
   "city": "Arnhem",
   "kind": "public",
   "hasSheet": false,
-  "programs": 38
+  "programs": 18
  },
  {
   "id": "nl-avans-hogeschool",
@@ -88,7 +88,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://www.avans.nl",
-  "programs": 99
+  "programs": 58
  },
  {
   "id": "nl-breda-university-of-applied-sciences",
@@ -99,7 +99,7 @@
   "city": "Breda",
   "kind": "public",
   "hasSheet": false,
-  "programs": 49
+  "programs": 12
  },
  {
   "id": "nl-capabel-hogeschool",
@@ -110,7 +110,7 @@
   "city": "Utrecht",
   "kind": "private",
   "hasSheet": false,
-  "programs": 403
+  "programs": 21
  },
  {
   "id": "nl-christelijke-hogeschool-ede",
@@ -121,7 +121,7 @@
   "city": "Ede",
   "kind": "public",
   "hasSheet": false,
-  "programs": 47
+  "programs": 11
  },
  {
   "id": "nl-christelijke-hogeschool-windesheim",
@@ -132,7 +132,7 @@
   "city": "Zwolle",
   "kind": "public",
   "hasSheet": false,
-  "programs": 101
+  "programs": 63
  },
  {
   "id": "nl-codarts-hogeschool-voor-de-kunsten",
@@ -144,7 +144,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://www.codarts.nl",
-  "programs": 14
+  "programs": 5
  },
  {
   "id": "nl-de-haagse-hogeschool",
@@ -156,7 +156,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://www.dehaagsehogeschool.nl",
-  "programs": 56
+  "programs": 36
  },
  {
   "id": "nl-design-academy-eindhoven",
@@ -174,7 +174,7 @@
   "id": "nl-dirksen-opleidingen-bv",
   "country": "NL",
   "source": "DUO RIO 2026-10",
-  "name": "Dirksen Opleidingen bv",
+  "name": "Dirksen Opleidingen",
   "officialName": "Dirksen Opleidingen bv",
   "city": "Elst",
   "kind": "private",
@@ -191,7 +191,7 @@
   "city": "Gouda",
   "kind": "public",
   "hasSheet": false,
-  "programs": 41
+  "programs": 9
  },
  {
   "id": "nl-eurocollege-hogeschool",
@@ -225,7 +225,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://fontys.nl",
-  "programs": 258
+  "programs": 97
  },
  {
   "id": "nl-gerrit-rietveld-academie",
@@ -237,13 +237,13 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.rietveldacademie.nl",
-  "programs": 2
+  "programs": 1
  },
  {
   "id": "nl-haarlem-institute-for-higher-education-b-v",
   "country": "NL",
   "source": "DUO RIO 2026-10",
-  "name": "Haarlem Institute for Higher Education B.V.",
+  "name": "Haarlem Institute for Higher Education",
   "officialName": "Haarlem Institute for Higher Education B.V.",
   "city": "Haarlem",
   "kind": "private",
@@ -273,7 +273,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.hanze.nl",
-  "programs": 88
+  "programs": 46
  },
  {
   "id": "nl-has-green-academy",
@@ -285,7 +285,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://www.has.nl",
-  "programs": 25
+  "programs": 13
  },
  {
   "id": "nl-hbo-academy",
@@ -297,7 +297,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "https://www.hbo-academy.nl",
-  "programs": 8
+  "programs": 3
  },
  {
   "id": "nl-hogeschool-bestuursacademie-nederland",
@@ -308,7 +308,7 @@
   "city": "Hilversum",
   "kind": "private",
   "hasSheet": false,
-  "programs": 2
+  "programs": 1
  },
  {
   "id": "nl-hogeschool-der-kunsten-den-haag",
@@ -319,7 +319,7 @@
   "city": "'s-Gravenhage",
   "kind": "public",
   "hasSheet": false,
-  "programs": 72
+  "programs": 5
  },
  {
   "id": "nl-hogeschool-inholland",
@@ -331,7 +331,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.inholland.nl",
-  "programs": 109
+  "programs": 68
  },
  {
   "id": "nl-hogeschool-ipabo-amsterdam-alkmaar",
@@ -342,18 +342,18 @@
   "city": "Amsterdam",
   "kind": "public",
   "hasSheet": false,
-  "programs": 2
+  "programs": 1
  },
  {
   "id": "nl-hogeschool-isbw-b-v",
   "country": "NL",
   "source": "DUO RIO 2026-10",
-  "name": "Hogeschool ISBW B.V.",
+  "name": "Hogeschool ISBW",
   "officialName": "Hogeschool ISBW B.V.",
   "city": "Hilversum",
   "kind": "private",
   "hasSheet": false,
-  "programs": 2
+  "programs": 1
  },
  {
   "id": "nl-hogeschool-kpz",
@@ -364,7 +364,7 @@
   "city": "Zwolle",
   "kind": "public",
   "hasSheet": false,
-  "programs": 4
+  "programs": 1
  },
  {
   "id": "nl-hogeschool-leiden",
@@ -375,19 +375,7 @@
   "city": "Leiden",
   "kind": "public",
   "hasSheet": false,
-  "programs": 78
- },
- {
-  "id": "nl-hogeschool-leidse-onderwijsinstellingen-bv",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "Hogeschool Leidse Onderwijsinstellingen BV",
-  "officialName": "Hogeschool Leidse Onderwijsinstellingen BV",
-  "city": "Leiderdorp",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "http://www.loi.nl",
-  "programs": 146
+  "programs": 20
  },
  {
   "id": "nl-hogeschool-markus-verbeek-praehep",
@@ -399,7 +387,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.mvp.nl",
-  "programs": 6
+  "programs": 3
  },
  {
   "id": "nl-hogeschool-ncoi",
@@ -411,7 +399,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.ncoi.nl",
-  "programs": 62
+  "programs": 28
  },
  {
   "id": "nl-hogeschool-rotterdam",
@@ -422,19 +410,7 @@
   "city": "Rotterdam",
   "kind": "public",
   "hasSheet": false,
-  "programs": 271
- },
- {
-  "id": "nl-hogeschool-schoevers",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "Hogeschool Schoevers",
-  "officialName": "Hogeschool Schoevers",
-  "city": "Houten",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "http://www.schoevers.nl",
-  "programs": 24
+  "programs": 60
  },
  {
   "id": "nl-hogeschool-thomas-more",
@@ -445,7 +421,7 @@
   "city": "Rotterdam",
   "kind": "public",
   "hasSheet": false,
-  "programs": 3
+  "programs": 1
  },
  {
   "id": "nl-hogeschool-utrecht",
@@ -456,7 +432,7 @@
   "city": "Utrecht",
   "kind": "public",
   "hasSheet": false,
-  "programs": 135
+  "programs": 55
  },
  {
   "id": "nl-hogeschool-v-pedagogisch-en-sociaal-agogisch-onderwijs-groningen",
@@ -478,7 +454,7 @@
   "city": "Amsterdam",
   "kind": "public",
   "hasSheet": false,
-  "programs": 94
+  "programs": 52
  },
  {
   "id": "nl-hogeschool-van-arnhem-en-nijmegen",
@@ -489,7 +465,7 @@
   "city": "Arnhem",
   "kind": "public",
   "hasSheet": false,
-  "programs": 118
+  "programs": 66
  },
  {
   "id": "nl-hogeschool-van-hall-larenstein",
@@ -501,7 +477,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.hvhl.nl",
-  "programs": 15
+  "programs": 14
  },
  {
   "id": "nl-hogeschool-voor-de-kunsten-utrecht",
@@ -512,7 +488,7 @@
   "city": "Utrecht",
   "kind": "public",
   "hasSheet": false,
-  "programs": 33
+  "programs": 9
  },
  {
   "id": "nl-hogeschool-voor-toegepaste-filosofie-htf",
@@ -526,18 +502,6 @@
   "programs": 1
  },
  {
-  "id": "nl-hogeschool-voor-toegepaste-filosofie-htf-b-v",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "Hogeschool voor Toegepaste Filosofie (HTF) B.V.",
-  "officialName": "Hogeschool voor Toegepaste Filosofie (HTF) B.V.",
-  "city": "Utrecht",
-  "kind": "unknown",
-  "hasSheet": false,
-  "website": "https://hogeschoolvoortoegepastefilosofie.nl",
-  "programs": 1
- },
- {
   "id": "nl-hotelschool-the-hague",
   "country": "NL",
   "source": "DUO RIO 2026-10",
@@ -546,7 +510,7 @@
   "city": "'s-Gravenhage",
   "kind": "public",
   "hasSheet": false,
-  "programs": 4
+  "programs": 2
  },
  {
   "id": "nl-hz-university-of-applied-sciences",
@@ -558,7 +522,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.hz.nl",
-  "programs": 39
+  "programs": 23
  },
  {
   "id": "nl-international-university-of-applied-sciences-amsterdam",
@@ -580,7 +544,7 @@
   "city": "Doetinchem",
   "kind": "public",
   "hasSheet": false,
-  "programs": 9
+  "programs": 1
  },
  {
   "id": "nl-islamic-university-of-applied-sciences-rotterdam",
@@ -594,18 +558,6 @@
   "programs": 2
  },
  {
-  "id": "nl-itv-hogeschool-voor-tolken-en-vertalen",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "ITV Hogeschool voor Tolken en Vertalen",
-  "officialName": "ITV Hogeschool voor Tolken en Vertalen",
-  "city": "Utrecht",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "http://www.itv-hogeschool.nl",
-  "programs": 2
- },
- {
   "id": "nl-iva-driebergen",
   "country": "NL",
   "source": "DUO RIO 2026-10",
@@ -614,7 +566,19 @@
   "city": "Driebergen-Rijsenburg",
   "kind": "private",
   "hasSheet": false,
-  "programs": 3
+  "programs": 2
+ },
+ {
+  "id": "nl-loi",
+  "country": "NL",
+  "source": "DUO RIO 2026-10",
+  "name": "LOI",
+  "officialName": "LOI",
+  "city": "Leiderdorp",
+  "kind": "private",
+  "hasSheet": false,
+  "website": "http://www.loi.nl",
+  "programs": 47
  },
  {
   "id": "nl-marnix-academie",
@@ -625,7 +589,7 @@
   "city": "Utrecht",
   "kind": "public",
   "hasSheet": false,
-  "programs": 6
+  "programs": 1
  },
  {
   "id": "nl-nederlandse-academie-voor-beeldcreatie",
@@ -637,7 +601,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "https://fotovakschool.nl",
-  "programs": 3
+  "programs": 2
  },
  {
   "id": "nl-netherlands-business-academy",
@@ -649,7 +613,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "https://www.netherlandsbusinessacademy.nl",
-  "programs": 3
+  "programs": 1
  },
  {
   "id": "nl-nhl-stenden-hogeschool",
@@ -660,7 +624,7 @@
   "city": "Leeuwarden",
   "kind": "public",
   "hasSheet": false,
-  "programs": 131
+  "programs": 71
  },
  {
   "id": "nl-notenboom",
@@ -684,7 +648,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.nti.nl",
-  "programs": 14
+  "programs": 4
  },
  {
   "id": "nl-nyenrode-business-universiteit",
@@ -707,7 +671,7 @@
   "city": "Heerlen",
   "kind": "public",
   "hasSheet": false,
-  "programs": 11
+  "programs": 9
  },
  {
   "id": "nl-pedagogische-hogeschool-de-kempel",
@@ -719,7 +683,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://www.kempel.nl",
-  "programs": 2
+  "programs": 1
  },
  {
   "id": "nl-politieacademie",
@@ -736,12 +700,12 @@
   "id": "nl-pro-education-b-v",
   "country": "NL",
   "source": "DUO RIO 2026-10",
-  "name": "Pro Education B.V.",
+  "name": "Pro Education",
   "officialName": "Pro Education B.V.",
   "city": "Hilversum",
   "kind": "private",
   "hasSheet": false,
-  "programs": 7
+  "programs": 2
  },
  {
   "id": "nl-protestantse-theologische-universiteit",
@@ -753,7 +717,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://www.pthu.nl",
-  "programs": 3
+  "programs": 1
  },
  {
   "id": "nl-radboud-universiteit-nijmegen",
@@ -765,7 +729,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://www.ru.nl",
-  "programs": 58
+  "programs": 39
  },
  {
   "id": "nl-saxion-hogeschool",
@@ -777,40 +741,30 @@
   "kind": "public",
   "hasSheet": false,
   "website": "http://www.saxion.nl",
-  "programs": 125
+  "programs": 60
  },
  {
-  "id": "nl-saxion-next",
+  "id": "nl-schoevers",
   "country": "NL",
   "source": "DUO RIO 2026-10",
-  "name": "Saxion Next",
-  "officialName": "Saxion Next",
-  "city": "Deventer",
+  "name": "Schoevers",
+  "officialName": "Schoevers",
+  "city": "Hilversum",
   "kind": "private",
   "hasSheet": false,
-  "programs": 48
+  "website": "http://www.schoevers.nl",
+  "programs": 10
  },
  {
   "id": "nl-schoolvision-b-v",
   "country": "NL",
   "source": "DUO RIO 2026-10",
-  "name": "Schoolvision B.V.",
+  "name": "Schoolvision",
   "officialName": "Schoolvision B.V.",
   "city": "Amsterdam",
   "kind": "private",
   "hasSheet": false,
   "programs": 1
- },
- {
-  "id": "nl-stc-group",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "STC-Group",
-  "officialName": "STC-Group",
-  "city": "Rotterdam",
-  "kind": "private",
-  "hasSheet": false,
-  "programs": 2
  },
  {
   "id": "nl-stichting-global-school-for-entrepreneurship-university-of-applied-sciences",
@@ -822,7 +776,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "https://www.gs4e.com",
-  "programs": 4
+  "programs": 1
  },
  {
   "id": "nl-stichting-hbo-a-a-hogeschool-voor-de-accountancy",
@@ -844,13 +798,13 @@
   "city": "Utrecht",
   "kind": "private",
   "hasSheet": false,
-  "programs": 17
+  "programs": 3
  },
  {
   "id": "nl-stichting-hogeschool-scheidegger",
   "country": "NL",
   "source": "DUO RIO 2026-10",
-  "name": "Stichting Hogeschool Scheidegger",
+  "name": "Hogeschool Scheidegger",
   "officialName": "Stichting Hogeschool Scheidegger",
   "city": "Hilversum",
   "kind": "private",
@@ -861,13 +815,13 @@
   "id": "nl-stichting-hogeschool-viaa",
   "country": "NL",
   "source": "DUO RIO 2026-10",
-  "name": "Stichting Hogeschool Viaa",
+  "name": "Hogeschool Viaa",
   "officialName": "Stichting Hogeschool Viaa",
   "city": "Zwolle",
   "kind": "public",
   "hasSheet": false,
   "website": "https://www.viaa.nl",
-  "programs": 17
+  "programs": 5
  },
  {
   "id": "nl-stichting-opleidingen-musculoskeletale-therapie",
@@ -879,7 +833,7 @@
   "kind": "private",
   "hasSheet": false,
   "website": "http://www.somt.nl",
-  "programs": 2
+  "programs": 1
  },
  {
   "id": "nl-stichting-sdo-hogeschool-voor-moderne-bedrijfskunde",
@@ -937,18 +891,18 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://tukampen.nl",
-  "programs": 2
+  "programs": 1
  },
  {
   "id": "nl-thim-van-der-laan-b-v",
   "country": "NL",
   "source": "DUO RIO 2026-10",
-  "name": "Thim van der Laan B.V.",
+  "name": "Thim van der Laan",
   "officialName": "Thim van der Laan B.V.",
   "city": "Nieuwegein",
   "kind": "private",
   "hasSheet": false,
-  "programs": 22
+  "programs": 2
  },
  {
   "id": "nl-tilburg-university",
@@ -959,7 +913,7 @@
   "city": "Tilburg",
   "kind": "public",
   "hasSheet": false,
-  "programs": 37
+  "programs": 23
  },
  {
   "id": "nl-tio",
@@ -971,13 +925,13 @@
   "kind": "private",
   "hasSheet": false,
   "website": "https://www.tio.nl",
-  "programs": 10
+  "programs": 7
  },
  {
   "id": "nl-tmo-fashion-business-school-bv",
   "country": "NL",
   "source": "DUO RIO 2026-10",
-  "name": "TMO Fashion Business School BV",
+  "name": "TMO Fashion Business School",
   "officialName": "TMO Fashion Business School BV",
   "city": "Doorn",
   "kind": "private",
@@ -999,12 +953,12 @@
   "id": "nl-university-of-applied-sciences-europe-b-v",
   "country": "NL",
   "source": "DUO RIO 2026-10",
-  "name": "University of Applied Sciences Europe B.V",
+  "name": "University of Applied Sciences Europe",
   "officialName": "University of Applied Sciences Europe B.V",
   "city": "Amsterdam",
   "kind": "private",
   "hasSheet": false,
-  "programs": 2
+  "programs": 1
  },
  {
   "id": "nl-unknown-university-of-applied-sciences",
@@ -1015,18 +969,7 @@
   "city": "'s-Gravenhage",
   "kind": "private",
   "hasSheet": false,
-  "programs": 3
- },
- {
-  "id": "nl-viaa",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "Viaa",
-  "officialName": "Viaa",
-  "city": "Zwolle",
-  "kind": "private",
-  "hasSheet": false,
-  "programs": 1
+  "programs": 2
  },
  {
   "id": "nl-wageningen-university",
@@ -1037,13 +980,13 @@
   "city": "Wageningen",
   "kind": "public",
   "hasSheet": false,
-  "programs": 22
+  "programs": 21
  },
  {
   "id": "nl-wittenborg-university-of-applied-sciences-b-v",
   "country": "NL",
   "source": "DUO RIO 2026-10",
-  "name": "Wittenborg University of Applied Sciences B.V.",
+  "name": "Wittenborg University of Applied Sciences",
   "officialName": "Wittenborg University of Applied Sciences B.V.",
   "city": "Apeldoorn",
   "kind": "private",
@@ -1061,7 +1004,7 @@
   "kind": "public",
   "hasSheet": false,
   "website": "https://www.zuyd.nl",
-  "programs": 54
+  "programs": 36
  },
  {
   "id": "rug",
@@ -1073,7 +1016,7 @@
   "kind": "public",
   "hasSheet": true,
   "website": "https://www.rug.nl",
-  "programs": 82
+  "programs": 52
  },
  {
   "id": "tu-delft",
@@ -1085,7 +1028,7 @@
   "kind": "public",
   "hasSheet": true,
   "website": "https://www.tudelft.nl",
-  "programs": 31
+  "programs": 16
  },
  {
   "id": "tu-eindhoven",
@@ -1096,7 +1039,7 @@
   "city": "Eindhoven",
   "kind": "public",
   "hasSheet": true,
-  "programs": 20
+  "programs": 13
  },
  {
   "id": "twente",
@@ -1108,7 +1051,7 @@
   "kind": "public",
   "hasSheet": true,
   "website": "https://www.utwente.nl",
-  "programs": 24
+  "programs": 19
  },
  {
   "id": "utrecht",
@@ -1120,7 +1063,7 @@
   "kind": "public",
   "hasSheet": true,
   "website": "https://www.uu.nl",
-  "programs": 72
+  "programs": 41
  },
  {
   "id": "uva",
@@ -1131,7 +1074,7 @@
   "city": "Amsterdam",
   "kind": "public",
   "hasSheet": true,
-  "programs": 107
+  "programs": 62
  },
  {
   "id": "vu-amsterdam",
@@ -1142,6 +1085,6 @@
   "city": "Amsterdam",
   "kind": "public",
   "hasSheet": true,
-  "programs": 58
+  "programs": 45
  }
 ]
