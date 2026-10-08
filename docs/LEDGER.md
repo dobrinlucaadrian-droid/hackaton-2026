@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-08 04:02 — verificarea de secrete de pe GitHub: alarmă falsă pe datele catalogului
+- Cerut: lucru autonom peste noapte; verificarea „Leaked secrets” de pe GitHub pica după salvarea catalogului
+- Făcut: toate cele 2.364 de semnalări erau în fișierele de date ale catalogului, pe câmpul `key` al fiecărui program (un identificator ușor de citit, de exemplu `upb--electronica-aplicata--engleza-if-2`), luat drept cheie secretă de regula generală; niciuna în cod. Am adăugat o excepție îngustă: doar pentru acea regulă, doar în fișierele de programe și doar pe rândurile cu un astfel de identificator. Toate celelalte reguli rămân active peste tot
+- Fișiere: `.gitleaks.toml` (nou), `.github/workflows/security.yml`
+- Poartă: rulată la salvare
+- Urmează: confirmăm pe GitHub că verificarea trece; apoi raportul de dimineață pentru echipă
+
 ### 2026-10-08 03:56 — verificarea de secrete de pe GitHub: aflăm ce a găsit
 - Cerut: lucru autonom peste noapte; după salvarea catalogului, verificarea automată „Leaked secrets” de pe GitHub a picat cu 2.364 de semnalări
 - Făcut: verificarea scrie acum, când pică, regula și fișierul fiecărei semnalări (valorile rămân ascunse), ca să vedem dacă sunt secrete adevărate sau date din catalog luate drept secrete
@@ -451,6 +458,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-08 03:56 `4e1429c` ci: print which rule and file each secret-scan finding is in
 - 2026-10-08 03:49 `2f23ae9` feat: catalogue for eleven countries, status report and home page totals
 - 2026-10-08 03:38 `2a332f4` feat: multi-country programme catalogue from official open datasets
 - 2026-10-08 03:13 `a9edb12` feat: Romanian catalogue of institutions and bachelor programmes from the official list
@@ -480,5 +488,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-05 00:51 `4c91def` feat: illustration and a surprise-me card on the specializations page
 - 2026-10-05 00:48 `86d84fe` feat: keep a single logo on the home page
 - 2026-10-05 00:27 `3551c80` feat: questionnaire start page with its own title and the start button on top
-- 2026-10-05 00:12 `2c00f9b` feat: UniPath in numbers on the home page
 <!-- commits:end -->

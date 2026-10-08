@@ -1,0 +1,14 @@
+# Secret-scan settings: all the standard rules stay on; only the programme identifiers in the catalogue data are not treated as API keys.
+[extend]
+useDefault = true
+
+# Each programme in the catalogue has a field named "key" holding a readable identifier
+# (for example "upb--electronica-aplicata--engleza-if-2"). The general "API key" rule takes it for a secret.
+# The exception applies only to that rule, only in the programme data files and only on lines with such a field.
+[[allowlists]]
+description = "Programme identifiers in the catalogue data are not secrets"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "line"
+paths = ['''^apps/web/data/(catalog/)?[a-z]{2}-programs\.json$''']
+regexes = ['''"key":\s?"[a-z0-9]+-[a-z0-9-]+"''']
