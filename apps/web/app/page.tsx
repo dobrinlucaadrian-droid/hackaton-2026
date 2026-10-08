@@ -2,18 +2,16 @@
 import Link from "next/link";
 import { HeroScene } from "@/components/Illustrations";
 import { Shell } from "@/components/Shell";
+import { catalogTotals } from "@/lib/catalog";
 import { specializations, testimonials, universities } from "@/lib/data";
-import worldList from "@/public/world-universities.json";
 
 const nf = new Intl.NumberFormat("ro-RO");
-// Rounded down to the thousand, shown as "10.000+".
-const worldCount = Math.floor((worldList as unknown[]).length / 1000) * 1000;
 
 const numbers: { value: string; label: string; href: string; tone: string }[] = [
   { value: nf.format(universities.length), label: "universități cu fișă completă", href: "/universitati", tone: "text-primary" },
   { value: nf.format(specializations.length), label: "specializări explicate pe înțeles", href: "/specializari", tone: "text-teal-ink" },
   { value: nf.format(testimonials.length), label: "păreri de la studenți adevărați", href: "/studenti", tone: "text-sky" },
-  { value: `${nf.format(worldCount)}+`, label: "universități din lume la căutare", href: "/universitati", tone: "text-violet" },
+  { value: nf.format(catalogTotals.programs), label: `programe de licență din ${catalogTotals.countries} țări, din date oficiale`, href: "/programe", tone: "text-violet" },
 ];
 
 export default function Home() {

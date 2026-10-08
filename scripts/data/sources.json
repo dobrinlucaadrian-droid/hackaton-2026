@@ -70,5 +70,32 @@
     "attribution": "DUO (Dienst Uitvoering Onderwijs), RIO open data, CC BY; prelucrat de UniPath, nu este un produs oficial DUO",
     "year": "octombrie 2026",
     "note": "Programe de licență de la universități (WO) și de la școli superioare de științe aplicate (HBO). Pe lângă programele oferite, am inclus și programele cu licență de funcționare valabilă care nu au o ofertă înregistrată, fiindcă lista de oferte e incompletă la universități. Numele sunt în olandeză chiar și la programele predate în engleză; la o parte din programe sursa nu spune limba de predare."
+  },
+  "ie": {
+    "country": "Irlanda",
+    "sourceName": "Europass – „Learning Opportunities and Qualifications in Europe” (Comisia Europeană, date deschise)",
+    "url": "https://data.europa.eu/",
+    "licence": "notă de reutilizare a Comisiei Europene (Decizia 2011/833/UE), conținut sub CC BY 4.0",
+    "year": "descărcat în octombrie 2026",
+    "attribution": "Europass (Comisia Europeană), date furnizate de QQI – Quality and Qualifications Ireland; adaptate de UniPath",
+    "note": "Programe de nivel licență din registrul irlandez. „Orașul” este zona administrativă din sursă, nu întotdeauna orașul campusului. Sursa nu are durata sau locurile. Datele de bază aparțin QQI; nu am găsit o licență separată pentru ele."
+  },
+  "be": {
+    "country": "Belgia (doar Flandra)",
+    "sourceName": "Europass – „Learning Opportunities and Qualifications in Europe” (Comisia Europeană, date deschise)",
+    "url": "https://data.europa.eu/",
+    "licence": "notă de reutilizare a Comisiei Europene (Decizia 2011/833/UE), conținut sub CC BY 4.0",
+    "year": "descărcat în octombrie 2026",
+    "attribution": "Europass (Comisia Europeană), date furnizate de AHOVOKS (Flandra); adaptate de UniPath",
+    "note": "Acoperire parțială: doar instituțiile din Flandra, cu programe în olandeză; Valonia și Bruxelles-ul francofon lipsesc. Orașul este sediul instituției. Sursa nu are coduri de domeniu, durata sau locurile; domeniul l-am dedus din numele programului. Datele de bază aparțin AHOVOKS; nu am găsit o licență separată pentru ele."
+  },
+  "at": {
+    "country": "Austria",
+    "sourceName": "Europass – „Learning Opportunities and Qualifications in Europe” (Comisia Europeană, date deschise)",
+    "url": "https://data.europa.eu/",
+    "licence": "notă de reutilizare a Comisiei Europene (Decizia 2011/833/UE), conținut sub CC BY 4.0",
+    "year": "descărcat în octombrie 2026",
+    "attribution": "Europass (Comisia Europeană), date furnizate de OeAD / studienwahl.at; adaptate de UniPath",
+    "note": "Acoperire parțială: 520 de programe de licență, mai puține decât oferta reală (de exemplu WU Wien apare cu un singur program). Sursa nu are orașul; l-am luat din adresa paginii programului. Datele de bază aparțin OeAD; nu am găsit o licență separată pentru ele."
   }
 }

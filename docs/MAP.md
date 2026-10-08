@@ -98,7 +98,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `not-found.tsx` (11) — Friendly 404 page shown for unknown routes and unknown university ids.. Exports: NotFound
 - `opengraph-image.alt.txt` (1) — _no description: add a first-line comment_
 - `opengraph-image.png`
-- `page.tsx` (77) — Home page: the hero with the two main actions and "UniPath în cifre" (counts taken from the data); search and specializations have their own pages.. Routes: /. Exports: Home
+- `page.tsx` (75) — Home page: the hero with the two main actions and "UniPath în cifre" (counts taken from the data); search and specializations have their own pages.. Routes: /. Exports: Home
 
 ### apps/web/app/conectare  (1 files)
 
@@ -170,7 +170,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `InterestPicker.tsx` (129) — "Ce îți place?": the student picks up to three interests and sees the specializations that fit them best, ranked, with links to universities.. Exports: InterestPicker
 - `MatchCard.tsx` (197) — One result card: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
 - `NavLinks.tsx` (42) — Header navigation links with the current page highlighted; the last one is "Conectare" or "Contul meu".. Exports: NavLinks
-- `OfficialPrograms.tsx` (60) — On a university sheet: every bachelor programme of the institution from its country's official dataset, grouped by faculty (or by field when the source has no faculties), read from the database.. Exports: OfficialPrograms
+- `OfficialPrograms.tsx` (63) — On a university sheet: every bachelor programme of the institution from its country's official dataset, grouped by faculty (or by field when the source has no faculties), read from the database.. Exports: OfficialPrograms
 - `ProgramRow.tsx` (68) — One bachelor programme from the catalogue, as a compact row: name and the small facts its source gives (language, study form, years, places, status).. Exports: FORM_LABEL, ProgramRow
 - `ProgramSearch.tsx` (100) — Search over the bachelor programmes of the catalogue: country, free text, study domain and city; the state lives in the URL so links and Back work.. Exports: ProgramSearch
 - `SaveResult.tsx` (59) — "Salvează în contul meu" on the result page: saves the result when the student is signed in, otherwise keeps it on the device and sends them to sign in.. Exports: SaveResult
@@ -224,10 +224,10 @@ _Open only the files listed here; a file's description is its first comment line
 - `es-institutions.json` (101) — JSON array, 9 items
 - `es-programs.json`
 - `fr-institutions.json` (9144) — JSON array, 831 items
-- `fr-programs.json`
+- `fr-programs.jsonl.gz`
 - `ie-institutions.json` (498) — JSON array, 45 items
 - `ie-programs.json`
-- `index.json` (1297) — JSON array, 8 items
+- `index.json` (1534) — JSON array, 11 items
 - `it-institutions.json` (1015) — JSON array, 92 items
 - `it-programs.json`
 - `nl-institutions.json` (1148) — JSON array, 100 items

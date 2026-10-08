@@ -1,6 +1,7 @@
 // Builds the French catalogue (institutions + first-cycle programmes) from the Parcoursup 2025 open dataset: node scripts/data/fr/build.mjs <raw-folder>
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { gzipSync } from "node:zlib";
 import { DOMAIN_IDS } from "../isced.mjs";
 
 const RAW = process.argv[2];
@@ -169,7 +170,8 @@ const institutions = [...instOf.values()].sort((a, b) => a.id.localeCompare(b.id
 programs.sort((a, b) => a.key.localeCompare(b.key));
 mkdirSync(OUT, { recursive: true });
 writeFileSync(new URL("fr-institutions.json", OUT), JSON.stringify(institutions, null, 1) + "\n");
-writeFileSync(new URL("fr-programs.json", OUT), JSON.stringify(programs, null, 1) + "\n");
+// gzipped JSON Lines: the plain JSON is close to the 5 MB per-file limit of the project gate (see scripts/data/CONTRACT.md)
+writeFileSync(new URL("fr-programs.jsonl.gz", OUT), gzipSync(programs.map((p) => JSON.stringify(p)).join("\n") + "\n"));
 
 console.log(`source rows: ${raw.length}; kept: ${kept.length}; dropped (type): ${[...dropped.values()].reduce((a, b) => a + b, 0)}; dropped (abroad): ${foreign}`);
 console.log("KEPT:", [...keptCount].map(([k, v]) => `${k} ${v}`).join("; "));

@@ -7,8 +7,8 @@ lista de commit-uri de la final se reface singură.
 
 - **Scop:** UniPath — ghid între liceu și facultate. Hackathonul s-a încheiat (prezentare pe 2026-10-05); acum se construiește versiunea de producție: conturi, bază de date Convex, păreri moderate, securitate
 - **Unde:** versiunea de producție e pe ramura `production` (nepublicată; rulează local cu `npm run dev --prefix apps/web` și folosește baza Convex de dezvoltare, proiectul „unipath”). Versiunea prezentată e pe `main`, publică la https://unipath-taupe-mu.vercel.app, și nu se atinge până nu cere echipa. Planul: `docs/production-plan.md`
-- **Urmează:** ordinea hotărâtă de echipă (vezi `docs/ultimii-pasi.md`): (1) baza de date completă — etapa A (România, 84 de instituții și 2.673 de programe din lista oficială) e FĂCUTĂ; urmează etapa B (universitățile lumii din ROR) și etapa C (Olanda, Italia, Franța, Polonia, SUA), sursele sunt în `docs/db-sources.md`; (2) calitate tehnică; (3) ultimii pași: chei reale, domeniu, administratori, baza de producție, lansare. Conturile cer acum nume complet și email
-- **De știut:** Vercel CLI și Convex CLI sunt logate doar din aplicația Claude (Vercel: cont `dobrinlucaadrian-7970`; Convex: echipa `dobrinlucaadrian`, proiect `unipath`, bază de dezvoltare `adjoining-duck-455`). `apps/web/.env.local` (adresa Convex și cheia publică de probă Turnstile) NU e în Git: dacă lipsește, `npx convex dev --once` în `apps/web` îl reface, iar `NEXT_PUBLIC_TURNSTILE_SITE_KEY` de probă este `1x00000000000000000000AA`. Pe baza de dezvoltare sunt puse `AUTH_DEV_LOG_LINKS=1` (linkul de conectare apare în `npx convex logs`), cheile de probă Turnstile și `ADMIN_EMAILS=admin.test@example.com`. Echipa vrea să lucrez cât mai mult local înainte să-i cer conturi sau chei
+- **Urmează:** ordinea hotărâtă de echipă (vezi `docs/ultimii-pasi.md`): (1) baza de date completă — FĂCUT pentru 11 țări (96.215 programe; starea pe țări în `docs/catalog-status.md`); rămân: Marea Britanie și alte țări fără date deschise, universitățile lumii din ROR, fișe pentru cele 10 instituții românești noi; (2) calitate tehnică (viteza paginilor, acum generate la fiecare vizită); (3) ultimii pași: chei reale, domeniu, administratori, baza de producție, lansare
+- **De știut:** Vercel CLI și Convex CLI sunt logate doar din aplicația Claude (Vercel: cont `dobrinlucaadrian-7970`; Convex: echipa `dobrinlucaadrian`, proiect `unipath`, bază de dezvoltare `adjoining-duck-455`). `apps/web/.env.local` NU e în Git: dacă lipsește, `npx convex dev --once` în `apps/web` îl reface, iar `NEXT_PUBLIC_TURNSTILE_SITE_KEY` de probă este `1x00000000000000000000AA`. Catalogul se reîncarcă în Convex cu `node scripts/data/import.mjs`. Pe baza de dezvoltare sunt puse `AUTH_DEV_LOG_LINKS=1` (linkul de conectare apare în `npx convex logs`), cheile de probă Turnstile și `ADMIN_EMAILS=admin.test@example.com`. Echipa vrea să lucrez cât mai mult local înainte să-i cer conturi sau chei
 
 ## Jurnal
 
@@ -20,6 +20,15 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-08 03:49 — baza de date, etapa C încheiată: 11 țări, 96.215 programe
+- Cerut: continuarea lucrului autonom peste noapte pe celelalte țări
+- Făcut: adăugate Polonia (9.083 de programe, registrul RAD-on, CC0), Olanda (3.768, DUO, CC BY), Spania — doar Comunitatea Valenciană (481, Generalitat Valenciana, CC BY), Irlanda (2.433), Belgia — doar Flandra (643) și Austria (520), ultimele trei din datele deschise Europass ale Comisiei Europene. Total în baza de dezvoltare: 3.843 de instituții și 96.215 programe de licență din 11 țări. Pagina principală arată numărul de programe și de țări; la țările a căror sursă dă doar un cod de domeniu, fișa universității grupează programele după domeniile aplicației. Starea pe țări, ce nu s-a putut și ce ar debloca fiecare caz sunt în `docs/catalog-status.md`
+- Nu s-a putut (fără date oficiale deschise cu numele programelor): Marea Britanie, restul Spaniei, Danemarca, Suedia, Elveția, Ungaria — motivele și sursele încercate sunt în `docs/catalog-status.md` și în README-ul fiecărei țări din `scripts/data/`
+- Fișiere: `apps/web/data/catalog/` (fișierele noilor țări, `index.json`), `scripts/data/` (`sources.json`, dosarele `pl`, `nl`, `es`, `ie`, `be`, `at`, plus README-urile pentru `gb`, `dk`, `se`, `ch`, `hu`), `apps/web/app/page.tsx`, `apps/web/components/OfficialPrograms.tsx`, `docs/catalog-status.md` (nou), `docs/ultimii-pasi.md`
+- Poartă: TRECUT (build, 113 teste, pornire). Fiecare din cele 11 țări trece verificatorul și testele comune. În baza reală de dezvoltare: 3.843 de instituții, 96.215 programe. Într-un browser separat, la lățime de telefon și pe laptop: fișele Universității din Viena, KU Leuven, Leiden și TU Delft arată programele din sursa țării lor; căutarea merge în Irlanda, Belgia, Austria, Olanda, Polonia, Spania și Franța (ex. „rechtsgeleerdheid” în Olanda → 20; Medicină în Polonia → 98; „informatik” în Viena → 3); rezultatul pentru „în străinătate” arată numărul de programe de Informatică din fiecare țară; pagina principală arată „96.215 programe de licență din 11 țări”; fără erori. NEVERIFICAT: niciun rând comparat cu site-ul unei universități; pe un telefon real; versiunea construită ca pentru producție nu a fost reparcursă după aceste schimbări
+- De verificat de un om: licența datelor din SUA (nu e scrisă pe pagina de descărcare); licența datelor de bază din Europass (Irlanda, Belgia, Austria); legătura cu cele 40 de domenii unde a fost dedusă din numele programului
+- Urmează: hotărârea echipei despre țările parțiale (le păstrăm cu eticheta „parțial” sau le scoatem); universitățile lumii din ROR; fișe pentru cele 10 instituții românești noi; apoi calitatea tehnică și ultimii pași
 
 ### 2026-10-08 03:35 — baza de date, etapa C: catalog pe mai multe țări (lucru autonom peste noapte)
 - Cerut: după verificarea României, același lucru, autonom, pentru celelalte țări relevante: Olanda, Italia, Franța, Spania, SUA și altele de interes; fără întrebări peste noapte
@@ -435,6 +444,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-08 03:38 `2a332f4` feat: multi-country programme catalogue from official open datasets
 - 2026-10-08 03:13 `a9edb12` feat: Romanian catalogue of institutions and bachelor programmes from the official list
 - 2026-10-08 02:47 `a381c2f` feat: ask for the full name at sign-in and keep it on the account
 - 2026-10-08 00:16 `a1fd781` docs: research on official and open data sources for universities and programmes
@@ -464,5 +474,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-05 00:27 `3551c80` feat: questionnaire start page with its own title and the start button on top
 - 2026-10-05 00:12 `2c00f9b` feat: UniPath in numbers on the home page
 - 2026-10-04 23:47 `f1683ad` feat: Politehnica faculties and programmes on its sheet, 12 more Romanian universities
-- 2026-10-04 23:32 `803b972` feat: seven more student opinions with photos, and Anton Mocanu's photo
 <!-- commits:end -->

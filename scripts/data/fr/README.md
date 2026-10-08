@@ -1,6 +1,6 @@
 # France: institutions and first-cycle programmes
 
-Output: `apps/web/data/catalog/fr-institutions.json` (831 institutions) and `fr-programs.json` (5,556 programmes, 279 cities).
+Output: `apps/web/data/catalog/fr-institutions.json` (831 institutions) and `fr-programs.jsonl.gz` (5,556 programmes, 279 cities).
 
 ## Source
 

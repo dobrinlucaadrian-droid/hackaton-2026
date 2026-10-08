@@ -8,7 +8,7 @@ reală: totul se construiește și se verifică local, pe baza de date de dezvol
 
 | Etapă | Ce | Stare |
 | --- | --- | --- |
-| 1 | Baza de date completă: universități, facultăți, programe de studii | România făcută (2.673 de programe din lista oficială); urmează universitățile lumii și alte țări |
+| 1 | Baza de date completă: universități, facultăți, programe de studii | 11 țări, 96.215 programe din date oficiale (vezi `docs/catalog-status.md`); rămân țările fără date deschise |
 | 2 | Calitate tehnică: viteza paginilor, verificări, curățenie în cod | după etapa 1 |
 | 3 | Ultimii pași (acest document): chei reale, domeniu, administratori, lansare | la final |
 
@@ -78,7 +78,7 @@ După verificare se scoate nota „Versiune de lucru” din pagină.
 1. Claude creează baza de producție Convex și generează chei noi de semnare a sesiunilor.
 2. Echipa repetă pașii 1, 3 și 4 pentru producție (cu `--prod`).
 3. În producție **nu** se pune `AUTH_DEV_LOG_LINKS` (comutatorul de probă pentru linkuri).
-4. Se încarcă și catalogul de instituții și programe în baza de producție (comenzile sunt în `scripts/data/README.md`, cu `--prod`).
+4. Se încarcă și catalogul de instituții și programe în baza de producție (`node scripts/data/import.mjs --prod`).
 5. `SITE_URL` devine adresa reală a site-ului.
 
 ### 8. Adresa de probă, apoi lansarea — Claude publică, echipa hotărăște

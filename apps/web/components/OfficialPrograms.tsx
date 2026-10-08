@@ -3,6 +3,7 @@
 import { useQuery } from "convex/react";
 import Link from "next/link";
 import { api } from "@/convex/_generated/api";
+import { domains } from "@/lib/data";
 import { ProgramRow, type ProgramView } from "./ProgramRow";
 
 export function OfficialPrograms({ institutionId, city, sourceLabel, year, hasCapacity }: { institutionId: string; city: string; sourceLabel: string; year: string; hasCapacity: boolean }) {
@@ -12,8 +13,10 @@ export function OfficialPrograms({ institutionId, city, sourceLabel, year, hasCa
 
   const byFaculty = rows.some((p) => p.faculty);
   const groups = new Map<string, ProgramView[]>();
+  // Some sources give only a classification code as the field label: show the app's own domain name instead.
+  const fieldLabel = (p: ProgramView) => (/^ISCED-F/.test(p.domain) ? (domains.find((d) => d.id === p.domainId)?.name ?? "Alte domenii") : p.domain);
   for (const p of rows) {
-    const k = byFaculty ? (p.faculty ?? "Alte programe") : p.domain;
+    const k = byFaculty ? (p.faculty ?? "Alte programe") : fieldLabel(p);
     groups.set(k, [...(groups.get(k) ?? []), p]);
   }
   const list = byFaculty ? [...groups] : [...groups].sort((a, b) => a[0].localeCompare(b[0]));
