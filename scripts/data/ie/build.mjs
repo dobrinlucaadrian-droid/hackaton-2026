@@ -106,7 +106,9 @@ function writeOut(institutions, programs) {
   console.log(`${CC}: ${insts.length} institutions, ${prog.length} programmes written`);
 }
 
-const SHEETS = {};
+// Existing app sheets: provider's legal name in the source -> app sheet id
+const SHEETS = { "Trinity College Dublin, University of Dublin": "trinity-college-dublin", "University College Dublin": "university-college-dublin", "University of Galway": "university-of-galway", "University College Cork": "university-college-cork",
+  "Dublin City University": "dublin-city-university", "University of Limerick": "university-of-limerick", "Maynooth University": "maynooth-university", "Technological University Dublin": "tu-dublin" };
 const INCLUDE = /\bbachelor\b|\bB\.?\s?(?:A|Sc|Eng|Comm|Ed|Des|Mus|Sc\.)\b|\bBBS\b|\bBBA\b|\bBCL\b|\bLLB\b|\bBE\b|\bBN\b|\bBAI\b|honours degree|ordinary degree|\(hons\)/i;
 const EXCLUDE = /higher diploma|graduate diploma|postgraduate|certificate|diploma|micro-?credential|master|\bMSc\b|\bMA\b|\bMBA\b|\bPhD\b|doctor/i;
 // Integrated programmes entered from school that end with a master degree (EQF 7, Irish NFQ level 9) are first degrees for the student, so they are kept.
@@ -144,7 +146,7 @@ for (const lo of [...g.values()].sort((a, b) => a.id.localeCompare(b.id))) {
   // or two intakes is the same programme for a student, and the source gives nothing to show that tells the records apart.
   const dupKey = `${instId}|${ascii(title)}`; if (seen.has(dupKey)) { skipped.duplicate++; continue; } seen.add(dupKey);
   if (eqf === "7") integrated++;
-  if (!institutions.has(instId)) institutions.set(instId, { id: instId, country: CC, source: SOURCE, name: orgName, officialName: orgName, city, kind: "unknown", hasSheet: false });
+  if (!institutions.has(instId)) institutions.set(instId, { id: instId, country: CC, source: SOURCE, name: orgName, officialName: orgName, city, kind: "unknown", hasSheet: orgName in SHEETS });
   const codes = iscedOf(q), four = codes.find((c) => c.length === 4);
   const language = LANG[last(first(lo, "elm:defaultLanguage")?.iri)] || "engleză";
   const p = { key: `ie-${slug(orgName)}--${slug(title)}--${last(lo.id).slice(0, 8)}`.slice(0, 190), country: CC, institutionId: instId, institutionName: orgName, city, domain: four ? `ISCED-F ${four}` : codes.length ? `ISCED-F ${codes[0]}` : "ISCED-F (not given)", domainId: domainOf(codes), name: title, language };

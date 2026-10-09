@@ -11,14 +11,14 @@
   "programs": 11
  },
  {
-  "id": "it-humanitas-university",
+  "id": "humanitas",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
   "name": "Humanitas University",
   "officialName": "Humanitas University",
   "city": "Pieve Emanuele",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 9
  },
  {
@@ -31,17 +31,6 @@
   "kind": "private",
   "hasSheet": false,
   "programs": 30
- },
- {
-  "id": "it-libera-universita-di-lingue-e-comunicazione-iulm",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Libera Università di Lingue e Comunicazione (IULM)",
-  "officialName": "Libera Università di Lingue e Comunicazione (IULM)",
-  "city": "Milano",
-  "kind": "private",
-  "hasSheet": false,
-  "programs": 7
  },
  {
   "id": "it-libera-universita-maria-ss-assunta-lumsa-di-roma",
@@ -286,17 +275,6 @@
   "programs": 18
  },
  {
-  "id": "it-universita-degli-studi-di-catania",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università degli studi di Catania",
-  "officialName": "Università degli studi di Catania",
-  "city": "Catania",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 62
- },
- {
   "id": "it-universita-degli-studi-di-catanzaro-magna-grecia",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
@@ -306,17 +284,6 @@
   "kind": "public",
   "hasSheet": false,
   "programs": 27
- },
- {
-  "id": "it-universita-degli-studi-di-ferrara",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università degli studi di Ferrara",
-  "officialName": "Università degli studi di Ferrara",
-  "city": "Ferrara",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 44
  },
  {
   "id": "it-universita-degli-studi-di-firenze",
@@ -396,17 +363,6 @@
   "programs": 47
  },
  {
-  "id": "it-universita-degli-studi-di-modena-e-reggio-emilia",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università degli studi di Modena e Reggio Emilia",
-  "officialName": "Università degli studi di Modena e Reggio Emilia",
-  "city": "Modena",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 53
- },
- {
   "id": "it-universita-degli-studi-di-napoli-parthenope",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
@@ -418,34 +374,12 @@
   "programs": 23
  },
  {
-  "id": "it-universita-degli-studi-di-palermo",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università degli studi di Palermo",
-  "officialName": "Università degli studi di Palermo",
-  "city": "Palermo",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 105
- },
- {
   "id": "it-universita-degli-studi-di-pavia",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
   "name": "Università degli studi di Pavia",
   "officialName": "Università degli studi di Pavia",
   "city": "Pavia",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 54
- },
- {
-  "id": "it-universita-degli-studi-di-perugia",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università degli studi di Perugia",
-  "officialName": "Università degli studi di Perugia",
-  "city": "Perugia",
   "kind": "public",
   "hasSheet": false,
   "programs": 54
@@ -460,17 +394,6 @@
   "kind": "public",
   "hasSheet": false,
   "programs": 1
- },
- {
-  "id": "it-universita-degli-studi-di-salerno",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università degli studi di Salerno",
-  "officialName": "Università degli studi di Salerno",
-  "city": "Fisciano - Salerno",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 51
  },
  {
   "id": "it-universita-degli-studi-di-sassari",
@@ -526,17 +449,6 @@
   "kind": "public",
   "hasSheet": false,
   "programs": 27
- },
- {
-  "id": "it-universita-degli-studi-di-udine",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università degli studi di Udine",
-  "officialName": "Università degli studi di Udine",
-  "city": "Udine",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 43
  },
  {
   "id": "it-universita-degli-studi-gabriele-d-annunzio-di-chieti-e-pescara",
@@ -605,17 +517,6 @@
   "programs": 39
  },
  {
-  "id": "it-universita-della-calabria",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università della Calabria",
-  "officialName": "Università della Calabria",
-  "city": "Arcavacata di Rende",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 45
- },
- {
   "id": "it-universita-della-valle-d-aosta",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
@@ -669,28 +570,6 @@
   "kind": "private",
   "hasSheet": false,
   "programs": 3
- },
- {
-  "id": "it-universita-per-stranieri-di-perugia",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università per stranieri di Perugia",
-  "officialName": "Università per stranieri di Perugia",
-  "city": "Perugia",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 4
- },
- {
-  "id": "it-universita-per-stranieri-di-siena",
-  "country": "IT",
-  "source": "MUR USTAT offerta formativa 2025",
-  "name": "Università per stranieri di Siena",
-  "officialName": "Università per stranieri di Siena",
-  "city": "Siena",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 4
  },
  {
   "id": "it-universita-politecnica-delle-marche-ancona",
@@ -825,6 +704,17 @@
   "programs": 12
  },
  {
+  "id": "iulm",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Libera Università di Lingue e Comunicazione (IULM)",
+  "officialName": "Libera Università di Lingue e Comunicazione (IULM)",
+  "city": "Milano",
+  "kind": "private",
+  "hasSheet": true,
+  "programs": 7
+ },
+ {
   "id": "luiss",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
@@ -913,6 +803,17 @@
   "programs": 15
  },
  {
+  "id": "unical",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università della Calabria",
+  "officialName": "Università della Calabria",
+  "city": "Arcavacata di Rende",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 45
+ },
+ {
   "id": "unicatt",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
@@ -922,6 +823,28 @@
   "kind": "private",
   "hasSheet": true,
   "programs": 75
+ },
+ {
+  "id": "unict",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università degli studi di Catania",
+  "officialName": "Università degli studi di Catania",
+  "city": "Catania",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 62
+ },
+ {
+  "id": "unife",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università degli studi di Ferrara",
+  "officialName": "Università degli studi di Ferrara",
+  "city": "Ferrara",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 44
  },
  {
   "id": "unige",
@@ -935,6 +858,17 @@
   "programs": 82
  },
  {
+  "id": "unimore",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università degli studi di Modena e Reggio Emilia",
+  "officialName": "Università degli studi di Modena e Reggio Emilia",
+  "city": "Modena",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 53
+ },
+ {
   "id": "unina",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
@@ -946,6 +880,17 @@
   "programs": 89
  },
  {
+  "id": "unipa",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università degli studi di Palermo",
+  "officialName": "Università degli studi di Palermo",
+  "city": "Palermo",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 105
+ },
+ {
   "id": "unipd",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
@@ -955,6 +900,17 @@
   "kind": "public",
   "hasSheet": true,
   "programs": 127
+ },
+ {
+  "id": "unipg",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università degli studi di Perugia",
+  "officialName": "Università degli studi di Perugia",
+  "city": "Perugia",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 54
  },
  {
   "id": "unipi",
@@ -979,6 +935,39 @@
   "programs": 58
  },
  {
+  "id": "unisa",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università degli studi di Salerno",
+  "officialName": "Università degli studi di Salerno",
+  "city": "Fisciano - Salerno",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 51
+ },
+ {
+  "id": "unistrapg",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università per stranieri di Perugia",
+  "officialName": "Università per stranieri di Perugia",
+  "city": "Perugia",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 4
+ },
+ {
+  "id": "unistrasi",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università per stranieri di Siena",
+  "officialName": "Università per stranieri di Siena",
+  "city": "Siena",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 4
+ },
+ {
   "id": "units",
   "country": "IT",
   "source": "MUR USTAT offerta formativa 2025",
@@ -988,6 +977,17 @@
   "kind": "public",
   "hasSheet": true,
   "programs": 42
+ },
+ {
+  "id": "uniud",
+  "country": "IT",
+  "source": "MUR USTAT offerta formativa 2025",
+  "name": "Università degli studi di Udine",
+  "officialName": "Università degli studi di Udine",
+  "city": "Udine",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 43
  },
  {
   "id": "unive",

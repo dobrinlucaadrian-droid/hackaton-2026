@@ -9,7 +9,9 @@ const OUT = new URL("../../../apps/web/data/catalog/", import.meta.url);
 
 // Existing app sheets: MUR "NomeOperativo" -> app id
 const SHEETS = { "Bologna": "unibo", "Milano Politecnico": "polimi", "Torino Politecnico": "polito", "Roma La Sapienza": "sapienza", "Padova": "unipd", "Milano Bocconi": "bocconi",
-  "Pisa": "unipi", "Napoli Federico II": "unina", "Ca' Foscari Venezia": "unive", "Genova": "unige", "Roma Tor Vergata": "tor-vergata", "Roma Tre": "roma-tre", "Trieste": "units", "Verona": "univr", "Roma Luiss": "luiss", "Milano Cattolica": "unicatt", "Parma": "unipr", "Bolzano": "unibz" };
+  "Pisa": "unipi", "Napoli Federico II": "unina", "Ca' Foscari Venezia": "unive", "Genova": "unige", "Roma Tor Vergata": "tor-vergata", "Roma Tre": "roma-tre", "Trieste": "units", "Verona": "univr", "Roma Luiss": "luiss", "Milano Cattolica": "unicatt", "Parma": "unipr", "Bolzano": "unibz",
+  "Perugia": "unipg", "Modena e Reggio Emilia": "unimore", "Ferrara": "unife", "Udine": "uniud", "Salerno": "unisa", "Palermo": "unipa", "Catania": "unict", "Milano IULM": "iulm", "Perugia Stranieri": "unistrapg",
+  "Rozzano (MI) Humanitas University": "humanitas", "Siena Stranieri": "unistrasi", "Calabria": "unical" };
 const SHEET_IDS = new Set(Object.values(SHEETS));
 
 // ---- helpers

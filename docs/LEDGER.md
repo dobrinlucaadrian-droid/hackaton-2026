@@ -21,6 +21,15 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-09 03:58 — 198 de fișe complete noi de universități (403 în total), din 32 de țări
+- Cerut: „aș dori să mai aduni informații despre facultăți, pentru a avea fișă completă la cât mai multe posibil”, pentru mai mult de două ore, cu oprire după 200 de fișe
+- Făcut: 198 de fișe noi, toate în străinătate: SUA 25, Franța 19, Marea Britanie 19, Spania 18, Polonia 15, Germania 12, Italia 12, Irlanda 8, Austria 7, Belgia 6, Canada 6, Danemarca 5, Olanda 5, Suedia 4, câte 3 pentru Australia, Cehia, Elveția, Finlanda, Grecia și Republica Moldova, câte 2 pentru Bulgaria, Cipru, Estonia, Letonia, Lituania, Norvegia și Portugalia, câte una pentru Coreea de Sud, Hong Kong, Malta, Singapore și Slovenia. Aceeași metodă ca la runda anterioară: doar din site-ul oficial al universității și din pagini oficiale de stat, cu paginile folosite păstrate în `apps/web/data/university-sources.json`, fără sume exacte și fără medii de admitere. 99 dintre fișele noi sunt legate de catalogul oficial și arată lista de programe (Spania, Polonia, Austria, SUA, Olanda, Germania, Italia, Irlanda, Belgia)
+- Lăsate deoparte (prea puțin confirmat pe pagini oficiale deschise): Universitatea din Luxemburg, Universitatea din Bergen, Universitatea Pedagogică „Ion Creangă” din Chișinău, Universitatea de Medicină din Varna. Sărite de ajutoare pentru că site-urile blochează citirea automată sau nu au răspuns: Durham, Lancaster, Pompeu Fabra, Deusto, Grenoble, Firenze, Torino, Milano Statale, Milano-Bicocca, Pavia, Trento, Melbourne, NUS, ELTE și altele
+- Fișiere: `apps/web/data/universities-abroad.json`, `apps/web/data/university-sources.json`, `apps/web/data/catalog/` (instituțiile și programele pentru `es`, `pl`, `at`, `us`, `nl`, `de`, `it`, `ie`, `be`, plus `index.json`), `scripts/data/{es,pl,at,us,nl,de,it,ie,be}/build.mjs` și README-urile lor, `apps/web/lib/universities.data.test.ts`
+- Poartă: TRECUT (120 de teste); toate cele 11 țări VALID; văzute în browser: pagina principală cu 403 fișe, fișele Universității din Varșovia, Trinity College Dublin și Caltech cu lista de programe, fișa USM Chișinău, căutarea „toronto”
+- De verificat de un om: prestigiul, nivelul de cost și plusurile/minusurile sunt aprecieri orientative; la o parte din fișe unele detalii vin din rezumatul paginii oficiale din motorul de căutare, nu din pagina deschisă; lista de domenii este aprecierea noastră la primele 15 fișe din SUA și la universitățile mari din Suedia, Elveția, Finlanda, Portugalia și Cehia; la Republica Moldova nivelul taxei pentru cetățenii români nu a fost găsit; la Spania bursele sunt trecute „da” (bursa națională acoperă taxa și pentru cetățeni UE), spre deosebire de fișa veche a Universității din Barcelona; fișele din Franța nu sunt legate de catalog, fiindcă acolo o universitate apare împărțită pe campusuri
+- Urmează: echipa hotărăște dacă mai vrea fișe; pentru universitățile cu site blocat, datele trebuie adunate de mână
+
 ### 2026-10-09 02:55 — salvare pe GitHub: fișele noi, separat de panoul de statistici
 - Cerut: `/git-workflow` — salvarea lucrului de azi
 - Făcut: lucrul a fost salvat în două părți, ca să poată fi urmărit ușor: întâi panoul de statistici și caseta de pe pagina principală, apoi cele 74 de fișe noi cu legătura lor la catalog (descrise în intrarea „74 de fișe complete noi” de mai jos). Niciun fișier nou față de acea intrare
@@ -497,6 +506,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-09 02:55 `88b4621` feat: add 74 university profile sheets and link them to the catalogue
 - 2026-10-09 02:55 `17842ce` feat: admin statistics panel, anonymous usage counters and home tile
 - 2026-10-08 23:46 `6cf706f` feat: completeness pass on the catalogue: Spain nationwide, France 2026, cleanups
 - 2026-10-08 04:02 `ce1a3d5` ci: stop the secret scan from flagging programme identifiers in the catalogue data
@@ -526,5 +536,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-05 10:19 `4e9ff71` feat: add seven more student opinions with photos
 - 2026-10-05 01:35 `65cbccc` feat: ask the city in the questionnaire and list only universities from that city
 - 2026-10-05 01:24 `6d6fbdf` feat: 18 researched scenario questions in the questionnaire, balanced across the ten traits
-- 2026-10-05 00:59 `482966a` feat: replace the random card with a guided interest picker on the specializations page
 <!-- commits:end -->

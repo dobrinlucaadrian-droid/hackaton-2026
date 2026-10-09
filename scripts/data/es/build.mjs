@@ -16,7 +16,9 @@ const YEAR = "2025-2026";
 const SRC_SIIU = "SIIU Preinscripción Grado 2025-26 (Ministerio de Ciencia, Innovación y Universidades) + RUCT centros 2026-10";
 const SRC_RUCT = "RUCT 2026-10 (Registro de Universidades, Centros y Títulos): títulos por centro";
 const SRC_INST = "RUCT 2026-10 (Registro de Universidades, Centros y Títulos)";
-const SHEETS = { "004": "ub-barcelona", "057": "ie-university" }; // RUCT university code -> existing app sheet id
+const SHEETS = { "004": "ub-barcelona", "057": "ie-university", "010": "ucm-madrid", "023": "uam-madrid", "036": "uc3m-madrid", "025": "upm-madrid", "022": "uab-barcelona", "024": "upc-barcelona", "018": "uv-valencia",
+  "027": "upv-valencia", "017": "us-sevilla", "008": "ugr-granada", "014": "usal-salamanca", "021": "unizar-zaragoza", "011": "uma-malaga", "031": "unav-navarra", "001": "ua-alicante", "012": "um-murcia", "013": "uniovi-oviedo",
+  "007": "usc-santiago" }; // RUCT university code -> existing app sheet id
 
 // ---------- small readers (no packages) ----------
 const tidy = (s) => String(s ?? "").replace(/ /g, " ").replace(/\s+/g, " ").trim();

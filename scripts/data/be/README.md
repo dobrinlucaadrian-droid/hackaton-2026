@@ -32,7 +32,7 @@ Result: BUILT, Flanders only. `node scripts/data/validate.mjs be` prints VALID (
    the country, and there is no language or study form, so nothing tells the copies apart.
 5. Fields: name = Dutch title; institution = `providedBy` legal name; city = town in the institution's registered address ("... 3000 Leuven België"); url and credits are not in the source.
 6. domain: the source's ISCED-F code is always "000" (no field), so `domain` is the text "ISCED-F 000 (no field given)" and `domainId` comes from Dutch keywords in the programme name (rules at the top of `build.mjs`), null when unsure.
-7. Existing sheet reused: `ku-leuven` for "Katholieke Universiteit Leuven" (53 rows).
+7. Existing sheets reused: `ku-leuven` for "Katholieke Universiteit Leuven" (53 rows), `ghent-university` for "Universiteit Gent" (49), `university-of-antwerp` for "Universiteit Antwerpen" (31), `vrije-universiteit-brussel` for "Vrije Universiteit Brussel" (32).
 
 ## Filtered out (counts from the run)
 

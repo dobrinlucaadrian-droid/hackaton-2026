@@ -109,13 +109,19 @@ for (const c of new Map(courses.map((x) => [x.courseUuid, x])).values()) {
 }
 rows.sort((a, b) => String(a.ci.courseInstanceCode).localeCompare(String(b.ci.courseInstanceCode), "en", { numeric: true }) || a.ci.courseInstanceUuid.localeCompare(b.ci.courseInstanceUuid));
 
+// Existing app sheets: exact institution name in the register -> app sheet id
+const SHEETS = { "Uniwersytet Warszawski": "uni-warszawa", "Uniwersytet Jagielloński w Krakowie": "uj-krakow", "Politechnika Warszawska": "pw-warszawa", "Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie": "agh-krakow",
+  "Politechnika Wrocławska": "pwr-wroclaw", "Uniwersytet Wrocławski": "uni-wroclaw", "Uniwersytet im. Adama Mickiewicza w Poznaniu": "uam-poznan", "Politechnika Gdańska": "pg-gdansk", "Uniwersytet Gdański": "uni-gdansk",
+  "Szkoła Główna Handlowa w Warszawie": "sgh-warszawa", "Politechnika Łódzka": "tul-lodz", "Uniwersytet Łódzki": "uni-lodz", "Uniwersytet Śląski w Katowicach": "us-katowice", "Uniwersytet Mikołaja Kopernika w Toruniu": "umk-torun",
+  "Uniwersytet Ekonomiczny w Krakowie": "uek-krakow" };
 const instIdByUuid = new Map(), usedInstIds = new Set(), instOut = new Map();
 function institution(c) {
   const uuid = c.mainInstitutionUuid;
   if (instIdByUuid.has(uuid)) return instOut.get(uuid);
   const raw = instByUuid.get(uuid);
   const name = tidy(c.mainInstitutionName);
-  let id = `pl-${slug(name)}`.slice(0, 80).replace(/-+$/, "");
+  const sheet = SHEETS[name] && !usedInstIds.has(SHEETS[name]) ? SHEETS[name] : null;
+  let id = sheet || `pl-${slug(name)}`.slice(0, 80).replace(/-+$/, "");
   if (usedInstIds.has(id)) id = `${id.slice(0, 70)}-${slug(raw?.city || c.leadingInstitutionCity)}`.slice(0, 80);
   for (let k = 2; usedInstIds.has(id); k++) id = `${id.slice(0, 74)}-${k}`;
   usedInstIds.add(id); instIdByUuid.set(uuid, id);
@@ -123,7 +129,7 @@ function institution(c) {
   if (website && !/^https?:\/\//i.test(website)) website = `http://${website}`;
   if (!/^https?:\/\/[^\s]+\.[^\s]+$/.test(website)) website = "";
   const o = { id, country: "PL", source: SOURCE, name, officialName: name, city: tidy(raw?.city || c.leadingInstitutionCity),
-    kind: c.mainInstitutionKind === "Uczelnia publiczna" ? "public" : c.mainInstitutionKind === "Uczelnia niepubliczna" ? "private" : "unknown", hasSheet: false, ...(website ? { website } : {}), programs: 0 };
+    kind: c.mainInstitutionKind === "Uczelnia publiczna" ? "public" : c.mainInstitutionKind === "Uczelnia niepubliczna" ? "private" : "unknown", hasSheet: !!sheet, ...(website ? { website } : {}), programs: 0 };
   instOut.set(uuid, o);
   return o;
 }
@@ -144,7 +150,7 @@ for (const { c, ci } of rows) {
   const sig = [inst.id, name, form, language, faculty, city, ects, sem, c.iscedCode].join("|");
   if (seen.has(sig)) { duplicates++; continue; }
   seen.add(sig);
-  const base = `${inst.id}--${slug(name)}--${form ? form + "-" : ""}${slug(language)}`.slice(0, 190).replace(/-+$/, "");
+  const base = `${inst.id.startsWith("pl-") ? "" : "pl-"}${inst.id}--${slug(name)}--${form ? form + "-" : ""}${slug(language)}`.slice(0, 190).replace(/-+$/, "");
   let key = base;
   if (keys.has(key)) key = `${base.slice(0, 170)}-${slug(city)}`.replace(/-+$/, "");
   if (keys.has(key) && c.levelName === "jednolite magisterskie") key = `${base.slice(0, 170)}-jednolite-magisterskie`;

@@ -50,7 +50,7 @@ Every row says in `source` which of the two national sources it comes from.
 ## How the fields are filled
 
 - **Institution**: name, public/private ("Tipo"), seat municipality and web address from the RUCT university list. Kept only when it has at least one programme row.
-  Existing app sheets: Universidad de Barcelona -> `ub-barcelona`, IE Universidad -> `ie-university` (`hasSheet: true`).
+  Existing app sheets: Universidad de Barcelona -> `ub-barcelona`, IE Universidad -> `ie-university`, and 18 more linked by RUCT university code in the `SHEETS` table of the build (`ucm-madrid`, `uam-madrid`, `uc3m-madrid`, `upm-madrid`, `uab-barcelona`, `upc-barcelona`, `uv-valencia`, `upv-valencia`, `us-sevilla`, `ugr-granada`, `usal-salamanca`, `unizar-zaragoza`, `uma-malaga`, `unav-navarra`, `ua-alicante`, `um-murcia`, `uniovi-oviedo`, `usc-santiago`); 20 institutions with `hasSheet: true`.
 - **city**: the "Municipio" of the centre in the RUCT centre list (checked against centre pages: the other place column is "Localidad", e.g. Bellaterra for Cerdanyola del Vallès). All 805 SIIU centre codes were found in RUCT, so **100% of rows have the municipality of their own centre**; nothing falls back to the university seat. Names are the official ones ("Elx/Elche", "Pamplona/Iruña"); a trailing article is moved to the front ("Rozas de Madrid, Las" -> "Las Rozas de Madrid").
 - **faculty**: the centre name (SIIU "Unidad" resolved to the RUCT centre name).
 - **name**: the official title without the trailing "por la Universidad ...". Double degrees keep the source wording ("PCEO Grado en X / Grado en Y").

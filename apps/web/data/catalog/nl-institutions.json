@@ -1,5 +1,16 @@
 [
  {
+  "id": "amsterdam-uas",
+  "country": "NL",
+  "source": "DUO RIO 2026-10",
+  "name": "Hogeschool van Amsterdam",
+  "officialName": "Hogeschool van Amsterdam",
+  "city": "Amsterdam",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 52
+ },
+ {
   "id": "buas",
   "country": "NL",
   "source": "DUO RIO 2026-10",
@@ -55,6 +66,29 @@
   "hasSheet": true,
   "website": "http://www.hanze.nl",
   "programs": 46
+ },
+ {
+  "id": "hu-utrecht",
+  "country": "NL",
+  "source": "DUO RIO 2026-10",
+  "name": "Hogeschool Utrecht",
+  "officialName": "Hogeschool Utrecht",
+  "city": "Utrecht",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 55
+ },
+ {
+  "id": "hz-uas",
+  "country": "NL",
+  "source": "DUO RIO 2026-10",
+  "name": "HZ University of Applied Sciences",
+  "officialName": "HZ University of Applied Sciences",
+  "city": "Vlissingen",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "http://www.hz.nl",
+  "programs": 23
  },
  {
   "id": "inholland",
@@ -390,17 +424,6 @@
   "programs": 28
  },
  {
-  "id": "nl-hogeschool-rotterdam",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "Hogeschool Rotterdam",
-  "officialName": "Hogeschool Rotterdam",
-  "city": "Rotterdam",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 60
- },
- {
   "id": "nl-hogeschool-thomas-more",
   "country": "NL",
   "source": "DUO RIO 2026-10",
@@ -412,17 +435,6 @@
   "programs": 1
  },
  {
-  "id": "nl-hogeschool-utrecht",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "Hogeschool Utrecht",
-  "officialName": "Hogeschool Utrecht",
-  "city": "Utrecht",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 55
- },
- {
   "id": "nl-hogeschool-v-pedagogisch-en-sociaal-agogisch-onderwijs-groningen",
   "country": "NL",
   "source": "DUO RIO 2026-10",
@@ -432,29 +444,6 @@
   "kind": "private",
   "hasSheet": false,
   "programs": 2
- },
- {
-  "id": "nl-hogeschool-van-amsterdam",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "Hogeschool van Amsterdam",
-  "officialName": "Hogeschool van Amsterdam",
-  "city": "Amsterdam",
-  "kind": "public",
-  "hasSheet": false,
-  "programs": 52
- },
- {
-  "id": "nl-hogeschool-van-hall-larenstein",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "Hogeschool Van Hall Larenstein",
-  "officialName": "Hogeschool Van Hall Larenstein",
-  "city": "Velp",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "http://www.hvhl.nl",
-  "programs": 14
  },
  {
   "id": "nl-hogeschool-voor-de-kunsten-utrecht",
@@ -488,18 +477,6 @@
   "kind": "public",
   "hasSheet": false,
   "programs": 2
- },
- {
-  "id": "nl-hz-university-of-applied-sciences",
-  "country": "NL",
-  "source": "DUO RIO 2026-10",
-  "name": "HZ University of Applied Sciences",
-  "officialName": "HZ University of Applied Sciences",
-  "city": "Vlissingen",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "http://www.hz.nl",
-  "programs": 23
  },
  {
   "id": "nl-international-university-of-applied-sciences-amsterdam",
@@ -938,6 +915,17 @@
   "programs": 39
  },
  {
+  "id": "rotterdam-uas",
+  "country": "NL",
+  "source": "DUO RIO 2026-10",
+  "name": "Hogeschool Rotterdam",
+  "officialName": "Hogeschool Rotterdam",
+  "city": "Rotterdam",
+  "kind": "public",
+  "hasSheet": true,
+  "programs": 60
+ },
+ {
   "id": "rug",
   "country": "NL",
   "source": "DUO RIO 2026-10",
@@ -1041,6 +1029,18 @@
   "kind": "public",
   "hasSheet": true,
   "programs": 62
+ },
+ {
+  "id": "van-hall-larenstein",
+  "country": "NL",
+  "source": "DUO RIO 2026-10",
+  "name": "Hogeschool Van Hall Larenstein",
+  "officialName": "Hogeschool Van Hall Larenstein",
+  "city": "Velp",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "http://www.hvhl.nl",
+  "programs": 14
  },
  {
   "id": "vu-amsterdam",

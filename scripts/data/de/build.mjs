@@ -62,7 +62,9 @@ for (const r of kept) {
 
 const SHEETS = [[/^technische universität münchen$/i, "tum"], [/^ludwig-maximilians-universität münchen$/i, "lmu"], [/^(ruprecht-karls-)?universität heidelberg$/i, "heidelberg"], [/^rheinisch-westfälische technische hochschule aachen$/i, "rwth"], [/^humboldt-universität zu berlin$/i, "hu-berlin"],
   [/^freie universität berlin$/i, "fu-berlin"], [/^universität hamburg$/i, "uni-hamburg"], [/^universität zu köln$/i, "uni-koeln"], [/^albert-ludwigs-universität freiburg$/i, "uni-freiburg"], [/^georg-august-universität göttingen$/i, "uni-goettingen"],
-  [/^eberhard karls universität tübingen$/i, "uni-tuebingen"], [/^universität mannheim$/i, "uni-mannheim"], [/^rheinische friedrich-wilhelms-universität bonn$/i, "uni-bonn"]];
+  [/^eberhard karls universität tübingen$/i, "uni-tuebingen"], [/^universität mannheim$/i, "uni-mannheim"], [/^rheinische friedrich-wilhelms-universität bonn$/i, "uni-bonn"],
+  [/^westfälische wilhelms-universität münster$/i, "uni-muenster"], [/^gottfried wilhelm leibniz universität hannover$/i, "uni-hannover"], [/^ruhr-universität bochum$/i, "ruhr-uni-bochum"], [/^constructor university bremen ggmbh$/i, "constructor-university"],
+  [/^technische universität carolo-wilhelmina zu braunschweig$/i, "tu-braunschweig"], [/^heinrich-heine-universität düsseldorf$/i, "hhu-duesseldorf"], [/^universität bremen$/i, "uni-bremen"]];
 const urlOk = (s) => /^https?:\/\/[^\s]+\.[^\s]+$/.test(s);
 const instMap = new Map(); const programs = []; const usedKeys = new Set(); const usedIds = new Set();
 for (const r of best.values()) {

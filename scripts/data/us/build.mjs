@@ -132,9 +132,14 @@ const CIP2 = { "09": "comunicare-jurnalism", "13": "stiintele-educatiei", "16": 
 const domainOf = (cip) => (cip in CIP4 ? CIP4[cip] : CIP2[cip.slice(0, 2)] ?? null);
 for (const v of [...Object.values(CIP4), ...Object.values(CIP2)]) if (v !== null && !DOMAIN_IDS.includes(v)) throw new Error(`unknown domain id ${v}`);
 
-// The ten existing university sheets (exact Scorecard names).
+// The existing university sheets (exact Scorecard names).
 const SHEETS = { "Harvard University": "harvard", "Yale University": "yale", "Princeton University": "princeton", "Columbia University in the City of New York": "columbia",
-  "University of Pennsylvania": "upenn", "Brown University": "brown", "Dartmouth College": "dartmouth", "Cornell University": "cornell", "Massachusetts Institute of Technology": "mit", "Stanford University": "stanford" };
+  "University of Pennsylvania": "upenn", "Brown University": "brown", "Dartmouth College": "dartmouth", "Cornell University": "cornell", "Massachusetts Institute of Technology": "mit", "Stanford University": "stanford",
+  "California Institute of Technology": "caltech", "University of Chicago": "uchicago", "Duke University": "duke", "Northwestern University": "northwestern", "Johns Hopkins University": "johns-hopkins", "New York University": "nyu",
+  "Carnegie Mellon University": "carnegie-mellon", "Georgetown University": "georgetown", "University of California-Berkeley": "uc-berkeley", "University of California-Los Angeles": "ucla", "Amherst College": "amherst",
+  "University of Michigan-Ann Arbor": "umich", "Boston University": "boston-university", "Georgia Institute of Technology-Main Campus": "georgia-tech", "Williams College": "williams", "Rice University": "rice",
+  "Vanderbilt University": "vanderbilt", "University of Notre Dame": "notre-dame", "Washington University in St Louis": "washu", "Emory University": "emory", "Tufts University": "tufts", "University of Southern California": "usc",
+  "The University of Texas at Austin": "ut-austin", "University of North Carolina at Chapel Hill": "unc-chapel-hill", "Boston College": "boston-college" };
 
 const STATES = new Set("AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY".split(" "));
 const tidy = (s) => s.replace(/\s+/g, " ").trim();

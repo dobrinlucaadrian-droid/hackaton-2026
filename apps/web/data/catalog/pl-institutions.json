@@ -1,5 +1,29 @@
 [
  {
+  "id": "agh-krakow",
+  "country": "PL",
+  "source": "RAD-on POL-on 2026-10",
+  "name": "Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie",
+  "officialName": "Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie",
+  "city": "Kraków",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "http://www.agh.edu.pl",
+  "programs": 98
+ },
+ {
+  "id": "pg-gdansk",
+  "country": "PL",
+  "source": "RAD-on POL-on 2026-10",
+  "name": "Politechnika Gdańska",
+  "officialName": "Politechnika Gdańska",
+  "city": "Gdańsk",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "http://pg.edu.pl",
+  "programs": 53
+ },
+ {
   "id": "pl-akademia-ateneum-w-gdansku",
   "country": "PL",
   "source": "RAD-on POL-on 2026-10",
@@ -34,18 +58,6 @@
   "hasSheet": false,
   "website": "http://www.vistula.edu.pl",
   "programs": 120
- },
- {
-  "id": "pl-akademia-gorniczo-hutnicza-im-stanislawa-staszica-w-krakowie",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie",
-  "officialName": "Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie",
-  "city": "Kraków",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "http://www.agh.edu.pl",
-  "programs": 98
  },
  {
   "id": "pl-akademia-gornoslaska-im-wojciecha-korfantego-w-katowicach",
@@ -1595,18 +1607,6 @@
   "programs": 62
  },
  {
-  "id": "pl-politechnika-gdanska",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Politechnika Gdańska",
-  "officialName": "Politechnika Gdańska",
-  "city": "Gdańsk",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "http://pg.edu.pl",
-  "programs": 53
- },
- {
   "id": "pl-politechnika-koszalinska",
   "country": "PL",
   "source": "RAD-on POL-on 2026-10",
@@ -1629,18 +1629,6 @@
   "hasSheet": false,
   "website": "http://www.pk.edu.pl",
   "programs": 55
- },
- {
-  "id": "pl-politechnika-lodzka",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Politechnika Łódzka",
-  "officialName": "Politechnika Łódzka",
-  "city": "Łódź",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "http://www.p.lodz.pl",
-  "programs": 100
  },
  {
   "id": "pl-politechnika-lubelska",
@@ -1725,30 +1713,6 @@
   "hasSheet": false,
   "website": "http://www.tu.kielce.pl/",
   "programs": 47
- },
- {
-  "id": "pl-politechnika-warszawska",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Politechnika Warszawska",
-  "officialName": "Politechnika Warszawska",
-  "city": "Warszawa",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "http://www.pw.edu.pl",
-  "programs": 86
- },
- {
-  "id": "pl-politechnika-wroclawska",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Politechnika Wrocławska",
-  "officialName": "Politechnika Wrocławska",
-  "city": "Wrocław",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "http://www.pwr.edu.pl",
-  "programs": 79
  },
  {
   "id": "pl-polsko-japonska-akademia-technik-komputerowych",
@@ -1953,18 +1917,6 @@
   "hasSheet": false,
   "website": "http://www.sggw.edu.pl",
   "programs": 72
- },
- {
-  "id": "pl-szkola-glowna-handlowa-w-warszawie",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Szkoła Główna Handlowa w Warszawie",
-  "officialName": "Szkoła Główna Handlowa w Warszawie",
-  "city": "Warszawa",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "http://www.sgh.waw.pl",
-  "programs": 18
  },
  {
   "id": "pl-szkola-glowna-krajowa-z-siedziba-w-warszawie",
@@ -2266,18 +2218,6 @@
   "programs": 51
  },
  {
-  "id": "pl-uniwersytet-ekonomiczny-w-krakowie",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Uniwersytet Ekonomiczny w Krakowie",
-  "officialName": "Uniwersytet Ekonomiczny w Krakowie",
-  "city": "Kraków",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "http://www.uek.krakow.pl",
-  "programs": 70
- },
- {
   "id": "pl-uniwersytet-ekonomiczny-w-poznaniu",
   "country": "PL",
   "source": "RAD-on POL-on 2026-10",
@@ -2302,18 +2242,6 @@
   "programs": 43
  },
  {
-  "id": "pl-uniwersytet-gdanski",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Uniwersytet Gdański",
-  "officialName": "Uniwersytet Gdański",
-  "city": "Gdańsk",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "http://ug.edu.pl",
-  "programs": 115
- },
- {
   "id": "pl-uniwersytet-ignatianum-w-krakowie",
   "country": "PL",
   "source": "RAD-on POL-on 2026-10",
@@ -2324,30 +2252,6 @@
   "hasSheet": false,
   "website": "http://ignatianum.edu.pl",
   "programs": 20
- },
- {
-  "id": "pl-uniwersytet-im-adama-mickiewicza-w-poznaniu",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Uniwersytet im. Adama Mickiewicza w Poznaniu",
-  "officialName": "Uniwersytet im. Adama Mickiewicza w Poznaniu",
-  "city": "Poznań",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "http://www.amu.edu.pl",
-  "programs": 186
- },
- {
-  "id": "pl-uniwersytet-jagiellonski-w-krakowie",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Uniwersytet Jagielloński w Krakowie",
-  "officialName": "Uniwersytet Jagielloński w Krakowie",
-  "city": "Kraków",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "http://www.uj.edu.pl/",
-  "programs": 147
  },
  {
   "id": "pl-uniwersytet-jana-dlugosza-w-czestochowie",
@@ -2422,18 +2326,6 @@
   "programs": 125
  },
  {
-  "id": "pl-uniwersytet-lodzki",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Uniwersytet Łódzki",
-  "officialName": "Uniwersytet Łódzki",
-  "city": "Łódź",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "http://www.uni.lodz.pl/index.php",
-  "programs": 126
- },
- {
   "id": "pl-uniwersytet-marii-curie-sklodowskiej-w-lublinie",
   "country": "PL",
   "source": "RAD-on POL-on 2026-10",
@@ -2504,18 +2396,6 @@
   "hasSheet": false,
   "website": "http://www.umlub.edu.pl",
   "programs": 23
- },
- {
-  "id": "pl-uniwersytet-mikolaja-kopernika-w-toruniu",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Uniwersytet Mikołaja Kopernika w Toruniu",
-  "officialName": "Uniwersytet Mikołaja Kopernika w Toruniu",
-  "city": "Toruń",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "https://www.umk.pl",
-  "programs": 122
  },
  {
   "id": "pl-uniwersytet-morski-w-gdyni",
@@ -2650,18 +2530,6 @@
   "programs": 96
  },
  {
-  "id": "pl-uniwersytet-slaski-w-katowicach",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Uniwersytet Śląski w Katowicach",
-  "officialName": "Uniwersytet Śląski w Katowicach",
-  "city": "Katowice",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "http://www.us.edu.pl",
-  "programs": 122
- },
- {
   "id": "pl-uniwersytet-swps",
   "country": "PL",
   "source": "RAD-on POL-on 2026-10",
@@ -2732,30 +2600,6 @@
   "hasSheet": false,
   "website": "http://www.uwm.edu.pl",
   "programs": 103
- },
- {
-  "id": "pl-uniwersytet-warszawski",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Uniwersytet Warszawski",
-  "officialName": "Uniwersytet Warszawski",
-  "city": "Warszawa",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "http://www.uw.edu.pl",
-  "programs": 159
- },
- {
-  "id": "pl-uniwersytet-wroclawski",
-  "country": "PL",
-  "source": "RAD-on POL-on 2026-10",
-  "name": "Uniwersytet Wrocławski",
-  "officialName": "Uniwersytet Wrocławski",
-  "city": "Wrocław",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "https://uwr.edu.pl",
-  "programs": 122
  },
  {
   "id": "pl-uniwersytet-wsb-merito-w-gdansku",
@@ -3896,5 +3740,161 @@
   "hasSheet": false,
   "website": "http://www.zut.edu.pl",
   "programs": 61
+ },
+ {
+  "id": "pw-warszawa",
+  "country": "PL",
+  "source": "RAD-on POL-on 2026-10",
+  "name": "Politechnika Warszawska",
+  "officialName": "Politechnika Warszawska",
+  "city": "Warszawa",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "http://www.pw.edu.pl",
+  "programs": 86
+ },
+ {
+  "id": "pwr-wroclaw",
+  "country": "PL",
+  "source": "RAD-on POL-on 2026-10",
+  "name": "Politechnika Wrocławska",
+  "officialName": "Politechnika Wrocławska",
+  "city": "Wrocław",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "http://www.pwr.edu.pl",
+  "programs": 79
+ },
+ {
+  "id": "sgh-warszawa",
+  "country": "PL",
+  "source": "RAD-on POL-on 2026-10",
+  "name": "Szkoła Główna Handlowa w Warszawie",
+  "officialName": "Szkoła Główna Handlowa w Warszawie",
+  "city": "Warszawa",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "http://www.sgh.waw.pl",
+  "programs": 18
+ },
+ {
+  "id": "tul-lodz",
+  "country": "PL",
+  "source": "RAD-on POL-on 2026-10",
+  "name": "Politechnika Łódzka",
+  "officialName": "Politechnika Łódzka",
+  "city": "Łódź",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "http://www.p.lodz.pl",
+  "programs": 100
+ },
+ {
+  "id": "uam-poznan",
+  "country": "PL",
+  "source": "RAD-on POL-on 2026-10",
+  "name": "Uniwersytet im. Adama Mickiewicza w Poznaniu",
+  "officialName": "Uniwersytet im. Adama Mickiewicza w Poznaniu",
+  "city": "Poznań",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "http://www.amu.edu.pl",
+  "programs": 186
+ },
+ {
+  "id": "uek-krakow",
+  "country": "PL",
+  "source": "RAD-on POL-on 2026-10",
+  "name": "Uniwersytet Ekonomiczny w Krakowie",
+  "officialName": "Uniwersytet Ekonomiczny w Krakowie",
+  "city": "Kraków",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "http://www.uek.krakow.pl",
+  "programs": 70
+ },
+ {
+  "id": "uj-krakow",
+  "country": "PL",
+  "source": "RAD-on POL-on 2026-10",
+  "name": "Uniwersytet Jagielloński w Krakowie",
+  "officialName": "Uniwersytet Jagielloński w Krakowie",
+  "city": "Kraków",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "http://www.uj.edu.pl/",
+  "programs": 147
+ },
+ {
+  "id": "umk-torun",
+  "country": "PL",
+  "source": "RAD-on POL-on 2026-10",
+  "name": "Uniwersytet Mikołaja Kopernika w Toruniu",
+  "officialName": "Uniwersytet Mikołaja Kopernika w Toruniu",
+  "city": "Toruń",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "https://www.umk.pl",
+  "programs": 122
+ },
+ {
+  "id": "uni-gdansk",
+  "country": "PL",
+  "source": "RAD-on POL-on 2026-10",
+  "name": "Uniwersytet Gdański",
+  "officialName": "Uniwersytet Gdański",
+  "city": "Gdańsk",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "http://ug.edu.pl",
+  "programs": 115
+ },
+ {
+  "id": "uni-lodz",
+  "country": "PL",
+  "source": "RAD-on POL-on 2026-10",
+  "name": "Uniwersytet Łódzki",
+  "officialName": "Uniwersytet Łódzki",
+  "city": "Łódź",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "http://www.uni.lodz.pl/index.php",
+  "programs": 126
+ },
+ {
+  "id": "uni-warszawa",
+  "country": "PL",
+  "source": "RAD-on POL-on 2026-10",
+  "name": "Uniwersytet Warszawski",
+  "officialName": "Uniwersytet Warszawski",
+  "city": "Warszawa",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "http://www.uw.edu.pl",
+  "programs": 159
+ },
+ {
+  "id": "uni-wroclaw",
+  "country": "PL",
+  "source": "RAD-on POL-on 2026-10",
+  "name": "Uniwersytet Wrocławski",
+  "officialName": "Uniwersytet Wrocławski",
+  "city": "Wrocław",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "https://uwr.edu.pl",
+  "programs": 122
+ },
+ {
+  "id": "us-katowice",
+  "country": "PL",
+  "source": "RAD-on POL-on 2026-10",
+  "name": "Uniwersytet Śląski w Katowicach",
+  "officialName": "Uniwersytet Śląski w Katowicach",
+  "city": "Katowice",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "http://www.us.edu.pl",
+  "programs": 122
  }
 ]

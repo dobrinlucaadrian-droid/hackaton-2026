@@ -1,5 +1,16 @@
 [
  {
+  "id": "dublin-city-university",
+  "country": "IE",
+  "source": "Europass QDR Ireland (QQI) 2026-10",
+  "name": "Dublin City University",
+  "officialName": "Dublin City University",
+  "city": "Dublin",
+  "kind": "unknown",
+  "hasSheet": true,
+  "programs": 92
+ },
+ {
   "id": "ie-atlantic-technological-university",
   "country": "IE",
   "source": "Europass QDR Ireland (QQI) 2026-10",
@@ -75,17 +86,6 @@
   "kind": "unknown",
   "hasSheet": false,
   "programs": 14
- },
- {
-  "id": "ie-dublin-city-university",
-  "country": "IE",
-  "source": "Europass QDR Ireland (QQI) 2026-10",
-  "name": "Dublin City University",
-  "officialName": "Dublin City University",
-  "city": "Dublin",
-  "kind": "unknown",
-  "hasSheet": false,
-  "programs": 92
  },
  {
   "id": "ie-dun-laoghaire-institute-of-art-design-and-technology",
@@ -286,17 +286,6 @@
   "programs": 16
  },
  {
-  "id": "ie-maynooth-university",
-  "country": "IE",
-  "source": "Europass QDR Ireland (QQI) 2026-10",
-  "name": "Maynooth University",
-  "officialName": "Maynooth University",
-  "city": "Kildare",
-  "kind": "unknown",
-  "hasSheet": false,
-  "programs": 80
- },
- {
   "id": "ie-munster-technological-university",
   "country": "IE",
   "source": "Europass QDR Ireland (QQI) 2026-10",
@@ -396,17 +385,6 @@
   "programs": 1
  },
  {
-  "id": "ie-technological-university-dublin",
-  "country": "IE",
-  "source": "Europass QDR Ireland (QQI) 2026-10",
-  "name": "Technological University Dublin",
-  "officialName": "Technological University Dublin",
-  "city": "Dublin",
-  "kind": "unknown",
-  "hasSheet": false,
-  "programs": 263
- },
- {
   "id": "ie-technological-university-of-the-shannon",
   "country": "IE",
   "source": "Europass QDR Ireland (QQI) 2026-10",
@@ -440,58 +418,80 @@
   "programs": 4
  },
  {
-  "id": "ie-trinity-college-dublin-university-of-dublin",
+  "id": "maynooth-university",
+  "country": "IE",
+  "source": "Europass QDR Ireland (QQI) 2026-10",
+  "name": "Maynooth University",
+  "officialName": "Maynooth University",
+  "city": "Kildare",
+  "kind": "unknown",
+  "hasSheet": true,
+  "programs": 80
+ },
+ {
+  "id": "trinity-college-dublin",
   "country": "IE",
   "source": "Europass QDR Ireland (QQI) 2026-10",
   "name": "Trinity College Dublin, University of Dublin",
   "officialName": "Trinity College Dublin, University of Dublin",
   "city": "Dublin",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 142
  },
  {
-  "id": "ie-university-college-cork",
+  "id": "tu-dublin",
+  "country": "IE",
+  "source": "Europass QDR Ireland (QQI) 2026-10",
+  "name": "Technological University Dublin",
+  "officialName": "Technological University Dublin",
+  "city": "Dublin",
+  "kind": "unknown",
+  "hasSheet": true,
+  "programs": 263
+ },
+ {
+  "id": "university-college-cork",
   "country": "IE",
   "source": "Europass QDR Ireland (QQI) 2026-10",
   "name": "University College Cork",
   "officialName": "University College Cork",
   "city": "Cork",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 157
  },
  {
-  "id": "ie-university-college-dublin",
+  "id": "university-college-dublin",
   "country": "IE",
   "source": "Europass QDR Ireland (QQI) 2026-10",
   "name": "University College Dublin",
   "officialName": "University College Dublin",
   "city": "Dublin",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 75
  },
  {
-  "id": "ie-university-of-galway",
+  "id": "university-of-galway",
   "country": "IE",
   "source": "Europass QDR Ireland (QQI) 2026-10",
   "name": "University of Galway",
   "officialName": "University of Galway",
   "city": "Galway",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 100
  },
  {
-  "id": "ie-university-of-limerick",
+  "id": "university-of-limerick",
   "country": "IE",
   "source": "Europass QDR Ireland (QQI) 2026-10",
   "name": "University of Limerick",
   "officialName": "University of Limerick",
   "city": "Limerick",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 122
  }
 ]

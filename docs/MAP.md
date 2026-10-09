@@ -234,7 +234,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `fr-programs.jsonl.gz`
 - `ie-institutions.json` (498) — JSON array, 45 items
 - `ie-programs.json`
-- `index.json` (1692) — JSON array, 11 items
+- `index.json` (1793) — JSON array, 11 items
 - `it-institutions.json` (1015) — JSON array, 92 items
 - `it-programs.json`
 - `nl-institutions.json` (1091) — JSON array, 95 items
@@ -256,9 +256,9 @@ _Open only the files listed here; a file's description is its first comment line
 - `questions.json` (729) — JSON array, 18 items
 - `specializations.json` (209) — JSON array, 206 items
 - `testimonials.json` (169) — JSON array, 24 items
-- `universities-abroad.json` (6771) — JSON array, 122 items
+- `universities-abroad.json`
 - `universities-ro.json` (3846) — JSON array, 83 items
-- `university-sources.json` (455) — JSON; keys: ani-bucuresti, itb-bucuresti, itp-bucuresti, bogdan-voda, itp-cluj, dragan-lugoj, cantemir-tgmures, timotheus
+- `university-sources.json` (1804) — JSON; keys: ani-bucuresti, itb-bucuresti, itp-bucuresti, bogdan-voda, itp-cluj, dragan-lugoj, cantemir-tgmures, timotheus
 
 ### apps/web/lib  (20 files)
 

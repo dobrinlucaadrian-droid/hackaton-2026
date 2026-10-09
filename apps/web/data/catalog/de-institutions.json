@@ -1,5 +1,17 @@
 [
  {
+  "id": "constructor-university",
+  "country": "DE",
+  "source": "DEQAR open data CSV 2026-10-08",
+  "name": "Constructor University Bremen gGmbH",
+  "officialName": "Constructor University Bremen gGmbH (Priv. U)",
+  "city": "Bremen",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "http://www.jacobs-university.de",
+  "programs": 18
+ },
+ {
   "id": "de-akad-fachhochschule-stuttgart",
   "country": "DE",
   "source": "DEQAR open data CSV 2026-10-08",
@@ -370,18 +382,6 @@
   "hasSheet": false,
   "website": "http://www.cbs.de/de/",
   "programs": 6
- },
- {
-  "id": "de-constructor-university-bremen-ggmbh",
-  "country": "DE",
-  "source": "DEQAR open data CSV 2026-10-08",
-  "name": "Constructor University Bremen gGmbH",
-  "officialName": "Constructor University Bremen gGmbH (Priv. U)",
-  "city": "Bremen",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "http://www.jacobs-university.de",
-  "programs": 18
  },
  {
   "id": "de-cusanus-hochschule-bernkastel-kues",
@@ -1044,18 +1044,6 @@
   "programs": 5
  },
  {
-  "id": "de-gottfried-wilhelm-leibniz-universitat-hannover",
-  "country": "DE",
-  "source": "DEQAR open data CSV 2026-10-08",
-  "name": "Gottfried Wilhelm Leibniz Universität Hannover",
-  "officialName": "Gottfried Wilhelm Leibniz Universität Hannover",
-  "city": "Hannover",
-  "kind": "unknown",
-  "hasSheet": false,
-  "website": "http://www.uni-hannover.de",
-  "programs": 1
- },
- {
   "id": "de-h-da-hochschule-darmstadt-fh",
   "country": "DE",
   "source": "DEQAR open data CSV 2026-10-08",
@@ -1102,18 +1090,6 @@
   "hasSheet": false,
   "website": "https://www.hdbw-hochschule.de/",
   "programs": 10
- },
- {
-  "id": "de-heinrich-heine-universitat-dusseldorf",
-  "country": "DE",
-  "source": "DEQAR open data CSV 2026-10-08",
-  "name": "Heinrich-Heine-Universität Düsseldorf",
-  "officialName": "Heinrich-Heine-Universität Düsseldorf",
-  "city": "Düsseldorf",
-  "kind": "unknown",
-  "hasSheet": false,
-  "website": "http://www.uni-duesseldorf.de/",
-  "programs": 34
  },
  {
   "id": "de-helmut-schmidt-universitat-hamburg",
@@ -2868,18 +2844,6 @@
   "programs": 1
  },
  {
-  "id": "de-ruhr-universitat-bochum",
-  "country": "DE",
-  "source": "DEQAR open data CSV 2026-10-08",
-  "name": "Ruhr-Universität Bochum",
-  "officialName": "Ruhr-Universität Bochum",
-  "city": "Bochum",
-  "kind": "unknown",
-  "hasSheet": false,
-  "website": "https://www.ruhr-uni-bochum.de/de",
-  "programs": 63
- },
- {
   "id": "de-schiller-international-university",
   "country": "DE",
   "source": "DEQAR open data CSV 2026-10-08",
@@ -3192,18 +3156,6 @@
   "programs": 2
  },
  {
-  "id": "de-technische-universitat-carolo-wilhelmina-zu-braunschweig",
-  "country": "DE",
-  "source": "DEQAR open data CSV 2026-10-08",
-  "name": "Technische Universität Carolo-Wilhelmina zu Braunschweig",
-  "officialName": "Technische Universität Carolo-Wilhelmina zu Braunschweig",
-  "city": "Braunschweig",
-  "kind": "unknown",
-  "hasSheet": false,
-  "website": "http://www.tu-braunschweig.de",
-  "programs": 40
- },
- {
   "id": "de-technische-universitat-clausthal",
   "country": "DE",
   "source": "DEQAR open data CSV 2026-10-08",
@@ -3358,18 +3310,6 @@
   "hasSheet": false,
   "website": "http://www.uni-bielefeld.de",
   "programs": 3
- },
- {
-  "id": "de-universitat-bremen",
-  "country": "DE",
-  "source": "DEQAR open data CSV 2026-10-08",
-  "name": "Universität Bremen",
-  "officialName": "Universität Bremen",
-  "city": "Bremen",
-  "kind": "unknown",
-  "hasSheet": false,
-  "website": "http://www.uni-bremen.de",
-  "programs": 2
  },
  {
   "id": "de-universitat-der-bundeswehr-munchen",
@@ -3552,18 +3492,6 @@
   "programs": 72
  },
  {
-  "id": "de-westfalische-wilhelms-universitat-munster",
-  "country": "DE",
-  "source": "DEQAR open data CSV 2026-10-08",
-  "name": "Westfälische Wilhelms-Universität Münster",
-  "officialName": "Westfälische Wilhelms-Universität Münster",
-  "city": "Münster",
-  "kind": "unknown",
-  "hasSheet": false,
-  "website": "http://www.uni-muenster.de",
-  "programs": 58
- },
- {
   "id": "de-westsachsische-hochschule-zwickau",
   "country": "DE",
   "source": "DEQAR open data CSV 2026-10-08",
@@ -3612,6 +3540,18 @@
   "programs": 1
  },
  {
+  "id": "hhu-duesseldorf",
+  "country": "DE",
+  "source": "DEQAR open data CSV 2026-10-08",
+  "name": "Heinrich-Heine-Universität Düsseldorf",
+  "officialName": "Heinrich-Heine-Universität Düsseldorf",
+  "city": "Düsseldorf",
+  "kind": "unknown",
+  "hasSheet": true,
+  "website": "http://www.uni-duesseldorf.de/",
+  "programs": 34
+ },
+ {
   "id": "hu-berlin",
   "country": "DE",
   "source": "DEQAR open data CSV 2026-10-08",
@@ -3636,6 +3576,30 @@
   "programs": 45
  },
  {
+  "id": "ruhr-uni-bochum",
+  "country": "DE",
+  "source": "DEQAR open data CSV 2026-10-08",
+  "name": "Ruhr-Universität Bochum",
+  "officialName": "Ruhr-Universität Bochum",
+  "city": "Bochum",
+  "kind": "unknown",
+  "hasSheet": true,
+  "website": "https://www.ruhr-uni-bochum.de/de",
+  "programs": 63
+ },
+ {
+  "id": "tu-braunschweig",
+  "country": "DE",
+  "source": "DEQAR open data CSV 2026-10-08",
+  "name": "Technische Universität Carolo-Wilhelmina zu Braunschweig",
+  "officialName": "Technische Universität Carolo-Wilhelmina zu Braunschweig",
+  "city": "Braunschweig",
+  "kind": "unknown",
+  "hasSheet": true,
+  "website": "http://www.tu-braunschweig.de",
+  "programs": 40
+ },
+ {
   "id": "tum",
   "country": "DE",
   "source": "DEQAR open data CSV 2026-10-08",
@@ -3658,6 +3622,18 @@
   "hasSheet": true,
   "website": "http://www.uni-bonn.de",
   "programs": 91
+ },
+ {
+  "id": "uni-bremen",
+  "country": "DE",
+  "source": "DEQAR open data CSV 2026-10-08",
+  "name": "Universität Bremen",
+  "officialName": "Universität Bremen",
+  "city": "Bremen",
+  "kind": "unknown",
+  "hasSheet": true,
+  "website": "http://www.uni-bremen.de",
+  "programs": 2
  },
  {
   "id": "uni-freiburg",
@@ -3696,6 +3672,18 @@
   "programs": 2
  },
  {
+  "id": "uni-hannover",
+  "country": "DE",
+  "source": "DEQAR open data CSV 2026-10-08",
+  "name": "Gottfried Wilhelm Leibniz Universität Hannover",
+  "officialName": "Gottfried Wilhelm Leibniz Universität Hannover",
+  "city": "Hannover",
+  "kind": "unknown",
+  "hasSheet": true,
+  "website": "http://www.uni-hannover.de",
+  "programs": 1
+ },
+ {
   "id": "uni-koeln",
   "country": "DE",
   "source": "DEQAR open data CSV 2026-10-08",
@@ -3718,6 +3706,18 @@
   "hasSheet": true,
   "website": "https://www.uni-mannheim.de/en/",
   "programs": 35
+ },
+ {
+  "id": "uni-muenster",
+  "country": "DE",
+  "source": "DEQAR open data CSV 2026-10-08",
+  "name": "Westfälische Wilhelms-Universität Münster",
+  "officialName": "Westfälische Wilhelms-Universität Münster",
+  "city": "Münster",
+  "kind": "unknown",
+  "hasSheet": true,
+  "website": "http://www.uni-muenster.de",
+  "programs": 58
  },
  {
   "id": "uni-tuebingen",

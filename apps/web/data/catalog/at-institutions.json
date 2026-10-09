@@ -132,17 +132,6 @@
   "programs": 10
  },
  {
-  "id": "at-fachhochschule-technikum-wien",
-  "country": "AT",
-  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
-  "name": "Fachhochschule Technikum Wien",
-  "officialName": "Fachhochschule Technikum Wien",
-  "city": "Wien",
-  "kind": "unknown",
-  "hasSheet": false,
-  "programs": 11
- },
- {
   "id": "at-fachhochschule-vorarlberg-gmbh",
   "country": "AT",
   "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
@@ -187,17 +176,6 @@
   "programs": 8
  },
  {
-  "id": "at-fh-joanneum-gmbh",
-  "country": "AT",
-  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
-  "name": "FH JOANNEUM GmbH",
-  "officialName": "FH JOANNEUM GmbH",
-  "city": "Graz",
-  "kind": "unknown",
-  "hasSheet": false,
-  "programs": 26
- },
- {
   "id": "at-fh-kufstein-tirol-bildungs-gmbh",
   "country": "AT",
   "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
@@ -207,17 +185,6 @@
   "kind": "unknown",
   "hasSheet": false,
   "programs": 8
- },
- {
-  "id": "at-fh-oo-studienbetriebs-gmbh",
-  "country": "AT",
-  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
-  "name": "FH OÖ Studienbetriebs GmbH",
-  "officialName": "FH OÖ Studienbetriebs GmbH",
-  "city": "Wels",
-  "kind": "unknown",
-  "hasSheet": false,
-  "programs": 30
  },
  {
   "id": "at-fhg-zentrum-fur-gesundheitsberufe-tirol-gmbh",
@@ -319,17 +286,6 @@
   "programs": 1
  },
  {
-  "id": "at-mci-die-unternehmerische-hochschule",
-  "country": "AT",
-  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
-  "name": "MCI – Die Unternehmerische Hochschule",
-  "officialName": "MCI – Die Unternehmerische Hochschule",
-  "city": "Innsbruck",
-  "kind": "unknown",
-  "hasSheet": false,
-  "programs": 11
- },
- {
   "id": "at-medizinische-universitat-graz",
   "country": "AT",
   "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
@@ -339,28 +295,6 @@
   "kind": "unknown",
   "hasSheet": false,
   "programs": 1
- },
- {
-  "id": "at-modul-university-vienna-private-university",
-  "country": "AT",
-  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
-  "name": "MODUL University Vienna Private University",
-  "officialName": "MODUL University Vienna Private University",
-  "city": "Wien",
-  "kind": "unknown",
-  "hasSheet": false,
-  "programs": 3
- },
- {
-  "id": "at-montanuniversitat-leoben",
-  "country": "AT",
-  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
-  "name": "Montanuniversität Leoben",
-  "officialName": "Montanuniversität Leoben",
-  "city": "Leoben",
-  "kind": "unknown",
-  "hasSheet": false,
-  "programs": 6
  },
  {
   "id": "at-musik-und-kunst-privatuniversitat-der-stadt-wien",
@@ -583,6 +517,39 @@
   "programs": 6
  },
  {
+  "id": "fh-joanneum",
+  "country": "AT",
+  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
+  "name": "FH JOANNEUM GmbH",
+  "officialName": "FH JOANNEUM GmbH",
+  "city": "Graz",
+  "kind": "unknown",
+  "hasSheet": true,
+  "programs": 26
+ },
+ {
+  "id": "fh-oberoesterreich",
+  "country": "AT",
+  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
+  "name": "FH OÖ Studienbetriebs GmbH",
+  "officialName": "FH OÖ Studienbetriebs GmbH",
+  "city": "Wels",
+  "kind": "unknown",
+  "hasSheet": true,
+  "programs": 30
+ },
+ {
+  "id": "fh-technikum-wien",
+  "country": "AT",
+  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
+  "name": "Fachhochschule Technikum Wien",
+  "officialName": "Fachhochschule Technikum Wien",
+  "city": "Wien",
+  "kind": "unknown",
+  "hasSheet": true,
+  "programs": 11
+ },
+ {
   "id": "imc-krems",
   "country": "AT",
   "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
@@ -603,6 +570,39 @@
   "kind": "unknown",
   "hasSheet": true,
   "programs": 16
+ },
+ {
+  "id": "mci-innsbruck",
+  "country": "AT",
+  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
+  "name": "MCI – Die Unternehmerische Hochschule",
+  "officialName": "MCI – Die Unternehmerische Hochschule",
+  "city": "Innsbruck",
+  "kind": "unknown",
+  "hasSheet": true,
+  "programs": 11
+ },
+ {
+  "id": "modul-university-vienna",
+  "country": "AT",
+  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
+  "name": "MODUL University Vienna Private University",
+  "officialName": "MODUL University Vienna Private University",
+  "city": "Wien",
+  "kind": "unknown",
+  "hasSheet": true,
+  "programs": 3
+ },
+ {
+  "id": "montanuni-leoben",
+  "country": "AT",
+  "source": "Europass QDR Austria (studienwahl.at/OeAD) 2026-10",
+  "name": "Montanuniversität Leoben",
+  "officialName": "Montanuniversität Leoben",
+  "city": "Leoben",
+  "kind": "unknown",
+  "hasSheet": true,
+  "programs": 6
  },
  {
   "id": "tu-graz",

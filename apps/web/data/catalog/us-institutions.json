@@ -1,5 +1,41 @@
 [
  {
+  "id": "amherst",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Amherst College",
+  "officialName": "Amherst College",
+  "city": "Amherst, MA",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "https://www.amherst.edu",
+  "programs": 34
+ },
+ {
+  "id": "boston-college",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Boston College",
+  "officialName": "Boston College",
+  "city": "Chestnut Hill, MA",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "https://www.bc.edu",
+  "programs": 49
+ },
+ {
+  "id": "boston-university",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Boston University",
+  "officialName": "Boston University",
+  "city": "Boston, MA",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "https://www.bu.edu",
+  "programs": 79
+ },
+ {
   "id": "brown",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -10,6 +46,30 @@
   "hasSheet": true,
   "website": "https://www.brown.edu",
   "programs": 59
+ },
+ {
+  "id": "caltech",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "California Institute of Technology",
+  "officialName": "California Institute of Technology",
+  "city": "Pasadena, CA",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "https://www.caltech.edu",
+  "programs": 25
+ },
+ {
+  "id": "carnegie-mellon",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Carnegie Mellon University",
+  "officialName": "Carnegie Mellon University",
+  "city": "Pittsburgh, PA",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "https://www.cmu.edu",
+  "programs": 91
  },
  {
   "id": "columbia",
@@ -48,6 +108,54 @@
   "programs": 50
  },
  {
+  "id": "duke",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Duke University",
+  "officialName": "Duke University",
+  "city": "Durham, NC",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "https://www.duke.edu",
+  "programs": 64
+ },
+ {
+  "id": "emory",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Emory University",
+  "officialName": "Emory University",
+  "city": "Atlanta, GA",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "https://www.emory.edu",
+  "programs": 54
+ },
+ {
+  "id": "georgetown",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Georgetown University",
+  "officialName": "Georgetown University",
+  "city": "Washington, DC",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "https://www.georgetown.edu",
+  "programs": 47
+ },
+ {
+  "id": "georgia-tech",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Georgia Institute of Technology-Main Campus",
+  "officialName": "Georgia Institute of Technology-Main Campus",
+  "city": "Atlanta, GA",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "https://www.gatech.edu",
+  "programs": 36
+ },
+ {
   "id": "harvard",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -58,6 +166,18 @@
   "hasSheet": true,
   "website": "https://www.harvard.edu",
   "programs": 66
+ },
+ {
+  "id": "johns-hopkins",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Johns Hopkins University",
+  "officialName": "Johns Hopkins University",
+  "city": "Baltimore, MD",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "https://www.jhu.edu",
+  "programs": 60
  },
  {
   "id": "mit",
@@ -72,6 +192,42 @@
   "programs": 40
  },
  {
+  "id": "northwestern",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Northwestern University",
+  "officialName": "Northwestern University",
+  "city": "Evanston, IL",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "https://www.northwestern.edu",
+  "programs": 85
+ },
+ {
+  "id": "notre-dame",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of Notre Dame",
+  "officialName": "University of Notre Dame",
+  "city": "Notre Dame, IN",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "https://www.nd.edu",
+  "programs": 56
+ },
+ {
+  "id": "nyu",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "New York University",
+  "officialName": "New York University",
+  "city": "New York, NY",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "https://www.nyu.edu",
+  "programs": 78
+ },
+ {
   "id": "princeton",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -84,6 +240,18 @@
   "programs": 37
  },
  {
+  "id": "rice",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Rice University",
+  "officialName": "Rice University",
+  "city": "Houston, TX",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "https://www.rice.edu",
+  "programs": 55
+ },
+ {
   "id": "stanford",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -93,6 +261,78 @@
   "kind": "private",
   "hasSheet": true,
   "website": "https://www.stanford.edu",
+  "programs": 51
+ },
+ {
+  "id": "tufts",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Tufts University",
+  "officialName": "Tufts University",
+  "city": "Medford, MA",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "https://www.tufts.edu",
+  "programs": 60
+ },
+ {
+  "id": "uc-berkeley",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of California-Berkeley",
+  "officialName": "University of California-Berkeley",
+  "city": "Berkeley, CA",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "https://www.berkeley.edu",
+  "programs": 80
+ },
+ {
+  "id": "uchicago",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of Chicago",
+  "officialName": "University of Chicago",
+  "city": "Chicago, IL",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "https://www.uchicago.edu",
+  "programs": 52
+ },
+ {
+  "id": "ucla",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of California-Los Angeles",
+  "officialName": "University of California-Los Angeles",
+  "city": "Los Angeles, CA",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "https://www.ucla.edu",
+  "programs": 76
+ },
+ {
+  "id": "umich",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of Michigan-Ann Arbor",
+  "officialName": "University of Michigan-Ann Arbor",
+  "city": "Ann Arbor, MI",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "https://umich.edu",
+  "programs": 88
+ },
+ {
+  "id": "unc-chapel-hill",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of North Carolina at Chapel Hill",
+  "officialName": "University of North Carolina at Chapel Hill",
+  "city": "Chapel Hill, NC",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "https://www.unc.edu",
   "programs": 51
  },
  {
@@ -598,18 +838,6 @@
   "hasSheet": false,
   "website": "https://www.american.edu",
   "programs": 44
- },
- {
-  "id": "us-amherst-college",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Amherst College",
-  "officialName": "Amherst College",
-  "city": "Amherst, MA",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.amherst.edu",
-  "programs": 34
  },
  {
   "id": "us-amridge-university",
@@ -2268,30 +2496,6 @@
   "programs": 1
  },
  {
-  "id": "us-boston-college",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Boston College",
-  "officialName": "Boston College",
-  "city": "Chestnut Hill, MA",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.bc.edu",
-  "programs": 49
- },
- {
-  "id": "us-boston-university",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Boston University",
-  "officialName": "Boston University",
-  "city": "Boston, MA",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.bu.edu",
-  "programs": 79
- },
- {
   "id": "us-bowdoin-college",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -2808,18 +3012,6 @@
   "programs": 2
  },
  {
-  "id": "us-california-institute-of-technology",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "California Institute of Technology",
-  "officialName": "California Institute of Technology",
-  "city": "Pasadena, CA",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.caltech.edu",
-  "programs": 25
- },
- {
   "id": "us-california-institute-of-the-arts",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -3214,18 +3406,6 @@
   "hasSheet": false,
   "website": "https://www.carlow.edu",
   "programs": 34
- },
- {
-  "id": "us-carnegie-mellon-university",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Carnegie Mellon University",
-  "officialName": "Carnegie Mellon University",
-  "city": "Pittsburgh, PA",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.cmu.edu",
-  "programs": 91
  },
  {
   "id": "us-carolina-christian-college",
@@ -5652,18 +5832,6 @@
   "programs": 17
  },
  {
-  "id": "us-duke-university",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Duke University",
-  "officialName": "Duke University",
-  "city": "Durham, NC",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.duke.edu",
-  "programs": 64
- },
- {
   "id": "us-dunwoody-college-of-technology",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -6154,18 +6322,6 @@
   "hasSheet": false,
   "website": "https://www.emoryhenry.edu",
   "programs": 43
- },
- {
-  "id": "us-emory-university",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Emory University",
-  "officialName": "Emory University",
-  "city": "Atlanta, GA",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.emory.edu",
-  "programs": 54
  },
  {
   "id": "us-empire-state-university",
@@ -7044,18 +7200,6 @@
   "programs": 37
  },
  {
-  "id": "us-georgetown-university",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Georgetown University",
-  "officialName": "Georgetown University",
-  "city": "Washington, DC",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.georgetown.edu",
-  "programs": 47
- },
- {
   "id": "us-georgia-college-and-state-university",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -7090,18 +7234,6 @@
   "hasSheet": false,
   "website": "https://www.highlands.edu",
   "programs": 6
- },
- {
-  "id": "us-georgia-institute-of-technology-main-campus",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Georgia Institute of Technology-Main Campus",
-  "officialName": "Georgia Institute of Technology-Main Campus",
-  "city": "Atlanta, GA",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "https://www.gatech.edu",
-  "programs": 36
  },
  {
   "id": "us-georgia-military-college",
@@ -8890,18 +9022,6 @@
   "hasSheet": false,
   "website": "https://jpcatholic.edu",
   "programs": 5
- },
- {
-  "id": "us-johns-hopkins-university",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Johns Hopkins University",
-  "officialName": "Johns Hopkins University",
-  "city": "Baltimore, MD",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.jhu.edu",
-  "programs": 60
  },
  {
   "id": "us-johnson-and-wales-university-charlotte",
@@ -12480,18 +12600,6 @@
   "programs": 1
  },
  {
-  "id": "us-new-york-university",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "New York University",
-  "officialName": "New York University",
-  "city": "New York, NY",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.nyu.edu",
-  "programs": 78
- },
- {
   "id": "us-newberry-college",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -13018,18 +13126,6 @@
   "hasSheet": false,
   "website": "https://www.nsula.edu",
   "programs": 31
- },
- {
-  "id": "us-northwestern-university",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Northwestern University",
-  "officialName": "Northwestern University",
-  "city": "Evanston, IL",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.northwestern.edu",
-  "programs": 85
  },
  {
   "id": "us-northwood-university",
@@ -15130,18 +15226,6 @@
   "hasSheet": false,
   "website": "https://www.rhodes.edu",
   "programs": 35
- },
- {
-  "id": "us-rice-university",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Rice University",
-  "officialName": "Rice University",
-  "city": "Houston, TX",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.rice.edu",
-  "programs": 55
  },
  {
   "id": "us-rider-university",
@@ -18792,18 +18876,6 @@
   "programs": 63
  },
  {
-  "id": "us-the-university-of-texas-at-austin",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "The University of Texas at Austin",
-  "officialName": "The University of Texas at Austin",
-  "city": "Austin, TX",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "https://www.utexas.edu",
-  "programs": 101
- },
- {
   "id": "us-the-university-of-texas-at-dallas",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -19380,18 +19452,6 @@
   "programs": 39
  },
  {
-  "id": "us-tufts-university",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Tufts University",
-  "officialName": "Tufts University",
-  "city": "Medford, MA",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.tufts.edu",
-  "programs": 60
- },
- {
   "id": "us-tulane-university-of-louisiana",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -19848,18 +19908,6 @@
   "programs": 39
  },
  {
-  "id": "us-university-of-california-berkeley",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "University of California-Berkeley",
-  "officialName": "University of California-Berkeley",
-  "city": "Berkeley, CA",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "https://www.berkeley.edu",
-  "programs": 80
- },
- {
   "id": "us-university-of-california-davis",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -19882,18 +19930,6 @@
   "hasSheet": false,
   "website": "https://www.uci.edu",
   "programs": 72
- },
- {
-  "id": "us-university-of-california-los-angeles",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "University of California-Los Angeles",
-  "officialName": "University of California-Los Angeles",
-  "city": "Los Angeles, CA",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "https://www.ucla.edu",
-  "programs": 76
  },
  {
   "id": "us-university-of-california-merced",
@@ -20014,18 +20050,6 @@
   "hasSheet": false,
   "website": "https://www.ucwv.edu",
   "programs": 26
- },
- {
-  "id": "us-university-of-chicago",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "University of Chicago",
-  "officialName": "University of Chicago",
-  "city": "Chicago, IL",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.uchicago.edu",
-  "programs": 52
  },
  {
   "id": "us-university-of-cincinnati-blue-ash-college",
@@ -20772,18 +20796,6 @@
   "programs": 83
  },
  {
-  "id": "us-university-of-michigan-ann-arbor",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "University of Michigan-Ann Arbor",
-  "officialName": "University of Michigan-Ann Arbor",
-  "city": "Ann Arbor, MI",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "https://umich.edu",
-  "programs": 88
- },
- {
   "id": "us-university-of-michigan-dearborn",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -21156,18 +21168,6 @@
   "programs": 31
  },
  {
-  "id": "us-university-of-north-carolina-at-chapel-hill",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "University of North Carolina at Chapel Hill",
-  "officialName": "University of North Carolina at Chapel Hill",
-  "city": "Chapel Hill, NC",
-  "kind": "public",
-  "hasSheet": false,
-  "website": "https://www.unc.edu",
-  "programs": 51
- },
- {
   "id": "us-university-of-north-carolina-at-charlotte",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -21346,18 +21346,6 @@
   "hasSheet": false,
   "website": "https://www.unwsp.edu",
   "programs": 49
- },
- {
-  "id": "us-university-of-notre-dame",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "University of Notre Dame",
-  "officialName": "University of Notre Dame",
-  "city": "Notre Dame, IN",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.nd.edu",
-  "programs": 56
  },
  {
   "id": "us-university-of-oklahoma-health-sciences-center",
@@ -21730,18 +21718,6 @@
   "hasSheet": false,
   "website": "https://www.usf.edu",
   "programs": 80
- },
- {
-  "id": "us-university-of-southern-california",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "University of Southern California",
-  "officialName": "University of Southern California",
-  "city": "Los Angeles, CA",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.usc.edu",
-  "programs": 89
  },
  {
   "id": "us-university-of-southern-indiana",
@@ -22464,18 +22440,6 @@
   "programs": 59
  },
  {
-  "id": "us-vanderbilt-university",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Vanderbilt University",
-  "officialName": "Vanderbilt University",
-  "city": "Nashville, TN",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.vanderbilt.edu",
-  "programs": 53
- },
- {
   "id": "us-vandercook-college-of-music",
   "country": "US",
   "source": "College Scorecard Field of Study 2026-06-10",
@@ -22930,18 +22894,6 @@
   "hasSheet": false,
   "website": "https://wsu.edu",
   "programs": 89
- },
- {
-  "id": "us-washington-university-in-st-louis",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Washington University in St Louis",
-  "officialName": "Washington University in St Louis",
-  "city": "St. Louis, MO",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://washu.edu",
-  "programs": 88
  },
  {
   "id": "us-watts-college-of-nursing",
@@ -23758,18 +23710,6 @@
   "hasSheet": false,
   "website": "https://williamsbaptistuniversity.com",
   "programs": 20
- },
- {
-  "id": "us-williams-college",
-  "country": "US",
-  "source": "College Scorecard Field of Study 2026-06-10",
-  "name": "Williams College",
-  "officialName": "Williams College",
-  "city": "Williamstown, MA",
-  "kind": "private",
-  "hasSheet": false,
-  "website": "https://www.williams.edu",
-  "programs": 31
  },
  {
   "id": "us-williamson-christian-college",
@@ -24622,6 +24562,66 @@
   "hasSheet": false,
   "website": "https://www.zanestate.edu",
   "programs": 1
+ },
+ {
+  "id": "usc",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "University of Southern California",
+  "officialName": "University of Southern California",
+  "city": "Los Angeles, CA",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "https://www.usc.edu",
+  "programs": 89
+ },
+ {
+  "id": "ut-austin",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "The University of Texas at Austin",
+  "officialName": "The University of Texas at Austin",
+  "city": "Austin, TX",
+  "kind": "public",
+  "hasSheet": true,
+  "website": "https://www.utexas.edu",
+  "programs": 101
+ },
+ {
+  "id": "vanderbilt",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Vanderbilt University",
+  "officialName": "Vanderbilt University",
+  "city": "Nashville, TN",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "https://www.vanderbilt.edu",
+  "programs": 53
+ },
+ {
+  "id": "washu",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Washington University in St Louis",
+  "officialName": "Washington University in St Louis",
+  "city": "St. Louis, MO",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "https://washu.edu",
+  "programs": 88
+ },
+ {
+  "id": "williams",
+  "country": "US",
+  "source": "College Scorecard Field of Study 2026-06-10",
+  "name": "Williams College",
+  "officialName": "Williams College",
+  "city": "Williamstown, MA",
+  "kind": "private",
+  "hasSheet": true,
+  "website": "https://www.williams.edu",
+  "programs": 31
  },
  {
   "id": "yale",

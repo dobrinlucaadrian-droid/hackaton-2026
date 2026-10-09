@@ -95,26 +95,26 @@
   "programs": 49
  },
  {
-  "id": "es-universidad-autonoma-de-barcelona",
+  "id": "uab-barcelona",
   "country": "ES",
   "source": "RUCT 2026-10 (Registro de Universidades, Centros y Títulos)",
   "name": "Universidad Autónoma de Barcelona",
   "officialName": "Universidad Autónoma de Barcelona",
   "city": "Cerdanyola del Vallès",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.uab.es",
   "programs": 102
  },
  {
-  "id": "es-universidad-autonoma-de-madrid",
+  "id": "uam-madrid",
   "country": "ES",
   "source": "RUCT 2026-10 (Registro de Universidades, Centros y Títulos)",
   "name": "Universidad Autónoma de Madrid",
   "officialName": "Universidad Autónoma de Madrid",
   "city": "Madrid",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.uam.es",
   "programs": 67
  },
@@ -143,14 +143,14 @@
   "programs": 40
  },
  {
-  "id": "es-universidad-carlos-iii-de-madrid",
+  "id": "uc3m-madrid",
   "country": "ES",
   "source": "RUCT 2026-10 (Registro de Universidades, Centros y Títulos)",
   "name": "Universidad Carlos III de Madrid",
   "officialName": "Universidad Carlos III de Madrid",
   "city": "Getafe",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.uc3m.es",
   "programs": 59
  },
@@ -203,14 +203,14 @@
   "programs": 15
  },
  {
-  "id": "es-universidad-complutense-de-madrid",
+  "id": "ucm-madrid",
   "country": "ES",
   "source": "RUCT 2026-10 (Registro de Universidades, Centros y Títulos)",
   "name": "Universidad Complutense de Madrid",
   "officialName": "Universidad Complutense de Madrid",
   "city": "Madrid",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.ucm.es",
   "programs": 108
  },
@@ -239,14 +239,14 @@
   "programs": 50
  },
  {
-  "id": "es-universidad-de-alicante",
+  "id": "ua-alicante",
   "country": "ES",
   "source": "RUCT 2026-10 (Registro de Universidades, Centros y Títulos)",
   "name": "Universidad de Alicante",
   "officialName": "Universidad de Alicante",
   "city": "Sant Vicent del Raspeig/San Vicente del Raspeig",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.ua.es/",
   "programs": 55
  },
@@ -371,14 +371,14 @@
   "programs": 84
  },
  {
-  "id": "es-universidad-de-granada",
+  "id": "ugr-granada",
   "country": "ES",
   "source": "RUCT 2026-10 (Registro de Universidades, Centros y Títulos)",
   "name": "Universidad de Granada",
   "officialName": "Universidad de Granada",
   "city": "Granada",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.ugr.es",
   "programs": 95
  },
@@ -479,86 +479,86 @@
   "programs": 46
  },
  {
-  "id": "es-universidad-de-malaga",
+  "id": "uma-malaga",
   "country": "ES",
   "source": "RUCT 2026-10 (Registro de Universidades, Centros y Títulos)",
   "name": "Universidad de Málaga",
   "officialName": "Universidad de Málaga",
   "city": "Málaga",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.uma.es",
   "programs": 80
  },
  {
-  "id": "es-universidad-de-murcia",
+  "id": "um-murcia",
   "country": "ES",
   "source": "RUCT 2026-10 (Registro de Universidades, Centros y Títulos)",
   "name": "Universidad de Murcia",
   "officialName": "Universidad de Murcia",
   "city": "Murcia",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.um.es",
   "programs": 67
  },
  {
-  "id": "es-universidad-de-navarra",
+  "id": "unav-navarra",
   "country": "ES",
   "source": "RUCT 2026-10 (Registro de Universidades, Centros y Títulos)",
   "name": "Universidad de Navarra",
   "officialName": "Universidad de Navarra",
   "city": "Pamplona/Iruña",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.unav.es",
   "programs": 39
  },
  {
-  "id": "es-universidad-de-oviedo",
+  "id": "uniovi-oviedo",
   "country": "ES",
   "source": "RUCT 2026-10 (Registro de Universidades, Centros y Títulos)",
   "name": "Universidad de Oviedo",
   "officialName": "Universidad de Oviedo",
   "city": "Oviedo",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.uniovi.es",
   "programs": 68
  },
  {
-  "id": "es-universidad-de-salamanca",
+  "id": "usal-salamanca",
   "country": "ES",
   "source": "RUCT 2026-10 (Registro de Universidades, Centros y Títulos)",
   "name": "Universidad de Salamanca",
   "officialName": "Universidad de Salamanca",
   "city": "Salamanca",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.usal.es",
   "programs": 107
  },
  {
-  "id": "es-universidad-de-santiago-de-compostela",
+  "id": "usc-santiago",
   "country": "ES",
   "source": "RUCT 2026-10 (Registro de Universidades, Centros y Títulos)",
   "name": "Universidad de Santiago de Compostela",
   "officialName": "Universidad de Santiago de Compostela",
   "city": "Santiago de Compostela",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.usc.es",
   "programs": 63
  },
  {
-  "id": "es-universidad-de-sevilla",
+  "id": "us-sevilla",
   "country": "ES",
   "source": "RUCT 2026-10 (Registro de Universidades, Centros y Títulos)",
   "name": "Universidad de Sevilla",
   "officialName": "Universidad de Sevilla",
   "city": "Sevilla",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.us.es",
   "programs": 109
  },
@@ -598,14 +598,14 @@
   "programs": 60
  },
  {
-  "id": "es-universidad-de-zaragoza",
+  "id": "unizar-zaragoza",
   "country": "ES",
   "source": "RUCT 2026-10 (Registro de Universidades, Centros y Títulos)",
   "name": "Universidad de Zaragoza",
   "officialName": "Universidad de Zaragoza",
   "city": "Zaragoza",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 71
  },
  {
@@ -836,26 +836,26 @@
   "programs": 22
  },
  {
-  "id": "es-universidad-politecnica-de-catalunya",
+  "id": "upc-barcelona",
   "country": "ES",
   "source": "RUCT 2026-10 (Registro de Universidades, Centros y Títulos)",
   "name": "Universidad Politécnica de Catalunya",
   "officialName": "Universidad Politécnica de Catalunya",
   "city": "Barcelona",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.upc.es",
   "programs": 53
  },
  {
-  "id": "es-universidad-politecnica-de-madrid",
+  "id": "upm-madrid",
   "country": "ES",
   "source": "RUCT 2026-10 (Registro de Universidades, Centros y Títulos)",
   "name": "Universidad Politécnica de Madrid",
   "officialName": "Universidad Politécnica de Madrid",
   "city": "Madrid",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.upm.es",
   "programs": 57
  },
@@ -1026,14 +1026,14 @@
   "programs": 44
  },
  {
-  "id": "es-universitat-de-valencia-estudi-general",
+  "id": "uv-valencia",
   "country": "ES",
   "source": "RUCT 2026-10 (Registro de Universidades, Centros y Títulos)",
   "name": "Universitat de València (Estudi General)",
   "officialName": "Universitat de València (Estudi General)",
   "city": "València",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.uv.es",
   "programs": 77
  },
@@ -1074,14 +1074,14 @@
   "programs": 31
  },
  {
-  "id": "es-universitat-politecnica-de-valencia",
+  "id": "upv-valencia",
   "country": "ES",
   "source": "RUCT 2026-10 (Registro de Universidades, Centros y Títulos)",
   "name": "Universitat Politècnica de València",
   "officialName": "Universitat Politècnica de València",
   "city": "València",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.upv.es",
   "programs": 71
  }

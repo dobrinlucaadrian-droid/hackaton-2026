@@ -84,7 +84,7 @@ describe("sources of the newer profile sheets", () => {
   it("every listed sheet exists and points to official web pages", async () => {
     const sources = (await import("../data/university-sources.json")).default as Record<string, string[]>;
     const ids = new Set(universities.map((u) => u.id));
-    expect(Object.keys(sources).length).toBeGreaterThanOrEqual(74);
+    expect(Object.keys(sources).length).toBeGreaterThanOrEqual(272);
     for (const [id, urls] of Object.entries(sources)) {
       expect(ids.has(id), id).toBe(true);
       expect(urls.length, id).toBeGreaterThan(0);

@@ -106,7 +106,7 @@ function writeOut(institutions, programs) {
   console.log(`${CC}: ${insts.length} institutions, ${prog.length} programmes written`);
 }
 
-const SHEETS = { "Katholieke Universiteit Leuven": "ku-leuven" };
+const SHEETS = { "Katholieke Universiteit Leuven": "ku-leuven", "Universiteit Gent": "ghent-university", "Universiteit Antwerpen": "university-of-antwerp", "Vrije Universiteit Brussel": "vrije-universiteit-brussel" };
 // The source has no field of study (ISCED-F is always "000"), so the domain comes from Dutch keywords in the programme name; null when unsure.
 const RULES = [
   [/diergeneeskunde/, "medicina-veterinara"], [/tandheelkunde|mondzorg/, "medicina-dentara"], [/farmaceutische|farmacie/, "farmacie"],
