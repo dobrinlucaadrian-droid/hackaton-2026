@@ -6,12 +6,14 @@ export type StoredActivity = Activity & { photo?: string };
 export type Draft = {
   profileId?: string;
   where?: StudyPlace;
-  city?: string;
+  cities?: string[];
   choices: Record<string, number>;
   activities?: StoredActivity[];
 };
 
 const KEY = "unipath-draft";
+/** How many Romanian cities a student can choose in the questionnaire. */
+export const MAX_CITIES = 10;
 
 function cleanActivities(raw: unknown): StoredActivity[] {
   if (!Array.isArray(raw)) return [];
@@ -30,6 +32,12 @@ function cleanActivities(raw: unknown): StoredActivity[] {
   return out;
 }
 
+/** The chosen cities of a stored draft; also reads the older single `city`. */
+function cleanCities(d: { cities?: unknown; city?: unknown }): string[] {
+  const raw = Array.isArray(d.cities) ? d.cities : typeof d.city === "string" ? [d.city] : [];
+  return [...new Set(raw.filter((c): c is string => typeof c === "string" && c.length > 0 && c.length <= 60))].slice(0, MAX_CITIES);
+}
+
 export function loadDraft(): Draft {
   try {
     const raw = typeof window === "undefined" ? null : window.sessionStorage.getItem(KEY);
@@ -38,7 +46,7 @@ export function loadDraft(): Draft {
       return {
         profileId: d.profileId,
         where: d.where,
-        ...(typeof d.city === "string" && d.city ? { city: d.city } : {}),
+        ...(cleanCities(d).length ? { cities: cleanCities(d) } : {}),
         choices: d.choices ?? {},
         activities: cleanActivities(d.activities),
       };
@@ -74,7 +82,7 @@ export function toAnswers(d: Draft): Answers | null {
   return {
     profileId: d.profileId,
     where: d.where,
-    ...(d.city && d.where !== "abroad" ? { city: d.city } : {}),
+    ...(d.cities?.length && d.where !== "abroad" ? { cities: d.cities } : {}),
     choices: d.choices,
     ...(activities.length ? { activities } : {}),
   };

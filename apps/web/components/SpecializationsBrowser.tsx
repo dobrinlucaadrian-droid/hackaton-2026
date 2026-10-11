@@ -2,7 +2,7 @@
 // /specializari body: a text filter over all categories, domains and specializations; without text it shows the category tiles.
 import { useMemo, useState } from "react";
 import { categories, domains } from "@/lib/data";
-import { normalize, specializationsFor } from "@/lib/universities";
+import { normalize, specializationsFor } from "@/lib/labels";
 import { CategoryTiles } from "./CategoryTiles";
 import { DomainDetails } from "./DomainDetails";
 import { InterestPicker } from "./InterestPicker";

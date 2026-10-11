@@ -1,7 +1,7 @@
 "use client";
 // Collapsible "Ce-ar fi dacă?" panel: one slider per inclination, controlled by the result page.
 import { useState } from "react";
-import { TRAITS, TRAIT_LABEL } from "@/lib/match";
+import { TRAITS, TRAIT_LABEL } from "@/lib/traits";
 import type { TraitId } from "@/lib/types";
 
 type Props = {

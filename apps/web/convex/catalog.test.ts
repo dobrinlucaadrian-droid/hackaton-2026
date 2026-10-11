@@ -51,6 +51,13 @@ describe("catalogue queries", () => {
     expect(iasi.map((p) => p.key).sort()).toEqual(["a", "b"]);
     expect(await t.query(api.catalog.programsFor, { domainId: "informatica", country: "RO", city: "Oradea" })).toEqual([]);
     expect(await t.query(api.catalog.programsFor, { domainId: "informatica", country: "FR" })).toEqual([]);
+    // several chosen cities: the programmes of all of them, and of no other city
+    const two = await t.query(api.catalog.programsFor, { domainId: "informatica", country: "RO", cities: ["Iași", "Cluj-Napoca", "Oradea"] });
+    expect(two.map((p) => p.key).sort()).toEqual(["a", "b", "c"]);
+    expect(two[two.length - 1].key).toBe("b"); // the distance programme still comes last
+    expect((await t.query(api.catalog.programsFor, { domainId: "informatica", country: "RO", cities: ["Cluj-Napoca"] })).map((p) => p.key)).toEqual(["c"]);
+    expect(await t.query(api.catalog.programsFor, { domainId: "informatica", country: "RO", cities: [] })).toEqual([]);
+    expect(await t.query(api.catalog.programsFor, { domainId: "informatica", country: "RO", cities: Array(11).fill("Iași") })).toEqual([]);
   });
 
   it("searches without diacritics and respects the filters", async () => {

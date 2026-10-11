@@ -26,7 +26,8 @@ export default defineSchema({
     userId: v.id("users"),
     profileId: v.string(),
     where: v.union(v.literal("ro"), v.literal("abroad"), v.literal("any")),
-    city: v.optional(v.string()),
+    city: v.optional(v.string()), // older results: the single chosen city
+    cities: v.optional(v.array(v.string())), // the Romanian cities the student chose; missing = any city
     choices: v.record(v.string(), v.number()), // question id -> index of the picked option
     topDomains: v.array(v.string()), // the three domain ids shown to the student
     savedAt: v.number(),
@@ -79,7 +80,8 @@ export default defineSchema({
     day: v.string(), // "YYYY-MM-DD", Romanian time
     profileId: v.string(),
     where: v.union(v.literal("ro"), v.literal("abroad"), v.literal("any")),
-    city: v.optional(v.string()),
+    city: v.optional(v.string()), // older rows: the single chosen city
+    cities: v.optional(v.array(v.string())),
     choices: v.record(v.string(), v.number()), // question id -> index of the picked option
     topDomains: v.array(v.string()),
   }).index("by_day", ["day"]),

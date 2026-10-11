@@ -7,7 +7,7 @@ import { useCallback, useState } from "react";
 import { Shell } from "@/components/Shell";
 import { Turnstile } from "@/components/Turnstile";
 import { api } from "@/convex/_generated/api";
-import { universities } from "@/lib/data";
+import { universities } from "@/lib/universities";
 
 const LIMITS = { name: 60, faculty: 120, university: 120, status: 40, textMin: 40, textMax: 3000 };
 const OTHER = "__alta__";

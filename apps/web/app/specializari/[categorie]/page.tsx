@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { DomainDetails } from "@/components/DomainDetails";
 import { Shell } from "@/components/Shell";
 import { categories, domains } from "@/lib/data";
-import { specializationsFor } from "@/lib/universities";
+import { specializationsFor } from "@/lib/labels";
 
 type Props = { params: Promise<{ categorie: string }> };
 

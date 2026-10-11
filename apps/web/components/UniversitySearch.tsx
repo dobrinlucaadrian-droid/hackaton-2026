@@ -4,7 +4,8 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { categories, domains } from "@/lib/data";
 import type { AdmissionType, Budget, CertificateId, Filters, Prestige, WorldUniversity } from "@/lib/types";
-import { ADMISSION_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, PRESTIGE_LABEL, countries, filterUniversities, searchUniversities, searchWorld } from "@/lib/universities";
+import { ADMISSION_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, PRESTIGE_LABEL } from "@/lib/labels";
+import { countries, filterUniversities, searchUniversities, searchWorld } from "@/lib/universities";
 import { SearchBox } from "./SearchBox";
 import { UniversityCard } from "./UniversityCard";
 

@@ -3,7 +3,8 @@ import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { gunzipSync } from "node:zlib";
 import { describe, expect, it } from "vitest";
 import { catalogCountries, catalogCountryOfSheet, catalogTotals } from "./catalog";
-import { domains, universities } from "./data";
+import { domains } from "./data";
+import { universities } from "./sheets";
 import type { CatalogInstitution, CatalogProgram } from "./types";
 
 const DIR = new URL("../data/catalog/", import.meta.url);

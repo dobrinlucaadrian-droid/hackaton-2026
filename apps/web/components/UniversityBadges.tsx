@@ -1,6 +1,6 @@
 // Small coloured badges for a university's prestige and budget level, shared by result cards and the profile sheet.
 import type { Budget, Prestige } from "@/lib/types";
-import { BUDGET_LABEL, PRESTIGE_LABEL } from "@/lib/universities";
+import { BUDGET_LABEL, PRESTIGE_LABEL } from "@/lib/labels";
 
 const PRESTIGE_TONE: Record<Prestige, string> = {
   ivy: "bg-primary text-white",

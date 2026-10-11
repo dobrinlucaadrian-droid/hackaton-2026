@@ -54,7 +54,7 @@ function parseBlock(blk) {
       if (s[i] === "<") { const e = s.indexOf(">", i); v = { iri: s.slice(i + 1, e) }; i = e + 1; }
       else if (s[i] === '"') {
         let j = i + 1; while (s[j] !== '"' || (s[j - 1] === "\\" && s[j - 2] !== "\\")) j++;
-        v = { lit: s.slice(i + 1, j).replace(/\n/g, "\n").replace(/\t/g, " ").replace(/\\"/g, '"').replace(/\\/g, "\\") }; i = j + 1;
+        v = { lit: s.slice(i + 1, j).replace(/\\(["\\nt])/g, (_, c) => (c === "n" ? "\n" : c === "t" ? " " : c)) }; i = j + 1;
         if (s[i] === "@") { const lm = /^@[A-Za-z-]+/.exec(s.slice(i)); v.lang = lm[0].slice(1); i += lm[0].length; }
         else if (s.startsWith("^^", i)) { i += 2; const tm = /^(<[^>]*>|[^\s;,.]+)/.exec(s.slice(i)); i += tm[0].length; }
       } else { const tm = /^[^\s;,]+/.exec(s.slice(i)); v = { raw: tm[0] }; i += tm[0].length; }

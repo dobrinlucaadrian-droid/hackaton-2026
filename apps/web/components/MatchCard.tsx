@@ -1,7 +1,8 @@
 // One result card: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.
 import type { CSSProperties, ReactNode } from "react";
 import Link from "next/link";
-import type { Match, StudyPlace, University } from "@/lib/types";
+import { cityList } from "@/lib/cities";
+import type { Match, StudyPlace, UniversitySummary } from "@/lib/types";
 import { curriculumFor } from "@/lib/curricula";
 import { CurriculumPlan } from "./CurriculumPlan";
 import { DomainAbroad, DomainPrograms } from "./DomainPrograms";
@@ -47,17 +48,19 @@ function Row({ title, children }: { title: string; children: ReactNode }) {
   );
 }
 
-export function MatchCard({ match, rank, where, city }: { match: Match; rank: number; where?: StudyPlace; city?: string }) {
+export function MatchCard({ match, rank, where, cities }: { match: Match; rank: number; where?: StudyPlace; cities?: string[] }) {
   const best = rank === 1;
   const { domain } = match;
   const { family, emoji } = domainStyle(domain.id);
   const f = FAMILY_CLASSES[family];
   const regionParam = where === "ro" ? "&regiune=ro" : where === "abroad" ? "&regiune=abroad" : "";
-  // The chosen city is used in titles and links only when it really has universities for this domain.
-  const inCity = city && !match.cityMissing ? city : undefined;
-  const cityParam = inCity ? `&oras=${encodeURIComponent(inCity)}` : "";
+  // The chosen cities are used in titles and links only when they really have universities for this domain.
+  const chosen = cities?.length ? cities : undefined;
+  const inCity = chosen && !match.cityMissing ? cityList(chosen) : undefined;
+  // The university search filters by one city, so the link carries the city only when a single one was chosen.
+  const cityParam = inCity && chosen?.length === 1 ? `&oras=${encodeURIComponent(chosen[0])}` : "";
   const hasUnis = match.universitiesRo.length > 0 || match.universitiesAbroad.length > 0;
-  const lists: { title: string; items: University[]; abroad: boolean }[] = [
+  const lists: { title: string; items: UniversitySummary[]; abroad: boolean }[] = [
     { title: inCity ? `În ${inCity}` : match.cityMissing ? "În alte orașe din România" : "În România", items: match.universitiesRo, abroad: false },
     { title: "În străinătate", items: match.universitiesAbroad, abroad: true },
   ];
@@ -112,8 +115,8 @@ export function MatchCard({ match, rank, where, city }: { match: Match; rank: nu
       )}
 
       {where !== "abroad" && (
-        <Row title={city ? `Programe de licență în ${city}` : "Programe de licență în România"}>
-          <DomainPrograms domainId={domain.id} city={city} sheetIds={[...match.universitiesRo, ...match.universitiesAbroad].map((u) => u.id)} />
+        <Row title={chosen ? `Programe de licență în ${cityList(chosen)}` : "Programe de licență în România"}>
+          <DomainPrograms domainId={domain.id} cities={chosen} sheetIds={[...match.universitiesRo, ...match.universitiesAbroad].map((u) => u.id)} />
         </Row>
       )}
       {where !== "ro" && catalogCountries.some((c) => c.cc !== "RO" && (c.domains[domain.id] ?? 0) > 0) && (
@@ -160,9 +163,10 @@ export function MatchCard({ match, rank, where, city }: { match: Match; rank: nu
             <Ring percent={match.percent} stroke={f.stroke} />
             <div className="min-w-0">
               <p className={`text-sm font-bold ${f.text}`}>Locul {rank}</p>
-              <h2 className="flex items-center gap-2 text-2xl font-black leading-tight tracking-tight text-ink sm:text-3xl">
-                <span aria-hidden className="shrink-0">{emoji}</span>
-                <span className="min-w-0 break-words">{domain.name}</span>
+              {/* On a phone the title is smaller and the emoji is hidden, so a long word such as "kinetoterapie" fits on one line. */}
+              <h2 className="flex items-center gap-2 text-xl font-black leading-tight tracking-tight text-ink sm:text-3xl">
+                <span aria-hidden className="hidden shrink-0 sm:inline">{emoji}</span>
+                <span className="min-w-0 hyphens-auto break-words">{domain.name}</span>
               </h2>
             </div>
           </div>

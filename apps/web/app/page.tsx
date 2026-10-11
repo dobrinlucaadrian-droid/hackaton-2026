@@ -3,7 +3,8 @@ import Link from "next/link";
 import { HeroScene } from "@/components/Illustrations";
 import { Shell } from "@/components/Shell";
 import { catalogTotals } from "@/lib/catalog";
-import { specializations, testimonials, universities } from "@/lib/data";
+import { specializations, testimonials } from "@/lib/data";
+import { universities } from "@/lib/universities";
 
 const nf = new Intl.NumberFormat("ro-RO");
 

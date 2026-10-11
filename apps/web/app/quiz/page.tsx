@@ -1,13 +1,13 @@
 "use client";
-// Quiz screen: the high-school profile first, then one question per step with progress and encouragement, the activities step and the "where" step (with the Romanian city).
+// Quiz screen: the high-school profile first, then one question per step with progress and encouragement, the activities step and the "where" step (with one or more Romanian cities).
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Books, Cap, Diploma, Sparkle } from "@/components/Illustrations";
 import { ActivitiesStep } from "@/components/ActivitiesStep";
 import { Notice, Shell } from "@/components/Shell";
 import { profiles, questions } from "@/lib/data";
-import { loadDraft, saveDraft, type Draft } from "@/lib/session";
-import { romanianCities } from "@/lib/universities";
+import { MAX_CITIES, loadDraft, saveDraft, type Draft } from "@/lib/session";
+import { romanianCities } from "@/lib/cities";
 import type { StudyPlace } from "@/lib/types";
 
 const places: { value: StudyPlace; label: string }[] = [
@@ -93,7 +93,7 @@ export default function QuizPage() {
       return;
     }
     if (where === "abroad") {
-      saveDraft({ ...draft, where, city: undefined });
+      saveDraft({ ...draft, where, cities: undefined });
       router.push("/rezultat");
       return;
     }
@@ -101,9 +101,18 @@ export default function QuizPage() {
     setAskCity(true);
   }
 
-  function pickCity(city: string | undefined) {
+  const chosenCities = draft.cities ?? [];
+
+  function toggleCity(city: string) {
     if (!draft) return;
-    saveDraft({ ...draft, city });
+    const next = chosenCities.includes(city) ? chosenCities.filter((c) => c !== city) : [...chosenCities, city].slice(0, MAX_CITIES);
+    update({ ...draft, cities: next });
+  }
+
+  /** Goes to the result with the chosen cities, or with any city when `any` is true. */
+  function finishCities(any: boolean) {
+    if (!draft) return;
+    saveDraft({ ...draft, cities: any ? undefined : chosenCities });
     router.push("/rezultat");
   }
 
@@ -143,7 +152,7 @@ export default function QuizPage() {
 
       <div key={step} className="slide-in">
         <h1 className="mt-6 text-3xl font-black leading-tight tracking-tight text-ink sm:text-4xl">
-          {isProfile ? "Ce profil de liceu urmezi?" : isWhere ? (askCity ? "În ce oraș vrei să studiezi?" : "Unde vrei să studiezi?") : isActivities ? "Ce ai făcut până acum?" : q.text}
+          {isProfile ? "Ce profil de liceu urmezi?" : isWhere ? (askCity ? "În ce orașe vrei să studiezi?" : "Unde vrei să studiezi?") : isActivities ? "Ce ai făcut până acum?" : q.text}
         </h1>
 
         {isProfile ? (
@@ -202,9 +211,9 @@ export default function QuizPage() {
         ) : isWhere && askCity ? (
           <>
             <p className="mt-2 text-ink-soft">
-              Alege orașul tău sau cel în care vrei să înveți. Îți arătăm universitățile din România doar din acel oraș.
+              Alege unul sau mai multe orașe în care ai vrea să înveți. Îți arătăm universitățile din România doar din orașele alese.
             </p>
-            <button type="button" onClick={() => pickCity(undefined)} className={`mt-5 ${optionClass(false)}`}>
+            <button type="button" onClick={() => finishCities(true)} className={`mt-5 ${optionClass(false)}`}>
               Oricare oraș
             </button>
             <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3" data-cities>
@@ -212,17 +221,29 @@ export default function QuizPage() {
                 <button
                   key={c}
                   type="button"
-                  aria-pressed={draft.city === c}
-                  onClick={() => pickCity(c)}
+                  aria-pressed={chosenCities.includes(c)}
+                  onClick={() => toggleCity(c)}
                   className={`opt min-h-12 rounded-2xl border-2 px-4 py-3 text-left font-semibold ${
-                    draft.city === c
+                    chosenCities.includes(c)
                       ? "border-primary bg-primary-tint text-primary-dark"
                       : "border-transparent bg-card text-ink ring-1 ring-line hover:ring-primary/50"
                   }`}
                 >
+                  {chosenCities.includes(c) ? "✓ " : ""}
                   {c}
                 </button>
               ))}
+            </div>
+            <div className="sticky bottom-3 mt-5">
+              <button
+                type="button"
+                disabled={chosenCities.length === 0}
+                onClick={() => finishCities(false)}
+                className="min-h-14 w-full rounded-2xl bg-primary px-6 py-4 text-lg font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark disabled:cursor-not-allowed disabled:opacity-50"
+                data-cities-done
+              >
+                {chosenCities.length === 0 ? "Alege cel puțin un oraș" : chosenCities.length === 1 ? "Vezi rezultatul pentru 1 oraș" : `Vezi rezultatul pentru ${chosenCities.length} orașe`}
+              </button>
             </div>
           </>
         ) : (

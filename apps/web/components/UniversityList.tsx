@@ -1,10 +1,10 @@
 // Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.
 import Link from "next/link";
-import type { University } from "@/lib/types";
+import type { UniversitySummary } from "@/lib/types";
 
 const LIMIT = 3;
 
-export function UniversityList({ title, items, abroad, allHref }: { title: string; items: University[]; abroad: boolean; allHref: string }) {
+export function UniversityList({ title, items, abroad, allHref }: { title: string; items: UniversitySummary[]; abroad: boolean; allHref: string }) {
   const shown = items.slice(0, LIMIT);
   return (
     <div className="mt-4">

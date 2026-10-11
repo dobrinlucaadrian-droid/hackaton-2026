@@ -86,6 +86,9 @@ export type University = {
   faculties?: Faculty[]; // optional: the real faculties with their bachelor programmes, from the official site
 };
 
+/** A sheet without its long texts: what search, filters and result cards need. This is what the browser loads (data/universities-index.json). */
+export type UniversitySummary = Omit<University, "about" | "budgetNote" | "admission" | "scholarshipsNote" | "dormsNote" | "pros" | "cons">;
+
 /** One faculty of a university with its bachelor (licență) study programmes, official names. */
 export type Faculty = { name: string; programs: string[] };
 
@@ -138,7 +141,7 @@ export type Activity = {
 export type Answers = {
   profileId: string;
   where: StudyPlace;
-  city?: string; // Romanian city the student wants to study in; missing = any city
+  cities?: string[]; // Romanian cities the student wants to study in; missing or empty = any city
   choices: Record<string, number>; // question id -> index of the picked option
   activities?: Activity[];
 };
@@ -147,9 +150,9 @@ export type Match = {
   domain: Domain;
   percent: number; // 0..100, integer
   reasons: string[]; // 2-3 short Romanian sentences: why it fits this student
-  universitiesRo: University[]; // empty when where === "abroad"; only the chosen city when it has this domain
-  cityMissing?: string; // the chosen city, when it has no university for this domain (universitiesRo then lists other cities)
-  universitiesAbroad: University[]; // empty when where === "ro"
+  universitiesRo: UniversitySummary[]; // empty when where === "abroad"; only the chosen city when it has this domain
+  cityMissing?: string; // the chosen cities (as text), when none of them has a university for this domain (universitiesRo then lists other cities)
+  universitiesAbroad: UniversitySummary[]; // empty when where === "ro"
   specializations: Specialization[]; // up to 3 specializations of this domain that fit the student best, best first
 };
 

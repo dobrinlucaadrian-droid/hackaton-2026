@@ -4,7 +4,7 @@ import type { StudyPlace } from "./types";
 export type PendingResult = {
   profileId: string;
   where: StudyPlace;
-  city?: string;
+  cities?: string[];
   choices: Record<string, number>;
   topDomains: string[];
 };

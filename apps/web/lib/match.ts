@@ -1,22 +1,12 @@
 // Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).
 import { MAX_ACTIVITIES, activityArea, activityTraits, describeActivity } from "./activities";
-import { domains, profiles, questions, specializations, universities } from "./data";
+import { cityList } from "./cities";
+import { domains, profiles, questions, specializations } from "./data";
+import { TRAITS, TRAIT_LABEL } from "./traits";
+import { universities } from "./universities";
 import type { Activity, Answers, Match, Profile, StudyPlace, TraitId, TraitWeights } from "./types";
 
-export const TRAITS: TraitId[] = ["logic", "tehnic", "stiinte", "ingrijire", "oameni", "limbaj", "creativ", "business", "societate", "miscare"];
-
-export const TRAIT_LABEL: Record<TraitId, string> = {
-  logic: "Logică și cifre",
-  tehnic: "Tehnică și construit",
-  stiinte: "Științe și natură",
-  ingrijire: "Grijă pentru alții",
-  oameni: "Lucru cu oamenii",
-  limbaj: "Cuvinte și limbi",
-  creativ: "Creativitate",
-  business: "Bani și organizare",
-  societate: "Societate și legi",
-  miscare: "Mișcare și teren",
-};
+export { TRAITS, TRAIT_LABEL };
 
 const PROFILE_SHARE = 0.25; // how much of the student vector comes from the high-school profile
 
@@ -101,7 +91,7 @@ function rank(
   profile: Profile | undefined,
   where: StudyPlace | undefined,
   activities: Activity[] = [],
-  city?: string,
+  cities?: string[],
 ): Match[] {
   const scored = domains
     .map((domain) => {
@@ -139,15 +129,16 @@ function rank(
     const offered = universities.filter((u) => u.domainIds.includes(domain.id));
     const ro = offered.filter((u) => u.region === "ro").sort((a, b) => a.city.localeCompare(b.city, "ro") || a.name.localeCompare(b.name, "ro"));
     const abroad = offered.filter((u) => u.region === "abroad");
-    // With a chosen city only that city's universities are listed; other cities appear only when it has none for this domain.
-    const inCity = city ? ro.filter((u) => u.city === city) : ro;
-    const cityMissing = !!city && where !== "abroad" && inCity.length === 0;
+    // With chosen cities only their universities are listed; other cities appear only when none of them has this domain.
+    const chosen = cities?.length ? cities : null;
+    const inCity = chosen ? ro.filter((u) => chosen.includes(u.city)) : ro;
+    const cityMissing = !!chosen && where !== "abroad" && inCity.length === 0;
     return {
       domain,
       percent,
       reasons: reasons.slice(0, 3),
       universitiesRo: where === "abroad" ? [] : cityMissing ? ro : inCity,
-      ...(cityMissing ? { cityMissing: city } : {}),
+      ...(cityMissing && chosen ? { cityMissing: cityList(chosen) } : {}),
       universitiesAbroad: where === "ro" ? [] : abroad,
       // The domain's specializations, closest to the student's inclinations first.
       specializations: specializations
@@ -162,7 +153,7 @@ function rank(
 
 export function matchDomains(answers: Answers): Match[] {
   const { student, picks, profile } = vectors(answers);
-  return rank(student, picks, profile, answers?.where, validActivities(answers), answers?.city);
+  return rank(student, picks, profile, answers?.where, validActivities(answers), answers?.cities);
 }
 
 /** The student's inclinations from profile + answers, each an integer 0..100 (strongest = 100; all 0 when there are no answers). */
@@ -175,12 +166,12 @@ export function studentTraits(answers: Answers): Record<TraitId, number> {
 }
 
 /** Top 3 matches for an arbitrary trait vector (values 0..100), e.g. from the "what if" sliders. */
-export function matchByTraits(traits: Record<TraitId, number>, where: StudyPlace, profileId?: string, city?: string): Match[] {
+export function matchByTraits(traits: Record<TraitId, number>, where: StudyPlace, profileId?: string, cities?: string[]): Match[] {
   const vec = emptyVec();
   for (const t of TRAITS) {
     const v = Number(traits?.[t]);
     vec[t] = Number.isFinite(v) && v > 0 ? v : 0;
   }
   const profile = profiles.find((p) => p.id === profileId);
-  return rank(vec, vec, profile, where, [], city);
+  return rank(vec, vec, profile, where, [], cities);
 }

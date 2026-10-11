@@ -89,29 +89,29 @@ export const recordQuizRun = mutation({
   args: {
     profileId: v.string(),
     where: v.union(v.literal("ro"), v.literal("abroad"), v.literal("any")),
-    city: v.optional(v.string()),
+    cities: v.optional(v.array(v.string())),
     choices: v.record(v.string(), v.number()),
     topDomains: v.array(v.string()),
   },
   returns: v.null(),
-  handler: async (ctx, { profileId, where, city, choices, topDomains }) => {
+  handler: async (ctx, { profileId, where, cities, choices, topDomains }) => {
     const entries = Object.entries(choices);
-    const cleanCity = city?.trim();
+    const cleanCities = [...new Set((cities ?? []).map((c) => c.trim()))];
     if (!ID.test(profileId)) return null;
     if (entries.length === 0 || entries.length > 40) return null;
     if (entries.some(([q, i]) => !ID.test(q) || !Number.isInteger(i) || i < 0 || i > 9)) return null;
     if (topDomains.length === 0 || topDomains.length > 3 || topDomains.some((d) => !ID.test(d))) return null;
-    if (cleanCity !== undefined && (cleanCity.length === 0 || cleanCity.length > 60)) return null;
+    if (cleanCities.length > 10 || cleanCities.some((c) => c.length === 0 || c.length > 60)) return null;
     const { ok } = await rateLimiter.limit(ctx, "quizRun");
     if (!ok) return null;
 
     const day = today();
-    await ctx.db.insert("quizRuns", { day, profileId, where, ...(cleanCity ? { city: cleanCity } : {}), choices, topDomains });
+    await ctx.db.insert("quizRuns", { day, profileId, where, ...(cleanCities.length ? { cities: cleanCities } : {}), choices, topDomains });
     await bumpDay(ctx, day, "quiz", "all");
     await bumpQuiz(ctx, "total", "all");
     await bumpQuiz(ctx, "profile", profileId);
     await bumpQuiz(ctx, "where", where);
-    if (cleanCity) await bumpQuiz(ctx, "city", cleanCity);
+    for (const c of cleanCities) await bumpQuiz(ctx, "city", c);
     await bumpQuiz(ctx, "top1", topDomains[0]);
     for (const d of new Set(topDomains)) await bumpQuiz(ctx, "top", d);
     for (const [q, i] of entries) await bumpQuiz(ctx, "answer", `${q}:${i}`);

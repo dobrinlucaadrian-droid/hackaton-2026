@@ -10,7 +10,7 @@ import { PUBLIC_MIN } from "./analytics";
 import schema from "./schema";
 
 const modules = import.meta.glob("./**/*.ts");
-const RUN = { profileId: "real-mate-info", where: "ro" as const, city: "Iași", choices: { "proiect-de-grup": 1, "zi-de-lucru": 4 }, topDomains: ["informatica", "matematica", "fizica"] };
+const RUN = { profileId: "real-mate-info", where: "ro" as const, cities: ["Iași", "Cluj-Napoca"], choices: { "proiect-de-grup": 1, "zi-de-lucru": 4 }, topDomains: ["informatica", "matematica", "fizica"] };
 
 async function setup() {
   const t = convexTest(schema, modules);
@@ -67,10 +67,10 @@ describe("questionnaire statistics", () => {
   it("stores a finished questionnaire without identity and counts every answer", async () => {
     const { t, admin, user, as } = await setup();
     await as(user).mutation(api.analytics.recordQuizRun, RUN); // even when signed in, no user id is kept
-    await t.mutation(api.analytics.recordQuizRun, { ...RUN, city: undefined, where: "abroad", choices: { "proiect-de-grup": 1 }, topDomains: ["medicina"] });
+    await t.mutation(api.analytics.recordQuizRun, { ...RUN, cities: undefined, where: "abroad", choices: { "proiect-de-grup": 1 }, topDomains: ["medicina"] });
     const runs = await t.run((ctx) => ctx.db.query("quizRuns").collect());
     expect(runs).toHaveLength(2);
-    expect(Object.keys(runs[0]).sort()).toEqual(["_creationTime", "_id", "choices", "city", "day", "profileId", "topDomains", "where"]);
+    expect(Object.keys(runs[0]).sort()).toEqual(["_creationTime", "_id", "choices", "cities", "day", "profileId", "topDomains", "where"]);
 
     const { quiz, days } = await as(admin).query(api.analytics.overview, { days: 1 });
     expect(quiz.total).toBe(2);
@@ -79,7 +79,7 @@ describe("questionnaire statistics", () => {
     expect(quiz.answers).toContainEqual({ key: "zi-de-lucru:4", count: 1 });
     expect(quiz.top1).toContainEqual({ key: "informatica", count: 1 });
     expect(quiz.top).toContainEqual({ key: "fizica", count: 1 });
-    expect(quiz.cities).toEqual([{ key: "Iași", count: 1 }]);
+    expect(quiz.cities).toEqual([{ key: "Cluj-Napoca", count: 1 }, { key: "Iași", count: 1 }]);
     expect(quiz.where).toContainEqual({ key: "abroad", count: 1 });
   });
 
@@ -89,7 +89,7 @@ describe("questionnaire statistics", () => {
     await t.mutation(api.analytics.recordQuizRun, { ...RUN, choices: {} });
     await t.mutation(api.analytics.recordQuizRun, { ...RUN, choices: { "proiect-de-grup": 99 } });
     await t.mutation(api.analytics.recordQuizRun, { ...RUN, topDomains: ["a", "b", "c", "d"] });
-    await t.mutation(api.analytics.recordQuizRun, { ...RUN, city: "x".repeat(61) });
+    await t.mutation(api.analytics.recordQuizRun, { ...RUN, cities: ["x".repeat(61)] });
     expect(await t.run((ctx) => ctx.db.query("quizRuns").collect())).toHaveLength(0);
     expect(await t.run((ctx) => ctx.db.query("quizStats").collect())).toHaveLength(0);
   });

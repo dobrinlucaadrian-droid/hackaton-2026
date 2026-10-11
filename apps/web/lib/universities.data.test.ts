@@ -1,7 +1,8 @@
 // Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
 import { describe, expect, it } from "vitest";
-import { domains, universities } from "./data";
-import { filterUniversities, searchUniversities, universityById } from "./universities";
+import { domains } from "./data";
+import { universities, universityById } from "./sheets";
+import { filterUniversities, searchUniversities } from "./universities";
 
 const IVY = ["harvard", "yale", "princeton", "columbia", "upenn", "brown", "dartmouth", "cornell"];
 
@@ -90,5 +91,18 @@ describe("sources of the newer profile sheets", () => {
       expect(urls.length, id).toBeGreaterThan(0);
       for (const url of urls) expect(url, id).toMatch(/^https?:\/\/[^\s]+$/);
     }
+  });
+});
+
+describe("generated index of the sheets", () => {
+  it("matches the full sheets (run node scripts/data/sheets-index.mjs after changing a sheet)", async () => {
+    const LONG = ["about", "budgetNote", "admission", "scholarshipsNote", "dormsNote", "pros", "cons"];
+    const index = (await import("../data/universities-index.json")).default as Record<string, unknown>[];
+    const cities = (await import("../data/ro-cities.json")).default as string[];
+    const expected = universities.map((u) => Object.fromEntries(Object.entries(u).filter(([k]) => !LONG.includes(k))));
+    expect(index).toEqual(expected);
+    const count = new Map<string, number>();
+    for (const u of universities) if (u.region === "ro") count.set(u.city, (count.get(u.city) ?? 0) + 1);
+    expect(cities).toEqual([...count.keys()].sort((a, b) => count.get(b)! - count.get(a)! || a.localeCompare(b, "ro")));
   });
 });

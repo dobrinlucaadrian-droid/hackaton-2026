@@ -1,16 +1,10 @@
 // Tests the specializations and categories data and the university search/filter logic.
 import { describe, expect, it } from "vitest";
-import { categories, domains, specializations, universities } from "./data";
+import { categories, domains, specializations } from "./data";
+import { normalize, specializationsFor } from "./labels";
 import { TRAITS } from "./match";
-import {
-  countries,
-  filterUniversities,
-  normalize,
-  searchUniversities,
-  searchWorld,
-  specializationsFor,
-  universityById,
-} from "./universities";
+import { universities, universityById } from "./sheets";
+import { countries, filterUniversities, searchUniversities, searchWorld } from "./universities";
 
 const PRESTIGE = ["ivy", "top", "international", "national"];
 const BUDGET = ["gratuit", "mic", "mediu", "mare"];
@@ -94,12 +88,12 @@ describe("searchUniversities", () => {
     const olanda = searchUniversities("olanda", 100);
     expect(olanda.map((u) => u.id)).toContain("tu-delft");
     expect(searchUniversities("netherlands", 100).map((u) => u.id)).toContain("tu-delft");
-    expect(searchUniversities("uk", 100).every((u) => u.country === "Marea Britanie" || normalize(`${u.name} ${u.about}`).includes("uk"))).toBe(true);
+    expect(searchUniversities("uk", 100).every((u) => u.country === "Marea Britanie" || normalize(u.name).includes("uk"))).toBe(true);
   });
   it("requires every word to match", () => {
     const res = searchUniversities("cluj medicina", 100);
     expect(res.map((u) => u.id)).toContain("umf-cluj");
-    for (const u of res) expect(u.city === "Cluj-Napoca" || normalize(`${u.name} ${u.about}`).includes("cluj")).toBe(true);
+    for (const u of res) expect(u.city === "Cluj-Napoca" || normalize(u.name).includes("cluj")).toBe(true);
     expect(searchUniversities("delft zzzzqq")).toEqual([]);
   });
   it("finds by specialization keyword", () => {
@@ -190,7 +184,7 @@ describe("searchWorld", () => {
 
 describe("student opinions per university", async () => {
   const { testimonialsFor, universityIdOf } = await import("./testimonials");
-  const { testimonials, universities } = await import("./data");
+  const { testimonials } = await import("./data");
 
   it("every linked opinion points to a university that has a sheet", () => {
     for (const t of testimonials) {

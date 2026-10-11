@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { domains, specializations } from "@/lib/data";
-import { TRAITS, TRAIT_LABEL } from "@/lib/match";
+import { TRAITS, TRAIT_LABEL } from "@/lib/traits";
 import type { TraitId } from "@/lib/types";
 import { FAMILY_CLASSES, domainStyle } from "./domainStyle";
 

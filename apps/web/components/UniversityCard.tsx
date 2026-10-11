@@ -1,13 +1,13 @@
 // Compact university result card: name, place, badges, three short facts, how many student opinions we have and a link to the full sheet (the whole card is clickable).
 import Link from "next/link";
 import { domains } from "@/lib/data";
-import type { University } from "@/lib/types";
+import type { UniversitySummary } from "@/lib/types";
 import { useTestimonialsFor } from "@/lib/useTestimonials";
-import { ADMISSION_LABEL } from "@/lib/universities";
+import { ADMISSION_LABEL } from "@/lib/labels";
 import { FAMILY_CLASSES, domainStyle } from "./domainStyle";
 import { BudgetBadge, PrestigeBadge } from "./UniversityBadges";
 
-export function UniversityCard({ u, rank, domainId }: { u: University; rank?: number; domainId?: string }) {
+export function UniversityCard({ u, rank, domainId }: { u: UniversitySummary; rank?: number; domainId?: string }) {
   const admission = u.admissionTypes.map((a) => ADMISSION_LABEL[a]).filter(Boolean).join(", ");
   const opinions = useTestimonialsFor(u.id).length;
   const domain = domainId && u.domainIds.includes(domainId) ? domains.find((d) => d.id === domainId) : undefined;

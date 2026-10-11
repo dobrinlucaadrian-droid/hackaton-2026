@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from "react";
 import { Shell } from "@/components/Shell";
 import { domainStyle } from "@/components/domainStyle";
 import { api } from "@/convex/_generated/api";
+import { cityList } from "@/lib/cities";
 import { domains, profiles } from "@/lib/data";
 import { cleanName } from "@/lib/name";
 import { takePendingName, takePendingResult } from "@/lib/pendingSave";
@@ -121,7 +122,7 @@ export default function AccountPage() {
             <p className="mt-1 text-sm text-ink-soft">
               Salvat pe {new Date(result.savedAt).toLocaleDateString("ro-RO", { day: "numeric", month: "long", year: "numeric" })}
               {profile ? ` · ${profile.name}` : ""} · {WHERE_LABEL[result.where]}
-              {result.city ? ` · ${result.city}` : ""}
+              {result.cities?.length ? ` · ${cityList(result.cities)}` : ""}
             </p>
             <ol className="mt-4 space-y-2" data-saved-domains>
               {top.map((d, i) => (

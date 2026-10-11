@@ -1,7 +1,7 @@
 // Grid of category tiles (emoji, name, domain and specialization counts), each linking to its category page.
 import Link from "next/link";
 import { categories } from "@/lib/data";
-import { specializationsFor } from "@/lib/universities";
+import { specializationsFor } from "@/lib/labels";
 
 export function CategoryTiles() {
   return (

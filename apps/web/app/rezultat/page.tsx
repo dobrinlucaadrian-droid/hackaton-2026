@@ -11,6 +11,7 @@ import { SaveResult } from "@/components/SaveResult";
 import { Notice, Shell } from "@/components/Shell";
 import { WhatIf } from "@/components/WhatIf";
 import { api } from "@/convex/_generated/api";
+import { cityList } from "@/lib/cities";
 import { TRAITS, matchByTraits, matchDomains, studentTraits } from "@/lib/match";
 import { clearDraft, loadDraft, toAnswers, type StoredActivity } from "@/lib/session";
 import type { Answers, Match, TraitId } from "@/lib/types";
@@ -46,14 +47,14 @@ export default function ResultPage() {
     }
     // Counts this finished questionnaire once, anonymously: the same answers are not counted again on reload.
     function countOnce(answers: Answers, topDomains: string[]) {
-      const mark = JSON.stringify([answers.profileId, answers.where, answers.city ?? "", answers.choices]);
+      const mark = JSON.stringify([answers.profileId, answers.where, answers.cities ?? [], answers.choices]);
       try {
         if (window.sessionStorage.getItem(COUNTED_KEY) === mark) return;
         window.sessionStorage.setItem(COUNTED_KEY, mark);
       } catch {
         return; // storage blocked: better not counted than counted on every reload
       }
-      recordRun({ profileId: answers.profileId, where: answers.where, ...(answers.city ? { city: answers.city } : {}), choices: answers.choices, topDomains }).catch(() => {
+      recordRun({ profileId: answers.profileId, where: answers.where, ...(answers.cities?.length ? { cities: answers.cities } : {}), choices: answers.choices, topDomains }).catch(() => {
         // statistics must never break the result page
       });
     }
@@ -65,7 +66,7 @@ export default function ResultPage() {
     if (state.status !== "ok") return [];
     if (!changed || !values) return state.matches;
     try {
-      return matchByTraits(values, state.answers.where, state.answers.profileId, state.answers.city);
+      return matchByTraits(values, state.answers.where, state.answers.profileId, state.answers.cities);
     } catch {
       return state.matches;
     }
@@ -101,7 +102,9 @@ export default function ResultPage() {
         <h1 className="mt-2 text-4xl font-black tracking-tighter text-ink sm:text-5xl">Domeniile tale potrivite</h1>
         <p className="mt-2 text-ink-soft">
           Iată cele 3 domenii care ți se potrivesc cel mai bine.
-          {state.answers.city ? ` Universitățile din România sunt din orașul ales de tine: ${state.answers.city}.` : ""}
+          {state.answers.cities?.length
+            ? ` Universitățile din România sunt din ${state.answers.cities.length === 1 ? "orașul ales" : "orașele alese"} de tine: ${cityList(state.answers.cities)}.`
+            : ""}
         </p>
       </div>
 
@@ -128,7 +131,7 @@ export default function ResultPage() {
         {shown.map((m, i) => (
           <div key={m.domain.id} className="rise" style={{ animationDelay: `${i * 120}ms` }}>
             <div key={i} className={changed ? "card-flash" : undefined}>
-              <MatchCard match={m} rank={i + 1} where={state.answers.where} city={state.answers.city} />
+              <MatchCard match={m} rank={i + 1} where={state.answers.where} cities={state.answers.cities} />
             </div>
           </div>
         ))}
@@ -138,7 +141,7 @@ export default function ResultPage() {
         result={{
           profileId: state.answers.profileId,
           where: state.answers.where,
-          ...(state.answers.city ? { city: state.answers.city } : {}),
+          ...(state.answers.cities?.length ? { cities: state.answers.cities } : {}),
           choices: state.answers.choices,
           topDomains: state.matches.map((m) => m.domain.id),
         }}

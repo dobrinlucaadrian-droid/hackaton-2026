@@ -1,7 +1,8 @@
 // Tests the curricula data: every plan belongs to a real domain, covers its years in order and links to an official web page.
 import { describe, expect, it } from "vitest";
 import { curricula, curriculumFor, curriculumLinkFor, curriculumLinks } from "./curricula";
-import { domains, universities } from "./data";
+import { domains } from "./data";
+import { universities } from "./sheets";
 
 const isWebLink = (url: string) => /^https?:\/\/[^\s]+\.[^\s]+$/.test(url);
 

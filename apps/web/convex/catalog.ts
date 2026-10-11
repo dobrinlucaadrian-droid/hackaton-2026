@@ -45,19 +45,32 @@ export const programsOf = query({
   },
 });
 
-/** Programmes of one study domain in a country, optionally in one city. At most 200, full-time first. */
+/** Programmes of one study domain in a country, optionally in one city or in a few cities. At most 200, full-time first. */
 export const programsFor = query({
-  args: { domainId: v.string(), country: v.string(), city: v.optional(v.string()) },
+  args: { domainId: v.string(), country: v.string(), city: v.optional(v.string()), cities: v.optional(v.array(v.string())) },
   returns: v.array(programView),
-  handler: async (ctx, { domainId, country, city }) => {
+  handler: async (ctx, { domainId, country, city, cities }) => {
     if (!short(domainId, 60) || !short(country, 3) || (city !== undefined && !short(city, 80))) return [];
+    const order = (a: Doc<"programs">, b: Doc<"programs">) =>
+      (FORM_ORDER[a.form ?? "full-time"] ?? 9) - (FORM_ORDER[b.form ?? "full-time"] ?? 9) || a.city.localeCompare(b.city) || a.institutionName.localeCompare(b.institutionName);
+    if (cities !== undefined) {
+      // A few chosen cities: read each one through the index, then merge.
+      if (cities.length === 0 || cities.length > 10 || cities.some((c) => !short(c, 80))) return [];
+      const perCity = await Promise.all(
+        [...new Set(cities)].map((c) =>
+          ctx.db
+            .query("programs")
+            .withIndex("by_domain_country_city", (q) => q.eq("domainId", domainId).eq("country", country).eq("city", c))
+            .take(200),
+        ),
+      );
+      return perCity.flat().sort(order).slice(0, 200).map(view);
+    }
     const rows = await ctx.db
       .query("programs")
       .withIndex("by_domain_country_city", (q) => (city ? q.eq("domainId", domainId).eq("country", country).eq("city", city) : q.eq("domainId", domainId).eq("country", country)))
       .take(200);
-    return rows
-      .sort((a, b) => (FORM_ORDER[a.form ?? "full-time"] ?? 9) - (FORM_ORDER[b.form ?? "full-time"] ?? 9) || a.city.localeCompare(b.city) || a.institutionName.localeCompare(b.institutionName))
-      .map(view);
+    return rows.sort(order).map(view);
   },
 });
 

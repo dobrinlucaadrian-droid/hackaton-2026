@@ -4,11 +4,12 @@ import { userMutation, userQuery } from "./access";
 
 const MAX_CHOICES = 40;
 const MAX_TEXT = 80;
+const MAX_CITIES = 10;
 
 const savedResult = v.object({
   profileId: v.string(),
   where: v.union(v.literal("ro"), v.literal("abroad"), v.literal("any")),
-  city: v.optional(v.string()),
+  cities: v.optional(v.array(v.string())),
   choices: v.record(v.string(), v.number()),
   topDomains: v.array(v.string()),
   savedAt: v.number(),
@@ -25,7 +26,8 @@ export const mine = userQuery({
       .unique();
     if (!row) return null;
     const { profileId, where, city, choices, topDomains, savedAt } = row;
-    return { profileId, where, ...(city ? { city } : {}), choices, topDomains, savedAt };
+    const cities = row.cities?.length ? row.cities : city ? [city] : []; // older results kept a single city
+    return { profileId, where, ...(cities.length ? { cities } : {}), choices, topDomains, savedAt };
   },
 });
 
@@ -34,7 +36,7 @@ export const save = userMutation({
   args: {
     profileId: v.string(),
     where: v.union(v.literal("ro"), v.literal("abroad"), v.literal("any")),
-    city: v.optional(v.string()),
+    cities: v.optional(v.array(v.string())),
     choices: v.record(v.string(), v.number()),
     topDomains: v.array(v.string()),
   },
@@ -42,7 +44,8 @@ export const save = userMutation({
   handler: async (ctx, args) => {
     const keys = Object.keys(args.choices);
     const tooLong = (s: string) => s.length === 0 || s.length > MAX_TEXT;
-    if (tooLong(args.profileId) || (args.city !== undefined && tooLong(args.city))) throw new ConvexError("Date nevalide.");
+    if (tooLong(args.profileId)) throw new ConvexError("Date nevalide.");
+    if (args.cities !== undefined && (args.cities.length === 0 || args.cities.length > MAX_CITIES || args.cities.some(tooLong))) throw new ConvexError("Date nevalide.");
     if (keys.length > MAX_CHOICES || keys.some(tooLong)) throw new ConvexError("Date nevalide.");
     if (Object.values(args.choices).some((n) => !Number.isInteger(n) || n < 0 || n > 10)) throw new ConvexError("Date nevalide.");
     if (args.topDomains.length > 3 || args.topDomains.some(tooLong)) throw new ConvexError("Date nevalide.");

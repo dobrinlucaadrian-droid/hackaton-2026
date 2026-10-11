@@ -15,11 +15,11 @@ construite cu un script care poate fi rulat din nou; niciun program inventat sau
 | Spania | 91 | 4.302 | SIIU 2025-26 + registrul RUCT (ministerul spaniol) | aviz legal: reutilizare cu citarea sursei; fără licență deschisă numită | toate universitățile; la cele de stat oferta reală cu locuri; la cele private și UNED programele din registru (pot să nu fie deschise anul acesta) |
 | Germania | 311 | 4.062 | DEQAR (registrul european de acreditări) | PDDL | **parțial, circa 35%**: oficial sunt aproximativ 11.700 de programe la 422 de instituții; lipsesc 42 de universități mari (RWTH Aachen, Heidelberg, KIT, TU Berlin…), Medicina și Dreptul |
 | Italia | 92 | 3.181 | MUR – USTAT | IODL 2.0 | complet pentru oferta 2025/26 (cea mai nouă publicată); fără academiile de arte și muzică (AFAM) |
-| Irlanda | 45 | 2.400 | Europass (date QQI) | CC BY 4.0 (Comisia Europeană) | toate instituțiile publice; lipsește St Patrick's Pontifical University (nu e în sursă) |
+| Irlanda | 45 | 2.401 | Europass (date QQI) | CC BY 4.0 (Comisia Europeană) | toate instituțiile publice; lipsește St Patrick's Pontifical University (nu e în sursă) |
 | Olanda | 95 | 1.568 | DUO – RIO open data | CC BY | complet: un rând pe program acreditat și oraș; la instituțiile finanțate de stat numărul se potrivește cu cel oficial |
 | Belgia | 24 | 533 | Europass (date AHOVOKS) | CC BY 4.0 (Comisia Europeană) | **parțial**: Flandra circa 97% (14 programe lipsesc din sursă); partea franceză lipsește cu totul (40 de instituții) |
 | Austria | 63 | 520 | Europass (date OeAD) | CC BY 4.0 (Comisia Europeană) | **parțial, slab**: 63 din 77 de instituții; la Universitatea din Viena 19 din 58 de programe |
-| **Total** | **4.117** | **100.186** | | | 11 țări |
+| **Total** | **4.117** | **100.187** | | | 11 țări |
 
 Fiecare țară are în `scripts/data/<cod>/` scriptul care a construit datele și un `README.md` cu adresele exacte, licența, filtrele și limitele.
 
@@ -34,7 +34,7 @@ Fiecare țară are în `scripts/data/<cod>/` scriptul care a construit datele ș
 | Polonia | 9.083 | 8.641 | scoase 17 instituții închise și versiunile vechi ale programelor |
 | Belgia | 643 | 533 | scoase diplomele „bachelor după bachelor” și dublurile |
 | Italia | 3.258 | 3.181 | unite cursurile trecute de două ori (două clase de laurea) |
-| Irlanda | 2.433 | 2.400 | adăugate programele integrate (Inginerie, Informatică la Trinity); scoase dublurile |
+| Irlanda | 2.433 | 2.401 | adăugate programele integrate (Inginerie, Informatică la Trinity); scoase dublurile |
 | România | 2.673 | 2.673 | verificată, neschimbată |
 
 ## Ce nu s-a putut, și de ce

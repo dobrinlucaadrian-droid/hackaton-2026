@@ -21,6 +21,23 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-12 00:39 — chestionar: se pot alege mai multe orașe din România
+- Cerut: „la finalul chestionarului, unde te întreabă unde vrei să studiezi și selectezi România, vreau să poți selecta mai multe localități, nu doar una”
+- Făcut: la ultimul pas elevul bifează unul sau mai multe orașe (cel mult 10), apoi apasă „Vezi rezultatul pentru N orașe”; „Oricare oraș” a rămas. Rezultatul arată universitățile și programele de licență din toate orașele alese și spune care sunt („Cluj-Napoca și Iași”). Dacă niciunul dintre orașele alese nu are domeniul, apar ca înainte universități din alte orașe, cu explicație. Rezultatul salvat în cont și statisticile anonime țin acum lista de orașe; rezultatele salvate mai demult, cu un singur oraș, se citesc în continuare. Linkul „Vezi toate” spre căutarea de universități poartă orașul doar când s-a ales unul singur (căutarea filtrează după un singur oraș)
+- Fișiere: `apps/web/app/quiz/page.tsx`, `apps/web/app/rezultat/page.tsx`, `apps/web/app/cont/page.tsx`, `apps/web/components/MatchCard.tsx`, `apps/web/components/DomainPrograms.tsx`, `apps/web/lib/match.ts`, `session.ts`, `cities.ts`, `types.ts`, `pendingSave.ts`, `apps/web/convex/schema.ts`, `results.ts`, `analytics.ts`, `catalog.ts` și testele lor
+- Poartă: TRECUT (123 de teste); parcurs în browser: chestionarul până la ultimul pas, bifat Cluj-Napoca și Iași (și bifat apoi debifat București), rezultatul cu universități și programe din ambele orașe
+- Neverificat: pasul cu orașe pe telefon; salvarea în cont a unui rezultat cu mai multe orașe (verificată doar prin test automat)
+- Urmează: salvarea pe GitHub când cere echipa
+
+### 2026-10-12 00:28 — etapa 2, calitate tehnică: pagini mai ușoare, verificare pe telefon, varianta de producție, observațiile CodeQL
+- Cerut: „da” la etapa 2 din plan (viteza paginilor, verificarea pe telefon, parcurgerea variantei de producție, cele 23 de observații CodeQL)
+- Făcut: (1) Viteză — am măsurat varianta de producție: serverul răspundea deja repede (10–20 ms), dar aproape fiecare pagină descărca în browser toate cele 403 fișe cu textele lor lungi. Acum browserul primește doar un rezumat al fișelor (fără textele lungi) și doar pe paginile care au nevoie; textele lungi rămân pe server și apar doar pe fișa universității. JavaScript descărcat (comprimat), înainte → după: chestionar 365 → 231 KB, întrebări 369 → 233, rezultat 397 → 293, căutare universități 368 → 262, fișa unei universități 382 → 248, specializări 381 → 242, studenți 369 → 235; pagina principală, programe și surse neschimbate (202–218). (2) Telefon — toate paginile principale verificate la lățime de 375 px, fără ieșiri din ecran; reparat titlul rupt în mijlocul cuvântului pe cardul de rezultat („kinetoterapie”). (3) Varianta de producție — construită și parcursă: fereastra de bun venit, chestionarul întreg (profil, 18 întrebări, unde studiezi) până la rezultat, căutarea de universități și de programe, o fișă cu programe din catalog, formularul de păreri cu verificarea anti-robot, redirecționarea paginilor de administrare. (4) CodeQL — 25 de observații, toate în scripturile din `scripts/`, niciuna în aplicație. Una era o greșeală adevărată în scripturile pentru Irlanda, Belgia și Austria (secvențele de tip `\"` din sursă nu erau desfăcute corect); reparată, iar Irlanda a recâștigat un program (2.401). Restul sunt comportamente voite ale scripturilor de date (descarcă fișiere, le scriu pe disc) sau sunt în `scripts/gate.mjs`, care nu se modifică
+- De știut: după ce se schimbă o fișă de universitate se rulează `node scripts/data/sheets-index.mjs`; un test pică dacă rezumatul nu mai corespunde fișelor. Căutarea de universități nu mai caută și în textul „despre” al fișei (doar în nume, oraș, țară, domenii, specializări, facultăți)
+- Fișiere: `scripts/data/sheets-index.mjs` (nou), `apps/web/data/universities-index.json` și `ro-cities.json` (noi, generate), `apps/web/lib/sheets.ts`, `labels.ts`, `cities.ts`, `traits.ts` (noi), `apps/web/lib/universities.ts`, `data.ts`, `match.ts`, `types.ts`, testele din `apps/web/lib/`, componentele și paginile care importau datele, `apps/web/components/MatchCard.tsx`, `scripts/data/{ie,be,at}/build.mjs`, `apps/web/data/catalog/ie-*` și `index.json`, `docs/catalog-status.md`
+- Poartă: TRECUT (121 de teste); varianta de producție construită și parcursă în browser la lățime de telefon; titlul reparat verificat pe varianta de lucru
+- Neverificat: viteza pe internet real (măsurătorile sunt pe acest calculator); conectarea și panoul de administrare pe varianta de producție (linkul de conectare de probă duce la portul variantei de lucru); paginile nu se pot face statice cât timp fiecare răspuns poartă un cod de securitate unic
+- Urmează: etapa 3, ultimii pași, unde e nevoie de echipă: cheia nouă Resend, domeniul, administratorii, adresa de contact, cheile Turnstile, baza de producție
+
 ### 2026-10-11 23:56 — fereastră de bun venit: îți faci cont sau continui fără cont
 - Cerut: „vreau ca prima pagină de conectare să o scoți și ca atunci când intri pe site să ai opțiunea să îți faci cont sau nu”; echipa a ales: fereastră de bun venit, o singură dată pe dispozitiv
 - Făcut: la prima vizită apare peste pagină o fereastră „Bine ai venit pe UniPath!” cu două butoane: „Îmi fac cont” (formularul cu nume și email se deschide în aceeași fereastră) și „Continui fără cont”. Alegerea se ține minte în browser, deci întrebarea nu mai apare a doua oară. Butonul „Conectare” din meniu deschide aceeași fereastră, pe pagina pe care ești, în loc să te ducă pe o pagină separată. Pagina `/conectare` a rămas doar ca plasă de siguranță: acolo ajungi dacă deschizi „Contul meu” fără să fii conectat. Pagina de confidențialitate explică notița ținută în browser
@@ -514,6 +531,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-12 00:07 `35da68e` feat: welcome window to make an account or continue without one
 - 2026-10-09 03:59 `ceeef6b` feat: add 198 university profile sheets across 32 countries
 - 2026-10-09 02:55 `88b4621` feat: add 74 university profile sheets and link them to the catalogue
 - 2026-10-09 02:55 `17842ce` feat: admin statistics panel, anonymous usage counters and home tile
@@ -543,5 +561,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-05 10:53 `c75b5eb` feat: subjects per year for every domain and official curriculum links
 - 2026-10-05 10:20 `1aa0610` fix: spell the student's name Drăghici
 - 2026-10-05 10:19 `4e9ff71` feat: add seven more student opinions with photos
-- 2026-10-05 01:35 `65cbccc` feat: ask the city in the questionnaire and list only universities from that city
 <!-- commits:end -->

@@ -10,8 +10,9 @@ import { UniversityDomains } from "@/components/UniversityDomains";
 import { catalogCountryOfSheet } from "@/lib/catalog";
 import { curriculumLinkFor } from "@/lib/curricula";
 import { testimonialsFor } from "@/lib/testimonials";
-import { domains, universities } from "@/lib/data";
-import { ADMISSION_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, specializationsFor, universityById } from "@/lib/universities";
+import { domains } from "@/lib/data";
+import { ADMISSION_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, specializationsFor } from "@/lib/labels";
+import { universities, universityById } from "@/lib/sheets";
 
 type Props = { params: Promise<{ id: string }> };
 

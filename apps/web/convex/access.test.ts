@@ -10,7 +10,7 @@ import schema from "./schema";
 
 const modules = import.meta.glob("./**/*.ts");
 
-const RESULT = { profileId: "real-mate-info", where: "ro" as const, city: "București", choices: { "proiect-de-grup": 1 }, topDomains: ["informatica"] };
+const RESULT = { profileId: "real-mate-info", where: "ro" as const, cities: ["București"], choices: { "proiect-de-grup": 1 }, topDomains: ["informatica"] };
 const REVIEW = {
   name: "Ana Test",
   faculty: "Informatică, Universitatea de Test",
@@ -42,18 +42,18 @@ describe("saved results", () => {
   it("each student sees, replaces and deletes only their own result", async () => {
     const { t, alice, bob, as } = await setup();
     await as(alice).mutation(api.results.save, RESULT);
-    expect((await as(alice).query(api.results.mine, {}))?.city).toBe("București");
+    expect((await as(alice).query(api.results.mine, {}))?.cities).toEqual(["București"]);
     expect(await as(bob).query(api.results.mine, {})).toBeNull();
 
-    await as(bob).mutation(api.results.save, { ...RESULT, city: "Iași" });
-    await as(alice).mutation(api.results.save, { ...RESULT, city: "Cluj-Napoca" });
-    expect((await as(alice).query(api.results.mine, {}))?.city).toBe("Cluj-Napoca");
-    expect((await as(bob).query(api.results.mine, {}))?.city).toBe("Iași");
+    await as(bob).mutation(api.results.save, { ...RESULT, cities: ["Iași", "Bacău"] });
+    await as(alice).mutation(api.results.save, { ...RESULT, cities: ["Cluj-Napoca"] });
+    expect((await as(alice).query(api.results.mine, {}))?.cities).toEqual(["Cluj-Napoca"]);
+    expect((await as(bob).query(api.results.mine, {}))?.cities).toEqual(["Iași", "Bacău"]);
     expect(await t.run((ctx) => ctx.db.query("results").collect())).toHaveLength(2);
 
     await as(bob).mutation(api.results.remove, {});
     expect(await as(bob).query(api.results.mine, {})).toBeNull();
-    expect((await as(alice).query(api.results.mine, {}))?.city).toBe("Cluj-Napoca");
+    expect((await as(alice).query(api.results.mine, {}))?.cities).toEqual(["Cluj-Napoca"]);
   });
 
   it("there is no way to pass another user's id, and bad data is refused", async () => {
