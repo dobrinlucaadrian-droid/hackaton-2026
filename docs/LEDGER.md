@@ -21,6 +21,22 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-12 02:18 — numele site-ului: idei strânse, nimic hotărât; salvare de seară
+- Cerut: mai multe runde de idei de nume, apoi „ne vom opri aici pentru această seară, te rog să salvezi totul”
+- Făcut: aflat că `unipath.ro` și `unipath.com` sunt luate, deci e nevoie de un nume nou pentru domeniu. Echipa a ales un filtru (română + engleză, fără cifre, fără argou, modern, cu liceul și drumul la vedere), dar nu a ales încă un nume. Favoritele, filtrul și numele verificate la registrele oficiale sunt păstrate în `docs/nume-site.md`
+- Fișiere: `docs/nume-site.md` (nou), `docs/ultimii-pasi.md`
+- Poartă: nu s-a schimbat cod; ultima poartă trecută: 123 de teste, la salvarea `efe2ff9`
+- Urmează: echipa alege 2–3 nume → verificare la registru → cumpărarea domeniului; în paralel cheia Resend nouă și un adult pentru pagina de confidențialitate (vezi `docs/ultimii-pasi.md`, „Unde suntem”)
+
+### 2026-10-12 00:59 — etapa 3 începută: baza de date de producție și adresa de probă
+- Cerut: „vreau să începem pasul 3”; echipa a ales: Claude pregătește tot ce se poate, domeniul se cumpără, administrator `dobrinmatei2008@gmail.com`, nu există încă cineva pentru verificarea juridică
+- Făcut: creată baza de date de producție Convex (`impartial-heron-254`) cu tabelele și funcțiile la zi; generate și puse cheile ei de semnare a sesiunilor (nearătate nicăieri); pus administratorul; încărcat catalogul (4.117 instituții, 100.187 programe); puse pe Vercel, doar pentru adresele de probă, adresa bazei de producție și cheia publică de probă a verificării anti-robot; publicată versiunea de lucru pe adresa de probă https://unipath-proba.vercel.app. Conectarea prin email și formularul de păreri sunt oprite intenționat acolo, până vin cheile reale. Site-ul public nu a fost atins
+- Fișiere: `docs/ultimii-pasi.md` (secțiunea „Unde suntem”)
+- Poartă: nu s-a schimbat cod; ultima poartă trecută: 123 de teste, la salvarea `efe2ff9`
+- Neverificat: paginile de pe adresa de probă — Vercel cere conectarea la contul Vercel ca să le arate, deci nu le-am putut deschide; starea publicării este „Ready”
+- De știut: Vercel construiește singur o variantă de probă la fiecare salvare pe GitHub; cele dinainte de azi au eșuat pentru că lipseau setările, cele de acum încolo ar trebui să meargă
+- Urmează (echipa): hotărârea numelui și cumpărarea domeniului; cheia Resend nouă (cea veche se șterge); cheile Turnstile; un adult pentru verificarea paginii de confidențialitate
+
 ### 2026-10-12 00:39 — chestionar: se pot alege mai multe orașe din România
 - Cerut: „la finalul chestionarului, unde te întreabă unde vrei să studiezi și selectezi România, vreau să poți selecta mai multe localități, nu doar una”
 - Făcut: la ultimul pas elevul bifează unul sau mai multe orașe (cel mult 10), apoi apasă „Vezi rezultatul pentru N orașe”; „Oricare oraș” a rămas. Rezultatul arată universitățile și programele de licență din toate orașele alese și spune care sunt („Cluj-Napoca și Iași”). Dacă niciunul dintre orașele alese nu are domeniul, apar ca înainte universități din alte orașe, cu explicație. Rezultatul salvat în cont și statisticile anonime țin acum lista de orașe; rezultatele salvate mai demult, cu un singur oraș, se citesc în continuare. Linkul „Vezi toate” spre căutarea de universități poartă orașul doar când s-a ales unul singur (căutarea filtrează după un singur oraș)
@@ -531,6 +547,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-12 00:44 `efe2ff9` feat: lighter pages, several cities in the questionnaire, script fix
 - 2026-10-12 00:07 `35da68e` feat: welcome window to make an account or continue without one
 - 2026-10-09 03:59 `ceeef6b` feat: add 198 university profile sheets across 32 countries
 - 2026-10-09 02:55 `88b4621` feat: add 74 university profile sheets and link them to the catalogue
@@ -560,5 +577,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-05 11:02 `7c6d654` fix: open a domain in place on the university sheet instead of leaving the page
 - 2026-10-05 10:53 `c75b5eb` feat: subjects per year for every domain and official curriculum links
 - 2026-10-05 10:20 `1aa0610` fix: spell the student's name Drăghici
-- 2026-10-05 10:19 `4e9ff71` feat: add seven more student opinions with photos
 <!-- commits:end -->

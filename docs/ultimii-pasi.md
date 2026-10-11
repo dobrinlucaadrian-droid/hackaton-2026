@@ -8,9 +8,27 @@ reală: totul se construiește și se verifică local, pe baza de date de dezvol
 
 | Etapă | Ce | Stare |
 | --- | --- | --- |
-| 1 | Baza de date completă: universități, facultăți, programe de studii | 11 țări, 96.215 programe din date oficiale (vezi `docs/catalog-status.md`); rămân țările fără date deschise |
-| 2 | Calitate tehnică: viteza paginilor, verificări, curățenie în cod | după etapa 1 |
-| 3 | Ultimii pași (acest document): chei reale, domeniu, administratori, lansare | la final |
+| 1 | Baza de date completă: universități, facultăți, programe de studii | făcut: 11 țări, 100.187 programe din date oficiale, 403 fișe (vezi `docs/catalog-status.md`) |
+| 2 | Calitate tehnică: viteza paginilor, verificări, curățenie în cod | făcut pe 2026-10-12 |
+| 3 | Ultimii pași (acest document): chei reale, domeniu, administratori, lansare | început pe 2026-10-12, vezi „Unde suntem” |
+
+## Unde suntem (2026-10-12)
+
+Făcut de Claude, fără nicio cheie de la echipă:
+
+- baza de date de producție Convex există (`impartial-heron-254`), cu tabelele și funcțiile la zi;
+- are chei proprii de semnare a sesiunilor (`JWT_PRIVATE_KEY`, `JWKS`), generate pe loc și nearătate nicăieri;
+- are catalogul încărcat: 4.117 instituții și 100.187 programe;
+- administrator: `ADMIN_EMAILS` = `dobrinmatei2008@gmail.com`;
+- adresa de probă: https://unipath-proba.vercel.app (`SITE_URL` în producție arată spre ea). Vercel o ține în spatele
+  conectării la contul Vercel („Deployment Protection”), deci o vede doar cine e conectat la contul Vercel al proiectului;
+- pe adresa de probă conectarea prin email și formularul de păreri sunt oprite intenționat, până vin cheile reale
+  (`AUTH_RESEND_KEY` și `TURNSTILE_SECRET_KEY` nu sunt puse în producție; site-ul afișează „nu este încă pornit”);
+- în producție NU este pus `AUTH_DEV_LOG_LINKS`.
+
+Rămâne de făcut, în ordine: numele site-ului și domeniul (pasul 2), cheia Resend nouă (pasul 1), cheile Turnstile
+(pasul 4), verificarea juridică (pasul 6), proba completă pe adresa de probă și lansarea (pasul 8).
+Site-ul public (https://unipath-taupe-mu.vercel.app) este neschimbat.
 
 Ce e deja făcut și verificat local (ramura `production`): conturi fără parolă, „Contul meu”,
 formularul de păreri cu aprobare, antetele de securitate, scanările automate de pe GitHub,
