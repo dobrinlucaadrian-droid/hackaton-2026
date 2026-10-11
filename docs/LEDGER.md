@@ -21,6 +21,14 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-11 23:56 — fereastră de bun venit: îți faci cont sau continui fără cont
+- Cerut: „vreau ca prima pagină de conectare să o scoți și ca atunci când intri pe site să ai opțiunea să îți faci cont sau nu”; echipa a ales: fereastră de bun venit, o singură dată pe dispozitiv
+- Făcut: la prima vizită apare peste pagină o fereastră „Bine ai venit pe UniPath!” cu două butoane: „Îmi fac cont” (formularul cu nume și email se deschide în aceeași fereastră) și „Continui fără cont”. Alegerea se ține minte în browser, deci întrebarea nu mai apare a doua oară. Butonul „Conectare” din meniu deschide aceeași fereastră, pe pagina pe care ești, în loc să te ducă pe o pagină separată. Pagina `/conectare` a rămas doar ca plasă de siguranță: acolo ajungi dacă deschizi „Contul meu” fără să fii conectat. Pagina de confidențialitate explică notița ținută în browser
+- Fișiere: `apps/web/components/WelcomeDialog.tsx` (nou), `apps/web/components/SignInForm.tsx` (nou, formularul scos din pagina de conectare), `apps/web/app/conectare/page.tsx`, `apps/web/components/NavLinks.tsx`, `apps/web/app/layout.tsx`, `apps/web/app/confidentialitate/page.tsx`
+- Poartă: TRECUT (120 de teste); parcurse în browser: fereastra la prima vizită, „Continui fără cont” (nu mai apare la pagina următoare), butonul „Conectare” din meniu (deschide formularul pe aceeași pagină), închiderea cu Escape, trimiterea formularului cu o adresă de probă, pagina „Contul meu” fără conectare (duce la pagina de conectare)
+- Neverificat: fereastra pe telefon (verificată doar la lățime de calculator); conectarea cu Google din fereastră (Google nu e pornit încă)
+- Urmează: salvarea pe GitHub când cere echipa
+
 ### 2026-10-09 03:58 — 198 de fișe complete noi de universități (403 în total), din 32 de țări
 - Cerut: „aș dori să mai aduni informații despre facultăți, pentru a avea fișă completă la cât mai multe posibil”, pentru mai mult de două ore, cu oprire după 200 de fișe
 - Făcut: 198 de fișe noi, toate în străinătate: SUA 25, Franța 19, Marea Britanie 19, Spania 18, Polonia 15, Germania 12, Italia 12, Irlanda 8, Austria 7, Belgia 6, Canada 6, Danemarca 5, Olanda 5, Suedia 4, câte 3 pentru Australia, Cehia, Elveția, Finlanda, Grecia și Republica Moldova, câte 2 pentru Bulgaria, Cipru, Estonia, Letonia, Lituania, Norvegia și Portugalia, câte una pentru Coreea de Sud, Hong Kong, Malta, Singapore și Slovenia. Aceeași metodă ca la runda anterioară: doar din site-ul oficial al universității și din pagini oficiale de stat, cu paginile folosite păstrate în `apps/web/data/university-sources.json`, fără sume exacte și fără medii de admitere. 99 dintre fișele noi sunt legate de catalogul oficial și arată lista de programe (Spania, Polonia, Austria, SUA, Olanda, Germania, Italia, Irlanda, Belgia)
@@ -506,6 +514,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-09 03:59 `ceeef6b` feat: add 198 university profile sheets across 32 countries
 - 2026-10-09 02:55 `88b4621` feat: add 74 university profile sheets and link them to the catalogue
 - 2026-10-09 02:55 `17842ce` feat: admin statistics panel, anonymous usage counters and home tile
 - 2026-10-08 23:46 `6cf706f` feat: completeness pass on the catalogue: Spain nationwide, France 2026, cleanups
@@ -535,5 +544,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-05 10:20 `1aa0610` fix: spell the student's name Drăghici
 - 2026-10-05 10:19 `4e9ff71` feat: add seven more student opinions with photos
 - 2026-10-05 01:35 `65cbccc` feat: ask the city in the questionnaire and list only universities from that city
-- 2026-10-05 01:24 `6d6fbdf` feat: 18 researched scenario questions in the questionnaire, balanced across the ten traits
 <!-- commits:end -->

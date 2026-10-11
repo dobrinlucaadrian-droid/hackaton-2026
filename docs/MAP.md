@@ -98,7 +98,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `favicon.ico`
 - `globals.css` (129) — _no description: add a first-line comment_
 - `icon.png`
-- `layout.tsx` (50) — Root layout: fonts, page metadata, the database connection and the anonymous visit counter shared by every page.. Exports: metadata, RootLayout
+- `layout.tsx` (52) — Root layout: fonts, page metadata, the database connection and the anonymous visit counter shared by every page.. Exports: metadata, RootLayout
 - `not-found.tsx` (11) — Friendly 404 page shown for unknown routes and unknown university ids.. Exports: NotFound
 - `opengraph-image.alt.txt` (1) — _no description: add a first-line comment_
 - `opengraph-image.png`
@@ -106,11 +106,11 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/conectare  (1 files)
 
-- `page.tsx` (147) — Sign-in page: the visitor types their full name and email and receives a sign-in link, which also creates the account the first time. A Google button appears when Google sign-in is configured. No passwords.. Routes: /conectare. Exports: SignInPage
+- `page.tsx` (18) — Sign-in page: reached when a page needs an account (for example "Contul meu"). Everyday sign-in happens in the welcome window; this page shows the same form.. Routes: /conectare. Exports: SignInPage
 
 ### apps/web/app/confidentialitate  (1 files)
 
-- `page.tsx` (101) — Privacy page: in plain Romanian, what UniPath stores, why, who processes it and how to delete it. Working draft until a legal check.. Routes: /confidentialitate. Exports: metadata, PrivacyPage
+- `page.tsx` (102) — Privacy page: in plain Romanian, what UniPath stores, why, who processes it and how to delete it. Working draft until a legal check.. Routes: /confidentialitate. Exports: metadata, PrivacyPage
 
 ### apps/web/app/cont  (1 files)
 
@@ -160,7 +160,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 - `page.tsx` (26) — University finder page: search box, filters and top 10 results (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
 
-### apps/web/components  (31 files)
+### apps/web/components  (33 files)
 
 - `ActivitiesStep.tsx` (227) — Quiz step "Ce ai făcut până acum?": add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
 - `ActivitiesSummary.tsx` (33) — Read-only list of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
@@ -173,13 +173,14 @@ _Open only the files listed here; a file's description is its first comment line
 - `Illustrations.tsx` (88) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots and the start-page hero.. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene
 - `InterestPicker.tsx` (129) — "Ce îți place?": the student picks up to three interests and sees the specializations that fit them best, ranked, with links to universities.. Exports: InterestPicker
 - `MatchCard.tsx` (197) — One result card: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
-- `NavLinks.tsx` (42) — Header navigation links with the current page highlighted; the last one is "Conectare" or "Contul meu".. Exports: NavLinks
+- `NavLinks.tsx` (45) — Header navigation links with the current page highlighted; the last one is "Contul meu" or "Conectare", which opens the account window.. Exports: NavLinks
 - `OfficialPrograms.tsx` (63) — On a university sheet: every bachelor programme of the institution from its country's official dataset, grouped by faculty (or by field when the source has no faculties), read from the database.. Exports: OfficialPrograms
 - `ProgramRow.tsx` (68) — One bachelor programme from the catalogue, as a compact row: name and the small facts its source gives (language, study form, years, places, status).. Exports: FORM_LABEL, ProgramRow
 - `ProgramSearch.tsx` (100) — Search over the bachelor programmes of the catalogue: country, free text, study domain and city; the state lives in the URL so links and Back work.. Exports: ProgramSearch
 - `SaveResult.tsx` (59) — "Salvează în contul meu" on the result page: saves the result when the student is signed in, otherwise keeps it on the device and sends them to sign in.. Exports: SaveResult
 - `SearchBox.tsx` (45) — Search box with a magnifier icon; submits to /universitati?q=... or calls onSearch when given.. Exports: SearchBox
 - `Shell.tsx` (49) — Page frame shared by all screens: header with the UniPath logo, a centered content column and a footer with the privacy link.. Exports: Shell, Notice
+- `SignInForm.tsx` (141) — The sign-in form (full name and email, a sign-in link by email, Google when configured), shared by the welcome window and the sign-in page. No passwords.. Exports: SignInForm
 - `SpecializationsBrowser.tsx` (82) — /specializari body: a text filter over all categories, domains and specializations; without text it shows the category tiles.. Exports: SpecializationsBrowser
 - `StudentCard.tsx` (38) — One student opinion: photo (or initial), name, faculty and their own words. Used on the students page and on university sheets.. Exports: StudentCard
 - `StudentVoices.tsx` (168) — Student opinions with a search box: type a faculty or university and see every opinion we have from there.. Exports: StudentVoices
@@ -191,6 +192,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `UniversityOpinions.tsx` (32) — "Ce spun studenții" on a university sheet: the opinions about this university, including approved ones from the database. Renders nothing when there are none.. Exports: UniversityOpinions
 - `UniversitySearch.tsx` (381) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
 - `VisitTracker.tsx` (38) — Counts page views anonymously: sends only the page path and, on the first page of a visit, the country and the site the visitor came from. No cookie, no stored id.. Exports: VisitTracker
+- `WelcomeDialog.tsx` (122) — Welcome window shown once per device on the first visit: the visitor chooses to make an account or to go on without one. The header's "Conectare" button opens the same window.. Exports: openSignIn, WelcomeDialog
 - `WhatIf.tsx` (69) — Collapsible "Ce-ar fi dacă?" panel: one slider per inclination, controlled by the result page.. Exports: WhatIf
 - `domainStyle.ts` (67) — Colour family and emoji for every study domain id, used on the result cards.. Exports: FAMILY_CLASSES, domainStyle
 

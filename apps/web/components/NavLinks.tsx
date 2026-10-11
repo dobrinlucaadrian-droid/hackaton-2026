@@ -1,8 +1,9 @@
 "use client";
-// Header navigation links with the current page highlighted; the last one is "Conectare" or "Contul meu".
+// Header navigation links with the current page highlighted; the last one is "Contul meu" or "Conectare", which opens the account window.
 import { useConvexAuth } from "convex/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { openSignIn } from "./WelcomeDialog";
 
 const LINKS = [
   ["/", "Acasă"],
@@ -26,6 +27,8 @@ export function NavLinks() {
               <Link
                 href={href}
                 aria-current={on ? "page" : undefined}
+                // "Conectare" opens the account window on the current page; the link itself still works without JavaScript.
+                onClick={href === "/conectare" && !on ? (e) => { e.preventDefault(); openSignIn(); } : undefined}
                 className={`inline-flex min-h-11 items-center rounded-full px-3 text-sm font-bold transition sm:px-4 sm:text-base ${
                   on ? "bg-primary text-white" : "text-ink-soft hover:bg-primary-tint hover:text-primary-dark"
                 }`}

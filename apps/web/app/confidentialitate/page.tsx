@@ -83,6 +83,7 @@ export default function PrivacyPage() {
 
       <Block title="Cookie-uri și date păstrate în browser">
         <p>Când ești conectat, site-ul păstrează în browser un cookie de sesiune, ca să te recunoască. Fără el nu ai putea rămâne conectat. Verificarea anti-robot de la formularul de păreri poate folosi propriile cookie-uri tehnice.</p>
+        <p>La prima vizită te întrebăm dacă vrei cont. Ca să nu te mai întrebăm a doua oară, browserul tău ține minte doar că ai răspuns; această notiță nu pleacă de pe dispozitivul tău.</p>
         <p>Dacă apeși „Salvează în contul meu” înainte să te conectezi, rezultatul stă pe dispozitivul tău până termini conectarea, apoi e șters de acolo.</p>
       </Block>
 

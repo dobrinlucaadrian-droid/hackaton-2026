@@ -6,6 +6,7 @@ import "./globals.css";
 import { ConvexAuthNextjsServerProvider } from "@convex-dev/auth/nextjs/server";
 import { ConvexClientProvider } from "@/components/ConvexClientProvider";
 import { VisitTracker } from "@/components/VisitTracker";
+import { WelcomeDialog } from "@/components/WelcomeDialog";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,6 +42,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
         <ConvexClientProvider>
           <VisitTracker country={country} />
           {children}
+          <WelcomeDialog />
         </ConvexClientProvider>
       </body>
     </html>
