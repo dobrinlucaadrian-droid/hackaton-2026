@@ -5,12 +5,14 @@ import { useEffect, useMemo, useState } from "react";
 import { categories, domains } from "@/lib/data";
 import type { AdmissionType, Budget, CertificateId, Filters, Prestige, WorldUniversity } from "@/lib/types";
 import { ADMISSION_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, PRESTIGE_LABEL } from "@/lib/labels";
-import { countries, filterUniversities, searchUniversities, searchWorld } from "@/lib/universities";
+import { citiesIn, countries, filterUniversities, searchUniversities, searchWorld } from "@/lib/universities";
 import { SearchBox } from "./SearchBox";
 import { UniversityCard } from "./UniversityCard";
 
 const NOTE = "Informațiile sunt orientative. Verifică mereu site-ul universității.";
 const PRESTIGE_CHOICES: Prestige[] = ["ivy", "top", "international"];
+// How many city chips are shown before "Vezi toate orașele".
+const CITY_PREVIEW = 12;
 const PRESTIGE_CHIP: Record<string, string> = { ivy: "Ivy League", top: "De top mondial", international: "Cunoscută internațional" };
 
 let worldCache: WorldUniversity[] | null = null;
@@ -39,8 +41,8 @@ function readFilters(p: URLSearchParams): Filters {
   if (tara) f.country = tara;
   const regiune = p.get("regiune");
   if (regiune === "ro" || regiune === "abroad") f.region = regiune;
-  const oras = p.get("oras");
-  if (oras) f.city = oras;
+  const orase = [...new Set(p.getAll("oras").filter(Boolean))];
+  if (orase.length) f.cities = orase;
   const domeniu = p.get("domeniu");
   if (domeniu) f.domainId = domeniu;
   const buget = pick<Budget>(p.get("buget"), BUDGET_LABEL);
@@ -59,7 +61,7 @@ function readFilters(p: URLSearchParams): Filters {
 const PARAM_OF: Record<keyof Filters, string> = {
   country: "tara",
   region: "regiune",
-  city: "oras",
+  cities: "oras",
   domainId: "domeniu",
   budget: "buget",
   prestige: "prestigiu",
@@ -102,6 +104,7 @@ export function UniversitySearch() {
   const filters = useMemo(() => readFilters(params), [params]);
   const activeCount = Object.keys(filters).length;
   const [panel, setPanel] = useState(false);
+  const [allCities, setAllCities] = useState(false);
   const [world, setWorld] = useState<{ q: string; items: WorldUniversity[]; failed: boolean } | null>(null);
 
   function go(next: URLSearchParams) {
@@ -112,6 +115,21 @@ export function UniversitySearch() {
     const next = new URLSearchParams(params.toString());
     if (value) next.set(key, value);
     else next.delete(key);
+    go(next);
+  }
+  /** Choosing another country or region drops the chosen cities, which belong to the old one. */
+  function setPlace(key: "tara" | "regiune", value: string | undefined) {
+    const next = new URLSearchParams(params.toString());
+    if (value) next.set(key, value);
+    else next.delete(key);
+    next.delete("oras");
+    go(next);
+  }
+  function toggleCity(city: string) {
+    const next = new URLSearchParams(params.toString());
+    const chosen = next.getAll("oras");
+    next.delete("oras");
+    for (const c of chosen.includes(city) ? chosen.filter((x) => x !== city) : [...chosen, city]) next.append("oras", c);
     go(next);
   }
   function toggle<K extends keyof Filters>(key: K, value: string, current: unknown) {
@@ -159,17 +177,24 @@ export function UniversitySearch() {
 
   const countryList = countries();
   const hiddenCount = (["budget", "prestige", "admissionType", "scholarships", "dorms", "withoutCertificate"] as const).filter((k) => filters[k] !== undefined).length;
-  const chips: { key: keyof Filters; label: string }[] = [];
-  if (filters.region) chips.push({ key: "region", label: filters.region === "ro" ? "În România" : "În străinătate" });
-  if (filters.city) chips.push({ key: "city", label: `Oraș: ${filters.city}` });
-  if (filters.country) chips.push({ key: "country", label: filters.country });
-  if (filters.domainId) chips.push({ key: "domainId", label: domains.find((d) => d.id === filters.domainId)?.name ?? filters.domainId });
-  if (filters.budget) chips.push({ key: "budget", label: BUDGET_LABEL[filters.budget] });
-  if (filters.prestige) chips.push({ key: "prestige", label: PRESTIGE_CHIP[filters.prestige] });
-  if (filters.admissionType) chips.push({ key: "admissionType", label: ADMISSION_LABEL[filters.admissionType] });
-  if (filters.scholarships) chips.push({ key: "scholarships", label: "Are burse" });
-  if (filters.dorms) chips.push({ key: "dorms", label: "Are cămin" });
-  if (filters.withoutCertificate) chips.push({ key: "withoutCertificate", label: `Fără: ${CERTIFICATE_LABEL[filters.withoutCertificate]}` });
+  // Cities to choose from: those of the chosen country or region; with nothing chosen, the Romanian ones.
+  const cityPlace = filters.country ? { country: filters.country } : { region: filters.region ?? ("ro" as const) };
+  const cityOptions = filters.region === "abroad" && !filters.country ? [] : citiesIn(cityPlace);
+  const chosenCities = filters.cities ?? [];
+  const cityTitle = filters.country ? `Orașe din ${filters.country}` : "Orașe din România";
+  const cityShown = allCities ? cityOptions : cityOptions.filter((c, i) => i < CITY_PREVIEW || chosenCities.includes(c));
+  const chips: { key: string; label: string; remove: () => void }[] = [];
+  const add = (key: keyof Filters, label: string) => chips.push({ key, label, remove: () => setParam(PARAM_OF[key], undefined) });
+  if (filters.region) add("region", filters.region === "ro" ? "În România" : "În străinătate");
+  for (const c of chosenCities) chips.push({ key: `city-${c}`, label: `Oraș: ${c}`, remove: () => toggleCity(c) });
+  if (filters.country) add("country", filters.country);
+  if (filters.domainId) add("domainId", domains.find((d) => d.id === filters.domainId)?.name ?? filters.domainId);
+  if (filters.budget) add("budget", BUDGET_LABEL[filters.budget]);
+  if (filters.prestige) add("prestige", PRESTIGE_CHIP[filters.prestige]);
+  if (filters.admissionType) add("admissionType", ADMISSION_LABEL[filters.admissionType]);
+  if (filters.scholarships) add("scholarships", "Are burse");
+  if (filters.dorms) add("dorms", "Are cămin");
+  if (filters.withoutCertificate) add("withoutCertificate", `Fără: ${CERTIFICATE_LABEL[filters.withoutCertificate]}`);
 
   return (
     <div>
@@ -178,15 +203,15 @@ export function UniversitySearch() {
       <div className="mt-4 grid gap-4 sm:grid-cols-2">
         <div>
           <label htmlFor="f-tara" className="text-sm font-extrabold uppercase tracking-wide text-primary">Țara</label>
-          <select id="f-tara" value={filters.country ?? ""} onChange={(e) => setParam("tara", e.target.value || undefined)} className={selectClass}>
+          <select id="f-tara" value={filters.country ?? ""} onChange={(e) => setPlace("tara", e.target.value || undefined)} className={selectClass}>
             <option value="">Oricare</option>
             {countryList.map((c) => (
               <option key={c} value={c}>{c}</option>
             ))}
           </select>
           <div className="mt-2 flex flex-wrap gap-2">
-            <Chip on={filters.region === "ro"} onClick={() => toggle("region", "ro", filters.region)}>În România</Chip>
-            <Chip on={filters.region === "abroad"} onClick={() => toggle("region", "abroad", filters.region)}>În străinătate</Chip>
+            <Chip on={filters.region === "ro"} onClick={() => setPlace("regiune", filters.region === "ro" ? undefined : "ro")}>În România</Chip>
+            <Chip on={filters.region === "abroad"} onClick={() => setPlace("regiune", filters.region === "abroad" ? undefined : "abroad")}>În străinătate</Chip>
           </div>
         </div>
         <div>
@@ -209,6 +234,25 @@ export function UniversitySearch() {
             )}
           </select>
         </div>
+      </div>
+
+      <div className="mt-4">
+        {cityOptions.length === 0 ? (
+          <p className="text-sm text-ink-soft">Alege o țară ca să poți alege și orașele.</p>
+        ) : (
+          <Group title={`${cityTitle} (poți alege mai multe)`}>
+            {cityShown.map((c) => (
+              <Chip key={c} on={chosenCities.includes(c)} onClick={() => toggleCity(c)}>
+                {c}
+              </Chip>
+            ))}
+            {cityOptions.length > cityShown.length && (
+              <button type="button" onClick={() => setAllCities(true)} className="min-h-11 rounded-full px-3 text-sm font-bold text-primary underline underline-offset-2">
+                Vezi toate orașele ({cityOptions.length})
+              </button>
+            )}
+          </Group>
+        )}
       </div>
 
       <div className="mt-3 flex flex-wrap items-center gap-3">
@@ -298,7 +342,7 @@ export function UniversitySearch() {
             <li key={c.key}>
               <button
                 type="button"
-                onClick={() => setParam(PARAM_OF[c.key], undefined)}
+                onClick={c.remove}
                 aria-label={`Scoate filtrul ${c.label}`}
                 className="inline-flex min-h-11 items-center gap-2 rounded-full bg-primary-tint px-4 text-sm font-bold text-primary-dark transition hover:bg-primary hover:text-white"
               >

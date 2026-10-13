@@ -102,7 +102,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `not-found.tsx` (11) — Friendly 404 page shown for unknown routes and unknown university ids.. Exports: NotFound
 - `opengraph-image.alt.txt` (1) — _no description: add a first-line comment_
 - `opengraph-image.png`
-- `page.tsx` (76) — Home page: the hero with the two main actions and "UniPath în cifre" (counts taken from the data); search and specializations have their own pages.. Routes: /. Exports: Home
+- `page.tsx` (77) — Home page: the hero with the two main actions and "UniPath în cifre" (counts taken from the data); search and specializations have their own pages.. Routes: /. Exports: Home
 
 ### apps/web/app/conectare  (1 files)
 
@@ -195,7 +195,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `UniversityDomains.tsx` (87) — "Ce poți studia aici" on a university sheet: tapping a domain opens, on the same page, its specializations and the subjects per year.. Exports: UniversityDomains
 - `UniversityList.tsx` (48) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList
 - `UniversityOpinions.tsx` (32) — "Ce spun studenții" on a university sheet: the opinions about this university, including approved ones from the database. Renders nothing when there are none.. Exports: UniversityOpinions
-- `UniversitySearch.tsx` (382) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
+- `UniversitySearch.tsx` (426) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
 - `VisitTracker.tsx` (38) — Counts page views anonymously: sends only the page path and, on the first page of a visit, the country and the site the visitor came from. No cookie, no stored id.. Exports: VisitTracker
 - `WelcomeDialog.tsx` (122) — Welcome window shown once per device on the first visit: the visitor chooses to make an account or to go on without one. The header's "Conectare" button opens the same window.. Exports: openSignIn, WelcomeDialog
 - `WhatIf.tsx` (69) — Collapsible "Ce-ar fi dacă?" panel: one slider per inclination, controlled by the result page.. Exports: WhatIf
@@ -295,8 +295,8 @@ _Open only the files listed here; a file's description is its first comment line
 - `traits.ts` (18) — The ten inclinations the questionnaire measures and their Romanian names. Kept apart from the matching so pages can show them without loading the university data.. Exports: TRAITS, TRAIT_LABEL
 - `types.ts` (248) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
 - `universities.data.test.ts` (109) — Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
-- `universities.test.ts` (203) — Tests the specializations and categories data and the university search/filter logic.
-- `universities.ts` (182) — Search and filter over the universities with a profile sheet. Works on the index (sheets without their long texts), which is what the browser loads.. Exports: universities, countries, searchUniversities, filterUniversities, searchWorld
+- `universities.test.ts` (217) — Tests the specializations and categories data and the university search/filter logic.
+- `universities.ts` (192) — Search and filter over the universities with a profile sheet. Works on the index (sheets without their long texts), which is what the browser loads.. Exports: universities, countries, citiesIn, searchUniversities, filterUniversities, searchWorld
 - `useTestimonials.ts` (34) — All student opinions the pages can show: the ones gathered by the team (in the app's data) plus the approved ones from the database.. Exports: useTestimonials, useTestimonialsFor
 
 ### apps/web/public  (3 files)

@@ -4,7 +4,7 @@ import { categories, domains, specializations } from "./data";
 import { normalize, specializationsFor } from "./labels";
 import { TRAITS } from "./match";
 import { universities, universityById } from "./sheets";
-import { countries, filterUniversities, searchUniversities, searchWorld } from "./universities";
+import { citiesIn, countries, filterUniversities, searchUniversities, searchWorld } from "./universities";
 
 const PRESTIGE = ["ivy", "top", "international", "national"];
 const BUDGET = ["gratuit", "mic", "mediu", "mare"];
@@ -112,6 +112,20 @@ describe("searchUniversities", () => {
 });
 
 describe("filterUniversities", () => {
+  it("filters by one or several cities, and lists the cities of a country", () => {
+    const two = filterUniversities({ cities: ["Cluj-Napoca", "Iași"] }, 1000);
+    expect(two.length).toBeGreaterThan(1);
+    expect(two.every((u) => u.city === "Cluj-Napoca" || u.city === "Iași")).toBe(true);
+    expect(two.some((u) => u.city === "Iași")).toBe(true);
+    expect(filterUniversities({ cities: [] }, 1000).length).toBe(universities.length);
+    const ro = citiesIn({ region: "ro" });
+    expect(ro[0]).toBe("București");
+    expect(ro).toContain("Timișoara");
+    const nl = citiesIn({ country: "Olanda" });
+    expect(nl.length).toBeGreaterThan(0);
+    expect(nl.every((c) => universities.some((u) => u.country === "Olanda" && u.city === c))).toBe(true);
+  });
+
   it("filters by region and country", () => {
     const ro = filterUniversities({ region: "ro" }, 1000);
     expect(ro.length).toBeGreaterThan(0);

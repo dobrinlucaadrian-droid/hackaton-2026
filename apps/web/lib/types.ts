@@ -132,7 +132,7 @@ export type WorldUniversity = { n: string; c: string; w: string };
 export type Filters = {
   country?: string; // exact `country` value
   region?: "ro" | "abroad";
-  city?: string; // exact `city` value (Romanian cities from the questionnaire)
+  cities?: string[]; // exact `city` values; a university in any of them passes
   domainId?: string;
   budget?: Budget; // this level or cheaper
   prestige?: Prestige; // "ivy" = Ivy only; "top" = ivy + top; "international" = ivy + top + international

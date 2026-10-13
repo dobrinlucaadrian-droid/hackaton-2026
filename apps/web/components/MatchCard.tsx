@@ -57,8 +57,8 @@ export function MatchCard({ match, rank, where, cities }: { match: Match; rank: 
   // The chosen cities are used in titles and links only when they really have universities for this domain.
   const chosen = cities?.length ? cities : undefined;
   const inCity = chosen && !match.cityMissing ? cityList(chosen) : undefined;
-  // The university search filters by one city, so the link carries the city only when a single one was chosen.
-  const cityParam = inCity && chosen?.length === 1 ? `&oras=${encodeURIComponent(chosen[0])}` : "";
+  // The link to the university search carries every chosen city.
+  const cityParam = inCity && chosen ? chosen.map((c) => `&oras=${encodeURIComponent(c)}`).join("") : "";
   const hasUnis = match.universitiesRo.length > 0 || match.universitiesAbroad.length > 0;
   const lists: { title: string; items: UniversitySummary[]; abroad: boolean }[] = [
     { title: inCity ? `În ${inCity}` : match.cityMissing ? "În alte orașe din România" : "În România", items: match.universitiesRo, abroad: false },

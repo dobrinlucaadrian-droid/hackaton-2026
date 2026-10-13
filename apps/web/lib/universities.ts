@@ -17,6 +17,16 @@ export function countries(): string[] {
   return all.includes("România") ? ["România", ...rest] : rest;
 }
 
+/** Cities that have at least one university sheet in the given country (or in Romania / abroad), the ones with most universities first. */
+export function citiesIn(where: { country?: string; region?: "ro" | "abroad" }): string[] {
+  const count = new Map<string, number>();
+  for (const u of universities) {
+    if (where.country ? u.country !== where.country : where.region ? u.region !== where.region : false) continue;
+    count.set(u.city, (count.get(u.city) ?? 0) + 1);
+  }
+  return [...count].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ro")).map(([c]) => c);
+}
+
 // Extra words people type for a country; applied to every university of that country.
 const COUNTRY_ALIASES: Record<string, string> = {
   "România": "ro romania",
@@ -144,7 +154,7 @@ export function filterUniversities(filters: Filters, limit = 10): UniversitySumm
     .filter((u) => {
       if (filters.country && u.country !== filters.country) return false;
       if (filters.region && u.region !== filters.region) return false;
-      if (filters.city && u.city !== filters.city) return false;
+      if (filters.cities?.length && !filters.cities.includes(u.city)) return false;
       if (filters.domainId && !u.domainIds.includes(filters.domainId)) return false;
       if (maxBudget >= 0 && BUDGET_ORDER.indexOf(u.budget) > maxBudget) return false;
       if (maxPrestige >= 0 && PRESTIGE_ORDER.indexOf(u.prestige) > maxPrestige) return false;

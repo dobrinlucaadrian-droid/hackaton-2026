@@ -4,12 +4,13 @@ import { HeroScene } from "@/components/Illustrations";
 import { Shell } from "@/components/Shell";
 import { catalogTotals } from "@/lib/catalog";
 import { specializations, testimonials } from "@/lib/data";
+import { faculties } from "@/lib/faculties";
 import { universities } from "@/lib/universities";
 
 const nf = new Intl.NumberFormat("ro-RO");
 
 const numbers: { value: string; label: string; href: string; tone: string }[] = [
-  { value: nf.format(universities.length), label: "universități cu fișă completă", href: "/universitati", tone: "text-primary" },
+  { value: nf.format(universities.length + faculties.length), label: "universități și facultăți cu fișă completă", href: "/universitati", tone: "text-primary" },
   { value: nf.format(specializations.length), label: "specializări explicate pe înțeles", href: "/specializari", tone: "text-teal-ink" },
   { value: nf.format(testimonials.length), label: "păreri de la studenți adevărați", href: "/studenti", tone: "text-sky" },
   { value: nf.format(catalogTotals.institutions), label: `universități și instituții din ${catalogTotals.countries} țări, din date oficiale`, href: "/programe", tone: "text-violet" },
