@@ -21,6 +21,14 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-13 12:32 — verificarea informațiilor de pe site, pasul 3: fișele din străinătate recitite pe site-urile oficiale
+- Cerut: continuarea verificării cu pasul 3: cele 320 de fișe de universități din străinătate; ce nu se poate confirma se reformulează prudent și se trece pe o listă
+- Făcut: nouăsprezece verificatori independenți au deschis site-urile oficiale, pe grupuri de țări. Rezultat: 153 de fișe confirmate integral, 163 corectate, 4 verificate doar parțial (HU Berlin și Tilburg nu s-au deschis; Würzburg și Hannover au mici detalii neconfirmate). Aplicate 389 de corecturi confirmate pe pagini oficiale și 41 de reformulări prudente. Cele mai multe greșeli erau în fișele vechi, scrise fără surse: limba de predare (Copenhaga, DTU, TU Delft, Heidelberg, RWTH, TU Wien, KU Leuven, Lund), calea de înscriere (Italia: nu Universitaly pentru cetățenii UE; Germania: nu uni-assist la LMU, Heidelberg, RWTH; Sciences Po și INSA nu prin Parcoursup), examene și teste lipsă sau greșite (Viena, EPFL, ETH, Princeton, Columbia, UCL, King's, Warwick), burse (Imperial, Manchester, Barcelona, Irlanda) și note de cămin copiate de la o fișă la alta (Olanda, Danemarca, Marea Britanie, Italia). Schimbate 17 câmpuri „da/nu” sau niveluri de cost. Datele calendaristice și numerele exacte de locuri au fost scoase. Paginile deschise de verificatori au fost adăugate la sursele fișelor. Ce nu s-a putut confirma și hotărârile rămase echipei sunt în `docs/de-verificat-strainatate.md`
+- Fișiere: `apps/web/data/universities-abroad.json`, `apps/web/data/universities-index.json`, `apps/web/data/university-sources.json`, `docs/de-verificat-strainatate.md` (nou)
+- Poartă: TRECUT (`node scripts/gate.mjs`: secrete, fișiere, registru, build, 127 de teste, aplicația pornește)
+- Neverificat: nivelul de prestigiu, domeniile și plusurile/minusurile fișelor; la o parte dintre fișele noi, descrierea, orașul și adresa nu au fost recitite separat; părerile studenților, specializările și planurile de învățământ pe domenii; verificarea a fost făcută de ajutoare automate, nu de un om
+- Urmează: un om parcurge `docs/de-verificat-romania.md` și `docs/de-verificat-strainatate.md`; echipa hotărăște punctele din „Hotărâri de luat de echipă”
+
 ### 2026-10-13 09:08 — verificarea informațiilor de pe site, pasul 2: fișele din România recitite pe site-urile oficiale
 - Cerut: continuarea verificării: recitirea surselor oficiale pentru toate fișele din România; ce nu se poate confirma se reformulează prudent și se trece pe o listă
 - Făcut: unsprezece verificatori independenți au deschis site-urile oficiale pentru cele 83 de fișe de universități și cele 107 fișe de facultăți. Rezultat: 77 de fișe confirmate integral, 110 corectate, 3 al căror site nu s-a deschis (UGAL, AFA Brașov, UNAp). Aplicate 294 de corecturi confirmate pe pagini oficiale și 36 de reformulări prudente. Cele mai multe greșeli erau în fișele de universități scrise în zilele hackathonului, fără surse: examen de admitere trecut greșit (politehnicile din Cluj, Iași, Timișoara, UTCB, UPG, UMC, USV Iași), cămin sau burse trecute greșit „nu” (zece universități private), limbi de predare greșite (UMF Cluj, UMF Timișoara), descrieri cu facultăți care nu există, superlative care nu apar pe niciun site oficial. La facultăți: materii de examen completate (FMI București, Fizică UBB, Informatică UAIC), adrese corectate, linkuri spre planurile de învățământ adăugate la 19 facultăți UBB. Adeverința medicală a fost trecută la acte peste tot unde universitatea o cere. Paginile deschise de verificatori au fost adăugate la sursele fișelor. Ce nu s-a putut confirma este în `docs/de-verificat-romania.md`
@@ -571,6 +579,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-13 11:54 `f850e61` feat: faculty sheets for Romania and a fact-check of all Romanian sheets
 - 2026-10-12 02:18 `64390f3` docs: production database ready, test address, site name shortlist
 - 2026-10-12 00:44 `efe2ff9` feat: lighter pages, several cities in the questionnaire, script fix
 - 2026-10-12 00:07 `35da68e` feat: welcome window to make an account or continue without one
@@ -600,5 +609,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-05 11:19 `763e331` feat: show student opinions in university search results and on university sheets
 - 2026-10-05 11:07 `fdc7024` feat: add three more student opinions with photos
 - 2026-10-05 11:02 `7c6d654` fix: open a domain in place on the university sheet instead of leaving the page
-- 2026-10-05 10:53 `c75b5eb` feat: subjects per year for every domain and official curriculum links
 <!-- commits:end -->
