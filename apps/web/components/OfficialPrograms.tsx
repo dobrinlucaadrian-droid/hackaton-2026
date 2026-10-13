@@ -6,7 +6,21 @@ import { api } from "@/convex/_generated/api";
 import { domains } from "@/lib/data";
 import { ProgramRow, type ProgramView } from "./ProgramRow";
 
-export function OfficialPrograms({ institutionId, city, sourceLabel, year, hasCapacity }: { institutionId: string; city: string; sourceLabel: string; year: string; hasCapacity: boolean }) {
+export function OfficialPrograms({
+  institutionId,
+  city,
+  sourceLabel,
+  year,
+  hasCapacity,
+  facultyLinks = {},
+}: {
+  institutionId: string;
+  city: string;
+  sourceLabel: string;
+  year: string;
+  hasCapacity: boolean;
+  facultyLinks?: Record<string, string>; // faculty name -> address of its own sheet, for the faculties that have one
+}) {
   const rows = useQuery(api.catalog.programsOf, { institutionId });
   if (rows === undefined) return <p className="text-sm text-ink-soft">Se încarcă lista de programe...</p>;
   if (rows.length === 0) return null;
@@ -42,6 +56,11 @@ export function OfficialPrograms({ institutionId, city, sourceLabel, year, hasCa
                     <span aria-hidden className="text-primary-dark transition-transform group-open:rotate-180">▾</span>
                   </span>
                 </summary>
+                {byFaculty && facultyLinks[name] && (
+                  <Link href={facultyLinks[name]} className="mb-2 inline-flex min-h-11 items-center text-sm font-bold text-primary underline decoration-primary/40 underline-offset-2 hover:text-primary-dark">
+                    Vezi fișa facultății →
+                  </Link>
+                )}
                 {byFaculty && elsewhere.length > 0 && <p className="mb-2 text-xs text-ink-soft">Unele cursuri se țin în: {elsewhere.join(", ")}.</p>}
                 <ul className="mb-3 space-y-2 [&>li]:bg-card">
                   {items.map((p) => (

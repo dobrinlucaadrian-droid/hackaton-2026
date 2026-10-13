@@ -24,9 +24,15 @@
             "litere-limbi-straine",
             "istorie",
             "filosofie",
-            "teologie"
+            "teologie",
+            "turism-servicii",
+            "marketing",
+            "energie-petrol-mediu",
+            "calculatoare-it",
+            "arte-vizuale-design",
+            "inginerie-mecanica"
         ],
-        "about": "Cea mai veche universitate de stat din București, cu facultăți de științe, drept, litere și științe sociale. Este cunoscută pentru tradiție și pentru gama mare de specializări.",
+        "about": "Una dintre cele mai vechi universități de stat din țară, cu 20 de facultăți de științe, drept, litere și științe sociale. Este cunoscută pentru tradiție și pentru gama mare de specializări.",
         "prestige": "international",
         "budget": "gratuit",
         "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
@@ -75,7 +81,6 @@
             "agronomie-silvicultura",
             "business-management",
             "economie-finante",
-            "marketing",
             "drept",
             "administratie-publica",
             "psihologie",
@@ -85,17 +90,23 @@
             "litere-limbi-straine",
             "istorie",
             "sport-kinetoterapie",
-            "asistenta-medicala"
+            "asistenta-medicala",
+            "geografie-mediu",
+            "turism-servicii",
+            "teologie",
+            "muzica",
+            "arte-vizuale-design",
+            "teatru-film"
         ],
-        "about": "Cea mai mare universitate tehnică din țară, cu facultăți de inginerie și calculatoare în București, plus campusul din Pitești, după fuziunea cu Universitatea din Pitești. Este cunoscută pentru absolvenții căutați de companii.",
+        "about": "Cea mai mare școală de ingineri din țară, cu facultăți de inginerie și calculatoare în București, plus Centrul Universitar Pitești, unde sunt și facultăți de științe, economie, drept și litere. Este cunoscută pentru absolvenții căutați de companii.",
         "prestige": "international",
         "budget": "gratuit",
         "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
         "admissionTypes": [
-            "examen",
-            "bac"
+            "dosar",
+            "examen"
         ],
-        "admission": "Intri de obicei cu un examen sau cu o probă la matematică și fizică, ori cu media de la bacalaureat; regulile diferă pe facultăți, așa că verifică ghidul de admitere.",
+        "admission": "La cele mai multe facultăți intri pe bază de dosar, cu notele tale din liceu la materii precum matematica și fizica; la Automatică și Calculatoare și la o parte din Electronică dai examen scris. Regulile diferă pe facultăți, așa că verifică regulamentul de admitere.",
         "scholarships": true,
         "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
         "dorms": true,
@@ -372,7 +383,9 @@
             "turism-servicii",
             "administratie-publica",
             "informatica",
-            "drept"
+            "drept",
+            "litere-limbi-straine",
+            "sociologie-asistenta-sociala"
         ],
         "about": "Cea mai cunoscută universitate de economie din țară, cu facultăți de finanțe, management, marketing și informatică economică. Este recunoscută de angajatori din domeniul financiar.",
         "prestige": "international",
@@ -412,16 +425,18 @@
             "medicina",
             "medicina-dentara",
             "farmacie",
-            "asistenta-medicala"
+            "asistenta-medicala",
+            "sport-kinetoterapie"
         ],
-        "about": "Cea mai mare universitate de medicină din țară, cu facultăți de medicină, stomatologie, farmacie și asistență medicală. Are spitale universitare mari în București.",
+        "about": "Una dintre cele mai prestigioase universități de medicină din țară, cu facultăți de medicină, stomatologie, farmacie și moașe și asistență medicală. Verifică pe site-ul universității în ce spitale din București se face practica.",
         "prestige": "international",
         "budget": "gratuit",
         "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
         "admissionTypes": [
-            "examen"
+            "examen",
+            "bac"
         ],
-        "admission": "La medicină, stomatologie și farmacie se dă de regulă un examen scris, în special la biologie și chimie; la alte specializări modul de admitere poate fi diferit. Se cere și un certificat medical.",
+        "admission": "La medicină și stomatologie dai un test grilă la biologie și, la alegere, chimie sau fizică; la farmacie, la chimie organică și biologie. La moașe și asistență medicală intri cu dosarul, după media de la bacalaureat și media din liceu. Se cere și o adeverință medicală.",
         "scholarships": true,
         "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
         "dorms": true,
@@ -452,7 +467,9 @@
             "stiinte-politice-relatii-internationale",
             "administratie-publica",
             "comunicare-jurnalism",
-            "business-management"
+            "business-management",
+            "psihologie",
+            "sociologie-asistenta-sociala"
         ],
         "about": "Școală de stat axată pe științe politice, administrație, comunicare și management public. Este potrivită dacă vrei o carieră în instituții, diplomație sau comunicare.",
         "prestige": "national",
@@ -497,16 +514,15 @@
         "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
         "admissionTypes": [
             "aptitudini",
-            "dosar"
+            "bac"
         ],
-        "admission": "Intri pe baza unor probe practice sau de talent, adesea cu un portofoliu sau o prezentare; bacalaureatul contează și el. Detaliile diferă pe specializare.",
+        "admission": "Dai o singură probă practică de desen (reprezentare grafică), susținută la sediul universității, care contează cel mai mult; media de la bacalaureat contează și ea. Nu se cere portofoliu, iar exercițiile diferă pe specializare.",
         "scholarships": true,
         "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
         "dorms": true,
         "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
         "certificates": [
-            "bac",
-            "portofoliu"
+            "bac"
         ],
         "pros": [
             "Singura facultate dedicată doar arhitecturii în Capitală",
@@ -527,17 +543,20 @@
         "region": "ro",
         "website": "https://utcb.ro",
         "domainIds": [
-            "inginerie-civila"
+            "inginerie-civila",
+            "energie-petrol-mediu",
+            "calculatoare-it",
+            "inginerie-mecanica",
+            "litere-limbi-straine"
         ],
         "about": "Universitate tehnică de stat pentru construcții, cu facultăți de construcții civile, hidrotehnică, geodezie și instalații. Pregătește ingineri pentru șantiere și proiectare.",
         "prestige": "national",
         "budget": "gratuit",
         "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
         "admissionTypes": [
-            "examen",
             "bac"
         ],
-        "admission": "Intri de obicei cu un examen sau cu o probă la matematică și fizică, ori cu media de la bacalaureat; regulile diferă pe facultăți, așa că verifică ghidul de admitere.",
+        "admission": "Intri fără examen, cu rezultatele de la bacalaureat: la inginerie contează media de la bac împreună cu nota la matematică. La programele în limbi străine dai și un test de limbă, cu admis sau respins. Verifică regulamentul de admitere.",
         "scholarships": true,
         "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
         "dorms": true,
@@ -566,7 +585,12 @@
         "domainIds": [
             "agronomie-silvicultura",
             "medicina-veterinara",
-            "business-management"
+            "business-management",
+            "biologie",
+            "inginerie-chimica-materiale",
+            "fizica",
+            "inginerie-civila",
+            "energie-petrol-mediu"
         ],
         "about": "Universitate de stat pentru agricultură, horticultură, medicină veterinară și zootehnie. Are ferme și laboratoare proprii pentru practică.",
         "prestige": "national",
@@ -576,7 +600,7 @@
             "bac",
             "examen"
         ],
-        "admission": "Se poate intra cu media de la bacalaureat sau cu un examen, în funcție de facultate; la medicină veterinară se cere de regulă și probă la biologie. Verifică ghidul.",
+        "admission": "La aproape toate facultățile intri fără examen: contează cel mai mult media de la bacalaureat, plus nota la o probă de bac aleasă de tine. La medicină veterinară în limba română dai o probă scrisă la biologie și chimie, care contează cel mai mult. Verifică regulamentul.",
         "scholarships": true,
         "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
         "dorms": true,
@@ -647,10 +671,9 @@
         "budget": "gratuit",
         "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
         "admissionTypes": [
-            "aptitudini",
-            "interviu"
+            "aptitudini"
         ],
-        "admission": "Admiterea se face prin probe de talent și un interviu, nu doar prin note; ți se cere să arăți ce știi să faci. Detaliile diferă pe specializare.",
+        "admission": "Admiterea se face numai prin probe muzicale: un recital la instrument sau canto și probe de teorie, solfegiu și dictat; bacalaureatul trebuie doar promovat. Ți se cere să arăți ce știi să faci. Detaliile diferă pe specializare.",
         "scholarships": true,
         "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
         "dorms": true,
@@ -685,9 +708,9 @@
         "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
         "admissionTypes": [
             "aptitudini",
-            "dosar"
+            "interviu"
         ],
-        "admission": "Intri pe baza unor probe practice sau de talent, adesea cu un portofoliu sau o prezentare; bacalaureatul contează și el. Detaliile diferă pe specializare.",
+        "admission": "Intri pe baza unor probe practice de desen sau de specialitate, dintre care prima este eliminatorie, urmate de un interviu în care îți prezinți mapa cu lucrări. Media de la bacalaureat contează doar la departajare. Detaliile diferă pe specializare.",
         "scholarships": true,
         "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
         "dorms": true,
@@ -715,7 +738,8 @@
         "region": "ro",
         "website": "https://unefs.ro",
         "domainIds": [
-            "sport-kinetoterapie"
+            "sport-kinetoterapie",
+            "teatru-film"
         ],
         "about": "Universitate de stat pentru educație fizică și sport, cu programe de antrenor, profesor de sport și kinetoterapie. Are săli și baze sportive proprii.",
         "prestige": "national",
@@ -754,19 +778,20 @@
         "website": "https://www.academiadepolitie.ro",
         "domainIds": [
             "militar-politie",
-            "drept"
+            "drept",
+            "inginerie-civila"
         ],
-        "about": "Instituție de stat care pregătește ofițeri de poliție, jandarmi și specialiști în ordine publică, cu studii de drept și științe polițienești. Studenții sunt și angajați ai sistemului.",
+        "about": "Instituție de stat a Ministerului Afacerilor Interne care pregătește ofițeri de poliție, poliție de frontieră, jandarmi și pompieri, cu studii de drept, ordine și siguranță publică și instalații pentru construcții. Absolvenții au un loc de muncă asigurat la finalul studiilor.",
         "prestige": "national",
         "budget": "gratuit",
-        "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
+        "budgetNote": "La cursurile de zi locurile sunt la buget, iar academia plătește și cazarea, masa și echipamentul. Cu taxă este doar programul de Drept la distanță.",
         "admissionTypes": [
             "examen",
             "aptitudini"
         ],
         "admission": "Admiterea cere probe scrise, probe fizice și control medical, ca la orice instituție militară; se aplică reguli stricte de intrare. Cere informații de la instituție.",
         "scholarships": true,
-        "scholarshipsNote": "Primești cazare, hrană și o indemnizație lunară pe durata studiilor, în plus față de bursele obișnuite.",
+        "scholarshipsNote": "La cursurile de zi primești gratuit cazare, hrană, echipament și asistență medicală pe durata studiilor. Verifică la academie dacă primești și bani lunar.",
         "dorms": true,
         "dormsNote": "Cazarea și masa sunt asigurate în unitate, de regulă pe toată perioada studiilor.",
         "certificates": [
@@ -795,7 +820,8 @@
             "militar-politie",
             "inginerie-mecanica",
             "inginerie-electrica-electronica",
-            "calculatoare-it"
+            "calculatoare-it",
+            "inginerie-civila"
         ],
         "about": "Instituție militară de stat care pregătește ofițeri-ingineri în domenii precum electronică, mecanică, informatică și construcții militare. Studenții primesc și pregătire militară.",
         "prestige": "national",
@@ -803,13 +829,14 @@
         "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
         "admissionTypes": [
             "examen",
-            "aptitudini"
+            "aptitudini",
+            "bac"
         ],
-        "admission": "Admiterea cere probe scrise, probe fizice și control medical, ca la orice instituție militară; se aplică reguli stricte de intrare. Cere informații de la instituție.",
+        "admission": "Pentru locurile la buget treci întâi de selecția făcută de instituția care te recrutează (probe medicale, sportive și psihologice), apoi dai un test grilă la matematică, informatică și fizică. Pe locurile cu taxă intri după media de la bacalaureat. Cere informații de la instituție.",
         "scholarships": true,
         "scholarshipsNote": "Primești cazare, hrană și o indemnizație lunară pe durata studiilor, în plus față de bursele obișnuite.",
         "dorms": true,
-        "dormsNote": "Cazarea și masa sunt asigurate în unitate, de regulă pe toată perioada studiilor.",
+        "dormsNote": "Pe locurile la buget, cazarea în căminul din incintă și masa sunt asigurate gratuit pe timpul studiilor. Studenții de pe locurile cu taxă nu primesc cazare și masă.",
         "certificates": [
             "bac",
             "medical"
@@ -853,9 +880,19 @@
             "filosofie",
             "teologie",
             "sport-kinetoterapie",
-            "teatru-film"
+            "teatru-film",
+            "calculatoare-it",
+            "inginerie-chimica-materiale",
+            "inginerie-electrica-electronica",
+            "energie-petrol-mediu",
+            "turism-servicii",
+            "marketing",
+            "arte-vizuale-design",
+            "muzica",
+            "inginerie-mecanica",
+            "asistenta-medicala"
         ],
-        "about": "Cea mai mare universitate din țară, cu predare în română, maghiară și germană, pe zeci de facultăți. Este cunoscută pentru cercetare și pentru oferta largă de specializări.",
+        "about": "Universitate mare din Cluj-Napoca, cu predare în română, maghiară și germană, pe peste 20 de facultăți. Este cunoscută pentru cercetare și pentru oferta largă de specializări.",
         "prestige": "international",
         "budget": "gratuit",
         "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
@@ -896,23 +933,38 @@
             "inginerie-civila",
             "arhitectura",
             "inginerie-chimica-materiale",
-            "energie-petrol-mediu"
+            "energie-petrol-mediu",
+            "marina-transporturi",
+            "arte-vizuale-design",
+            "sociologie-asistenta-sociala",
+            "filosofie",
+            "litere-limbi-straine",
+            "comunicare-jurnalism",
+            "stiintele-educatiei",
+            "teologie",
+            "business-management",
+            "biologie",
+            "chimie",
+            "informatica",
+            "matematica"
         ],
         "about": "Universitate tehnică de stat, cu facultăți de automatică, electronică, construcții, mecanică și arhitectură. Este una dintre cele mai bune școli de inginerie din țară.",
         "prestige": "national",
         "budget": "gratuit",
         "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
         "admissionTypes": [
+            "bac",
             "examen",
-            "bac"
+            "aptitudini"
         ],
-        "admission": "Intri de obicei cu un examen sau cu o probă la matematică și fizică, ori cu media de la bacalaureat; regulile diferă pe facultăți, așa că verifică ghidul de admitere.",
+        "admission": "La cele mai multe facultăți intri prin concurs de dosare, cu media și notele de la bacalaureat. La Automatică și Calculatoare se dă un test grilă la matematică, iar la Arhitectură o probă de desen; regulile diferă pe facultăți, așa că verifică ghidul de admitere.",
         "scholarships": true,
         "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
         "dorms": true,
-        "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
+        "dormsNote": "Are cămine studențești în două complexe din Cluj-Napoca și la Baia Mare; locurile sunt limitate și se cer prin cerere, la începutul anului universitar.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Foarte apreciată de firmele de IT din Cluj",
@@ -939,16 +991,17 @@
             "asistenta-medicala",
             "sport-kinetoterapie"
         ],
-        "about": "Universitate de medicină și farmacie din Cluj, cu programe și în limbile română, maghiară și engleză. Este printre cele mai apreciate școli medicale din țară.",
+        "about": "Universitate de medicină și farmacie din Cluj, cu programe și în limbile română, engleză și franceză. Este printre cele mai apreciate școli medicale din țară.",
         "prestige": "international",
         "budget": "gratuit",
         "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
         "admissionTypes": [
-            "examen"
+            "examen",
+            "bac"
         ],
-        "admission": "La medicină, stomatologie și farmacie se dă de regulă un examen scris, în special la biologie și chimie; la alte specializări modul de admitere poate fi diferit. Se cere și un certificat medical.",
+        "admission": "La medicină și medicină dentară se dă un examen scris tip grilă la biologie și chimie organică, iar la farmacie la biologie sau chimie organică. La programele mai scurte, cum este asistența medicală, contează mediile din liceu și de la bacalaureat. Se cere și o adeverință medicală.",
         "scholarships": true,
-        "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+        "scholarshipsNote": "Există burse de performanță, pentru rezultate bune la învățătură, și burse sociale; studenții cu rezultate științifice deosebite pot primi și o bursă științifică.",
         "dorms": true,
         "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
         "certificates": [
@@ -957,7 +1010,7 @@
         ],
         "pros": [
             "Spitale clinice mari în același oraș",
-            "Predare și în maghiară sau engleză la unele programe",
+            "Predare și în engleză sau franceză la unele programe",
             "Absolvenți apreciați în țară și în străinătate"
         ],
         "cons": [
@@ -975,7 +1028,12 @@
         "website": "https://www.usamvcluj.ro",
         "domainIds": [
             "agronomie-silvicultura",
-            "medicina-veterinara"
+            "medicina-veterinara",
+            "biologie",
+            "energie-petrol-mediu",
+            "inginerie-mecanica",
+            "inginerie-civila",
+            "inginerie-chimica-materiale"
         ],
         "about": "Universitate de stat pentru agricultură, horticultură, medicină veterinară și tehnologii alimentare. Are ferme didactice și un campus cu spații verzi.",
         "prestige": "national",
@@ -985,13 +1043,14 @@
             "bac",
             "examen"
         ],
-        "admission": "Se poate intra cu media de la bacalaureat sau cu un examen, în funcție de facultate; la medicină veterinară se cere de regulă și probă la biologie. Verifică ghidul.",
+        "admission": "La aproape toate facultățile intri cu media de la bacalaureat. La medicină veterinară, pe lângă media de la bacalaureat, dai și două teste grilă scurte, la biologie și la chimie. Verifică ghidul.",
         "scholarships": true,
         "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
         "dorms": true,
         "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Practică în ferme și laboratoare proprii",
@@ -1020,16 +1079,17 @@
         "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
         "admissionTypes": [
             "aptitudini",
-            "dosar"
+            "interviu"
         ],
-        "admission": "Intri pe baza unor probe practice sau de talent, adesea cu un portofoliu sau o prezentare; bacalaureatul contează și el. Detaliile diferă pe specializare.",
+        "admission": "Intri pe baza unei probe practice de specialitate și a unui interviu pe baza portofoliului tău de lucrări; la istoria și teoria artei se evaluează o scrisoare de motivație. Verifică în metodologie dacă și cum contează bacalaureatul.",
         "scholarships": true,
-        "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
+        "scholarshipsNote": "Poți primi burse de performanță, pentru rezultate bune, și burse sociale, dacă situația familiei o cere.",
         "dorms": true,
-        "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
+        "dormsNote": "Are două cămine studențești; locurile sunt limitate și se cer prin cerere, la termenele anunțate de universitate.",
         "certificates": [
             "bac",
-            "portofoliu"
+            "portofoliu",
+            "medical"
         ],
         "pros": [
             "Ateliere bine dotate pentru creație",
@@ -1050,23 +1110,24 @@
         "region": "ro",
         "website": "https://anmgd.ro",
         "domainIds": [
-            "muzica"
+            "muzica",
+            "teatru-film"
         ],
         "about": "Academie de stat pentru muzică, cu programe de interpretare, compoziție și pedagogie muzicală. Poartă numele compozitorului Gheorghe Dima.",
         "prestige": "national",
         "budget": "gratuit",
         "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
         "admissionTypes": [
-            "aptitudini",
-            "interviu"
+            "aptitudini"
         ],
-        "admission": "Admiterea se face prin probe de talent și un interviu, nu doar prin note; ți se cere să arăți ce știi să faci. Detaliile diferă pe specializare.",
+        "admission": "Admiterea se face prin probe de specialitate, de exemplu interpretare la instrument sau canto, nu doar prin note; ți se cere să arăți ce știi să faci. Detaliile diferă pe specializare.",
         "scholarships": true,
-        "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+        "scholarshipsNote": "Există burse de studiu și burse de merit, după medie, și burse sociale.",
         "dorms": true,
         "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Lecții individuale cu profesori de specialitate",
@@ -1104,7 +1165,13 @@
             "istorie",
             "filosofie",
             "teologie",
-            "sport-kinetoterapie"
+            "sport-kinetoterapie",
+            "turism-servicii",
+            "marketing",
+            "administratie-publica",
+            "comunicare-jurnalism",
+            "energie-petrol-mediu",
+            "arte-vizuale-design"
         ],
         "about": "Cea mai veche universitate din țară, înființată în 1860, cu facultăți de științe, drept, litere, economie și multe altele. Este un centru universitar important în Moldova.",
         "prestige": "international",
@@ -1120,7 +1187,8 @@
         "dorms": true,
         "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Are tradiție și prestigiu mare, din 1860",
@@ -1150,21 +1218,23 @@
             "energie-petrol-mediu",
             "business-management"
         ],
-        "about": "Universitate tehnică de stat, cu facultăți de automatică, electronică, construcții, mecanică, chimie și arhitectură. Este cea mai mare școală de inginerie din Moldova.",
+        "about": "Universitate tehnică de stat, cu facultăți de automatică, electronică, construcții, mecanică, chimie și arhitectură. Este printre primele universități tehnice din țară, cu o tradiție de peste două secole în pregătirea inginerilor.",
         "prestige": "national",
         "budget": "gratuit",
         "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
         "admissionTypes": [
+            "bac",
             "examen",
-            "bac"
+            "aptitudini"
         ],
-        "admission": "Intri de obicei cu un examen sau cu o probă la matematică și fizică, ori cu media de la bacalaureat; regulile diferă pe facultăți, așa că verifică ghidul de admitere.",
+        "admission": "La cele mai multe facultăți intri prin concurs de dosare, cu media sau notele de la bacalaureat. La Automatică și Calculatoare se dă un test grilă la matematică sau informatică, iar la Arhitectură o probă de desen; verifică regulile facultății tale.",
         "scholarships": true,
         "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
         "dorms": true,
         "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Ofertă tehnică variată, de la IT la construcții",
@@ -1189,7 +1259,9 @@
             "medicina-dentara",
             "farmacie",
             "asistenta-medicala",
-            "sport-kinetoterapie"
+            "sport-kinetoterapie",
+            "chimie",
+            "inginerie-electrica-electronica"
         ],
         "about": "Universitate de medicină din Iași, cu medicină, stomatologie, farmacie și asistență medicală. Este una dintre cele mai mari școli medicale din țară.",
         "prestige": "national",
@@ -1198,7 +1270,7 @@
         "admissionTypes": [
             "examen"
         ],
-        "admission": "La medicină, stomatologie și farmacie se dă de regulă un examen scris, în special la biologie și chimie; la alte specializări modul de admitere poate fi diferit. Se cere și un certificat medical.",
+        "admission": "Admiterea se face prin concurs cu probă scrisă, de tip test grilă, la programele de licență; disciplinele de concurs diferă după program, așa că verifică metodologia. Se cere și o adeverință medicală.",
         "scholarships": true,
         "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
         "dorms": true,
@@ -1227,23 +1299,26 @@
         "website": "https://iuls.ro",
         "domainIds": [
             "agronomie-silvicultura",
-            "medicina-veterinara"
+            "medicina-veterinara",
+            "biologie",
+            "inginerie-chimica-materiale",
+            "energie-petrol-mediu"
         ],
         "about": "Universitate de stat pentru agricultură, horticultură, zootehnie și medicină veterinară, cu ferme de practică. Poartă numele agronomului Ion Ionescu de la Brad.",
         "prestige": "national",
         "budget": "gratuit",
         "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
         "admissionTypes": [
-            "bac",
-            "examen"
+            "bac"
         ],
-        "admission": "Se poate intra cu media de la bacalaureat sau cu un examen, în funcție de facultate; la medicină veterinară se cere de regulă și probă la biologie. Verifică ghidul.",
+        "admission": "Intri fără examen, prin concurs pe baza notelor de la bacalaureat: nota de la proba scrisă de limba română și nota de la o altă probă scrisă, la alegere. Regula este aceeași și la medicină veterinară. Verifică metodologia.",
         "scholarships": true,
         "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
         "dorms": true,
         "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Ferme și stațiuni proprii pentru practică",
@@ -1280,9 +1355,10 @@
         "scholarships": true,
         "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
         "dorms": true,
-        "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
+        "dormsNote": "Are un cămin studențesc în Iași; locurile sunt limitate și se cer la începutul anului universitar, la comisia de cazare.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Reunește muzica, artele vizuale și teatrul",
@@ -1323,23 +1399,29 @@
             "arte-vizuale-design",
             "muzica",
             "teatru-film",
-            "sport-kinetoterapie"
+            "sport-kinetoterapie",
+            "turism-servicii",
+            "marketing",
+            "stiintele-educatiei",
+            "administratie-publica"
         ],
         "about": "Universitate de stat din Timișoara, cu facultăți de științe, litere, economie, drept, arte și altele. Este un centru universitar deschis spre Vestul Europei.",
         "prestige": "national",
         "budget": "gratuit",
         "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
         "admissionTypes": [
+            "examen",
             "bac",
-            "examen"
+            "aptitudini"
         ],
-        "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+        "admission": "La fiecare program dai o probă de admitere: un test de cunoștințe din domeniu, testul UVT de abilități lingvistice și de raționament sau, la arte, muzică și sport, probe de aptitudini. La unele facultăți contează și notele de la bacalaureat. Citește regulamentul facultății care te interesează.",
         "scholarships": true,
-        "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+        "scholarshipsNote": "Există burse de performanță și burse sociale, iar unii studenți pot primi și burse speciale sau burse pentru performanță sportivă.",
         "dorms": true,
         "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Ofertă variată, de la informatică la arte",
@@ -1367,23 +1449,31 @@
             "arhitectura",
             "inginerie-chimica-materiale",
             "business-management",
-            "comunicare-jurnalism"
+            "comunicare-jurnalism",
+            "energie-petrol-mediu",
+            "administratie-publica",
+            "marina-transporturi",
+            "litere-limbi-straine",
+            "fizica",
+            "informatica"
         ],
         "about": "Universitate tehnică de stat din Timișoara, cu facultăți de automatică, electronică, mecanică, construcții, chimie și arhitectură. Este cunoscută pentru legăturile cu industria din vest.",
         "prestige": "national",
         "budget": "gratuit",
         "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
         "admissionTypes": [
+            "bac",
             "examen",
-            "bac"
+            "aptitudini"
         ],
-        "admission": "Intri de obicei cu un examen sau cu o probă la matematică și fizică, ori cu media de la bacalaureat; regulile diferă pe facultăți, așa că verifică ghidul de admitere.",
+        "admission": "La cele mai multe facultăți intri prin concurs de dosare, cu media de la bacalaureat. La Automatică și Calculatoare dai o probă la matematică sau informatică ori prezinți un portofoliu, iar la Arhitectură o probă practică și un interviu; verifică ghidul de admitere.",
         "scholarships": true,
         "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
         "dorms": true,
         "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Companii mari din Timișoara angajează absolvenți",
@@ -1407,26 +1497,28 @@
             "medicina",
             "medicina-dentara",
             "farmacie",
-            "asistenta-medicala"
+            "asistenta-medicala",
+            "sport-kinetoterapie"
         ],
-        "about": "Universitate de medicină din Timișoara, cu medicină, stomatologie, farmacie și asistență medicală. Oferă programe și în engleză și germană.",
+        "about": "Universitate de medicină din Timișoara, cu medicină, stomatologie, farmacie și asistență medicală. Oferă programe și în engleză și franceză.",
         "prestige": "national",
         "budget": "gratuit",
         "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
         "admissionTypes": [
-            "examen"
+            "examen",
+            "bac"
         ],
-        "admission": "La medicină, stomatologie și farmacie se dă de regulă un examen scris, în special la biologie și chimie; la alte specializări modul de admitere poate fi diferit. Se cere și un certificat medical.",
+        "admission": "La medicină și medicină dentară se dă un test grilă la biologie și chimie. La farmacie și la celelalte programe se dă un test grilă la biologie, iar la medie contează și bacalaureatul. Se cere și o adeverință medicală.",
         "scholarships": true,
         "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
         "dorms": true,
-        "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
+        "dormsNote": "Are cămine studențești, dar locurile sunt limitate; cererea de cazare se face online, din timp.",
         "certificates": [
             "bac",
             "medical"
         ],
         "pros": [
-            "Programe în română, engleză și germană",
+            "Programe în română, engleză și franceză",
             "Spitale universitare în oraș",
             "Studenți internaționali, deci mediu mixt"
         ],
@@ -1447,23 +1539,29 @@
             "agronomie-silvicultura",
             "medicina-veterinara",
             "business-management",
-            "turism-servicii"
+            "turism-servicii",
+            "biologie",
+            "energie-petrol-mediu",
+            "inginerie-civila",
+            "inginerie-mecanica",
+            "fizica",
+            "inginerie-chimica-materiale"
         ],
         "about": "Universitate de stat pentru agricultură, horticultură, medicină veterinară și turism rural, în Timișoara. Are ferme și stațiuni de cercetare proprii.",
         "prestige": "national",
         "budget": "gratuit",
         "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
         "admissionTypes": [
-            "bac",
-            "examen"
-        ],
-        "admission": "Se poate intra cu media de la bacalaureat sau cu un examen, în funcție de facultate; la medicină veterinară se cere de regulă și probă la biologie. Verifică ghidul.",
-        "scholarships": true,
-        "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
-        "dorms": true,
-        "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
-        "certificates": [
             "bac"
+        ],
+        "admission": "Intri pe bază de dosar, fără examen: contează mai ales media de la bacalaureat, alături de media anilor de liceu. Verifică ghidul de admitere al facultății tale.",
+        "scholarships": true,
+        "scholarshipsNote": "Universitatea acordă burse pentru rezultate bune la învățătură și burse sociale; tipurile și condițiile le găsești în regulamentul de burse.",
+        "dorms": true,
+        "dormsNote": "Ai cămine în campus, dar locurile sunt limitate: au prioritate studenții din anul I, iar ceilalți sunt aleși după medie. Cei din Timișoara și din apropiere nu primesc loc.",
+        "certificates": [
+            "bac",
+            "medical"
         ],
         "pros": [
             "Ferme și laboratoare proprii pentru practică",
@@ -1506,7 +1604,10 @@
             "sport-kinetoterapie",
             "comunicare-jurnalism",
             "arte-vizuale-design",
-            "inginerie-chimica-materiale"
+            "inginerie-chimica-materiale",
+            "marina-transporturi",
+            "energie-petrol-mediu",
+            "fizica"
         ],
         "about": "Universitate de stat mare din Brașov, cu facultăți de inginerie, silvicultură, economie, medicină, drept și muzică. Este cunoscută pentru ofertă variată și campus modern.",
         "prestige": "national",
@@ -1514,15 +1615,17 @@
         "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
         "admissionTypes": [
             "bac",
-            "examen"
+            "examen",
+            "aptitudini"
         ],
-        "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+        "admission": "Modul de admitere diferă de la o facultate la alta: la cele mai multe contează media de la bacalaureat, la Medicină se dă un test scris, iar la Muzică probe de aptitudini. Citește ghidul facultății care te interesează.",
         "scholarships": true,
         "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
         "dorms": true,
         "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Ofertă foarte variată, de la silvicultură la medicină",
@@ -1541,7 +1644,7 @@
         "city": "Craiova",
         "country": "România",
         "region": "ro",
-        "website": "https://ucv.ro",
+        "website": "https://www.ucv.ro",
         "domainIds": [
             "calculatoare-it",
             "informatica",
@@ -1562,7 +1665,19 @@
             "agronomie-silvicultura",
             "psihologie",
             "sociologie-asistenta-sociala",
-            "teologie"
+            "teologie",
+            "geografie-mediu",
+            "muzica",
+            "comunicare-jurnalism",
+            "teatru-film",
+            "arte-vizuale-design",
+            "filosofie",
+            "marketing",
+            "energie-petrol-mediu",
+            "marina-transporturi",
+            "inginerie-civila",
+            "inginerie-chimica-materiale",
+            "biologie"
         ],
         "about": "Universitate de stat din Craiova, cu facultăți de științe, inginerie, economie, drept și litere. Este principalul centru universitar din sudul Olteniei.",
         "prestige": "national",
@@ -1570,15 +1685,17 @@
         "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
         "admissionTypes": [
             "bac",
-            "examen"
+            "examen",
+            "aptitudini"
         ],
-        "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+        "admission": "Modul de admitere diferă de la o facultate la alta: la cele mai multe contează media de la bacalaureat, la câteva se dă și un test scris, iar la sport, muzică și teatru sunt probe de aptitudini. Citește ghidul facultății care te interesează.",
         "scholarships": true,
-        "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
+        "scholarshipsNote": "Universitatea acordă burse pentru rezultate bune la învățătură și burse sociale; tipurile și condițiile le găsești în regulamentul de burse.",
         "dorms": true,
         "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Ofertă variată pentru sudul țării",
@@ -1602,7 +1719,8 @@
             "medicina",
             "medicina-dentara",
             "farmacie",
-            "asistenta-medicala"
+            "asistenta-medicala",
+            "sport-kinetoterapie"
         ],
         "about": "Universitate de medicină din Craiova, cu medicină, stomatologie, farmacie și asistență medicală. Este principala școală medicală din sudul Olteniei.",
         "prestige": "national",
@@ -1611,9 +1729,9 @@
         "admissionTypes": [
             "examen"
         ],
-        "admission": "La medicină, stomatologie și farmacie se dă de regulă un examen scris, în special la biologie și chimie; la alte specializări modul de admitere poate fi diferit. Se cere și un certificat medical.",
+        "admission": "La toate specializările se dă un examen de admitere: biologie și chimie organică la medicină, medicină dentară și farmacie, doar biologie la celelalte. Se cere și o adeverință medicală.",
         "scholarships": true,
-        "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+        "scholarshipsNote": "Există burse de performanță, pentru rezultate bune la învățătură, burse sociale și burse speciale.",
         "dorms": true,
         "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
         "certificates": [
@@ -1665,7 +1783,14 @@
             "administratie-publica",
             "agronomie-silvicultura",
             "stiinte-politice-relatii-internationale",
-            "marina-transporturi"
+            "marina-transporturi",
+            "muzica",
+            "inginerie-chimica-materiale",
+            "energie-petrol-mediu",
+            "marketing",
+            "asistenta-medicala",
+            "teatru-film",
+            "sociologie-asistenta-sociala"
         ],
         "about": "Universitate de stat din Constanța, cu facultăți de drept, litere, medicină, științe, economie și altele. Are avantajul orașului de la mare.",
         "prestige": "national",
@@ -1673,9 +1798,10 @@
         "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
         "admissionTypes": [
             "bac",
-            "examen"
+            "examen",
+            "aptitudini"
         ],
-        "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+        "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la Medicină se dă un examen scris, iar la Arte sunt probe de aptitudini. Citește ghidul facultății care te interesează.",
         "scholarships": true,
         "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
         "dorms": true,
@@ -1700,27 +1826,28 @@
         "city": "Constanța",
         "country": "România",
         "region": "ro",
-        "website": "https://www.cmu-edu.eu",
+        "website": "https://cmu-edu.eu",
         "domainIds": [
             "marina-transporturi",
             "inginerie-electrica-electronica",
-            "inginerie-mecanica"
+            "inginerie-mecanica",
+            "energie-petrol-mediu"
         ],
         "about": "Universitate de stat din Constanța care pregătește ofițeri de marină civilă și ingineri navali. Studenții fac practică pe nave.",
         "prestige": "national",
         "budget": "gratuit",
         "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
         "admissionTypes": [
-            "examen",
             "bac"
         ],
-        "admission": "Intri de obicei cu un examen sau cu o probă la matematică și fizică, ori cu media de la bacalaureat; regulile diferă pe facultăți, așa că verifică ghidul de admitere.",
+        "admission": "Intri pe bază de dosar, fără examen: contează media de la bacalaureat și, pentru locurile la buget, și nota la matematică de la bac. La programele în engleză se cere și un test sau un certificat de limbă.",
         "scholarships": true,
-        "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
+        "scholarshipsNote": "Poți primi burse de performanță, pentru rezultate bune, și burse sociale, dacă situația familiei o cere.",
         "dorms": true,
         "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Practică pe nave și posibilitate de a lucra în străinătate",
@@ -1742,21 +1869,24 @@
         "website": "https://www.anmb.ro",
         "domainIds": [
             "militar-politie",
-            "marina-transporturi"
+            "marina-transporturi",
+            "inginerie-electrica-electronica",
+            "inginerie-mecanica"
         ],
-        "about": "Instituție militară de stat din Constanța care pregătește ofițeri pentru Marina Militară. Studenții primesc și pregătire navală.",
+        "about": "Instituție militară de stat din Constanța care pregătește ofițeri de marină. Are și o secție civilă, cu programe de navigație și inginerie navală.",
         "prestige": "national",
         "budget": "gratuit",
-        "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
+        "budgetNote": "La secția militară locurile sunt la buget, fără taxă. La secția civilă locurile sunt cu taxă, iar cei mai bine clasați pot primi o bursă de la academie.",
         "admissionTypes": [
             "examen",
-            "aptitudini"
+            "aptitudini",
+            "bac"
         ],
-        "admission": "Admiterea cere probe scrise, probe fizice și control medical, ca la orice instituție militară; se aplică reguli stricte de intrare. Cere informații de la instituție.",
+        "admission": "La secția militară treci întâi prin recrutare și selecție, cu teste de aptitudini și vizită medicală, apoi dai un test grilă la matematică, informatică și fizică. La secția civilă intri pe bază de dosar, cu media de la bacalaureat.",
         "scholarships": true,
-        "scholarshipsNote": "Primești cazare, hrană și o indemnizație lunară pe durata studiilor, în plus față de bursele obișnuite.",
+        "scholarshipsNote": "La secția civilă, cei mai bine clasați pot primi o bursă de la academie. Pentru drepturile studenților militari (cazare, hrană, bani lunari), întreabă la academie.",
         "dorms": true,
-        "dormsNote": "Cazarea și masa sunt asigurate în unitate, de regulă pe toată perioada studiilor.",
+        "dormsNote": "Academia are cămin și un serviciu de cazare. Verifică la academie condițiile pentru studenții militari și pentru cei civili.",
         "certificates": [
             "bac",
             "medical"
@@ -1799,7 +1929,20 @@
             "sociologie-asistenta-sociala",
             "psihologie",
             "matematica",
-            "arte-vizuale-design"
+            "arte-vizuale-design",
+            "muzica",
+            "administratie-publica",
+            "teatru-film",
+            "stiinte-politice-relatii-internationale",
+            "energie-petrol-mediu",
+            "marina-transporturi",
+            "biologie",
+            "sport-kinetoterapie",
+            "geografie-mediu",
+            "farmacie",
+            "medicina-dentara",
+            "inginerie-chimica-materiale",
+            "turism-servicii"
         ],
         "about": "Universitate de stat din Sibiu, cu facultăți de inginerie, medicină, drept, litere, teologie și economie. Este cunoscută pentru atmosfera orașului vechi.",
         "prestige": "national",
@@ -1815,7 +1958,8 @@
         "dorms": true,
         "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Oraș frumos, sigur și ușor de străbătut pe jos",
@@ -1855,7 +1999,22 @@
             "teologie",
             "farmacie",
             "arte-vizuale-design",
-            "agronomie-silvicultura"
+            "agronomie-silvicultura",
+            "energie-petrol-mediu",
+            "medicina-dentara",
+            "fizica",
+            "chimie",
+            "matematica",
+            "geografie-mediu",
+            "comunicare-jurnalism",
+            "sociologie-asistenta-sociala",
+            "stiinte-politice-relatii-internationale",
+            "muzica",
+            "teatru-film",
+            "turism-servicii",
+            "informatica",
+            "marketing",
+            "psihologie"
         ],
         "about": "Universitate de stat din Galați, cu facultăți de inginerie navală, calculatoare, drept, litere și medicină. Este cunoscută pentru domeniile legate de Dunăre și industrie.",
         "prestige": "national",
@@ -1921,7 +2080,12 @@
             "sociologie-asistenta-sociala",
             "comunicare-jurnalism",
             "energie-petrol-mediu",
-            "turism-servicii"
+            "turism-servicii",
+            "administratie-publica",
+            "calculatoare-it",
+            "agronomie-silvicultura",
+            "inginerie-chimica-materiale",
+            "marketing"
         ],
         "about": "Universitate de stat din Oradea, cu medicină, științe, inginerie, drept, arte și teologie. Este centrul universitar din nord-vestul țării.",
         "prestige": "national",
@@ -1929,15 +2093,17 @@
         "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
         "admissionTypes": [
             "bac",
-            "examen"
+            "examen",
+            "aptitudini"
         ],
-        "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+        "admission": "Modul de admitere diferă de la o facultate la alta: la cele mai multe contează media de la bacalaureat, la medicină și farmacie se dă un test grilă, iar la arte, arhitectură și sport sunt probe de aptitudini. Citește ghidul facultății care te interesează.",
         "scholarships": true,
-        "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+        "scholarshipsNote": "Universitatea acordă burse pentru rezultate bune la învățătură și burse sociale; tipurile și condițiile le găsești în regulamentul de burse.",
         "dorms": true,
         "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Oraș frumos, curat și în dezvoltare",
@@ -1965,7 +2131,23 @@
             "calculatoare-it",
             "litere-limbi-straine",
             "economie-finante",
-            "drept"
+            "drept",
+            "sport-kinetoterapie",
+            "chimie",
+            "energie-petrol-mediu",
+            "inginerie-mecanica",
+            "inginerie-civila",
+            "inginerie-electrica-electronica",
+            "informatica",
+            "arhitectura",
+            "istorie",
+            "comunicare-jurnalism",
+            "stiinte-politice-relatii-internationale",
+            "psihologie",
+            "stiintele-educatiei",
+            "turism-servicii",
+            "business-management",
+            "administratie-publica"
         ],
         "about": "Universitate de medicină și științe din Târgu Mureș, cu programe în română, maghiară și engleză. Poartă numele lui George Emil Palade, laureat Nobel.",
         "prestige": "national",
@@ -2021,7 +2203,15 @@
             "biologie",
             "geografie-mediu",
             "sociologie-asistenta-sociala",
-            "medicina"
+            "medicina",
+            "inginerie-chimica-materiale",
+            "energie-petrol-mediu",
+            "filosofie",
+            "stiinte-politice-relatii-internationale",
+            "teatru-film",
+            "matematica",
+            "turism-servicii",
+            "medicina-dentara"
         ],
         "about": "Universitate de stat din Suceava, cu facultăți de inginerie, economie, litere, drept și silvicultură. Este centrul universitar din nordul Moldovei.",
         "prestige": "national",
@@ -2029,11 +2219,12 @@
         "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
         "admissionTypes": [
             "bac",
-            "examen"
+            "examen",
+            "aptitudini"
         ],
-        "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+        "admission": "Modul de admitere diferă de la o facultate la alta: la cele mai multe contează media și notele de la bacalaureat, la sport se dă și o probă sportivă, iar la unele programe pot fi și alte probe. Citește ghidul facultății care te interesează.",
         "scholarships": true,
-        "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
+        "scholarshipsNote": "Universitatea acordă burse pentru rezultate bune la învățătură și burse sociale; tipurile și condițiile le găsești în regulamentul de burse.",
         "dorms": true,
         "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
         "certificates": [
@@ -2064,23 +2255,31 @@
             "economie-finante",
             "business-management",
             "litere-limbi-straine",
-            "inginerie-chimica-materiale"
+            "inginerie-chimica-materiale",
+            "calculatoare-it",
+            "turism-servicii",
+            "informatica",
+            "administratie-publica",
+            "psihologie",
+            "stiintele-educatiei"
         ],
-        "about": "Universitate tehnică de stat din Ploiești, specializată în petrol, gaze, energie și mediu. Pregătește ingineri pentru industrie.",
+        "about": "Universitate de stat din Ploiești, cunoscută pentru ingineria petrolului și gazelor. Pregătește ingineri pentru industrie și are și facultăți de științe economice și de litere și științe.",
         "prestige": "national",
         "budget": "gratuit",
         "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
         "admissionTypes": [
+            "bac",
             "examen",
-            "bac"
+            "aptitudini"
         ],
-        "admission": "Intri de obicei cu un examen sau cu o probă la matematică și fizică, ori cu media de la bacalaureat; regulile diferă pe facultăți, așa că verifică ghidul de admitere.",
+        "admission": "Intri cu media de la bacalaureat, fără examen la matematică sau fizică. Doar la câteva programe mai este o probă: test grilă la Psihologie și probe eliminatorii la pedagogie și la limbi străine. Verifică ghidul de admitere.",
         "scholarships": true,
-        "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+        "scholarshipsNote": "Universitatea acordă burse după regulamentul ei de burse și are și burse oferite de firme și fundații, precum Bursa Romgaz.",
         "dorms": true,
-        "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
+        "dormsNote": "Ai cămine pentru studenți chiar lângă universitate, iar universitatea spune că poate răspunde tuturor cererilor de cazare.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Specializare rară în petrol și gaze, cu cerere în industrie",
@@ -2109,7 +2308,22 @@
             "stiintele-educatiei",
             "informatica",
             "calculatoare-it",
-            "sociologie-asistenta-sociala"
+            "sociologie-asistenta-sociala",
+            "business-management",
+            "turism-servicii",
+            "marketing",
+            "inginerie-chimica-materiale",
+            "inginerie-civila",
+            "energie-petrol-mediu",
+            "inginerie-electrica-electronica",
+            "inginerie-mecanica",
+            "sport-kinetoterapie",
+            "psihologie",
+            "administratie-publica",
+            "asistenta-medicala",
+            "arte-vizuale-design",
+            "muzica",
+            "teatru-film"
         ],
         "about": "Universitate de stat din Alba Iulia, cu facultăți de istorie, drept, teologie, economie și informatică. Este o universitate mai mică, într-un oraș istoric.",
         "prestige": "national",
@@ -2117,9 +2331,10 @@
         "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
         "admissionTypes": [
             "bac",
-            "examen"
+            "aptitudini",
+            "interviu"
         ],
-        "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+        "admission": "La aproape toate programele contează doar media de la bacalaureat. La câteva se adaugă o probă de aptitudini (de exemplu la sport sau la pedagogie) ori un interviu (de exemplu la teologie). Citește criteriile programului care te interesează.",
         "scholarships": true,
         "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
         "dorms": true,
@@ -2156,8 +2371,19 @@
             "litere-limbi-straine",
             "stiintele-educatiei",
             "teologie",
-            "stiinte-politice-relatii-internationale",
-            "administratie-publica"
+            "administratie-publica",
+            "turism-servicii",
+            "marketing",
+            "comunicare-jurnalism",
+            "sport-kinetoterapie",
+            "geografie-mediu",
+            "chimie",
+            "fizica",
+            "matematica",
+            "muzica",
+            "energie-petrol-mediu",
+            "inginerie-chimica-materiale",
+            "agronomie-silvicultura"
         ],
         "about": "Universitate de stat din Târgoviște, cu facultăți de inginerie, economie, drept, științe umaniste și teologie. Este centrul universitar al județului Dâmbovița.",
         "prestige": "national",
@@ -2165,15 +2391,17 @@
         "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
         "admissionTypes": [
             "bac",
-            "examen"
+            "examen",
+            "aptitudini"
         ],
-        "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+        "admission": "La cele mai multe facultăți contează doar media de la bacalaureat. La sport, muzică și științele educației dai și probe de aptitudini, iar la teologie un examen scris. Citește ghidul facultății care te interesează.",
         "scholarships": true,
         "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
         "dorms": true,
         "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Aproape de București, ușor de navetat",
@@ -2203,7 +2431,15 @@
             "litere-limbi-straine",
             "stiintele-educatiei",
             "sport-kinetoterapie",
-            "biologie"
+            "biologie",
+            "energie-petrol-mediu",
+            "inginerie-chimica-materiale",
+            "agronomie-silvicultura",
+            "fizica",
+            "comunicare-jurnalism",
+            "psihologie",
+            "matematica",
+            "marketing"
         ],
         "about": "Universitate de stat din Bacău, cu facultăți de inginerie, științe, litere, economie și educație fizică. Este principalul centru universitar din sudul Moldovei.",
         "prestige": "national",
@@ -2211,15 +2447,16 @@
         "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
         "admissionTypes": [
             "bac",
-            "examen"
+            "aptitudini"
         ],
-        "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+        "admission": "La licență nu dai examen scris: contează media de la bacalaureat și mediile din anii de liceu. La sport dai probe practice, iar la pedagogie o probă eliminatorie de aptitudini. Citește ghidul facultății care te interesează.",
         "scholarships": true,
         "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
         "dorms": true,
         "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Ofertă tehnică și de științe într-un oraș accesibil",
@@ -2248,12 +2485,20 @@
             "economie-finante",
             "business-management",
             "litere-limbi-straine",
-            "istorie",
             "stiintele-educatiei",
             "sport-kinetoterapie",
             "teologie",
             "arte-vizuale-design",
-            "muzica"
+            "muzica",
+            "energie-petrol-mediu",
+            "inginerie-chimica-materiale",
+            "agronomie-silvicultura",
+            "asistenta-medicala",
+            "administratie-publica",
+            "comunicare-jurnalism",
+            "turism-servicii",
+            "sociologie-asistenta-sociala",
+            "psihologie"
         ],
         "about": "Universitate de stat din Arad, cu facultăți de inginerie, economie, științe umaniste, educație fizică, teologie și arte. Se află lângă granița de vest.",
         "prestige": "national",
@@ -2261,15 +2506,17 @@
         "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
         "admissionTypes": [
             "bac",
-            "examen"
+            "aptitudini",
+            "interviu"
         ],
-        "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+        "admission": "La cele mai multe facultăți contează media de la bacalaureat, fără examen scris. La design și la sport dai probe de aptitudini, la pedagogie o probă eliminatorie, iar la teologie un interviu. Citește ghidul facultății care te interesează.",
         "scholarships": true,
         "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
         "dorms": true,
         "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Aproape de Timișoara și de granița cu Ungaria",
@@ -2300,9 +2547,16 @@
             "stiintele-educatiei",
             "sport-kinetoterapie",
             "asistenta-medicala",
-            "psihologie"
+            "stiinte-politice-relatii-internationale",
+            "turism-servicii",
+            "informatica",
+            "energie-petrol-mediu",
+            "calculatoare-it",
+            "agronomie-silvicultura",
+            "arte-vizuale-design",
+            "farmacie"
         ],
-        "about": "Universitate de stat din Târgu Jiu, orașul lui Brâncuși, cu facultăți de inginerie, economie, drept, litere și științe medicale. Este centrul universitar al Gorjului.",
+        "about": "Universitate de stat din Târgu Jiu, orașul lui Brâncuși, cu patru facultăți: inginerie, științe economice, educație, drept și administrație publică, științe medicale și sport. Este centrul universitar al Gorjului.",
         "prestige": "national",
         "budget": "gratuit",
         "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
@@ -2316,7 +2570,8 @@
         "dorms": true,
         "dormsNote": "Are cămine studențești, dar locurile sunt limitate și se dau de obicei după note.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Costuri de trai foarte mici",
@@ -2342,23 +2597,28 @@
             "inginerie-electrica-electronica",
             "business-management",
             "economie-finante",
-            "administratie-publica"
+            "administratie-publica",
+            "inginerie-civila",
+            "calculatoare-it",
+            "marina-transporturi",
+            "turism-servicii",
+            "sociologie-asistenta-sociala"
         ],
         "about": "Universitate de stat din Petroșani, cunoscută pentru facultatea de mine și pentru inginerie electrică și mecanică. Are și programe de economie și administrație.",
         "prestige": "national",
         "budget": "gratuit",
         "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă ai note bune la admitere; celelalte locuri sunt cu taxă.",
         "admissionTypes": [
-            "examen",
             "bac"
         ],
-        "admission": "Intri de obicei cu un examen sau cu o probă la matematică și fizică, ori cu media de la bacalaureat; regulile diferă pe facultăți, așa că verifică ghidul de admitere.",
+        "admission": "Nu dai examen de admitere: se face o medie între media de la bacalaureat și nota de la o probă scrisă de la bacalaureat (la inginerie, matematica). Proba luată în calcul diferă pe facultăți, așa că verifică ghidul de admitere.",
         "scholarships": true,
-        "scholarshipsNote": "Există burse de merit și burse sociale, iar unii studenți pot primi și burse de performanță.",
+        "scholarshipsNote": "Există burse de performanță pentru rezultate bune la învățătură și burse sociale, iar sportivii buni pot primi bursă de performanță sportivă.",
         "dorms": true,
         "dormsNote": "Ai cămine pentru studenți; sunt puține față de câți ceri, așa că depune cererea din timp.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Una dintre puținele școli de mine din țară",
@@ -2379,23 +2639,28 @@
         "region": "ro",
         "website": "https://www.armyacademy.ro",
         "domainIds": [
-            "militar-politie"
+            "militar-politie",
+            "inginerie-mecanica",
+            "administratie-publica",
+            "economie-finante"
         ],
         "about": "Instituție militară de stat din Sibiu care pregătește ofițeri pentru Forțele Terestre. Studenții primesc pregătire militară și studii de specialitate.",
         "prestige": "national",
         "budget": "gratuit",
-        "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
+        "budgetNote": "Nu plătești taxă de școlarizare la licență: toate locurile sunt plătite de stat, pentru armată și pentru alte instituții de apărare și ordine publică.",
         "admissionTypes": [
             "examen",
-            "aptitudini"
+            "aptitudini",
+            "interviu"
         ],
-        "admission": "Admiterea cere probe scrise, probe fizice și control medical, ca la orice instituție militară; se aplică reguli stricte de intrare. Cere informații de la instituție.",
+        "admission": "Întâi treci prin recrutare și selecție: evaluare psihologică, probe fizice, interviu și examen medical. Apoi dai o probă scrisă, un test-grilă la matematică, informatică și fizică. Începe de la biroul de informare-recrutare din județul tău.",
         "scholarships": true,
-        "scholarshipsNote": "Primești cazare, hrană și o indemnizație lunară pe durata studiilor, în plus față de bursele obișnuite.",
+        "scholarshipsNote": "Ca student militar, statul îți asigură de regulă cazarea, hrana și o indemnizație lunară pe durata studiilor; cere detaliile la biroul de informare-recrutare.",
         "dorms": true,
         "dormsNote": "Cazarea și masa sunt asigurate în unitate, de regulă pe toată perioada studiilor.",
         "certificates": [
             "bac",
+            "engleza",
             "medical"
         ],
         "pros": [
@@ -2494,23 +2759,27 @@
         "region": "ro",
         "website": "https://www.uat.ro",
         "domainIds": [
-            "teatru-film"
+            "teatru-film",
+            "muzica",
+            "arte-vizuale-design"
         ],
-        "about": "Universitate de stat din Târgu Mureș, cu programe de teatru, păpuși-marionete și comunicare audiovizuală. Predă în română și în maghiară.",
+        "about": "Universitate de stat din Târgu Mureș, cu programe de actorie, regie, păpuși-marionete, coregrafie, scenografie, muzică și comunicare audiovizuală. Are o facultate în română și una în maghiară.",
         "prestige": "national",
         "budget": "gratuit",
         "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
         "admissionTypes": [
             "aptitudini",
-            "interviu"
+            "interviu",
+            "bac"
         ],
-        "admission": "Admiterea se face prin probe de talent și un interviu, nu doar prin note; ți se cere să arăți ce știi să faci. Detaliile diferă pe specializare.",
+        "admission": "La actorie și la păpuși-marionete dai probe practice de talent: aptitudini muzicale și de ritm, poezii, monolog, improvizație. La comunicare audiovizuală ai un interviu de prezentare și contează și media de la bacalaureat. Detaliile diferă pe specializare.",
         "scholarships": true,
         "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
         "dorms": true,
-        "dormsNote": "Oferă cazare în cămine, în funcție de medie și de situația ta; ceilalți studenți închiriază în oraș.",
+        "dormsNote": "Are un cămin mic, cu puține camere, iar locurile le împarte o comisie a universității; mulți studenți închiriază în oraș.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Școală de teatru cu tradiție, în română și maghiară",
@@ -2536,26 +2805,35 @@
             "drept",
             "informatica",
             "turism-servicii",
-            "marketing"
+            "marketing",
+            "sport-kinetoterapie",
+            "psihologie",
+            "stiintele-educatiei",
+            "asistenta-medicala",
+            "arhitectura"
         ],
-        "about": "Universitate privată din București, cu facultăți de drept, management-marketing, informatică managerială și turism. A fost înființată în anii ’90 cu sprijin american.",
+        "about": "Universitate privată din București, cu facultăți de drept, management-marketing, informatică managerială și turism. A fost înființată în anii ’90 și urmează modelul universităților americane.",
         "prestige": "national",
         "budget": "mediu",
-        "budgetNote": "Taxele sunt mai ridicate decât la o facultate cu taxă mică, mai ales la medicină; întreabă ce rate sunt posibile.",
+        "budgetNote": "Este universitate privată și plătești taxă de școlarizare; programele în limba engleză sunt mai scumpe. Taxa se poate plăti și în tranșe.",
         "admissionTypes": [
+            "bac",
             "dosar",
-            "bac"
+            "interviu",
+            "examen",
+            "aptitudini"
         ],
-        "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+        "admission": "La cele mai multe facultăți contează media de la bacalaureat și un atestat sau certificat din liceu; dacă nu ai, susții un eseu sau un interviu de motivație. La Psihologie și la Asistență medicală dai un test-grilă, iar la Sport o probă practică.",
         "scholarships": true,
-        "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
-        "dorms": false,
-        "dormsNote": "Nu te baza pe cămin: întreabă la admitere sau caută o chirie în oraș.",
+        "scholarshipsNote": "O parte dintre studenții cu cele mai mari medii la admitere primesc loc fără taxă (bursă integrală de studii); condițiile sunt în regulamentul de burse.",
+        "dorms": true,
+        "dormsNote": "Are un cămin în campus, cu camere de 1–3 locuri cu baie proprie; locurile sunt limitate și se plătesc separat, așa că depune cererea din timp.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
-            "Admitere simplă, fără examen greu",
+            "La cele mai multe programe, admitere fără examen scris",
             "Programe orientate spre afaceri, drept și IT",
             "Grupe mai mici decât la universitățile de stat mari"
         ],
@@ -2577,34 +2855,41 @@
             "medicina-dentara",
             "drept",
             "psihologie",
-            "economie-finante"
+            "economie-finante",
+            "business-management",
+            "informatica",
+            "asistenta-medicala",
+            "stiinte-politice-relatii-internationale",
+            "comunicare-jurnalism",
+            "stiintele-educatiei",
+            "farmacie"
         ],
         "about": "Universitate privată din București, cunoscută pentru facultatea de medicină și cea de medicină dentară, plus drept și psihologie. Poartă numele criticului Titu Maiorescu.",
         "prestige": "national",
         "budget": "mediu",
         "budgetNote": "Este universitate privată și plătești taxă de școlarizare; la programele cu laborator sau practică taxa este mai mare.",
         "admissionTypes": [
-            "dosar",
+            "examen",
             "bac"
         ],
-        "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+        "admission": "La Medicină dai examen: un test-grilă la biologie și, la alegere, la chimie sau fizică. La Asistență medicală contează un test la biologie și media de la bacalaureat. La celelalte facultăți regulile sunt altele, așa că citește metodologia facultății tale.",
         "scholarships": true,
         "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
-        "dorms": false,
-        "dormsNote": "Nu te baza pe cămin: întreabă la admitere sau caută o chirie în oraș.",
+        "dorms": true,
+        "dormsNote": "Are două cămine studențești în București; depui o cerere, iar locurile se împart după regulamentul căminului.",
         "certificates": [
             "bac",
             "medical"
         ],
         "pros": [
-            "Ai șansa să studiezi medicină fără concurența de la buget",
+            "Ai șansa să studiezi medicină la o universitate privată, pe locuri cu taxă",
             "Spitale partenere pentru practică",
-            "Admitere mai accesibilă decât la universitățile de stat"
+            "Are cămine proprii în București"
         ],
         "cons": [
             "Taxele sunt mari, mai ales la medicină",
             "Diploma nu are același prestigiu ca la UMF-urile de stat",
-            "Cămine sau burse limitate"
+            "La Medicină dai examen de admitere, ca la stat"
         ]
     },
     {
@@ -2628,13 +2913,14 @@
             "dosar",
             "bac"
         ],
-        "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+        "admission": "La toate facultățile, admiterea la licență se face după media de la bacalaureat, fără examen și fără interviu: depui dosarul și ești ordonat după medie.",
         "scholarships": true,
-        "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
-        "dorms": false,
-        "dormsNote": "Nu te baza pe cămin: întreabă la admitere sau caută o chirie în oraș.",
+        "scholarshipsNote": "Studenții cu rezultate foarte bune pot primi burse de merit și burse speciale; există și reduceri de taxă, de exemplu pentru frați sau soți care studiază aici.",
+        "dorms": true,
+        "dormsNote": "Are un cămin propriu în București, cu camere de 2–4 locuri cu baie proprie; primești loc în limita locurilor disponibile, așa că întreabă din timp.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Specializare în drept și administrație",
@@ -2658,29 +2944,31 @@
             "drept",
             "administratie-publica",
             "economie-finante",
-            "business-management",
             "litere-limbi-straine",
             "stiintele-educatiei",
-            "turism-servicii"
+            "turism-servicii",
+            "marketing"
         ],
-        "about": "Universitate privată cu facultăți în București, Cluj-Napoca și Timișoara, pentru drept, economie, limbi străine și educație. Poartă numele învățatului Dimitrie Cantemir.",
+        "about": "Universitate privată cu facultăți în București și Cluj-Napoca, pentru drept, administrație, economie, limbi străine și educație. Poartă numele învățatului Dimitrie Cantemir.",
         "prestige": "national",
         "budget": "mic",
         "budgetNote": "Este universitate privată, deci plătești taxă; în general este mai mică decât în universitățile private din vestul Europei.",
         "admissionTypes": [
             "dosar",
-            "bac"
+            "bac",
+            "aptitudini"
         ],
-        "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+        "admission": "Admiterea la licență se face după media de la bacalaureat, fără examen: depui dosarul în perioada de înscriere. La Pedagogia învățământului primar și la Educație timpurie dai și o probă eliminatorie de comunicare și aptitudini.",
         "scholarships": true,
-        "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+        "scholarshipsNote": "Există reduceri de taxă, de exemplu pentru studenții cu cele mai mari medii din fiecare an și pentru cei care plătesc toată taxa odată; despre burse întreabă la secretariat.",
         "dorms": false,
         "dormsNote": "Nu te baza pe cămin: întreabă la admitere sau caută o chirie în oraș.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
-            "Prezentă în trei orașe mari",
+            "Prezentă în București și în Cluj-Napoca",
             "Admitere accesibilă, bazată pe dosar",
             "Program potrivit și pentru cei care lucrează"
         ],
@@ -2702,16 +2990,14 @@
             "economie-finante",
             "business-management",
             "psihologie",
-            "sociologie-asistenta-sociala",
-            "litere-limbi-straine",
             "stiintele-educatiei",
-            "comunicare-jurnalism",
             "informatica",
             "sport-kinetoterapie",
-            "muzica",
-            "arte-vizuale-design"
+            "medicina-veterinara",
+            "marketing",
+            "administratie-publica"
         ],
-        "about": "Una dintre cele mai mari universități private din țară, cu filiale în mai multe orașe și cu multe domenii. Poartă numele matematicianului și reformatorului școlar Spiru Haret.",
+        "about": "Universitate privată cu facultăți în București, Brașov, Craiova, Constanța și Câmpulung și cu multe domenii. Poartă numele matematicianului și reformatorului școlar Spiru Haret.",
         "prestige": "national",
         "budget": "mic",
         "budgetNote": "Nu are locuri la buget, dar taxele sunt în general accesibile, iar le poți plăti în rate.",
@@ -2721,7 +3007,7 @@
         ],
         "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
         "scholarships": true,
-        "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+        "scholarshipsNote": "Universitatea are un regulament de burse și oferă câteva burse integrale de studiu pentru liceeni (Bursa „Liceenii”); întreabă la secretariat ce condiții sunt.",
         "dorms": false,
         "dormsNote": "Nu te baza pe cămin: întreabă la admitere sau caută o chirie în oraș.",
         "certificates": [
@@ -2752,25 +3038,37 @@
             "economie-finante",
             "business-management",
             "litere-limbi-straine",
-            "stiintele-educatiei",
             "agronomie-silvicultura",
-            "comunicare-jurnalism"
+            "comunicare-jurnalism",
+            "teatru-film",
+            "drept",
+            "stiinte-politice-relatii-internationale",
+            "geografie-mediu",
+            "energie-petrol-mediu",
+            "inginerie-chimica-materiale",
+            "sociologie-asistenta-sociala",
+            "biologie",
+            "informatica",
+            "marketing",
+            "sport-kinetoterapie",
+            "administratie-publica"
         ],
-        "about": "Universitate privată cu predare în limba maghiară, cu campusuri la Cluj-Napoca, Târgu Mureș și Miercurea Ciuc. Se adresează în special tinerilor maghiari din România.",
+        "about": "Universitate privată cu predare în limba maghiară. Rectoratul este la Cluj-Napoca, iar facultățile sunt în patru orașe: Miercurea Ciuc, Târgu Mureș, Cluj-Napoca și Sfântu Gheorghe. Se adresează în special tinerilor maghiari din România.",
         "prestige": "national",
         "budget": "mic",
-        "budgetNote": "Este universitate privată, deci plătești taxă; în general este mai mică decât în universitățile private din vestul Europei.",
+        "budgetNote": "Deși este universitate privată, are și locuri fără taxă, pe lângă locuri cu taxă redusă și locuri cu taxă întreagă. Locurile fără taxă se ocupă în ordinea mediilor de admitere.",
         "admissionTypes": [
             "dosar",
             "bac"
         ],
-        "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+        "admission": "Admiterea este un concurs în limba maghiară: te înscrii online, iar media de admitere se calculează din media și notele de la bacalaureat și din mediile din liceu. La unele programe există și o probă sau o discuție de motivație. Regulile diferă pe facultate.",
         "scholarships": true,
-        "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+        "scholarshipsNote": "Universitatea acordă burse de merit, burse de studiu și burse sociale, după un regulament propriu.",
         "dorms": true,
         "dormsNote": "Are cămine sau cazare pentru studenți; locurile sunt limitate, așa că întreabă din timp.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Studiezi în maghiară, cu campusuri în Transilvania",
@@ -2779,7 +3077,7 @@
         ],
         "cons": [
             "Se predă în maghiară, nu în română",
-            "Plătești taxă, dar poate exista sprijin financiar",
+            "Locurile fără taxă sunt limitate; pe celelalte plătești taxă",
             "Ofertă mai restrânsă decât la universitățile mari"
         ]
     },
@@ -2799,21 +3097,31 @@
             "economie-finante",
             "informatica",
             "sport-kinetoterapie",
-            "stiintele-educatiei"
+            "stiintele-educatiei",
+            "administratie-publica",
+            "business-management",
+            "turism-servicii",
+            "marketing",
+            "agronomie-silvicultura",
+            "biologie",
+            "litere-limbi-straine",
+            "psihologie",
+            "stiinte-politice-relatii-internationale"
         ],
         "about": "Universitate privată din Arad, cunoscută pentru facultățile de medicină, medicină dentară și farmacie. Are și drept, economie și informatică.",
         "prestige": "national",
         "budget": "mediu",
         "budgetNote": "Taxele sunt mai ridicate decât la o facultate cu taxă mică, mai ales la medicină; întreabă ce rate sunt posibile.",
         "admissionTypes": [
-            "dosar",
-            "bac"
+            "examen",
+            "bac",
+            "dosar"
         ],
-        "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+        "admission": "La medicină, medicină dentară și farmacie dai un test grilă scris (biologie și chimie; la farmacie, biologie). La celelalte programe, de exemplu asistență medicală, tehnică dentară sau nutriție, contează media de la bacalaureat. Regulile diferă pe facultate.",
         "scholarships": true,
-        "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+        "scholarshipsNote": "Universitatea anunță burse de excelență, de merit și sociale; întreabă la secretariat ce condiții trebuie să îndeplinești.",
         "dorms": true,
-        "dormsNote": "Are cămine sau cazare pentru studenți; locurile sunt limitate, așa că întreabă din timp.",
+        "dormsNote": "Are cămin propriu în Arad, aproape de campus, cu cantină în aceeași clădire; locurile sunt limitate, așa că întreabă din timp.",
         "certificates": [
             "bac",
             "medical"
@@ -2843,9 +3151,9 @@
             "administratie-publica",
             "psihologie",
             "sociologie-asistenta-sociala",
-            "stiintele-educatiei"
+            "marketing"
         ],
-        "about": "Universitate privată din Iași, cu facultăți de drept, economie, științe politice, psihologie și asistență socială. Este una dintre cele mai cunoscute școli private din Moldova.",
+        "about": "Universitate privată din Iași, cu două facultăți: una de drept, economie, științe politice și administrative și una de psihologie, științele educației și asistență socială.",
         "prestige": "national",
         "budget": "mic",
         "budgetNote": "Este universitate privată, deci plătești taxă; în general este mai mică decât în universitățile private din vestul Europei.",
@@ -2853,13 +3161,14 @@
             "dosar",
             "bac"
         ],
-        "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+        "admission": "Nu dai examen: depui dosarul (și online), iar media de admitere se calculează din media de la bacalaureat și nota de la proba scrisă de limba română de la bacalaureat.",
         "scholarships": true,
-        "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+        "scholarshipsNote": "Universitatea are un regulament de acordare a burselor; întreabă la secretariat ce condiții trebuie să îndeplinești.",
         "dorms": false,
         "dormsNote": "Nu te baza pe cămin: întreabă la admitere sau caută o chirie în oraș.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Specializări în științe sociale și drept",
@@ -2885,25 +3194,33 @@
             "drept",
             "economie-finante",
             "psihologie",
-            "stiintele-educatiei",
             "comunicare-jurnalism",
-            "arte-vizuale-design"
+            "fizica",
+            "geografie-mediu",
+            "litere-limbi-straine",
+            "stiinte-politice-relatii-internationale",
+            "istorie",
+            "turism-servicii",
+            "business-management",
+            "teatru-film"
         ],
-        "about": "Universitate privată din București, înființată în 1990, cu facultăți de drept, economie, jurnalism, psihologie, științe exacte și arte. Se mândrește cu grupe mici.",
+        "about": "Universitate privată din București, înființată în 1990, cu șapte facultăți: drept, economie, jurnalism, psihologie, științe exacte și inginerești, științe sociale și umaniste, arte.",
         "prestige": "national",
         "budget": "mic",
         "budgetNote": "Nu are locuri la buget, dar taxele sunt în general accesibile, iar le poți plăti în rate.",
         "admissionTypes": [
             "dosar",
-            "bac"
+            "bac",
+            "examen"
         ],
-        "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+        "admission": "La cele mai multe programe intri pe bază de dosar, cu diploma și media de la bacalaureat. La Facultatea de Psihologie și Științe ale Educației și la Facultatea de Arte admiterea se face cu examen. Citește metodologia pe site.",
         "scholarships": true,
-        "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
-        "dorms": false,
-        "dormsNote": "Nu te baza pe cămin: întreabă la admitere sau caută o chirie în oraș.",
+        "scholarshipsNote": "Site-ul anunță reduceri de taxă și burse pentru studenții cu medii foarte mari, la unele programe, și o reducere când se înscriu doi membri ai aceleiași familii.",
+        "dorms": true,
+        "dormsNote": "Universitatea are un hostel studențesc propriu în București, cu camere cu baie; locurile se rezervă din timp, la telefon.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Ofertă variată pentru o universitate privată",
@@ -2926,10 +3243,12 @@
         "domainIds": [
             "drept",
             "economie-finante",
-            "business-management",
-            "geografie-mediu"
+            "geografie-mediu",
+            "sport-kinetoterapie",
+            "psihologie",
+            "comunicare-jurnalism"
         ],
-        "about": "Universitate privată din București, cu facultăți de drept, economie și management ecologic. Pune accent pe mediu și dezvoltare durabilă.",
+        "about": "Universitate privată din București, cu șase facultăți: drept, psihologie, management financiar, științele comunicării, ecologie și protecția mediului, educație fizică și sport. Pune accent pe mediu și dezvoltare durabilă.",
         "prestige": "national",
         "budget": "mic",
         "budgetNote": "Este universitate privată, deci plătești taxă; în general este mai mică decât în universitățile private din vestul Europei.",
@@ -2939,11 +3258,12 @@
         ],
         "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
         "scholarships": true,
-        "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+        "scholarshipsNote": "Universitatea acordă burse de performanță, după un regulament propriu, și o mică reducere dacă plătești toată taxa de la început.",
         "dorms": false,
         "dormsNote": "Nu te baza pe cămin: întreabă la admitere sau caută o chirie în oraș.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Specializare în mediu și management ecologic",
@@ -2953,7 +3273,7 @@
         "cons": [
             "Plătești taxă de școlarizare",
             "Mai puțin cunoscută decât universitățile de stat",
-            "Ofertă restrânsă de domenii"
+            "Mai puține programe decât la universitățile mari"
         ]
     },
     {
@@ -2965,23 +3285,26 @@
         "website": "https://www.univ-danubius.ro",
         "domainIds": [
             "drept",
-            "business-management",
             "stiinte-politice-relatii-internationale",
             "comunicare-jurnalism",
-            "arte-vizuale-design",
-            "stiintele-educatiei"
+            "stiintele-educatiei",
+            "psihologie",
+            "sociologie-asistenta-sociala",
+            "turism-servicii",
+            "economie-finante",
+            "informatica"
         ],
-        "about": "Universitate privată din Galați (fostă „Danubius”), cu facultăți de drept, afaceri, media și design, științele vieții și educație. Se află în sud-estul Moldovei.",
+        "about": "Universitate privată din Galați, cu cinci facultăți: drept și guvernanță internațională, afaceri și leadership, media, design și tehnologie, științele vieții și dezvoltare umană, educație. Se află în sud-estul Moldovei.",
         "prestige": "national",
         "budget": "mic",
-        "budgetNote": "Nu are locuri la buget, dar taxele sunt în general accesibile, iar le poți plăti în rate.",
+        "budgetNote": "Este universitate privată, deci plătești taxă de școlarizare. Întreabă la secretariat dacă o poți plăti în rate.",
         "admissionTypes": [
             "dosar",
             "bac"
         ],
-        "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+        "admission": "Nu dai examen și nu ai interviu: contează doar media generală de la bacalaureat. Există și o preadmitere pentru elevi, pe baza mediilor din liceu. Te poți înscrie online.",
         "scholarships": true,
-        "scholarshipsNote": "Poți întreba la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+        "scholarshipsNote": "Universitatea acordă burse și premii pentru merite deosebite și reduceri de taxă pentru implicarea în activități.",
         "dorms": false,
         "dormsNote": "Nu te baza pe cămin: întreabă la admitere sau caută o chirie în oraș.",
         "certificates": [
@@ -3007,27 +3330,27 @@
         "website": "https://www.univcb.ro",
         "domainIds": [
             "business-management",
-            "marketing",
             "economie-finante",
             "drept",
             "administratie-publica",
-            "comunicare-jurnalism"
+            "turism-servicii"
         ],
-        "about": "Universitate privată din Pitești, cu facultăți de management și marketing, finanțe și contabilitate, drept și comunicare. Are facultăți și în Râmnicu Vâlcea și Brăila.",
+        "about": "Universitate privată cu sediul în Pitești și cu facultăți în trei orașe: Pitești, Râmnicu Vâlcea și Brăila. Poți studia management, contabilitate, comerț și turism, drept și administrație publică; cele mai multe programe sunt la Râmnicu Vâlcea.",
         "prestige": "national",
         "budget": "mic",
-        "budgetNote": "Taxa de școlarizare se plătește; nu există locuri la buget. Întreabă la secretariat despre rate.",
+        "budgetNote": "Este universitate privată, deci de regulă plătești taxă. Există însă câteva locuri fără taxă, plătite de universitate, pentru cei care câștigă concursul de preadmitere. Întreabă la secretariat despre rate.",
         "admissionTypes": [
             "dosar",
             "bac"
         ],
         "admission": "Admiterea se face pe baza dosarului și a mediei de la bacalaureat. Verifică pe site regulile pentru fiecare facultate.",
-        "scholarships": false,
-        "scholarshipsNote": "Întreabă la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+        "scholarships": true,
+        "scholarshipsNote": "Universitatea oferă din banii ei locuri fără taxă, care se câștigă la un concurs de preadmitere cu test grilă, plus burse de merit și burse de ajutor social.",
         "dorms": false,
         "dormsNote": "Nu te baza pe cămin; întreabă la admitere sau caută o chirie în oraș.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Poți studia economie sau drept în Pitești, fără să te muți",
@@ -3052,23 +3375,22 @@
             "psihologie",
             "economie-finante",
             "business-management",
-            "administratie-publica",
-            "comunicare-jurnalism",
-            "stiinte-politice-relatii-internationale"
+            "administratie-publica"
         ],
-        "about": "Universitate privată, nonprofit, din Constanța, cu programe în drept, psihologie, economie, administrație și comunicare. Este acreditată prin lege din 2005.",
+        "about": "Universitate privată, nonprofit, din Constanța, cu programe de licență în drept, psihologie, management, contabilitate și administrație publică. Este acreditată prin lege din 2005.",
         "prestige": "national",
         "budget": "mic",
         "budgetNote": "Taxa de școlarizare se plătește; nu există locuri la buget.",
         "admissionTypes": [
             "dosar",
-            "bac"
+            "bac",
+            "interviu"
         ],
-        "admission": "Intri de obicei pe baza dosarului și a mediei de la bacalaureat. Detaliile diferă pe program, deci citește metodologia de admitere.",
+        "admission": "Intri pe baza mediei de la bacalaureat, fără examene în plus. La unele programe ai și o discuție de motivație de câteva minute cu un profesor, care nu te poate elimina. Te poți înscrie online.",
         "scholarships": false,
         "scholarshipsNote": "Întreabă la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
-        "dorms": false,
-        "dormsNote": "Nu te baza pe cămin; întreabă la admitere sau caută o chirie în oraș.",
+        "dorms": true,
+        "dormsNote": "Universitatea are spații proprii de cazare în Constanța, pe care le pot folosi și studenții, cu aprobarea conducerii. Întreabă din timp dacă sunt locuri.",
         "certificates": [
             "bac"
         ],
@@ -3094,9 +3416,11 @@
             "economie-finante",
             "drept",
             "administratie-publica",
-            "business-management"
+            "business-management",
+            "informatica",
+            "turism-servicii"
         ],
-        "about": "Universitate privată din Bacău, cu facultatea de științe economice, juridice și administrative. Este acreditată de ARACIS.",
+        "about": "Universitate privată acreditată din Bacău, cu o singură facultate, de științe economice, juridice și administrative. Poți studia management, comerț și turism, drept, administrație publică și informatică.",
         "prestige": "national",
         "budget": "mic",
         "budgetNote": "Taxa de școlarizare se plătește; nu există locuri la buget.",
@@ -3104,13 +3428,14 @@
             "dosar",
             "bac"
         ],
-        "admission": "Admiterea se bazează în general pe dosar și pe media de la bacalaureat. Citește regulile actuale pe site.",
+        "admission": "Admiterea se face pe bază de dosar, fără examen și fără interviu: candidații sunt ordonați după media de la bacalaureat. Te poți înscrie și online. Citește regulamentul de admitere pe site.",
         "scholarships": true,
-        "scholarshipsNote": "Pe site apar burse, de exemplu din partea asociației absolvenților și a unei fundații.",
+        "scholarshipsNote": "Universitatea dă burse de merit sub formă de reducere de taxă pentru rezultate foarte bune; la fondul de burse contribuie și asociația absolvenților și Fundația Bacovia.",
         "dorms": true,
-        "dormsNote": "Site-ul menționează servicii de cazare pentru studenți; întreabă din timp câte locuri sunt.",
+        "dormsNote": "Verifică la secretariat dacă universitatea oferă cazare pentru studenți; altfel, caută din timp o chirie în Bacău.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Burse oferite și din partea absolvenților și a unei fundații",
@@ -3136,23 +3461,27 @@
             "economie-finante",
             "muzica",
             "sociologie-asistenta-sociala",
-            "litere-limbi-straine"
+            "litere-limbi-straine",
+            "informatica"
         ],
         "about": "Universitate privată creștină baptistă din Oradea, cu teologie și management, plus programe ca muzică, asistență socială și limba engleză. Predă în limba română.",
         "prestige": "national",
         "budget": "mic",
         "budgetNote": "Taxa de școlarizare se plătește; nu există locuri la buget.",
         "admissionTypes": [
-            "dosar",
-            "bac"
+            "interviu",
+            "examen",
+            "aptitudini"
         ],
-        "admission": "Admiterea se face în general pe dosar și pe baza mediei de la bacalaureat; pentru unele programe pot exista probe în plus. Aici contează și valorile creștine ale școlii.",
+        "admission": "La toate programele ai un interviu de motivație și o probă din Mărturisirea de credință baptistă. La management și informatică economică dai și un test, la muzică o probă de aptitudini, iar la română-engleză un interviu de engleză. De regulă trebuie să fii membru botezat al unei biserici evanghelice și să aduci o recomandare de la pastor.",
         "scholarships": true,
-        "scholarshipsNote": "Site-ul spune că există programe de burse; întreabă ce condiții trebuie să îndeplinești.",
+        "scholarshipsNote": "Universitatea are o bursă pentru rezultate și implicare („Integritate și Excelență”) și o bursă de școlarizare; condițiile sunt în regulamentul de burse.",
         "dorms": true,
         "dormsNote": "Are cazare și masă în campus, plus capelă și cabinet medical.",
         "certificates": [
-            "bac"
+            "bac",
+            "recomandari",
+            "medical"
         ],
         "pros": [
             "Campus cu cazare, cantină și servicii pentru studenți",
@@ -3161,7 +3490,7 @@
         ],
         "cons": [
             "Plătești taxă de școlarizare",
-            "Mediu confesional, potrivit mai ales celor care îl caută",
+            "Mediu confesional: de regulă sunt primiți membri botezați ai bisericilor evanghelice",
             "Puține domenii în afara teologiei și managementului"
         ]
     },
@@ -3177,21 +3506,25 @@
             "economie-finante",
             "business-management",
             "arte-vizuale-design",
-            "sociologie-asistenta-sociala"
+            "sociologie-asistenta-sociala",
+            "muzica",
+            "stiintele-educatiei",
+            "turism-servicii",
+            "informatica"
         ],
-        "about": "Universitate privată din Oradea, prima acreditată în limba maghiară din România. Are facultăți de științe socio-umane, științe economice și arte, cu predare în principal în limba maghiară.",
+        "about": "Universitate privată din Oradea, prima universitate privată acreditată cu predare în limba maghiară din România. Are două facultăți: una de litere și arte și una de științe economice și sociale, cu predare în principal în limba maghiară.",
         "prestige": "national",
         "budget": "mic",
-        "budgetNote": "Taxa de școlarizare se plătește; nu există locuri la buget.",
+        "budgetNote": "Deși este universitate privată, o parte din locuri sunt fără taxă, iar restul sunt cu taxă. În fiecare an locurile se reîmpart după rezultatele la învățătură.",
         "admissionTypes": [
             "dosar",
             "bac"
         ],
         "admission": "Admiterea se face în general pe dosar, cu media de la bacalaureat; pentru unele programe poate fi și o probă. Programele se predau mai ales în maghiară, deci ai nevoie să o știi bine.",
-        "scholarships": false,
-        "scholarshipsNote": "Întreabă la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
-        "dorms": false,
-        "dormsNote": "Întreabă la admitere dacă există cămin sau caută o chirie în Oradea.",
+        "scholarships": true,
+        "scholarshipsNote": "Universitatea acordă burse de merit, burse de studiu și burse sociale, plus o bursă de excelență pentru studenții de la programele economice.",
+        "dorms": true,
+        "dormsNote": "Are cămin propriu în Oradea, cu camere de 2–4 locuri și cantină în clădire; întreabă din timp cum se dau locurile.",
         "certificates": [
             "bac"
         ],
@@ -3201,7 +3534,7 @@
             "Programe de litere, economie și arte într-un singur loc"
         ],
         "cons": [
-            "Plătești taxă de școlarizare",
+            "Locurile fără taxă sunt limitate; pe celelalte plătești taxă",
             "Ai nevoie de limba maghiară pentru majoritatea programelor",
             "Oferta de programe e restrânsă"
         ]
@@ -3227,13 +3560,14 @@
             "dosar",
             "bac"
         ],
-        "admission": "Se intră de obicei pe baza dosarului și a mediei de la bacalaureat. Pentru detalii, vezi pagina de admitere.",
-        "scholarships": false,
-        "scholarshipsNote": "Întreabă la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+        "admission": "Se intră fără examen, pe baza dosarului: locul tău în clasament depinde de media de la bacalaureat. Te poți înscrie și online. Pentru detalii, vezi pagina de admitere.",
+        "scholarships": true,
+        "scholarshipsNote": "Are trei feluri de burse care acoperă taxa, întreagă sau în parte: Bursa Agora, câștigată prin concurs la admitere, bursa de merit și bursa socială.",
         "dorms": false,
         "dormsNote": "Nu te baza pe cămin; întreabă la admitere sau caută o chirie în oraș.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Poți învăța drept sau economie în Oradea",
@@ -3256,11 +3590,11 @@
         "domainIds": [
             "informatica",
             "drept",
-            "administratie-publica",
             "psihologie",
-            "economie-finante"
+            "economie-finante",
+            "business-management"
         ],
-        "about": "Universitate privată din Timișoara, cu facultăți de calculatoare și informatică aplicată, drept, psihologie și științe economice.",
+        "about": "Universitate privată din Timișoara, cu patru facultăți: calculatoare și informatică aplicată, drept și administrație publică, psihologie și științe economice.",
         "prestige": "national",
         "budget": "mic",
         "budgetNote": "Taxa de școlarizare se plătește; nu există locuri la buget.",
@@ -3268,13 +3602,14 @@
             "dosar",
             "bac"
         ],
-        "admission": "Admiterea se face în general pe dosar și pe baza mediei de la bacalaureat. Verifică programele deschise în anul tău.",
+        "admission": "Admiterea se face prin concurs de dosare, fără examen. La drept, de exemplu, media de admitere se calculează din media de la bacalaureat și mediile la limba română din liceu. Fiecare facultate are metodologia ei, deci citește-o pe site.",
         "scholarships": false,
-        "scholarshipsNote": "Întreabă la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
+        "scholarshipsNote": "Universitatea are un regulament de facilități la taxa de școlarizare (pagina „Facilități Taxe și Burse”); întreabă la secretariat ce reduceri poți primi.",
         "dorms": false,
         "dormsNote": "Nu te baza pe cămin; întreabă la admitere sau caută o chirie în oraș.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Poți studia informatică sau psihologie în Timișoara",
@@ -3296,9 +3631,11 @@
         "website": "https://www.univapollonia.ro",
         "domainIds": [
             "medicina-dentara",
-            "asistenta-medicala"
+            "asistenta-medicala",
+            "sport-kinetoterapie",
+            "comunicare-jurnalism"
         ],
-        "about": "Universitate privată din Iași, înființată pentru a pregăti medici dentiști, tehnicieni dentari și asistenți medicali. Are programe în medicină dentară, tehnică dentară și asistență medicală generală.",
+        "about": "Universitate privată din Iași, cu două facultăți. La Facultatea de Medicină sunt programe ca medicină dentară, tehnică dentară, asistență medicală generală și balneofiziokinetoterapie, iar la Facultatea de Științe ale Comunicării poți studia comunicare și jurnalism.",
         "prestige": "national",
         "budget": "mediu",
         "budgetNote": "Taxa de școlarizare se plătește; nu există locuri la buget. Studiile medicale au de obicei taxe mai mari decât cele economice.",
@@ -3306,7 +3643,7 @@
             "examen",
             "bac"
         ],
-        "admission": "La medicină dentară admiterea se face în general cu o probă, iar la alte programe contează și media de la bacalaureat. Citește anunțul de admitere al anului.",
+        "admission": "La Facultatea de Medicină universitatea publică o tematică de examen pentru fiecare program (medicină dentară, tehnică dentară, asistență medicală și altele), deci pregătește-te pentru o probă. Verifică în anunțul de admitere al anului cum se calculează media și cum este admiterea la comunicare.",
         "scholarships": false,
         "scholarshipsNote": "Întreabă la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
         "dorms": false,
@@ -3321,7 +3658,7 @@
         ],
         "cons": [
             "Plătești taxă de școlarizare, mai mare la medicină",
-            "Oferta de domenii este foarte îngustă",
+            "Ofertă îngustă: doar sănătate și comunicare",
             "Studiile medicale cer multă muncă și bani pentru materiale"
         ]
     },
@@ -3331,7 +3668,7 @@
         "city": "București",
         "country": "România",
         "region": "ro",
-        "website": "https://website.univath.ro",
+        "website": "https://www.univath.ro",
         "domainIds": [
             "economie-finante",
             "business-management",
@@ -3349,10 +3686,11 @@
         "admission": "Admiterea se face în general pe dosar, cu media de la bacalaureat. Pentru regulile exacte, vezi pagina de admitere.",
         "scholarships": false,
         "scholarshipsNote": "Întreabă la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
-        "dorms": false,
-        "dormsNote": "Nu te baza pe cămin; întreabă la admitere sau caută o chirie în oraș.",
+        "dorms": true,
+        "dormsNote": "Universitatea nu are cămin propriu, dar are protocol cu câteva cămine; cererea de cazare se depune la secretariat, la începutul anului universitar.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Poți învăța informatică economică sau management în Capitală",
@@ -3376,10 +3714,9 @@
             "agronomie-silvicultura",
             "drept",
             "asistenta-medicala",
-            "informatica",
-            "economie-finante"
+            "inginerie-chimica-materiale"
         ],
-        "about": "Universitate privată din București, înființată în 1990 și acreditată prin lege. Are programe în agricultură și dezvoltare rurală, drept, produse alimentare, asistență medicală și informatică.",
+        "about": "Universitate privată din București, acreditată prin lege în 2002. Are programe în agricultură și dezvoltare rurală, drept, produse alimentare și asistență medicală, la București și la Buzău.",
         "prestige": "national",
         "budget": "mic",
         "budgetNote": "Taxa de școlarizare se plătește; nu există locuri la buget.",
@@ -3388,12 +3725,13 @@
             "bac"
         ],
         "admission": "Admiterea se face în general pe baza dosarului și a mediei de la bacalaureat. Metodologia se publică pe site în fiecare an.",
-        "scholarships": false,
-        "scholarshipsNote": "Întreabă la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
-        "dorms": false,
-        "dormsNote": "Nu te baza pe cămin; întreabă la admitere sau caută o chirie în oraș.",
+        "scholarships": true,
+        "scholarshipsNote": "Site-ul spune că există burse de merit și burse sociale, sub formă de scutire parțială sau totală de taxă, și o reducere când mai mulți membri ai familiei studiază aici; întreabă la secretariat condițiile.",
+        "dorms": true,
+        "dormsNote": "Site-ul prezintă un complex universitar cu cinci cămine studențești și o cantină-restaurant; întreabă la admitere cum obții un loc.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Programe rare la privat: agricultură și produse alimentare",
@@ -3427,13 +3765,14 @@
             "dosar",
             "bac"
         ],
-        "admission": "Se intră în general pe baza dosarului și a mediei de la bacalaureat. Vezi pe site regulile și programele deschise.",
+        "admission": "Se intră pe bază de dosar: media de admitere este media dintre nota de la bacalaureat și media anilor de liceu. Vezi pe site regulile și programele deschise.",
         "scholarships": false,
         "scholarshipsNote": "Întreabă la secretariat dacă există burse sau reduceri de taxă pentru rezultate bune.",
-        "dorms": false,
-        "dormsNote": "Nu te baza pe cămin; caută o chirie în București.",
+        "dorms": true,
+        "dormsNote": "Universitatea are cămin propriu în București, în sectorul 6, cu camere de una, două sau trei persoane; cazarea se plătește.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical"
         ],
         "pros": [
             "Poți studia finanțe, management sau marketing în Capitală",
@@ -3454,23 +3793,28 @@
         "region": "ro",
         "website": "https://uadventus.ro",
         "domainIds": [
-            "teologie"
+            "teologie",
+            "stiintele-educatiei",
+            "sociologie-asistenta-sociala"
         ],
-        "about": "Universitate privată adventistă de lângă București, cu Facultatea de Teologie și Științe Sociale. Licența în teologie adventistă pastorală se predă în limba română.",
+        "about": "Universitate privată adventistă de lângă București, cu Facultatea de Teologie și Științe Sociale. Are licențe în teologie adventistă pastorală, asistență socială, pedagogia învățământului primar și educație timpurie, toate în limba română.",
         "prestige": "national",
         "budget": "mic",
         "budgetNote": "Taxa de școlarizare se plătește; nu există locuri la buget.",
         "admissionTypes": [
-            "dosar",
+            "interviu",
+            "examen",
             "bac"
         ],
-        "admission": "Admiterea se face pe baza dosarului și a mediei de la bacalaureat. Fiind o școală confesională, întreabă ce se mai cere în plus.",
-        "scholarships": false,
-        "scholarshipsNote": "Întreabă la secretariat ce burse sau sprijin există.",
-        "dorms": false,
-        "dormsNote": "Întreabă la admitere dacă există cazare în campus.",
+        "admission": "La toate programele este întâi un interviu eliminatoriu. La Teologie dai apoi probe la cunoștințe biblice, limba română și limba engleză și trebuie să fii membru botezat al Bisericii Adventiste; la Asistență socială și la Pedagogie contează media de la bacalaureat.",
+        "scholarships": true,
+        "scholarshipsNote": "Universitatea acordă burse de studiu, de merit și sociale; studenții de la Teologie susținuți de Conferința din care fac parte nu plătesc taxa de studii.",
+        "dorms": true,
+        "dormsNote": "Are cămine studențești și cantină în campus; cazarea și masa se plătesc.",
         "certificates": [
-            "bac"
+            "bac",
+            "medical",
+            "recomandari"
         ],
         "pros": [
             "Comunitate mică și unită, într-un loc liniștit",
@@ -3480,7 +3824,7 @@
         "cons": [
             "Plătești taxă de școlarizare",
             "Se potrivește mai ales celor din comunitatea adventistă",
-            "Un singur domeniu și foarte puține locuri"
+            "Doar patru programe de licență"
         ]
     },
     {
@@ -3499,13 +3843,14 @@
         "budgetNote": "Locurile sunt la buget, deci nu plătești taxă de școlarizare; dacă renunți pe parcurs, contractul de studii prevede că dai înapoi cheltuielile de întreținere și de instruire.",
         "admissionTypes": [
             "examen",
-            "interviu"
+            "interviu",
+            "bac"
         ],
-        "admission": "Întâi treci printr-o selecție făcută de SRI: interviuri, teste, examinare psihologică, examinare medicală și verificări de securitate. Abia apoi dai concursul de la academie, cu un test de cultură generală și un test de aptitudini; te înscrii din iarnă și există o limită de vârstă.",
+        "admission": "Întâi treci printr-o selecție făcută de SRI: interviuri, teste, examinare psihologică, examinare medicală și verificări de securitate. Abia apoi dai concursul de la academie, cu un test de cultură generală și un test de aptitudini; contează puțin și mediile de la bacalaureat și din liceu. Te înscrii din iarnă și există o limită de vârstă.",
         "scholarships": true,
         "scholarshipsNote": "Ghidul studentului spune că instituția asigură cazarea, masa și echipamentul pentru toți studenții militari.",
         "dorms": true,
-        "dormsNote": "Academia are spații de cazare în campus pentru studenți; în timpul concursului de admitere candidații nu primesc însă cazare.",
+        "dormsNote": "Academia are spații de cazare în campus pentru studenți. Verifică pe site-ul academiei dacă primești cazare și în zilele concursului de admitere.",
         "certificates": [
             "bac",
             "medical"

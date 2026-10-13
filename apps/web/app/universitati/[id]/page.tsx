@@ -11,6 +11,7 @@ import { catalogCountryOfSheet } from "@/lib/catalog";
 import { curriculumLinkFor } from "@/lib/curricula";
 import { testimonialsFor } from "@/lib/testimonials";
 import { domains } from "@/lib/data";
+import { facultiesOf, facultyHref } from "@/lib/faculties";
 import { ADMISSION_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, specializationsFor } from "@/lib/labels";
 import { universities, universityById } from "@/lib/sheets";
 
@@ -76,6 +77,7 @@ export default async function UniversityPage({ params }: Props) {
   const faculties = u.faculties ?? [];
   const programCount = faculties.reduce((n, f) => n + f.programs.length, 0);
   const opinions = testimonialsFor(u.id);
+  const facultySheets = facultiesOf(u.id).sort((a, b) => a.name.localeCompare(b.name, "ro"));
   const anchors: [string, string][] = [
     ["admitere", "Admitere"],
     ["costuri", "Costuri"],
@@ -204,7 +206,32 @@ export default async function UniversityPage({ params }: Props) {
               />
             </Section>
           )}
-          {catalog && <OfficialPrograms institutionId={u.id} city={u.city} sourceLabel={catalog.source.attribution} year={catalog.source.year} hasCapacity={catalog.cc === "RO"} />}
+          {facultySheets.length > 0 && (
+            <Section title="Fișe de facultăți">
+              <p className="text-sm">
+                Pentru {facultySheets.length === 1 ? "o facultate" : `${facultySheets.length} facultăți`} avem fișă proprie: ce studiezi acolo, cum intri și linkurile oficiale.
+              </p>
+              <ul className="mt-2 grid gap-2 sm:grid-cols-2" data-faculty-sheets>
+                {facultySheets.map((f) => (
+                  <li key={f.name}>
+                    <Link href={facultyHref(f)} className="flex min-h-11 items-center rounded-2xl bg-paper px-4 py-2 text-sm font-bold text-ink ring-1 ring-line transition hover:ring-primary/50">
+                      {f.name} →
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </Section>
+          )}
+          {catalog && (
+            <OfficialPrograms
+              institutionId={u.id}
+              city={u.city}
+              sourceLabel={catalog.source.attribution}
+              year={catalog.source.year}
+              hasCapacity={catalog.cc === "RO"}
+              facultyLinks={Object.fromEntries(facultySheets.map((f) => [f.name, facultyHref(f)]))}
+            />
+          )}
           {!catalog && faculties.length > 0 && (
             <Section title="Facultăți și specializări">
               <p className="text-sm text-ink-soft">

@@ -92,6 +92,21 @@ export type UniversitySummary = Omit<University, "about" | "budgetNote" | "admis
 /** One faculty of a university with its bachelor (licență) study programmes, official names. */
 export type Faculty = { name: string; programs: string[] };
 
+/** A profile sheet of one Romanian faculty, written from its official website. `name` is exactly the faculty name of the official programme list, so the sheet finds its programmes. */
+export type FacultySheet = {
+  universityId: string; // id of the university sheet (and of the catalogue institution)
+  name: string;
+  about: string; // 2-3 sentences: what you study there
+  admissionTypes: AdmissionType[];
+  admission: string; // 1-2 sentences: how you get in, without averages, places or dates
+  examSubjects?: string[]; // subjects of the entrance exam, when the official page names them
+  website: string;
+  admissionUrl?: string;
+  curriculumUrl?: string;
+  address?: string;
+  sources: string[]; // official pages the sheet was written from
+};
+
 /** A bachelor specialization inside a study domain, e.g. "Finanțe și bănci" inside "economie-finante". */
 export type Specialization = {
   id: string;

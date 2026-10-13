@@ -5,13 +5,16 @@
     "https://www.animv.ro/licenta/",
     "https://www.animv.ro/intrebari-frecvente/",
     "https://www.animv.ro/wp-content/uploads/2023/10/manag_calit-2023-Ghidul-studentului-anul-universitar-2023-2024.pdf",
-    "https://www.sri.ro/cariere"
+    "https://www.sri.ro/cariere",
+    "https://www.animv.ro/wp-content/uploads/2026/03/Metodologia-de-organizare-si-desfasurare-a-concursului-de-admitere-la-studiile-universitare-de-licenta-din-ANIMV-.pdf",
+    "https://www.sri.ro/fisiere/ghid/ghidul_candidatului_2023.pdf"
   ],
   "itb-bucuresti": [
     "https://www.itb.ro",
     "https://itb.ro/admitere-zi/",
     "https://itb.ro/burse/",
-    "https://itb.ro/campus/"
+    "https://itb.ro/campus/",
+    "https://itb.ro"
   ],
   "itp-bucuresti": [
     "https://www.itpbucuresti.ro",
@@ -22,7 +25,11 @@
     "https://www.ubv.ro",
     "https://www.ubv.ro/diversepdf/REGULAMENT_ADMITERE_UBV_2026-2027.pdf",
     "https://www.ubv.ro/taxe-si-facilitati-drept-l.html",
-    "https://www.ubv.ro/facilitati.html"
+    "https://www.ubv.ro/facilitati.html",
+    "https://www.ubv.ro/prezentare-ubv.html",
+    "https://www.ubv.ro/diversepdf/Pachet_de_facilitati_taxe.pdf",
+    "https://www.ubv.ro/diversepdf/Regulament_de_acordare_al_burselor_si_altor_forme_de_sprijin_material_pentru_studenti.pdf",
+    "https://www.ubv.ro/diversepdf/LISTA_FACILIT%C4%82%C8%9AILOR_DE_CARE_STUDEN%C8%9AII_BENEFICIAZ%C4%82.pdf"
   ],
   "itp-cluj": [
     "https://proteo.hu",
@@ -46,13 +53,18 @@
   ],
   "timotheus": [
     "https://www.timotheus.ro",
-    "https://timotheus.ro/admitere"
+    "https://timotheus.ro/admitere",
+    "https://timotheus.ro/",
+    "https://timotheus.ro/actul-de-infiintare/",
+    "http://timotheus.ro/wp-content/uploads/2026/09/Anunt-Admitere-Institutul-Teologic-Timotheus-LICENTA-2026-VARA-TOAMNA.pdf",
+    "http://timotheus.ro/wp-content/uploads/2017/11/Anexa-R19-Regulament-de-acordare-a-burselor-si-sponsorizarilor.pdf"
   ],
   "ioan-slavici": [
     "https://www.islavici.ro",
     "https://islavici.ro/admitere/",
     "https://islavici.ro/servicii-sociale-si-burse/",
-    "https://islavici.ro/cazare-si-masa/"
+    "https://islavici.ro/cazare-si-masa/",
+    "https://islavici.ro"
   ],
   "tilburg-university": [
     "https://www.tilburguniversity.edu/education/bachelors-programs",
@@ -1799,5 +1811,612 @@
     "https://university.parisnanterre.fr/welcome-desk/accommodation",
     "https://formations.parisnanterre.fr/fr/formations-2026-2027/licences-et-but-1.html",
     "https://www.campusfrance.org/en/tuition-fees-France"
+  ],
+  "unibuc": [
+    "https://unibuc.ro/despre-ub/",
+    "https://unibuc.ro/despre-ub/istoric/repere-istorice/",
+    "https://admitere.unibuc.ro/",
+    "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+    "https://unibuc.ro/student-ub/burse/",
+    "https://unibuc.ro/student-ub/campus/",
+    "https://unibuc.ro/student-ub/campus/metodologie-si-reguli-de-cazare/"
+  ],
+  "upb": [
+    "https://upb.ro",
+    "https://upb.ro/istoric-upb/",
+    "https://upb.ro/admitere/",
+    "https://admitere.pub.ro/Admitere/site/alegeCentru",
+    "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+    "https://upb.ro/camine/",
+    "https://upb.ro/oferta-burse/"
+  ],
+  "ase-bucuresti": [
+    "https://www.ase.ro",
+    "https://ase.ro/universitatea/despre-ase/",
+    "https://www.ase.ro/admitere/licenta/",
+    "https://admitere.ase.ro/licenta-2026/info-admitere/Modalitate_concurs_admitere_2026.pdf",
+    "https://www.ase.ro/studenti/burse/",
+    "https://cazare.ase.ro"
+  ],
+  "umf-carol-davila": [
+    "https://umfcd.ro",
+    "https://umfcd.ro/despre-umfcd/",
+    "https://umfcd.ro/despre-umfcd/managementul-calitatii/umfcd-in-cifre/",
+    "https://umfcd.ro/admitere-la-studii-universitare-de-licenta-in-cadrul-umfcd-pentru-anul-universitar-2026-2027/",
+    "https://umfcd.ro/wp-content/uploads/2026/ADMITERE_2026/REGULAMENTUL_DE_ADMITERE/UMFCD_Regulament%20admitere%20licenta%202026_SENAT%2022.01.2026.pdf",
+    "https://umfcd.ro/studenti/servicii-sociale/cazare-tabere-burse-decont-transport/cazare/",
+    "https://umfcd.ro/studenti/servicii-sociale/cazare-tabere-burse-decont-transport/burse/"
+  ],
+  "snspa": [
+    "https://snspa.ro",
+    "https://snspa.ro/snspa/despre-noi/",
+    "https://snspa.ro/admitere/licenta/",
+    "https://admitere.snspa.ro/",
+    "https://admitere.snspa.ro/admitere/conditiile-de-admitere/licenta/",
+    "https://snspa.ro/studenti/",
+    "https://snspa.ro/studenti/burse/",
+    "https://snspa.ro/studenti/cazare/"
+  ],
+  "uauim": [
+    "https://www.uauim.ro",
+    "https://www.uauim.ro/universitatea/istoric/",
+    "https://admitere.uauim.ro/",
+    "https://admitere.uauim.ro/f/2/Regulament%20admitere%20UAUIM%202026.pdf",
+    "https://www.uauim.ro/anunturi/cazari-2026-2027/",
+    "https://www.uauim.ro/anunturi/burse-uauim-2026-2027/"
+  ],
+  "utcb": [
+    "https://utcb.ro",
+    "https://utcb.ro/descopera/istoric/",
+    "https://utcb.ro/admitere/",
+    "https://admitere.utcb.ro/",
+    "https://utcb.ro/descopera/pagina-studentilor/cazare/",
+    "https://utcb.ro/descopera/pagina-studentilor/burse/"
+  ],
+  "usamv-bucuresti": [
+    "https://www.usamv.ro",
+    "https://usamv.ro/prezentare/",
+    "https://www.usamv.ro/admitere/",
+    "https://fmvb.ro/admitere/",
+    "https://usamv.ro/camine/",
+    "https://usamv.ro/burse/"
+  ],
+  "unatc": [
+    "https://unatc.ro/devunatc/",
+    "https://unatc.ro/devunatc/despre-universitate/",
+    "https://admitere.unatc.ro/",
+    "https://admitere.unatc.ro/programe-de-licenta/",
+    "https://admitere.unatc.ro/actorie/",
+    "https://admitere.unatc.ro/regie-de-film-si-tv/",
+    "https://student.unatc.ro",
+    "https://student.unatc.ro/camin/"
+  ],
+  "unmb": [
+    "https://unmb.ro/admitere/",
+    "https://www.unmb.ro/oferta-educationala/licenta-facultatea-de-interpretare-muzicala/admitere-studii-de-licenta-fim/",
+    "https://www.unmb.ro/wp-content/uploads/2026/03/Metodologie-admitere-Licenta-FIM-2026.pdf",
+    "https://www.unmb.ro/oferta-educationala/licenta-fcmpm/admitere-studii-licenta-fcmpm/",
+    "https://www.unmb.ro/wp-content/uploads/2026/03/Metodologia_concursului_admitere_licenta_2026-2027-.pdf",
+    "https://www.unmb.ro/campus-unmb/camin-studentesc/",
+    "https://www.unmb.ro/studenti/burse/"
+  ],
+  "unarte": [
+    "https://www.unarte.org",
+    "https://unarte.org/admitere/",
+    "https://unarte.org/wp-content/uploads/2026/02/Regulament-Admitere-Licenta_2026–2027.pdf",
+    "https://unarte.org/studenti-c/",
+    "https://unarte.org/studenti-d/"
+  ],
+  "unefs": [
+    "https://unefs.ro",
+    "https://admitere.unefs.ro",
+    "https://admitere.unefs.ro/licenta",
+    "https://admitere.unefs.ro/informatii-utile",
+    "https://admitere.unefs.ro/storage/methodologies/M-AD-03-12-01.pdf",
+    "https://admitere.unefs.ro/storage/methodologies/M-AD-04-13.pdf"
+  ],
+  "academia-politie": [
+    "https://www.academiadepolitie.ro",
+    "https://academiadepolitie.ro/despre-noi/",
+    "https://admitere.academiadepolitie.ro/",
+    "https://admitere.academiadepolitie.ro/docs/2026/licenta/Regulament-admitere-licenta-2026-actualizare-18-01-2026.pdf",
+    "https://admitere.academiadepolitie.ro/docs/2026/licenta/Oferta-educationala-Facutatea-de-Politie-licenta-2026.pdf"
+  ],
+  "atm": [
+    "https://www.mta.ro",
+    "https://mta.ro/about-us",
+    "https://mta.ro/admitere",
+    "https://mta.ro/wp-content/uploads/2025/11/Regulament_Admitere_ATM_2026-Site.pdf",
+    "https://mta.ro/facultatea-a",
+    "https://mta.ro/facilitati",
+    "https://mta.ro/burse"
+  ],
+  "ubb-cluj": [
+    "https://www.ubbcluj.ro/ro/",
+    "https://www.ubbcluj.ro/ro/despre/prezentare/",
+    "https://www.ubbcluj.ro/ro/despre/",
+    "https://www.ubbcluj.ro/ro/facultati/",
+    "https://infoadmitere.ubbcluj.ro/ro/",
+    "https://infoadmitere.ubbcluj.ro/ro/licenta",
+    "https://infoadmitere.ubbcluj.ro/ro/licenta/drept",
+    "https://infoadmitere.ubbcluj.ro/ro/licenta/litere"
+  ],
+  "utcn": [
+    "https://www.utcluj.ro",
+    "https://utcluj.ro/student-la-utcn/facultati",
+    "https://utcluj.ro/admitere/admitere-licenta",
+    "https://admitereonline.utcluj.ro/",
+    "https://admitereonline.utcluj.ro/intrebari-frecvente/",
+    "https://admitereonline.utcluj.ro/facultatea-de-automatica-si-calculatoare/",
+    "https://admitereonline.utcluj.ro/facultatea-de-constructii/",
+    "https://admitereonline.utcluj.ro/facultatea-de-arhitectura-si-urbanism/"
+  ],
+  "umf-cluj": [
+    "https://www.umfcluj.ro",
+    "https://umfcluj.ro/programe-de-studii/admitere-licenta/",
+    "https://umfcluj.ro/programe-studii/admitere-licenta/admitere-iulie-2026/",
+    "https://umfcluj.ro/studenti/burse/",
+    "https://umfcluj.ro/universitate/despre-noi/harta-campus/"
+  ],
+  "usamv-cluj": [
+    "https://www.usamvcluj.ro/",
+    "https://admitere.usamvcluj.ro/",
+    "https://admitere.usamvcluj.ro/studii-de-licenta/probe-de-concurs-licenta/",
+    "https://admitere.usamvcluj.ro/studii-de-licenta/dosar-de-concurs-licenta/",
+    "https://admitere.usamvcluj.ro/facilitati/spatii-de-cazare/",
+    "https://www.usamvcluj.ro/burse/",
+    "https://www.usamvcluj.ro/cazare-studenti/"
+  ],
+  "uad-cluj": [
+    "https://www.uad.ro",
+    "https://uad.ro/admitere/",
+    "https://uad.ro/admitere/licenta/index.htm",
+    "https://uad.ro/admitere/licenta/ghid/",
+    "https://uad.ro/studenti/cazare/",
+    "https://uad.ro/studenti/burse/"
+  ],
+  "amgd-cluj": [
+    "https://anmgd.ro",
+    "https://anmgd.ro/admitere/",
+    "https://anmgd.ro/admitere/licenta/facultatea-de-interpretare-muzicala/",
+    "https://anmgd.ro/admitere/licenta/facultatea-teoretica/",
+    "https://anmgd.ro/wp-content/uploads/2024/06/Regulament-admitere-licenta-FIM-2026-AK.pdf",
+    "https://anmgd.ro/studenti/student-life-anmgd/cazare/",
+    "https://anmgd.ro/studenti/student-life-anmgd/burse/"
+  ],
+  "uaic": [
+    "https://www.uaic.ro/despre-uaic/",
+    "https://www.uaic.ro/studii/facultati-2/",
+    "https://admitere.uaic.ro",
+    "https://admitere.uaic.ro/admitere-licenta/",
+    "https://admitere.uaic.ro/intrebari-frecvente/",
+    "https://admitere.uaic.ro/avada_portfolio/informatica-admitere-licenta-nou/?portfolioCats=9",
+    "https://admitere.uaic.ro/avada_portfolio/litere-admitere-licenta/?portfolioCats=9",
+    "https://admitere.uaic.ro/avada_portfolio/drept-admitere-licenta/?portfolioCats=9"
+  ],
+  "tuiasi": [
+    "https://www.tuiasi.ro",
+    "https://www.tuiasi.ro/licenta/metode-de-selectie/",
+    "https://www.tuiasi.ro/licenta/dosarul-de-inscriere/",
+    "https://www.tuiasi.ro/studenti/burse/",
+    "http://campus.tuiasi.ro/"
+  ],
+  "umf-iasi": [
+    "https://www.umfiasi.ro",
+    "https://www.umfiasi.ro/ro/admitere/Pagini/default.aspx",
+    "https://www.umfiasi.ro/ro/admitere/program-de-licenta/Pagini/2026/Concurs-de-admitere-prin-probă-scrisă.aspx",
+    "https://www.umfiasi.ro/en/admission/Pages/Admission-2026.aspx",
+    "https://www.umfiasi.ro/ro/academic/Pagini/Burse.aspx",
+    "https://www.umfiasi.ro/ro/academic/programe-de-studii/licenta/Pagini/default.aspx"
+  ],
+  "iuls": [
+    "https://iuls.ro",
+    "https://admitere.iuls.ro",
+    "https://admitere.iuls.ro/conditii-de-admitere-licenta",
+    "https://admitere.iuls.ro/acte-necesare-licenta",
+    "https://admitere.iuls.ro/wp-content/uploads/2025/12/Metodologie-admitere_RO_2026-2027_M-05-IULS.pdf",
+    "https://iuls.ro/studenti/cazare/",
+    "https://iuls.ro/studenti/burse-de-merit-si-sociale/"
+  ],
+  "arte-iasi": [
+    "https://www.arteiasi.ro",
+    "https://www.arteiasi.ro/arte1/admitere/",
+    "https://www.arteiasi.ro/admitere/licenta-muzica/",
+    "https://www.arteiasi.ro/admitere/licenta-arte-vizuale-si-design",
+    "https://www.arteiasi.ro/admitere/licenta-teatru/",
+    "https://www.arteiasi.ro/studenti/cazare-unage/",
+    "https://www.arteiasi.ro/studenti/burse-unage/"
+  ],
+  "uvt": [
+    "https://www.uvt.ro",
+    "https://uvt.ro/educatie/studii-la-uvt/studii-universitare-de-licenta/",
+    "https://admitere.uvt.ro/",
+    "https://admitere.uvt.ro/wp-content/uploads/2026/01/Regulament-admitere-licenta-UVT-2026.pdf",
+    "https://admitere.uvt.ro/procesul-de-admitere/acte-necesare/",
+    "https://uvt.ro/educatie/facilitati-pentru-studenti/burse/",
+    "https://uvt.ro/educatie/campus-uvt/cazare-in-caminele-uvt/"
+  ],
+  "upt": [
+    "https://www.upt.ro",
+    "https://www.upt.ro/admitere",
+    "https://www.upt.ro/admitere/licenta",
+    "https://www.upt.ro/admitere/licenta/ghid",
+    "https://media.upt.ro/admitere_UPT_licenta_2026_Anexa_1_domenii_tip_concurs_formule_medie.pdf.pdf",
+    "https://www.upt.ro/admitere/licenta/documente",
+    "https://www.upt.ro/studenti/beneficii/burse",
+    "https://www.upt.ro/studenti/beneficii/camine"
+  ],
+  "umft": [
+    "https://www.umft.ro",
+    "https://www.umft.ro/ro/category/admitere/programe-de-licenta/",
+    "https://www.umft.ro/ro/admitere-ciclul-licenta-2026/",
+    "https://www.umft.ro/wp-content/uploads/2026/02/3.-Probe-concurs-admitere-tip-I-II-III-2026.pdf",
+    "https://www.umft.ro/wp-content/uploads/2026/06/5.-Acte-necesare-admitere-tip-I-si-II-2026-05.06.2026.pdf",
+    "https://www.umft.ro/ro/facultati/facultatea-de-medicina/fm_oferta_programe-de-studii/",
+    "https://www.umft.ro/ro/facultati/fmd_facultatea-de-medicina-dentara/fmd_oferta_programe-de-studii/",
+    "https://www.umft.ro/ro/facultati/ff_facultatea-de-farmacie/ff_oferta_programe-de-studii/"
+  ],
+  "usvt": [
+    "https://www.usvt.ro",
+    "https://www.usvt.ro/ro/admitere",
+    "https://www.usvt.ro/ro/admitere/organizarea-si-desfasurarea-admiterii",
+    "https://www.usvt.ro/ro/campus",
+    "https://usvt.ro/cazari",
+    "https://usvt.ro/despre",
+    "https://usvt.ro/faculties/facultatea-de-medicina-veterinara"
+  ],
+  "unitbv": [
+    "https://www.unitbv.ro",
+    "https://admitere.unitbv.ro",
+    "https://admitere.unitbv.ro/images/Metodologia_admitere_25.02.2026.pdf",
+    "https://admitere.unitbv.ro/licenta-facultati.html",
+    "https://admitere.unitbv.ro/informatii-licenta/facultatea-de-medicina/conditii-de-admitere.html",
+    "https://admitere.unitbv.ro/informatii-licenta/facultatea-de-muzica/conditii-de-admitere.html",
+    "https://admitere.unitbv.ro/informatii-licenta/facultatea-de-inginerie-mecanica/conditii-de-admitere.html",
+    "https://www.unitbv.ro/studenti/administrative/burse-transport-si-alte-facilitati.html"
+  ],
+  "ucv": [
+    "https://www.ucv.ro",
+    "https://www.ucv.ro/admitere/",
+    "https://www.ucv.ro/pdf/admitere/2026/UCv_Conditii_admitere_LICENTA_2026-2027-rev-20-aprilie.pdf",
+    "https://www.ucv.ro/admitere/romani/acte_inscriere_online.php",
+    "https://www.ucv.ro/campus/camine/descriere.php",
+    "https://www.ucv.ro/studenti/burse_studentesti/",
+    "https://www.ucv.ro/studenti/burse_studentesti/detalii_burse.php"
+  ],
+  "umf-craiova": [
+    "https://umfcv.ro",
+    "https://umfcv.ro/ro/admitere/admitere-licenta-2026",
+    "https://umfcv.ro/ro/admitere/admitere-licenta-2026/discipline-de-concurs",
+    "https://umfcv.ro/ro/admitere/admitere-licenta-2026/acte-necesare-pentru-inscrierea-in-platforma-de-admitere-2026",
+    "https://umfcv.ro/ro/despre-noi/informatii-despre-viata-studenteasca/burse-2025",
+    "https://umfcv.ro/ro/despre-noi/informatii-despre-viata-studenteasca/cazare"
+  ],
+  "ovidius": [
+    "https://www.univ-ovidius.ro",
+    "https://admitere.univ-ovidius.ro",
+    "https://admitere.univ-ovidius.ro/home/criterii-de-admitere-si-taxe-de-scolarizare/",
+    "https://admitere.univ-ovidius.ro/home/dosarul-de-inscriere/",
+    "https://admitere.univ-ovidius.ro/licenta/",
+    "https://admitere.univ-ovidius.ro/facultati/facultatea-de-medicina/fm-licenta",
+    "https://admitere.univ-ovidius.ro/facultati/facultatea-de-arte/fa-licenta",
+    "https://admitere.univ-ovidius.ro/facultati/facultatea-de-litere/fl-licenta"
+  ],
+  "umc": [
+    "https://cmu-edu.eu",
+    "https://cmu-edu.eu/admitere/",
+    "https://cmu-edu.eu/admitere-studii-licenta/",
+    "https://cmu-edu.eu/camine-studentesti/",
+    "https://cmu-edu.eu/burse/"
+  ],
+  "anmb": [
+    "https://www.anmb.ro",
+    "https://www.anmb.ro/ro/files/admitere/admitere.html",
+    "https://www.anmb.ro/ro/files/admitere/admitere_licenta_civili.html",
+    "https://www.anmb.ro/ro/files/admitere/admitere_licenta_militari.html",
+    "https://www.anmb.ro/ro/files/admitere/admitere_regulament.html",
+    "https://www.anmb.ro/ro/files/admitere/2026/ROA/ROA_2026.pdf",
+    "https://www.anmb.ro/ro/files/admitere/2026/ROA/Anexa%202%20ProbeConcurs.pdf",
+    "https://www.anmb.ro/ro/files/studenti/burse/burse_studiu.html"
+  ],
+  "ulbs": [
+    "https://www.ulbsibiu.ro",
+    "https://admitere.ulbsibiu.ro/",
+    "https://admitere.ulbsibiu.ro/articol/71/cum-se-stabilesc-rezultatele",
+    "https://admitere.ulbsibiu.ro/articol/68/ce-acte-imi-sunt-necesare-",
+    "https://admitere.ulbsibiu.ro/articol/84/facultatea-de-medicina",
+    "https://admitere.ulbsibiu.ro/articol/80/facultatea-de-litere-i-arte",
+    "https://admitere.ulbsibiu.ro/articol/63/regulament-si-hotarari",
+    "https://senat.ulbsibiu.ro/wp-content/uploads/041225/2_Regulament%20_ULBS_ADMITERE_2026_2027.pdf"
+  ],
+  "ugal": [
+    "https://www.ugal.ro",
+    "https://admitere.ugal.ro"
+  ],
+  "uoradea": [
+    "https://www.uoradea.ro",
+    "https://admitere.uoradea.ro/ro/",
+    "https://admitere.uoradea.ro/ro/licenta/ghidul-admiterii-licenta",
+    "https://admitere.uoradea.ro/ro/licenta/regulamentul-organizarii-admiterii",
+    "https://www.uoradea.ro/info-studenti/burse/",
+    "https://www.uoradea.ro/info-studenti/cazari-in-caminele-studentesti/"
+  ],
+  "umfst": [
+    "https://www.umfst.ro",
+    "https://adminfo.umfst.ro/",
+    "https://adminfo.umfst.ro/metodologii/",
+    "https://adminfo.umfst.ro/tematica-si-bibliografie-2026/",
+    "https://adminfo.umfst.ro/medicina/",
+    "https://adminfo.umfst.ro/inginerie2/",
+    "https://umfst.ro/student/burse/tipuri-si-cuantumuri-burse/",
+    "https://umfst.ro/student/programe-sociale/subventii-de-cazare/"
+  ],
+  "usv-suceava": [
+    "https://www.usv.ro",
+    "https://admitere.usv.ro/",
+    "https://admitere.usv.ro/admitere-2026/programe-de-studii-numar-locuri-probe-concurs-admitere-2026/",
+    "https://admitere.usv.ro/admitere-2026/criterii-specifice-admitere-2026/",
+    "https://admitere.usv.ro/admitere-2026/acte-necesare-la-admitere-2026/",
+    "https://admitere.usv.ro/admitere-2026/regulament-admitere-2026/",
+    "https://usv.ro/fisiere_utilizator/file/admitere/2026/info/criterii_specifice/FEFS%20Criterii%20Specifice%20ADMITERE%202026.pdf",
+    "https://usv.ro/fisiere_utilizator/file/admitere/2026/info/criterii_specifice/FIESC%20Criterii%20Specifice%20ADMITERE%202026.pdf"
+  ],
+  "upg": [
+    "https://www.upg-ploiesti.ro",
+    "https://www.upg-ploiesti.ro/index.php/licenta-2026/",
+    "https://www.upg-ploiesti.ro/wp-content/uploads/2026/02/R-04-01-METODOLOGIA-DE-ORGANIZARE-SI-DESFASURARE-A-CONCURSULUI-DE-ADMITERE-LA-STUDII-UNIVERSITARE-DE-LICENTA-2026-1.pdf",
+    "https://www.upg-ploiesti.ro/wp-content/uploads/2026/04/acte-lic-2026.pdf",
+    "https://www.upg-ploiesti.ro/index.php/burse/",
+    "https://www.upg-ploiesti.ro/index.php/camine-studentesti/"
+  ],
+  "uab": [
+    "https://www.uab.ro",
+    "https://uab.ro/postari/372-admitere-licenta-home/",
+    "https://uab.ro/postari/91-admitere-licenta-programe-de-studii-si-criterii-de-selectie/",
+    "https://uab.ro/postari/82-admitere-licenta-documente-necesare-pentru-inscrierea-online/",
+    "https://cazari.uab.ro"
+  ],
+  "valahia": [
+    "https://www.valahia.ro",
+    "https://admitere.valahia.ro/",
+    "https://admitere.valahia.ro/articol/152/metodologie-i-criterii-admiteredepartajare",
+    "https://admitere.valahia.ro/articol/34/documente-pentru-nscriere",
+    "https://www.valahia.ro/studenti/camine-studentesti/",
+    "https://www.valahia.ro/studenti/burse/"
+  ],
+  "ub-bacau": [
+    "https://www.ub.ro",
+    "https://www.ub.ro/admitere-2026",
+    "https://www.ub.ro/storage/1785504264R-05-12_23.2_13746_A.pdf",
+    "https://www.ub.ro/camine-studentesti"
+  ],
+  "uav-arad": [
+    "https://www.uav.ro",
+    "https://www.uav.ro/universitate/admitere",
+    "https://admitere.uav.ro/",
+    "https://admitere.uav.ro/informatii-admitere",
+    "https://www.uav.ro/universitate/organizare/documente-interne/procesul-de-învățământ/admitere-licență-și-master",
+    "https://cdn.uav.ro/documente/Universitate/Calitate/Regulamente-Metodologii-Proceduri-Formulare/Regulamente/Regulament-privind-organizarea-și-desfășurarea-concursului-de-admitere-în-ciclurile-de-studii-universitare-de-licență-și-master.pdf",
+    "https://studenti.uav.ro",
+    "https://studenti.uav.ro/informatii-studenti/burse"
+  ],
+  "utgjiu": [
+    "https://www.utgjiu.ro",
+    "https://admitere.utgjiu.ro/",
+    "https://admitere.utgjiu.ro/facultati/",
+    "https://admitere.utgjiu.ro/facultati/fi/",
+    "https://admitere.utgjiu.ro/facultati/fsedap/",
+    "https://admitere.utgjiu.ro/facultati/fsmc/",
+    "https://admitere.utgjiu.ro/programe-studii/licenta/",
+    "https://admitere.utgjiu.ro/proces-admitere/acte-necesare/"
+  ],
+  "upet": [
+    "https://www.upet.ro",
+    "https://www.upet.ro/admitere/licenta/",
+    "https://www.upet.ro/camine/",
+    "https://www.upet.ro/studenti-upet/burse/"
+  ],
+  "aft-sibiu": [
+    "https://www.armyacademy.ro",
+    "https://www.armyacademy.ro/admitere_licenta.php",
+    "https://www.armyacademy.ro/admitere_aft.php",
+    "https://www.armyacademy.ro/admitere/licenta/2026/Ghid_candidat_2026.pdf",
+    "https://www.armyacademy.ro/admitere/licenta/2026/anunt_cifra_scolarizare.pdf",
+    "https://www.armyacademy.ro/fsea.php"
+  ],
+  "uat-tgmures": [
+    "https://www.uat.ro",
+    "https://www.uat.ro/facultati-si-programe-de-studiu",
+    "https://www.uat.ro/admitere/licenta",
+    "https://www.uat.ro/admitere/regulament",
+    "https://www.uat.ro/admitere/licenta/papusi-marionete",
+    "https://www.uat.ro/admitere/licenta/comunicare-audiovizuala-scenaristica-publicitate-media",
+    "https://www.uat.ro/fileadmin/user_upload/pdf/Documente/GhidulStudentului25_26.pdf"
+  ],
+  "rau": [
+    "https://www.rau.ro",
+    "https://www.rau.ro/licenta-informatii/",
+    "https://www.rau.ro/istoric/",
+    "https://www.rau.ro/administrare-camin/",
+    "https://www.rau.ro/burse-si-taxe/",
+    "https://www.rau.ro/locuri-fara-taxa/",
+    "https://www.rau.ro/taxe-de-studii/"
+  ],
+  "utm": [
+    "https://www.utm.ro",
+    "https://www.utm.ro/admitere-2026-1/",
+    "https://www.utm.ro/portal-admitere/",
+    "https://www.utm.ro/admitere-facultatea-de-medicina-2026/",
+    "https://www.utm.ro/camine-studentesti/",
+    "https://www.utm.ro/studenti-facilitati/",
+    "https://www.utm.ro/portal-taxe/taxe-studii/"
+  ],
+  "univnt": [
+    "https://www.univnt.ro",
+    "https://admitere.univnt.ro/",
+    "https://admitere.univnt.ro/admitere/",
+    "https://admitere.univnt.ro/acte-necesare/",
+    "https://admitere.univnt.ro/intrebari-frecvente/",
+    "https://admitere.univnt.ro/facilitati/",
+    "https://admitere.univnt.ro/facultatea-de-drept/studii-universitare-de-licenta/",
+    "https://www.univnt.ro/index.php/camin-studentesc/"
+  ],
+  "ucdc": [
+    "https://www.ucdc.ro",
+    "https://www.ucdc.ro/admitere/",
+    "https://www.ucdc.ro/intrebari-frecvente-admitere-2026/",
+    "https://www.ucdc.ro/en/campus/"
+  ],
+  "spiru-haret": [
+    "https://www.spiruharet.ro",
+    "https://spiruharet.ro/admitere-2026/",
+    "https://spiruharet.ro/facilitati/",
+    "https://spiruharet.ro/data/2025/06/regulament_2025_2026.pdf"
+  ],
+  "sapientia": [
+    "https://www.sapientia.ro",
+    "https://sapientia.ro/hu/felveteli/felveteli-tajekoztato",
+    "https://sapientia.ro/content/Szabalyzatok/HU/Felveteli-szabalyzat_2026.pdf",
+    "https://sapientia.ro/hu/felveteli/szukseges-iratok",
+    "https://sapientia.ro/hu/oktatas/hallgatoknak/osztondijak",
+    "https://ms.sapientia.ro/content/docs/MS/Felveteli/Bentlakás/2025-2026/Bentlakas_szabalyat%2020252026.pdf"
+  ],
+  "uvvg": [
+    "https://www.uvvg.ro",
+    "https://admitere.uvvg.ro/",
+    "https://www.uvvg.ro/hub-student/",
+    "https://uvvg.ro/camin-studentesc/",
+    "https://admitere.uvvg.ro/articol/110/acte-necesare-admitere-20262027",
+    "https://admitere.uvvg.ro/articol/46/facultatea-de-medicina",
+    "https://admitere.uvvg.ro/articol/47/facultatea-de-stomatologie",
+    "https://admitere.uvvg.ro/articol/48/facultatea-de-farmacie"
+  ],
+  "upa-iasi": [
+    "https://www.upa.ro",
+    "https://www.upa.ro/admitere-2026-2027/",
+    "https://www.upa.ro/ghidul-studentilor-pachet-informativ/"
+  ],
+  "hyperion": [
+    "https://www.hyperion.ro",
+    "https://www.hyperion.ro/admitere/licenta",
+    "https://www.hyperion.ro/studenti/cazare-studenti"
+  ],
+  "ueb": [
+    "https://www.ueb.ro",
+    "https://ueb.ro/admitere/",
+    "https://ueb.ro/studenti/informatii-de-interes-public/",
+    "https://efs.ueb.ro/admitere/",
+    "https://psihologie.ueb.ro/admitere/",
+    "https://ueb.ro/universitate/campus/"
+  ],
+  "danubius": [
+    "https://www.univ-danubius.ro",
+    "http://admitere.univ-danubius.ro",
+    "https://univ-danubius.ro/burse-si-premii",
+    "https://admitere.univ-danubius.ro/informatii/beneficii"
+  ],
+  "ucb-pitesti": [
+    "https://www.univcb.ro",
+    "https://www.univcb.ro/formulare/contact",
+    "https://www.univcb.ro/studii-universitare-de-licenta-ucb",
+    "https://www.univcb.ro/domenii-specializari-si-cifra-de-scolarizare-ucb",
+    "https://www.univcb.ro/dosar-de-inscriere",
+    "https://www.univcb.ro/regulament-admitere-ucb",
+    "https://www.univcb.ro/burse-si-taxe",
+    "https://www.univcb.ro/pre-admitere-locuri-fara-taxa"
+  ],
+  "andrei-saguna": [
+    "https://andreisaguna.ro",
+    "https://andreisaguna.ro/admitere/",
+    "https://andreisaguna.ro/studenti/servicii-suport/",
+    "https://andreisaguna.ro/studenti/servicii-suport/cazare/",
+    "https://andreisaguna.ro/info-studenti/taxe-scolarizare/",
+    "https://andreisaguna.ro/erasmus/university-presentation/"
+  ],
+  "george-bacovia": [
+    "https://www.ugb.ro",
+    "https://www.ugb.ro/index.php/studii-2/studii-de-licenta/",
+    "https://admitere.ugb.ro/inscriere-online",
+    "https://admitere.ugb.ro/dosar-de-concurs",
+    "https://admitere.ugb.ro/tot-ce-trebuie-sa-stiu",
+    "https://dsesa.ugb.ro/",
+    "https://www.ugb.ro/index.php/despre-noi/fundatia-bacovia/"
+  ],
+  "emanuel-oradea": [
+    "https://www.emanuel.ro",
+    "https://emanuel.ro/admitere/",
+    "https://emanuel.ro/wp-content/uploads/2025/12/Metodologia-de-admitere-2026.pdf",
+    "https://emanuel.ro/burse/",
+    "https://emanuel.ro/cazare-si-masa/"
+  ],
+  "partium": [
+    "https://partium.ro",
+    "https://partium.ro/hu/egyetem/karok-tanszekek",
+    "https://partium.ro/hu/felveteli/felveteli-tajekoztato",
+    "https://partium.ro/hu/felveteli/beiratkozas/felveteli-szabalyzat",
+    "https://partium.ro/hu/felveteli/beiratkozas/dijak-es-anyakonyvezes",
+    "https://partium.ro/hu/egyetem/hallgatoknak/osztondijak",
+    "https://partium.ro/hu/egyetem/pke-campus/arany-janos-kollegium/a-kollegiumrol"
+  ],
+  "agora-oradea": [
+    "https://www.univagora.ro",
+    "https://www.univagora.ro/admitere/",
+    "https://www.univagora.ro/facultati/studenti/formulare-contracte-taxe-burse/"
+  ],
+  "tibiscus": [
+    "https://tibiscus.ro",
+    "https://tibiscus.ro/admiterea-2026/",
+    "https://tibiscus.ro/facilitati-burse/",
+    "https://tibiscus.ro/facultati/",
+    "https://fp.tibiscus.ro/",
+    "https://fp.tibiscus.ro/admitere-studii-licenta/",
+    "https://fdap.tibiscus.ro/wp-content/uploads/wpfd/preview_files/metodologie-privind-organizarea-si-desfasurarea-concursului-de-admitere-pentru-studii-universitare-de-licenta-si-master-la-facultatea-de-drept-si-administratie-publica-in-anul-universitar-2026-2027(0d7363894acdee742caf7fe4e97c4d49).pdf"
+  ],
+  "apollonia": [
+    "https://www.univapollonia.ro",
+    "https://www.univapollonia.ro/admitere/",
+    "https://www.univapollonia.ro/admitere/regulament/",
+    "https://www.univapollonia.ro/admitere/anunt-admitere/facultatea-de-medicina/",
+    "https://www.univapollonia.ro/admitere/tematica-si-bibliografia/facultatea-de-medicina/",
+    "https://www.univapollonia.ro/admitere/hotararea-senatului-uai/",
+    "https://www.univapollonia.ro/facultati/",
+    "https://www.univapollonia.ro/licenta/"
+  ],
+  "athenaeum": [
+    "https://www.univath.ro",
+    "https://www.univath.ro/facultati/admitere/inscriere-licenta",
+    "https://www.univath.ro/studenti/facilitati/cazare",
+    "https://www.univath.ro/studenti/taxe-universitare",
+    "https://www.univath.ro/despre-noi",
+    "https://www.univath.ro/despre-noi/baza-juridica/metodologii",
+    "https://univath.ro/uploads/pages/18/Metodologie-Admitere-Licenta-2026-2027.pdf"
+  ],
+  "bioterra": [
+    "https://bioterra.ro/index.php",
+    "https://bioterra.ro/admitere.php",
+    "https://bioterra.ro/structura.php",
+    "https://bioterra.ro/complex_universitar.php",
+    "https://bioterra.ro/studenti.php",
+    "https://bioterra.ro/am_prezentare.php",
+    "https://bioterra.ro/docs/2026/Metodologie%20ADMITERE%20licen%C8%9B%C4%83%20%C8%99i%20master%202026-2027%20I.F.docx"
+  ],
+  "artifex": [
+    "https://www.artifex.org.ro",
+    "https://www.artifex.org.ro/admitere/",
+    "https://www.artifex.org.ro/wp-content/uploads/Regulament-privind-organizarea-si-desfasurarea-concursului-de-admitere-la-programele-de-studii-universitare-de-licenta-si-de-masterat-pentru-anul-universitar-2026-2027.pdf",
+    "https://www.artifex.org.ro/camin/",
+    "https://www.artifex.org.ro/facilitati-pentru-studenti/",
+    "https://www.artifex.org.ro/oferta-educationala/prezentare-programe-de-studii-licenta-si-master/",
+    "https://www.artifex.org.ro/wp-content/uploads/Facilitati-pentru-studenti-la-plata-taxelor-de-scolarizare-pentru-anul-universitar-2026-%E2%80%93-2027.pdf"
+  ],
+  "adventus": [
+    "https://uadventus.ro",
+    "https://uadventus.ro/admitere-licenta/",
+    "https://uadventus.ro/admitere-teologie-pastorala-2026/",
+    "https://uadventus.ro/admitere-asistenta-sociala-2026/",
+    "https://uadventus.ro/admitere-pedagogia-invatamantului-primar-2026/",
+    "https://uadventus.ro/admitere/intrebari-frecvente-faq",
+    "https://uadventus.ro/studenti/facilitati/",
+    "https://uadventus.ro/despre-ua/"
   ]
 }

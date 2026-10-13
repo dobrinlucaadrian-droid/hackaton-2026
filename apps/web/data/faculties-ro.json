@@ -1,0 +1,2353 @@
+[
+ {
+  "universityId": "ase-bucuresti",
+  "name": "Facultatea de Administrarea Afacerilor, cu predare în limbi străine",
+  "about": "Înveți cum se conduce și se dezvoltă o afacere, cu toate cursurile într-o limbă străină. Programul Administrarea afacerilor se poate urma în engleză, franceză sau germană.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Contează media de la bacalaureat și media anilor de liceu (bacalaureatul cântărește mai mult), plus un eseu motivațional scris în limba de predare, notat cu admis/respins. Dai și un test de limbă online (admis/respins), dacă nu ai un certificat recunoscut.",
+  "website": "https://www.fabiz.ase.ro/",
+  "admissionUrl": "https://ase.ro/admitere/licenta/",
+  "curriculumUrl": "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=24",
+  "address": "Calea Griviței nr. 2-2A, sector 1, București",
+  "sources": [
+   "https://ase.ro/admitere/licenta/",
+   "https://admitere.ase.ro/licenta-2026/info-admitere/Modalitate_concurs_admitere_2026.pdf",
+   "https://ase.ro/toate-facultatile/",
+   "https://www.fabiz.ase.ro/",
+   "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=24"
+  ]
+ },
+ {
+  "universityId": "ase-bucuresti",
+  "name": "Facultatea de Administrație și Management Public",
+  "about": "Te pregătește pentru munca în instituțiile statului și în primării, dar și pentru lucrul cu oamenii dintr-o organizație. Are două programe de licență: Administrație publică și Resurse umane.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Admiterea se face pe baza mediei de la bacalaureat și a mediei anilor de liceu (bacalaureatul cântărește mai mult), plus un eseu motivațional notat cu admis/respins.",
+  "website": "https://famp.ase.ro/",
+  "admissionUrl": "https://ase.ro/admitere/licenta/",
+  "curriculumUrl": "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=244",
+  "address": "Str. Căderea Bastiliei nr. 2-10, sector 1, București",
+  "sources": [
+   "https://ase.ro/admitere/licenta/",
+   "https://admitere.ase.ro/licenta-2026/info-admitere/Modalitate_concurs_admitere_2026.pdf",
+   "https://ase.ro/toate-facultatile/",
+   "https://famp.ase.ro/",
+   "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=244"
+  ]
+ },
+ {
+  "universityId": "ase-bucuresti",
+  "name": "Facultatea de Business și Turism",
+  "about": "Te pregătește pentru afaceri în comerț, turism și servicii și pentru lucrul cu calitatea produselor. Programul de licență, Administrarea afacerilor în comerț, turism, servicii, merceologie și managementul calității, se face în română sau în engleză.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Admiterea se face pe baza mediei de la bacalaureat și a mediei anilor de liceu (bacalaureatul cântărește mai mult), plus un eseu motivațional notat cu admis/respins. Pentru programele în limbi străine dai și un test de limbă online (admis/respins), dacă nu ai un certificat recunoscut.",
+  "website": "https://bt.ase.ro/",
+  "admissionUrl": "https://ase.ro/admitere/licenta/",
+  "curriculumUrl": "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=17",
+  "address": "Clădirea Mihai Eminescu, Bd. Dacia nr. 41, sector 1, București",
+  "sources": [
+   "https://ase.ro/admitere/licenta/",
+   "https://admitere.ase.ro/licenta-2026/info-admitere/Modalitate_concurs_admitere_2026.pdf",
+   "https://ase.ro/toate-facultatile/",
+   "https://bt.ase.ro/",
+   "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=17"
+  ]
+ },
+ {
+  "universityId": "ase-bucuresti",
+  "name": "Facultatea de Cibernetică, Statistică și Informatică Economică",
+  "about": "Facultatea care îmbină economia cu IT-ul și lucrul cu date. Programele de licență sunt Informatică economică (și în engleză), Cibernetică economică, Statistică economică și data science și Inteligență artificială aplicată în economie și afaceri.",
+  "admissionTypes": [
+   "examen",
+   "bac",
+   "dosar"
+  ],
+  "admission": "Dai un test grilă la matematică, care contează jumătate din media de admitere; cealaltă jumătate vine din media de la bacalaureat și media anilor de liceu. Se cere și un eseu motivațional (admis/respins), iar pentru programul în engleză un test de limbă.",
+  "examSubjects": [
+   "Matematică"
+  ],
+  "website": "https://csie.ase.ro/",
+  "admissionUrl": "https://ase.ro/admitere-csie/",
+  "curriculumUrl": "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=15",
+  "address": "Calea Dorobanți nr. 15-17, sector 1, București",
+  "sources": [
+   "https://ase.ro/admitere/licenta/",
+   "https://admitere.ase.ro/licenta-2026/info-admitere/Modalitate_concurs_admitere_2026.pdf",
+   "https://ase.ro/toate-facultatile/",
+   "https://csie.ase.ro/",
+   "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=15",
+   "https://ase.ro/admitere-csie/"
+  ]
+ },
+ {
+  "universityId": "ase-bucuresti",
+  "name": "Facultatea de Contabilitate și Informatică de Gestiune",
+  "about": "Înveți să ții evidența banilor unei firme, să citești situațiile ei financiare și să folosești programele de calculator făcute pentru asta. Programul Contabilitate și informatică de gestiune se poate urma în română sau în engleză.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Admiterea se face pe baza mediei de la bacalaureat și a mediei anilor de liceu (bacalaureatul cântărește mai mult), plus un eseu motivațional notat cu admis/respins. Pentru programele în limbi străine dai și un test de limbă online (admis/respins), dacă nu ai un certificat recunoscut.",
+  "website": "https://cig.ase.ro/",
+  "admissionUrl": "https://ase.ro/admitere/licenta/",
+  "curriculumUrl": "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=20",
+  "address": "Str. Căderea Bastiliei nr. 2-10, sector 1, București",
+  "sources": [
+   "https://ase.ro/admitere/licenta/",
+   "https://admitere.ase.ro/licenta-2026/info-admitere/Modalitate_concurs_admitere_2026.pdf",
+   "https://ase.ro/toate-facultatile/",
+   "https://cig.ase.ro/",
+   "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=20"
+  ]
+ },
+ {
+  "universityId": "ase-bucuresti",
+  "name": "Facultatea de Drept",
+  "about": "Înveți legile și cum se aplică ele, într-o facultate de drept care face parte dintr-o universitate economică. Programul de licență Drept durează patru ani.",
+  "admissionTypes": [
+   "examen",
+   "dosar"
+  ],
+  "admission": "Dai un test grilă la limba română și economie, iar media de admitere este dată de punctajul la acest test. Se cere și un eseu motivațional, notat cu admis/respins.",
+  "examSubjects": [
+   "Limba română",
+   "Economie"
+  ],
+  "website": "https://drept.ase.ro/",
+  "admissionUrl": "https://ase.ro/admitere-drept/",
+  "curriculumUrl": "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=272",
+  "address": "Piața Romană nr. 6, sector 1, București",
+  "sources": [
+   "https://ase.ro/admitere/licenta/",
+   "https://admitere.ase.ro/licenta-2026/info-admitere/Modalitate_concurs_admitere_2026.pdf",
+   "https://ase.ro/toate-facultatile/",
+   "https://drept.ase.ro/",
+   "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=272",
+   "https://ase.ro/admitere-drept/"
+  ]
+ },
+ {
+  "universityId": "ase-bucuresti",
+  "name": "Facultatea de Economie Agroalimentară și a Mediului",
+  "about": "Studiezi economia aplicată la agricultură, alimentație și protecția mediului. Programul de licență se numește Economie agroalimentară și a mediului și pune accent pe o economie care are grijă de resurse.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Admiterea se face pe baza mediei de la bacalaureat și a mediei anilor de liceu (bacalaureatul cântărește mai mult), plus un eseu motivațional notat cu admis/respins.",
+  "website": "https://eam.ase.ro/",
+  "admissionUrl": "https://ase.ro/admitere/licenta/",
+  "curriculumUrl": "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=18",
+  "address": "Str. Mihail Moxa nr. 5-7, sector 1, București",
+  "sources": [
+   "https://ase.ro/admitere/licenta/",
+   "https://admitere.ase.ro/licenta-2026/info-admitere/Modalitate_concurs_admitere_2026.pdf",
+   "https://ase.ro/toate-facultatile/",
+   "https://eam.ase.ro/",
+   "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=18"
+  ]
+ },
+ {
+  "universityId": "ase-bucuresti",
+  "name": "Facultatea de Economie și Comunicare în Afaceri",
+  "about": "Aici înveți cum funcționează economia și cum se comunică și se negociază în lumea afacerilor. Facultatea are un singur program de licență: Economie și comunicare economică în afaceri.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Admiterea se face pe baza mediei de la bacalaureat și a mediei anilor de liceu (bacalaureatul cântărește mai mult), plus un eseu motivațional notat cu admis/respins.",
+  "website": "https://economie.ase.ro/",
+  "admissionUrl": "https://ase.ro/admitere/licenta/",
+  "curriculumUrl": "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=22",
+  "address": "Calea Dorobanți nr. 15-17, sector 1, București",
+  "sources": [
+   "https://ase.ro/admitere/licenta/",
+   "https://admitere.ase.ro/licenta-2026/info-admitere/Modalitate_concurs_admitere_2026.pdf",
+   "https://ase.ro/toate-facultatile/",
+   "https://economie.ase.ro/",
+   "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=22"
+  ]
+ },
+ {
+  "universityId": "ase-bucuresti",
+  "name": "Facultatea de Finanțe, Asigurări, Bănci și Burse de Valori",
+  "about": "Înveți despre bani, bănci, asigurări, investiții și bursă. Programul de licență Finanțe și bănci se poate urma în română sau în engleză.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Admiterea se face pe baza mediei de la bacalaureat și a mediei anilor de liceu (bacalaureatul cântărește mai mult), plus un eseu motivațional notat cu admis/respins. Pentru programele în limbi străine dai și un test de limbă online (admis/respins), dacă nu ai un certificat recunoscut.",
+  "website": "https://fabbv.ase.ro/",
+  "admissionUrl": "https://ase.ro/admitere/licenta/",
+  "curriculumUrl": "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=21",
+  "address": "Str. Mihail Moxa nr. 5-7, sector 1, București",
+  "sources": [
+   "https://ase.ro/admitere/licenta/",
+   "https://admitere.ase.ro/licenta-2026/info-admitere/Modalitate_concurs_admitere_2026.pdf",
+   "https://ase.ro/toate-facultatile/",
+   "https://fabbv.ase.ro/",
+   "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=21"
+  ]
+ },
+ {
+  "universityId": "ase-bucuresti",
+  "name": "Facultatea de Management",
+  "about": "Înveți cum se organizează și se conduce o firmă sau o echipă. Programul de licență Management se poate urma în română sau în engleză.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Admiterea se face pe baza mediei de la bacalaureat și a mediei anilor de liceu (bacalaureatul cântărește mai mult), plus un eseu motivațional notat cu admis/respins. Pentru programele în limbi străine dai și un test de limbă online (admis/respins), dacă nu ai un certificat recunoscut.",
+  "website": "https://management.ase.ro/",
+  "admissionUrl": "https://ase.ro/admitere/licenta/",
+  "curriculumUrl": "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=19",
+  "address": "Str. Căderea Bastiliei nr. 2-10, sector 1, București",
+  "sources": [
+   "https://ase.ro/admitere/licenta/",
+   "https://admitere.ase.ro/licenta-2026/info-admitere/Modalitate_concurs_admitere_2026.pdf",
+   "https://ase.ro/toate-facultatile/",
+   "https://management.ase.ro/",
+   "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=19"
+  ]
+ },
+ {
+  "universityId": "ase-bucuresti",
+  "name": "Facultatea de Marketing",
+  "about": "Studiezi cum afli ce își doresc clienții și cum promovezi și vinzi un produs sau un serviciu. Programul de licență Marketing se poate urma în română sau în engleză.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Admiterea se face pe baza mediei de la bacalaureat și a mediei anilor de liceu (bacalaureatul cântărește mai mult), plus un eseu motivațional notat cu admis/respins. Pentru programele în limbi străine dai și un test de limbă online (admis/respins), dacă nu ai un certificat recunoscut.",
+  "website": "https://marketing.ase.ro/",
+  "admissionUrl": "https://ase.ro/admitere/licenta/",
+  "curriculumUrl": "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=23",
+  "address": "Clădirea Mihai Eminescu, Bd. Dacia nr. 41, sector 1, București",
+  "sources": [
+   "https://ase.ro/admitere/licenta/",
+   "https://admitere.ase.ro/licenta-2026/info-admitere/Modalitate_concurs_admitere_2026.pdf",
+   "https://ase.ro/toate-facultatile/",
+   "https://marketing.ase.ro/",
+   "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=23"
+  ]
+ },
+ {
+  "universityId": "ase-bucuresti",
+  "name": "Facultatea de Relații Economice Internaționale",
+  "about": "Studiezi comerțul și afacerile dintre țări. Are programul Economie și afaceri internaționale (în română sau în engleză) și programul Limbi moderne aplicate (engleză și franceză), pentru cei care vor să lucreze cu limbile străine în afaceri.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Admiterea se face pe baza mediei de la bacalaureat și a mediei anilor de liceu (bacalaureatul cântărește mai mult), plus un eseu motivațional notat cu admis/respins. Pentru programul în engleză și pentru Limbi moderne aplicate dai și un test de limbă online (admis/respins), dacă nu ai un certificat recunoscut.",
+  "website": "https://rei.ase.ro/",
+  "admissionUrl": "https://ase.ro/admitere/licenta/",
+  "curriculumUrl": "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=16",
+  "address": "Clădirea Mihai Eminescu, Bd. Dacia nr. 41, sector 1, București",
+  "sources": [
+   "https://ase.ro/admitere/licenta/",
+   "https://admitere.ase.ro/licenta-2026/info-admitere/Modalitate_concurs_admitere_2026.pdf",
+   "https://ase.ro/toate-facultatile/",
+   "https://rei.ase.ro/",
+   "https://planinvatamant.ase.ro/SelectiePlan1.aspx?pp=16"
+  ]
+ },
+ {
+  "universityId": "uaic",
+  "name": "Facultatea de Biologie",
+  "about": "Aici studiezi lumea vie: plante, animale, genetică, microbiologie, biochimie și protecția mediului. Poți alege între Biologie, Biochimie și Ecologie și protecția mediului. O parte din practică se face pe teren, la stațiunile facultății, de exemplu la cea marină de la Agigea.",
+  "admissionTypes": [
+   "bac"
+  ],
+  "admission": "Intri pe baza mediei de la bacalaureat, care este toată media de admitere. Nu se dă examen la facultate.",
+  "website": "https://www.bio.uaic.ro/",
+  "admissionUrl": "https://admitere.uaic.ro/avada_portfolio/biology/?portfolioCats=9",
+  "curriculumUrl": "http://www.bio.uaic.ro/?page_id=521",
+  "address": "B-dul Carol I, Nr. 20A, RO-700505 – Iași",
+  "sources": [
+   "https://admitere.uaic.ro/avada_portfolio/biology/?portfolioCats=9",
+   "https://www.uaic.ro/studii/facultati-2/facultatea-de-biologie/",
+   "https://www.bio.uaic.ro/",
+   "http://www.bio.uaic.ro/?page_id=521"
+  ]
+ },
+ {
+  "universityId": "uaic",
+  "name": "Facultatea de Chimie",
+  "about": "Aici înveți chimie, cu multe ore de laborator. Poți alege între Chimie, Chimie medicală și Chimie alimentară. Absolvenții lucrează în laboratoare de analize, în cercetare, în industria farmaceutică și chimică sau ca profesori.",
+  "admissionTypes": [
+   "bac"
+  ],
+  "admission": "Intri pe baza mediei de la bacalaureat, care este toată media de admitere. La medii egale contează nota la Chimie din liceu.",
+  "website": "https://www.chem.uaic.ro/",
+  "admissionUrl": "https://www.chem.uaic.ro/ro/admitere-2026/",
+  "curriculumUrl": "https://www.chem.uaic.ro/ro/programe-studii-facultate/studii-de-licenta.html",
+  "address": "B-dul Carol I, Nr. 11, RO-700506 – Iași",
+  "sources": [
+   "https://admitere.uaic.ro/avada_portfolio/chimie-admitere-licenta/?portfolioCats=9",
+   "https://www.uaic.ro/studii/facultati-2/facultatea-de-chimie/",
+   "https://www.chem.uaic.ro/ro/admitere-2026/",
+   "https://www.chem.uaic.ro/ro/programe-studii-facultate/studii-de-licenta.html",
+   "https://www.chem.uaic.ro/ro/desprefacultate/contacte.html"
+  ]
+ },
+ {
+  "universityId": "uaic",
+  "name": "Facultatea de Drept",
+  "about": "Aici studiezi dreptul: legile, cum funcționează justiția și cum se apără drepturile oamenilor. Facultatea se prezintă drept cea mai veche facultate de drept din România, cu începuturi într-un curs de drept ținut la Iași în 1830. Are cursuri cu frecvență și cu frecvență redusă.",
+  "admissionTypes": [
+   "examen",
+   "bac"
+  ],
+  "admission": "Media de admitere se face jumătate din nota la un test scris de Limba română (trebuie să iei cel puțin 5) și jumătate din media de la bacalaureat.",
+  "examSubjects": [
+   "Limba română"
+  ],
+  "website": "https://laws.uaic.ro/",
+  "admissionUrl": "https://laws.uaic.ro/ro/admitere/admitere-studii-de-licenta/informatii-generale",
+  "curriculumUrl": "https://laws.uaic.ro/ro/studenti/programe-studii",
+  "address": "B-dul Carol I, Nr. 11, RO-700506 – Iași",
+  "sources": [
+   "https://admitere.uaic.ro/avada_portfolio/drept-admitere-licenta/?portfolioCats=9",
+   "https://www.uaic.ro/studii/facultati-2/facultatea-de-drept/",
+   "https://laws.uaic.ro/ro/admitere/admitere-studii-de-licenta/informatii-generale",
+   "https://laws.uaic.ro/ro/studenti/programe-studii"
+  ]
+ },
+ {
+  "universityId": "uaic",
+  "name": "Facultatea de Economie și Administrarea Afacerilor",
+  "about": "Aici studiezi economie și afaceri: contabilitate, finanțe și bănci, management, marketing, informatică economică, afaceri internaționale și administrație publică. Are și un program de administrarea afacerilor predat în limba engleză.",
+  "admissionTypes": [
+   "bac"
+  ],
+  "admission": "Intri pe baza mediei de la bacalaureat, care este toată media de admitere. Pentru programul în limba engleză dai și un test de engleză sau aduci un certificat de limbă recunoscut.",
+  "website": "https://www.feaa.uaic.ro/",
+  "admissionUrl": "https://www.feaa.uaic.ro/admitere-licenta-2/",
+  "curriculumUrl": "https://www.feaa.uaic.ro/programe-de-licenta/planuri-de-invatamant/",
+  "address": "Bulevardul Carol I, Nr. 22, Corp B, RO-700505 – Iași",
+  "sources": [
+   "https://admitere.uaic.ro/avada_portfolio/economie-si-administrarea-afacerilor-admitere-licenta/?portfolioCats=9",
+   "https://www.uaic.ro/studii/facultati-2/facultatea-de-economie-si-administrarea-afacerilor/",
+   "https://www.feaa.uaic.ro/admitere-licenta-2/",
+   "https://www.feaa.uaic.ro/programe-de-licenta/planuri-de-invatamant/",
+   "https://www.feaa.uaic.ro/contact/"
+  ]
+ },
+ {
+  "universityId": "uaic",
+  "name": "Facultatea de Educație Fizică și Sport",
+  "about": "Aici te pregătești să fii profesor de educație fizică, antrenor, kinetoterapeut sau manager în sport. Facultatea a fost înființată în 1960 și are săli de sport, sală de fitness și pistă de atletism. Printre foștii studenți sunt campioni europeni și mondiali.",
+  "admissionTypes": [
+   "aptitudini",
+   "bac"
+  ],
+  "admission": "La Educație fizică și sport și la Management în sport, proba sportivă la alegere contează mai mult decât media de la bacalaureat. La Kinetoterapie, proba sportivă este eliminatorie (admis/respins), iar media de admitere este media de la bacalaureat.",
+  "website": "https://www.sport.uaic.ro/",
+  "admissionUrl": "https://www.sport.uaic.ro/admitere-2026/",
+  "curriculumUrl": "https://www.sport.uaic.ro/programe-de-studii/specializari-licenta/",
+  "address": "Str. Toma Cozma, Nr. 3, RO-700554 – Iași",
+  "sources": [
+   "https://admitere.uaic.ro/avada_portfolio/educatie-fizica-si-sport-admitere-licenta/?portfolioCats=9",
+   "https://www.uaic.ro/studii/facultati-2/facultatea-de-educatie-fizica-si-sport/",
+   "https://www.sport.uaic.ro/admitere-2026/",
+   "https://www.sport.uaic.ro/programe-de-studii/specializari-licenta/"
+  ]
+ },
+ {
+  "universityId": "uaic",
+  "name": "Facultatea de Filosofie și Științe Social - Politice",
+  "about": "Aici studiezi omul și societatea: filosofie, sociologie, științe politice, relații internaționale și studii europene, asistență socială, resurse umane, comunicare și relații publice. Facultatea își are începuturile în 1860, odată cu Universitatea din Iași.",
+  "admissionTypes": [
+   "bac"
+  ],
+  "admission": "Intri pe baza mediei de la bacalaureat, care este toată media de admitere. Nu se dă examen la facultate.",
+  "website": "https://www.fssp.uaic.ro/",
+  "admissionUrl": "https://www.fssp.uaic.ro/admitere/licenta",
+  "curriculumUrl": "https://www.fssp.uaic.ro/despre-facultate/planuri-de-invatamant/2026-2029",
+  "address": "B-dul Carol I, Nr. 11, RO-700506 – Iași",
+  "sources": [
+   "https://admitere.uaic.ro/avada_portfolio/filosofie-si-stiinte-social-politice-admitere-licenta/?portfolioCats=9",
+   "https://www.uaic.ro/studii/facultati-2/facultatea-de-filosofie-si-stiinte-social-politice/",
+   "https://www.fssp.uaic.ro/",
+   "https://www.fssp.uaic.ro/admitere/licenta",
+   "https://www.fssp.uaic.ro/despre-facultate/planuri-de-invatamant/2026-2029"
+  ]
+ },
+ {
+  "universityId": "uaic",
+  "name": "Facultatea de Fizică",
+  "about": "Aici studiezi fizica și aplicațiile ei. Poți alege între Fizică, Fizică medicală, Fizică informatică și Fizică tehnologică. Facultatea are patru centre de cercetare, iar Societatea Europeană de Fizică i-a acordat statutul de „sit istoric”.",
+  "admissionTypes": [
+   "bac"
+  ],
+  "admission": "Intri pe baza mediei de la bacalaureat, care este toată media de admitere. La medii egale contează nota la Fizică sau la Matematică/Informatică.",
+  "website": "https://www.phys.uaic.ro/new-phys/",
+  "admissionUrl": "https://www.phys.uaic.ro/new-phys/admitere-studii-licenta-iulie-2026/",
+  "curriculumUrl": "https://www.phys.uaic.ro/new-phys/planuri-de-invatamant-licenta/",
+  "address": "B-dul Carol I, Nr. 11, RO-700506 – Iași",
+  "sources": [
+   "https://admitere.uaic.ro/avada_portfolio/fizica-admitere-licenta/?portfolioCats=9",
+   "https://www.uaic.ro/studii/facultati-2/facultatea-de-fizica/",
+   "https://www.phys.uaic.ro/",
+   "https://www.phys.uaic.ro/new-phys/",
+   "https://www.phys.uaic.ro/new-phys/admitere-studii-licenta-iulie-2026/",
+   "https://www.phys.uaic.ro/new-phys/planuri-de-invatamant-licenta/"
+  ]
+ },
+ {
+  "universityId": "uaic",
+  "name": "Facultatea de Geografie și Geologie",
+  "about": "Aici studiezi geografie, turism, mediu, meteorologie și hidrologie, planificarea teritoriului și geologie. Se învață mult pe teren și în laboratoare, iar facultatea are trei stațiuni pentru practica studenților.",
+  "admissionTypes": [
+   "bac",
+   "interviu"
+  ],
+  "admission": "La programele de geografie și știința mediului, jumătate din medie este media de la bacalaureat și jumătate nota de la bacalaureat la proba scrisă la alegere. La geologie contează doar media de la bacalaureat. Pentru programele în limbă străină există și un interviu de limbă, cu admis/respins.",
+  "website": "https://www.geo.uaic.ro/",
+  "admissionUrl": "https://www.geo.uaic.ro/admitere/",
+  "curriculumUrl": "https://www.geo.uaic.ro/programe-de-studii/studii-universitare-de-licenta",
+  "address": "B-dul Carol I, Nr. 20A, RO-700505 – Iași",
+  "sources": [
+   "https://admitere.uaic.ro/avada_portfolio/geografie-si-geologie-admitere-licenta/?portfolioCats=9",
+   "https://www.uaic.ro/studii/facultati-2/facultatea-de-geografie-si-geologie/",
+   "https://www.geo.uaic.ro/",
+   "https://www.geo.uaic.ro/admitere/",
+   "https://www.geo.uaic.ro/programe-de-studii/studii-universitare-de-licenta"
+  ]
+ },
+ {
+  "universityId": "uaic",
+  "name": "Facultatea de Informatică",
+  "about": "Aici înveți programare și știința calculatoarelor: algoritmi, baze de date, inteligență artificială, securitate cibernetică, ingineria programării. Facultatea a fost înființată în 1992, are legături cu firmele de IT, iar studenții ei participă la concursuri de programare.",
+  "admissionTypes": [
+   "examen",
+   "bac"
+  ],
+  "admission": "Dai un test scris de trei ore, la Informatică sau la Matematică (alegi la începutul probei); el are cea mai mare greutate în medie. Mai contează media de la bacalaureat și nota de la bacalaureat la Informatică sau Matematică (sau, dacă e mai mare, tot nota de la test). La programul în limba engleză există și un interviu de engleză, cu admis/respins.",
+  "website": "https://www.info.uaic.ro/",
+  "admissionUrl": "https://www.info.uaic.ro/admitere-studii-de-licenta/",
+  "curriculumUrl": "https://www.info.uaic.ro/programs/informatica-ro-en/",
+  "address": "Str. General Berthelot, Nr. 16, RO-700483 – Iași",
+  "sources": [
+   "https://admitere.uaic.ro/avada_portfolio/informatica-admitere-licenta-nou/?portfolioCats=9",
+   "https://www.uaic.ro/studii/facultati-2/facultatea-de-informatica/",
+   "https://www.info.uaic.ro/",
+   "https://www.info.uaic.ro/admitere-studii-de-licenta/",
+   "https://www.info.uaic.ro/programs/informatica-ro-en/",
+   "https://info.uaic.ro/studii-de-licenta/",
+   "https://info.uaic.ro/contact/"
+  ],
+  "examSubjects": [
+   "Informatică sau Matematică (la alegere)"
+  ]
+ },
+ {
+  "universityId": "uaic",
+  "name": "Facultatea de Istorie",
+  "about": "Aici studiezi istoria, de la arheologie până la epoca contemporană. Absolvenții ajung profesori, cercetători, muzeografi, arhiviști sau lucrează în relații internaționale și presă. Facultatea are o platformă de cercetare în arheologie, numită ARHEOINVEST.",
+  "admissionTypes": [
+   "bac"
+  ],
+  "admission": "Intri pe baza mediei de la bacalaureat, care este toată media de admitere. Nu se dă examen la facultate.",
+  "website": "http://history.uaic.ro/",
+  "admissionUrl": "http://history.uaic.ro/admitere/",
+  "curriculumUrl": "http://history.uaic.ro/studenti/studenti-licenta/planuri-de-invatamat-studii-universitare-de-licenta/",
+  "address": "B-dul Carol I, Nr. 11, RO-700506 – Iași",
+  "sources": [
+   "https://admitere.uaic.ro/avada_portfolio/istorie-admitere-licenta/?portfolioCats=9",
+   "https://www.uaic.ro/studii/facultati-2/facultatea-de-istorie/",
+   "http://history.uaic.ro/",
+   "http://history.uaic.ro/admitere/",
+   "http://history.uaic.ro/studenti/studenti-licenta/planuri-de-invatamat-studii-universitare-de-licenta/"
+  ]
+ },
+ {
+  "universityId": "uaic",
+  "name": "Facultatea de Litere",
+  "about": "Aici studiezi limba și literatura română, limbi străine (engleză, franceză, germană, italiană, rusă, spaniolă), limbi clasice, literatură comparată, traducere și interpretare, studii americane sau jurnalism. Facultatea există din 1860, de la înființarea Universității din Iași.",
+  "admissionTypes": [
+   "bac"
+  ],
+  "admission": "Intri pe baza mediei de la bacalaureat, care este toată media de admitere. La medii egale contează nota de la proba scrisă de Limba și literatura română. Pentru Studii americane trebuie să fi studiat engleza cel puțin doi ani în liceu.",
+  "website": "https://litere.uaic.ro/",
+  "admissionUrl": "https://litere.uaic.ro/admitere-licenta/",
+  "curriculumUrl": "https://litere.uaic.ro/planuri-de-invatamant/",
+  "address": "B-dul Carol I, Nr. 11, RO-700506 – Iași",
+  "sources": [
+   "https://admitere.uaic.ro/avada_portfolio/litere-admitere-licenta/?portfolioCats=9",
+   "https://www.uaic.ro/studii/facultati-2/facultatea-de-litere/",
+   "https://litere.uaic.ro/admitere-licenta/",
+   "https://litere.uaic.ro/planuri-de-invatamant/",
+   "https://litere.uaic.ro/contact/"
+  ]
+ },
+ {
+  "universityId": "uaic",
+  "name": "Facultatea de Matematică",
+  "about": "Aici studiezi matematică sau matematică informatică; programul de matematică informatică există și în limba engleză. Facultatea continuă școala matematică ieșeană și are o bibliotecă de cercetare fondată în 1910, un observator astronomic și un planetariu.",
+  "admissionTypes": [
+   "bac"
+  ],
+  "admission": "Nu se dă examen la facultate. Media de admitere se face din nota de la bacalaureat la Matematică sau Informatică (partea mai mare) și din media de la bacalaureat. Pentru programul în engleză ai nevoie de cel puțin nivelul B1 la limba engleză.",
+  "website": "https://www.math.uaic.ro/",
+  "admissionUrl": "https://admitere.uaic.ro/avada_portfolio/matematica-admitere-licenta/?portfolioCats=9",
+  "curriculumUrl": "https://www.math.uaic.ro/index.php?lb=0&cod=0&id=5012",
+  "address": "B-dul Carol I, Nr. 11, RO-700506 – Iași",
+  "sources": [
+   "https://admitere.uaic.ro/avada_portfolio/matematica-admitere-licenta/?portfolioCats=9",
+   "https://www.uaic.ro/studii/facultati-2/facultatea-de-matematica/",
+   "https://www.math.uaic.ro/",
+   "https://www.math.uaic.ro/index.php?id=601",
+   "https://www.math.uaic.ro/index.php?lb=0&cod=0&id=5012"
+  ]
+ },
+ {
+  "universityId": "uaic",
+  "name": "Facultatea de Psihologie și Științe ale Educației",
+  "about": "Aici studiezi psihologie sau științele educației: Psihologie, Pedagogie, Psihopedagogie specială și Pedagogia învățământului primar (pentru viitorii învățători). Facultatea are laboratoare de cercetare și este cunoscută pentru psihologia socială și pentru partea clinică.",
+  "admissionTypes": [
+   "bac",
+   "aptitudini"
+  ],
+  "admission": "Intri pe baza mediei de la bacalaureat, care este toată media de admitere. La Pedagogia învățământului primar dai înainte și o probă online de abilități de comunicare și aptitudini, cu admis/respins.",
+  "website": "https://www.psih.uaic.ro/",
+  "admissionUrl": "https://www.psih.uaic.ro/admitere/",
+  "address": "Str. Toma Cozma, Nr. 3, RO-700554 – Iași",
+  "sources": [
+   "https://admitere.uaic.ro/avada_portfolio/psihologie-si-stiinte-ale-educatiei-admitere-licenta/?portfolioCats=9",
+   "https://www.uaic.ro/studii/facultati-2/facultatea-de-psihologie-si-stiinte-ale-educatiei/",
+   "https://www.psih.uaic.ro/",
+   "https://www.psih.uaic.ro/admitere/",
+   "https://www.psih.uaic.ro/admitere/licenta"
+  ]
+ },
+ {
+  "universityId": "uaic",
+  "name": "Facultatea de Teologie Ortodoxă „Sfântul Dumitru Stăniloae\"",
+  "about": "Aici studiezi teologia ortodoxă: Teologie pastorală (pentru viitorii preoți), Teologie – asistență socială și Artă sacră. Facultatea are un laborator de restaurare a cărților și documentelor vechi, iar studenții pot folosi biblioteca „Dumitru Stăniloae” a Arhiepiscopiei Iașilor.",
+  "admissionTypes": [
+   "examen",
+   "bac",
+   "aptitudini"
+  ],
+  "admission": "La Teologie pastorală dai o probă eliminatorie de dicție și aptitudini muzicale și un examen scris la Învățătura de credință ortodoxă; media de la bacalaureat are greutatea mai mare. La Teologie – asistență socială și la Artă sacră nu dai nicio probă: intri prin concurs de dosare, doar cu media de la bacalaureat.",
+  "examSubjects": [
+   "Învățătura de credință ortodoxă"
+  ],
+  "website": "https://www.teologie.uaic.ro/",
+  "admissionUrl": "https://www.teologie.uaic.ro/admitere/licenta/",
+  "curriculumUrl": "https://www.teologie.uaic.ro/studenti/ghid-de-studii/planuri-de-invatamant/",
+  "address": "Str. Iordachi Lozonschi, Nr. 9, RO-700066 – Iași",
+  "sources": [
+   "https://admitere.uaic.ro/avada_portfolio/teologie-ortodoxa-admitere-licenta/?portfolioCats=9",
+   "https://www.uaic.ro/studii/facultati-2/facultatea-de-teologie-ortodoxa/",
+   "https://www.teologie.uaic.ro/admitere/licenta/",
+   "https://www.teologie.uaic.ro/studenti/ghid-de-studii/planuri-de-invatamant/"
+  ]
+ },
+ {
+  "universityId": "uaic",
+  "name": "Facultatea de Teologie Romano - Catolică",
+  "about": "Aici studiezi teologia romano-catolică, la Teologie pastorală (4 ani) sau Teologie – asistență socială (3 ani). Facultatea a fost înființată în 2002, iar studenții pot folosi biblioteca Institutului Teologic Romano-Catolic din Iași și pot face voluntariat la centrul Caritas.",
+  "admissionTypes": [
+   "bac"
+  ],
+  "admission": "Intri pe baza mediei de la bacalaureat, care este toată media de admitere. Nu se dă examen la facultate.",
+  "website": "https://www.ftrc.uaic.ro/",
+  "admissionUrl": "https://www.ftrc.uaic.ro/admitere-2026-studii-universitare-de-licenta/",
+  "curriculumUrl": "https://www.ftrc.uaic.ro/studenti/planuri-de-invatamant/",
+  "address": "B-dul Carol I, Nr. 11, RO-700506 – Iași",
+  "sources": [
+   "https://admitere.uaic.ro/avada_portfolio/teologie-romano-catolica-admitere-licenta/?portfolioCats=9",
+   "https://www.uaic.ro/studii/facultati-2/facultatea-de-teologie-romano-catolica/",
+   "https://www.ftrc.uaic.ro/",
+   "https://www.ftrc.uaic.ro/admitere-2026-studii-universitare-de-licenta/",
+   "https://www.ftrc.uaic.ro/planuri-de-invatamant/",
+   "https://www.ftrc.uaic.ro/studenti/planuri-de-invatamant/"
+  ]
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Biologie și Geologie",
+  "about": "Aici studiezi biologie, biochimie, ecologie și protecția mediului, biotehnologii industriale, geologie sau inginerie geologică. Facultatea coordonează științific muzeele de zoologie, botanică, mineralogie și paleontologie ale universității și Vivariumul. Unele programe se țin și în limba maghiară.",
+  "admissionTypes": [
+   "bac",
+   "dosar",
+   "examen"
+  ],
+  "admission": "La programele în limba română și la Geologie depui o scrisoare motivațională (admis/respins) și contează media de bacalaureat. La Biologie și Ecologie în limba maghiară, media de bacalaureat și un test grilă contează în părți egale. Rezultatele de la concursurile facultății pot fi folosite în locul acestora.",
+  "website": "https://biogeo.ubbcluj.ro/",
+  "admissionUrl": "https://biogeo.ubbcluj.ro/inscriere-regulamente-si-taxe-admitere/",
+  "address": "Str. Republicii (Gh. Bilașcu) nr. 44, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/biologie_geologie",
+   "https://www.ubbcluj.ro/ro/facultati/biologie_si_geologie",
+   "https://biogeo.ubbcluj.ro/",
+   "https://biogeo.ubbcluj.ro/contact/",
+   "https://biogeo.ubbcluj.ro/inscriere-regulamente-si-taxe-admitere/",
+   "https://biogeo.ubbcluj.ro/planuri-de-invatamant/"
+  ],
+  "curriculumUrl": "https://biogeo.ubbcluj.ro/planuri-de-invatamant/"
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Business",
+  "about": "Aici înveți cum se conduce o afacere: programele sunt Administrarea afacerilor și Administrarea afacerilor în servicii de ospitalitate (hoteluri, restaurante, turism). Se predă în română și engleză, la Cluj-Napoca, iar Administrarea afacerilor se poate urma și la Bistrița, în limba română.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Scrii un eseu motivațional în limba programului ales, notat cu admis sau respins, iar clasamentul se face după media de bacalaureat. Dacă participi la concursul de cunoștințe al facultății și iei o notă bună, primești un adaos la medie.",
+  "website": "https://tbs.ubbcluj.ro/",
+  "admissionUrl": "https://tbs.ubbcluj.ro/admitere/",
+  "address": "Str. Horea nr. 7, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/business",
+   "https://www.ubbcluj.ro/ro/facultati/business",
+   "https://tbs.ubbcluj.ro/",
+   "https://tbs.ubbcluj.ro/admitere/",
+   "https://tbs.ubbcluj.ro/specializari/administrarea-afacerilor-licenta/",
+   "https://tbs.ubbcluj.ro/planuri-invatamant/"
+  ],
+  "curriculumUrl": "https://tbs.ubbcluj.ro/planuri-invatamant/"
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Chimie și Inginerie Chimică",
+  "about": "Aici studiezi chimie (inclusiv chimie farmaceutică) sau inginerie chimică, de la chimie alimentară la inginerie biochimică și nanoștiințe. Programele de chimie durează trei ani, iar cele de inginerie și dubla specializare Chimie-Fizică patru ani; unele se țin și în limba maghiară.",
+  "admissionTypes": [
+   "bac",
+   "examen"
+  ],
+  "admission": "Contează mai ales media de bacalaureat, la care se adaugă, cu o pondere mai mică, un test grilă la o disciplină aleasă de tine. Nota de la concursul „Candin Liteanu” poate înlocui, la cerere, media de admitere.",
+  "examSubjects": [
+   "Chimie anorganică",
+   "Chimie organică",
+   "Matematică (Algebră)"
+  ],
+  "website": "https://chem.ubbcluj.ro/",
+  "admissionUrl": "https://chem.ubbcluj.ro/oferta-admitere-licenta/",
+  "address": "Str. Arany János nr. 11, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/chimie_inginerie_chimica",
+   "https://www.ubbcluj.ro/ro/facultati/chimie_si_inginerie_chimica",
+   "https://chem.ubbcluj.ro/",
+   "https://chem.ubbcluj.ro/contact/",
+   "https://chem.ubbcluj.ro/licenta/",
+   "https://chem.ubbcluj.ro/tematica-de-admitere/",
+   "https://chem.ubbcluj.ro/oferta-admitere-licenta/"
+  ],
+  "curriculumUrl": "https://chem.ubbcluj.ro/licenta/"
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Drept",
+  "about": "Aici studiezi dreptul timp de patru ani: drept civil, penal, administrativ și celelalte ramuri de care ai nevoie pentru profesiile juridice. Facultatea are două departamente, de drept public și de drept privat, și se poate urma cu frecvență sau la distanță.",
+  "admissionTypes": [
+   "examen",
+   "bac"
+  ],
+  "admission": "Media de admitere se face în părți egale dintr-un test de verificare a raționamentului logic și din media de bacalaureat.",
+  "website": "https://law.ubbcluj.ro/",
+  "admissionUrl": "https://law.ubbcluj.ro/admitere/admitere-licenta/",
+  "address": "Str. General Traian Moșoiu nr. 10-12, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/drept",
+   "https://www.ubbcluj.ro/ro/facultati/drept",
+   "https://law.ubbcluj.ro/",
+   "https://law.ubbcluj.ro/admitere/admitere-licenta/",
+   "https://law.ubbcluj.ro/contact/",
+   "https://law.ubbcluj.ro/studii/cursuri-licenta/"
+  ],
+  "curriculumUrl": "https://law.ubbcluj.ro/studii/cursuri-licenta/"
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Educație Fizică și Sport",
+  "about": "Aici te pregătești să devii profesor de educație fizică, antrenor sau kinetoterapeut. Programele se țin în română și maghiară la Cluj-Napoca; Educația fizică și sportivă se poate urma și la Bistrița și Reșița, în limba română.",
+  "admissionTypes": [
+   "aptitudini",
+   "examen"
+  ],
+  "admission": "La Educație fizică și sportivă, media de admitere este nota de la un traseu aplicativ care îți verifică aptitudinile motrice. La Kinetoterapie, traseul se notează doar cu admis sau respins, iar media este nota de la un test grilă la Biologie.",
+  "examSubjects": [
+   "Biologie"
+  ],
+  "website": "https://sport.ubbcluj.ro/",
+  "admissionUrl": "https://sport.ubbcluj.ro/nivel-licenta/",
+  "address": "Str. Pandurilor nr. 7, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/educatie_fizica",
+   "https://www.ubbcluj.ro/ro/facultati/educatie_fizica_si_sport",
+   "https://sport.ubbcluj.ro/",
+   "https://sport.ubbcluj.ro/nivel-licenta/",
+   "https://sport.ubbcluj.ro/contact/",
+   "https://sport.ubbcluj.ro/planuri-de-invatamant/"
+  ],
+  "curriculumUrl": "https://sport.ubbcluj.ro/planuri-de-invatamant/"
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Fizică",
+  "about": "Aici studiezi fizică, fizică informatică, fizică medicală sau fizică tehnologică, în limba română sau maghiară. Studenții lucrează în laboratoare alături de profesori și cercetători, iar practica se face și la firme și spitale partenere.",
+  "admissionTypes": [
+   "examen",
+   "bac"
+  ],
+  "admission": "Media de admitere se face în părți egale din nota de la bacalaureat (media generală sau nota la fizică, informatică ori matematică, la alegere) și nota de la un test scris la Fizică, din materia de bacalaureat. Există și o cale alternativă prin concursul de fizică „Augustin Maior” și olimpiade.",
+  "website": "https://phys.ubbcluj.ro/",
+  "admissionUrl": "https://phys.ubbcluj.ro/admitere.htm",
+  "address": "Str. Mihail Kogălniceanu nr. 1, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/fizica",
+   "https://www.ubbcluj.ro/ro/facultati/fizica",
+   "https://phys.ubbcluj.ro/",
+   "https://phys.ubbcluj.ro/admitere.htm",
+   "https://phys.ubbcluj.ro/admitere/acte/anexa_2026.pdf",
+   "https://phys.ubbcluj.ro/invatamant/licenta_ro.htm"
+  ],
+  "examSubjects": [
+   "Fizică"
+  ],
+  "curriculumUrl": "https://phys.ubbcluj.ro/invatamant/licenta_ro.htm"
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Geografie",
+  "about": "Aici studiezi geografie, geografia turismului, cartografie, planificare teritorială sau hidrologie și meteorologie, cu practică pe teren și în instituții. Sediul este la Cluj-Napoca, iar Geografia turismului se poate urma și la Bistrița, Gheorgheni, Sighetu Marmației și Zalău. Unele programe au și linie în limba maghiară.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Depui o scrisoare de motivație, notată cu admis sau respins, iar clasamentul se face după media de bacalaureat. Premianții de la olimpiada de geografie și de la anumite concursuri primesc media maximă.",
+  "website": "https://geografie.ubbcluj.ro",
+  "admissionUrl": "https://geografie.ubbcluj.ro/admitere/?page_id=1003",
+  "address": "Str. Clinicilor nr. 5-7, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/geografie",
+   "https://www.ubbcluj.ro/ro/facultati/geografie",
+   "https://geografie.ubbcluj.ro/",
+   "https://geografie.ubbcluj.ro/admitere/?page_id=1003",
+   "https://geografie.ubbcluj.ro/contact",
+   "https://geografie.ubbcluj.ro/invatamant"
+  ],
+  "curriculumUrl": "https://geografie.ubbcluj.ro/invatamant"
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Inginerie",
+  "about": "Facultatea nu este în Cluj-Napoca, ci la Reșița, în Centrul Universitar UBB Reșița. Aici studiezi patru ani inginerie mecanică, electromecanică, informatică aplicată în inginerie electrică sau informatică industrială, în limba română. Unele programe se pot face și în sistem dual, cu practică la firme partenere.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Scrii o scrisoare motivațională, notată cu admis sau respins. Media de admitere este media notelor de la a doua și a treia probă scrisă de bacalaureat (proba profilului și proba la alegere).",
+  "website": "https://eng.ubbcluj.ro/",
+  "admissionUrl": "https://eng.ubbcluj.ro/admitere/",
+  "address": "Piața Traian Vuia nr. 1-4, Reșița",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/inginerie",
+   "https://www.ubbcluj.ro/ro/facultati/inginerie",
+   "https://eng.ubbcluj.ro/",
+   "https://eng.ubbcluj.ro/admitere/",
+   "https://eng.ubbcluj.ro/contact/",
+   "https://eng.ubbcluj.ro/programe-academice-licenta/",
+   "https://eng.ubbcluj.ro/?page_id=141"
+  ],
+  "curriculumUrl": "https://eng.ubbcluj.ro/programe-academice-licenta/"
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Istorie și Filosofie",
+  "about": "Aici studiezi istorie, arheologie, istoria artei, arhivistică, filosofie, etnologie, turism cultural, relații internaționale și studii europene sau studii de securitate. Cele mai multe programe se țin în română și maghiară, iar Studii de securitate și în engleză.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Scrii o scrisoare motivațională în limba programului ales, notată cu admis sau respins, iar clasamentul se face după media de bacalaureat. Premiile de la olimpiade și concursuri de specialitate pot aduce facilități.",
+  "website": "https://hiphi.ubbcluj.ro",
+  "admissionUrl": "https://hiphi.ubbcluj.ro/admitere/licenta.html",
+  "address": "Str. Mihail Kogălniceanu nr. 1, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/istorie_filosofie",
+   "https://www.ubbcluj.ro/ro/facultati/istorie_si_filosofie",
+   "https://hiphi.ubbcluj.ro/",
+   "https://hiphi.ubbcluj.ro/admitere/licenta.html",
+   "https://hiphi.ubbcluj.ro/admitere/licenta/criterii.html",
+   "https://hiphi.ubbcluj.ro/studii/licenta.html",
+   "https://hiphi.ubbcluj.ro/studii/licenta/istorie.html"
+  ]
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Litere",
+  "about": "Aici studiezi limbi și literaturi, de obicei două deodată: română, maghiară, engleză, franceză, germană, limbi nordice, japoneză, chineză, coreeană, latină și altele. Mai poți alege literatură comparată, limbi moderne aplicate sau, în limba maghiară, etnologie și studii culturale.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Depui la dosar o scrisoare de intenție (aceasta este „proba de aptitudini”), notată cu admis sau respins. Media de admitere se face în părți egale din media de bacalaureat și media anilor de liceu.",
+  "website": "https://lett.ubbcluj.ro/",
+  "admissionUrl": "https://lett.ubbcluj.ro/regulament-admitere-nivel-licenta/",
+  "address": "Str. Horea nr. 31, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/litere",
+   "https://www.ubbcluj.ro/ro/facultati/litere",
+   "https://lett.ubbcluj.ro/",
+   "https://lett.ubbcluj.ro/regulament-admitere-nivel-licenta/",
+   "https://lett.ubbcluj.ro/wp-content/uploads/2026/03/Criterii-admitere-2026-Litere-UBB.pdf",
+   "https://lett.ubbcluj.ro/wp-content/uploads/2026/03/Proba-de-aptitudini-2026-Litere-UBB.pdf",
+   "https://lett.ubbcluj.ro/contact-us/",
+   "https://lett.ubbcluj.ro/curricula-licenta/"
+  ],
+  "curriculumUrl": "https://lett.ubbcluj.ro/curricula-licenta/"
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Matematică și Informatică",
+  "about": "Aici studiezi matematică, informatică, inteligență artificială sau ingineria informației. Programele durează trei sau patru ani și se țin în română, maghiară, germană sau engleză, în funcție de specializare.",
+  "admissionTypes": [
+   "examen"
+  ],
+  "admission": "Media de admitere este nota de la o probă scrisă de tip grilă, pe care o dai la Matematică sau la Informatică, la alegerea ta. Rezultatele foarte bune la olimpiade sau la Concursul Mate-Info UBB pot aduce facilități.",
+  "examSubjects": [
+   "Matematică",
+   "Informatică"
+  ],
+  "website": "https://www.cs.ubbcluj.ro",
+  "admissionUrl": "https://www.cs.ubbcluj.ro/admitere/nivel-licenta/admiterea-la-facultatea-de-matematica-si-informatica-nivel-licenta/",
+  "address": "Str. Mihail Kogălniceanu nr. 1, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/matematica_informatica",
+   "https://www.ubbcluj.ro/ro/facultati/matematica_informatica",
+   "https://www.cs.ubbcluj.ro/",
+   "https://www.cs.ubbcluj.ro/admitere/nivel-licenta/admiterea-la-facultatea-de-matematica-si-informatica-nivel-licenta/",
+   "https://www.cs.ubbcluj.ro/despre-facultate/contact/",
+   "https://www.cs.ubbcluj.ro/invatamant/planuri-de-invatamant/"
+  ],
+  "curriculumUrl": "https://www.cs.ubbcluj.ro/invatamant/planuri-de-invatamant/"
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Psihologie și Științe ale Educației",
+  "about": "Aici studiezi psihologie, psihopedagogie specială, pedagogie sau te pregătești să devii învățător ori educator. Programele se țin în română, maghiară, germană sau engleză, în funcție de specializare. Pedagogia învățământului primar se poate urma și la Năsăud, Sighetu Marmației, Târgu Mureș, Satu Mare, Odorheiu Secuiesc și Reșița.",
+  "admissionTypes": [
+   "examen",
+   "bac",
+   "interviu",
+   "dosar"
+  ],
+  "admission": "Diferă după program: la Psihologie (română și engleză) contează în părți egale media de bacalaureat și o probă scrisă de abilități cognitive; la Psihopedagogie specială, bacalaureatul și un eseu; la liniile maghiare ale acestor programe contează mai ales o probă orală, alături de bacalaureat. La Pedagogie și la programele pentru învățători și educatori clasamentul se face după media de bacalaureat, cu un eseu sau o probă orală notate admis/respins.",
+  "website": "https://psiedu.ubbcluj.ro",
+  "admissionUrl": "https://psiedu.ubbcluj.ro/31-admitere-facultate",
+  "address": "Str. Sindicatelor nr. 7, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/psihologie",
+   "https://www.ubbcluj.ro/ro/facultati/psihologie_si_stiinte_ale_educatiei",
+   "https://psiedu.ubbcluj.ro/",
+   "https://psiedu.ubbcluj.ro/31-admitere-facultate",
+   "https://psiedu.ubbcluj.ro/21-regulament-admitere",
+   "https://psiedu.ubbcluj.ro/data/uploads/doc/admitere/2026/pse-regulament-admitere-2026.pdf",
+   "https://psiedu.ubbcluj.ro/11-contact-facultate",
+   "https://psiedu.ubbcluj.ro/0-planuri-nivel-licenta"
+  ],
+  "curriculumUrl": "https://psiedu.ubbcluj.ro/0-planuri-nivel-licenta"
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Sociologie și Asistență Socială",
+  "about": "Aici studiezi sociologie, antropologie, resurse umane sau asistență socială, adică felul în care funcționează societatea și cum pot fi ajutați oamenii aflați în dificultate. La Cluj-Napoca programele se țin în română și maghiară; Asistența socială se poate urma și la Reșița, în limba română.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Trimiți o scrisoare motivațională, notată cu admis sau respins, iar clasamentul se face după media de bacalaureat. Participanții și premianții la concursurile facultății sau la olimpiade au facilități.",
+  "website": "https://socasis.ubbcluj.ro",
+  "admissionUrl": "https://socasis.ubbcluj.ro/admitere/licenta/",
+  "address": "B-dul 21 Decembrie 1989 nr. 128-130, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/sociologie_asistenta",
+   "https://www.ubbcluj.ro/ro/facultati/sociologie_si_asistenta_sociala",
+   "https://socasis.ubbcluj.ro/",
+   "https://socasis.ubbcluj.ro/admitere/licenta/",
+   "https://socasis.ubbcluj.ro/facultate/harta-si-transport/",
+   "https://socasis.ubbcluj.ro/program/sociologie/",
+   "https://socasis.ubbcluj.ro/facultate/programe/"
+  ],
+  "curriculumUrl": "https://socasis.ubbcluj.ro/facultate/programe/"
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Studii Europene",
+  "about": "Aici studiezi relații internaționale și studii europene, diplomație în afaceri, management sau administrație europeană. Programul de Relații internaționale și studii europene se ține în română, engleză sau germană.",
+  "admissionTypes": [
+   "bac",
+   "dosar",
+   "interviu"
+  ],
+  "admission": "Depui online o scrisoare motivațională, notată cu admis sau respins; la liniile în engleză și germană o scrii în limba respectivă și dai și un interviu online în acea limbă. Media de admitere este media a două note de la probele scrise de bacalaureat, alese de tine.",
+  "website": "https://euro.ubbcluj.ro",
+  "admissionUrl": "https://euro.ubbcluj.ro/admitere-licenta-2026/",
+  "address": "Str. Emmanuel de Martonne nr. 1, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/studii_europene",
+   "https://www.ubbcluj.ro/ro/facultati/studii_europene",
+   "https://euro.ubbcluj.ro/",
+   "https://euro.ubbcluj.ro/admitere-licenta-2026/",
+   "https://euro.ubbcluj.ro/contact/",
+   "https://euro.ubbcluj.ro/invatamant/planuri-de-invatamant-licenta/"
+  ],
+  "curriculumUrl": "https://euro.ubbcluj.ro/invatamant/planuri-de-invatamant-licenta/"
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Știința și Ingineria Mediului",
+  "about": "Aici înveți cum se studiază și se protejează mediul: știința mediului, management și audit de mediu sau ingineria mediului. Știința mediului se poate urma și în limba maghiară, la Cluj-Napoca și la Sfântu Gheorghe.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Scrii un eseu motivațional, notat cu admis sau respins, iar clasamentul se face după media de bacalaureat. Un rezultat bun la concursul Enviro-Pass al facultății sau la olimpiade îți poate mări media de admitere.",
+  "website": "https://enviro.ubbcluj.ro",
+  "admissionUrl": "https://enviro.ubbcluj.ro/category/admitere-licenta/",
+  "address": "Str. Fântânele nr. 30, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/stiinta_mediului",
+   "https://www.ubbcluj.ro/ro/facultati/stiinta_si_ingineria_mediului",
+   "https://enviro.ubbcluj.ro/",
+   "https://enviro.ubbcluj.ro/category/admitere-licenta/",
+   "https://enviro.ubbcluj.ro/contact/",
+   "https://enviro.ubbcluj.ro/studenti/planuri-de-invatamant/"
+  ],
+  "curriculumUrl": "https://enviro.ubbcluj.ro/studenti/planuri-de-invatamant/"
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Științe Economice și Gestiunea Afacerilor",
+  "about": "Aici studiezi economie și afaceri: contabilitate, finanțe și bănci, management, marketing, informatică economică, statistică și data science, afaceri internaționale. Programele se țin în română, maghiară, germană sau engleză, la Cluj-Napoca, iar unele și la Sfântu Gheorghe, Sighetu Marmației și Reșița.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Depui la înscriere o lucrare scrisă de mână pe o temă economică (o expunere cu reprezentare grafică), notată cu admis sau respins. Clasamentul se face apoi după media de bacalaureat.",
+  "website": "https://econ.ubbcluj.ro",
+  "admissionUrl": "https://econ.ubbcluj.ro/admitere/admitere-licenta.php",
+  "address": "Str. Teodor Mihali nr. 58-60, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/stiinte_economice",
+   "https://www.ubbcluj.ro/ro/facultati/stiinte_economice_si_gestiunea_afacerilor",
+   "https://econ.ubbcluj.ro/",
+   "https://econ.ubbcluj.ro/contact.php",
+   "https://econ.ubbcluj.ro/admitere/admitere-licenta.php",
+   "https://econ.ubbcluj.ro/n3.php?id_s=197&id_c=104&id_m=3"
+  ],
+  "curriculumUrl": "https://econ.ubbcluj.ro/n3.php?id_s=197&id_c=104&id_m=3"
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Științe Medicale și ale Sănătății",
+  "about": "Aici studiezi programe din zona sănătății, de patru ani, în limba română: Podiatrie (îngrijirea piciorului), la Cluj-Napoca, și Inginerie medicală, care se face la Reșița și este organizată de Facultatea de Inginerie. Sediul facultății este la Cluj-Napoca.",
+  "admissionTypes": [
+   "examen",
+   "bac",
+   "dosar"
+  ],
+  "admission": "La Podiatrie contează mai ales o probă scrisă la Biologie, alături de media de bacalaureat. La Inginerie medicală scrii o scrisoare motivațională (admis/respins), iar media de admitere este media notelor de la a doua și a treia probă scrisă de bacalaureat.",
+  "examSubjects": [
+   "Biologie"
+  ],
+  "website": "https://medical-health.ubbcluj.ro",
+  "admissionUrl": "https://medical-health.ubbcluj.ro/admitere/",
+  "address": "Str. Clinicilor nr. 9, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/stiinte_medicale_sanatatii",
+   "https://medical-health.ubbcluj.ro/",
+   "https://medical-health.ubbcluj.ro/admitere/",
+   "https://medical-health.ubbcluj.ro/licenta/",
+   "https://medical-health.ubbcluj.ro/contact/"
+  ],
+  "curriculumUrl": "https://medical-health.ubbcluj.ro/licenta/"
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Științe Politice, Administrative și ale Comunicării",
+  "about": "Aici studiezi comunicare și relații publice, jurnalism, publicitate, media digitală, administrație publică, sănătate publică sau științe politice. Programele se țin în română, maghiară, germană sau engleză, în funcție de specializare, iar Administrația publică se poate urma și la Bistrița și Reșița.",
+  "admissionTypes": [
+   "bac",
+   "dosar",
+   "interviu"
+  ],
+  "admission": "Mai întâi scrii o scrisoare motivațională în limba programului, notată cu admis sau respins; la programele în engleză sau germană se verifică și limba, prin interviu sau test scris, dacă nu ai atestat. Cei admiși în această etapă sunt apoi ierarhizați după media de bacalaureat.",
+  "website": "https://fspac.ubbcluj.ro/",
+  "admissionUrl": "https://fspac.online/",
+  "address": "Str. General Traian Moșoiu nr. 71, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/stiinte_politice",
+   "https://www.ubbcluj.ro/ro/facultati/stiinte_politice_administrative_si_ale_comunicarii",
+   "https://fspac.ubbcluj.ro/ro",
+   "https://fspac.ubbcluj.ro/ro/footer/contact",
+   "https://fspac.online/",
+   "https://fspac.ubbcluj.ro/ro/resurse",
+   "https://fspac.ubbcluj.ro/ro/programe"
+  ]
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Teatru și Film",
+  "about": "Aici studiezi actorie, regie de teatru, teatrologie, regie de film și TV, imagine de film, sunet și montaj sau filmologie. Facultatea are departamente de teatru și de cinematografie și media, atât în limba română, cât și în limba maghiară.",
+  "admissionTypes": [
+   "aptitudini",
+   "examen",
+   "interviu",
+   "dosar",
+   "bac"
+  ],
+  "admission": "Diferă după program: la Actorie și Regie dai probe practice și orale în două etape (improvizație, monolog). La programele de film contează portofoliul, o probă practică și un examen scris de analiză de film; la Filmologie, un interviu și același tip de examen scris. La Teatrologie contează scrisoarea motivațională și interviul, iar la linia română și media de bacalaureat.",
+  "website": "https://teatrufilm.ubbcluj.ro/",
+  "admissionUrl": "https://teatrufilm.ubbcluj.ro/admitere/",
+  "address": "Str. Mihail Kogălniceanu nr. 4, Cluj-Napoca (temporar, activitatea se ține pe Str. Burebista nr. 2)",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/teatru_film",
+   "https://www.ubbcluj.ro/ro/facultati/teatru_si_film",
+   "https://teatrufilm.ubbcluj.ro/",
+   "https://teatrufilm.ubbcluj.ro/contact/",
+   "https://teatrufilm.ubbcluj.ro/admitere/"
+  ]
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Teologie Greco- Catolică",
+  "about": "Aici studiezi teologie greco-catolică, pe direcțiile pastorală, didactică și asistență socială, în limba română. Facultatea are trei departamente: la Cluj-Napoca, la Blaj și la Oradea; în ultimele două orașe se face doar Teologie pastorală.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Scrii un eseu motivațional, notat cu admis sau respins, iar clasamentul se face după media de bacalaureat.",
+  "website": "https://gct.ubbcluj.ro/",
+  "admissionUrl": "https://infoadmitere.ubbcluj.ro/ro/licenta/teologie_greco_catolica",
+  "address": "Str. Moților nr. 26, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/teologie_greco_catolica",
+   "https://www.ubbcluj.ro/ro/facultati/teologie_greco_catolica",
+   "https://gct.ubbcluj.ro/",
+   "https://gct.ubbcluj.ro/admitere-teologie-greco-catolica-pastorala-cluj/",
+   "https://gct.ubbcluj.ro/wp-content/uploads/2026/05/Regulament-admitere-2026-FTGC_CF_12-din-5-mai-2026.pdf",
+   "https://gct.ubbcluj.ro/studenti/"
+  ],
+  "curriculumUrl": "https://gct.ubbcluj.ro/studenti/"
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Teologie Ortodoxă",
+  "about": "Aici studiezi teologie ortodoxă, pe trei direcții: pastorală (pentru viitorii preoți), didactică și asistență socială. Tot aici se află programul de Artă sacră, unde înveți pictură și artă bisericească.",
+  "admissionTypes": [
+   "bac",
+   "examen",
+   "interviu",
+   "aptitudini",
+   "dosar"
+  ],
+  "admission": "Diferă după program: la Teologie pastorală dai o probă de aptitudini muzicale și un interviu vocațional, apoi o probă orală de teologie, alături de media de bacalaureat. La Teologie didactică și la Asistență socială contează media de bacalaureat, după un interviu vocațional. La Artă sacră contează interviul cu evaluarea portofoliului de lucrări și media de bacalaureat.",
+  "website": "https://ot.ubbcluj.ro/",
+  "admissionUrl": "https://ot.ubbcluj.ro/admitere/",
+  "address": "Str. Episcop Nicolae Ivan f.n., Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/teologie_ortodoxa",
+   "https://www.ubbcluj.ro/ro/facultati/teologie_ortodoxa",
+   "https://ot.ubbcluj.ro/",
+   "https://ot.ubbcluj.ro/admitere/",
+   "https://ot.ubbcluj.ro/admitere-licenta-2026/",
+   "https://ot.ubbcluj.ro/wp-content/uploads/2026/07/Regulament-admitere-Teologie-Ortodoxa-2026-rectificat-14.07.pdf",
+   "https://ot.ubbcluj.ro/contact/",
+   "https://ot.ubbcluj.ro/planuri-de-invatamant/"
+  ],
+  "curriculumUrl": "https://ot.ubbcluj.ro/planuri-de-invatamant/"
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Teologie Reformată și Muzică",
+  "about": "Aici studiezi, în limba maghiară, teologie reformată didactică (pentru viitorii profesori de religie) sau muzică. Facultatea își propune să formeze profesori pentru comunitățile din Transilvania.",
+  "admissionTypes": [
+   "bac",
+   "dosar",
+   "aptitudini",
+   "interviu"
+  ],
+  "admission": "La Teologie reformată didactică scrii un eseu motivațional (admis/respins) și contează media de bacalaureat împreună cu nota la o disciplină aleasă de tine. La Muzică contează mai ales un test practic de vocalitate, plus media de bacalaureat, după un interviu cu probă de aptitudini muzicale.",
+  "website": "https://rt.ubbcluj.ro/",
+  "admissionUrl": "https://infoadmitere.ubbcluj.ro/ro/licenta/teologie_reformata",
+  "address": "Str. Horea nr. 7, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/teologie_reformata",
+   "https://www.ubbcluj.ro/ro/facultati/teologie_reformata",
+   "https://rt.ubbcluj.ro/",
+   "https://rt.ubbcluj.ro/ro/",
+   "https://rt.ubbcluj.ro/vallaspedagogia/",
+   "https://rt.ubbcluj.ro/zenemuveszet/",
+   "https://rt.ubbcluj.ro/tantervek-tantargyleirasok/"
+  ],
+  "curriculumUrl": "https://rt.ubbcluj.ro/tantervek-tantargyleirasok/"
+ },
+ {
+  "universityId": "ubb-cluj",
+  "name": "Facultatea de Teologie Romano-Catolică",
+  "about": "Aici studiezi teologie romano-catolică, în limba maghiară. Teologia didactică se face la Cluj-Napoca și durează trei ani, iar Teologia pastorală se face la Alba Iulia și durează patru ani.",
+  "admissionTypes": [
+   "bac",
+   "dosar",
+   "examen"
+  ],
+  "admission": "La Teologie didactică, media de admitere se face în părți egale din media de bacalaureat și nota la scrisoarea motivațională. La Teologie pastorală (Alba Iulia), în locul scrisorii dai un examen oral. Premianții anumitor olimpiade și concursuri de religie sunt scutiți de probă.",
+  "website": "https://rocateo.ubbcluj.ro/",
+  "admissionUrl": "https://rocateo.ubbcluj.ro/ro/application/",
+  "address": "Str. Iuliu Maniu nr. 5, Cluj-Napoca",
+  "sources": [
+   "https://infoadmitere.ubbcluj.ro/ro/licenta/teologie_romano_catolica",
+   "https://www.ubbcluj.ro/ro/facultati/teologie_romano_catolica",
+   "https://rocateo.ubbcluj.ro/hu/",
+   "https://rocateo.ubbcluj.ro/hu/application/",
+   "https://rocateo.ubbcluj.ro/ro/application/",
+   "https://rocateo.ubbcluj.ro/hu/contact/",
+   "https://rocateo.ubbcluj.ro/ro/quality-assurance/documents-ba/"
+  ]
+ },
+ {
+  "universityId": "umf-carol-davila",
+  "name": "Facultatea de Asistență Medicală",
+  "about": "Aici te pregătești pentru meserii medicale ca asistent medical generalist, moașă, kinetoterapeut sau tehnician dentar. Pe site-ul universității facultatea se numește „Facultatea de Moașe și Asistență Medicală”. Studiezi anatomie, fiziologie, etică și comunicare și faci practică în spitale și maternități.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Admiterea se face prin concurs de dosare, fără examen scris. Media de admitere este media dintre media de la bacalaureat și media generală a anilor de liceu; la medii egale contează media de la bacalaureat.",
+  "website": "https://umfcd.ro/educatie/facultati-si-resurse/facultatea-de-moase-si-asistenta-medicala/",
+  "admissionUrl": "https://umfcd.ro/admitere-la-studii-universitare-de-licenta-in-cadrul-umfcd-pentru-anul-universitar-2026-2027/",
+  "curriculumUrl": "https://umfcd.ro/educatie/facultati-si-resurse/facultatea-de-moase-si-asistenta-medicala/",
+  "address": "Bulevardul Eroii Sanitari Nr. 8, Sector 5, București",
+  "sources": [
+   "https://umfcd.ro/educatie/facultati-si-resurse/facultatea-de-moase-si-asistenta-medicala/",
+   "https://umfcd.ro/admitere-la-studii-universitare-de-licenta-in-cadrul-umfcd-pentru-anul-universitar-2026-2027/",
+   "https://umfcd.ro/wp-content/uploads/2026/ADMITERE_2026/TEMATICI_BIBLIOGRAFII_CONTINUT_CONCURS/Continutul%20probelor%20de%20concurs%20Admitere%202026.pdf",
+   "https://umfcd.ro/wp-content/uploads/2026/ADMITERE_2026/REGULAMENTUL_DE_ADMITERE/UMFCD_Regulament%20admitere%20licenta%202026_SENAT%2022.01.2026.pdf"
+  ]
+ },
+ {
+  "universityId": "umf-carol-davila",
+  "name": "Facultatea de Farmacie",
+  "about": "Aici te pregătești să devii farmacist, în cinci ani de studiu: chimie farmaceutică, biochimie, farmacologie, tehnologie farmaceutică. Facultatea are și programul Nutriție și dietetică. Studenții lucrează în laboratoare și pot intra în proiecte de cercetare.",
+  "admissionTypes": [
+   "examen"
+  ],
+  "admission": "Dai un examen scris, de tip grilă. La Farmacie, materia obligatorie este Chimie organică, iar a doua o alegi între Biologia vegetală și Anatomia și fiziologia omului. La Nutriție și dietetică, examenul este doar la Biologie.",
+  "examSubjects": [
+   "Chimie organică",
+   "Biologie vegetală sau Anatomia și fiziologia omului (la alegere)",
+   "Biologie (pentru Nutriție și dietetică)"
+  ],
+  "website": "https://umfcd.ro/educatie/facultati-si-resurse/facultatea-de-farmacie/",
+  "admissionUrl": "https://umfcd.ro/admitere-la-studii-universitare-de-licenta-in-cadrul-umfcd-pentru-anul-universitar-2026-2027/",
+  "curriculumUrl": "https://umfcd.ro/educatie/facultati-si-resurse/facultatea-de-farmacie/",
+  "address": "Strada Traian Vuia Nr. 6, Sector 2, București",
+  "sources": [
+   "https://umfcd.ro/educatie/facultati-si-resurse/facultatea-de-farmacie/",
+   "https://umfcd.ro/admitere-la-studii-universitare-de-licenta-in-cadrul-umfcd-pentru-anul-universitar-2026-2027/",
+   "https://umfcd.ro/wp-content/uploads/2026/ADMITERE_2026/TEMATICI_BIBLIOGRAFII_CONTINUT_CONCURS/Continutul%20probelor%20de%20concurs%20Admitere%202026.pdf",
+   "https://umfcd.ro/wp-content/uploads/2026/ADMITERE_2026/REGULAMENTUL_DE_ADMITERE/UMFCD_Regulament%20admitere%20licenta%202026_SENAT%2022.01.2026.pdf"
+  ]
+ },
+ {
+  "universityId": "umf-carol-davila",
+  "name": "Facultatea de Medicină",
+  "about": "Aici te pregătești să devii medic, în șase ani de studiu. Începi cu materii de bază, ca anatomia, fiziologia și biochimia, apoi treci la pregătirea clinică, în spitale. Facultatea are o tradiție care începe în 1867.",
+  "admissionTypes": [
+   "examen"
+  ],
+  "admission": "Dai un examen scris, de tip grilă: Biologie este materia obligatorie, iar a doua materie o alegi între Fizică și Chimie.",
+  "examSubjects": [
+   "Biologie",
+   "Fizică sau Chimie (la alegere)"
+  ],
+  "website": "https://umfcd.ro/educatie/facultati-si-resurse/facultatea-de-medicina/",
+  "admissionUrl": "https://umfcd.ro/admitere-la-studii-universitare-de-licenta-in-cadrul-umfcd-pentru-anul-universitar-2026-2027/",
+  "curriculumUrl": "https://umfcd.ro/educatie/facultati-si-resurse/facultatea-de-medicina/",
+  "address": "Bulevardul Eroii Sanitari Nr. 8, Sector 5, București",
+  "sources": [
+   "https://umfcd.ro/educatie/facultati-si-resurse/facultatea-de-medicina/",
+   "https://umfcd.ro/admitere-la-studii-universitare-de-licenta-in-cadrul-umfcd-pentru-anul-universitar-2026-2027/",
+   "https://umfcd.ro/wp-content/uploads/2026/ADMITERE_2026/TEMATICI_BIBLIOGRAFII_CONTINUT_CONCURS/Continutul%20probelor%20de%20concurs%20Admitere%202026.pdf",
+   "https://umfcd.ro/wp-content/uploads/2026/ADMITERE_2026/REGULAMENTUL_DE_ADMITERE/UMFCD_Regulament%20admitere%20licenta%202026_SENAT%2022.01.2026.pdf"
+  ]
+ },
+ {
+  "universityId": "umf-carol-davila",
+  "name": "Facultatea de Stomatologie",
+  "about": "Aici te pregătești să devii medic dentist (stomatolog), în șase ani de studiu. Pe lângă materiile medicale, înveți și despre etică, comunicare și cum se conduce un cabinet. Încă din primele semestre faci exerciții practice, într-un mediu clinic simulat.",
+  "admissionTypes": [
+   "examen"
+  ],
+  "admission": "Dai un examen scris, de tip grilă: Biologie este materia obligatorie, iar a doua materie o alegi între Fizică și Chimie.",
+  "examSubjects": [
+   "Biologie",
+   "Fizică sau Chimie (la alegere)"
+  ],
+  "website": "https://umfcd.ro/educatie/facultati-si-resurse/facultatea-de-stomatologie/",
+  "admissionUrl": "https://umfcd.ro/admitere-la-studii-universitare-de-licenta-in-cadrul-umfcd-pentru-anul-universitar-2026-2027/",
+  "curriculumUrl": "https://umfcd.ro/educatie/facultati-si-resurse/facultatea-de-stomatologie/",
+  "address": "Șoseaua Olteniței Nr. 15, Sector 4, București",
+  "sources": [
+   "https://umfcd.ro/educatie/facultati-si-resurse/facultatea-de-stomatologie/",
+   "https://umfcd.ro/admitere-la-studii-universitare-de-licenta-in-cadrul-umfcd-pentru-anul-universitar-2026-2027/",
+   "https://umfcd.ro/wp-content/uploads/2026/ADMITERE_2026/TEMATICI_BIBLIOGRAFII_CONTINUT_CONCURS/Continutul%20probelor%20de%20concurs%20Admitere%202026.pdf",
+   "https://umfcd.ro/wp-content/uploads/2026/ADMITERE_2026/REGULAMENTUL_DE_ADMITERE/UMFCD_Regulament%20admitere%20licenta%202026_SENAT%2022.01.2026.pdf"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Administrație și Afaceri",
+  "about": "Aici înveți cum funcționează firmele și instituțiile publice: administrarea afacerilor (și în limba engleză), marketing, administrație publică și cibernetică economică. Facultatea are programe și la Focșani și pune accent pe practică și pe stagii în firme și instituții.",
+  "admissionTypes": [
+   "bac"
+  ],
+  "admission": "Nu se dă examen. Media de concurs se face din nota de la Limba și literatura română de la bacalaureat (jumătate) și nota de la o altă probă de bacalaureat aleasă de tine (jumătate). La programul în limba engleză treci și o probă eliminatorie de engleză (admis/respins); ești scutit dacă ai un certificat de limbă recunoscut sau ai terminat un liceu bilingv de engleză.",
+  "website": "https://faa.ro/",
+  "admissionUrl": "https://faa.ro/studii/admitere-licenta-studii.html",
+  "address": "B-dul Regina Elisabeta nr. 4-12, etaj 1, sector 3, București",
+  "sources": [
+   "https://faa.ro/",
+   "https://faa.ro/studii/admitere-licenta-studii.html",
+   "https://unibuc.ro/studii/facultati/facultatea-de-administratie-si-afaceri/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Biologie",
+  "about": "Studiezi lumea vie, de la molecule și celule până la organisme și ecosisteme. Programele de licență sunt Biologie, Biochimie și Ecologie și protecția mediului, iar facultatea are departamente de genetică, microbiologie, botanică, fiziologie și ecologie.",
+  "admissionTypes": [
+   "bac"
+  ],
+  "admission": "Admiterea este concurs de dosare: contează doar media de la bacalaureat, fără examen scris.",
+  "website": "https://www.bio.unibuc.ro/",
+  "admissionUrl": "https://bio.unibuc.ro/admitere/",
+  "address": "Splaiul Independenței nr. 91–95, sector 5, București",
+  "sources": [
+   "https://www.bio.unibuc.ro/",
+   "https://bio.unibuc.ro/programe-de-studii/licenta/",
+   "https://unibuc.ro/studii/facultati/facultatea-de-biologie/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+   "https://bio.unibuc.ro/",
+   "https://bio.unibuc.ro/admitere/",
+   "https://bio.unibuc.ro/informatii-privind-admiterea-la-studii-universitare-de-licenta-2026/",
+   "https://bio.unibuc.ro/contact-2/"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Chimie",
+  "about": "Înveți chimie în laborator și la curs, cu patru programe de licență: Chimie, Biochimie tehnologică, Chimie medicală și Chimie farmaceutică. Materiile au legătură și cu biologia, fizica, medicina, farmacia și știința materialelor, iar facultatea are șapte centre de cercetare.",
+  "admissionTypes": [
+   "bac"
+  ],
+  "admission": "Nu se dă examen: clasamentul se face numai după media de la bacalaureat.",
+  "website": "https://chimie.unibuc.ro/",
+  "admissionUrl": "https://chimie.unibuc.ro/index.php/admitere-in-facultatea-de-chimie",
+  "curriculumUrl": "https://www.chimie.unibuc.ro/index.php/oferta-educationala/52-ciclul-i-studii-universitare-de-licenta/53-planuri-de-invatamant",
+  "address": "Bd. Regina Elisabeta nr. 4–12, sector 3, București",
+  "sources": [
+   "https://chimie.unibuc.ro/index.php/admitere-in-facultatea-de-chimie",
+   "https://unibuc.ro/studii/facultati/facultatea-de-chimie/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+   "https://chimie.unibuc.ro/",
+   "https://www.chimie.unibuc.ro/index.php/oferta-educationala/52-ciclul-i-studii-universitare-de-licenta/53-planuri-de-invatamant"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Drept",
+  "about": "Aici studiezi dreptul: legile, cum funcționează statul și instanțele, drept public, privat și penal. Este una dintre cele mai vechi facultăți ale universității și are cursuri cu frecvență (și în limba engleză) și la distanță, plus centre de cercetare și concursuri pentru studenți.",
+  "admissionTypes": [
+   "examen"
+  ],
+  "admission": "Se intră prin concurs de admitere cu probe scrise la Limba română, Economie și Gândire critică. Facultatea publică în fiecare an tematica și bibliografia.",
+  "examSubjects": [
+   "Limba română",
+   "Economie",
+   "Gândire critică"
+  ],
+  "website": "https://drept.unibuc.ro/",
+  "admissionUrl": "https://drept.unibuc.ro/Admitere-2026-s1528-ro.htm",
+  "address": "Bd. M. Kogălniceanu nr. 36–46, sector 5, București",
+  "sources": [
+   "https://drept.unibuc.ro/",
+   "https://drept.unibuc.ro/Admitere-2026-s1528-ro.htm",
+   "https://unibuc.ro/studii/facultati/facultatea-de-drept/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+   "https://drept.unibuc.ro/Contact-s53-ro.htm"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Filosofie",
+  "about": "Studiezi logică, etică, estetică, teoria cunoașterii, istoria ideilor și filosofia limbajului. În anul al treilea alegi un modul: filosofie teoretică, filosofie politică și morală sau istoria filosofiei și filosofia culturii. Este una dintre facultățile cu care a pornit universitatea.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Admiterea este concurs de dosare: completezi un formular de admitere (notat admis/respins), iar clasamentul se face după media de la bacalaureat.",
+  "website": "https://filosofie.unibuc.ro/",
+  "admissionUrl": "https://filosofie.unibuc.ro/admitere-licenta/",
+  "curriculumUrl": "https://filosofie.unibuc.ro/planuri-de-invatamant-curriculum/",
+  "address": "Splaiul Independenței nr. 204, sector 6, București",
+  "sources": [
+   "https://filosofie.unibuc.ro/admitere-licenta/",
+   "https://filosofie.unibuc.ro/studii_licenta/",
+   "https://unibuc.ro/studii/facultati/facultatea-de-filosofie/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+   "https://filosofie.unibuc.ro/",
+   "https://filosofie.unibuc.ro/planuri-de-invatamant-curriculum/"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Fizică",
+  "about": "Înveți fizică la Măgurele, lângă institutele naționale de cercetare în fizică. Poți alege Fizică (și în limba engleză), Fizică informatică, Fizică medicală sau Fizică tehnologică, un program de inginerie de patru ani.",
+  "admissionTypes": [
+   "examen",
+   "bac"
+  ],
+  "admission": "Dai un test scris la o materie aleasă de tine (Fizică, Matematică, Informatică sau Chimie), care contează mai mult decât media de la bacalaureat, luată și ea în calcul. Câștigătorii unor olimpiade și concursuri pot fi admiși direct.",
+  "examSubjects": [
+   "Fizică",
+   "Matematică",
+   "Informatică",
+   "Chimie"
+  ],
+  "website": "https://fizica.unibuc.ro/",
+  "admissionUrl": "https://fizica.unibuc.ro/Fizica/Admitere/Licenta/",
+  "curriculumUrl": "https://www.fizica.unibuc.ro/Fizica/Studii/Licenta/",
+  "address": "Str. Atomiștilor nr. 405, Măgurele, Ilfov",
+  "sources": [
+   "https://fizica.unibuc.ro/Fizica/Admitere/Licenta/",
+   "https://unibuc.ro/studii/facultati/facultatea-de-fizica/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+   "https://www.fizica.unibuc.ro/Fizica/Studii/Licenta/",
+   "https://fizica.unibuc.ro/Fizica/Contact/"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Geografie",
+  "about": "Studiezi relieful, clima, apele, orașele și felul în care oamenii folosesc teritoriul. Programele sunt Geografie, Geografia turismului, Geografia mediului, Cartografie, Hidrologie și meteorologie și Planificare teritorială, cu practică pe teren la stațiunile universității; unele programe se fac și la Focșani și Drobeta-Turnu Severin.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Trimiți o scrisoare de motivație (notată admis/respins), iar clasamentul se face numai după media de la bacalaureat. Nu se dă examen scris.",
+  "website": "https://geo.unibuc.ro/",
+  "admissionUrl": "https://geo.unibuc.ro/admitere-licenta/",
+  "address": "Bd. Nicolae Bălcescu nr. 1, sector 1, București",
+  "sources": [
+   "https://geo.unibuc.ro/admitere-licenta/",
+   "https://geo.unibuc.ro/admitere-licenta-iulie-2026/",
+   "https://unibuc.ro/studii/facultati/facultatea-de-geografie/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+   "https://geo.unibuc.ro/"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Geologie și Geofizică",
+  "about": "Înveți despre roci, minerale, fosile și structura Pământului și despre cum se caută resursele din subsol. Programele de licență sunt Geologie, Geofizică și Inginerie geologică, cu multă practică pe teren, uneori împreună cu firme din domeniu.",
+  "admissionTypes": [
+   "bac"
+  ],
+  "admission": "Admiterea este concurs de dosare: contează doar media generală de la bacalaureat.",
+  "website": "https://gg.unibuc.ro/",
+  "admissionUrl": "https://gg.unibuc.ro/admitere/licenta-2/",
+  "curriculumUrl": "https://gg.unibuc.ro/studenti/plan-de-invatamant/",
+  "address": "Bd. Nicolae Bălcescu nr. 1, sector 1, București (secretariat); al doilea sediu: Str. Traian Vuia nr. 6, sector 2",
+  "sources": [
+   "https://gg.unibuc.ro/admitere/",
+   "https://unibuc.ro/studii/facultati/facultatea-de-geologie-si-geofizica/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+   "https://gg.unibuc.ro/",
+   "https://gg.unibuc.ro/admitere/licenta-2/",
+   "https://gg.unibuc.ro/admitere/licenta-2/admitere-licenta-2026/",
+   "https://gg.unibuc.ro/contact/",
+   "https://gg.unibuc.ro/studenti/plan-de-invatamant/"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Istorie",
+  "about": "Studiezi istoria de la Antichitate până azi, arheologie, istoria României și istoria relațiilor internaționale. Pe lângă Istorie, facultatea are programele Istoria artei și Relații internaționale și studii europene.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Scrii o scrisoare de intenție (notată admis/respins) în care te prezinți și explici de ce ai ales programul, iar clasamentul se face după media de la bacalaureat.",
+  "website": "https://istorie.unibuc.ro/",
+  "admissionUrl": "https://istorie.unibuc.ro/facultate/admitere2026/",
+  "address": "Bulevardul Regina Elisabeta nr. 4–12, București",
+  "sources": [
+   "https://istorie.unibuc.ro/facultate/",
+   "https://istorie.unibuc.ro/facultate/admitere2026/",
+   "https://unibuc.ro/studii/facultati/facultatea-de-istorie/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+   "https://istorie.unibuc.ro/facultate/contact/"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Jurnalism și Științele Comunicării",
+  "about": "Te pregătești pentru presă scrisă, radio, televiziune și online, pentru relații publice sau publicitate. Programele de licență sunt Jurnalism, Comunicare și relații publice și Publicitate, cu practică în redacții și agenții și cu studio TV și laboratoare media.",
+  "admissionTypes": [
+   "examen",
+   "bac"
+  ],
+  "admission": "Dai un examen scris eliminatoriu, care contează cel mai mult: grilă de limba română (vocabular, ortografie, punctuație), un subiect de creativitate și unul de argumentare. La el se adaugă media de la bacalaureat și nota de la română de la bacalaureat.",
+  "examSubjects": [
+   "Limba română",
+   "Creativitate și expresivitate",
+   "Argumentare"
+  ],
+  "website": "https://fjsc.unibuc.ro/",
+  "admissionUrl": "https://fjsc.unibuc.ro/admitere-licenta/",
+  "address": "Bd. Iuliu Maniu nr. 1–3, Complex Leu, corp A, etaj 6, sector 6, București",
+  "sources": [
+   "http://www.fjsc.unibuc.ro/",
+   "https://fjsc.unibuc.ro/admitere-licenta/",
+   "https://unibuc.ro/studii/facultati/facultatea-de-jurnalism-si-stiintele-comunicarii/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+   "https://fjsc.unibuc.ro/",
+   "https://fjsc.unibuc.ro/contact/"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Limbi și Literaturi Străine",
+  "about": "Înveți una sau două limbi străine, cu literatura și cultura lor, de la engleză, franceză și germană până la arabă, chineză, japoneză, coreeană sau suedeză. Poți alege și Traducere și interpretare, Limbi moderne aplicate, Studii americane sau Studii iudaice.",
+  "admissionTypes": [
+   "bac"
+  ],
+  "admission": "Admiterea se face pe bază de dosar. În funcție de secție, contează fie media de la bacalaureat, fie o medie mixtă: nota de la proba scrisă de limba română de la bacalaureat și mediile din liceu la limba străină. Verifică regula secției tale în ghidul facultății.",
+  "website": "https://lls.unibuc.ro/",
+  "admissionUrl": "https://lls.unibuc.ro/admitere/admitere-licenta/",
+  "curriculumUrl": "https://lls.unibuc.ro/facultate/studii/planuri-de-invatamant/",
+  "address": "Str. Edgar Quinet nr. 5–7, sector 1, București (al doilea sediu: Str. Pitar Moș nr. 7–13)",
+  "sources": [
+   "http://lls.unibuc.ro/admitere/",
+   "https://lls.unibuc.ro/admitere/admitere-licenta/",
+   "https://unibuc.ro/studii/facultati/facultatea-de-limbi-si-literaturi-straine/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+   "https://lls.unibuc.ro/",
+   "https://lls.unibuc.ro/facultate/studii/planuri-de-invatamant/",
+   "https://lls.unibuc.ro/contact/"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Litere",
+  "about": "Studiezi limba și literatura română împreună cu o limbă străină sau alegi programe ca Literatură universală și comparată, Comunicare și relații publice, Științe ale informării și documentării, Studii europene, Etnologie ori Asistență managerială și administrativă.",
+  "admissionTypes": [
+   "bac"
+  ],
+  "admission": "Admiterea este concurs de dosare, fără examen: media de admitere este media dintre media generală de la bacalaureat și nota de la proba scrisă de Limba și literatura română de la bacalaureat.",
+  "website": "https://litere.ro/",
+  "admissionUrl": "https://litere.ro/admitere/licenta/",
+  "address": "Str. Edgar Quinet nr. 5-7, sector 1, București",
+  "sources": [
+   "https://litere.ro/admitere/",
+   "https://litere.ro/admitere/licenta/",
+   "https://unibuc.ro/studii/facultati/facultatea-de-litere/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+   "https://litere.ro/",
+   "https://litere.ro/contact/",
+   "https://drive.google.com/file/d/1-Y5UZquUNpXtwjxw-kVk7Mdr29vP2AYl/view"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Matematică și Informatică",
+  "about": "Studiezi matematică, informatică (și în limba engleză) sau Calculatoare și tehnologia informației, un program de patru ani. Facultatea are laboratoare pentru baze de date, rețele, dezvoltare de software, aplicații mobile și robotică.",
+  "admissionTypes": [
+   "examen",
+   "bac"
+  ],
+  "admission": "La cursurile cu frecvență dai o probă scrisă cu două subiecte: unul de Matematică, obligatoriu, și unul de specialitate (de regulă Informatică; la Calculatoare poți alege Fizică, iar la Matematică un al doilea subiect de matematică). Punctajul din probă și din olimpiade și concursuri școlare contează cel mai mult; restul este media de la bacalaureat. La Informatică la distanță se dă o probă orală în loc de cea scrisă.",
+  "website": "https://fmi.unibuc.ro/",
+  "admissionUrl": "https://fmi.unibuc.ro/admitere/",
+  "curriculumUrl": "https://fmi.unibuc.ro/planuri-de-invatamant/",
+  "address": "Bd. Iuliu Maniu nr. 15G, Politehnica Business Tower, București (din septembrie 2025; adresa veche: Str. Academiei nr. 14, sector 1)",
+  "sources": [
+   "https://fmi.unibuc.ro/admitere/",
+   "https://fmi.unibuc.ro/admitere-licenta-iulie-2026/",
+   "https://unibuc.ro/studii/facultati/facultatea-de-matematica-si-informatica/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+   "https://fmi.unibuc.ro/",
+   "https://fmi.unibuc.ro/planuri-de-invatamant/",
+   "https://drive.google.com/file/d/1vWB4-63DphtwT6pCo25-JPojjRGnfVxs/view"
+  ],
+  "examSubjects": [
+   "Matematică",
+   "Informatică",
+   "Fizică (doar la Calculatoare și tehnologia informației)"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Psihologie și Științele Educației",
+  "about": "Aici studiezi psihologie (inclusiv Psihologie – Științe cognitive, și în limba engleză) sau te pregătești să lucrezi în educație: Pedagogie, Psihopedagogie specială, Pedagogia învățământului primar și Educație timpurie. Unele programe se fac și la Focșani.",
+  "admissionTypes": [
+   "examen",
+   "bac",
+   "aptitudini"
+  ],
+  "admission": "Diferă pe programe. La Psihologie dai o probă scrisă tip grilă de gândire critică, fără bibliografie. La Pedagogie și Psihopedagogie specială contează media de la bacalaureat. La Pedagogia învățământului primar și Educație timpurie treci o probă eliminatorie de aptitudini, apoi contează media de la bacalaureat.",
+  "examSubjects": [
+   "Gândire critică"
+  ],
+  "website": "https://fpse.unibuc.ro/",
+  "admissionUrl": "https://fpse.unibuc.ro/studii-universitare-de-licenta/",
+  "curriculumUrl": "https://fpse.unibuc.ro/planurile-de-invatamant/",
+  "address": "Șoseaua Panduri nr. 90, sector 5, București",
+  "sources": [
+   "https://fpse.unibuc.ro/",
+   "https://fpse.unibuc.ro/studii-universitare-de-licenta/",
+   "https://unibuc.ro/studii/facultati/facultatea-de-psihologie-si-stiintele-educatiei/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+   "https://fpse.unibuc.ro/planurile-de-invatamant/",
+   "https://fpse.unibuc.ro/wp-content/uploads/2026/07/1-PRECIZARI-ADMITERE-STUDII-LICENTA-PSIHOLOGIE-2026-1-1-1.pdf",
+   "https://fpse.unibuc.ro/wp-content/uploads/2026/07/1-PRECIZARI-ADMITERE-STUDII-LICENTA-STIINTE-ALE-EDUCATIEI-2026-1-1-1.pdf"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Sociologie și Asistență Socială",
+  "about": "Înveți cum funcționează societatea și cum pot fi ajutați oamenii aflați în dificultate. Programele sunt Sociologie (și în limba engleză), Resurse umane și Asistență socială, cu practică în instituții publice și organizații neguvernamentale.",
+  "admissionTypes": [
+   "bac",
+   "dosar"
+  ],
+  "admission": "Scrii un eseu motivațional (notat admis/respins). Apoi, la cursurile cu frecvență, media se face din nota de la română de la bacalaureat și nota de la o altă probă de bacalaureat aleasă de tine, în părți egale; la distanță contează media de la bacalaureat.",
+  "website": "https://sas.unibuc.ro/",
+  "admissionUrl": "https://sas.unibuc.ro/admitere-licenta/",
+  "address": "Șoseaua Panduri nr. 90, sector 5, București (al doilea sediu: Bd. Schitu Măgureanu nr. 9)",
+  "sources": [
+   "https://sas.unibuc.ro/",
+   "https://sas.unibuc.ro/admitere-licenta/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+   "https://sas.unibuc.ro/contact/",
+   "https://unibuc.ro/studii/facultati/facultatea-de-sociologie-si-asistenta-sociala/"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Studii Interdisciplinare",
+  "about": "Este o facultate care îmbină mai multe domenii. Programul ei de licență, Servicii și politici de sănătate publică (Public Health), combină medicina, informatica, economia, sociologia, geografia, politicile publice și managementul.",
+  "admissionTypes": [
+   "bac",
+   "examen"
+  ],
+  "admission": "La Servicii și politici de sănătate publică admiterea este concurs de dosare, numai pe baza mediei de la bacalaureat. Programul Robotică apare în documentele universității la Facultatea de Fizică, unde admiterea are test scris și medie de bacalaureat.",
+  "website": "https://fsi.unibuc.ro/",
+  "admissionUrl": "https://fsi.unibuc.ro/admitere/admitere-licenta/",
+  "address": "Strada Transilvaniei nr. 6, sector 1, București",
+  "sources": [
+   "https://fsi.unibuc.ro",
+   "https://fsi.unibuc.ro/admitere/admitere-licenta/",
+   "https://fizica.unibuc.ro/Fizica/Admitere/Licenta/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+   "https://fsi.unibuc.ro/",
+   "https://fsi.unibuc.ro/studii/licenta/",
+   "https://fsi.unibuc.ro/wp-content/uploads/2026/06/Licenta-Program-de-studii-locuri-si-forma-de-concurs-v_-22.-06.2026.pdf",
+   "https://www.fizica.unibuc.ro/Fizica/Studii/Licenta/"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Științe Politice",
+  "about": "Studiezi cum se iau deciziile politice, cum funcționează statele și relațiile dintre ele. Programul de Științe politice se poate urma în română, engleză sau franceză, iar pe lângă el există Studii de securitate și Relații internaționale și studii europene (în engleză). Practica face parte din program.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Scrii o lucrare scurtă și originală despre un subiect politic, în limba programului ales, notată admis/respins. Clasamentul se face apoi după media de la bacalaureat.",
+  "website": "https://fsp.unibuc.ro/",
+  "admissionUrl": "https://fsp.unibuc.ro/licenta/",
+  "address": "Bd. Mihail Kogălniceanu nr. 36–46, parter (Casa de Oaspeți Academica), București (secretariat)",
+  "sources": [
+   "https://fsp.unibuc.ro/admitere/",
+   "https://fsp.unibuc.ro/licenta/",
+   "https://unibuc.ro/studii/facultati/facultatea-de-stiinte-politice/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+   "https://fsp.unibuc.ro/",
+   "https://fsp.unibuc.ro/contact/"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Teologie Baptistă",
+  "about": "Studiezi teologie creștină baptistă împreună cu asistență socială: teologie sistematică, etică creștină și interpretarea Bibliei. Absolvenții pot lucra în biserici, în educație, în organizații neguvernamentale sau în proiecte sociale.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Pe site-ul facultății, admiterea este concurs de dosare cu un eseu pe o temă creștină dată; nota finală se face din nota la eseu și media de la bacalaureat, eseul cântărind mai mult. Verifică probele anului tău pe pagina de admitere.",
+  "website": "https://ftb.unibuc.ro/",
+  "admissionUrl": "https://ftb.unibuc.ro/admitere/admitere-licenta/",
+  "curriculumUrl": "https://ftb.unibuc.ro/planuri-de-invatamant/",
+  "address": "Str. Berzei nr. 29, sector 1, București",
+  "sources": [
+   "https://ftb.unibuc.ro/",
+   "https://ftb.unibuc.ro/admitere/admitere-licenta/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+   "https://ftb.unibuc.ro/planuri-de-invatamant/",
+   "https://unibuc.ro/studii/facultati/facultatea-de-teologie-baptista/"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Teologie Ortodoxă",
+  "about": "Studiezi teologie ortodoxă: Teologie pastorală (un program de patru ani), Teologie didactică, Teologie asistență socială și Artă sacră. Numele complet este Facultatea de Teologie Ortodoxă „Justinian Patriarhul”; are bibliotecă proprie și o extensie la Roma.",
+  "admissionTypes": [
+   "interviu",
+   "aptitudini",
+   "bac"
+  ],
+  "admission": "Toți candidații trec un interviu de aptitudini (admis/respins). Apoi nota se face în părți egale din media de la bacalaureat și un interviu la Teologie dogmatică; la Pastorală există și o probă eliminatorie de dicție și aptitudini muzicale, iar la Artă sacră, în locul interviului de dogmatică, o probă practică de desen.",
+  "examSubjects": [
+   "Teologie dogmatică ortodoxă",
+   "Desen (Artă sacră)"
+  ],
+  "website": "https://ftoub.unibuc.ro/",
+  "admissionUrl": "https://ftoub.unibuc.ro/admitere/studii-universitare-de-licenta/",
+  "curriculumUrl": "https://ftoub.unibuc.ro/documente-oficiale/planuri-de-invatamant/",
+  "address": "Strada Sfânta Ecaterina nr. 2, sector 4, București",
+  "sources": [
+   "https://ftoub.unibuc.ro/",
+   "https://ftoub.unibuc.ro/admitere/studii-universitare-de-licenta/",
+   "https://unibuc.ro/studii/facultati/facultatea-de-teologie-ortodoxa/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+   "https://ftoub.unibuc.ro/documente-oficiale/planuri-de-invatamant/",
+   "https://ftoub.unibuc.ro/contact/"
+  ]
+ },
+ {
+  "universityId": "unibuc",
+  "name": "Facultatea de Teologie Romano-Catolică",
+  "about": "Studiezi teologie romano-catolică împreună cu asistență socială, într-un program de trei ani, cu materii de teologie și materii sociale și cu practică de specialitate. Facultatea se află în curtea Catedralei Sfântul Iosif din București.",
+  "admissionTypes": [
+   "dosar",
+   "interviu",
+   "bac"
+  ],
+  "admission": "Admiterea este concurs de dosare cu interviu: nota finală se face în părți egale din media de la bacalaureat și nota de la interviu.",
+  "website": "https://ftcub.unibuc.ro/",
+  "admissionUrl": "https://ftcub.unibuc.ro/licenta/",
+  "curriculumUrl": "https://ftcub.unibuc.ro/plan-de-invatamant/",
+  "address": "Str. G-ral Berthelot 19, București",
+  "sources": [
+   "https://ftcub.unibuc.ro/admitere/",
+   "https://ftcub.unibuc.ro/licenta/",
+   "https://admitere.unibuc.ro/wp-content/uploads/2026/07/Anexa-2_Licenta_Forma-de-concurs-ADMITERE-2026_iulie.pdf",
+   "https://ftcub.unibuc.ro/",
+   "https://ftcub.unibuc.ro/plan-de-invatamant/",
+   "https://ftcub.unibuc.ro/contact/",
+   "https://unibuc.ro/studii/facultati/facultatea-de-teologie-romano-catolica/"
+  ]
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Antreprenoriat, Ingineria și Managementul Afacerilor",
+  "about": "Aici înveți inginerie împreună cu management: cum se conduce o afacere, marketing, finanțe, resurse umane și managementul proiectelor. Este gândită pentru cei care vor o carieră în afaceri sau vor să își pornească propria firmă. În laboratoare se lucrează cu programe de simulare a afacerilor.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Intri prin concurs de dosare: contează mediile din liceu (clasele IX-XI) la Matematică și la o a doua materie pe care o alegi din lista facultății, împreună cu media de la bacalaureat. Nu se dă examen scris.",
+  "website": "https://faima.upb.ro/",
+  "admissionUrl": "https://faima.upb.ro/informatii-admitere-licenta",
+  "address": "Splaiul Independenței nr. 313, sector 6, București, RO-060042, corp BN208",
+  "sources": [
+   "https://upb.ro/facultati/facultatea-de-antreprenoriat-ingineria-si-managementul-afacerilor/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://faima.upb.ro/",
+   "https://faima.upb.ro/informatii-admitere-licenta"
+  ]
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Automatică și Calculatoare",
+  "about": "Aici înveți calculatoare și tehnologia informației: programare, arhitectura calculatoarelor și aplicații software. La automatică studiezi informatică aplicată, sisteme de conducere (de control) și sisteme inteligente. Teoria merge mână în mână cu multă practică.",
+  "admissionTypes": [
+   "examen",
+   "bac"
+  ],
+  "admission": "Intri prin examen scris cu două probe, date în aceeași zi: Matematică și, la alegere, Fizică sau Informatică. Examenul are ponderea cea mai mare, iar media de la bacalaureat contează și ea, într-o parte mai mică.",
+  "examSubjects": [
+   "Matematică",
+   "Fizică",
+   "Informatică"
+  ],
+  "website": "https://acs.pub.ro/",
+  "admissionUrl": "https://acs.pub.ro/admitere/licenta/",
+  "address": "Splaiul Independenței 313, cod poștal 060042, sector 6, București, corp ED 103-105",
+  "sources": [
+   "https://upb.ro/facultati/facultatea-de-automatica-si-calculatoare/",
+   "https://acs.pub.ro/admitere/licenta/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://acs.pub.ro/"
+  ]
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Electronică, Comunicații și Calculatoare",
+  "about": "Facultatea este în Pitești, la Centrul Universitar Pitești al Politehnicii București. Aici înveți calculatoare, electronică aplicată, rețele și software de telecomunicații și electromecanică.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Intri prin concurs de dosare: contează mediile din liceu (clasele IX-XI) la Matematică și la o a doua materie pe care o alegi din lista facultății, împreună cu media de la bacalaureat. Nu se dă examen scris.",
+  "website": "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-electronica-comunicatii-si-calculatoare-2",
+  "admissionUrl": "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-electronica-comunicatii-si-calculatoare-2/fecc-admitere",
+  "address": "Pitești, str. Târgu din Vale nr. 1, corp T, etaj 4",
+  "sources": [
+   "https://upb.ro/facultatea-de-electronica-comunicatii-si-calculatoare/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-electronica-comunicatii-si-calculatoare-2",
+   "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-electronica-comunicatii-si-calculatoare-2/fecc-admitere"
+  ]
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Electronică, Telecomunicații și Tehnologia Informației",
+  "about": "Aici înveți electronică, microelectronică, telecomunicații și ingineria calculatoarelor: de la circuite și dispozitive până la rețele și software de telecomunicații. Facultatea are și programe de comunicare, cum ar fi Media digitală și Jurnalism.",
+  "admissionTypes": [
+   "examen",
+   "dosar",
+   "bac"
+  ],
+  "admission": "La programele de inginerie intri prin examen scris la Matematică și la Fizică sau Informatică, plus media de la bacalaureat. La programele de științe ale comunicării (Media digitală, Jurnalism) intri prin concurs de dosare, cu mediile din liceu la Limba română și la o materie la alegere, plus media de la bacalaureat.",
+  "examSubjects": [
+   "Matematică",
+   "Fizică",
+   "Informatică"
+  ],
+  "website": "https://etti.upb.ro/",
+  "admissionUrl": "https://etti.upb.ro/oferta-educationala/admitere-licenta/",
+  "curriculumUrl": "https://etti.upb.ro/planuri-de-invatamant-licenta/",
+  "address": "B-dul Iuliu Maniu 1-3, cod poștal 061071, sector 6, București, Local Leu, corp A, et. 1",
+  "sources": [
+   "https://upb.ro/facultati/facultatea-de-electronica-telecomunicatii-si-tehnologia-informatiei/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://etti.upb.ro/",
+   "https://etti.upb.ro/oferta-educationala/admitere-licenta/",
+   "https://etti.upb.ro/planuri-de-invatamant-licenta/",
+   "https://etti.upb.ro/cp_services/licenta-sesiunea-ii-admitere-cu-concurs/"
+  ]
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Energetică",
+  "about": "Aici înveți cum se produce, se transportă și se distribuie energia: centrale clasice și nucleare, energie regenerabilă, rețele electrice. În ultimii ani programele pun accent și pe protecția mediului și pe digitalizarea sectorului energetic. Facultatea există din 1950.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Intri prin concurs de dosare: contează mediile din liceu (clasele IX-XI) la Matematică și la Fizică sau Informatică, la alegere, împreună cu media de la bacalaureat. Nu se dă examen scris.",
+  "website": "https://energ.upb.ro/",
+  "admissionUrl": "https://energ.upb.ro/admitere/licenta/informatii-admitere",
+  "address": "Splaiul Independenței 313, sector 6, cod poștal 060042, București, corp EI 101",
+  "sources": [
+   "https://upb.ro/facultati/facultatea-de-energetica/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://energ.upb.ro/",
+   "https://energ.upb.ro/admitere/licenta/informatii-admitere"
+  ]
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Ingineria Sistemelor Biotehnice",
+  "about": "Aici înveți inginerie legată de agricultură, alimente și mediu: mașini și instalații pentru agricultură și industria alimentară, ingineria produselor alimentare, informatică aplicată în ingineria mediului și mecatronică pentru sisteme biotehnice.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Intri prin concurs de dosare: contează mediile din liceu (clasele IX-XI) la Matematică și la o a doua materie pe care o alegi din lista facultății, împreună cu media de la bacalaureat. Nu se dă examen scris.",
+  "website": "https://isb.pub.ro/",
+  "admissionUrl": "https://isb.pub.ro/admitere-s3/",
+  "curriculumUrl": "https://isb.pub.ro/lista_planuri_inv/",
+  "address": "Splaiul Independenței 313, sector 6, București, cod 060042, corp D 103",
+  "sources": [
+   "https://upb.ro/facultati/facultatea-de-ingineria-sistemelor-biotehnice/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://isb.pub.ro/",
+   "https://isb.pub.ro/admitere-s3/",
+   "https://isb.pub.ro/lista_planuri_inv/"
+  ]
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Inginerie Aerospațială",
+  "about": "Aici înveți cum se proiectează, se construiesc și se exploatează avioanele și vehiculele spațiale: construcții aerospațiale, sisteme de propulsie, echipamente de aviație, navigație aeriană, design și management aeronautic. Facultatea continuă secția de aviație a Politehnicii, care a pornit în 1933.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Intri prin concurs de dosare: contează mediile din liceu (clasele IX-XI) la Matematică și la Fizică sau Informatică, la alegere, împreună cu media de la bacalaureat. Nu se dă examen scris.",
+  "website": "https://www.aero.pub.ro/ro/acasa/",
+  "admissionUrl": "https://www.aero.pub.ro/ro/admitere-licenta/",
+  "address": "Str. Polizu 1-7, cod poștal 011061, sector 1, București, Local Polizu, A 045",
+  "sources": [
+   "https://upb.ro/facultati/facultatea-de-inginerie-aerospatiala/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://www.aero.pub.ro/ro/acasa/",
+   "https://www.aero.pub.ro/ro/admitere-licenta/"
+  ]
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Inginerie Chimică și Biotehnologii",
+  "about": "Aici înveți chimie aplicată în industrie: substanțe organice și petrochimie, chimie alimentară și tehnologii biochimice, polimeri, materiale oxidice și nanomateriale, inginerie farmaceutică și protecția mediului. Cursurile de chimie de la Politehnica au o tradiție care începe în 1867.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Intri prin concurs de dosare: contează mediile din liceu (clasele IX-XI) la două materii alese din lista facultății, împreună cu media de la bacalaureat. Nu se dă examen scris.",
+  "website": "https://chimie.upb.ro/",
+  "admissionUrl": "https://chimie.upb.ro/admitere/",
+  "address": "Str. Polizu 1-7, cod poștal 011061, sau Calea Griviței 132, cod poștal 010737, sector 1, București, corp L 015",
+  "sources": [
+   "https://upb.ro/facultati/facultatea-de-chimie-aplicata-si-stiinta-materialelor/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://chimie.upb.ro/",
+   "https://chimie.upb.ro/admitere/"
+  ]
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Inginerie Electrică",
+  "about": "Aici înveți cum se proiectează și cum funcționează sistemele electrice: mașini și acționări electrice, electronică de putere, aparate de măsură și achiziții de date. Pe lângă partea electrică faci și multă informatică, pentru proiectare și programe folosite în inginerie.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Intri prin concurs de dosare: contează mediile din liceu (clasele IX-XI) la Matematică și la Fizică sau Informatică, la alegere, împreună cu media de la bacalaureat. Nu se dă examen scris.",
+  "website": "https://www.electro.upb.ro/",
+  "admissionUrl": "https://www.electro.upb.ro/admitere-licenta/",
+  "curriculumUrl": "https://www.electro.upb.ro/planuri-de-invatamant/",
+  "address": "Splaiul Independenței 313, sector 6, București, cod 060042, corp EA 123",
+  "sources": [
+   "https://upb.ro/facultati/facultatea-de-inginerie-electrica/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://www.electro.upb.ro/",
+   "https://www.electro.upb.ro/admitere-licenta/",
+   "https://www.electro.upb.ro/planuri-de-invatamant/"
+  ]
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Inginerie Industrială și Robotică",
+  "about": "Aici înveți cum se proiectează și se fabrică produsele industriale: tehnologia construcțiilor de mașini, sisteme de producție digitale, robotică, sudare, logistică industrială și ingineria calității. Există și programe de informatică aplicată în inginerie industrială și de inginerie economică.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Intri prin concurs de dosare: contează mediile din liceu (clasele IX-XI) la Matematică și la o a doua materie pe care o alegi din lista facultății, împreună cu media de la bacalaureat. Nu se dă examen scris.",
+  "website": "https://fiir.upb.ro/index.php/ro/",
+  "admissionUrl": "https://www.fiir.upb.ro/index.php/ro/licenta/admitere-licenta",
+  "curriculumUrl": "https://www.fiir.upb.ro/index.php/ro/licenta/planuri-de-invatamant",
+  "address": "Splaiul Independenței 313, sector 6, cod poștal 060042, București, corp CD 003",
+  "sources": [
+   "https://upb.ro/facultati/facultatea-de-inginerie-industriala-si-robotica/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://fiir.upb.ro/index.php/ro/",
+   "https://www.fiir.upb.ro/index.php/ro/licenta/admitere-licenta",
+   "https://www.fiir.upb.ro/index.php/ro/licenta/planuri-de-invatamant"
+  ]
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Inginerie în Limbi Străine",
+  "about": "Aici faci inginerie cu toate cursurile predate într-o limbă străină: engleză, franceză sau germană. Poți alege între calculatoare și ingineria informației, electronică, inginerie mecanică, inginerie chimică sau inginerie economică. Facultatea primește și studenți din alte țări.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Intri prin concurs de dosare: contează mediile din liceu (clasele IX-XI) la materiile cerute pentru domeniul ales (de regulă Matematică și o a doua materie la alegere), împreună cu media de la bacalaureat. Nu se dă examen scris.",
+  "website": "https://fils.upb.ro/ro/home/",
+  "admissionUrl": "https://fils.upb.ro/ro/admitere/",
+  "address": "Splaiul Independenței 313, București, 060042, corp JE 105",
+  "sources": [
+   "https://upb.ro/facultati/facultatea-de-inginerie-in-limbi-straine/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://fils.upb.ro/ro/home/",
+   "https://fils.upb.ro/ro/admitere/"
+  ]
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Inginerie Mecanică și Mecatronică",
+  "about": "Aici înveți inginerie mecanică și mecatronică: sisteme și echipamente termice, mașini hidraulice și pneumatice, echipamente pentru industrie, mecanică fină. Lucrezi cu proiectare pe calculator, simulări și măsurători de laborator. Facultatea are și programe de design industrial, inginerie economică și optometrie.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Intri prin concurs de dosare: contează mediile din liceu (clasele IX-XI) la Matematică și la o a doua materie pe care o alegi din lista facultății, împreună cu media de la bacalaureat. Nu se dă examen scris.",
+  "website": "https://mecanica.upb.ro/",
+  "admissionUrl": "https://mecanica.upb.ro/admitere-licenta/",
+  "address": "Splaiul Independenței 313, cod poștal 060042, sector 6, București, corp CG 008",
+  "sources": [
+   "https://upb.ro/facultati/facultatea-de-inginerie-mecanica-si-mecatronica/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://mecanica.upb.ro/",
+   "https://mecanica.upb.ro/admitere-licenta/",
+   "https://mecanica.upb.ro/elementor-17204/"
+  ],
+  "curriculumUrl": "https://mecanica.upb.ro/elementor-17204/"
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Inginerie Medicală",
+  "about": "Aici înveți ingineria din spatele medicinei: aparate și sisteme medicale, dispozitive, biomateriale și programe software folosite în spitale. Partea de pregătire medicală se face împreună cu Universitatea de Medicină și Farmacie „Carol Davila”. Facultatea a fost înființată în 2010.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Intri prin concurs de dosare: contează mediile din liceu (clasele IX-XI) la Matematică și la o a doua materie pe care o alegi din lista facultății, împreună cu media de la bacalaureat. Nu se dă examen scris.",
+  "website": "https://fim.upb.ro/",
+  "admissionUrl": "https://fim.upb.ro/admitere/",
+  "address": "Strada Gheorghe Polizu nr. 1-7, corp F, sector 1, București",
+  "sources": [
+   "https://upb.ro/facultati/facultatea-de-inginerie-medicala/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://fim.upb.ro/",
+   "https://fim.upb.ro/admitere/"
+  ]
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Mecanică și Tehnologie",
+  "about": "Facultatea este în Pitești, la Centrul Universitar Pitești al Politehnicii București. Aici înveți despre autovehicule rutiere, ingineria transporturilor și a traficului, tehnologia construcțiilor de mașini și inginerie economică industrială. Facultatea există din 1969 și îmbină ingineria cu partea economică.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Intri prin concurs de dosare: contează mediile din liceu (clasele IX-XI) la Matematică și la o a doua materie pe care o alegi din lista facultății, împreună cu media de la bacalaureat. Nu se dă examen scris.",
+  "website": "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-mecanica-si-tehnologie-2",
+  "admissionUrl": "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-mecanica-si-tehnologie-2/admitere-fmt-2",
+  "address": "Str. Târgul din Vale nr. 1, 110040 Pitești, Argeș",
+  "sources": [
+   "https://upb.ro/facultatea-de-mecanica-si-tehnologie/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-mecanica-si-tehnologie-2",
+   "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-mecanica-si-tehnologie-2/admitere-fmt-2"
+  ]
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Știința și Ingineria Materialelor",
+  "about": "Aici înveți despre materialele din care se fac lucrurile: metale și aliaje, dar și materiale moderne, cum sunt compozitele, pulberile sau materialele cu memoria formei. Facultatea vine din tradiția de metalurgie a Politehnicii și are și programe de inginerie medicală, ingineria mediului și inginerie economică.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Intri prin concurs de dosare: contează mediile din liceu (clasele IX-XI) la două materii alese din lista facultății, împreună cu media de la bacalaureat. Nu se dă examen scris.",
+  "website": "https://www.sim.upb.ro/",
+  "admissionUrl": "https://www.sim.upb.ro/index.php/admitere-licenta/",
+  "curriculumUrl": "https://www.sim.upb.ro/index.php/planuri-invatamant/",
+  "address": "Splaiul Independenței 313, sector 6, București, cod 060042, corp JA 104-106",
+  "sources": [
+   "https://upb.ro/facultati/facultatea-de-stiinta-si-ingineria-materialelor/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://www.sim.upb.ro/",
+   "https://www.sim.upb.ro/index.php/admitere-licenta/",
+   "https://www.sim.upb.ro/index.php/planuri-de-invatamant/",
+   "https://www.sim.upb.ro/index.php/planuri-invatamant/"
+  ]
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Științe ale Educației, Științe Sociale și Psihologie",
+  "about": "Facultatea este în Pitești, la Centrul Universitar Pitești al Politehnicii București. Aici poți studia psihologie, asistență socială, jurnalism, resurse umane și pedagogie, pentru cei care vor să devină învățători sau educatori. Unele programe de pedagogie se țin și la Râmnicu Vâlcea, Slatina, Alexandria și Câmpulung.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Intri prin concurs de dosare: contează mediile din liceu (clasele IX-XI) la Limba și literatura română și la o a doua materie la alegere, împreună cu media de la bacalaureat. Nu se dă examen scris.",
+  "website": "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-stiintele-educatiei-stiinte-sociale-si-psihologie-2",
+  "address": "Str. Târgu din Vale nr. 1, Corpul Central, etaj 4, Pitești, 110040, jud. Argeș",
+  "sources": [
+   "https://upb.ro/facultatea-de-stiinte-ale-educatiei-stiinte-sociale-si-psihologie/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-stiintele-educatiei-stiinte-sociale-si-psihologie-2",
+   "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-stiintele-educatiei-stiinte-sociale-si-psihologie-2/admitere-licentamaster-fsessp1"
+  ],
+  "admissionUrl": "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-stiintele-educatiei-stiinte-sociale-si-psihologie-2/admitere-licentamaster-fsessp1"
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Științe Aplicate",
+  "about": "Aici înveți matematică, fizică și informatică folosite în inginerie. Programele sunt Matematică și informatică aplicată în inginerie, Inginerie fizică și Securitate informatică și știința datelor. Facultatea a fost înființată în 2005 și are centre de cercetare și laboratoare proprii.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Intri prin concurs de dosare: contează mediile din liceu (clasele IX-XI) la Matematică și la o a doua materie pe care o alegi din lista facultății, împreună cu media de la bacalaureat. Nu se dă examen scris.",
+  "website": "http://fsa.pub.ro/",
+  "admissionUrl": "http://fsa.pub.ro/admitere_licenta",
+  "address": "Splaiul Independenței 313, sector 6, București, cod 060042, corp BN 105",
+  "sources": [
+   "https://upb.ro/facultati/facultatea-de-stiinte-aplicate/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "http://fsa.pub.ro/",
+   "http://fsa.pub.ro/admitere_licenta"
+  ]
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Științe Economice și Drept",
+  "about": "Facultatea este în Pitești, la Centrul Universitar Pitești al Politehnicii București. Aici poți studia finanțe și bănci, contabilitate și informatică de gestiune, management, administrarea afacerilor, administrație publică și drept. Pregătește specialiști pentru domeniul economic, juridic și pentru administrația publică.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Intri prin concurs de dosare: contează mediile din liceu (clasele IX-XI) la Limba și literatura română și la o a doua materie la alegere, împreună cu media de la bacalaureat. Nu se dă examen scris.",
+  "website": "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-stiinte-economice-si-drept-1",
+  "address": "Târgul din Vale nr. 1, Corp Central, etaj 4, Pitești",
+  "sources": [
+   "https://upb.ro/facultatea-de-stiinte-economice-si-drept/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-stiinte-economice-si-drept-1",
+   "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-stiinte-economice-si-drept-1/admitere-2026-1"
+  ],
+  "admissionUrl": "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-stiinte-economice-si-drept-1/admitere-2026-1"
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Științe, Educație Fizică și Informatică",
+  "about": "Facultatea este în Pitești, la Centrul Universitar Pitești al Politehnicii București. Aici poți studia biologie, chimie, matematică, informatică, ecologie și ingineria mediului, horticultură, dar și asistență medicală, kinetoterapie sau educație fizică și sport. Pregătește profesori și specialiști în sănătate, sport, informatică și mediu.",
+  "admissionTypes": [
+   "dosar",
+   "aptitudini",
+   "examen",
+   "bac"
+  ],
+  "admission": "La cele mai multe programe intri prin concurs de dosare, cu mediile din liceu la două materii la alegere și media de la bacalaureat. La Educație fizică și sport dai probe sportive, iar la Asistență medicală generală dai și o probă scrisă la Biologie (anatomie și fiziologie umană).",
+  "examSubjects": [
+   "Biologie (anatomie și fiziologie umană)"
+  ],
+  "website": "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-stiinte-educatie-fizica-si-informatica",
+  "admissionUrl": "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-stiinte-educatie-fizica-si-informatica/admitere-fsefi",
+  "address": "Str. Târgu din Vale nr. 1, corp S, Pitești",
+  "sources": [
+   "https://upb.ro/facultatea-de-stiinte-educatie-fizica-si-informatica/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-stiinte-educatie-fizica-si-informatica",
+   "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-stiinte-educatie-fizica-si-informatica/admitere-fsefi"
+  ]
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Teologie, Litere, Istorie și Arte",
+  "about": "Facultatea este în Pitești, la Centrul Universitar Pitești al Politehnicii București. Aici poți studia limba română și limbi străine, limbi moderne aplicate, istorie, teologie ortodoxă cu asistență socială, muzică, artă sacră și actorie. Continuă tradiția de științe umaniste și arte a Universității din Pitești.",
+  "admissionTypes": [
+   "dosar",
+   "aptitudini",
+   "bac"
+  ],
+  "admission": "La teologie, litere, limbi moderne aplicate și istorie intri prin concurs de dosare, cu mediile din liceu și media de la bacalaureat. La Muzică și Actorie dai probe de aptitudini (de exemplu dicteu muzical și solfegiu, respectiv improvizație și interpretarea unui text), iar la Artă sacră dai o probă de desen.",
+  "website": "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-teologie-litere-istorie-si-arte",
+  "admissionUrl": "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-teologie-litere-istorie-si-arte/admitere-ftlia",
+  "address": "Str. Aleea Școlii Normale nr. 7, cod 110254, Pitești, jud. Argeș",
+  "sources": [
+   "https://upb.ro/facultatea-de-teologie-litere-istorie-si-arte/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-teologie-litere-istorie-si-arte",
+   "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-teologie-litere-istorie-si-arte/admitere-ftlia"
+  ]
+ },
+ {
+  "universityId": "upb",
+  "name": "Facultatea de Transporturi",
+  "about": "Aici înveți despre vehicule și despre cum se organizează transportul: autovehicule rutiere și sistemele lor de propulsie, vehicule feroviare, ingineria traficului, electronică și telecomenzi în transporturi. Absolvenții lucrează la proiectarea și exploatarea vehiculelor, la siguranța circulației și la sisteme inteligente de transport.",
+  "admissionTypes": [
+   "dosar",
+   "bac"
+  ],
+  "admission": "Intri prin concurs de dosare: contează mediile din liceu (clasele IX-XI) la Matematică și la Fizică sau Informatică, la alegere, împreună cu media de la bacalaureat. Nu se dă examen scris.",
+  "website": "https://transport.upb.ro/",
+  "admissionUrl": "https://transport.upb.ro/admitere-licenta/",
+  "address": "Splaiul Independenței 313, cod poștal 060042, sector 6, București, corp JA 003",
+  "sources": [
+   "https://upb.ro/facultati/facultatea-de-transporturi/",
+   "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
+   "https://transport.upb.ro/",
+   "https://transport.upb.ro/admitere-licenta/"
+  ]
+ },
+ {
+  "universityId": "uvt",
+  "name": "Facultatea de Arte și Design",
+  "about": "Aici studiezi arte vizuale și design: pictură, grafică, sculptură, fotografie-video, arte decorative, conservare și restaurare, design ambiental, design de obiect, modă și artă pentru jocuri digitale (în engleză).",
+  "admissionTypes": [
+   "aptitudini"
+  ],
+  "admission": "Admiterea are două probe practice susținute la facultate: o probă eliminatorie și o probă de specialitate, la programul ales. Media de la bacalaureat contează doar pentru departajare; la programul în engleză se verifică și limba.",
+  "website": "https://arte.uvt.ro/",
+  "admissionUrl": "https://admitere.uvt.ro/listing/facultatea-de-arte-si-design/",
+  "address": "Str. Oituz nr. 4, Timișoara",
+  "sources": [
+   "https://admitere.uvt.ro/listing/facultatea-de-arte-si-design/",
+   "https://admitere.uvt.ro/wp-content/uploads/2020/05/Regulament-admitere-licenta-2026-2027_FAD.pdf",
+   "https://arte.uvt.ro/",
+   "https://admitere.uvt.ro/program/facultatea-de-arte-si-design/",
+   "https://arte.uvt.ro/contact/"
+  ]
+ },
+ {
+  "universityId": "uvt",
+  "name": "Facultatea de Chimie, Biologie, Geografie",
+  "about": "Studiezi științele naturii și ale Pământului: biologie, biochimie, chimie, chimie medicală, geografie, geografia turismului, geoinformatică și științe aplicate în criminalistică. Are și programe duble pentru viitori profesori, ca Chimie – Biologie.",
+  "admissionTypes": [
+   "bac",
+   "examen"
+  ],
+  "admission": "Contează mai mult media de la bacalaureat, la care se adaugă nota la testul UVT de abilități lingvistice și de raționament (test grilă de vocabular și logică). La programele duble pentru profesori există și o probă eliminatorie de comunicare.",
+  "website": "https://cbg.uvt.ro/",
+  "admissionUrl": "https://admitere.uvt.ro/listing/facultatea-de-chimie-biologie-geografie/",
+  "address": "Str. Johann Heinrich Pestalozzi nr. 16, Timișoara",
+  "sources": [
+   "https://admitere.uvt.ro/listing/facultatea-de-chimie-biologie-geografie/",
+   "https://admitere.uvt.ro/wp-content/uploads/2020/05/FCBG_Regulament-admitere-licenta-2026-2027-2.pdf",
+   "https://cbg.uvt.ro/",
+   "https://admitere.uvt.ro/testul-de-evaluare-a-abilitatilor-lingvistice-si-de-rationament/",
+   "https://admitere.uvt.ro/program/facultatea-de-chimie-biologie-geografie/"
+  ]
+ },
+ {
+  "universityId": "uvt",
+  "name": "Facultatea de Drept",
+  "about": "Înveți legile și cum se aplică ele. Are programul Drept, de patru ani, și programul bilingv română-engleză Drept european și internațional.",
+  "admissionTypes": [
+   "bac",
+   "examen"
+  ],
+  "admission": "Media de admitere se face în părți egale din media de la bacalaureat și nota la testul de competențe lingvistice și de raționament. La programul bilingv dai și un test de limba engleză.",
+  "website": "https://drept.uvt.ro/",
+  "admissionUrl": "https://admitere.uvt.ro/listing/facultatea-de-drept/",
+  "curriculumUrl": "https://drept.uvt.ro/planul-de-invatamant-pentru-programe-de-licenta-i-f.html",
+  "address": "Bd. Eroilor nr. 9A, Timișoara",
+  "sources": [
+   "https://admitere.uvt.ro/listing/facultatea-de-drept/",
+   "https://admitere.uvt.ro/wp-content/uploads/2020/05/Regulament-admitere-licenta-2026-2027_FD.pdf",
+   "https://drept.uvt.ro/",
+   "https://admitere.uvt.ro/program/facultatea-de-drept/",
+   "https://drept.uvt.ro/planul-de-invatamant-pentru-programe-de-licenta-i-f.html"
+  ]
+ },
+ {
+  "universityId": "uvt",
+  "name": "Facultatea de Economie și de Administrare a Afacerilor",
+  "about": "Facultatea de economie a universității: contabilitate, finanțe și bănci, management, marketing, informatică economică, afaceri internaționale, comerț și turism. Unele programe se pot urma în engleză, germană sau franceză, iar câteva și la distanță.",
+  "admissionTypes": [
+   "bac",
+   "examen"
+  ],
+  "admission": "Contează mai mult media de la bacalaureat, la care se adaugă nota la testul FEAA, un test grilă de raționament economic și logică. La programele în limbi străine dai și un test de limbă online.",
+  "website": "https://feaa.uvt.ro/",
+  "admissionUrl": "https://admitere.uvt.ro/listing/facultatea-de-economie-si-de-administrare-a-afacerilor/",
+  "address": "Str. Johann Heinrich Pestalozzi nr. 16, Timișoara",
+  "sources": [
+   "https://admitere.uvt.ro/listing/facultatea-de-economie-si-de-administrare-a-afacerilor/",
+   "https://admitere.uvt.ro/wp-content/uploads/2020/05/Regulament-admitere-licenta-2026-2027_FEAA.pdf",
+   "https://feaa.uvt.ro/",
+   "https://admitere.uvt.ro/program/facultatea-de-economie-si-de-administrare-a-afacerilor/",
+   "https://feaa.uvt.ro/ro/"
+  ]
+ },
+ {
+  "universityId": "uvt",
+  "name": "Facultatea de Educație Fizică și Sport",
+  "about": "Pregătește profesori de sport, antrenori și kinetoterapeuți. Programele sunt Educație fizică și sportivă, Sport și performanță motrică și Kinetoterapie și motricitate specială (și în engleză).",
+  "admissionTypes": [
+   "aptitudini",
+   "bac",
+   "examen"
+  ],
+  "admission": "Dai probe sportive (un test de evaluare motrică, iar la Sport și performanță motrică și o probă de măiestrie sportivă), care se adună cu media de la bacalaureat. La Kinetoterapie dai o probă fizică și o probă scrisă la biologie, iar media de la bacalaureat contează și ea; la programul în engleză, în locul biologiei dai un test de limbă (admis/respins).",
+  "examSubjects": [
+   "Biologie"
+  ],
+  "website": "https://sport.uvt.ro/",
+  "admissionUrl": "https://admitere.uvt.ro/listing/facultatea-de-educatie-fizica-si-sport/",
+  "sources": [
+   "https://admitere.uvt.ro/listing/facultatea-de-educatie-fizica-si-sport/",
+   "https://admitere.uvt.ro/wp-content/uploads/2020/05/Regulament-admitere-licenta-2026-2027_FEFS-1.pdf",
+   "https://sport.uvt.ro/",
+   "https://admitere.uvt.ro/program/facultatea-de-educatie-fizica-si-sport/",
+   "http://sport.uvt.ro/contact/"
+  ],
+  "address": "Bd. Vasile Pârvan nr. 4, Timișoara"
+ },
+ {
+  "universityId": "uvt",
+  "name": "Facultatea de Fizică și Matematică",
+  "about": "Studiezi fizică și matematică: Fizică, Fizică informatică, Fizică medicală, Matematică, Matematică informatică și programul dublu Fizică – Chimie, pentru viitori profesori. Absolvenții lucrează în cercetare, în școli, în spitale sau în firme de tehnologie.",
+  "admissionTypes": [
+   "bac",
+   "examen",
+   "interviu"
+  ],
+  "admission": "Contează mai mult rezultatele de la bacalaureat (media sau cea mai bună notă la o materie de profil), la care se adaugă o probă scrisă: test grilă la matematică sau informatică pentru Matematică, testul UVT de raționament pentru Fizică. La Fizică – Chimie dai întâi și un interviu eliminatoriu de comunicare.",
+  "examSubjects": [
+   "Matematică",
+   "Informatică"
+  ],
+  "website": "https://ffm.uvt.ro/",
+  "admissionUrl": "https://admitere.uvt.ro/program/facultatea-de-fizica-si-matematica/",
+  "address": "Bd. Vasile Pârvan nr. 4, Timișoara",
+  "sources": [
+   "https://admitere.uvt.ro/program/facultatea-de-fizica-si-matematica/",
+   "https://admitere.uvt.ro/listing/matematica/",
+   "https://admitere.uvt.ro/listing/fizica/",
+   "https://ffm.uvt.ro/",
+   "https://admitere.uvt.ro/program/matematica/",
+   "https://admitere.uvt.ro/program/fizica/",
+   "https://admitere.uvt.ro/program/fizica-chimie/"
+  ]
+ },
+ {
+  "universityId": "uvt",
+  "name": "Facultatea de Informatică",
+  "about": "Înveți programare și știința calculatoarelor. Are programul Informatică (în română, în engleză și la distanță) și programul Inteligență artificială, în engleză.",
+  "admissionTypes": [
+   "examen",
+   "bac"
+  ],
+  "admission": "Dai o probă scrisă la matematică sau la informatică, la alegere, care contează jumătate; cealaltă jumătate vine de la bacalaureat (media sau nota la matematică ori informatică). La programele în engleză există și un test de limbă eliminatoriu.",
+  "examSubjects": [
+   "Matematică",
+   "Informatică"
+  ],
+  "website": "https://info.uvt.ro/",
+  "admissionUrl": "https://admitere.uvt.ro/program/facultatea-de-informatica/",
+  "curriculumUrl": "https://info.uvt.ro/planuri-de-invatamant/",
+  "address": "Bd. Vasile Pârvan nr. 4, Timișoara",
+  "sources": [
+   "https://admitere.uvt.ro/program/facultatea-de-informatica/",
+   "https://admitere.uvt.ro/wp-content/uploads/2020/05/Regulament-admitere-licenta-2026-2027-FI.pdf",
+   "https://info.uvt.ro/",
+   "https://info.uvt.ro/planuri-de-invatamant/"
+  ]
+ },
+ {
+  "universityId": "uvt",
+  "name": "Facultatea de Litere, Istorie, Filosofie și Teologie",
+  "about": "Facultatea de științe umaniste: limbi și literaturi (română, engleză, franceză, germană, rusă, sârbă, limbi clasice și altele), limbi moderne aplicate, istorie, filosofie și teologie ortodoxă pastorală.",
+  "admissionTypes": [
+   "examen",
+   "bac",
+   "aptitudini"
+  ],
+  "admission": "Dai teste scrise care contează cel mai mult: de limbă pentru programele de limbi, de cunoștințe de specialitate la Istorie și Filosofie; se adaugă media de la bacalaureat. La Teologie dai un test grilă la dogmatică și o probă de aptitudini muzicale.",
+  "website": "https://lift.uvt.ro/",
+  "admissionUrl": "https://admitere.uvt.ro/program/facultatea-de-litere-istorie-filosofie-si-teologie/",
+  "curriculumUrl": "https://lift.uvt.ro/planuri-de-invatamant-lit/",
+  "address": "Bd. Vasile Pârvan nr. 4, Timișoara",
+  "sources": [
+   "https://admitere.uvt.ro/program/facultatea-de-litere-istorie-filosofie-si-teologie/",
+   "https://admitere.uvt.ro/wp-content/uploads/2020/05/Regulament-admitere-licenta-2026-2027_FLIFT.pdf",
+   "https://lift.uvt.ro/",
+   "https://lift.uvt.ro/planuri-de-invatamant-lit/"
+  ]
+ },
+ {
+  "universityId": "uvt",
+  "name": "Facultatea de Muzică și Teatru",
+  "about": "Pregătește muzicieni și actori. La muzică sunt programele Interpretare muzicală – instrumente, Interpretare muzicală – canto și Muzică, iar la teatru Artele spectacolului (actorie), în română și în germană.",
+  "admissionTypes": [
+   "aptitudini",
+   "bac"
+  ],
+  "admission": "Admiterea se face prin probe practice, cu o probă eliminatorie la început. La muzică urmează probe de interpretare, teorie, solfegiu și dictat, iar media de la bacalaureat contează puțin; la actorie dai probe de improvizație, aptitudini scenice, monolog și povestire.",
+  "website": "https://fmt.uvt.ro/",
+  "admissionUrl": "https://admitere.uvt.ro/program/facultatea-de-muzica-si-teatru-departamentul-de-muzica/",
+  "address": "Piața Libertății nr. 1, Timișoara",
+  "sources": [
+   "https://admitere.uvt.ro/program/facultatea-de-muzica-si-teatru-departamentul-de-muzica/",
+   "https://admitere.uvt.ro/wp-content/uploads/2020/05/Regulament-admitere-licenta-2026-2027_FMT_Muzica.pdf",
+   "https://admitere.uvt.ro/wp-content/uploads/2025/03/Regulament-admitere-licenta-2026-2027_FMT_Teatru.pdf",
+   "https://admitere.uvt.ro/program/facultatea-de-muzica-si-teatru-departamentul-de-teatru-si-artele-spectacolului/",
+   "https://fmt.uvt.ro/"
+  ]
+ },
+ {
+  "universityId": "uvt",
+  "name": "Facultatea de Psihologie și Științe ale Educației",
+  "about": "Studiezi cum gândesc și cum învață oamenii. Programele sunt Psihologie, Psihologie – Științe cognitive (în engleză), Pedagogie, Psihopedagogie specială și Pedagogia învățământului primar.",
+  "admissionTypes": [
+   "examen",
+   "bac",
+   "aptitudini"
+  ],
+  "admission": "La cele mai multe programe contează testul de abilități lingvistice și de raționament și media de la bacalaureat. La Pedagogia învățământului primar dai o probă de aptitudini muzicale (admis/respins) și un test de limba română; la programul în engleză se verifică și limba.",
+  "website": "https://fpse.uvt.ro/",
+  "admissionUrl": "https://admitere.uvt.ro/program/facultatea-de-psihologie-si-stiinte-ale-educatiei/",
+  "address": "Bd. Vasile Pârvan nr. 4, Timișoara",
+  "sources": [
+   "https://admitere.uvt.ro/program/facultatea-de-psihologie-si-stiinte-ale-educatiei/",
+   "https://admitere.uvt.ro/wp-content/uploads/2026/02/Regulament-admitere-licenta-2026-2027_FPSE_iunie2026-2.pdf",
+   "https://fpse.uvt.ro/"
+  ]
+ },
+ {
+  "universityId": "uvt",
+  "name": "Facultatea de Sociologie și Asistență Socială",
+  "about": "Studiezi societatea și felul în care pot fi ajutați oamenii aflați în dificultate. Programele de licență sunt Asistență socială (cu frecvență și la distanță), Sociologie și Resurse umane.",
+  "admissionTypes": [
+   "bac",
+   "examen"
+  ],
+  "admission": "Media de admitere se face în părți egale din media de la bacalaureat și nota la un test grilă de vocabular și raționament.",
+  "website": "https://fsas.uvt.ro/",
+  "admissionUrl": "https://admitere.uvt.ro/program/facultatea-de-sociologie-si-asistenta-sociala/",
+  "address": "Bd. Vasile Pârvan nr. 4, Timișoara",
+  "sources": [
+   "https://admitere.uvt.ro/program/facultatea-de-sociologie-si-asistenta-sociala/",
+   "https://admitere.uvt.ro/wp-content/uploads/listing-uploads/metodologii-admitere-facultate/2026/06/Regulament-admitere-licenta-2026-2027_FSAS.pdf",
+   "https://fsas.uvt.ro/"
+  ]
+ },
+ {
+  "universityId": "uvt",
+  "name": "Facultatea de Științe ale Guvernării și Comunicării",
+  "about": "Te pregătește pentru administrație, politică, relații internaționale și comunicare. Programele sunt Administrație publică, Științe politice, Relații internaționale și studii europene, Studii de securitate, Comunicare și relații publice, Jurnalism, Publicitate și Media digitală.",
+  "admissionTypes": [
+   "bac",
+   "examen"
+  ],
+  "admission": "Media de admitere se face în părți egale din nota de la bacalaureat la limba și literatura română și nota la testul de competențe lingvistice și de raționament (test grilă).",
+  "website": "https://fsgc.uvt.ro/",
+  "admissionUrl": "https://admitere.uvt.ro/program/facultatea-de-stiinte-ale-guvernarii-si-comunicarii/",
+  "curriculumUrl": "https://fsgc.uvt.ro/planuri-de-invatamant/",
+  "address": "Bd. Vasile Pârvan nr. 4, Timișoara",
+  "sources": [
+   "https://admitere.uvt.ro/program/facultatea-de-stiinte-ale-guvernarii-si-comunicarii/",
+   "https://admitere.uvt.ro/wp-content/uploads/2020/05/Regulament-admitere-licenta-2026-2027-FSGC.pdf",
+   "https://fsgc.uvt.ro/",
+   "https://fsgc.uvt.ro/planuri-de-invatamant/"
+  ]
+ }
+]

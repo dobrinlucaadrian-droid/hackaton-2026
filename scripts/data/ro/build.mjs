@@ -181,7 +181,8 @@ const out = programs.map(({ page, facultyNo, noAdmission, id, institutionId, ...
   const inst = institutions.get(institutionId);
   // Where the courses are held: the place written next to the programme, else the city in the faculty's name, else the institution's city.
   const inName = p.faculty.match(/(?:din|,|-|–|\()\s*(Brăila|Alexandria|Hunedoara|Cluj-Napoca|Târgu Jiu|Brașov|Câmpulung|Craiova|Constanța|Buzău|Miercurea Ciuc|Târgu Mureș|Sfântu Gheorghe|Râmnicu Vâlcea)\)?$/);
-  const known = UPB_PITESTI.has(`${institutionId}|${p.faculty}`) ? "Pitești" : UTCN_BAIA_MARE.has(`${institutionId}|${p.faculty}`) ? "Baia Mare" : null;
+  // The Faculty of Engineering of Babeș-Bolyai University is in Reșița (confirmed on the university's admission site, infoadmitere.ubbcluj.ro, 2026-10-13).
+  const known = UPB_PITESTI.has(`${institutionId}|${p.faculty}`) ? "Pitești" : UTCN_BAIA_MARE.has(`${institutionId}|${p.faculty}`) ? "Baia Mare" : `${institutionId}|${p.faculty}` === "ubb-cluj|Facultatea de Inginerie" ? "Reșița" : null;
   const city = (p.location ?? (inName && inName[1] !== inst.city ? inName[1] : known ?? inst.city)).replace("Sighetu-Marmației", "Sighetu Marmației").replace("Chișinău, Republica Moldova", "Chișinău");
   const { location, status, form, ...rest } = p;
   return {

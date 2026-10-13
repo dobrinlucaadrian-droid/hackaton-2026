@@ -21,6 +21,30 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-13 09:08 — verificarea informațiilor de pe site, pasul 2: fișele din România recitite pe site-urile oficiale
+- Cerut: continuarea verificării: recitirea surselor oficiale pentru toate fișele din România; ce nu se poate confirma se reformulează prudent și se trece pe o listă
+- Făcut: unsprezece verificatori independenți au deschis site-urile oficiale pentru cele 83 de fișe de universități și cele 107 fișe de facultăți. Rezultat: 77 de fișe confirmate integral, 110 corectate, 3 al căror site nu s-a deschis (UGAL, AFA Brașov, UNAp). Aplicate 294 de corecturi confirmate pe pagini oficiale și 36 de reformulări prudente. Cele mai multe greșeli erau în fișele de universități scrise în zilele hackathonului, fără surse: examen de admitere trecut greșit (politehnicile din Cluj, Iași, Timișoara, UTCB, UPG, UMC, USV Iași), cămin sau burse trecute greșit „nu” (zece universități private), limbi de predare greșite (UMF Cluj, UMF Timișoara), descrieri cu facultăți care nu există, superlative care nu apar pe niciun site oficial. La facultăți: materii de examen completate (FMI București, Fizică UBB, Informatică UAIC), adrese corectate, linkuri spre planurile de învățământ adăugate la 19 facultăți UBB. Adeverința medicală a fost trecută la acte peste tot unde universitatea o cere. Paginile deschise de verificatori au fost adăugate la sursele fișelor. Ce nu s-a putut confirma este în `docs/de-verificat-romania.md`
+- Fișiere: `apps/web/data/universities-ro.json`, `apps/web/data/universities-index.json`, `apps/web/data/faculties-ro.json`, `apps/web/data/university-sources.json`, `docs/de-verificat-romania.md` (nou)
+- Poartă: TRECUT (127 de teste); văzute în browser după corecturi: fișele Emanuel Oradea și UTCN, fișele facultăților de Matematică și Informatică (UB) și Fizică (UBB)
+- Neverificat: cele 320 de fișe din străinătate (doar linkurile, automat); părerile studenților, specializările și planurile de învățământ pe domenii; verificarea a fost făcută de ajutoare automate, nu de un om
+- Urmează: pasul 3 (străinătatea), dacă echipa îl cere; un om parcurge `docs/de-verificat-romania.md`
+
+### 2026-10-13 08:53 — verificarea informațiilor de pe site, pasul 1: verificări automate pe tot
+- Cerut: „vreau să verifici fiecare informație de pe site și dacă ceva nu este în regulă să o schimbi”; echipa a ales: întâi verificări automate pe tot, apoi recitirea surselor oficiale pentru România; ce nu se poate confirma se reformulează prudent și se trece pe o listă; aprecierile se corectează doar dacă contrazic faptele
+- Făcut: verificate 2.039 de adrese web din date: 1.971 se deschid, 49 blochează verificarea automată, 6 greșite au fost reparate (site-urile Athenaeum, Universitatea Maritimă Constanța și Universitatea din Craiova; două linkuri de admitere la facultăți UBB; un link de planuri la UAIC), 3 site-uri nu au răspuns (AFA Brașov, UGAL, UNAp). Domeniile din fișele universităților românești au fost aliniate cu lista oficială de programe: 305 adăugate la 59 de universități, 24 scoase la 15 universități, fiindcă nu aveau niciun program acreditat. Căutate greșeli de scriere (diacritice, litere vechi, spații): niciuna găsită
+- Lăsate neschimbate, fiind alegeri de redactare: „Cămin: da” la universități din străinătate fără cămine proprii; regula pentru burse în Spania și SUA
+- Fișiere: `apps/web/data/universities-ro.json`, `apps/web/data/universities-index.json`, `apps/web/data/faculties-ro.json`
+- Poartă: rulată după această intrare
+- Urmează: pasul 2, în lucru — unsprezece ajutoare recitesc pe site-urile oficiale cele 83 de fișe de universități și cele 107 fișe de facultăți din România
+
+### 2026-10-13 02:30 — fișe de facultăți pentru România: primele 107, de la șapte universități mari
+- Cerut: „vreau să mai căutăm facultăți strict din România, să încercăm să le avem pe toate și să avem fișe complete pentru majoritatea”; echipa a ales: o fișă pentru fiecare facultate, cu descriere și programe, cum se intră, contact și linkuri; se începe cu circa 100, de la universitățile mari
+- Făcut: pagină nouă „Fișa facultății” (`/universitati/<universitate>/<facultate>`): ce studiezi acolo, cum intri (tipul admiterii și, unde site-ul oficial le numește, materiile de examen), programele de licență ale facultății din lista oficială, site-ul, pagina de admitere, planurile de învățământ și adresa. Fișa universității arată lista facultăților care au fișă și un link „Vezi fișa facultății” lângă fiecare. Scrise 107 fișe, pentru toate facultățile de la Universitatea din București (20), Politehnica București (21), Babeș-Bolyai (23), ASE (12), Universitatea de Vest Timișoara (12), „Al. I. Cuza” Iași (15) și UMF „Carol Davila” (4), după site-urile oficiale și regulamentele de admitere pentru 2026. Fără medii, locuri, taxe sau date. Din cele 492 de facultăți din lista oficială au acum fișă 107. Corectat în catalog orașul Facultății de Inginerie a UBB: Reșița, nu Cluj-Napoca
+- Fișiere: `apps/web/data/faculties-ro.json` (nou), `apps/web/lib/faculties.ts` și `faculties.test.ts` (noi), `apps/web/app/universitati/[id]/[facultate]/page.tsx` (nou), `apps/web/components/FacultyPrograms.tsx` (nou), `apps/web/components/OfficialPrograms.tsx`, `apps/web/app/universitati/[id]/page.tsx`, `apps/web/lib/types.ts`, `scripts/data/ro/build.mjs`, `apps/web/data/catalog/ro-programs.json`
+- Poartă: TRECUT (127 de teste); văzute în browser: fișa Facultății de Automatică și Calculatoare (UPB) cu cele 3 programe, fișa Facultății de Medicină (UMF) cu materiile de examen, lista de fișe pe paginile UPB și UBB, pagina de eroare pentru o facultate inexistentă
+- De verificat de un om: la Politehnică regulile vin din regulamentul de admitere, ale cărui tabele cu materii nu s-au citit limpede, așa că materiile „de exemplu” au fost scoase; la UBB și UAIC site-urile proprii ale facultăților nu au fost deschise (linkurile sunt cele tipărite pe paginile universității); la Teologie Baptistă și Limbi Străine (UB) sursele oficiale se contrazic și fișele spun să verifici; la câteva facultăți lista oficială nu se potrivește cu site-ul (de exemplu Robotică la UB, „Moașe și Asistență Medicală” la UMF)
+- Urmează: celelalte 385 de facultăți, dacă echipa vrea; fișele de facultăți nu apar încă în căutare
+
 ### 2026-10-12 02:18 — numele site-ului: idei strânse, nimic hotărât; salvare de seară
 - Cerut: mai multe runde de idei de nume, apoi „ne vom opri aici pentru această seară, te rog să salvezi totul”
 - Făcut: aflat că `unipath.ro` și `unipath.com` sunt luate, deci e nevoie de un nume nou pentru domeniu. Echipa a ales un filtru (română + engleză, fără cifre, fără argou, modern, cu liceul și drumul la vedere), dar nu a ales încă un nume. Favoritele, filtrul și numele verificate la registrele oficiale sunt păstrate în `docs/nume-site.md`
@@ -547,6 +571,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-12 02:18 `64390f3` docs: production database ready, test address, site name shortlist
 - 2026-10-12 00:44 `efe2ff9` feat: lighter pages, several cities in the questionnaire, script fix
 - 2026-10-12 00:07 `35da68e` feat: welcome window to make an account or continue without one
 - 2026-10-09 03:59 `ceeef6b` feat: add 198 university profile sheets across 32 countries
@@ -576,5 +601,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-05 11:07 `fdc7024` feat: add three more student opinions with photos
 - 2026-10-05 11:02 `7c6d654` fix: open a domain in place on the university sheet instead of leaving the page
 - 2026-10-05 10:53 `c75b5eb` feat: subjects per year for every domain and official curriculum links
-- 2026-10-05 10:20 `1aa0610` fix: spell the student's name Drăghici
 <!-- commits:end -->

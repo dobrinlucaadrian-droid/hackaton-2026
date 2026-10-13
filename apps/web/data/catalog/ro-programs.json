@@ -19954,7 +19954,7 @@
   "country": "RO",
   "institutionId": "ubb-cluj",
   "institutionName": "Universitatea Babeș-Bolyai",
-  "city": "Cluj-Napoca",
+  "city": "Reșița",
   "faculty": "Facultatea de Inginerie",
   "domain": "Inginerie mecanică",
   "domainId": "inginerie-mecanica",
@@ -19966,14 +19966,14 @@
   "form": "full-time",
   "status": "acreditat",
   "source": "HG 606/2026",
-  "search": "inginerie mecanica inginerie mecanica facultatea de inginerie universitatea babes bolyai cluj napoca romana"
+  "search": "inginerie mecanica inginerie mecanica facultatea de inginerie universitatea babes bolyai resita romana"
  },
  {
   "key": "ro-ubb-cluj--inginerie-mecanica--romana-if-2",
   "country": "RO",
   "institutionId": "ubb-cluj",
   "institutionName": "Universitatea Babeș-Bolyai",
-  "city": "Cluj-Napoca",
+  "city": "Reșița",
   "faculty": "Facultatea de Inginerie",
   "domain": "Inginerie mecanică",
   "domainId": "inginerie-mecanica",
@@ -19985,14 +19985,14 @@
   "form": "full-time",
   "status": "autorizat provizoriu",
   "source": "HG 606/2026",
-  "search": "inginerie mecanica inginerie mecanica facultatea de inginerie universitatea babes bolyai cluj napoca romana"
+  "search": "inginerie mecanica inginerie mecanica facultatea de inginerie universitatea babes bolyai resita romana"
  },
  {
   "key": "ro-ubb-cluj--electromecanica--romana-if",
   "country": "RO",
   "institutionId": "ubb-cluj",
   "institutionName": "Universitatea Babeș-Bolyai",
-  "city": "Cluj-Napoca",
+  "city": "Reșița",
   "faculty": "Facultatea de Inginerie",
   "domain": "Inginerie electrică",
   "domainId": "inginerie-electrica-electronica",
@@ -20004,14 +20004,14 @@
   "form": "full-time",
   "status": "acreditat",
   "source": "HG 606/2026",
-  "search": "electromecanica inginerie electrica facultatea de inginerie universitatea babes bolyai cluj napoca romana"
+  "search": "electromecanica inginerie electrica facultatea de inginerie universitatea babes bolyai resita romana"
  },
  {
   "key": "ro-ubb-cluj--informatica-aplicata-in-inginerie-electrica--romana-if",
   "country": "RO",
   "institutionId": "ubb-cluj",
   "institutionName": "Universitatea Babeș-Bolyai",
-  "city": "Cluj-Napoca",
+  "city": "Reșița",
   "faculty": "Facultatea de Inginerie",
   "domain": "Inginerie electrică",
   "domainId": "inginerie-electrica-electronica",
@@ -20023,14 +20023,14 @@
   "form": "full-time",
   "status": "autorizat provizoriu",
   "source": "HG 606/2026",
-  "search": "informatica aplicata in inginerie electrica inginerie electrica facultatea de inginerie universitatea babes bolyai cluj napoca romana"
+  "search": "informatica aplicata in inginerie electrica inginerie electrica facultatea de inginerie universitatea babes bolyai resita romana"
  },
  {
   "key": "ro-ubb-cluj--informatica-aplicata-in-inginerie-electrica--romana-if-2",
   "country": "RO",
   "institutionId": "ubb-cluj",
   "institutionName": "Universitatea Babeș-Bolyai",
-  "city": "Cluj-Napoca",
+  "city": "Reșița",
   "faculty": "Facultatea de Inginerie",
   "domain": "Inginerie electrică",
   "domainId": "inginerie-electrica-electronica",
@@ -20042,14 +20042,14 @@
   "form": "full-time",
   "status": "autorizat provizoriu",
   "source": "HG 606/2026",
-  "search": "informatica aplicata in inginerie electrica inginerie electrica facultatea de inginerie universitatea babes bolyai cluj napoca romana"
+  "search": "informatica aplicata in inginerie electrica inginerie electrica facultatea de inginerie universitatea babes bolyai resita romana"
  },
  {
   "key": "ro-ubb-cluj--informatica-industriala--romana-if",
   "country": "RO",
   "institutionId": "ubb-cluj",
   "institutionName": "Universitatea Babeș-Bolyai",
-  "city": "Cluj-Napoca",
+  "city": "Reșița",
   "faculty": "Facultatea de Inginerie",
   "domain": "Științe inginerești aplicate",
   "domainId": "fizica",
@@ -20061,7 +20061,7 @@
   "form": "full-time",
   "status": "acreditat",
   "source": "HG 606/2026",
-  "search": "informatica industriala stiinte ingineresti aplicate facultatea de inginerie universitatea babes bolyai cluj napoca romana"
+  "search": "informatica industriala stiinte ingineresti aplicate facultatea de inginerie universitatea babes bolyai resita romana"
  },
  {
   "key": "ro-ubb-cluj--inginerie-medicala--romana-if-resita",
