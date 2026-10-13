@@ -21,6 +21,14 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-13 15:38 — fișe pentru încă 367 de facultăți din România, fiecare citită de două ori
+- Cerut: cât mai multe facultăți din România cu fișă integrală; echipa a ales toate cele 385 rămase, cu verificare dublă
+- Făcut: șaptesprezece ajutoare au scris fișele doar din paginile și regulamentele oficiale deschise, apoi alți șaptesprezece, independenți, le-au recitit pe site-urile oficiale. Rezultat: 367 de fișe noi (acum 474 de facultăți cu fișă din 492 din lista oficială); la a doua citire 222 confirmate integral, 141 corectate (185 de corecturi confirmate, 11 reformulări prudente), 4 cu un detaliu neconfirmat. Fără fișă au rămas 18 facultăți al căror site nu se deschide: 15 la „Dunărea de Jos” Galați, 2 la Universitatea Națională de Apărare, 1 la Tomis (nu mai are site). Patru site-uri de facultăți au linkuri ascunse către pariuri sau conținut pentru adulți (SNSPA Management, Științe Sociale Craiova, Teologie Sibiu, Agricultură USAMV Cluj): fișele nu trimit la ele. Opt fișe de universități au fost aliniate cu regulamentele citite acum (UMFST, Spiru Haret, Universitatea Ecologică, Danubius, „Ioan Slavici”, Târgu Jiu, Sapientia, „Ion Mincu”). În catalog, Facultatea de Drept din Cluj-Napoca a Universității „Dimitrie Cantemir” are acum orașul Cluj-Napoca (lista oficială scrie numele cu un spațiu în plus și orașul nu era recunoscut); catalogul a fost reîncărcat în baza de dezvoltare. Ce nu s-a putut confirma și hotărârile rămase sunt în `docs/de-verificat-facultati.md`
+- Fișiere: `apps/web/data/faculties-ro.json`, `apps/web/data/universities-ro.json`, `apps/web/data/universities-index.json`, `apps/web/data/catalog/ro-programs.json`, `scripts/data/ro/build.mjs`, `docs/de-verificat-facultati.md` (nou)
+- Poartă: TRECUT (`node scripts/gate.mjs`: secrete, fișiere, registru, build, 127 de teste, aplicația pornește)
+- Neverificat: baza de producție nu a fost reîncărcată (orașul corectat al celor două programe de Drept din Cluj apare doar în baza de dezvoltare); cele 18 facultăți fără fișă; verificarea a fost făcută de ajutoare automate, nu de un om; facultățile nu apar încă în căutare, doar pe fișa universității
+- Urmează: un om parcurge `docs/de-verificat-facultati.md`; echipa hotărăște dacă facultățile intră în căutare și în „UniPath în cifre”; reîncercat Galați și Apărare când site-urile răspund
+
 ### 2026-10-13 12:32 — verificarea informațiilor de pe site, pasul 3: fișele din străinătate recitite pe site-urile oficiale
 - Cerut: continuarea verificării cu pasul 3: cele 320 de fișe de universități din străinătate; ce nu se poate confirma se reformulează prudent și se trece pe o listă
 - Făcut: nouăsprezece verificatori independenți au deschis site-urile oficiale, pe grupuri de țări. Rezultat: 153 de fișe confirmate integral, 163 corectate, 4 verificate doar parțial (HU Berlin și Tilburg nu s-au deschis; Würzburg și Hannover au mici detalii neconfirmate). Aplicate 389 de corecturi confirmate pe pagini oficiale și 41 de reformulări prudente. Cele mai multe greșeli erau în fișele vechi, scrise fără surse: limba de predare (Copenhaga, DTU, TU Delft, Heidelberg, RWTH, TU Wien, KU Leuven, Lund), calea de înscriere (Italia: nu Universitaly pentru cetățenii UE; Germania: nu uni-assist la LMU, Heidelberg, RWTH; Sciences Po și INSA nu prin Parcoursup), examene și teste lipsă sau greșite (Viena, EPFL, ETH, Princeton, Columbia, UCL, King's, Warwick), burse (Imperial, Manchester, Barcelona, Irlanda) și note de cămin copiate de la o fișă la alta (Olanda, Danemarca, Marea Britanie, Italia). Schimbate 17 câmpuri „da/nu” sau niveluri de cost. Datele calendaristice și numerele exacte de locuri au fost scoase. Paginile deschise de verificatori au fost adăugate la sursele fișelor. Ce nu s-a putut confirma și hotărârile rămase echipei sunt în `docs/de-verificat-strainatate.md`
@@ -579,6 +587,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-13 14:48 `b977652` fix: fact-check the 320 university sheets from abroad
 - 2026-10-13 11:54 `f850e61` feat: faculty sheets for Romania and a fact-check of all Romanian sheets
 - 2026-10-12 02:18 `64390f3` docs: production database ready, test address, site name shortlist
 - 2026-10-12 00:44 `efe2ff9` feat: lighter pages, several cities in the questionnaire, script fix
@@ -608,5 +617,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-05 11:24 `f9a8e9a` docs: answers to the judging criteria
 - 2026-10-05 11:19 `763e331` feat: show student opinions in university search results and on university sheets
 - 2026-10-05 11:07 `fdc7024` feat: add three more student opinions with photos
-- 2026-10-05 11:02 `7c6d654` fix: open a domain in place on the university sheet instead of leaving the page
 <!-- commits:end -->

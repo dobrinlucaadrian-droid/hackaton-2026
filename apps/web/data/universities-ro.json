@@ -514,9 +514,10 @@
         "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
         "admissionTypes": [
             "aptitudini",
-            "bac"
+            "bac",
+            "interviu"
         ],
-        "admission": "Dai o singură probă practică de desen (reprezentare grafică), susținută la sediul universității, care contează cel mai mult; media de la bacalaureat contează și ea. Nu se cere portofoliu, iar exercițiile diferă pe specializare.",
+        "admission": "La arhitectură dai o singură probă practică de desen (reprezentare grafică), susținută la sediul universității, care contează cel mai mult; media de la bacalaureat contează și ea. Nu se cere portofoliu, iar exercițiile diferă pe specializare. La Urbanism și administrarea teritoriului (Sibiu) se intră cu un interviu online eliminatoriu și cu media de la bacalaureat.",
         "scholarships": true,
         "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
         "dorms": true,
@@ -2154,9 +2155,13 @@
         "budget": "gratuit",
         "budgetNote": "Locurile de la buget sunt fără taxă, iar dacă nu prinzi unul poți alege un loc cu taxă, mai accesibil decât în străinătate.",
         "admissionTypes": [
-            "examen"
+            "examen",
+            "bac",
+            "dosar",
+            "aptitudini",
+            "interviu"
         ],
-        "admission": "La medicină, stomatologie și farmacie se dă de regulă un examen scris, în special la biologie și chimie; la alte specializări modul de admitere poate fi diferit. Se cere și un certificat medical.",
+        "admission": "La Medicină, Medicină dentară și Farmacie se dă un test grilă scris, care contează cel mai mult, alături de media de la bacalaureat. La asistență medicală și la alte programe de sănătate contează media de la bacalaureat, iar la inginerie, informatică, litere, economie și drept contează mediile din liceu, fără examen. La sport și arhitectură sunt probe practice. Se cere și un certificat medical.",
         "scholarships": true,
         "scholarshipsNote": "Se dau burse pe note și burse sociale; condițiile le găsești în regulamentul universității.",
         "dorms": true,
@@ -2562,9 +2567,11 @@
         "budgetNote": "Are locuri la buget, fără taxă de școlarizare, iar cele cu taxă sunt mai ieftine decât în vestul Europei.",
         "admissionTypes": [
             "bac",
-            "examen"
+            "aptitudini",
+            "examen",
+            "interviu"
         ],
-        "admission": "Modul de admitere diferă de la o facultate la alta: la unele contează media de la bacalaureat, la altele un examen sau o probă scrisă. Citește ghidul facultății care te interesează.",
+        "admission": "La toate facultățile contează media de la bacalaureat și nota la prima probă scrisă de la bacalaureat. La câteva programe se adaugă probe eliminatorii, de tip admis/respins: desen și interviu la Design, probe sportive la sport și kinetoterapie, test grilă la asistență medicală și asistență de farmacie, probă de aptitudini la pedagogie.",
         "scholarships": true,
         "scholarshipsNote": "Poți primi burse de merit, pentru note bune, și burse sociale, dacă situația familiei o cere.",
         "dorms": true,
@@ -3002,10 +3009,11 @@
         "budget": "mic",
         "budgetNote": "Nu are locuri la buget, dar taxele sunt în general accesibile, iar le poți plăti în rate.",
         "admissionTypes": [
-            "dosar",
-            "bac"
+            "interviu",
+            "bac",
+            "aptitudini"
         ],
-        "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+        "admission": "Depui dosarul și susții o probă de evaluare de tip interviu, notată de o comisie. Media finală se face din nota la această probă, care contează mai mult, și din media de la bacalaureat. La sport se dă o probă practică. Regulile pot diferi pe facultate.",
         "scholarships": true,
         "scholarshipsNote": "Universitatea are un regulament de burse și oferă câteva burse integrale de studiu pentru liceeni (Bursa „Liceenii”); întreabă la secretariat ce condiții sunt.",
         "dorms": false,
@@ -3058,10 +3066,12 @@
         "budget": "mic",
         "budgetNote": "Deși este universitate privată, are și locuri fără taxă, pe lângă locuri cu taxă redusă și locuri cu taxă întreagă. Locurile fără taxă se ocupă în ordinea mediilor de admitere.",
         "admissionTypes": [
-            "dosar",
-            "bac"
+            "bac",
+            "examen",
+            "aptitudini",
+            "interviu"
         ],
-        "admission": "Admiterea este un concurs în limba maghiară: te înscrii online, iar media de admitere se calculează din media și notele de la bacalaureat și din mediile din liceu. La unele programe există și o probă sau o discuție de motivație. Regulile diferă pe facultate.",
+        "admission": "Admiterea este un concurs în limba maghiară: te înscrii online, iar media de admitere se calculează din media și notele de la bacalaureat. La unele programe există și un examen propriu, o probă practică sau un interviu. Regulile diferă pe facultate.",
         "scholarships": true,
         "scholarshipsNote": "Universitatea acordă burse de merit, burse de studiu și burse sociale, după un regulament propriu.",
         "dorms": true,
@@ -3254,9 +3264,10 @@
         "budgetNote": "Este universitate privată, deci plătești taxă; în general este mai mică decât în universitățile private din vestul Europei.",
         "admissionTypes": [
             "dosar",
-            "bac"
+            "bac",
+            "aptitudini"
         ],
-        "admission": "Admiterea este de obicei mai simplă: depui dosarul și contează media de la bacalaureat, uneori și un interviu scurt. Regulile pot diferi pe facultate.",
+        "admission": "Admiterea este concurs de dosare: contează media de la bacalaureat, fără examen. La Educație Fizică și Sport se dă și o probă practică. Regulile pot diferi pe facultate.",
         "scholarships": true,
         "scholarshipsNote": "Universitatea acordă burse de performanță, după un regulament propriu, și o mică reducere dacă plătești toată taxa de la început.",
         "dorms": false,
@@ -3300,9 +3311,10 @@
         "budgetNote": "Este universitate privată, deci plătești taxă de școlarizare. Întreabă la secretariat dacă o poți plăti în rate.",
         "admissionTypes": [
             "dosar",
-            "bac"
+            "bac",
+            "aptitudini"
         ],
-        "admission": "Nu dai examen și nu ai interviu: contează doar media generală de la bacalaureat. Există și o preadmitere pentru elevi, pe baza mediilor din liceu. Te poți înscrie online.",
+        "admission": "Nu dai examen și nu ai interviu: contează doar media generală de la bacalaureat. Excepție face Pedagogia învățământului primar, unde sunt și două probe eliminatorii de aptitudini. Există și o preadmitere pentru elevi, pe baza mediilor din liceu. Te poți înscrie online.",
         "scholarships": true,
         "scholarshipsNote": "Universitatea acordă burse și premii pentru merite deosebite și reduceri de taxă pentru implicarea în activități.",
         "dorms": false,
@@ -4165,9 +4177,10 @@
         "budgetNote": "Taxa de școlarizare se plătește, în rate; nu există locuri la buget, iar la inginerie taxa este ceva mai mare decât la economie.",
         "admissionTypes": [
             "dosar",
-            "interviu"
+            "interviu",
+            "bac"
         ],
-        "admission": "Nu dai examen scris: te înscrii, susții un interviu, iar comisia evaluează dosarele și face clasamentul. Sunt două sesiuni, vara și toamna.",
+        "admission": "Nu dai examen scris: te înscrii și susții un interviu de tip admis/respins, iar comisia face clasamentul ținând cont de media de la bacalaureat. Sunt două sesiuni, vara și toamna.",
         "scholarships": true,
         "scholarshipsNote": "Studenții cu rezultate bune pot primi reduceri de taxă, parțiale sau totale, și premii anuale.",
         "dorms": true,

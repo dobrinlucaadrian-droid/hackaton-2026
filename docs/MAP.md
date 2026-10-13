@@ -259,7 +259,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `curricula.json` (2190) — JSON array, 40 items
 - `curriculum-links.json` (288) — JSON array, 57 items
 - `domains.json` (43) — JSON array, 40 items
-- `faculties-ro.json` (2354) — JSON array, 107 items
+- `faculties-ro.json`
 - `profiles.json` (15) — JSON array, 12 items
 - `questions.json` (729) — JSON array, 18 items
 - `ro-cities.json` (25) — JSON array, 22 items
@@ -267,7 +267,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `testimonials.json` (169) — JSON array, 24 items
 - `universities-abroad.json`
 - `universities-index.json` (406) — JSON array, 403 items
-- `universities-ro.json` (4191) — JSON array, 83 items
+- `universities-ro.json` (4204) — JSON array, 83 items
 - `university-sources.json` (3014) — JSON; keys: ani-bucuresti, itb-bucuresti, itp-bucuresti, bogdan-voda, itp-cluj, dragan-lugoj, cantemir-tgmures, timotheus
 
 ### apps/web/lib  (26 files)
