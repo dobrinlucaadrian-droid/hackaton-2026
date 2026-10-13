@@ -462,7 +462,6 @@
   "name": "Facultatea de Științe ale comunicării",
   "about": "Aici studiezi Jurnalism sau Comunicare și relații publice și te pregătești pentru meserii din presă, relații publice și comunicare. Practica se face chiar în universitate, la Apollonia TV, Radio Apollonia, revista studențească și agenția de știri, dar și în instituții partenere.",
   "admissionTypes": [
-   "dosar",
    "bac"
   ],
   "admission": "Nu dai examen: media de admitere este media de la bacalaureat. La medii egale, departajarea se face după nota de la proba scrisă de limba și literatura română de la bacalaureat și apoi după media anilor de liceu.",
@@ -542,7 +541,6 @@
   "name": "Facultatea de Finanțe și Contabilitate",
   "about": "Facultatea pregătește economiști pentru bănci, finanțe și contabilitate. Are două programe de licență, de câte trei ani: Finanțe și bănci și Contabilitate și informatică de gestiune, plus două programe de master în aceleași domenii.",
   "admissionTypes": [
-   "dosar",
    "bac"
   ],
   "admission": "Nu dai examen: intri pe bază de dosar. Media de admitere este media dintre media de la bacalaureat și media anilor de liceu.",
@@ -563,7 +561,6 @@
   "name": "Facultatea de Management- Marketing",
   "about": "Facultatea pregătește specialiști în conducerea firmelor, marketing și afaceri. Are trei programe de licență: Management, Marketing și Economia comerțului, turismului și serviciilor, plus programe de master în aceleași domenii.",
   "admissionTypes": [
-   "dosar",
    "bac"
   ],
   "admission": "Nu dai examen: intri pe bază de dosar. Media de admitere este media dintre media de la bacalaureat și media anilor de liceu.",
@@ -846,7 +843,6 @@
   "name": "Facultatea de Administrație Publică",
   "about": "Facultatea are un singur program de licență, Administrație publică, de trei ani, axat pe administrația publică și pe felul în care sunt conduse instituțiile. Tot aici există un master despre puterea executivă și administrația publică și programe postuniversitare.",
   "admissionTypes": [
-   "dosar",
    "bac"
   ],
   "admission": "Nu dai examen: depui dosarul, iar candidații sunt ordonați după media de la bacalaureat. La medii egale decide media celor patru ani de liceu.",
@@ -866,7 +862,6 @@
   "name": "Facultatea de Științe Economice",
   "about": "Facultatea are trei programe de licență, de câte trei ani: Contabilitate și informatică de gestiune, Informatică economică și Management. Are și programe de master în contabilitate, audit și sisteme informaționale contabile.",
   "admissionTypes": [
-   "dosar",
    "bac"
   ],
   "admission": "Nu dai examen: depui dosarul, iar candidații sunt ordonați după media de la bacalaureat. La medii egale decide media celor patru ani de liceu.",
@@ -1233,7 +1228,6 @@
   "name": "Facultatea de Afaceri Globale și Leadership",
   "about": "Este facultatea de economie a universității. Are trei programe de licență de trei ani: Finanțe și bănci, Contabilitate și informatică de gestiune și Economia comerțului, turismului și serviciilor. Înveți să lucrezi cu bani, bugete și rapoarte financiare, să ții contabilitatea unei firme sau să conduci o afacere din comerț și turism; unele programe se pot urma și cu frecvență redusă sau la distanță.",
   "admissionTypes": [
-   "dosar",
    "bac"
   ],
   "admission": "Nu dai examen: admiterea este un concurs de dosare în care contează doar media generală de la bacalaureat. La medii egale, departajarea se face după o notă de la probele scrise ale bacalaureatului.",
@@ -1255,7 +1249,6 @@
   "name": "Facultatea de Drept și Guvernanță Internațională",
   "about": "Aici se studiază dreptul și relațiile dintre state. Are două programe de licență: Drept, care durează patru ani, și Relații internaționale și studii europene, de trei ani. Ambele se pot urma la zi sau la distanță, iar Dreptul și cu frecvență redusă; studenții au și un club de procese simulate.",
   "admissionTypes": [
-   "dosar",
    "bac"
   ],
   "admission": "Nu dai examen: admiterea este un concurs de dosare în care contează doar media generală de la bacalaureat. La medii egale, departajarea se face după o notă de la probele scrise ale bacalaureatului.",
@@ -1278,7 +1271,6 @@
   "about": "Facultatea pregătește viitori învățători prin programul de licență Pedagogia învățământului primar, un program nou. Înveți cum se predă la clasele mici, cu accent pe instrumente digitale și metode moderne, și faci practică în școli partenere. Tot aici funcționează departamentul care pregătește profesori.",
   "admissionTypes": [
    "aptitudini",
-   "dosar",
    "bac"
   ],
   "admission": "Întâi treci două probe de aptitudini eliminatorii, notate cu admis sau respins: abilități de comunicare în limba română și educație fizică. Apoi contează doar media generală de la bacalaureat. Absolvenții de liceu pedagogic nu dau probele de aptitudini.",
@@ -1299,7 +1291,6 @@
   "name": "Facultatea de Media, Design și Tehnologie",
   "about": "Facultatea unește comunicarea, media digitală și informatica. Are trei programe de licență de trei ani: Comunicare și relații publice, Media digitală și Informatică. Poți învăța jurnalism și comunicare online, producție de conținut multimedia și design interactiv sau programare, analiză de date și securitate informatică.",
   "admissionTypes": [
-   "dosar",
    "bac"
   ],
   "admission": "Nu dai examen: admiterea este un concurs de dosare în care contează doar media generală de la bacalaureat. La medii egale, departajarea se face după o notă de la probele scrise ale bacalaureatului.",
@@ -1321,7 +1312,6 @@
   "name": "Facultatea de Științe ale Vieții și Dezvoltare Umană",
   "about": "Facultatea are două programe de licență: Psihologie și Asistență socială. La Psihologie te pregătești să lucrezi cu oamenii în sănătate mintală, educație, organizații sau justiție. La Asistență socială înveți cum sprijini persoanele și comunitățile vulnerabile. Se pune accent pe îmbinarea teoriei cu practica.",
   "admissionTypes": [
-   "dosar",
    "bac"
   ],
   "admission": "Nu dai examen: admiterea este un concurs de dosare în care contează doar media generală de la bacalaureat. La medii egale, departajarea se face după o notă de la probele scrise ale bacalaureatului.",
@@ -1590,7 +1580,9 @@
    "https://www.hyperion.ro/structura-facultati/stiinte-sociale-umaniste-si-ale-naturii",
    "https://www.hyperion.ro/admitere",
    "https://www.hyperion.ro/index.php?option=com_attachments&task=download&id=639",
-   "https://www.hyperion.ro/admitere/licenta"
+   "https://www.hyperion.ro/admitere/licenta",
+   "https://istorie.hyperion.ro",
+   "https://www.hyperion.ro/index.php?option=com_attachments&task=download&id=625"
   ]
  },
  {
@@ -2326,7 +2318,7 @@
  {
   "universityId": "rau",
   "name": "Facultatea de Psihologie și Științele Educației",
-  "about": "Are două programe de trei ani. La Psihologie înveți despre minte și comportament, evaluare și consiliere, cu practică în clinici, școli și organizații. La Educație timpurie te pregătești să lucrezi cu copiii mici, în creșe și grădinițe, cu practică încă din anul I.",
+  "about": "Are două programe de trei ani. La Psihologie înveți despre minte și comportament, evaluare și consiliere, cu practică în clinici, școli și organizații. La Educație timpurie te pregătești să lucrezi cu copiii mici, în creșe și grădinițe, cu practică încă din anul I. Programele funcționează deocamdată cu autorizare provizorie.",
   "admissionTypes": [
    "examen",
    "bac",
@@ -2350,7 +2342,7 @@
  {
   "universityId": "rau",
   "name": "Facultatea de Științe Medicale",
-  "about": "Are un singur program, Asistență medicală generală, de patru ani, care pregătește asistenți medicali. Înveți anatomie, fiziologie, farmacologie, îngrijirea bolnavilor și urgențe medicale. Practica se face treptat, în laboratoare și în spitale partenere.",
+  "about": "Are un singur program, Asistență medicală generală, de patru ani, care pregătește asistenți medicali. Înveți anatomie, fiziologie, farmacologie, îngrijirea bolnavilor și urgențe medicale. Practica se face treptat, în laboratoare și în spitale partenere. Programul funcționează deocamdată cu autorizare provizorie.",
   "admissionTypes": [
    "examen",
    "bac"
@@ -2796,7 +2788,9 @@
    "https://fcia.tibiscus.ro/carte-de-vizita/",
    "https://fcia.tibiscus.ro/admitere-studii-licenta/",
    "https://fcia.tibiscus.ro/download/264/licenta/5273/metodologie-admitere-2025-2026-fcia.pdf",
-   "https://fcia.tibiscus.ro/plan-de-invatamant/"
+   "https://fcia.tibiscus.ro/plan-de-invatamant/",
+   "https://admitere.tibiscus.ro/",
+   "https://admitere.tibiscus.ro/admitere-fcia/"
   ]
  },
  {
@@ -4572,7 +4566,6 @@
   "name": "Facultatea de Business",
   "about": "Facultate din București la care studiezi Economia comerțului, turismului și serviciilor sau Marketing. Te pregătește pentru lumea afacerilor și a marketingului. Primul program se poate urma și la distanță.",
   "admissionTypes": [
-   "dosar",
    "bac"
   ],
   "admission": "Nu dai examen: depui dosarul, iar locurile se ocupă în ordinea mediei de la bacalaureat.",
@@ -4596,7 +4589,6 @@
   "name": "Facultatea de Drept din Cluj- Napoca",
   "about": "Facultatea de Drept a universității care funcționează la Cluj-Napoca. Studiezi Drept timp de 4 ani, la cursuri cu frecvență sau la distanță. Facultatea există din 1991.",
   "admissionTypes": [
-   "dosar",
    "bac"
   ],
   "admission": "Admiterea este concurs de dosare: singurul criteriu este media de la bacalaureat. La medii egale pe ultimul loc contează nota de la proba scrisă de limba română.",
@@ -4617,7 +4609,6 @@
   "name": "Facultatea de Limbi și Literaturi Străine",
   "about": "Facultate din București, înființată în 1999, unde studiezi două limbi și literaturile lor: engleza împreună cu o altă limbă modernă sau româna împreună cu o limbă modernă. Printre limbile de pe site se află germana, spaniola, japoneza, chineza și rusa. Faci practică la institute culturale, birouri de traduceri, edituri sau centre de limbi străine.",
   "admissionTypes": [
-   "dosar",
    "bac"
   ],
   "admission": "Nu dai examen: depui dosarul, iar locurile se ocupă în ordinea mediei de la bacalaureat.",
@@ -4662,7 +4653,6 @@
   "name": "Facultatea de Științe Economice din Cluj-Napoca",
   "about": "Facultate a universității la Cluj-Napoca, cu programul Contabilitate și informatică de gestiune, de 3 ani. Înveți contabilitate, fiscalitate, analiză financiară și audit, dar și programele informatice folosite în firme. Poți studia cu frecvență sau la distanță.",
   "admissionTypes": [
-   "dosar",
    "bac"
   ],
   "admission": "Nu dai examen: contează doar media de la bacalaureat. La medii egale pe ultimul loc decide nota de la proba scrisă de limba română de la bacalaureat. Înscrierea se poate face online.",
@@ -4685,7 +4675,6 @@
   "name": "Facultatea de Științe Juridice și Administrative „Momcilo Luburici\"",
   "about": "Facultate din București la care studiezi Drept sau Administrație publică. Te pregătește pentru sistemul judiciar, administrația publică sau mediul privat. Dreptul se poate urma și la distanță.",
   "admissionTypes": [
-   "dosar",
    "bac"
   ],
   "admission": "Nu dai examen: depui dosarul, iar locurile se ocupă în ordinea mediei de la bacalaureat.",
@@ -4982,7 +4971,6 @@
   "name": "Facultatea de Drept",
   "about": "Studiezi Drept: drept civil, penal, constituțional, administrativ, al muncii, comercial și european. Pe lângă acestea ai și cursuri legate de mediu, cum ar fi dreptul mediului. Poți învăța cu frecvență, cu frecvență redusă sau la distanță.",
   "admissionTypes": [
-   "dosar",
    "bac"
   ],
   "admission": "Admiterea este concurs de dosare: media de admitere este media de la bacalaureat. La medii egale pe ultimele locuri se compară notele de la probele de bacalaureat și, la nevoie, se ține un interviu motivațional.",
@@ -5004,7 +4992,6 @@
   "name": "Facultatea de Ecologie și Protecția Mediului",
   "about": "Înveți cum funcționează ecosistemele de apă și de uscat și cum pot fi protejate: evaluarea impactului asupra mediului, urmărirea stării habitatelor, conservarea resurselor și legislația de mediu. Programul durează 3 ani, cu frecvență sau cu frecvență redusă. Absolvenții pot lucra ca ecologi.",
   "admissionTypes": [
-   "dosar",
    "bac"
   ],
   "admission": "Admiterea este concurs de dosare: media de admitere este media de la bacalaureat. La medii egale pe ultimele locuri se compară notele de la probele de bacalaureat și, la nevoie, se ține un interviu motivațional.",
@@ -5048,7 +5035,6 @@
   "name": "Facultatea de Management Financiar",
   "about": "Aici studiezi Finanțe și bănci, un program care îmbină teoria economică cu aplicații practice. Se poate urma cu frecvență sau cu frecvență redusă.",
   "admissionTypes": [
-   "dosar",
    "bac"
   ],
   "admission": "Admiterea este concurs de dosare: media de admitere este media de la bacalaureat. La medii egale pe ultimele locuri se compară notele de la probele de bacalaureat și, la nevoie, se ține un interviu motivațional.",
@@ -5070,7 +5056,6 @@
   "name": "Facultatea de Psihologie",
   "about": "Studiezi Psihologie timp de 3 ani, cu frecvență sau cu frecvență redusă. Facultatea pune accent pe psihologia aplicată și îmbină cercetarea cu practica.",
   "admissionTypes": [
-   "dosar",
    "bac"
   ],
   "admission": "Admiterea este concurs de dosare: media de admitere este media de la bacalaureat. La medii egale pe ultimele locuri se compară notele de la probele de bacalaureat și, la nevoie, se ține un interviu motivațional.",
@@ -5092,7 +5077,6 @@
   "name": "Facultatea de Științele Comunicării",
   "about": "Studiezi Comunicare și relații publice: formele și canalele de comunicare, tehnici de comunicare eficientă și noțiuni de cercetare în domeniu. Programul durează 3 ani, cu frecvență sau cu frecvență redusă, și te pregătește pentru meseria de specialist în comunicare și relații publice.",
   "admissionTypes": [
-   "dosar",
    "bac"
   ],
   "admission": "Admiterea este concurs de dosare: media de admitere este media de la bacalaureat. La medii egale pe ultimele locuri se compară notele de la probele de bacalaureat și, la nevoie, se ține un interviu motivațional.",
@@ -5552,7 +5536,7 @@
  {
   "universityId": "umf-craiova",
   "name": "Facultatea de Farmacie",
-  "about": "Facultatea a fost înființată în 1996. Are două programe de licență: Farmacie, de cinci ani, în care înveți despre medicamente și cum se prepară și se eliberează corect, și Cosmetică medicală și tehnologia produsului cosmetic, de trei ani. Sălile de curs și laboratoarele au fost modernizate recent.",
+  "about": "Facultatea a fost înființată în 1996. Are două programe de licență: Farmacie, de cinci ani, în care înveți despre medicamente și cum se prepară și se eliberează corect, și Cosmetică medicală și tehnologia produsului cosmetic, de trei ani. Sălile de curs au fost modernizate recent, iar laboratoarele au echipamente moderne.",
   "admissionTypes": [
    "examen"
   ],
@@ -5908,7 +5892,7 @@
  {
   "universityId": "umft",
   "name": "Facultatea de Asistență Medicală",
-  "about": "Aici te pregătești să devii asistent medical generalist (4 ani, la Timișoara, Lugoj sau Deva), specialist în balneofiziokinetoterapie și recuperare sau în nutriție și dietetică (câte 3 ani).",
+  "about": "Este o facultate nouă: înființarea ei a fost aprobată în 2024, pentru anul universitar 2024-2025. Aici te pregătești să devii asistent medical generalist (4 ani, la Timișoara, Lugoj sau Deva), specialist în balneofiziokinetoterapie și recuperare sau în nutriție și dietetică (câte 3 ani).",
   "admissionTypes": [
    "examen",
    "bac"
@@ -5955,7 +5939,7 @@
  {
   "universityId": "umft",
   "name": "Facultatea de Medicină",
-  "about": "Aici te pregătești să devii medic: studiile durează 6 ani și se pot urma în română, engleză sau franceză.",
+  "about": "Aici te pregătești să devii medic: studiile durează 6 ani și se pot urma în română, engleză sau franceză. Este facultatea cu cei mai mulți studenți și profesori din universitate.",
   "admissionTypes": [
    "examen"
   ],
@@ -6591,7 +6575,7 @@
  {
   "universityId": "unibuc",
   "name": "Facultatea de Teologie Romano-Catolică",
-  "about": "Studiezi teologie romano-catolică împreună cu asistență socială, într-un program de trei ani, cu materii de teologie și materii sociale și cu practică de specialitate. Facultatea se află în curtea Catedralei Sfântul Iosif din București.",
+  "about": "Studiezi teologie romano-catolică împreună cu asistență socială, într-un program de trei ani, cu materii de teologie și materii sociale și cu practică de specialitate; la cerere, calificarea poate fi echivalată cu cea de asistent social. Facultatea se află în curtea Catedralei Sfântul Iosif din București.",
   "admissionTypes": [
    "dosar",
    "interviu",
@@ -7434,7 +7418,7 @@
  {
   "universityId": "upb",
   "name": "Facultatea de Automatică și Calculatoare",
-  "about": "Aici înveți calculatoare și tehnologia informației: programare, arhitectura calculatoarelor și aplicații software. La automatică studiezi informatică aplicată, sisteme de conducere (de control) și sisteme inteligente. Teoria merge mână în mână cu multă practică.",
+  "about": "Aici înveți calculatoare și tehnologia informației: programare, arhitectura calculatoarelor, aplicații software și inteligență artificială. La automatică studiezi informatică aplicată, sisteme de conducere (de control) pentru roboți și procese industriale și automatizări. Teoria merge mână în mână cu multă practică.",
   "admissionTypes": [
    "examen",
    "bac"
@@ -7452,7 +7436,10 @@
    "https://upb.ro/facultati/facultatea-de-automatica-si-calculatoare/",
    "https://acs.pub.ro/admitere/licenta/",
    "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
-   "https://acs.pub.ro/"
+   "https://acs.pub.ro/",
+   "https://acs.pub.ro/educatie/licenta/",
+   "https://acs.pub.ro/public/2025_29_PLi_L_03_FAC_CTI_Calculatoare_f.pdf",
+   "https://acs.pub.ro/public/2025_29_PLi_L_03_FAC_AIASI_Automatica-si-informatica-aplicata-8.pdf"
   ]
  },
  {
@@ -8636,7 +8623,7 @@
   ],
   "admission": "Nu se dă examen scris: media de admitere se calculează din cele mai mari două note de la probele scrise ale bacalaureatului. Trebuie să treci și o probă de evaluare a competențelor, sub formă de interviu, notată admis sau respins.",
   "website": "https://fim.usv.ro/",
-  "admissionUrl": "https://fim.usv.ro/admitere/",
+  "admissionUrl": "https://admitere.usv.ro/",
   "curriculumUrl": "https://fim.usv.ro/licenta/",
   "address": "Str. Universității 13, 720229 Suceava",
   "sources": [
@@ -8645,7 +8632,8 @@
    "https://usv.ro/fisiere_utilizator/file/admitere/2026/info/criterii_specifice/FIM%20Criterii%20Specifice%20ADMITERE%202026.pdf",
    "https://admitere.usv.ro/admitere-2026/programe-de-studii-numar-locuri-probe-concurs-admitere-2026/numar-locuri-si-probe-concurs-licenta-zi-2026/",
    "https://fim.usv.ro/contact/",
-   "https://fim.usv.ro/admitere/"
+   "https://fim.usv.ro/admitere/",
+   "https://admitere.usv.ro/"
   ]
  },
  {
@@ -9031,7 +9019,7 @@
  {
   "universityId": "utcn",
   "name": "Facultatea de Arhitectură și Urbanism",
-  "about": "Aici înveți să proiectezi clădiri și spații urbane. Facultatea are un singur program, Arhitectură, care durează șase ani și unește licența cu masterul.",
+  "about": "Aici înveți să proiectezi clădiri și spații urbane. Facultatea are un singur program, Arhitectură, care durează șase ani și unește licența cu masterul. Are și un atelier de machete și fabricație digitală pentru studenți.",
   "admissionTypes": [
    "aptitudini",
    "bac"
@@ -9050,7 +9038,8 @@
    "https://utcluj.ro/student-la-utcn/facultati",
    "https://fau.utcluj.ro/planuri-de-invatamant.html",
    "https://fau.utcluj.ro/servicii.html",
-   "https://fau.utcluj.ro/misiune-si-obiective.html"
+   "https://fau.utcluj.ro/misiune-si-obiective.html",
+   "https://fau.utcluj.ro/anunt/programari-online.html"
   ]
  },
  {
@@ -9289,7 +9278,9 @@
    "https://ing.utgjiu.ro/",
    "https://ing.utgjiu.ro/didactic/planuri-de-invatamant/",
    "https://admitere.utgjiu.ro/program/design/",
-   "https://ing.utgjiu.ro/despre/infiintarea-facultatii/"
+   "https://ing.utgjiu.ro/despre/infiintarea-facultatii/",
+   "https://ing.utgjiu.ro/despre/invatamant/",
+   "https://ing.utgjiu.ro/contact/"
   ]
  },
  {

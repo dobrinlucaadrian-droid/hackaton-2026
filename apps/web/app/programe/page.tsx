@@ -1,4 +1,5 @@
 // Programme finder: search the bachelor programmes of every country in the catalogue (official national datasets).
+import { counted } from "@/lib/labels";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
@@ -13,14 +14,13 @@ export const metadata: Metadata = {
 };
 
 const domainList = [...domains].sort((a, b) => a.name.localeCompare(b.name, "ro")).map((d) => ({ id: d.id, name: d.name }));
-const nf = (n: number) => n.toLocaleString("ro-RO");
 
 export default function ProgramsPage() {
   return (
     <Shell wide>
       <h1 className="mt-4 text-4xl font-black tracking-tighter text-ink sm:text-5xl">Programe de licență</h1>
       <p className="mt-2 max-w-2xl text-ink-soft">
-        {nf(catalogTotals.programs)} de programe de la {nf(catalogTotals.institutions)} de instituții din{" "}
+        {counted(catalogTotals.programs, "program", "programe")} de la {counted(catalogTotals.institutions, "instituție", "instituții")} din{" "}
         {catalogTotals.countries === 1 ? catalogCountries[0].name : `${catalogTotals.countries} țări`}, luate din datele oficiale ale fiecărei țări.{" "}
         <Link href="/surse" className="font-bold text-primary underline underline-offset-2">De unde sunt datele</Link>
       </p>

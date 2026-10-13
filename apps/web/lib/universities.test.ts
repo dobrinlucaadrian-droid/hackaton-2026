@@ -1,7 +1,7 @@
 // Tests the specializations and categories data and the university search/filter logic.
 import { describe, expect, it } from "vitest";
 import { categories, domains, specializations } from "./data";
-import { normalize, specializationsFor } from "./labels";
+import { counted, normalize, specializationsFor } from "./labels";
 import { TRAITS } from "./match";
 import { universities, universityById } from "./sheets";
 import { citiesIn, countries, filterUniversities, searchUniversities, searchWorld } from "./universities";
@@ -212,5 +212,17 @@ describe("student opinions per university", async () => {
     expect(testimonialsFor("umf-carol-davila").length).toBeGreaterThanOrEqual(2);
     expect(testimonialsFor("bocconi").length).toBeGreaterThanOrEqual(2);
     expect(testimonialsFor("harvard")).toEqual([]);
+  });
+});
+
+describe("counted", () => {
+  it("adds „de” only where Romanian grammar asks for it", () => {
+    expect(counted(1, "program", "programe")).toBe("1 program");
+    expect(counted(19, "program", "programe")).toBe("19 programe");
+    expect(counted(20, "program", "programe")).toBe("20 de programe");
+    expect(counted(100, "program", "programe")).toBe("100 de programe");
+    expect(counted(105, "program", "programe")).toBe("105 programe");
+    expect(counted(4117, "instituție", "instituții")).toBe("4.117 instituții");
+    expect(counted(100187, "program", "programe")).toBe("100.187 de programe");
   });
 });

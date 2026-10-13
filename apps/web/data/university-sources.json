@@ -192,7 +192,8 @@
     "https://courses.leeds.ac.uk/course-search/undergraduate-courses",
     "https://accommodation.leeds.ac.uk/info/4/applying/2/undergraduate-applicants",
     "https://www.leeds.ac.uk/undergraduate-funding-university/doc/international-scholarships",
-    "https://accommodation.leeds.ac.uk/info/4/applying/3/deadlines-and-apply"
+    "https://accommodation.leeds.ac.uk/info/4/applying/3/deadlines-and-apply",
+    "https://www.leeds.ac.uk/undergraduate"
   ],
   "sheffield": [
     "https://sheffield.ac.uk/undergraduate/courses/2027",
@@ -290,7 +291,8 @@
     "https://www.uni-hamburg.de/en/uhh/profil.html",
     "https://www.uni-hamburg.de/en/deutschlandstipendium/bewerber/bewerbungsvoraussetzungen-auswahlprozess.html",
     "https://www.uni-hamburg.de/en/campuscenter/studienorganisation/studienverlauf/beitraege-gebuehren.html",
-    "https://www.wiso.uni-hamburg.de/internationales/international-office/study-with-us/studying-at-uhh/semester-contribution.html"
+    "https://www.wiso.uni-hamburg.de/internationales/international-office/study-with-us/studying-at-uhh/semester-contribution.html",
+    "https://www.uni-hamburg.de/en/campuscenter/bewerbung/international/studium-mit-abschluss/sprachkenntnisse/deutschkenntnisse.html"
   ],
   "uni-koeln": [
     "https://www.uni-koeln.de/en/international/study-in-cologne/international-applications/application-for-bachelor-studies-state-examination/application-procedure-for-eu-citizens",
@@ -318,7 +320,10 @@
     "https://www.uni-goettingen.de/en/accommodation+for+students/50488.html",
     "https://www.uni-goettingen.de/en/faculties/2925.html",
     "https://uni-goettingen.de/de/40054.html",
-    "https://www.uni-goettingen.de/de/informationen+f%C3%BCr+studierende/218535.html"
+    "https://www.uni-goettingen.de/de/informationen+f%C3%BCr+studierende/218535.html",
+    "https://www.studierendenwerk-goettingen.de/en/",
+    "https://www.studierendenwerk-goettingen.de/en/studentenwerk-goettingen-student-accommodation/housing-at-studentenwerk-goettingen-faq",
+    "https://www.studierendenwerk-goettingen.de/en/studentenwerk-goettingen-student-accommodation/studentenwerk-goettingen-dormitories"
   ],
   "uni-tuebingen": [
     "https://uni-tuebingen.de/en/international/study-in-tuebingen/degree-seeking-students/application-and-admission-of-international-students/documentation-of-german-language-proficiency/",
@@ -326,7 +331,9 @@
     "https://uni-tuebingen.de/studium/rund-ums-studium/studentisches-wohnen/",
     "https://uni-tuebingen.de/en/faculties/",
     "https://uni-tuebingen.de/en/study/student-life/student-finances/deutschlandstipendium-scholarships/",
-    "https://uni-tuebingen.de/international/studierende-aus-dem-ausland/degree-seeking-students/bewerbung-fuer-internationale-studierende/bachelor-und-staatsexamen/"
+    "https://uni-tuebingen.de/international/studierende-aus-dem-ausland/degree-seeking-students/bewerbung-fuer-internationale-studierende/bachelor-und-staatsexamen/",
+    "https://www.my-stuwe.de/en/housing/",
+    "http://uni-tuebingen.de/universitaet/aktuelles-und-publikationen/meldung/wohnungsnot-zum-semesterstart/"
   ],
   "uni-stuttgart": [
     "https://www.uni-stuttgart.de/en/study/application/international-degree/application/",
@@ -340,7 +347,9 @@
     "https://www.uni-leipzig.de/en/university/structure/faculties-and-institutions",
     "https://www.uni-leipzig.de/en/university/profile",
     "https://www.uni-leipzig.de/studium/vor-dem-studium/studienfinanzierung/deutschlandstipendium",
-    "https://www.studentenwerk-leipzig.de/en/housing/dormitory-application/"
+    "https://www.studentenwerk-leipzig.de/en/housing/dormitory-application/",
+    "https://www.studentenwerk-leipzig.de/en/housing/",
+    "https://www.studentenwerk-leipzig.de/en/housing/questions-answers/"
   ],
   "uni-mannheim": [
     "https://www.uni-mannheim.de/en/academics/programs/",
@@ -849,7 +858,9 @@
     "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/admission/bachelor-studies/",
     "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/admission/scholarship-programs-and-tuition-free-studies/",
     "https://rekrutacja.pwr.edu.pl/en/for-foreigners/free-of-charge-studies/",
-    "https://drugidom.pwr.edu.pl/"
+    "https://drugidom.pwr.edu.pl/",
+    "https://rekrutacja.pwr.edu.pl/wp-content/uploads/2026/04/prospectus_2026_27.pdf",
+    "https://pwr.edu.pl/en/students/study-in-english"
   ],
   "uni-wroclaw": [
     "https://international.uni.wroc.pl/en/admission-full-degree-studies/programmes-english",
@@ -994,12 +1005,11 @@
   "uio": [
     "https://www.uio.no/english/studies/admission/",
     "https://www.uio.no/english/studies/admission/tuition/",
-    "https://www.uio.no/english/studies/international-students/before-arrival/housing/admitted-through-so.html",
+    "https://www.uio.no/english/studies/international-students/before-arrival/housing/",
     "https://www.uio.no/english/studies/programmes/",
     "https://studyinnorway.no/node/35",
     "https://www.studyinnorway.no/node/18",
-    "https://www.uio.no/english/studies/admission/scholarships/",
-    "https://www.uio.no/english/studies/international-students/before-arrival/housing/"
+    "https://www.uio.no/english/studies/admission/scholarships/"
   ],
   "ntnu": [
     "https://www.ntnu.edu/studies/bbi/admission",
@@ -1036,7 +1046,9 @@
     "https://apply.lu.lv/courses/course/25",
     "https://www.lu.lv/en/studies/student-life/accommodation/",
     "https://www.lu.lv/en/studies/study-programmes-1/bachelors-study-programmes/",
-    "https://www.lu.lv/en/about-us/"
+    "https://www.lu.lv/en/about-us/",
+    "https://www.lu.lv/en/about-us/about-university/",
+    "https://www.akademiskaiscentrs.lu.lv/en/other-properties/development-projects/ul-main-building/"
   ],
   "vilnius-university": [
     "https://www.vu.lt/en/studies/bachelor-and-integrated-studies",
@@ -1215,7 +1227,9 @@
     "https://www.uni-wuerzburg.de/studium/studienangelegenheiten/bewerbung-und-einschreibung/internationale-vollstudierende/vor-der-abreise/kosten-und-finanzierung/",
     "https://www.uni-wuerzburg.de/studium/studienangelegenheiten/bewerbung-und-einschreibung/internationale-vollstudierende/vor-der-abreise/wohnen/",
     "https://www.uni-wuerzburg.de/stipendien/stipendien-inland/d-stip/",
-    "https://www.uni-wuerzburg.de/einrichtungen/fakultaeten/"
+    "https://www.uni-wuerzburg.de/einrichtungen/fakultaeten/",
+    "https://www.swerk-wue.de/wohnen/",
+    "https://www.swerk-wue.de/wohnen/faq"
   ],
   "uni-konstanz": [
     "https://www.uni-konstanz.de/studieren/vor-dem-studium/bewerbung-und-immatrikulation/bachelor-und-erste-juristische-pruefung/eu-ewr-oder-schweiz-1/",
@@ -1250,7 +1264,8 @@
     "https://www.uni-hannover.de/en/studium/finanzierung-foerderung/studienkosten",
     "https://www.uni-hannover.de/en/studium/finanzierung-foerderung/deutschlandstipendium",
     "https://www.studentenwerk-hannover.de/wohnen/uebersicht",
-    "https://www.uni-hannover.de/de/universitaet/organisation/fakultaeten"
+    "https://www.uni-hannover.de/de/universitaet/organisation/fakultaeten",
+    "https://www.uni-hannover.de/en/studium/vor-dem-studium/bewerbung-zulassung/"
   ],
   "ruhr-uni-bochum": [
     "https://studium.ruhr-uni-bochum.de/de/bewerbung-fuer-euewr-angehoerige",
@@ -1383,7 +1398,8 @@
     "https://www.unife.it/it/internazionale/venire/iscriversi/informazioni",
     "https://www.unife.it/it/studiare/vivere-unife/alloggi/residenze-universitarie-er-go",
     "https://www.unife.it/it/internazionale/venire/iscriversi/informazioni/lingua",
-    "https://www.unife.it/it/iscriviti/tasse/tasse"
+    "https://www.unife.it/it/iscriviti/tasse/tasse",
+    "https://www.unife.it/it/iscriviti/pagare/tasse"
   ],
   "uniud": [
     "https://www.uniud.it/it/didattica/corsi",
@@ -1681,7 +1697,9 @@
     "https://study.usm.md/admission/",
     "https://usm.md/?page_id=22279",
     "https://study.usm.md/en/",
-    "https://admitere.usm.md/?page_id=697"
+    "https://admitere.usm.md/?page_id=697",
+    "https://usm.md/?page_id=392",
+    "https://usm.md/?page_id=392&lang=en"
   ],
   "usmf-chisinau": [
     "https://usmf.md",
@@ -1719,7 +1737,9 @@
     "https://merimna-en.uoa.gr/student_welfare/student_meals_department/free_meals_beneficiaries/",
     "https://en.interel.uoa.gr/civis_erasmus_mobility/student_services",
     "https://studyingreece.edu.gr/bachelors/",
-    "https://studyingreece.edu.gr/learn-greek/"
+    "https://studyingreece.edu.gr/learn-greek/",
+    "https://issu.uoa.gr/guide_for_all_students/getting_ready_for_your_studies/accommodation/",
+    "https://hub.uoa.gr/en/university-of-athens-upgrades-student-halls-of-residence-see-the-before-and-after-photos/"
   ],
   "auth-salonic": [
     "https://www.auth.gr/en/faculties-en/",
@@ -1866,7 +1886,8 @@
     "https://study.uek.krakow.pl/university/",
     "https://uek.krakow.pl/studenci/domy-studenckie",
     "https://cos.uek.krakow.pl/biuro-stypendiow-i-ubezpieczen-zdrowotnych/",
-    "https://study.uek.krakow.pl/"
+    "https://study.uek.krakow.pl/",
+    "https://irk.uek.krakow.pl/en-gb/offer/S1-26-27Z-CU/programme/EF-GF-S1/"
   ],
   "tu-braunschweig": [
     "https://www.tu-braunschweig.de/international-students/application",
@@ -1924,7 +1945,8 @@
     "https://www.northumbria.ac.uk/study-at-northumbria/courses/",
     "https://www.gov.uk/guidance/studying-in-the-uk-guidance-for-eu-students",
     "https://www.northumbria.ac.uk/study-at-northumbria/fees-funding/international-fees-funding/26-27-ug-international-scholarships/",
-    "https://www.northumbria.ac.uk/study-at-northumbria/fees-funding/international-fees-funding/international-ug-funding/"
+    "https://www.northumbria.ac.uk/study-at-northumbria/fees-funding/international-fees-funding/international-ug-funding/",
+    "https://www.northumbria.ac.uk/study-at-northumbria/fees-funding/"
   ],
   "dundee": [
     "https://www.dundee.ac.uk/countries/romania",
@@ -1933,7 +1955,8 @@
     "https://www.dundee.ac.uk/undergraduate/courses",
     "https://www.gov.uk/guidance/studying-in-the-uk-guidance-for-eu-students",
     "https://www.dundee.ac.uk/scholarships/global-excellence-scholarship-undergraduate-september-2027",
-    "https://www.dundee.ac.uk/scholarships/vice-chancellors-international-undergraduate-scholarship-september-2027"
+    "https://www.dundee.ac.uk/scholarships/vice-chancellors-international-undergraduate-scholarship-september-2027",
+    "https://www.dundee.ac.uk/corporate-information/key-facts-global-excellence-scholarship"
   ],
   "lyon-2": [
     "https://www.univ-lyon2.fr/formation/candidatures",
@@ -1991,7 +2014,8 @@
     "https://admitere.pub.ro/Admitere/site/alegeCentru",
     "https://upb.ro/wp-content/uploads/2026/01/01_Regulament_admitere_licenta_2026_CN_Rev-1.0.pdf",
     "https://upb.ro/camine/",
-    "https://upb.ro/oferta-burse/"
+    "https://upb.ro/oferta-burse/",
+    "https://upb.ro/"
   ],
   "ase-bucuresti": [
     "https://www.ase.ro",
@@ -2008,7 +2032,8 @@
     "https://umfcd.ro/admitere-la-studii-universitare-de-licenta-in-cadrul-umfcd-pentru-anul-universitar-2026-2027/",
     "https://umfcd.ro/wp-content/uploads/2026/ADMITERE_2026/REGULAMENTUL_DE_ADMITERE/UMFCD_Regulament%20admitere%20licenta%202026_SENAT%2022.01.2026.pdf",
     "https://umfcd.ro/studenti/servicii-sociale/cazare-tabere-burse-decont-transport/cazare/",
-    "https://umfcd.ro/studenti/servicii-sociale/cazare-tabere-burse-decont-transport/burse/"
+    "https://umfcd.ro/studenti/servicii-sociale/cazare-tabere-burse-decont-transport/burse/",
+    "https://umfcd.ro/despre-umfcd/biroul-rectorului/istoric-umfcd/"
   ],
   "snspa": [
     "https://snspa.ro",
@@ -2083,7 +2108,10 @@
     "https://academiadepolitie.ro/despre-noi/",
     "https://admitere.academiadepolitie.ro/",
     "https://admitere.academiadepolitie.ro/docs/2026/licenta/Regulament-admitere-licenta-2026-actualizare-18-01-2026.pdf",
-    "https://admitere.academiadepolitie.ro/docs/2026/licenta/Oferta-educationala-Facutatea-de-Politie-licenta-2026.pdf"
+    "https://admitere.academiadepolitie.ro/docs/2026/licenta/Oferta-educationala-Facutatea-de-Politie-licenta-2026.pdf",
+    "https://www.academiadepolitie.ro/",
+    "https://academiadepolitie.ro/wp-content/uploads/2025/06/Metodologie-privind-acordarea-burselor-pentru-studenti.pdf",
+    "https://academiadepolitie.ro/storage/2024/06/Codul-studentului-2024.pdf"
   ],
   "atm": [
     "https://www.mta.ro",
@@ -2136,7 +2164,9 @@
     "https://uad.ro/admitere/licenta/index.htm",
     "https://uad.ro/admitere/licenta/ghid/",
     "https://uad.ro/studenti/cazare/",
-    "https://uad.ro/studenti/burse/"
+    "https://uad.ro/studenti/burse/",
+    "https://drive.google.com/file/d/1VwP_v0_HGY6lTboAlV_Tmfkq7RnleS1n/view?usp=sharing",
+    "https://drive.google.com/file/d/12tciqHoQGBLRWik9KEFynVgs5T6sUJD0/view?usp=sharing"
   ],
   "amgd-cluj": [
     "https://anmgd.ro",
@@ -2145,7 +2175,8 @@
     "https://anmgd.ro/admitere/licenta/facultatea-teoretica/",
     "https://anmgd.ro/wp-content/uploads/2024/06/Regulament-admitere-licenta-FIM-2026-AK.pdf",
     "https://anmgd.ro/studenti/student-life-anmgd/cazare/",
-    "https://anmgd.ro/studenti/student-life-anmgd/burse/"
+    "https://anmgd.ro/studenti/student-life-anmgd/burse/",
+    "https://anmgd.ro/wp-content/uploads/2026/01/Regulament-adm-licenta-FT-17.12.2025.pdf"
   ],
   "uaic": [
     "https://www.uaic.ro/despre-uaic/",
@@ -2162,7 +2193,10 @@
     "https://www.tuiasi.ro/licenta/metode-de-selectie/",
     "https://www.tuiasi.ro/licenta/dosarul-de-inscriere/",
     "https://www.tuiasi.ro/studenti/burse/",
-    "http://campus.tuiasi.ro/"
+    "http://campus.tuiasi.ro/",
+    "https://www.tuiasi.ro/",
+    "https://www.tuiasi.ro/istoric/",
+    "https://www.tuiasi.ro/tuiasi-in-cifre/"
   ],
   "umf-iasi": [
     "https://www.umfiasi.ro",
@@ -2170,7 +2204,8 @@
     "https://www.umfiasi.ro/ro/admitere/program-de-licenta/Pagini/2026/Concurs-de-admitere-prin-probă-scrisă.aspx",
     "https://www.umfiasi.ro/en/admission/Pages/Admission-2026.aspx",
     "https://www.umfiasi.ro/ro/academic/Pagini/Burse.aspx",
-    "https://www.umfiasi.ro/ro/academic/programe-de-studii/licenta/Pagini/default.aspx"
+    "https://www.umfiasi.ro/ro/academic/programe-de-studii/licenta/Pagini/default.aspx",
+    "https://umfis.sharepoint.com/:b:/g/files/IQDtKZHKmzPpQ6NXyKLkiK6vASUkSxbEuZ6TATHly8bbF2s?e=gAFJAP"
   ],
   "iuls": [
     "https://iuls.ro",
@@ -2188,7 +2223,8 @@
     "https://www.arteiasi.ro/admitere/licenta-arte-vizuale-si-design",
     "https://www.arteiasi.ro/admitere/licenta-teatru/",
     "https://www.arteiasi.ro/studenti/cazare-unage/",
-    "https://www.arteiasi.ro/studenti/burse-unage/"
+    "https://www.arteiasi.ro/studenti/burse-unage/",
+    "https://arteiasiro-my.sharepoint.com/:b:/g/personal/arhiva_unage_unage_ro/EdO6cII69UlDkQsY9YQIvRQBcVCkhXvs038NEesIrajk5Q?e=860oGg"
   ],
   "uvt": [
     "https://www.uvt.ro",
@@ -2226,7 +2262,8 @@
     "https://www.usvt.ro/ro/campus",
     "https://usvt.ro/cazari",
     "https://usvt.ro/despre",
-    "https://usvt.ro/faculties/facultatea-de-medicina-veterinara"
+    "https://usvt.ro/faculties/facultatea-de-medicina-veterinara",
+    "https://www.usvt.ro/burse/"
   ],
   "unitbv": [
     "https://www.unitbv.ro",
@@ -2245,7 +2282,8 @@
     "https://www.ucv.ro/admitere/romani/acte_inscriere_online.php",
     "https://www.ucv.ro/campus/camine/descriere.php",
     "https://www.ucv.ro/studenti/burse_studentesti/",
-    "https://www.ucv.ro/studenti/burse_studentesti/detalii_burse.php"
+    "https://www.ucv.ro/studenti/burse_studentesti/detalii_burse.php",
+    "https://www.ucv.ro/pdf/servicii_administrative/dga/directia_resurse_umane_salarizare/facilitati_studenti/intrebari_frecvente.pdf"
   ],
   "umf-craiova": [
     "https://umfcv.ro",
@@ -2294,7 +2332,10 @@
   ],
   "ugal": [
     "https://www.ugal.ro",
-    "https://admitere.ugal.ro"
+    "https://admitere.ugal.ro",
+    "https://www.ugal.ro/",
+    "https://ugal.ro/",
+    "https://admitere.ugal.ro/"
   ],
   "uoradea": [
     "https://www.uoradea.ro",
@@ -2302,7 +2343,8 @@
     "https://admitere.uoradea.ro/ro/licenta/ghidul-admiterii-licenta",
     "https://admitere.uoradea.ro/ro/licenta/regulamentul-organizarii-admiterii",
     "https://www.uoradea.ro/info-studenti/burse/",
-    "https://www.uoradea.ro/info-studenti/cazari-in-caminele-studentesti/"
+    "https://www.uoradea.ro/info-studenti/cazari-in-caminele-studentesti/",
+    "https://www.uoradea.ro/wp-content/uploads/2025/11/HS-28_Anexa-47.pdf"
   ],
   "umfst": [
     "https://www.umfst.ro",
@@ -2330,7 +2372,8 @@
     "https://www.upg-ploiesti.ro/wp-content/uploads/2026/02/R-04-01-METODOLOGIA-DE-ORGANIZARE-SI-DESFASURARE-A-CONCURSULUI-DE-ADMITERE-LA-STUDII-UNIVERSITARE-DE-LICENTA-2026-1.pdf",
     "https://www.upg-ploiesti.ro/wp-content/uploads/2026/04/acte-lic-2026.pdf",
     "https://www.upg-ploiesti.ro/index.php/burse/",
-    "https://www.upg-ploiesti.ro/index.php/camine-studentesti/"
+    "https://www.upg-ploiesti.ro/index.php/camine-studentesti/",
+    "https://www.upg-ploiesti.ro/wp-content/uploads/2025/10/R-08.01.15.00.pdf"
   ],
   "uab": [
     "https://www.uab.ro",
@@ -2385,7 +2428,9 @@
     "https://www.armyacademy.ro/admitere_aft.php",
     "https://www.armyacademy.ro/admitere/licenta/2026/Ghid_candidat_2026.pdf",
     "https://www.armyacademy.ro/admitere/licenta/2026/anunt_cifra_scolarizare.pdf",
-    "https://www.armyacademy.ro/fsea.php"
+    "https://www.armyacademy.ro/fsea.php",
+    "https://www.armyacademy.ro/corpcadet.php",
+    "https://www.armyacademy.ro/prezentare.php"
   ],
   "uat-tgmures": [
     "https://www.uat.ro",
@@ -2412,7 +2457,8 @@
     "https://www.utm.ro/admitere-facultatea-de-medicina-2026/",
     "https://www.utm.ro/camine-studentesti/",
     "https://www.utm.ro/studenti-facilitati/",
-    "https://www.utm.ro/portal-taxe/taxe-studii/"
+    "https://www.utm.ro/portal-taxe/taxe-studii/",
+    "https://www.utm.ro/facultatea-de-medicina/"
   ],
   "univnt": [
     "https://www.univnt.ro",
@@ -2427,14 +2473,14 @@
   "ucdc": [
     "https://www.ucdc.ro",
     "https://www.ucdc.ro/admitere/",
-    "https://www.ucdc.ro/intrebari-frecvente-admitere-2026/",
-    "https://www.ucdc.ro/en/campus/"
+    "https://www.ucdc.ro/intrebari-frecvente-admitere-2026/"
   ],
   "spiru-haret": [
     "https://www.spiruharet.ro",
     "https://spiruharet.ro/admitere-2026/",
     "https://spiruharet.ro/facilitati/",
-    "https://spiruharet.ro/data/2025/06/regulament_2025_2026.pdf"
+    "https://spiruharet.ro/data/2025/06/regulament_2025_2026.pdf",
+    "https://spiruharet.ro"
   ],
   "sapientia": [
     "https://www.sapientia.ro",
@@ -2457,12 +2503,14 @@
   "upa-iasi": [
     "https://www.upa.ro",
     "https://www.upa.ro/admitere-2026-2027/",
-    "https://www.upa.ro/ghidul-studentilor-pachet-informativ/"
+    "https://www.upa.ro/ghidul-studentilor-pachet-informativ/",
+    "https://www.upa.ro/istoric_upa/"
   ],
   "hyperion": [
     "https://www.hyperion.ro",
     "https://www.hyperion.ro/admitere/licenta",
-    "https://www.hyperion.ro/studenti/cazare-studenti"
+    "https://www.hyperion.ro/studenti/cazare-studenti",
+    "https://www.hyperion.ro/universitatea/despre-noi"
   ],
   "ueb": [
     "https://www.ueb.ro",
@@ -2476,7 +2524,11 @@
     "https://www.univ-danubius.ro",
     "http://admitere.univ-danubius.ro",
     "https://univ-danubius.ro/burse-si-premii",
-    "https://admitere.univ-danubius.ro/informatii/beneficii"
+    "https://admitere.univ-danubius.ro/informatii/beneficii",
+    "https://univ-danubius.ro/identitate",
+    "https://admitere.univ-danubius.ro/informatii/taxe",
+    "https://univ-danubius.ro/taxe",
+    "https://univ-danubius.ro/regulamente-si-metodologii"
   ],
   "ucb-pitesti": [
     "https://www.univcb.ro",
@@ -2503,7 +2555,8 @@
     "https://admitere.ugb.ro/dosar-de-concurs",
     "https://admitere.ugb.ro/tot-ce-trebuie-sa-stiu",
     "https://dsesa.ugb.ro/",
-    "https://www.ugb.ro/index.php/despre-noi/fundatia-bacovia/"
+    "https://www.ugb.ro/index.php/despre-noi/fundatia-bacovia/",
+    "https://www.ugb.ro/index.php/despre-noi/"
   ],
   "emanuel-oradea": [
     "https://www.emanuel.ro",
@@ -2533,7 +2586,8 @@
     "https://tibiscus.ro/facultati/",
     "https://fp.tibiscus.ro/",
     "https://fp.tibiscus.ro/admitere-studii-licenta/",
-    "https://fdap.tibiscus.ro/wp-content/uploads/wpfd/preview_files/metodologie-privind-organizarea-si-desfasurarea-concursului-de-admitere-pentru-studii-universitare-de-licenta-si-master-la-facultatea-de-drept-si-administratie-publica-in-anul-universitar-2026-2027(0d7363894acdee742caf7fe4e97c4d49).pdf"
+    "https://fdap.tibiscus.ro/wp-content/uploads/wpfd/preview_files/metodologie-privind-organizarea-si-desfasurarea-concursului-de-admitere-pentru-studii-universitare-de-licenta-si-master-la-facultatea-de-drept-si-administratie-publica-in-anul-universitar-2026-2027(0d7363894acdee742caf7fe4e97c4d49).pdf",
+    "https://tibiscus.ro/download/123/facilitati-si-burse/3700/regulament-de-acordare-a-facilitatilor-privind-taxele-anuale-de-scolarizare-a-studentilor-din-universitatea-tibiscus-din-timisoara-in-anul-universitar-2025-2026.pdf"
   ],
   "apollonia": [
     "https://www.univapollonia.ro",
@@ -2611,7 +2665,9 @@
     "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/entry-requirements",
     "https://www.kcl.ac.uk/accommodation/undergraduate",
     "https://www.kcl.ac.uk/study/undergraduate/fees-and-funding/student-funding",
-    "https://www.kcl.ac.uk/study/funding"
+    "https://www.kcl.ac.uk/study/funding",
+    "https://www.kcl.ac.uk/study-legacy/funding?type=prospective-student&level=undergraduate",
+    "https://self-service.kcl.ac.uk/article/KA-01819/en-us"
   ],
   "edinburgh": [
     "https://study.ed.ac.uk/undergraduate/student-life/accommodation",
@@ -2657,7 +2713,8 @@
     "https://undergrad.admissions.columbia.edu/apply/international",
     "https://undergrad.admissions.columbia.edu/apply/international/aid",
     "https://cc-seas.financialaid.columbia.edu/how/aid/works",
-    "https://undergrad.admissions.columbia.edu/life/here/housing-dining"
+    "https://undergrad.admissions.columbia.edu/life/here/housing-dining",
+    "https://undergrad.admissions.columbia.edu/academics/college/majors"
   ],
   "upenn": [
     "https://admissions.upenn.edu/how-to-apply/what-penn-looks-for/testing",
@@ -2715,7 +2772,8 @@
     "https://www.lmu.de/de/studium/internationale-vollzeit-studierende/voraussetzungen/nachweis-der-deutschkenntnisse/",
     "https://www.lmu.de/en/workspace-for-students/abc-study-guide/fees-and-tuition-fees/",
     "https://www.lmu.de/en/workspace-for-students/student-life/housing/",
-    "https://www.lmu.de/en/workspace-for-students/student-support-services/finance-your-studies/scholarships/deutschlandstipendium/application/"
+    "https://www.lmu.de/en/workspace-for-students/student-support-services/finance-your-studies/scholarships/deutschlandstipendium/application/",
+    "https://www.lmu.de/en/study/all-degrees-and-programs/international-degree-programs/"
   ],
   "heidelberg": [
     "https://www.uni-heidelberg.de/en/study/application-enrolment/study-requirements",
@@ -2737,7 +2795,13 @@
   ],
   "hu-berlin": [
     "https://www.hu-berlin.de/en/studies/admission/international-applicants",
-    "https://www.hu-berlin.de/de/studium/bewerbung/int"
+    "https://www.hu-berlin.de/de/studium/bewerbung/int",
+    "https://www.hu-berlin.de/en/study/before-your-studies/apply/overview",
+    "https://www.hu-berlin.de/en/study/before-your-studies/apply/international-students",
+    "https://www.hu-berlin.de/en/study/before-your-studies/apply/international-students/undergraduate-degree-programmes",
+    "https://www.hu-berlin.de/en/study/during-your-studies/study-organisation/re-registration",
+    "https://www.hu-berlin.de/en/study/during-your-studies/study-organisation/germany-semester-ticket",
+    "https://www.hu-berlin.de/en/study/before-your-studies/find-living-space"
   ],
   "unibo": [
     "https://www.unibo.it/en/university/who-we-are/our-history/university-from-12th-to-20th-century",
@@ -2755,7 +2819,8 @@
     "https://www.polimi.it/en/prospective-students/how-to-apply/admission-to-laurea-programmes/students-with-a-foreign-degree",
     "https://www.polimi.it/en/students/tuition-fees-scholarships-and-financial-aid/tuition-fees",
     "https://www.polimi.it/en/students/tuition-fees-scholarships-and-financial-aid/university-financial-aid-diritto-allo-studio-universitario-dsu",
-    "https://www.polimi.it/en/campus-e-servizi/student-accommodation"
+    "https://www.polimi.it/en/campus-e-servizi/student-accommodation",
+    "https://www.polimi.it/en/"
   ],
   "polito": [
     "https://www.polito.it/en/education/applying-studying-graduating/admissions-and-enrolment/bachelor-s-degree-programmes",
@@ -2783,7 +2848,9 @@
     "https://www.unibocconi.it/en/applying-bocconi/bachelor-and-law-programs/application-and-admissions/admissions",
     "https://www.unibocconi.it/en/applying-bocconi/bachelor-and-law-programs/application-and-admissions/results-and-enrollment",
     "https://www.unibocconi.it/en/applying-bocconi/bachelor-and-law-programs/funding",
-    "https://www.unibocconi.it/en/applying-bocconi/bachelor-and-law-programs/housing"
+    "https://www.unibocconi.it/en/applying-bocconi/bachelor-and-law-programs/housing",
+    "https://www.unibocconi.it/en/applying-bocconi/bachelor-and-law-programs/application-and-admissions",
+    "https://www.unibocconi.it/en/applying-bocconi/bachelor-and-law-programs/application-and-admissions/language-certificates"
   ],
   "rug": [
     "https://www.rug.nl/education/bachelor/international-students/study-in-the-netherlands-groningen/accommodation",
@@ -2844,14 +2911,16 @@
     "https://www.uu.nl/en/bachelors/general-information/how-to-apply/application-procedure",
     "https://www.uu.nl/en/bachelors/general-information/how-to-apply/scholarships-and-grants",
     "https://www.uu.nl/en/bachelors/general-information/how-to-apply/scholarships-and-grants/philosophy-politics-and-economics-scholarship",
-    "https://www.uu.nl/en/education/welcome-to-utrecht/prepare-your-stay/arrange-housing/ways-to-find-housing/uu-reserved-accommodation-progamme/reserved-accommodation-for-bachelors-sep-26"
+    "https://www.uu.nl/en/education/welcome-to-utrecht/prepare-your-stay/arrange-housing/ways-to-find-housing/uu-reserved-accommodation-progamme/reserved-accommodation-for-bachelors-sep-26",
+    "https://www.uu.nl/en/organisation/about-us/facts-and-figures/utrecht-university-in-rankings"
   ],
   "twente": [
     "https://www.utwente.nl/en/campus/facilities/housing/students/eea-students/",
     "https://www.utwente.nl/en/education/bachelor/",
     "https://www.utwente.nl/en/education/bachelor/how-to-apply/",
     "https://www.utwente.nl/en/education/bachelor/application-admission/application/",
-    "https://www.utwente.nl/en/education/scholarship-finder/"
+    "https://www.utwente.nl/en/education/scholarship-finder/",
+    "https://utwente.nl/en/organisation/about"
   ],
   "sorbonne": [
     "https://international-welcome-desk.sorbonne-universite.fr/join-sorbonne-university/study/admission-to-the-first-year/",
@@ -2888,7 +2957,9 @@
     "https://universitats.gencat.cat/es/acces-universitat/acces-segons-perfils-estudiants/estudiant-sistema-educatiu-estranger/",
     "https://universitats.gencat.cat/es/acces-universitat/sobre-preus-beques/preus-estudis-universitaris/index.html",
     "https://www.becaseducacion.gob.es/becas-y-ayudas/universidad-grado-master/que-necesitas.html",
-    "https://unedasiss.uned.es/home"
+    "https://unedasiss.uned.es/home",
+    "https://www.eh.ub.edu/en/about/university-barcelona/",
+    "https://www.ub.edu/gtr/documents/xifres/UBenXifres_CAST.pdf"
   ],
   "ie-university": [
     "https://www.ie.edu/university/",
@@ -2930,7 +3001,9 @@
     "https://www.ku.dk/studies/student-life/housing",
     "https://about.ku.dk/facts-figures/",
     "https://about.ku.dk/",
-    "https://www.su.dk/foreign-citizen/gb-foreign-citizen/eu-rules/you-work-in-denmark"
+    "https://www.su.dk/foreign-citizen/gb-foreign-citizen/eu-rules/you-work-in-denmark",
+    "https://about.ku.dk/profile-history/education/",
+    "https://about.ku.dk/profile-history/"
   ],
   "aarhus": [
     "https://bachelor.au.dk/en/",
@@ -2988,7 +3061,8 @@
     "https://www.kth.se/en/studies/bachelor",
     "https://www.kth.se/en/studies/bachelor/information-communication-technology/fees-1.646274",
     "https://www.kth.se/en/studies/bachelor/information-communication-technology/how-to-apply-for-bachelor-s-studies-1.450312",
-    "https://www.universityadmissions.se/en/support-centre/fees-and-scholarships"
+    "https://www.universityadmissions.se/en/support-centre/fees-and-scholarships",
+    "https://www.kth.se/en/student/studier/housing/eligibility-and-application-1.809659"
   ],
   "eth-zurich": [
     "https://ethz.ch/en/studies/bachelor/application/non-swiss-matriculation-certificate/admission-prerequisites.html",
@@ -3009,5 +3083,20 @@
     "https://www.epfl.ch/education/studies/en/support-scholarships/",
     "https://www.epfl.ch/campus/services/housing/ineedhousing/students/",
     "https://www.epfl.ch/campus/services/housing/housing-options/renting_studenthall/"
+  ],
+  "afa-brasov": [
+    "https://www.afahc.ro/",
+    "https://www.afahc.ro/ro/programe_studii/admitere_licenta.html",
+    "https://www.afahc.ro/ro/programe_studii/admitere2026/Licenta/Regulament_Admitere_Licenta_2026-AFAHC_E5-R0.pdf",
+    "https://www.afahc.ro/ro/programe_studii/admitere2026/Licenta/Precizari%20Certificate%20Competenta%20Lingvistica.pdf",
+    "https://www.afahc.ro/ro/facultate/FMA.html",
+    "https://www.afahc.ro/ro/facultate/FSSA.html",
+    "https://www.recrutaremapn.ro/formare.php"
+  ],
+  "unap": [
+    "https://www.unap.ro",
+    "https://unap.ro",
+    "http://www.unap.ro",
+    "https://www.unap.ro/index.php/ro/"
   ]
 }

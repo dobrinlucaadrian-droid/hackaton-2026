@@ -1,5 +1,6 @@
 "use client";
 // On a faculty sheet: the bachelor programmes of that faculty from the official list, read from the database.
+import { counted } from "@/lib/labels";
 import { useQuery } from "convex/react";
 import Link from "next/link";
 import { api } from "@/convex/_generated/api";
@@ -13,7 +14,7 @@ export function FacultyPrograms({ institutionId, faculty, year }: { institutionI
   return (
     <div data-faculty-programs>
       <p className="text-sm text-ink-soft">
-        {mine.length} {mine.length === 1 ? "program" : "programe"} de licență ({year}), după lista oficială.
+        {counted(mine.length, "program", "programe")} de licență ({year}), după lista oficială.
       </p>
       <ul className="mt-3 space-y-2 [&>li]:bg-paper">
         {mine.map((p) => (

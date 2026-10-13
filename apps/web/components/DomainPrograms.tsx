@@ -1,5 +1,6 @@
 "use client";
 // On a result card: real bachelor programmes of the matched study domain in Romania (in the student's chosen cities when there are any), and how many the catalogue has in other countries.
+import { counted } from "@/lib/labels";
 import { useQuery } from "convex/react";
 import Link from "next/link";
 import { api } from "@/convex/_generated/api";
@@ -26,7 +27,7 @@ export function DomainPrograms({ domainId, cities, sheetIds }: { domainId: strin
     <div data-domain-programs>
       <p className="text-sm text-ink-soft">
         {useCity
-          ? `${list.length} ${list.length === 1 ? "program" : "programe"} de licență în ${city}, după lista oficială pentru 2026–2027.`
+          ? `${counted(list.length, "program", "programe")} de licență în ${city}, după lista oficială pentru 2026–2027.`
           : city
             ? `În ${city} nu am găsit programe pentru acest domeniu. În toată România sunt ${total}.`
             : `${total} programe de licență în România, după lista oficială pentru 2026–2027.`}

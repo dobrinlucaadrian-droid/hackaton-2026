@@ -43,6 +43,13 @@ export function normalize(text: string): string {
     .trim();
 }
 
+/** A number with its noun, the Romanian way: "1 program", "19 programe", "20 de programe", "4.117 instituții". */
+export function counted(n: number, one: string, many: string): string {
+  const last = n % 100;
+  const de = n >= 20 && (last === 0 || last >= 20) ? " de" : "";
+  return `${n.toLocaleString("ro-RO")}${de} ${n === 1 ? one : many}`;
+}
+
 export function specializationsFor(domainId: string): Specialization[] {
   return specializations.filter((s) => s.domainId === domainId);
 }

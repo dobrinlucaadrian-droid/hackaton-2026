@@ -1,4 +1,5 @@
 // Data sources page: where the catalogue of universities and programmes comes from, country by country, how it was built and what its limits are.
+import { counted } from "@/lib/labels";
 import type { Metadata } from "next";
 import { Shell } from "@/components/Shell";
 import { catalogCountries, catalogTotals } from "@/lib/catalog";
@@ -25,7 +26,7 @@ export default function SourcesPage() {
     <Shell>
       <h1 className="mt-4 text-4xl font-black tracking-tighter text-ink">Surse de date</h1>
       <p className="mt-2 text-ink-soft">
-        Spunem de unde vine fiecare fel de informație, ca să o poți verifica singur. Catalogul are acum {nf(catalogTotals.programs)} de programe de licență de la {nf(catalogTotals.institutions)} de instituții din{" "}
+        Spunem de unde vine fiecare fel de informație, ca să o poți verifica singur. Catalogul are acum {counted(catalogTotals.programs, "program", "programe")} de licență de la {counted(catalogTotals.institutions, "instituție", "instituții")} din{" "}
         {catalogTotals.countries === 1 ? "România" : `${catalogTotals.countries} țări`}.
       </p>
 

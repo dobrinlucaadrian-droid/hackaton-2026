@@ -21,6 +21,14 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-13 16:16 — a doua încercare pe punctele neconfirmate și verificarea completă a site-ului
+- Cerut: verificarea de către asistent a listelor „de verificat”, apoi o verificare în amănunt a întregului site, ca să nu rămână erori
+- Făcut: (1) Cinci ajutoare au reluat cele 99 de puncte pe care prima verificare nu le putuse confirma: 71 confirmate, 19 infirmate și corectate, 19 rămase necunoscute; aplicate 71 de schimbări în fișe (de exemplu: HU Berlin, care acum s-a deschis, are toate licențele în germană și înscriere prin uni-assist; Academia Forțelor Aeriene nu are locuri cu taxă și cere certificat de engleză; „atelierul de machete” de la Arhitectură Cluj și „cea mai mare universitate din țară” la UBB au fost confirmate și puse înapoi). (2) Hotărâri luate cu o regulă unică: „dosar” doar unde ceva din dosar se notează (25 de fișe), „Cămin: nu” la KTH și Copenhaga, autorizarea provizorie spusă la două facultăți ale Universității Româno-Americane. (3) Verificarea site-ului: toate cele 905 pagini se deschid fără erori și fără texte stricate; 4.248 de linkuri verificate (2 surse moarte reparate; restul sunt blocaje pentru roboți sau site-uri căzute: Galați, Apărare, fspac.ubbcluj.ro, agronomie.ucv.ro); chestionarul parcurs până la rezultat; căutarea cu orașe, căutarea de programe, formularul de păreri, fereastra de bun venit, redirecționarea paginilor cu cont și de administrare, antetele de securitate; aspectul la lățime de telefon pe șase pagini; verificarea de contradicții din date. Găsit și reparat: „4.117 de instituții” (corect „4.117 instituții”) pe două pagini, cu o regulă comună pentru numere și un test. Lista scurtă cu ce a rămas este în `docs/de-verificat.md`
+- Fișiere: `apps/web/data/universities-ro.json`, `apps/web/data/universities-abroad.json`, `apps/web/data/universities-index.json`, `apps/web/data/faculties-ro.json`, `apps/web/data/university-sources.json`, `apps/web/lib/labels.ts`, `apps/web/lib/universities.test.ts`, `apps/web/app/programe/page.tsx`, `apps/web/app/surse/page.tsx`, `apps/web/components/DomainPrograms.tsx`, `apps/web/components/FacultyPrograms.tsx`, `docs/de-verificat.md` (nou)
+- Poartă: TRECUT (`node scripts/gate.mjs`: secrete, fișiere, registru, build, 129 de teste, aplicația pornește)
+- Neverificat: conectarea cu link pe email, salvarea rezultatului în cont, trimiterea reală a unei păreri și paginile de administrare cu un cont de administrator nu au fost parcurse în această rundă (doar că se deschid sau redirecționează corect); adresa de probă de pe Vercel; baza de producție; faptele din fișe nu au fost citite a treia oară; o eroare 500 văzută de câteva ori în consola browserului nu s-a mai reprodus și nu i s-a găsit sursa
+- Urmează: echipa citește `docs/de-verificat.md`; reîncercat Galați și Apărare când site-urile răspund
+
 ### 2026-10-13 15:49 — orașe la căutarea de universități și o singură cifră „cu fișă completă”
 - Cerut: la căutarea de universități, utilizatorul să poată alege și orașele, nu doar România; cele două cifre „cu fișă completă” de pe pagina principală să fie una singură
 - Făcut: sub „Țara” apare acum un rând de orașe din care se pot alege mai multe: fără nicio țară aleasă sunt orașele din România, iar după alegerea unei țări sunt orașele ei (primele 12, cu „Vezi toate orașele”). La „În străinătate” fără țară apare îndemnul de a alege o țară. Orașele alese stau în adresa paginii (`oras=` repetat), apar ca filtre active și se șterg când se schimbă țara. Linkurile de pe cardurile de rezultat duc acum toate orașele alese în chestionar, nu doar unul. Pe pagina principală sunt din nou patru cifre: prima adună universitățile și facultățile cu fișă (877 acum)
@@ -603,6 +611,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-13 15:54 `01ecc44` feat: choose several cities in the university search
 - 2026-10-13 15:43 `c909e83` feat: add 367 double-checked faculty sheets for Romania
 - 2026-10-13 14:48 `b977652` fix: fact-check the 320 university sheets from abroad
 - 2026-10-13 11:54 `f850e61` feat: faculty sheets for Romania and a fact-check of all Romanian sheets
@@ -632,5 +641,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-06 00:00 `2c23414` chore: start the production phase with Convex packages and the plan
 - 2026-10-05 11:28 `81704e7` feat: use the team logo for the site icon and the link preview
 - 2026-10-05 11:24 `f9a8e9a` docs: answers to the judging criteria
-- 2026-10-05 11:19 `763e331` feat: show student opinions in university search results and on university sheets
 <!-- commits:end -->

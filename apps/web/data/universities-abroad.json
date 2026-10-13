@@ -483,7 +483,7 @@
   ],
   "language": "engleză și neerlandeză; multe programe de licență în engleză",
   "tuition": "cu taxă pentru studenții din UE (taxă legală, mai mică decât pentru non-UE)",
-  "about": "Universitate axată pe tehnologie, cu un campus verde lângă orașul Enschede, în estul Olandei. Se bazează pe tehnologie, inovație și proiecte practice.",
+  "about": "Universitate tehnică cu un campus verde lângă orașul Enschede, în estul Olandei. Se bazează pe tehnologie, inovație și proiecte practice, dar are și licențe de științe sociale.",
   "prestige": "international",
   "budget": "mediu",
   "budgetNote": "Taxa de școlarizare pentru cetățenii UE este stabilită de stat și e moderată, dar costul vieții, mai ales chiria, e ridicat.",
@@ -539,7 +539,7 @@
   ],
   "language": "daneză la toate programele de licență; nu există licențe în engleză",
   "tuition": "fără taxă de școlarizare pentru studenții din UE",
-  "about": "Cea mai veche universitate din Danemarca, cu mai multe campusuri în Copenhaga. Este puternică în medicină, științe, drept și științe sociale, dar toate licențele se predau în daneză.",
+  "about": "Cea mai mare instituție de învățământ din Danemarca, fondată în 1479, cu mai multe campusuri în Copenhaga. Este puternică în medicină, științe, drept și științe sociale, dar toate licențele se predau în daneză.",
   "prestige": "international",
   "budget": "gratuit",
   "budgetNote": "Studenții din UE nu plătesc taxă de școlarizare; costul vieții în Danemarca este însă ridicat.",
@@ -549,10 +549,11 @@
   "admission": "Aplici online prin platforma națională Optagelse.dk, cu diploma de bacalaureat și foaia matricolă. Toate licențele sunt în daneză, așa că trebuie să dovedești daneză la nivel academic, de regulă cu examenul Studieprøven.",
   "scholarships": true,
   "scholarshipsNote": "Studenții UE care lucrează în Danemarca, de regulă cel puțin 10–12 ore pe săptămână, pot cere ajutorul lunar de la stat (SU); fiecare caz se analizează separat, cu condiții stricte.",
-  "dorms": true,
+  "dorms": false,
   "dormsNote": "Universitatea nu repartizează camere studenților la licență și nu garantează un loc; aplici la căminele din Copenhaga (unele dau prioritate studenților ei) prin birourile de cămine ale orașului, iar concurența e mare.",
   "certificates": [
    "bac",
+   "engleza",
    "alta-limba"
   ],
   "pros": [
@@ -655,7 +656,7 @@
   "scholarships": true,
   "scholarshipsNote": "DTU nu dă burse la licență. Studenții UE care lucrează în Danemarca, de regulă cel puțin 10–12 ore pe săptămână, pot cere ajutorul lunar de la stat (SU); fiecare caz se analizează separat, cu condiții stricte.",
   "dorms": true,
-  "dormsNote": "Poți cere cameră prin fundația de locuințe a universității (BDTU), care are cămine în campus și în apropiere; un loc nu este garantat, așa că aplică devreme.",
+  "dormsNote": "Studenții internaționali pot cere cameră prin fundația de locuințe a universității (BDTU), în cămine din campus și din apropiere, dar numai pe perioade fixe, de regulă de 1, 2 sau 4 semestre. Universitatea spune că găsirea unei locuințe potrivite pentru studenți poate fi grea, așa că aplică devreme.",
   "certificates": [
    "bac",
    "engleza"
@@ -1523,24 +1524,23 @@
    "stiintele-educatiei",
    "agronomie-silvicultura"
   ],
-  "language": "germană; unele programe în engleză",
-  "tuition": "fără taxe de școlarizare sau taxe foarte mici la universitățile publice",
+  "language": "germană",
+  "tuition": "fără taxă de școlarizare; doar o contribuție semestrială, care include abonamentul de transport",
   "about": "Universitate istorică din centrul Berlinului, cunoscută pentru științe umaniste, științe sociale, drept și științe naturale. Orașul oferă o viață culturală bogată.",
   "prestige": "international",
   "budget": "gratuit",
-  "budgetNote": "Universitățile publice nu cer taxă de școlarizare, doar o contribuție semestrială mică; costul vieții este mediu spre ridicat.",
+  "budgetNote": "Nu există taxă de școlarizare; plătești doar o contribuție semestrială, care include abonamentul de transport valabil în toată Germania. Chiriile din Berlin sunt ridicate, mai ales în centru.",
   "admissionTypes": [
    "dosar"
   ],
-  "admission": "Aplici direct la universitate sau prin uni-assist, unde se verifică recunoașterea diplomei de bacalaureat. Multe programe au selecție după note (numerus clausus).",
+  "admission": "Cu bacalaureat obținut în afara Germaniei aplici online prin uni-assist, care verifică diploma și certificatul de germană (nivel C1). Multe programe au locuri limitate (numerus clausus); cetățenii UE sunt selectați după aceleași criterii ca și candidații germani.",
   "scholarships": true,
-  "scholarshipsNote": "Există burse de merit (de exemplu Deutschlandstipendium), dar locurile sunt puține.",
+  "scholarshipsNote": "Deutschlandstipendium al universității sprijină studenți de orice naționalitate, pentru cel puțin două semestre. Există și burse de la alte fundații.",
   "dorms": true,
-  "dormsNote": "Căminele studențești sunt ieftine, dar cererea e mare și apar liste de așteptare; aplică devreme.",
+  "dormsNote": "Universitatea nu are cămine proprii; căminele din Berlin sunt administrate de studierendenWERK Berlin. Camerele sunt foarte căutate și pot apărea perioade lungi de așteptare, deci caută din timp.",
   "certificates": [
    "bac",
-   "alta-limba",
-   "engleza"
+   "alta-limba"
   ],
   "pros": [
    "În mijlocul capitalei, cu viață culturală bogată",
@@ -1582,7 +1582,7 @@
    "stiintele-educatiei",
    "sport-kinetoterapie"
   ],
-  "language": "germană la programele de licență, cu foarte puține excepții; engleză mai ales la masterate",
+  "language": "germană la aproape toate programele de licență; există o singură licență în engleză (Mathematical Foundations of Data Science) și una bilingvă (International Legal Studies); engleză mai ales la masterate",
   "tuition": "fără taxă de școlarizare pentru studenții din UE în durata normală de studiu plus două semestre (doar o mică contribuție pentru asociația studenților); după aceea apare o taxă",
   "about": "Cea mai veche universitate din lumea vorbitoare de germană care a funcționat fără întrerupere, în centrul Vienei. Este foarte mare, cu cea mai variată ofertă de programe din Austria.",
   "prestige": "international",
@@ -1793,7 +1793,7 @@
   ],
   "language": "italiană; unele programe în engleză",
   "tuition": "cu taxă, în funcție de venitul familiei, pentru studenții din UE",
-  "about": "Universitate tehnică publică din Milano, care pregătește ingineri, arhitecți și designeri. Este renumită pentru inginerie, arhitectură și design.",
+  "about": "Cea mai mare universitate tehnică din Italia, în Milano. Este o universitate publică, renumită pentru inginerie, arhitectură și design.",
   "prestige": "international",
   "budget": "mic",
   "budgetNote": "Taxa depinde de venitul familiei (declarația ISEE), cu scutire pentru veniturile mici; fără această declarație plătești suma întreagă. Milano e un oraș scump.",
@@ -2220,7 +2220,7 @@
   ],
   "language": "neerlandeză la majoritatea licențelor; câteva licențe sunt în engleză; multe programe în engleză la master",
   "tuition": "taxă mică, reglementată (Flandra), pentru studenții din UE",
-  "about": "Universitate cu o istorie de șase secole, în orașul studențesc Leuven, cu campusuri și în alte orașe din Flandra. Este apreciată pentru cercetare și pentru științe, drept și medicină.",
+  "about": "Cea mai veche universitate din Țările de Jos (Belgia, Olanda și Luxemburg), cu o istorie de șase secole, în orașul studențesc Leuven și cu campusuri în alte orașe din Flandra. Este apreciată pentru cercetare și pentru științe, drept și medicină.",
   "prestige": "international",
   "budget": "mic",
   "budgetNote": "Studenții din UE plătesc taxa reglementată din Flandra, formată dintr-o sumă fixă pe an și o sumă pe credit; rămâne mică față de alte țări. Costul vieții este mediu.",
@@ -2331,7 +2331,7 @@
   ],
   "admission": "Aplici online. Pentru diplomele din UE nu există examen de admitere: bacalaureatul trebuie să fie de profil științific, cu matematică și fizică la cel mai înalt nivel și cu medii foarte mari. Locurile din anul întâi sunt limitate, iar candidații cu diplome străine sunt aleși în ordinea mediei generale. Se cere franceză la nivel B2.",
   "scholarships": false,
-  "scholarshipsNote": "Bursele pentru licență sunt puține și au condiții stricte; costul vieții trebuie acoperit în mare parte de familie.",
+  "scholarshipsNote": "Bursele de excelență pentru licență sunt doar pentru elevii cu diplomă elvețiană de maturitate, iar celelalte ajutoare au condiții stricte; costul vieții trebuie acoperit în mare parte de familie.",
   "dorms": true,
   "dormsNote": "Universitatea nu are cămine proprii: căminele studențești din zonă sunt ale unor fundații (de exemplu FMEL) și ale altor organizații, iar locurile sunt limitate și cererea este mare.",
   "certificates": [
@@ -2443,7 +2443,7 @@
   "admission": "Aplici online prin platforma națională universityadmissions.se, în funcție de notele din bacalaureat și cerințele programului. Pentru programele în suedeză se cere dovada limbii.",
   "scholarships": false,
   "scholarshipsNote": "Universitatea nu oferă burse pentru studiile de licență; trebuie să-ți acoperi singur cheltuielile de trai.",
-  "dorms": true,
+  "dorms": false,
   "dormsNote": "Universitatea oferă cazare doar anumitor grupuri, în principal studenților care plătesc taxă; ca student din UE îți cauți singur locuința în Stockholm, unde cererea este mare și cozile sunt lungi.",
   "certificates": [
    "bac",
@@ -2494,7 +2494,7 @@
   ],
   "language": "spaniolă și catalană; puține programe în engleză",
   "tuition": "taxă mică, stabilită de regiune (diferă între regiuni), pentru studenții din UE",
-  "about": "Universitate publică mare din Barcelona, cu tradiție lungă, apreciată pentru medicină, științe, drept și științe umaniste.",
+  "about": "Universitatea publică cu cei mai mulți studenți din Catalonia, în Barcelona, cu tradiție lungă, apreciată pentru medicină, științe, drept și științe umaniste.",
   "prestige": "international",
   "budget": "mic",
   "budgetNote": "Universitate publică: taxa se plătește pe credite, la preț stabilit de guvernul Cataloniei, același pentru studenții din UE ca pentru spanioli; rămâne mică față de universitățile private.",
@@ -2739,7 +2739,7 @@
   ],
   "language": "engleză",
   "tuition": "taxă foarte mare, dar ajutor financiar în funcție de nevoie",
-  "about": "Universitate din New York, cunoscută pentru programa comună de bază (Core Curriculum) și pentru legăturile cu orașul. La licență primește studenți la Columbia College și la Columbia Engineering.",
+  "about": "Universitate din New York, cunoscută pentru programa comună de bază (Core Curriculum) și pentru legăturile cu orașul. La licență primește studenți la Columbia College și la Columbia Engineering, cu specializări de la științe și economie la arte și film.",
   "prestige": "ivy",
   "budget": "mare",
   "budgetNote": "Prețul afișat este foarte mare, dar ajutorul financiar în funcție de nevoie îl poate reduce mult.",
@@ -4098,7 +4098,7 @@
   ],
   "language": "engleză",
   "tuition": "taxe ridicate pentru studenții din UE după Brexit",
-  "about": "Universitate mare din nordul Angliei, cu foarte multe programe de licență, de la inginerie și medicină la limbi străine, design, media și muzică.",
+  "about": "Universitate mare din nordul Angliei, cu aproximativ 300 de programe de licență, de la inginerie și medicină la limbi străine, design, media și muzică.",
   "prestige": "international",
   "budget": "mare",
   "budgetNote": "Din 2021, românii plătesc taxele pentru studenți internaționali, mult mai mari decât cele ale britanicilor, și nu au acces la împrumuturile de studii britanice (excepție: cei cu statut „settled” sau „pre-settled”).",
@@ -4972,7 +4972,7 @@
    "Recunoașterea diplomei se cere gratuit, direct în portalul universității"
   ],
   "cons": [
-   "Certificatul de germană trebuie depus până la termenul de înmatriculare, fără amânări",
+   "Certificatul de germană (de exemplu DSH-2 sau Goethe C1) trebuie depus până la termenul de înmatriculare, fără amânări",
    "Locuințele ieftine sunt puține în Hamburg",
    "Multe programe au selecție după notă"
   ]
@@ -5197,7 +5197,7 @@
   ],
   "cons": [
    "Programele de licență sunt în germană",
-   "Căminele au locuri doar pentru o mică parte dintre studenți",
+   "Căminele au locuri doar pentru o mică parte dintre studenți, iar multe camere sunt nemobilate",
    "Oraș mic, cu mai puține locuri de muncă pentru studenți"
   ]
  },
@@ -5238,7 +5238,7 @@
   "scholarships": true,
   "scholarshipsNote": "Există Deutschlandstipendium, dar se cere o medie foarte mare în sistemul german de notare; diplomele cu medie străină nu sunt luate în calcul, așa că poți aplica realist abia după primele semestre.",
   "dorms": true,
-  "dormsNote": "Căminele sunt administrate de Studierendenwerk Tübingen-Hohenheim și de alte organizații, nu de universitate. Găsirea unei camere poate dura, deci începe căutarea din timp.",
+  "dormsNote": "Căminele sunt administrate de Studierendenwerk Tübingen-Hohenheim și de alte organizații, nu de universitate. Cererile depășesc cu mult locurile libere, deci caută din timp și uită-te și la camere private.",
   "certificates": [
    "bac",
    "alta-limba"
@@ -5348,7 +5348,7 @@
   "scholarships": true,
   "scholarshipsNote": "Poți aplica la Deutschlandstipendium chiar din primul an; contează notele, implicarea socială și situația personală.",
   "dorms": true,
-  "dormsNote": "Căminele sunt ale Studentenwerk Leipzig. Aplici online imediat ce ai primit admiterea; primești o ofertă pe e-mail când se eliberează o cameră potrivită.",
+  "dormsNote": "Căminele sunt ale Studentenwerk Leipzig. Aplici online imediat ce ai primit admiterea; camerele sunt de regulă mobilate, iar cererea este mare la începutul semestrului.",
   "certificates": [
    "bac",
    "alta-limba",
@@ -9438,7 +9438,7 @@
   ],
   "language": "poloneză; unele programe de licență în engleză",
   "tuition": "fără taxă de școlarizare pentru cetățenii UE la studiile cu frecvență, atât în poloneză, cât și în engleză; taxele afișate la programele în engleză sunt pentru ceilalți străini",
-  "about": "Universitate tehnică publică din Wrocław, cu facultăți de inginerie, informatică, arhitectură și management. Are câteva programe de licență în engleză; lista la zi este în prospectul universității.",
+  "about": "Universitate tehnică publică din Wrocław, cu facultăți de inginerie, informatică, arhitectură și management. Are cinci programe de licență în engleză, printre care informatică aplicată, inginerie mecanică și management.",
   "prestige": "national",
   "budget": "gratuit",
   "budgetNote": "Universitatea nu cere taxă de școlarizare la studiile cu frecvență de la cetățenii UE, nici la programele în poloneză, nici la cele în engleză; taxele afișate la programele în engleză sunt pentru ceilalți străini.",
@@ -10584,7 +10584,7 @@
   ],
   "language": "letonă la majoritatea programelor; câteva programe de licență sunt în engleză",
   "tuition": "cu taxă pentru programele în engleză",
-  "about": "Universitate mare din Riga, cu facultăți de la științe și tehnologie la drept, economie și științe umaniste. Câteva licențe se pot face în engleză, de exemplu Computer Science.",
+  "about": "Cea mai mare universitate din Letonia ca număr de studenți, cu clădirea principală în centrul istoric al Rigăi și facultăți de la științe și tehnologie la drept, economie și științe umaniste. Câteva licențe se pot face în engleză, de exemplu Computer Science.",
   "prestige": "national",
   "budget": "mediu",
   "budgetNote": "Programele în engleză sunt cu taxă anuală, la un nivel mediu față de vestul Europei; costul vieții în Riga este moderat.",
@@ -12031,7 +12031,7 @@
   "scholarships": true,
   "scholarshipsNote": "Deutschlandstipendium este deschis studenților de orice naționalitate; contează rezultatele, implicarea socială și obstacolele pe care le-ai depășit.",
   "dorms": true,
-  "dormsNote": "Studierendenwerk Würzburg are cămine în mai multe locuri din oraș; contractele de închiriere sunt pe durată determinată. Are și un serviciu pentru camere private.",
+  "dormsNote": "Studierendenwerk Würzburg are cămine în mai multe locuri din oraș, dar locurile sunt limitate și nu ai drept garantat la un loc. Contractele sunt pe durată determinată; există și un serviciu pentru camere private.",
   "certificates": [
    "bac",
    "alta-limba"
@@ -12241,14 +12241,14 @@
   "scholarships": true,
   "scholarshipsNote": "Deutschlandstipendium se acordă anual, pentru două semestre; pot aplica și candidații care abia se înscriu, iar pe lângă rezultate contează și criterii sociale.",
   "dorms": true,
-  "dormsNote": "Căminele sunt ale Studentenwerk Hannover, nu ale universității. Pentru un loc depui o cerere online.",
+  "dormsNote": "Studentenwerk Hannover (nu universitatea) are cămine cu camere în apartamente comune, camere cu bucătărie și baie la comun și garsoniere. Pentru un loc depui o cerere online.",
   "certificates": [
    "bac",
    "alta-limba"
   ],
   "pros": [
    "La aplicare ajunge germană B1; nivelul C1 se cere la înmatriculare",
-   "Cetățenii UE aplică online, fără evaluarea uni-assist",
+   "Cetățenii UE aplică online, fără evaluarea uni-assist, iar la înmatriculare încarcă documentele scanate",
    "Abonament de transport pentru toată Germania inclus în contribuția semestrială"
   ],
   "cons": [
@@ -13191,7 +13191,7 @@
   "about": "Universitate publică din Ferrara, cu aproximativ 70 de cursuri în trei mari arii: științe și tehnologie; științe umaniste, drept și economie; medicină. Este cunoscută pentru arhitectură și design de produs.",
   "prestige": "national",
   "budget": "mic",
-  "budgetNote": "Taxa depinde de venitul familiei (ISEE): sub un prag nu plătești contribuția, iar peste el taxa crește treptat, cu reduceri pe o plajă largă de venituri.",
+  "budgetNote": "Taxa depinde de venitul familiei (ISEE): sub un prag nu plătești contribuția, iar peste el taxa crește treptat. Dacă familia are venituri în alt stat UE, le declari pe propria răspundere și plătești după aceleași reguli.",
   "admissionTypes": [
    "examen",
    "dosar"
@@ -15451,7 +15451,7 @@
   ],
   "admission": "Admiterea se face prin concurs de dosare: media de concurs se calculează din notele de la examenele de bacalaureat și din mediile anilor de liceu. Înscrierea se face online, pe platforma națională eadmitere.gov.md.",
   "scholarships": true,
-  "scholarshipsNote": "Universitatea are burse de excelență (pentru rezultate la olimpiade și concursuri) și burse nominale pentru studenții cu rezultate foarte bune de la locurile cu taxă; după anul I, locurile la buget se redistribuie după medii.",
+  "scholarshipsNote": "Universitatea are burse de excelență (pentru rezultate la olimpiade și concursuri), burse nominale pentru studenții cu rezultate foarte bune de la locurile cu taxă și burse sociale, din bugetul de stat, pentru studenți din familii cu venituri mici sau în alte situații grele; după anul I, locurile la buget se redistribuie după medii.",
   "dorms": true,
   "dormsNote": "Are mai multe cămine studențești pentru studenții care nu sunt din Chișinău; cererea se depune la facultate, după admitere, în limita locurilor.",
   "certificates": [
@@ -15585,11 +15585,11 @@
    "stiinte-politice-relatii-internationale"
   ],
   "language": "bulgară; câteva programe de licență în engleză",
-  "tuition": "cetățenii UE nu intră la taxele pentru studenți din afara UE; au o procedură de înscriere separată, iar taxa o afli de la facultate",
+  "tuition": "cetățenii UE nu intră la taxele pentru studenți din afara UE; se aplică regulile și condițiile pentru cetățenii bulgari",
   "about": "Cea mai cunoscută universitate din Bulgaria, în centrul Sofiei, cu șaisprezece facultăți, de la istorie și drept la fizică și medicină. Are și câteva licențe în engleză, de exemplu studii europene, fizică sau economie.",
   "prestige": "international",
   "budget": "mic",
-  "budgetNote": "Taxele mari publicate de universitate sunt doar pentru cetățenii din afara UE; ca cetățean român urmezi procedura pentru cetățenii UE. Universitatea nu publică pe paginile în engleză taxa pentru cetățenii UE, așa că întreab-o la facultate înainte de înscriere.",
+  "budgetNote": "Taxele mari publicate de universitate sunt doar pentru cetățenii din afara UE; ca cetățean român intri la regulile și condițiile pentru candidații bulgari, iar universitatea pune la un loc taxele pentru bulgari și cetățeni UE. Suma nu apare pe paginile în engleză, așa că întreab-o la facultate înainte de înscriere.",
   "admissionTypes": [
    "examen",
    "dosar"
@@ -15694,7 +15694,7 @@
   "scholarships": true,
   "scholarshipsNote": "Studenții activi de la licență au dreptul la mese gratuite la cantinele universității; bursele propriu-zise sunt puține.",
   "dorms": true,
-  "dormsNote": "Universitatea are cămine studențești; întreabă serviciul social al universității unde sunt și cum se dau locurile.",
+  "dormsNote": "Universitatea are un complex de cămine studențești (patru clădiri) în campusul universitar din Zografou; locurile libere se împart în fiecare an, la început de an universitar, pe baza unei cereri depuse online la serviciul de cămine.",
   "certificates": [
    "bac",
    "alta-limba"
@@ -16984,7 +16984,7 @@
   "admissionTypes": [
    "dosar"
   ],
-  "admission": "Te înscrii online în sistemul IRK, la cel mult trei programe, și încarci diploma de bacalaureat. Punctajul se calculează din două materii de la bacalaureat; verifică la programul ales care sunt materiile cerute. Candidații din UE cu diplomă obținută în UE nu trebuie să aducă certificat de engleză.",
+  "admission": "Te înscrii online în sistemul IRK, la cel mult trei programe, și încarci diploma de bacalaureat. Punctajul se calculează din două materii de la bacalaureat (la programul de finanțe în engleză, Global Finance and Accounting, matematica este obligatorie). Candidații din UE cu diplomă obținută în UE nu trebuie să aducă certificat de engleză.",
   "scholarships": true,
   "scholarshipsNote": "Biroul de burse al universității anunță bursa rectorului, bursa socială și un ajutor pentru situații grele; condițiile pentru studenții străini se verifică la universitate.",
   "dorms": true,
@@ -17437,7 +17437,7 @@
   ],
   "admission": "Aplici prin platforma UCAS, cu notele din liceu și de la bacalaureat, o scrisoare personală și o recomandare. Cerințele se văd pe pagina fiecărui program, unde alegi România și calificarea ta; la toate programele trebuie să dovedești că știi engleză. Cine nu are notele cerute poate începe printr-un an pregătitor la colegiul internațional al universității.",
   "scholarships": true,
-  "scholarshipsNote": "Studenții din Europa care plătesc taxa internațională pot primi o reducere de taxă dacă au note foarte bune, fără cerere separată; nu se aplică la medicină și stomatologie. Mărimea și durata reducerii se schimbă de la un an de admitere la altul. Toate bursele universității sunt reduceri parțiale de taxă, nu burse complete.",
+  "scholarshipsNote": "Studenții din Europa care plătesc taxa internațională pot primi o reducere de taxă în fiecare an de studiu, dacă au note foarte bune, fără cerere separată; nu se aplică la medicină și stomatologie. Mărimea reducerii se schimbă de la un an de admitere la altul. Toate bursele universității sunt reduceri parțiale de taxă, nu burse complete.",
   "dorms": true,
   "dormsNote": "Studenții noi cu frecvență au garantată o singură ofertă de cameră de o persoană în anul I, dacă Dundee este prima lor opțiune și cer cazare până la termen; dacă nu accepți oferta la timp, o pierzi.",
   "certificates": [
