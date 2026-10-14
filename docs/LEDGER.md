@@ -21,6 +21,22 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-15 02:16 — patru universități noi cu fișă în Australia
+- Cerut: continuarea rundei „minimum 10 universități în fiecare țară”, pentru Australia
+- Făcut: un ajutor a căutat universitățile australiene care publică cerințele pentru bacalaureatul românesc și a scris 4 fișe (Macquarie, Newcastle, Australian Catholic University, Edith Cowan); un verificator independent le-a recitit și a corectat 9 lucruri (de exemplu: la ACU, cine a terminat liceul în afara Australiei aplică prin UAC pentru Sydney și Canberra). Australia are acum 8 fișe; aproape 20 de alte universități australiene nu scriu ce cer de la diploma românească. Acum 668 de universități în străinătate
+- Fișiere: `apps/web/data/universities-abroad.json`, `apps/web/data/universities-index.json`, `apps/web/data/university-sources.json`, `docs/de-verificat.md`
+- Poartă: TRECUT (secrete, fișiere, registru, build, teste, pornire)
+- Neverificat: verificarea a fost făcută de ajutoare automate, nu de un om
+- Urmează: echipa citește hotărârile din `docs/de-verificat.md`; legarea fișelor noi de catalogul de programe
+
+### 2026-10-15 02:04 — minimum 10 universități cu fișă în fiecare țară (108 fișe noi)
+- Cerut: în fiecare țară din aplicație cel puțin 10 universități cu fișă, alese dintre cele mai bune; fără fișă acolo unde site-ul oficial nu dă date complete și clare
+- Făcut: ajutoare au ales universitățile (mai întâi cele mari de stat) și au scris fișele doar din paginile oficiale; alte ajutoare, independente, le-au recitit; 9 fișe au fost scoase (date neclare sau bacalaureatul românesc evaluat doar „caz cu caz”). Rezultat: 108 fișe noi, acum 664 de universități în străinătate; au ajuns la 10 Irlanda, Belgia, Elveția, Suedia, Canada, Finlanda, Norvegia, Cehia, Lituania, Grecia, Coreea de Sud. Sub 10, pentru că nu mai există universități cu date clare: Bulgaria 9, Letonia 8, Cipru 8, Portugalia 8, Moldova 7, Estonia 6, Hong Kong 6, Slovenia 4, Singapore 3, Malta 1. Fișa Porto corectată: bursa de stat portugheză e doar pentru cetățenii UE cu drept de ședere permanentă (regula DGES)
+- Fișiere: `apps/web/data/universities-abroad.json`, `apps/web/data/universities-index.json`, `apps/web/data/university-sources.json`, `docs/de-verificat.md`
+- Poartă: TRECUT (secrete, fișiere, registru, build, teste, pornire)
+- Neverificat: Australia încă în lucru (4 fișe; un ajutor caută universități care publică cerințele pentru bacalaureatul românesc); verificarea a fost făcută de ajutoare automate, nu de un om; fișele noi nu au încă lista oficială de programe pe pagina lor
+- Urmează: Australia, apoi echipa citește hotărârile din `docs/de-verificat.md`
+
 ### 2026-10-14 10:16 — 236 de universități noi cu fișă în Marea Britanie, Germania, Franța, Italia, Danemarca și Olanda
 - Cerut: câte 50 de universități noi cu fișă completă în fiecare dintre cele șase țări ale ghidurilor, cele mai mari și mai accesibile românilor (în Danemarca și Olanda toate câte există)
 - Făcut: șase ajutoare au ales universitățile după datele oficiale de mărime (OfS în Anglia, Hochschulkompass în Germania, ministerul francez, USTAT în Italia, cu numărul de studenți cu bacalaureat românesc, registrele daneze și olandeze); 15 ajutoare au scris fișele doar din paginile oficiale; alte 15, independente, le-au recitit. Rezultat: 236 de fișe noi (50 Marea Britanie, 50 Germania, 49 Franța, 47 Italia, 22 Danemarca, 18 Olanda), acum 639 de universități cu fișă; la a doua citire 75 confirmate integral, 153 corectate (299 de corecturi confirmate, 23 reformulări prudente), 8 cu o parte neverificată. Patru universități alese au rămas fără fișă, pentru că site-ul lor nu se poate citi (Foggia, Insubria, Reggio Calabria, Grenoble Alpes). Corectate și patru fișe franceze mai vechi (cămin la Lyon 1, Lyon 3, Côte d'Azur; bursa de stat la Sciences Po). Ce nu s-a putut confirma și hotărârile luate sunt la sfârșitul `docs/de-verificat.md`
@@ -635,6 +651,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-14 12:18 `36c9928` feat: country guides and 236 new university sheets in six countries
 - 2026-10-14 03:00 `5dec06e` perf: render Romanian programme lists with the page
 - 2026-10-13 23:08 `c08b7a1` fix: recheck unconfirmed facts and audit the whole site
 - 2026-10-13 15:54 `01ecc44` feat: choose several cities in the university search
@@ -664,5 +681,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-06 01:05 `a21a479` feat: development-only sign-in links in the function log; sign-in verified end to end
 - 2026-10-06 00:27 `ce65453` feat: passwordless sign-in, account page and saving the result
 - 2026-10-06 00:06 `b4aeabc` feat: Convex schema, shared access rules and access tests
-- 2026-10-06 00:00 `2c23414` chore: start the production phase with Convex packages and the plan
 <!-- commits:end -->

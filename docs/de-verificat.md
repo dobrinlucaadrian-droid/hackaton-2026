@@ -127,3 +127,65 @@ Ghidurile pe țări: 41 corecturi confirmate și 6 reformulări prudente.
 
 - Un ajutor care scria fișele a deschis zece site-uri italiene într-o filă din Chrome-ul utilizatorului (prin extensia Claude), unde verificarea împotriva roboților trecea singură. A citit doar pagini publice și a închis fila. De atunci ajutoarele au primit interdicția de a folosi Chrome-ul utilizatorului.
 - Fișele noi nu au încă lista oficială de programe pe pagina lor: legătura dintre fișe și catalogul fiecărei țări (Italia, Germania, Olanda, Franța) trebuie făcută separat.
+
+
+## Runda din 2026-10-15: minimum 10 universități cu fișă în fiecare țară
+
+108 fișe noi, scrise din paginile oficiale și recitite de un al doilea verificator: 32 confirmate integral,
+81 corectate (187 corecturi confirmate, 18 reformulări prudente).
+
+### Țări care nu ajung la 10 (nu mai există universități cu date complete și clare)
+
+Bulgaria 9, Letonia 8, Cipru 8, Portugalia 8, Republica Moldova 7, Estonia 6, Hong Kong 6, Slovenia 4, Singapore 3, Malta 1.
+Australia 8 (Macquarie, Newcastle, Australian Catholic University și Edith Cowan adăugate; celelalte universități australiene nu publică cerințele pentru bacalaureatul românesc; cea mai apropiată de o a 9-a fișă: University of Notre Dame Australia, a cărei listă de programe nu s-a putut citi).
+
+### Fișe scoase
+
+- uq (The University of Queensland (UQ)): DROP under the team rule: UQ publishes entry scores per country on program pages, but Romania is not among the countries listed (program-page country list; the requirements API answers 'No such country'); a Romanian applicant only learns after applying how the bacalaureat is assessed ('Can't find your qualification? You'll need to apply'). Scholarship (fee reduction, automatic, international students, competitive score among offer holders) and guaranteed accommodation through approved providers for commencing students are confirmed as written.
+- monash (Monash University): DROP under the team rule (a human may override): course pages publish country-specific entry scores but Romania is not among them ('If your qualification is not listed we will assess your qualification when you apply'); the prior-study search tool has an entry 'Secondary Education, Romania' but it would not display a requirement for me. Scholarship confirmed: international students from all countries with an undergraduate offer are automatically considered, few per year, paid yearly while keeping a distinction average, needs an unconditional offer. Housing confirmed: on-campus halls, shared flats and studios plus affiliated providers and homestay; no first-year guarantee found.
+- ucy-nicosia (University of Cyprus (UCY)): DROP: EU tuition paid by the Republic of Cyprus is confirmed, but the admission route for a Romanian with a Romanian baccalaureate is not clear: Pancyprian exams are open to EU citizens only if they finished a school in Cyprus (Ministry guide, section 2), and the foreign-candidate quota is defined on A-levels/IB 'or equivalent' without listing national diplomas; teaching is Greek-only with very good Greek required; only a handful of hall rooms for international students; the state student grant is not shown as open to non-resident EU students (UCY page only links the ministry package). The international-exams page is behind a bot check and was read in the browser pane.
+- cut-limassol (Cyprus University of Technology (CUT)): DROP: EU tuition paid by the government, all bachelors in Greek, financial/rent aid only for permanent residents, halls with first-year priority are confirmed; but the 'Bacalaureat' in the sheet is the International/European Baccalaureate, not the Romanian one: the published equivalents list only A-levels and IB/EB, and the Pancyprian exams are closed to graduates of foreign schools. Admission for a Romanian-bac holder is therefore not clear on official pages.
+- uni-ruse (University of Ruse „Angel Kanchev”): DROP. The EU page says EU citizens apply "under the conditions and according to the procedure for admission of Bulgarian citizens" but says nothing about fees (the fees page lists only foreign-student fees); the bachelor list has only Bulgarian-taught programmes while another page speaks of English training; and it is not stated whether an EU applicant needs the Bulgarian preparatory year or a language certificate - the sheet omits the Bulgarian-language issue entirely. Admission and language rest on guesses. Hostels (5 halls run by SCHR, Rector order) and scholarships page (no EU rule, Bulgarian bank account) confirmed.
+- mu-varna (Medical University of Varna „Prof. Dr. Paraskev Stoyanov”): DROP (housing). Admission (EU = Bulgarian conditions, Biology and Chemistry tests in English, failing a test excludes from ranking, English certificate or university test), the English-programme fee table (no nationality split) and PMS 90 scholarships for Bulgarian and EU students with a Bulgarian bank account are confirmed. But the Hostels page (also opened in a browser) and the Social questions page have no content on who gets a dorm place; the sheet itself admits this. Also the fee page lists only Medicine and Dental Medicine, not Pharmacy.
+- uspee-chisinau (Universitatea de Studii Politice și Economice Europene „Constantin Stere” (USPEE)): DROP. The fee page only says EU countries are "placed in a separate tier" with an indicative international fee; it never says which fee a Romanian citizen pays (the other Moldovan universities publish that Romanians pay the Moldovan fee; USPEE says nothing, so "mai mare decât pentru Moldova" is an inference). The admission route described is the visa route for international students (application fee, ministerial review, bank deposit); scholarships only "may be available"; housing is marketing text; the programme list mixes "open for international students", "in process of authorization" and "resident students only", so which English bachelors a Romanian can take is unclear.
+- hsuhk (The Hang Seng University of Hong Kong (HSUHK)): admitere doar caz cu caz pentru diploma românească
+- aum-malta (American University of Malta (AUM)): diploma românească evaluată doar caz cu caz
+
+### Reformulări prudente (textul nu mai conține afirmația neconfirmată)
+
+- munster-technological-university.budgetNote: The fees page lists the student contribution plus a small Cork levy or Kerry campus fee but does not say whether SUSI covers the levy; that clause is removed.
+- unamur.budgetNote: The UNamur cost page lists FWB-granted reductions, but the FWB eligibility site could not be opened (JavaScript/bot wall), so eligibility of a Romanian living in Romania is not confirmed.
+- umons.dormsNote: The housing pages link about fourteen residence pages, not fifteen; the exact count is dropped.
+- unibe.admission: The opened pages do not say the file is checked only after an application fee is paid; that clause is removed, the rest is confirmed.
+- vsb-ostrava.cons: The official-translation requirement was not found on the opened pages.
+- ebs-tallinn.about: 'Privately owned business university' is confirmed on the About page, but no official page says the campus is in the city centre (only the address is given).
+- ebs-tallinn.admission: The admission page describes a ~20-minute interview in English held monthly but never says it is online.
+- ebs-tallinn.pros: Online format of the interview not stated on official pages.
+- du-daugavpils.about: The university pages do not say Daugavpils is the second-largest city or near the Lithuanian border (only travel times from Riga and Vilnius); 'second-largest' is a superlative not on an official page.
+- vytautas-magnus.budgetNote: The fees page shows the first-year tuition payment with the application and only a small EU/non-EU gap; it does not say that instalments are excluded.
+- lsmu.scholarshipsNote: The financial-support page offers partial tuition reimbursement for non-state-funded students from the second semester and names the International Programme Coordinator as contact, without stating it covers the English programmes.
+- klaipeda-university.about: "Singurul port al Lituaniei" is not stated on the opened KU pages; the rest matches the bachelor list.
+- lcc-international.tuition: The tuition page lists "Government Stipend (EU citizens only)" and "Government Loans (EU citizens only)"; the "first bachelor" condition is not stated there.
+- unipi-pireu.cons: "Chiriile din zona Atenei sunt mari" is not stated on any official page opened; the other two cons are confirmed.
+- uacg-sofia.about: The bachelor and master-after-secondary pages confirm the programme lists and degrees, but no opened page gives the length of the bachelors or of Architecture (only the English building programme states five years).
+- uacg-sofia.dormsNote: The housing page describes applications and ranking for all newly admitted students; no opened official page restricts dorms to state-funded places (the national ordinance and the university rules sit only behind Google Drive links).
+- uacg-sofia.pros: The restriction of dorms to state-funded places is not on an official page.
+- suss.about: The 'Who we are' page confirms an Autonomous University focused on social sciences and lifelong learning, and the international page lists twelve full-time programmes; the count 'six' is not stated on the SUSS pages opened.
+
+### Hotărâri luate (le puteți schimba)
+
+- **Fișa Porto corectată:** „Burse: nu”, pentru că bursa de stat portugheză se dă cetățenilor UE doar cu drept de ședere permanentă (dges.gov.pt).
+- **Hang Seng (Hong Kong) și American University of Malta scoase:** diploma românească e evaluată doar „caz cu caz”, fără o regulă publicată.
+- **Monash (Australia) scoasă:** nu publică cerința pentru bacalaureatul românesc; un om o poate căuta de mână pe priorstudy.monash.edu („Secondary Education, Romania”). La fel University of Queensland.
+- **University of Cyprus și Cyprus University of Technology scoase:** primesc doar A-levels sau Bacalaureatul Internațional, nu bacalaureatul românesc.
+- **AUB Mediterraneo (Cipru) păstrată:** toți studenții petrec obligatoriu o perioadă la Beirut, în Liban; fișa o spune clar.
+- **Universitatea Tehnică din Sofia și UNWE păstrate:** site-urile spun că cetățenii UE intră ca bulgarii, dar nu scriu taxa pentru UE (ca la fișa Universității din Sofia).
+- **Universitatea de Arhitectură din Sofia: „Cămin: da”**; regulile complete sunt doar într-un document la care nu am avut acces.
+- **RGSL (Riga): „Cămin: nu”**, deși pagina spune că se pot aranja camere în căminele altor instituții. **Venta (Ventspils):** nu e clar dacă locurile plătite de stat la Informatică acoperă și grupa în engleză.
+- **Nova Gorica:** nu e numită „publică” pe nicio pagină oficială. **VŠE (Praga): „Burse: nu”**, deși are burse de merit, iar celelalte fișe cehe le numără ca „da”.
+- **Elveția:** Berna are cost „mediu”, ETH și EPFL „mic”, deși toate cer mai mult străinilor; Lausanne, Fribourg și St. Gallen au „Burse: da” pentru ajutoare care încep după primul semestru, ETH „nu”. **Malmö: „Cămin: da”** (prin lista de locuințe a orașului, ca Linköping și Umeå).
+- **Coreea de Sud:** nivelurile de cost (SNU „mediu”; Korea University, SKKU, Yonsei, Ewha „mare”) sunt alese după tabelele oficiale de taxe; la Pusan „mic” doar pentru că e universitate de stat. Yonsei nu e numită „privată” pe paginile deschise.
+- **UiT Tromsø:** domeniul „geografie și mediu” e cel mai slab susținut (doar programe de planificare și sustenabilitate).
+- **LSMU (Lituania):** nu e clar dacă rambursarea parțială a taxei pentru note bune se aplică și programelor în engleză.
+- **Católica (Portugalia):** lista completă de programe nu s-a putut deschide; domeniul „informatică” se sprijină pe licențele de știința datelor.
+- **Australian Catholic University: „Burse: da”** pentru bursa automată la nursing, științe biomedicale și sport, doar la campusul din Brisbane; dacă vi se pare prea îngustă, puneți „nu” și păstrați nota.

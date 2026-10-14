@@ -278,7 +278,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `universities-abroad.json`
 - `universities-index.json`
 - `universities-ro.json` (4201) — JSON array, 83 items
-- `university-sources.json` (5080) — JSON; keys: ani-bucuresti, itb-bucuresti, itp-bucuresti, bogdan-voda, itp-cluj, dragan-lugoj, cantemir-tgmures, timotheus
+- `university-sources.json`
 
 ### apps/web/lib  (30 files)
 
