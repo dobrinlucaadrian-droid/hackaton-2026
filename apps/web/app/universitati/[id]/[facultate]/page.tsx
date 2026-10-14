@@ -7,6 +7,7 @@ import { Shell } from "@/components/Shell";
 import { catalogCountryOfSheet } from "@/lib/catalog";
 import { faculties, facultyBySlug, facultySlug } from "@/lib/faculties";
 import { ADMISSION_LABEL } from "@/lib/labels";
+import { roProgramsOfFaculty } from "@/lib/roPrograms";
 import { universityById } from "@/lib/sheets";
 
 type Props = { params: Promise<{ id: string; facultate: string }> };
@@ -84,7 +85,7 @@ export default async function FacultyPage({ params }: Props) {
 
         {catalog && (
           <Section title="Ce poți studia aici">
-            <FacultyPrograms institutionId={u.id} faculty={f.name} year={catalog.source.year} />
+            <FacultyPrograms rows={roProgramsOfFaculty(u.id, f.name)} year={catalog.source.year} />
           </Section>
         )}
 

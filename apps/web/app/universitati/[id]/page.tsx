@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { OfficialPrograms } from "@/components/OfficialPrograms";
+import { ProgramGroups } from "@/components/ProgramGroups";
 import { Shell } from "@/components/Shell";
 import { UniversityOpinions } from "@/components/UniversityOpinions";
 import { BudgetBadge, PrestigeBadge } from "@/components/UniversityBadges";
@@ -13,6 +14,7 @@ import { testimonialsFor } from "@/lib/testimonials";
 import { domains } from "@/lib/data";
 import { facultiesOf, facultyHref } from "@/lib/faculties";
 import { ADMISSION_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, specializationsFor } from "@/lib/labels";
+import { roProgramsOf } from "@/lib/roPrograms";
 import { universities, universityById } from "@/lib/sheets";
 
 type Props = { params: Promise<{ id: string }> };
@@ -222,15 +224,19 @@ export default async function UniversityPage({ params }: Props) {
               </ul>
             </Section>
           )}
-          {catalog && (
-            <OfficialPrograms
-              institutionId={u.id}
+          {/* Romania: the list is small enough to come with the page; other countries read it from the database. */}
+          {catalog?.cc === "RO" && (
+            <ProgramGroups
+              rows={roProgramsOf(u.id)}
               city={u.city}
               sourceLabel={catalog.source.attribution}
               year={catalog.source.year}
-              hasCapacity={catalog.cc === "RO"}
+              hasCapacity
               facultyLinks={Object.fromEntries(facultySheets.map((f) => [f.name, facultyHref(f)]))}
             />
+          )}
+          {catalog && catalog.cc !== "RO" && (
+            <OfficialPrograms institutionId={u.id} city={u.city} sourceLabel={catalog.source.attribution} year={catalog.source.year} hasCapacity={false} />
           )}
           {!catalog && faculties.length > 0 && (
             <Section title="Facultăți și specializări">

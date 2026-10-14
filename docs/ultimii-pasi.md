@@ -111,3 +111,10 @@ După verificare se scoate nota „Versiune de lucru” din pagină.
 - viteza paginilor (acum sunt generate la fiecare vizită, din cauza conectării);
 - ce se întâmplă cu cele 4 semnalări CodeQL din scripturile de lucru;
 - dacă formularul de păreri primește și poze.
+- patru drumuri prin site, lăsate de echipă pentru la sfârșit (hotărât pe 2026-10-13): conectarea pe email, salvarea
+  rezultatului în cont (cu schimbarea numelui, deconectare și ștergerea contului), trimiterea unei păreri până în lista
+  de așteptare, paginile de administrare cu cont de administrator (aprobare, statistici, descărcare). La verificarea
+  completă din 2026-10-13 s-a văzut doar că paginile lor se deschid sau trimit corect la conectare.
+- designul: echipa rămâne deocamdată pe cel de acum și îl va schimba mai târziu (hotărât pe 2026-10-14). Două seturi de
+  machete, doar de privit, sunt la https://claude.ai/artifact/LBUsvZKjGrT6ZfoFJF2AHK (pagină privată a contului care le-a
+  făcut): „Varianta jucăușă”, interactivă, și „Prima variantă”, care nu a plăcut deloc.

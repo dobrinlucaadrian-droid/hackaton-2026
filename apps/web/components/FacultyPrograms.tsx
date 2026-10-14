@@ -1,23 +1,17 @@
-"use client";
-// On a faculty sheet: the bachelor programmes of that faculty from the official list, read from the database.
-import { counted } from "@/lib/labels";
-import { useQuery } from "convex/react";
+// On a faculty sheet: the bachelor programmes of that faculty from the official list. Plain markup: the faculty page gives it the rows, read on the server.
 import Link from "next/link";
-import { api } from "@/convex/_generated/api";
-import { ProgramRow } from "./ProgramRow";
+import { counted } from "@/lib/labels";
+import { ProgramRow, type ProgramView } from "./ProgramRow";
 
-export function FacultyPrograms({ institutionId, faculty, year }: { institutionId: string; faculty: string; year: string }) {
-  const rows = useQuery(api.catalog.programsOf, { institutionId });
-  if (rows === undefined) return <p className="text-sm text-ink-soft">Se încarcă lista de programe...</p>;
-  const mine = rows.filter((p) => p.faculty === faculty);
-  if (mine.length === 0) return <p className="text-sm text-ink-soft">Nu am găsit programele acestei facultăți în lista oficială.</p>;
+export function FacultyPrograms({ rows, year }: { rows: ProgramView[]; year: string }) {
+  if (rows.length === 0) return <p className="text-sm text-ink-soft">Nu am găsit programele acestei facultăți în lista oficială.</p>;
   return (
     <div data-faculty-programs>
       <p className="text-sm text-ink-soft">
-        {counted(mine.length, "program", "programe")} de licență ({year}), după lista oficială.
+        {counted(rows.length, "program", "programe")} de licență ({year}), după lista oficială.
       </p>
       <ul className="mt-3 space-y-2 [&>li]:bg-paper">
-        {mine.map((p) => (
+        {rows.map((p) => (
           <ProgramRow key={p.key} p={p} />
         ))}
       </ul>

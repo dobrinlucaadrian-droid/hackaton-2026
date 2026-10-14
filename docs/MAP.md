@@ -154,17 +154,17 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/universitati/[id]/[facultate]  (1 files)
 
-- `page.tsx` (115) — Profile sheet of one Romanian faculty: what you study there, how you get in, its bachelor programmes from the official list and the official links.. Routes: /universitati/[id]/[facultate]. Exports: generateStaticParams, generateMetadata, FacultyPage
+- `page.tsx` (116) — Profile sheet of one Romanian faculty: what you study there, how you get in, its bachelor programmes from the official list and the official links.. Routes: /universitati/[id]/[facultate]. Exports: generateStaticParams, generateMetadata, FacultyPage
 
 ### apps/web/app/universitati/[id]  (1 files)
 
-- `page.tsx` (314) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
+- `page.tsx` (320) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/universitati  (1 files)
 
 - `page.tsx` (26) — University finder page: search box, filters and top 10 results (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
 
-### apps/web/components  (34 files)
+### apps/web/components  (35 files)
 
 - `ActivitiesStep.tsx` (227) — Quiz step "Ce ai făcut până acum?": add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
 - `ActivitiesSummary.tsx` (33) — Read-only list of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
@@ -174,12 +174,13 @@ _Open only the files listed here; a file's description is its first comment line
 - `CurriculumPlan.tsx` (38) — "Ce înveți, an cu an": the main subjects of each study year for a domain, taken from one official curriculum, with a link to it.. Exports: CurriculumPlan
 - `DomainDetails.tsx` (54) — One study domain as a native <details>: summary with emoji, name, count and chevron; inside the short text, specializations, the subjects per year and a link to universities.. Exports: DomainDetails
 - `DomainPrograms.tsx` (68) — On a result card: real bachelor programmes of the matched study domain in Romania (in the student's chosen cities when there are any), and how many the catalogue has in other countries.. Exports: DomainPrograms, DomainAbroad
-- `FacultyPrograms.tsx` (31) — On a faculty sheet: the bachelor programmes of that faculty from the official list, read from the database.. Exports: FacultyPrograms
+- `FacultyPrograms.tsx` (25) — On a faculty sheet: the bachelor programmes of that faculty from the official list. Plain markup: the faculty page gives it the rows, read on the server.. Exports: FacultyPrograms
 - `Illustrations.tsx` (88) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots and the start-page hero.. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene
 - `InterestPicker.tsx` (129) — "Ce îți place?": the student picks up to three interests and sees the specializations that fit them best, ranked, with links to universities.. Exports: InterestPicker
 - `MatchCard.tsx` (201) — One result card: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
 - `NavLinks.tsx` (45) — Header navigation links with the current page highlighted; the last one is "Contul meu" or "Conectare", which opens the account window.. Exports: NavLinks
-- `OfficialPrograms.tsx` (82) — On a university sheet: every bachelor programme of the institution from its country's official dataset, grouped by faculty (or by field when the source has no faculties), read from the database.. Exports: OfficialPrograms
+- `OfficialPrograms.tsx` (12) — On a university sheet outside Romania: every bachelor programme of the institution from its country's official dataset, read from the database (those lists are too large to ship with the pages). Romanian sheets render the same list on the server, from the catalogue file.. Exports: OfficialPrograms
+- `ProgramGroups.tsx` (73) — The list of an institution's bachelor programmes, grouped by faculty (or by field when the source has no faculties). Plain markup with no browser code, so a page can render it on the server.. Exports: ProgramGroups
 - `ProgramRow.tsx` (68) — One bachelor programme from the catalogue, as a compact row: name and the small facts its source gives (language, study form, years, places, status).. Exports: FORM_LABEL, ProgramRow
 - `ProgramSearch.tsx` (100) — Search over the bachelor programmes of the catalogue: country, free text, study domain and city; the state lives in the URL so links and Back work.. Exports: ProgramSearch
 - `SaveResult.tsx` (59) — "Salvează în contul meu" on the result page: saves the result when the student is signed in, otherwise keeps it on the device and sends them to sign in.. Exports: SaveResult
@@ -270,7 +271,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `universities-ro.json` (4201) — JSON array, 83 items
 - `university-sources.json` (3103) — JSON; keys: ani-bucuresti, itb-bucuresti, itp-bucuresti, bogdan-voda, itp-cluj, dragan-lugoj, cantemir-tgmures, timotheus
 
-### apps/web/lib  (26 files)
+### apps/web/lib  (28 files)
 
 - `activities.test.ts` (57) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
 - `activities.ts` (73) — Activities a student can add (competitions, volunteering, extracurriculars): labels, areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, describeActivity
@@ -289,6 +290,8 @@ _Open only the files listed here; a file's description is its first comment line
 - `match.ts` (178) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: matchDomains, studentTraits, matchByTraits
 - `name.ts` (12) — The one rule for a person's full name, used by the sign-in form, the account page and the server.. Exports: NAME_MAX, cleanName
 - `pendingSave.ts` (55) — Keeps a questionnaire result on this device while the student signs in (the email link may open in another tab), so it can be saved to the account afterwards.. Exports: setPendingResult, takePendingResult, setPendingName, takePendingName
+- `roPrograms.test.ts` (29) — Tests the programme lists the Romanian sheets render on the server: every faculty sheet finds its programmes and the rows carry only what a page shows.
+- `roPrograms.ts` (24) — The Romanian bachelor programmes from the official list, read straight from the catalogue file so a sheet can show them without waiting for the database. Large: import it only from server code (the university and faculty pages) and from tests.. Exports: roProgramsOf, roProgramsOfFaculty
 - `session.ts` (117) — Keeps the student's answers (and optional activities with photos) in sessionStorage between pages (safe on the server).. Exports: MAX_CITIES, loadDraft, saveDraft, clearDraft, toAnswers, shrinkImage
 - `sheets.ts` (11) — The full university sheets, with all their long texts. Large: import it only from server code (the university page) and from tests, never from a component that runs in the browser — those use lib/universities.ts.. Exports: universities, universityById
 - `testimonials.ts` (29) — Links student opinions to the universities that have a profile sheet, so the search and the sheets can show them.. Exports: universityIdOf, testimonialsFor

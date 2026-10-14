@@ -21,6 +21,14 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-14 00:14 — programele din România vin odată cu pagina
+- Cerut: partea tehnică să răspundă cât mai repede; din măsurători, echipa a ales ca lista de programe din România să fie pusă direct în pagină
+- Făcut: pe fișele universităților și facultăților din România, lista de programe de licență este scrisă de server în pagină, din fișierul catalogului (lista oficială HG 606/2026), în loc să fie cerută bazei de date după încărcare. Dispare „Se încarcă lista de programe...”; lista apare și dacă baza de date nu răspunde. Aspectul și conținutul sunt aceleași. Fișele din străinătate citesc în continuare lista din baza de date, pentru că acolo listele sunt prea mari. Lista grupată a devenit o componentă comună (`ProgramGroups`), folosită în ambele cazuri. Măsurători înainte de schimbare, pe versiunea de producție pornită local: server 13–18 ms pe pagină, lista de programe apărea după încă ~0,7 s
+- Fișiere: `apps/web/lib/roPrograms.ts` (nou), `apps/web/lib/roPrograms.test.ts` (nou), `apps/web/components/ProgramGroups.tsx` (nou), `apps/web/components/OfficialPrograms.tsx`, `apps/web/components/FacultyPrograms.tsx`, `apps/web/app/universitati/[id]/page.tsx`, `apps/web/app/universitati/[id]/[facultate]/page.tsx`, `.claude/launch.json` (pornirea versiunii de producție pe portul 3100, pentru măsurători), `docs/ultimii-pasi.md`
+- Poartă: TRECUT (`node scripts/gate.mjs`: secrete, fișiere, registru, build, 131 de teste, aplicația pornește)
+- Neverificat: viteza pe internet (măsurat doar pe calculator); paginile universităților mari sunt acum mai grele ca text (vezi cifrele din raport)
+- Urmează: echipa hotărăște despre facultățile în căutare, codul mai puțin pe pagini și paginile gata făcute
+
 ### 2026-10-13 16:16 — a doua încercare pe punctele neconfirmate și verificarea completă a site-ului
 - Cerut: verificarea de către asistent a listelor „de verificat”, apoi o verificare în amănunt a întregului site, ca să nu rămână erori
 - Făcut: (1) Cinci ajutoare au reluat cele 99 de puncte pe care prima verificare nu le putuse confirma: 71 confirmate, 19 infirmate și corectate, 19 rămase necunoscute; aplicate 71 de schimbări în fișe (de exemplu: HU Berlin, care acum s-a deschis, are toate licențele în germană și înscriere prin uni-assist; Academia Forțelor Aeriene nu are locuri cu taxă și cere certificat de engleză; „atelierul de machete” de la Arhitectură Cluj și „cea mai mare universitate din țară” la UBB au fost confirmate și puse înapoi). (2) Hotărâri luate cu o regulă unică: „dosar” doar unde ceva din dosar se notează (25 de fișe), „Cămin: nu” la KTH și Copenhaga, autorizarea provizorie spusă la două facultăți ale Universității Româno-Americane. (3) Verificarea site-ului: toate cele 905 pagini se deschid fără erori și fără texte stricate; 4.248 de linkuri verificate (2 surse moarte reparate; restul sunt blocaje pentru roboți sau site-uri căzute: Galați, Apărare, fspac.ubbcluj.ro, agronomie.ucv.ro); chestionarul parcurs până la rezultat; căutarea cu orașe, căutarea de programe, formularul de păreri, fereastra de bun venit, redirecționarea paginilor cu cont și de administrare, antetele de securitate; aspectul la lățime de telefon pe șase pagini; verificarea de contradicții din date. Găsit și reparat: „4.117 de instituții” (corect „4.117 instituții”) pe două pagini, cu o regulă comună pentru numere și un test. Lista scurtă cu ce a rămas este în `docs/de-verificat.md`
@@ -611,6 +619,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-13 23:08 `c08b7a1` fix: recheck unconfirmed facts and audit the whole site
 - 2026-10-13 15:54 `01ecc44` feat: choose several cities in the university search
 - 2026-10-13 15:43 `c909e83` feat: add 367 double-checked faculty sheets for Romania
 - 2026-10-13 14:48 `b977652` fix: fact-check the 320 university sheets from abroad
@@ -640,5 +649,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-06 00:06 `b4aeabc` feat: Convex schema, shared access rules and access tests
 - 2026-10-06 00:00 `2c23414` chore: start the production phase with Convex packages and the plan
 - 2026-10-05 11:28 `81704e7` feat: use the team logo for the site icon and the link preview
-- 2026-10-05 11:24 `f9a8e9a` docs: answers to the judging criteria
 <!-- commits:end -->
