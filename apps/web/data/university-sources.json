@@ -3098,5 +3098,1982 @@
     "https://unap.ro",
     "http://www.unap.ro",
     "https://www.unap.ro/index.php/ro/"
+  ],
+  "ek-copenhagen": [
+    "https://www.ek.dk/english",
+    "https://www.ek.dk/english/about-us/programmes-at-ek",
+    "https://www.ek.dk/videregaaende-uddannelser/oekonomi-og-it",
+    "https://www.ek.dk/videregaaende-uddannelser/design-og-business",
+    "https://mit.ek.dk/english/exchange-students/practical-information",
+    "https://www.ek.dk/videregaaende-uddannelser/ansoegere/for-ikke-eu-ansoegere",
+    "https://www.su.dk/foreign-citizen/gb-foreign-citizen/eu-rules/you-work-in-denmark/questions-and-answers-you-are-a-worker-or-a-self-employed-person-under-eu-law"
+  ],
+  "sea-esbjerg": [
+    "https://www.s-e-a.dk/international",
+    "https://www.s-e-a.dk/incoming-full-degree-students",
+    "https://www.s-e-a.dk/international/faq",
+    "https://www.s-e-a.dk/uddannelser/computer-science",
+    "https://www.s-e-a.dk/uddannelser/software-development",
+    "https://www.s-e-a.dk/uddannelser/multimedia-design",
+    "https://www.s-e-a.dk/uddannelser/web-development",
+    "https://www.s-e-a.dk/education-sitemap.xml"
+  ],
+  "iba-kolding": [
+    "https://iba.dk/international/about-the-iba/",
+    "https://iba.dk/international/full-time-students/",
+    "https://iba.dk/international/bachelor/bsc-in-international-business-management/",
+    "https://iba.dk/international/bachelor/business-management-across-europe-double-degree-programme/",
+    "https://iba.dk/international/information-for-international-students/housing/",
+    "https://iba.dk/international/bachelor/bachelor-of-science-informatics/",
+    "https://iba.dk/international/bachelor/international-business-full-time/"
+  ],
+  "ucl-odense": [
+    "https://www.ucl.dk/international",
+    "https://www.ucl.dk/uddannelser",
+    "https://www.ucl.dk/optagelse-og-vejledning/udenlandsk-eksamen",
+    "https://www.ucl.dk/optagelse-og-vejledning/sprogkrav",
+    "https://www.ucl.dk/for-studerende/foer-studiet/boligsoegning",
+    "https://www.mitucl.dk/boligsoegning",
+    "https://www.ucl.dk/sitemap.xml"
+  ],
+  "kp-copenhagen": [
+    "https://www.kp.dk/en/study-at-kp/",
+    "https://www.kp.dk/en/about-kp/",
+    "https://www.kp.dk/optagelse/",
+    "https://www.kp.dk/optagelse/udenlandsk-eksamen/",
+    "https://www.kp.dk/optagelse/udenlandsk-eksamen/sprogkrav/",
+    "https://www.kp.dk/en/how-to-apply/housing-for-exchange-students/"
+  ],
+  "uc-syd": [
+    "https://www.ucsyd.dk/english",
+    "https://www.ucsyd.dk/international",
+    "https://www.ucsyd.dk/international/english",
+    "https://www.ucsyd.dk/teacher"
+  ],
+  "royal-danish-academy": [
+    "https://royaldanishacademy.com/en",
+    "https://royaldanishacademy.com/en/admission-bachelor",
+    "https://royaldanishacademy.com/en/crafts-admission-professional-bachelor",
+    "https://royaldanishacademy.com/en/crafts-admission-process",
+    "https://kglakademi.dk/da/uddannelse/optagelse-bachelor",
+    "https://royaldanishacademy.com/en/accommodation"
+  ],
+  "aams-aarhus": [
+    "https://aams.dk/en/",
+    "https://aams.dk/uddannelse/",
+    "https://aams.dk/uddannelser/maskinmester/optagelse/",
+    "https://aams.dk/uddannelser/maskinmester/studiemiljo/",
+    "https://aams.dk/en/exchange-semester/housing-for-exchange-students/",
+    "https://studenthousingaarhus.com/menu/housing-guarantee"
+  ],
+  "dmjx": [
+    "https://www.dmjx.dk/international",
+    "https://www.dmjx.dk/international/studies-english",
+    "https://www.dmjx.dk/uddannelser/studievejledning/optagelse",
+    "https://www.dmjx.dk/uddannelser/kommunikationsuddannelsen/kommunikationsuddannelsen/optagelse/har-du-et-udenlandsk-eksamensbevis",
+    "https://www.dmjx.dk/uddannelser/laes-paa-dmjx",
+    "https://www.dmjx.dk/om-dmjx",
+    "https://www.dmjx.dk/uddannelser/journalistuddannelsen/journalistik/optagelse-0",
+    "https://www.dmjx.dk/uddannelser/journalistuddannelsen/optagelse/proevens-indhold"
+  ],
+  "eamv": [
+    "https://www.eamv.dk/",
+    "https://www.eamv.dk/om-os",
+    "https://www.eamv.dk/alt-om-optagelse",
+    "https://www.eamv.dk/guide-til-uddannelsesvalg/herning",
+    "https://www.eamv.dk/guide-til-uddannelsesvalg/holstebro"
+  ],
+  "fms-fredericia": [
+    "https://fms.dk/p/fms-english",
+    "https://fms.dk/p/fms-english/bachelors-programme",
+    "https://fms.dk/p/vores-uddannelser/maskinmester/adgangskrav",
+    "https://fms.dk/p/vores-uddannelser/maskinmester/hvordan-soeger-jeg-3/soeg-ind-paa-fms",
+    "https://fms.dk/c/aktuelt/fms-faar-ny-uddannelse-i-esbjerg-technology-management-and-marine-engineering",
+    "https://fms.dk/p/info/om-fms"
+  ],
+  "kolding-design": [
+    "https://www.designskolenkolding.dk/en/study-at-the-school/bachelor",
+    "https://www.designskolenkolding.dk/en/study-at-the-school/bachelor/optagelse-paa-bacheloruddannelsen",
+    "https://www.designskolenkolding.dk/uddannelser/bachelor/optagelse-paa-bacheloruddannelsen/trin-1-hvem-kan-soege-ind",
+    "https://www.designskolenkolding.dk/en/the-school/daily-life",
+    "https://www.designskolenkolding.dk/en/study-at-the-school/udveksling-og-internationalt-samarbejde/studerende-fra-udlandet",
+    "https://www.designskolenkolding.dk/en/the-school",
+    "https://www.designskolenkolding.dk/en/study-at-the-school/master",
+    "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+  ],
+  "aarhus-architecture": [
+    "https://aarch.dk/en/bachelor-studies/",
+    "https://aarch.dk/optagelse-paa-bacheloruddannelsen/",
+    "https://aarch.dk/en/faq-optagelse/",
+    "https://aarch.dk/en/housing-for-international-students/",
+    "https://aarch.dk/en/faq-international-students",
+    "https://aarch.dk/en/faq-international-students/",
+    "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships",
+    "https://www.su.dk/foreign-citizen/gb-foreign-citizen/eu-rules/you-work-in-denmark"
+  ],
+  "simac": [
+    "https://simac.dk/uddannelser/skibsfoerer",
+    "https://simac.dk/uddannelser/maskinmester",
+    "https://simac.dk/uddannelser/skibsofficer",
+    "https://simac.dk/ansoeg-nu",
+    "https://simac.dk/studielivet",
+    "https://simac.dk/en",
+    "https://simac.dk/om-simac",
+    "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+  ],
+  "teknika": [
+    "https://teknika.dk/bliv-studerende/om-maskinmesteruddannelsen",
+    "https://teknika.dk/ansog-og-adgangskrav",
+    "https://teknika.dk/frister-og-krav",
+    "https://teknika.dk/om-teknika",
+    "https://teknika.dk/om-teknika/lokationer",
+    "https://teknika.dk/",
+    "https://teknika.dk/om-teknika/organisation",
+    "https://teknika.dk/om-teknika/strategi-og-vedtaegter"
+  ],
+  "martec": [
+    "https://martec.dk/uddannelser/skibsforer-professionsbachelor/",
+    "https://martec.dk/uddannelser/skibsforer-professionsbachelor/adgangskrav/",
+    "https://martec.dk/uddannelser/skibsforer-professionsbachelor/soeg-ind/",
+    "https://martec.dk/uddannelser/maskinmester/",
+    "https://martec.dk/for-studerende/bolig/",
+    "https://martec.dk/uddannelser/skibsforer-professionsbachelor/svensk-studerende-paa-martec/",
+    "https://martec.dk/",
+    "https://martec.dk/uddannelser/skibsforer-professionsbachelor/praktik/"
+  ],
+  "rdam-music": [
+    "https://www.dkdm.dk/en/prerequisites-admission",
+    "https://www.dkdm.dk/en/how-apply",
+    "https://www.dkdm.dk/en/faq-admission",
+    "https://www.dkdm.dk/en/housing",
+    "https://www.dkdm.dk/en/living-in-copenhagen",
+    "https://www.dkdm.dk/en/educations",
+    "https://www.dkdm.dk/en",
+    "https://www.dkdm.dk/en/study-programmes"
+  ],
+  "djm-aarhus": [
+    "https://musikkons.dk/en/programmes/admission/",
+    "https://musikkons.dk/en/programmes/admission/new-student/",
+    "https://musikkons.dk/en/programmes/bachelor-new/",
+    "https://musikkons.dk/en/about-djm/",
+    "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships",
+    "https://www.su.dk/foreign-citizen/gb-foreign-citizen/eu-rules/you-work-in-denmark",
+    "https://www.su.dk/foreign-citizen/gb-foreign-citizen/eu-rules/you-work-in-denmark/questions-and-answers-you-are-a-worker-or-a-self-employed-person-under-eu-law"
+  ],
+  "sdmk": [
+    "https://www.sdmk.dk/en",
+    "https://sdmk.dk/en/study/english-speaking-applicants/language-requirements",
+    "https://www.sdmk.dk/en/studies/guide-for-international-students",
+    "https://www.sdmk.dk/en/studies/faq-frequently-asked-questions",
+    "https://www.sdmk.dk/en/studies/study-programmes/classical-musician/admission-requirements-classical-bachelor",
+    "https://sdmk.dk/en/studies/admission-requirements",
+    "https://www.sdmk.dk/en/study/english-speaking-applicants/language-requirements",
+    "https://www.sdmk.dk/en/studies/admission-requirements"
+  ],
+  "rmc-copenhagen": [
+    "https://rmc.dk/en/bachelor-programmes",
+    "https://rmc.dk/en/about-admission",
+    "https://rmc.dk/en/language-policy",
+    "https://rmc.dk/en/tuition",
+    "https://rmc.dk/en/living-denmark",
+    "https://rmc.dk/en",
+    "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships",
+    "https://www.su.dk/foreign-citizen/gb-foreign-citizen/eu-rules/you-work-in-denmark"
+  ],
+  "kunstakademiet": [
+    "https://kunstakademiet.dk/en/uddannelse/bachelor",
+    "https://kunstakademiet.dk/en/uddannelse/optagelse-moderside",
+    "https://kunstakademiet.dk/en/uddannelse/optagelse-moderside/optagelse",
+    "https://kunstakademiet.dk/en",
+    "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships",
+    "https://www.su.dk/foreign-citizen/gb-foreign-citizen/eu-rules/you-work-in-denmark",
+    "https://www.su.dk/foreign-citizen/gb-foreign-citizen/eu-rules/you-work-in-denmark/questions-and-answers-you-are-a-worker-or-a-self-employed-person-under-eu-law"
+  ],
+  "daspa": [
+    "https://ddsks.dk/en/programmes",
+    "https://ddsks.dk/en/frequently-asked-questions",
+    "https://ddsks.dk/en/acting-bfa",
+    "https://ddsks.dk/en/dance-and-choreography",
+    "https://ddsks.dk/en/about-daspa",
+    "https://ddsks.dk/en/contact-0",
+    "https://ddsks.dk/en",
+    "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+  ],
+  "nhl-stenden": [
+    "https://www.nhlstenden.com/en",
+    "https://www.nhlstenden.com/en/admission-requirements-for-studying-in-the-netherlands",
+    "https://www.nhlstenden.com/en/practical-information/admission-and-application",
+    "https://www.nhlstenden.com/en/practical-information/housing",
+    "https://www.nhlstenden.com/en/practical-information/finances",
+    "https://www.nhlstenden.com/en/practical-information/finances/tuition-fees"
+  ],
+  "avans": [
+    "https://www.avans.nl/en/int/studying/programmes?programme=bachelor",
+    "https://www.avans.nl/en/int/studying/practical-information/applying",
+    "https://www.avans.nl/en/int/studying/practical-information/applying/admission-requirements",
+    "https://www.avans.nl/en/int/studying/practical-information/tuition-fees",
+    "https://www.avans.nl/en/int/studying/practical-information/scholarships",
+    "https://www.avans.nl/en/int/studying/practical-information/accommodation"
+  ],
+  "wittenborg": [
+    "https://www.wittenborg.eu",
+    "https://www.wittenborg.eu/entrance-criteria-bachelor-and-master-degree-programmes.htm",
+    "https://www.wittenborg.eu/application-procedure.htm",
+    "https://www.wittenborg.eu/wittenborg-tuition-fees.htm",
+    "https://www.wittenborg.eu/eu-scholarship-eu-eea-uk-ukraine-students.htm",
+    "https://www.wittenborg.eu/student-housing.htm",
+    "https://www.wittenborg.eu/",
+    "https://www.wittenborg.eu/higher-education-system-netherlands-wittenborg-university-applied-sciences-status.htm"
+  ],
+  "hotelschool-the-hague": [
+    "https://www.hotelschool.nl/bachelor-hospitality-management/",
+    "https://www.hotelschool.nl/apply/bachelor/",
+    "https://www.hotelschool.nl/scholarships/",
+    "https://www.hotelschool.nl/about-us/"
+  ],
+  "has-green-academy": [
+    "https://www.has.nl/en/",
+    "https://www.has.nl/en/bachelors-and-more/apply/",
+    "https://www.has.nl/en/bachelors-and-more/bba-international-food-agribusiness/",
+    "https://www.has.nl/en/more-has/study-at-has/financial-matters/",
+    "https://www.has.nl/en/more-has/study-at-has/housing-for-new-students/"
+  ],
+  "aeres-uas": [
+    "https://www.aeresuas.com",
+    "https://www.aeresuas.com/programmes?education-type=bachelor-programme",
+    "https://www.aeresuas.com/study/practical-information/application/bachelor-and-master-programmes",
+    "https://www.aeresuas.com/study/practical-information/scholarships",
+    "https://www.aeresuas.com/study/student-life/study-in-dronten",
+    "https://www.aeresuas.com/study/student-life/study-in-dronten/housing"
+  ],
+  "tio": [
+    "https://www.tio.nl/en/",
+    "https://www.tio.nl/en/contact/registration/",
+    "https://www.tio.nl/en/hotel_and_event_management/tuition-fees/",
+    "https://www.tio.nl/en/netherlands/housing/",
+    "https://www.tio.nl/en/campuses/",
+    "https://www.tio.nl/en/international_business_management/admission/",
+    "https://www.tio.nl/en/international_business_management/",
+    "https://www.tio.nl/en/campuses/amsterdam/"
+  ],
+  "artez": [
+    "https://www.artez.nl/en/programmes",
+    "https://www.artez.nl/en/programmes/bachelor/fashion-design-arnhem/check-the-admission-requirements-2-2",
+    "https://www.artez.nl/en/programmes/bachelor/fashion-design-arnhem/admission",
+    "https://www.artez.nl/en/programmes/bachelor/fashion-design-arnhem/financial-matters",
+    "https://www.artez.nl/en/study-at-artez/arrange-your-study/housing",
+    "https://www.artez.nl/en/study-at-artez/arrange-your-study/international-students/artez-scholarship",
+    "https://www.artez.nl/en/programmes/bachelor/fashion-design-arnhem/apply-through-studielink",
+    "https://www.artez.nl/en/programmes/bachelor/bear-fine-art-arnhem"
+  ],
+  "hku-utrecht": [
+    "https://www.hku.nl/en",
+    "https://www.hku.nl/en/study-at-hku/explore-and-apply/application-and-admission/applying-for-a-bachelors-programme",
+    "https://www.hku.nl/en/study-at-hku/explore-and-apply/application-and-admission/general-enrolment-requirements",
+    "https://www.hku.nl/en/study-at-hku/explore-and-apply/nl-scholarship",
+    "https://www.hku.nl/en/study-at-hku/studying-in-utrecht/housing",
+    "https://www.hku.nl/en/study-at-hku/explore-and-apply/tuition-fee-and-finances"
+  ],
+  "university-of-the-arts-the-hague": [
+    "https://www.hogeschoolderkunsten.nl/en/",
+    "https://www.kabk.nl/en/practical-matters/application-procedure",
+    "https://www.kabk.nl/en/practical-matters/english-language-requirements",
+    "https://www.kabk.nl/en/practical-matters/housing",
+    "https://www.kabk.nl/en/practical-matters/funding-scholarships",
+    "https://www.koncon.nl/en/application-process/scholarships-and-funds",
+    "https://www.kabk.nl/en/practical-matters/tuition-fees",
+    "https://www.koncon.nl/en/application-process"
+  ],
+  "ahk-amsterdam": [
+    "https://www.ahk.nl/en/study/choose-your-study-programme/study-programmes/",
+    "https://www.ahk.nl/en/study/choose-your-study-programme/application-and-admission/",
+    "https://www.ahk.nl/en/study/choose-your-study-programme/scholarships/",
+    "https://www.ahk.nl/en/study/during-your-study-programme/student-affairs/financial-matters/tuition-fees/",
+    "https://www.ahk.nl/en/study/during-your-study-programme/student-affairs/living-in-amsterdam/student-rooms-for-international-students/",
+    "https://www.conservatoriumvanamsterdam.nl/en/application-and-admission/how-to-apply/language-certificate/",
+    "https://www.atd.ahk.nl/en/dance-programmes/expanded-contemporary-dance/",
+    "https://www.atd.ahk.nl/en/theatre-programmes/scenography/"
+  ],
+  "codarts": [
+    "https://www.codarts.nl/en/education/bachelors/",
+    "https://www.codarts.nl/en/practical-matters/practical/register-studielink/",
+    "https://www.codarts.nl/en/education/bachelors/dance/admission/",
+    "https://www.codarts.nl/en/practical-matters/practical/tuition-fee/",
+    "https://www.codarts.nl/en/practical-matters/practical/housing/",
+    "https://www.codarts.nl/en/practical-matters/practical/enrolment-and-withdrawal/enrolment/",
+    "https://www.codarts.nl/en/education/bachelors/music-theatre/about/",
+    "https://www.codarts.nl/en/education/bachelors/music-in-education/opleiding/"
+  ],
+  "rietveld-academie": [
+    "https://rietveldacademie.nl/en/page/370/bachelor",
+    "https://rietveldacademie.nl/en/page/24307/admissions",
+    "https://rietveldacademie.nl/en/page/24502/tuition-language",
+    "https://rietveldacademie.nl/en/page/838/tuition-fees",
+    "https://rietveldacademie.nl/en/page/1237/study-grant-loan-and-scholarship",
+    "https://rietveldacademie.nl/en/page/3028/housing"
+  ],
+  "design-academy-eindhoven": [
+    "https://www.designacademy.nl/page/397/bachelor-programme",
+    "https://www.designacademy.nl/page/7476/bachelor-admissions-faq",
+    "https://www.designacademy.nl/page/487/tuition-fees-and-living-expenses",
+    "https://www.designacademy.nl/page/493/nl-scholarship",
+    "https://www.designacademy.nl/page/469/housing-guide",
+    "https://www.designacademy.nl/page/317/how-to-apply",
+    "https://www.designacademy.nl/page/5687/bachelor-admissions-how-to-apply"
+  ],
+  "nyenrode": [
+    "https://www.nyenrode.nl/en/programs/bachelor/business-administration",
+    "https://www.nyenrode.nl/en/programs/bachelor/business-administration/information-for-parents-guardians-bsc-business-administration",
+    "https://www.nyenrode.nl/en/about-us/nyenrode-fund/scholarships",
+    "https://www.nyenrode.nl/en/about-us/nyenrode-fund/scholarships/scholarship-application",
+    "https://www.nyenrode.nl/en/programs/bachelor",
+    "https://www.nyenrode.nl/en/information/facility/living-on-campus"
+  ],
+  "srh-haarlem": [
+    "https://www.srh-haarlem-campus.com/bachelor/",
+    "https://www.srh-haarlem-campus.com/meta/apply-now/",
+    "https://www.srh-haarlem-campus.com/study-and-living/financing-and-funding/",
+    "https://www.srh-haarlem-campus.com/study-and-living/scholarships/",
+    "https://www.srh-haarlem-campus.com/study-and-living/student-housing-on-campus/",
+    "https://www.srh-haarlem-campus.com/about-us/about-us/",
+    "https://www.srh-haarlem-campus.com/about-us/accreditation/"
+  ],
+  "hogeschool-leiden": [
+    "https://www.hsleiden.nl/en",
+    "https://www.hsleiden.nl/en/studying-luas/enrolment/admission",
+    "https://www.hsleiden.nl/studeren/inschrijven/toelating",
+    "https://www.hsleiden.nl/studeren/inschrijven/studenten-uit-het-buitenland",
+    "https://www.hsleiden.nl/en/studying-luas/exchange",
+    "https://www.hsleiden.nl/en/exchange/practical-information"
+  ],
+  "che-ede": [
+    "https://www.che.nl/en",
+    "https://www.che.nl/en/qa-on-earning-a-bachelor-s-degree-at-che/",
+    "https://www.che.nl/international/",
+    "https://www.che.nl/studeren-in-ede/leven-wonen-in-ede/op-kamers/",
+    "https://www.che.nl/en/about-che/",
+    "https://www.che.nl/studeren-in-ede/financien-ondersteuning/studiekosten/",
+    "https://www.che.nl/studeren-in-ede/financien-ondersteuning/studiekosten/collegegeld/",
+    "https://www.che.nl/onderzoek-bedrijven-meer/over-ons/identiteit-en-missie/"
+  ],
+  "unito": [
+    "https://www.unito.it/ateneo/chi-siamo",
+    "https://www.unito.it/internazionalita/arrivare-unito-dallestero/ammissione-studenti-internazionali/procedure-0",
+    "https://www.unito.it/internazionalita/arrivare-unito-dallestero/ammissione-studenti-internazionali/documentazione",
+    "https://www.unito.it/didattica/tasse/contribuzione-studenti-internazionali",
+    "https://www.unito.it/servizi/residenze-mense-sale-studio-e-biblioteche/residenze-e-mense",
+    "https://apply.unito.it/",
+    "https://apply.unito.it/en_GB/news/new/13-required-documentation",
+    "https://apply.unito.it/en_GB/news/new/26-can-i-apply"
+  ],
+  "unimi": [
+    "https://www.unimi.it/it/internazionale/venire-studiare-dallestero/iscriversi-un-corso/iscrizioni-internazionali-corsi-di-laurea",
+    "https://www.unimi.it/it/internazionale/venire-studiare-dallestero/costi-borse-di-studio-e-opportunita",
+    "https://www.unimi.it/it/studiare/borse-premi-mense-e-alloggi/alloggi",
+    "https://www.unimi.it/it/studiare/borse-premi-mense-e-alloggi/borse-di-studio-regionali",
+    "https://apply.unimi.it/",
+    "https://apply.unimi.it/contents/content/9-bachelors-degree-documents-finalising-enrolment",
+    "https://apply.unimi.it/news/new/6-limited-enrolment-undergraduate-programmes-apply-now",
+    "https://apply.unimi.it/contents/content/5-international-student-hub"
+  ],
+  "unifi": [
+    "https://www.unifi.it/it/ateneo/chi-siamo/storia-e-profilo-dellateneo",
+    "https://www.unifi.it/it/studia-con-noi/il-tuo-percorso/iscriviti-alluniversita/studenti-internazionali/studenti-unione",
+    "https://www.unifi.it/it/studia-con-noi/il-tuo-percorso/tasse-isee-e-agevolazioni/quanto-costa-luniversita",
+    "https://www.unifi.it/it/studia-con-noi/vivi-luniversita/campus-e-servizi/mense-e-alloggi",
+    "https://www.dsu.toscana.it/",
+    "https://ammissioni.unifi.it/INFO/",
+    "https://admission.unisi.it/?p=1670"
+  ],
+  "unimib": [
+    "https://www.unimib.it/ateneo/storia",
+    "https://www.unimib.it/studiare/bicocca-international/informazioni-studenti-titolo-estero",
+    "https://www.unimib.it/studiare/servizi-studenti-e-laureati/segreterie/immatricolazione/contribuzione-studentesca",
+    "https://www.unimib.it/studiare/servizi-studenti-e-laureati/diritto-allo-studio-contribuzione-studentesca-150-ore/benefici-diritto-allo-studio",
+    "https://www.unimib.it/studiare/servizi-studenti-e-laureati/diritto-allo-studio-contribuzione-studentesca-150-ore/residenze-universitarie"
+  ],
+  "uniba": [
+    "https://www.uniba.it/it/studenti/segreterie-studenti/studenti-stranieri/ammissione-studenti-stranieri-internazionali",
+    "https://www.uniba.it/it/studenti/segreterie-studenti/procedure",
+    "https://www.uniba.it/it/studenti/segreterie-studenti/studenti-stranieri/studenti-internazionali-tasse-contributi-ed-esoneri",
+    "https://www.uniba.it/it/studenti/segreterie-studenti/studenti-stranieri/borse-di-studio-1",
+    "https://www.uniba.it/it/studenti/servizi-e-opportunita/alloggi-universitari",
+    "https://www.adisupuglia.it/",
+    "https://adisupuglia.it/pagina116497_alloggi.html"
+  ],
+  "unipv": [
+    "https://portale.unipv.it/it/ateneo/storia-e-futuro",
+    "https://portale.unipv.it/it/didattica/corsi-di-laurea/ammissioni/iscriversi-ad-un-corso-di-studio-con-titolo-conseguito-allestero",
+    "https://portale.unipv.it/it/didattica/corsi-di-laurea/ammissioni/iscriversi-ad-un-corso-di-studio-con-titolo-conseguito-allestero/check-list-studenti-eu-e-non-eu-regolarmente-soggiornanti-italia",
+    "https://portale.unipv.it/it/didattica/corsi-di-laurea/contribuzione-universitaria/futuri-studenti/flat-rate-studenti-internazionali",
+    "https://www.edisu.pv.it/",
+    "https://apply.unipv.eu/",
+    "https://apply.unipv.eu/en_GB/news/new/93-application-calendar-202728",
+    "https://apply.unipv.eu/en_GB/news/new/55-discover-our-english-taught-programs"
+  ],
+  "unime": [
+    "https://www.unime.it/ateneo/presentazione",
+    "https://www.unime.it/international/immatricolazione-con-titolo-estero",
+    "https://www.unime.it/didattica/servizi-e-agevolazioni",
+    "https://www.unime.it/didattica/servizi-e-agevolazioni/residenze-universitarie",
+    "https://www.ersumessina.it/",
+    "https://www.unime.it/didattica/tasse-ed-esenzioni",
+    "https://www.unime.it/didattica/servizi-e-agevolazioni/agevolazioni-e-premialita-studenti/programma-casa-unime",
+    "https://international.unime.it/study-us/english-taught-programmes"
+  ],
+  "unica": [
+    "https://www.unica.it/it/ateneo/chi-siamo",
+    "https://www.unica.it/it/internazionale/studiare-unica",
+    "https://www.unica.it/it/internazionale/studiare-unica/iscriversi-dallestero",
+    "https://www.unica.it/it/didattica/diritto-allo-studio/esoneri-tasse-e-premialita",
+    "https://www.unica.it/it/didattica/diritto-allo-studio/servizi-ersu",
+    "https://www.ersucagliari.it/",
+    "https://unica.dreamapply.com/",
+    "https://www.unica.it/it/internazionale/supporto-allinternazionalizzazione/foresteria"
+  ],
+  "univpm": [
+    "https://www.univpm.it/Entra/Ateneo",
+    "https://www.international.univpm.it/international-admissions/",
+    "https://www.international.univpm.it/the-university/our-study-courses/english-taught-courses/",
+    "https://www.univpm.it/Entra/Servizi_agli_studenti/Borse_di_studio_e_opportunita/Tasse_e_agevolazioni",
+    "https://www.univpm.it/Entra/Servizi_agli_studenti/Alloggi_e_mense",
+    "https://erdis.it/",
+    "https://www.international.univpm.it/italian-language-requirements/",
+    "https://www.univpm.it/Entra/Servizi_agli_studenti/Borse_di_studio_e_opportunita/Borse_studio_studentesse_studenti"
+  ],
+  "unicampania": [
+    "https://www.unicampania.it/index.php/ateneo/presentazione",
+    "https://www.unicampania.it/index.php/studenti/procedure-amministrative/immatricolazione",
+    "https://www.unicampania.it/index.php/foreign-students",
+    "https://www.unicampania.it/index.php/studenti/procedure-amministrative/tasse-e-scadenze",
+    "https://www.unicampania.it/index.php/studenti/opportunita/adisu",
+    "https://www.adisurcampania.it/",
+    "https://www.unicampania.it/RPP/RGCSS/Modulistica/DR_Manifesto_Tasse_26_27.pdf",
+    "https://www.adisurcampania.it/residenze/le-residenze-universitarie"
+  ],
+  "unich": [
+    "https://www.unich.it/ateneo/luda",
+    "https://www.unich.it/international/international-students-degree-seekers/admission-procedure",
+    "https://www.unich.it/didattica/iscrizioni/manifesto-degli-studi-e-regolamento-tasse-e-contributi",
+    "https://www.unich.it/ateneo/sedi-centri-e-strutture/scuole-e-dipartimenti",
+    "https://www.adsuchietipescara.it/"
+  ],
+  "unitn": [
+    "https://www.unitn.it/it/ateneo/chi-siamo",
+    "https://www.unitn.it/it/ammissioni-2026",
+    "https://www.unitn.it/it/studiare/tasse-borse-alloggi/tasse/cittadini-europei-ed-equivalenti",
+    "https://www.operauni.tn.it/",
+    "https://www.operauni.tn.it/it/",
+    "https://www.operauni.tn.it/it/alloggi/"
+  ],
+  "unisi": [
+    "https://www.unisi.it/ateneo/storia-dellateneo",
+    "https://www.unisi.it/immatricolazioni",
+    "https://admission.unisi.it/",
+    "https://admission.unisi.it/?p=1204",
+    "https://admission.unisi.it/?p=1670",
+    "https://www.unisi.it/didattica/borse",
+    "https://admission.unisi.it/?p=1189",
+    "https://admission.unisi.it/?p=1160"
+  ],
+  "unibs": [
+    "https://www.unibs.it/it/ateneo/chi-siamo/la-storia",
+    "https://www.unibs.it/it/internazionale/degree-seeking-students/ammissione",
+    "https://www.unibs.it/it/internazionale/degree-seeking-students/tasse",
+    "https://www.unibs.it/it/internazionale/degree-seeking-students/borse-di-studio",
+    "https://www.unibs.it/it/opportunita-e-servizi/luoghi/residenze-foresterie-e-altre-opportunita-di-alloggio"
+  ],
+  "unisalento": [
+    "https://www.unisalento.it/unisalento-in-cifre",
+    "https://international.unisalento.it/admission/bachelor-s-degree",
+    "https://international.unisalento.it/admission/enrolment",
+    "https://international.unisalento.it/admission/scholarships-grants/adisu-scholarships",
+    "https://www.unisalento.it/strutture/alloggi",
+    "https://www.unisalento.it/studenti/offerta-formativa/manifesto-degli-studi",
+    "https://www.unisalento.it/documents/20143/132441/Allegato-A_26-27.pdf/4ad07be3-c288-f2b9-aa2d-4bac262b2bce",
+    "https://adisupuglia.it/pagina116497_alloggi.html"
+  ],
+  "unibg": [
+    "https://www.unibg.it/ateneo/chi-siamo/storia-e-identita",
+    "https://www.unibg.it/studiare/iscriversi/corsi-laurea-triennale-e-magistrale-ciclo-unico-accesso-libero",
+    "https://www.unibg.it/studiare/iscriversi",
+    "https://www.unibg.it/studiare/iscriversi/tasse-e-agevolazioni",
+    "https://www.unibg.it/dsu"
+  ],
+  "uniparthenope": [
+    "https://www.uniparthenope.it/Portale-Ateneo/chi-siamo-e-storia",
+    "https://orienta.uniparthenope.it/laurea-triennale/",
+    "https://orienta.uniparthenope.it/modalita-accesso-bandi-selezione/",
+    "https://international.uniparthenope.it/how-to-enrol/",
+    "https://international.uniparthenope.it/tuition-fees-and-scholarships/",
+    "https://international.uniparthenope.it/facilities/",
+    "https://orienta.uniparthenope.it/",
+    "https://www.adisurcampania.it/residenze/le-residenze-universitarie"
+  ],
+  "uniupo": [
+    "https://www.uniupo.it/it",
+    "https://www.uniupo.it/it/internazionale/degree-seeking",
+    "https://www.uniupo.it/en/studentinfo/fees-and-taxes/isee-and-financial-aid-right-higher-education",
+    "https://www.uniupo.it/it/servizi/borse-di-studio-e-agevolazioni",
+    "https://www.uniupo.it/it/servizi/ospitalit%C3%A0-e-ristorazione",
+    "https://www.uniupo.it/it/infostudenti/immatricolazioni",
+    "https://www.uniupo.it/it/infostudenti/tasse-e-contributi",
+    "https://www.uniupo.it/it/infostudenti/tasse-e-contributi/isee-e-agevolazioni-il-diritto-allo-studio"
+  ],
+  "uniurb": [
+    "https://www.uniurb.it/immatricolazioni",
+    "https://www.uniurb.it/studiaconnoi/studenti/contributi/contribuzione-agevolata",
+    "https://www.uniurb.it/international/regular-students/enrolment/eu-citizens-non-eu-citizens-living-in-italy",
+    "https://www.uniurb.it/international/regular-students/enrolment/scholarships-and-opportunities"
+  ],
+  "univaq": [
+    "https://www.univaq.it/section.php?id=2065",
+    "https://www.univaq.it/section.php?id=48",
+    "https://www.univaq.it/section.php?id=912",
+    "https://adsuaq.org/",
+    "https://www.univaq.it/section.php?id=55",
+    "https://www.univaq.it/include/utilities/blob.php?table=avviso&id=17197&item=allegato",
+    "https://www.univaq.it/include/utilities/blob.php?table=avviso&id=17198&item=allegato"
+  ],
+  "uniss": [
+    "https://www.uniss.it/it/didattica/servizi-agli-studenti/guide-studenti/immatricolazione",
+    "https://www.uniss.it/it/didattica/servizi-agli-studenti/guide-studenti/tasse-e-isee",
+    "https://www.uniss.it/it/didattica/servizi-agli-studenti/guide-studenti/corsi-ad-accesso-programmato",
+    "https://www.uniss.it/it/didattica/offerta-formativa/corsi-internazionali",
+    "https://www.architettura.uniss.it/en/study/student-services/ersu"
+  ],
+  "unicz": [
+    "https://web.unicz.it/it/",
+    "https://web.unicz.it/it/page/profilo-futuri-studenti",
+    "https://web.unicz.it/it/page/come-iscriversi",
+    "https://www.fondazioneumg.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=19879&idCat=19883&ID=19883&TipoElemento=categoria",
+    "https://www.fondazioneumg.it/servizi/notizie/notizie_homepage.aspx",
+    "https://web.unicz.it/it/page/tasse-universitarie",
+    "https://web.unicz.it/uploads/2025/11/regolamento-tasse-2025-2026-def.pdf",
+    "https://web.unicz.it/admin/uploads/2026/07/regolamento-tasse-a-a-2026-2027.pdf"
+  ],
+  "poliba": [
+    "https://www.poliba.it/it/ammissioni-corsi-di-laurea-di-1deg-livello",
+    "https://web.poliba.it/it/didattica/tasse",
+    "https://web.poliba.it/it/didattica/alloggi",
+    "https://web.poliba.it/sites/default/files/regolamento_contribuzione_studentesca_politecnico_di_bari_25_26_0.pdf",
+    "https://www.poliba.it/sites/default/files/Ammissioni/Triennali%2026-27/English%20version%20.pdf"
+  ],
+  "unitus": [
+    "https://www.unitus.it/en/international/faqs-for-international-students/",
+    "https://www.unitus.it/en/students/fees-and-contributions/",
+    "https://www.unitus.it/en/students/services-for-students/student-house-and-canteen/",
+    "https://www.unitus.it/en/international/courses-catalogue/"
+  ],
+  "unimc": [
+    "https://www.unimc.it/it/didattica/iscrizione-e-carriera/studenti-internazionali/info-studenti-con-titolo-di-studio-estero",
+    "https://www.unimc.it/it/iscrizioni/borse-di-studio",
+    "https://www.unimc.it/it/servizi-agli-studenti/mensa-residenze-e-trasporti/residenze",
+    "https://www.unimc.it/it/didattica/iscrizione-e-carriera/studenti-internazionali",
+    "https://www.unimc.it/it/iscrizioni"
+  ],
+  "unicas": [
+    "https://www.unicas.it/international-unicas/why-choose-us/fees-and-fundings/",
+    "https://www.unicas.it/international-unicas/international-bachelor-master-and-phd-programs-enrollment-26-27-now-open/bachelors-degree-programs/",
+    "https://www.unicas.it/orientamento-immatricolarsi/come-immatricolarsi/tasse-universitarie/",
+    "https://www.unicas.it/notizie/bando-housing-universitario/",
+    "https://www.unicas.it/international-unicas/",
+    "https://www.unicas.it/media/pesjjo4e/regolamento-tasse-e-contributi-2026-2027-dr-n-482-del-02072026.pdf",
+    "https://www.unicas.it/international-unicas/international-bachelor-master-and-phd-programs-enrollment-26-27-now-open/",
+    "https://www.unicas.it/iscrizione-e-orientamento/iscrizione/tasse-universitarie/"
+  ],
+  "lumsa": [
+    "https://lumsa.it/it/modalita-di-iscrizione-0",
+    "https://lumsa.it/it/immatricolazione-tasse-e-borse-di-studio-studenti-internazionali",
+    "https://lumsa.it/it/borse-di-studio-agevolazioni",
+    "https://lumsa.it/it/alloggiare-roma",
+    "https://lumsa.it/it/residenze-alloggi",
+    "https://lumsa.it/it/Tasse-Contributi",
+    "https://lumsa.it/it/associazione-tincani"
+  ],
+  "unisob": [
+    "https://www.unisob.na.it/universita/iscrizioniol/index.htm?vr=1",
+    "https://www.unisob.na.it/universita/normeamministrative/3000c.htm?vr=1",
+    "https://www.unisob.na.it/universita/normeamministrative/3000d0.htm?vr=1",
+    "https://www.unisob.na.it/ateneo/internazionale/index.htm?vr=1",
+    "https://www.unisob.na.it/universita/normeamministrative/3000c0.htm?vr=1",
+    "https://www.unisob.na.it/universita/normeamministrative/3000c0_b.htm?vr=1",
+    "https://www.unior.it/it/studia-con-noi/didattica/orientarsi/opportunita-futuri-studenti/borse-di-studio"
+  ],
+  "unisr": [
+    "https://www.unisr.it/ammissioni",
+    "https://www.unisr.it/servizi/ammissioni/titoli-esteri",
+    "https://www.unisr.it/servizi/ammissioni/international-medical-doctor-program",
+    "https://www.unisr.it/servizi/borse-di-studio/borse-di-studio-regionali",
+    "https://www.unisr.it/campus/residenze-studenti",
+    "https://www.unisr.it/servizi/ammissioni/psicologia",
+    "https://www.unisr.it/servizi/tasse-contributi/corsi-di-laurea-triennale-e-magistrale",
+    "https://faq.unisr.it/it/tasse-in-base-al-reddito-previste"
+  ],
+  "unior": [
+    "https://www.unior.it/it/studia-con-noi/didattica/immatricolarsi-e-iscriversi",
+    "https://www.unior.it/it/studia-con-noi/didattica/immatricolarsi-e-iscriversi/studenti-stranieri",
+    "https://www.unior.it/it/studia-con-noi/didattica/immatricolarsi-e-iscriversi/tasse-e-isee",
+    "https://www.unior.it/it/studia-con-noi/didattica/orientarsi/opportunita-futuri-studenti/borse-di-studio"
+  ],
+  "unicamillus": [
+    "https://unicamillus.org/",
+    "https://unicamillus.org/servizi/iscrizione-al-test-di-ammissione/",
+    "https://unicamillus.org/servizi/tasse-e-contributi/",
+    "https://unicamillus.org/servizi/borse-di-studio-e-prestito-donore/",
+    "https://unicamillus.org/en/students/benefits/",
+    "https://unicamillus.org/en/courses/bsc/nursing/",
+    "https://unicamillus.org/corsi/",
+    "https://unicamillus.org/en/courses/"
+  ],
+  "unicam": [
+    "https://www.unicam.it/futuro-studente/come-iscriversi",
+    "https://international.unicam.it/admissions/faq",
+    "https://www.unicam.it/futuro-studente/vivere-unicam/alloggi",
+    "https://www.unicam.it/international-student/services/campuses-and-accomodation"
+  ],
+  "unimol": [
+    "https://www3.unimol.it/",
+    "https://www3.unimol.it/didattica/entrare-in-unimol/tasse-e-contributi",
+    "https://www3.unimol.it/didattica/entrare-in-unimol/residenze-e-trasporti",
+    "https://www3.unimol.it/didattica/entrare-in-unimol/tolc-e-test-ingresso",
+    "https://www3.unimol.it/internazionale/dettaglio/42",
+    "https://www3.unimol.it/servizi/diritto-allo-studio",
+    "https://apistrapi.unimol.it/uploads/Enrolment_for_EU_students_and_equivalent_24_25_94edd22305.pdf"
+  ],
+  "unikore": [
+    "https://uke.it",
+    "https://uke.it/it/didattica/iscrizione-e-costi",
+    "https://uke.it/it/servizi/residenze-universitarie",
+    "https://uke.it/en/services/segreteria-studenti",
+    "https://www.ersuenna.it/",
+    "https://uke.it/",
+    "https://admin.uke.it/wp-content/uploads/2026/05/REGOLAMENTO_TASSE_2026_rev1.1.pages.pdf",
+    "https://uke.it/servizi/residenze-universitarie"
+  ],
+  "unite": [
+    "https://www.unite.it",
+    "https://www.unite.it/UniTE/Immatricolazione_online",
+    "https://www.unite.it/UniTE/Immatricolazioni_e_iscrizioni/Requisiti_di_ammissione_corsi_di_laurea_triennale_e_laurea_magistrale_a_ciclo_unico",
+    "https://www.unite.it/UniTE/Home/Bandi_ADSU_per_borse_di_studio_e_alloggi_A_A_2026_27",
+    "https://www.unite.it/UniTE/Home/Universita_di_Teramo_niente_tasse_fino_a_22_mila_euro_di_ISEE_Riduzioni_fino_all_80_per_ISEE_piu_alti",
+    "https://www.unite.it/UniTE/Servizi/Servizi_Diritto_allo_studio",
+    "https://www.unite.it/UniTE/",
+    "https://www.unite.it/English/Studying_at_UniTe/How_to_apply"
+  ],
+  "unibas-it": [
+    "https://portale.unibas.it",
+    "https://portale.unibas.it/site/home/studenti/articolo83.html",
+    "https://portale.unibas.it/site/home/studenti/ammissione-studenti-stranieri.html",
+    "https://portale.unibas.it/site/home/studenti/immatricolazioni-e-iscrizioni/articolo4001.html",
+    "https://dafe.unibas.it/site/home/info/test-di-ingresso.html",
+    "https://www.ardsubasilicata.it/",
+    "https://portale.unibas.it/site/home.html",
+    "https://portale.unibas.it/site/home/studenti/ammissione-studenti-stranieri/articolo13351.html"
+  ],
+  "unilink": [
+    "https://www.unilink.it",
+    "https://www.unilink.it/international/how-to-apply",
+    "https://www.unilink.it/iscrizione/tasse-e-rette",
+    "https://www.unilink.it/international/student-services",
+    "https://www.unilink.it/iscrizione/entra-in-link/ammissione-ai-corsi-di-laurea",
+    "https://www.unilink.it/didattica/corsi-di-laurea/medicina-e-chirurgia",
+    "https://www.unilink.it/",
+    "https://www.unilink.it/iscrizione/entra-in-link/accommodation"
+  ],
+  "iuav": [
+    "https://www.iuav.it/it/didattica/lauree-triennali",
+    "https://www.iuav.it/it/selezioni-immatricolazioni-ammissioni/immatricolarsi-architettura",
+    "https://www.iuav.it/en/design-del-prodotto-della-comunicazione-visiva-e-degli-interni/prova-di-ammissione",
+    "https://www.iuav.it/it/servizi/tasse-e-contributi",
+    "https://www.iuav.it/en/diritto-allo-studio/borse-di-studio",
+    "https://www.iuav.it/it/international-students/student-accommodation",
+    "https://www.iuav.it/it",
+    "https://www.iuav.it/it/lauree-triennali/urbanistica-e-pianificazione-del-territorio"
+  ],
+  "unicampus": [
+    "https://www.unicampus.it",
+    "https://www.unicampus.it/ammissioni-corsi-di-laurea/come-accedere/",
+    "https://www.unicampus.it/ammissioni-corsi-di-laurea/tasse-e-contributi/",
+    "https://www.unicampus.it/servizi/diritto-allo-studio/",
+    "https://www.unicampus.it/servizi/diritto-allo-studio/alloggi-per-studenti/",
+    "https://www.unicampus.it/"
+  ],
+  "unisannio": [
+    "https://www.unisannio.it",
+    "https://www.unisannio.it/it/studente/futuro-studente/immatricolazione-studenti-stranieri",
+    "https://www.unisannio.it/it/servizi/diritto-allo-studio",
+    "https://www.unisannio.it/it/content/residenze",
+    "https://www.unisannio.it/it"
+  ],
+  "uer": [
+    "https://www.uer.it/",
+    "https://www.uer.it/entra-in-uer/test-ammissione/",
+    "https://www.uer.it/entra-in-uer/immatricolazione-e-tasse/",
+    "https://www.uer.it/entra-in-uer/diritto-allo-studio/",
+    "https://www.uer.it/residenza/",
+    "https://www.uer.it/international/",
+    "https://www.uer.it/wp-content/uploads/2018/04/All.-DR-132-Regolamento-tasse-e-contributi-2026-2027-immatricolati-e-iscritti-a.a.-23-24-e-24-25-1.pdf"
+  ],
+  "lum": [
+    "https://www.lum.it",
+    "https://www.lum.it/immatricolazioni/",
+    "https://www.lum.it/borse-di-studio/",
+    "https://www.lum.it/cerco-alloggio/",
+    "https://www.lum.it/procedure-bando-residenze-universitarie/",
+    "https://www.lum.it/"
+  ],
+  "liuc": [
+    "https://www.liuc.it",
+    "https://www.liuc.it/entra-in-liuc/laurea-triennale/immatricolazioni-e-iscrizioni-lauree-triennali/",
+    "https://www.liuc.it/entra-in-liuc/borse-di-studio-e-agevolazioni-economiche/borse-di-studio/",
+    "https://www.liuc.it/entra-in-liuc/borse-di-studio-e-agevolazioni-economiche/riduzioni-sulla-retta-esoneri-e-rateizzazioni/",
+    "https://www.liuc.it/campus-ed-opportunita/campus-life/residenza-universitaria/",
+    "https://www.liuc.it/"
+  ],
+  "uniroma4": [
+    "https://www.uniroma4.it",
+    "https://www.uniroma4.it/index.php/come-fare-per/immatricolarsi-iscriversi/iscrizione-studenti-internazionali/",
+    "https://www.uniroma4.it/index.php/come-fare-per/immatricolarsi-iscriversi/immatricolazione/",
+    "https://www.uniroma4.it/index.php/come-fare-per/immatricolarsi-iscriversi/tasse-universitarie/",
+    "https://www.uniroma4.it/index.php/come-fare-per/immatricolarsi-iscriversi/diritto-allo-studio-e-agevolazioni/",
+    "https://www.uniroma4.it/index.php/come-fare-per/trovare-casa-a-roma/",
+    "https://www.uniroma4.it/",
+    "https://www.uniroma4.it/index.php/come-fare-per/immatricolarsi-iscriversi/ammissione-ai-corsi-di-laurea-triennale/"
+  ],
+  "univda": [
+    "https://www.univda.it/futuro-studente/come-iscriversi/",
+    "https://www.univda.it/servizi/diritto-allo-studio-e-tasse/studenti-internazionali-richiedenti-visto-o-con-titolo-di-studio-conseguito-allestero/studenti-internazionali-non-richiedenti-visto-con-titolo-di-studio-estero/",
+    "https://www.univda.it/servizi/diritto-allo-studio-e-tasse/anno-accademico-2026-2027-tasse-esoneri-e-rimborsi/",
+    "https://www.univda.it/servizi/diritto-allo-studio-e-tasse/servizio-di-posti-alloggio/",
+    "https://www.univda.it/servizi/diritto-allo-studio-e-tasse/aiuti-economici-per-gli-studenti-delluniversita-della-valle-daosta/",
+    "https://www.regione.vda.it/istruzione/dirittostudio/borse_universita_valdostane/default_i.aspx",
+    "https://www.univda.it/",
+    "https://www.univda.it/wp-content/uploads/2026/05/Allegato-delibera-tasse-2026.2027-1-2.pdf"
+  ],
+  "unint": [
+    "https://www.unint.eu",
+    "https://www.unint.eu/entra-in-unint/come-iscriversi/",
+    "https://www.unint.eu/entra-in-unint/tasse-e-contributi-2026-2027/",
+    "https://www.unint.eu/entra-in-unint/borse-di-studio-e-agevolazioni-a-a-2026-2027/",
+    "https://www.unint.eu/campus-e-servizi/alloggi/",
+    "https://www.unint.eu/entra-in-unint/riconoscimento-titoli-esteri/",
+    "https://www.unint.eu/",
+    "https://www.unint.eu/didattica/"
+  ],
+  "unisg": [
+    "https://www.unisg.it",
+    "https://www.unisg.it/course/laurea-triennale-in-scienze-e-culture-gastronomiche/",
+    "https://www.unisg.it/perche-unisg/borse-di-studio/",
+    "https://www.unisg.it/student-life/life-in-bra/",
+    "https://www.unisg.it/servizi/international-student-start-point/",
+    "https://www.unisg.it/",
+    "https://www.unisg.it/assets/Procedure-ammissione-Scienze-e-Culture-Gastronomiche_2026_2027.pdf",
+    "https://www.unisg.it/assets/Regolamento_esoneri_pag_retta_CE_12-01-2026-1.pdf"
+  ],
+  "upec": [
+    "https://www.u-pec.fr/fr/etudiant-e-international-e/candidature-individuelle/etudiants-internationaux-hors-programme-d-echange-candidature-en-1ere-annee",
+    "https://www.u-pec.fr/fr/etudiant-e-international-e/candidature-individuelle/etudiants-internationaux-hors-programmes-d-echanges-verifications-linguistiques",
+    "https://www.u-pec.fr/fr/vie-de-campus/vie-pratique/logement",
+    "https://www.u-pec.fr/fr/etudiant-e-international-e/candidature-individuelle",
+    "https://www.u-pec.fr/fr/composantes",
+    "https://sante.u-pec.fr/",
+    "https://www.etudiant.gouv.fr/fr/logement-pour-les-etudiants-internationaux-193"
+  ],
+  "clermont-auvergne": [
+    "https://www.uca.fr/candidature-et-inscription/candidature/quelle-procedure",
+    "https://www.uca.fr/international/mobilites-internationales-et-bourses/venir-a-l-uca/je-suis-etudiant/etudier-hors-programme-dechange/comment-candidater-a-luca/titulaire-dun-diplome-etranger",
+    "https://www.uca.fr/international/mobilites-internationales-et-bourses/venir-a-l-uca/je-suis-etudiant/hebergement",
+    "https://www.uca.fr/"
+  ],
+  "unicaen": [
+    "https://www.unicaen.fr/formation/candidater-sinscrire/candidater/premiere-annee/",
+    "https://www.unicaen.fr/international/bienvenue/etudiants-individuels/logement/",
+    "https://www.unicaen.fr/international/bienvenue/etudiants-individuels/demarches/demarches-prealables/",
+    "https://ufr-sante.unicaen.fr/"
+  ],
+  "univ-rouen": [
+    "https://mesdemarches.univ-rouen.fr/les-plateformes-de-candidature/",
+    "https://mesdemarches.univ-rouen.fr/preparer-ma-rentree/ma-vie-quotidienne/logement/",
+    "https://www.univ-rouen.fr/international/apprendre-le-francais/",
+    "https://www.univ-rouen.fr/international/venir-a-luniversite-de-rouen-normandie-2/"
+  ],
+  "toulouse-jean-jaures": [
+    "https://www.univ-tlse2.fr/accueil/etudiant-etranger/venir-ut2j/etudiants-europeens-demande-dadmission-en-1re-annee-de-licence",
+    "https://www.univ-tlse2.fr/accueil/etudiant-etranger/venir-ut2j/candidater-a-titre-individuel",
+    "https://www.univ-tlse2.fr/accueil/vie-campus/vie-pratique/se-loger",
+    "https://www.univ-tlse2.fr/accueil/universite/organisation/ufr-departements-instituts-ecole-interne",
+    "https://www.iut-blagnac.fr/fr/",
+    "https://www.etudiant.gouv.fr/fr/logement-pour-les-etudiants-internationaux-193"
+  ],
+  "bourgogne-europe": [
+    "https://www.ube.fr/international-forthem/etudiants-internationaux/obtenir-un-diplome/",
+    "https://www.ube.fr/formation/procedures-dinscription-reinscription/premiere-annee-l1-but-deust/",
+    "https://www.ube.fr/formation/procedures-dinscription-reinscription/",
+    "https://www.ube.fr/formations-enseignees-en-anglais/",
+    "https://www.ube.fr/category/ufr-instituts-ecoles/"
+  ],
+  "u-picardie": [
+    "https://www.u-picardie.fr/international/venir-lupjv",
+    "https://www.u-picardie.fr/international/beneficier-dun-accueil-qualite",
+    "https://www.u-picardie.fr/"
+  ],
+  "univ-poitiers": [
+    "https://www.univ-poitiers.fr/trouver-une-formation/candidatures-et-inscriptions/vous-souhaitez-vous-inscrire-pour-la-premiere-fois-a-luniversite-de-poitiers/vous-souhaitez-vous-inscrire-en-premiere-annee-de-licence-ou-en-paces/",
+    "https://www.univ-poitiers.fr/trouver-une-formation/candidatures-et-inscriptions/",
+    "https://www.univ-poitiers.fr/souvrir-a-linternational/venir-a-luniversite-de-poitiers/etudiants/se-loger/",
+    "https://www.univ-poitiers.fr/souvrir-a-linternational/venir-a-luniversite-de-poitiers/etudiants/candidater-hors-programme/",
+    "https://ufrsante.univ-poitiers.fr/",
+    "https://www.etudiant.gouv.fr/fr/logement-pour-les-etudiants-internationaux-193"
+  ],
+  "univ-angers": [
+    "https://www.univ-angers.fr/fr/international/venir-a-l-ua/etudiant-hors-echange/candidatures.html",
+    "https://www.univ-angers.fr/fr/international/venir-a-l-ua/etudiant-hors-echange/preparez-votre-arrivee.html",
+    "https://www.univ-angers.fr/fr/international/venir-a-l-ua/etudiant-hors-echange.html"
+  ],
+  "univ-tours": [
+    "https://www.univ-tours.fr/international/etudes-stages-a-tours/etudiants-internationaux/2-1-procedure-dadmission-licence-1-ressortissant-de-lue",
+    "https://www.univ-tours.fr/international/etudes-stages-a-tours/etudiants-internationaux",
+    "https://www.univ-tours.fr/campus/vie-etudiante/vie-pratique/hebergement",
+    "https://www.univ-tours.fr/international/apprendre-le-francais/pour-entrer-a-luniversite",
+    "https://www.univ-tours.fr/international/etudes-stages-a-tours/nos-formations-en-anglais",
+    "https://www.etudiant.gouv.fr/fr/logement-pour-les-etudiants-internationaux-193"
+  ],
+  "cy-cergy-paris": [
+    "https://www.cyu.fr/formation/candidater-s-inscrire/candidatures",
+    "https://www.cyu.fr/vie-campus/se-loger-se-restaurer",
+    "https://www.cyu.fr/international/mobilite-etudiante/venir-mobilite-internationale/mobilite-individuelle",
+    "https://www.cyu.fr/international/accueil"
+  ],
+  "marie-louis-pasteur": [
+    "https://admission.umlp.fr/S-orienter-Candidater--etudiant-communautaire.awp",
+    "https://admission.umlp.fr/S-orienter-Candidater.awp",
+    "https://www.umlp.fr/venir-etudier-luniversite-marie-et-louis-pasteur",
+    "https://www.umlp.fr/le-logement-et-la-restauration",
+    "https://www.etudiant.gouv.fr/fr/logement-pour-les-etudiants-internationaux-193"
+  ],
+  "univ-reims": [
+    "https://www.univ-reims.fr/formation/candidature-inscription/candidature-et-pre-inscription/licence-1-l.as-et-but/admission-en-licence-1-licence-acces-sante-et-but,22100,36747.html",
+    "https://www.univ-reims.fr/formation/candidature-inscription/informations-sur-les-droits-d-inscription/les-logements-etudiants/les-logements-etudiants,23366,38788.html",
+    "https://www.univ-reims.fr/formation/candidature-inscription/candidature-et-pre-inscription/etudiants-internationaux/admission-des-etudiants-internationaux,22106,36757.html"
+  ],
+  "ubo-brest": [
+    "https://www.univ-brest.fr/fr/page/mobilite-individuelle-etape-1",
+    "https://www.univ-brest.fr/fr/page/informations-pratiques",
+    "https://www.univ-brest.fr/fr/page/candidatures",
+    "https://www.univ-brest.fr/"
+  ],
+  "paris-pantheon-assas": [
+    "https://www.assas-universite.fr/fr/formations/candidatures/inscriptions-en-licence",
+    "https://www.assas-universite.fr/fr/international/venir-etudier-luniversite/diplome/candidatures",
+    "https://www.assas-universite.fr/fr/international/venir-etudier-luniversite/diplome/niveau-francais-requis",
+    "https://www.assas-universite.fr/fr/campus/logement"
+  ],
+  "sorbonne-paris-nord": [
+    "https://www.univ-spn.fr/inscriptions/",
+    "https://www.univ-spn.fr/logement-restauration/",
+    "https://www.univ-spn.fr/etudiants-internationaux/"
+  ],
+  "montpellier-paul-valery": [
+    "https://www.univ-montp3.fr/fr/formation/admissions-inscriptions/candidater-%C3%A0-une-formation",
+    "https://www.univ-montp3.fr/fr/international/etudes-%C3%A0-montpellier-en-lmd/venir-en-individuel",
+    "https://saiec.univ-montp3.fr/node/68/",
+    "https://ufr2.www.univ-montp3.fr/fr/formations/offre-de-formation/toute-l-offre-de-formation.html",
+    "https://www.etudiant.gouv.fr/fr/logement-pour-les-etudiants-internationaux-193",
+    "https://www.enseignementsup-recherche.gouv.fr/fr/etudiants-etrangers-inscriptions-dans-l-enseignement-superieur-francais-46508",
+    "https://ufr2.www.univ-montp3.fr/fr/formations/offre-de-formation/licence-lmd-XA/arts-lettres-langues-ALL/licence-langues-etrangeres-appliquees-lea-L4FA6MCK.html"
+  ],
+  "paris-8": [
+    "https://www.univ-paris8.fr/",
+    "https://www.univ-paris8.fr/-Etudes-diplomes-",
+    "https://www.univ-paris8.fr/-Candidature-inscription-",
+    "https://www.univ-paris8.fr/Residences-etudiantes-du-CROUS",
+    "https://www.univ-paris8.fr/-vivre-sur-le-campus-",
+    "https://www.etudiant.gouv.fr/fr/logement-pour-les-etudiants-internationaux-193",
+    "https://www.enseignementsup-recherche.gouv.fr/fr/etudiants-etrangers-inscriptions-dans-l-enseignement-superieur-francais-46508",
+    "https://www.univ-paris8.fr/Dispense-de-la-procedure-de-Demande-d-Admission-Prealable-DAP"
+  ],
+  "rennes-2": [
+    "https://www.univ-rennes2.fr/formation/inscriptions-candidatures/licence-1",
+    "https://www.univ-rennes2.fr/venir-etudier-france/etudiantes-mobilite-individuelle",
+    "https://www.univ-rennes2.fr/campus/se-loger",
+    "https://www.univ-rennes2.fr/formation/venir-etudier-france",
+    "https://formations.univ-rennes2.fr/",
+    "https://www.etudiant.gouv.fr/fr/logement-pour-les-etudiants-internationaux-193",
+    "https://www.enseignementsup-recherche.gouv.fr/fr/etudiants-etrangers-inscriptions-dans-l-enseignement-superieur-francais-46508"
+  ],
+  "univ-st-etienne": [
+    "https://www.univ-st-etienne.fr/fr/formation/inscriptions-admissions.html",
+    "https://www.univ-st-etienne.fr/fr/international/etudiants-internationaux-incoming-students/candidater-a-l-universite.html",
+    "https://www.univ-st-etienne.fr/fr/vie-de-campus/vie-pratique/logement.html",
+    "https://www.univ-st-etienne.fr/fr/international-1-1/trouver-un-logement.html",
+    "https://www.univ-st-etienne.fr/fr/international/apprendre-le-francais.html",
+    "https://www.etudiant.gouv.fr/fr/logement-pour-les-etudiants-internationaux-193",
+    "https://www.enseignementsup-recherche.gouv.fr/fr/etudiants-etrangers-inscriptions-dans-l-enseignement-superieur-francais-46508"
+  ],
+  "univ-orleans": [
+    "https://www.univ-orleans.fr/fr/univ/formation/candidature-et-inscription/etudiants-internationaux",
+    "https://www.univ-orleans.fr/fr/univ/formation/candidature-et-inscription",
+    "https://www.univ-orleans.fr/fr/univ/formation/droits-dinscriptions/montant-des-droits-dinscription",
+    "https://www.univ-orleans.fr/fr/univ/international/venir-luniversite/etudiants-hors-echange",
+    "https://www.enseignementsup-recherche.gouv.fr/fr/etudiants-etrangers-inscriptions-dans-l-enseignement-superieur-francais-46508",
+    "https://www.etudiant.gouv.fr/fr/logement-pour-les-etudiants-internationaux-193",
+    "https://www.univ-orleans.fr/fr/univ/international/venir-luniversite/study-english",
+    "https://www.univ-orleans.fr/fr/univ/international/venir-luniversite/study-english/law-economics-classes"
+  ],
+  "unilim": [
+    "https://www.unilim.fr/admission/candidature/",
+    "https://www.unilim.fr/admission/je-suis-etudiant-international/",
+    "https://www.unilim.fr/u-pratique/accueil-et-accompagnement/les-bourses-specifiques-et-les-aides-financieres/",
+    "https://www.unilim.fr/",
+    "https://www.enseignementsup-recherche.gouv.fr/fr/etudiants-etrangers-inscriptions-dans-l-enseignement-superieur-francais-46508"
+  ],
+  "sorbonne-nouvelle": [
+    "https://www.sorbonne-nouvelle.fr/venir-en-tant-qu-etudiant-international-individuel-587330.kjsp?RH=1209061830093",
+    "https://www.sorbonne-nouvelle.fr/trouver-un-logement-etudiants-internationaux-individuels-591311.kjsp?RH=1209061830093",
+    "https://www.sorbonne-nouvelle.fr",
+    "https://www.enseignementsup-recherche.gouv.fr/fr/etudiants-etrangers-inscriptions-dans-l-enseignement-superieur-francais-46508"
+  ],
+  "gustave-eiffel": [
+    "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux/etudiants-en-mobilite-individuelle",
+    "https://www.univ-gustave-eiffel.fr/vie-de-campus/logement-et-restauration",
+    "https://www.univ-gustave-eiffel.fr/la-formation/candidatures-et-inscriptions",
+    "https://www.univ-gustave-eiffel.fr/international/cours-de-francais-langue-etrangere-fle",
+    "https://www.enseignementsup-recherche.gouv.fr/fr/etudiants-etrangers-inscriptions-dans-l-enseignement-superieur-francais-46508"
+  ],
+  "bordeaux-montaigne": [
+    "https://www.u-bordeaux-montaigne.fr/fr/formations/admission-inscription/etudiants_etrangers2.html",
+    "https://www.u-bordeaux-montaigne.fr/fr/international/venir-a-l-universite-bordeaux-montaigne/international-welcome-desk/logement-1.html",
+    "https://www.u-bordeaux-montaigne.fr/fr/formations/admission-inscription/francais-pour-non-francophones.html",
+    "https://www.u-bordeaux-montaigne.fr/fr/formations/admission-inscription.html",
+    "https://www.enseignementsup-recherche.gouv.fr/fr/etudiants-etrangers-inscriptions-dans-l-enseignement-superieur-francais-46508",
+    "https://www.u-bordeaux-montaigne.fr/fr/formations/admission-inscription/etudiants_etrangers2/page_1ere_ou_2eme_annee_de_licence2.html"
+  ],
+  "savoie-mont-blanc": [
+    "https://www.univ-smb.fr/formation/inscription-candidature/inscription-par-profils/etudiants-francais-ou-espace-economique-europeen-suisse/",
+    "https://www.univ-smb.fr/formation/inscription-candidature/informations-pratiques/liste-des-pieces-a-fournir/",
+    "https://www.univ-smb.fr/formation/inscription-candidature/informations-pratiques/bourses-et-aides-financieres/",
+    "https://www.univ-smb.fr/international/venir-a-luniversite/informations-pratiques-preparer-son-arrivee/",
+    "https://www.etudiant.gouv.fr/fr/logement-pour-les-etudiants-internationaux-193",
+    "https://www.enseignementsup-recherche.gouv.fr/fr/etudiants-etrangers-inscriptions-dans-l-enseignement-superieur-francais-46508"
+  ],
+  "uvsq": [
+    "https://www.uvsq.fr/mobilite-individuelle",
+    "https://www.uvsq.fr/les-types-de-logement-a-luniversite",
+    "https://www.uvsq.fr/arrivee-et-logement",
+    "https://www.uvsq.fr/candidatures-et-inscriptions",
+    "https://www.enseignementsup-recherche.gouv.fr/fr/etudiants-etrangers-inscriptions-dans-l-enseignement-superieur-francais-46508",
+    "https://www.uvsq.fr/inscriptions"
+  ],
+  "univ-pau": [
+    "https://ri.univ-pau.fr/fr/venir/mobilite-hors-programme/candidater.html",
+    "https://ri.univ-pau.fr/fr/venir/infos-pratiques/logement.html",
+    "https://formation.univ-pau.fr/fr/admission/candidater-a-l-universite.html",
+    "https://formation.univ-pau.fr/fr/colleges/eei-etudes-europeennes-internationales.html",
+    "https://www.enseignementsup-recherche.gouv.fr/fr/etudiants-etrangers-inscriptions-dans-l-enseignement-superieur-francais-46508",
+    "https://ri.univ-pau.fr/fr/venir/mobilite-hors-programme/candidater/candidat-ue.html",
+    "https://ri.univ-pau.fr/fr/venir/mobilite-hors-programme/candidater/niveaux-de-langue.html"
+  ],
+  "uphf": [
+    "https://www.uphf.fr/formation/candidatures-inscriptions/etudiants-internationaux-candidater-luphf-hors-echange",
+    "https://www.uphf.fr/universite/linternational/classes-internationales",
+    "https://www.uphf.fr/formation/candidatures-inscriptions/etudiants-internationaux-en-echange-international",
+    "https://www.uphf.fr/",
+    "https://www.enseignementsup-recherche.gouv.fr/fr/etudiants-etrangers-inscriptions-dans-l-enseignement-superieur-francais-46508"
+  ],
+  "univ-artois": [
+    "https://www.univ-artois.fr/formations/admission-inscription-transfert/candidater",
+    "https://www.univ-artois.fr/vie-etudiante/vie-pratique/logement",
+    "https://www.univ-artois.fr/international/venir-etudier-luniversite-dartois",
+    "https://www.univ-artois.fr/",
+    "https://www.etudiant.gouv.fr/fr/logement-pour-les-etudiants-internationaux-193",
+    "https://www.enseignementsup-recherche.gouv.fr/fr/etudiants-etrangers-inscriptions-dans-l-enseignement-superieur-francais-46508"
+  ],
+  "le-mans-universite": [
+    "https://www.univ-lemans.fr/fr/formation/candidater-s-inscrire/candidater/candidature-l1-etudiant-international.html",
+    "https://www.univ-lemans.fr/fr/reussir-ses-etudes/deux-campus/vie-pratique/logement.html",
+    "https://www.univ-lemans.fr/fr/reussir-ses-etudes/nous-choisir.html",
+    "https://www.univ-lemans.fr/fr/international/venir-etudier-en-france/venir-a-titre-individuel.html",
+    "https://www.etudiant.gouv.fr/fr/logement-pour-les-etudiants-internationaux-193",
+    "https://www.enseignementsup-recherche.gouv.fr/fr/etudiants-etrangers-inscriptions-dans-l-enseignement-superieur-francais-46508",
+    "https://www.univ-lemans.fr/fr/index.html"
+  ],
+  "bretagne-sud": [
+    "https://www.univ-ubs.fr/fr/formation-initiale-continue/formation-initiale/candidater.html",
+    "https://www.univ-ubs.fr/fr/vie-des-campus/vie-pratique/aides-ressources.html",
+    "https://www.univ-ubs.fr/fr/vie-des-campus/vie-pratique/dans-ma-ville-1.html",
+    "https://www.univ-ubs.fr/fr/index.html",
+    "https://www.enseignementsup-recherche.gouv.fr/fr/etudiants-etrangers-inscriptions-dans-l-enseignement-superieur-francais-46508"
+  ],
+  "univ-toulon": [
+    "https://www.univ-tln.fr/etudiant-etranger/",
+    "https://www.univ-tln.fr/logements-infos-pour-les-etudiants-internationaux/",
+    "https://www.univ-tln.fr/cours-de-francais-langue-etrangere/",
+    "https://www.univ-tln.fr/",
+    "https://www.enseignementsup-recherche.gouv.fr/fr/etudiants-etrangers-inscriptions-dans-l-enseignement-superieur-francais-46508"
+  ],
+  "univ-evry": [
+    "https://www.univ-evry.fr",
+    "https://www.univ-evry.fr/formation/comment-sinscrire/lyceen-ou-etudiant-etranger-jamais-inscrit-dans-lenseignement-superieur-en-france/ressortissant-de-lue/candidature-l1.html",
+    "https://www.univ-evry.fr/vie-de-campus/vie-pratique/logement.html",
+    "https://www.univ-evry.fr/formation/loffre-de-formation.html",
+    "https://www.univ-evry.fr/formation/loffre-de-formation/domaines-de-formation.html"
+  ],
+  "haute-alsace": [
+    "https://www.uha.fr",
+    "https://www.uha.fr/fr/admissions-inscriptions-scolarite/candidatures-admissions/candidatures-admissions-des-etudiants-internationaux.html",
+    "https://www.uha.fr/fr/vie-universitaire-1/hebergement-restauration-bourses.html",
+    "https://formations.uha.fr/fr/par-diplomes/licences.html"
+  ],
+  "ulco": [
+    "https://www.univ-littoral.fr",
+    "https://www.univ-littoral.fr/en-tant-quetudiant/",
+    "https://www.univ-littoral.fr/formation/admission-inscription/candidatures-admissions/",
+    "https://www.univ-littoral.fr/campus/vie-pratique/logement/",
+    "https://www.univ-littoral.fr/formation/offre-de-formation/licences/",
+    "https://www.univ-littoral.fr/formation/offre-de-formation/but/",
+    "https://www.campusfrance.org/fr/candidature-etudiant-europeen"
+  ],
+  "univ-perpignan": [
+    "https://www.univ-perp.fr",
+    "https://www.univ-perp.fr/international/venir-a-lupvd/hors-programme-dechange",
+    "https://formations.univ-perp.fr/diplome/licences",
+    "https://formations.univ-perp.fr/diplome/but",
+    "https://welcome.univ-perp.fr/",
+    "https://welcome.univ-perp.fr/chercher-un-logement"
+  ],
+  "la-rochelle-universite": [
+    "https://www.univ-larochelle.fr",
+    "https://www.univ-larochelle.fr/formation/admission-inscription-et-scolarite/candidatures-et-inscriptions/candidater-universite-la-rochelle/candidater-1ere-annee-de-licence/",
+    "https://www.univ-larochelle.fr/wp-content/uploads/Niveau-de-langue-francaise_licence_2025.pdf",
+    "https://www.univ-larochelle.fr/international/venir-etudier-luniversite/conseils-pratiques-aides/logements/",
+    "https://formations.univ-larochelle.fr/Licence",
+    "https://www.univ-larochelle.fr/formation/nos-formations/la-licence-a-luniversite/"
+  ],
+  "le-havre-normandie": [
+    "https://www.univ-lehavre.fr",
+    "https://www.univ-lehavre.fr/fr/formation/candidater-a-une-formation/licence-1-b-u-t-1-ou-cycle-preparatoire-ingenieur/",
+    "https://www.univ-lehavre.fr/fr/vie-de-campus/vie-quotidienne/se-loger-au-havre/",
+    "https://www.univ-lehavre.fr/fr/formation/offre-de-formation/"
+  ],
+  "avignon-universite": [
+    "https://univ-avignon.fr",
+    "https://univ-avignon.fr/international/etudiants-etrangers/",
+    "https://univ-avignon.fr/international/etudiants-etrangers/etudiants-internationaux/",
+    "https://univ-avignon.fr/campus/aides-aux-etudiants/se-loger/",
+    "https://formations.univ-avignon.fr/wp-content/uploads/2025/11/A4-Offre-de-formation-AU-2026-2027.pdf"
+  ],
+  "inalco": [
+    "https://www.inalco.fr",
+    "https://www.inalco.fr/candidater-un-cursus-diplomant",
+    "https://www.inalco.fr/formations/licences",
+    "https://www.inalco.fr/formations/licences-llcer",
+    "https://www.inalco.fr/se-loger"
+  ],
+  "utc-compiegne": [
+    "https://www.utc.fr",
+    "https://www.utc.fr/formations/candidater-a-lutc/candidater-au-diplome-dingenieur-utc/",
+    "https://www.utc.fr/formations/diplome-dingenieur/",
+    "https://www.utc.fr/utc/la-vie-etudiante/informations-pratiques/"
+  ],
+  "insa-toulouse": [
+    "https://www.insa-toulouse.fr/admissions-insa-toulouse/",
+    "https://www.groupe-insa.fr/preparer/comment-candidater/les-procedures/integrer-le-groupe-insa-en-1re-annee/bac-mathematiques-delivre-par-un-autre-pays-que-la-france",
+    "https://www.insa-toulouse.fr/offre-de-formation/",
+    "https://www.insa-toulouse.fr/se-loger/",
+    "https://www.insa-toulouse.fr/aides-financieres-et-materielles/"
+  ],
+  "sciences-po-bordeaux": [
+    "https://www.sciencespobordeaux.fr/fr/admissions/integrer-le-diplome-de-sciences-po-bordeaux.html",
+    "https://www.sciencespobordeaux.fr/fr/admissions/integrer-le-diplome-de-sciences-po-bordeaux/re-annee-du-cursus-general.html",
+    "https://www.sciencespobordeaux.fr/fr/admissions/etudiants-etrangers.html",
+    "https://www.sciencespobordeaux.fr/fr/admissions/droits_d_inscription.html",
+    "https://www.sciencespobordeaux.fr/fr/vie-etudiante/aides-et-vie-pratique/logement.html",
+    "https://www2.sciencespobordeaux.fr/reglement_droits_dinscription_modules.pdf"
+  ],
+  "sciences-po-lyon": [
+    "https://www.sciencespo-lyon.fr/admission/les-concours/",
+    "https://www.sciencespo-lyon.fr/admission/les-concours/concours-1-annee/",
+    "https://www.sciencespo-lyon.fr/la-vie-a-sciences-po-lyon/scolarite-vie-pratique/proceder-a-son-inscription/",
+    "https://www.sciencespo-lyon.fr/la-vie-a-sciences-po-lyon/logement/",
+    "https://www.sciencespo-lyon.fr/strategie-internationale/venir-etudier-a-spl/",
+    "https://sciencespo-lille.eu/admissions/premiere-annee/concours-commun/",
+    "https://www.reseau-scpo.fr/foire-aux-questions",
+    "https://www.sciencespo-lyon.fr/la-vie-a-sciences-po-lyon/scolarite-vie-pratique/proceder-a-son-inscription/faq/"
+  ],
+  "utt-troyes": [
+    "https://www.utt.fr",
+    "https://www.utt.fr/formations/diplome-d-ingenieur/candidater-en-tronc-commun",
+    "https://www.utt.fr/se-loger",
+    "https://www.utc.fr/formations/candidater-a-lutc/candidater-au-diplome-dingenieur-utc/",
+    "https://www.utt.fr/formations/diplome-d-ingenieur"
+  ],
+  "insa-rennes": [
+    "https://www.insa-rennes.fr/etudiants-internationaux-cycle1.html",
+    "https://www.groupe-insa.fr/preparer/comment-candidater/les-procedures/integrer-le-groupe-insa-en-1re-annee/bac-mathematiques-delivre-par-un-autre-pays-que-la-france",
+    "https://www.insa-rennes.fr/specialites-ingenieur-insa.html",
+    "https://www.insa-rennes.fr/premier-cycle-ingenieur-e.html",
+    "https://www.insa-rennes.fr/hebergement-etudiants.html"
+  ],
+  "sciences-po-lille": [
+    "https://sciencespo-lille.eu/admissions/premiere-annee/",
+    "https://sciencespo-lille.eu/admissions/premiere-annee/concours-commun/",
+    "https://sciencespo-lille.eu/admissions/premiere-annee/double-diplome-franco-allemand/",
+    "https://sciencespo-lille.eu/admissions/les-frais-de-scolarite/",
+    "https://sciencespo-lille.eu/vie-du-campus/vivre-a-lille/",
+    "https://www.reseau-scpo.fr/foire-aux-questions",
+    "https://sciencespo-lille.eu/foire-aux-questions/"
+  ],
+  "utbm": [
+    "https://www.utbm.fr",
+    "https://www.utbm.fr/admissions/inscription-cursus-ingenieur-2/",
+    "https://www.utbm.fr/formations/ingenieur/",
+    "https://www.utbm.fr/international/venir-etudier-a-lutbm/",
+    "https://www.utbm.fr/wp-content/uploads/2024/11/UTBM_Reserver_un_logement_2024.pdf"
+  ],
+  "uni-due": [
+    "https://www.uni-due.de/studierendensekretariat/zugang_mit_auslaendischen_abschluessen.php",
+    "https://www.uni-due.de/studienangebote/",
+    "https://www.uni-due.de/studienangebote/studiengang.php?id=20",
+    "https://www.uni-due.de/international/nach_der_zulassung.php",
+    "https://www.stw-edu.de/wohnen-internationales/wohnen/",
+    "https://www.uni-due.de/de/studium/stipendieninteressierte.php",
+    "https://www.uni-due.de/de/marketing/studierende.php"
+  ],
+  "uni-mainz": [
+    "https://www.studium.uni-mainz.de/en/your-application/applying-with-international-certificates/recognition/",
+    "https://www.studium.uni-mainz.de/meine-bewerbung/bewerbung-international/bewerbung-internationale-studierende/",
+    "https://fachbereiche.uni-mainz.de/",
+    "https://www.studium.uni-mainz.de/en/during-your-studies/organizing-your-studies/financial-matters/",
+    "https://www.foerdern-und-stiften.uni-mainz.de/start/deutschlandstipendium/",
+    "https://www.studierendenwerk-mainz.de/wohnen/faq",
+    "https://www.studium.uni-mainz.de/meine-bewerbung/bewerbung-international/sprachkenntnisse/"
+  ],
+  "tu-dortmund": [
+    "https://international.tu-dortmund.de/en/international-applicants/application/bachelor/application-information-for-eu/eea-nationals/",
+    "https://international.tu-dortmund.de/en/international-applicants/before-the-application/language-requirements/",
+    "https://www.tu-dortmund.de/en/prospective-students/degree-programs/bachelor/",
+    "https://international.tu-dortmund.de/en/international-applicants/before-the-application/costs/",
+    "https://www.tu-dortmund.de/en/campus/accommodation/",
+    "https://www.tu-dortmund.de/en/students/financing-of-studies/scholarships/deutschlandstipendium/",
+    "https://www.tu-dortmund.de/en/prospective-students/degree-programs/english-taught-degree-programs/"
+  ],
+  "uni-giessen": [
+    "https://www.uni-giessen.de/de/studium/bewerbung/erststudium/ba_la_rechtswiss/gruppeb",
+    "https://www.uni-giessen.de/en/international-pages/study/application/ug/uni-assist",
+    "https://www.uni-giessen.de/de/studium/studienangebot/bachelor",
+    "https://www.uni-giessen.de/de/studium/studienangebot/staatsexamen",
+    "https://www.uni-giessen.de/en/org/admin/departments/b/5/studoffice/sc",
+    "https://www.stwgi.de/wohnen/",
+    "https://www.uni-giessen.de/en/international-pages/study/language-proficiency/enrolment"
+  ],
+  "uni-kiel": [
+    "https://www.studium.uni-kiel.de/de/bewerbung-einschreibung/bewerbung/uni-assist",
+    "https://www.studium.uni-kiel.de/de/studienangebot/studienfaecher",
+    "https://www.uni-kiel.de/de/studium/studienfinanzierung",
+    "https://www.international.uni-kiel.de/en/incomings/planning-arrival-and-stay/accomodation",
+    "https://www.international.uni-kiel.de/en/incomings/application-admission/degree-seeking"
+  ],
+  "uni-bielefeld": [
+    "https://www.uni-bielefeld.de/international/come-in/studium/studium-mit-abschluss/bewerbung/",
+    "https://ekvv.uni-bielefeld.de/sinfo/publ/bachelor",
+    "https://www.uni-bielefeld.de/studium/studierende/start-ins-studium/finanzierung/",
+    "https://aktuell.uni-bielefeld.de/2026/03/17/bis-zum-5-mai-fuer-das-deutschlandstipendium-bewerben/",
+    "https://www.studierendenwerk-bielefeld.de/wohnen/bewerbung",
+    "https://www.uni-bielefeld.de/international/come-in/studium/studium-mit-abschluss/sprachkenntnisse/"
+  ],
+  "uni-kassel": [
+    "https://www.uni-kassel.de/uni/en/study/wirtschaftswissenschaften-bachelor/application-and-admission/application-and-study-guide-for-international-students.html",
+    "https://www.uni-kassel.de/uni/en/study/before-the-application/study-guide-for-international-students/studying-in-kassel.html",
+    "https://www.uni-kassel.de/uni/studium/alle-studiengaenge/bachelor-studiengaenge.html",
+    "https://www.uni-kassel.de/uni/en/study/during-studies/semester-fee.html",
+    "https://www.uni-kassel.de/einrichtung/ukt/das-deutschlandstipendium.html",
+    "https://www.studierendenwerk-kassel.de/wohnen",
+    "https://www.uni-kassel.de/uni/en/study/before-the-application/study-guide-for-international-students/studying-in-kassel/language-requirements.html"
+  ],
+  "th-koeln": [
+    "https://www.th-koeln.de/internationales/uni-assist_8379.php",
+    "https://www.th-koeln.de/internationales/deutschkenntnisse_30628.php",
+    "https://www.th-koeln.de/studium/alle-studiengaenge-auf-einen-blick_76.php",
+    "https://www.th-koeln.de/internationales/finanzierung_6561.php",
+    "https://www.th-koeln.de/studium/deutschlandstipendium_225.php",
+    "https://www.kstw.de/wohnen",
+    "https://www.th-koeln.de/studium/alle-studiengaenge-auf-einen-blick_76.php?courseofstudies_degree_de[]=Bachelor&courseofstudies_ln_de[]=englisch"
+  ],
+  "uni-wuppertal": [
+    "https://www.uni-wuppertal.de/en/international/international-students/application-and-admission/studies-with-degree/",
+    "https://www.uni-wuppertal.de/de/studium/studiengaenge/bachelor-und-staatsexamen/",
+    "https://www.uni-wuppertal.de/en/international/international-students/enrolment/tuition-and-other-fees-information-for-applicants/",
+    "https://stipendien.uni-wuppertal.de/de/studierende-studieninteressierte/deutschlandstipendium/",
+    "https://www.hochschul-sozialwerk-wuppertal.de/wohnen/wohnungssuche.html"
+  ],
+  "uni-marburg": [
+    "https://www.uni-marburg.de/en/studying/before-studying/application-admission-deadlines/undergraduate-application/prior-application",
+    "https://www.uni-marburg.de/en/studying/before-studying/application-admission-deadlines/undergraduate-application/application-admission",
+    "https://www.uni-marburg.de/de",
+    "https://www.uni-marburg.de/en/studying/during-studying/formalities-fees/information-about-contributions-and-fees",
+    "https://www.uni-marburg.de/de/universitaet/profil/universitaetundgesellschaft/fundraising/foerderprojekte/deutschlandstipendium",
+    "https://www.uni-marburg.de/en/studying/before-studying/get-started/housing",
+    "https://www.uni-marburg.de/de/studium/vor-dem-studium/studienangebot/data/physik-8-semester-mono-bachelor"
+  ],
+  "uni-potsdam": [
+    "https://www.uni-potsdam.de/de/studium/zugang/vor-bewerbung-immatrikulation/hzb",
+    "https://www.uni-potsdam.de/de/studium/zugang/immatrikulation-bachelor",
+    "https://www.uni-potsdam.de/de/studium/studienangebot/bachelor",
+    "https://www.uni-potsdam.de/de/studium/konkret/wohnen-finanzen/kosten",
+    "https://www.uni-potsdam.de/de/universitaetsstipendium/index",
+    "https://www.uni-potsdam.de/de/international/incoming/internationale-studierende/wohnen"
+  ],
+  "uni-regensburg": [
+    "https://www.uni-regensburg.de/international/wege-nach-regensburg/studienabschluss-an-der-ur/bewerbung",
+    "https://www.uni-regensburg.de/international/wege-nach-regensburg/studienabschluss-an-der-ur/sprachkenntnisse-fuer-das-studium",
+    "https://www.uni-regensburg.de/studieren/wege-ins-studium/studiengangsfinder",
+    "https://www.uni-regensburg.de/international/wege-nach-regensburg/studienabschluss-an-der-ur/studien-lebenskosten",
+    "https://www.uni-regensburg.de/studieren/deutschlandstipendium",
+    "https://www.uni-regensburg.de/studieren/rund-ums-studium/wohnen-in-regensburg",
+    "https://www.uni-regensburg.de/studieren/wege-ins-studium/studiengangsfinder?tx_solr[filter][0]=degreeType:Bachelor&tx_solr[filter][1]=courseLanguage:E"
+  ],
+  "hm-muenchen": [
+    "https://hm.edu/studium_1/studienberatung_1/foreign/uebersichts____startseite_variante_27.en.html",
+    "https://hm.edu/studium_1/studienberatung_1/foreign/rund_ums_studium.de.html",
+    "https://hm.edu/",
+    "https://hm.edu/studium_1/studienberatung_1/foerderung_und_finanzierung/deutschlandstipendium_neu_1/Startseite_Deutschlandstipendium.de.html",
+    "https://www.studierendenwerk-muenchen-oberbayern.de/wohnheime/",
+    "https://hm.edu/studiengange_de/studiengang_detail_2048.de.html",
+    "https://hm.edu/studiengange_de/studiengang_detail_1984.de.html"
+  ],
+  "uni-halle": [
+    "https://www.uni-halle.de/ssc/bewerbungsinformationen/ba-ma-studium/",
+    "https://studienangebot.uni-halle.de/",
+    "https://www.uni-halle.de/deutschland-stipendium/fuer-studierende/",
+    "https://studentenwerk-halle.de/studentisches-wohnen/faqs",
+    "https://studienangebot.uni-halle.de/business-economics-bachelor-180",
+    "https://studienangebot.uni-halle.de/engineering-and-management-bachelor-180"
+  ],
+  "uni-augsburg": [
+    "https://www.uni-augsburg.de/en/studium/bewerbung/bewerbung/internationale-bewerber/",
+    "https://www.uni-augsburg.de/de/studium/studienangebot/uebersicht/",
+    "https://www.uni-augsburg.de/en/studium/organisation-beratung/organisation-und-formales/semesterbeitrage/",
+    "https://www.uni-augsburg.de/en/studium/studieren-augsburg/finanzierung/",
+    "https://www.uni-augsburg.de/en/portal/internationals/abschluss/costs-financing-scholarships/",
+    "https://www.uni-augsburg.de/en/studium/studienangebot/uebersicht/",
+    "https://www.uni-augsburg.de/en/studium/studienangebot/uebersicht/english-and-american-studies-two-subject-bachelor-ba/"
+  ],
+  "uni-paderborn": [
+    "https://www.uni-paderborn.de/studium/international-office/degree-students/bewerbungsverfahren-fristen/bewerbergruppen",
+    "https://www.uni-paderborn.de/studienangebot",
+    "https://www.uni-paderborn.de/studium/international-office/degree-students/leben-in-paderborn-und-am-campus/finanzen",
+    "https://www.uni-paderborn.de/nachricht/123026",
+    "https://www.uni-paderborn.de/studium/wohnen"
+  ],
+  "haw-hamburg": [
+    "https://www.haw-hamburg.de/en/study/applications/international-applicants/",
+    "https://www.haw-hamburg.de/en/study/applications/international-applicants/uni-assist/",
+    "https://www.haw-hamburg.de/en/study/applications/applying-for-a-bachelors-degree-course/",
+    "https://www.haw-hamburg.de/studium/studiengaenge-a-z/",
+    "https://www.haw-hamburg.de/en/study/tuition-fees-living-expenses-and-scholarships/",
+    "https://www.haw-hamburg.de/en/study/campus-life/accommodation/",
+    "https://www.haw-hamburg.de/en/study/applications/international-applicants/language-skills/",
+    "https://www.haw-hamburg.de/en/bachelor-mechanical-engineering/"
+  ],
+  "uni-jena": [
+    "https://www.uni-jena.de/3860/studienangebot",
+    "https://www.uni-jena.de/7830/grundstaendige-studienbewerbung",
+    "https://www.uni-jena.de/225610/grundstaendiges-studium",
+    "https://www.uni-jena.de/1965/leben-in-jena",
+    "https://www.uni-jena.de/deutschlandstipendium"
+  ],
+  "rptu": [
+    "https://rptu.de/studienangebot/",
+    "https://rptu.de/studium/vor-dem-studium/bewerbung",
+    "https://rptu.de/studium/vor-dem-studium/bewerbung/deutschkenntnisse",
+    "https://rptu.de/ueber-die-rptu/leben-und-kultur/wohnen",
+    "https://rptu.de/deutschlandstipendium",
+    "https://rptu.de/international/bachelor/bewerber-landau/bewerbung-einschreibung",
+    "https://rptu.de/studienangebot/23167/Data_Analytics_in_Economics_and_Business-Wirtschaftswissenschaften-bachelor"
+  ],
+  "htw-berlin": [
+    "https://www.htw-berlin.de/studium/studiengaenge",
+    "https://www.htw-berlin.de/studium/bewerbung/bachelor-bewerbung",
+    "https://www.htw-berlin.de/studium/bewerbung/bachelor-bewerbung/bachelor-studiengaenge-mit-zulassungsbeschraenkung/bachelor-bewerbung-ueber-uni-assist-via-hochschulstart",
+    "https://www.htw-berlin.de/studium/bewerbung/zulassungsvoraussetzungen/sprachnachweis",
+    "https://www.htw-berlin.de/studium/studienorganisation/finanzierung-wohnen/wohnen-in-berlin",
+    "https://www.htw-berlin.de/studium/studienorganisation/finanzierung-wohnen/stipendium",
+    "https://www.htw-berlin.de/studium/bewerbung/bachelor-bewerbung/bachelor-studiengaenge-mit-zulassungsbeschraenkung/bachelor-bewerbung-ueber-htw-portal-via-hochschulstart",
+    "https://www.htw-berlin.de/studium/bewerbung/bachelor-bewerbung/bachelor-studiengaenge-mit-eignungspruefung"
+  ],
+  "uni-saarland": [
+    "https://www.uni-saarland.de/studium/angebot/bachelor.html",
+    "https://www.uni-saarland.de/studieren/international/bachelor-staatsexamen/eu/zulassungsfrei-und-jura.html",
+    "https://www.uni-saarland.de/studieren/international/bachelor-staatsexamen/eu/medizin-zahnmedizin-pharmazie.html",
+    "https://www.uni-saarland.de/studieren/international/infos/deutschkenntnisse.html",
+    "https://www.uni-saarland.de/studium/organisation/beitraege.html",
+    "https://www.uni-saarland.de/global/welcome-center/wohnen.html",
+    "https://www.uni-saarland.de/studieren/international/bachelor-staatsexamen/eu.html",
+    "https://www.uni-saarland.de/studieren/international/bachelor-staatsexamen/eu/zulassungsbeschraenkt-und-lehramt.html"
+  ],
+  "frankfurt-uas": [
+    "https://www.frankfurt-university.de/de/studium/bachelor-studiengange/",
+    "https://www.frankfurt-university.de/de/studium/internationale-zulassung/",
+    "https://www.frankfurt-university.de/de/studium/leben-und-studieren-in-frankfurt-am-main/",
+    "https://www.frankfurt-university.de/de/hochschule/hochschulforderung/deutschlandstipendium/",
+    "https://www.frankfurt-university.de/de/studium/bachelor-studiengange/international-business-administration-ba/fuer-studieninteressierte/",
+    "https://www.frankfurt-university.de/de/studium/bachelor-studiengange/international-finance-bsc/international-finance-bsc/",
+    "https://www.frankfurt-university.de/de/studium/bachelor-studiengange/international-business-information-systems-bsc/fuer-studieninteressierte/"
+  ],
+  "thm": [
+    "https://www.thm.de/site/studium/sie-wollen-studieren/studiengaenge.html?filter%5Bdegrees%5D%5B%5D=1",
+    "https://www.thm.de/site/international/incoming-wege-an-die-thm/bachelor-bewerbung.html",
+    "https://www.thm.de/site/studium/sie-starten-ihr-studium/wohnen.html",
+    "https://www.thm.de/site/dstip/fuer-studierende.html",
+    "https://www.thm.de/site/international/incoming-wege-an-die-thm/bachelor-bewerbung/uni-assist-bewerbungsverfahren-bachelor.html"
+  ],
+  "uni-oldenburg": [
+    "https://uol.de/studium/studienangebot/studiengaenge",
+    "https://uol.de/studium/bewerben/internationale-studierende",
+    "https://uol.de/internationale-studierende/sprachliche-voraussetzungen",
+    "https://uol.de/studium/gebuehren/semesterbeitraege",
+    "https://uol.de/internationale-studierende/studienaufenthalt-organisieren/wohnraumsuche",
+    "https://uol.de/studium/stipendien"
+  ],
+  "fh-muenster": [
+    "https://www.fh-muenster.de/de/studiengaenge",
+    "https://www.fh-muenster.de/de/studium/vor-dem-studium/bewerben-aus-dem-ausland",
+    "https://www.fh-muenster.de/de/studium/vor-dem-studium/bewerben-und-einschreiben",
+    "https://www.fh-muenster.de/de/studium/studienvorbereitender-sprachkurs-an-der-fh-muenster",
+    "https://www.fh-muenster.de/de/studium/rund-ums-studium/studium-wohnen",
+    "https://www.fh-muenster.de/de/studienfinanzierung/deutschlandstipendium",
+    "https://www.fh-muenster.de/de/internationaloffice/aus-dem-ausland/abschluss-studierende",
+    "https://www.fh-muenster.de/de/studium/vor-dem-studium/Zulassungsbeschraenkte-bachelorstudiengaenge"
+  ],
+  "uni-siegen": [
+    "https://www.uni-siegen.de/studienangebot",
+    "https://www.uni-siegen.de/auslaendische-abschluesse-bildungsauslaenderinnen",
+    "https://www.uni-siegen.de/deutschsprachige-studiengaenge-fuer-internationale-studierende",
+    "https://www.uni-siegen.de/wohnen-siegen",
+    "https://www.uni-siegen.de/semesterbeitrag",
+    "https://www.uni-siegen.de/studienfinanzierung",
+    "https://www.uni-siegen.de/starting/bewerbung-international",
+    "https://www.uni-siegen.de/starting/wie-bewerbe-ich-mich-internationale-studierende"
+  ],
+  "h-da": [
+    "https://h-da.de/studium/studienangebot/studiengaenge",
+    "https://h-da.de/studium/studienangebot/bewerbung/auslaendisches-zeugnis",
+    "https://h-da.de/studium/studentisches-leben/unterkunft",
+    "https://h-da.de/finanzierung",
+    "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-ba",
+    "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/motion-pictures-ba",
+    "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/augmented-and-virtual-reality-design-ba"
+  ],
+  "fh-aachen": [
+    "https://www.fh-aachen.de/studium/studienangebot/bachelorstudiengaenge",
+    "https://www.fh-aachen.de/studium/bewerben/internationale-bewerberinnen/bewerberinnen-mit-auslaendischen-bildungsnachweisen",
+    "https://www.fh-aachen.de/studium/studieren/finanzierung/stipendien",
+    "https://www.fh-aachen.de/studium",
+    "https://www.fh-aachen.de/studium/studiengaenge/global-business-and-economics-bsc",
+    "https://www.fh-aachen.de/studium/studiengaenge/kommunikationsdesign-ba"
+  ],
+  "fh-dortmund": [
+    "https://www.fh-dortmund.de/studieren/bewerben-einschreiben/bewerben-aus-dem-ausland/bewerbung-eu-angehoerige.php",
+    "https://www.fh-dortmund.de/studieren/bewerben-einschreiben/bewerben-aus-dem-ausland/vpd-von-uni-assist.php",
+    "https://www.fh-dortmund.de/studieren/bewerben-einschreiben/bewerben-aus-dem-ausland/deutsche-sprachpruefungen.php",
+    "https://www.fh-dortmund.de/studieren/bewerben-einschreiben/bewerben/index.php",
+    "https://www.fh-dortmund.de/studieren/leben-und-wohnen/wohnen.php",
+    "https://www.fh-dortmund.de/studieren/vorbereiten/studium-finanzieren/stipendien.php",
+    "https://www.fh-dortmund.de/studiengaenge/international-business-international-business-management-bachelor.php"
+  ],
+  "uni-osnabrueck": [
+    "https://www.uni-osnabrueck.de/studieren/unsere-studienangebote/studiengaenge-von-a-z",
+    "https://www.uni-osnabrueck.de/studieren/bewerbung-und-studienstart/bewerbung-zulassung-und-einschreibung/bewerbungsinformationen-fuer-internationale-studieninteressierte/internationale-studieninteressierte-aus-eu-und-ewr-laendern",
+    "https://www.uni-osnabrueck.de/studieren/bewerbung-und-studienstart/zugangsvoraussetzungen/zugangsvoraussetzungen-fuer-internationale-studieninteressierte",
+    "https://www.uni-osnabrueck.de/studieren/bewerbung-und-studienstart/guter-start-ins-studium/wohnen",
+    "https://www.uni-osnabrueck.de/studieren/kosten-stipendien-und-foerderung/deutschlandstipendium",
+    "https://www.uni-osnabrueck.de/studieren/kosten-stipendien-und-foerderung/kosten-des-studiums"
+  ],
+  "ovgu-magdeburg": [
+    "https://www.ovgu.de/studienangebot_bachelor.html",
+    "https://www.ovgu.de/International/Incoming+_+Wege+an+die+Universit%C3%A4t/Internationale+Studieninteressierte/Studium+mit+Abschluss.html",
+    "https://www.ovgu.de/International/Incoming+_+Wege+an+die+Universit%C3%A4t/Internationale+Studieninteressierte/Studium+mit+Abschluss/Allgemeine+Voraussetzungen.html",
+    "https://www.ovgu.de/Studieninteressierte/Studieng%C3%A4nge+von+A+bis+Z/Humanmedizin/Medizin.html",
+    "https://www.ovgu.de/Wohnen_und_Leben.html",
+    "https://www.ovgu.de/gebuehren.html",
+    "https://www.ovgu.de/International_Business_and_Economics_bachelor-path-5,76024,107032,48816,48822.html",
+    "https://www.ovgu.de/Internationales_Management_bachelor.html"
+  ],
+  "hs-osnabrueck": [
+    "https://www.hs-osnabrueck.de/studium/studienangebot/studiengaenge-a-z/",
+    "https://www.hs-osnabrueck.de/studium/rund-ums-studium/bewerbung/bewerbung-mit-internationalen-zeugnissen/",
+    "https://www.hs-osnabrueck.de/studium/studierendenleben/wohnen/",
+    "https://www.hs-osnabrueck.de/deutschlandstipendium/",
+    "https://www.hs-osnabrueck.de/studium/rund-ums-studium/finanzierung/"
+  ],
+  "hs-niederrhein": [
+    "https://www.hs-niederrhein.de/studienangebot/",
+    "https://www.hs-niederrhein.de/internationales/internationale-studieninteressierte/",
+    "https://www.hs-niederrhein.de/studienfinanzierung/",
+    "https://www.hs-niederrhein.de/internationales/welcome-centre/"
+  ],
+  "uni-rostock": [
+    "https://www.uni-rostock.de/studium/studienangebot/",
+    "https://www.uni-rostock.de/studium/studienangebot/medizinlife-sciences/",
+    "https://www.uni-rostock.de/en/study/international-students/degree-students/basic-courses-of-study-for-non-german-prospective-students/",
+    "https://www.uni-rostock.de/studium/internationale-studieninteressierte/studium-mit-abschluss/",
+    "https://www.uni-rostock.de/studium/lebensraum-hochschule/wohnen/",
+    "https://www.uni-rostock.de/studium/lebensraum-hochschule/stipendien/stiftungen/deutschlandstipendium/",
+    "https://www.uni-rostock.de/studium/internationale-studieninteressierte/studium-mit-abschluss/medizin-und-zahnmedizin/"
+  ],
+  "hs-rheinmain": [
+    "https://www.hs-rm.de/studium/vor-dem-studium/studienangebot",
+    "https://www.hs-rm.de/studium/vor-dem-studium/bewerbung-und-immatrikulation/bewerbung-mit-auslaendischen-zeugnissen",
+    "https://www.hs-rm.de/studium/im-studium/studienorganisation/semesterbeitrag",
+    "https://www.hs-rm.de/international/wege-an-die-hsrm/internationale-studierende/studium/stipendien-und-finanzierung",
+    "https://www.hs-rm.de/studium/im-studium/studienorganisation/wohnen",
+    "https://www.hs-rm.de/kooperationen/foerderkultur/deutschlandstipendium"
+  ],
+  "th-nuernberg": [
+    "https://www.th-nuernberg.de/studium-karriere/studien-und-bildungsangebot/bachelorstudiengaenge/",
+    "https://www.th-nuernberg.de/studium-karriere/zulassung-und-bewerbung/zulassungsvoraussetzungen/",
+    "https://www.th-nuernberg.de/internationales/international-academic-services/studieninteressierte/bewerbung/",
+    "https://www.th-nuernberg.de/internationales/ohm-international-school/internationale-studiengaenge/",
+    "https://www.th-nuernberg.de/studium-karriere/studentisches-leben/wohnen-in-nuernberg/",
+    "https://www.th-nuernberg.de/studium-karriere/studienfinanzierung/deutschlandstipendium/"
+  ],
+  "bht-berlin": [
+    "https://www.bht-berlin.de/studiengaenge",
+    "https://www.bht-berlin.de/719",
+    "https://www.bht-berlin.de/189",
+    "https://www.bht-berlin.de/2095",
+    "https://www.bht-berlin.de/4019",
+    "https://www.bht-berlin.de/en/680",
+    "https://www.bht-berlin.de/internationale-studierende"
+  ],
+  "hwr-berlin": [
+    "https://www.hwr-berlin.de/studium/studiengaenge/",
+    "https://www.hwr-berlin.de/studium/bewerbung/bachelor-bewerbung",
+    "https://www.hwr-berlin.de/studium/bewerbung/voraussetzungen-fuer-dein-studium",
+    "https://www.hwr-berlin.de/studium/international-studieren/international-students",
+    "https://www.hwr-berlin.de/studium/studieren-an-der-hwr-berlin/stipendien-und-auszeichnungen/deutschlandstipendium"
+  ],
+  "oth-regensburg": [
+    "https://www.oth-regensburg.de/studieren/studienganguebersicht",
+    "https://www.oth-regensburg.de/studieren/international/studium-in-regensburg/internationale-studierende",
+    "https://www.oth-regensburg.de/studieren/international/studium-in-regensburg/internationale-studierende/vor-der-anreise/bewerbung",
+    "https://www.oth-regensburg.de/studieren/international/studium-in-regensburg/internationale-studierende/deutschkenntnisse",
+    "https://www.oth-regensburg.de/studieren/international/studium-in-regensburg/internationale-studierende/vor-der-anreise/wohnen",
+    "https://www.oth-regensburg.de/studieren/international/studium-in-regensburg/internationale-studierende/studium-und-alltag/studienfinanzierung",
+    "https://www.oth-regensburg.de/studieren/international/studium-in-regensburg/internationale-studierende/hochschulzugangsberechtigung"
+  ],
+  "uni-bayreuth": [
+    "https://www.uni-bayreuth.de/studiengangsfinder",
+    "https://www.studierendenkanzlei.uni-bayreuth.de/de/studieninteressierte/internationale-bewerbende/degree-students/uni-assist/index.html",
+    "https://www.studierendenkanzlei.uni-bayreuth.de/de/studieninteressierte/internationale-bewerbende/degree-students/3-onlinebewerbung-dokumentenglossar/index.html",
+    "https://www.international-office.uni-bayreuth.de/de/come-to-bayreuth/welcome-services/Internationale-Studierende/index.html",
+    "https://www.uni-bayreuth.de/stipendien",
+    "https://www.uni-bayreuth.de/bachelor/african-studies-language-arts-philosophy",
+    "https://www.uni-bayreuth.de/bachelor/data-science-and-ai",
+    "https://www.uni-bayreuth.de/bachelor/bwl"
+  ],
+  "hs-duesseldorf": [
+    "https://www.hs-duesseldorf.de/studium/angebot/",
+    "https://www.hs-duesseldorf.de/studium/internationales/studierende/internationaleStudieninteressierte/bewerbung",
+    "https://www.hs-duesseldorf.de/studium/studieninteressierte/bewerbungsablauf",
+    "https://www.hs-duesseldorf.de/deutschkenntnisse",
+    "https://www.hs-duesseldorf.de/studium/studieninteressierte/wohnen",
+    "https://www.hs-duesseldorf.de/deutschlandstipendium"
+  ],
+  "uni-passau": [
+    "https://www.uni-passau.de/studium/studienangebot/studiengaenge",
+    "https://www.uni-passau.de/internationale-studienangebote",
+    "https://www.uni-passau.de/en/apply/application-methods",
+    "https://www.uni-passau.de/en/apply/requirements-for-study/requirements-for-intl-applicants",
+    "https://www.uni-passau.de/wohnen",
+    "https://www.uni-passau.de/stipendien"
+  ],
+  "uni-trier": [
+    "https://www.uni-trier.de/studium/studienangebot/bachelor",
+    "https://www.uni-trier.de/studium/bewerbung/faq",
+    "https://www.uni-trier.de/studium/bewerbung/deutsche-bewerber/studiengaenge-lehrsprache-deutsch",
+    "https://www.uni-trier.de/studium/leben/wohnen",
+    "https://www.uni-trier.de/en/studium/im-studium/studienfinanzierung/deutschlandstipendium/stipendiatin-werden/important-information-for-your-application",
+    "https://www.uni-trier.de/en/studies/during-your-studies/organizing-your-studies/re-registration",
+    "https://www.uni-trier.de/studium/studienanfang/studentisches-wohnen-in-trier",
+    "https://www.uni-trier.de/studium/zielgruppen/studienbewerberinnen/internationale-studienbewerberinnen"
+  ],
+  "ostfalia": [
+    "https://www.ostfalia.de/studieren/studiengaenge",
+    "https://www.ostfalia.de/bewerbung-und-einschreibung/bewerbung-mit-einem-auslaendischen-schulabschluss",
+    "https://www.ostfalia.de/bewerbung-und-einschreibung/krankenversicherung-und-semesterbeitrag",
+    "https://www.ostfalia.de/studieren/studieninteressierte/wohnen",
+    "https://www.ostfalia.de/studieren/studieninteressierte/studienfinanzierung-und-stipendien/stipendien",
+    "https://www.ostfalia.de/hochschule/fakultaeten/fakultaet-informatik/studieren-digital-technologies"
+  ],
+  "uni-greifswald": [
+    "https://www.uni-greifswald.de/studium/vor-dem-studium/studienangebot/studienfaecher/",
+    "https://www.uni-greifswald.de/international/incoming/studium-mit-abschluss-degree-seeking-students/bewerbungsverfahren-fuer-internationale-studienbewerber/",
+    "https://www.uni-greifswald.de/international/incoming/studium-mit-abschluss-degree-seeking-students/voraussetzungen-fuer-internationale-studienbewerber-1/",
+    "https://www.uni-greifswald.de/studium/vor-dem-studium/kosten-finanzierung/",
+    "https://www.uni-greifswald.de/leben/wohnen/studentenwohnheim/",
+    "https://www.uni-greifswald.de/studium/vor-dem-studium/kosten-finanzierung/finanzierung-des-studiums/studienstiftungen/deutschlandstipendium/informationen-zur-ausschreibung/"
+  ],
+  "hs-fulda": [
+    "https://www.hs-fulda.de/studienangebot/studiengaenge/abschluss/bachelor",
+    "https://hs-fulda.de/orientieren/bewerbung-fuer-ein-studium/bewerbung-mit-internationalen-zeugnissen/bachelor",
+    "https://www.hs-fulda.de/internationales/international-office/wege-nach-fulda/kosten-und-finanzierung",
+    "https://www.hs-fulda.de/internationales/international-office/wege-nach-fulda/erste-schritte/wohnen/wohnheime",
+    "https://www.hs-fulda.de/studium/kosten-finanzierung-stipendien/stipendien/deutschlandstipendium",
+    "https://www.hs-fulda.de/studium/wie-bewerbe-ich-mich/bewerbung-mit-internationalen-zeugnissen/bachelor"
+  ],
+  "uni-bamberg": [
+    "https://www.uni-bamberg.de/studienangebot/finde-deinen-studiengang/",
+    "https://www.uni-bamberg.de/studium/interesse-internationale/ohne-austauschprogramm-bachelor/wie-bewerbe-ich-mich/",
+    "https://www.uni-bamberg.de/studium/interesse-internationale/ohne-austauschprogramm-bachelor/vor-der-bewerbung/",
+    "https://www.uni-bamberg.de/studienstart/",
+    "https://www.uni-bamberg.de/studium/interesse/leben-in-bamberg/wohnen/",
+    "https://www.uni-bamberg.de/en/studies-at-the-university-of-bamberg/information-for-university-of-bamberg-students/study-organization/studienfoerderung-bafoegstipendien/stipendien-fuer-alle-studierenden/politisch-konfessionell-und-weltanschaulich-neutrale-foerderprogramme/deutschlandstipendium/"
+  ],
+  "th-deggendorf": [
+    "https://www.th-deg.de/studying-in-english",
+    "https://www.th-deg.de/en/study-with-us/course-choices/undergraduate-courses",
+    "https://www.th-deg.de/en/apply",
+    "https://www.th-deg.de/en/study-with-us/funding",
+    "https://th-deg.de/accommodation"
+  ],
+  "thws": [
+    "https://www.thws.de/en/studies-at-thws/studying-at-thws/degree-programmes/",
+    "https://www.thws.de/en/studies-at-thws/studying-at-thws/twin-programmes/",
+    "https://www.thws.de/en/studies-at-thws/application-enrolment-exams-internship/application/international-applicants/",
+    "https://www.thws.de/en/studies-at-thws/application-enrolment-exams-internship/admission-and-enrolment/language-entrance-requirements/",
+    "https://international.thws.de/en/thws-international/ways-to-thws/formalities-and-finances/",
+    "https://international.thws.de/en/thws-international/ways-to-thws/formalities-and-finances/accommodation/",
+    "https://www.thws.de/en/services-and-support/scholarships/national-scholarship/",
+    "https://international.thws.de/en/thws-international/ways-to-thws/formalities-and-finances/scholarships/"
+  ],
+  "hs-rhein-waal": [
+    "https://www.hochschule-rhein-waal.de/en/study/programmes-and-enrolment-modes/all-degree-programmes",
+    "https://www.hochschule-rhein-waal.de/en/study/before-starting-university/application-process/guide-for-international-applicants",
+    "https://www.hochschule-rhein-waal.de/en/study/before-starting-university/application-process/bachelors-degrees",
+    "https://www.hochschule-rhein-waal.de/en/study/all-about-university-life/costs-and-funding/tuition-fees",
+    "https://www.hochschule-rhein-waal.de/en/study/all-about-university-life/accommodation",
+    "https://www.hochschule-rhein-waal.de/en/study/all-about-university-life/costs-and-funding/scholarships"
+  ],
+  "manchester-met": [
+    "https://www.mmu.ac.uk/study/international/international-students/romania",
+    "https://www.mmu.ac.uk/study/international/before-you-apply/fees-and-funding/scholarships-and-funding/scholarships",
+    "https://www.mmu.ac.uk/study/accommodation/how-to-apply/accommodation-guarantee",
+    "https://www.mmu.ac.uk/study/undergraduate/subject",
+    "https://www.mmu.ac.uk/study/undergraduate/subject/engineering"
+  ],
+  "nottingham-trent": [
+    "https://www.ntu.ac.uk/international/countries/europe/romania",
+    "https://www.ntu.ac.uk/international/scholarships",
+    "https://www.ntu.ac.uk/life-at-ntu/accommodation/support/guarantee",
+    "https://www.ntu.ac.uk/international/frequently-asked-questions",
+    "https://www.ntu.ac.uk/study-and-courses/undergraduate/subject-areas",
+    "https://www.ntu.ac.uk/course/engineering"
+  ],
+  "uwe-bristol": [
+    "https://www.uwe.ac.uk/courses/international-study/country-or-region/romania",
+    "https://www.uwe.ac.uk/courses/funding/scholarships-and-bursaries/international-student-scholarships",
+    "https://www.uwe.ac.uk/life/accommodation/accommodation-guarantee",
+    "https://www.uwe.ac.uk/courses/applying/international-applications",
+    "https://www.uwe.ac.uk/courses/find-a-course/courses-by-subject"
+  ],
+  "birmingham-city": [
+    "https://www.bcu.ac.uk/international/bcu-in-your-country/romania",
+    "https://www.bcu.ac.uk/international/fees-costs-and-scholarships/ug-scholarships",
+    "https://www.bcu.ac.uk/international/preparing-for-the-uk/applying-for-accommodation",
+    "https://www.bcu.ac.uk/international/your-application/english-language-and-english-tests/accepted-qualifications",
+    "https://www.bcu.ac.uk/conservatoire/music/international-students/english-language-requirements",
+    "https://www.bcu.ac.uk/conservatoire/acting-and-theatre",
+    "https://www.bcu.ac.uk/conservatoire/music/how-to-apply"
+  ],
+  "anglia-ruskin": [
+    "https://www.aru.ac.uk/international/information-by-world-region/europe",
+    "https://www.aru.ac.uk/international/international-scholarships/international-undergraduate-scholarship",
+    "https://www.aru.ac.uk/student-life/accommodation/what-you-need-to-know/applying-for-accommodation",
+    "https://www.aru.ac.uk/international/entry-requirements",
+    "https://www.aru.ac.uk/study/undergraduate/medicine"
+  ],
+  "ulster": [
+    "https://www.ulster.ac.uk/global/apply/country/romania",
+    "https://www.ulster.ac.uk/global/apply/scholarships/the-global-excellence-scholarship",
+    "https://www.ulster.ac.uk/accommodation/need-to-know/application-process",
+    "https://www.ulster.ac.uk/courses",
+    "https://www.ulster.ac.uk/courses?query=engineering&level=undergraduate",
+    "https://www.ulster.ac.uk/courses?query=medicine&level=undergraduate"
+  ],
+  "sheffield-hallam": [
+    "https://www.shu.ac.uk/study-here/international/entry-requirements/entry-requirements-for-romania",
+    "https://www.shu.ac.uk/funding/scholarships-and-bursaries/transform-together-scholarships",
+    "https://www.shu.ac.uk/study-here/accommodation/apply",
+    "https://www.shu.ac.uk/study-here/international/tuition-fees",
+    "https://www.shu.ac.uk/funding/scholarships-and-bursaries",
+    "https://www.shu.ac.uk/funding/scholarships-and-bursaries/vice-chancellors-awards",
+    "https://www.shu.ac.uk/funding/scholarships-and-bursaries/student-success-scholarship"
+  ],
+  "liverpool-john-moores": [
+    "https://www.ljmu.ac.uk/study/courses/international-entry-requirements/romania",
+    "https://www.ljmu.ac.uk/international/thinking-of-applying/international-scholarships",
+    "https://www.ljmu.ac.uk/discover/your-student-experience/accommodation/when-and-how-to-request-accommodation",
+    "https://www.ljmu.ac.uk/study/courses/undergraduates",
+    "https://www.ljmu.ac.uk/study/subjects/engineering"
+  ],
+  "oxford-brookes": [
+    "https://www.brookes.ac.uk/study/international-students/your-country/other-countries",
+    "https://www.brookes.ac.uk/study/international-students/fees-and-funding/scholarships-and-financial-support",
+    "https://www.brookes.ac.uk/student-life/accommodation/prospective-students/how-to-apply",
+    "https://www.brookes.ac.uk/study/subject-areas",
+    "https://www.brookes.ac.uk/study/international-students/your-country"
+  ],
+  "city-st-georges": [
+    "https://www.citystgeorges.ac.uk/prospective-students/apply/entry-requirements",
+    "https://www.citystgeorges.ac.uk/prospective-students/apply/how-to-apply/undergraduate",
+    "https://www.citystgeorges.ac.uk/prospective-students/finance/funding/presidents-international-scholarship",
+    "https://www.citystgeorges.ac.uk/prospective-students/accommodation/applying-for-halls/undergraduate",
+    "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate",
+    "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/medicine"
+  ],
+  "greenwich": [
+    "https://www.gre.ac.uk/international/countries/romania",
+    "https://www.gre.ac.uk/finance/funding-your-studies/scholarships-and-bursaries",
+    "https://www.gre.ac.uk/accommodation/our-guarantee",
+    "https://www.gre.ac.uk/subjects",
+    "https://www.gre.ac.uk/bursaries/eu-bursary",
+    "https://www.gre.ac.uk/subjects/engineering"
+  ],
+  "salford": [
+    "https://www.salford.ac.uk/international/your-country-or-region/salford-and-romania",
+    "https://www.salford.ac.uk/international/scholarships/global-gold-excellence-scholarship",
+    "https://www.salford.ac.uk/international/scholarships/global-silver-excellence-scholarship",
+    "https://www.salford.ac.uk/accommodation/im-a-new-student",
+    "https://www.salford.ac.uk/school-of-science-engineering-and-environment/undergraduate-courses",
+    "https://www.salford.ac.uk/sitemap.xml"
+  ],
+  "durham": [
+    "https://www.durham.ac.uk/study/international/regional-pages/europe-/",
+    "https://www.durham.ac.uk/study/international/application-guidance/",
+    "https://www.durham.ac.uk/study/scholarships/international/",
+    "https://www.durham.ac.uk/colleges-and-student-experience/colleges/",
+    "https://www.durham.ac.uk/study/undergraduate/how-to-apply/entry-requirements/",
+    "https://www.durham.ac.uk/study/courses/h100/",
+    "https://www.durham.ac.uk/study/courses/m101/"
+  ],
+  "de-montfort": [
+    "https://www.dmu.ac.uk/international/en/entry-requirements.aspx",
+    "https://www.dmu.ac.uk/international/en/fees-and-scholarships/europe-access-scholarship.aspx",
+    "https://www.dmu.ac.uk/study/accommodation/international-student-accommodation.aspx",
+    "https://www.dmu.ac.uk/study/accommodation/guarantee.aspx",
+    "https://www.dmu.ac.uk/study/fees-funding/international-tuition-fees.aspx",
+    "https://www.dmu.ac.uk/study/courses/undergraduate-courses/undergraduate-courses.aspx",
+    "https://www.dmu.ac.uk/sitemap.xml"
+  ],
+  "ual": [
+    "https://www.arts.ac.uk/study-at-ual/apply/undergraduate",
+    "https://www.arts.ac.uk/study-at-ual/fees-and-funding/undergraduate-scholarships-and-funding",
+    "https://www.arts.ac.uk/study-at-ual/fees-and-funding/international-students-fees-funding-and-money",
+    "https://www.arts.ac.uk/study-at-ual/accommodation-services/booking-a-room-in-halls",
+    "https://www.arts.ac.uk/about-ual",
+    "https://www.arts.ac.uk/subjects"
+  ],
+  "lancashire": [
+    "https://www.lancashire.ac.uk/international-students/country/romania",
+    "https://www.lancashire.ac.uk/study/fees-and-finance/bursaries-and-scholarships/excellence",
+    "https://www.lancashire.ac.uk/accommodation",
+    "https://www.lancashire.ac.uk/subjects",
+    "https://www.lancashire.ac.uk/undergraduate/courses/medicine-mbbs",
+    "https://www.lancashire.ac.uk/undergraduate/courses/dental-surgery-bds",
+    "https://www.lancashire.ac.uk/undergraduate/courses/veterinary-medicine-surgery-bvms"
+  ],
+  "leeds-beckett": [
+    "https://www.leedsbeckett.ac.uk/international-students/countries/romania/romania-entry-requirements/",
+    "https://www.leedsbeckett.ac.uk/international-students/scholarships/eea-scholarships/",
+    "https://www.leedsbeckett.ac.uk/student-experience/accommodation/international-applicants/",
+    "https://www.leedsbeckett.ac.uk/international-students/countries/romania/",
+    "https://www.leedsbeckett.ac.uk/international-students/scholarships/eu-scholarships/",
+    "https://www.leedsbeckett.ac.uk/webapi/scholarshipsmodal/getscholarshipsmodal/?scholarship=cc5cebc2-4d77-425b-b421-ff3671cdb094&scholarshipcontext=c089e311-ef8a-4453-9de1-dae736979f0a"
+  ],
+  "glasgow-caledonian": [
+    "https://www.gcu.ac.uk/study/undergraduate/howtoapply",
+    "https://www.gcu.ac.uk/internationalstudy/howtoapply",
+    "https://www.gcu.ac.uk/study/scholarships/undergraduate/newtogcu",
+    "https://www.gcu.ac.uk/aboutgcu/services-and-facilities/caledoniancourt/howtoapply",
+    "https://www.gcu.ac.uk/currentstudents/lifeoncampus/accommodation",
+    "https://www.gcu.ac.uk/sitemap.xml",
+    "https://www.gcu.ac.uk/internationalstudy/europe",
+    "https://www.gcu.ac.uk/internationalstudy/howtoapply/englishlanguagerequirements"
+  ],
+  "south-wales": [
+    "https://www.southwales.ac.uk/international/your-country/romania/",
+    "https://www.southwales.ac.uk/international/fees-scholarships/eu-fees-and-scholarships/",
+    "https://www.southwales.ac.uk/international/fees-scholarships/international-scholarships/",
+    "https://www.southwales.ac.uk/accommodation/accommodation-guarantee/",
+    "https://www.southwales.ac.uk/sitemap.xml"
+  ],
+  "leicester": [
+    "https://le.ac.uk/study/international-students/how-to-apply",
+    "https://le.ac.uk/study/international-students/countries/europe",
+    "https://le.ac.uk/study/undergraduates/scholarships-bursaries-discounts/international-undergraduate-merit-scholarship",
+    "https://le.ac.uk/study/undergraduates/accommodation/how-to-apply",
+    "https://le.ac.uk/sitemap.xml"
+  ],
+  "kingston": [
+    "https://www.kingston.ac.uk/study/international-students/country-specific-information",
+    "https://www.kingston.ac.uk/study/international-students/english-language-entry-requirements",
+    "https://www.kingston.ac.uk/study/fees-and-funding/international-scholarships-and-bursaries",
+    "https://www.kingston.ac.uk/experience/accommodation",
+    "https://www.kingston.ac.uk/study/undergraduate/how-to-apply",
+    "https://www.kingston.ac.uk/sitemap.xml?page=1",
+    "https://www.kingston.ac.uk/experience/accommodation/halls-of-residence"
+  ],
+  "lancaster": [
+    "https://www.lancaster.ac.uk/study/entry-requirements/undergraduate-qualifications/",
+    "https://www.lancaster.ac.uk/study/undergraduate/how-to-apply/",
+    "https://www.lancaster.ac.uk/study/fees-and-funding/scholarships-and-bursaries/index.php",
+    "https://www.lancaster.ac.uk/accommodation/undergraduate/frequently-asked-questions/",
+    "https://www.lancaster.ac.uk/study/entry-requirements/undergraduate-english-requirements/index.php",
+    "https://www.lancaster.ac.uk/sitemap.xml",
+    "https://www.lancaster.ac.uk/study/fees-and-funding/scholarships-and-bursaries/undergraduate-eu-scholarship/",
+    "https://www.lancaster.ac.uk/study/undergraduate/courses/?subject=all"
+  ],
+  "plymouth": [
+    "https://www.plymouth.ac.uk/international/study/international-students-country-guides/romania",
+    "https://www.plymouth.ac.uk/international/how-to-apply/english-language-requirements",
+    "https://www.plymouth.ac.uk/study/funding/scholarships/international-welcome-to-plymouth-scholarship",
+    "https://www.plymouth.ac.uk/services/accommodation",
+    "https://www.plymouth.ac.uk/international/apply/undergraduate",
+    "https://www.plymouth.ac.uk/sitemaps/courses.xml"
+  ],
+  "east-london": [
+    "https://www.uel.ac.uk/how-apply-international-student",
+    "https://www.uel.ac.uk/international/guidance-your-region/entry-requirements",
+    "https://www.uel.ac.uk/international/regions/europe",
+    "https://www.uel.ac.uk/study/fees-funding/international-fees-funding/international-scholarships",
+    "https://www.uel.ac.uk/study/accommodation/how-apply-student-accommodation-uel-202627",
+    "https://www.uel.ac.uk/sitemap.xml"
+  ],
+  "edinburgh-napier": [
+    "https://www.napier.ac.uk/study-with-us/international-students/your-country/europe-and-eurasia/romania",
+    "https://www.napier.ac.uk/study-with-us/undergraduate/how-to-apply/the-application-process",
+    "https://www.napier.ac.uk/study-with-us/bursaries/european-union-undergraduate-scholarship",
+    "https://www.napier.ac.uk/study-with-us/accommodation",
+    "https://www.napier.ac.uk/napier-courses-study.xml",
+    "https://www.napier.ac.uk/courses/ba-hons-accounting-undergraduate-fulltime",
+    "https://www.napier.ac.uk/courses/bn-nursing-adult-undergraduate-fulltime"
+  ],
+  "sunderland": [
+    "https://www.sunderland.ac.uk/how-to-apply/international-students",
+    "https://www.sunderland.ac.uk/how-to-apply/english-language-requirements",
+    "https://london.sunderland.ac.uk/admissions/fees-scholarships/",
+    "https://www.sunderland.ac.uk/student-life/accommodation/accommodation-guarantee",
+    "https://www.sunderland.ac.uk/sitemap.xml",
+    "https://www.sunderland.ac.uk/scholarships-and-bursaries",
+    "https://www.sunderland.ac.uk/scholarships-and-bursaries/what-am-i-eligible-for",
+    "https://www.sunderland.ac.uk/scholarships-and-bursaries/guidance-notes"
+  ],
+  "brighton": [
+    "https://www.brighton.ac.uk/international/study-with-us/your-country-or-territory-info/romania-equivalencies.aspx",
+    "https://www.brighton.ac.uk/international/applying-here/how-to-apply/application-process/index.aspx",
+    "https://www.brighton.ac.uk/studying-here/fees-and-finance/undergraduate/international-students/scholarships/vice-chancellor-scholarships.aspx",
+    "https://www.brighton.ac.uk/accommodation-and-locations/university-accommodation/index.aspx",
+    "https://www.brighton.ac.uk/studying-here/applying-to-brighton/undergraduate/entry-requirements/english-language-requirements/index.aspx",
+    "https://www.brighton.ac.uk/sitemap.xml"
+  ],
+  "wolverhampton": [
+    "https://www.wlv.ac.uk/international/your-country/romania/",
+    "https://www.wlv.ac.uk/international/making-an-application/how-to-apply/",
+    "https://www.wlv.ac.uk/international/international-fees--scholarships/",
+    "https://www.wlv.ac.uk/university-life/accommodation/",
+    "https://www.wlv.ac.uk/sitemap-en.xml"
+  ],
+  "staffordshire": [
+    "https://www.staffs.ac.uk/international/your-country/romania",
+    "https://www.staffs.ac.uk/admissions/undergraduate",
+    "https://www.staffs.ac.uk/international/your-application-journey/scholarships-fees/scholarships/smart-scholarship",
+    "https://www.staffs.ac.uk/student-life/accommodation/guaranteed-accommodation",
+    "https://www.staffs.ac.uk/courses/undergraduate",
+    "https://www.staffs.ac.uk/international/your-application-journey/scholarships-fees/scholarships/vice-chancellors-scholarship",
+    "https://www.staffs.ac.uk/courses/undergraduate/subjects",
+    "https://www.staffs.ac.uk/courses/undergraduate/study/engineering"
+  ],
+  "west-london": [
+    "https://www.uwl.ac.uk/international/your-country/international-entry-requirements/romania",
+    "https://www.uwl.ac.uk/international/how-apply",
+    "https://www.uwl.ac.uk/international/fees-and-funding-international-students/international-scholarships-and-bursaries",
+    "https://www.uwl.ac.uk/student-life/accommodation",
+    "https://www.uwl.ac.uk/sitemap.xml?page=1",
+    "https://www.uwl.ac.uk/international/before-you-apply"
+  ],
+  "hertfordshire": [
+    "https://www.herts.ac.uk/international/guidance-for-your-region/europe-and-central-asia/romania",
+    "https://www.herts.ac.uk/international/apply",
+    "https://www.herts.ac.uk/international/scholarships-and-fees/scholarships",
+    "https://www.herts.ac.uk/international/coming-to-the-uk/accommodation",
+    "https://www.herts.ac.uk/sitemap.xml",
+    "https://www.herts.ac.uk/courses/undergraduate/mbbs-medicine"
+  ],
+  "bournemouth": [
+    "https://www.bournemouth.ac.uk/study/international/bu-your-country/romania",
+    "https://www.bournemouth.ac.uk/study/international/bu-your-country/romania/entry-requirements-romanian-students",
+    "https://www.bournemouth.ac.uk/study/undergraduate/fees-funding/scholarships/international-student-scholarships",
+    "https://www.bournemouth.ac.uk/why-bu/accommodation",
+    "https://www.bournemouth.ac.uk/study/undergraduate/courses/undergraduate-course-list",
+    "https://www.bournemouth.ac.uk/study/undergraduate/how-apply",
+    "https://www.bournemouth.ac.uk/study/undergraduate/fees-funding/scholarships/european-access-scholarship",
+    "https://www.bournemouth.ac.uk/study/undergraduate/fees-funding/scholarships/international-student-scholarships/bu-academic-excellence-scholarship-international"
+  ],
+  "uea": [
+    "https://www.uea.ac.uk/study/international-students/country-map/romania",
+    "https://www.uea.ac.uk/apply/international",
+    "https://www.uea.ac.uk/study/fees-and-funding/scholarships/international-ug-merit-scholarship",
+    "https://www.uea.ac.uk/study/international-students/accommodation-for-international-students",
+    "https://www.uea.ac.uk/sitemap.xml",
+    "https://www.uea.ac.uk/apply/our-admissions-policy/english-language-equivalencies",
+    "https://www.uea.ac.uk/course/undergraduate/bds-dental-surgery"
+  ],
+  "heriot-watt": [
+    "https://www.hw.ac.uk/study/how-to-apply/undergraduate-programmes",
+    "https://www.hw.ac.uk/study/how-to-apply/entry-requirements",
+    "https://www.hw.ac.uk/study/how-to-apply/entry-requirements/english-language-requirements",
+    "https://www.hw.ac.uk/study/fees-and-funding/scholarships-and-bursaries/undergraduate-european-union-scholarship",
+    "https://www.hw.ac.uk/campuses/edinburgh/accommodation/accommodation-guarantee",
+    "https://www.hw.ac.uk/sitemap.xml",
+    "https://www.hw.ac.uk/study/international-students/study-in-the-uk/information-for-your-country",
+    "https://www.hw.ac.uk/three-year-honours"
+  ],
+  "derby": [
+    "https://www.derby.ac.uk/undergraduate/apply/entry-requirements/international/",
+    "https://www.derby.ac.uk/study/fees-finance/scholarships/",
+    "https://www.derby.ac.uk/life/accommodation/applying/benefits-for-international-students/",
+    "https://www.derby.ac.uk/undergraduate/apply/",
+    "https://www.derby.ac.uk/undergraduate/courses/",
+    "https://www.derby.ac.uk/undergraduate/engineering-courses/"
+  ],
+  "lincoln-uk": [
+    "https://www.lincoln.ac.uk/studywithus/internationalstudents/entryrequirementsandyourcountry/romania/",
+    "https://www.lincoln.ac.uk/studywithus/scholarshipsandbursaries/internationalundergraduatescholarships/",
+    "https://www.lincoln.ac.uk/studywithus/internationalstudents/accommodation/",
+    "https://www.lincoln.ac.uk/studywithus/undergraduatestudy/howtoapply/",
+    "https://www.lincoln.ac.uk/studywithus/subjects/",
+    "https://www.lincoln.ac.uk/studentlife/accommodation/",
+    "https://www.lincoln.ac.uk/studywithus/subjects/engineering/"
+  ],
+  "robert-gordon": [
+    "https://www.rgu.ac.uk/study/apply/undergraduate-applicants",
+    "https://www.rgu.ac.uk/study/finance-funding/funding-and-scholarships/rgu-automatic-scholarship-for-eu-students",
+    "https://www.rgu.ac.uk/study/finance-funding/funding-and-scholarships/accommodation-scholarship-for-eu-students",
+    "https://www.rgu.ac.uk/life-at-rgu/accommodation/our-accommodation",
+    "https://www.rgu.ac.uk/study/international-students/english-language-requirements",
+    "https://www.rgu.ac.uk/study/types-of-study/undergraduate-courses",
+    "https://www.rgu.ac.uk/life-at-rgu/accommodation/apply-for-accommodation",
+    "https://www.rgu.ac.uk/study/international-students/your-country-or-territory"
+  ],
+  "london-south-bank": [
+    "https://www.lsbu.ac.uk/international/your-country/europe/romania",
+    "https://www.lsbu.ac.uk/international/fees-and-funding/scholarships",
+    "https://www.lsbu.ac.uk/international/fees-and-funding/scholarships/the-eu-impact-scholarship-eligible-countries",
+    "https://www.lsbu.ac.uk/student-life/accommodation",
+    "https://www.lsbu.ac.uk/study/undergraduate/how-to-apply",
+    "https://www.lsbu.ac.uk/study/study-at-lsbu/subjects"
+  ],
+  "huddersfield": [
+    "https://www.hud.ac.uk/international/applying-to-the-university/",
+    "https://www.hud.ac.uk/international/scholarships/",
+    "https://www.hud.ac.uk/uni-life/accommodation/",
+    "https://www.hud.ac.uk/international/courses-and-entry-requirements/international-entry-requirements/",
+    "https://www.hud.ac.uk/subjects/"
+  ],
+  "northampton": [
+    "https://www.northampton.ac.uk/international/your-country/europe-and-western-asia/",
+    "https://www.northampton.ac.uk/student-life/bursaries-scholarships-and-awards/international-scholarships/",
+    "https://www.northampton.ac.uk/student-life/accommodation/accommodation-guarantee/",
+    "https://www.northampton.ac.uk/international/how-to-apply/",
+    "https://www.northampton.ac.uk/courses/"
+  ],
+  "teesside": [
+    "https://www.tees.ac.uk/sections/international/country_details.cfm?country_id=48",
+    "https://www.tees.ac.uk/sections/international/eu_scholarship.cfm",
+    "https://www.tees.ac.uk/sections/accommodation/faqs.cfm",
+    "https://www.tees.ac.uk/sections/international/howtoapply.cfm",
+    "https://www.tees.ac.uk/undergraduate_courses/",
+    "https://www.tees.ac.uk/undergraduate_courses/engineering_&_construction/"
+  ],
+  "cardiff-met": [
+    "https://www.cardiffmet.ac.uk/international-students/country-specific-entry-requirements/",
+    "https://www.cardiffmet.ac.uk/international-students/fees-and-finance/international-scholarships/",
+    "https://www.cardiffmet.ac.uk/study/accommodation/how-we-allocate-rooms/",
+    "https://www.cardiffmet.ac.uk/international-students/how-to-apply/",
+    "https://www.cardiffmet.ac.uk/international-students/english-language-requirements/accepted-english-language-qualifications-by-country/",
+    "https://www.cardiffmet.ac.uk/study/undergraduate/subjects/",
+    "https://www.cardiffmet.ac.uk/study/study-in-welsh/"
+  ],
+  "edge-hill": [
+    "https://www.edgehill.ac.uk/study/apply/eu/romania/",
+    "https://www.edgehill.ac.uk/departments/support/international/fees-and-scholarships/",
+    "https://www.edgehill.ac.uk/study/accommodation/international/",
+    "https://www.edgehill.ac.uk/study/accommodation/",
+    "https://www.edgehill.ac.uk/departments/support/international/applying/",
+    "https://www.edgehill.ac.uk/departments/support/international/english-language-requirements/"
+  ],
+  "middlesex": [
+    "https://www.mdx.ac.uk/international/support-in-your-countries-and-regions/romania/",
+    "https://www.mdx.ac.uk/international/how-to-apply-as-an-international-student/",
+    "https://www.mdx.ac.uk/student-life/accommodation/what-to-know-about-halls/",
+    "https://www.mdx.ac.uk/study/subjects/",
+    "https://www.mdx.ac.uk/student-life/accommodation/"
+  ],
+  "keele": [
+    "https://www.keele.ac.uk/study/internationalstudents/yourcountry/europe/romania/",
+    "https://www.keele.ac.uk/study/undergraduate/tuitionfeesandfunding/undergraduatefunding/undergraduatebursariesandscholarshipsinternationalstudents/",
+    "https://www.keele.ac.uk/accommodation/guaranteedaccommodation/",
+    "https://www.keele.ac.uk/study/undergraduate/apply/",
+    "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/",
+    "https://www.keele.ac.uk/study/undergraduate/tuitionfeesandfunding/undergraduatefunding/undergraduatebursariesandscholarshipsinternationalstudents/thekeeleugglobalscholarship2027/",
+    "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/medicine/medicinehowtoapply/"
+  ],
+  "london-met": [
+    "https://www.londonmet.ac.uk/international/applying/countries/students-from-romania/",
+    "https://www.londonmet.ac.uk/applying/funding-your-studies/scholarships/eu-bright-futures-scholarship/",
+    "https://www.londonmet.ac.uk/services-and-facilities/accommodation/",
+    "https://www.londonmet.ac.uk/international/applying/",
+    "https://www.londonmet.ac.uk/subjects/"
+  ],
+  "hull": [
+    "https://www.hull.ac.uk/study/international-students/your-country/romania",
+    "https://www.hull.ac.uk/study/international-students/how-to-apply/undergraduate",
+    "https://www.hull.ac.uk/life-at-hull/accommodation",
+    "https://www.hull.ac.uk/study/international-students/fees-and-funding/undergraduate",
+    "https://www.hull.ac.uk/study/undergraduate/courses",
+    "https://www.hull.ac.uk/study/undergraduate/fees-and-funding/scholarships-and-awards",
+    "https://www.hull.ac.uk/study/undergraduate/fees-and-funding/scholarships-and-awards/international-undergraduate-fee-waivers",
+    "https://www.hull.ac.uk/study/undergraduate/fees-and-funding/scholarships-and-awards/chancellors-scholarship"
+  ],
+  "brunel": [
+    "https://www.brunel.ac.uk/international/your-country-and-region/Romania",
+    "https://www.brunel.ac.uk/scholarships/home",
+    "https://www.brunel.ac.uk/life/accommodation/international",
+    "https://www.brunel.ac.uk/international/applicants/how-to-apply-international-students/requirements-for-international-students-at-Brunel",
+    "https://www.brunel.ac.uk/study/undergraduate-study",
+    "https://www.brunel.ac.uk/scholarships/eu-undergraduate-discount",
+    "https://www.brunel.ac.uk/study/courses/medicine-mbbs"
+  ],
+  "canterbury-christ-church": [
+    "https://www.canterbury.ac.uk/study-here/international/find-your-country/romania",
+    "https://www.canterbury.ac.uk/study-here/international/guide-to-applying-for-international-students",
+    "https://www.canterbury.ac.uk/study-here/fees-and-funding/international-student-fees-and-funding",
+    "https://www.canterbury.ac.uk/study-here/student-life/accommodation",
+    "https://www.canterbury.ac.uk/study-here/international/english-language-requirements",
+    "https://www.canterbury.ac.uk/search/undergraduate-courses",
+    "https://www.canterbury.ac.uk/study-here/student-life/accommodation/accommodation-guarantee",
+    "https://www.canterbury.ac.uk/study-here/courses/medicine"
+  ],
+  "bangor": [
+    "https://www.bangor.ac.uk/international/countries/romania",
+    "https://www.bangor.ac.uk/international/scholarship",
+    "https://www.bangor.ac.uk/accommodation",
+    "https://www.bangor.ac.uk/international/applying",
+    "https://www.bangor.ac.uk/study/undergraduate",
+    "https://www.bangor.ac.uk/international/future/international-scholarship",
+    "https://www.bangor.ac.uk/international/future/deans-scholarship",
+    "https://www.bangor.ac.uk/study/cymraeg"
   ]
 }

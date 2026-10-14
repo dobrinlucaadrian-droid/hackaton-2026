@@ -13,6 +13,7 @@ import { curriculumLinkFor } from "@/lib/curricula";
 import { testimonialsFor } from "@/lib/testimonials";
 import { domains } from "@/lib/data";
 import { facultiesOf, facultyHref } from "@/lib/faculties";
+import { guideForCountry } from "@/lib/guides";
 import { ADMISSION_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, specializationsFor } from "@/lib/labels";
 import { roProgramsOf } from "@/lib/roPrograms";
 import { universities, universityById } from "@/lib/sheets";
@@ -72,6 +73,7 @@ export default async function UniversityPage({ params }: Props) {
   if (!u) notFound();
   const uniDomains = u.domainIds.map((d) => domains.find((x) => x.id === d)).filter((d): d is NonNullable<typeof d> => !!d);
   const planLink = u.region === "ro" ? curriculumLinkFor(u.id) : undefined;
+  const guide = guideForCountry(u.country); // the "how to apply" guide of this country, when there is one
   const catalog = catalogCountryOfSheet(u.id); // the country dataset that lists this university's programmes, if any
   const certs = u.certificates.map((c) => CERTIFICATE_LABEL[c]).filter(Boolean);
   const admission = u.admissionTypes.map((a) => ADMISSION_LABEL[a]).filter(Boolean);
@@ -105,6 +107,13 @@ export default async function UniversityPage({ params }: Props) {
             <BudgetBadge budget={u.budget} />
           </div>
           {u.about && <p className="mt-4 text-lg text-ink">{u.about}</p>}
+          {guide && (
+            <p className="mt-2">
+              <Link href={`/ghiduri/${guide.id}`} className="inline-flex min-h-11 items-center font-bold text-primary underline decoration-primary/40 underline-offset-2 hover:text-primary-dark">
+                {guide.title}: ghidul pas cu pas →
+              </Link>
+            </p>
+          )}
         </header>
 
         <div className="mt-5 grid gap-3 sm:grid-cols-3">

@@ -21,6 +21,22 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-14 10:16 — 236 de universități noi cu fișă în Marea Britanie, Germania, Franța, Italia, Danemarca și Olanda
+- Cerut: câte 50 de universități noi cu fișă completă în fiecare dintre cele șase țări ale ghidurilor, cele mai mari și mai accesibile românilor (în Danemarca și Olanda toate câte există)
+- Făcut: șase ajutoare au ales universitățile după datele oficiale de mărime (OfS în Anglia, Hochschulkompass în Germania, ministerul francez, USTAT în Italia, cu numărul de studenți cu bacalaureat românesc, registrele daneze și olandeze); 15 ajutoare au scris fișele doar din paginile oficiale; alte 15, independente, le-au recitit. Rezultat: 236 de fișe noi (50 Marea Britanie, 50 Germania, 49 Franța, 47 Italia, 22 Danemarca, 18 Olanda), acum 639 de universități cu fișă; la a doua citire 75 confirmate integral, 153 corectate (299 de corecturi confirmate, 23 reformulări prudente), 8 cu o parte neverificată. Patru universități alese au rămas fără fișă, pentru că site-ul lor nu se poate citi (Foggia, Insubria, Reggio Calabria, Grenoble Alpes). Corectate și patru fișe franceze mai vechi (cămin la Lyon 1, Lyon 3, Côte d'Azur; bursa de stat la Sciences Po). Ce nu s-a putut confirma și hotărârile luate sunt la sfârșitul `docs/de-verificat.md`
+- Fișiere: `apps/web/data/universities-abroad.json`, `apps/web/data/universities-index.json`, `apps/web/data/university-sources.json`, `docs/de-verificat.md`
+- Poartă: TRECUT (`node scripts/gate.mjs`: secrete, fișiere, registru, build, 134 de teste, aplicația pornește)
+- Neverificat: fișele noi nu au încă lista oficială de programe pe pagina lor (legătura cu catalogul fiecărei țări nu e făcută); verificarea a fost făcută de ajutoare automate, nu de un om; un ajutor a citit zece site-uri italiene printr-o filă din Chrome-ul utilizatorului, ceea ce nu era permis (doar pagini publice, fila închisă; interdicție dată tuturor ajutoarelor după aceea)
+- Urmează: legarea fișelor noi de catalogul de programe (Italia, Germania, Olanda, Franța); echipa citește hotărârile din `docs/de-verificat.md`
+
+### 2026-10-14 03:21 — ghiduri pe țări: cum aplici în Olanda, Marea Britanie, Germania, Danemarca, Italia și Franța
+- Cerut: ghiduri pentru cele șase țări unde merg cei mai mulți români; în aceeași cerere, câte 50 de universități noi cu fișă din fiecare țară (în lucru, vezi „Urmează”)
+- Făcut: șase ghiduri scrise din paginile oficiale (platformele naționale de înscriere, ministerele și agențiile fiecărei țări) și recitite fiecare de un al doilea verificator independent: 41 de corecturi confirmate și 6 reformulări prudente. Fiecare ghid are pașii în ordine, actele, limba de predare, costul în cuvinte, bursele și împrumuturile, cazarea, „bine de știut” și linkurile oficiale; fără sume și fără date calendaristice. Pagini noi: `/ghiduri` și `/ghiduri/[tara]`. Se ajunge la ele din josul fiecărei pagini, dintr-un rând nou pe pagina „Universități” și de pe fișa fiecărei universități din cele șase țări; meniul de sus a rămas neschimbat. Găsit la verificare: regula oficială daneză pentru bacalaureatul românesc (liceu teoretic față de tehnologic sau vocațional); bursa de stat franceză pentru cetățenii UE are mai multe căi decât arăta o pagină oficială, iar fișele existente erau corecte
+- Fișiere: `apps/web/data/guides.json` (nou), `apps/web/lib/guides.ts` (nou), `apps/web/lib/guides.test.ts` (nou), `apps/web/app/ghiduri/page.tsx` (nou), `apps/web/app/ghiduri/[tara]/page.tsx` (nou), `apps/web/lib/types.ts`, `apps/web/components/Shell.tsx`, `apps/web/app/universitati/page.tsx`, `apps/web/app/universitati/[id]/page.tsx`
+- Poartă: TRECUT (`node scripts/gate.mjs`: secrete, fișiere, registru, build, 134 de teste, aplicația pornește)
+- Neverificat: aspectul ghidurilor pe telefon; câteva afirmații din ghidul Italiei vin din paginile unor universități, nu dintr-o sursă națională (scutirea de taxă pentru venituri mici, calculul venitului unei familii din străinătate); camerele din colegiile de la Oxford; verificarea a fost făcută de ajutoare automate, nu de un om
+- Urmează: 240 de fișe noi de universități în cele șase țări (50 în Marea Britanie, Germania, Italia și Franța, 22 în Danemarca, 18 în Olanda — atâtea mai există în ultimele două), în scriere, apoi verificare dublă; de corectat nota de cămin la Lyon 1, Lyon 3 și Côte d'Azur și nota de bursă la Sciences Po
+
 ### 2026-10-14 00:14 — programele din România vin odată cu pagina
 - Cerut: partea tehnică să răspundă cât mai repede; din măsurători, echipa a ales ca lista de programe din România să fie pusă direct în pagină
 - Făcut: pe fișele universităților și facultăților din România, lista de programe de licență este scrisă de server în pagină, din fișierul catalogului (lista oficială HG 606/2026), în loc să fie cerută bazei de date după încărcare. Dispare „Se încarcă lista de programe...”; lista apare și dacă baza de date nu răspunde. Aspectul și conținutul sunt aceleași. Fișele din străinătate citesc în continuare lista din baza de date, pentru că acolo listele sunt prea mari. Lista grupată a devenit o componentă comună (`ProgramGroups`), folosită în ambele cazuri. Măsurători înainte de schimbare, pe versiunea de producție pornită local: server 13–18 ms pe pagină, lista de programe apărea după încă ~0,7 s
@@ -619,6 +635,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-14 03:00 `5dec06e` perf: render Romanian programme lists with the page
 - 2026-10-13 23:08 `c08b7a1` fix: recheck unconfirmed facts and audit the whole site
 - 2026-10-13 15:54 `01ecc44` feat: choose several cities in the university search
 - 2026-10-13 15:43 `c909e83` feat: add 367 double-checked faculty sheets for Romania
@@ -648,5 +665,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-06 00:27 `ce65453` feat: passwordless sign-in, account page and saving the result
 - 2026-10-06 00:06 `b4aeabc` feat: Convex schema, shared access rules and access tests
 - 2026-10-06 00:00 `2c23414` chore: start the production phase with Convex packages and the plan
-- 2026-10-05 11:28 `81704e7` feat: use the team logo for the site icon and the link preview
 <!-- commits:end -->

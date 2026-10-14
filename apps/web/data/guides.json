@@ -1,0 +1,673 @@
+[
+ {
+  "id": "olanda",
+  "country": "Olanda",
+  "title": "Cum aplici la facultate în Olanda",
+  "intro": "În Olanda poți studia la licență în neerlandeză sau în engleză. Ca cetățean al UE plătești aceeași taxă stabilită de stat ca studenții olandezi, dar camerele sunt puține și chiria este cea mai mare cheltuială. Admiterea se face pe bază de dosar: te înscrii pe platforma națională Studielink, iar universitatea îți verifică diploma și limba.",
+  "steps": [
+   {
+    "title": "Alege tipul de universitate și programul",
+    "text": "Există două tipuri: universități de cercetare (licență de 3 ani, mai teoretică) și universități de științe aplicate, numite „hogeschool” (licență de 4 ani, practică, cu stagii). Citește pagina programului pe site-ul universității: acolo sunt condițiile de admitere, care diferă de la un program la altul."
+   },
+   {
+    "title": "Vezi dacă programul are locuri limitate",
+    "text": "Unele programe sunt „numerus fixus”: au un număr fix de locuri și fac selecție. Pentru ele termenul de înscriere este iarna, mult mai devreme decât pentru celelalte programe, care au termen primăvara. Verifică data exactă pe Studielink și la universitate."
+   },
+   {
+    "title": "Fă-ți cont pe Studielink",
+    "text": "Studielink este platforma oficială de înscriere. Dacă nu locuiești în Olanda, îți faci cont fără DigiD (codul digital al locuitorilor Olandei): încarci o poză clară a pașaportului sau a cărții de identitate, treci adresa ta din România, o adresă de e-mail pe care o folosești doar tu și numărul de telefon. Activezi contul din linkul primit pe e-mail, iar la fiecare intrare primești un cod prin SMS. Verifică atent numele: după ce contul este creat nu îl mai poți schimba și apare pe diplomă."
+   },
+   {
+    "title": "Trimite cererea de înscriere",
+    "text": "În Studielink adaugi studiile de până acum (dacă ești încă în clasa a XII-a, alegi că nu ai încă diploma) și trimiți cererea pentru programul ales. Într-un an universitar poți trimite cel mult patru cereri. În Studielink nu poți încărca acte: pe acestea le trimiți direct universității, cum îți spune ea. Întreabă universitatea dacă înscrierea se face doar prin Studielink: unele folosesc altă cale pentru studenții din străinătate."
+   },
+   {
+    "title": "Trimite actele cerute de universitate",
+    "text": "Universitatea îți cere documentele (diplomă sau situație școlară, dovada limbii) și îți evaluează dosarul; ea ia decizia finală despre diploma ta. Dacă ai aplicat până la termenul din primăvară, ai dreptul la o „verificare a alegerii” (interviu, chestionar online sau o activitate de probă). La unele programe ea este obligatorie: dacă lipsești fără un motiv întemeiat, îți pierzi dreptul de a fi admis."
+   },
+   {
+    "title": "La numerus fixus: selecția și locul",
+    "text": "După selecție primești prin Studielink un număr de ordine, primăvara. Dacă ți se oferă un loc, trebuie să îl accepți în Studielink în două săptămâni, altfel locul merge la următorul candidat."
+   },
+   {
+    "title": "Plătește taxa și caută locuință",
+    "text": "După ce ești admis, universitatea îți spune pașii următori, inclusiv plata taxei. Plata o aranjezi în Studielink, de exemplu prin debit direct (autorizare digitală); urmărește lista „To do” și mesajele din contul tău. Caută cameră cât mai devreme: locuința trebuie aranjată înainte să ajungi în Olanda."
+   }
+  ],
+  "documents": [
+   "Pașaport sau carte de identitate valabilă, cu banda de litere și cifre de jos vizibilă în poză (pentru contul Studielink)",
+   "Diploma de bacalaureat; dacă ești în clasa a XII-a, universitatea îți spune ce acte trimiți până o primești",
+   "Dovada nivelului de engleză, printr-un test recunoscut (de exemplu Cambridge, IELTS sau TOEFL iBT), pentru programele în engleză",
+   "Dovada nivelului de neerlandeză, pentru programele predate în neerlandeză",
+   "Alte acte cerute de program, de exemplu foaia matricolă sau traduceri (lista exactă este pe pagina programului, pe site-ul universității)"
+  ],
+  "language": "Se predă în neerlandeză și în engleză. Ambele tipuri de universități au programe internaționale, predate în engleză; le găsești în căutarea oficială Studyfinder, de pe Study in NL. Pentru un program în engleză trebuie să fi trecut un test recunoscut, de exemplu Cambridge, IELTS sau TOEFL iBT; nota cerută diferă de la o universitate la alta. Pentru un program în neerlandeză trebuie să dovedești că știi limba destul de bine, de obicei prin examenul de stat NT2; unele universități au propriul examen.",
+  "costs": "Ca cetățean al UE plătești taxa legală, stabilită de stat, la fel ca un student olandez, dacă programul este finanțat de stat și nu ai deja o diplomă de licență finanțată de statul olandez. Altfel plătești taxa universității, de obicei mai mare. Studenții din afara UE plătesc taxe mult mai mari. Unele universități cer celor fără studii în Olanda o taxă de aplicare; unele o dau înapoi la înscriere. Cea mai mare cheltuială din fiecare lună este chiria, urmată de mâncare. Dacă ai un loc de muncă, fie și cu jumătate de normă, ești obligat să îți faci asigurarea de sănătate olandeză.",
+  "funding": "Poți cere de la DUO, agenția de stat, un împrumut care acoperă taxa de școlarizare, dacă ești cetățean al UE, ai sub 30 de ani și ești student la zi; îl dai înapoi cu dobândă după studii. Sprijinul complet pentru studenți („student finance”) îl primești doar dacă tu, un părinte sau partenerul tău lucrați în Olanda, plătit, un număr minim de ore pe lună și cu un venit minim, sau dacă locuiești acolo de cel puțin cinci ani la rând. DUO verifică orele după aceea, iar dacă nu s-a lucrat destul, dai banii înapoi. Bursele depind de universitate și de program.",
+  "housing": "Olanda are o lipsă mare de locuințe pentru studenți: nu sunt camere pentru toată lumea. De obicei studenții nu stau în campus, ci în case de studenți din oraș, închiriate de la organizații de locuințe sau de la proprietari privați. Unele universități au câteva camere pentru studenții noi; întreabă din timp. Începe căutarea cât mai devreme și aranjează camera înainte să pleci.",
+  "goodToKnow": [
+   "Nuffic, organizația olandeză care compară diplomele străine, pune diploma de bacalaureat din România la nivelul diplomei VWO, cea cu care elevii olandezi intră la universitățile de cercetare.",
+   "Condițiile de admitere le stabilește fiecare universitate, pentru fiecare program: poate cere anumite materii sau note, chiar dacă diploma ta este recunoscută.",
+   "Într-un an poți aplica la cel mult două programe numerus fixus. La medicină, stomatologie, igienă dentară și fizioterapie poți trimite o singură cerere pentru fiecare program (de exemplu una la medicină și una la stomatologie).",
+   "Dacă trimiți prima cerere după termenul din primăvară, universitatea te poate refuza, chiar dacă îndeplinești condițiile.",
+   "Dacă vei locui în Olanda mai mult de patru luni, trebuie să te înregistrezi la primărie în cinci zile de la sosire. Atunci primești numărul BSN, de care ai nevoie în relația cu statul.",
+   "Dacă doar studiezi, poți folosi de obicei cardul european de sănătate; întreabă casa de asigurări din România. Dacă te angajezi în Olanda, asigurarea de sănătate olandeză devine obligatorie.",
+   "Atenție la țepe cu chirii: nu semna un contract fără să fi văzut camera, măcar într-un tur online în care vezi clar persoana, și nu plăti comisioane de intermediere."
+  ],
+  "links": [
+   {
+    "label": "Studielink – platforma oficială de înscriere",
+    "url": "https://www.studielink.nl/"
+   },
+   {
+    "label": "Studielink – termenele de înscriere",
+    "url": "https://info.studielink.nl/en/how-to-use-studielink/make-sure-you-are-on-time"
+   },
+   {
+    "label": "Study in NL – cum aplici, pas cu pas",
+    "url": "https://www.studyinnl.org/plan-your-stay/how-to-apply"
+   },
+   {
+    "label": "Study in NL – taxe de școlarizare",
+    "url": "https://www.studyinnl.org/finances/tuition-fees"
+   },
+   {
+    "label": "Study in NL – cum găsești locuință",
+    "url": "https://www.studyinnl.org/life-in-nl/finding-a-place-to-live"
+   },
+   {
+    "label": "Nuffic – cum este comparată diploma din România",
+    "url": "https://www.nuffic.nl/en/education-systems/romania"
+   },
+   {
+    "label": "DUO – sprijin financiar pentru cetățenii UE",
+    "url": "https://duo.nl/particulier/student-finance-citizens-eu-eer-switzerland-or-uk/eligibility.jsp"
+   },
+   {
+    "label": "DUO – împrumutul pentru taxa de școlarizare",
+    "url": "https://www.duo.nl/particulier/student-finance/tuition-fee-loan.jsp"
+   },
+   {
+    "label": "Studielink – ghiduri pas cu pas (cont fără DigiD, plata taxei)",
+    "url": "https://info.studielink.nl/en/how-to-use-studielink/step-by-step-plans"
+   },
+   {
+    "label": "Study in NL – asigurarea de sănătate",
+    "url": "https://www.studyinnl.org/plan-your-stay/healthcare-insurance"
+   },
+   {
+    "label": "Guvernul Olandei – înregistrarea la primărie și numărul BSN",
+    "url": "https://www.government.nl/faq/when-should-i-register-with-the-personal-records-database-as-a-resident"
+   },
+   {
+    "label": "DUO – cine plătește taxa legală",
+    "url": "https://duo.nl/particulier/tuition-fees.jsp"
+   }
+  ],
+  "sources": [
+   "https://www.studyinnl.org/plan-your-stay/how-to-apply",
+   "https://www.studyinnl.org/plan-your-stay/admission-requirements",
+   "https://www.studyinnl.org/dutch-education/bachelors",
+   "https://www.studyinnl.org/dutch-education/universities-of-applied-sciences",
+   "https://www.studyinnl.org/dutch-education/research-universities",
+   "https://www.studyinnl.org/finances/tuition-fees",
+   "https://www.studyinnl.org/finances/daily-student-expenses-and-cost-of-living-in-the-netherlands",
+   "https://www.studyinnl.org/life-in-nl/finding-a-place-to-live",
+   "https://info.studielink.nl/en/how-to-use-studielink/make-sure-you-are-on-time",
+   "https://info.studielink.nl/en/how-to-use-studielink/verification-personal-details-studielink",
+   "https://www.nuffic.nl/en/education-systems/romania",
+   "https://duo.nl/particulier/student-finance-citizens-eu-eer-switzerland-or-uk/eligibility.jsp",
+   "https://www.duo.nl/particulier/student-finance/tuition-fee-loan.jsp",
+   "https://duo.nl/particulier/student-finance-citizens-eu-eer-switzerland-or-uk/supporting-documents.jsp"
+  ]
+ },
+ {
+  "id": "marea-britanie",
+  "country": "Marea Britanie",
+  "title": "Cum aplici la facultate în Marea Britanie",
+  "intro": "Se predă în engleză, iar la toate universitățile aplici printr-o singură platformă, UCAS. După Brexit, un român fără statut de rezident în Marea Britanie este tratat ca student internațional: plătește taxe mari, nu primește împrumut de la stat și are nevoie de viză de student. Este o țară scumpă, așa că planul de bani contează la fel de mult ca notele.",
+  "steps": [
+   {
+    "title": "Alege programele și verifică cerințele",
+    "text": "Caută programele pe UCAS și citește pe site-ul fiecărei universități ce cere de la candidații cu bacalaureat românesc și ce nivel de engleză. Fiecare universitate își stabilește singură condițiile de admitere."
+   },
+   {
+    "title": "Fă-ți cont pe UCAS și alege până la cinci opțiuni",
+    "text": "Într-o singură cerere poți trece cel mult cinci programe, la aceeași universitate sau la universități diferite. La medicină, stomatologie și medicină veterinară poți folosi cel mult patru opțiuni, iar de obicei poți aplica fie la Oxford, fie la Cambridge, nu la amândouă."
+   },
+   {
+    "title": "Scrie scrisoarea personală și cere recomandarea",
+    "text": "Scrisoarea personală (personal statement) are trei întrebări: de ce vrei acest domeniu, cum te-a pregătit școala și ce ai făcut în afara școlii. Recomandarea o scrie un profesor sau altcineva care te cunoaște de la școală, nu o rudă sau un prieten."
+   },
+   {
+    "title": "Trimite cererea la timp",
+    "text": "Plătești o taxă de înscriere pe UCAS și trimiți cererea. Pentru Oxford, Cambridge și cele mai multe programe de medicină, stomatologie și medicină veterinară termenul este toamna, cu aproape un an înainte de începerea cursurilor; pentru celelalte programe este iarna. Verifică datele pe UCAS."
+   },
+   {
+    "title": "Urmărește răspunsurile și acceptă o ofertă",
+    "text": "Universitățile îți răspund prin contul UCAS. Oferta poate fi condiționată (mai ai de îndeplinit condiții, de obicei rezultatele la examene) sau fără condiții. Unele programe cer și un test de admitere, un interviu sau un formular al universității, deci citește cu atenție mesajele primite. După ce ai toate răspunsurile, alegi o ofertă ca primă opțiune (firm) și, dacă aceasta este condiționată, poți păstra încă una ca rezervă (insurance); pe celelalte le refuzi. Termenul tău de răspuns apare în cererea UCAS."
+   },
+   {
+    "title": "Cere viza de student",
+    "text": "După ce oferta ta este fără condiții, universitatea îți trimite un număr numit CAS. Cu el ceri online viza de student (Student visa); poți face cererea cel mai devreme cu șase luni înainte de începerea cursurilor."
+   },
+   {
+    "title": "Cere cazare și înscrie-te",
+    "text": "Locul în cămin îl ceri direct la universitate, nu prin UCAS, de obicei după ce ai acceptat oferta. Respectă termenul de cazare al universității, apoi te înscrii la sosire."
+   }
+  ],
+  "documents": [
+   "Diploma de bacalaureat și foaia matricolă; dacă nu ai dat încă bacalaureatul, îl treci în cererea UCAS ca examen în așteptare",
+   "Scrisoarea personală (personal statement), scrisă în engleză",
+   "O recomandare de la un profesor sau de la școală",
+   "Dovada că știi engleză, de felul cerut de universitate",
+   "Pașaport valabil, pentru viză",
+   "Numărul CAS primit de la universitate, pentru viză",
+   "Banii pentru taxa pe un an și pentru trai: cetățenii români nu trimit de regulă dovada odată cu cererea de viză, dar ți se poate cere, deci ține actele pregătite",
+   "Dacă ai sub 18 ani când ceri viza: acordul scris al părinților și un act care arată că sunt părinții tăi, de exemplu certificatul de naștere"
+  ],
+  "language": "Programele de licență sunt în engleză. Fiecare universitate își stabilește nivelul de engleză cerut și testele pe care le acceptă, iar cerința poate fi diferită de la un program la altul. Pentru viză, la studii de licență trebuie cel puțin nivelul B2; universitatea îți poate evalua ea însăși engleza sau îți poate cere un test aprobat (numit SELT).",
+  "costs": "Un român care nu are statut de rezident în Marea Britanie (settled sau pre-settled, obținut prin EU Settlement Scheme) plătește taxa pentru studenți internaționali, mult mai mare decât cea a localnicilor; fiecare universitate își stabilește taxa, pe program. Pe lângă ea plătești taxa de înscriere UCAS, taxa de viză și o taxă de sănătate, plătită odată cu cererea de viză, care îți dă acces la sistemul public de sănătate (NHS). Viața este scumpă, mai ales în Londra, unde și suma de bani pentru trai cerută la viză este mai mare.",
+  "funding": "Împrumuturile de stat pentru studenți (Student Finance în Anglia, SAAS în Scoția) nu se dau cetățenilor UE veniți după Brexit, fără statut settled sau pre-settled. Rămân bursele oferite de universități, pe care le ceri direct la fiecare; caută-le pe site-ul universității înainte să aplici. Cu viza de student s-ar putea să ai voie să lucrezi, dar cu limite care depind de program și de perioada din an, deci nu te baza pe un loc de muncă pentru a plăti taxa.",
+  "housing": "Căminele universității (halls of residence) sunt păstrate mai ales pentru studenții din anul I. Multe universități garantează un loc dacă ceri cazare până la termenul lor, de obicei vara; alegi câteva variante, iar camera ți se repartizează. Mai există cămine private și locuințe închiriate împreună cu alți studenți, obișnuite din anul II. La unele universități, de exemplu la Oxford și Cambridge, camerele sunt ale colegiilor.",
+  "goodToKnow": [
+   "Nu există o regulă unică pentru bacalaureatul românesc: fiecare universitate spune pe site ce medie și ce note cere, uneori și la anumite materii.",
+   "Poți aplica înainte să dai bacalaureatul: îl treci în cerere ca examen în așteptare, iar profesorul care îți scrie recomandarea poate adăuga notele estimate (predicted grades). Oferta primită este atunci de obicei condiționată de rezultatele finale.",
+   "Scrisoarea personală este una singură pentru toate cele cinci opțiuni, așa că alege programe apropiate ca domeniu.",
+   "În Scoția licența durează de obicei patru ani, iar structura ei îți dă mai multă libertate să explorezi discipline diferite. Tot prin UCAS aplici și tot taxă de student internațional plătești.",
+   "La viză trebuie să ai banii pentru taxa pe un an și pentru trai, ținuți în cont cel puțin 28 de zile la rând. Cetățenii români nu trimit de regulă dovada odată cu cererea, dar li se poate cere înainte de decizie.",
+   "Dacă ai folosit toate cele cinci opțiuni și nu ai nicio ofertă, poți adăuga câte o opțiune prin etapa Extra. Mai târziu, vara, cine nu are niciun loc poate cere locurile rămase libere prin Clearing.",
+   "După bacalaureat, rezultatele le trimiți de obicei tu fiecărei universități; UCAS nu le transmite pentru cele mai multe diplome din afara Marii Britanii."
+  ],
+  "links": [
+   {
+    "label": "UCAS – platforma națională de înscriere la licență",
+    "url": "https://www.ucas.com"
+   },
+   {
+    "label": "UCAS – cerințe de admitere pentru candidații din alte țări",
+    "url": "https://www.ucas.com/international/international-students/applying-university-international-student/entry-requirements-uk-courses"
+   },
+   {
+    "label": "UCAS – termenele de înscriere",
+    "url": "https://www.ucas.com/applying/applying-to-university/dates-and-deadlines-for-uni-applications"
+   },
+   {
+    "label": "UCAS – cum completezi cererea",
+    "url": "https://www.ucas.com/applying/applying-to-university/filling-in-your-ucas-undergraduate-application"
+   },
+   {
+    "label": "UCAS – cum răspunzi la oferte",
+    "url": "https://www.ucas.com/applying/after-you-apply/types-of-offers/replying-to-your-offers"
+   },
+   {
+    "label": "Guvernul britanic – viza de student",
+    "url": "https://www.gov.uk/student-visa"
+   },
+   {
+    "label": "Guvernul britanic – banii ceruți la viza de student",
+    "url": "https://www.gov.uk/student-visa/money"
+   },
+   {
+    "label": "UCAS – cum ceri cazare",
+    "url": "https://www.ucas.com/money-and-student-life/student-life/accommodation-advice/how-apply-student-accommodation"
+   },
+   {
+    "label": "Scoția – taxe și finanțare pentru studenți",
+    "url": "https://www.scotland.org/study/how-to-apply/funding-and-fees"
+   }
+  ],
+  "sources": [
+   "https://www.ucas.com/applying/applying-to-university/filling-in-your-ucas-undergraduate-application",
+   "https://www.ucas.com/applying/applying-to-university/dates-and-deadlines-for-uni-applications",
+   "https://www.ucas.com/applying/applying-to-university/writing-your-personal-statement/the-new-personal-statement-for-2026-entry",
+   "https://www.ucas.com/money-and-student-life/student-life/accommodation-advice/how-apply-student-accommodation",
+   "https://www.ucas.com/money-and-student-life/student-life/accommodation-advice/undergraduate-accommodation",
+   "https://www.gov.uk/student-visa",
+   "https://www.gov.uk/student-visa/knowledge-of-english",
+   "https://www.gov.uk/student-visa/money",
+   "https://www.gov.uk/student-visa/course",
+   "https://www.gov.uk/healthcare-immigration-application",
+   "https://www.gov.uk/government/publications/student-finance-eligibility-2021-to-2022-academic-year/eligibility-rules-for-home-fee-status-and-student-finance-from-the-2022-to-2023-academic-year-onwards",
+   "https://www.scotland.org/study/how-to-apply/funding-and-fees",
+   "https://www.ucas.com/applying/after-you-apply/types-of-offers",
+   "https://www.ucas.com/applying/after-you-apply/types-of-offers/replying-to-your-offers"
+  ]
+ },
+ {
+  "id": "germania",
+  "country": "Germania",
+  "title": "Cum aplici la facultate în Germania",
+  "intro": "În Germania se predă mai ales în germană, iar programele de licență în engleză sunt mai puține. Universitățile de stat nu cer taxă de școlarizare cetățenilor UE, dar viața costă puțin peste media europeană, iar chiria este cheltuiala cea mai mare. Nu există o singură platformă națională: după universitate și program aplici direct la universitate, prin uni-assist sau prin hochschulstart.",
+  "steps": [
+   {
+    "title": "Verifică dacă bacalaureatul tău îți dă acces",
+    "text": "Intră în baza de date DAAD despre condițiile de admitere și alege România și „Diploma de Bacalaureat”. Baza îți dă două variante de profil. La „theoretical profile” (filiera teoretică) rezultatul este acces direct la orice domeniu. La „vocational profile” ai acces direct doar la domeniul bacalaureatului tău sau la unul înrudit; pentru alt domeniu se cer condiții în plus. Filiera tehnologică nu apare cu numele: dacă ai terminat un liceu tehnologic, întreabă universitatea sau uni-assist. Pe lângă diplomă se cere și foaia matricolă. Rezultatul este orientativ: decizia finală o ia universitatea."
+   },
+   {
+    "title": "Alege programul și vezi dacă are locuri limitate",
+    "text": "Unele programe sunt cu admitere liberă: dacă îndeplinești condițiile, te poți înscrie. Altele au locuri limitate (în germană „numerus clausus”, pe scurt NC) doar la anumite universități, iar acolo contează media și uneori o scrisoare de motivație, un test sau un interviu. Medicina, medicina dentară, medicina veterinară și farmacia au locuri limitate în toată țara."
+   },
+   {
+    "title": "Află pe unde se trimite dosarul",
+    "text": "Fiecare universitate hotărăște singură. La unele aplici direct în portalul lor, ca un absolvent german. Altele cer ca dosarul să treacă prin uni-assist, o asociație care verifică diplomele din străinătate; uneori uni-assist îți dă doar un document de verificare (VPD), pe care îl trimiți tu universității. Pagina de admitere a programului spune clar ce variantă se aplică."
+   },
+   {
+    "title": "Pentru medicină și farmacie: hochschulstart",
+    "text": "La medicină, medicină dentară, medicină veterinară și farmacie aplici pe portalul hochschulstart.de. Ca cetățean UE ești tratat la fel ca un candidat german. Tot pe acest portal te înregistrezi și pentru unele programe cu locuri limitate local, la universitățile care participă."
+   },
+   {
+    "title": "Pregătește actele și dovada de limbă",
+    "text": "Diploma și foaia matricolă se trimit în limba originală, cu traducere autorizată în germană sau engleză. La uni-assist le încarci scanate în portal; unele universități cer și copii legalizate. Dă din timp examenul de germană sau de engleză cerut de program. Uni-assist cere o taxă de procesare pentru fiecare program la care aplici, în fiecare semestru; la unele universități taxa o plătește universitatea."
+   },
+   {
+    "title": "Trimite dosarul la timp",
+    "text": "Termenele diferă de la o universitate la alta și sunt de obicei mai devreme la programele cu locuri limitate. Verifică data pe pagina programului, pe uni-assist sau pe hochschulstart și urmărește-ți contul și e-mailul, ca să nu pierzi o cerere de completare."
+   },
+   {
+    "title": "Înscrie-te după ce primești locul",
+    "text": "Scrisoarea de admitere nu te face încă student: trebuie să te înmatriculezi în termenul dat, care este adesea scurt. Ai nevoie de scrisoarea de admitere, de buletin sau pașaport, de o fotografie, de dovada că ai plătit contribuția semestrială și de dovada asigurării de sănătate. Dacă ești asigurat în România, îți trebuie de obicei cardul european de sănătate și o adeverință de la o casă publică de asigurări din Germania, care arată că nu ești obligat să te asiguri acolo. După ce ai o locuință, îți înregistrezi adresa la biroul de evidență a populației (Einwohnermeldeamt), în primele săptămâni."
+   }
+  ],
+  "documents": [
+   "Diploma de bacalaureat, în copie legalizată și cu traducere autorizată",
+   "Foaia matricolă cu materiile și notele din liceu, tradusă (se cere întotdeauna împreună cu diploma)",
+   "Certificat de limbă germană (sau de engleză, la programele în engleză)",
+   "Copie după buletin sau pașaport",
+   "Fotografie tip pașaport",
+   "Dovada asigurării de sănătate, la înmatriculare: cardul european de sănătate și o adeverință de la o casă publică de asigurări din Germania că nu trebuie să te asiguri acolo",
+   "Documentul VPD de la uni-assist, dacă universitatea îl cere",
+   "Scrisoare de motivație, la programele care au selecție proprie"
+  ],
+  "language": "Programele în germană cer cel puțin nivelul B2, dar de multe ori se cere C1; nivelul exact depinde de program. Rezultatele acceptate la orice program sunt DSH-2 la examenul DSH sau nota 4 la toate cele patru probe TestDaF. TestDaF se dă și în afara Germaniei, în centre de testare; DSH se dă la universitate, în Germania. Universitățile pot accepta și alte certificate, de exemplu Goethe, telc sau DSD II; fiecare spune ce acceptă. La programele predate în engleză nu ți se cere germana, ci o dovadă de engleză; le găsești în baza de date DAAD „International Programmes”.",
+  "costs": "Universitățile de stat nu cer taxă de școlarizare la licență. Toți studenții plătesc o contribuție semestrială, care susține serviciile pentru studenți și, în multe locuri, include abonamentul la transportul public. Taxele din landul Baden-Württemberg și cele de la TUM se aplică doar studenților din afara UE, deci nu și românilor. Universitățile private pot cere taxe mult mai mari. Chiria diferă mult de la un oraș la altul.",
+  "funding": "BAföG este ajutorul de stat pentru studenți. Un cetățean UE care vine în Germania doar ca să studieze nu îl primește de regulă. Îl poți primi dacă ai drept de ședere permanentă (după mai mulți ani de locuit legal acolo), dacă lucrezi tu în Germania ca angajat sau pe cont propriu (o muncă reală, nu una simbolică), dacă ești copilul sau soțul unui cetățean UE care lucrează acolo, ori dacă ai lucrat acolo înainte, într-un domeniu legat de studiile tale. Întreabă biroul BAföG al orașului. Deutschlandstipendium este o bursă pentru studenți de orice cetățenie, care nu depinde de venitul familiei: aplici la universitatea ta, dacă participă; contează rezultatele și implicarea socială.",
+  "housing": "Universitățile nu îți dau automat un loc de cazare; îl cauți singur. Căminele cu chirie mică sunt administrate mai ales de Studierendenwerk, organizația de servicii pentru studenți din fiecare oraș, și aplici la ea, nu la universitate. Locurile sunt puține față de numărul studenților, așa că aplică imediat ce ai scrisoarea de admitere. Mulți studenți stau în apartamente împărțite (WG). În orașele mari este greu să găsești ceva la început de semestru.",
+  "goodToKnow": [
+   "Ca cetățean UE nu ai nevoie de viză sau de permis de ședere; îți ajunge buletinul sau pașaportul.",
+   "Întrebarea „prin uni-assist sau direct?” are răspuns diferit la fiecare universitate și uneori la fiecare program. Nu presupune că e la fel peste tot.",
+   "Uni-assist doar verifică actele. Admiterea o decide întotdeauna universitatea.",
+   "Baza de date anabin, pe care se bazează verificarea diplomelor, este doar în germană; varianta DAAD este în engleză și mai ușor de folosit.",
+   "La hochschulstart, dovada de limbă germană se depune la universitate, la înmatriculare, nu pe portal.",
+   "Uni-assist nu lucrează cu agenții comerciale. Plătește taxa de procesare numai în portalul lor oficial."
+  ],
+  "links": [
+   {
+    "label": "DAAD: verifică dacă diploma ta îți dă acces la studii în Germania",
+    "url": "https://www.daad.de/en/studying-in-germany/requirements/admission-database/"
+   },
+   {
+    "label": "DAAD: cum decurge aplicarea",
+    "url": "https://www.daad.de/en/studying-in-germany/requirements/application-process/"
+   },
+   {
+    "label": "uni-assist: pașii de aplicare",
+    "url": "https://www.uni-assist.de/en/how-to-apply/"
+   },
+   {
+    "label": "hochschulstart: informații pentru candidații din alte țări (în germană)",
+    "url": "https://www.hochschulstart.de/informieren-planen/internationale-bewerbende"
+   },
+   {
+    "label": "anabin: baza de date oficială a diplomelor străine (în germană)",
+    "url": "https://anabin.kmk.org/db/schulabschluesse-mit-hochschulzugang"
+   },
+   {
+    "label": "DAAD: costuri și contribuția semestrială",
+    "url": "https://www.daad.de/en/studying-in-germany/living-in-germany/finances/"
+   },
+   {
+    "label": "DAAD: asigurarea de sănătate pentru studenți",
+    "url": "https://www.daad.de/en/studying-in-germany/living-in-germany/health-insurance/"
+   },
+   {
+    "label": "BAföG pentru cei fără cetățenie germană (în germană)",
+    "url": "https://www.xn--bafg-7qa.de/bafoeg/de/das-bafoeg-alle-infos-auf-einen-blick/_documents/bafoeg-auch-ohne-deutschen-pass.html"
+   },
+   {
+    "label": "Deutschlandstipendium: informații în engleză",
+    "url": "https://www.deutschlandstipendium.de/deutschlandstipendium/de/services/english/the-deutschlandstipendium-best-of-both-worlds-for-students.html"
+   }
+  ],
+  "sources": [
+   "https://www.daad.de/en/studying-in-germany/requirements/overview/",
+   "https://www.daad.de/en/studying-in-germany/requirements/admission-database/",
+   "https://www.daad.de/en/studying-in-germany/requirements/application-process/",
+   "https://www.daad.de/en/studying-in-germany/requirements/enrolling/",
+   "https://www.daad.de/en/studying-in-germany/living-in-germany/finances/",
+   "https://www.daad.de/ziel-deutschland/pages/en/wohnen.html",
+   "https://www.daad.de/ziel-deutschland/pages/en/ankommen.html",
+   "https://www.uni-assist.de/en/how-to-apply/",
+   "https://www.uni-assist.de/en/tools/glossary-of-terms/",
+   "https://www.hochschulstart.de/informieren-planen/internationale-bewerbende",
+   "https://www.xn--bafg-7qa.de/bafoeg/de/rechtsgrundlagen/allgemeine-verwaltungsvorschriften-zum-bafoeg-bafoeg-vwv/abschnitt-ii-persoenliche-voraussetzungen/zu-8-staatsangehoerigkeit/zu-8-staatsangehoerigkeit_node.html",
+   "https://www.tum.de/en/studies/fees/tuition",
+   "https://www.daad.de/en/studying-in-germany/living-in-germany/health-insurance/",
+   "https://www.hrk.de/themen/internationales/internationale-studierende-und-forschende/hochschulzugang-fuer-internationale-studierende/sprachnachweis-deutsch/"
+  ]
+ },
+ {
+  "id": "danemarca",
+  "country": "Danemarca",
+  "title": "Cum aplici la facultate în Danemarca",
+  "intro": "În Danemarca, cele mai multe programe de licență se predau în daneză, iar cele în engleză sunt puține și au fost reduse în ultimii ani. Ca cetățean UE nu plătești taxă de școlarizare, dar viața de zi cu zi este scumpă. Aplici online, pe o singură platformă națională, Optagelse.dk, iar instituțiile îți evaluează dosarul.",
+  "steps": [
+   {
+    "title": "Alege programele și verifică cerințele",
+    "text": "Caută programele pe studyindenmark.dk și pe site-ul fiecărei instituții. Pentru fiecare program verifică trei lucruri: dacă diploma ta de bacalaureat este acceptată, ce materii și ce niveluri se cer (de exemplu engleză la nivel B sau matematică la un anumit nivel) și ce dovadă de limbă trebuie."
+   },
+   {
+    "title": "Înțelege cele două căi: cota 1 și cota 2",
+    "text": "În cota 1 locurile se dau după media de la liceu, transformată în scara daneză de note. În cota 2 fiecare instituție își alege criteriile: note la anumite materii, experiență, uneori un test de admitere. Cu o diplomă din afara Danemarcei ai termenul devreme, cel de la cota 2. Cu bacalaureat de la un liceu teoretic, media ta se transformă și ești luat în calcul și la cota 1; cu bacalaureat de la un liceu tehnologic sau vocațional ești evaluat doar la cota 2."
+   },
+   {
+    "title": "Completează cererea pe Optagelse.dk",
+    "text": "Platforma se deschide iarna, iar termenul pentru cei cu diplomă străină este primăvara devreme, cu mult înaintea celui pentru elevii danezi; verifică data pe platformă. Poți alege până la opt programe, în ordinea preferinței, și încarci acolo diploma și celelalte acte."
+   },
+   {
+    "title": "Trimite pagina de semnătură",
+    "text": "Dacă nu ai semnătura digitală daneză (MitID), platforma îți face câte o pagină de semnătură pentru fiecare program. O tipărești, o semnezi de mână și o trimiți instituției, prin poștă sau scanată pe e-mail, cum cere fiecare. Nu se încarcă pe Optagelse.dk, iar fără ea cererea nu este completă."
+   },
+   {
+    "title": "Urmărește mesajele și completează dosarul",
+    "text": "Instituțiile îți pot cere acte în plus sau te pot chema la un test de admitere. Până la un termen de vară poți schimba ordinea preferințelor și poți adăuga documente; data este pe platformă."
+   },
+   {
+    "title": "Primești răspunsul",
+    "text": "Răspunsurile vin vara, în aceeași zi pentru toți. Primești cel mult o ofertă: la programul cel mai sus în lista ta la care ai intrat. Dacă nu ai intrat nicăieri, poți căuta locurile rămase libere."
+   },
+   {
+    "title": "Te înregistrezi după ce ajungi",
+    "text": "Dacă stai mai mult de trei luni, ceri în primele trei luni documentul de ședere pentru cetățeni UE de la agenția SIRI. Completezi cererea online, apoi îți faci programare și mergi personal la un birou SIRI cu pașaportul sau cartea de identitate și cu scrisoarea de admitere; declari și că te poți întreține singur. Nu se plătește nimic. Cu documentul mergi la primărie, te înscrii în registrul populației și primești numărul personal danez (CPR) și asigurarea de sănătate."
+   }
+  ],
+  "documents": [
+   "Diploma de bacalaureat (dacă aplici din clasa a XII-a, o trimiți după examen, la termenul dat de instituție)",
+   "Foaia matricolă, cu materiile și notele din toți anii de liceu; numărul de ore la fiecare materie trebuie să îl poți dovedi tu, dacă se cere un anumit nivel",
+   "Traduceri ale actelor, dacă instituția le cere",
+   "Dovada de engleză (nivelul din liceu sau un test acceptat) pentru programele în engleză",
+   "Dovada de daneză (de regulă examenul Studieprøven) pentru programele în daneză",
+   "Pagina de semnătură, tipărită și semnată, câte una pentru fiecare program",
+   "Pașaportul sau cartea de identitate (întreabă instituția dacă vrea o copie la cerere; îți trebuie oricum la înregistrarea în Danemarca)",
+   "Pentru cota 2: actele cerute de instituție, de exemplu dovezi de muncă, voluntariat sau alte activități"
+  ],
+  "language": "Cele mai multe licențe se predau în daneză. Există și programe în engleză, dar numărul lor a fost redus prin decizii politice, mai ales la academiile de afaceri și la colegiile universitare. Pentru un program în engleză trebuie să dovedești engleza cel puțin la nivelul danez B; instituția poate cere și un test. Pentru un program în daneză se cere de regulă examenul Studieprøven, trecut până la începerea cursurilor.",
+  "costs": "Cetățenii din UE nu plătesc taxă de școlarizare la învățământul superior danez, la fel ca studenții danezi. Plătești însă chiria, mâncarea, transportul, cărțile și asigurările. Danemarca este o țară scumpă; site-ul oficial pentru studenți recomandă un trai cumpătat, cu bicicleta și cu mâncare gătită acasă.",
+  "funding": "Ajutorul lunar de la stat pentru studenți (SU) se dă în principiu celor care locuiesc în Danemarca. Un cetățean UE îl poate cere dacă lucrează în Danemarca pe lângă studii și este recunoscut ca lucrător: de regulă cel puțin 10–12 ore pe săptămână, fără întreruperi, cu contract și salariu. Fiecare caz se analizează separat, iar dacă nu mai lucrezi destul, pierzi ajutorul și poți fi pus să dai banii înapoi. Bursele statului danez pentru studenți străini sunt doar pentru cei din afara UE.",
+  "housing": "Universitățile daneze nu au tradiția căminelor în campus. Cei mai mulți studenți stau în cămine studențești (kollegier), aflate de multe ori departe de facultate, sau închiriază o cameră ori un apartament împreună cu alții. În orașele mari este greu să găsești ceva la sfârșitul verii și începutul toamnei. Începe să cauți cu luni înainte, întreabă instituția imediat ce ai fost admis și nu pleca fără o cameră rezervată.",
+  "goodToKnow": [
+   "Media de la bacalaureat nu se folosește direct. Pentru liceul teoretic, instituția transformă în scara daneză de note două medii, după tabelele agenției daneze: media generală de la bacalaureat și media generală din clasa a XII-a, din foaia matricolă. Media ta daneză este media celor două.",
+   "Nivelurile A, B și C sunt niveluri de materie, nu note. Instituția pornește de la numărul de ore pe care le-ai făcut la acea materie în liceu, dar se poate uita și la programă și la examen, așa că foaia matricolă contează mult.",
+   "Dacă îți lipsește o materie sau un nivel, cursurile de completare există doar în daneză și nu îți cresc media.",
+   "Contează tipul de liceu. Bacalaureatul de la un liceu teoretic este acceptat și intri în calcul la cota 1 și la cota 2. Cu bacalaureat de la un liceu tehnologic sau vocațional trebuie să ai în plus engleză cel puțin la nivel B și matematică cel puțin la nivel C și ești evaluat doar la cota 2.",
+   "Pagina de semnătură se uită ușor: se trimite separat pentru fiecare program. Trimite-o imediat ce ai terminat cererea și întreabă instituția până când trebuie să ajungă.",
+   "Criteriile de la cota 2 și modul în care se primește pagina de semnătură diferă de la o instituție la alta."
+  ],
+  "links": [
+   {
+    "label": "Optagelse.dk – platforma națională de aplicare (pagina în engleză)",
+    "url": "https://www.optagelse.dk/higher-education.shtml"
+   },
+   {
+    "label": "Study in Denmark – cum aplici, pas cu pas",
+    "url": "https://studyindenmark.dk/study-options/how-to-apply"
+   },
+   {
+    "label": "Agenția daneză pentru învățământ superior – admitere cu diplomă străină",
+    "url": "https://ufsn.dk/english/education/recognition-and-transparency/recognition-guide/admission-he/"
+   },
+   {
+    "label": "Agenția daneză pentru învățământ superior – manualul de examene: alege „Rumænien” pentru bacalaureatul românesc (în daneză)",
+    "url": "https://ufsn.dk/uddannelse/anerkendelse-og-dokumentation/find-vurderinger/eksamenshaandbogen/lande-og-eksaminer/"
+   },
+   {
+    "label": "Agenția daneză pentru învățământ superior – cota 1, cota 2 și termene",
+    "url": "https://ufsn.dk/english/education/admission-and-guidance/how-to-apply-for-a-higher-education-programme-in-denmark/"
+   },
+   {
+    "label": "Study in Denmark – cine plătește taxă de școlarizare",
+    "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+   },
+   {
+    "label": "SU – ajutorul de stat pentru cetățeni UE care lucrează în Danemarca",
+    "url": "https://www.su.dk/foreign-citizen/gb-foreign-citizen/eu-rules/you-work-in-denmark"
+   },
+   {
+    "label": "Study in Denmark – locuințe pentru studenți",
+    "url": "https://studyindenmark.dk/live-in-denmark/housing"
+   },
+   {
+    "label": "Study in Denmark – certificatul de înregistrare pentru cetățeni UE",
+    "url": "https://studyindenmark.dk/live-in-denmark/permits-visas-red-tape/registration-certificates-eu-eea-swiss-citizens"
+   }
+  ],
+  "sources": [
+   "https://www.optagelse.dk/higher-education.shtml",
+   "https://studyindenmark.dk/study-options/how-to-apply",
+   "https://studyindenmark.dk/study-options/what-can-i-study",
+   "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships",
+   "https://studyindenmark.dk/study-options/scholarships",
+   "https://studyindenmark.dk/live-in-denmark/housing",
+   "https://studyindenmark.dk/live-in-denmark/bank-budget",
+   "https://studyindenmark.dk/live-in-denmark/permits-visas-red-tape/registration-certificates-eu-eea-swiss-citizens",
+   "https://ufsn.dk/english/education/admission-and-guidance/how-to-apply-for-a-higher-education-programme-in-denmark/",
+   "https://ufsn.dk/english/education/recognition-and-transparency/recognition-guide/admission-he/",
+   "https://ufsn.dk/uddannelse/anerkendelse-og-dokumentation/find-vurderinger/eksamenshaandbogen/regler-og-raad/karakteromregning/",
+   "https://www.su.dk/foreign-citizen/gb-foreign-citizen/eu-rules/you-work-in-denmark",
+   "https://ufsn.dk/uddannelse/anerkendelse-og-dokumentation/find-vurderinger/eksamenshaandbogen/lande-og-eksaminer/",
+   "https://ufsn.dk/uddannelse/anerkendelse-og-dokumentation/find-vurderinger/eksamenshaandbogen/regler-og-raad/eu/"
+  ]
+ },
+ {
+  "id": "italia",
+  "country": "Italia",
+  "title": "Cum aplici la facultate în Italia",
+  "intro": "În Italia se predă mai ales în italiană; unele programe de licență sunt în engleză. La universitățile de stat taxa depinde de venitul familiei, iar costul vieții diferă mult de la un oraș la altul. Ca cetățean UE aplici direct la fiecare universitate, nu printr-o platformă națională, iar multe programe cer un test de admitere. Fac excepție medicina, medicina dentară și medicina veterinară, unde înscrierea se face pe portalul național Universitaly.",
+  "steps": [
+   {
+    "title": "Alege programul și vezi ce fel de acces are",
+    "text": "Caută programe pe portalul Universitaly, unde poți filtra după limba de predare și tipul de acces. Unele programe au acces liber, altele cer un test de intrare, iar altele au un număr limitat de locuri („numero programmato”). Regulile exacte sunt în anunțul de admitere („bando”) al fiecărui program."
+   },
+   {
+    "title": "Aplică direct la universitate, nu prin Universitaly",
+    "text": "Pre-înscrierea pe Universitaly este pentru candidații care cer viză de studii. Ca cetățean UE trimiți cererea direct universității alese, pe platforma ei, după regulile și termenele ei, și ești evaluat în aceleași condiții ca un candidat cu diplomă italiană."
+   },
+   {
+    "title": "Dă testul de admitere, dacă programul îl cere",
+    "text": "Multe universități folosesc testele TOLC, organizate de consorțiul CISIA: te înscrii singur pe site-ul CISIA și dai testul la o universitate sau de acasă, după cum acceptă programul. Alte universități au testul lor. Termenele pentru programele cu locuri limitate sunt de obicei mai devreme; verifică data în anunțul de admitere."
+   },
+   {
+    "title": "Medicina are reguli naționale separate",
+    "text": "La medicină, medicină dentară și medicină veterinară în limba italiană te înscrii pe Universitaly la un „semestru deschis”, cu înscriere liberă, și în același timp la un program înrudit. Urmezi trei materii (chimie, fizică, biologie) și dai examene scrise, aceleași în toată țara. Continui doar dacă intri pe locuri în clasamentul național; altfel poți merge mai departe la programul înrudit, cu creditele obținute. Programele de medicină în engleză au o probă de admitere separată, stabilită de minister."
+   },
+   {
+    "title": "Pregătește actele de studii",
+    "text": "Ai nevoie de diploma de bacalaureat, obținută după cel puțin 12 ani de școală, și, dacă universitatea cere, de traducere și de un document despre valoarea diplomei. Ce anume cere diferă de la o universitate la alta, așa că citește pagina ei pentru candidații cu diplomă din străinătate."
+   },
+   {
+    "title": "Declară venitul familiei pentru taxă și bursă",
+    "text": "Taxa și bursa regională depind de venitul și averea familiei. Actele se depun până la un termen fix, de obicei separat de cererea de admitere. Dacă nu le depui la timp, plătești taxa întreagă."
+   },
+   {
+    "title": "Înscrie-te și anunță-ți șederea la primărie",
+    "text": "După ce ești admis, confirmi locul și plătești prima rată pe platforma universității. Nu ai nevoie de viză, dar cetățenii UE cer înscrierea în evidența populației la primăria („Comune”) orașului în care se stabilesc."
+   }
+  ],
+  "documents": [
+   "Carte de identitate sau pașaport valabil",
+   "Diploma de bacalaureat (sau adeverința oficială care o înlocuiește până primești diploma)",
+   "Foile matricole din liceu, dacă universitatea le cere",
+   "Traducerea actelor de studii, dacă universitatea o cere",
+   "Un document despre valoarea diplomei, dacă universitatea îl cere: atestatul de comparabilitate de la CIMEA sau declarația de valoare de la consulatul Italiei",
+   "Dovada limbii în care se predă programul: italiană sau engleză",
+   "Rezultatul testului de admitere (TOLC sau testul universității), dacă programul îl cere",
+   "Actele despre venitul și averea familiei din România, traduse în italiană și legalizate sau cu apostilă, pentru reducerea taxei și pentru bursă"
+  ],
+  "language": "Cele mai multe programe de licență sunt în italiană; unele sunt în engleză, iar pe Universitaly le poți filtra după limbă. Universitatea este cea care verifică limba. Regulile ministerului spun că proba de italiană a universității este cel puțin la nivelul B2 și că un certificat recunoscut de nivel B2 te poate scuti de ea; ele sunt scrise mai ales pentru candidații care cer viză, așa că unele universități le aplică și cetățenilor UE, iar altele nu. Verifică în anunțul de admitere. La programele în altă limbă nu se cere italiana, ci un certificat pentru limba programului.",
+  "costs": "Plătești taxa după aceleași reguli ca un student italian. La universitățile de stat taxa are o parte fixă (taxa regională, taxa de timbru) și o parte care depinde de venitul și averea familiei, măsurate prin indicatorul ISEE. Sub un anumit prag ești scutit de partea care depinde de venit („no tax area”), dar partea fixă rămâne de plătit; fără acte de venit plătești suma întreagă. Costul vieții diferă de la un oraș la altul: Milano, de exemplu, este un oraș scump.",
+  "funding": "Fiecare regiune are o agenție pentru „dreptul la studiu” (DSU), de exemplu ER.GO în Emilia-Romagna sau EDISU în Piemont. Ea dă burse prin concurs public, după venitul familiei și, mai târziu, după creditele obținute în fiecare an. Bursa poate veni cu scutire de taxă și cu sprijin pentru masă. Dacă familia are venituri în România, aduci acte oficiale despre venit și avere, traduse în italiană și legalizate sau cu apostilă; unele universități cer un „ISEE parificato”, calculat de un birou fiscal (CAF) cu care lucrează ele.",
+  "housing": "Căminele sunt în general ale agențiilor regionale pentru dreptul la studiu; unele universități au și reședințe proprii. Locurile se dau prin concurs, după venit și rezultate, studenților care vin din alt oraș. Poți îndeplini condițiile și totuși să nu primești loc, pentru că pot fi mai mulți candidați eligibili decât locuri, iar locul nu este gratuit. Mulți studenți închiriază o cameră în oraș.",
+  "goodToKnow": [
+   "Italia cere cel puțin 12 ani de școală pentru licență; bacalaureatul românesc se obține după 12 clase.",
+   "Diploma ta este evaluată de universitate, nu de un birou național. Ministerul le recomandă universităților să nu ceară declarația de valoare de la studenții care nu au nevoie de viză, dar fiecare universitate decide ce acte cere. Verifică pagina ei înainte să plătești pentru un document.",
+   "Același tip de TOLC poate fi dat cel mult o dată pe lună, iar fiecare universitate își stabilește singură pragul și felul în care folosește rezultatul.",
+   "Actele despre venit se cer din nou în fiecare an. Nu ai nevoie de agenții plătite ca să le depui; ER.GO avertizează împotriva lor.",
+   "Bursa, căminul și reducerea de taxă au termene proprii, diferite de cele de admitere. Caută-le din timp pe site-ul agenției regionale.",
+   "Codul fiscal italian („codice fiscale”) îl ceri la orice birou al Agenzia delle Entrate, cu cartea de identitate sau pașaportul; pentru primul cod este nevoie de programare. Ia cu tine și cardul european de sănătate, de la casa de asigurări din România: îți dă dreptul la îngrijirile medicale necesare în sistemul public."
+  ],
+  "links": [
+   {
+    "label": "Universitaly – caută programe după limbă și tip de acces",
+    "url": "https://www.universitaly.it/it/cerca-corsi"
+   },
+   {
+    "label": "Universitaly – regulile naționale pentru studenții internaționali",
+    "url": "https://www.universitaly.it/it/studenti-stranieri"
+   },
+   {
+    "label": "Universitaly – pagina principală, cu secțiunea „Semestre aperto” pentru medicină",
+    "url": "https://www.universitaly.it/it"
+   },
+   {
+    "label": "CISIA – testele TOLC: înscriere și regulament",
+    "url": "https://www.cisiaonline.it/"
+   },
+   {
+    "label": "CIMEA – atestatul de comparabilitate și de verificare a diplomei",
+    "url": "https://www.cimea.it/pagina-attestati-di-comparabilita-e-verifica-dei-titoli"
+   },
+   {
+    "label": "ER.GO – burse și cămine în Emilia-Romagna, pagina pentru studenți internaționali",
+    "url": "https://www.er-go.it/international-students/application/what-you-need"
+   },
+   {
+    "label": "EDISU Piemonte – burse, cămine și cantine în Piemont",
+    "url": "https://www.edisu.piemonte.it/en"
+   },
+   {
+    "label": "Universitatea din Bologna – acte pentru veniturile din străinătate",
+    "url": "https://www.unibo.it/it/studiare/iscrizioni-tasse-e-altre-procedure/lauree-e-lauree-magistrali/tasse-e-contributi/ISEE-documenti-redditi-esteri-per-esenzioni-tasse-universitarie"
+   }
+  ],
+  "sources": [
+   "https://www.universitaly.it/it/studenti-stranieri",
+   "https://universitaly-private.cineca.it/uploads/universitaly-pubblico/Circolare_2026-2027_studenti_internazionali.pdf",
+   "https://www.universitaly.it/it/medicina2025",
+   "https://www.cisiaonline.it/tolc/tutto-sul-TOLC/TOLC-universita-e-casa",
+   "https://www.cisiaonline.it/tolc/tutto-sul-TOLC/regolamento-tolc",
+   "https://www.unibo.it/it/studiare/iscrizioni-tasse-e-altre-procedure/lauree-e-lauree-magistrali/traduzione-autenticita-e-valore-dei-titoli-di-studio-esteri",
+   "https://www.unibo.it/it/studiare/iscrizioni-tasse-e-altre-procedure/lauree-e-lauree-magistrali/tasse-e-contributi",
+   "https://www.unipd.it/isee?target=Studenti",
+   "https://www.er-go.it/international-students/benefits/focus-on-scholarship",
+   "https://www.er-go.it/esplora-i-benefici/benefici-erogati-da-er.go/alloggio",
+   "https://www.agenziaentrate.gov.it/portale/web/english/nse/individuals/tax-identification-number-for-foreign-citizens",
+   "https://europa.eu/youreurope/citizens/health/unplanned-healthcare/temporary-stays/index_ro.htm",
+   "https://www.universitaly.it/it",
+   "https://www.universitaly.it/it/imat"
+  ]
+ },
+ {
+  "id": "franta",
+  "country": "Franța",
+  "title": "Cum aplici la facultate în Franța",
+  "intro": "În Franța, aproape toate programele de după liceu se predau în franceză. La universitățile publice taxa de înscriere este mică și stabilită de stat, aceeași pentru cetățenii UE ca pentru francezi; cheltuiala mare este chiria, mai ales la Paris. Ca cetățean român aplici pentru anul întâi pe platforma națională Parcoursup, la fel ca elevii francezi.",
+  "steps": [
+   {
+    "title": "Alege tipul de program",
+    "text": "Licența se face la universitate și durează trei ani. BUT este un program de trei ani, mai practic, la un institut tehnologic (IUT). Clasele pregătitoare (CPGE) țin doi ani, se fac în licee și te pregătesc pentru concursurile de intrare la școlile mari („grandes écoles”)."
+   },
+   {
+    "title": "Caută programele pe Parcoursup",
+    "text": "Fiecare program are pe Parcoursup o fișă cu ce se învață, ce se așteaptă de la candidați, cum sunt analizate dosarele și ce taxe are. Verifică și dacă programul este pe platformă: unele școli recrutează separat, pe site-ul lor."
+   },
+   {
+    "title": "Fă-ți cont și alege opțiunile iarna",
+    "text": "Platforma se deschide iarna, iar opțiunile („vœux”) se trec până spre începutul primăverii. Poți alege mai multe programe, fără să le pui în ordine. Datele exacte se schimbă în fiecare an; verifică-le pe Parcoursup."
+   },
+   {
+    "title": "Completează dosarul",
+    "text": "Elevii din liceele franceze au notele încărcate automat. Tu trebuie să treci singur în Parcoursup informațiile despre școala ta, notele din liceu și diploma. Scrii o scrisoare de motivație doar acolo unde programul o cere, apoi confirmi fiecare opțiune până la termen."
+   },
+   {
+    "title": "Primește răspunsurile și acceptă un loc",
+    "text": "Răspunsurile vin în faza de admitere, spre vară. Răspunzi fiecărei propuneri în termenul afișat. Dacă nu primești niciun loc, urmează o fază suplimentară, cu locurile rămase libere."
+   },
+   {
+    "title": "Plătește CVEC și înscrie-te",
+    "text": "Înainte de înscriere plătești online CVEC, o contribuție anuală pentru viața studențească, și primești o adeverință. O prezinți la înscrierea administrativă, împreună cu actele cerute de instituție, și plătești taxa de înscriere."
+   }
+  ],
+  "documents": [
+   "Carte de identitate sau pașaport",
+   "Diploma de bacalaureat (sau dovada că ești în clasa a XII-a, dacă aplici înainte de examen)",
+   "Foile matricole și notele din liceu",
+   "Dovada nivelului de franceză (de exemplu DELF sau DALF), dacă programul o cere",
+   "Scrisoare de motivație, acolo unde programul o cere",
+   "Adeverința de plată a CVEC, la înscriere",
+   "Atestat de comparabilitate a diplomei, doar dacă programul îl cere"
+  ],
+  "language": "Programele de licență se predau în franceză; unele școli au și parcursuri în engleză, iar pentru ele citești pe pagina școlii cum se face admiterea. Pe Parcoursup se cere în general nivelul B2 la franceză, dar nivelul poate diferi de la un program la altul. Pentru candidatură nu trebuie atestat, decât dacă programul îl cere în dosar. La înscrierea administrativă instituția îți poate cere dovada că ai trecut un test de franceză.",
+  "costs": "La universitățile publice, taxa de înscriere pentru licență este stabilită de stat și este aceeași pentru cetățenii UE ca pentru studenții francezi; taxa mai mare este doar pentru studenții din afara UE. Unele școli publice de inginerie au taxe diferite, iar școlile private au taxe mult mai mari, stabilite de ele. Pe lângă taxă plătești în fiecare an CVEC, iar la unele școli și o taxă de dosar sau de concurs. Cea mai mare cheltuială rămâne chiria, mai ales la Paris.",
+  "funding": "Bursa de stat pe criterii sociale, dată de CROUS, nu se dă automat unui cetățean UE. Pe lângă condițiile de venit și de studii, trebuie să fi avut un loc de muncă în Franța sau ca unul dintre părinți să fi avut venituri acolo. Altfel, bursa se poate da și dacă ai stat în Franța cel puțin un an, ai făcut școala acolo în anul dinainte sau ai legături de familie în Franța. Un elev venit direct din România de obicei nu îndeplinește nicio condiție în primul an. Bursa se cere online prin dosarul social studențesc (DSE), primăvara, doar dacă îndeplinești condițiile. Unele școli au ajutoare proprii; întreabă direct instituția.",
+  "housing": "Căminele publice sunt ale CROUS, nu ale universităților. Faza principală de repartizare este în primul rând pentru bursieri și se face prin dosarul social studențesc. Studenții care vin din străinătate cer un loc vara, în faza suplimentară, pe site-ul de cazare al CROUS, când se văd locurile rămase. Nu există listă de așteptare, deci caută din timp și o chirie privată, de exemplu pe Lokaviz, site-ul de chirii al CROUS, sau prin instituția ta. După ce ai un contract de închiriere poți cere online de la CAF un ajutor pentru chirie; cetățenii UE îl pot primi, iar suma depinde de venituri și de locuință.",
+  "goodToKnow": [
+   "Cu o diplomă de bacalaureat dintr-o țară UE aplici prin Parcoursup. „Demande d'admission préalable” (DAP) este pentru cetățenii din afara UE, nu pentru tine.",
+   "Parcoursup acoperă licențele, BUT, clasele pregătitoare și multe școli. Dacă un program nu este pe platformă, întrebi direct instituția cum se face admiterea.",
+   "La unele școli, admiterea pentru un candidat cu diplomă străină se face pe portalul școlii, chiar dacă școala apare pe Parcoursup. Citește pagina de admitere a fiecărei școli.",
+   "Unele programe private, fără contract cu statul, nu sunt pe Parcoursup, iar calitatea lor nu este verificată de stat. Verifică ce diplomă primești și ce taxe ți se cer înainte să plătești ceva.",
+   "Atestatul de comparabilitate a diplomei nu este obligatoriu la candidatură, dar programul îl poate cere în dosar sau la înscriere.",
+   "Dacă primești bursă pe criterii sociale ești scutit de CVEC, dar tot trebuie să obții adeverința și să o prezinți la înscriere. Altfel o plătești în fiecare an, înainte de înscriere.",
+   "La candidatură, copiile legalizate ale diplomei și ale notelor nu sunt obligatorii; instituția le poate cere la înscriere, când poate cere și actele în original. Urmează instrucțiunile primite în dosarul tău Parcoursup."
+  ],
+  "links": [
+   {
+    "label": "Parcoursup – platforma națională de admitere în anul întâi",
+    "url": "https://www.parcoursup.gouv.fr/"
+   },
+   {
+    "label": "Parcoursup – întrebări și răspunsuri pentru candidații străini",
+    "url": "https://www.parcoursup.gouv.fr/faq/thematiques/candidats-parcoursup/etudiants-internationaux"
+   },
+   {
+    "label": "Campus France – înscrierea studenților europeni",
+    "url": "https://www.campusfrance.org/fr/inscription-etudiant-europeen"
+   },
+   {
+    "label": "Campus France – cât costă studiile în Franța",
+    "url": "https://www.campusfrance.org/fr/cout-etudes-superieures-france-frais-inscription"
+   },
+   {
+    "label": "Service-Public – taxele de înscriere și CVEC",
+    "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+   },
+   {
+    "label": "Service-Public – bursa pe criterii sociale și condițiile ei",
+    "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F12214"
+   },
+   {
+    "label": "Service-Public – cum ceri un loc în căminele CROUS",
+    "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31912"
+   },
+   {
+    "label": "Service-Public – ajutorul pentru chirie pentru studenți",
+    "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1563"
+   }
+  ],
+  "sources": [
+   "https://www.parcoursup.gouv.fr/faq/thematiques/candidats-parcoursup/qui-est-concerne-par-parcoursup",
+   "https://www.parcoursup.gouv.fr/faq/thematiques/candidats-parcoursup/etudiants-internationaux",
+   "https://www.parcoursup.gouv.fr/faq/thematiques/formations-disponibles/formations-sur-parcoursup",
+   "https://www.parcoursup.gouv.fr/faq/thematiques/fonctionnement-de-parcoursup/formuler-ses-voeux",
+   "https://www.parcoursup.gouv.fr/faq/thematiques/fonctionnement-de-parcoursup/completer-son-dossier",
+   "https://www.enseignementsup-recherche.gouv.fr/fr/etudiants-etrangers-inscriptions-dans-l-enseignement-superieur-francais-46508",
+   "https://www.campusfrance.org/fr/inscription-etudiant-europeen",
+   "https://www.campusfrance.org/fr/cout-etudes-superieures-france-frais-inscription",
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F2863",
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865",
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F12214",
+   "https://www.etudiant.gouv.fr/fr/formation-generale-544",
+   "https://www.education.gouv.fr/bo/2026/Hebdo9/ESRS2604201C",
+   "https://www.etudiant.gouv.fr/fr/bourse-et-logement-constituez-votre-dossier-social-etudiant-dse-409"
+  ]
+ }
+]

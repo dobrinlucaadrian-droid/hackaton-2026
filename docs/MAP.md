@@ -116,6 +116,14 @@ _Open only the files listed here; a file's description is its first comment line
 
 - `page.tsx` (218) — "Contul meu": shows who is signed in (name and email, the name can be changed) and the saved questionnaire result, and lets the student sign out or delete the account.. Routes: /cont. Exports: AccountPage
 
+### apps/web/app/ghiduri/[tara]  (1 files)
+
+- `page.tsx` (130) — One country guide: the steps to apply, the documents, language, costs, money and housing, with the official links.. Routes: /ghiduri/[tara]. Exports: generateStaticParams, generateMetadata, GuidePage
+
+### apps/web/app/ghiduri  (1 files)
+
+- `page.tsx` (43) — Country guides index: one tile per country that has a "how to apply" guide.. Routes: /ghiduri. Exports: metadata, GuidesPage
+
 ### apps/web/app/programe  (1 files)
 
 - `page.tsx` (35) — Programme finder: search the bachelor programmes of every country in the catalogue (official national datasets).. Routes: /programe. Exports: metadata, ProgramsPage
@@ -158,11 +166,11 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/universitati/[id]  (1 files)
 
-- `page.tsx` (320) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
+- `page.tsx` (329) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/universitati  (1 files)
 
-- `page.tsx` (26) — University finder page: search box, filters and top 10 results (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
+- `page.tsx` (31) — University finder page: search box, filters and top 10 results (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
 
 ### apps/web/components  (35 files)
 
@@ -185,7 +193,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `ProgramSearch.tsx` (100) — Search over the bachelor programmes of the catalogue: country, free text, study domain and city; the state lives in the URL so links and Back work.. Exports: ProgramSearch
 - `SaveResult.tsx` (59) — "Salvează în contul meu" on the result page: saves the result when the student is signed in, otherwise keeps it on the device and sends them to sign in.. Exports: SaveResult
 - `SearchBox.tsx` (45) — Search box with a magnifier icon; submits to /universitati?q=... or calls onSearch when given.. Exports: SearchBox
-- `Shell.tsx` (49) — Page frame shared by all screens: header with the UniPath logo, a centered content column and a footer with the privacy link.. Exports: Shell, Notice
+- `Shell.tsx` (53) — Page frame shared by all screens: header with the UniPath logo, a centered content column and a footer with the privacy link.. Exports: Shell, Notice
 - `SignInForm.tsx` (141) — The sign-in form (full name and email, a sign-in link by email, Google when configured), shared by the welcome window and the sign-in page. No passwords.. Exports: SignInForm
 - `SpecializationsBrowser.tsx` (82) — /specializari body: a text filter over all categories, domains and specializations; without text it shows the category tiles.. Exports: SpecializationsBrowser
 - `StudentCard.tsx` (38) — One student opinion: photo (or initial), name, faculty and their own words. Used on the students page and on university sheets.. Exports: StudentCard
@@ -254,24 +262,25 @@ _Open only the files listed here; a file's description is its first comment line
 - `us-institutions.json`
 - `us-programs.jsonl.gz`
 
-### apps/web/data  (14 files)
+### apps/web/data  (15 files)
 
 - `categories.json` (13) — JSON array, 10 items
 - `curricula.json` (2190) — JSON array, 40 items
 - `curriculum-links.json` (288) — JSON array, 57 items
 - `domains.json` (43) — JSON array, 40 items
 - `faculties-ro.json`
+- `guides.json` (674) — JSON array, 6 items
 - `profiles.json` (15) — JSON array, 12 items
 - `questions.json` (729) — JSON array, 18 items
 - `ro-cities.json` (25) — JSON array, 22 items
 - `specializations.json` (209) — JSON array, 206 items
 - `testimonials.json` (169) — JSON array, 24 items
 - `universities-abroad.json`
-- `universities-index.json` (406) — JSON array, 403 items
+- `universities-index.json`
 - `universities-ro.json` (4201) — JSON array, 83 items
-- `university-sources.json` (3103) — JSON; keys: ani-bucuresti, itb-bucuresti, itp-bucuresti, bogdan-voda, itp-cluj, dragan-lugoj, cantemir-tgmures, timotheus
+- `university-sources.json` (5080) — JSON; keys: ani-bucuresti, itb-bucuresti, itp-bucuresti, bogdan-voda, itp-cluj, dragan-lugoj, cantemir-tgmures, timotheus
 
-### apps/web/lib  (28 files)
+### apps/web/lib  (30 files)
 
 - `activities.test.ts` (57) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
 - `activities.ts` (73) — Activities a student can add (competitions, volunteering, extracurriculars): labels, areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, describeActivity
@@ -285,6 +294,8 @@ _Open only the files listed here; a file's description is its first comment line
 - `data.ts` (16) — Loads the small seeded JSON (profiles, questions, domains, specializations, categories, testimonials) as typed arrays. The universities are apart: lib/universities.ts (index, for the browser) and lib/sheets.ts (full sheets, server only).. Exports: profiles, questions, domains, specializations, categories, testimonials
 - `faculties.test.ts` (55) — Tests the faculty sheets: each one belongs to a real faculty of the official list, has valid values and official links, and gets a unique page address.
 - `faculties.ts` (24) — Profile sheets of Romanian faculties (data/faculties-ro.json) and the address of each one. Used on the server: by the faculty page and by the university page, which links to them.. Exports: faculties, facultySlug, facultyHref, facultiesOf, facultyBySlug
+- `guides.test.ts` (60) — Tests the country guides: complete texts, a country that has university sheets, official links, and no amounts or calendar dates (they change every year).
+- `guides.ts` (15) — Country guides ("how a Romanian student applies to bachelor studies in ..."), written from official pages and checked twice. Small: pages may import it freely.. Exports: guides, guideById, guideForCountry
 - `labels.ts` (56) — Romanian labels for the values on a university sheet, plus two small helpers every list uses. Kept apart from the university data so pages can use the labels without loading the sheets.. Exports: PRESTIGE_LABEL, BUDGET_LABEL, ADMISSION_LABEL, CERTIFICATE_LABEL, normalize, counted, specializationsFor
 - `match.test.ts` (267) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
 - `match.ts` (178) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: matchDomains, studentTraits, matchByTraits
@@ -296,7 +307,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `sheets.ts` (11) — The full university sheets, with all their long texts. Large: import it only from server code (the university page) and from tests, never from a component that runs in the browser — those use lib/universities.ts.. Exports: universities, universityById
 - `testimonials.ts` (29) — Links student opinions to the universities that have a profile sheet, so the search and the sheets can show them.. Exports: universityIdOf, testimonialsFor
 - `traits.ts` (18) — The ten inclinations the questionnaire measures and their Romanian names. Kept apart from the matching so pages can show them without loading the university data.. Exports: TRAITS, TRAIT_LABEL
-- `types.ts` (248) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
+- `types.ts` (265) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
 - `universities.data.test.ts` (109) — Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
 - `universities.test.ts` (229) — Tests the specializations and categories data and the university search/filter logic.
 - `universities.ts` (192) — Search and filter over the universities with a profile sheet. Works on the index (sheets without their long texts), which is what the browser loads.. Exports: universities, countries, citiesIn, searchUniversities, filterUniversities, searchWorld

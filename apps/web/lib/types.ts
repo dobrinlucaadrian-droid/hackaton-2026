@@ -245,3 +245,20 @@ export type CatalogCountry = {
   domains: Record<string, number>; // programmes per app domain
   source: { name: string; url: string; licence: string; attribution: string; year: string; note: string };
 };
+
+/** A country guide: how a Romanian student applies to bachelor studies there (data/guides.json). */
+export type Guide = {
+  id: string; // page address: /ghiduri/<id>
+  country: string; // exactly the `country` value used on the university sheets
+  title: string;
+  intro: string;
+  steps: { title: string; text: string }[]; // in order, from choosing a programme to enrolling
+  documents: string[];
+  language: string;
+  costs: string; // in words: no amounts
+  funding: string;
+  housing: string;
+  goodToKnow: string[];
+  links: { label: string; url: string }[]; // official pages
+  sources: string[]; // official pages the guide was written from
+};
