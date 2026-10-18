@@ -19,14 +19,14 @@ const geistMono = Geist_Mono({
 });
 
 const description =
-  "UniPath te ajută să alegi domeniul de studiu potrivit: răspunzi la câteva întrebări și afli unde poți studia, în România sau în străinătate.";
+  "FindMyUni te ajută să alegi domeniul de studiu potrivit: răspunzi la câteva întrebări și afli unde poți studia, în România sau în străinătate.";
 
 // The icons and the link-preview image (the team logo) come from icon.png, apple-icon.png, favicon.ico and opengraph-image.png in this folder.
 export const metadata: Metadata = {
   metadataBase: new URL("https://unipath-taupe-mu.vercel.app"),
-  title: "UniPath",
+  title: "FindMyUni",
   description,
-  openGraph: { title: "UniPath", description, siteName: "UniPath", locale: "ro_RO", type: "website", url: "/" },
+  openGraph: { title: "FindMyUni", description, siteName: "FindMyUni", locale: "ro_RO", type: "website", url: "/" },
 };
 
 export default async function RootLayout({ children }: LayoutProps<"/">) {

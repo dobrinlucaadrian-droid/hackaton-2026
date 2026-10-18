@@ -33,7 +33,7 @@ export default function QuestionnaireStart() {
           <Cap className="float h-16 w-16" />
           <Sparkle className="twinkle h-5 w-5 fill-violet" />
         </div>
-        <h1 className="mt-3 text-4xl font-black tracking-tighter text-ink sm:text-5xl">Chestionarul UniPath</h1>
+        <h1 className="mt-3 text-4xl font-black tracking-tighter text-ink sm:text-5xl">Chestionarul FindMyUni</h1>
         <p className="mx-auto mt-3 max-w-md text-lg text-ink-soft">
           Răspunzi la {questions.length} situații din viața de zi cu zi și afli ce domenii ți se potrivesc. Durează cam 6 minute.
         </p>

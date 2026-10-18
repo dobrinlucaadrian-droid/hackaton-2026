@@ -1,4 +1,4 @@
-// Page frame shared by all screens: header with the UniPath logo, a centered content column and a footer with the privacy link.
+// Page frame shared by all screens: header with the FindMyUni logo, a centered content column and a footer with the privacy link.
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { NavLinks } from "./NavLinks";
@@ -13,7 +13,7 @@ export function Shell({ children, wide = false }: { children: ReactNode; wide?: 
             className="h-11 w-11 shrink-0 bg-[url('/logo.png')] bg-[length:123px_123px] bg-[position:-40px_-24px] bg-no-repeat"
           />
           <span className="font-serif text-2xl">
-            Uni<span className="text-primary">Path</span>
+            FindMy<span className="text-primary">Uni</span>
           </span>
         </Link>
         <NavLinks />

@@ -21,6 +21,14 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-19 01:52 — numele site-ului devine FindMyUni
+- Cerut: noul nume ales de echipă, FindMyUni (scris legat), doar în versiunea nouă; logo-ul și imaginile rămân până la un logo nou
+- Făcut: „UniPath” înlocuit cu „FindMyUni” în antet (FindMy + Uni colorat), titlurile din tab, textele paginilor, fereastra de bun venit, paginile de administrare, emailul de conectare și mențiunile din sursele de date
+- Fișiere: `apps/web/components/Shell.tsx`, `apps/web/components/WelcomeDialog.tsx`, `apps/web/app/**/page.tsx`, `apps/web/app/layout.tsx`, `apps/web/convex/auth.ts`, `apps/web/data/catalog/index.json`, `scripts/data/sources.json`
+- Poartă: TRECUT (secrete, fișiere, registru, build, teste, pornire); antetul și titlul văzute în browser
+- Neverificat: logo-ul, iconița și imaginea de distribuire încă au scris „UniPath” (de schimbat când există un logo nou); adresa publică și numele proiectului Vercel au rămas „unipath”; emailul de conectare nu a fost trimis de probă
+- Urmează: logo nou FindMyUni, când îl are echipa
+
 ### 2026-10-15 02:16 — patru universități noi cu fișă în Australia
 - Cerut: continuarea rundei „minimum 10 universități în fiecare țară”, pentru Australia
 - Făcut: un ajutor a căutat universitățile australiene care publică cerințele pentru bacalaureatul românesc și a scris 4 fișe (Macquarie, Newcastle, Australian Catholic University, Edith Cowan); un verificator independent le-a recitit și a corectat 9 lucruri (de exemplu: la ACU, cine a terminat liceul în afara Australiei aplică prin UAC pentru Sydney și Canberra). Australia are acum 8 fișe; aproape 20 de alte universități australiene nu scriu ce cer de la diploma românească. Acum 668 de universități în străinătate
@@ -651,6 +659,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-15 02:33 `b9900d1` feat: at least ten university sheets per country where data allows
 - 2026-10-14 12:18 `36c9928` feat: country guides and 236 new university sheets in six countries
 - 2026-10-14 03:00 `5dec06e` perf: render Romanian programme lists with the page
 - 2026-10-13 23:08 `c08b7a1` fix: recheck unconfirmed facts and audit the whole site
@@ -680,5 +689,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-06 01:15 `20dc009` feat: public review form with bot check and rate limit, and the moderation page
 - 2026-10-06 01:05 `a21a479` feat: development-only sign-in links in the function log; sign-in verified end to end
 - 2026-10-06 00:27 `ce65453` feat: passwordless sign-in, account page and saving the result
-- 2026-10-06 00:06 `b4aeabc` feat: Convex schema, shared access rules and access tests
 <!-- commits:end -->

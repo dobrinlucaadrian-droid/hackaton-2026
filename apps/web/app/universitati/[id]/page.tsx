@@ -27,7 +27,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const u = universityById(id);
-  return { title: u ? `${u.name} | UniPath` : "Universitate | UniPath" };
+  return { title: u ? `${u.name} | FindMyUni` : "Universitate | FindMyUni" };
 }
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {

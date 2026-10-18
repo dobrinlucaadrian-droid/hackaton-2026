@@ -80,7 +80,7 @@ export default function ReviewFormPage() {
       </Link>
       <h1 className="mt-4 text-4xl font-black tracking-tighter text-ink">Scrie părerea ta</h1>
       <p className="mt-2 text-ink-soft">
-        Ești student sau ai terminat o facultate? Spune-le liceenilor cum e, cu vorbele tale. Părerea apare pe site doar după ce o citește și o aprobă echipa UniPath.
+        Ești student sau ai terminat o facultate? Spune-le liceenilor cum e, cu vorbele tale. Părerea apare pe site doar după ce o citește și o aprobă echipa FindMyUni.
       </p>
 
       <form onSubmit={onSubmit} className="mt-6 space-y-5 rounded-3xl bg-card p-6 shadow-sm ring-1 ring-line sm:p-8" noValidate>
@@ -124,7 +124,7 @@ export default function ReviewFormPage() {
         </div>
         <label className="flex cursor-pointer items-start gap-3 rounded-2xl bg-paper p-4 ring-1 ring-line">
           <input type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} className="mt-1 h-5 w-5 shrink-0 accent-primary" />
-          <span className="text-sm text-ink">Sunt de acord ca numele meu și părerea mea să fie publicate pe UniPath. Am cel puțin 18 ani.{" "}
+          <span className="text-sm text-ink">Sunt de acord ca numele meu și părerea mea să fie publicate pe FindMyUni. Am cel puțin 18 ani.{" "}
             <Link href="/confidentialitate" className="font-bold text-primary underline underline-offset-2" target="_blank">Ce date păstrăm</Link>
           </span>
         </label>

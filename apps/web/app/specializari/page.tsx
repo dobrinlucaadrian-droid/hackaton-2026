@@ -4,7 +4,7 @@ import { Books, Sparkle } from "@/components/Illustrations";
 import { Shell } from "@/components/Shell";
 import { SpecializationsBrowser } from "@/components/SpecializationsBrowser";
 
-export const metadata: Metadata = { title: "Specializări | UniPath" };
+export const metadata: Metadata = { title: "Specializări | FindMyUni" };
 
 export default function SpecializationsPage() {
   return (

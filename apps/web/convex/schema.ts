@@ -1,4 +1,4 @@
-// Database tables for UniPath: users (from Convex Auth, plus a server-written role), saved questionnaire results, student reviews, the catalogue of institutions and programmes, and anonymous usage statistics.
+// Database tables for FindMyUni: users (from Convex Auth, plus a server-written role), saved questionnaire results, student reviews, the catalogue of institutions and programmes, and anonymous usage statistics.
 import { authTables } from "@convex-dev/auth/server";
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";

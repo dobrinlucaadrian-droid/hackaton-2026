@@ -5,7 +5,7 @@ import { Suspense } from "react";
 import { Shell } from "@/components/Shell";
 import { UniversitySearch } from "@/components/UniversitySearch";
 
-export const metadata: Metadata = { title: "Universități | UniPath" };
+export const metadata: Metadata = { title: "Universități | FindMyUni" };
 
 export default function UniversitiesPage() {
   return (

@@ -67,10 +67,10 @@ export default function AdminReviewsPage() {
 
   if (isLoading || (isAuthenticated && me === undefined)) return <Shell><p className="mt-10 text-center text-ink-soft">Se încarcă...</p></Shell>;
   if (!isAuthenticated) {
-    return <Shell><Notice title="Trebuie să fii conectat" text="Pagina aceasta este pentru echipa UniPath." href="/conectare" cta="Conectare" /></Shell>;
+    return <Shell><Notice title="Trebuie să fii conectat" text="Pagina aceasta este pentru echipa FindMyUni." href="/conectare" cta="Conectare" /></Shell>;
   }
   if (!me?.isAdmin) {
-    return <Shell><Notice title="Nu ai acces aici" text="Pagina aceasta este doar pentru administratorii UniPath." href="/" cta="Înapoi acasă" /></Shell>;
+    return <Shell><Notice title="Nu ai acces aici" text="Pagina aceasta este doar pentru administratorii FindMyUni." href="/" cta="Înapoi acasă" /></Shell>;
   }
 
   return (

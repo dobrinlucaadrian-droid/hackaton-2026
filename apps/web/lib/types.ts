@@ -1,4 +1,4 @@
-// Shared data contract for UniPath: profiles, questions, domains, universities and match results.
+// Shared data contract for FindMyUni: profiles, questions, domains, universities and match results.
 
 /** What a student can be drawn to; profiles, answers and domains are all scored on these. */
 export type TraitId =

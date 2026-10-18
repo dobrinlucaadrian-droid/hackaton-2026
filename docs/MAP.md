@@ -102,7 +102,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `not-found.tsx` (11) — Friendly 404 page shown for unknown routes and unknown university ids.. Exports: NotFound
 - `opengraph-image.alt.txt` (1) — _no description: add a first-line comment_
 - `opengraph-image.png`
-- `page.tsx` (77) — Home page: the hero with the two main actions and "UniPath în cifre" (counts taken from the data); search and specializations have their own pages.. Routes: /. Exports: Home
+- `page.tsx` (77) — Home page: the hero with the two main actions and "FindMyUni în cifre" (counts taken from the data); search and specializations have their own pages.. Routes: /. Exports: Home
 
 ### apps/web/app/conectare  (1 files)
 
@@ -110,7 +110,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/confidentialitate  (1 files)
 
-- `page.tsx` (102) — Privacy page: in plain Romanian, what UniPath stores, why, who processes it and how to delete it. Working draft until a legal check.. Routes: /confidentialitate. Exports: metadata, PrivacyPage
+- `page.tsx` (102) — Privacy page: in plain Romanian, what FindMyUni stores, why, who processes it and how to delete it. Working draft until a legal check.. Routes: /confidentialitate. Exports: metadata, PrivacyPage
 
 ### apps/web/app/cont  (1 files)
 
@@ -193,7 +193,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `ProgramSearch.tsx` (100) — Search over the bachelor programmes of the catalogue: country, free text, study domain and city; the state lives in the URL so links and Back work.. Exports: ProgramSearch
 - `SaveResult.tsx` (59) — "Salvează în contul meu" on the result page: saves the result when the student is signed in, otherwise keeps it on the device and sends them to sign in.. Exports: SaveResult
 - `SearchBox.tsx` (45) — Search box with a magnifier icon; submits to /universitati?q=... or calls onSearch when given.. Exports: SearchBox
-- `Shell.tsx` (53) — Page frame shared by all screens: header with the UniPath logo, a centered content column and a footer with the privacy link.. Exports: Shell, Notice
+- `Shell.tsx` (53) — Page frame shared by all screens: header with the FindMyUni logo, a centered content column and a footer with the privacy link.. Exports: Shell, Notice
 - `SignInForm.tsx` (141) — The sign-in form (full name and email, a sign-in link by email, Google when configured), shared by the welcome window and the sign-in page. No passwords.. Exports: SignInForm
 - `SpecializationsBrowser.tsx` (82) — /specializari body: a text filter over all categories, domains and specializations; without text it shows the category tiles.. Exports: SpecializationsBrowser
 - `StudentCard.tsx` (38) — One student opinion: photo (or initial), name, faculty and their own words. Used on the students page and on university sheets.. Exports: StudentCard
@@ -233,7 +233,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `http.ts` (9) — HTTP routes of the Convex backend: only the ones Convex Auth needs for sign-in.
 - `results.ts` (77) — A student's saved questionnaire result: each signed-in user can save, read and delete only their own.. Exports: mine, save, remove
 - `reviews.ts` (154) — Student reviews: anyone can read the approved ones and send a new one through the checked public form; only administrators see the queue and approve or reject.. Exports: LIMITS, listApproved, listByState, moderate, insertPending, insertLimited, submit
-- `schema.ts` (120) — Database tables for UniPath: users (from Convex Auth, plus a server-written role), saved questionnaire results, student reviews, the catalogue of institutions and programmes, and anonymous usage statistics.. Exports: reviewState
+- `schema.ts` (120) — Database tables for FindMyUni: users (from Convex Auth, plus a server-written role), saved questionnaire results, student reviews, the catalogue of institutions and programmes, and anonymous usage statistics.. Exports: reviewState
 - `tsconfig.json` (26) — JSON (invalid)
 
 ### apps/web/data/catalog  (23 files)
@@ -307,7 +307,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `sheets.ts` (11) — The full university sheets, with all their long texts. Large: import it only from server code (the university page) and from tests, never from a component that runs in the browser — those use lib/universities.ts.. Exports: universities, universityById
 - `testimonials.ts` (29) — Links student opinions to the universities that have a profile sheet, so the search and the sheets can show them.. Exports: universityIdOf, testimonialsFor
 - `traits.ts` (18) — The ten inclinations the questionnaire measures and their Romanian names. Kept apart from the matching so pages can show them without loading the university data.. Exports: TRAITS, TRAIT_LABEL
-- `types.ts` (265) — Shared data contract for UniPath: profiles, questions, domains, universities and match results.
+- `types.ts` (265) — Shared data contract for FindMyUni: profiles, questions, domains, universities and match results.
 - `universities.data.test.ts` (109) — Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
 - `universities.test.ts` (229) — Tests the specializations and categories data and the university search/filter logic.
 - `universities.ts` (192) — Search and filter over the universities with a profile sheet. Works on the index (sheets without their long texts), which is what the browser loads.. Exports: universities, countries, citiesIn, searchUniversities, filterUniversities, searchWorld

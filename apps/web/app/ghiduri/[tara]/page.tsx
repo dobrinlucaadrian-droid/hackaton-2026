@@ -16,7 +16,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { tara } = await params;
   const g = guideById(tara);
-  return g ? { title: `${g.title} | UniPath`, description: g.intro } : { title: "Ghiduri pe țări | UniPath" };
+  return g ? { title: `${g.title} | FindMyUni`, description: g.intro } : { title: "Ghiduri pe țări | FindMyUni" };
 }
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {

@@ -15,7 +15,7 @@ const escapeHtml = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;")
 
 const magicLink = Resend({
   // Until the team verifies its own domain in Resend, emails can only be sent from this test address.
-  from: process.env.AUTH_EMAIL_FROM ?? "UniPath <onboarding@resend.dev>",
+  from: process.env.AUTH_EMAIL_FROM ?? "FindMyUni <onboarding@resend.dev>",
   maxAge: 15 * 60, // the link works for 15 minutes
   async sendVerificationRequest({ identifier: email, url, provider }) {
     // Development only (AUTH_DEV_LOG_LINKS=1 is set just on the dev deployment): write the link to the function log instead of emailing it.
@@ -29,9 +29,9 @@ const magicLink = Resend({
       body: JSON.stringify({
         from: provider.from,
         to: email,
-        subject: "Linkul tău de conectare la UniPath",
-        text: `Bună!\n\nApasă pe linkul de mai jos ca să te conectezi la UniPath. Linkul este valabil 15 minute.\n\n${url}\n\nDacă nu ai cerut tu acest email, îl poți ignora.`,
-        html: `<p>Bună!</p><p>Apasă pe butonul de mai jos ca să te conectezi la UniPath. Linkul este valabil 15 minute.</p><p><a href="${escapeHtml(url)}" style="display:inline-block;padding:12px 20px;border-radius:12px;background:#6b1530;color:#ffffff;font-weight:bold;text-decoration:none">Conectează-te la UniPath</a></p><p>Dacă nu ai cerut tu acest email, îl poți ignora.</p>`,
+        subject: "Linkul tău de conectare la FindMyUni",
+        text: `Bună!\n\nApasă pe linkul de mai jos ca să te conectezi la FindMyUni. Linkul este valabil 15 minute.\n\n${url}\n\nDacă nu ai cerut tu acest email, îl poți ignora.`,
+        html: `<p>Bună!</p><p>Apasă pe butonul de mai jos ca să te conectezi la FindMyUni. Linkul este valabil 15 minute.</p><p><a href="${escapeHtml(url)}" style="display:inline-block;padding:12px 20px;border-radius:12px;background:#6b1530;color:#ffffff;font-weight:bold;text-decoration:none">Conectează-te la FindMyUni</a></p><p>Dacă nu ai cerut tu acest email, îl poți ignora.</p>`,
       }),
     });
     if (!res.ok) throw new Error(`Emailul nu a putut fi trimis (Resend ${res.status}).`);

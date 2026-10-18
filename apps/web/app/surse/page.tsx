@@ -5,8 +5,8 @@ import { Shell } from "@/components/Shell";
 import { catalogCountries, catalogTotals } from "@/lib/catalog";
 
 export const metadata: Metadata = {
-  title: "Surse de date — UniPath",
-  description: "De unde vin datele despre universități și programe de studii din UniPath.",
+  title: "Surse de date — FindMyUni",
+  description: "De unde vin datele despre universități și programe de studii din FindMyUni.",
 };
 
 function Block({ title, children }: { title: string; children: React.ReactNode }) {
@@ -74,7 +74,7 @@ export default function SourcesPage() {
       </Block>
 
       <Block title="Alte informații din aplicație">
-        <p>Fișele universităților (descriere, admitere, costuri, plusuri și minusuri) sunt scrise de echipa UniPath și sunt orientative. Materiile pe ani sunt luate din câte un plan de învățământ oficial, cu link la fiecare. Părerile sunt ale studenților care le-au scris.</p>
+        <p>Fișele universităților (descriere, admitere, costuri, plusuri și minusuri) sunt scrise de echipa FindMyUni și sunt orientative. Materiile pe ani sunt luate din câte un plan de învățământ oficial, cu link la fiecare. Părerile sunt ale studenților care le-au scris.</p>
       </Block>
     </Shell>
   );

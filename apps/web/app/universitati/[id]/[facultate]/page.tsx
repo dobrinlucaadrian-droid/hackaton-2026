@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id, facultate } = await params;
   const f = facultyBySlug(id, facultate);
   const u = universityById(id);
-  return { title: f && u ? `${f.name} — ${u.name} | UniPath` : "Facultate | UniPath" };
+  return { title: f && u ? `${f.name} — ${u.name} | FindMyUni` : "Facultate | FindMyUni" };
 }
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {

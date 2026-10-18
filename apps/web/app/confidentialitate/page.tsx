@@ -1,11 +1,11 @@
-// Privacy page: in plain Romanian, what UniPath stores, why, who processes it and how to delete it. Working draft until a legal check.
+// Privacy page: in plain Romanian, what FindMyUni stores, why, who processes it and how to delete it. Working draft until a legal check.
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Shell } from "@/components/Shell";
 
 export const metadata: Metadata = {
-  title: "Confidențialitate — UniPath",
-  description: "Ce date păstrează UniPath, de ce și cum le poți șterge.",
+  title: "Confidențialitate — FindMyUni",
+  description: "Ce date păstrează FindMyUni, de ce și cum le poți șterge.",
 };
 
 // Set before launch: the address people can write to about their data. Empty = the page says it is coming.

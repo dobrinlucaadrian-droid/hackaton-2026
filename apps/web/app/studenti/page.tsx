@@ -4,7 +4,7 @@ import { Cap } from "@/components/Illustrations";
 import { Shell } from "@/components/Shell";
 import { StudentVoices } from "@/components/StudentVoices";
 
-export const metadata = { title: "Ce spun studenții — UniPath" };
+export const metadata = { title: "Ce spun studenții — FindMyUni" };
 
 export default function Students() {
   return (

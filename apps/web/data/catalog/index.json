@@ -779,7 +779,7 @@
    "name": "Parcoursup 2026 („Cartographie des formations Parcoursup”) și „Principaux diplômes et formations préparés dans les établissements publics” 2024-25 – Ministère de l’Enseignement supérieur, de la Recherche et de l’Espace (date deschise)",
    "url": "https://data.enseignementsup-recherche.gouv.fr/explore/dataset/fr-esr-cartographie_formations_parcoursup/",
    "licence": "Licence Ouverte v2.0 (Etalab)",
-   "attribution": "Cartographie des formations Parcoursup 2026 și Principaux diplômes et formations préparés dans les établissements publics 2024-25, Ministère de l’Enseignement supérieur, de la Recherche et de l’Espace (data.enseignementsup-recherche.gouv.fr), Licence Ouverte v2.0; date reformatate de UniPath",
+   "attribution": "Cartographie des formations Parcoursup 2026 și Principaux diplômes et formations préparés dans les établissements publics 2024-25, Ministère de l’Enseignement supérieur, de la Recherche et de l’Espace (data.enseignementsup-recherche.gouv.fr), Licence Ouverte v2.0; date reformatate de FindMyUni",
    "year": "2026 (Parcoursup); 2024–2025 (licențe profesionale)",
    "note": "Licence, Licence accès santé, PASS, BUT, școli de inginerie și de afaceri cu admitere după bacalaureat, Sciences Po/IEP – programele care recrutează prin Parcoursup. În plus, pentru universitățile de stat: licențele profesionale (un an, după doi ani de studii) și specializările de licență care în Parcoursup apar doar într-un „portail” comun. Fără BTS, clase pregătitoare, școli de asistente, de artă și de arhitectură. „Locuri” este capacitatea din Parcoursup 2025 pentru aceeași ofertă; rândurile din a doua sursă nu au locuri și nici link. Sursele nu spun limba de predare; am trecut franceza."
   }
@@ -1383,7 +1383,7 @@
    "name": "MUR – Ufficio di Statistica (USTAT), „Offerta formativa – corsi di laurea”",
    "url": "https://dati-ustat.mur.gov.it/dataset/bed0c71e-9f86-4a0f-a266-963b6f7bbbd2",
    "licence": "Italian Open Data License v2.0 (IODL 2.0)",
-   "attribution": "MUR – Ufficio di Statistica (dati-ustat.mur.gov.it), IODL 2.0; date adaptate de UniPath",
+   "attribution": "MUR – Ufficio di Statistica (dati-ustat.mur.gov.it), IODL 2.0; date adaptate de FindMyUni",
    "year": "2025/26",
    "note": "Lauree de trei ani și lauree cu ciclu unic (de exemplu Medicină, Drept). Un curs încadrat în două clase de laurea apare o singură dată, cu ambele clase. Sursa nu are facultăți, credite sau locuri. Unde apare, „status” arată tipul de acces la admitere."
   }
@@ -1465,7 +1465,7 @@
    "name": "Europass – „Learning Opportunities and Qualifications in Europe” (Comisia Europeană, date deschise)",
    "url": "https://data.europa.eu/",
    "licence": "notă de reutilizare a Comisiei Europene (Decizia 2011/833/UE), conținut sub CC BY 4.0",
-   "attribution": "Europass (Comisia Europeană), date furnizate de QQI – Quality and Qualifications Ireland; adaptate de UniPath",
+   "attribution": "Europass (Comisia Europeană), date furnizate de QQI – Quality and Qualifications Ireland; adaptate de FindMyUni",
    "year": "descărcat în octombrie 2026",
    "note": "Programe de nivel licență din registrul irlandez, plus programele integrate cu admitere după liceu care se termină cu master. „Orașul” este zona administrativă din sursă, nu întotdeauna orașul campusului. Unele nume lungi sunt tăiate în sursă. Sursa nu are durata sau locurile. Datele de bază aparțin QQI; nu am găsit o licență separată pentru ele."
   }
@@ -1603,7 +1603,7 @@
    "name": "DUO – RIO open onderwijsdata (Dienst Uitvoering Onderwijs)",
    "url": "https://duo.nl/open_onderwijsdata/",
    "licence": "CC BY",
-   "attribution": "DUO (Dienst Uitvoering Onderwijs), RIO open data, CC BY; prelucrat de UniPath, nu este un produs oficial DUO",
+   "attribution": "DUO (Dienst Uitvoering Onderwijs), RIO open data, CC BY; prelucrat de FindMyUni, nu este un produs oficial DUO",
    "year": "octombrie 2026",
    "note": "Un rând pentru fiecare program de licență acreditat (cod CROHO), pe instituție și oraș, din registrul de licențe DUO; ofertele înregistrate dau doar orașul, limba și pagina. Numele sunt cele oficiale, în olandeză; la o parte din programe sursa nu spune limba de predare."
   }
@@ -1674,7 +1674,7 @@
    "name": "Europass – „Learning Opportunities and Qualifications in Europe” (Comisia Europeană, date deschise)",
    "url": "https://data.europa.eu/",
    "licence": "notă de reutilizare a Comisiei Europene (Decizia 2011/833/UE), conținut sub CC BY 4.0",
-   "attribution": "Europass (Comisia Europeană), date furnizate de AHOVOKS (Flandra); adaptate de UniPath",
+   "attribution": "Europass (Comisia Europeană), date furnizate de AHOVOKS (Flandra); adaptate de FindMyUni",
    "year": "descărcat în octombrie 2026",
    "note": "Acoperire parțială: doar instituțiile din Flandra, cu programe în olandeză; Valonia și Bruxelles-ul francofon lipsesc. Fără diplomele „bachelor după bachelor”. Câteva programe din registrul flamand (între ele cele ale Școlii Militare Regale) lipsesc din sursă. Orașul este sediul instituției. Sursa nu are coduri de domeniu, durata sau locurile; domeniul l-am dedus din numele programului. Datele de bază aparțin AHOVOKS; nu am găsit o licență separată pentru ele."
   }
@@ -1784,7 +1784,7 @@
    "name": "Europass – „Learning Opportunities and Qualifications in Europe” (Comisia Europeană, date deschise)",
    "url": "https://data.europa.eu/",
    "licence": "notă de reutilizare a Comisiei Europene (Decizia 2011/833/UE), conținut sub CC BY 4.0",
-   "attribution": "Europass (Comisia Europeană), date furnizate de OeAD / studienwahl.at; adaptate de UniPath",
+   "attribution": "Europass (Comisia Europeană), date furnizate de OeAD / studienwahl.at; adaptate de FindMyUni",
    "year": "descărcat în octombrie 2026",
    "note": "Acoperire parțială: 520 de programe de licență, mai puține decât oferta reală (de exemplu WU Wien apare cu un singur program). Sursa nu are orașul; l-am luat din adresa paginii programului. Datele de bază aparțin OeAD; nu am găsit o licență separată pentru ele."
   }

@@ -76,7 +76,7 @@ export function WelcomeDialog() {
       <div role="dialog" aria-modal="true" aria-labelledby="welcome-title" className="rise w-full max-w-md rounded-3xl bg-card p-6 shadow-xl ring-1 ring-line sm:p-8">
         {step === "choice" ? (
           <>
-            <h2 id="welcome-title" className="text-3xl font-black tracking-tight text-ink">Bine ai venit pe UniPath!</h2>
+            <h2 id="welcome-title" className="text-3xl font-black tracking-tight text-ink">Bine ai venit pe FindMyUni!</h2>
             <p className="mt-2 text-ink-soft">
               Poți folosi tot site-ul fără cont. Cu un cont gratuit îți păstrezi rezultatul chestionarului și îl găsești oricând, de pe orice dispozitiv.
             </p>

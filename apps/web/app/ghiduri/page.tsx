@@ -7,7 +7,7 @@ import { counted } from "@/lib/labels";
 import { universities } from "@/lib/universities";
 
 export const metadata: Metadata = {
-  title: "Ghiduri pe țări | UniPath",
+  title: "Ghiduri pe țări | FindMyUni",
   description: "Cum aplici la facultate în alte țări: pași, acte, costuri, burse și cazare, pe înțelesul unui licean.",
 };
 

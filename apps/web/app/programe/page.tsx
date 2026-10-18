@@ -9,7 +9,7 @@ import { catalogCountries, catalogTotals } from "@/lib/catalog";
 import { domains } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Programe de licență — UniPath",
+  title: "Programe de licență — FindMyUni",
   description: "Caută printre programele de licență din România și din alte țări, din datele oficiale ale fiecărei țări.",
 };
 

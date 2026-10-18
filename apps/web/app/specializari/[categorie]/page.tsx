@@ -16,7 +16,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { categorie } = await params;
   const c = categories.find((x) => x.id === categorie);
-  return { title: c ? `${c.name} | UniPath` : "Specializări | UniPath" };
+  return { title: c ? `${c.name} | FindMyUni` : "Specializări | FindMyUni" };
 }
 
 export default async function CategoryPage({ params }: Props) {

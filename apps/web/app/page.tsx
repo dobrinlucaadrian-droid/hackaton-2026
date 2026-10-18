@@ -1,4 +1,4 @@
-// Home page: the hero with the two main actions and "UniPath în cifre" (counts taken from the data); search and specializations have their own pages.
+// Home page: the hero with the two main actions and "FindMyUni în cifre" (counts taken from the data); search and specializations have their own pages.
 import Link from "next/link";
 import { HeroScene } from "@/components/Illustrations";
 import { Shell } from "@/components/Shell";
@@ -55,7 +55,7 @@ export default function Home() {
 
       <section aria-labelledby="in-cifre" className="rise mx-auto mt-12 max-w-4xl">
         <h2 id="in-cifre" className="text-center text-3xl font-black tracking-tight text-ink">
-          UniPath în cifre
+          FindMyUni în cifre
         </h2>
         <ul className="mt-5 grid grid-cols-2 gap-3 lg:grid-cols-4">
           {numbers.map((n) => (
