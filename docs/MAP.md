@@ -102,7 +102,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `not-found.tsx` (11) — Friendly 404 page shown for unknown routes and unknown university ids.. Exports: NotFound
 - `opengraph-image.alt.txt` (1) — _no description: add a first-line comment_
 - `opengraph-image.png`
-- `page.tsx` (77) — Home page: the hero with the two main actions and "FindMyUni în cifre" (counts taken from the data); search and specializations have their own pages.. Routes: /. Exports: Home
+- `page.tsx` (33) — Home page: the welcome with the drawing and the account choice, the four big buttons (clouds or circles, ?forma=cerc to compare).. Routes: /. Exports: Home
 
 ### apps/web/app/conectare  (1 files)
 
@@ -172,7 +172,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 - `page.tsx` (31) — University finder page: search box, filters and top 10 results (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
 
-### apps/web/components  (35 files)
+### apps/web/components  (37 files)
 
 - `ActivitiesStep.tsx` (227) — Quiz step "Ce ai făcut până acum?": add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
 - `ActivitiesSummary.tsx` (33) — Read-only list of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
@@ -186,7 +186,8 @@ _Open only the files listed here; a file's description is its first comment line
 - `Illustrations.tsx` (88) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots and the start-page hero.. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene
 - `InterestPicker.tsx` (129) — "Ce îți place?": the student picks up to three interests and sees the specializations that fit them best, ranked, with links to universities.. Exports: InterestPicker
 - `MatchCard.tsx` (201) — One result card: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
-- `NavLinks.tsx` (45) — Header navigation links with the current page highlighted; the last one is "Contul meu" or "Conectare", which opens the account window.. Exports: NavLinks
+- `NavBubbles.tsx` (45) — The four big buttons on the home page (Specializări, Universități, Chestionar, Studenți), drawn as little clouds or as circles.. Exports: NavBubbles
+- `NavLinks.tsx` (41) — Header navigation links with the current page highlighted; signed-in visitors also get "Contul meu" (signing in starts from the home page).. Exports: NavLinks
 - `OfficialPrograms.tsx` (12) — On a university sheet outside Romania: every bachelor programme of the institution from its country's official dataset, read from the database (those lists are too large to ship with the pages). Romanian sheets render the same list on the server, from the catalogue file.. Exports: OfficialPrograms
 - `ProgramGroups.tsx` (73) — The list of an institution's bachelor programmes, grouped by faculty (or by field when the source has no faculties). Plain markup with no browser code, so a page can render it on the server.. Exports: ProgramGroups
 - `ProgramRow.tsx` (68) — One bachelor programme from the catalogue, as a compact row: name and the small facts its source gives (language, study form, years, places, status).. Exports: FORM_LABEL, ProgramRow
@@ -204,9 +205,10 @@ _Open only the files listed here; a file's description is its first comment line
 - `UniversityDomains.tsx` (87) — "Ce poți studia aici" on a university sheet: tapping a domain opens, on the same page, its specializations and the subjects per year.. Exports: UniversityDomains
 - `UniversityList.tsx` (48) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList
 - `UniversityOpinions.tsx` (32) — "Ce spun studenții" on a university sheet: the opinions about this university, including approved ones from the database. Renders nothing when there are none.. Exports: UniversityOpinions
-- `UniversitySearch.tsx` (426) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
+- `UniversitySearch.tsx` (431) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
 - `VisitTracker.tsx` (38) — Counts page views anonymously: sends only the page path and, on the first page of a visit, the country and the site the visitor came from. No cookie, no stored id.. Exports: VisitTracker
-- `WelcomeDialog.tsx` (122) — Welcome window shown once per device on the first visit: the visitor chooses to make an account or to go on without one. The header's "Conectare" button opens the same window.. Exports: openSignIn, WelcomeDialog
+- `WelcomeActions.tsx` (39) — The two choices under the welcome on the home page: make an account (opens the account window) or go on without one (scrolls to the big buttons). Signed-in visitors see "Contul meu" instead.. Exports: WelcomeActions
+- `WelcomeDialog.tsx` (57) — Account window: opens over the current page when the home page's "Îmi fac cont / mă conectez" button is pressed, with the sign-in form. It no longer opens by itself.. Exports: openSignIn, WelcomeDialog
 - `WhatIf.tsx` (69) — Collapsible "Ce-ar fi dacă?" panel: one slider per inclination, controlled by the result page.. Exports: WhatIf
 - `domainStyle.ts` (67) — Colour family and emoji for every study domain id, used on the result cards.. Exports: FAMILY_CLASSES, domainStyle
 

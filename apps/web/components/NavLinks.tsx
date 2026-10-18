@@ -1,9 +1,8 @@
 "use client";
-// Header navigation links with the current page highlighted; the last one is "Contul meu" or "Conectare", which opens the account window.
+// Header navigation links with the current page highlighted; signed-in visitors also get "Contul meu" (signing in starts from the home page).
 import { useConvexAuth } from "convex/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { openSignIn } from "./WelcomeDialog";
 
 const LINKS = [
   ["/", "Acasă"],
@@ -16,19 +15,16 @@ const LINKS = [
 export function NavLinks() {
   const path = usePathname();
   const { isAuthenticated } = useConvexAuth();
-  const account = isAuthenticated ? (["/cont", "Contul meu"] as const) : (["/conectare", "Conectare"] as const);
   return (
     <nav aria-label="Navigare principală" className="-mx-1 max-w-full overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       <ul className="flex items-center gap-1 whitespace-nowrap px-1">
-        {[...LINKS, account].map(([href, label]) => {
+        {[...LINKS, ...(isAuthenticated ? ([["/cont", "Contul meu"]] as const) : [])].map(([href, label]) => {
           const on = href === "/" ? path === "/" : path === href || path.startsWith(`${href}/`);
           return (
             <li key={href}>
               <Link
                 href={href}
                 aria-current={on ? "page" : undefined}
-                // "Conectare" opens the account window on the current page; the link itself still works without JavaScript.
-                onClick={href === "/conectare" && !on ? (e) => { e.preventDefault(); openSignIn(); } : undefined}
                 className={`inline-flex min-h-11 items-center rounded-full px-3 text-sm font-bold transition sm:px-4 sm:text-base ${
                   on ? "bg-primary text-white" : "text-ink-soft hover:bg-primary-tint hover:text-primary-dark"
                 }`}

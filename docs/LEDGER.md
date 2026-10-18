@@ -21,6 +21,30 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-19 02:10 — orașele din căutare se pot strânge la loc
+- Cerut: după „Vezi toate orașele”, să poți restrânge din nou lista
+- Făcut: butonul „Arată mai puține” apare sub lista completă de orașe și o readuce la primele orașe (orașele alese rămân vizibile)
+- Fișiere: `apps/web/components/UniversitySearch.tsx`
+- Poartă: TRECUT (secrete, fișiere, registru, build, teste, pornire); în browser: 12 orașe → toate 22 → înapoi la 12
+- Neverificat: —
+- Urmează: alegerea nori / cercuri pentru pagina principală
+
+### 2026-10-19 02:04 — scoase cifrele de pe pagina principală
+- Cerut: „FindMyUni în cifre” să dispară; echipa vrea ca aceste date să rămână confidențiale
+- Făcut: secțiunea cu cele patru cifre (fișe, specializări, păreri, instituții) scoasă de pe pagina principală
+- Fișiere: `apps/web/app/page.tsx`
+- Poartă: TRECUT (secrete, fișiere, registru, build, teste, pornire); pagina principală citită în browser, fără cifre
+- Neverificat: alte pagini încă arată numere (de exemplu pagina de programe și pagina de surse, cu totalul catalogului); echipa hotărăște dacă le scoatem și de acolo
+- Urmează: alegerea nori / cercuri și ideile în plus pentru pagina principală
+
+### 2026-10-19 02:02 — pagina principală nouă: bun venit, desen și butoane-nor
+- Cerut: când intri pe site, o pagină cu desen, urarea de bun venit și alegerea „cont / fără cont”; mai jos butoanele Specializări, Universități, Chestionar, Studenți în nori sau cercuri; fără butonul „Conectare” sus
+- Făcut: pagina principală începe cu „Bine ai venit pe FindMyUni!”, desenul de acum și butoanele „Intră în cont” (deschide fereastra de cont) și „Continui fără cont” (coboară la butoane); dedesubt „De unde vrei să începi?” cu cele patru butoane ca nori (implicit) sau cercuri (`/?forma=cerc`, ca echipa să compare), apoi cifrele; fereastra de bun venit nu mai apare singură; „Conectare” scos din bara de sus, „Contul meu” apare doar celor conectați
+- Fișiere: `apps/web/app/page.tsx`, `apps/web/components/NavBubbles.tsx`, `apps/web/components/WelcomeActions.tsx`, `apps/web/components/WelcomeDialog.tsx`, `apps/web/components/NavLinks.tsx`
+- Poartă: TRECUT (secrete, fișiere, registru, build, teste, pornire); pagina văzută în browser pe calculator și pe telefon, fereastra de cont se deschide și se închide
+- Neverificat: varianta pentru cineva deja conectat („Contul meu” pe pagina principală și în bară) nu a fost văzută în browser
+- Urmează: echipa alege nori sau cercuri și ideile în plus (nori care plutesc, drum între ei, urare după ora din zi)
+
 ### 2026-10-19 01:52 — numele site-ului devine FindMyUni
 - Cerut: noul nume ales de echipă, FindMyUni (scris legat), doar în versiunea nouă; logo-ul și imaginile rămân până la un logo nou
 - Făcut: „UniPath” înlocuit cu „FindMyUni” în antet (FindMy + Uni colorat), titlurile din tab, textele paginilor, fereastra de bun venit, paginile de administrare, emailul de conectare și mențiunile din sursele de date
@@ -659,6 +683,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-19 01:53 `ec9d731` feat: rename the site to FindMyUni
 - 2026-10-15 02:33 `b9900d1` feat: at least ten university sheets per country where data allows
 - 2026-10-14 12:18 `36c9928` feat: country guides and 236 new university sheets in six countries
 - 2026-10-14 03:00 `5dec06e` perf: render Romanian programme lists with the page
@@ -688,5 +713,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-06 01:59 `e44ee5f` docs: record where the production work stops for the day
 - 2026-10-06 01:15 `20dc009` feat: public review form with bot check and rate limit, and the moderation page
 - 2026-10-06 01:05 `a21a479` feat: development-only sign-in links in the function log; sign-in verified end to end
-- 2026-10-06 00:27 `ce65453` feat: passwordless sign-in, account page and saving the result
 <!-- commits:end -->

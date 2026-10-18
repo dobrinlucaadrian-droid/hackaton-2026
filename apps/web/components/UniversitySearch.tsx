@@ -251,6 +251,11 @@ export function UniversitySearch() {
                 Vezi toate orașele ({cityOptions.length})
               </button>
             )}
+            {allCities && cityOptions.length > CITY_PREVIEW && (
+              <button type="button" onClick={() => setAllCities(false)} className="min-h-11 rounded-full px-3 text-sm font-bold text-primary underline underline-offset-2">
+                Arată mai puține
+              </button>
+            )}
           </Group>
         )}
       </div>
