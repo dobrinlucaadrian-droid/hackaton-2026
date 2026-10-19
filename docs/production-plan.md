@@ -8,7 +8,7 @@ Decided with the team on 2026-10-05, after the hackathon presentation. Work happ
 | Topic | Decision |
 | --- | --- |
 | Database and backend | Convex (hosted) |
-| Sign-in | Convex Auth: email magic link (sent with Resend) and Google; no passwords |
+| Sign-in | Convex Auth: username + password; email confirmed with a 6-digit code at sign-up, password reset by code (sent with Resend); no Google (changed 2026-10-19) |
 | Who has an account | high-school students (save their questionnaire result) and the team (administrators) |
 | Student reviews | public form without an account; shown only after the team approves them |
 | Where we build | `production` branch with its own preview address |
@@ -18,7 +18,7 @@ Decided with the team on 2026-10-05, after the hackathon presentation. Work happ
 | Step | What is built | Done when |
 | --- | --- | --- |
 | 1. Foundation | Convex project, tables (users, saved results, reviews), shared access rules | the app starts connected to Convex on the preview |
-| 2. Accounts | magic link + Google sign-in; saving the result; account deletion | a student signs in, sees only their own result, can delete the account |
+| 2. Accounts | username + password sign-in with email code; saving the result; account deletion | a student signs in, sees only their own result, can delete the account |
 | 3. Reviews | public form, moderation queue, admin page; the 24 current opinions moved to the database | a new review appears publicly only after approval |
 | 4. Security | input validation, rate limits, bot protection, security headers, access tests, secret and dependency scans on every save | access tests pass and scans run by themselves |
 | 5. Privacy | privacy page, consent checkbox, as little data as possible | the text is checked by an adult who knows the legal side |

@@ -73,8 +73,9 @@ rule-based and runs in the browser.
 **Production phase (decided 2026-10-05, after the presentation; branch
 `production`):** user accounts, a database and moderated student reviews are
 being added. Backend and database: Convex (functions in `apps/web/convex`).
-Sign-in: Convex Auth with an email magic link (Resend) and Google, no
-passwords. Reviews come through a public form and are shown only after an
+Sign-in (decided 2026-10-19): Convex Auth with a unique username and a
+password; the email is asked only at sign-up and confirmed with a 6-digit code
+(sent with Resend), forgotten passwords are reset with a code; no Google. Reviews come through a public form and are shown only after an
 administrator approves them. The plan, the security checklist and the open
 points are in `docs/production-plan.md`. `main` and the public address stay
 as presented until the team says otherwise; nothing from `production` is

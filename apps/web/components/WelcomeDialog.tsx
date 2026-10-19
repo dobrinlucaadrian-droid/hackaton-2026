@@ -1,5 +1,5 @@
 "use client";
-// Account window: opens over the current page when the home page's "Îmi fac cont / mă conectez" button is pressed, with the sign-in form. It no longer opens by itself.
+// Account window: opens over the current page when the home page's "Intră în cont" button is pressed, with the account form (sign in, new account, forgotten password). It never opens by itself.
 import { useConvexAuth } from "convex/react";
 import { useEffect, useState } from "react";
 import { SignInForm } from "./SignInForm";
@@ -44,7 +44,7 @@ export function WelcomeDialog() {
           </button>
         </div>
         <p className="mt-2 text-ink-soft">
-          Scrie numele și emailul tău. Îți trimitem un link; dacă ești la prima vizită, îți facem contul pe loc. Nu ai nevoie de parolă.
+          Intră cu numele de utilizator și parola sau fă-ți un cont nou. Contul e gratuit și îți păstrează rezultatul chestionarului.
         </p>
         <SignInForm idPrefix="bun-venit-" />
         <button type="button" onClick={() => setShown(false)} className="mt-4 min-h-11 w-full font-bold text-primary underline underline-offset-2">

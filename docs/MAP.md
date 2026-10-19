@@ -59,7 +59,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### (root)  (1 files)
 
-- `.env.example` (24) — env vars: CONVEX_DEPLOYMENT, NEXT_PUBLIC_CONVEX_URL, NEXT_PUBLIC_CONVEX_SITE_URL, NEXT_PUBLIC_TURNSTILE_SITE_KEY
+- `.env.example` (26) — env vars: CONVEX_DEPLOYMENT, NEXT_PUBLIC_CONVEX_URL, NEXT_PUBLIC_CONVEX_SITE_URL, NEXT_PUBLIC_TURNSTILE_SITE_KEY
 
 ### .github  (1 files)
 
@@ -106,15 +106,15 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/conectare  (1 files)
 
-- `page.tsx` (18) — Sign-in page: reached when a page needs an account (for example "Contul meu"). Everyday sign-in happens in the welcome window; this page shows the same form.. Routes: /conectare. Exports: SignInPage
+- `page.tsx` (18) — Sign-in page: reached when a page needs an account (for example "Contul meu"). Everyday sign-in happens in the account window; this page shows the same form.. Routes: /conectare. Exports: SignInPage
 
 ### apps/web/app/confidentialitate  (1 files)
 
-- `page.tsx` (102) — Privacy page: in plain Romanian, what FindMyUni stores, why, who processes it and how to delete it. Working draft until a legal check.. Routes: /confidentialitate. Exports: metadata, PrivacyPage
+- `page.tsx` (103) — Privacy page: in plain Romanian, what FindMyUni stores, why, who processes it and how to delete it. Working draft until a legal check.. Routes: /confidentialitate. Exports: metadata, PrivacyPage
 
 ### apps/web/app/cont  (1 files)
 
-- `page.tsx` (218) — "Contul meu": shows who is signed in (name and email, the name can be changed) and the saved questionnaire result, and lets the student sign out or delete the account.. Routes: /cont. Exports: AccountPage
+- `page.tsx` (216) — "Contul meu": shows who is signed in (username, name and email; the name can be changed) and the saved questionnaire result, and lets the student sign out or delete the account.. Routes: /cont. Exports: AccountPage
 
 ### apps/web/app/ghiduri/[tara]  (1 files)
 
@@ -196,7 +196,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `SaveResult.tsx` (59) — "Salvează în contul meu" on the result page: saves the result when the student is signed in, otherwise keeps it on the device and sends them to sign in.. Exports: SaveResult
 - `SearchBox.tsx` (45) — Search box with a magnifier icon; submits to /universitati?q=... or calls onSearch when given.. Exports: SearchBox
 - `Shell.tsx` (49) — Page frame shared by all screens: header with the FindMyUni logo, a centered content column and a footer with the privacy link.. Exports: Shell, Notice
-- `SignInForm.tsx` (141) — The sign-in form (full name and email, a sign-in link by email, Google when configured), shared by the welcome window and the sign-in page. No passwords.. Exports: SignInForm
+- `SignInForm.tsx` (247) — The account form, shared by the account window and the sign-in page: sign in with username and password, make an account (username, full name, email, password, then the 6-digit code from the email) and reset a forgotten password with a code.. Exports: SignInForm
 - `SpecializationsBrowser.tsx` (82) — /specializari body: a text filter over all categories, domains and specializations; without text it shows the category tiles.. Exports: SpecializationsBrowser
 - `StudentCard.tsx` (38) — One student opinion: photo (or initial), name, faculty and their own words. Used on the students page and on university sheets.. Exports: StudentCard
 - `StudentVoices.tsx` (164) — Student opinions with a search box: type a faculty or university and see every opinion we have from there.. Exports: StudentVoices
@@ -209,35 +209,36 @@ _Open only the files listed here; a file's description is its first comment line
 - `UniversitySearch.tsx` (430) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
 - `VisitTracker.tsx` (38) — Counts page views anonymously: sends only the page path and, on the first page of a visit, the country and the site the visitor came from. No cookie, no stored id.. Exports: VisitTracker
 - `WelcomeActions.tsx` (39) — The two choices under the welcome on the home page: make an account (opens the account window) or go on without one (scrolls to the big buttons). Signed-in visitors see "Contul meu" instead.. Exports: WelcomeActions
-- `WelcomeDialog.tsx` (57) — Account window: opens over the current page when the home page's "Îmi fac cont / mă conectez" button is pressed, with the sign-in form. It no longer opens by itself.. Exports: openSignIn, WelcomeDialog
+- `WelcomeDialog.tsx` (57) — Account window: opens over the current page when the home page's "Intră în cont" button is pressed, with the account form (sign in, new account, forgotten password). It never opens by itself.. Exports: openSignIn, WelcomeDialog
 - `WhatIf.tsx` (69) — Collapsible "Ce-ar fi dacă?" panel: one slider per inclination, controlled by the result page.. Exports: WhatIf
 - `domainStyle.ts` (67) — Colour family and emoji for every study domain id, used on the result cards.. Exports: FAMILY_CLASSES, domainStyle
 
 ### apps/web/convex/_generated  (5 files)
 
-- `api.d.ts` (66) — Generated `api` utility.
+- `api.d.ts` (68) — Generated `api` utility.
 - `api.js` (24) — Generated `api` utility.. Exports: api, internal, components
 - `dataModel.d.ts` (61) — Generated data model types.
 - `server.d.ts` (163) — Generated utilities for implementing server-side Convex query and mutation functions.
 - `server.js` (102) — Generated utilities for implementing server-side Convex query and mutation functions.. Exports: query, internalQuery, mutation, internalMutation, action, internalAction, httpAction, env
 
-### apps/web/convex  (15 files)
+### apps/web/convex  (16 files)
 
 - `access.test.ts` (218) — @vitest-environment edge-runtime
 - `access.ts` (34) — Shared access rules: every function that needs a signed-in user or an administrator is built from these wrappers, so the check cannot be forgotten.. Exports: userQuery, userMutation, adminQuery, adminMutation
-- `account.ts` (68) — The signed-in user's own account: who they are (name and email), which sign-in methods exist, and deleting the account with everything saved in it.. Exports: me, setName, signInMethods, remove
+- `account.ts` (79) — The signed-in user's own account: who they are (username, name and email), whether email codes can be sent, and deleting the account with everything saved in it.. Exports: me, usernameFree, setName, signInMethods, remove
 - `analytics.test.ts` (96) — @vitest-environment edge-runtime
 - `analytics.ts` (197) — Anonymous usage statistics: page views and finished questionnaires are counted without any name, cookie, IP address or visitor id; only administrators read the numbers.. Exports: trackVisit, recordQuizRun, overview
 - `auth.config.ts` (12) — Tells Convex which issuer signs the session tokens (this deployment itself, through Convex Auth).
-- `auth.ts` (55) — Convex Auth setup: sign-in with an email magic link (sent through Resend) and, when configured, Google. No passwords are stored.. Exports: adminEmails
+- `auth.ts` (124) — Convex Auth setup: accounts with a username and a password. The email is asked only at sign-up and confirmed with a 6-digit code; after that, students sign in with username and password. Forgotten passwords are reset with a code sent to the account's email.. Exports: adminEmails
 - `catalog.test.ts` (83) — @vitest-environment edge-runtime
 - `catalog.ts` (109) — The catalogue of institutions and bachelor programmes from official national datasets: public, read-only queries the pages use to list and search.. Exports: programsOf, programsFor, searchPrograms, institutions
 - `convex.config.ts` (9) — Convex app setup: installs the rate-limiter component used by the public review form.
 - `http.ts` (9) — HTTP routes of the Convex backend: only the ones Convex Auth needs for sign-in.
 - `results.ts` (77) — A student's saved questionnaire result: each signed-in user can save, read and delete only their own.. Exports: mine, save, remove
 - `reviews.ts` (154) — Student reviews: anyone can read the approved ones and send a new one through the checked public form; only administrators see the queue and approve or reject.. Exports: LIMITS, listApproved, listByState, moderate, insertPending, insertLimited, submit
-- `schema.ts` (120) — Database tables for FindMyUni: users (from Convex Auth, plus a server-written role), saved questionnaire results, student reviews, the catalogue of institutions and programmes, and anonymous usage statistics.. Exports: reviewState
+- `schema.ts` (122) — Database tables for FindMyUni: users (from Convex Auth, plus a username and a server-written role), saved questionnaire results, student reviews, the catalogue of institutions and programmes, and anonymous usage statistics.. Exports: reviewState
 - `tsconfig.json` (26) — JSON (invalid)
+- `users.ts` (14) — Server-only lookups by username, used by the sign-in code: the email behind a username never leaves the server.. Exports: emailOfUsername
 
 ### apps/web/data/catalog  (23 files)
 
@@ -283,7 +284,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `universities-ro.json` (4201) — JSON array, 83 items
 - `university-sources.json`
 
-### apps/web/lib  (30 files)
+### apps/web/lib  (32 files)
 
 - `activities.test.ts` (57) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
 - `activities.ts` (73) — Activities a student can add (competitions, volunteering, extracurriculars): labels, areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, describeActivity
@@ -303,7 +304,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `match.test.ts` (267) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
 - `match.ts` (178) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: matchDomains, studentTraits, matchByTraits
 - `name.ts` (12) — The one rule for a person's full name, used by the sign-in form, the account page and the server.. Exports: NAME_MAX, cleanName
-- `pendingSave.ts` (55) — Keeps a questionnaire result on this device while the student signs in (the email link may open in another tab), so it can be saved to the account afterwards.. Exports: setPendingResult, takePendingResult, setPendingName, takePendingName
+- `pendingSave.ts` (34) — Keeps a questionnaire result on this device while the student signs in or makes an account, so it can be saved to the account afterwards.. Exports: setPendingResult, takePendingResult
 - `roPrograms.test.ts` (29) — Tests the programme lists the Romanian sheets render on the server: every faculty sheet finds its programmes and the rows carry only what a page shows.
 - `roPrograms.ts` (24) — The Romanian bachelor programmes from the official list, read straight from the catalogue file so a sheet can show them without waiting for the database. Large: import it only from server code (the university and faculty pages) and from tests.. Exports: roProgramsOf, roProgramsOfFaculty
 - `session.ts` (117) — Keeps the student's answers (and optional activities with photos) in sessionStorage between pages (safe on the server).. Exports: MAX_CITIES, loadDraft, saveDraft, clearDraft, toAnswers, shrinkImage
@@ -315,6 +316,8 @@ _Open only the files listed here; a file's description is its first comment line
 - `universities.test.ts` (229) — Tests the specializations and categories data and the university search/filter logic.
 - `universities.ts` (192) — Search and filter over the universities with a profile sheet. Works on the index (sheets without their long texts), which is what the browser loads.. Exports: universities, countries, citiesIn, searchUniversities, filterUniversities, searchWorld
 - `useTestimonials.ts` (34) — All student opinions the pages can show: the ones gathered by the team (in the app's data) plus the approved ones from the database.. Exports: useTestimonials, useTestimonialsFor
+- `username.test.ts` (26) — Tests the username, password and email rules shared by the account forms and the server.
+- `username.ts` (24) — The rules for a username and a password, used by the account forms and by the server, so both check exactly the same thing.. Exports: USERNAME_MIN, USERNAME_MAX, PASSWORD_MIN, PASSWORD_MAX, cleanUsername, validPassword, cleanEmail
 
 ### apps/web/public  (3 files)
 

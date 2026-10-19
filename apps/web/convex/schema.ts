@@ -1,4 +1,4 @@
-// Database tables for FindMyUni: users (from Convex Auth, plus a server-written role), saved questionnaire results, student reviews, the catalogue of institutions and programmes, and anonymous usage statistics.
+// Database tables for FindMyUni: users (from Convex Auth, plus a username and a server-written role), saved questionnaire results, student reviews, the catalogue of institutions and programmes, and anonymous usage statistics.
 import { authTables } from "@convex-dev/auth/server";
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
@@ -7,7 +7,7 @@ export const reviewState = v.union(v.literal("pending"), v.literal("approved"), 
 
 export default defineSchema({
   ...authTables,
-  // Same fields as Convex Auth's users table, plus `role`, which only server code may write.
+  // Same fields as Convex Auth's users table, plus `username` (unique, lower case, chosen at sign-up) and `role`, which only server code may write.
   users: defineTable({
     name: v.optional(v.string()),
     image: v.optional(v.string()),
@@ -16,10 +16,12 @@ export default defineSchema({
     phone: v.optional(v.string()),
     phoneVerificationTime: v.optional(v.number()),
     isAnonymous: v.optional(v.boolean()),
+    username: v.optional(v.string()),
     role: v.optional(v.literal("admin")),
   })
     .index("email", ["email"])
-    .index("phone", ["phone"]),
+    .index("phone", ["phone"])
+    .index("username", ["username"]),
 
   // One saved questionnaire result per student (the newest replaces the old one).
   results: defineTable({

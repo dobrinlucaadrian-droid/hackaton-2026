@@ -40,12 +40,14 @@ export default function PrivacyPage() {
       <Block title="Dacă îți faci cont">
         <p>Păstrăm doar:</p>
         <ul className="list-disc space-y-1 pl-5 marker:text-primary">
-          <li>numele tău complet, așa cum îl scrii la conectare;</li>
-          <li>adresa ta de email, ca să te poți conecta;</li>
+          <li>numele de utilizator pe care îl alegi, cu care te conectezi;</li>
+          <li>numele tău complet, așa cum îl scrii la crearea contului;</li>
+          <li>adresa ta de email, ca să o confirmăm cu un cod la crearea contului și ca să-ți trimitem un cod dacă îți uiți parola;</li>
+          <li>parola, dar doar ca o amprentă din care parola nu se poate afla (nici de noi);</li>
           <li>rezultatul chestionarului pe care alegi să-l salvezi: profilul de liceu, răspunsurile, unde vrei să studiezi și cele trei domenii potrivite;</li>
           <li>datele tehnice ale conectării (când te-ai conectat și până când e valabilă sesiunea).</li>
         </ul>
-        <p>Nu îți cerem școala, vârsta, adresa sau numărul de telefon. Numele îl poți schimba oricând din „Contul meu”. Nu folosim parole: te conectezi cu un link primit pe email sau cu Google, dacă alegi asta.</p>
+        <p>Nu îți cerem școala, vârsta, adresa sau numărul de telefon. Numele îl poți schimba oricând din „Contul meu”. Te conectezi cu numele de utilizator și parola; după mai multe încercări greșite, conectarea se blochează pentru o vreme.</p>
         <p>Dacă ești minor, vorbește cu un părinte sau cu tutorele tău înainte să îți faci cont.</p>
       </Block>
 
@@ -56,7 +58,7 @@ export default function PrivacyPage() {
 
       <Block title="Cum ștergi datele">
         <p>
-          Din pagina <Link href="/cont" className="font-bold text-primary underline underline-offset-2">Contul meu</Link> poți șterge rezultatul salvat sau tot contul. Ștergerea contului scoate numele, adresa de email, rezultatul și datele de conectare și nu se poate anula.
+          Din pagina <Link href="/cont" className="font-bold text-primary underline underline-offset-2">Contul meu</Link> poți șterge rezultatul salvat sau tot contul. Ștergerea contului scoate numele de utilizator, numele, adresa de email, parola, rezultatul și datele de conectare și nu se poate anula.
         </p>
       </Block>
 
@@ -64,10 +66,9 @@ export default function PrivacyPage() {
         <p>Folosim câteva servicii, fiecare doar pentru rolul lui:</p>
         <ul className="list-disc space-y-1 pl-5 marker:text-primary">
           <li><span className="font-bold text-ink">Convex</span> — baza de date în care stau conturile, rezultatele salvate și părerile;</li>
-          <li><span className="font-bold text-ink">Resend</span> — trimite emailul cu linkul de conectare;</li>
+          <li><span className="font-bold text-ink">Resend</span> — trimite emailul cu codul de confirmare sau de schimbare a parolei;</li>
           <li><span className="font-bold text-ink">Cloudflare Turnstile</span> — verifică, la formularul de păreri, că nu e un robot;</li>
           <li><span className="font-bold text-ink">Vercel</span> — găzduiește site-ul;</li>
-          <li><span className="font-bold text-ink">Google</span> — doar dacă alegi „Continuă cu Google”.</li>
         </ul>
         <p>Nu avem reclame și nu folosim unelte care te urmăresc de pe un site pe altul.</p>
       </Block>

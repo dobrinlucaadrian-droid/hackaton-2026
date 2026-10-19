@@ -1,4 +1,4 @@
-// Keeps a questionnaire result on this device while the student signs in (the email link may open in another tab), so it can be saved to the account afterwards.
+// Keeps a questionnaire result on this device while the student signs in or makes an account, so it can be saved to the account afterwards.
 import type { StudyPlace } from "./types";
 
 export type PendingResult = {
@@ -27,27 +27,6 @@ export function takePendingResult(): PendingResult | null {
     const r = JSON.parse(raw) as PendingResult;
     if (typeof r?.profileId !== "string" || !["ro", "abroad", "any"].includes(r.where) || !Array.isArray(r.topDomains)) return null;
     return r;
-  } catch {
-    return null;
-  }
-}
-
-const NAME_KEY = "unipath-pending-name";
-
-/** Remembers the full name typed on the sign-in form until the email link has been opened. */
-export function setPendingName(name: string): void {
-  try {
-    window.localStorage.setItem(NAME_KEY, name);
-  } catch {
-    // ignore: storage blocked
-  }
-}
-
-export function takePendingName(): string | null {
-  try {
-    const name = window.localStorage.getItem(NAME_KEY);
-    if (name !== null) window.localStorage.removeItem(NAME_KEY);
-    return name && name.trim() ? name : null;
   } catch {
     return null;
   }

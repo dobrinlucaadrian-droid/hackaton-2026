@@ -1,5 +1,5 @@
 "use client";
-// "Contul meu": shows who is signed in (name and email, the name can be changed) and the saved questionnaire result, and lets the student sign out or delete the account.
+// "Contul meu": shows who is signed in (username, name and email; the name can be changed) and the saved questionnaire result, and lets the student sign out or delete the account.
 import { useAuthActions } from "@convex-dev/auth/react";
 import { useConvexAuth, useMutation, useQuery } from "convex/react";
 import Link from "next/link";
@@ -11,7 +11,7 @@ import { api } from "@/convex/_generated/api";
 import { cityList } from "@/lib/cities";
 import { domains, profiles } from "@/lib/data";
 import { cleanName } from "@/lib/name";
-import { takePendingName, takePendingResult } from "@/lib/pendingSave";
+import { takePendingResult } from "@/lib/pendingSave";
 
 const WHERE_LABEL = { ro: "În România", abroad: "În străinătate", any: "Oriunde" } as const;
 
@@ -36,15 +36,13 @@ export default function AccountPage() {
   useEffect(() => {
     if (!isAuthenticated || savedPending.current) return;
     savedPending.current = true;
-    const pendingName = takePendingName();
-    if (pendingName) setName({ name: pendingName }).catch(() => undefined);
     const pending = takePendingResult();
     if (pending) {
       save(pending)
         .then(() => setNote("Am salvat rezultatul tău în cont."))
         .catch(() => setNote("Nu am putut salva rezultatul. Reia chestionarul și încearcă din nou."));
     }
-  }, [isAuthenticated, save, setName]);
+  }, [isAuthenticated, save]);
 
   useEffect(() => {
     if (!isLoading && !isAuthenticated) router.replace("/conectare");
@@ -91,7 +89,7 @@ export default function AccountPage() {
       <h1 className="mt-4 text-4xl font-black tracking-tighter text-ink">Contul meu</h1>
       <p className="mt-2 text-ink-soft" data-who>
         {me?.name ? <>Bună, <span className="font-bold text-ink">{me.name}</span>! </> : null}
-        Ești conectat cu <span className="font-bold text-ink">{me?.email ?? "contul tău"}</span>
+        Ești conectat ca <span className="font-bold text-ink">{me?.username ?? "contul tău"}</span>{me?.email ? <> (email: <span className="font-bold text-ink">{me.email}</span>)</> : null}
         {me?.isAdmin ? " · administrator" : ""}.
       </p>
       {me?.isAdmin && (
@@ -200,7 +198,7 @@ export default function AccountPage() {
         {confirming && (
           <div className="mt-4 rounded-2xl bg-primary-tint p-4" role="alertdialog" aria-labelledby="sterge-titlu">
             <p id="sterge-titlu" className="font-extrabold text-primary-dark">Sigur vrei să ștergi contul?</p>
-            <p className="mt-1 text-sm text-primary-dark">Ștergem numele, adresa de email și rezultatul salvat. Nu se poate anula.</p>
+            <p className="mt-1 text-sm text-primary-dark">Ștergem numele de utilizator, numele, adresa de email, parola și rezultatul salvat. Nu se poate anula.</p>
             <div className="mt-3 flex flex-wrap gap-3">
               <button type="button" disabled={busy} onClick={() => void deleteAccount()} className="min-h-11 rounded-full bg-primary px-5 font-black text-white hover:bg-primary-dark disabled:opacity-50">
                 {busy ? "Se șterge..." : "Da, șterge contul"}

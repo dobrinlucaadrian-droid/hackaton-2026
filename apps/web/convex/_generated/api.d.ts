@@ -16,6 +16,7 @@ import type * as catalog from "../catalog.js";
 import type * as http from "../http.js";
 import type * as results from "../results.js";
 import type * as reviews from "../reviews.js";
+import type * as users from "../users.js";
 
 import type {
   ApiFromModules,
@@ -32,6 +33,7 @@ declare const fullApi: ApiFromModules<{
   http: typeof http;
   results: typeof results;
   reviews: typeof reviews;
+  users: typeof users;
 }>;
 
 /**

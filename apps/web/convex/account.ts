@@ -1,20 +1,32 @@
-// The signed-in user's own account: who they are (name and email), which sign-in methods exist, and deleting the account with everything saved in it.
+// The signed-in user's own account: who they are (username, name and email), whether email codes can be sent, and deleting the account with everything saved in it.
 import { getAuthUserId } from "@convex-dev/auth/server";
 import { ConvexError, v } from "convex/values";
 import { query } from "./_generated/server";
 import { cleanName } from "../lib/name";
+import { cleanUsername } from "../lib/username";
 import { userMutation } from "./access";
 
-/** The signed-in user (name, email and whether they are an administrator), or null when nobody is signed in. */
+/** The signed-in user (username, name, email and whether they are an administrator), or null when nobody is signed in. */
 export const me = query({
   args: {},
-  returns: v.union(v.object({ name: v.optional(v.string()), email: v.optional(v.string()), isAdmin: v.boolean() }), v.null()),
+  returns: v.union(v.object({ username: v.optional(v.string()), name: v.optional(v.string()), email: v.optional(v.string()), isAdmin: v.boolean() }), v.null()),
   handler: async (ctx) => {
     const userId = await getAuthUserId(ctx);
     if (userId === null) return null;
     const user = await ctx.db.get(userId);
     if (!user) return null;
-    return { ...(user.name ? { name: user.name } : {}), ...(user.email ? { email: user.email } : {}), isAdmin: user.role === "admin" };
+    return { ...(user.username ? { username: user.username } : {}), ...(user.name ? { name: user.name } : {}), ...(user.email ? { email: user.email } : {}), isAdmin: user.role === "admin" };
+  },
+});
+
+/** Whether a username can still be chosen at sign-up (the sign-up itself checks again on the server). */
+export const usernameFree = query({
+  args: { username: v.string() },
+  returns: v.boolean(),
+  handler: async (ctx, { username }) => {
+    const clean = cleanUsername(username);
+    if (!clean) return false;
+    return (await ctx.db.query("users").withIndex("username", (q) => q.eq("username", clean)).unique()) === null;
   },
 });
 
@@ -30,13 +42,12 @@ export const setName = userMutation({
   },
 });
 
-/** Which sign-in methods the sign-in page may offer. Contains no secrets. */
+/** Whether accounts can be created right now: creating one and resetting a password need an email code. Contains no secrets. */
 export const signInMethods = query({
   args: {},
-  returns: v.object({ email: v.boolean(), google: v.boolean() }),
+  returns: v.object({ email: v.boolean() }),
   handler: async () => ({
     email: !!process.env.AUTH_RESEND_KEY || process.env.AUTH_DEV_LOG_LINKS === "1",
-    google: !!process.env.AUTH_GOOGLE_ID && !!process.env.AUTH_GOOGLE_SECRET,
   }),
 });
 

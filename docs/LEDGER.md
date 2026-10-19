@@ -21,6 +21,14 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-19 03:52 — conturi cu nume de utilizator, parolă și cod pe email
+- Cerut: la crearea contului nume, parolă și email; emailul cerut doar atunci și confirmat cu un cod primit pe email; apoi conectare doar cu nume și parolă; emailul să vină de la echipa FindMyUni. Echipa a ales: nume de utilizator unic (plus numele complet), fără Google, parolă de minimum 8 caractere, totul construit local până la domeniul propriu
+- Făcut: conectarea prin link și Google înlocuită cu parolă (Convex Auth Password). Contul nou: nume de utilizator, nume complet, email, parolă, apoi codul din 6 cifre trimis pe email. Conectarea: nume de utilizator + parolă; serverul găsește singur emailul contului, care nu ajunge niciodată în browser. „Am uitat parola”: cod pe emailul contului și parolă nouă (același răspuns dacă numele nu există). Parola se păstrează doar ca amprentă (scrypt); încercările greșite sunt limitate. Rolul de administrator se dă doar după ce emailul e confirmat. Emailurile au expeditorul „Echipa FindMyUni” (pe adresa de probă Resend până la domeniul propriu). Pagina „Contul meu” arată numele de utilizator; textele ferestrei de cont, paginii de conectare și paginii de confidențialitate actualizate; notițele proiectului (CLAUDE.md, production-plan) spun noua hotărâre
+- Fișiere: `apps/web/convex/auth.ts`, `apps/web/convex/users.ts`, `apps/web/convex/account.ts`, `apps/web/convex/schema.ts`, `apps/web/lib/username.ts`, `apps/web/lib/username.test.ts`, `apps/web/components/SignInForm.tsx`, `apps/web/components/WelcomeDialog.tsx`, `apps/web/app/conectare/page.tsx`, `apps/web/app/cont/page.tsx`, `apps/web/app/confidentialitate/page.tsx`, `apps/web/lib/pendingSave.ts`, `.env.example`, `CLAUDE.md`, `docs/production-plan.md`
+- Poartă: TRECUT (secrete, fișiere, registru, build, teste, pornire); în browser, pe baza de dezvoltare, cu contul de probă: cont nou → cod din jurnal → „Contul meu”; deconectare; parolă greșită refuzată; conectare cu nume și parolă; nume deja folosit refuzat cu mesaj clar; „Am uitat parola” → cod → parolă nouă → conectat. Verificarea de secrete a semnalat greșit textul „new-password” (indiciu pentru browser, nu o parolă); rândul a fost rescris, regula porții nu a fost atinsă
+- Neverificat: trimiterea unui email adevărat (pe dezvoltare codul apare în `npx convex logs`); funcționarea pe baza de producție; expeditorul „Echipa FindMyUni” cu adresa proprie are nevoie de un domeniu verificat în Resend
+- Urmează: la final, echipa cumpără un domeniu, îl verifică în Resend și pune AUTH_RESEND_KEY și AUTH_EMAIL_FROM în setările Convex
+
 ### 2026-10-19 03:18 — lupă de căutare pe pagina de ghiduri
 - Cerut: pe pagina cu ghidurile pe țări, o lupă ca să cauți direct țara
 - Făcut: câmp de căutare cu lupă deasupra ghidurilor; lista se filtrează pe măsură ce scrii, fără să conteze diacriticele („elvetia” găsește Elveția); dacă nu există ghid, un mesaj scurt
@@ -723,6 +731,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-19 03:23 `90b1388` feat: guides for every country, hide data counts, guide search
 - 2026-10-19 02:11 `efdb4e4` feat: welcome home page with cloud buttons, hide counts, collapse cities
 - 2026-10-19 01:53 `ec9d731` feat: rename the site to FindMyUni
 - 2026-10-15 02:33 `b9900d1` feat: at least ten university sheets per country where data allows
@@ -752,5 +761,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-07 01:14 `c76d79c` feat: privacy page; generate route types before the CI type check
 - 2026-10-07 01:11 `cd08d1a` feat: security headers and CSP, CI security scans, patched auth package
 - 2026-10-06 01:59 `e44ee5f` docs: record where the production work stops for the day
-- 2026-10-06 01:15 `20dc009` feat: public review form with bot check and rate limit, and the moderation page
 <!-- commits:end -->
