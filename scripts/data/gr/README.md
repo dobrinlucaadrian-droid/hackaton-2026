@@ -1,6 +1,6 @@
 # Greece (GR) catalogue
 
-Result: BUILT. `node scripts/data/validate.mjs gr` prints VALID (20 institutions, 326 programme rows, 47 towns, 7 institutions with an existing sheet, 87 rows = 27% without an app domain). Four institutions are left out because their seat could not be confirmed (step 12).
+Result: BUILT. `node scripts/data/validate.mjs gr` prints VALID (21 institutions, 335 programme rows, 47 towns, 8 institutions with an existing sheet, 89 rows = 27% without an app domain). Three institutions are left out because neither a seat nor a single town could be confirmed (step 12).
 
 One row = one university department (τμήμα) with its own admission code in the 2025 Panhellenic exams. In Greece a department is one first-cycle study programme;
 all first-cycle places of the public universities are filled through these exams, so the admission file is the list of programmes offered in the latest admission.
@@ -60,7 +60,7 @@ the XLS reader was checked cell by cell against an Excel re-save of the same fil
    a statement about the departments here), so the language is not set.
 8. `kind`: "public" — Law 4957/2022 art. 3 par. 1: "Τα Α.Ε.Ι. είναι νομικά πρόσωπα δημοσίου δικαίου". No `form`, `credits`, `maxStudents` or `status` (not stated per programme;
    the admission places by candidate category are not summed into a capacity).
-9. Existing sheets (`universities-abroad.json`, country "Grecia"; ΕΚΠΑ, ΕΜΠ and Κρήτης are currently left out, see step 12): ΕΚΠΑ → uoa-atena, ΑΠΘ → auth-salonic, ΕΜΠ → ntua-atena, ΟΠΑ → aueb-atena, Πανεπιστήμιο Κρήτης → uoc-heraklion
+9. Existing sheets (`universities-abroad.json`, country "Grecia"; ΕΚΠΑ and Κρήτης are currently left out, see step 12): ΕΚΠΑ → uoa-atena, ΑΠΘ → auth-salonic, ΕΜΠ → ntua-atena, ΟΠΑ → aueb-atena, Πανεπιστήμιο Κρήτης → uoc-heraklion
    (not the Πολυτεχνείο Κρήτης or the Ελληνικό Μεσογειακό Πανεπιστήμιο), Πατρών → upatras-patras, Θεσσαλίας → uth-volos, Δημοκρίτειο → duth-komotini, Ιωαννίνων → uoi-ioannina,
    Πειραιώς → unipi-pireu.
 10. Search text: the Greek fields are transliterated to lower-case Latin letters (ELOT 743 style: θ → th, χ → ch, ψ → ps, ου → ou, η/ι/υ → i/i/y), plus the abbreviation.
@@ -92,13 +92,18 @@ the XLS reader was checked cell by cell against an Excel re-save of the same fil
     | ΧΑΡΟΚΟΠΕΙΟ ΠΑΝΕΠΙΣΤΗΜΙΟ | ΚΑΛΛΙΘΕΑ | https://www.hua.gr/ (footer) — "Ελ. Βενιζέλου 70, 17676, Καλλιθέα" |
     | ΕΛΛΗΝΙΚΟ ΜΕΣΟΓΕΙΑΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ | ΗΡΑΚΛΕΙΟ | Law 4610/2019 art. 23 par. 1 (ΦΕΚ Α' 70/2019, copy at https://www.uoc.gr/files/items/9/907/2019_n_4610.pdf): "Ιδρύεται … το Ελληνικό Μεσογειακό Πανεπιστήμιο … με έδρα το Ηράκλειο" |
 
-    **Left out: seat not confirmed by an official text (4 institutions, 87 programme rows).** Their sites give no address (ΕΚΠΑ, ΠΑΝ. ΔΥΤ. ΜΑΚΕΔΟΝΙΑΣ) or several
+    **No seat confirmed by an official text (4 institutions).** Their sites give no address (ΕΚΠΑ, ΠΑΝ. ΔΥΤ. ΜΑΚΕΔΟΝΙΑΣ) or several
     addresses with none marked as the seat (ΕΜΠ: Αθήνα and Ζωγράφου; Πανεπιστήμιο Κρήτης: Ηράκλειο and Ρέθυμνο), and the text of their founding acts could not be read
     online (only citations were found: ΕΚΠΑ and ΕΜΠ 19th-century foundation, no seat clause found; Πανεπιστήμιο Κρήτης ν.δ. 87/1973 and π.δ. 296/1973 ΦΕΚ Α' 239/1973
     "on the title and seat", text not read; ΠΑΝ. ΔΥΤ. ΜΑΚΕΔΟΝΙΑΣ π.δ. 92/2003 ΦΕΚ Α' 83/2003, text not read — the university's own study guides say "Έδρα … ήταν η
-    Κοζάνη", which is not a law text). Following the team rule, these institutions and all their rows are not in the files:
-    ΕΘΝΙΚΟ ΚΑΙ ΚΑΠΟΔΙΣΤΡΙΑΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΘΗΝΩΝ (41 rows, sheet uoa-atena), ΕΘΝΙΚΟ ΜΕΤΣΟΒΙΟ ΠΟΛΥΤΕΧΝΕΙΟ (9 rows, sheet ntua-atena), ΠΑΝΕΠΙΣΤΗΜΙΟ ΚΡΗΤΗΣ
-    (17 rows, sheet uoc-heraklion), ΠΑΝΕΠΙΣΤΗΜΙΟ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ (20 rows). Adding a confirmed seat to `SEATS` in build.mjs brings an institution back.
+    Κοζάνη", which is not a law text). For these the team rule is: when ALL the institution's departments in both ministry files (admission file and department list) are in one and the same town, the
+    institution is kept with that town as `city` — "the town of all its departments in the ministry list", NOT a legal seat; otherwise it is left out with all its rows.
+    The build checks this itself and prints the towns:
+    - ΕΘΝΙΚΟ ΜΕΤΣΟΒΙΟ ΠΟΛΥΤΕΧΝΕΙΟ: admission file ΑΘΗΝΑ (9 departments), department list ΑΘΗΝΑ (9) → kept, city ΑΘΗΝΑ (town of all its departments, not a legal seat), sheet ntua-atena.
+    - ΕΘΝΙΚΟ ΚΑΙ ΚΑΠΟΔΙΣΤΡΙΑΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΘΗΝΩΝ: ΑΘΗΝΑ and ΨΑΧΝΑ ΕΥΒΟΙΑΣ (list: ΑΘΗΝΑ, ΨΑΧΝΑ) → left out (41 rows, sheet uoa-atena).
+    - ΠΑΝΕΠΙΣΤΗΜΙΟ ΚΡΗΤΗΣ: ΗΡΑΚΛΕΙΟ and ΡΕΘΥΜΝΟ in both files → left out (17 rows, sheet uoc-heraklion).
+    - ΠΑΝΕΠΙΣΤΗΜΙΟ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ: ΚΟΖΑΝΗ, ΦΛΩΡΙΝΑ, ΚΑΣΤΟΡΙΑ, ΠΤΟΛΕΜΑΪΔΑ, ΓΡΕΒΕΝΑ in both files → left out (20 rows).
+    Adding a confirmed seat to `SEATS` in build.mjs brings an institution back.
 
 ## Spelling
 
@@ -109,15 +114,15 @@ genitive, as in the source ("ΝΟΜΙΚΗΣ" = "[Department] of Law").
 
 ## Known limits
 
-- Institution `city`: seat confirmed from an official source for all 20 institutions in the files; 4 institutions left out for lack of one (step 12). Programme rows keep the town from the brackets of the admission file.
+- Institution `city`: seat confirmed from an official source for 20 institutions; for ΕΜΠ it is the town of all its departments, not a legal seat; 3 institutions left out (step 12). Programme rows keep the town from the brackets of the admission file.
   No institution `website` is set.
 - `language` is "nespecificată" for all rows (step 7).
 - The Hellenic Open University (ΕΑΠ) does not admit through the exams and is missing; foreign-language programmes (art. 101) and private colleges (not universities in Greece) are not included.
 - The Ανώτατη Σχολή Καλών Τεχνών has one row (ΘΕΩΡΙΑΣ ΚΑΙ ΙΣΤΟΡΙΑΣ ΤΗΣ ΤΕΧΝΗΣ); its fine-arts department is not in the 2025 admission file and is not added. The ecclesiastical academies are left out as asked, although Greek law counts them in higher education.
 - Places per department are in the admission file but are given per candidate category; they are not used.
-- Counts in steps 3 and 5 (387 matched, 26 not) are over all 413 rows before the 4 institutions were left out; in the files 20 rows have no faculty or years, 31 no url, 87 (27%) no app domain.
+- Counts in steps 3 and 5 (387 matched, 26 not) are over all 413 rows before the 3 institutions were left out; in the files 20 rows have no faculty or years, 31 no url, 89 (27%) no app domain.
 
 ## Counts (run of 2026-10-19)
 
-454 admission codes → 65 dropped (not universities) → 413 rows at 24 institutions → 87 rows of 4 institutions without a confirmed seat left out → 326 programme rows at 20 institutions (7 with an existing sheet), 47 towns.
-306 rows with faculty and years, 295 with a url, 87 without an app domain, 0 merged rows; 20 institution seats confirmed.
+454 admission codes → 65 dropped (not universities) → 413 rows at 24 institutions → 78 rows of 3 institutions without a confirmed seat or single town left out → 335 programme rows at 21 institutions (8 with an existing sheet), 47 towns.
+315 rows with faculty and years, 304 with a url, 89 without an app domain, 0 merged rows; 20 institution seats confirmed, 1 city = town of all departments (ΕΜΠ).

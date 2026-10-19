@@ -66,6 +66,17 @@
   "programs": 23
  },
  {
+  "id": "ntua-atena",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΕΘΝΙΚΟ ΜΕΤΣΟΒΙΟ ΠΟΛΥΤΕΧΝΕΙΟ",
+  "officialName": "ΕΘΝΙΚΟ ΜΕΤΣΟΒΙΟ ΠΟΛΥΤΕΧΝΕΙΟ",
+  "kind": "public",
+  "hasSheet": true,
+  "city": "ΑΘΗΝΑ",
+  "programs": 9
+ },
+ {
   "id": "gr-elliniko-mesogeiako-panepistimio",
   "country": "GR",
   "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",

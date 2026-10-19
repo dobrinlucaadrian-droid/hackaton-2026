@@ -301,6 +301,14 @@ const SEATS = {
   "ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΕΙΡΑΙΩΣ": "ΠΕΙΡΑΙΑΣ", "ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΕΛΟΠΟΝΝΗΣΟΥ": "ΤΡΙΠΟΛΗ", "ΠΑΝΤΕΙΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΚΟΙΝΩΝΙΚΩΝ ΚΑΙ ΠΟΛΙΤΙΚΩΝ ΕΠΙΣΤΗΜΩΝ": "ΑΘΗΝΑ",
   "ΠΟΛΥΤΕΧΝΕΙΟ ΚΡΗΤΗΣ": "ΧΑΝΙΑ", "ΧΑΡΟΚΟΠΕΙΟ ΠΑΝΕΠΙΣΤΗΜΙΟ": "ΚΑΛΛΙΘΕΑ",
 };
+// No confirmed seat, but ALL departments in both ministry files are in one and the same town: that town is used as the city (not a legal seat).
+const oneTown = {};
+for (const i of insts.values()) {
+  if (SEATS[i.name]) continue;
+  const adm = Object.keys(i.towns), lst = [...new Set(listRows.filter((r) => r.inst === key(i.name)).map((r) => r.town))];
+  console.log(`no seat for ${i.name}: towns in admission file ${JSON.stringify(adm)}, in department list ${JSON.stringify(lst)}`);
+  if (adm.length === 1 && lst.length === 1 && key(adm[0]) === lst[0]) { oneTown[i.name] = adm[0]; SEATS[i.name] = adm[0]; }
+}
 const noSeat = [...insts.values()].filter((i) => !SEATS[i.name]);
 for (const i of noSeat) console.log(`left out, seat not confirmed: ${i.name} (${i.programs} programmes)`);
 const noSeatIds = new Set(noSeat.map((i) => i.id));

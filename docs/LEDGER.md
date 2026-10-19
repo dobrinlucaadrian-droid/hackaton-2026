@@ -21,6 +21,14 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-19 23:19 — Politehnica din Atena revine în catalogul Greciei
+- Cerut: universitățile grecești scoase să revină doar dacă sursa e 100% sigură
+- Făcut: regulă nouă: o universitate fără sediu confirmat dintr-o lege revine doar dacă toate facultățile ei din listele oficiale ale ministerului sunt în același oraș, iar orașul ei este acela (scris așa în README, nu „sediu legal”). A revenit Politehnica din Atena (ΕΜΠ, 9 programe, toate la Atena). Rămân scoase Universitatea din Atena (Atena și Psachna), Creta (Heraklion și Rethymno) și Macedonia de Vest (cinci orașe). Grecia: 21 de instituții, 335 de programe; catalogul: 4.334 de instituții, 107.155 de programe; încărcat în baza de dezvoltare
+- Fișiere: `scripts/data/gr/build.mjs`, `scripts/data/gr/README.md`, `apps/web/data/catalog/gr-*.json`, `apps/web/data/catalog/index.json`, `docs/catalog-status.md`
+- Poartă: TRECUT (secrete, fișiere, registru, build, teste, pornire); Grecia VALID; în browser, fișa Politehnicii din Atena arată programele ei oficiale
+- Neverificat: —
+- Urmează: echipa decide dacă încărcăm catalogul în baza de producție
+
 ### 2026-10-19 17:37 — catalogul de programe: 7 țări noi (18 în total)
 - Cerut: cât mai multe informații, din țările UE fără catalog; întâi cercetare, apoi doar surse oficiale cu voie de refolosire; „ce e neclar sau nesigur nu intră”
 - Făcut: cercetare pentru 13 țări (Europass/DEQAR și surse naționale); echipa a ales cele 7 cu licență clară. Construite, fiecare cu scriptul și README-ul ei: Suedia 1.725 de programe (CC0), Bulgaria 2.402 (Europass + DEQAR), Finlanda 1.118 (Europass), Lituania 694 (data.gov.lt), Slovenia 333 (eVŠ + apelul de înscriere 2026/2027), Grecia 326 (data.gov.gr), Estonia 361 (EHIS, CC BY-SA). Rândurile și câmpurile nesigure au fost scoase (de exemplu: orașe neclare, titluri de anunț în loc de nume de program, dubluri; în Grecia 4 universități fără sediu confirmat dintr-un text oficial). Catalogul: 4.333 de instituții, 107.146 de programe în 18 țări; încărcat în baza de dezvoltare. Sursele și licențele sunt în `scripts/data/sources.json` (apar pe pagina „Surse de date”)
@@ -739,6 +747,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-19 18:15 `673cf7b` feat: add programme catalogues for seven more EU countries
 - 2026-10-19 04:19 `caece3c` feat: username and password accounts with email code verification
 - 2026-10-19 03:23 `90b1388` feat: guides for every country, hide data counts, guide search
 - 2026-10-19 02:11 `efdb4e4` feat: welcome home page with cloud buttons, hide counts, collapse cities
@@ -768,5 +777,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-08 00:01 `914f800` docs: final launch steps and the new order of work
 - 2026-10-07 01:16 `4e39abf` docs: record the CI scan results and what is left for the next level
 - 2026-10-07 01:14 `c76d79c` feat: privacy page; generate route types before the CI type check
-- 2026-10-07 01:11 `cd08d1a` feat: security headers and CSP, CI security scans, patched auth package
 <!-- commits:end -->
