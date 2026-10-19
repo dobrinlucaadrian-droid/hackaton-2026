@@ -1,7 +1,9 @@
-// The signed-in user's own account: who they are (username, name and email), whether email codes can be sent, and deleting the account with everything saved in it.
+// The signed-in user's own account: who they are (username, name and email), a copy of everything saved about them, whether email codes can be sent, and deleting the account with everything saved in it.
 import { getAuthUserId } from "@convex-dev/auth/server";
 import { ConvexError, v } from "convex/values";
-import { query } from "./_generated/server";
+import { internal } from "./_generated/api";
+import { mutation, query } from "./_generated/server";
+import { TOO_MANY } from "./authLimits";
 import { cleanName } from "../lib/name";
 import { cleanUsername } from "../lib/username";
 import { userMutation } from "./access";
@@ -20,10 +22,12 @@ export const me = query({
 });
 
 /** Whether a username can still be chosen at sign-up (the sign-up itself checks again on the server). */
-export const usernameFree = query({
+export const usernameFree = mutation({
   args: { username: v.string() },
   returns: v.boolean(),
   handler: async (ctx, { username }) => {
+    // A mutation, not a query, so the checks can be counted and limited (see convex/authLimits.ts).
+    if (!(await ctx.runMutation(internal.authLimits.hit, { name: "usernameCheck" }))) throw new ConvexError(TOO_MANY);
     const clean = cleanUsername(username);
     if (!clean) return false;
     return (await ctx.db.query("users").withIndex("username", (q) => q.eq("username", clean)).unique()) === null;
@@ -74,5 +78,35 @@ export const remove = userMutation({
     }
     await ctx.db.delete(userId);
     return null;
+  },
+});
+
+/** A copy of everything the site keeps about the signed-in user (GDPR right of access and portability), for the "Descarcă datele mele" button. Never the password, which is stored only as a hash. */
+export const exportMine = query({
+  args: {},
+  returns: v.union(v.any(), v.null()),
+  handler: async (ctx) => {
+    const userId = await getAuthUserId(ctx);
+    if (userId === null) return null;
+    const user = await ctx.db.get(userId);
+    if (!user) return null;
+    const result = await ctx.db.query("results").withIndex("by_user", (q) => q.eq("userId", userId)).first();
+    const sessions = await ctx.db.query("authSessions").withIndex("userId", (q) => q.eq("userId", userId)).collect();
+    return {
+      exportat: new Date().toISOString(),
+      cont: {
+        numeUtilizator: user.username ?? null,
+        numeComplet: user.name ?? null,
+        email: user.email ?? null,
+        emailConfirmat: user.emailVerificationTime ? new Date(user.emailVerificationTime).toISOString() : null,
+        creat: new Date(user._creationTime).toISOString(),
+        administrator: user.role === "admin",
+      },
+      rezultatSalvat: result
+        ? { profil: result.profileId, unde: result.where, orase: result.cities ?? (result.city ? [result.city] : []), raspunsuri: result.choices, domenii: result.topDomains, salvat: new Date(result.savedAt).toISOString() }
+        : null,
+      sesiuniDeConectare: sessions.map((x) => ({ inceput: new Date(x._creationTime).toISOString(), expira: new Date(x.expirationTime).toISOString() })),
+      parola: "păstrată doar ca amprentă (hash), nu poate fi citită",
+    };
   },
 });

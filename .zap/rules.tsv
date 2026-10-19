@@ -1,0 +1,8 @@
+# ZAP baseline rules for FindMyUni: only alerts that are known false positives or pure information are ignored; everything else stays a warning.
+# Format: rule id <TAB> IGNORE|WARN|FAIL <TAB> (rule name). Lines starting with # are comments.
+# 10027: "suspicious comments" matches words like "user", "admin", "TODO" inside the minified Next.js/React bundles, not our own comments.
+10027	IGNORE	(Information Disclosure - Suspicious Comments)
+# 10096: "timestamp disclosure" flags the long numbers in build hashes and bundled library code; the site shows no server times.
+10096	IGNORE	(Timestamp Disclosure - Unix)
+# 10109: purely informational note that the site is a modern JavaScript app (it suggests switching to the AJAX spider).
+10109	IGNORE	(Modern Web Application)

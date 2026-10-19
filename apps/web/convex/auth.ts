@@ -5,6 +5,7 @@ import { Password } from "@convex-dev/auth/providers/Password";
 import { convexAuth } from "@convex-dev/auth/server";
 import { ConvexError } from "convex/values";
 import { internal } from "./_generated/api";
+import { TOO_MANY, type LimitName } from "./authLimits";
 import { cleanName } from "../lib/name";
 import { cleanEmail, cleanUsername, validPassword } from "../lib/username";
 
@@ -74,6 +75,11 @@ const base = Password({
 });
 const baseAuthorize = (base as unknown as { options: { authorize: (params: Record<string, unknown>, ctx: unknown) => Promise<unknown> } }).options.authorize;
 
+/** Spends one try from a limit in convex/authLimits.ts; stops the request with a plain message when it is used up. */
+async function spend(ctx: { runMutation: (ref: typeof internal.authLimits.hit, args: { name: LimitName; key?: string }) => Promise<boolean> }, name: LimitName, key?: string) {
+  if (!(await ctx.runMutation(internal.authLimits.hit, key === undefined ? { name } : { name, key }))) throw new ConvexError(TOO_MANY);
+}
+
 // The same provider, but students type a username instead of an email: for every step after sign-up the server finds the
 // account's email from the username itself, so the email is never asked again and never sent to the browser.
 const usernamePassword = ConvexCredentials({
@@ -88,6 +94,10 @@ const usernamePassword = ConvexCredentials({
       if (!username) throw new ConvexError("Numele de utilizator trebuie să aibă 3–20 de caractere: litere fără diacritice, cifre, punct sau _.");
       if (!name) throw new ConvexError("Scrie numele tău complet (prenume și nume).");
       if (!email) throw new ConvexError("Scrie o adresă de email corectă.");
+      // Accounts only from 16 years (GDPR art. 8; the age of digital consent in Romania, to be confirmed by a lawyer).
+      if (params.age16 !== "yes") throw new ConvexError("Contul se poate face de la 16 ani. Până atunci poți folosi tot site-ul fără cont.");
+      await spend(ctx, "signUpSite");
+      await spend(ctx, "signUpEmail", email);
       if ((await ctx.runQuery(internal.users.emailOfUsername, { username })) !== null) {
         throw new ConvexError("Acest nume de utilizator este deja folosit. Alege altul.");
       }
@@ -101,8 +111,13 @@ const usernamePassword = ConvexCredentials({
       }
     }
     // signIn, email-verification, reset, reset-verification: only the username is typed.
+    await spend(ctx, "signInUsername", username ?? "(invalid)");
     const email = username ? await ctx.runQuery(internal.users.emailOfUsername, { username }) : null;
     if (email === null) throw new Error("Invalid credentials");
+    if (flow === "reset") {
+      await spend(ctx, "codeSite");
+      await spend(ctx, "codeEmail", email);
+    }
     return (await baseAuthorize({ ...params, email }, ctx)) as never;
   },
 });

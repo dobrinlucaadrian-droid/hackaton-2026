@@ -1,5 +1,5 @@
 "use client";
-// "Contul meu": shows who is signed in (username, name and email; the name can be changed) and the saved questionnaire result, and lets the student sign out or delete the account.
+// "Contul meu": shows who is signed in (username, name and email; the name can be changed) and the saved questionnaire result, a small link to "Datele mele", and lets the student sign out or delete the account.
 import { useAuthActions } from "@convex-dev/auth/react";
 import { useConvexAuth, useMutation, useQuery } from "convex/react";
 import Link from "next/link";
@@ -195,6 +195,9 @@ export default function AccountPage() {
             </button>
           )}
         </div>
+        <p className="mt-2 text-sm text-ink-soft">
+          Vrei să vezi tot ce păstrăm despre contul tău? <Link href="/cont/datele-mele" className="font-bold text-primary underline underline-offset-2">Datele mele</Link> · <Link href="/confidentialitate" className="font-bold text-primary underline underline-offset-2">Confidențialitate</Link>
+        </p>
         {confirming && (
           <div className="mt-4 rounded-2xl bg-primary-tint p-4" role="alertdialog" aria-labelledby="sterge-titlu">
             <p id="sterge-titlu" className="font-extrabold text-primary-dark">Sigur vrei să ștergi contul?</p>

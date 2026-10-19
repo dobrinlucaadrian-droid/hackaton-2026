@@ -21,6 +21,22 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-20 01:49 — pagina de confidențialitate completă, „Datele mele”, scanare de securitate
+- Cerut: confidențialitate conformă cu legea (GDPR), teste de securitate; butonul de descărcare scos din „Contul meu” și înlocuit cu o pagină separată, deschisă doar dacă elevul vrea
+- Făcut: pagina de confidențialitate rescrisă: operatorul (de completat de echipă), date, scop și temei legal pentru fiecare prelucrare, cât păstrăm (unde nu ștergem automat, scrie așa), firmele care prelucrează date și transferul în SUA cu garanțiile din paginile lor oficiale, toate drepturile, plângere la ANSPDCP, cont de la 16 ani și păreri de la 18, recomandarea fără efect juridic, securitate, ce facem la o scurgere de date; corectat: rezultatele chestionarului ajung la noi ca statistici fără nume. Pagină nouă `/cont/datele-mele` (doar conectat, link mic din „Contul meu” și din pagina de confidențialitate): tot ce păstrăm despre cont, cu nume citibile, și „Descarcă o copie”. `docs/gdpr.md`: lista GDPR, registrul prelucrărilor, contractele cu firmele, puncte pentru jurist. Securitate: `.github/workflows/dast.yml` (scanare ZAP pasivă a site-ului pornit în GitHub, fără secrete), `.zap/rules.tsv`, `scripts/convex-probe.mjs` (verifică fără cont doar interogările bazei de dezvoltare; refuză producția), `docs/securitate.md` (ce rulează automat și o listă de 30 de minute de încercări manuale)
+- Fișiere: `apps/web/app/confidentialitate/page.tsx`, `apps/web/app/cont/page.tsx`, `apps/web/app/cont/datele-mele/page.tsx`, `docs/gdpr.md`, `docs/securitate.md`, `.github/workflows/dast.yml`, `.zap/rules.tsv`, `scripts/convex-probe.mjs`
+- Poartă: TRECUT (secrete, fișiere, registru, build, teste, pornire); în browser: „Datele mele” fără cont trimite la conectare, conectat arată datele cu nume citibile; pagina de confidențialitate se deschide; sonda Convex pe baza de dezvoltare nu a găsit date scăpate
+- Neverificat: scanarea ZAP nu a rulat încă (pe calculator nu e Docker; rulează pe GitHub după salvare); încercările manuale din `docs/securitate.md` nu au fost făcute; numele, emailul și adresa operatorului lipsesc; textul trebuie citit de un jurist
+- Urmează: echipa completează datele operatorului; un jurist citește pagina și `docs/gdpr.md`; contractele de prelucrare cu Convex, Resend, Cloudflare, Vercel
+
+### 2026-10-20 01:44 — limite la conturi, cont de la 16 ani, copia datelor mele
+- Cerut: pregătire pentru lansare (rate limiting, GDPR); echipa a ales limitarea încercărilor, cont doar de la 16 ani (până confirmă un jurist vârsta din România) și pagina de confidențialitate completată
+- Făcut: `convex/authLimits.ts` (limitatorul deja instalat): conturi noi 3/oră pe email și 60/oră pe site; coduri pentru parolă uitată 5/oră pe email și 200/oră pe site; pași de conectare 30/oră pe nume de utilizator (și pentru nume inexistente); verificarea „nume liber” devine o mutație numărată (120/minut pe site). Crearea contului cere bifa „Am cel puțin 16 ani”, verificată și pe server. `account.exportMine`: copia datelor contului (fără parolă), pentru butonul „Descarcă datele mele”. Teste noi în `convex/account.test.ts`
+- Fișiere: `apps/web/convex/authLimits.ts`, `apps/web/convex/auth.ts`, `apps/web/convex/account.ts`, `apps/web/convex/account.test.ts`, `apps/web/components/SignInForm.tsx`, `.env.example`
+- Poartă: TRECUT (secrete, fișiere, registru, build, teste, pornire) după o reparație: testul nou nu trecea verificarea de tipuri; în browser: fără bifa de 16 ani contul e refuzat, cu ea se trimite codul
+- Neverificat: Convex nu vede adresa IP, deci limitele sunt pe email, nume și pe tot site-ul; vârsta de 16 ani trebuie confirmată de un jurist
+- Urmează: scanarea de securitate pe GitHub, pagina de confidențialitate și lista GDPR (în lucru)
+
 ### 2026-10-19 23:19 — Politehnica din Atena revine în catalogul Greciei
 - Cerut: universitățile grecești scoase să revină doar dacă sursa e 100% sigură
 - Făcut: regulă nouă: o universitate fără sediu confirmat dintr-o lege revine doar dacă toate facultățile ei din listele oficiale ale ministerului sunt în același oraș, iar orașul ei este acela (scris așa în README, nu „sediu legal”). A revenit Politehnica din Atena (ΕΜΠ, 9 programe, toate la Atena). Rămân scoase Universitatea din Atena (Atena și Psachna), Creta (Heraklion și Rethymno) și Macedonia de Vest (cinci orașe). Grecia: 21 de instituții, 335 de programe; catalogul: 4.334 de instituții, 107.155 de programe; încărcat în baza de dezvoltare
@@ -747,6 +763,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-20 01:00 `cd56f9b` feat: restore NTUA in the Greek programme catalogue
 - 2026-10-19 18:15 `673cf7b` feat: add programme catalogues for seven more EU countries
 - 2026-10-19 04:19 `caece3c` feat: username and password accounts with email code verification
 - 2026-10-19 03:23 `90b1388` feat: guides for every country, hide data counts, guide search
@@ -776,5 +793,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-08 00:16 `a1fd781` docs: research on official and open data sources for universities and programmes
 - 2026-10-08 00:01 `914f800` docs: final launch steps and the new order of work
 - 2026-10-07 01:16 `4e39abf` docs: record the CI scan results and what is left for the next level
-- 2026-10-07 01:14 `c76d79c` feat: privacy page; generate route types before the CI type check
 <!-- commits:end -->

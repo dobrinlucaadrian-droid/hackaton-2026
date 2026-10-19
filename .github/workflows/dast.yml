@@ -1,0 +1,58 @@
+# ZAP baseline scan: builds and starts the site inside the job, then OWASP ZAP visits its pages on http://localhost:3000 and reports risky headers and settings (passive only, it never attacks; never a public address).
+name: ZAP scan (running site)
+
+on:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 5 * * 1" # every Monday morning, after the other security checks
+
+permissions:
+  contents: read
+
+jobs:
+  zap:
+    name: ZAP baseline (passive) on localhost
+    runs-on: ubuntu-latest
+    env:
+      # Public settings the pages are built with. The scan reads only pages, so a placeholder database
+      # address is enough (no page asks the database on the server); the Turnstile key is Cloudflare's
+      # documented test key that always passes. No secrets are used in this job.
+      NEXT_PUBLIC_CONVEX_URL: https://placeholder-dast.convex.cloud
+      NEXT_PUBLIC_CONVEX_SITE_URL: https://placeholder-dast.convex.site
+      NEXT_PUBLIC_TURNSTILE_SITE_KEY: 1x00000000000000000000AA
+      NEXT_TELEMETRY_DISABLED: 1
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - name: Install
+        working-directory: apps/web
+        run: npm ci
+      - name: Build
+        working-directory: apps/web
+        run: npm run build
+      - name: Start the site on localhost:3000 and wait until it answers
+        working-directory: apps/web
+        run: |
+          nohup npm start -- --port 3000 > ../../next-start.log 2>&1 &
+          for i in $(seq 1 60); do
+            if curl -fsS -o /dev/null http://localhost:3000/; then echo "site is up"; exit 0; fi
+            sleep 2
+          done
+          echo "the site did not start"; cat ../../next-start.log; exit 1
+      - name: ZAP baseline scan
+        uses: zaproxy/action-baseline@v0.15.0
+        with:
+          target: http://localhost:3000
+          rules_file_name: .zap/rules.tsv
+          cmd_options: "-m 2" # spider for 2 minutes: enough to reach the main pages
+          fail_action: false # report only, for now; switch to true once the report is clean
+          allow_issue_writing: false # no GitHub issues; the report is the artifact below
+          artifact_name: zap-report
+      - name: Site log (if something went wrong)
+        if: failure()
+        run: cat next-start.log

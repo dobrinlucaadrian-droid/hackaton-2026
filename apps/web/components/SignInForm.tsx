@@ -50,6 +50,7 @@ export function SignInForm({ idPrefix = "", startWith = "signIn" }: { idPrefix?:
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [code, setCode] = useState("");
+  const [age16, setAge16] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [info, setInfo] = useState<string | null>(null);
@@ -88,10 +89,11 @@ export function SignInForm({ idPrefix = "", startWith = "signIn" }: { idPrefix?:
       const mail = cleanEmail(email);
       if (!mail) return setError("Scrie o adresă de email corectă.");
       if (!validPassword(password)) return setError(`Parola trebuie să aibă cel puțin ${PASSWORD_MIN} caractere.`);
-      if (!(await convex.query(api.account.usernameFree, { username: user }).catch(() => true))) {
+      if (!age16) return setError("Contul se poate face de la 16 ani. Până atunci poți folosi tot site-ul fără cont.");
+      if (!(await convex.mutation(api.account.usernameFree, { username: user }).catch(() => true))) {
         return setError("Acest nume de utilizator este deja folosit. Alege altul.");
       }
-      const done = await run({ flow: "signUp", username: user, name: fullName, email: mail, password }, "Nu am putut crea contul. Dacă ai deja un cont cu acest email, conectează-te sau folosește „Am uitat parola”.");
+      const done = await run({ flow: "signUp", username: user, name: fullName, email: mail, password, age16: "yes" }, "Nu am putut crea contul. Dacă ai deja un cont cu acest email, conectează-te sau folosește „Am uitat parola”.");
       if (done === false) go("code", `Ți-am trimis un cod din 6 cifre la ${mail}. Uită-te și în Spam.`);
       return;
     }
@@ -202,6 +204,13 @@ export function SignInForm({ idPrefix = "", startWith = "signIn" }: { idPrefix?:
             />
             {mode !== "signIn" && <p className="mt-1 text-xs text-ink-soft">Cel puțin {PASSWORD_MIN} caractere.</p>}
           </div>
+        )}
+
+        {mode === "signUp" && (
+          <label className="flex items-start gap-3 text-sm text-ink">
+            <input type="checkbox" checked={age16} onChange={(e) => setAge16(e.target.checked)} className="mt-1 h-5 w-5 shrink-0" />
+            <span>Am cel puțin 16 ani. Dacă ai mai puțin, poți folosi tot site-ul fără cont.</span>
+          </label>
         )}
 
         <button type="submit" disabled={busy || (emailOff && (mode === "signUp" || mode === "forgot"))} className={primary}>
