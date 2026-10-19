@@ -17,6 +17,12 @@ const limiter = new RateLimiter(components.rateLimiter, {
   usernameCheck: { kind: "token bucket", rate: 120, period: MINUTE, capacity: 120 },
 });
 
+/** The counters are kept under a SHA-256 fingerprint of the email or username, so the limiter tables hold no readable personal data. */
+async function fingerprint(key: string): Promise<string> {
+  const bytes = new Uint8Array(await crypto.subtle.digest("SHA-256", new TextEncoder().encode(key.toLowerCase())));
+  return Array.from(bytes, (b) => b.toString(16).padStart(2, "0")).join("");
+}
+
 export type LimitName = "signUpEmail" | "signUpSite" | "codeEmail" | "codeSite" | "signInUsername" | "usernameCheck";
 
 /** Spends one try from the named limit (for `key`, or for the whole site); returns false when the limit is used up. */
@@ -33,7 +39,7 @@ export const hit = internalMutation({
     key: v.optional(v.string()),
   },
   returns: v.boolean(),
-  handler: async (ctx, { name, key }) => (await limiter.limit(ctx, name, key === undefined ? {} : { key })).ok,
+  handler: async (ctx, { name, key }) => (await limiter.limit(ctx, name, key === undefined ? {} : { key: await fingerprint(key) })).ok,
 });
 
 export const TOO_MANY = "Prea multe încercări într-un timp scurt. Încearcă din nou peste o oră.";

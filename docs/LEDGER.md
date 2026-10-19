@@ -21,6 +21,14 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-20 02:10 — pregătire pentru producție: anti-robot la cont, ștergere automată, copii de rezervă, ghid
+- Cerut: produs sigur pentru elevi și pentru echipă (acces la tot, să nu fiți blocați de un atacator), site care nu cade dacă e bombardat, GDPR bun; firma la final; lucru autonom pe pachete
+- Făcut: (atacuri) toate funcțiile publice citesc un număr limitat de rânduri; căsuța „Nu sunt robot” (Cloudflare) și la crearea contului și la „Am uitat parola”, verificată pe server prin `convex/turnstile.ts` (folosit și de formularul de păreri), ca un robot să nu poată consuma limitele generale; (teste) fără HTML brut în pagini, antetele de securitate prezente, administrarea trimite la conectare, sonda Convex fără cont: nimic scăpat; (GDPR) ștergere zilnică automată `convex/retention.ts` + `convex/crons.ts`: cont neconfirmat 7 zile, păreri respinse 30, necitite 90, chestionare fără nume 12 luni, statistici pe zile 24 de luni, parole greșite 2 zile; contoarele de încercări păstrate sub amprentă SHA-256; ștergerea contului folosește aceeași funcție; termenele scrise pe pagina de confidențialitate și în `docs/gdpr.md`; (administrare) buton „Șterge definitiv” pentru păreri; (copii de rezervă) `scripts/backup.mjs`: copie criptată (AES-256-GCM, parolă aleasă de voi) într-un dosar din afara proiectului, probată pe dezvoltare (făcută și deschisă la loc); (ghid) `docs/productie.md`: 2FA și al doilea om pe fiecare cont, copii de rezervă, ce faceți la un atac (Attack Challenge Mode în Vercel), limite de cheltuieli, procedura pentru scurgeri de date, lista de dinainte de lansare
+- Fișiere: `apps/web/convex/turnstile.ts`, `apps/web/convex/retention.ts`, `apps/web/convex/crons.ts`, `apps/web/convex/retention.test.ts`, `apps/web/convex/auth.ts`, `apps/web/convex/authLimits.ts`, `apps/web/convex/account.ts`, `apps/web/convex/reviews.ts`, `apps/web/convex/schema.ts`, `apps/web/components/SignInForm.tsx`, `apps/web/app/admin/pareri/page.tsx`, `apps/web/app/confidentialitate/page.tsx`, `scripts/backup.mjs`, `docs/productie.md`, `docs/gdpr.md`, `.env.example`
+- Poartă: TRECUT (secrete, fișiere, registru, build, teste, pornire; 35 de teste pentru baza de date); în browser: căsuța „Nu sunt robot” la „Am uitat parola”, verificată pe server, apoi cod trimis; copie de rezervă făcută și deschisă la loc pe baza de dezvoltare
+- Neverificat: scanarea ZAP (lipsește Docker pe calculator; rulează pe GitHub după ce versiunea ajunge pe `main`); copia de rezervă a producției (nu am rulat-o: producția nu are încă versiunea nouă); butonul „Șterge definitiv” nu a fost apăsat în browser (testat automat); ce face Convex pe planul gratuit la depășirea cotei
+- Urmează: echipa face pașii marcați „(voi)” din `docs/productie.md`; la final operatorul și juristul
+
 ### 2026-10-20 01:49 — pagina de confidențialitate completă, „Datele mele”, scanare de securitate
 - Cerut: confidențialitate conformă cu legea (GDPR), teste de securitate; butonul de descărcare scos din „Contul meu” și înlocuit cu o pagină separată, deschisă doar dacă elevul vrea
 - Făcut: pagina de confidențialitate rescrisă: operatorul (de completat de echipă), date, scop și temei legal pentru fiecare prelucrare, cât păstrăm (unde nu ștergem automat, scrie așa), firmele care prelucrează date și transferul în SUA cu garanțiile din paginile lor oficiale, toate drepturile, plângere la ANSPDCP, cont de la 16 ani și păreri de la 18, recomandarea fără efect juridic, securitate, ce facem la o scurgere de date; corectat: rezultatele chestionarului ajung la noi ca statistici fără nume. Pagină nouă `/cont/datele-mele` (doar conectat, link mic din „Contul meu” și din pagina de confidențialitate): tot ce păstrăm despre cont, cu nume citibile, și „Descarcă o copie”. `docs/gdpr.md`: lista GDPR, registrul prelucrărilor, contractele cu firmele, puncte pentru jurist. Securitate: `.github/workflows/dast.yml` (scanare ZAP pasivă a site-ului pornit în GitHub, fără secrete), `.zap/rules.tsv`, `scripts/convex-probe.mjs` (verifică fără cont doar interogările bazei de dezvoltare; refuză producția), `docs/securitate.md` (ce rulează automat și o listă de 30 de minute de încercări manuale)
@@ -763,6 +771,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-20 01:55 `31da3e0` feat: rate limits, 16+ accounts, privacy page, my-data page, ZAP scan
 - 2026-10-20 01:00 `cd56f9b` feat: restore NTUA in the Greek programme catalogue
 - 2026-10-19 18:15 `673cf7b` feat: add programme catalogues for seven more EU countries
 - 2026-10-19 04:19 `caece3c` feat: username and password accounts with email code verification
@@ -792,5 +801,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-08 02:47 `a381c2f` feat: ask for the full name at sign-in and keep it on the account
 - 2026-10-08 00:16 `a1fd781` docs: research on official and open data sources for universities and programmes
 - 2026-10-08 00:01 `914f800` docs: final launch steps and the new order of work
-- 2026-10-07 01:16 `4e39abf` docs: record the CI scan results and what is left for the next level
 <!-- commits:end -->

@@ -1,5 +1,5 @@
 "use client";
-// Administration page for student opinions: the team reads what came through the form and approves or rejects it. Only administrators get any data.
+// Administration page for student opinions: the team reads what came through the form and approves, rejects or deletes it. Only administrators get any data.
 import { useConvexAuth, useMutation, useQuery } from "convex/react";
 import Link from "next/link";
 import { useState } from "react";
@@ -13,12 +13,24 @@ const TABS: [State, string][] = [["pending", "În așteptare"], ["approved", "Ap
 function Queue({ state }: { state: State }) {
   const rows = useQuery(api.reviews.listByState, { state });
   const moderate = useMutation(api.reviews.moderate);
+  const remove = useMutation(api.reviews.remove);
   const [busy, setBusy] = useState<Id<"reviews"> | null>(null);
 
   async function set(id: Id<"reviews">, next: "approved" | "rejected") {
     setBusy(id);
     try {
       await moderate({ id, state: next });
+    } finally {
+      setBusy(null);
+    }
+  }
+
+  // Deleting cannot be undone, so the browser asks once more.
+  async function del(id: Id<"reviews">) {
+    if (!window.confirm("Ștergi definitiv această părere? Nu se poate anula.")) return;
+    setBusy(id);
+    try {
+      await remove({ id });
     } finally {
       setBusy(null);
     }
@@ -53,6 +65,9 @@ function Queue({ state }: { state: State }) {
                 {state === "approved" ? "Scoate de pe site" : "Respinge"}
               </button>
             )}
+            <button type="button" disabled={busy === r._id} onClick={() => void del(r._id)} className="min-h-11 rounded-full px-5 font-bold text-ink-soft underline underline-offset-2 hover:text-primary-dark disabled:opacity-50">
+              Șterge definitiv
+            </button>
           </div>
         </li>
       ))}

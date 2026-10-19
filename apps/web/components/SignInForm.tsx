@@ -5,10 +5,11 @@ import { ConvexError } from "convex/values";
 import { useConvex, useQuery } from "convex/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { api } from "@/convex/_generated/api";
 import { cleanName } from "@/lib/name";
 import { cleanEmail, cleanUsername, PASSWORD_MIN, validPassword } from "@/lib/username";
+import { Turnstile } from "./Turnstile";
 
 const field = "mt-1 min-h-12 w-full rounded-xl border-2 border-transparent bg-paper px-4 text-ink ring-1 ring-line focus:border-primary focus:outline-none";
 const label = "text-sm font-extrabold uppercase tracking-wide text-primary";
@@ -51,6 +52,14 @@ export function SignInForm({ idPrefix = "", startWith = "signIn" }: { idPrefix?:
   const [password, setPassword] = useState("");
   const [code, setCode] = useState("");
   const [age16, setAge16] = useState(false);
+  // The Cloudflare "not a robot" check for the steps that send an email; a token works once, so the box is reset after each try.
+  const [robotToken, setRobotToken] = useState("");
+  const [robotKey, setRobotKey] = useState(0);
+  const onRobotToken = useCallback((t: string) => setRobotToken(t), []);
+  const resetRobot = () => {
+    setRobotToken("");
+    setRobotKey((k) => k + 1);
+  };
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [info, setInfo] = useState<string | null>(null);
@@ -90,10 +99,12 @@ export function SignInForm({ idPrefix = "", startWith = "signIn" }: { idPrefix?:
       if (!mail) return setError("Scrie o adresă de email corectă.");
       if (!validPassword(password)) return setError(`Parola trebuie să aibă cel puțin ${PASSWORD_MIN} caractere.`);
       if (!age16) return setError("Contul se poate face de la 16 ani. Până atunci poți folosi tot site-ul fără cont.");
+      if (!robotToken) return setError("Bifează căsuța „Nu sunt robot”.");
       if (!(await convex.mutation(api.account.usernameFree, { username: user }).catch(() => true))) {
         return setError("Acest nume de utilizator este deja folosit. Alege altul.");
       }
-      const done = await run({ flow: "signUp", username: user, name: fullName, email: mail, password, age16: "yes" }, "Nu am putut crea contul. Dacă ai deja un cont cu acest email, conectează-te sau folosește „Am uitat parola”.");
+      resetRobot();
+      const done = await run({ flow: "signUp", username: user, name: fullName, email: mail, password, age16: "yes", turnstile: robotToken }, "Nu am putut crea contul. Dacă ai deja un cont cu acest email, conectează-te sau folosește „Am uitat parola”.");
       if (done === false) go("code", `Ți-am trimis un cod din 6 cifre la ${mail}. Uită-te și în Spam.`);
       return;
     }
@@ -111,8 +122,23 @@ export function SignInForm({ idPrefix = "", startWith = "signIn" }: { idPrefix?:
       return;
     }
     if (mode === "forgot") {
+      if (!robotToken) return setError("Bifează căsuța „Nu sunt robot”.");
+      const token = robotToken;
+      resetRobot();
       // The same answer whether the username exists or not, so the form does not reveal who has an account.
-      await run({ flow: "reset", username: user }, "");
+      // Only our own messages (robot check, too many tries) stop here; "unknown username" looks like success.
+      setBusy(true);
+      setError(null);
+      try {
+        await signIn("password", { flow: "reset", username: user, turnstile: token });
+      } catch (e) {
+        const own = messageOf(e, "");
+        if (own) {
+          setBusy(false);
+          return setError(own);
+        }
+      }
+      setBusy(false);
       go("reset", "Dacă acest nume de utilizator există, am trimis un cod din 6 cifre pe emailul contului.");
       return;
     }
@@ -212,6 +238,8 @@ export function SignInForm({ idPrefix = "", startWith = "signIn" }: { idPrefix?:
             <span>Am cel puțin 16 ani. Dacă ai mai puțin, poți folosi tot site-ul fără cont.</span>
           </label>
         )}
+
+        {(mode === "signUp" || mode === "forgot") && <Turnstile key={robotKey} onToken={onRobotToken} />}
 
         <button type="submit" disabled={busy || (emailOff && (mode === "signUp" || mode === "forgot"))} className={primary}>
           {busy ? "Așteaptă..." : submitLabel[mode]}

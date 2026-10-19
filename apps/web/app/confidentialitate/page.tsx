@@ -116,12 +116,12 @@ export default function PrivacyPage() {
 
       <Block title="Cât timp păstrăm datele">
         <List>
-          <li><span className="font-bold text-ink">Contul și rezultatul salvat:</span> până ștergi contul. Rezultatul îl poți șterge și separat, oricând.</li>
+          <li><span className="font-bold text-ink">Contul și rezultatul salvat:</span> până ștergi contul. Rezultatul îl poți șterge și separat, oricând. Un cont al cărui email nu a fost confirmat cu codul se șterge automat după 7 zile.</li>
           <li><span className="font-bold text-ink">Sesiunea de conectare:</span> nu mai este valabilă după cel mult 30 de zile; datele ei se șterg odată cu contul.</li>
           <li><span className="font-bold text-ink">Codul de 6 cifre din email:</span> poate fi folosit doar 15 minute.</li>
-          <li><span className="font-bold text-ink">Părerile:</span> cele aprobate rămân pe site până ne ceri să le scoatem. Pentru cele respinse sau neaprobate, echipa va stabili cât timp le păstrează.</li>
-          <li><span className="font-bold text-ink">Statisticile:</span> acum nu se șterg automat. Echipa va stabili o perioadă după care le șterge.</li>
-          <li><span className="font-bold text-ink">Numărătorile de încercări:</span> limita se golește singură în cel mult o oră, dar rândurile nu se șterg încă automat (și nici la ștergerea contului). Echipa va stabili o perioadă după care le șterge.</li>
+          <li><span className="font-bold text-ink">Părerile:</span> cele aprobate rămân pe site până ne ceri să le scoatem. Cele respinse se șterg automat după 30 de zile de la decizie, iar cele pe care nu le-a citit nimeni, după 90 de zile.</li>
+          <li><span className="font-bold text-ink">Statisticile:</span> rezultatele de chestionar fără nume se șterg după 12 luni, iar numărătorile pe zile (vizite, țări, site-uri de unde vin vizitatorii) după 24 de luni. Rămân doar totalurile generale, care nu au legătură cu nicio persoană.</li>
+          <li><span className="font-bold text-ink">Numărătorile de încercări:</span> le păstrăm sub o amprentă a numelui de utilizator sau a emailului (din care acestea nu se pot citi), iar limita se golește singură în cel mult o oră. Numărătoarea parolelor greșite (care ține emailul contului) se șterge după 2 zile.</li>
         </List>
       </Block>
 

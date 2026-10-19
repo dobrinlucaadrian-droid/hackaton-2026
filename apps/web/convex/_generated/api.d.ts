@@ -14,9 +14,12 @@ import type * as analytics from "../analytics.js";
 import type * as auth from "../auth.js";
 import type * as authLimits from "../authLimits.js";
 import type * as catalog from "../catalog.js";
+import type * as crons from "../crons.js";
 import type * as http from "../http.js";
 import type * as results from "../results.js";
+import type * as retention from "../retention.js";
 import type * as reviews from "../reviews.js";
+import type * as turnstile from "../turnstile.js";
 import type * as users from "../users.js";
 
 import type {
@@ -32,9 +35,12 @@ declare const fullApi: ApiFromModules<{
   auth: typeof auth;
   authLimits: typeof authLimits;
   catalog: typeof catalog;
+  crons: typeof crons;
   http: typeof http;
   results: typeof results;
+  retention: typeof retention;
   reviews: typeof reviews;
+  turnstile: typeof turnstile;
   users: typeof users;
 }>;
 

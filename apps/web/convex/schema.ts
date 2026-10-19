@@ -21,7 +21,8 @@ export default defineSchema({
   })
     .index("email", ["email"])
     .index("phone", ["phone"])
-    .index("username", ["username"]),
+    .index("username", ["username"])
+    .index("by_email_verified", ["emailVerificationTime"]), // finds accounts that never confirmed their email (daily clean-up)
 
   // One saved questionnaire result per student (the newest replaces the old one).
   results: defineTable({

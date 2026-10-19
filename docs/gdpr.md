@@ -25,7 +25,7 @@ Unde e textul pentru vizitatori: `apps/web/app/confidentialitate/page.tsx` (date
 | 5 | Interesul legitim explicat (dacă se folosește 6(1)(f)) | ⚠️ | Explicat pe scurt în pagină; lipsește testul de echilibru scris (LIA). ⚖️ |
 | 6 | Destinatari / categorii de destinatari | ✅ | Convex, Resend, Cloudflare, Vercel; părerile aprobate sunt publice. |
 | 7 | Transferuri în afara UE + garanții | ⚠️ | Scris după DPA-urile oficiale (vezi tabelul de mai jos). Regiunea Convex de verificat. |
-| 8 | Perioade de păstrare (sau criteriile) | ⚠️ | Contul: până la ștergere. Statistici, păreri respinse, contoare de încercări: echipa trebuie să decidă. |
+| 8 | Perioade de păstrare (sau criteriile) | ✅ | Contul: până la ștergere; neconfirmat: 7 zile. Păreri respinse: 30 de zile; necitite: 90. Chestionare fără nume: 12 luni; statistici pe zile: 24 de luni. Parole greșite: 2 zile. Ștergere zilnică automată (`convex/retention.ts`, `convex/crons.ts`); termenele se schimbă acolo și pe pagină. |
 | 9 | Sursa datelor (dacă nu vin de la persoană) | N/A | Toate datele vin direct de la utilizator. Țara vine din antetul Vercel `x-vercel-ip-country`. |
 
 ## Drepturile persoanelor (art. 15–22)
@@ -107,10 +107,10 @@ Unde e textul pentru vizitatori: `apps/web/app/confidentialitate/page.tsx` (date
 |---|---|---|---|---|---|
 | Contul (conectare, coduri pe email, parolă nouă) | nume de utilizator, nume complet, email, data confirmării, amprenta parolei (scrypt), sesiuni (început, expirare), coduri de 6 cifre (15 min) | contract, art. 6(1)(b) | Convex (bază de date), Resend (email + cod), Vercel (găzduire) | SUA (de verificat regiunea Convex) | până la ștergerea contului; sesiunea expiră după cel mult 30 de zile |
 | Rezultatul salvat | profil de liceu, răspunsuri, unde/orașe, 3 domenii, data salvării | contract, art. 6(1)(b) | Convex, Vercel | SUA | până îl șterge utilizatorul sau își șterge contul |
-| Păreri ale studenților | nume, universitate, facultate, an, text, acord, data trimiterii, cine a moderat și când | consimțământ, art. 6(1)(a) | Convex, Cloudflare (Turnstile, la trimitere), public după aprobare | SUA / global (Cloudflare) | aprobate: până la retragerea acordului; respinse/în așteptare: **de decis** |
-| Statistici de vizite | zi, pagină, la prima pagină: țară (2 litere) și site-ul de proveniență (doar numele) — fără IP, cookie, id | interes legitim, art. 6(1)(f) | Convex, Vercel (citește țara din IP) | SUA | **de decis** (acum nu se șterg) |
-| Statistici chestionar | zi, profil, unde/orașe, răspunsuri, 3 domenii — fără nume, cont sau id (tabelul `quizRuns` + contoare `quizStats`) | interes legitim, art. 6(1)(f) | Convex | SUA | **de decis** (acum nu se șterg) |
-| Siguranță și limite | contoare de încercări pe email / nume de utilizator / pe tot site-ul (`convex/authLimits.ts`, Convex Auth `authRateLimits`), rezultatul verificării Turnstile | interes legitim, art. 6(1)(f) | Convex, Cloudflare | SUA / global | limita se golește în ≤ 1 oră; rândurile nu se șterg — **de decis** |
+| Păreri ale studenților | nume, universitate, facultate, an, text, acord, data trimiterii, cine a moderat și când | consimțământ, art. 6(1)(a) | Convex, Cloudflare (Turnstile, la trimitere), public după aprobare | SUA / global (Cloudflare) | aprobate: până la retragerea acordului; respinse: 30 de zile de la decizie; necitite: 90 de zile (ștergere automată) |
+| Statistici de vizite | zi, pagină, la prima pagină: țară (2 litere) și site-ul de proveniență (doar numele) — fără IP, cookie, id | interes legitim, art. 6(1)(f) | Convex, Vercel (citește țara din IP) | SUA | 24 de luni (ștergere automată) |
+| Statistici chestionar | zi, profil, unde/orașe, răspunsuri, 3 domenii — fără nume, cont sau id (tabelul `quizRuns` + contoare `quizStats`) | interes legitim, art. 6(1)(f) | Convex | SUA | rezultatele pe rând: 12 luni (ștergere automată); totalurile `quizStats`: fără limită (nu țin de nicio persoană) |
+| Siguranță și limite | contoare de încercări pe email / nume de utilizator / pe tot site-ul (`convex/authLimits.ts`, Convex Auth `authRateLimits`), rezultatul verificării Turnstile | interes legitim, art. 6(1)(f) | Convex, Cloudflare | SUA / global | contoarele noastre: sub amprentă SHA-256, se golesc în ≤ 1 oră; `authRateLimits` (cu emailul): 2 zile (ștergere automată) |
 
 ---
 
@@ -135,7 +135,7 @@ Datele colectate de Turnstile (după https://www.cloudflare.com/turnstile-privac
 - [ ] **Operatorul:** cine răspunde legal (un adult sau o asociație), email de contact, adresă poștală → completat în `OPERATOR` din `apps/web/app/confidentialitate/page.tsx`. Recomandat un email dedicat (de exemplu pe domeniul propriu).
 - [ ] **DPA-uri:** de citit și acceptat/semnat cu Convex, Resend, Cloudflare, Vercel (linkuri în tabelul de mai sus); de păstrat o copie. La Cloudflare de confirmat că DPA-ul acoperă contul folosit.
 - [ ] **Regiunea Convex:** de verificat în panoul Convex unde stă baza de producție; dacă se poate, de ales regiunea UE.
-- [ ] **Perioade de păstrare:** de decis pentru statistici (`dailyStats`, `quizRuns`, `quizStats`), păreri respinse și în așteptare, contoarele de încercări (componenta rate-limiter, `authRateLimits`). Apoi o curățare automată (job programat în Convex) și pagina actualizată.
+- [x] **Perioade de păstrare:** alese și puse în cod (ștergere zilnică), scrise pe pagină. Inițial: de decis pentru statistici (`dailyStats`, `quizRuns`, `quizStats`), păreri respinse și în așteptare, contoarele de încercări (componenta rate-limiter, `authRateLimits`). Apoi o curățare automată (job programat în Convex) și pagina actualizată.
 - [ ] **Ștergerea unei păreri:** funcție de administrator pentru ștergere (acum doar „respinsă” sau prin panoul Convex).
 - [ ] **Ștergerea contului:** de verificat dacă trebuie șterse și contoarele de încercări legate de email/nume de utilizator.
 - [ ] **Procedura pentru incidente:** cine află, cine decide, cine anunță ANSPDCP (formularul de pe dataprotection.ro) în 72 de ore, cine anunță utilizatorii (prin email), un registru intern al incidentelor (art. 33(5)) — chiar și pentru cele care nu se raportează.

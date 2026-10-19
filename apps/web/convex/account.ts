@@ -4,6 +4,7 @@ import { ConvexError, v } from "convex/values";
 import { internal } from "./_generated/api";
 import { mutation, query } from "./_generated/server";
 import { TOO_MANY } from "./authLimits";
+import { deleteUserEverywhere } from "./retention";
 import { cleanName } from "../lib/name";
 import { cleanUsername } from "../lib/username";
 import { userMutation } from "./access";
@@ -60,23 +61,7 @@ export const remove = userMutation({
   args: {},
   returns: v.null(),
   handler: async (ctx) => {
-    const userId = ctx.userId;
-    for (const r of await ctx.db.query("results").withIndex("by_user", (q) => q.eq("userId", userId)).collect()) {
-      await ctx.db.delete(r._id);
-    }
-    for (const s of await ctx.db.query("authSessions").withIndex("userId", (q) => q.eq("userId", userId)).collect()) {
-      for (const t of await ctx.db.query("authRefreshTokens").withIndex("sessionId", (q) => q.eq("sessionId", s._id)).collect()) {
-        await ctx.db.delete(t._id);
-      }
-      await ctx.db.delete(s._id);
-    }
-    for (const a of await ctx.db.query("authAccounts").withIndex("userIdAndProvider", (q) => q.eq("userId", userId)).collect()) {
-      for (const c of await ctx.db.query("authVerificationCodes").withIndex("accountId", (q) => q.eq("accountId", a._id)).collect()) {
-        await ctx.db.delete(c._id);
-      }
-      await ctx.db.delete(a._id);
-    }
-    await ctx.db.delete(userId);
+    await deleteUserEverywhere(ctx, ctx.userId);
     return null;
   },
 });

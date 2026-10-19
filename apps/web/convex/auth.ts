@@ -6,6 +6,7 @@ import { convexAuth } from "@convex-dev/auth/server";
 import { ConvexError } from "convex/values";
 import { internal } from "./_generated/api";
 import { TOO_MANY, type LimitName } from "./authLimits";
+import { verifyTurnstile } from "./turnstile";
 import { cleanName } from "../lib/name";
 import { cleanEmail, cleanUsername, validPassword } from "../lib/username";
 
@@ -96,6 +97,8 @@ const usernamePassword = ConvexCredentials({
       if (!email) throw new ConvexError("Scrie o adresă de email corectă.");
       // Accounts only from 16 years (GDPR art. 8; the age of digital consent in Romania, to be confirmed by a lawyer).
       if (params.age16 !== "yes") throw new ConvexError("Contul se poate face de la 16 ani. Până atunci poți folosi tot site-ul fără cont.");
+      // A robot cannot use up the site-wide limit without passing the Cloudflare check first.
+      await verifyTurnstile(params.turnstile);
       await spend(ctx, "signUpSite");
       await spend(ctx, "signUpEmail", email);
       if ((await ctx.runQuery(internal.users.emailOfUsername, { username })) !== null) {
@@ -115,6 +118,7 @@ const usernamePassword = ConvexCredentials({
     const email = username ? await ctx.runQuery(internal.users.emailOfUsername, { username }) : null;
     if (email === null) throw new Error("Invalid credentials");
     if (flow === "reset") {
+      await verifyTurnstile(params.turnstile);
       await spend(ctx, "codeSite");
       await spend(ctx, "codeEmail", email);
     }

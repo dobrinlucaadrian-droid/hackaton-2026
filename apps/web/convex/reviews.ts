@@ -1,9 +1,10 @@
-// Student reviews: anyone can read the approved ones and send a new one through the checked public form; only administrators see the queue and approve or reject.
+// Student reviews: anyone can read the approved ones and send a new one through the checked public form; only administrators see the queue, approve, reject or delete.
 import { HOUR, RateLimiter } from "@convex-dev/rate-limiter";
 import { ConvexError, v } from "convex/values";
 import { components, internal } from "./_generated/api";
 import { action, internalMutation, query, type MutationCtx } from "./_generated/server";
 import { adminMutation, adminQuery } from "./access";
+import { verifyTurnstile } from "./turnstile";
 import { reviewState } from "./schema";
 
 export const LIMITS = { name: 60, faculty: 120, university: 120, status: 40, textMin: 40, textMax: 3000 };
@@ -78,6 +79,17 @@ export const moderate = adminMutation({
   },
 });
 
+/** Deletes a review for good (for example when its author asks for it to be removed). Administrators only. */
+export const remove = adminMutation({
+  args: { id: v.id("reviews") },
+  returns: v.null(),
+  handler: async (ctx, { id }) => {
+    if (!(await ctx.db.get(id))) throw new ConvexError("Părerea nu mai există.");
+    await ctx.db.delete(id);
+    return null;
+  },
+});
+
 /** Checks and cleans a review, then stores it as "pending". Nobody can publish directly. */
 async function insertChecked(
   ctx: MutationCtx,
@@ -138,15 +150,7 @@ export const submit = action({
   returns: v.null(),
   handler: async (ctx, { token, website, ...review }) => {
     if (website) return null; // pretend it worked, store nothing
-    const secret = process.env.TURNSTILE_SECRET_KEY;
-    if (!secret) throw new ConvexError("Formularul nu este încă pornit.");
-    if (token.length === 0 || token.length > 2048) throw new ConvexError("Verificarea anti-robot lipsește. Reîncarcă pagina.");
-    const res = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
-      method: "POST",
-      body: new URLSearchParams({ secret, response: token }),
-    });
-    const outcome = (await res.json()) as { success?: boolean };
-    if (!res.ok || outcome.success !== true) throw new ConvexError("Verificarea anti-robot nu a trecut. Reîncarcă pagina și încearcă din nou.");
+    await verifyTurnstile(token);
     await ctx.runMutation(internal.reviews.insertLimited, review);
     return null;
   },
