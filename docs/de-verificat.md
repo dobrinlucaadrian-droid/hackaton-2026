@@ -189,3 +189,34 @@ Australia 8 (Macquarie, Newcastle, Australian Catholic University și Edith Cowa
 - **LSMU (Lituania):** nu e clar dacă rambursarea parțială a taxei pentru note bune se aplică și programelor în engleză.
 - **Católica (Portugalia):** lista completă de programe nu s-a putut deschide; domeniul „informatică” se sprijină pe licențele de știința datelor.
 - **Australian Catholic University: „Burse: da”** pentru bursa automată la nursing, științe biomedicale și sport, doar la campusul din Brisbane; dacă vi se pare prea îngustă, puneți „nu” și păstrați nota.
+
+
+## Runda din 2026-10-19: ghiduri pentru încă 26 de țări
+
+Fiecare ghid a fost scris din paginile oficiale și recitit de un al doilea verificator: 108 corecturi confirmate, 10 reformulări prudente.
+Acum există câte un ghid pentru fiecare țară în care avem fișe (32 în total).
+
+### Reformulări prudente (textul nu mai conține afirmația neconfirmată)
+
+- sua.housing: No official U.S. government page opened says that most universities have dorms, that first-years usually live there or that places are guaranteed; reworded without those general claims.
+- cehia.intro: Study in Czechia says living can be affordable and that Prague and Brno are the most expensive student cities, but no official page compares costs with Western Europe; that comparison is dropped.
+- grecia.steps[4].text: The instructions confirm selection without entrance exams by ministerial decision on the overall mark of the graduation certificate; no official page opened states that results are published at the end of summer or viewed with a candidate code, so those details are dropped.
+- lituania.intro: Study in Lithuania confirms 500+ English programmes, fees varying by university and EU eligibility for state-funded places, but no official page compares the fee level with Europe or living costs with Western Europe; those comparisons are dropped.
+- lituania.costs: Study in Lithuania states fees and admission fees vary by university, EU citizens can apply for state-funded places, and students get public-transport discounts; it does not say living is cheaper than in Western Europe (removed as unverified).
+- bulgaria.funding: Eurydice (Bulgaria, national student fees) states grants go to home and EU/EEA full-time students but not to those on non-state-subsidised places, and loans are available to home and EU/EEA/EFTA full-time students under 35; the bank/state-guarantee mechanism is only indirectly supported (a Ministry consultation on strategy.bg about the yearly state guarantee) because mon.bg is behind a Cloudflare wall; the repayment timing was not confirmed, so it is removed.
+- portugalia.intro: That Portuguese is fairly easy for a Romanian is an opinion no official page states; the rest is confirmed (DGES: national contest, EU nationals excluded from the international-student contest; capped fee).
+- portugalia.housing: DGES confirms SAS residences exist only at public institutions; that places go mainly to students who cannot afford rent and that the international office helps were not found on an official page.
+- malta.housing: The UM accommodation page recommends Campus Hub, run by third parties, and explains the paperwork and fraud risk, but does not say the university has no residences of its own.
+- coreea-de-sud.funding: The NIIED 2026 GKS-U application guidelines (FAQ) say the GKS-UIC programme under the university track is open to all countries except Korea, while the embassy-track country table has no Romania; I could read the guidelines only as a copy hosted outside a .go.kr site, so the UIC sentence is unverified on an official host.
+
+### Fișe corectate după ghiduri
+
+- **Polonia (9 fișe):** bursa socială de stat o poate cere un cetățean UE doar în cazurile din lege (lucrează în Polonia, are drept de ședere permanentă etc.), nu oricare student din UE (art. 324 din legea învățământului superior, study.gov.pl). Varșovia, Gdańsk (UG, PG), Toruń, Poznań, AGH, SGH, UEK, UJ.
+- **Lund:** elevii din ultimul an pot aplica în a doua rundă și trimit actele mai târziu. **NTNU:** același termen de primăvară ca pentru norvegieni.
+- **RISEBA și SSE Riga:** creditul garantat de statul leton cere permis de ședere permanentă. **Turība:** bursele statului după un an încheiat, nu din anul 3. **EAMT Tallinn:** ajutoarele sociale acceptă și dreptul de ședere al cetățeanului UE.
+
+### De verificat de un om
+
+- **Maribor:** fișa spune o singură licență în engleză; lista oficială (mai veche) arată mai multe — de verificat pe um.si.
+- **Austria:** fișele Innsbruck, Salzburg, BOKU, Klagenfurt, MedUni Wien și Leoben nu spun că scutirea de taxă ține durata normală plus două semestre (nu e greșit, doar incomplet).
+- **Bulgaria:** fișele Plovdiv și UACG spun „an pregătitor”; nicio pagină oficială nu spune că durează un an.

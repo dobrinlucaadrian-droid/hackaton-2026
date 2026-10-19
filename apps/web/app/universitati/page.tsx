@@ -12,14 +12,9 @@ export default function UniversitiesPage() {
     <Shell wide>
       <h1 className="rise text-4xl font-black tracking-tighter text-ink sm:text-5xl">Găsește universitatea potrivită</h1>
       <p className="mt-2 text-ink-soft">Caută după nume, oraș sau țară, sau alege filtrele și îți arătăm primele 10.</p>
-      <p>
+      <p className="mb-5">
         <Link href="/programe" className="inline-flex min-h-11 items-center font-bold text-primary underline decoration-primary/40 underline-offset-2 hover:text-primary-dark">
           Cauți un program anume? Vezi toate programele de licență din România →
-        </Link>
-      </p>
-      <p className="mb-5">
-        <Link href="/ghiduri" className="inline-flex min-h-11 items-center font-bold text-primary underline decoration-primary/40 underline-offset-2 hover:text-primary-dark">
-          Vrei să studiezi în altă țară? Vezi cum aplici, pas cu pas →
         </Link>
       </p>
       <Suspense fallback={<p className="mt-6 text-ink-soft">Se încarcă...</p>}>

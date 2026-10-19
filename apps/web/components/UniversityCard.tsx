@@ -1,4 +1,4 @@
-// Compact university result card: name, place, badges, three short facts, how many student opinions we have and a link to the full sheet (the whole card is clickable).
+// Compact university result card: name, place, badges, three short facts, whether we have student opinions and a link to the full sheet (the whole card is clickable).
 import Link from "next/link";
 import { domains } from "@/lib/data";
 import type { UniversitySummary } from "@/lib/types";
@@ -38,7 +38,7 @@ export function UniversityCard({ u, rank, domainId }: { u: UniversitySummary; ra
         {opinions > 0 && (
           <span data-opinions className="rounded-full bg-teal/15 px-3 py-1 text-xs font-bold text-teal-ink">
             <span aria-hidden>💬 </span>
-            {opinions === 1 ? "o părere de la un student" : `${opinions} păreri de la studenți`}
+            {opinions === 1 ? "o părere de la un student" : "păreri de la studenți"}
           </span>
         )}
       </div>

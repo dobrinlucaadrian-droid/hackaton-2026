@@ -14,7 +14,6 @@ export function DomainDetails({ domain, specs, open = false }: { domain: Domain;
         <span aria-hidden className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${f.band}`}>{emoji}</span>
         <span className="min-w-0 flex-1">
           <span className="block font-extrabold leading-tight text-ink">{domain.name}</span>
-          <span className="block text-xs text-ink-soft">{specs.length} specializări</span>
         </span>
         <span aria-hidden className="text-primary transition-transform group-open:rotate-180">▾</span>
       </summary>

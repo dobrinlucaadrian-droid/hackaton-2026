@@ -6,7 +6,6 @@ import { convexTest } from "convex-test";
 import { describe, expect, it } from "vitest";
 import { api } from "./_generated/api";
 import type { Id } from "./_generated/dataModel";
-import { PUBLIC_MIN } from "./analytics";
 import schema from "./schema";
 
 const modules = import.meta.glob("./**/*.ts");
@@ -92,18 +91,5 @@ describe("questionnaire statistics", () => {
     await t.mutation(api.analytics.recordQuizRun, { ...RUN, cities: ["x".repeat(61)] });
     expect(await t.run((ctx) => ctx.db.query("quizRuns").collect())).toHaveLength(0);
     expect(await t.run((ctx) => ctx.db.query("quizStats").collect())).toHaveLength(0);
-  });
-
-  it("the public counter stays hidden until enough questionnaires were finished", async () => {
-    const { t } = await setup();
-    await t.mutation(api.analytics.recordQuizRun, RUN);
-    expect(await t.query(api.analytics.quizCount, {})).toBeNull();
-    await t.run(async (ctx) => {
-      const row = await ctx.db.query("quizStats").withIndex("by_kind_key", (q) => q.eq("kind", "total").eq("key", "all")).unique();
-      await ctx.db.patch(row!._id, { count: PUBLIC_MIN - 1 });
-    });
-    expect(await t.query(api.analytics.quizCount, {})).toBeNull();
-    await t.mutation(api.analytics.recordQuizRun, RUN);
-    expect(await t.query(api.analytics.quizCount, {})).toBe(PUBLIC_MIN);
   });
 });

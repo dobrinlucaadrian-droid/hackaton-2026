@@ -2391,7 +2391,7 @@
    "dosar",
    "aptitudini"
   ],
-  "admission": "Aplici online prin platforma națională universityadmissions.se. La licențele în engleză selecția se face de regulă doar după media din liceu, fără scrisoare de motivație sau recomandări; la muzică și arte plastice sunt probe și pași în plus. Trebuie să ai deja diploma de liceu când aplici, iar pentru programele în suedeză se cere dovada limbii.",
+  "admission": "Aplici online prin platforma națională universityadmissions.se. La licențele în engleză selecția se face de regulă doar după media din liceu, fără scrisoare de motivație sau recomandări; la muzică și arte plastice sunt probe și pași în plus. Dacă ești în ultimul an de liceu, poți aplica în a doua rundă și trimiți actele de absolvire până la un termen mai târziu; în plus, pentru programele în suedeză se cere dovada limbii.",
   "scholarships": false,
   "scholarshipsNote": "Bursele universității sunt pentru studenții din afara UE, care plătesc taxă; un student din UE își acoperă singur cheltuielile de trai.",
   "dorms": true,
@@ -9242,7 +9242,7 @@
   ],
   "admission": "Te înscrii online în sistemul IRK al universității și alegi programul; regulile de selecție sunt afișate la fiecare program. Trebuie să dovedești limba de predare la nivel cel puțin B2 (poloneză sau engleză). Diploma de bacalaureat din România (țară UE) nu are nevoie de o recunoaștere separată, dar se cere de obicei cu apostilă și traducere.",
   "scholarships": true,
-  "scholarshipsNote": "Cetățenii UE pot cere bursa socială, iar studenții cu rezultate foarte bune pot primi bursa rectorului; nu acoperă tot costul vieții.",
+  "scholarshipsNote": "Studenții cu rezultate foarte bune pot primi bursa rectorului. Bursa socială o poate cere un cetățean UE doar în cazurile prevăzute de lege, de exemplu dacă lucrează în Polonia sau are drept de ședere permanentă. Bursele nu acoperă tot costul vieții.",
   "dorms": true,
   "dormsNote": "Universitatea are șapte cămine în diferite zone ale orașului, cu câteva mii de locuri; locurile se dau în limita celor disponibile, deci nu sunt garantate.",
   "certificates": [
@@ -9302,7 +9302,7 @@
   ],
   "admission": "Te înscrii online în sistemul IRK al universității. La cele mai multe programe candidații internaționali dau un interviu online, care verifică și limba de predare (minimum B2; C1 la poloneză pentru medicină); la unele programe contează notele sau un examen scris.",
   "scholarships": true,
-  "scholarshipsNote": "Există bursa rectorului pentru cei mai buni studenți și o bursă a universității pentru studenți noi foarte buni, dată prin concurs; bursa socială depinde de situația de ședere în Polonia.",
+  "scholarshipsNote": "Există bursa rectorului pentru cei mai buni studenți și o bursă a universității pentru studenți noi foarte buni, dată prin concurs; bursa socială o poate cere un cetățean UE doar în cazurile prevăzute de lege, de exemplu dacă lucrează în Polonia sau are drept de ședere permanentă.",
   "dorms": true,
   "dormsNote": "Universitatea are mai multe cămine studențești în Cracovia; cererea se face online, iar locurile se dau pe măsură ce sunt disponibile.",
   "certificates": [
@@ -9399,7 +9399,7 @@
   ],
   "admission": "Te înscrii online în sistemul e-Rekrutacja al universității. Se calculează un punctaj din notele de pe diploma de liceu la două materii (de obicei matematică, fizică sau informatică); dacă nu ai matematică la nivel avansat, poți da examenul de matematică al universității. Cetățenii UE cu diplomă de liceu dintr-o țară UE nu trebuie să aducă certificat de limbă.",
   "scholarships": true,
-  "scholarshipsNote": "Universitatea are bursa rectorului, bursă socială și ajutor pentru studenții aflați în nevoie; condițiile pentru cetățenii UE se verifică la biroul pentru studenți.",
+  "scholarshipsNote": "Universitatea are bursa rectorului, bursă socială și ajutor pentru studenții aflați în nevoie; condițiile pentru cetățenii UE se verifică la biroul pentru studenți. Bursa socială o poate cere un cetățean UE doar în cazurile prevăzute de lege, de exemplu dacă lucrează în Polonia sau are drept de ședere permanentă.",
   "dorms": true,
   "dormsNote": "Are un campus studențesc mare, cu 20 de cămine, la câteva minute de mers pe jos de universitate; locurile sunt totuși limitate și se cer online.",
   "certificates": [
@@ -9559,7 +9559,7 @@
   ],
   "admission": "Te înscrii în sistemul online de admitere al universității. Trebuie să dovedești limba de predare la nivel B2 (engleză sau poloneză; pentru poloneză, cetățenii UE fără certificat pot da un test online al universității). Diploma de bacalaureat se cere cu apostilă.",
   "scholarships": true,
-  "scholarshipsNote": "Candidații nu primesc bursă la admitere; după înscriere, studenții pot cere bursă socială, un ajutor unic sau loc în cămin ca sprijin.",
+  "scholarshipsNote": "Candidații nu primesc bursă la admitere; după înscriere, studenții pot cere un ajutor unic sau loc în cămin. Bursa socială o poate cere un cetățean UE doar în cazurile prevăzute de lege, de exemplu dacă lucrează în Polonia sau are drept de ședere permanentă.",
   "dorms": true,
   "dormsNote": "Universitatea are mai multe cămine în Poznań, unul chiar în campusul Morasko; cererea se face online, dar depunerea ei nu garantează un loc.",
   "certificates": [
@@ -9608,7 +9608,7 @@
   ],
   "admission": "Te înscrii online, o singură dată pe an, pentru semestrul de toamnă. Se cer diploma de bacalaureat cu apostilă și traducere și un certificat de engleză de nivel B2; la arhitectură se dă un test de aptitudini, iar unii candidați dau și un examen de matematică.",
   "scholarships": true,
-  "scholarshipsNote": "După înmatriculare, studenții pot cere bursă socială la biroul pentru studenți; nu există o bursă specială pentru candidații din UE.",
+  "scholarshipsNote": "După înmatriculare, studenții pot cere burse la biroul pentru studenți. Bursa socială o poate cere un cetățean UE doar în cazurile prevăzute de lege, de exemplu dacă lucrează în Polonia sau are drept de ședere permanentă. Nu există o bursă specială pentru candidații din UE.",
   "dorms": true,
   "dormsNote": "Are douăsprezece cămine în trei zone ale orașului, cu câteva mii de locuri; camerele single nu sunt disponibile, din cauza cererii mari.",
   "certificates": [
@@ -9661,7 +9661,7 @@
   ],
   "admission": "Te înscrii online în sistemul IRK al universității. Dacă ai diplomă din altă țară, încarci documentele scanate din timp, ca notele să fie convertite în sistemul polonez; la unele programe se dă și un examen. După afișarea listelor depui actele în original.",
   "scholarships": true,
-  "scholarshipsNote": "Studenții străini pot cere aceleași burse ca studenții polonezi: bursa rectorului pentru rezultate foarte bune (după primul an) și bursă socială, cu acte traduse în poloneză.",
+  "scholarshipsNote": "Studenții străini pot cere bursa rectorului pentru rezultate foarte bune (după primul an). Bursa socială o poate cere un cetățean UE doar în cazurile prevăzute de lege, de exemplu dacă lucrează în Polonia sau are drept de ședere permanentă. Actele pentru ea trebuie traduse în poloneză.",
   "dorms": true,
   "dormsNote": "Universitatea are cămine studențești; pentru studenții străini care încep studiile, locurile sunt rezervate prin biroul de relații internaționale.",
   "certificates": [
@@ -9676,7 +9676,7 @@
   "cons": [
    "Programele în engleză au taxă și pentru cetățenii UE",
    "Puține programe de licență în engleză",
-   "Actele pentru bursa socială trebuie traduse în poloneză"
+   "Bursa socială nu este pentru orice cetățean UE, iar actele pentru ea trebuie traduse în poloneză"
   ]
  },
  {
@@ -9702,7 +9702,7 @@
   ],
   "admission": "Te înscrii online în sistemul ISR al universității, o singură dată pe an, vara. Încarci diploma de bacalaureat și dovada de engleză; punctajul se calculează din rezultatele de la bacalaureat. Toți candidații fără cetățenie poloneză, inclusiv cei din UE, dau și un test online cu întrebări-grilă (logică, noțiuni de bază de economie, calcule simple): trebuie doar promovat, nu aduce puncte.",
   "scholarships": true,
-  "scholarshipsNote": "Există bursa rectorului pentru rezultate foarte bune, bursă socială și ajutor de urgență; condițiile pentru studenții străini se verifică la universitate.",
+  "scholarshipsNote": "Există bursa rectorului pentru rezultate foarte bune, bursă socială și ajutor de urgență; condițiile pentru studenții străini se verifică la universitate. Bursa socială o poate cere un cetățean UE doar în cazurile prevăzute de lege, de exemplu dacă lucrează în Polonia sau are drept de ședere permanentă.",
   "dorms": true,
   "dormsNote": "Are două cămine aproape de campus; locurile se dau pe grupe de prioritate (de exemplu studenți care locuiesc departe de Varșovia), iar cererea se face online.",
   "certificates": [
@@ -10417,7 +10417,7 @@
   "admissionTypes": [
    "dosar"
   ],
-  "admission": "Aplici prin Samordna opptak; pentru cei cu liceul terminat în afara Norvegiei termenul este mai devreme decât pentru candidații norvegieni. Trebuie să îndeplinești cerința de limbă norvegiană și pe cea de engleză.",
+  "admission": "Aplici prin Samordna opptak, la același termen de primăvară ca și candidații norvegieni; actele de la liceu se pot trimite până la termenul din vară. Trebuie să îndeplinești cerința de limbă norvegiană și pe cea de engleză.",
   "scholarships": false,
   "scholarshipsNote": "NTNU nu oferă burse proprii pentru studii complete, iar statul norvegian nu are burse deschise tuturor studenților străini.",
   "dorms": true,
@@ -16940,7 +16940,7 @@
   ],
   "admission": "Te înscrii online în sistemul IRK și plătești taxa de înscriere; condițiile și actele fiecărui program sunt descrise acolo. La programele în engleză interviurile se țin online, iar certificatele de engleză acceptate sunt cele din regulamentul de admitere. Diploma din străinătate poate avea nevoie de apostilă.",
   "scholarships": true,
-  "scholarshipsNote": "Candidații nu primesc burse de la universitate. Ca student poți cere bursa rectorului, pentru medii mari și realizări, iar cetățenii UE care studiază fără taxă pot cere bursă socială.",
+  "scholarshipsNote": "Candidații nu primesc burse de la universitate. Ca student poți cere bursa rectorului, pentru medii mari și realizări. Bursa socială o poate cere un cetățean UE doar în cazurile prevăzute de lege, de exemplu dacă lucrează în Polonia sau are drept de ședere permanentă.",
   "dorms": true,
   "dormsNote": "Studenții străini pot sta în căminele universității tot anul universitar, de obicei în camere duble, aproape de facultate; cererea se face în sistemul IRK, după admitere.",
   "certificates": [
@@ -16950,7 +16950,7 @@
   "pros": [
    "Cinci licențe în engleză, în domenii diferite",
    "Loc în cămin cerut direct din sistemul de admitere",
-   "Bursă socială deschisă cetățenilor UE care studiază fără taxă"
+   "Bursa rectorului pentru medii mari și realizări"
   ],
   "cons": [
    "Programele în engleză au taxă",
@@ -16985,7 +16985,7 @@
   ],
   "admission": "Te înscrii online în sistemul IRK, la cel mult trei programe, și încarci diploma de bacalaureat. Punctajul se calculează din două materii de la bacalaureat (la programul de finanțe în engleză, Global Finance and Accounting, matematica este obligatorie). Candidații din UE cu diplomă obținută în UE nu trebuie să aducă certificat de engleză.",
   "scholarships": true,
-  "scholarshipsNote": "Biroul de burse al universității anunță bursa rectorului, bursa socială și un ajutor pentru situații grele; condițiile pentru studenții străini se verifică la universitate.",
+  "scholarshipsNote": "Biroul de burse al universității anunță bursa rectorului, bursa socială și un ajutor pentru situații grele; condițiile pentru studenții străini se verifică la universitate. Bursa socială o poate cere un cetățean UE doar în cazurile prevăzute de lege, de exemplu dacă lucrează în Polonia sau are drept de ședere permanentă.",
   "dorms": true,
   "dormsNote": "Universitatea are două cămine proprii, Merkury și Fafik; regulile de repartizare a locurilor se află de la administrația căminelor.",
   "certificates": [
@@ -32619,7 +32619,7 @@
   ],
   "admission": "Pentru programele în engleză aplici online prin DreamApply, cu dovada nivelului de engleză. Proba principală este o audiție sau un interviu de 20-30 de minute, de preferat la academie; dacă nu poți veni, poți trimite o înregistrare video originală, acceptată doar dacă e de calitate și clar peste pragul de admitere.",
   "scholarships": true,
-  "scholarshipsNote": "Academia are un număr mic de burse pentru studenții internaționali, cu audiții pentru burse la începutul anului universitar, și o bursă pentru cei mai buni studenți; ajutoarele sociale cer cetățenie estonă sau permis de ședere.",
+  "scholarshipsNote": "Academia are un număr mic de burse pentru studenții internaționali, cu audiții pentru burse la începutul anului universitar, și o bursă pentru cei mai buni studenți; ajutoarele sociale ale statului cer cetățenie estonă sau drept de ședere în Estonia (un cetățean UE îl primește când își înregistrează adresa).",
   "dorms": true,
   "dormsNote": "Academia recomandă căminul Muusa Majutus, la câțiva pași de clădirea ei; pagina nu spune al cui este căminul și nici dacă un loc este garantat, așa că întreabă din timp.",
   "certificates": [
@@ -32789,7 +32789,7 @@
   ],
   "admission": "Aplici online cu diploma, notele la matematică și engleză (există o notă minimă), dovada nivelului de engleză B2 și o scrisoare de motivație. Dai online testul de admitere al școlii (matematică, logică și engleză), iar cei mai buni sunt chemați la un interviu online cu un studiu de caz.",
   "scholarships": true,
-  "scholarshipsNote": "Studenții din UE primesc automat bursa Baltic–EU, care scade taxa. În plus, școala dă un număr mic de burse de admitere (reducere parțială sau totală), indiferent de țară, fără cerere separată; cetățenii UE cu drept de ședere în Letonia pot lua și împrumuturi de studiu garantate de statul leton.",
+  "scholarshipsNote": "Studenții din UE primesc automat bursa Baltic–EU, care scade taxa. În plus, școala dă un număr mic de burse de admitere (reducere parțială sau totală), indiferent de țară, fără cerere separată; cetățenii UE cu permis de ședere permanentă în Letonia pot lua și împrumuturi de studiu garantate de statul leton.",
   "dorms": true,
   "dormsNote": "SSE Riga oferă locuri în cămine aflate la circa 20 de minute cu autobuzul; studenții SSE au prioritate, dar locurile se dau în ordinea cererilor și nu sunt garantate, așa că rezervă devreme.",
   "certificates": [
@@ -32834,7 +32834,7 @@
   ],
   "admission": "Aplici online pe platforma universității (BATIS), cu diploma și foaia matricolă traduse, CV și pașaport. Dai online un test de engleză (dacă nu ai IELTS sau TOEFL) și un test scurt: matematică la Computer Systems, științe sociale la celelalte. Urmează un interviu video și verificarea diplomei.",
   "scholarships": true,
-  "scholarshipsNote": "Din anul 2 de licență, cei mai buni studenți pot primi un loc fără taxă sau o bursă a universității; bursele statului leton se pot cere abia din anul 3 și doar de cetățenii țărilor de pe lista oficială.",
+  "scholarshipsNote": "Din anul 2 de licență, cei mai buni studenți pot primi un loc fără taxă sau o bursă a universității; bursele statului leton se pot cere după cel puțin un an de studii încheiat și doar de cetățenii țărilor de pe lista oficială.",
   "dorms": true,
   "dormsNote": "Turība are un cămin studențesc chiar în campus; pentru studenții internaționali noi, locul îl rezervă biroul internațional. Pagina nu spune că locul este garantat.",
   "certificates": [
@@ -32870,7 +32870,7 @@
   "about": "Universitate privată de științe aplicate din Riga, axată pe business, comunicare, arte audiovizuale și arhitectură. La European Business Studies poți obține și o a doua diplomă de la o universitate parteneră din Franța, Finlanda sau Germania.",
   "prestige": "national",
   "budget": "mediu",
-  "budgetNote": "Este universitate privată, cu taxă anuală care diferă de la program la program; pentru cetățenii UE taxa este mai mică decât pentru ceilalți. Cetățenii UE pot lua un împrumut de studiu garantat de statul leton.",
+  "budgetNote": "Este universitate privată, cu taxă anuală care diferă de la program la program; pentru cetățenii UE taxa este mai mică decât pentru ceilalți. Împrumutul de studiu garantat de statul leton îl pot lua cetățenii UE doar dacă au permis de ședere permanentă în Letonia.",
   "admissionTypes": [
    "dosar",
    "examen",

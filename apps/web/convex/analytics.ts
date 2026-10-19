@@ -2,11 +2,8 @@
 import { HOUR, RateLimiter } from "@convex-dev/rate-limiter";
 import { v } from "convex/values";
 import { components } from "./_generated/api";
-import { mutation, query, type MutationCtx } from "./_generated/server";
+import { mutation, type MutationCtx } from "./_generated/server";
 import { adminQuery } from "./access";
-
-/** The public counter on the questionnaire page stays hidden until this many questionnaires were finished. */
-export const PUBLIC_MIN = 50;
 
 // Site-wide ceilings: far above real use, low enough that a script cannot fill the database.
 const rateLimiter = new RateLimiter(components.rateLimiter, {
@@ -116,20 +113,6 @@ export const recordQuizRun = mutation({
     for (const d of new Set(topDomains)) await bumpQuiz(ctx, "top", d);
     for (const [q, i] of entries) await bumpQuiz(ctx, "answer", `${q}:${i}`);
     return null;
-  },
-});
-
-/** How many questionnaires were finished so far, for the public questionnaire page. Null while the number is still small. */
-export const quizCount = query({
-  args: {},
-  returns: v.union(v.number(), v.null()),
-  handler: async (ctx) => {
-    const row = await ctx.db
-      .query("quizStats")
-      .withIndex("by_kind_key", (q) => q.eq("kind", "total").eq("key", "all"))
-      .unique();
-    const n = row?.count ?? 0;
-    return n >= PUBLIC_MIN ? n : null;
   },
 });
 

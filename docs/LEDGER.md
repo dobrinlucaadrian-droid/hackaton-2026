@@ -21,6 +21,46 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-19 03:18 — lupă de căutare pe pagina de ghiduri
+- Cerut: pe pagina cu ghidurile pe țări, o lupă ca să cauți direct țara
+- Făcut: câmp de căutare cu lupă deasupra ghidurilor; lista se filtrează pe măsură ce scrii, fără să conteze diacriticele („elvetia” găsește Elveția); dacă nu există ghid, un mesaj scurt
+- Fișiere: `apps/web/components/GuideFinder.tsx`, `apps/web/app/ghiduri/page.tsx`
+- Poartă: TRECUT (secrete, fișiere, registru, build, teste, pornire); în browser: „elvetia” → doar Elveția, „Japonia” → mesajul că nu există ghid
+- Neverificat: —
+- Urmează: salvarea în Git
+
+### 2026-10-19 02:59 — ghiduri pentru toate țările cu fișe (26 noi) și 15 fișe corectate
+- Cerut: ghiduri „cum aplici” pentru toate țările în care avem fișe
+- Făcut: 9 ajutoare au scris câte 2–3 ghiduri doar din paginile oficiale (pentru țările din afara UE și viza de student); 9 verificatori independenți le-au recitit (108 corecturi confirmate, 10 reformulări prudente). Acum 32 de ghiduri, câte unul pentru fiecare țară cu fișe. Verificatorii au găsit 15 fișe contrazise de paginile oficiale, corectate: 9 în Polonia (bursa socială nu e pentru orice cetățean UE), Lund, NTNU, RISEBA, SSE Riga, Turība, EAMT. Testul ghidurilor cere acum câte un ghid pentru fiecare țară cu fișe. Textul paginii de ghiduri spune „pentru un elev din România” (nu doar „cetățean UE”)
+- Fișiere: `apps/web/data/guides.json`, `apps/web/data/universities-abroad.json`, `apps/web/data/universities-index.json`, `apps/web/lib/guides.test.ts`, `apps/web/app/ghiduri/page.tsx`, `docs/de-verificat.md`
+- Poartă: TRECUT (secrete, fișiere, registru, build, teste, pornire); pagina de ghiduri cu toate cele 32 de linkuri și ghidurile SUA, Moldova, Coreea, Elveția, Olanda deschise; fișa UW trimite la ghidul Poloniei
+- Neverificat: verificarea a fost făcută de ajutoare automate, nu de un om; câteva site-uri oficiale de imigrare au refuzat accesul automat (ce nu s-a confirmat a fost scos); lista de lucruri de văzut de un om e la sfârșitul `docs/de-verificat.md`
+- Urmează: echipa citește `docs/de-verificat.md`
+
+### 2026-10-19 02:29 — norișor „Ghiduri pe țări” pe pagina principală
+- Cerut: în loc de butonul mic cu ghidurile pe țări, încă un norișor
+- Făcut: al cincilea nor, „Ghiduri pe țări” 🌍, pe pagina principală (pe calculator 3 + 2 nori, pe telefon câte 2 pe rând); linkurile mici spre ghiduri scoase din subsolul paginilor și de pe pagina Universități (rămâne linkul din fișa unei universități spre ghidul țării ei)
+- Fișiere: `apps/web/components/NavBubbles.tsx`, `apps/web/components/Shell.tsx`, `apps/web/app/universitati/page.tsx`
+- Poartă: TRECUT (secrete, fișiere, registru, build, teste, pornire); norii văzuți în browser pe calculator și pe telefon
+- Neverificat: —
+- Urmează: ghiduri pentru toate cele 26 de țări care au fișe și nu au ghid
+
+### 2026-10-19 02:23 — pe pagina principală rămân norii
+- Cerut: echipa a ales butoanele în formă de nori
+- Făcut: varianta cu cercuri și adresa de comparație `/?forma=cerc` scoase; cele patru butoane sunt doar nori
+- Fișiere: `apps/web/components/NavBubbles.tsx`, `apps/web/app/page.tsx`
+- Poartă: TRECUT (secrete, fișiere, registru, build, teste, pornire); pagina principală are cei patru nori
+- Neverificat: —
+- Urmează: ideile în plus pentru pagina principală, dacă echipa le vrea (nori care plutesc, drum între ei, urare după ora din zi)
+
+### 2026-10-19 02:18 — numerele site-ului scoase de peste tot
+- Cerut: niciun număr care arată cât de mari sunt datele noastre (echipa le păstrează confidențiale)
+- Făcut: scoase totalurile de programe, instituții și țări (Programe, Surse, căutarea de programe și listele ei), numărul de universități din ghiduri, câte facultăți și programe are o universitate, câte specializări are o categorie sau un domeniu, câte păreri avem (pagina Studenți, cardurile și fișele universităților), câte rezultate are o căutare, câte orașe sunt în listă, câte programe are un domeniu pe pagina de rezultat și câți elevi au făcut chestionarul; contorul public al chestionarelor a fost scos și din baza de date (funcția publică `quizCount` și testul ei), cifrele rămân doar în pagina de statistici a administratorilor. Au rămas, pentru că nu spun nimic despre date: „Întrebarea 3 din 18”, „Ai ales 2 din 3”, „Top 10”
+- Fișiere: `apps/web/app/{ghiduri,programe,surse,test,universitati/[id]}/…`, `apps/web/components/{CategoryTiles,DomainDetails,DomainPrograms,FacultyPrograms,OfficialPrograms,ProgramGroups,ProgramSearch,StudentVoices,UniversityCard,UniversityList,UniversityOpinions,UniversitySearch}.tsx`, `apps/web/convex/analytics.ts`, `apps/web/convex/analytics.test.ts`
+- Poartă: TRECUT (secrete, fișiere, registru, build, teste, pornire); 13 pagini scanate fără numere de date, Programe, o fișă de universitate și Studenți citite în browser
+- Neverificat: baza de producție are încă vechea funcție publică până la următoarea publicare a funcțiilor Convex în producție
+- Urmează: alegerea nori / cercuri pentru pagina principală
+
 ### 2026-10-19 02:10 — orașele din căutare se pot strânge la loc
 - Cerut: după „Vezi toate orașele”, să poți restrânge din nou lista
 - Făcut: butonul „Arată mai puține” apare sub lista completă de orașe și o readuce la primele orașe (orașele alese rămân vizibile)
@@ -683,6 +723,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-19 02:11 `efdb4e4` feat: welcome home page with cloud buttons, hide counts, collapse cities
 - 2026-10-19 01:53 `ec9d731` feat: rename the site to FindMyUni
 - 2026-10-15 02:33 `b9900d1` feat: at least ten university sheets per country where data allows
 - 2026-10-14 12:18 `36c9928` feat: country guides and 236 new university sheets in six countries
@@ -712,5 +753,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-07 01:11 `cd08d1a` feat: security headers and CSP, CI security scans, patched auth package
 - 2026-10-06 01:59 `e44ee5f` docs: record where the production work stops for the day
 - 2026-10-06 01:15 `20dc009` feat: public review form with bot check and rate limit, and the moderation page
-- 2026-10-06 01:05 `a21a479` feat: development-only sign-in links in the function log; sign-in verified end to end
 <!-- commits:end -->

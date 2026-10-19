@@ -27,10 +27,6 @@ export function Shell({ children, wide = false }: { children: ReactNode; wide?: 
         <Link href="/surse" className="inline-flex min-h-11 items-center font-bold underline decoration-primary/40 underline-offset-2 hover:text-primary-dark">
           Surse de date
         </Link>
-        <span aria-hidden className="mx-2">·</span>
-        <Link href="/ghiduri" className="inline-flex min-h-11 items-center font-bold underline decoration-primary/40 underline-offset-2 hover:text-primary-dark">
-          Ghiduri pe țări
-        </Link>
       </footer>
     </div>
   );

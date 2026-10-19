@@ -10,10 +10,9 @@ export type ProgramGroupsProps = {
   year: string;
   hasCapacity: boolean;
   facultyLinks?: Record<string, string>; // faculty name -> address of its own sheet, for the faculties that have one
-  capped?: number; // when the rows come from a query with a limit: that limit
 };
 
-export function ProgramGroups({ rows, city, sourceLabel, year, hasCapacity, facultyLinks = {}, capped }: ProgramGroupsProps) {
+export function ProgramGroups({ rows, city, sourceLabel, year, hasCapacity, facultyLinks = {} }: ProgramGroupsProps) {
   if (rows.length === 0) return null;
 
   const byFaculty = rows.some((p) => p.faculty);
@@ -30,9 +29,7 @@ export function ProgramGroups({ rows, city, sourceLabel, year, hasCapacity, facu
     <section className="rounded-3xl bg-card p-5 shadow-sm ring-1 ring-line sm:p-6" data-official-programs>
       <h3 className="text-xl font-black tracking-tight text-ink">{byFaculty ? "Facultăți și programe de licență" : "Programe de licență, pe domenii"}</h3>
       <p className="mt-2 text-sm text-ink-soft">
-        {byFaculty ? `${groups.size} ${groups.size === 1 ? "facultate" : "facultăți"} · ` : ""}
-        {rows.length}
-        {capped !== undefined && rows.length === capped ? " sau mai multe" : ""} programe de licență ({year}), după {sourceLabel}. Apasă pe {byFaculty ? "o facultate" : "un domeniu"} ca să vezi programele.
+        Programele de licență ({year}), după {sourceLabel}. Apasă pe {byFaculty ? "o facultate" : "un domeniu"} ca să vezi programele.
       </p>
       <ul className="mt-3 space-y-2">
         {list.map(([name, items]) => {
@@ -43,7 +40,6 @@ export function ProgramGroups({ rows, city, sourceLabel, year, hasCapacity, facu
                 <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 font-bold text-ink [&::-webkit-details-marker]:hidden">
                   <span>{name}</span>
                   <span className="flex shrink-0 items-center gap-2 text-sm font-semibold text-ink-soft">
-                    {items.length}
                     <span aria-hidden className="text-primary-dark transition-transform group-open:rotate-180">▾</span>
                   </span>
                 </summary>

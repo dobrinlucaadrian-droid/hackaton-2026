@@ -12,7 +12,7 @@ export function UniversityOpinions({ universityId }: { universityId: string }) {
       <h2 id="studenti-t" className="text-2xl font-black tracking-tight text-ink">Ce spun studenții</h2>
       <div className="mt-3 space-y-4">
         <p className="text-ink-soft">
-          {opinions.length === 1 ? "O părere reală de la un student de aici." : `${opinions.length} păreri reale de la studenți de aici.`}
+          {opinions.length === 1 ? "O părere reală de la un student de aici." : "Păreri reale de la studenți de aici."}
         </p>
         {opinions.map((t, i) => (
           <StudentCard key={`${t.name}-${t.faculty}-${i}`} t={t} as="div" />

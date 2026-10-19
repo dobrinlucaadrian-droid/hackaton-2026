@@ -1,6 +1,5 @@
 "use client";
-// On a result card: real bachelor programmes of the matched study domain in Romania (in the student's chosen cities when there are any), and how many the catalogue has in other countries.
-import { counted } from "@/lib/labels";
+// On a result card: real bachelor programmes of the matched study domain in Romania (in the student's chosen cities when there are any), and the other countries where the catalogue has some.
 import { useQuery } from "convex/react";
 import Link from "next/link";
 import { api } from "@/convex/_generated/api";
@@ -21,16 +20,15 @@ export function DomainPrograms({ domainId, cities, sheetIds }: { domainId: strin
 
   const useCity = !!city && !!inCity && inCity.length > 0;
   const list = useCity ? inCity! : everywhere;
-  const total = catalogCountries.find((c) => c.cc === "RO")?.domains[domainId] ?? list.length;
   const href = `/programe?tara=RO&domeniu=${domainId}${useCity && cities?.length === 1 ? `&oras=${encodeURIComponent(cities[0])}` : ""}`;
   return (
     <div data-domain-programs>
       <p className="text-sm text-ink-soft">
         {useCity
-          ? `${counted(list.length, "program", "programe")} de licență în ${city}, după lista oficială pentru 2026–2027.`
+          ? `Programe de licență în ${city}, după lista oficială pentru 2026–2027.`
           : city
-            ? `În ${city} nu am găsit programe pentru acest domeniu. În toată România sunt ${total}.`
-            : `${total} programe de licență în România, după lista oficială pentru 2026–2027.`}
+            ? `În ${city} nu am găsit programe pentru acest domeniu. Iată câteva din restul țării.`
+            : `Programe de licență în România, după lista oficială pentru 2026–2027.`}
       </p>
       <ul className="mt-2 space-y-2">
         {list.slice(0, SHOWN).map((p) => (
@@ -46,9 +44,9 @@ export function DomainPrograms({ domainId, cities, sheetIds }: { domainId: strin
   );
 }
 
-/** How many programmes of a domain the catalogue has in each country other than Romania, each linking to the search. */
+/** The countries other than Romania where the catalogue has programmes of a domain, each linking to the search. */
 export function DomainAbroad({ domainId }: { domainId: string }) {
-  const rows = catalogCountries.filter((c) => c.cc !== "RO" && (c.domains[domainId] ?? 0) > 0).sort((a, b) => (b.domains[domainId] ?? 0) - (a.domains[domainId] ?? 0));
+  const rows = catalogCountries.filter((c) => c.cc !== "RO" && (c.domains[domainId] ?? 0) > 0).sort((a, b) => a.name.localeCompare(b.name, "ro"));
   if (rows.length === 0) return null;
   return (
     <div data-domain-abroad>
@@ -57,7 +55,7 @@ export function DomainAbroad({ domainId }: { domainId: string }) {
         {rows.map((c) => (
           <li key={c.cc}>
             <Link href={`/programe?tara=${c.cc}&domeniu=${domainId}`} className="inline-flex min-h-11 items-center rounded-full bg-paper px-4 text-sm font-bold text-ink ring-1 ring-line hover:ring-primary/50">
-              {c.name} <span className="ml-2 font-semibold text-ink-soft">{c.domains[domainId].toLocaleString("ro-RO")}</span>
+              {c.name}
             </Link>
           </li>
         ))}

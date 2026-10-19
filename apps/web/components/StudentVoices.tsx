@@ -112,12 +112,8 @@ export function StudentVoices() {
         </div>
         <p className="mt-2 text-center text-sm text-ink-soft" aria-live="polite">
           {q === ""
-            ? `Avem ${testimonials.length} păreri. Scrie numele unei facultăți ca să le vezi doar pe cele de acolo.`
-            : found.length === 0
-              ? ""
-              : found.length === 1
-                ? "Am găsit o părere."
-                : `Am găsit ${found.length} păreri.`}
+            ? "Scrie numele unei facultăți ca să le vezi doar pe cele de acolo."
+            : ""}
         </p>
       </form>
 
@@ -149,7 +145,7 @@ export function StudentVoices() {
               <section key={g.university} className={`mx-auto w-full ${together ? "max-w-5xl" : "max-w-2xl"}`}>
                 {together && (
                   <h2 className="mb-3 text-sm font-bold uppercase tracking-wide text-teal-ink">
-                    {g.university} · {g.people.length} studenți
+                    {g.university}
                   </h2>
                 )}
                 <ul className={`grid gap-4 ${together ? "md:grid-cols-2" : ""}`}>

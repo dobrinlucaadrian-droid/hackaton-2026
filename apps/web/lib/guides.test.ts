@@ -7,8 +7,9 @@ const AMOUNT = /\d+\s*(lei|euro|eur|ron|kr|dkk|gbp|usd|chf)\b|[€£$]\s?\d|\d\s
 const DATE = /\b\d{1,2}\s+(ianuarie|februarie|martie|aprilie|mai|iunie|iulie|august|septembrie|octombrie|noiembrie|decembrie)\b|\b20\d\d\b/i;
 
 describe("country guides", () => {
-  it("there is a guide for each of the six countries, each with its own address", () => {
-    expect(guides.map((g) => g.country).sort()).toEqual(["Danemarca", "Franța", "Germania", "Italia", "Marea Britanie", "Olanda"]);
+  it("every country with university sheets abroad has exactly one guide, each with its own address", () => {
+    const countries = [...new Set(universities.filter((u) => u.region === "abroad").map((u) => u.country))].sort();
+    expect(guides.map((g) => g.country).sort()).toEqual(countries);
     expect(new Set(guides.map((g) => g.id)).size).toBe(guides.length);
     for (const g of guides) {
       expect(g.id).toMatch(/^[a-z][a-z-]*$/);

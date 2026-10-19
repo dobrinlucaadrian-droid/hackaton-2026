@@ -1,11 +1,10 @@
-// Home page: the welcome with the drawing and the account choice, the four big buttons (clouds or circles, ?forma=cerc to compare).
+// Home page: the welcome with the drawing and the account choice, the four big buttons drawn as clouds.
 import { HeroScene } from "@/components/Illustrations";
-import { NavBubbles, type BubbleShape } from "@/components/NavBubbles";
+import { NavBubbles } from "@/components/NavBubbles";
 import { Shell } from "@/components/Shell";
 import { WelcomeActions } from "@/components/WelcomeActions";
 
-export default async function Home({ searchParams }: { searchParams: Promise<{ forma?: string }> }) {
-  const shape: BubbleShape = (await searchParams).forma === "cerc" ? "cerc" : "nor";
+export default function Home() {
   return (
     <Shell wide>
       <section className="mt-2 grid items-center gap-4 md:grid-cols-2">
@@ -25,7 +24,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ f
         <h2 id="exploreaza-titlu" className="mb-6 text-center text-3xl font-black tracking-tight text-ink">
           De unde vrei să începi?
         </h2>
-        <NavBubbles shape={shape} />
+        <NavBubbles />
       </section>
     </Shell>
   );

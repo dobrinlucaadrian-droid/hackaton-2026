@@ -79,7 +79,6 @@ export default async function UniversityPage({ params }: Props) {
   const admission = u.admissionTypes.map((a) => ADMISSION_LABEL[a]).filter(Boolean);
   const hasPros = u.pros.length > 0 || u.cons.length > 0;
   const faculties = u.faculties ?? [];
-  const programCount = faculties.reduce((n, f) => n + f.programs.length, 0);
   const opinions = testimonialsFor(u.id);
   const facultySheets = facultiesOf(u.id).sort((a, b) => a.name.localeCompare(b.name, "ro"));
   const anchors: [string, string][] = [
@@ -220,7 +219,7 @@ export default async function UniversityPage({ params }: Props) {
           {facultySheets.length > 0 && (
             <Section title="Fișe de facultăți">
               <p className="text-sm">
-                Pentru {facultySheets.length === 1 ? "o facultate" : `${facultySheets.length} facultăți`} avem fișă proprie: ce studiezi acolo, cum intri și linkurile oficiale.
+                Pentru unele facultăți avem fișă proprie: ce studiezi acolo, cum intri și linkurile oficiale.
               </p>
               <ul className="mt-2 grid gap-2 sm:grid-cols-2" data-faculty-sheets>
                 {facultySheets.map((f) => (
@@ -250,8 +249,7 @@ export default async function UniversityPage({ params }: Props) {
           {!catalog && faculties.length > 0 && (
             <Section title="Facultăți și specializări">
               <p className="text-sm text-ink-soft">
-                {faculties.length} facultăți{programCount > 0 ? ` · ${programCount} specializări de licență` : ""}, după site-ul oficial al
-                universității. Apasă pe o facultate ca să-i vezi specializările.
+                Facultățile și specializările de licență, după site-ul oficial al universității. Apasă pe o facultate ca să-i vezi specializările.
               </p>
               <ul className="mt-3 space-y-2">
                 {faculties.map((f) => (
@@ -261,7 +259,6 @@ export default async function UniversityPage({ params }: Props) {
                         <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 font-bold text-ink [&::-webkit-details-marker]:hidden">
                           <span>{f.name}</span>
                           <span className="flex shrink-0 items-center gap-2 text-sm font-semibold text-ink-soft">
-                            {f.programs.length}
                             <span aria-hidden className="text-primary-dark transition-transform group-open:rotate-180">▾</span>
                           </span>
                         </summary>

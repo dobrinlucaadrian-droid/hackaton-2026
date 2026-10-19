@@ -4,7 +4,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Shell } from "@/components/Shell";
 import { guideById, guides } from "@/lib/guides";
-import { counted } from "@/lib/labels";
 import { universities } from "@/lib/universities";
 
 type Props = { params: Promise<{ tara: string }> };
@@ -115,7 +114,7 @@ export default async function GuidePage({ params }: Props) {
               href={`/universitati?tara=${encodeURIComponent(g.country)}`}
               className="inline-flex min-h-12 items-center justify-center rounded-2xl bg-primary px-6 py-3 font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark"
             >
-              Vezi cele {counted(count, "universitate", "universități")} din {g.country} →
+              Vezi universitățile din {g.country} →
             </Link>
           </p>
         )}

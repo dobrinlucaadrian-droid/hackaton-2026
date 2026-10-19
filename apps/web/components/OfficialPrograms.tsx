@@ -4,8 +4,8 @@ import { useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { ProgramGroups, type ProgramGroupsProps } from "./ProgramGroups";
 
-export function OfficialPrograms({ institutionId, ...rest }: { institutionId: string } & Omit<ProgramGroupsProps, "rows" | "capped">) {
+export function OfficialPrograms({ institutionId, ...rest }: { institutionId: string } & Omit<ProgramGroupsProps, "rows">) {
   const rows = useQuery(api.catalog.programsOf, { institutionId });
   if (rows === undefined) return <p className="text-sm text-ink-soft">Se încarcă lista de programe...</p>;
-  return <ProgramGroups rows={rows} capped={600} {...rest} />;
+  return <ProgramGroups rows={rows} {...rest} />;
 }

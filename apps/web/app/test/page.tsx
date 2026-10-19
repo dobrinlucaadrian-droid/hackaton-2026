@@ -1,11 +1,9 @@
 "use client";
 // Questionnaire start screen: its own title, the 3-step explanation and the button that starts the quiz (the profile is asked inside the quiz).
-import { useQuery } from "convex/react";
 import { useRouter } from "next/navigation";
 import type { CSSProperties } from "react";
 import { Cap, Sparkle } from "@/components/Illustrations";
 import { Shell } from "@/components/Shell";
-import { api } from "@/convex/_generated/api";
 import { questions } from "@/lib/data";
 import { saveDraft } from "@/lib/session";
 
@@ -19,7 +17,6 @@ const delay = (ms: number) => ({ "--d": `${ms}ms` }) as CSSProperties;
 
 export default function QuestionnaireStart() {
   const router = useRouter();
-  const done = useQuery(api.analytics.quizCount); // null while the number is still small
   function start() {
     saveDraft({ choices: {} }); // a fresh questionnaire: earlier answers are dropped
     router.push("/quiz");
@@ -44,11 +41,6 @@ export default function QuestionnaireStart() {
         >
           Începe chestionarul
         </button>
-        {typeof done === "number" && (
-          <p className="mt-4 text-sm font-bold text-primary-dark" data-quiz-count>
-            {done.toLocaleString("ro-RO")} {done % 100 >= 20 || done % 100 === 0 ? "de " : ""}elevi au făcut deja chestionarul înaintea ta.
-          </p>
-        )}
       </section>
 
       <div aria-hidden className="my-8 flex items-center gap-0">

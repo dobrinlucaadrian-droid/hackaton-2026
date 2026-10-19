@@ -39,7 +39,7 @@ export function UniversityList({ title, items, abroad, allHref }: { title: strin
       </ul>
       {items.length > LIMIT && (
         <Link href={allHref} className="mt-1 inline-flex min-h-11 items-center rounded-lg px-1 text-sm font-bold text-primary underline decoration-primary/40 underline-offset-2 hover:text-primary-dark">
-          Vezi toate ({items.length}) →
+          Vezi toate →
         </Link>
       )}
     </div>

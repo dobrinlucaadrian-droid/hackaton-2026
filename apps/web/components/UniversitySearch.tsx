@@ -248,7 +248,7 @@ export function UniversitySearch() {
             ))}
             {cityOptions.length > cityShown.length && (
               <button type="button" onClick={() => setAllCities(true)} className="min-h-11 rounded-full px-3 text-sm font-bold text-primary underline underline-offset-2">
-                Vezi toate orașele ({cityOptions.length})
+                Vezi toate orașele
               </button>
             )}
             {allCities && cityOptions.length > CITY_PREVIEW && (
@@ -393,7 +393,6 @@ export function UniversitySearch() {
           <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-2 px-5 py-3 [&::-webkit-details-marker]:hidden">
             <h2 id="alte-uni" className="text-xl font-black tracking-tight text-ink">
               Alte universități din lume
-              {activeCount === 0 && worldReady && !worldFailed ? ` (${worldShown.length})` : ""}
             </h2>
             <span aria-hidden className="text-primary transition-transform group-open:rotate-180">▾</span>
           </summary>

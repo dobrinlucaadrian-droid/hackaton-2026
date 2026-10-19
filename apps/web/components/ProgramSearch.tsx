@@ -43,7 +43,7 @@ export function ProgramSearch({ domains }: { domains: { id: string; name: string
           <label htmlFor="p-tara" className={labelClass}>Țara</label>
           <select id="p-tara" value={country.cc} onChange={(e) => set({ tara: e.target.value, oras: "" })} className={selectClass}>
             {catalogCountries.map((c) => (
-              <option key={c.cc} value={c.cc}>{c.name} ({c.programs.toLocaleString("ro-RO")})</option>
+              <option key={c.cc} value={c.cc}>{c.name}</option>
             ))}
           </select>
         </div>
@@ -52,7 +52,7 @@ export function ProgramSearch({ domains }: { domains: { id: string; name: string
           <select id="p-domeniu" value={domainId} onChange={(e) => set({ domeniu: e.target.value })} className={selectClass}>
             <option value="">Oricare</option>
             {domains.map((d) => (
-              <option key={d.id} value={d.id}>{d.name}{country.domains[d.id] ? ` (${country.domains[d.id].toLocaleString("ro-RO")})` : ""}</option>
+              <option key={d.id} value={d.id}>{d.name}</option>
             ))}
           </select>
         </div>
@@ -67,7 +67,7 @@ export function ProgramSearch({ domains }: { domains: { id: string; name: string
         </div>
       </div>
       <p className="mt-2 text-xs text-ink-soft" data-source-note>
-        {country.name}: {country.programs.toLocaleString("ro-RO")} programe de la {country.institutions.toLocaleString("ro-RO")} instituții ({country.source.year}). Sursa: {country.source.attribution}.
+        {country.name} ({country.source.year}). Sursa: {country.source.attribution}.
         {country.cc !== "RO" ? " Numele programelor sunt în limba sursei." : ""}
       </p>
 
@@ -81,11 +81,10 @@ export function ProgramSearch({ domains }: { domains: { id: string; name: string
         ) : (
           <>
             <h2 className="text-2xl font-black tracking-tight text-ink">
-              {rows.length}
-              {rows.length >= cap ? " sau mai multe" : ""} {rows.length === 1 ? "program" : "programe"}
+              Programe
               {city ? ` în ${city}` : ` în ${country.name}`}
             </h2>
-            {rows.length >= cap && <p className="mt-1 text-sm text-ink-soft">Arătăm primele {cap}. Alege un oraș sau scrie mai multe cuvinte ca să restrângi lista.</p>}
+            {rows.length >= cap && <p className="mt-1 text-sm text-ink-soft">Arătăm doar o parte. Alege un oraș sau scrie mai multe cuvinte ca să restrângi lista.</p>}
             <ul className="mt-3 grid gap-2 sm:grid-cols-2 [&>li]:bg-card [&>li]:ring-1 [&>li]:ring-line" data-program-results>
               {rows.map((p) => (
                 <ProgramRow key={p.key} p={p} where sheetIds={catalogSheetIds} />
