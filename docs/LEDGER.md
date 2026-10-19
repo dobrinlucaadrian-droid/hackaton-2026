@@ -21,6 +21,14 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-19 17:37 — catalogul de programe: 7 țări noi (18 în total)
+- Cerut: cât mai multe informații, din țările UE fără catalog; întâi cercetare, apoi doar surse oficiale cu voie de refolosire; „ce e neclar sau nesigur nu intră”
+- Făcut: cercetare pentru 13 țări (Europass/DEQAR și surse naționale); echipa a ales cele 7 cu licență clară. Construite, fiecare cu scriptul și README-ul ei: Suedia 1.725 de programe (CC0), Bulgaria 2.402 (Europass + DEQAR), Finlanda 1.118 (Europass), Lituania 694 (data.gov.lt), Slovenia 333 (eVŠ + apelul de înscriere 2026/2027), Grecia 326 (data.gov.gr), Estonia 361 (EHIS, CC BY-SA). Rândurile și câmpurile nesigure au fost scoase (de exemplu: orașe neclare, titluri de anunț în loc de nume de program, dubluri; în Grecia 4 universități fără sediu confirmat dintr-un text oficial). Catalogul: 4.333 de instituții, 107.146 de programe în 18 țări; încărcat în baza de dezvoltare. Sursele și licențele sunt în `scripts/data/sources.json` (apar pe pagina „Surse de date”)
+- Fișiere: `scripts/data/{se,bg,fi,lt,si,gr,ee}/build.mjs` și `README.md`, `apps/web/data/catalog/{se,bg,fi,lt,si,gr,ee}-*.json`, `apps/web/data/catalog/index.json`, `scripts/data/sources.json`, `docs/catalog-status.md`
+- Poartă: TRECUT (secrete, fișiere, registru, build, teste, pornire); toate cele 7 țări VALID; în browser: căutarea de programe în Finlanda și lista oficială pe fișa Lund
+- Neverificat: baza de producție nu are încă datele noi; Portugalia și Danemarca așteaptă confirmarea licenței; Letonia, Cehia, Cipru și Malta nu au o sursă care să se poată folosi acum
+- Urmează: echipa decide dacă încărcăm în producție și dacă cere confirmarea licenței pentru Portugalia și Danemarca
+
 ### 2026-10-19 03:52 — conturi cu nume de utilizator, parolă și cod pe email
 - Cerut: la crearea contului nume, parolă și email; emailul cerut doar atunci și confirmat cu un cod primit pe email; apoi conectare doar cu nume și parolă; emailul să vină de la echipa FindMyUni. Echipa a ales: nume de utilizator unic (plus numele complet), fără Google, parolă de minimum 8 caractere, totul construit local până la domeniul propriu
 - Făcut: conectarea prin link și Google înlocuită cu parolă (Convex Auth Password). Contul nou: nume de utilizator, nume complet, email, parolă, apoi codul din 6 cifre trimis pe email. Conectarea: nume de utilizator + parolă; serverul găsește singur emailul contului, care nu ajunge niciodată în browser. „Am uitat parola”: cod pe emailul contului și parolă nouă (același răspuns dacă numele nu există). Parola se păstrează doar ca amprentă (scrypt); încercările greșite sunt limitate. Rolul de administrator se dă doar după ce emailul e confirmat. Emailurile au expeditorul „Echipa FindMyUni” (pe adresa de probă Resend până la domeniul propriu). Pagina „Contul meu” arată numele de utilizator; textele ferestrei de cont, paginii de conectare și paginii de confidențialitate actualizate; notițele proiectului (CLAUDE.md, production-plan) spun noua hotărâre
@@ -731,6 +739,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-19 04:19 `caece3c` feat: username and password accounts with email code verification
 - 2026-10-19 03:23 `90b1388` feat: guides for every country, hide data counts, guide search
 - 2026-10-19 02:11 `efdb4e4` feat: welcome home page with cloud buttons, hide counts, collapse cities
 - 2026-10-19 01:53 `ec9d731` feat: rename the site to FindMyUni
@@ -760,5 +769,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-07 01:16 `4e39abf` docs: record the CI scan results and what is left for the next level
 - 2026-10-07 01:14 `c76d79c` feat: privacy page; generate route types before the CI type check
 - 2026-10-07 01:11 `cd08d1a` feat: security headers and CSP, CI security scans, patched auth package
-- 2026-10-06 01:59 `e44ee5f` docs: record where the production work stops for the day
 <!-- commits:end -->

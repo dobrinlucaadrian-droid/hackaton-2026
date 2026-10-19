@@ -1,0 +1,222 @@
+[
+ {
+  "id": "gr-anotati-scholi-kalon-technon",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΑΝΩΤΑΤΗ ΣΧΟΛΗ ΚΑΛΩΝ ΤΕΧΝΩΝ",
+  "officialName": "ΑΝΩΤΑΤΗ ΣΧΟΛΗ ΚΑΛΩΝ ΤΕΧΝΩΝ",
+  "kind": "public",
+  "hasSheet": false,
+  "city": "ΑΘΗΝΑ",
+  "programs": 1
+ },
+ {
+  "id": "gr-anotati-scholi-paidagogikis-kai-technologikis-ekpaideysis",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΑΝΩΤΑΤΗ ΣΧΟΛΗ ΠΑΙΔΑΓΩΓΙΚΗΣ & ΤΕΧΝΟΛΟΓΙΚΗΣ ΕΚΠΑΙΔΕΥΣΗΣ",
+  "officialName": "ΑΝΩΤΑΤΗ ΣΧΟΛΗ ΠΑΙΔΑΓΩΓΙΚΗΣ & ΤΕΧΝΟΛΟΓΙΚΗΣ ΕΚΠΑΙΔΕΥΣΗΣ",
+  "kind": "public",
+  "hasSheet": false,
+  "city": "ΜΑΡΟΥΣΙ",
+  "programs": 4
+ },
+ {
+  "id": "auth-salonic",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΑΡΙΣΤΟΤΕΛΕΙΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΘΕΣΣΑΛΟΝΙΚΗΣ",
+  "officialName": "ΑΡΙΣΤΟΤΕΛΕΙΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΘΕΣΣΑΛΟΝΙΚΗΣ",
+  "kind": "public",
+  "hasSheet": true,
+  "city": "ΘΕΣΣΑΛΟΝΙΚΗ",
+  "programs": 41
+ },
+ {
+  "id": "gr-geoponiko-panepistimio-athinon",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΓΕΩΠΟΝΙΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΘΗΝΩΝ",
+  "officialName": "ΓΕΩΠΟΝΙΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΘΗΝΩΝ",
+  "kind": "public",
+  "hasSheet": false,
+  "city": "ΑΘΗΝΑ",
+  "programs": 9
+ },
+ {
+  "id": "duth-komotini",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΔΗΜΟΚΡΙΤΕΙΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΘΡΑΚΗΣ",
+  "officialName": "ΔΗΜΟΚΡΙΤΕΙΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΘΡΑΚΗΣ",
+  "kind": "public",
+  "hasSheet": true,
+  "city": "ΚΟΜΟΤΗΝΗ",
+  "programs": 28
+ },
+ {
+  "id": "gr-diethnes-panepistimio-tis-ellados",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΔΙΕΘΝΕΣ ΠΑΝΕΠΙΣΤΗΜΙΟ ΤΗΣ ΕΛΛΑΔΟΣ",
+  "officialName": "ΔΙΕΘΝΕΣ ΠΑΝΕΠΙΣΤΗΜΙΟ ΤΗΣ ΕΛΛΑΔΟΣ",
+  "kind": "public",
+  "hasSheet": false,
+  "city": "ΘΕΣΣΑΛΟΝΙΚΗ",
+  "programs": 23
+ },
+ {
+  "id": "gr-elliniko-mesogeiako-panepistimio",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΕΛΛΗΝΙΚΟ ΜΕΣΟΓΕΙΑΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ",
+  "officialName": "ΕΛΛΗΝΙΚΟ ΜΕΣΟΓΕΙΑΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ",
+  "kind": "public",
+  "hasSheet": false,
+  "city": "ΗΡΑΚΛΕΙΟ",
+  "programs": 11
+ },
+ {
+  "id": "gr-ionio-panepistimio",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΙΟΝΙΟ ΠΑΝΕΠΙΣΤΗΜΙΟ",
+  "officialName": "ΙΟΝΙΟ ΠΑΝΕΠΙΣΤΗΜΙΟ",
+  "kind": "public",
+  "hasSheet": false,
+  "city": "ΚΕΡΚΥΡΑ",
+  "programs": 10
+ },
+ {
+  "id": "aueb-atena",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΟΙΚΟΝΟΜΙΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΘΗΝΩΝ",
+  "officialName": "ΟΙΚΟΝΟΜΙΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΘΗΝΩΝ",
+  "kind": "public",
+  "hasSheet": true,
+  "city": "ΑΘΗΝΑ",
+  "programs": 8
+ },
+ {
+  "id": "gr-panepistimio-aigaiou",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΙΓΑΙΟΥ",
+  "officialName": "ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΙΓΑΙΟΥ",
+  "kind": "public",
+  "hasSheet": false,
+  "city": "ΜΥΤΙΛΗΝΗ",
+  "programs": 18
+ },
+ {
+  "id": "gr-panepistimio-dytikis-attikis",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΠΑΝΕΠΙΣΤΗΜΙΟ ΔΥΤΙΚΗΣ ΑΤΤΙΚΗΣ",
+  "officialName": "ΠΑΝΕΠΙΣΤΗΜΙΟ ΔΥΤΙΚΗΣ ΑΤΤΙΚΗΣ",
+  "kind": "public",
+  "hasSheet": false,
+  "city": "ΑΘΗΝΑ",
+  "programs": 26
+ },
+ {
+  "id": "uth-volos",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΠΑΝΕΠΙΣΤΗΜΙΟ ΘΕΣΣΑΛΙΑΣ",
+  "officialName": "ΠΑΝΕΠΙΣΤΗΜΙΟ ΘΕΣΣΑΛΙΑΣ",
+  "kind": "public",
+  "hasSheet": true,
+  "city": "ΒΟΛΟΣ",
+  "programs": 35
+ },
+ {
+  "id": "uoi-ioannina",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΠΑΝΕΠΙΣΤΗΜΙΟ ΙΩΑΝΝΙΝΩΝ",
+  "officialName": "ΠΑΝΕΠΙΣΤΗΜΙΟ ΙΩΑΝΝΙΝΩΝ",
+  "kind": "public",
+  "hasSheet": true,
+  "city": "ΙΩΑΝΝΙΝΑ",
+  "programs": 22
+ },
+ {
+  "id": "gr-panepistimio-makedonias",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΠΑΝΕΠΙΣΤΗΜΙΟ ΜΑΚΕΔΟΝΙΑΣ",
+  "officialName": "ΠΑΝΕΠΙΣΤΗΜΙΟ ΜΑΚΕΔΟΝΙΑΣ",
+  "kind": "public",
+  "hasSheet": false,
+  "city": "ΘΕΣΣΑΛΟΝΙΚΗ",
+  "programs": 9
+ },
+ {
+  "id": "upatras-patras",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΑΤΡΩΝ",
+  "officialName": "ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΑΤΡΩΝ",
+  "kind": "public",
+  "hasSheet": true,
+  "city": "ΡΙΟ",
+  "programs": 31
+ },
+ {
+  "id": "unipi-pireu",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΕΙΡΑΙΩΣ",
+  "officialName": "ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΕΙΡΑΙΩΣ",
+  "kind": "public",
+  "hasSheet": true,
+  "city": "ΠΕΙΡΑΙΑΣ",
+  "programs": 10
+ },
+ {
+  "id": "gr-panepistimio-peloponnisou",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΕΛΟΠΟΝΝΗΣΟΥ",
+  "officialName": "ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΕΛΟΠΟΝΝΗΣΟΥ",
+  "kind": "public",
+  "hasSheet": false,
+  "city": "ΤΡΙΠΟΛΗ",
+  "programs": 22
+ },
+ {
+  "id": "gr-panteio-panepistimio-koinonikon-kai-politikon-epistimon",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΠΑΝΤΕΙΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΚΟΙΝΩΝΙΚΩΝ ΚΑΙ ΠΟΛΙΤΙΚΩΝ ΕΠΙΣΤΗΜΩΝ",
+  "officialName": "ΠΑΝΤΕΙΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΚΟΙΝΩΝΙΚΩΝ ΚΑΙ ΠΟΛΙΤΙΚΩΝ ΕΠΙΣΤΗΜΩΝ",
+  "kind": "public",
+  "hasSheet": false,
+  "city": "ΑΘΗΝΑ",
+  "programs": 9
+ },
+ {
+  "id": "gr-polytechneio-kritis",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΠΟΛΥΤΕΧΝΕΙΟ ΚΡΗΤΗΣ",
+  "officialName": "ΠΟΛΥΤΕΧΝΕΙΟ ΚΡΗΤΗΣ",
+  "kind": "public",
+  "hasSheet": false,
+  "city": "ΧΑΝΙΑ",
+  "programs": 5
+ },
+ {
+  "id": "gr-charokopeio-panepistimio",
+  "country": "GR",
+  "source": "Υπουργείο Παιδείας, data.gov.gr, Πανελλαδικές 2025",
+  "name": "ΧΑΡΟΚΟΠΕΙΟ ΠΑΝΕΠΙΣΤΗΜΙΟ",
+  "officialName": "ΧΑΡΟΚΟΠΕΙΟ ΠΑΝΕΠΙΣΤΗΜΙΟ",
+  "kind": "public",
+  "hasSheet": false,
+  "city": "ΚΑΛΛΙΘΕΑ",
+  "programs": 4
+ }
+]

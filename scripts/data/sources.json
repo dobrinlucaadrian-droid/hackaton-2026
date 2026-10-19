@@ -97,5 +97,68 @@
     "year": "descărcat în octombrie 2026",
     "attribution": "Europass (Comisia Europeană), date furnizate de OeAD / studienwahl.at; adaptate de FindMyUni",
     "note": "Acoperire parțială: 520 de programe de licență, mai puține decât oferta reală (de exemplu WU Wien apare cu un singur program). Sursa nu are orașul; l-am luat din adresa paginii programului. Datele de bază aparțin OeAD; nu am găsit o licență separată pentru ele."
+  },
+  "se": {
+    "country": "Suedia",
+    "sourceName": "Susa-navet – API-ul deschis al Skolverket (date despre învățământul superior furnizate de UHR)",
+    "url": "https://www.skolverket.se/om-skolverket/oppna-data/api-for-utbildningstillfallen-susa-navet",
+    "licence": "CC0 1.0 (dataportal.se: https://editera.dataportal.se/store/162/resource/20)",
+    "attribution": "Susa-navet (Skolverket, date de la UHR), CC0 1.0; denumirile comunelor din lista SCB (CC0); date adaptate de FindMyUni",
+    "year": "2026/27",
+    "note": "Programele de licență (grund) și programele integrate lungi (de exemplu Medicină, inginer civil de 300 hp, profesor), cu o sesiune de admitere din toamna lui 2026 sau mai târziu. Fără master, cursuri separate, „senare del” și programe complementare. Orașul este comuna locului de studiu. Sursa nu are facultăți sau locuri."
+  },
+  "bg": {
+    "country": "Bulgaria",
+    "sourceName": "Europass – „Learning Opportunities and Qualifications” (date deschise, setul Bulgariei, publicat de Human Resource Development Centre); orașul instituției din registrul DEQAR (EQAR)",
+    "url": "https://data.europa.eu/data/datasets/european-learning-data",
+    "licence": "Europass: avizul de reutilizare al Comisiei Europene (Decizia 2011/833/UE), conținutul UE sub CC BY 4.0; DEQAR: ODC PDDL",
+    "attribution": "Europass Qualifications Dataset Register (Comisia Europeană), date bulgărești publicate de Human Resource Development Centre; orașele din DEQAR (EQAR), ODC PDDL; date adaptate de FindMyUni",
+    "year": "2025–2026",
+    "note": "Programe de licență (бакалавър), licență profesională (професионален бакалавър) și programe integrate de 5–6 ani după liceu (магистър след средно: medicină, stomatologie, farmacie, medicină veterinară, drept, arhitectură). Fără programele scurtate pentru absolvenți și fără cele mai scurte decât durata minimă din lege. Un program apare o dată pentru fiecare limbă și separat când se face online. Sursa nu are oraș, facultate, credite sau locuri; orașul este sediul instituției din registrul DEQAR. Lipsesc instituțiile fără date în sursă (de exemplu Universitatea de Medicină din Sofia și Universitatea Tehnică din Sofia)."
+  },
+  "fi": {
+    "country": "Finlanda",
+    "sourceName": "Europass – „Learning Opportunities and Qualifications”, setul de date al Finlandei (ofertele de studii din Opintopolku / Studyinfo, publicate de Agenția Națională Finlandeză pentru Educație)",
+    "url": "https://europa.eu/europass/qdr/open-data/dcat/download?url=http://data.europa.eu/snb/data/downloadable/country/fin/ttl/fin-ttl_1.zip",
+    "licence": "Comisia Europeană, aviz de reutilizare (Decizia 2011/833/UE); conținutul UE este sub CC BY 4.0; datele naționale sunt ale Agenției Finlandeze pentru Educație (nu am găsit o licență separată)",
+    "attribution": "Europass Qualifications Dataset Register (Comisia Europeană), date finlandeze din Opintopolku / Opetushallitus, preluate la 19.10.2026; date adaptate de FindMyUni",
+    "year": "ofertele publicate în octombrie 2026 (admiteri 2026–2027)",
+    "note": "Programele de licență (AMK) ale universităților de științe aplicate și programele universităților la care se intră la nivel de licență, inclusiv cele în care licența și masterul se dau împreună („kandidaatti ja maisteri (3 + 2 ani)”) și Medicina, Medicina dentară și Medicina veterinară. Mai multe oferte de admitere ale aceluiași program sunt un singur rând pe oraș și limbă. Fără master, studii deschise, cursuri de conversie sau transfer și fără ofertele fără un nume clar de program. Orașul vine din adresa facultății sau a campusului; unde lipsește, este sediul instituției (din aceleași date sau, pentru Helsinki, Turku și Aalto, din site-ul oficial al universității); rândurile fără un oraș clar au fost scoase."
+  },
+  "lt": {
+    "country": "Lituania",
+    "sourceName": "Registrul programelor de studii (SMPKR, Nacionalinė švietimo agentūra) și programele admiterii generale LAMA BPO, data.gov.lt (seturile 3918 și 2914)",
+    "url": "https://data.gov.lt/datasets/3918/",
+    "licence": "CC BY 4.0",
+    "attribution": "Nacionalinė švietimo agentūra (SMPKR) și LAMA BPO, data.gov.lt, CC BY 4.0; date adaptate de FindMyUni",
+    "year": "admiterea 2025",
+    "note": "Programele de licență (primul ciclu, universitare și de colegiu) și cele integrate (de exemplu Medicină), înregistrate și oferite în admiterea generală 2025. Sursa nu are limba de predare, facultăți sau locuri. Lipsesc instituțiile care nu participă la admiterea generală și rândurile al căror oraș nu e clar."
+  },
+  "si": {
+    "country": "Slovenia",
+    "sourceName": "eVŠ – Razvid visokošolskih zavodov in študijskih programov (Ministerul pentru Învățământ Superior, Știință și Inovare), serviciul public „Razvid”, publicat pe podatki.gov.si ca „Šifrant študijskih programov”; verificat cu Apelul comun de înscriere 2026/2027 („Razpis za vpis”, gov.si)",
+    "url": "https://podatki.gov.si/dataset/sifrant-studijskih-programov",
+    "licence": "CC BY 4.0 (registrul eVŠ); apelul de înscriere este un anunț public al ministerului, fără licență tipărită (din el se iau doar fapte: ce programe se oferă, unde și în ce limbă)",
+    "attribution": "eVŠ – Razvid visokošolskih zavodov in študijskih programov, Ministrstvo za visoko šolstvo, znanost in inovacije (podatki.gov.si), CC BY 4.0; Razpis za vpis 2026/2027 (gov.si); date adaptate de FindMyUni",
+    "year": "2026–2027",
+    "note": "Programele de licență universitare (univerzitetni) și profesionale (visokošolski strokovni) și programele integrate lungi (enoviti magistrski: medicină, stomatologie, farmacie, medicină veterinară, arhitectură etc.), doar cele din apelul oficial de înscriere 2026/2027; registrul singur păstrează și versiuni vechi sau de test. Un rând pentru fiecare oraș în care apelul spune că se predă programul. Lipsesc programele pe care apelul le dă cu un nume nou sau la o instituție redenumită, încă nepotrivite cu registrul (circa 30). Sursa nu dă numărul de locuri într-o formă sigură."
+  },
+  "gr": {
+    "country": "Grecia",
+    "sourceName": "Ministerul Educației din Grecia (Υπουργείο Παιδείας, Θρησκευμάτων και Αθλητισμού), data.gov.gr: fișierul de admitere la examenele panelene 2025 (6_vaseis_gel_epal_2025.xlsx) și lista departamentelor AEI (aei_aeaa-tmhmata-7.8.2025.xls)",
+    "url": "https://data.gov.gr/dataset/vaseis-eisagogis-gel-epal-tritovathmia-panelladikes-2025",
+    "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0), declarată pe fișierele din data.gov.gr",
+    "attribution": "Υπουργείο Παιδείας, Θρησκευμάτων και Αθλητισμού, data.gov.gr (CC BY 4.0); date adaptate de FindMyUni",
+    "year": "2025/26",
+    "note": "Un rând pentru fiecare departament universitar (τμήμα) cu cod propriu de admitere la examenele panelene 2025; fără academiile militare, de poliție, pompieri, marină comercială, turism și cele ecleziastice. Numele sunt în greacă, cu majuscule fără accente, ca în sursă. Facultatea, durata (din semestre) și pagina web vin din lista departamentelor a ministerului, doar când departamentul se găsește sigur acolo. Sursa nu spune limba de predare, deci limba e „nespecificată”. Nu publicăm punctajele de admitere."
+  },
+  "ee": {
+    "country": "Estonia",
+    "sourceName": "EHIS – Eesti Hariduse Infosüsteem (Haridus- ja Teadusministeerium), date deschise: interogările „õppekavad” și „õppeasutused”",
+    "url": "https://andmed.eesti.ee/datasets/eesti-hariduse-infosusteemi-avaandmed-oppeasutused",
+    "licence": "CC BY-SA 3.0 (cu condiția ShareAlike: datele adaptate se distribuie tot sub CC BY-SA 3.0)",
+    "attribution": "Eesti Hariduse Infosüsteem (EHIS), Haridus- ja Teadusministeerium, avaandmed, CC BY-SA 3.0; date adaptate de FindMyUni",
+    "year": "octombrie 2026",
+    "note": "Programele de licență (bakalaureuseõpe), de licență profesională (rakenduskõrgharidusõpe) și cele integrate licență + master (de exemplu Medicină) cu admitere deschisă. Un rând pentru fiecare program și loc de studiu înregistrat; unde sursa nu dă un oraș clar, apare sediul instituției. Numele sunt în estonă. Datele adaptate sunt sub aceeași licență CC BY-SA 3.0."
   }
 }

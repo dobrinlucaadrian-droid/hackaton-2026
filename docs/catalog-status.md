@@ -1,6 +1,6 @@
 # Catalogul de programe de licență — starea pe țări
 
-Actualizat pe 2026-10-08, după verificarea de completitudine (fiecare țară a fost comparată cu liste oficiale independente și cu site-urile
+Actualizat pe 2026-10-19 (7 țări noi: Suedia, Bulgaria, Finlanda, Lituania, Slovenia, Grecia, Estonia; prima versiune pe 2026-10-08, după verificarea de completitudine (fiecare țară a fost comparată cu liste oficiale independente și cu site-urile
 câtorva universități) și după reparațiile făcute în urma ei. Regula folosită: doar date oficiale sau publicate cu licență deschisă,
 construite cu un script care poate fi rulat din nou; niciun program inventat sau completat din memorie.
 
@@ -19,7 +19,14 @@ construite cu un script care poate fi rulat din nou; niciun program inventat sau
 | Olanda | 95 | 1.568 | DUO – RIO open data | CC BY | complet: un rând pe program acreditat și oraș; la instituțiile finanțate de stat numărul se potrivește cu cel oficial |
 | Belgia | 24 | 533 | Europass (date AHOVOKS) | CC BY 4.0 (Comisia Europeană) | **parțial**: Flandra circa 97% (14 programe lipsesc din sursă); partea franceză lipsește cu totul (40 de instituții) |
 | Austria | 63 | 520 | Europass (date OeAD) | CC BY 4.0 (Comisia Europeană) | **parțial, slab**: 63 din 77 de instituții; la Universitatea din Viena 19 din 58 de programe |
-| **Total** | **4.117** | **100.187** | | | 11 țări |
+| Suedia | 38 | 1.725 | Susa-navet (Skolverket, date UHR) | CC0 | programele întregi de licență și cele integrate cu admitere din toamna 2026; fără master și cursuri separate |
+| Bulgaria | 44 | 2.402 | Europass (date HRDC) + orașele din DEQAR | CC BY 4.0 / PDDL | licență, licență profesională și integrate (medicină etc.); lipsesc universitățile fără date în sursă (Medicina Sofia și Varna, Tehnica Sofia, Ruse, AUBG) |
+| Finlanda | 36 | 1.118 | Europass (date Opintopolku / Opetushallitus) | CC BY 4.0 (Comisia) | licențele AMK și universitare, inclusiv licență+master împreună și Medicina; scoase rândurile fără oraș clar și ofertele fără nume clar de program |
+| Lituania | 27 | 694 | registrul SMPKR + admiterea LAMA BPO (data.gov.lt) | CC BY 4.0 | doar programele cu admitere în 2025; fără limba de predare (sursa nu o dă) |
+| Slovenia | 33 | 333 | registrul eVŠ (podatki.gov.si) + apelul de înscriere 2026/2027 | CC BY 4.0 | doar programele din apelul oficial; circa 30 cu nume nou sau la instituții redenumite au rămas pe dinafară |
+| Grecia | 20 | 326 | ministerul educației, data.gov.gr (admiterea 2025 + lista departamentelor) | CC BY 4.0 | **parțial**: scoase 4 universități al căror sediu nu a putut fi confirmat dintr-un text oficial (Atena EKPA, Politehnica Atena, Creta, Macedonia de Vest); fără limba de predare |
+| Estonia | 18 | 361 | EHIS, date deschise (ministerul educației) | CC BY-SA 3.0 (datele adaptate rămân sub aceeași licență) | programele de licență și integrate cu admitere deschisă |
+| **Total** | **4.333** | **107.146** | | | 18 țări |
 
 Fiecare țară are în `scripts/data/<cod>/` scriptul care a construit datele și un `README.md` cu adresele exacte, licența, filtrele și limitele.
 
@@ -69,3 +76,13 @@ Fiecare țară are în `scripts/data/<cod>/` scriptul care a construit datele ș
 4. `node scripts/data/index.mjs`, apoi `node scripts/data/import.mjs` (cu `--prod` pentru baza de producție).
 
 Formatul comun este descris în `scripts/data/CONTRACT.md`.
+
+## Runda din 2026-10-19: 7 țări noi
+
+Cercetare pentru cele 13 țări din UE fără catalog, apoi construcție doar unde licența e clară, cu regula echipei „ce e neclar sau nesigur nu intră”.
+- **Construite:** Suedia, Bulgaria, Finlanda, Lituania, Slovenia, Grecia, Estonia (tabelul de mai sus; detaliile în `scripts/data/<cod>/README.md`).
+- **Amânate până confirmă cineva licența:** Portugalia (InfoCursos 2026, DGEEC: ediția 2021 era CC BY, cea nouă nu scrie licența), Danemarca (fișierul Uddannelseszoom al ministerului, fără aviz de refolosire).
+- **Doar parțial posibil, neconstruit:** Letonia (Europass are aproape doar licențele profesionale; registrul AIKA se poate doar consulta).
+- **Nu se poate acum:** Cehia (registrul ministerului doar de consultat; cererea de date deschise R18 e în așteptare), Cipru (CYQAA doar HTML, blocat), Malta (MFHEA protejat împotriva roboților).
+- **Grecia:** cele 4 universități scoase revin dacă cineva găsește textul legii care le stabilește sediul (lista `SEATS` din `scripts/data/gr/build.mjs`).
+- **Baza de producție** nu a primit încă datele noi (`node scripts/data/import.mjs --prod`, doar la cererea echipei).

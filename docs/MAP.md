@@ -240,29 +240,43 @@ _Open only the files listed here; a file's description is its first comment line
 - `tsconfig.json` (26) — JSON (invalid)
 - `users.ts` (14) — Server-only lookups by username, used by the sign-in code: the email behind a username never leaves the server.. Exports: emailOfUsername
 
-### apps/web/data/catalog  (23 files)
+### apps/web/data/catalog  (37 files)
 
 - `at-institutions.json` (696) — JSON array, 63 items
 - `at-programs.json`
 - `be-institutions.json` (291) — JSON array, 24 items
 - `be-programs.json` (2) — JSON array, 533 items
+- `bg-institutions.json` (487) — JSON array, 44 items
+- `bg-programs.json`
 - `de-institutions.json` (3734) — JSON array, 311 items
 - `de-programs.json`
+- `ee-institutions.json` (219) — JSON array, 18 items
+- `ee-programs.json` (2) — JSON array, 361 items
 - `es-institutions.json` (1088) — JSON array, 91 items
 - `es-programs.json`
+- `fi-institutions.json` (399) — JSON array, 36 items
+- `fi-programs.json`
 - `fr-institutions.json`
 - `fr-programs.jsonl.gz`
+- `gr-institutions.json` (223) — JSON array, 20 items
+- `gr-programs.json` (2) — JSON array, 326 items
 - `ie-institutions.json` (498) — JSON array, 45 items
 - `ie-programs.json`
-- `index.json` (1793) — JSON array, 11 items
+- `index.json` (2496) — JSON array, 18 items
 - `it-institutions.json` (1015) — JSON array, 92 items
 - `it-programs.json`
+- `lt-institutions.json` (300) — JSON array, 27 items
+- `lt-programs.json`
 - `nl-institutions.json` (1091) — JSON array, 95 items
 - `nl-programs.json`
 - `pl-institutions.json` (3901) — JSON array, 325 items
 - `pl-programs.jsonl.gz`
 - `ro-institutions.json` (927) — JSON array, 84 items
 - `ro-programs.json`
+- `se-institutions.json` (459) — JSON array, 38 items
+- `se-programs.json`
+- `si-institutions.json` (398) — JSON array, 33 items
+- `si-programs.json` (2) — JSON array, 333 items
 - `us-institutions.json`
 - `us-programs.jsonl.gz`
 
