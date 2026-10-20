@@ -108,6 +108,17 @@ export default function ResultPage() {
         </p>
       </div>
 
+      {/* The account card comes first, right after the quiz ends; the domains follow under it. */}
+      <SaveResult
+        result={{
+          profileId: state.answers.profileId,
+          where: state.answers.where,
+          ...(state.answers.cities?.length ? { cities: state.answers.cities } : {}),
+          choices: state.answers.choices,
+          topDomains: state.matches.map((m) => m.domain.id),
+        }}
+      />
+
       <ActivitiesSummary activities={(state.answers.activities ?? []) as StoredActivity[]} />
 
       {values && (
@@ -136,16 +147,6 @@ export default function ResultPage() {
           </div>
         ))}
       </div>
-
-      <SaveResult
-        result={{
-          profileId: state.answers.profileId,
-          where: state.answers.where,
-          ...(state.answers.cities?.length ? { cities: state.answers.cities } : {}),
-          choices: state.answers.choices,
-          topDomains: state.matches.map((m) => m.domain.id),
-        }}
-      />
 
       <p className="mx-auto mt-8 max-w-2xl rounded-2xl bg-primary-tint p-4 text-sm text-primary-dark" role="note">
         Chestionarul nu este un test psihologic validat: rezultatul e un punct de pornire, nu un verdict. Vorbește și cu
