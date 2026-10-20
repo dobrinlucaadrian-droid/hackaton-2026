@@ -18,7 +18,7 @@ export function NavBubbles() {
     <ul className="mx-auto flex max-w-4xl flex-wrap justify-center gap-x-4 gap-y-6">
       {ITEMS.map((it, i) => (
         <li key={it.href} className="rise w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.75rem)] lg:w-[calc(20%-0.8rem)]" style={{ "--d": `${i * 90}ms` } as CSSProperties}>
-          <Link href={it.href} className="group flex flex-col items-center gap-2 rounded-3xl p-1 text-center">
+          <Link href={it.href} prefetch className="group flex flex-col items-center gap-2 rounded-3xl p-1 text-center">
             <span className="relative block w-full max-w-40 transition-transform duration-200 group-hover:-translate-y-1 group-active:scale-95">
               <svg aria-hidden viewBox="0 0 120 80" className="block w-full drop-shadow-md">
                 <path d={CLOUD} className={`${it.fill} stroke-line`} strokeWidth="1.5" />

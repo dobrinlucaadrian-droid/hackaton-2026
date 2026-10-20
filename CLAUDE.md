@@ -97,7 +97,7 @@ Vercel CLI (`/deploy-demo`) and the team cannot deploy any other way. Choose:
 
 Deploy approved by the team on 2026-10-04.
 
-- Public address: https://unipath-taupe-mu.vercel.app (Vercel project `unipath`)
+- Public address: https://findmyuni.ro (also www. and https://unipath-taupe-mu.vercel.app; Vercel project `unipath`, DNS on Cloudflare)
 - `npm install --prefix apps/web` — install
 - `npm run dev --prefix apps/web` — run locally at http://localhost:3000
 - `npm test --prefix apps/web` — tests (vitest)

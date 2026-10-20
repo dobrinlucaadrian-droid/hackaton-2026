@@ -77,7 +77,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 - `rules.tsv`
 
-### apps/web  (11 files)
+### apps/web  (12 files)
 
 - `.gitignore`
 - `AGENTS.md` (10) — BEGIN:nextjs-agent-rules
@@ -89,6 +89,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `postcss.config.mjs` (8) — _no description: add a first-line comment_
 - `proxy.ts` (35) — Runs before every page: adds the content security policy, keeps the sign-in session fresh and sends visitors who are not signed in away from the account and administration pages.. Exports: proxy, config
 - `tsconfig.json` (35) — JSON; keys: compilerOptions, include, exclude
+- `vercel.json` (5) — JSON; keys: $schema, regions
 - `vitest.config.ts` (9) — Vitest setup: the Convex function tests run with convex-test, which must be bundled by Vitest.
 
 ### apps/web/app/admin/pareri  (1 files)
@@ -99,13 +100,14 @@ _Open only the files listed here; a file's description is its first comment line
 
 - `page.tsx` (244) — Administration page with statistics and maintenance: visits, where they come from, finished questionnaires and how people answered, the state of the database, and a CSV download. Only administrators get any data.. Routes: /admin/statistici. Exports: AdminStatsPage
 
-### apps/web/app  (9 files)
+### apps/web/app  (10 files)
 
 - `apple-icon.png`
 - `favicon.ico`
-- `globals.css` (129) — _no description: add a first-line comment_
+- `globals.css` (130) — _no description: add a first-line comment_
 - `icon.png`
 - `layout.tsx` (52) — Root layout: fonts, page metadata, the database connection and the anonymous visit counter shared by every page.. Exports: metadata, RootLayout
+- `loading.tsx` (14) — Shown the instant a link is pressed, while the next page comes from the server: the usual header and a small spinner, so a tap never looks ignored.. Exports: Loading
 - `not-found.tsx` (11) — Friendly 404 page shown for unknown routes and unknown university ids.. Exports: NotFound
 - `opengraph-image.alt.txt` (1) — _no description: add a first-line comment_
 - `opengraph-image.png`
@@ -199,7 +201,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `InterestPicker.tsx` (129) — "Ce îți place?": the student picks up to three interests and sees the specializations that fit them best, ranked, with links to universities.. Exports: InterestPicker
 - `MatchCard.tsx` (201) — One result card: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
 - `NavBubbles.tsx` (35) — The four big buttons on the home page (Specializări, Universități, Chestionar, Studenți, Ghiduri pe țări), drawn as little clouds.. Exports: NavBubbles
-- `NavLinks.tsx` (41) — Header navigation links with the current page highlighted; signed-in visitors also get "Contul meu" (signing in starts from the home page).. Exports: NavLinks
+- `NavLinks.tsx` (42) — Header navigation links with the current page highlighted; signed-in visitors also get "Contul meu" (signing in starts from the home page).. Exports: NavLinks
 - `OfficialPrograms.tsx` (12) — On a university sheet outside Romania: every bachelor programme of the institution from its country's official dataset, read from the database (those lists are too large to ship with the pages). Romanian sheets render the same list on the server, from the catalogue file.. Exports: OfficialPrograms
 - `ProgramGroups.tsx` (69) — The list of an institution's bachelor programmes, grouped by faculty (or by field when the source has no faculties). Plain markup with no browser code, so a page can render it on the server.. Exports: ProgramGroups
 - `ProgramRow.tsx` (68) — One bachelor programme from the catalogue, as a compact row: name and the small facts its source gives (language, study form, years, places, status).. Exports: FORM_LABEL, ProgramRow

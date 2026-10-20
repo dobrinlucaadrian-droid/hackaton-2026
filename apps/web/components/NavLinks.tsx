@@ -24,6 +24,7 @@ export function NavLinks() {
             <li key={href}>
               <Link
                 href={href}
+                prefetch
                 aria-current={on ? "page" : undefined}
                 className={`inline-flex min-h-11 items-center rounded-full px-3 text-sm font-bold transition sm:px-4 sm:text-base ${
                   on ? "bg-primary text-white" : "text-ink-soft hover:bg-primary-tint hover:text-primary-dark"

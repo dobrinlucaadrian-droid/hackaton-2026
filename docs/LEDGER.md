@@ -6,7 +6,7 @@ lista de commit-uri de la final se reface singură.
 ## Acum lucrăm la
 
 - **Scop:** UniPath — ghid între liceu și facultate. Hackathonul s-a încheiat (prezentare pe 2026-10-05); acum se construiește versiunea de producție: conturi, bază de date Convex, păreri moderate, securitate
-- **Unde:** versiunea de producție e pe ramura `production` (nepublicată; rulează local cu `npm run dev --prefix apps/web` și folosește baza Convex de dezvoltare, proiectul „unipath”). Versiunea prezentată e pe `main`, publică la https://unipath-taupe-mu.vercel.app, și nu se atinge până nu cere echipa. Planul: `docs/production-plan.md`
+- **Unde:** versiunea de producție e pe ramura `production` (nepublicată; rulează local cu `npm run dev --prefix apps/web` și folosește baza Convex de dezvoltare, proiectul „unipath”). Versiunea prezentată e pe `main`, publică la https://findmyuni.ro (și https://unipath-taupe-mu.vercel.app), și nu se atinge până nu cere echipa. Planul: `docs/production-plan.md`
 - **Urmează:** ordinea hotărâtă de echipă (vezi `docs/ultimii-pasi.md`): (1) baza de date completă — FĂCUT și verificat pentru 11 țări (100.186 programe; Germania și Austria parțiale; starea pe țări în `docs/catalog-status.md`); rămân: Marea Britanie și alte țări fără date deschise, universitățile lumii din ROR, fișe pentru cele 10 instituții românești noi; (2) calitate tehnică (viteza paginilor, acum generate la fiecare vizită); (3) ultimii pași: chei reale, domeniu, administratori, baza de producție, lansare
 - **De știut:** Vercel CLI și Convex CLI sunt logate doar din aplicația Claude (Vercel: cont `dobrinlucaadrian-7970`; Convex: echipa `dobrinlucaadrian`, proiect `unipath`, bază de dezvoltare `adjoining-duck-455`). `apps/web/.env.local` NU e în Git: dacă lipsește, `npx convex dev --once` în `apps/web` îl reface, iar `NEXT_PUBLIC_TURNSTILE_SITE_KEY` de probă este `1x00000000000000000000AA`. Catalogul se reîncarcă în Convex cu `node scripts/data/import.mjs`. Pe baza de dezvoltare sunt puse `AUTH_DEV_LOG_LINKS=1` (linkul de conectare apare în `npx convex logs`), cheile de probă Turnstile și `ADMIN_EMAILS=admin.test@example.com`. Echipa vrea să lucrez cât mai mult local înainte să-i cer conturi sau chei
 
@@ -20,6 +20,28 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-21 01:10 — paginile apar mai repede după clic
+- Cerut: diferența de viteză nu se simțea destul
+- Făcut: măsurat de la clic până la pagina așezată: ~0,3 s până la titlu, apoi încă ~0,7–1 s de animație de intrare („rise”, 0,6 s plus întârzieri), deci butoanele „se mișcau greu”. Animația scurtată la 0,25 s și întârzierile la 30%; linkurile din antet și norișorii aduc pagina dinainte (`prefetch`), ca un clic să nu mai aștepte serverul
+- Fișiere: `apps/web/app/globals.css`, `apps/web/components/NavLinks.tsx`, `apps/web/components/NavBubbles.tsx`
+- Poartă: TRECUT (gate.mjs) și măsurat pe linkul de probă
+- Urmează: echipa încearcă linkul de probă nou
+
+### 2026-10-21 00:45 — site mai rapid la clic
+- Cerut: butoanele reacționau greu și paginile se deschideau încet
+- Făcut: măsurat: în browser nicio încetinire; fiecare pagină se construia pe un server din SUA (Washington), ~0,3 s pe clic fără niciun semn pe ecran. Serverul mutat la Frankfurt (`apps/web/vercel.json`, `regions: fra1`) și `app/loading.tsx`: la clic apare pe loc antetul cu „Se încarcă…”, până vine pagina. Securitatea neschimbată
+- Fișiere: `apps/web/vercel.json`, `apps/web/app/loading.tsx`
+- Poartă: TRECUT (gate.mjs) și măsurat pe linkul de probă
+- Urmează: echipa încearcă linkul de probă nou; dacă tot e lent, pagini gata făcute (cer slăbirea regulii de scripturi)
+
+### 2026-10-21 00:20 — domeniul findmyuni.ro legat de Resend și de site
+- Cerut: legarea domeniului cumpărat de Resend (emailurile cu cod) și de Vercel (site-ul); pe domeniu, versiunea de acum
+- Făcut: în Cloudflare, cele 4 înregistrări Resend (DKIM, `send`, `rsend`, `_dmarc`), verificarea Resend pornită (în așteptare), urmărirea clicurilor oprită; în Vercel, `findmyuni.ro` și `www.findmyuni.ro` adăugate la proiectul `unipath`, cu două CNAME în Cloudflare (fără proxy); Vercel le-a confirmat, ambele răspund cu 200 pe HTTPS și arată versiunea de pe `main`
+- Fișiere: `docs/productie.md`, `CLAUDE.md`
+- Poartă: NEVERIFICAT (doar documente schimbate; site-ul verificat direct pe ambele adrese)
+- Apoi: versiunea nouă (ramura `production`) publicată ca link de probă Vercel https://unipath-bzwffgfu0-william-b4f6.vercel.app (refăcut după schimbările de viteză), cu baza de dezvoltare (setările de probă ale Vercel arată spre baza de producție, goală, așa că am dat adresa bazei de dezvoltare doar la această publicare); se vede doar cu contul Vercel; poarta TRECUT înainte; căutarea de programe merge
+- Urmează: Resend să treacă pe Verified; echipa pune cheia Resend și `AUTH_EMAIL_FROM` în Convex
 
 ### 2026-10-20 02:10 — pregătire pentru producție: anti-robot la cont, ștergere automată, copii de rezervă, ghid
 - Cerut: produs sigur pentru elevi și pentru echipă (acces la tot, să nu fiți blocați de un atacator), site care nu cade dacă e bombardat, GDPR bun; firma la final; lucru autonom pe pachete
@@ -771,6 +793,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-20 02:24 `df419da` feat: bot check on sign-up, data retention, backups, launch guide
 - 2026-10-20 01:55 `31da3e0` feat: rate limits, 16+ accounts, privacy page, my-data page, ZAP scan
 - 2026-10-20 01:00 `cd56f9b` feat: restore NTUA in the Greek programme catalogue
 - 2026-10-19 18:15 `673cf7b` feat: add programme catalogues for seven more EU countries
@@ -800,5 +823,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-08 03:13 `a9edb12` feat: Romanian catalogue of institutions and bachelor programmes from the official list
 - 2026-10-08 02:47 `a381c2f` feat: ask for the full name at sign-in and keep it on the account
 - 2026-10-08 00:16 `a1fd781` docs: research on official and open data sources for universities and programmes
-- 2026-10-08 00:01 `914f800` docs: final launch steps and the new order of work
 <!-- commits:end -->
