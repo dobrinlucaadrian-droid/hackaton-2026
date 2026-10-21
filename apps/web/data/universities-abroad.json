@@ -5513,7 +5513,7 @@
   "tuition": "cu taxă, în funcție de venitul familiei, pentru studenții din UE",
   "about": "Universitate publică mare din Pisa, un oraș mic în care viața se învârte în jurul studenților. Are cursuri în aproape toate domeniile, de la inginerie și informatică la medicină, drept și litere.",
   "prestige": "international",
-  "budget": "mic",
+  "budget": "mediu",
   "budgetNote": "Taxa se calculează după venitul familiei; cine are veniturile în străinătate primește o taxă fixă, redusă după țara de proveniență, sau poate cere calculul după venit.",
   "admissionTypes": [
    "examen",
@@ -9294,7 +9294,7 @@
   "tuition": "fără taxă de școlarizare pentru cetățenii UE la programele cu frecvență în poloneză; programele în limbi străine au taxă și pentru cetățenii UE",
   "about": "Universitate publică din Cracovia, cu ofertă foarte largă, de la drept și științe umaniste la științe exacte și medicină. Are câteva programe de licență în engleză (de exemplu studii europene, relații internaționale, management) și medicină în engleză.",
   "prestige": "international",
-  "budget": "mic",
+  "budget": "mediu",
   "budgetNote": "Programele cu frecvență în poloneză sunt gratuite pentru cetățenii UE; cele în engleză se plătesc și de cetățenii UE, iar medicina în engleză este mult mai scumpă decât restul.",
   "admissionTypes": [
    "interviu",
@@ -9496,7 +9496,7 @@
   "tuition": "programele în engleză au taxă, mai mică pentru cetățenii UE decât pentru ceilalți; la universitățile publice din Polonia studiile cu frecvență în poloneză sunt fără taxă pentru cetățenii UE",
   "about": "Universitate publică clasică din Wrocław, cu drept, științe sociale, umaniste și științe ale naturii. Are în jur de douăsprezece programe de licență în engleză, de exemplu biotehnologie, chimie, științe politice, relații internaționale și afaceri.",
   "prestige": "national",
-  "budget": "mic",
+  "budget": "mediu",
   "budgetNote": "La programele în engleză cetățenii UE plătesc o taxă mai mică decât ceilalți străini, iar primul an se plătește integral înainte de început; studiile cu frecvență în poloneză sunt fără taxă pentru cetățenii UE.",
   "admissionTypes": [
    "dosar"
@@ -9654,7 +9654,7 @@
   "tuition": "programele în engleză au taxă pe semestru și pentru cetățenii UE (mai mică decât pentru ceilalți străini); la universitățile publice din Polonia studiile cu frecvență în poloneză sunt fără taxă pentru cetățenii UE",
   "about": "Universitate publică din Gdańsk, la Marea Baltică, cu 11 facultăți și zeci de domenii de studiu, de la economie și drept la biologie și oceanografie. Are câteva programe de licență în engleză, de exemplu afaceri internaționale, logistică, criminologie și comunicare culturală.",
   "prestige": "national",
-  "budget": "mic",
+  "budget": "mediu",
   "budgetNote": "La programele în engleză cetățenii UE plătesc o taxă pe semestru, la un nivel mic față de vestul Europei; studiile cu frecvență în poloneză sunt fără taxă pentru cetățenii UE.",
   "admissionTypes": [
    "dosar"
@@ -9798,7 +9798,7 @@
   "tuition": "programele de licență în engleză au taxă anuală; la universitățile publice din Polonia studiile cu frecvență în poloneză sunt fără taxă pentru cetățenii UE",
   "about": "Universitate publică din Łódź, cu 12 facultăți și aproape 23.000 de studenți și doctoranzi. Are mai multe programe de licență în engleză, de exemplu managementul afacerilor, informatică, economie, studii internaționale și politice și marketing internațional.",
   "prestige": "national",
-  "budget": "mic",
+  "budget": "mediu",
   "budgetNote": "Programele de licență în engleză au o taxă anuală, la un nivel mic față de vestul Europei; studiile cu frecvență în poloneză sunt fără taxă pentru cetățenii UE.",
   "admissionTypes": [
    "dosar",
@@ -13572,8 +13572,8 @@
   "tuition": "universitate privată, cu taxă ridicată, pe patru categorii de venit",
   "about": "Universitate privată de medicină din Pieve Emanuele, lângă Milano, construită lângă spitalul și centrul de cercetare Humanitas. Are medicină în engleză (șase ani), programul MEDTEC, făcut împreună cu Politecnico di Milano, și licențe de asistență medicală, fizioterapie și tehnici medicale.",
   "prestige": "international",
-  "budget": "mare",
-  "budgetNote": "Pentru studenții din UE taxa are patru categorii, după situația economică a familiei, și rămâne ridicată; nu include cazarea, masa sau cărțile.",
+  "budget": "mediu",
+  "budgetNote": "Pentru studenții din UE taxa are patru categorii, după situația economică a familiei: la cele mai multe programe (asistență medicală, fizioterapie, tehnici de laborator) este medie, dar la medicină este mult mai mare. Nu include cazarea, masa sau cărțile.",
   "admissionTypes": [
    "examen"
   ],
@@ -13591,7 +13591,7 @@
    "Reședință proprie în campus"
   ],
   "cons": [
-   "Taxă mare, la care se adaugă chiria",
+   "La medicină taxa este mult mai mare; se adaugă chiria",
    "Concurență mare pe puține locuri",
    "Doar domeniul medical; campusul este în afara orașului Milano"
   ]
@@ -16977,7 +16977,7 @@
   "tuition": "programele de licență în engleză au taxă pe semestru; la universitățile publice din Polonia studiile cu frecvență în poloneză sunt fără taxă pentru cetățenii UE",
   "about": "Universitate publică de economie din Cracovia, a doua ca vechime din Polonia în acest domeniu, cu campus aproape de centrul orașului. Are licențe în engleză în finanțe și contabilitate globală, afaceri internaționale și managementul modern al afacerilor.",
   "prestige": "national",
-  "budget": "mic",
+  "budget": "mediu",
   "budgetNote": "Candidații fără cetățenie poloneză sunt admiși la programele în engleză cu taxă pe semestru, la un nivel mic față de vestul Europei; primul semestru se plătește integral, următoarele se pot plăti în rate. Studiile cu frecvență în poloneză sunt fără taxă pentru cetățenii UE.",
   "admissionTypes": [
    "dosar"
@@ -21058,7 +21058,7 @@
   "tuition": "universitate privată, cu taxă ridicată",
   "about": "Universitate privată din Milano, legată de spitalul San Raffaele. Are medicină (în italiană și în engleză), stomatologie, profesii sanitare, biotehnologii medicale, psihologie, filosofie și științe politice.",
   "prestige": "national",
-  "budget": "mare",
+  "budget": "mediu",
   "budgetNote": "Universitatea este privată și își stabilește singură taxele, care nu depind de venitul familiei și se plătesc în trei rate; se adaugă chiria dacă stai în reședință. Cei declarați eligibili la concursul pentru dreptul la studiu sunt scutiți de taxe.",
   "admissionTypes": [
    "examen"
@@ -21688,7 +21688,7 @@
   "tuition": "universitate privată, cu taxă ridicată, diferită după curs",
   "about": "Universitate privată din Casamassima, lângă Bari. Are cursuri de economie, drept, inginerie informatică și de management și, la medicină, asistență medicală și stomatologie.",
   "prestige": "national",
-  "budget": "mare",
+  "budget": "mediu",
   "budgetNote": "Contribuția diferă după curs și departament și nu depinde de venit; se plătește în rate, împreună cu taxa regională.",
   "admissionTypes": [
    "bac",
@@ -21709,7 +21709,7 @@
    "O licență de economie în engleză"
   ],
   "cons": [
-   "Taxă mare, mai ales la medicină și stomatologie",
+   "La medicină și stomatologie taxa este mult mai mare",
    "Fără cămin studențesc deocamdată",
    "Campus într-un oraș mic, în afara orașului Bari"
   ]
@@ -29060,7 +29060,7 @@
   "about": "Universitate publică din orașul Bournemouth, pe coasta de sud a Angliei. Are programe practice de media, film și animație pe calculator, jurnalism, turism și evenimente, afaceri, informatică și securitate cibernetică, inginerie, drept, psihologie, asistență medicală și sport.",
   "prestige": "national",
   "budget": "mare",
-  "budgetNote": "Românii sunt încadrați la taxa pentru studenți internaționali, dar universitatea o reduce automat pentru cetățenii UE care locuiesc în UE, în toți anii de licență. Taxa redusă rămâne mult mai mare decât în România, iar fără statut „settled” sau „pre-settled” nu ai acces la împrumuturile de studii britanice.",
+  "budgetNote": "Românii sunt încadrați la taxa pentru studenți internaționali. Universitatea anunță o reducere automată pentru cetățenii UE care locuiesc în UE, dar doar pentru cei care încep în 2027; taxa rămâne mult mai mare decât în România, iar fără statut „settled” sau „pre-settled” nu ai acces la împrumuturile de studii britanice.",
   "admissionTypes": [
    "dosar",
    "interviu"
@@ -29077,7 +29077,7 @@
    "recomandari"
   ],
   "pros": [
-   "Reducere de taxă automată pentru cetățenii UE, în fiecare an de licență",
+   "Reducere de taxă automată pentru cetățenii UE care încep din 2027",
    "Cazare garantată în primul an, dacă respecți termenele",
    "Programe practice de media, film, animație și turism"
   ],
@@ -32779,8 +32779,8 @@
   "tuition": "cu taxă; studenții din UE plătesc mai puțin, pentru că primesc automat o bursă care reduce taxa",
   "about": "Școală de economie și business din Riga, înființată de Stockholm School of Economics din Suedia împreună cu guvernul Letoniei și deținută de o fundație. Are un singur program de licență, BSc in Economics and Business, de 3 ani, predat integral în engleză.",
   "prestige": "national",
-  "budget": "mare",
-  "budgetNote": "Taxa anuală este mare, dar studenții din UE primesc automat, trei ani, o bursă care o reduce; taxa rămâne aceeași pe toată durata studiilor. Se adaugă costul vieții în Riga.",
+  "budget": "mediu",
+  "budgetNote": "Taxa de listă este mare, dar studenții din UE primesc automat, trei ani, o bursă care o coboară la un nivel mediu; taxa rămâne aceeași pe toată durata studiilor. Se adaugă costul vieții în Riga.",
   "admissionTypes": [
    "dosar",
    "test-standardizat",
@@ -32802,7 +32802,7 @@
    "Prioritate la cămin pentru studenții școlii"
   ],
   "cons": [
-   "Taxă mare, chiar și după bursa pentru UE",
+   "Taxa rămâne ridicată chiar și după bursa pentru UE",
    "Admitere selectivă: test online de câteva ore și interviu",
    "Un singur program de licență"
   ]
@@ -33253,7 +33253,7 @@
   "tuition": "universitate privată, cu taxă la toate programele",
   "about": "Universitate privată de management și economie din centrul Vilniusului. Are șase licențe predate în engleză: finanțe, economie și politică, economie și analiza datelor, antreprenoriat, business internațional și comunicare, management și marketing.",
   "prestige": "national",
-  "budget": "mediu",
+  "budget": "mare",
   "budgetNote": "Fiind privată, ISM are taxă la toate programele, mai mare decât taxa plătită de cetățenii UE la universitățile publice din Lituania; prin concursul de burse al universității poți primi o reducere de până la jumătate din taxă. Costul vieții în Vilnius este moderat.",
   "admissionTypes": [
    "dosar",

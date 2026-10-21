@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-22 21:30 — a doua verificare a taxelor
+- Cerut: reluarea verificării pentru fișele rămase neverificate, imediat
+- Făcut: șase agenți au reluat 333 de fișe (315 neverificate + 18 nesigure) deschizând direct paginile oficiale de taxe: acum 706 din 751 confirmate, 45 neverificate (site-uri blocate sau taxe nepublicate). 11 niveluri schimbate cu aprobarea echipei (Pisa, Humanitas, San Raffaele, LUM → medie; Gdańsk, Jagiellonă, Łódź, UEK, Wrocław → medie, programele în engleză; SSE Riga → medie; ISM Vilnius → mare), cu textele de cost potrivite; Hotelschool rămâne „mare” (decizia echipei); fișa Bournemouth corectată (reducerea pentru UE începe în 2027). Detalii în `docs/taxe.md`
+- Fișiere: `apps/web/data/universities-abroad.json`, `apps/web/data/universities-index.json`, `docs/taxe.md`
+- Poartă: TRECUT (gate.mjs)
+- Urmează: cele 45 rămase, de verificat de un om sau mai târziu
+
 ### 2026-10-22 19:30 — intervale de taxă în euro, verificate pe surse oficiale
 - Cerut: intervale de sume în euro pentru fiecare nivel de taxă
 - Făcut: pragurile echipei (taxa de școlarizare pe an, fără cazare și masă): fără taxă 0 €, mică până la 2.000 €, medie 2.000–6.000 €, mare peste 6.000 €; scrise sub butoanele filtrului. Șase agenți au căutat taxele pe pagini oficiale: 436 din 751 fișe confirmate, 315 neverificate (porția de căutări terminată, site-uri care refuză), lăsate cum erau. 12 niveluri schimbate cu aprobarea echipei (ETH, EPFL, UZH → medie; St. Gallen, Lugano → mare; LUMSA → medie; AGH → medie; EAMT → mică; Titu Maiorescu, Vasile Goldiș, Dimitrie Cantemir → mică; Petre Andrei → medie), cu textele de cost de pe fișe potrivite noului nivel; 18 propuneri nesigure nefăcute. Metoda, schimbările și lista pentru a doua rundă: `docs/taxe.md`
@@ -117,7 +124,7 @@ lista de commit-uri de la final se reface singură.
 - Făcut: în Cloudflare, cele 4 înregistrări Resend (DKIM, `send`, `rsend`, `_dmarc`), verificarea Resend pornită (în așteptare), urmărirea clicurilor oprită; în Vercel, `findmyuni.ro` și `www.findmyuni.ro` adăugate la proiectul `unipath`, cu două CNAME în Cloudflare (fără proxy); Vercel le-a confirmat, ambele răspund cu 200 pe HTTPS și arată versiunea de pe `main`
 - Fișiere: `docs/productie.md`, `CLAUDE.md`
 - Poartă: NEVERIFICAT (doar documente schimbate; site-ul verificat direct pe ambele adrese)
-- Apoi: versiunea nouă (ramura `production`) publicată ca link de probă Vercel https://unipath-g7akj4s3j-william-b4f6.vercel.app (refăcut după intervalele de taxă), cu baza de dezvoltare (setările de probă ale Vercel arată spre baza de producție, goală, așa că am dat adresa bazei de dezvoltare doar la această publicare); se vede doar cu contul Vercel; poarta TRECUT înainte; căutarea de programe merge
+- Apoi: versiunea nouă (ramura `production`) publicată ca link de probă Vercel https://unipath-r4e1h2toc-william-b4f6.vercel.app (refăcut după a doua verificare a taxelor), cu baza de dezvoltare (setările de probă ale Vercel arată spre baza de producție, goală, așa că am dat adresa bazei de dezvoltare doar la această publicare); se vede doar cu contul Vercel; poarta TRECUT înainte; căutarea de programe merge
 - Urmează: Resend să treacă pe Verified; echipa pune cheia Resend și `AUTH_EMAIL_FROM` în Convex
 
 ### 2026-10-20 02:10 — pregătire pentru producție: anti-robot la cont, ștergere automată, copii de rezervă, ghid
@@ -870,6 +877,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-21 17:39 `0a5d0cf` feat: clearer cost filter with euro bands, 10 more results, checked fees
 - 2026-10-21 16:19 `091c093` feat: friendly error pages with the broken-road drawing
 - 2026-10-21 16:09 `c6c72c5` feat: sitemap, robots rules, one official address and page descriptions
 - 2026-10-21 03:24 `d99a168` feat: greet signed-in visitors on the home page, go home after sign-out
@@ -899,5 +907,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-09 02:55 `88b4621` feat: add 74 university profile sheets and link them to the catalogue
 - 2026-10-09 02:55 `17842ce` feat: admin statistics panel, anonymous usage counters and home tile
 - 2026-10-08 23:46 `6cf706f` feat: completeness pass on the catalogue: Spain nationwide, France 2026, cleanups
-- 2026-10-08 04:02 `ce1a3d5` ci: stop the secret scan from flagging programme identifiers in the catalogue data
 <!-- commits:end -->
