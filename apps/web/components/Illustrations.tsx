@@ -1,4 +1,4 @@
-// Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots and the start-page hero.
+// Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots, the start-page hero and the broken road of the error page.
 import type { SVGProps } from "react";
 type P = SVGProps<SVGSVGElement>;
 
@@ -82,6 +82,23 @@ export function HeroScene(props: P) {
       <Sparkle x="296" y="118" width="26" height="26" className="twinkle fill-violet" />
       <Sparkle x="48" y="150" width="20" height="20" className="twinkle fill-teal" />
       <Sparkle x="348" y="192" width="14" height="14" className="twinkle fill-sky" />
+    </svg>
+  );
+}
+
+/** The error-page drawing: a graduation cap above a road that breaks in the middle. */
+export function BrokenPath(props: P) {
+  return (
+    <svg viewBox="0 0 220 120" aria-hidden {...props}>
+      <path d="M10 100 C 50 100, 60 70, 95 70" fill="none" className="stroke-ink" strokeWidth="10" strokeLinecap="round" />
+      <path d="M125 70 C 160 70, 170 40, 210 40" fill="none" className="stroke-primary" strokeWidth="10" strokeLinecap="round" />
+      <path d="M10 100 C 50 100, 60 70, 95 70" fill="none" className="stroke-paper" strokeWidth="2" strokeDasharray="6 6" />
+      <path d="M125 70 C 160 70, 170 40, 210 40" fill="none" className="stroke-paper" strokeWidth="2" strokeDasharray="6 6" />
+      <polygon points="110,18 140,30 110,42 80,30" className="fill-ink" />
+      <rect x="96" y="34" width="28" height="12" rx="3" className="fill-ink" />
+      <line x1="140" y1="30" x2="140" y2="50" className="stroke-primary" strokeWidth="2" />
+      <circle cx="140" cy="52" r="3" className="fill-primary" />
+      <text x="110" y="80" textAnchor="middle" fontSize="20" fontWeight="700" className="fill-primary">?</text>
     </svg>
   );
 }

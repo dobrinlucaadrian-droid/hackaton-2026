@@ -100,10 +100,12 @@ _Open only the files listed here; a file's description is its first comment line
 
 - `page.tsx` (244) — Administration page with statistics and maintenance: visits, where they come from, finished questionnaires and how people answered, the state of the database, and a CSV download. Only administrators get any data.. Routes: /admin/statistici. Exports: AdminStatsPage
 
-### apps/web/app  (12 files)
+### apps/web/app  (14 files)
 
 - `apple-icon.png`
+- `error.tsx` (32) — Shown instead of a page that broke while loading: the usual header, the broken-road drawing, a short message that it is not the student's fault and a "try again" button. Nothing technical is shown.. Exports: PageError
 - `favicon.ico`
+- `global-error.tsx` (26) — Shown in the rare case the whole site fails to start (even the page frame): a plain page with its own colours, since the site's styles are not loaded here.. Exports: GlobalError
 - `globals.css` (130) — _no description: add a first-line comment_
 - `icon.png`
 - `layout.tsx` (53) — Root layout: fonts, page metadata, the database connection and the anonymous visit counter shared by every page.. Exports: metadata, RootLayout
@@ -200,7 +202,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `FacultyPrograms.tsx` (24) — On a faculty sheet: the bachelor programmes of that faculty from the official list. Plain markup: the faculty page gives it the rows, read on the server.. Exports: FacultyPrograms
 - `FavoriteButton.tsx` (60) — The heart on a university sheet: adds the university to the student's favourites (shown in "Contul meu") or removes it; without an account it opens the account window and adds it once the student is signed in.. Exports: FavoriteButton
 - `GuideFinder.tsx` (56) — Country guides index body: a search box with a magnifier that filters the country tiles as you type (diacritics do not matter).. Exports: GuideFinder
-- `Illustrations.tsx` (88) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots and the start-page hero.. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene
+- `Illustrations.tsx` (105) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots, the start-page hero and the broken road of the error page.. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene, BrokenPath
 - `InterestPicker.tsx` (129) — "Ce îți place?": the student picks up to three interests and sees the specializations that fit them best, ranked, with links to universities.. Exports: InterestPicker
 - `MatchCard.tsx` (201) — One result card: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
 - `NavBubbles.tsx` (35) — The four big buttons on the home page (Specializări, Universități, Chestionar, Studenți, Ghiduri pe țări), drawn as little clouds.. Exports: NavBubbles
