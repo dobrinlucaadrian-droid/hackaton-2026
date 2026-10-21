@@ -1,8 +1,9 @@
-// Runs before every page: adds the content security policy, keeps the sign-in session fresh and sends visitors who are not signed in away from the account and administration pages.
+// Runs before every page: on the live site sends other addresses (www, vercel.app) to findmyuni.ro, adds the content security policy, keeps the sign-in session fresh and sends visitors who are not signed in away from the account and administration pages.
 // The redirect is only a first, quick check; the real protection is in the Convex functions (convex/access.ts).
 import { convexAuthNextjsMiddleware, createRouteMatcher, nextjsMiddlewareRedirect } from "@convex-dev/auth/nextjs/server";
 import { NextResponse, type NextFetchEvent, type NextRequest } from "next/server";
 import { buildCsp } from "./lib/csp";
+import { SITE_URL } from "./lib/seo";
 
 const isSignInPage = createRouteMatcher(["/conectare"]);
 const isAccountPage = createRouteMatcher(["/cont(.*)", "/admin(.*)"]);
@@ -17,6 +18,11 @@ const authProxy = convexAuthNextjsMiddleware(async (request, { convexAuth }) => 
 });
 
 export default async function proxy(request: NextRequest, event: NextFetchEvent) {
+  // One official address, so search engines do not see the same site three times. Only on the live deployment: test links stay as they are.
+  const official = new URL(SITE_URL);
+  if (process.env.VERCEL_ENV === "production" && request.nextUrl.hostname !== official.hostname) {
+    return NextResponse.redirect(new URL(`${request.nextUrl.pathname}${request.nextUrl.search}`, official), 308);
+  }
   // A fresh nonce per request: Next.js reads it from the request's policy and puts it on its own scripts.
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
   const https = request.nextUrl.protocol === "https:" || request.headers.get("x-forwarded-proto") === "https";

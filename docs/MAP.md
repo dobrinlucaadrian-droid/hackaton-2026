@@ -87,7 +87,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `next.config.ts` (25) — Next.js configuration: security headers sent with every response (the content security policy itself is added per request in proxy.ts).
 - `package.json` (36) — package "web"; scripts: dev, build, start, lint, test
 - `postcss.config.mjs` (8) — _no description: add a first-line comment_
-- `proxy.ts` (35) — Runs before every page: adds the content security policy, keeps the sign-in session fresh and sends visitors who are not signed in away from the account and administration pages.. Exports: proxy, config
+- `proxy.ts` (41) — Runs before every page: on the live site sends other addresses (www, vercel.app) to findmyuni.ro, adds the content security policy, keeps the sign-in session fresh and sends visitors who are not signed in away from the account and administration pages.. Exports: proxy, config
 - `tsconfig.json` (35) — JSON; keys: compilerOptions, include, exclude
 - `vercel.json` (5) — JSON; keys: $schema, regions
 - `vitest.config.ts` (9) — Vitest setup: the Convex function tests run with convex-test, which must be bundled by Vitest.
@@ -100,18 +100,20 @@ _Open only the files listed here; a file's description is its first comment line
 
 - `page.tsx` (244) — Administration page with statistics and maintenance: visits, where they come from, finished questionnaires and how people answered, the state of the database, and a CSV download. Only administrators get any data.. Routes: /admin/statistici. Exports: AdminStatsPage
 
-### apps/web/app  (10 files)
+### apps/web/app  (12 files)
 
 - `apple-icon.png`
 - `favicon.ico`
 - `globals.css` (130) — _no description: add a first-line comment_
 - `icon.png`
-- `layout.tsx` (52) — Root layout: fonts, page metadata, the database connection and the anonymous visit counter shared by every page.. Exports: metadata, RootLayout
+- `layout.tsx` (53) — Root layout: fonts, page metadata, the database connection and the anonymous visit counter shared by every page.. Exports: metadata, RootLayout
 - `loading.tsx` (14) — Shown the instant a link is pressed, while the next page comes from the server: the usual header and a small spinner, so a tap never looks ignored.. Exports: Loading
 - `not-found.tsx` (11) — Friendly 404 page shown for unknown routes and unknown university ids.. Exports: NotFound
 - `opengraph-image.alt.txt` (1) — _no description: add a first-line comment_
 - `opengraph-image.png`
 - `page.tsx` (32) — Home page: the welcome with the drawing and the account choice, the four big buttons drawn as clouds.. Routes: /. Exports: Home
+- `robots.ts` (12) — Rules for search engines (/robots.txt): on the live site, everything public may be indexed except personal pages; test copies of the site are never indexed.. Exports: robots
+- `sitemap.ts` (21) — The list of every public page for search engines (/sitemap.xml): the main pages, every university and faculty sheet, every country guide and study category.. Exports: sitemap
 
 ### apps/web/app/conectare  (1 files)
 
@@ -151,15 +153,15 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/specializari/[categorie]  (1 files)
 
-- `page.tsx` (48) — One category: its study domains as collapsible rows with their specializations.. Routes: /specializari/[categorie]. Exports: generateStaticParams, generateMetadata, CategoryPage
+- `page.tsx` (50) — One category: its study domains as collapsible rows with their specializations.. Routes: /specializari/[categorie]. Exports: generateStaticParams, generateMetadata, CategoryPage
 
 ### apps/web/app/specializari  (1 files)
 
-- `page.tsx` (27) — All study fields: category tiles and a "what do you like" picker, or filtered domains and specializations when the student types.. Routes: /specializari. Exports: metadata, SpecializationsPage
+- `page.tsx` (30) — All study fields: category tiles and a "what do you like" picker, or filtered domains and specializations when the student types.. Routes: /specializari. Exports: metadata, SpecializationsPage
 
 ### apps/web/app/studenti  (1 files)
 
-- `page.tsx` (47) — Student voices: real opinions from students and graduates, with a search by faculty or university.. Routes: /studenti. Exports: metadata, Students
+- `page.tsx` (50) — Student voices: real opinions from students and graduates, with a search by faculty or university.. Routes: /studenti. Exports: metadata, Students
 
 ### apps/web/app/studenti/parere  (1 files)
 
@@ -175,15 +177,15 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/universitati/[id]/[facultate]  (1 files)
 
-- `page.tsx` (116) — Profile sheet of one Romanian faculty: what you study there, how you get in, its bachelor programmes from the official list and the official links.. Routes: /universitati/[id]/[facultate]. Exports: generateStaticParams, generateMetadata, FacultyPage
+- `page.tsx` (119) — Profile sheet of one Romanian faculty: what you study there, how you get in, its bachelor programmes from the official list and the official links.. Routes: /universitati/[id]/[facultate]. Exports: generateStaticParams, generateMetadata, FacultyPage
 
 ### apps/web/app/universitati/[id]  (1 files)
 
-- `page.tsx` (330) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
+- `page.tsx` (333) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/universitati  (1 files)
 
-- `page.tsx` (26) — University finder page: search box, filters and top 10 results (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
+- `page.tsx` (29) — University finder page: search box, filters and top 10 results (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
 
 ### apps/web/components  (39 files)
 
@@ -320,7 +322,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `universities-ro.json` (4201) — JSON array, 83 items
 - `university-sources.json`
 
-### apps/web/lib  (32 files)
+### apps/web/lib  (34 files)
 
 - `activities.test.ts` (57) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
 - `activities.ts` (73) — Activities a student can add (competitions, volunteering, extracurriculars): labels, areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, describeActivity
@@ -343,6 +345,8 @@ _Open only the files listed here; a file's description is its first comment line
 - `pendingSave.ts` (60) — Keeps a questionnaire result or a hearted university on this device while the student signs in or makes an account, so it can be saved to the account afterwards.. Exports: setPendingResult, setPendingFavorite, takePendingFavorite, takePendingResult
 - `roPrograms.test.ts` (29) — Tests the programme lists the Romanian sheets render on the server: every faculty sheet finds its programmes and the rows carry only what a page shows.
 - `roPrograms.ts` (24) — The Romanian bachelor programmes from the official list, read straight from the catalogue file so a sheet can show them without waiting for the database. Large: import it only from server code (the university and faculty pages) and from tests.. Exports: roProgramsOf, roProgramsOfFaculty
+- `seo.test.ts` (38) — Tests the search-engine helpers: descriptions are trimmed at a word, and the sitemap lists every public sheet once, on the official address, never a personal page.
+- `seo.ts` (11) — The site's one official address and a helper that trims a text to the length search engines show under a result.. Exports: SITE_URL, clip
 - `session.ts` (117) — Keeps the student's answers (and optional activities with photos) in sessionStorage between pages (safe on the server).. Exports: MAX_CITIES, loadDraft, saveDraft, clearDraft, toAnswers, shrinkImage
 - `sheets.ts` (11) — The full university sheets, with all their long texts. Large: import it only from server code (the university page) and from tests, never from a component that runs in the browser — those use lib/universities.ts.. Exports: universities, universityById
 - `testimonials.ts` (29) — Links student opinions to the universities that have a profile sheet, so the search and the sheets can show them.. Exports: universityIdOf, testimonialsFor

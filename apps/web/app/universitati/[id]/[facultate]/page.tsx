@@ -9,6 +9,7 @@ import { faculties, facultyBySlug, facultySlug } from "@/lib/faculties";
 import { ADMISSION_LABEL } from "@/lib/labels";
 import { roProgramsOfFaculty } from "@/lib/roPrograms";
 import { universityById } from "@/lib/sheets";
+import { clip } from "@/lib/seo";
 
 type Props = { params: Promise<{ id: string; facultate: string }> };
 
@@ -20,7 +21,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id, facultate } = await params;
   const f = facultyBySlug(id, facultate);
   const u = universityById(id);
-  return { title: f && u ? `${f.name} — ${u.name} | FindMyUni` : "Facultate | FindMyUni" };
+  return f && u
+    ? { title: `${f.name} — ${u.name} | FindMyUni`, description: clip(`${f.about} Cum intri, programele de licență și linkurile oficiale.`) }
+    : { title: "Facultate | FindMyUni" };
 }
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {

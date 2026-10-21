@@ -5,7 +5,10 @@ import { Suspense } from "react";
 import { Shell } from "@/components/Shell";
 import { UniversitySearch } from "@/components/UniversitySearch";
 
-export const metadata: Metadata = { title: "Universități | FindMyUni" };
+export const metadata: Metadata = {
+  title: "Caută universități în România și în străinătate | FindMyUni",
+  description: "Caută o universitate după nume, oraș, țară sau domeniu și vezi admiterea, costurile, bursele și programele de licență.",
+};
 
 export default function UniversitiesPage() {
   return (

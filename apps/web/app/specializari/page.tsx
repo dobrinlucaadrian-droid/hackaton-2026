@@ -4,7 +4,10 @@ import { Books, Sparkle } from "@/components/Illustrations";
 import { Shell } from "@/components/Shell";
 import { SpecializationsBrowser } from "@/components/SpecializationsBrowser";
 
-export const metadata: Metadata = { title: "Specializări | FindMyUni" };
+export const metadata: Metadata = {
+  title: "Specializări și domenii de studiu | FindMyUni",
+  description: "Toate domeniile de studiu și specializările de licență, pe categorii, cu ce înveți în fiecare an și unde poți studia.",
+};
 
 export default function SpecializationsPage() {
   return (

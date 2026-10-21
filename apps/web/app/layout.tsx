@@ -7,6 +7,7 @@ import { ConvexAuthNextjsServerProvider } from "@convex-dev/auth/nextjs/server";
 import { ConvexClientProvider } from "@/components/ConvexClientProvider";
 import { VisitTracker } from "@/components/VisitTracker";
 import { WelcomeDialog } from "@/components/WelcomeDialog";
+import { SITE_URL } from "@/lib/seo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,8 +24,8 @@ const description =
 
 // The icons and the link-preview image (the team logo) come from icon.png, apple-icon.png, favicon.ico and opengraph-image.png in this folder.
 export const metadata: Metadata = {
-  metadataBase: new URL("https://findmyuni.ro"),
-  title: "FindMyUni",
+  metadataBase: new URL(SITE_URL),
+  title: "FindMyUni — alege facultatea potrivită",
   description,
   openGraph: { title: "FindMyUni", description, siteName: "FindMyUni", locale: "ro_RO", type: "website", url: "/" },
 };

@@ -4,7 +4,10 @@ import { Cap } from "@/components/Illustrations";
 import { Shell } from "@/components/Shell";
 import { StudentVoices } from "@/components/StudentVoices";
 
-export const metadata = { title: "Ce spun studenții — FindMyUni" };
+export const metadata = {
+  title: "Ce spun studenții — FindMyUni",
+  description: "Păreri reale ale studenților și absolvenților despre facultățile lor. Caută după facultate sau universitate.",
+};
 
 export default function Students() {
   return (

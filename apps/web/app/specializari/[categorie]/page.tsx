@@ -16,7 +16,9 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { categorie } = await params;
   const c = categories.find((x) => x.id === categorie);
-  return { title: c ? `${c.name} | FindMyUni` : "Specializări | FindMyUni" };
+  return c
+    ? { title: `${c.name}: domenii și specializări | FindMyUni`, description: `${c.short} Vezi domeniile de studiu, specializările și ce înveți în fiecare an.` }
+    : { title: "Specializări | FindMyUni" };
 }
 
 export default async function CategoryPage({ params }: Props) {

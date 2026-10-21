@@ -17,6 +17,7 @@ import { facultiesOf, facultyHref } from "@/lib/faculties";
 import { guideForCountry } from "@/lib/guides";
 import { ADMISSION_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, specializationsFor } from "@/lib/labels";
 import { roProgramsOf } from "@/lib/roPrograms";
+import { clip } from "@/lib/seo";
 import { universities, universityById } from "@/lib/sheets";
 
 type Props = { params: Promise<{ id: string }> };
@@ -28,7 +29,9 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const u = universityById(id);
-  return { title: u ? `${u.name} | FindMyUni` : "Universitate | FindMyUni" };
+  return u
+    ? { title: `${u.name}: admitere, costuri, programe | FindMyUni`, description: clip(`${u.city}, ${u.country}. ${u.about}`) }
+    : { title: "Universitate | FindMyUni" };
 }
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {

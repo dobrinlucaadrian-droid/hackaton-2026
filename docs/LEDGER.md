@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-22 16:10 — pregătire pentru Google
+- Cerut: ca paginile cu universități, facultăți și ghiduri să fie găsite mai ușor în Google
+- Făcut: `/sitemap.xml` cu toate paginile publice (1.277: paginile principale, categoriile, ghidurile, fișele de universități și de facultăți), generat din date; `/robots.txt`: pe site-ul public totul în afară de cont, administrare, conectare, rezultat și chestionar, iar pe linkurile de probă nimic; o singură adresă: pe site-ul public, www și vercel.app trimit (308) spre findmyuni.ro (`proxy.ts`, doar când `VERCEL_ENV=production`); titluri și descrieri pentru fișe (universitate: „admitere, costuri, programe”, cu orașul și descrierea), facultăți, categorii și paginile principale; titlul general „FindMyUni — alege facultatea potrivită”. Search Console rămâne pentru lansare (echipa face contul Google, Claude pune rândul de verificare în Cloudflare)
+- Fișiere: `apps/web/app/sitemap.ts`, `apps/web/app/robots.ts`, `apps/web/lib/seo.ts`, `apps/web/lib/seo.test.ts`, `apps/web/proxy.ts`, `apps/web/app/layout.tsx`, `apps/web/app/universitati/[id]/page.tsx`, `apps/web/app/universitati/[id]/[facultate]/page.tsx`, `apps/web/app/specializari/page.tsx`, `apps/web/app/specializari/[categorie]/page.tsx`, `apps/web/app/universitati/page.tsx`, `apps/web/app/studenti/page.tsx`
+- Poartă: TRECUT (gate.mjs); local: sitemap cu 1.277 adrese (una din 30 verificată, toate 200), robots blochează tot în afara site-ului public, titlurile și descrierile apar pe fișe
+- Urmează: la lansare, Google Search Console; redirecționarea se vede abia pe site-ul public
+
 ### 2026-10-21 03:40 — prima pagină: salut în locul butoanelor când ești conectat
 - Cerut: conectat, cele două butoane de pe prima pagină dispar; deconectarea din cont le aduce înapoi
 - Făcut: conectat, sub urare apare „👋 Bine ai revenit, <nume>!” în locul butonului mare „Contul meu” (contul rămâne în meniul de sus); „Deconectare” și ștergerea contului duc acum pe prima pagină (înainte ajungeai pe pagina de conectare, pentru că pagina contului trimitea acolo pe oricine nu mai e conectat)
@@ -82,7 +89,7 @@ lista de commit-uri de la final se reface singură.
 - Făcut: în Cloudflare, cele 4 înregistrări Resend (DKIM, `send`, `rsend`, `_dmarc`), verificarea Resend pornită (în așteptare), urmărirea clicurilor oprită; în Vercel, `findmyuni.ro` și `www.findmyuni.ro` adăugate la proiectul `unipath`, cu două CNAME în Cloudflare (fără proxy); Vercel le-a confirmat, ambele răspund cu 200 pe HTTPS și arată versiunea de pe `main`
 - Fișiere: `docs/productie.md`, `CLAUDE.md`
 - Poartă: NEVERIFICAT (doar documente schimbate; site-ul verificat direct pe ambele adrese)
-- Apoi: versiunea nouă (ramura `production`) publicată ca link de probă Vercel https://unipath-k2o89o4ha-william-b4f6.vercel.app (refăcut după salutul de pe prima pagină), cu baza de dezvoltare (setările de probă ale Vercel arată spre baza de producție, goală, așa că am dat adresa bazei de dezvoltare doar la această publicare); se vede doar cu contul Vercel; poarta TRECUT înainte; căutarea de programe merge
+- Apoi: versiunea nouă (ramura `production`) publicată ca link de probă Vercel https://unipath-3ed98w4je-william-b4f6.vercel.app (refăcut după pregătirea pentru Google), cu baza de dezvoltare (setările de probă ale Vercel arată spre baza de producție, goală, așa că am dat adresa bazei de dezvoltare doar la această publicare); se vede doar cu contul Vercel; poarta TRECUT înainte; căutarea de programe merge
 - Urmează: Resend să treacă pe Verified; echipa pune cheia Resend și `AUTH_EMAIL_FROM` în Convex
 
 ### 2026-10-20 02:10 — pregătire pentru producție: anti-robot la cont, ștergere automată, copii de rezervă, ghid
@@ -835,6 +842,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-21 03:24 `d99a168` feat: greet signed-in visitors on the home page, go home after sign-out
 - 2026-10-21 03:10 `3739afd` feat: favourite universities in the account, findmyuni.ro in link previews
 - 2026-10-21 02:32 `98a6891` feat: account card first on the result page
 - 2026-10-21 00:29 `72d63d0` feat: faster navigation, Frankfurt region, findmyuni.ro domain
@@ -864,5 +872,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-08 04:02 `ce1a3d5` ci: stop the secret scan from flagging programme identifiers in the catalogue data
 - 2026-10-08 03:56 `4e1429c` ci: print which rule and file each secret-scan finding is in
 - 2026-10-08 03:49 `2f23ae9` feat: catalogue for eleven countries, status report and home page totals
-- 2026-10-08 03:38 `2a332f4` feat: multi-country programme catalogue from official open datasets
 <!-- commits:end -->
