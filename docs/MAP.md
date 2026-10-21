@@ -127,7 +127,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/cont  (1 files)
 
-- `page.tsx` (262) — "Contul meu": shows who is signed in (username, name and email; the name can be changed) the saved questionnaire result and the favourite universities, a small link to "Datele mele", and lets the student sign out or delete the account.. Routes: /cont. Exports: AccountPage
+- `page.tsx` (267) — "Contul meu": shows who is signed in (username, name and email; the name can be changed) the saved questionnaire result and the favourite universities, a small link to "Datele mele", and lets the student sign out or delete the account.. Routes: /cont. Exports: AccountPage
 
 ### apps/web/app/ghiduri/[tara]  (1 files)
 
@@ -222,7 +222,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `UniversityOpinions.tsx` (32) — "Ce spun studenții" on a university sheet: the opinions about this university, including approved ones from the database. Renders nothing when there are none.. Exports: UniversityOpinions
 - `UniversitySearch.tsx` (430) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
 - `VisitTracker.tsx` (38) — Counts page views anonymously: sends only the page path and, on the first page of a visit, the country and the site the visitor came from. No cookie, no stored id.. Exports: VisitTracker
-- `WelcomeActions.tsx` (39) — The two choices under the welcome on the home page: make an account (opens the account window) or go on without one (scrolls to the big buttons). Signed-in visitors see "Contul meu" instead.. Exports: WelcomeActions
+- `WelcomeActions.tsx` (40) — The two choices under the welcome on the home page: make an account (opens the account window) or go on without one (scrolls to the big buttons). Signed-in visitors see a greeting with their name instead (the account is in the top menu).. Exports: WelcomeActions
 - `WelcomeDialog.tsx` (63) — Account window: opens over the current page when the home page's "Intră în cont" button or the result page's account card is pressed, with the account form (sign in, new account, forgotten password). It never opens by itself.. Exports: openSignIn, WelcomeDialog
 - `WhatIf.tsx` (69) — Collapsible "Ce-ar fi dacă?" panel: one slider per inclination, controlled by the result page.. Exports: WhatIf
 - `domainStyle.ts` (67) — Colour family and emoji for every study domain id, used on the result cards.. Exports: FAMILY_CLASSES, domainStyle

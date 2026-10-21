@@ -34,6 +34,7 @@ export default function AccountPage() {
   const [busy, setBusy] = useState(false);
   const [note, setNote] = useState<string | null>(null);
   const savedPending = useRef(false);
+  const leaving = useRef(false); // signing out or deleting: go home, not to the sign-in page
 
   // A result or a hearted university waiting from before the sign-in is saved once, as soon as the session is ready.
   useEffect(() => {
@@ -54,7 +55,7 @@ export default function AccountPage() {
   }, [isAuthenticated, save, addFavorite]);
 
   useEffect(() => {
-    if (!isLoading && !isAuthenticated) router.replace("/conectare");
+    if (!isLoading && !isAuthenticated && !leaving.current) router.replace("/conectare");
   }, [isLoading, isAuthenticated, router]);
 
   if (isLoading || !isAuthenticated || me === undefined) {
@@ -65,6 +66,7 @@ export default function AccountPage() {
     setBusy(true);
     try {
       await removeAccount({});
+      leaving.current = true;
       await signOut().catch(() => undefined);
       router.replace("/");
     } catch {
@@ -227,7 +229,10 @@ export default function AccountPage() {
         <div className="mt-4 flex flex-wrap gap-3">
           <button
             type="button"
-            onClick={() => void signOut().then(() => router.replace("/"))}
+            onClick={() => {
+              leaving.current = true;
+              void signOut().then(() => router.replace("/"));
+            }}
             className="min-h-11 rounded-full border-2 border-primary px-5 font-bold text-primary hover:bg-primary-tint"
           >
             Deconectare
