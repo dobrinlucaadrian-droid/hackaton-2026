@@ -2874,8 +2874,8 @@
         ],
         "about": "Universitate privată din București, cunoscută pentru facultatea de medicină și cea de medicină dentară, plus drept și psihologie. Poartă numele criticului Titu Maiorescu.",
         "prestige": "national",
-        "budget": "mediu",
-        "budgetNote": "Este universitate privată și plătești taxă de școlarizare; la programele cu laborator sau practică taxa este mai mare.",
+        "budget": "mic",
+        "budgetNote": "Este universitate privată și plătești taxă de școlarizare: la cele mai multe programe este mică, dar la medicină, medicină dentară și farmacie este mult mai mare.",
         "admissionTypes": [
             "examen",
             "bac"
@@ -2895,7 +2895,7 @@
             "Are cămine proprii în București"
         ],
         "cons": [
-            "Taxele sunt mari, mai ales la medicină",
+            "La medicină, medicină dentară și farmacie taxele sunt mult mai mari",
             "Diploma nu are același prestigiu ca la UMF-urile de stat",
             "La Medicină dai examen de admitere, ca la stat"
         ]
@@ -3120,8 +3120,8 @@
         ],
         "about": "Universitate privată din Arad, cunoscută pentru facultățile de medicină, medicină dentară și farmacie. Are și drept, economie și informatică.",
         "prestige": "national",
-        "budget": "mediu",
-        "budgetNote": "Taxele sunt mai ridicate decât la o facultate cu taxă mică, mai ales la medicină; întreabă ce rate sunt posibile.",
+        "budget": "mic",
+        "budgetNote": "Este universitate privată: la cele mai multe programe taxa este mică, dar la medicină este mult mai mare; întreabă ce rate sunt posibile.",
         "admissionTypes": [
             "examen",
             "bac",
@@ -3142,7 +3142,7 @@
             "Aproape de Timișoara și de granița cu Ungaria"
         ],
         "cons": [
-            "Taxele sunt mari, mai ales la medicină",
+            "La medicină taxele sunt mult mai mari",
             "Prestigiu mai mic decât al UMF-urilor de stat",
             "Oraș mic, cu oferta culturală restrânsă"
         ]
@@ -3165,7 +3165,7 @@
         ],
         "about": "Universitate privată din Iași, înființată în 1990, care se prezintă drept cea mai mare instituție privată de învățământ superior din Moldova. Are două facultăți: una de drept, economie, științe politice și administrative și una de psihologie, științele educației și asistență socială.",
         "prestige": "national",
-        "budget": "mic",
+        "budget": "mediu",
         "budgetNote": "Este universitate privată, deci plătești taxă; în general este mai mică decât în universitățile private din vestul Europei.",
         "admissionTypes": [
             "dosar",
@@ -4091,7 +4091,7 @@
         ],
         "about": "Universitate privată din Târgu Mureș, cu facultăți de medicină dentară, drept, științe economice, geografie și psihologie. Are propriul cămin studențesc.",
         "prestige": "national",
-        "budget": "mediu",
+        "budget": "mic",
         "budgetNote": "Taxa de școlarizare se plătește, în rate; nu există locuri la buget, iar medicina dentară costă mult mai mult decât celelalte programe.",
         "admissionTypes": [
             "bac",

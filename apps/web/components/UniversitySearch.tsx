@@ -4,7 +4,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { categories, domains } from "@/lib/data";
 import type { AdmissionType, Budget, CertificateId, Filters, Prestige, WorldUniversity } from "@/lib/types";
-import { ADMISSION_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, PRESTIGE_LABEL } from "@/lib/labels";
+import { ADMISSION_LABEL, BUDGET_EXPLAINED, BUDGET_RANGE, BUDGET_FILTER_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, PRESTIGE_LABEL } from "@/lib/labels";
 import { citiesIn, countries, filterUniversities, searchUniversities, searchWorld } from "@/lib/universities";
 import { SearchBox } from "./SearchBox";
 import { UniversityCard } from "./UniversityCard";
@@ -88,14 +88,18 @@ function Chip({ on, onClick, children }: { on: boolean; onClick: () => void; chi
   );
 }
 
-function Group({ title, children }: { title: string; children: React.ReactNode }) {
+function Group({ title, children, hint }: { title: string; children: React.ReactNode; hint?: React.ReactNode }) {
   return (
     <fieldset className="min-w-0">
       <legend className="text-sm font-extrabold uppercase tracking-wide text-primary">{title}</legend>
       <div className="mt-2 flex flex-wrap gap-2">{children}</div>
+      {hint && <div className="mt-2 text-sm text-ink-soft">{hint}</div>}
     </fieldset>
   );
 }
+
+/** How many universities the list shows at first and adds with each "Arată încă 10". */
+const PAGE = 10;
 
 export function UniversitySearch() {
   const router = useRouter();
@@ -141,15 +145,21 @@ export function UniversitySearch() {
     go(next);
   }
 
-  const results = useMemo(() => {
+  const matches = useMemo(() => {
     if (q) {
       const found = searchUniversities(q, 100);
       if (activeCount === 0) return found;
       const ok = new Set(filterUniversities(filters, 10000).map((u) => u.id));
       return found.filter((u) => ok.has(u.id));
     }
-    return filterUniversities(filters, 10);
+    return filterUniversities(filters, 10000);
   }, [q, filters, activeCount]);
+
+  // 10 at first, 10 more on each "Arată încă 10"; back to 10 whenever the search or the filters change.
+  const listKey = params.toString();
+  const [more, setMore] = useState({ key: listKey, count: PAGE });
+  const count = more.key === listKey ? more.count : PAGE;
+  const results = matches.slice(0, count);
 
   const wantWorld = q !== "" && activeCount === 0;
   useEffect(() => {
@@ -165,7 +175,7 @@ export function UniversitySearch() {
   const worldReady = wantWorld && world?.q === q;
   const worldFailed = worldReady && world?.failed === true;
   const worldItems = worldReady && world ? world.items : [];
-  const known = new Set(results.map((u) => u.name.toLowerCase()));
+  const known = new Set(matches.map((u) => u.name.toLowerCase()));
   // The world list is third-party data: only plain web links are shown.
   const worldShown = worldItems.filter((w) => /^https?:\/\//i.test(w.w) && !known.has(w.n.toLowerCase()));
 
@@ -189,7 +199,7 @@ export function UniversitySearch() {
   for (const c of chosenCities) chips.push({ key: `city-${c}`, label: `Oraș: ${c}`, remove: () => toggleCity(c) });
   if (filters.country) add("country", filters.country);
   if (filters.domainId) add("domainId", domains.find((d) => d.id === filters.domainId)?.name ?? filters.domainId);
-  if (filters.budget) add("budget", BUDGET_LABEL[filters.budget]);
+  if (filters.budget) add("budget", `Buget: ${BUDGET_FILTER_LABEL[filters.budget].toLowerCase()}`);
   if (filters.prestige) add("prestige", PRESTIGE_CHIP[filters.prestige]);
   if (filters.admissionType) add("admissionType", ADMISSION_LABEL[filters.admissionType]);
   if (filters.scholarships) add("scholarships", "Are burse");
@@ -295,10 +305,24 @@ export function UniversitySearch() {
             </button>
           </div>
 
-          <Group title="Buget (cel mult)">
-            {(Object.keys(BUDGET_LABEL) as Budget[]).map((b) => (
+          <Group
+            title="Cât poți plăti pe an?"
+            hint={
+              <>
+                <ul className="space-y-0.5">
+                  {(Object.keys(BUDGET_EXPLAINED) as Budget[]).map((b) => (
+                    <li key={b}>
+                      <span className="font-bold text-ink">{BUDGET_LABEL[b]} ({BUDGET_RANGE[b]}):</span> {BUDGET_EXPLAINED[b]}.
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-1">Sumele sunt doar taxa de școlarizare, fără cazare și masă, și sunt orientative; ce plătești la o universitate anume scrie pe fișa ei.</p>
+              </>
+            }
+          >
+            {(Object.keys(BUDGET_FILTER_LABEL) as Budget[]).map((b) => (
               <Chip key={b} on={filters.budget === b} onClick={() => toggle("budget", b, filters.budget)}>
-                {BUDGET_LABEL[b]}
+                {BUDGET_FILTER_LABEL[b]}
               </Chip>
             ))}
           </Group>
@@ -362,7 +386,7 @@ export function UniversitySearch() {
       <p className="mt-4 rounded-2xl bg-primary-tint p-3 text-sm text-primary-dark" role="note">{NOTE}</p>
 
       <h2 className="mt-6 text-2xl font-black tracking-tight text-ink" aria-live="polite">
-        {q ? `Rezultate pentru „${q}”` : "Top 10 universități pentru tine"}
+        {q ? `Rezultate pentru „${q}”` : "Universități pentru tine"}
       </h2>
 
       {results.length === 0 ? (
@@ -386,6 +410,18 @@ export function UniversitySearch() {
             </li>
           ))}
         </ol>
+      )}
+
+      {matches.length > results.length && (
+        <div className="mt-6 text-center">
+          <button
+            type="button"
+            onClick={() => setMore({ key: listKey, count: count + PAGE })}
+            className="min-h-12 rounded-full border-2 border-primary px-8 py-3 font-black text-primary hover:bg-primary-tint"
+          >
+            Arată încă 10
+          </button>
+        </div>
       )}
 
       {q && (

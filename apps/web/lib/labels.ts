@@ -14,6 +14,27 @@ export const BUDGET_LABEL: Record<Budget, string> = {
   mediu: "Taxă medie",
   mare: "Taxă mare",
 };
+/** The cost filter keeps everything up to the chosen level, so its buttons say so. */
+export const BUDGET_FILTER_LABEL: Record<Budget, string> = {
+  gratuit: "Fără taxă",
+  mic: "Până la o taxă mică",
+  mediu: "Până la o taxă medie",
+  mare: "Oricât",
+};
+/** The yearly tuition band of each cost level (tuition only), checked against official fee pages on 2026-10-22 (docs/taxe.md). */
+export const BUDGET_RANGE: Record<Budget, string> = {
+  gratuit: "0 €",
+  mic: "până la 2.000 €/an",
+  mediu: "2.000–6.000 €/an",
+  mare: "peste 6.000 €/an",
+};
+/** What each cost level means, with countries where most of our sheets have that level. */
+export const BUDGET_EXPLAINED: Record<Budget, string> = {
+  gratuit: "nu plătești taxă de școlarizare, de exemplu la universitățile de stat din România (pe locurile de la buget) sau în Germania și Danemarca",
+  mic: "de exemplu universitățile de stat din Franța, Italia sau Spania",
+  mediu: "de exemplu multe universități din Olanda, Irlanda sau Lituania",
+  mare: "de exemplu în Marea Britanie, SUA sau Canada",
+};
 export const ADMISSION_LABEL: Record<AdmissionType, string> = {
   examen: "Examen de admitere",
   bac: "Media de la bacalaureat",

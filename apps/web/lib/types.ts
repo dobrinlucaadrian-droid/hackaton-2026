@@ -128,7 +128,7 @@ export type Category = {
 /** An entry of the world list (name, country, website only), used for search. */
 export type WorldUniversity = { n: string; c: string; w: string };
 
-/** Filters for the "top 10" search; an absent field means "any". */
+/** Filters for the university search; an absent field means "any". */
 export type Filters = {
   country?: string; // exact `country` value
   region?: "ro" | "abroad";

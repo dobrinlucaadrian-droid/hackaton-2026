@@ -187,7 +187,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/universitati  (1 files)
 
-- `page.tsx` (29) — University finder page: search box, filters and top 10 results (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
+- `page.tsx` (29) — University finder page: search box, filters and the results, 10 at a time (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
 
 ### apps/web/components  (39 files)
 
@@ -224,7 +224,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `UniversityDomains.tsx` (87) — "Ce poți studia aici" on a university sheet: tapping a domain opens, on the same page, its specializations and the subjects per year.. Exports: UniversityDomains
 - `UniversityList.tsx` (48) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList
 - `UniversityOpinions.tsx` (32) — "Ce spun studenții" on a university sheet: the opinions about this university, including approved ones from the database. Renders nothing when there are none.. Exports: UniversityOpinions
-- `UniversitySearch.tsx` (430) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
+- `UniversitySearch.tsx` (466) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
 - `VisitTracker.tsx` (38) — Counts page views anonymously: sends only the page path and, on the first page of a visit, the country and the site the visitor came from. No cookie, no stored id.. Exports: VisitTracker
 - `WelcomeActions.tsx` (40) — The two choices under the welcome on the home page: make an account (opens the account window) or go on without one (scrolls to the big buttons). Signed-in visitors see a greeting with their name instead (the account is in the top menu).. Exports: WelcomeActions
 - `WelcomeDialog.tsx` (63) — Account window: opens over the current page when the home page's "Intră în cont" button or the result page's account card is pressed, with the account form (sign in, new account, forgotten password). It never opens by itself.. Exports: openSignIn, WelcomeDialog
@@ -340,7 +340,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `faculties.ts` (24) — Profile sheets of Romanian faculties (data/faculties-ro.json) and the address of each one. Used on the server: by the faculty page and by the university page, which links to them.. Exports: faculties, facultySlug, facultyHref, facultiesOf, facultyBySlug
 - `guides.test.ts` (61) — Tests the country guides: complete texts, a country that has university sheets, official links, and no amounts or calendar dates (they change every year).
 - `guides.ts` (15) — Country guides ("how a Romanian student applies to bachelor studies in ..."), written from official pages and checked twice. Small: pages may import it freely.. Exports: guides, guideById, guideForCountry
-- `labels.ts` (56) — Romanian labels for the values on a university sheet, plus two small helpers every list uses. Kept apart from the university data so pages can use the labels without loading the sheets.. Exports: PRESTIGE_LABEL, BUDGET_LABEL, ADMISSION_LABEL, CERTIFICATE_LABEL, normalize, counted, specializationsFor
+- `labels.ts` (77) — Romanian labels for the values on a university sheet, plus two small helpers every list uses. Kept apart from the university data so pages can use the labels without loading the sheets.. Exports: PRESTIGE_LABEL, BUDGET_LABEL, BUDGET_FILTER_LABEL, BUDGET_RANGE, BUDGET_EXPLAINED, ADMISSION_LABEL, CERTIFICATE_LABEL, normalize, …
 - `match.test.ts` (267) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
 - `match.ts` (178) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: matchDomains, studentTraits, matchByTraits
 - `name.ts` (12) — The one rule for a person's full name, used by the sign-in form, the account page and the server.. Exports: NAME_MAX, cleanName

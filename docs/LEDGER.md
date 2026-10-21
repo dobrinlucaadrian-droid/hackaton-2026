@@ -21,6 +21,27 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-22 19:30 — intervale de taxă în euro, verificate pe surse oficiale
+- Cerut: intervale de sume în euro pentru fiecare nivel de taxă
+- Făcut: pragurile echipei (taxa de școlarizare pe an, fără cazare și masă): fără taxă 0 €, mică până la 2.000 €, medie 2.000–6.000 €, mare peste 6.000 €; scrise sub butoanele filtrului. Șase agenți au căutat taxele pe pagini oficiale: 436 din 751 fișe confirmate, 315 neverificate (porția de căutări terminată, site-uri care refuză), lăsate cum erau. 12 niveluri schimbate cu aprobarea echipei (ETH, EPFL, UZH → medie; St. Gallen, Lugano → mare; LUMSA → medie; AGH → medie; EAMT → mică; Titu Maiorescu, Vasile Goldiș, Dimitrie Cantemir → mică; Petre Andrei → medie), cu textele de cost de pe fișe potrivite noului nivel; 18 propuneri nesigure nefăcute. Metoda, schimbările și lista pentru a doua rundă: `docs/taxe.md`
+- Fișiere: `apps/web/data/universities-ro.json`, `apps/web/data/universities-abroad.json`, `apps/web/data/universities-index.json`, `apps/web/lib/labels.ts`, `apps/web/components/UniversitySearch.tsx`, `docs/taxe.md`
+- Poartă: TRECUT (gate.mjs); local: intervalele apar în filtru, fișa Titu Maiorescu arată „Taxă mică” și noul text
+- Urmează: a doua rundă pentru cele 315 fișe neverificate, când se reface porția de căutări
+
+### 2026-10-22 17:40 — explicația nivelurilor de taxă
+- Cerut: să scrie cam în ce buget se încadrează fiecare nivel; „Nimic (doar fără taxă)” → „Fără taxă”
+- Făcut: nivelurile din date au fost puse comparând universitățile, nu după sume (unele fișe notează că nivelul nu a fost comparat în bani), așa că echipa a ales explicația în cuvinte, fără sume: sub butoane, câte un rând pe nivel cu țările unde cele mai multe fișe au acel nivel (fără taxă: stat România pe buget, Germania, Danemarca; mică: Franța, Italia, Spania; medie: Olanda, Irlanda, Lituania; mare: Marea Britanie, SUA, Canada) și „Nivelurile sunt orientative; ce plătești la o universitate anume scrie pe fișa ei” (toate fișele au nota de cost)
+- Fișiere: `apps/web/lib/labels.ts`, `apps/web/components/UniversitySearch.tsx`
+- Poartă: TRECUT (gate.mjs); văzut local în panoul „Mai multe filtre”
+- Urmează: dacă vreți sume în euro, praguri stabilite de echipă și verificarea tuturor fișelor față de ele
+
+### 2026-10-22 17:10 — filtrul de taxă mai clar și „Arată încă 10”
+- Cerut: cine alege „taxă mare” să vadă și universitățile cu taxă medie, mică sau fără taxă; deci mai mult de 10 rezultate
+- Făcut: filtrul păstra deja tot ce e mai ieftin, dar butoanele („Taxă mare”) și limita de 10 (sortate după prestigiu, primele erau scumpe) ascundeau asta. Grupul se numește acum „Cât poți plăti pe an?”, cu „Nimic (doar fără taxă)”, „Până la o taxă mică”, „Până la o taxă medie”, „Oricât”; eticheta filtrului activ: „Buget: …”; sub listă, „Arată încă 10” (revine la 10 când se schimbă căutarea sau filtrele), fără număr total afișat; titlul „Universități pentru tine”. Ordinea a rămas: prestigiu, apoi taxa mai mică
+- Fișiere: `apps/web/components/UniversitySearch.tsx`, `apps/web/lib/labels.ts`, `apps/web/app/universitati/page.tsx`, `apps/web/lib/types.ts`
+- Poartă: TRECUT (gate.mjs); local: „Oricât” → primele 10 (8 mari, 2 mici), după 6 apăsări 70 (21 mari, 2 mici, 47 fără taxă); „Până la o taxă mică” → doar mici și fără taxă, câte 10
+- Urmează: echipa încearcă pe linkul de probă
+
 ### 2026-10-22 16:40 — pagini de eroare prietenoase
 - Cerut: când se strică ceva, elevul să vadă un mesaj simplu, nu un ecran alb; machetele arătate înainte, echipa a ales a doua idee fără scurtăturile de jos
 - Făcut: `app/error.tsx`: antetul site-ului, desenul cu tocul și drumul întrerupt, „Ups, drumul s-a întrerupt aici”, „nu e vina ta” și butonul „Încearcă din nou”; nimic tehnic pe ecran. `app/global-error.tsx` pentru cazul rar în care nu pornește tot site-ul: pagină simplă cu culorile ei. Pagina „Nu am găsit pagina” a rămas cum era
@@ -96,7 +117,7 @@ lista de commit-uri de la final se reface singură.
 - Făcut: în Cloudflare, cele 4 înregistrări Resend (DKIM, `send`, `rsend`, `_dmarc`), verificarea Resend pornită (în așteptare), urmărirea clicurilor oprită; în Vercel, `findmyuni.ro` și `www.findmyuni.ro` adăugate la proiectul `unipath`, cu două CNAME în Cloudflare (fără proxy); Vercel le-a confirmat, ambele răspund cu 200 pe HTTPS și arată versiunea de pe `main`
 - Fișiere: `docs/productie.md`, `CLAUDE.md`
 - Poartă: NEVERIFICAT (doar documente schimbate; site-ul verificat direct pe ambele adrese)
-- Apoi: versiunea nouă (ramura `production`) publicată ca link de probă Vercel https://unipath-dg1t5otmj-william-b4f6.vercel.app (refăcut după paginile de eroare), cu baza de dezvoltare (setările de probă ale Vercel arată spre baza de producție, goală, așa că am dat adresa bazei de dezvoltare doar la această publicare); se vede doar cu contul Vercel; poarta TRECUT înainte; căutarea de programe merge
+- Apoi: versiunea nouă (ramura `production`) publicată ca link de probă Vercel https://unipath-g7akj4s3j-william-b4f6.vercel.app (refăcut după intervalele de taxă), cu baza de dezvoltare (setările de probă ale Vercel arată spre baza de producție, goală, așa că am dat adresa bazei de dezvoltare doar la această publicare); se vede doar cu contul Vercel; poarta TRECUT înainte; căutarea de programe merge
 - Urmează: Resend să treacă pe Verified; echipa pune cheia Resend și `AUTH_EMAIL_FROM` în Convex
 
 ### 2026-10-20 02:10 — pregătire pentru producție: anti-robot la cont, ștergere automată, copii de rezervă, ghid
@@ -849,6 +870,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-21 16:19 `091c093` feat: friendly error pages with the broken-road drawing
 - 2026-10-21 16:09 `c6c72c5` feat: sitemap, robots rules, one official address and page descriptions
 - 2026-10-21 03:24 `d99a168` feat: greet signed-in visitors on the home page, go home after sign-out
 - 2026-10-21 03:10 `3739afd` feat: favourite universities in the account, findmyuni.ro in link previews
@@ -878,5 +900,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-09 02:55 `17842ce` feat: admin statistics panel, anonymous usage counters and home tile
 - 2026-10-08 23:46 `6cf706f` feat: completeness pass on the catalogue: Spain nationwide, France 2026, cleanups
 - 2026-10-08 04:02 `ce1a3d5` ci: stop the secret scan from flagging programme identifiers in the catalogue data
-- 2026-10-08 03:56 `4e1429c` ci: print which rule and file each secret-scan finding is in
 <!-- commits:end -->

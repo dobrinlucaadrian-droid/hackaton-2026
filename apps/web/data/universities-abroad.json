@@ -2275,8 +2275,8 @@
   "tuition": "taxă mai mare pentru studenții veniți din străinătate (inclusiv din UE) decât pentru cei din Elveția",
   "about": "Universitate tehnică de top din Elveția, apreciată în toată lumea pentru științe, inginerie, matematică și informatică.",
   "prestige": "top",
-  "budget": "mic",
-  "budgetNote": "Taxa de școlarizare este mică în comparație cu alte țări, dar studenții internaționali plătesc mai mult decât cei elvețieni, iar viața în Elveția este foarte scumpă.",
+  "budget": "mediu",
+  "budgetNote": "Studenții veniți din străinătate plătesc pe semestru de trei ori mai mult decât cei elvețieni, iar viața în Elveția este foarte scumpă.",
   "admissionTypes": [
    "dosar",
    "examen"
@@ -2324,8 +2324,8 @@
   "tuition": "taxă mai mare pentru studenții veniți din străinătate (inclusiv din UE) decât pentru cei din Elveția",
   "about": "Universitate tehnică de top din Lausanne, cunoscută pentru inginerie, științe și informatică. Campusul este lângă Lacul Geneva.",
   "prestige": "top",
-  "budget": "mic",
-  "budgetNote": "Taxa de școlarizare este mică în comparație cu alte țări, dar studenții internaționali plătesc mai mult decât cei elvețieni, iar viața în Elveția este foarte scumpă.",
+  "budget": "mediu",
+  "budgetNote": "Studenții veniți din străinătate plătesc pe semestru de trei ori mai mult decât cei elvețieni, iar viața în Elveția este foarte scumpă.",
   "admissionTypes": [
    "dosar"
   ],
@@ -9392,7 +9392,7 @@
   "tuition": "fără taxă de școlarizare pentru cetățenii UE la programele cu frecvență în poloneză; programele în engleză au taxă pe semestru",
   "about": "Universitate tehnică publică din Cracovia, pornită ca școală de minerit și metalurgie și cunoscută azi pentru inginerie, informatică, energie și materiale. Pentru candidații străini are câteva programe de licență, printre care informatică, inginerie mecanică și mecatronică.",
   "prestige": "international",
-  "budget": "mic",
+  "budget": "mediu",
   "budgetNote": "Cetățenii UE nu plătesc taxă la programele cu frecvență în poloneză; scutirea nu acoperă programele în engleză, unde se plătește o taxă pe semestru, care diferă mult de la un program la altul (cea mai mare este la informatică).",
   "admissionTypes": [
    "dosar"
@@ -14826,8 +14826,8 @@
   "tuition": "taxă mică pe semestru, la care studenții străini plătesc un supliment la licență",
   "about": "Cea mai mare universitate din Elveția, cu facultăți de drept, economie, medicină, științe, litere și teologie. Licențele se țin în principal în germană.",
   "prestige": "international",
-  "budget": "mic",
-  "budgetNote": "Taxa de școlarizare este mică față de alte țări, dar studenții străini plătesc un supliment pe semestru, iar viața în Zürich este foarte scumpă.",
+  "budget": "mediu",
+  "budgetNote": "Studenții cu diploma de liceu din străinătate plătesc, pe lângă taxa obișnuită, un supliment pe semestru, iar viața în Zürich este foarte scumpă.",
   "admissionTypes": [
    "dosar"
   ],
@@ -14842,7 +14842,6 @@
   ],
   "pros": [
    "Universitate mare, cu ofertă foarte largă de domenii",
-   "Taxă de școlarizare mică",
    "Zürich oferă multe locuri de practică și de muncă"
   ],
   "cons": [
@@ -14932,7 +14931,7 @@
   "tuition": "taxă pe semestru mai mare pentru studenții care nu locuiau în Elveția la terminarea liceului",
   "about": "Universitate mică din partea italiană a Elveției, cu licențe în arhitectură, comunicare, economie, informatică, știința datelor, medicină, limba italiană, filosofie și teologie.",
   "prestige": "national",
-  "budget": "mediu",
+  "budget": "mare",
   "budgetNote": "Studenții veniți din străinătate plătesc o taxă pe semestru vizibil mai mare decât cei din Elveția și decât la celelalte universități publice elvețiene; costul vieții în Lugano este și el ridicat.",
   "admissionTypes": [
    "dosar"
@@ -20967,7 +20966,7 @@
   "tuition": "universitate privată, cu taxă ridicată, pe trepte de venit",
   "about": "Universitate privată cu sedii la Roma și Palermo și un curs și la Taranto. Are licențe de economie, drept, științe politice, comunicare, psihologie, educație, asistență socială și mediere lingvistică.",
   "prestige": "national",
-  "budget": "mare",
+  "budget": "mediu",
   "budgetNote": "Taxa se stabilește pe trepte, după atestatul de venit al familiei (ISEE Università), și se poate plăti în patru rate; studenții internaționali care se preînscriu din timp au o taxă redusă.",
   "admissionTypes": [
    "examen",
@@ -30750,7 +30749,7 @@
   "tuition": "taxă pe semestru mai mare pentru studenții străini decât pentru cei elvețieni",
   "about": "Universitate publică din St. Gallen, axată pe business, economie, drept și relații internaționale, cu o licență mai nouă de informatică. Numărul studenților străini admiși este limitat prin lege.",
   "prestige": "national",
-  "budget": "mediu",
+  "budget": "mare",
   "budgetNote": "Studenții din afara Elveției plătesc pe semestru de aproximativ două ori și jumătate mai mult decât cei elvețieni; universitatea spune că taxele sunt mari pentru Elveția, dar costul vieții în St. Gallen este mai mic decât în Zürich.",
   "admissionTypes": [
    "test-standardizat",
@@ -32610,7 +32609,7 @@
   "tuition": "cu taxă pentru programele în engleză; studenții din UE au o taxă separată de cei din afara UE",
   "about": "Academie publică de muzică și teatru din Tallinn. Mai multe licențe de muzică se predau și în engleză, iar actoria, regia și dramaturgia se studiază doar în estonă.",
   "prestige": "national",
-  "budget": "mediu",
+  "budget": "mic",
   "budgetNote": "Programele în engleză sunt cu taxă, care diferă după program și după țara de origine (UE sau nu); studiile cu normă întreagă în estonă sunt gratuite. Se adaugă o taxă de aplicare.",
   "admissionTypes": [
    "aptitudini",
