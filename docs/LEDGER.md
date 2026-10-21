@@ -21,6 +21,20 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-22 23:30 — baza de producție pregătită
+- Cerut: pregătirea bazei de producție (pașii 1–4), cu aprobarea explicită a echipei pentru publicarea în producție
+- Făcut: `npx convex deploy` (funcțiile și tabelele în Production, indexurile noi pentru favorite și utilizatori); `node scripts/data/import.mjs --prod` (4.334 instituții, 107.155 programe); în Vercel, setările de producție `NEXT_PUBLIC_CONVEX_URL`, `NEXT_PUBLIC_CONVEX_SITE_URL` (baza de producție) și `NEXT_PUBLIC_TURNSTILE_SITE_KEY` (cheia publică reală). Site-ul public neschimbat
+- Fișiere: `docs/LEDGER.md`
+- Poartă: NEVERIFICAT (fără cod); verificat direct pe baza de producție: lista de programe a unei instituții (52) și căutarea „informatica” în România (40)
+- Urmează: datele operatorului, apoi lansarea (`production` → `main`, publicare pe findmyuni.ro, verificarea pe site); după lansare, catalogul scos din baza de dezvoltare
+
+### 2026-10-22 23:00 — pregătirea lansării, pasul 1 (conturi și chei)
+- Cerut: pașii de dinaintea lansării, ghidat pas cu pas
+- Făcut: echipa a cumpărat Convex Professional (un membru) cu alertă la 10 $ peste abonament (fără oprire); widgetul Turnstile „FindMyUni” exista deja în Cloudflare (adresa findmyuni.ro, mod Managed; www trimite oricum spre findmyuni.ro); cheia secretă pusă de echipă în Convex Production (`TURNSTILE_SECRET_KEY`), verificată la Cloudflare fără a fi afișată; în Production `ADMIN_EMAILS` = findmyuni.ro@gmail.com (în locul adresei vechi) și `SITE_URL` = https://findmyuni.ro (era o adresă veche de probă)
+- Fișiere: `docs/LEDGER.md`
+- Poartă: NEVERIFICAT (doar setări, niciun cod)
+- Urmează: grupa 4 (datele operatorului pe pagina de confidențialitate) de la echipă; apoi lansarea: funcțiile și catalogul în producție, setările Vercel de producție (cheia publică Turnstile), `main`, publicare și verificarea pe site
+
 ### 2026-10-22 21:30 — a doua verificare a taxelor
 - Cerut: reluarea verificării pentru fișele rămase neverificate, imediat
 - Făcut: șase agenți au reluat 333 de fișe (315 neverificate + 18 nesigure) deschizând direct paginile oficiale de taxe: acum 706 din 751 confirmate, 45 neverificate (site-uri blocate sau taxe nepublicate). 11 niveluri schimbate cu aprobarea echipei (Pisa, Humanitas, San Raffaele, LUM → medie; Gdańsk, Jagiellonă, Łódź, UEK, Wrocław → medie, programele în engleză; SSE Riga → medie; ISM Vilnius → mare), cu textele de cost potrivite; Hotelschool rămâne „mare” (decizia echipei); fișa Bournemouth corectată (reducerea pentru UE începe în 2027). Detalii în `docs/taxe.md`
@@ -877,6 +891,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-21 18:16 `c711921` feat: second fee check, 11 more levels corrected from official pages
 - 2026-10-21 17:39 `0a5d0cf` feat: clearer cost filter with euro bands, 10 more results, checked fees
 - 2026-10-21 16:19 `091c093` feat: friendly error pages with the broken-road drawing
 - 2026-10-21 16:09 `c6c72c5` feat: sitemap, robots rules, one official address and page descriptions
@@ -906,5 +921,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-09 03:59 `ceeef6b` feat: add 198 university profile sheets across 32 countries
 - 2026-10-09 02:55 `88b4621` feat: add 74 university profile sheets and link them to the catalogue
 - 2026-10-09 02:55 `17842ce` feat: admin statistics panel, anonymous usage counters and home tile
-- 2026-10-08 23:46 `6cf706f` feat: completeness pass on the catalogue: Spain nationwide, France 2026, cleanups
 <!-- commits:end -->
