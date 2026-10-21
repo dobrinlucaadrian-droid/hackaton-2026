@@ -1,4 +1,4 @@
-// Keeps a questionnaire result on this device while the student signs in or makes an account, so it can be saved to the account afterwards.
+// Keeps a questionnaire result or a hearted university on this device while the student signs in or makes an account, so it can be saved to the account afterwards.
 import type { StudyPlace } from "./types";
 
 export type PendingResult = {
@@ -16,6 +16,32 @@ export function setPendingResult(result: PendingResult): void {
     window.localStorage.setItem(KEY, JSON.stringify(result));
   } catch {
     // ignore: storage blocked
+  }
+}
+
+/** A university the student hearted before signing in; added to the favourites once the account is ready. */
+export type PendingFavorite = { universityId: string; name: string; place: string };
+
+const FAVORITE_KEY = "unipath-pending-favorite";
+
+export function setPendingFavorite(favorite: PendingFavorite): void {
+  try {
+    window.localStorage.setItem(FAVORITE_KEY, JSON.stringify(favorite));
+  } catch {
+    // ignore: storage blocked
+  }
+}
+
+export function takePendingFavorite(): PendingFavorite | null {
+  try {
+    const raw = window.localStorage.getItem(FAVORITE_KEY);
+    if (!raw) return null;
+    window.localStorage.removeItem(FAVORITE_KEY);
+    const f = JSON.parse(raw) as PendingFavorite;
+    if (typeof f?.universityId !== "string" || typeof f.name !== "string" || typeof f.place !== "string") return null;
+    return f;
+  } catch {
+    return null;
   }
 }
 

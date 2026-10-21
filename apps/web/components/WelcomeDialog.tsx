@@ -50,7 +50,7 @@ export function WelcomeDialog() {
           </button>
         </div>
         <p className="mt-2 text-ink-soft">
-          Intră cu numele de utilizator și parola sau fă-ți un cont nou. Contul e gratuit și îți păstrează rezultatul chestionarului.
+          Intră cu numele de utilizator și parola sau fă-ți un cont nou. Contul e gratuit și îți păstrează rezultatul chestionarului și universitățile favorite.
         </p>
         <SignInForm key={startWith} idPrefix="bun-venit-" startWith={startWith} />
         <button type="button" onClick={() => setShown(false)} className="mt-4 min-h-11 w-full font-bold text-primary underline underline-offset-2">

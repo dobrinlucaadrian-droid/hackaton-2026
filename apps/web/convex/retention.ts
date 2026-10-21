@@ -24,8 +24,9 @@ function dayAgo(now: number, days: number): string {
   return new Date(now - days * DAY).toISOString().slice(0, 10);
 }
 
-/** Deletes a user and everything Convex Auth keeps for them (sessions, refresh tokens, sign-in records, codes) and their saved result. */
+/** Deletes a user and everything Convex Auth keeps for them (sessions, refresh tokens, sign-in records, codes), their saved result and their favourite universities. */
 export async function deleteUserEverywhere(ctx: MutationCtx, userId: Id<"users">): Promise<void> {
+  for (const f of await ctx.db.query("favorites").withIndex("by_user", (q) => q.eq("userId", userId)).collect()) await ctx.db.delete(f._id);
   for (const r of await ctx.db.query("results").withIndex("by_user", (q) => q.eq("userId", userId)).collect()) await ctx.db.delete(r._id);
   for (const s of await ctx.db.query("authSessions").withIndex("userId", (q) => q.eq("userId", userId)).collect()) {
     for (const t of await ctx.db.query("authRefreshTokens").withIndex("sessionId", (q) => q.eq("sessionId", s._id)).collect()) await ctx.db.delete(t._id);

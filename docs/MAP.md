@@ -123,11 +123,11 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/cont/datele-mele  (1 files)
 
-- `page.tsx` (121) — "Datele mele": opened only from a small link in "Contul meu" or the privacy page, only when signed in; shows everything the site keeps about the account and lets the student download a copy (GDPR right of access and portability).. Routes: /cont/datele-mele. Exports: MyDataPage
+- `page.tsx` (135) — "Datele mele": opened only from a small link in "Contul meu" or the privacy page, only when signed in; shows everything the site keeps about the account and lets the student download a copy (GDPR right of access and portability).. Routes: /cont/datele-mele. Exports: MyDataPage
 
 ### apps/web/app/cont  (1 files)
 
-- `page.tsx` (219) — "Contul meu": shows who is signed in (username, name and email; the name can be changed) and the saved questionnaire result, a small link to "Datele mele", and lets the student sign out or delete the account.. Routes: /cont. Exports: AccountPage
+- `page.tsx` (262) — "Contul meu": shows who is signed in (username, name and email; the name can be changed) the saved questionnaire result and the favourite universities, a small link to "Datele mele", and lets the student sign out or delete the account.. Routes: /cont. Exports: AccountPage
 
 ### apps/web/app/ghiduri/[tara]  (1 files)
 
@@ -179,13 +179,13 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/universitati/[id]  (1 files)
 
-- `page.tsx` (326) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
+- `page.tsx` (330) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/universitati  (1 files)
 
 - `page.tsx` (26) — University finder page: search box, filters and top 10 results (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
 
-### apps/web/components  (38 files)
+### apps/web/components  (39 files)
 
 - `ActivitiesStep.tsx` (227) — Quiz step "Ce ai făcut până acum?": add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
 - `ActivitiesSummary.tsx` (33) — Read-only list of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
@@ -196,6 +196,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `DomainDetails.tsx` (53) — One study domain as a native <details>: summary with emoji, name, count and chevron; inside the short text, specializations, the subjects per year and a link to universities.. Exports: DomainDetails
 - `DomainPrograms.tsx` (66) — On a result card: real bachelor programmes of the matched study domain in Romania (in the student's chosen cities when there are any), and the other countries where the catalogue has some.. Exports: DomainPrograms, DomainAbroad
 - `FacultyPrograms.tsx` (24) — On a faculty sheet: the bachelor programmes of that faculty from the official list. Plain markup: the faculty page gives it the rows, read on the server.. Exports: FacultyPrograms
+- `FavoriteButton.tsx` (60) — The heart on a university sheet: adds the university to the student's favourites (shown in "Contul meu") or removes it; without an account it opens the account window and adds it once the student is signed in.. Exports: FavoriteButton
 - `GuideFinder.tsx` (56) — Country guides index body: a search box with a magnifier that filters the country tiles as you type (diacritics do not matter).. Exports: GuideFinder
 - `Illustrations.tsx` (88) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots and the start-page hero.. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene
 - `InterestPicker.tsx` (129) — "Ce îți place?": the student picks up to three interests and sees the specializations that fit them best, ranked, with links to universities.. Exports: InterestPicker
@@ -228,18 +229,18 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/convex/_generated  (5 files)
 
-- `api.d.ts` (76) — Generated `api` utility.
+- `api.d.ts` (78) — Generated `api` utility.
 - `api.js` (24) — Generated `api` utility.. Exports: api, internal, components
 - `dataModel.d.ts` (61) — Generated data model types.
 - `server.d.ts` (163) — Generated utilities for implementing server-side Convex query and mutation functions.
 - `server.js` (102) — Generated utilities for implementing server-side Convex query and mutation functions.. Exports: query, internalQuery, mutation, internalMutation, action, internalAction, httpAction, env
 
-### apps/web/convex  (22 files)
+### apps/web/convex  (24 files)
 
 - `access.test.ts` (218) — @vitest-environment edge-runtime
 - `access.ts` (34) — Shared access rules: every function that needs a signed-in user or an administrator is built from these wrappers, so the check cannot be forgotten.. Exports: userQuery, userMutation, adminQuery, adminMutation
 - `account.test.ts` (71) — @vitest-environment edge-runtime
-- `account.ts` (98) — The signed-in user's own account: who they are (username, name and email), a copy of everything saved about them, whether email codes can be sent, and deleting the account with everything saved in it.. Exports: me, usernameFree, setName, signInMethods, remove, exportMine
+- `account.ts` (100) — The signed-in user's own account: who they are (username, name and email), a copy of everything saved about them, whether email codes can be sent, and deleting the account with everything saved in it.. Exports: me, usernameFree, setName, signInMethods, remove, exportMine
 - `analytics.test.ts` (96) — @vitest-environment edge-runtime
 - `analytics.ts` (197) — Anonymous usage statistics: page views and finished questionnaires are counted without any name, cookie, IP address or visitor id; only administrators read the numbers.. Exports: trackVisit, recordQuizRun, overview
 - `auth.config.ts` (12) — Tells Convex which issuer signs the session tokens (this deployment itself, through Convex Auth).
@@ -249,12 +250,14 @@ _Open only the files listed here; a file's description is its first comment line
 - `catalog.ts` (109) — The catalogue of institutions and bachelor programmes from official national datasets: public, read-only queries the pages use to list and search.. Exports: programsOf, programsFor, searchPrograms, institutions
 - `convex.config.ts` (9) — Convex app setup: installs the rate-limiter component used by the public review form.
 - `crons.ts` (11) — Scheduled jobs: once a day, delete the data that is older than its keeping period (convex/retention.ts).
+- `favorites.test.ts` (64) — @vitest-environment edge-runtime
+- `favorites.ts` (53) — Favourite universities: each signed-in student can add, list and remove only their own, at most 30.. Exports: MAX_FAVORITES, mine, add, remove
 - `http.ts` (9) — HTTP routes of the Convex backend: only the ones Convex Auth needs for sign-in.
 - `results.ts` (77) — A student's saved questionnaire result: each signed-in user can save, read and delete only their own.. Exports: mine, save, remove
 - `retention.test.ts` (81) — @vitest-environment edge-runtime
-- `retention.ts` (96) — How long the site keeps each kind of data, and the daily clean-up that deletes what is older (GDPR storage limitation). The periods are the team's choice and are written on the privacy page; change them only together.. Exports: KEEP, deleteUserEverywhere, cleanup
+- `retention.ts` (97) — How long the site keeps each kind of data, and the daily clean-up that deletes what is older (GDPR storage limitation). The periods are the team's choice and are written on the privacy page; change them only together.. Exports: KEEP, deleteUserEverywhere, cleanup
 - `reviews.ts` (158) — Student reviews: anyone can read the approved ones and send a new one through the checked public form; only administrators see the queue, approve, reject or delete.. Exports: LIMITS, listApproved, listByState, moderate, remove, insertPending, insertLimited, submit
-- `schema.ts` (123) — Database tables for FindMyUni: users (from Convex Auth, plus a username and a server-written role), saved questionnaire results, student reviews, the catalogue of institutions and programmes, and anonymous usage statistics.. Exports: reviewState
+- `schema.ts` (134) — Database tables for FindMyUni: users (from Convex Auth, plus a username and a server-written role), saved questionnaire results, favourite universities, student reviews, the catalogue of institutions and programmes, and anonymous usage statistics.. Exports: reviewState
 - `tsconfig.json` (26) — JSON (invalid)
 - `turnstile.ts` (20) — Checks a Cloudflare Turnstile token (the "I am not a robot" box) with Cloudflare, on the server. Used by the review form, the sign-up and the forgotten-password step.. Exports: verifyTurnstile
 - `users.ts` (14) — Server-only lookups by username, used by the sign-in code: the email behind a username never leaves the server.. Exports: emailOfUsername
@@ -337,7 +340,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `match.test.ts` (267) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
 - `match.ts` (178) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: matchDomains, studentTraits, matchByTraits
 - `name.ts` (12) — The one rule for a person's full name, used by the sign-in form, the account page and the server.. Exports: NAME_MAX, cleanName
-- `pendingSave.ts` (34) — Keeps a questionnaire result on this device while the student signs in or makes an account, so it can be saved to the account afterwards.. Exports: setPendingResult, takePendingResult
+- `pendingSave.ts` (60) — Keeps a questionnaire result or a hearted university on this device while the student signs in or makes an account, so it can be saved to the account afterwards.. Exports: setPendingResult, setPendingFavorite, takePendingFavorite, takePendingResult
 - `roPrograms.test.ts` (29) — Tests the programme lists the Romanian sheets render on the server: every faculty sheet finds its programmes and the rows carry only what a page shows.
 - `roPrograms.ts` (24) — The Romanian bachelor programmes from the official list, read straight from the catalogue file so a sheet can show them without waiting for the database. Large: import it only from server code (the university and faculty pages) and from tests.. Exports: roProgramsOf, roProgramsOfFaculty
 - `session.ts` (117) — Keeps the student's answers (and optional activities with photos) in sessionStorage between pages (safe on the server).. Exports: MAX_CITIES, loadDraft, saveDraft, clearDraft, toAnswers, shrinkImage

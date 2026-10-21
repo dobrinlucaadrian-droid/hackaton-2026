@@ -1,5 +1,5 @@
 "use client";
-// "Contul meu": shows who is signed in (username, name and email; the name can be changed) and the saved questionnaire result, a small link to "Datele mele", and lets the student sign out or delete the account.
+// "Contul meu": shows who is signed in (username, name and email; the name can be changed) the saved questionnaire result and the favourite universities, a small link to "Datele mele", and lets the student sign out or delete the account.
 import { useAuthActions } from "@convex-dev/auth/react";
 import { useConvexAuth, useMutation, useQuery } from "convex/react";
 import Link from "next/link";
@@ -11,7 +11,7 @@ import { api } from "@/convex/_generated/api";
 import { cityList } from "@/lib/cities";
 import { domains, profiles } from "@/lib/data";
 import { cleanName } from "@/lib/name";
-import { takePendingResult } from "@/lib/pendingSave";
+import { takePendingFavorite, takePendingResult } from "@/lib/pendingSave";
 
 const WHERE_LABEL = { ro: "În România", abroad: "În străinătate", any: "Oriunde" } as const;
 
@@ -22,6 +22,9 @@ export default function AccountPage() {
   const me = useQuery(api.account.me, isAuthenticated ? {} : "skip");
   const result = useQuery(api.results.mine, isAuthenticated ? {} : "skip");
   const save = useMutation(api.results.save);
+  const favorites = useQuery(api.favorites.mine, isAuthenticated ? {} : "skip");
+  const addFavorite = useMutation(api.favorites.add);
+  const removeFavorite = useMutation(api.favorites.remove);
   const removeResult = useMutation(api.results.remove);
   const removeAccount = useMutation(api.account.remove);
   const setName = useMutation(api.account.setName);
@@ -32,17 +35,23 @@ export default function AccountPage() {
   const [note, setNote] = useState<string | null>(null);
   const savedPending = useRef(false);
 
-  // A result waiting from before the sign-in is saved once, as soon as the session is ready.
+  // A result or a hearted university waiting from before the sign-in is saved once, as soon as the session is ready.
   useEffect(() => {
     if (!isAuthenticated || savedPending.current) return;
     savedPending.current = true;
+    const favorite = takePendingFavorite();
+    if (favorite) {
+      addFavorite(favorite)
+        .then(() => setNote(`Am adăugat ${favorite.name} la favorite.`))
+        .catch(() => setNote("Nu am putut adăuga universitatea la favorite. Încearcă din nou de pe pagina ei."));
+    }
     const pending = takePendingResult();
     if (pending) {
       save(pending)
         .then(() => setNote("Am salvat rezultatul tău în cont."))
         .catch(() => setNote("Nu am putut salva rezultatul. Reia chestionarul și încearcă din nou."));
     }
-  }, [isAuthenticated, save]);
+  }, [isAuthenticated, save, addFavorite]);
 
   useEffect(() => {
     if (!isLoading && !isAuthenticated) router.replace("/conectare");
@@ -146,6 +155,40 @@ export default function AccountPage() {
         )}
       </section>
 
+      <section className="mt-6 rounded-3xl bg-card p-6 shadow-sm ring-1 ring-line" aria-labelledby="favorite">
+        <h2 id="favorite" className="text-2xl font-black tracking-tight text-ink">Universități favorite</h2>
+        {favorites === undefined ? (
+          <p className="mt-2 text-ink-soft">Se încarcă...</p>
+        ) : favorites.length === 0 ? (
+          <>
+            <p className="mt-2 text-ink-soft">Încă nu ai nicio universitate la favorite. Pe pagina unei universități, apasă „♡ Adaugă la favorite”.</p>
+            <Link href="/universitati" className="mt-4 inline-flex min-h-11 items-center rounded-full border-2 border-primary px-5 font-bold text-primary hover:bg-primary-tint">
+              Caută universități
+            </Link>
+          </>
+        ) : (
+          <ul className="mt-4 space-y-2" data-favorites>
+            {favorites.map((f) => (
+              <li key={f.universityId} className="flex items-center gap-3 rounded-2xl bg-paper px-4 py-3">
+                <span aria-hidden className="text-lg text-primary">♥</span>
+                <Link href={`/universitati/${f.universityId}`} className="min-w-0 flex-1">
+                  <span className="block font-extrabold text-ink underline decoration-primary/30 underline-offset-2">{f.name}</span>
+                  <span className="block text-sm text-ink-soft">{f.place}</span>
+                </Link>
+                <button
+                  type="button"
+                  onClick={() => void removeFavorite({ universityId: f.universityId })}
+                  aria-label={`Scoate ${f.name} de la favorite`}
+                  className="min-h-11 shrink-0 rounded-full px-3 text-sm font-bold text-ink-soft underline underline-offset-2 hover:text-primary-dark"
+                >
+                  Scoate
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
+
       <section className="mt-6 rounded-3xl bg-card p-6 shadow-sm ring-1 ring-line" aria-labelledby="cont-setari">
         <h2 id="cont-setari" className="text-2xl font-black tracking-tight text-ink">Cont</h2>
         <div className="mt-3" data-name-box>
@@ -201,7 +244,7 @@ export default function AccountPage() {
         {confirming && (
           <div className="mt-4 rounded-2xl bg-primary-tint p-4" role="alertdialog" aria-labelledby="sterge-titlu">
             <p id="sterge-titlu" className="font-extrabold text-primary-dark">Sigur vrei să ștergi contul?</p>
-            <p className="mt-1 text-sm text-primary-dark">Ștergem numele de utilizator, numele, adresa de email, parola și rezultatul salvat. Nu se poate anula.</p>
+            <p className="mt-1 text-sm text-primary-dark">Ștergem numele de utilizator, numele, adresa de email, parola, rezultatul salvat și universitățile favorite. Nu se poate anula.</p>
             <div className="mt-3 flex flex-wrap gap-3">
               <button type="button" disabled={busy} onClick={() => void deleteAccount()} className="min-h-11 rounded-full bg-primary px-5 font-black text-white hover:bg-primary-dark disabled:opacity-50">
                 {busy ? "Se șterge..." : "Da, șterge contul"}

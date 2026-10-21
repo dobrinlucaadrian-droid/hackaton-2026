@@ -15,6 +15,7 @@ import type * as auth from "../auth.js";
 import type * as authLimits from "../authLimits.js";
 import type * as catalog from "../catalog.js";
 import type * as crons from "../crons.js";
+import type * as favorites from "../favorites.js";
 import type * as http from "../http.js";
 import type * as results from "../results.js";
 import type * as retention from "../retention.js";
@@ -36,6 +37,7 @@ declare const fullApi: ApiFromModules<{
   authLimits: typeof authLimits;
   catalog: typeof catalog;
   crons: typeof crons;
+  favorites: typeof favorites;
   http: typeof http;
   results: typeof results;
   retention: typeof retention;

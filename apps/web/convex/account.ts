@@ -76,6 +76,7 @@ export const exportMine = query({
     const user = await ctx.db.get(userId);
     if (!user) return null;
     const result = await ctx.db.query("results").withIndex("by_user", (q) => q.eq("userId", userId)).first();
+    const favorites = await ctx.db.query("favorites").withIndex("by_user", (q) => q.eq("userId", userId)).order("desc").collect();
     const sessions = await ctx.db.query("authSessions").withIndex("userId", (q) => q.eq("userId", userId)).collect();
     return {
       exportat: new Date().toISOString(),
@@ -90,6 +91,7 @@ export const exportMine = query({
       rezultatSalvat: result
         ? { profil: result.profileId, unde: result.where, orase: result.cities ?? (result.city ? [result.city] : []), raspunsuri: result.choices, domenii: result.topDomains, salvat: new Date(result.savedAt).toISOString() }
         : null,
+      universitatiFavorite: favorites.map((f) => ({ universitate: f.name, loc: f.place, adaugat: new Date(f.addedAt).toISOString() })),
       sesiuniDeConectare: sessions.map((x) => ({ inceput: new Date(x._creationTime).toISOString(), expira: new Date(x.expirationTime).toISOString() })),
       parola: "păstrată doar ca amprentă (hash), nu poate fi citită",
     };

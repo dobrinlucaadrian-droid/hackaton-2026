@@ -13,7 +13,7 @@ Un atacator nu „sparge” de obicei site-ul, ci contul cuiva din echipă. Pent
 | GitHub | codul site-ului | 2FA; codurile de recuperare salvate; încă un om din echipă ca membru cu drepturi de administrator |
 | Vercel | găzduirea site-ului | 2FA; încă un membru în echipa Vercel |
 | Convex | baza de date | conectare prin GitHub (care are 2FA) sau 2FA proprie; încă un membru în echipa Convex |
-| Resend | trimite emailurile cu cod | 2FA; cheia API doar în setările Convex. Domeniul `findmyuni.ro` e adăugat (Irlanda), cu cele 4 înregistrări DNS puse în Cloudflare pe 2026-10-20; urmărirea clicurilor e oprită |
+| Resend | trimite emailurile cu cod | 2FA; cheia API doar în setările Convex. Domeniul `findmyuni.ro` e adăugat (Irlanda), cu cele 4 înregistrări DNS puse în Cloudflare pe 2026-10-20, verificat (Verified) pe 2026-10-21; urmărirea clicurilor e oprită; cheia (doar „Sending access”) e numai în Convex Production |
 | Romarg (domeniul findmyuni.ro, cumpărat pe 2026-10-20) | adresa site-ului | 2FA (are cod pe email la conectare); reînnoire automată pornită pe 5 ani; un al doilea om cu acces |
 | Cloudflare (DNS-ul lui findmyuni.ro, din 2026-10-20) | spune unde e site-ul și emailul; protecție la atacuri | 2FA; încă un membru; nameserverele `dax.ns.cloudflare.com` și `tia.ns.cloudflare.com` sunt puse la Romarg. Transferul complet al unui `.ro` la Cloudflare nu e posibil, domeniul rămâne plătit la Romarg. Site-ul: `findmyuni.ro` și `www` sunt CNAME spre Vercel, fără proxy (2026-10-21) |
 | Cloudflare (verificarea anti-robot) | căsuța „Nu sunt robot” | 2FA |

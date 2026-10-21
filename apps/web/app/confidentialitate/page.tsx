@@ -88,8 +88,8 @@ export default function PrivacyPage() {
         <div className="space-y-3">
           <Purpose
             title="1. Contul tău"
-            data={<>numele de utilizator, numele complet, adresa de email (confirmată cu un cod de 6 cifre), parola, dar doar ca o amprentă din care parola nu se poate afla (nici de noi), data la care ai confirmat emailul, datele tehnice ale conectării (când a început și până când e valabilă fiecare sesiune) și rezultatul chestionarului, dacă alegi să-l salvezi (profilul de liceu, răspunsurile, unde și în ce orașe vrei să studiezi și cele trei domenii potrivite).</>}
-            why="ca să te poți conecta, să-ți păstrăm rezultatul, să-ți trimitem codul de confirmare și codul pentru o parolă nouă dacă ți-ai uitat-o."
+            data={<>numele de utilizator, numele complet, adresa de email (confirmată cu un cod de 6 cifre), parola, dar doar ca o amprentă din care parola nu se poate afla (nici de noi), data la care ai confirmat emailul, datele tehnice ale conectării (când a început și până când e valabilă fiecare sesiune) și rezultatul chestionarului, dacă alegi să-l salvezi (profilul de liceu, răspunsurile, unde și în ce orașe vrei să studiezi și cele trei domenii potrivite) și universitățile pe care le pui la favorite (numele, orașul și țara lor și data).</>}
+            why="ca să te poți conecta, să-ți păstrăm rezultatul și universitățile favorite, să-ți trimitem codul de confirmare și codul pentru o parolă nouă dacă ți-ai uitat-o."
             basis="executarea contractului dintre noi, adică serviciul pe care îl ceri când îți faci cont (GDPR, art. 6 alin. 1 lit. b)."
           />
           <Purpose
@@ -116,7 +116,7 @@ export default function PrivacyPage() {
 
       <Block title="Cât timp păstrăm datele">
         <List>
-          <li><span className="font-bold text-ink">Contul și rezultatul salvat:</span> până ștergi contul. Rezultatul îl poți șterge și separat, oricând. Un cont al cărui email nu a fost confirmat cu codul se șterge automat după 7 zile.</li>
+          <li><span className="font-bold text-ink">Contul, rezultatul salvat și favoritele:</span> până ștergi contul. Rezultatul și fiecare universitate favorită le poți șterge și separat, oricând. Un cont al cărui email nu a fost confirmat cu codul se șterge automat după 7 zile.</li>
           <li><span className="font-bold text-ink">Sesiunea de conectare:</span> nu mai este valabilă după cel mult 30 de zile; datele ei se șterg odată cu contul.</li>
           <li><span className="font-bold text-ink">Codul de 6 cifre din email:</span> poate fi folosit doar 15 minute.</li>
           <li><span className="font-bold text-ink">Părerile:</span> cele aprobate rămân pe site până ne ceri să le scoatem. Cele respinse se șterg automat după 30 de zile de la decizie, iar cele pe care nu le-a citit nimeni, după 90 de zile.</li>
@@ -152,7 +152,7 @@ export default function PrivacyPage() {
           <li><span className="font-bold text-ink">să afli ce date avem despre tine și să primești o copie</span> — dacă ai cont, deschide pagina <Link href="/cont/datele-mele" className={link}>Datele mele</Link> (din „Contul meu”): vezi tot ce păstrăm despre contul tău și poți descărca o copie;</li>
           <li><span className="font-bold text-ink">să iei datele cu tine</span> (portabilitate) — fișierul de mai sus poate fi citit și de alte programe;</li>
           <li><span className="font-bold text-ink">să corectezi datele</span> — numele îl schimbi singur din „Contul meu”; pentru restul, scrie-ne;</li>
-          <li><span className="font-bold text-ink">să ștergi datele</span> — din „Contul meu” ștergi rezultatul sau tot contul (nu se poate anula); pentru o părere, scrie-ne;</li>
+          <li><span className="font-bold text-ink">să ștergi datele</span> — din „Contul meu” ștergi rezultatul, o universitate favorită sau tot contul (nu se poate anula); pentru o părere, scrie-ne;</li>
           <li><span className="font-bold text-ink">să ceri să nu mai folosim datele o vreme</span> (restricționare), de exemplu cât verificăm o corectură;</li>
           <li><span className="font-bold text-ink">să te opui</span> folosirii datelor pe baza interesului nostru legitim (statistici, siguranță);</li>
           <li><span className="font-bold text-ink">să îți retragi consimțământul</span> pentru o părere publicată, oricând; ce am făcut înainte rămâne legal;</li>
@@ -195,7 +195,7 @@ export default function PrivacyPage() {
         <List>
           <li><span className="font-bold text-ink">Două cookie-uri de conectare</span>, doar cât ești conectat, ca site-ul să știe că ești tu. Paginile nu le pot citi (sunt „httpOnly”) și se șterg când te deconectezi sau când închizi browserul. În spațiul de stocare al browserului („localStorage”) stă și o copie a cheii de conectare, care se șterge la deconectare.</li>
           <li><span className="font-bold text-ink">Chestionarul în lucru</span> (răspunsurile, activitățile, pozele) stă în fila browserului („sessionStorage”) și dispare când o închizi. Tot acolo ținem minte dacă rezultatul a fost deja numărat, ca să nu-l numărăm de două ori.</li>
-          <li><span className="font-bold text-ink">Rezultatul de salvat:</span> dacă apeși „Salvează în contul meu” înainte să te conectezi, rezultatul stă în browser până termini conectarea, apoi e șters de acolo.</li>
+          <li><span className="font-bold text-ink">Rezultatul de salvat:</span> dacă apeși „Salvează în contul meu” înainte să te conectezi, rezultatul stă în browser până termini conectarea, apoi e șters de acolo. La fel o universitate pe care o pui la favorite înainte să te conectezi.</li>
           <li><span className="font-bold text-ink">Verificarea anti-robot</span> de la formularul de păreri se încarcă de la Cloudflare doar pe pagina formularului. Cloudflare primește adresa IP și câteva date tehnice despre browser, strict necesare ca să deosebească oamenii de roboți. Dacă pune și cookie-uri tehnice este încă de verificat.</li>
         </List>
         <p>Pentru că acestea sunt strict necesare, nu îți cerem acordul pentru ele.</p>

@@ -13,6 +13,7 @@ const WHERE_LABEL: Record<string, string> = { ro: "În România", abroad: "În s
 type Copy = {
   exportat: string;
   cont: { numeUtilizator: string | null; numeComplet: string | null; email: string | null; emailConfirmat: string | null; creat: string; administrator: boolean };
+  universitatiFavorite?: { universitate: string; loc: string; adaugat: string }[];
   rezultatSalvat: { profil: string; unde: string; orase: string[]; raspunsuri: Record<string, number>; domenii: string[]; salvat: string } | null;
   sesiuniDeConectare: { inceput: string; expira: string }[];
   parola: string;
@@ -90,6 +91,19 @@ export default function MyDataPage() {
           </dl>
         ) : (
           <p className="mt-2 text-ink-soft">Nu ai salvat niciun rezultat.</p>
+        )}
+      </section>
+
+      <section className="mt-4 rounded-3xl bg-card p-5 shadow-sm ring-1 ring-line">
+        <h2 className="text-xl font-black text-ink">Universități favorite</h2>
+        {copy.universitatiFavorite?.length ? (
+          <ul className="mt-2 space-y-1 text-sm text-ink">
+            {copy.universitatiFavorite.map((f) => (
+              <li key={f.universitate + f.adaugat}>{f.universitate} ({f.loc}) · adăugată pe {day(f.adaugat)}</li>
+            ))}
+          </ul>
+        ) : (
+          <p className="mt-2 text-ink-soft">Nu ai nicio universitate la favorite.</p>
         )}
       </section>
 

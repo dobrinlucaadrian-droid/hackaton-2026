@@ -23,7 +23,7 @@ const description =
 
 // The icons and the link-preview image (the team logo) come from icon.png, apple-icon.png, favicon.ico and opengraph-image.png in this folder.
 export const metadata: Metadata = {
-  metadataBase: new URL("https://unipath-taupe-mu.vercel.app"),
+  metadataBase: new URL("https://findmyuni.ro"),
   title: "FindMyUni",
   description,
   openGraph: { title: "FindMyUni", description, siteName: "FindMyUni", locale: "ro_RO", type: "website", url: "/" },

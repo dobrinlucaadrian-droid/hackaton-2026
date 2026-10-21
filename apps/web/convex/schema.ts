@@ -1,4 +1,4 @@
-// Database tables for FindMyUni: users (from Convex Auth, plus a username and a server-written role), saved questionnaire results, student reviews, the catalogue of institutions and programmes, and anonymous usage statistics.
+// Database tables for FindMyUni: users (from Convex Auth, plus a username and a server-written role), saved questionnaire results, favourite universities, student reviews, the catalogue of institutions and programmes, and anonymous usage statistics.
 import { authTables } from "@convex-dev/auth/server";
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
@@ -35,6 +35,17 @@ export default defineSchema({
     topDomains: v.array(v.string()), // the three domain ids shown to the student
     savedAt: v.number(),
   }).index("by_user", ["userId"]),
+
+  // Universities a student marked with the heart on their sheet, listed in "Contul meu" (at most 30 per student).
+  favorites: defineTable({
+    userId: v.id("users"),
+    universityId: v.string(), // id of the university sheet (/universitati/<id>)
+    name: v.string(), // copied from the sheet when added, so the account page needs no university data
+    place: v.string(), // "city, country"
+    addedAt: v.number(),
+  })
+    .index("by_user", ["userId", "addedAt"])
+    .index("by_user_university", ["userId", "universityId"]),
 
   // Institutions from official or openly licensed national datasets (scripts/data/CONTRACT.md). Loaded with scripts/data/import.mjs, never written by users.
   institutions: defineTable({

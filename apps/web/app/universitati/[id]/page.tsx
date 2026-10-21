@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { FavoriteButton } from "@/components/FavoriteButton";
 import { OfficialPrograms } from "@/components/OfficialPrograms";
 import { ProgramGroups } from "@/components/ProgramGroups";
 import { Shell } from "@/components/Shell";
@@ -104,6 +105,9 @@ export default async function UniversityPage({ params }: Props) {
           <div className="mt-3 flex flex-wrap gap-2">
             <PrestigeBadge prestige={u.prestige} />
             <BudgetBadge budget={u.budget} />
+          </div>
+          <div className="mt-4">
+            <FavoriteButton university={{ universityId: u.id, name: u.name, place: `${u.city}, ${u.country}` }} />
           </div>
           {u.about && <p className="mt-4 text-lg text-ink">{u.about}</p>}
           {guide && (

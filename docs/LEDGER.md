@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-21 03:15 — universități favorite și adresa findmyuni.ro în linkuri
+- Cerut: (1) adresa nouă peste tot; (5) universități favorite, cu inimioară pe fișa universității, afișate în „Contul meu”
+- Făcut: (1) `metadataBase` = https://findmyuni.ro (previzualizările pe WhatsApp/Facebook arată adresa nouă) și textul imaginii de previzualizare „Logoul FindMyUni” (era „UniPath”). (5) tabel nou `favorites` (cel mult 30 pe elev, doar ale lui, fără dubluri) în `convex/favorites.ts`; butonul „♡ Adaugă la favorite” / „♥ La favorite” pe fișa universității; fără cont deschide fereastra de cont pe „cont nou”, iar universitatea se adaugă singură după conectare; în „Contul meu”, secțiunea „Universități favorite” (nume, oraș, țară, link, „Scoate”); favoritele apar în „Datele mele” și în copia descărcată, se șterg odată cu contul; pagina de confidențialitate le pomenește
+- Fișiere: `apps/web/convex/favorites.ts`, `apps/web/convex/favorites.test.ts`, `apps/web/convex/schema.ts`, `apps/web/convex/retention.ts`, `apps/web/convex/account.ts`, `apps/web/components/FavoriteButton.tsx`, `apps/web/components/WelcomeDialog.tsx`, `apps/web/lib/pendingSave.ts`, `apps/web/app/universitati/[id]/page.tsx`, `apps/web/app/cont/page.tsx`, `apps/web/app/cont/datele-mele/page.tsx`, `apps/web/app/confidentialitate/page.tsx`, `apps/web/app/layout.tsx`, `apps/web/app/opengraph-image.alt.txt`
+- Poartă: TRECUT (gate.mjs); parcurs local: inimioară fără cont → fereastra „Fă-ți un cont” → conectare cu contul de probă → „Am adăugat … la favorite” și lista în cont; inimioara cu cont pune și scoate; „Datele mele” arată favoritele
+- Urmează: echipa încearcă pe linkul de probă; funcțiile Convex noi sunt doar pe baza de dezvoltare
+
 ### 2026-10-21 03:20 — cardul de cont primul pe pagina de rezultat
 - Cerut: recomandarea de cont să fie la începutul paginii, imediat după terminarea chestionarului
 - Făcut: cardul „Nu-ți pierde rezultatul” (și butonul de salvare pentru cine e conectat) mutat chiar sub titlul „Domeniile tale potrivite”, înaintea panoului „Ce-ar fi dacă?” și a celor 3 domenii
@@ -68,7 +75,7 @@ lista de commit-uri de la final se reface singură.
 - Făcut: în Cloudflare, cele 4 înregistrări Resend (DKIM, `send`, `rsend`, `_dmarc`), verificarea Resend pornită (în așteptare), urmărirea clicurilor oprită; în Vercel, `findmyuni.ro` și `www.findmyuni.ro` adăugate la proiectul `unipath`, cu două CNAME în Cloudflare (fără proxy); Vercel le-a confirmat, ambele răspund cu 200 pe HTTPS și arată versiunea de pe `main`
 - Fișiere: `docs/productie.md`, `CLAUDE.md`
 - Poartă: NEVERIFICAT (doar documente schimbate; site-ul verificat direct pe ambele adrese)
-- Apoi: versiunea nouă (ramura `production`) publicată ca link de probă Vercel https://unipath-5m0iwpvwg-william-b4f6.vercel.app (refăcut după mutarea cardului de cont), cu baza de dezvoltare (setările de probă ale Vercel arată spre baza de producție, goală, așa că am dat adresa bazei de dezvoltare doar la această publicare); se vede doar cu contul Vercel; poarta TRECUT înainte; căutarea de programe merge
+- Apoi: versiunea nouă (ramura `production`) publicată ca link de probă Vercel https://unipath-tg1d73gur-william-b4f6.vercel.app (refăcut după favorite), cu baza de dezvoltare (setările de probă ale Vercel arată spre baza de producție, goală, așa că am dat adresa bazei de dezvoltare doar la această publicare); se vede doar cu contul Vercel; poarta TRECUT înainte; căutarea de programe merge
 - Urmează: Resend să treacă pe Verified; echipa pune cheia Resend și `AUTH_EMAIL_FROM` în Convex
 
 ### 2026-10-20 02:10 — pregătire pentru producție: anti-robot la cont, ștergere automată, copii de rezervă, ghid
@@ -821,6 +828,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-21 02:32 `98a6891` feat: account card first on the result page
 - 2026-10-21 00:29 `72d63d0` feat: faster navigation, Frankfurt region, findmyuni.ro domain
 - 2026-10-20 02:24 `df419da` feat: bot check on sign-up, data retention, backups, launch guide
 - 2026-10-20 01:55 `31da3e0` feat: rate limits, 16+ accounts, privacy page, my-data page, ZAP scan
@@ -850,5 +858,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-08 03:49 `2f23ae9` feat: catalogue for eleven countries, status report and home page totals
 - 2026-10-08 03:38 `2a332f4` feat: multi-country programme catalogue from official open datasets
 - 2026-10-08 03:13 `a9edb12` feat: Romanian catalogue of institutions and bachelor programmes from the official list
-- 2026-10-08 02:47 `a381c2f` feat: ask for the full name at sign-in and keep it on the account
 <!-- commits:end -->
