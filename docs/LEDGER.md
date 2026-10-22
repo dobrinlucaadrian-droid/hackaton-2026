@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-23 02:00 — datele operatorului pe pagina de confidențialitate
+- Cerut: operatorul este Dobrin Matei, emailul de contact findmyuni.ro@gmail.com, fără adresă deocamdată
+- Făcut: completate în `OPERATOR`; rândul „Adresă” nu se mai afișează cât e gol; emailul apare peste tot unde pagina spune „scrie-ne la …” (retragerea acordului, drepturi, garanții, final)
+- Fișiere: `apps/web/app/confidentialitate/page.tsx`
+- Poartă: TRECUT (gate.mjs); văzut local: „Nume: Dobrin Matei”, emailul, niciun „[de completat de echipă]” rămas
+- Urmează: lansarea; banda „Versiune de lucru” rămâne până citește un jurist textul
+
 ### 2026-10-23 01:30 — 2FA pentru administrator și emailuri de siguranță
 - Cerut: mai multă siguranță: al doilea pas pentru administrator și emailuri la schimbări importante ale contului
 - Făcut: (2FA) funcțiile de administrator (păreri, statistici) cer acum, pe lângă rolul din bază, deblocarea sesiunii cu un cod de 6 cifre trimis pe emailul administratorului (`convex/adminUnlock.ts`): codul ține 10 minute, cel mult 5 încercări, se păstrează doar amprenta lui (SHA-256), cel mult 5 coduri pe oră; deblocarea ține 8 ore, doar pe acel dispozitiv (sesiune); ecranul „Confirmă că ești tu” (`components/AdminGate.tsx`) pe ambele pagini de administrare. (Emailuri) „Parola contului tău a fost schimbată” după „Am uitat parola” și „Contul tău a fost șters” la ștergerea contului (`convex/email.ts`), cu îndemnul de a scrie dacă nu a fost elevul; pagina de confidențialitate le pomenește. Curățenia zilnică și ștergerea contului șterg și codurile/deblocările
@@ -898,6 +905,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-23 01:25 `abc6d65` feat: email code for admins, security emails on password change and deletion
 - 2026-10-22 02:47 `d1f4f32` docs: launch preparation, production database and settings ready
 - 2026-10-21 18:16 `c711921` feat: second fee check, 11 more levels corrected from official pages
 - 2026-10-21 17:39 `0a5d0cf` feat: clearer cost filter with euro bands, 10 more results, checked fees
@@ -927,5 +935,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-12 00:44 `efe2ff9` feat: lighter pages, several cities in the questionnaire, script fix
 - 2026-10-12 00:07 `35da68e` feat: welcome window to make an account or continue without one
 - 2026-10-09 03:59 `ceeef6b` feat: add 198 university profile sheets across 32 countries
-- 2026-10-09 02:55 `88b4621` feat: add 74 university profile sheets and link them to the catalogue
 <!-- commits:end -->

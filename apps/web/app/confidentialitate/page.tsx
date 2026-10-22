@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 
 // Fill in before launch: who is responsible for the data (the "operator"). Empty values are shown as "[de completat de echipă]".
 const OPERATOR = {
-  name: "", // the person or organisation responsible, e.g. the association or the adult who runs the site
-  email: "", // the address people write to about their data
-  address: "", // postal address
+  name: "Dobrin Matei", // the person or organisation responsible, e.g. the association or the adult who runs the site
+  email: "findmyuni.ro@gmail.com", // the address people write to about their data
+  address: "", // postal address; not shown while empty (the team decided 2026-10-23: name and email for now)
 };
 // True until a lawyer has checked this text.
 const DRAFT = true;
@@ -75,7 +75,7 @@ export default function PrivacyPage() {
         <List>
           <li>Nume: <Field value={OPERATOR.name} /></li>
           <li>Email pentru orice întrebare despre datele tale: <ContactEmail /></li>
-          <li>Adresă: <Field value={OPERATOR.address} /></li>
+          {OPERATOR.address && <li>Adresă: <Field value={OPERATOR.address} /></li>}
         </List>
       </Block>
 
