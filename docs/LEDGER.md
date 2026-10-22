@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-23 02:20 — „Surse de date” scos din josul paginilor
+- Cerut: linkul „Surse de date” să nu mai fie în josul fiecărei pagini; rămâne doar „Confidențialitate”
+- Făcut: scos din subsolul comun (`components/Shell.tsx`). Pagina /surse rămâne (licențele datelor cer atribuirea), accesibilă din „De unde sunt datele” pe pagina „Programe de licență” și din linkurile mici de sub listele de programe de pe fișe
+- Fișiere: `apps/web/components/Shell.tsx`
+- Poartă: TRECUT (gate.mjs); subsolul arată doar „Confidențialitate”
+- Urmează: lansarea
+
 ### 2026-10-23 02:00 — datele operatorului pe pagina de confidențialitate
 - Cerut: operatorul este Dobrin Matei, emailul de contact findmyuni.ro@gmail.com, fără adresă deocamdată
 - Făcut: completate în `OPERATOR`; rândul „Adresă” nu se mai afișează cât e gol; emailul apare peste tot unde pagina spune „scrie-ne la …” (retragerea acordului, drepturi, garanții, final)
@@ -905,6 +912,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-23 01:53 `54da51b` feat: operator name and contact email on the privacy page
 - 2026-10-23 01:25 `abc6d65` feat: email code for admins, security emails on password change and deletion
 - 2026-10-22 02:47 `d1f4f32` docs: launch preparation, production database and settings ready
 - 2026-10-21 18:16 `c711921` feat: second fee check, 11 more levels corrected from official pages
@@ -934,5 +942,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-12 02:18 `64390f3` docs: production database ready, test address, site name shortlist
 - 2026-10-12 00:44 `efe2ff9` feat: lighter pages, several cities in the questionnaire, script fix
 - 2026-10-12 00:07 `35da68e` feat: welcome window to make an account or continue without one
-- 2026-10-09 03:59 `ceeef6b` feat: add 198 university profile sheets across 32 countries
 <!-- commits:end -->
