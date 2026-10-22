@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-23 01:30 — 2FA pentru administrator și emailuri de siguranță
+- Cerut: mai multă siguranță: al doilea pas pentru administrator și emailuri la schimbări importante ale contului
+- Făcut: (2FA) funcțiile de administrator (păreri, statistici) cer acum, pe lângă rolul din bază, deblocarea sesiunii cu un cod de 6 cifre trimis pe emailul administratorului (`convex/adminUnlock.ts`): codul ține 10 minute, cel mult 5 încercări, se păstrează doar amprenta lui (SHA-256), cel mult 5 coduri pe oră; deblocarea ține 8 ore, doar pe acel dispozitiv (sesiune); ecranul „Confirmă că ești tu” (`components/AdminGate.tsx`) pe ambele pagini de administrare. (Emailuri) „Parola contului tău a fost schimbată” după „Am uitat parola” și „Contul tău a fost șters” la ștergerea contului (`convex/email.ts`), cu îndemnul de a scrie dacă nu a fost elevul; pagina de confidențialitate le pomenește. Curățenia zilnică și ștergerea contului șterg și codurile/deblocările
+- Fișiere: `apps/web/convex/adminUnlock.ts`, `apps/web/convex/adminUnlock.test.ts`, `apps/web/convex/email.ts`, `apps/web/convex/access.ts`, `apps/web/convex/schema.ts`, `apps/web/convex/authLimits.ts`, `apps/web/convex/retention.ts`, `apps/web/convex/account.ts`, `apps/web/convex/auth.ts`, `apps/web/convex/account.test.ts`, `apps/web/convex/access.test.ts`, `apps/web/convex/analytics.test.ts`, `apps/web/convex/retention.test.ts`, `apps/web/components/AdminGate.tsx`, `apps/web/app/admin/pareri/page.tsx`, `apps/web/app/admin/statistici/page.tsx`, `apps/web/app/confidentialitate/page.tsx`
+- Poartă: TRECUT (gate.mjs); parcurs local pe baza de dezvoltare: „Am uitat parola” → emailul „parola schimbată” apare în jurnal; administrare fără cod → „Confirmă că ești tu”; cod greșit → „Codul nu este corect”; codul bun → păreri și statistici deschise
+- Urmează: funcțiile noi ajung în producție la lansare (`npx convex deploy`, cu aprobarea echipei). De știut: rolul de administrator se recalculează doar la crearea sau actualizarea contului (de ex. parolă nouă), nu la simpla conectare; contul de probă test.elev01 a rămas administrator pe baza de dezvoltare
+
 ### 2026-10-22 23:30 — baza de producție pregătită
 - Cerut: pregătirea bazei de producție (pașii 1–4), cu aprobarea explicită a echipei pentru publicarea în producție
 - Făcut: `npx convex deploy` (funcțiile și tabelele în Production, indexurile noi pentru favorite și utilizatori); `node scripts/data/import.mjs --prod` (4.334 instituții, 107.155 programe); în Vercel, setările de producție `NEXT_PUBLIC_CONVEX_URL`, `NEXT_PUBLIC_CONVEX_SITE_URL` (baza de producție) și `NEXT_PUBLIC_TURNSTILE_SITE_KEY` (cheia publică reală). Site-ul public neschimbat
@@ -891,6 +898,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-22 02:47 `d1f4f32` docs: launch preparation, production database and settings ready
 - 2026-10-21 18:16 `c711921` feat: second fee check, 11 more levels corrected from official pages
 - 2026-10-21 17:39 `0a5d0cf` feat: clearer cost filter with euro bands, 10 more results, checked fees
 - 2026-10-21 16:19 `091c093` feat: friendly error pages with the broken-road drawing
@@ -920,5 +928,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-12 00:07 `35da68e` feat: welcome window to make an account or continue without one
 - 2026-10-09 03:59 `ceeef6b` feat: add 198 university profile sheets across 32 countries
 - 2026-10-09 02:55 `88b4621` feat: add 74 university profile sheets and link them to the catalogue
-- 2026-10-09 02:55 `17842ce` feat: admin statistics panel, anonymous usage counters and home tile
 <!-- commits:end -->

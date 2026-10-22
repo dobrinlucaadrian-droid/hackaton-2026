@@ -10,11 +10,13 @@
 
 import type * as access from "../access.js";
 import type * as account from "../account.js";
+import type * as adminUnlock from "../adminUnlock.js";
 import type * as analytics from "../analytics.js";
 import type * as auth from "../auth.js";
 import type * as authLimits from "../authLimits.js";
 import type * as catalog from "../catalog.js";
 import type * as crons from "../crons.js";
+import type * as email from "../email.js";
 import type * as favorites from "../favorites.js";
 import type * as http from "../http.js";
 import type * as results from "../results.js";
@@ -32,11 +34,13 @@ import type {
 declare const fullApi: ApiFromModules<{
   access: typeof access;
   account: typeof account;
+  adminUnlock: typeof adminUnlock;
   analytics: typeof analytics;
   auth: typeof auth;
   authLimits: typeof authLimits;
   catalog: typeof catalog;
   crons: typeof crons;
+  email: typeof email;
   favorites: typeof favorites;
   http: typeof http;
   results: typeof results;

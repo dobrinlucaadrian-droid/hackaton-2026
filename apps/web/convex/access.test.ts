@@ -26,6 +26,7 @@ async function setup() {
     await ctx.db.insert("users", { email: "bob@example.com" }),
     await ctx.db.insert("users", { email: "admin@example.com", role: "admin" }),
   ]);
+  await t.run(async (ctx) => { await ctx.db.insert("adminUnlocks", { userId: admin, sessionId: "test-session", until: Date.now() + 3_600_000 }); });
   // Convex Auth puts "<user id>|<session id>" in the token subject.
   const as = (id: Id<"users">) => t.withIdentity({ subject: `${id}|test-session` });
   return { t, alice, bob, admin, as };

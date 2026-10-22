@@ -68,3 +68,14 @@ describe("account limits", () => {
     expect(await t.mutation(api.account.usernameFree, { username: "a" })).toBe(false);
   });
 });
+
+describe("security notice", () => {
+  it("deleting an account schedules the 'account deleted' email to its confirmed address", async () => {
+    const { t, alice, as } = await setup();
+    await as(alice).mutation(api.account.remove, {});
+    const scheduled = await t.run(async (ctx) => ctx.db.system.query("_scheduled_functions").collect());
+    expect(scheduled).toHaveLength(1);
+    expect(scheduled[0].name).toMatch(/email/);
+    expect(scheduled[0].args[0]).toEqual({ to: "alice@example.com", kind: "accountDeleted" });
+  });
+});

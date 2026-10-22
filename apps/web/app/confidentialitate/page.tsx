@@ -89,7 +89,7 @@ export default function PrivacyPage() {
           <Purpose
             title="1. Contul tău"
             data={<>numele de utilizator, numele complet, adresa de email (confirmată cu un cod de 6 cifre), parola, dar doar ca o amprentă din care parola nu se poate afla (nici de noi), data la care ai confirmat emailul, datele tehnice ale conectării (când a început și până când e valabilă fiecare sesiune) și rezultatul chestionarului, dacă alegi să-l salvezi (profilul de liceu, răspunsurile, unde și în ce orașe vrei să studiezi și cele trei domenii potrivite) și universitățile pe care le pui la favorite (numele, orașul și țara lor și data).</>}
-            why="ca să te poți conecta, să-ți păstrăm rezultatul și universitățile favorite, să-ți trimitem codul de confirmare și codul pentru o parolă nouă dacă ți-ai uitat-o."
+            why="ca să te poți conecta, să-ți păstrăm rezultatul și universitățile favorite, să-ți trimitem codul de confirmare și codul pentru o parolă nouă dacă ți-ai uitat-o și să te anunțăm pe email când parola îți este schimbată sau contul șters."
             basis="executarea contractului dintre noi, adică serviciul pe care îl ceri când îți faci cont (GDPR, art. 6 alin. 1 lit. b)."
           />
           <Purpose

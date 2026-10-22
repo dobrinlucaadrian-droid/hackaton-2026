@@ -47,6 +47,22 @@ export default defineSchema({
     .index("by_user", ["userId", "addedAt"])
     .index("by_user_university", ["userId", "universityId"]),
 
+  // Administrators' second step (convex/adminUnlock.ts): the fingerprint of the last code sent, and which sign-in sessions are unlocked until when.
+  adminCodes: defineTable({
+    userId: v.id("users"),
+    codeHash: v.string(), // SHA-256 of the code; the code itself is never stored
+    expires: v.number(),
+    attempts: v.number(),
+  }).index("by_user", ["userId"]),
+  adminUnlocks: defineTable({
+    userId: v.id("users"),
+    sessionId: v.string(), // the Convex Auth session the code was typed in
+    until: v.number(),
+  })
+    .index("by_session", ["sessionId"])
+    .index("by_user", ["userId"])
+    .index("by_until", ["until"]),
+
   // Institutions from official or openly licensed national datasets (scripts/data/CONTRACT.md). Loaded with scripts/data/import.mjs, never written by users.
   institutions: defineTable({
     id: v.string(), // same id as the university sheet when the app has one

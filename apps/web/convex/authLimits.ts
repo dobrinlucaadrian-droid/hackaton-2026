@@ -11,6 +11,8 @@ const limiter = new RateLimiter(components.rateLimiter, {
   // Codes sent by email for a forgotten password: per address, and for the whole site (protects the email quota).
   codeEmail: { kind: "token bucket", rate: 5, period: HOUR, capacity: 5 },
   codeSite: { kind: "fixed window", rate: 200, period: HOUR },
+  // Codes that unlock the admin pages, per administrator email.
+  adminCode: { kind: "token bucket", rate: 5, period: HOUR, capacity: 5 },
   // Sign-in steps per username, including usernames that do not exist (wrong passwords and codes are also limited by Convex Auth).
   signInUsername: { kind: "token bucket", rate: 30, period: HOUR, capacity: 30 },
   // "Is this username free?" checks from the sign-up form, for the whole site.
@@ -23,7 +25,7 @@ async function fingerprint(key: string): Promise<string> {
   return Array.from(bytes, (b) => b.toString(16).padStart(2, "0")).join("");
 }
 
-export type LimitName = "signUpEmail" | "signUpSite" | "codeEmail" | "codeSite" | "signInUsername" | "usernameCheck";
+export type LimitName = "signUpEmail" | "signUpSite" | "codeEmail" | "codeSite" | "adminCode" | "signInUsername" | "usernameCheck";
 
 /** Spends one try from the named limit (for `key`, or for the whole site); returns false when the limit is used up. */
 export const hit = internalMutation({
@@ -33,6 +35,7 @@ export const hit = internalMutation({
       v.literal("signUpSite"),
       v.literal("codeEmail"),
       v.literal("codeSite"),
+      v.literal("adminCode"),
       v.literal("signInUsername"),
       v.literal("usernameCheck"),
     ),

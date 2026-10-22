@@ -3,6 +3,7 @@
 import { useConvexAuth, useQuery } from "convex/react";
 import Link from "next/link";
 import { useState } from "react";
+import { AdminGate } from "@/components/AdminGate";
 import { Notice, Shell } from "@/components/Shell";
 import { api } from "@/convex/_generated/api";
 import { catalogCountries, catalogTotals } from "@/lib/catalog";
@@ -232,12 +233,14 @@ export default function AdminStatsPage() {
 
   return (
     <Shell wide>
-      <h1 className="mt-4 text-4xl font-black tracking-tighter text-ink">Statistici și mentenanță</h1>
-      <p className="mt-2 text-ink-soft">
-        Toate cifrele sunt anonime: nu păstrăm nume, adrese IP sau cookie-uri pentru ele.{" "}
-        <Link href="/admin/pareri" className="font-bold text-primary underline underline-offset-2">Păreri de aprobat →</Link>
-      </p>
-      <Statistics />
+      <AdminGate>
+        <h1 className="mt-4 text-4xl font-black tracking-tighter text-ink">Statistici și mentenanță</h1>
+        <p className="mt-2 text-ink-soft">
+          Toate cifrele sunt anonime: nu păstrăm nume, adrese IP sau cookie-uri pentru ele.{" "}
+          <Link href="/admin/pareri" className="font-bold text-primary underline underline-offset-2">Păreri de aprobat →</Link>
+        </p>
+        <Statistics />
+      </AdminGate>
     </Shell>
   );
 }

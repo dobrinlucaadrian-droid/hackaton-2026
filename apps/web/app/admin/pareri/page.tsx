@@ -3,6 +3,7 @@
 import { useConvexAuth, useMutation, useQuery } from "convex/react";
 import Link from "next/link";
 import { useState } from "react";
+import { AdminGate } from "@/components/AdminGate";
 import { Notice, Shell } from "@/components/Shell";
 import { api } from "@/convex/_generated/api";
 import type { Id } from "@/convex/_generated/dataModel";
@@ -90,27 +91,29 @@ export default function AdminReviewsPage() {
 
   return (
     <Shell>
-      <h1 className="mt-4 text-4xl font-black tracking-tighter text-ink">Păreri de aprobat</h1>
-      <p className="mt-2 text-ink-soft">
-        Citește fiecare părere. Aprob-o doar dacă e reală, respectuoasă și fără date personale ale altor oameni.{" "}
-        <Link href="/studenti" className="font-bold text-primary underline underline-offset-2">Vezi pagina publică →</Link>{" "}
-        <Link href="/admin/statistici" className="font-bold text-primary underline underline-offset-2">Statistici și mentenanță →</Link>
-      </p>
-      <div className="mt-5 flex flex-wrap gap-2" role="tablist" aria-label="Starea părerilor">
-        {TABS.map(([id, text]) => (
-          <button
-            key={id}
-            type="button"
-            role="tab"
-            aria-selected={tab === id}
-            onClick={() => setTab(id)}
-            className={`min-h-11 rounded-full px-4 text-sm font-bold ${tab === id ? "bg-primary text-white" : "bg-card text-ink-soft ring-1 ring-line hover:ring-primary/50"}`}
-          >
-            {text}
-          </button>
-        ))}
-      </div>
-      <Queue key={tab} state={tab} />
+      <AdminGate>
+        <h1 className="mt-4 text-4xl font-black tracking-tighter text-ink">Păreri de aprobat</h1>
+        <p className="mt-2 text-ink-soft">
+          Citește fiecare părere. Aprob-o doar dacă e reală, respectuoasă și fără date personale ale altor oameni.{" "}
+          <Link href="/studenti" className="font-bold text-primary underline underline-offset-2">Vezi pagina publică →</Link>{" "}
+          <Link href="/admin/statistici" className="font-bold text-primary underline underline-offset-2">Statistici și mentenanță →</Link>
+        </p>
+        <div className="mt-5 flex flex-wrap gap-2" role="tablist" aria-label="Starea părerilor">
+          {TABS.map(([id, text]) => (
+            <button
+              key={id}
+              type="button"
+              role="tab"
+              aria-selected={tab === id}
+              onClick={() => setTab(id)}
+              className={`min-h-11 rounded-full px-4 text-sm font-bold ${tab === id ? "bg-primary text-white" : "bg-card text-ink-soft ring-1 ring-line hover:ring-primary/50"}`}
+            >
+              {text}
+            </button>
+          ))}
+        </div>
+        <Queue key={tab} state={tab} />
+      </AdminGate>
     </Shell>
   );
 }

@@ -18,6 +18,7 @@ async function setup() {
     await ctx.db.insert("users", { email: "elev@example.com" }),
     await ctx.db.insert("users", { email: "admin@example.com", role: "admin" }),
   ]);
+  await t.run(async (ctx) => { await ctx.db.insert("adminUnlocks", { userId: admin, sessionId: "test-session", until: Date.now() + 3_600_000 }); });
   const as = (id: Id<"users">) => t.withIdentity({ subject: `${id}|test-session` });
   return { t, user, admin, as };
 }

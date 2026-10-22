@@ -122,7 +122,10 @@ const usernamePassword = ConvexCredentials({
       await spend(ctx, "codeSite");
       await spend(ctx, "codeEmail", email);
     }
-    return (await baseAuthorize({ ...params, email }, ctx)) as never;
+    const result = await baseAuthorize({ ...params, email }, ctx);
+    // The code was right and the password is now changed: the owner of the email hears about it at once.
+    if (flow === "reset-verification") await ctx.scheduler.runAfter(0, internal.email.securityNotice, { to: email, kind: "passwordChanged" });
+    return result as never;
   },
 });
 

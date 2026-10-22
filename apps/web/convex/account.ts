@@ -61,6 +61,11 @@ export const remove = userMutation({
   args: {},
   returns: v.null(),
   handler: async (ctx) => {
+    // The notice goes to a confirmed email only, and is scheduled before the account (and its email) are gone.
+    const user = await ctx.db.get(ctx.userId);
+    if (user?.emailVerificationTime && typeof user.email === "string") {
+      await ctx.scheduler.runAfter(0, internal.email.securityNotice, { to: user.email, kind: "accountDeleted" });
+    }
     await deleteUserEverywhere(ctx, ctx.userId);
     return null;
   },

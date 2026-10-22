@@ -71,6 +71,7 @@ describe("deleting a review", () => {
       await ctx.db.insert("users", { email: "elev@example.com" }),
       await ctx.db.insert("reviews", { ...REVIEW, state: "approved", submittedAt: Date.now() }),
     ]);
+    await t.run(async (ctx) => { await ctx.db.insert("adminUnlocks", { userId: admin as Id<"users">, sessionId: "test-session", until: Date.now() + 3_600_000 }); });
     const as = (id: Id<"users">) => t.withIdentity({ subject: `${id}|test-session` });
     await expect(t.mutation(api.reviews.remove, { id: review as Id<"reviews"> })).rejects.toThrow();
     await expect(as(student as Id<"users">).mutation(api.reviews.remove, { id: review as Id<"reviews"> })).rejects.toThrow();

@@ -94,11 +94,11 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/admin/pareri  (1 files)
 
-- `page.tsx` (117) — Administration page for student opinions: the team reads what came through the form and approves, rejects or deletes it. Only administrators get any data.. Routes: /admin/pareri. Exports: AdminReviewsPage
+- `page.tsx` (120) — Administration page for student opinions: the team reads what came through the form and approves, rejects or deletes it. Only administrators get any data.. Routes: /admin/pareri. Exports: AdminReviewsPage
 
 ### apps/web/app/admin/statistici  (1 files)
 
-- `page.tsx` (244) — Administration page with statistics and maintenance: visits, where they come from, finished questionnaires and how people answered, the state of the database, and a CSV download. Only administrators get any data.. Routes: /admin/statistici. Exports: AdminStatsPage
+- `page.tsx` (247) — Administration page with statistics and maintenance: visits, where they come from, finished questionnaires and how people answered, the state of the database, and a CSV download. Only administrators get any data.. Routes: /admin/statistici. Exports: AdminStatsPage
 
 ### apps/web/app  (14 files)
 
@@ -189,10 +189,11 @@ _Open only the files listed here; a file's description is its first comment line
 
 - `page.tsx` (29) — University finder page: search box, filters and the results, 10 at a time (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
 
-### apps/web/components  (39 files)
+### apps/web/components  (40 files)
 
 - `ActivitiesStep.tsx` (227) — Quiz step "Ce ai făcut până acum?": add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
 - `ActivitiesSummary.tsx` (33) — Read-only list of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
+- `AdminGate.tsx` (91) — Shown on the admin pages until this device is unlocked: sends a 6-digit code to the admin's email and checks it; the pages open for 8 hours, then it asks again.. Exports: AdminGate
 - `CategoryTiles.tsx` (24) — Grid of category tiles (emoji and name), each linking to its category page.. Exports: CategoryTiles
 - `Confetti.tsx` (41) — A short burst of cool-coloured confetti, shown once when mounted and removed after about 3 seconds.. Exports: Confetti
 - `ConvexClientProvider.tsx` (12) — Connects the pages to the Convex database and keeps the sign-in session available to every component.. Exports: ConvexClientProvider
@@ -233,35 +234,38 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/convex/_generated  (5 files)
 
-- `api.d.ts` (78) — Generated `api` utility.
+- `api.d.ts` (82) — Generated `api` utility.
 - `api.js` (24) — Generated `api` utility.. Exports: api, internal, components
 - `dataModel.d.ts` (61) — Generated data model types.
 - `server.d.ts` (163) — Generated utilities for implementing server-side Convex query and mutation functions.
 - `server.js` (102) — Generated utilities for implementing server-side Convex query and mutation functions.. Exports: query, internalQuery, mutation, internalMutation, action, internalAction, httpAction, env
 
-### apps/web/convex  (24 files)
+### apps/web/convex  (27 files)
 
-- `access.test.ts` (218) — @vitest-environment edge-runtime
-- `access.ts` (34) — Shared access rules: every function that needs a signed-in user or an administrator is built from these wrappers, so the check cannot be forgotten.. Exports: userQuery, userMutation, adminQuery, adminMutation
-- `account.test.ts` (71) — @vitest-environment edge-runtime
-- `account.ts` (100) — The signed-in user's own account: who they are (username, name and email), a copy of everything saved about them, whether email codes can be sent, and deleting the account with everything saved in it.. Exports: me, usernameFree, setName, signInMethods, remove, exportMine
-- `analytics.test.ts` (96) — @vitest-environment edge-runtime
+- `access.test.ts` (219) — @vitest-environment edge-runtime
+- `access.ts` (36) — Shared access rules: every function that needs a signed-in user or an administrator is built from these wrappers, so the check cannot be forgotten. Administrators also need the email code of convex/adminUnlock.ts.. Exports: userQuery, userMutation, adminQuery, adminMutation
+- `account.test.ts` (82) — @vitest-environment edge-runtime
+- `account.ts` (105) — The signed-in user's own account: who they are (username, name and email), a copy of everything saved about them, whether email codes can be sent, and deleting the account with everything saved in it.. Exports: me, usernameFree, setName, signInMethods, remove, exportMine
+- `adminUnlock.test.ts` (78) — @vitest-environment edge-runtime
+- `adminUnlock.ts` (108) — Second step for administrators: the admin pages unlock only after a 6-digit code sent to the admin's email, for 8 hours on that device (sign-in session). Without it the admin functions refuse, even with the right password.. Exports: CODE_MINUTES, MAX_TRIES, UNLOCK_HOURS, ADMIN_LOCKED, unlockedUntil, status, adminEmail, storeCode, …
+- `analytics.test.ts` (97) — @vitest-environment edge-runtime
 - `analytics.ts` (197) — Anonymous usage statistics: page views and finished questionnaires are counted without any name, cookie, IP address or visitor id; only administrators read the numbers.. Exports: trackVisit, recordQuizRun, overview
 - `auth.config.ts` (12) — Tells Convex which issuer signs the session tokens (this deployment itself, through Convex Auth).
-- `auth.ts` (143) — Convex Auth setup: accounts with a username and a password. The email is asked only at sign-up and confirmed with a 6-digit code; after that, students sign in with username and password. Forgotten passwords are reset with a code sent to the account's email.. Exports: adminEmails
-- `authLimits.ts` (46) — Limits on the account steps that cost us emails or invite guessing: new accounts, codes sent by email, sign-in attempts per username and "is this username free?" checks. Convex does not see the visitor's IP, so the keys are the email, the username or the whole site.. Exports: hit, TOO_MANY
+- `auth.ts` (146) — Convex Auth setup: accounts with a username and a password. The email is asked only at sign-up and confirmed with a 6-digit code; after that, students sign in with username and password. Forgotten passwords are reset with a code sent to the account's email.. Exports: adminEmails
+- `authLimits.ts` (49) — Limits on the account steps that cost us emails or invite guessing: new accounts, codes sent by email, sign-in attempts per username and "is this username free?" checks. Convex does not see the visitor's IP, so the keys are the email, the username or the whole site.. Exports: hit, TOO_MANY
 - `catalog.test.ts` (83) — @vitest-environment edge-runtime
 - `catalog.ts` (109) — The catalogue of institutions and bachelor programmes from official national datasets: public, read-only queries the pages use to list and search.. Exports: programsOf, programsFor, searchPrograms, institutions
 - `convex.config.ts` (9) — Convex app setup: installs the rate-limiter component used by the public review form.
 - `crons.ts` (11) — Scheduled jobs: once a day, delete the data that is older than its keeping period (convex/retention.ts).
+- `email.ts` (52) — Sends the site's emails through Resend (codes, admin codes and security notices); on the development deployment it only writes them to the log.. Exports: sendEmail, securityNotice
 - `favorites.test.ts` (64) — @vitest-environment edge-runtime
 - `favorites.ts` (53) — Favourite universities: each signed-in student can add, list and remove only their own, at most 30.. Exports: MAX_FAVORITES, mine, add, remove
 - `http.ts` (9) — HTTP routes of the Convex backend: only the ones Convex Auth needs for sign-in.
 - `results.ts` (77) — A student's saved questionnaire result: each signed-in user can save, read and delete only their own.. Exports: mine, save, remove
-- `retention.test.ts` (81) — @vitest-environment edge-runtime
-- `retention.ts` (97) — How long the site keeps each kind of data, and the daily clean-up that deletes what is older (GDPR storage limitation). The periods are the team's choice and are written on the privacy page; change them only together.. Exports: KEEP, deleteUserEverywhere, cleanup
+- `retention.test.ts` (82) — @vitest-environment edge-runtime
+- `retention.ts` (103) — How long the site keeps each kind of data, and the daily clean-up that deletes what is older (GDPR storage limitation). The periods are the team's choice and are written on the privacy page; change them only together.. Exports: KEEP, deleteUserEverywhere, cleanup
 - `reviews.ts` (158) — Student reviews: anyone can read the approved ones and send a new one through the checked public form; only administrators see the queue, approve, reject or delete.. Exports: LIMITS, listApproved, listByState, moderate, remove, insertPending, insertLimited, submit
-- `schema.ts` (134) — Database tables for FindMyUni: users (from Convex Auth, plus a username and a server-written role), saved questionnaire results, favourite universities, student reviews, the catalogue of institutions and programmes, and anonymous usage statistics.. Exports: reviewState
+- `schema.ts` (150) — Database tables for FindMyUni: users (from Convex Auth, plus a username and a server-written role), saved questionnaire results, favourite universities, student reviews, the catalogue of institutions and programmes, and anonymous usage statistics.. Exports: reviewState
 - `tsconfig.json` (26) — JSON (invalid)
 - `turnstile.ts` (20) — Checks a Cloudflare Turnstile token (the "I am not a robot" box) with Cloudflare, on the server. Used by the review form, the sign-up and the forgotten-password step.. Exports: verifyTurnstile
 - `users.ts` (14) — Server-only lookups by username, used by the sign-in code: the email behind a username never leaves the server.. Exports: emailOfUsername

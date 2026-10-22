@@ -26,6 +26,8 @@ function dayAgo(now: number, days: number): string {
 
 /** Deletes a user and everything Convex Auth keeps for them (sessions, refresh tokens, sign-in records, codes), their saved result and their favourite universities. */
 export async function deleteUserEverywhere(ctx: MutationCtx, userId: Id<"users">): Promise<void> {
+  for (const c of await ctx.db.query("adminCodes").withIndex("by_user", (q) => q.eq("userId", userId)).collect()) await ctx.db.delete(c._id);
+  for (const u of await ctx.db.query("adminUnlocks").withIndex("by_user", (q) => q.eq("userId", userId)).collect()) await ctx.db.delete(u._id);
   for (const f of await ctx.db.query("favorites").withIndex("by_user", (q) => q.eq("userId", userId)).collect()) await ctx.db.delete(f._id);
   for (const r of await ctx.db.query("results").withIndex("by_user", (q) => q.eq("userId", userId)).collect()) await ctx.db.delete(r._id);
   for (const s of await ctx.db.query("authSessions").withIndex("userId", (q) => q.eq("userId", userId)).collect()) {
@@ -89,6 +91,10 @@ export const cleanup = internalMutation({
         failedSignIns++;
       }
     }
+
+    // Admin codes and unlocks that have ended (they are useless after their time).
+    for (const u of await ctx.db.query("adminUnlocks").withIndex("by_until", (q) => q.lt("until", now)).take(BATCH)) await ctx.db.delete(u._id);
+    for (const c of await ctx.db.query("adminCodes").take(BATCH)) if (c.expires < now) await ctx.db.delete(c._id);
 
     if (accounts + reviews + quizRuns + dailyStats + failedSignIns > 0) console.log(`[cleanup] accounts ${accounts}, reviews ${reviews}, quizRuns ${quizRuns}, dailyStats ${dailyStats}, failedSignIns ${failedSignIns}`);
     return { accounts, reviews, quizRuns, dailyStats, failedSignIns };
