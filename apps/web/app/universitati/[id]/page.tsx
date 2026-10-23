@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BackToSearch } from "@/components/BackToSearch";
 import { FavoriteButton } from "@/components/FavoriteButton";
 import { UniversityPhoto } from "@/components/UniversityPhoto";
 import { OfficialPrograms } from "@/components/OfficialPrograms";
@@ -97,9 +98,7 @@ export default async function UniversityPage({ params }: Props) {
   return (
     <Shell wide>
       <div className="mx-auto max-w-3xl">
-        <Link href="/universitati" className="inline-flex min-h-11 items-center rounded-full border-2 border-primary px-5 py-2 font-bold text-primary transition hover:bg-primary-tint">
-          ← Înapoi la universități
-        </Link>
+        <BackToSearch />
 
         <UniversityPhoto universityId={u.id} alt={`${u.name}, ${u.city}`} />
 

@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { categories, domains } from "@/lib/data";
 import type { AdmissionType, Budget, CertificateId, Filters, Prestige, WorldUniversity } from "@/lib/types";
 import { ADMISSION_LABEL, BUDGET_EXPLAINED, BUDGET_RANGE, BUDGET_FILTER_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, PRESTIGE_LABEL } from "@/lib/labels";
+import { rememberSearch } from "@/lib/lastSearch";
 import { citiesIn, countries, filterUniversities, searchUniversities, searchWorld } from "@/lib/universities";
 import { SearchBox } from "./SearchBox";
 import { UniversityCard } from "./UniversityCard";
@@ -111,7 +112,9 @@ export function UniversitySearch() {
   const [allCities, setAllCities] = useState(false);
   const [world, setWorld] = useState<{ q: string; items: WorldUniversity[]; failed: boolean } | null>(null);
 
+  // Any new search or filter starts again from the first 10 results.
   function go(next: URLSearchParams) {
+    next.delete("arata");
     const s = next.toString();
     router.push(s ? `/universitati?${s}` : "/universitati", { scroll: false });
   }
@@ -156,9 +159,17 @@ export function UniversitySearch() {
   }, [q, filters, activeCount]);
 
   // 10 at first, 10 more on each "Arată încă 10"; back to 10 whenever the search or the filters change.
-  const listKey = params.toString();
-  const [more, setMore] = useState({ key: listKey, count: PAGE });
-  const count = more.key === listKey ? more.count : PAGE;
+  // How many results are open is kept in the address too (?arata=20), so coming back to the search shows the same list.
+  const count = Math.max(PAGE, Math.min(Number(params.get("arata")) || PAGE, 1000));
+  function showMore() {
+    const next = new URLSearchParams(params.toString());
+    next.set("arata", String(count + PAGE));
+    router.replace(`/universitati?${next.toString()}`, { scroll: false });
+  }
+  // The sheet's "back" button returns to this exact search (lib/lastSearch.ts).
+  useEffect(() => {
+    rememberSearch(params.toString());
+  }, [params]);
   const results = matches.slice(0, count);
 
   const wantWorld = q !== "" && activeCount === 0;
@@ -416,7 +427,7 @@ export function UniversitySearch() {
         <div className="mt-6 text-center">
           <button
             type="button"
-            onClick={() => setMore({ key: listKey, count: count + PAGE })}
+            onClick={showMore}
             className="min-h-12 rounded-full border-2 border-primary px-8 py-3 font-black text-primary hover:bg-primary-tint"
           >
             Arată încă 10
