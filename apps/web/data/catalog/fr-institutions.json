@@ -1613,7 +1613,7 @@
   "officialName": "ECOLE CENTRALE NANTES",
   "city": "Nantes",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.ec-nantes.fr/",
   "programs": 1
  },
@@ -1793,7 +1793,7 @@
   "officialName": "Ecole polytechnique",
   "city": "Palaiseau",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://programmes.polytechnique.edu/bachelor/bachelor-of-science",
   "programs": 1
  },
@@ -1925,7 +1925,7 @@
   "officialName": "EDHEC Lille",
   "city": "Croix",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.edhec.edu/fr/programmes/bba",
   "programs": 6
  },
@@ -2789,7 +2789,7 @@
   "officialName": "ESCP Business School",
   "city": "Paris",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.escp.eu/bachelor",
   "programs": 1
  },
@@ -3485,7 +3485,7 @@
   "officialName": "Grenoble Ecole de Management",
   "city": "Grenoble",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.grenoble-em.com/bachelors",
   "programs": 3
  },
@@ -5536,7 +5536,7 @@
   "officialName": "IESEG School of Management - Lille",
   "city": "Lille",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.ieseg.fr/",
   "programs": 3
  },
@@ -5632,7 +5632,7 @@
   "officialName": "INSA Centre Val de Loire campus de Blois",
   "city": "Blois",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.insa-centrevaldeloire.fr/",
   "programs": 1
  },
@@ -5692,7 +5692,7 @@
   "officialName": "INSA Rouen Normandie",
   "city": "Saint-Étienne-du-Rouvray",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.insa-rouen.fr",
   "programs": 1
  },
@@ -5704,7 +5704,7 @@
   "officialName": "INSA Strasbourg",
   "city": "Strasbourg",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.insa-strasbourg.fr",
   "programs": 1
  },
@@ -7864,7 +7864,7 @@
   "officialName": "Kedge Business School - Campus de Paris",
   "city": "Paris",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://kedge.edu/",
   "programs": 2
  },
@@ -8344,7 +8344,7 @@
   "officialName": "Paris Sciences Lettres PSL",
   "city": "Paris",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.psl.eu",
   "programs": 4
  },
@@ -10572,7 +10572,7 @@
   "officialName": "Université Grenoble Alpes",
   "city": "Gières",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.univ-grenoble-alpes.fr/",
   "programs": 117
  },

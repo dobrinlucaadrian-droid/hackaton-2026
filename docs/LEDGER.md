@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-23 13:00 — universități noi cu fișă completă
+- Cerut: cât mai multe universități renumite, doar din țările pe care le avem, cu fișă completă din surse oficiale (altfel sărite) și cu poză
+- Făcut: în trei runde, 147 de fișe noi (SUA 24, Germania 18, Spania 13, Franța 12, Marea Britanie 10, Australia 6, Polonia 6, Austria 6, Irlanda 6, Suedia 6, Canada 6, Belgia 5, Italia 4, Portugalia 4, Finlanda 4, Cehia 3, Norvegia 3, Letonia 2, Hong Kong 2 și câte una în Bulgaria, Elveția, Lituania, Coreea de Sud, Estonia, Grecia, Singapore); fiecare scrisă de un agent din paginile oficiale și reverificată de un al doilea agent (greșelile corectate, nesigurul scos); sursele în `university-sources.json`; instituțiile din catalog legate de fișa nouă (`hasSheet`); indexul refăcut. Poze de pe Wikimedia Commons pentru 82 dintre ele, fiecare văzută de mine; 13 poze proaste respinse (`photo-rejects.json`); celelalte nu au o poză bună liberă de drepturi. Universitățile fără date oficiale complete au fost sărite (lista cu motive în notele agenților)
+- Fișiere: `apps/web/data/universities-abroad.json`, `apps/web/data/universities-index.json`, `apps/web/data/university-sources.json`, `apps/web/data/catalog/*-institutions.json`, `apps/web/data/catalog/index.json`, `apps/web/data/photos.json`, `apps/web/data/photo-rejects.json`, `apps/web/public/photos/*.webp`
+- Poartă: TRECUT (gate.mjs după 147 de fișe; în browser: Karolinska cu poză și programe, căutarea „swarthmore”, UC Davis fără poză)
+- Urmează: salvare cu /git-workflow; la lansare, reîncărcarea catalogului în baza de date, ca să se vadă legătura fișă–programe și acolo
+
 ### 2026-10-23 07:30 — inimioara de favorite pe cardurile din căutare
 - Cerut: inimioara și pe cardurile din căutare, nu doar pe fișă
 - Făcut: varianta mică a butonului de favorite (`compact`) în colțul fiecărui card din „Universități”, deasupra linkului care acoperă cardul, cu numele universității citit de cititoarele de ecran; fără cont deschide fereastra de cont (rămâi pe căutare), cu cont pune și scoate de la favorite pe loc
@@ -940,6 +947,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-23 12:13 `60a3d62` feat: favourite heart on the university search cards
 - 2026-10-23 12:06 `c833f37` feat: search suggestions, phone menu, accessibility fixes, page titles
 - 2026-10-23 11:39 `23ff2fc` feat: keep the university search when coming back from a sheet
 - 2026-10-23 11:33 `0e5c950` feat: freely licensed university photos on sheets, third fee check
@@ -969,5 +977,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-13 23:08 `c08b7a1` fix: recheck unconfirmed facts and audit the whole site
 - 2026-10-13 15:54 `01ecc44` feat: choose several cities in the university search
 - 2026-10-13 15:43 `c909e83` feat: add 367 double-checked faculty sheets for Romania
-- 2026-10-13 14:48 `b977652` fix: fact-check the 320 university sheets from abroad
 <!-- commits:end -->

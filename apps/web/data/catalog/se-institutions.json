@@ -115,7 +115,7 @@
   "officialName": "Jönköping University",
   "city": "Jönköping",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://ju.se/",
   "programs": 67
  },
@@ -127,7 +127,7 @@
   "officialName": "Luleå tekniska universitet",
   "city": "Luleå",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.ltu.se/",
   "programs": 64
  },
@@ -175,7 +175,7 @@
   "officialName": "Mälardalens universitet",
   "city": "Västerås",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.mdh.se/",
   "programs": 56
  },
@@ -271,7 +271,7 @@
   "officialName": "Sveriges lantbruksuniversitet",
   "city": "Uppsala",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.slu.se/",
   "programs": 28
  },
@@ -319,7 +319,7 @@
   "officialName": "Karolinska institutet",
   "city": "Solna",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://ki.se/",
   "programs": 14
  },
@@ -415,7 +415,7 @@
   "officialName": "Handelshögskolan i Stockholm",
   "city": "Stockholm",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.hhs.se/",
   "programs": 2
  },

@@ -73,7 +73,7 @@
   "officialName": "Fachhochschule Campus Wien",
   "city": "Wien",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 20
  },
  {
@@ -117,7 +117,7 @@
   "officialName": "Fachhochschule Salzburg GmbH",
   "city": "Puch",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 16
  },
  {
@@ -293,7 +293,7 @@
   "officialName": "Medizinische Universität Graz",
   "city": "Graz Linz",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 1
  },
  {
@@ -447,7 +447,7 @@
   "officialName": "Universität für angewandte Kunst Wien",
   "city": "Wien",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 3
  },
  {
@@ -480,7 +480,7 @@
   "officialName": "Universität Mozarteum Salzburg",
   "city": "Salzburg",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 9
  },
  {

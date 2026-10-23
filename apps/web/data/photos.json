@@ -36,6 +36,24 @@
   "wikidata": "Q635368"
  },
  {
+  "id": "abertay",
+  "file": "/photos/abertay.webp",
+  "author": "Ydam",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "source": "https://commons.wikimedia.org/wiki/File:Abertay_Kidd_building.jpg",
+  "wikidata": "Q1505925"
+ },
+ {
+  "id": "aberystwyth",
+  "file": "/photos/aberystwyth.webp",
+  "author": "Eos12",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "source": "https://commons.wikimedia.org/wiki/File:Aberystwyth_Old_University_Building.jpg",
+  "wikidata": "Q319761"
+ },
+ {
   "id": "absalon",
   "file": "/photos/absalon.webp",
   "author": "Alwaabsalon",
@@ -153,6 +171,33 @@
   "wikidata": "Q750066"
  },
  {
+  "id": "at-fachhochschule-salzburg-gmbh",
+  "file": "/photos/at-fachhochschule-salzburg-gmbh.webp",
+  "author": "HKM FHS",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Haupteingang_Urstein.jpg",
+  "wikidata": "Q701554"
+ },
+ {
+  "id": "at-medizinische-universitat-graz",
+  "file": "/photos/at-medizinische-universitat-graz.webp",
+  "author": "Piftak",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Neuer_Med_Campus.jpg",
+  "wikidata": "Q872543"
+ },
+ {
+  "id": "at-universitat-fur-angewandte-kunst-wien",
+  "file": "/photos/at-universitat-fur-angewandte-kunst-wien.webp",
+  "author": "Maclemo",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Angewandte.jpg",
+  "wikidata": "Q877686"
+ },
+ {
   "id": "aubg-blagoevgrad",
   "file": "/photos/aubg-blagoevgrad.webp",
   "author": "Стойчо Бозуков",
@@ -169,6 +214,15 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
   "source": "https://commons.wikimedia.org/wiki/File:%CE%9C%CE%B1%CF%81%CE%AC%CF%83%CE%BB%CE%B5%CE%B9%CE%BF_%CE%9C%CE%AD%CE%B3%CE%B1%CF%81%CE%BF_9723.jpg",
   "wikidata": "Q1474656"
+ },
+ {
+  "id": "aur",
+  "file": "/photos/aur.webp",
+  "author": "Emerald22",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:AUR_Full_View_Campus.JPG",
+  "wikidata": "Q469446"
  },
  {
   "id": "auth-salonic",
@@ -196,6 +250,33 @@
   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
   "source": "https://commons.wikimedia.org/wiki/File:Campuscene1.JPG",
   "wikidata": "Q1422458"
+ },
+ {
+  "id": "be-erasmushogeschool-brussel",
+  "file": "/photos/be-erasmushogeschool-brussel.webp",
+  "author": "Lennert.machiels",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:E9eU9n_WQAIca8N.jpg",
+  "wikidata": "Q524713"
+ },
+ {
+  "id": "be-hogeschool-gent",
+  "file": "/photos/be-hogeschool-gent.webp",
+  "author": "ItsNyoty",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:HOGENT_Schoonmeersen_gebouw_C_en_D.jpg",
+  "wikidata": "Q1313163"
+ },
+ {
+  "id": "be-karel-de-grote-hogeschool-katholieke-hogeschool-antwerpen",
+  "file": "/photos/be-karel-de-grote-hogeschool-katholieke-hogeschool-antwerpen.webp",
+  "author": "TheGoodEndedHappily",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Karel_de_Grote_Hogeschool_campus_Zuid_Antwerpen.jpg",
+  "wikidata": "Q1991003"
  },
  {
   "id": "bht-berlin",
@@ -423,6 +504,15 @@
   "wikidata": "Q1666906"
  },
  {
+  "id": "curtin",
+  "file": "/photos/curtin.webp",
+  "author": "Orderinchaos",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Curtin_Building_502C_2024.jpg",
+  "wikidata": "Q1145497"
+ },
+ {
   "id": "cy-cergy-paris",
   "file": "/photos/cy-cergy-paris.webp",
   "author": "CY Cergy Paris Université",
@@ -459,6 +549,51 @@
   "wikidata": "Q49116"
  },
  {
+  "id": "de-brandenburgische-technische-universitat-cottbus-senftenberg",
+  "file": "/photos/de-brandenburgische-technische-universitat-cottbus-senftenberg.webp",
+  "author": "svolks",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Universit%C3%A4tsstra%C3%9Fe_Cottbus.jpg",
+  "wikidata": "Q149433"
+ },
+ {
+  "id": "de-hafencity-universitat-hamburg",
+  "file": "/photos/de-hafencity-universitat-hamburg.webp",
+  "author": "NordNordWest",
+  "license": "CC BY-SA 3.0 de",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "source": "https://commons.wikimedia.org/wiki/File:HafenCity_Universit%C3%A4t_Hamburg_August_2013.nnw.jpg",
+  "wikidata": "Q1567759"
+ },
+ {
+  "id": "de-hochschule-esslingen-fh",
+  "file": "/photos/de-hochschule-esslingen-fh.webp",
+  "author": "Erickubitschek",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:HZE_Hochschule_Esslingen.jpg",
+  "wikidata": "Q1622101"
+ },
+ {
+  "id": "de-hochschule-konstanz-technik-wirtschaft-und-gestaltung",
+  "file": "/photos/de-hochschule-konstanz-technik-wirtschaft-und-gestaltung.webp",
+  "author": "JoachimKohler-HB",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:HTWG_Konstanz_-_Geb%C3%A4ude_A_(Elektrotechnik,_Maschinenbau....).jpg",
+  "wikidata": "Q1622118"
+ },
+ {
+  "id": "de-leuphana-universitat-luneburg",
+  "file": "/photos/de-leuphana-universitat-luneburg.webp",
+  "author": "Gerrit Gutzeit",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Leuphana_Building.jpg",
+  "wikidata": "Q505170"
+ },
+ {
   "id": "de-montfort",
   "file": "/photos/de-montfort.webp",
   "author": "Jack O'Sullivan",
@@ -466,6 +601,33 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
   "source": "https://commons.wikimedia.org/wiki/File:Clephan_Building_De_Montfort_University2.jpg",
   "wikidata": "Q3551402"
+ },
+ {
+  "id": "de-technische-universitat-clausthal",
+  "file": "/photos/de-technische-universitat-clausthal.webp",
+  "author": "Matthias Süßen",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:TU-Clausthal-2019-msu-wlm1-4128.jpg",
+  "wikidata": "Q447354"
+ },
+ {
+  "id": "de-technische-universitat-hamburg-harburg",
+  "file": "/photos/de-technische-universitat-hamburg-harburg.webp",
+  "author": "KaiBorgeest",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:HH_Am_Schwarzenberg-Campus_1.jpg",
+  "wikidata": "Q1060"
+ },
+ {
+  "id": "de-universitat-der-kunste-berlin",
+  "file": "/photos/de-universitat-der-kunste-berlin.webp",
+  "author": "Fridolin freudenfett (Peter Kuley)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:CharlottenburgHardenbergstra%C3%9FeUDK.jpg",
+  "wikidata": "Q55038"
  },
  {
   "id": "derby",
@@ -540,6 +702,87 @@
   "wikidata": "Q655542"
  },
  {
+  "id": "es-universidad-de-a-coruna",
+  "file": "/photos/es-universidad-de-a-coruna.webp",
+  "author": "Nemigo",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "source": "https://commons.wikimedia.org/wiki/File:EUP_Serantes.jpg",
+  "wikidata": "Q12387981"
+ },
+ {
+  "id": "es-universidad-de-cadiz",
+  "file": "/photos/es-universidad-de-cadiz.webp",
+  "author": "El Pantera",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Escuela_Superior_de_Ingenier%C3%ADa_de_Puerto_Real_-_20170313_092450.jpg",
+  "wikidata": "Q5838902"
+ },
+ {
+  "id": "es-universidad-de-cantabria",
+  "file": "/photos/es-universidad-de-cantabria.webp",
+  "author": "Josep Panadero",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "source": "https://commons.wikimedia.org/wiki/File:Santander.Universidad.Edificio.Interfacultativo.jpg",
+  "wikidata": "Q20014988"
+ },
+ {
+  "id": "es-universidad-de-valladolid",
+  "file": "/photos/es-universidad-de-valladolid.webp",
+  "author": "Rastrojo ( ES )",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Facultad_de_Econ%C3%B3micas_de_Valladolid_(2015).jpg",
+  "wikidata": "Q20014977"
+ },
+ {
+  "id": "es-universidad-del-pais-vasco-euskal-herriko-unibertsitatea",
+  "file": "/photos/es-universidad-del-pais-vasco-euskal-herriko-unibertsitatea.webp",
+  "author": "Txo",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "source": "https://commons.wikimedia.org/wiki/File:Eibar,_uni.JPG",
+  "wikidata": "Q5839012"
+ },
+ {
+  "id": "es-universidad-miguel-hernandez-de-elche",
+  "file": "/photos/es-universidad-miguel-hernandez-de-elche.webp",
+  "author": "Josecarlosdiez",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Campus_Universidad_Miguel_Hern%C3%A1ndez_Elche.JPG",
+  "wikidata": "Q24676"
+ },
+ {
+  "id": "es-universidad-pompeu-fabra",
+  "file": "/photos/es-universidad-pompeu-fabra.webp",
+  "author": "Ismael March Muñoz",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Escola_Comercial_(Barcelona)-02.jpg",
+  "wikidata": "Q21574130"
+ },
+ {
+  "id": "es-universidad-pontificia-comillas",
+  "file": "/photos/es-universidad-pontificia-comillas.webp",
+  "author": "Ilfirin",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "source": "https://commons.wikimedia.org/wiki/File:ICAI.JPG",
+  "wikidata": "Q3152853"
+ },
+ {
+  "id": "es-universidad-rey-juan-carlos",
+  "file": "/photos/es-universidad-rey-juan-carlos.webp",
+  "author": "Mabel Velástegui",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Facultad_de_Ciencias_Jur%C3%ADdicas_y_Sociales_(URJC)_3.JPG",
+  "wikidata": "Q17295517"
+ },
+ {
   "id": "essex",
   "file": "/photos/essex.webp",
   "author": "Gareth James",
@@ -612,6 +855,15 @@
   "wikidata": "Q554425"
  },
  {
+  "id": "fi-yrkeshogskolan-arcada",
+  "file": "/photos/fi-yrkeshogskolan-arcada.webp",
+  "author": "Leena Tarjamo",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Cor-huset.jpg",
+  "wikidata": "Q4411479"
+ },
+ {
   "id": "fontys",
   "file": "/photos/fontys.webp",
   "author": "Internationale Marketing",
@@ -619,6 +871,96 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "source": "https://commons.wikimedia.org/wiki/File:Eindhoven_campus.jpg",
   "wikidata": "Q1435898"
+ },
+ {
+  "id": "fr-ecole-polytechnique",
+  "file": "/photos/fr-ecole-polytechnique.webp",
+  "author": "David Monniaux",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "source": "https://commons.wikimedia.org/wiki/File:Ecole_Polytechnique_France_seen_from_lake_DSC03389.JPG",
+  "wikidata": "Q273626"
+ },
+ {
+  "id": "fr-escp-business-school",
+  "file": "/photos/fr-escp-business-school.webp",
+  "author": "BobVillars",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:ESCP_Business_School_Madrid_campus.jpg",
+  "wikidata": "Q29293"
+ },
+ {
+  "id": "fr-grenoble-ecole-de-management",
+  "file": "/photos/fr-grenoble-ecole-de-management.webp",
+  "author": "朝彦",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "source": "https://commons.wikimedia.org/wiki/File:Grenoble_Ecole_de_Management.JPG",
+  "wikidata": "Q839224"
+ },
+ {
+  "id": "fr-ieseg-school-of-management-lille",
+  "file": "/photos/fr-ieseg-school-of-management-lille.webp",
+  "author": "YtoSu",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:I%C3%89SEG_School_of_Management_Paris_La_D%C3%A9fense_Campus.jpg",
+  "wikidata": "Q3156522"
+ },
+ {
+  "id": "fr-insa-rouen-normandie",
+  "file": "/photos/fr-insa-rouen-normandie.webp",
+  "author": "Aripauteur",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:INSA_de_Rouen_batiment_madrillet_it.JPG",
+  "wikidata": "Q1665112"
+ },
+ {
+  "id": "fr-insa-strasbourg",
+  "file": "/photos/fr-insa-strasbourg.webp",
+  "author": "Ji-Elle",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:INSA-Strasbourg(1).jpg",
+  "wikidata": "Q521036"
+ },
+ {
+  "id": "fr-kedge-business-school-campus-de-paris",
+  "file": "/photos/fr-kedge-business-school-campus-de-paris.webp",
+  "author": "M690951",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Campus_Kedge_BS_%C3%A0_Bordeaux.jpg",
+  "wikidata": "Q16647785"
+ },
+ {
+  "id": "fr-paris-sciences-lettres-psl",
+  "file": "/photos/fr-paris-sciences-lettres-psl.webp",
+  "author": "LPLT",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Entr%C3%A9e_ENS_45_rue_d%27ulm.JPG",
+  "wikidata": "Q83259"
+ },
+ {
+  "id": "fr-universite-grenoble-alpes",
+  "file": "/photos/fr-universite-grenoble-alpes.webp",
+  "author": "P baldwin89",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Grenoble_Campus_2016.jpg",
+  "wikidata": "Q945876"
+ },
+ {
+  "id": "frankfurt-school",
+  "file": "/photos/frankfurt-school.webp",
+  "author": "K.Xhab",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Frankfurt_School_of_Finance_%26_Management_Main_Campus_in_Frankfurt_am_Main.jpg",
+  "wikidata": "Q1444899"
  },
  {
   "id": "frankfurt-uas",
@@ -774,6 +1116,15 @@
   "wikidata": "Q314089"
  },
  {
+  "id": "hochschule-heilbronn",
+  "file": "/photos/hochschule-heilbronn.webp",
+  "author": "Reinhold-Würth-Hochschule",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Vogelperspektive_Campus_K%C3%BCnzelsau.jpg",
+  "wikidata": "Q1431158"
+ },
+ {
   "id": "hogeschool-leiden",
   "file": "/photos/hogeschool-leiden.webp",
   "author": "Lievevlok",
@@ -844,6 +1195,15 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "source": "https://commons.wikimedia.org/wiki/File:Campus_Sch%C3%B6neberg_Haus_A.jpg",
   "wikidata": "Q464443"
+ },
+ {
+  "id": "ie-technological-university-of-the-shannon",
+  "file": "/photos/ie-technological-university-of-the-shannon.webp",
+  "author": "瑞丽江的河水",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:TUS_Athlone_Engineering_%26_Science_Building,_2022-12-20.jpg",
+  "wikidata": "Q106646552"
  },
  {
   "id": "imperial",
@@ -925,6 +1285,15 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
   "source": "https://commons.wikimedia.org/wiki/File:Linz_-_JKU_-_Science_Park_2.jpg",
   "wikidata": "Q682739"
+ },
+ {
+  "id": "johncabot",
+  "file": "/photos/johncabot.webp",
+  "author": "Veronica59",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:John_Cabot_University_courtyard.jpg",
+  "wikidata": "Q1314405"
  },
  {
   "id": "johns-hopkins",
@@ -1053,6 +1422,15 @@
   "wikidata": "Q1641001"
  },
  {
+  "id": "kyung-hee",
+  "file": "/photos/kyung-hee.webp",
+  "author": "Kys951",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Kyung_Hee_Univ._Administration_Building(Seoul_Campus).JPG",
+  "wikidata": "Q496536"
+ },
+ {
   "id": "lancashire",
   "file": "/photos/lancashire.webp",
   "author": "UCLanCyprus",
@@ -1060,6 +1438,15 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
   "source": "https://commons.wikimedia.org/wiki/File:CampusofUCLanCyprus.jpg",
   "wikidata": "Q1857773"
+ },
+ {
+  "id": "lasalle",
+  "file": "/photos/lasalle.webp",
+  "author": "Chainwit.",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:LASALLE_College_of_the_Arts_City_Campus_(2025)_-_img_01.jpg",
+  "wikidata": "Q6457112"
  },
  {
   "id": "le-mans-universite",
@@ -1350,6 +1737,15 @@
   "wikidata": "Q3557727"
  },
  {
+  "id": "murdoch",
+  "file": "/photos/murdoch.webp",
+  "author": "Michal Lewi",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Chancellery_Building.jpg",
+  "wikidata": "Q1375146"
+ },
+ {
   "id": "mykolas-romeris",
   "file": "/photos/mykolas-romeris.webp",
   "author": "RainaKate",
@@ -1467,6 +1863,15 @@
   "wikidata": "Q1640726"
  },
  {
+  "id": "oslomet",
+  "file": "/photos/oslomet.webp",
+  "author": "Helge Høifødt",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:H%C3%B8gskolen_i_Oslo_og_Akershus_med_Fyrhuset.jpg",
+  "wikidata": "Q47249304"
+ },
+ {
   "id": "ostfalia",
   "file": "/photos/ostfalia.webp",
   "author": "AbdelRahmanAbuBaker",
@@ -1575,6 +1980,24 @@
   "wikidata": "Q11838083"
  },
  {
+  "id": "pl-politechnika-poznanska",
+  "file": "/photos/pl-politechnika-poznanska.webp",
+  "author": "Juandev or Jarka",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Poznan,_budova_univerzity.JPG",
+  "wikidata": "Q16616789"
+ },
+ {
+  "id": "pl-politechnika-slaska",
+  "file": "/photos/pl-politechnika-slaska.webp",
+  "author": "Samuel Folwaczny",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Biblioteka_Politechniki_%C5%9Al%C4%85skiej.jpg",
+  "wikidata": "Q1424978"
+ },
+ {
   "id": "polimi",
   "file": "/photos/polimi.webp",
   "author": "NuclearNiranjan",
@@ -1647,6 +2070,15 @@
   "wikidata": "Q877925"
  },
  {
+  "id": "queens",
+  "file": "/photos/queens.webp",
+  "author": "No machine-readable author provided. GreenCommons assumed (based on copyright claims).",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "source": "https://commons.wikimedia.org/wiki/File:Queen%27sDouglas.JPG",
+  "wikidata": "Q1420038"
+ },
+ {
   "id": "radboud",
   "file": "/photos/radboud.webp",
   "author": "Roger Veringmeier",
@@ -1654,6 +2086,15 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
   "source": "https://commons.wikimedia.org/wiki/File:Het_Grotiusgebouw_Faculteit_der_Rechtsgeleerdheid_Radboud_Universiteit_Nijmegen.jpg",
   "wikidata": "Q632004"
+ },
+ {
+  "id": "rcs",
+  "file": "/photos/rcs.webp",
+  "author": "Ulysse Verjus-Tonnelé",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:RCS_fa%C3%A7ade_avant.jpg",
+  "wikidata": "Q3446028"
  },
  {
   "id": "rennes-2",
@@ -1674,6 +2115,15 @@
   "wikidata": "Q842909"
  },
  {
+  "id": "rmit",
+  "file": "/photos/rmit.webp",
+  "author": "Donaldytong",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "source": "https://commons.wikimedia.org/wiki/File:RMIT_University_Building_01.jpg",
+  "wikidata": "Q1057890"
+ },
+ {
   "id": "robert-gordon",
   "file": "/photos/robert-gordon.webp",
   "author": "Jackofhearts101",
@@ -1690,6 +2140,24 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
   "source": "https://commons.wikimedia.org/wiki/File:Roskilde_Universitetsbibliotek.jpg",
   "wikidata": "Q1542386"
+ },
+ {
+  "id": "royal-academy-of-music",
+  "file": "/photos/royal-academy-of-music.webp",
+  "author": "Philafrenzy",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Royal_Academy_of_Music,_London_W1.jpg",
+  "wikidata": "Q1144673"
+ },
+ {
+  "id": "royal-college-of-music",
+  "file": "/photos/royal-college-of-music.webp",
+  "author": "Julian Herzog ( Website )",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Royal_College_of_Music_London_2020.jpg",
+  "wikidata": "Q304985"
  },
  {
   "id": "royal-holloway",
@@ -1717,6 +2185,15 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
   "source": "https://commons.wikimedia.org/wiki/File:RSU_-_Dzirciema_iela_16.jpg",
   "wikidata": "Q2007643"
+ },
+ {
+  "id": "rtu",
+  "file": "/photos/rtu.webp",
+  "author": "David Holt",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Riga_Tech_Uni.jpg",
+  "wikidata": "Q411895"
  },
  {
   "id": "rug",
@@ -1809,6 +2286,60 @@
   "wikidata": "Q2166335"
  },
  {
+  "id": "se-handelshogskolan-i-stockholm",
+  "file": "/photos/se-handelshogskolan-i-stockholm.webp",
+  "author": "I99pema",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Stockholm_School_of_Economics_-_Handelsh%C3%B6gskolan.jpg",
+  "wikidata": "Q1061504"
+ },
+ {
+  "id": "se-jonkoping-university",
+  "file": "/photos/se-jonkoping-university.webp",
+  "author": "Foto av Kontrastfoto Ljungby på uppdrag av Högskoleservice i Jönköping AB",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_J%C3%B6nk%C3%B6ping_University,_Sweden.jpg",
+  "wikidata": "Q2496060"
+ },
+ {
+  "id": "se-karolinska-institutet",
+  "file": "/photos/se-karolinska-institutet.webp",
+  "author": "Oscar Franzén",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "source": "https://commons.wikimedia.org/wiki/File:Karolinska_Institutet,_infart_fr%C3%A5n_Solnav%C3%A4gen_20060723.jpg",
+  "wikidata": "Q219564"
+ },
+ {
+  "id": "se-lulea-tekniska-universitet",
+  "file": "/photos/se-lulea-tekniska-universitet.webp",
+  "author": "Norrkbd",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Pite%C3%A5_musikh%C3%B6gskola,_huvudentr%C3%A9n.jpg",
+  "wikidata": "Q669465"
+ },
+ {
+  "id": "se-malardalens-universitet",
+  "file": "/photos/se-malardalens-universitet.webp",
+  "author": "Dependability",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:M%C3%A4lardalens_Universitet_MDU_V%C3%A4ster%C3%A5s_2025.jpg",
+  "wikidata": "Q1546159"
+ },
+ {
+  "id": "se-sveriges-lantbruksuniversitet",
+  "file": "/photos/se-sveriges-lantbruksuniversitet.webp",
+  "author": "News Oresund",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:20170612_Sveriges_Lantbruksuniversitet_i_Alnarp_0007_(35000670690).jpg",
+  "wikidata": "Q1312762"
+ },
+ {
   "id": "sea-esbjerg",
   "file": "/photos/sea-esbjerg.webp",
   "author": ".mw-parser-output .template-designermadsen-source{border:1px solid #a2a9b1;background-color:#f8f9fa;display:grid;padding",
@@ -1816,6 +2347,15 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
   "source": "https://commons.wikimedia.org/wiki/File:EasvByDesignermadsen-df96da3.jpg",
   "wikidata": "Q12310237"
+ },
+ {
+  "id": "sfu",
+  "file": "/photos/sfu.webp",
+  "author": "kirsten",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Academic_quad_at_sfu.jpg",
+  "wikidata": "Q201603"
  },
  {
   "id": "sgh-warszawa",
@@ -1843,6 +2383,24 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "source": "https://commons.wikimedia.org/wiki/File:600_Anniversary_Hall_(3).JPG",
   "wikidata": "Q41085"
+ },
+ {
+  "id": "sns-pisa",
+  "file": "/photos/sns-pisa.webp",
+  "author": "Lucarelli",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Palazzo_Carovana_Pisa.jpg",
+  "wikidata": "Q672416"
+ },
+ {
+  "id": "soas",
+  "file": "/photos/soas.webp",
+  "author": "Philafrenzy",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:School_of_Oriental_%26_African_Studies,_London_03.JPG",
+  "wikidata": "Q220144"
  },
  {
   "id": "sorbonne-nouvelle",
@@ -2025,6 +2583,24 @@
   "wikidata": "Q590201"
  },
  {
+  "id": "tu-bergakademie-freiberg",
+  "file": "/photos/tu-bergakademie-freiberg.webp",
+  "author": "RobertPorter",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "source": "https://commons.wikimedia.org/wiki/File:Glueck.jpg",
+  "wikidata": "Q689854"
+ },
+ {
+  "id": "tu-chemnitz",
+  "file": "/photos/tu-chemnitz.webp",
+  "author": "User:Kolossos",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "source": "https://commons.wikimedia.org/wiki/File:Chemnitz-TU-StraNa.jpg",
+  "wikidata": "Q159630"
+ },
+ {
   "id": "tu-darmstadt",
   "file": "/photos/tu-darmstadt.webp",
   "author": "Erkaha",
@@ -2077,6 +2653,15 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/at/deed.en",
   "source": "https://commons.wikimedia.org/wiki/File:TUG_Alte_Technik_1.jpg",
   "wikidata": "Q689775"
+ },
+ {
+  "id": "tu-ilmenau",
+  "file": "/photos/tu-ilmenau.webp",
+  "author": "Markus Liebhold",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Unterer_Gustav-Kirchhoff-Platz.jpg",
+  "wikidata": "Q129195"
  },
  {
   "id": "tu-sofia",
@@ -2203,6 +2788,15 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "source": "https://commons.wikimedia.org/wiki/File:Univ_Al_I_Cuza_Ia%C5%9Fi.jpg",
   "wikidata": "Q1523902"
+ },
+ {
+  "id": "ualg",
+  "file": "/photos/ualg.webp",
+  "author": "Torbenbrinker",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:FaroUniversidadeEntrada.jpg",
+  "wikidata": "Q1972136"
  },
  {
   "id": "uam-madrid",
@@ -2689,6 +3283,15 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "source": "https://commons.wikimedia.org/wiki/File:Gottfried_Wilhelm_Leibniz_Universit%C3%A4t_Hannover_IMG_5206.jpg",
   "wikidata": "Q678982"
+ },
+ {
+  "id": "uni-hohenheim",
+  "file": "/photos/uni-hohenheim.webp",
+  "author": "Stephan Klage",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "source": "https://commons.wikimedia.org/wiki/File:Universit%C3%A4t_Hohenheim_R0010108.jpg",
+  "wikidata": "Q690912"
  },
  {
   "id": "uni-innsbruck",
@@ -3474,6 +4077,15 @@
   "wikidata": "Q1888128"
  },
  {
+  "id": "unyp-prague",
+  "file": "/photos/unyp-prague.webp",
+  "author": "MWAPrague",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:University_of_New_York_in_Prague_Exterior.jpg",
+  "wikidata": "Q7895929"
+ },
+ {
   "id": "uoa-atena",
   "file": "/photos/uoa-atena.webp",
   "author": "Thomas Wolf , www.foto-tw.de",
@@ -3600,6 +4212,15 @@
   "wikidata": "Q1475126"
  },
  {
+  "id": "us-case-western-reserve-university",
+  "file": "/photos/us-case-western-reserve-university.webp",
+  "author": "Rdikeman at English Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "source": "https://commons.wikimedia.org/wiki/File:Case_western_reserve_campus_2005.jpg",
+  "wikidata": "Q1047060"
+ },
+ {
   "id": "us-katowice",
   "file": "/photos/us-katowice.webp",
   "author": "Gower",
@@ -3609,6 +4230,42 @@
   "wikidata": "Q6377819"
  },
  {
+  "id": "us-macalester-college",
+  "file": "/photos/us-macalester-college.webp",
+  "author": "McGhiever",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Macalester_Old_Main.jpg",
+  "wikidata": "Q1141571"
+ },
+ {
+  "id": "us-ohio-state-university-main-campus",
+  "file": "/photos/us-ohio-state-university-main-campus.webp",
+  "author": "Michael Barera",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:The_Ohio_State_University_December_2013_24_(University_Hall).jpg",
+  "wikidata": "Q309331"
+ },
+ {
+  "id": "us-purdue-university-main-campus",
+  "file": "/photos/us-purdue-university-main-campus.webp",
+  "author": "Abhijitsathe",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:2816_px_-_University_Hall_Purdue_University_Fall_2006.JPG",
+  "wikidata": "Q217741"
+ },
+ {
+  "id": "us-rutgers-university-new-brunswick",
+  "file": "/photos/us-rutgers-university-new-brunswick.webp",
+  "author": "Zeete",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Old_Queens,_New_Brunswick,_NJ_-_looking_north,_2014.jpg",
+  "wikidata": "Q499451"
+ },
+ {
   "id": "us-sevilla",
   "file": "/photos/us-sevilla.webp",
   "author": "El Pantera",
@@ -3616,6 +4273,78 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
   "source": "https://commons.wikimedia.org/wiki/File:Escuela_T%C3%A9cnica_Superior_de_Arquitectura_de_Sevilla_-_IMG_20221129_165555.jpg",
   "wikidata": "Q5838934"
+ },
+ {
+  "id": "us-swarthmore-college",
+  "file": "/photos/us-swarthmore-college.webp",
+  "author": "Ugen64 at English Wikipedia",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "source": "https://commons.wikimedia.org/wiki/File:Parrish_Hall.jpg",
+  "wikidata": "Q1378320"
+ },
+ {
+  "id": "us-university-of-california-santa-barbara",
+  "file": "/photos/us-university-of-california-santa-barbara.webp",
+  "author": "Coolcaesar",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:UCSB_University_Center_and_Storke_Tower.jpg",
+  "wikidata": "Q263064"
+ },
+ {
+  "id": "us-university-of-illinois-urbana-champaign",
+  "file": "/photos/us-university-of-illinois-urbana-champaign.webp",
+  "author": "Robert Barthell",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Grainger_Library_and_Campus_Instructional_Facility_(UIUC).jpg",
+  "wikidata": "Q457281"
+ },
+ {
+  "id": "us-university-of-maryland-college-park",
+  "file": "/photos/us-university-of-maryland-college-park.webp",
+  "author": "Bgervais",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:UMD_McKeldin_sundial.JPG",
+  "wikidata": "Q503415"
+ },
+ {
+  "id": "us-university-of-virginia-main-campus",
+  "file": "/photos/us-university-of-virginia-main-campus.webp",
+  "author": "tldagny",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Darden_School_main_UVa.jpg",
+  "wikidata": "Q1165769"
+ },
+ {
+  "id": "us-university-of-wisconsin-madison",
+  "file": "/photos/us-university-of-wisconsin-madison.webp",
+  "author": "autor necunoscut",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "source": "https://commons.wikimedia.org/wiki/File:BascomHill.JPG",
+  "wikidata": "Q838330"
+ },
+ {
+  "id": "us-vassar-college",
+  "file": "/photos/us-vassar-college.webp",
+  "author": "Collin Knopp-Schwyn",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:New_England_Building,_November_2014.jpg",
+  "wikidata": "Q2093794"
+ },
+ {
+  "id": "us-wellesley-college",
+  "file": "/photos/us-wellesley-college.webp",
+  "author": "John Phelan",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Green_Hall,_Wellesley_College,_Wellesley_MA.jpg",
+  "wikidata": "Q49205"
  },
  {
   "id": "usamv-bucuresti",
@@ -3895,6 +4624,15 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
   "source": "https://commons.wikimedia.org/wiki/File:University_College,_Western_University.jpg",
   "wikidata": "Q1144262"
+ },
+ {
+  "id": "whu",
+  "file": "/photos/whu.webp",
+  "author": "Reinhardhauke",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Vallendar_Marienburg_86.JPG",
+  "wikidata": "Q316595"
  },
  {
   "id": "williams",

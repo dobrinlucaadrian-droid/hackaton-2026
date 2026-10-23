@@ -222,7 +222,7 @@
   "officialName": "Universidad de A Coruña",
   "city": "A Coruña",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.udc.es",
   "programs": 51
  },
@@ -234,7 +234,7 @@
   "officialName": "Universidad de Alcalá",
   "city": "Alcalá de Henares",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.uah.es",
   "programs": 50
  },
@@ -294,7 +294,7 @@
   "officialName": "Universidad de Cádiz",
   "city": "Cádiz",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.uca.es",
   "programs": 78
  },
@@ -306,7 +306,7 @@
   "officialName": "Universidad de Cantabria",
   "city": "Santander",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.unican.es",
   "programs": 35
  },
@@ -570,7 +570,7 @@
   "officialName": "Universidad de Valladolid",
   "city": "Valladolid",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 89
  },
  {
@@ -593,7 +593,7 @@
   "officialName": "Universidad de Vigo",
   "city": "Vigo",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.uvigo.es",
   "programs": 60
  },
@@ -628,7 +628,7 @@
   "officialName": "Universidad del País Vasco/Euskal Herriko Unibertsitatea",
   "city": "Leioa",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.ehu.es",
   "programs": 101
  },
@@ -771,7 +771,7 @@
   "officialName": "Universidad Jaume I de Castellón",
   "city": "Castelló de la Plana",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.uji.es",
   "programs": 37
  },
@@ -795,7 +795,7 @@
   "officialName": "Universidad Miguel Hernández de Elche",
   "city": "Elx/Elche",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.umh.es",
   "programs": 44
  },
@@ -867,7 +867,7 @@
   "officialName": "Universidad Pompeu Fabra",
   "city": "Barcelona",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.upf.edu",
   "programs": 43
  },
@@ -879,7 +879,7 @@
   "officialName": "Universidad Pontificia Comillas",
   "city": "Madrid",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.upcomillas.es",
   "programs": 30
  },
@@ -927,7 +927,7 @@
   "officialName": "Universidad Rey Juan Carlos",
   "city": "Móstoles",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.urjc.es",
   "programs": 202
  },
@@ -1010,7 +1010,7 @@
   "officialName": "Universitat de Girona",
   "city": "Girona",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 67
  },
  {

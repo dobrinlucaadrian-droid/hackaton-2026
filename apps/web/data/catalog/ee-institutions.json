@@ -55,7 +55,7 @@
   "officialName": "Eesti Ettevõtluskõrgkool Mainor",
   "city": "Tallinn",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.eek.ee",
   "programs": 36
  },

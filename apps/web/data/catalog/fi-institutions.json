@@ -216,7 +216,7 @@
   "officialName": "Svenska handelshögskolan",
   "city": "Helsinki",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 3
  },
  {
@@ -238,7 +238,7 @@
   "officialName": "Tampereen ammattikorkeakoulu",
   "city": "Tampere",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 40
  },
  {
@@ -249,7 +249,7 @@
   "officialName": "Turun ammattikorkeakoulu",
   "city": "Turku",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 43
  },
  {
@@ -282,7 +282,7 @@
   "officialName": "Yrkeshögskolan Arcada",
   "city": "Helsinki",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 18
  },
  {

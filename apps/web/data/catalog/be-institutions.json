@@ -43,7 +43,7 @@
   "officialName": "Erasmushogeschool Brussel",
   "city": "Anderlecht",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.erasmushogeschool.be",
   "programs": 24
  },
@@ -79,7 +79,7 @@
   "officialName": "Hogeschool Gent",
   "city": "Gent",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.hogent.be",
   "programs": 28
  },
@@ -115,7 +115,7 @@
   "officialName": "Karel de Grote Hogeschool, Katholieke Hogeschool Antwerpen",
   "city": "Antwerpen",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.kdg.be",
   "programs": 22
  },
@@ -187,7 +187,7 @@
   "officialName": "Thomas More Mechelen-Antwerpen",
   "city": "Mechelen",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.thomasmore.be#103598",
   "programs": 28
  },
@@ -211,7 +211,7 @@
   "officialName": "UC Leuven",
   "city": "Leuven",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.ucll.be/#103648",
   "programs": 17
  },

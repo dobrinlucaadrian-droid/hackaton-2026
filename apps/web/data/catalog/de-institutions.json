@@ -319,7 +319,7 @@
   "officialName": "Brandenburgische Technische Universität Cottbus-Senftenberg",
   "city": "Cottbus",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.b-tu.de/",
   "programs": 32
  },
@@ -1063,7 +1063,7 @@
   "officialName": "Hafencity Universität Hamburg",
   "city": "Hamburg",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.hcu-hamburg.de",
   "programs": 6
  },
@@ -1339,7 +1339,7 @@
   "officialName": "Hochschule Esslingen (FH)",
   "city": "Esslingen am Neckar",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.hs-esslingen.de",
   "programs": 28
  },
@@ -1963,7 +1963,7 @@
   "officialName": "Hochschule Konstanz - Technik, Wirtschaft und Gestaltung",
   "city": "Konstanz",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.htwg-konstanz.de",
   "programs": 21
  },
@@ -2467,7 +2467,7 @@
   "officialName": "Leuphana Universität Lüneburg",
   "city": "Lüneburg",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.leuphana.de",
   "programs": 1
  },
@@ -2563,7 +2563,7 @@
   "officialName": "Medizinische Hochschule Hannover",
   "city": "Hannover",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.mh-hannover.de/index.php?id=2&L=1",
   "programs": 1
  },
@@ -3163,7 +3163,7 @@
   "officialName": "Technische Universität Clausthal",
   "city": "Clausthal",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.tu-clausthal.de",
   "programs": 17
  },
@@ -3187,7 +3187,7 @@
   "officialName": "Technische Universität Hamburg-Harburg",
   "city": "Hamburg",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.tuhh.de/tuhh/en/startpage",
   "programs": 17
  },
@@ -3331,7 +3331,7 @@
   "officialName": "Universität der Künste Berlin",
   "city": "Berlin",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.udk-berlin.de",
   "programs": 20
  },
@@ -3367,7 +3367,7 @@
   "officialName": "Universität Lübeck",
   "city": "Lübeck",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.uni-lübeck.de",
   "programs": 16
  },

@@ -302,7 +302,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `gr-programs.json` (2) — JSON array, 335 items
 - `ie-institutions.json` (498) — JSON array, 45 items
 - `ie-programs.json`
-- `index.json` (2497) — JSON array, 18 items
+- `index.json` (2590) — JSON array, 18 items
 - `it-institutions.json` (1015) — JSON array, 92 items
 - `it-programs.json`
 - `lt-institutions.json` (300) — JSON array, 27 items
@@ -328,8 +328,8 @@ _Open only the files listed here; a file's description is its first comment line
 - `domains.json` (43) — JSON array, 40 items
 - `faculties-ro.json`
 - `guides.json` (3254) — JSON array, 32 items
-- `photo-rejects.json` (168) — JSON array, 165 items
-- `photos.json` (3945) — JSON array, 438 items
+- `photo-rejects.json` (181) — JSON array, 178 items
+- `photos.json` (4683) — JSON array, 520 items
 - `profiles.json` (15) — JSON array, 12 items
 - `questions.json` (729) — JSON array, 18 items
 - `ro-cities.json` (25) — JSON array, 22 items
@@ -387,12 +387,14 @@ _Open only the files listed here; a file's description is its first comment line
 - `logo.png`
 - `world-universities.json`
 
-### apps/web/public/photos  (438 files)
+### apps/web/public/photos  (520 files)
 
 - `aalborg.webp`
 - `aalto.webp`
 - `aarhus-architecture.webp`
 - `aarhus.webp`
+- `abertay.webp`
+- `aberystwyth.webp`
 - `absalon.webp`
 - `acu.webp`
 - `agh-krakow.webp`
@@ -406,11 +408,18 @@ _Open only the files listed here; a file's description is its first comment line
 - `ase-bucuresti.webp`
 - `asem-chisinau.webp`
 - `aston.webp`
+- `at-fachhochschule-salzburg-gmbh.webp`
+- `at-medizinische-universitat-graz.webp`
+- `at-universitat-fur-angewandte-kunst-wien.webp`
 - `aubg-blagoevgrad.webp`
 - `aueb-atena.webp`
+- `aur.webp`
 - `auth-salonic.webp`
 - `bangor.webp`
 - `bath.webp`
+- `be-erasmushogeschool-brussel.webp`
+- `be-hogeschool-gent.webp`
+- `be-karel-de-grote-hogeschool-katholieke-hogeschool-antwerpen.webp`
 - `bht-berlin.webp`
 - `birmingham-city.webp`
 - `birmingham.webp`
@@ -420,16 +429,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `bournemouth.webp`
 - `bretagne-sud.webp`
 - `bristol.webp`
-- `brown.webp`
-- `buas.webp`
-- `business-academy-aarhus.webp`
-- `cardiff-met.webp`
-- `cardiff.webp`
-- `carnegie-mellon.webp`
-- `cbs.webp`
-- `chalmers.webp`
-- `che-ede.webp`
-- … +398 more
+- … +480 more
 
 ### apps/web/public/studenti  (20 files)
 

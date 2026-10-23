@@ -1674,7 +1674,7 @@
   "officialName": "Politechnika Poznańska",
   "city": "Poznań",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.put.poznan.pl",
   "programs": 62
  },
@@ -1698,7 +1698,7 @@
   "officialName": "Politechnika Śląska",
   "city": "Gliwice",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.polsl.pl",
   "programs": 87
  },
@@ -2345,7 +2345,7 @@
   "officialName": "Uniwersytet Medyczny im. Karola Marcinkowskiego w Poznaniu",
   "city": "Poznań",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.ump.edu.pl",
   "programs": 35
  },
@@ -2357,7 +2357,7 @@
   "officialName": "Uniwersytet Medyczny im. Piastów Śląskich we Wrocławiu",
   "city": "Wrocław",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.umw.edu.pl",
   "programs": 25
  },
@@ -2369,7 +2369,7 @@
   "officialName": "Uniwersytet Medyczny w Białymstoku",
   "city": "Białystok",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.umb.edu.pl",
   "programs": 25
  },
@@ -2381,7 +2381,7 @@
   "officialName": "Uniwersytet Medyczny w Łodzi",
   "city": "Łódź",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.umed.pl",
   "programs": 20
  },

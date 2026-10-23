@@ -227,7 +227,7 @@
   "officialName": "Vilniaus dailės akademija",
   "city": "Vilnius",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 26
  },
  {
