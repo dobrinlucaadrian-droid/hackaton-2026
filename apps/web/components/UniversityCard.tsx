@@ -1,10 +1,11 @@
-// Compact university result card: name, place, badges, three short facts, whether we have student opinions and a link to the full sheet (the whole card is clickable).
+// Compact university result card: name, place, badges, three short facts, whether we have student opinions, a heart for the favourites and a link to the full sheet (the whole card is clickable, the heart sits above it).
 import Link from "next/link";
 import { domains } from "@/lib/data";
 import type { UniversitySummary } from "@/lib/types";
 import { useTestimonialsFor } from "@/lib/useTestimonials";
 import { ADMISSION_LABEL } from "@/lib/labels";
 import { FAMILY_CLASSES, domainStyle } from "./domainStyle";
+import { FavoriteButton } from "./FavoriteButton";
 import { BudgetBadge, PrestigeBadge } from "./UniversityBadges";
 
 export function UniversityCard({ u, rank, domainId }: { u: UniversitySummary; rank?: number; domainId?: string }) {
@@ -13,7 +14,10 @@ export function UniversityCard({ u, rank, domainId }: { u: UniversitySummary; ra
   const domain = domainId && u.domainIds.includes(domainId) ? domains.find((d) => d.id === domainId) : undefined;
   return (
     <article className="relative h-full rounded-3xl bg-card p-5 shadow-sm ring-1 ring-line transition hover:ring-primary/50 focus-within:ring-2 focus-within:ring-primary">
-      <div className="flex items-start gap-3">
+      <div className="absolute right-3 top-3 z-10">
+        <FavoriteButton compact university={{ universityId: u.id, name: u.name, place: `${u.city}, ${u.country}` }} />
+      </div>
+      <div className="flex items-start gap-3 pr-12">
         {rank !== undefined && (
           <span aria-label={`Locul ${rank}`} className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary font-black text-white">
             {rank}

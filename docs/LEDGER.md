@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-23 07:30 — inimioara de favorite pe cardurile din căutare
+- Cerut: inimioara și pe cardurile din căutare, nu doar pe fișă
+- Făcut: varianta mică a butonului de favorite (`compact`) în colțul fiecărui card din „Universități”, deasupra linkului care acoperă cardul, cu numele universității citit de cititoarele de ecran; fără cont deschide fereastra de cont (rămâi pe căutare), cu cont pune și scoate de la favorite pe loc
+- Fișiere: `apps/web/components/FavoriteButton.tsx`, `apps/web/components/UniversityCard.tsx`
+- Poartă: TRECUT (gate.mjs); local: fără cont → fereastra de cont, rămâne pe căutare; cu contul de probă → adaugă și scoate; pe telefon nu acoperă numele
+- Urmează: lansarea, când hotărăște echipa
+
 ### 2026-10-23 07:00 — sugestii în căutare, verificarea pe telefon și accesibilitate
 - Cerut: (5) sugestii în timp ce scrii; (3) verificare pe telefon; (6) accesibilitate; reparat direct ce e mic
 - Făcut: (Sugestii) sub căsuța de căutare a universităților apar, de la 2 litere și fără diacritice, cel mult 2 locuri (oraș sau țară; clic caută acolo) și 6 universități (românești întâi; clic deschide fișa); merge cu săgețile, Enter și Escape și e anunțată corect de cititoarele de ecran (combobox). (Verificare) toate paginile la 375 px, cu un control automat (ieșire în lateral, butoane mici, text mic, imagini fără descriere, câmpuri fără etichetă, contrast, titluri) plus privit cu ochiul; build-ul real verificat separat (dublurile de pagină din dezvoltare nu există acolo). Reparat: meniul de sus se rupe pe două rânduri pe telefon (înainte „Chestionar”, „Studenți” și „Contul meu” erau ascunse în dreapta); auriul mare „Uni” mai închis (contrast 3,5:1); linkurile „Site ↗” de 44 px; titlul formularului de cont e nivel 2 (nu mai sare de la 1 la 3); titluri proprii în tab pentru chestionar, rezultat, conectare, formularul de păreri, cont și administrare (cont, conectare și administrare marcate „nu indexa”); textul din căsuța de căutare scurtat ca să încapă pe telefon
@@ -933,6 +940,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-23 12:06 `c833f37` feat: search suggestions, phone menu, accessibility fixes, page titles
 - 2026-10-23 11:39 `23ff2fc` feat: keep the university search when coming back from a sheet
 - 2026-10-23 11:33 `0e5c950` feat: freely licensed university photos on sheets, third fee check
 - 2026-10-23 01:57 `774d9f6` feat: keep only the privacy link in the page footer
@@ -962,5 +970,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-13 15:54 `01ecc44` feat: choose several cities in the university search
 - 2026-10-13 15:43 `c909e83` feat: add 367 double-checked faculty sheets for Romania
 - 2026-10-13 14:48 `b977652` fix: fact-check the 320 university sheets from abroad
-- 2026-10-13 11:54 `f850e61` feat: faculty sheets for Romania and a fact-check of all Romanian sheets
 <!-- commits:end -->
