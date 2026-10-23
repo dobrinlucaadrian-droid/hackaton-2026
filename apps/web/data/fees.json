@@ -1,0 +1,6607 @@
+[
+ {
+  "id": "aalborg",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.en.aau.dk/education/apply/bachelor/eu-eea-admission-requirements"
+ },
+ {
+  "id": "aalto",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.aalto.fi/en/fees"
+ },
+ {
+  "id": "aams-aarhus",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "aarhus",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://international.au.dk/about/profile"
+ },
+ {
+  "id": "aarhus-architecture",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "aau-prague",
+  "currency": "CZK",
+  "min": 250978,
+  "max": 250978,
+  "year": "2026/27",
+  "url": "https://www.aauni.edu/admissions/tuition-payment/"
+ },
+ {
+  "id": "aberdeen",
+  "currency": "GBP",
+  "min": 20800,
+  "max": 24800,
+  "year": "2026/27",
+  "url": "https://www.abdn.ac.uk/media/site/students/documents/UG--Full-time-Tuition-Fees-2026-27.pdf",
+  "note": "Medicină și Stomatologie: 50.100 £/an"
+ },
+ {
+  "id": "abertay",
+  "currency": "GBP",
+  "min": 16950,
+  "max": 17950,
+  "year": "2027/28",
+  "url": "https://www.abertay.ac.uk/study-apply/money-fees-and-funding/tuition-fees/"
+ },
+ {
+  "id": "aberystwyth",
+  "currency": "GBP",
+  "min": 20400,
+  "max": 23255,
+  "year": "2027/28",
+  "url": "https://www.aber.ac.uk/en/study-with-us/fees/undergrad/tuition-fees/",
+  "note": "Pentru 2026/27 pagina arată 19.190-21.875 £/an"
+ },
+ {
+  "id": "absalon",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://en.phabsalon.dk/full-degree/bachelor-engineering-biotechnology/application-and-fee"
+ },
+ {
+  "id": "acu",
+  "currency": "AUD",
+  "min": 33360,
+  "max": 39784,
+  "year": "2027",
+  "url": "https://www.acu.edu.au/-/media/acu/international/acu-2027-schedule-of-tuition-fees.pdf",
+  "note": "Terapie ocupațională, fizioterapie, logopedie: 54.120 A$/an."
+ },
+ {
+  "id": "adventus",
+  "currency": "RON",
+  "min": 4200,
+  "max": 4200,
+  "year": "2026/27",
+  "url": "https://uadventus.ro/wp-content/uploads/2026/10/Lista-taxelor-UA-2026-2027.pdf"
+ },
+ {
+  "id": "aeres-uas",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "afa-brasov",
+  "currency": "RON",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.afahc.ro/ro/programe_studii/admitere2026/Licenta/Regulament_Admitere_Licenta_2026-AFAHC_E5-R0.pdf",
+  "note": "Există doar locuri finanțate de la buget.",
+  "budgetFree": true
+ },
+ {
+  "id": "aft-sibiu",
+  "currency": "RON",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.armyacademy.ro/admitere/licenta/2026/Ghid_candidat_2026.pdf",
+  "note": "Există doar locuri finanțate de la buget.",
+  "budgetFree": true
+ },
+ {
+  "id": "agh-krakow",
+  "currency": "EUR",
+  "min": 2500,
+  "max": 6000,
+  "year": "2026/27",
+  "url": "https://www.international.agh.edu.pl/en/studies/fees",
+  "note": "Programele în poloneză sunt gratuite pentru cetățenii UE."
+ },
+ {
+  "id": "agora-oradea",
+  "currency": "EUR",
+  "min": 500,
+  "max": 1000,
+  "year": "2026/27",
+  "url": "https://www.univagora.ro/upload/redactor/document/decizie-privind-regimul-taxelor-incepand-cu-anul-universitar-2026-2027-3253.pdf"
+ },
+ {
+  "id": "ahk-amsterdam",
+  "currency": "EUR",
+  "min": 2771,
+  "max": 2771,
+  "year": "2027/28",
+  "url": "https://www.ahk.nl/en/study/during-your-study-programme/student-affairs/financial-matters/tuition-fees/"
+ },
+ {
+  "id": "aix-marseille",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "amgd-cluj",
+  "currency": "RON",
+  "min": 3500,
+  "max": 5700,
+  "year": "2026/27",
+  "url": "https://anmgd.ro/wp-content/uploads/2026/10/02_Taxe_de_scolarizare.pdf",
+  "budgetFree": true
+ },
+ {
+  "id": "amherst",
+  "currency": "USD",
+  "min": 75330,
+  "max": 75330,
+  "year": "2026/27",
+  "url": "https://www.amherst.edu/offices/controller/student-accounts/tuition-and-fees"
+ },
+ {
+  "id": "amsterdam-uas",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://www.amsterdamuas.com/study/international-admissions/tuition-fees",
+  "note": "Școala europeană de fizioterapie: 3.694 €/an"
+ },
+ {
+  "id": "anglia-ruskin",
+  "currency": "GBP",
+  "min": 18825,
+  "max": 18825,
+  "year": "2027/28",
+  "url": "https://www.aru.ac.uk/study/tuition-fees",
+  "note": "Suma minimă; unele programe costă mai mult."
+ },
+ {
+  "id": "ani-bucuresti",
+  "currency": "RON",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.animv.ro/licenta/",
+  "note": "Doar locuri bugetate; admiterea are condiții speciale (instituție militară)",
+  "budgetFree": true
+ },
+ {
+  "id": "anmb",
+  "currency": "RON",
+  "min": 5200,
+  "max": 5300,
+  "year": "2026/27",
+  "url": "https://www.anmb.ro/ro/files/admitere/admitere_licenta_civili.html",
+  "note": "Secția militară: gratuit",
+  "budgetFree": true
+ },
+ {
+  "id": "anu",
+  "currency": "AUD",
+  "min": 47940,
+  "max": 57640,
+  "year": "2027",
+  "url": "https://d1zkbwgd2iyy9p.cloudfront.net/files/2026-09/Schedule%20of%20Tuition%20fees%202027.pdf",
+  "note": "Medicină (științe medicale): 64.130 A$/an."
+ },
+ {
+  "id": "apollonia",
+  "currency": "EUR",
+  "min": 1300,
+  "max": 3400,
+  "year": "2026/27",
+  "url": "https://www.univapollonia.ro/admitere/facultatea-de-medicina/asistenta-medicala-generala/",
+  "note": "Medicină dentară: 8.000 €/an"
+ },
+ {
+  "id": "artez",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://www.artez.nl/en/study-at-artez/arrange-your-study/tuition-fees"
+ },
+ {
+  "id": "artifex",
+  "currency": "RON",
+  "min": 0,
+  "max": 7200,
+  "year": "2026/27",
+  "url": "https://www.artifex.org.ro/admitere/taxe/",
+  "note": "Promoția 2026–2029: anul 1 este gratuit (dacă termini cele 3 ani), anii 2 și 3 costă câte 7.200 lei; în medie 4.800 lei/an"
+ },
+ {
+  "id": "ase-bucuresti",
+  "currency": "RON",
+  "min": 6500,
+  "max": 10000,
+  "year": "2026/27",
+  "url": "https://admitere.ase.ro/licenta-2026/info-admitere/Taxe_inscriere_si_scolarizare.pdf",
+  "budgetFree": true
+ },
+ {
+  "id": "aston",
+  "currency": "GBP",
+  "min": 22575,
+  "max": 23500,
+  "year": "2027/28",
+  "url": "https://www.aston.ac.uk/study/courses/computer-science-bsc",
+  "note": "Interval din câteva programe; altele pot costa diferit."
+ },
+ {
+  "id": "at-fachhochschule-campus-wien",
+  "currency": "EUR",
+  "min": 727,
+  "max": 727,
+  "year": "2026/27",
+  "url": "https://www.hcw.ac.at/en/studies/application-and-admission",
+  "note": "Plus contribuția pentru asociația studenților și, uneori, până la 83 € pentru cheltuieli de studiu."
+ },
+ {
+  "id": "at-fachhochschule-salzburg-gmbh",
+  "currency": "EUR",
+  "min": 726,
+  "max": 726,
+  "year": "2026/27",
+  "url": "https://www.fh-salzburg.ac.at/en/prospective-students/about-to-start-studying/fees-and-scholarships",
+  "note": "Plus contribuția pentru asociația studenților (26,20 €/semestru)."
+ },
+ {
+  "id": "at-medizinische-universitat-graz",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.medunigraz.at/en/study-guidance/tuition-fees",
+  "note": "Gratuit în durata normală a studiilor plus 2 semestre; apoi 363,36 €/semestru. Se plătește doar contribuția mică pentru asociația studenților (ÖH)."
+ },
+ {
+  "id": "at-universitat-fur-angewandte-kunst-wien",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.dieangewandte.at/finanzielles",
+  "note": "Gratuit în durata normală a studiilor plus 2 semestre; apoi 363,36 €/semestru. Se plătește doar contribuția mică pentru asociația studenților (ÖH)."
+ },
+ {
+  "id": "at-universitat-mozarteum-salzburg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.moz.ac.at/en/study/service-support/finance-scholarships",
+  "note": "Gratuit în durata normală a studiilor plus 2 semestre; apoi 363,36 €/semestru. Se plătește doar contribuția mică pentru asociația studenților (ÖH)."
+ },
+ {
+  "id": "atlantic-technological-university",
+  "currency": "EUR",
+  "min": 2350,
+  "max": 2350,
+  "year": "2026/27",
+  "url": "https://www.citizensinformation.ie/en/education/third-level-education/fees-and-supports-for-third-level-education/fees/"
+ },
+ {
+  "id": "aubg-blagoevgrad",
+  "currency": "EUR",
+  "min": 13800,
+  "max": 13800,
+  "year": "2026/27",
+  "url": "https://www.aubg.edu/admissions/bachelors/cost-aid/",
+  "note": "Majoritatea studenților primesc burse care reduc taxa."
+ },
+ {
+  "id": "aubmed-pafos",
+  "currency": "EUR",
+  "min": 20700,
+  "max": 24000,
+  "year": "2026/27",
+  "url": "https://aubmed.ac.cy/admissions/explore/tuition/",
+  "note": "Unii studenți primesc o reducere de până la 50% prin burse."
+ },
+ {
+  "id": "aueb-atena",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyingreece.edu.gr/bachelors/",
+  "note": "Programele în greacă sunt gratuite; programul în engleză International Business and Technology este cu taxă."
+ },
+ {
+  "id": "aur",
+  "currency": "EUR",
+  "min": 22000,
+  "max": 22000,
+  "year": "2026/27",
+  "url": "https://www.aur.edu/american-university-rome-tuition-and-fees-euros"
+ },
+ {
+  "id": "auth-salonic",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyingreece.edu.gr/bachelors/",
+  "note": "Programele în greacă sunt gratuite; cele în engleză sunt cu taxă."
+ },
+ {
+  "id": "avans",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "avignon-universite",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "bangor",
+  "currency": "GBP",
+  "min": 18000,
+  "max": 21000,
+  "year": "2026/27",
+  "url": "https://www.bangor.ac.uk/international/fees"
+ },
+ {
+  "id": "bath",
+  "currency": "GBP",
+  "min": 26150,
+  "max": 32950,
+  "year": "2027/28",
+  "url": "https://www.bath.ac.uk/corporate-information/tuition-fees-for-undergraduate-students-who-started-in-2026/"
+ },
+ {
+  "id": "be-erasmushogeschool-brussel",
+  "currency": "EUR",
+  "min": 1181,
+  "max": 1181,
+  "year": "2026/27",
+  "url": "https://www.erasmushogeschool.be/nl/inschrijven/wat-kost-studeren",
+  "note": "Taxa poate fi mai mică pentru studenții cu venituri mici (bursieri)."
+ },
+ {
+  "id": "be-hogeschool-gent",
+  "currency": "EUR",
+  "min": 1181,
+  "max": 1181,
+  "year": "2026/27",
+  "url": "https://www.hogent.be/student/inschrijven/tarieven-deeltijds-studeren-credit-examencontract/",
+  "note": "Taxa poate fi mai mică pentru studenții cu venituri mici (bursieri)."
+ },
+ {
+  "id": "be-karel-de-grote-hogeschool-katholieke-hogeschool-antwerpen",
+  "currency": "EUR",
+  "min": 1181,
+  "max": 1181,
+  "year": "2026/27",
+  "url": "https://www.kdg.be/studiegeld",
+  "note": "Taxa poate fi mai mică pentru studenții cu venituri mici (bursieri)."
+ },
+ {
+  "id": "be-thomas-more-mechelen-antwerpen",
+  "currency": "EUR",
+  "min": 1181,
+  "max": 1181,
+  "year": "2026/27",
+  "url": "https://www.thomasmore.be/studiegeld",
+  "note": "Taxa poate fi mai mică pentru studenții cu venituri mici (bursieri)."
+ },
+ {
+  "id": "be-uc-leuven",
+  "currency": "EUR",
+  "min": 1181,
+  "max": 1181,
+  "year": "2026/27",
+  "url": "https://www.ucll.be/studiegeld",
+  "note": "Taxa poate fi mai mică pentru studenții cu venituri mici (bursieri)."
+ },
+ {
+  "id": "bht-berlin",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.bht-berlin.de/189"
+ },
+ {
+  "id": "bi-norway",
+  "currency": "NOK",
+  "min": 106400,
+  "max": 106400,
+  "year": "2026/27",
+  "url": "https://www.bi.no/en/programmes-and-individual-courses/admissions/tuition-fees/tuition-fee-bachelor-of-business-administration/"
+ },
+ {
+  "id": "bioterra",
+  "currency": "EUR",
+  "min": 700,
+  "max": 1000,
+  "year": "2026/27",
+  "url": "https://admitere.bioterra.ro/wp-content/uploads/2026/05/BIOTERRA-PLIANT-ADMITERE-2026-2027.pdf",
+  "note": "Valorile sunt pentru anul I; Asistență medicală generală: 2.000 €/an"
+ },
+ {
+  "id": "birmingham-city",
+  "currency": "GBP",
+  "min": 19220,
+  "max": 19220,
+  "year": "2027/28",
+  "url": "https://www.bcu.ac.uk/student-info/finance/fees-continuing-students",
+  "note": "Actorie: 21.690 £/an; muzică: 29.460 £/an"
+ },
+ {
+  "id": "bocconi",
+  "currency": "EUR",
+  "min": 17000,
+  "max": 17000,
+  "year": "2026/27",
+  "url": "https://www.unibocconi.it/en/current-students/fees/ay-2025-26-applicable-fees-and-installments-bachelor-science-and-law-programs",
+  "note": "Bursele parțiale (20–80% din taxă) reduc suma."
+ },
+ {
+  "id": "bogdan-voda",
+  "currency": "EUR",
+  "min": 1400,
+  "max": 1400,
+  "year": "2026/27",
+  "url": "https://www.ubv.ro/diversepdf/GRILA_DE_TAXE_2026-2027.pdf",
+  "note": "Dacă plătești în 3 rate, taxa este 1.500 €/an"
+ },
+ {
+  "id": "boku-wien",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20002128&Paragraf=91",
+  "note": "Taxa de școlarizare de 363,36 €/semestru se plătește doar după durata prevăzută a studiilor plus 2 semestre; până atunci se plătește doar cotizația ÖH (circa 26 €/semestru)."
+ },
+ {
+  "id": "bordeaux-montaigne",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "boston-college",
+  "currency": "USD",
+  "min": 75075,
+  "max": 75075,
+  "year": "2026/27",
+  "url": "https://www.bc.edu/bc-web/admission/apply/international.html"
+ },
+ {
+  "id": "boston-university",
+  "currency": "USD",
+  "min": 73024,
+  "max": 73024,
+  "year": "2026/27",
+  "url": "https://www.bu.edu/studentaccountingservices/your-bill/tuition-fees/"
+ },
+ {
+  "id": "bourgogne-europe",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "bournemouth",
+  "currency": "GBP",
+  "min": 17685,
+  "max": 20685,
+  "year": "2027/28",
+  "url": "https://www.bournemouth.ac.uk/study/undergraduate/fees-funding/undergraduate-tuition-fees",
+  "note": "Există o bursă pentru studenții europeni care reduce taxa la 12.075 £ (intrare 2027)."
+ },
+ {
+  "id": "bretagne-sud",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "brighton",
+  "currency": "GBP",
+  "min": 17796,
+  "max": 19692,
+  "year": "2026/27",
+  "url": "https://www.brighton.ac.uk/studying-here/fees-and-finance/undergraduate/international-students/fees/index.aspx",
+  "note": "Medicină: 49.000 £/an"
+ },
+ {
+  "id": "bristol",
+  "currency": "GBP",
+  "min": 25500,
+  "max": 33400,
+  "year": "2026/27",
+  "url": "https://www.bristol.ac.uk/students/support/finances/tuition-fees/ug/overseas/26-27/2026-starters/",
+  "note": "Medicină: 45.800 £/an; Stomatologie: 49.700 £/an; Veterinară: 41.900 £/an"
+ },
+ {
+  "id": "brown",
+  "currency": "USD",
+  "min": 74568,
+  "max": 74568,
+  "year": "2026/27",
+  "url": "https://www.brown.edu/news/2026-02-09/fy27-tuition-fees-salaries"
+ },
+ {
+  "id": "brunel",
+  "currency": "GBP",
+  "min": 17920,
+  "max": 17920,
+  "year": "2027/28",
+  "url": "https://www.brunel.ac.uk/study/courses/english-ba",
+  "note": "Suma este pentru programul de Engleză; alte programe pot costa diferit."
+ },
+ {
+  "id": "buas",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "business-academy-aarhus",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.baaa.dk/student-experience/practical-matters/tuition-fees/"
+ },
+ {
+  "id": "caltech",
+  "currency": "USD",
+  "min": 68574,
+  "max": 68574,
+  "year": "2026/27",
+  "url": "https://www.finaid.caltech.edu/costs"
+ },
+ {
+  "id": "cambridge",
+  "currency": "GBP",
+  "min": 30798,
+  "max": 46872,
+  "year": "2027/28",
+  "url": "https://www.undergraduate.study.cam.ac.uk/international-students/international-fees-and-costs",
+  "note": "Medicină și Veterinară: 70.554 £/an. În plus se plătește anual taxa colegiului (College fee), publicată separat."
+ },
+ {
+  "id": "cantemir-tgmures",
+  "currency": "RON",
+  "min": 6270,
+  "max": 6600,
+  "year": "2026/27",
+  "url": "https://cantemir.ro/wp-content/uploads/2026/09/Hotararea-CA-nr.-87_30.06.2026-republicata.pdf",
+  "note": "Medicină dentară: 5.610–8.080 €/an, după anul de studiu"
+ },
+ {
+  "id": "canterbury-christ-church",
+  "currency": "GBP",
+  "min": 15000,
+  "max": 15000,
+  "year": "2026/27",
+  "url": "https://www.canterbury.ac.uk/blogs/2025/international-student-scholarships-at-cccu",
+  "note": "Taxa standard; bursa pentru studenți internaționali (1.500 £/an) se acordă automat dacă îndeplinești condițiile. Unele programe pot costa diferit."
+ },
+ {
+  "id": "cardiff",
+  "currency": "GBP",
+  "min": 25450,
+  "max": 31700,
+  "year": "2027/28",
+  "url": "https://www.cardiff.ac.uk/study/undergraduate/courses/2027/computer-science-bsc",
+  "note": "Interval din câteva programe; altele pot costa diferit."
+ },
+ {
+  "id": "cardiff-met",
+  "currency": "GBP",
+  "min": 16000,
+  "max": 16000,
+  "year": "2026/27",
+  "url": "https://www.cardiffmet.ac.uk/international-students/fees-and-finance/"
+ },
+ {
+  "id": "carleton",
+  "currency": "CAD",
+  "min": 39000,
+  "max": 55000,
+  "year": "2026/27",
+  "url": "https://admissions.carleton.ca/scholarships/usa-and-international-costs/",
+  "note": "Taxa este înghețată pentru anii 2026/27–2028/29."
+ },
+ {
+  "id": "carnegie-mellon",
+  "currency": "USD",
+  "min": 69702,
+  "max": 69702,
+  "year": "2026/27",
+  "url": "https://www.cmu.edu/sfs/tuition/undergraduate/index.html"
+ },
+ {
+  "id": "cbs",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.cbs.dk/en/study-programmes/bachelor-programmes/application-and-admission"
+ },
+ {
+  "id": "chalmers",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.universityadmissions.se/en/fees-scholarships-residence-permit/",
+  "note": "Gratuit pentru cetățenii UE; trebuie să dovedești cetățenia la înscriere."
+ },
+ {
+  "id": "charite",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.charite.de/studium_lehre/bewerbung_zulassung/medizin_zahnmedizin_eu_ewr_ua"
+ },
+ {
+  "id": "charles-prague",
+  "currency": "EUR",
+  "min": 4200,
+  "max": 4200,
+  "year": "2027/28",
+  "url": "https://www.mff.cuni.cz/en/admissions/costs-and-dates",
+  "note": "Suma este pentru Facultatea de Matematică și Fizică; alte facultăți pot costa diferit. Studiile în limba cehă sunt gratuite."
+ },
+ {
+  "id": "che-ede",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://www.che.nl/studeren-in-ede/financien-ondersteuning/studiekosten/collegegeld/"
+ },
+ {
+  "id": "city-st-georges",
+  "currency": "GBP",
+  "min": 20390,
+  "max": 20390,
+  "year": "2027/28",
+  "url": "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/english",
+  "note": "Suma este pentru programul de Engleză; alte programe pot costa diferit."
+ },
+ {
+  "id": "clermont-auvergne",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "codarts",
+  "currency": "EUR",
+  "min": 2771,
+  "max": 2771,
+  "year": "2027/28",
+  "url": "https://www.codarts.nl/en/practical-matters/practical/tuition-fee/"
+ },
+ {
+  "id": "columbia",
+  "currency": "USD",
+  "min": 72800,
+  "max": 72800,
+  "year": "2026/27",
+  "url": "https://undergrad.admissions.columbia.edu/affordability/cost"
+ },
+ {
+  "id": "constructor-university",
+  "currency": "EUR",
+  "min": 23850,
+  "max": 23850,
+  "year": "2027/28",
+  "url": "https://constructor.university/admission-aid/financing-undergraduate",
+  "note": "Burse de merit până la 10.000 €/an reduc taxa"
+ },
+ {
+  "id": "cornell",
+  "currency": "USD",
+  "min": 73946,
+  "max": 73946,
+  "year": "2026/27",
+  "url": "https://bursar.cornell.edu/students-parents/tuition-rates-and-fees"
+ },
+ {
+  "id": "cote-d-azur",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "courtauld",
+  "currency": "GBP",
+  "min": 32000,
+  "max": 32000,
+  "year": "2027/28",
+  "url": "https://courtauld.ac.uk/explore-our-courses/tuition-fees/"
+ },
+ {
+  "id": "ctu-prague",
+  "currency": "CZK",
+  "min": 110000,
+  "max": 110000,
+  "year": "2026/27",
+  "url": "https://www.fd.cvut.cz/storage/prijimaci-rizeni/pr2026-2027/2026-2027-B-EN-standardni_termin.pdf",
+  "note": "Suma este pentru Facultatea de Transport; alte facultăți pot costa diferit. Studiile în limba cehă sunt gratuite."
+ },
+ {
+  "id": "cuhk",
+  "currency": "HKD",
+  "min": 230000,
+  "max": 230000,
+  "year": "2027/28",
+  "url": "https://admission.cuhk.edu.hk/fees-financing-your-studies/fees/",
+  "note": "Taxa pentru studenții nelocali."
+ },
+ {
+  "id": "cy-cergy-paris",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "czu-prague",
+  "currency": "EUR",
+  "min": 500,
+  "max": 500,
+  "year": "2025/26",
+  "url": "https://www.czu.cz/en/r-9188-study/r-9252-information-for-students/r-9263-tuition-fees/r-10482-tuition-fees-for-studies-in-english",
+  "note": "Suma este pentru Facultatea de Inginerie; alte facultăți stabilesc taxe diferite. Studiile în limba cehă sunt gratuite."
+ },
+ {
+  "id": "dalhousie",
+  "currency": "CAD",
+  "min": 30906,
+  "max": 48594,
+  "year": "2026/27",
+  "url": "https://www.dal.ca/admissions/cost-and-payment/tuition/international-tuition-guarantee.html"
+ },
+ {
+  "id": "dania-academy",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://eadania.com/programmes/our-english-taught-programmes/cyber-security/"
+ },
+ {
+  "id": "danubius",
+  "currency": "RON",
+  "min": 7500,
+  "max": 9500,
+  "year": "2026/27",
+  "url": "https://univ-danubius.ro/files/data/taxe/26-27/ro/1.%20RO-Anexa%201-taxe-UE.pdf"
+ },
+ {
+  "id": "dartmouth",
+  "currency": "USD",
+  "min": 71697,
+  "max": 71697,
+  "year": "2026/27",
+  "url": "https://financialaid.dartmouth.edu/cost-attendance/cost-attendance-2026-2027"
+ },
+ {
+  "id": "daspa",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "de-brandenburgische-technische-universitat-cottbus-senftenberg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.b-tu.de/en/environment-bs/details/finances"
+ },
+ {
+  "id": "de-hafencity-universitat-hamburg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.hcu-hamburg.de/en/student-services/for-students/semester-contribution-fees"
+ },
+ {
+  "id": "de-hochschule-esslingen-fh",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.hs-esslingen.de/en/study/advice-support/financing"
+ },
+ {
+  "id": "de-hochschule-konstanz-technik-wirtschaft-und-gestaltung",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.htwg-konstanz.de/en/academics/during-your-studies/costs"
+ },
+ {
+  "id": "de-leuphana-universitat-luneburg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.leuphana.de/college/studium/kosten.html"
+ },
+ {
+  "id": "de-medizinische-hochschule-hannover",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.mhh.de/en/international-office/incomings/welcome-to-the-mhh/financing-your-studies/your-stay-at-the-mhh"
+ },
+ {
+  "id": "de-montfort",
+  "currency": "GBP",
+  "min": 17600,
+  "max": 18600,
+  "year": "2026/27",
+  "url": "https://www.dmu.ac.uk/study/fees-funding/international-tuition-fees.aspx"
+ },
+ {
+  "id": "de-technische-universitat-clausthal",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.tu-clausthal.de/en/students/student-secretariat/semester-fee"
+ },
+ {
+  "id": "de-technische-universitat-hamburg-harburg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.tuhh.de/tuhh/en/education/students/organisational-details-about-your-studies/financing-your-studies"
+ },
+ {
+  "id": "de-universitat-der-kunste-berlin",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.udk-berlin.de/en/courses/all-about-the-study-process/faqs/"
+ },
+ {
+  "id": "de-universitat-lubeck",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-luebeck.de/studium/international-office/aus-dem-ausland/studium-mit-abschluss/kosten-und-stipendien.html"
+ },
+ {
+  "id": "derby",
+  "currency": "GBP",
+  "min": 17500,
+  "max": 17500,
+  "year": "2026/27",
+  "url": "https://www.derby.ac.uk/study/fees-finance/international/"
+ },
+ {
+  "id": "design-academy-eindhoven",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://www.designacademy.nl/page/487/tuition-fees-and-living-expenses"
+ },
+ {
+  "id": "djm-aarhus",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "dmjx",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "dragan-lugoj",
+  "currency": "RON",
+  "min": 6500,
+  "max": 6500,
+  "year": "2026/27",
+  "url": "https://www.universitateaeuropeanadragan.ro/images/imguploads/taxe_studii_2026_2027_avizier_site.pdf"
+ },
+ {
+  "id": "dtu",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.dtu.dk/english/education/undergraduate/general-engineering/admission-and-deadlines/fees-funding-and-permits"
+ },
+ {
+  "id": "du-daugavpils",
+  "currency": "EUR",
+  "min": 3000,
+  "max": 3000,
+  "year": "2026/27",
+  "url": "https://du.lv/en/studies/admission/",
+  "note": "Suma este pentru programul de licență listat (Procese de afaceri și financiare); alte programe pot costa diferit."
+ },
+ {
+  "id": "dublin-city-university",
+  "currency": "EUR",
+  "min": 2350,
+  "max": 2350,
+  "year": "2026/27",
+  "url": "https://www.citizensinformation.ie/en/education/third-level-education/fees-and-supports-for-third-level-education/fees/"
+ },
+ {
+  "id": "duke",
+  "currency": "USD",
+  "min": 73740,
+  "max": 73740,
+  "year": "2026/27",
+  "url": "https://finance.duke.edu/bursar/TuitionFees/tuition/"
+ },
+ {
+  "id": "dundee",
+  "currency": "GBP",
+  "min": 19450,
+  "max": 23700,
+  "year": "2027/28",
+  "url": "https://www.dundee.ac.uk/undergraduate/computer-science/fees-and-funding",
+  "note": "Interval din câteva programe; altele pot costa diferit."
+ },
+ {
+  "id": "durham",
+  "currency": "GBP",
+  "min": 32500,
+  "max": 32500,
+  "year": "2027/28",
+  "url": "https://www.durham.ac.uk/study/courses/g100/",
+  "note": "Suma este pentru programul de Matematică; alte programe pot costa diferit."
+ },
+ {
+  "id": "duth-komotini",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyingreece.edu.gr/bachelors/",
+  "note": "Programele în greacă sunt gratuite."
+ },
+ {
+  "id": "eamt-tallinn",
+  "currency": "EUR",
+  "min": 1750,
+  "max": 1750,
+  "year": "2026/27",
+  "url": "https://eamt.ee/en/studies/tuition-fees/",
+  "note": "Taxa se aplică programelor în engleză; excepție: unele programe (CM, CPPM)."
+ },
+ {
+  "id": "eamv",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "ebs-tallinn",
+  "currency": "EUR",
+  "min": 7730,
+  "max": 7730,
+  "year": "2026/27",
+  "url": "https://students.ebs.ee/?p=230",
+  "note": "Suma este pentru cohorta 2026; depinde de numărul de credite pe semestru."
+ },
+ {
+  "id": "edge-hill",
+  "currency": "GBP",
+  "min": 14500,
+  "max": 14500,
+  "year": "2026/27",
+  "url": "https://www.edgehill.ac.uk/departments/support/international/fees-and-scholarships/",
+  "note": "Există o bursă de 3.000 £ pentru unii studenți internaționali."
+ },
+ {
+  "id": "edinburgh",
+  "currency": "GBP",
+  "min": 29600,
+  "max": 38900,
+  "year": "2026/27",
+  "url": "https://registryservices.ed.ac.uk/tuition-fees/find/undergraduate/2027-2028/full-time-current-students",
+  "note": "Medicină (MBChB): 54.650 £/an pentru intrarea din 2026"
+ },
+ {
+  "id": "edinburgh-napier",
+  "currency": "GBP",
+  "min": 18950,
+  "max": 18950,
+  "year": "2027/28",
+  "url": "https://www.napier.ac.uk/courses/ba-hons-international-hospitality-management-undergraduate-fulltime",
+  "note": "Suma este pentru programul de Management hotelier internațional; alte programe pot costa diferit."
+ },
+ {
+  "id": "eduhk",
+  "currency": "HKD",
+  "min": 210000,
+  "max": 210000,
+  "year": "2027/28",
+  "url": "https://www.apply.eduhk.hk/ug/fees",
+  "note": "Taxa este provizorie și poate fi ajustată."
+ },
+ {
+  "id": "ek-copenhagen",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "emanuel-oradea",
+  "currency": "EUR",
+  "min": 450,
+  "max": 550,
+  "year": "2026/27",
+  "url": "https://emanuel.ro/wp-content/uploads/2025/12/Metodologia-de-admitere-2026.pdf"
+ },
+ {
+  "id": "emory",
+  "currency": "USD",
+  "min": 70300,
+  "max": 70300,
+  "year": "2026/27",
+  "url": "https://studentfinancials.emory.edu/_includes/documents/website_eu_bot_2026-2027-tuition-and-fee-schedule_final-3_updated-7.16.26.pdf"
+ },
+ {
+  "id": "epfl",
+  "currency": "CHF",
+  "min": 4380,
+  "max": 4380,
+  "year": "2025/26",
+  "url": "https://www.epfl.ch/education/studies/tuition-fee-other-fees/",
+  "note": "Studenții străini care se mută în Elveția pentru studii plătesc 2.190 CHF/semestru; cei care locuiau deja acolo din alt motiv, 730 CHF/semestru."
+ },
+ {
+  "id": "es-universidad-de-a-coruna",
+  "currency": "EUR",
+  "min": 591,
+  "max": 836,
+  "year": "2026/27",
+  "url": "https://www.lex.gal/es/normativa/detalle/11132/pdf/"
+ },
+ {
+  "id": "es-universidad-de-alcala",
+  "currency": "EUR",
+  "min": 1015,
+  "max": 1241,
+  "year": "2026/27",
+  "url": "https://www.upm.es/gsfs/SFS50990"
+ },
+ {
+  "id": "es-universidad-de-cadiz",
+  "currency": "EUR",
+  "min": 757,
+  "max": 757,
+  "year": "2025/26",
+  "url": "https://cat.us.es/sites/default/files/documentos/2025-10/boja-05-05-2023-y-modificacion-de-09-09-25.pdf"
+ },
+ {
+  "id": "es-universidad-de-cantabria",
+  "currency": "EUR",
+  "min": 597,
+  "max": 934,
+  "year": "2026/27",
+  "url": "https://web.unican.es/estudiantesuc/Documents/Precios%20P%c3%bablicos/Precios%20Grado%202026-2027.pdf"
+ },
+ {
+  "id": "es-universidad-de-valladolid",
+  "currency": "EUR",
+  "min": 625,
+  "max": 1107,
+  "year": "2024/25",
+  "url": "https://bocyl.jcyl.es/boletines/2024/06/03/pdf/BOCYL-D-03062024-2.pdf",
+  "note": "Prețurile din acest decret se aplică și în anii următori până la unul nou."
+ },
+ {
+  "id": "es-universidad-de-vigo",
+  "currency": "EUR",
+  "min": 591,
+  "max": 836,
+  "year": "2026/27",
+  "url": "https://www.lex.gal/es/normativa/detalle/11132/pdf/"
+ },
+ {
+  "id": "es-universidad-del-pais-vasco-euskal-herriko-unibertsitatea",
+  "currency": "EUR",
+  "min": 805,
+  "max": 1135,
+  "year": "2026/27",
+  "url": "https://www.ehu.eus/es/web/graduak/matricula/precios/precios-publicos"
+ },
+ {
+  "id": "es-universidad-jaume-i-de-castellon",
+  "currency": "EUR",
+  "min": 767,
+  "max": 1080,
+  "year": "2025/26",
+  "url": "https://www.uv.es/graus/normatives/autonomica/Decret%20taxes%202024-101%20de%202%20agost%202024%20generalitat.pdf"
+ },
+ {
+  "id": "es-universidad-miguel-hernandez-de-elche",
+  "currency": "EUR",
+  "min": 767,
+  "max": 1080,
+  "year": "2025/26",
+  "url": "https://www.uv.es/graus/normatives/autonomica/Decret%20taxes%202024-101%20de%202%20agost%202024%20generalitat.pdf"
+ },
+ {
+  "id": "es-universidad-pompeu-fabra",
+  "currency": "EUR",
+  "min": 1061,
+  "max": 1061,
+  "year": "2026/27",
+  "url": "https://universitats.gencat.cat/ca/acces-universitat/sobre-preus-beques/preus-estudis-universitaris/"
+ },
+ {
+  "id": "es-universidad-pontificia-comillas",
+  "currency": "EUR",
+  "min": 8174,
+  "max": 16694,
+  "year": "2026/27",
+  "url": "https://www.comillas.edu/grados/grado-en-psicologia/",
+  "note": "Sumele variază mult între programe (de la circa 4.000 € la Filosofie până la circa 16.700 € la Inginerie); programele duble costă mai mult."
+ },
+ {
+  "id": "es-universidad-rey-juan-carlos",
+  "currency": "EUR",
+  "min": 1015,
+  "max": 1241,
+  "year": "2026/27",
+  "url": "https://www.upm.es/gsfs/SFS50990"
+ },
+ {
+  "id": "es-universitat-de-girona",
+  "currency": "EUR",
+  "min": 1061,
+  "max": 1061,
+  "year": "2026/27",
+  "url": "https://universitats.gencat.cat/ca/acces-universitat/sobre-preus-beques/preus-estudis-universitaris/"
+ },
+ {
+  "id": "essex",
+  "currency": "GBP",
+  "min": 22575,
+  "max": 33350,
+  "year": "2027/28",
+  "url": "https://www.essex.ac.uk/undergraduate/fees-and-funding/eu-and-international-fees"
+ },
+ {
+  "id": "eth-zurich",
+  "currency": "CHF",
+  "min": 4380,
+  "max": 4380,
+  "year": "2025/26",
+  "url": "https://ethz.ch/students/en/studies/financial/tuition-fees.html",
+  "note": "Studenții care nu locuiau în Elveția când au terminat liceul (și nu îndeplinesc condițiile din regulament) plătesc 2.190 CHF/semestru; ceilalți, 730 CHF/semestru."
+ },
+ {
+  "id": "euc-nicosia",
+  "currency": "EUR",
+  "min": 9240,
+  "max": 10980,
+  "year": "2026/27",
+  "url": "https://syllabus.euc.ac.cy/tuitions/euc-tuition-fees-i.pdf",
+  "note": "Medicină și Stomatologie: 23.000 €/an; Medicină veterinară: 21.000 €/an."
+ },
+ {
+  "id": "eur",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp",
+  "note": "Liberal Arts and Sciences (EUC): 5.800 €/an"
+ },
+ {
+  "id": "exeter",
+  "currency": "GBP",
+  "min": 25700,
+  "max": 32150,
+  "year": "2027/28",
+  "url": "https://www.exeter.ac.uk/undergraduate-degrees/fees/",
+  "note": "Medicină (BMBS): 49.300 £/an"
+ },
+ {
+  "id": "fau-erlangen-nuernberg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.fau.eu/glossary/how-much-does-it-cost-to-study-at-fau/"
+ },
+ {
+  "id": "fh-joanneum",
+  "currency": "EUR",
+  "min": 727,
+  "max": 727,
+  "year": "2026/27",
+  "url": "https://www.fh-joanneum.at/en/international/international-degree-seeking-students/admissions/international-applicants-bachelors-degree-programme/",
+  "note": "Plus contribuția pentru asociația studenților (ÖH)."
+ },
+ {
+  "id": "fh-oberoesterreich",
+  "currency": "EUR",
+  "min": 727,
+  "max": 727,
+  "year": "2026/27",
+  "url": "https://fh-ooe.at/en/study-information/financial-matters",
+  "note": "Plus contribuția pentru asociația studenților (26,20 €/semestru)."
+ },
+ {
+  "id": "fh-technikum-wien",
+  "currency": "EUR",
+  "min": 727,
+  "max": 727,
+  "year": "2026/27",
+  "url": "https://www.technikum-wien.at/en/student-guide/tution/",
+  "note": "Plus contribuția pentru asociația studenților (26,20 €/semestru)."
+ },
+ {
+  "id": "fi-svenska-handelshogskolan",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.hanken.fi/en/apply/study-hanken/international-students/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "fi-tampereen-ammattikorkeakoulu",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.tuni.fi/en/study-with-us/apply-to-tamk/financial-matters-tamk"
+ },
+ {
+  "id": "fi-turun-ammattikorkeakoulu",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.turkuamk.fi/en/education/guide-for-applicants/"
+ },
+ {
+  "id": "fi-yrkeshogskolan-arcada",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.arcada.fi/en/study-arcada/tuition-fees-and-arcada-awards/tuition-fees-bachelors-programmes"
+ },
+ {
+  "id": "fms-fredericia",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "fontys",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "fr-ecole-centrale-nantes",
+  "currency": "EUR",
+  "min": 12000,
+  "max": 12000,
+  "year": "2026/27",
+  "url": "https://www.ec-nantes.fr/english-version/study/tuition-fees-1",
+  "note": "Reducere de 1.500 € în primul an pentru aplicare timpurie"
+ },
+ {
+  "id": "fr-edhec-lille",
+  "currency": "EUR",
+  "min": 15900,
+  "max": 23900,
+  "year": "2026/27",
+  "url": "https://www.edhec.edu/en/programmes/bba/admissions-and-tuition-fees/tuition-fees-and-scholarships",
+  "note": "Business Management: 15.900 €/an; Global Business: 23.900 €/an (tarif pentru intrarea din 2026, programul durează 4 ani). Plata în rate lunare adaugă 2% taxă de administrare."
+ },
+ {
+  "id": "fr-escp-business-school",
+  "currency": "EUR",
+  "min": 17900,
+  "max": 17900,
+  "year": "2027/28",
+  "url": "https://escp.eu/programmes/bachelor-in-management-BSc",
+  "note": "La acestea se adaugă 2.900 €/an taxe suplimentare (total 20.800 €/an)."
+ },
+ {
+  "id": "fr-ieseg-school-of-management-lille",
+  "currency": "EUR",
+  "min": 13500,
+  "max": 13500,
+  "year": "2027/28",
+  "url": "https://www.ieseg.fr/en/programs/bachelor-international-business/admission-fees/",
+  "note": "Reduceri de 10% pentru aplicare timpurie sau bacalaureat internațional"
+ },
+ {
+  "id": "fr-insa-centre-val-de-loire-campus-de-blois",
+  "currency": "EUR",
+  "min": 630,
+  "max": 630,
+  "year": "2026/27",
+  "url": "https://www.insa-centrevaldeloire.fr/fr/droits-dinscription-rentree-2026",
+  "note": "Bursierii nu plătesc taxa de înscriere."
+ },
+ {
+  "id": "fr-insa-rouen-normandie",
+  "currency": "EUR",
+  "min": 630,
+  "max": 630,
+  "year": "2026/27",
+  "url": "https://www.insa-rouen.fr/vie-etudiante/cout-des-etudes"
+ },
+ {
+  "id": "fr-insa-strasbourg",
+  "currency": "EUR",
+  "min": 630,
+  "max": 630,
+  "year": "2026/27",
+  "url": "https://www.insa-strasbourg.fr/fr/cout-des-etudes/",
+  "note": "Bursierii CROUS nu plătesc taxa."
+ },
+ {
+  "id": "fr-universite-grenoble-alpes",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "frankfurt-school",
+  "currency": "EUR",
+  "min": 17200,
+  "max": 17200,
+  "year": "2027/28",
+  "url": "https://www.frankfurt-school.de/en/study/bachelor/bachelor-in-business-administration"
+ },
+ {
+  "id": "frankfurt-uas",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://verwaltungsportal.hessen.de/leistung?leistung_id=L100001_8979000"
+ },
+ {
+  "id": "frederick-nicosia",
+  "currency": "EUR",
+  "min": 8970,
+  "max": 10200,
+  "year": "2026/27",
+  "url": "https://www.frederick.ac.cy/en/tuition-and-other-fees",
+  "note": "Taxele sunt cele publicate ca „reduse” (discounted); nu este listată altă taxă standard."
+ },
+ {
+  "id": "fu-berlin",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.fu-berlin.de/studium/studieren/studienorganisation/gebuehren/index.html"
+ },
+ {
+  "id": "geneve",
+  "currency": "CHF",
+  "min": 1000,
+  "max": 1000,
+  "year": "2026/27",
+  "url": "https://memento.unige.ch/doc/0346"
+ },
+ {
+  "id": "george-bacovia",
+  "currency": "RON",
+  "min": 5500,
+  "max": 8500,
+  "year": "2026/27",
+  "url": "https://drive.google.com/file/d/1dCMJFEafkKaHpnnJmNf584nlGyT2411a/view"
+ },
+ {
+  "id": "georgetown",
+  "currency": "USD",
+  "min": 74520,
+  "max": 74520,
+  "year": "2026/27",
+  "url": "https://studentaccounts.georgetown.edu/tuition/undergraduate/",
+  "note": "Suma include și taxele obligatorii ale universității."
+ },
+ {
+  "id": "georgia-tech",
+  "currency": "USD",
+  "min": 35610,
+  "max": 35610,
+  "year": "2026/27",
+  "url": "https://finaid.gatech.edu/costs/undergraduate-costs"
+ },
+ {
+  "id": "ghent-university",
+  "currency": "EUR",
+  "min": 1181,
+  "max": 1181,
+  "year": "2026/27",
+  "url": "https://www.ugent.be/student/en/administration/tuition/tuition-fee-bachelor-programme-linking-programme-and-preparatory-programme.htm/copy_of_tuitionbalinkprepa20262027"
+ },
+ {
+  "id": "gist",
+  "currency": "KRW",
+  "min": 0,
+  "max": 0,
+  "year": "2027/28",
+  "url": "https://ewww.gist.ac.kr/iuadm/img/sub02/2027_Fall_Undergraduate_Admission_Guideline.pdf",
+  "note": "Taxa este acoperită de o bursă de stat pentru toți studenții admiși."
+ },
+ {
+  "id": "glasgow",
+  "currency": "GBP",
+  "min": 28275,
+  "max": 33708,
+  "year": "2027/28",
+  "url": "https://www.gla.ac.uk/undergraduate/fees/intlfees/",
+  "note": "Medicină: 67.112 £/an; Stomatologie: 60.255 £/an; Veterinară: 38.670 £/an"
+ },
+ {
+  "id": "glasgow-caledonian",
+  "currency": "GBP",
+  "min": 15700,
+  "max": 15700,
+  "year": "2026/27",
+  "url": "https://www.gcu.ac.uk/study/tuitionfees",
+  "note": "Optometrie (MOptom): 21.900 £/an"
+ },
+ {
+  "id": "goldsmiths",
+  "currency": "GBP",
+  "min": 22000,
+  "max": 23000,
+  "year": "2026/27",
+  "url": "https://www.gold.ac.uk/media/docs/students/ug-fees-2026-27.pdf",
+  "note": "Unele cursuri costă mai mult."
+ },
+ {
+  "id": "gothenburg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.universityadmissions.se/en/fees-scholarships-residence-permit/",
+  "note": "Gratuit pentru cetățenii UE; trebuie să dovedești cetățenia la înscriere."
+ },
+ {
+  "id": "greenwich",
+  "currency": "GBP",
+  "min": 17975,
+  "max": 17975,
+  "year": "2026/27",
+  "url": "https://www.gre.ac.uk/finance/fees/course-fees",
+  "note": "Asistență medicală: 19.400 £/an"
+ },
+ {
+  "id": "gustave-eiffel",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "h-da",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://h-da.de/en/studies/advisory-service/study-financing-opportunities"
+ },
+ {
+  "id": "haaga-helia",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.haaga-helia.fi/en/apply/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "han",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "hanze",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "harper-adams",
+  "currency": "GBP",
+  "min": 17160,
+  "max": 17160,
+  "year": "2026/27",
+  "url": "https://www.harper-adams.ac.uk/study/1075/finance/university-costs/",
+  "note": "Programul Veterinary Bioscience accelerat: 20.550 £/an; anul de practică: 4.000 £"
+ },
+ {
+  "id": "harvard",
+  "currency": "USD",
+  "min": 62226,
+  "max": 62226,
+  "year": "2026/27",
+  "url": "https://college.harvard.edu/financial-aid/how-aid-works"
+ },
+ {
+  "id": "has-green-academy",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://www.has.nl/en/more-has/study-at-has/financial-matters/"
+ },
+ {
+  "id": "haute-alsace",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "haw-hamburg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.haw-hamburg.de/en/international/international-students/funding-and-scholarships/finances/"
+ },
+ {
+  "id": "heidelberg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-heidelberg.de/en/study/management-of-studies/semester-fees/tuition-fees-for-international-students"
+ },
+ {
+  "id": "helsinki",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.helsinki.fi/en/admissions-and-education/apply-bachelors-and-masters-programmes/tuition-fees-and-scholarship-programme"
+ },
+ {
+  "id": "heriot-watt",
+  "currency": "GBP",
+  "min": 20880,
+  "max": 20880,
+  "year": "2027/28",
+  "url": "https://www.hw.ac.uk/study/undergraduate/data-sciences",
+  "note": "Suma este pentru programul de Știința datelor; alte programe pot costa diferit."
+ },
+ {
+  "id": "hertfordshire",
+  "currency": "GBP",
+  "min": 17450,
+  "max": 17450,
+  "year": "2026/27",
+  "url": "https://www.herts.ac.uk/study/fees-and-funding/tuition-fees"
+ },
+ {
+  "id": "hhu-duesseldorf",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.hhu.de/internationales/leben-in-duesseldorf"
+ },
+ {
+  "id": "hkbu",
+  "currency": "HKD",
+  "min": 190000,
+  "max": 190000,
+  "year": "2026/27",
+  "url": "https://bba.hkbu.edu.hk/admissions/international-applicants.html",
+  "note": "Taxa pentru studenții internaționali (nelocali), la programele de licență cu frecvență."
+ },
+ {
+  "id": "hku",
+  "currency": "HKD",
+  "min": 224000,
+  "max": 249000,
+  "year": "2026/27",
+  "url": "https://www.hku.hk/en/admission-aid/tuition-fee-scholarships",
+  "note": "Taxa pentru studenții din afara Hong Kong-ului (nelocali)."
+ },
+ {
+  "id": "hku-utrecht",
+  "currency": "EUR",
+  "min": 2771,
+  "max": 2771,
+  "year": "2027/28",
+  "url": "https://www.hku.nl/en/study-at-hku/explore-and-apply/tuition-fee-and-finances"
+ },
+ {
+  "id": "hkust",
+  "currency": "HKD",
+  "min": 215000,
+  "max": 215000,
+  "year": "2026/27",
+  "url": "https://registry.hkust.edu.hk/resource-library/tuition-rates-ug",
+  "note": "Taxa pentru studenții nelocali."
+ },
+ {
+  "id": "hm-muenchen",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://mediapool.hm.edu/media/dachmarke/dm_lokal/hauptabteilung2/bereichimma_1/pdfsinfoszurbewerbung/01_Hochschulgebuehrensatzung.pdf",
+  "note": "Taxa de școlarizare se aplică doar studenților din afara UE/SEE."
+ },
+ {
+  "id": "hochschule-heilbronn",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.hs-heilbronn.de/en/tuition-fees"
+ },
+ {
+  "id": "hogeschool-leiden",
+  "currency": "EUR",
+  "min": 2771,
+  "max": 2771,
+  "year": "2027/28",
+  "url": "https://www.hsleiden.nl/studeren/inschrijven/kosten"
+ },
+ {
+  "id": "hotelschool-the-hague",
+  "currency": "EUR",
+  "min": 4519,
+  "max": 4641,
+  "year": "2027/28",
+  "url": "https://www.hotelschool.nl/bachelor-hospitality-management/",
+  "note": "Plus taxa separată Skotel (aprox. 8.400-8.600 €/an) pentru costuri specifice școlii"
+ },
+ {
+  "id": "howest",
+  "currency": "EUR",
+  "min": 1181,
+  "max": 1181,
+  "year": "2026/27",
+  "url": "https://www.howest.be/fs/documents/2026-27%20OER%20Bachelor.pdf",
+  "note": "Taxa poate fi mai mică pentru studenții cu venituri mici (bursieri)."
+ },
+ {
+  "id": "hs-duesseldorf",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.hs-duesseldorf.de/studium/studieninteressierte/studiengeb%C3%BChren"
+ },
+ {
+  "id": "hs-fulda",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.hs-fulda.de/internationales/international-office/wege-nach-fulda/kosten-und-finanzierung"
+ },
+ {
+  "id": "hs-niederrhein",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.hs-niederrhein.de/angewandte-psychologie/"
+ },
+ {
+  "id": "hs-osnabrueck",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.mwk.niedersachsen.de/startseite/hochschulen/studium/studieren_ohne_studienbeitrage/studieren-in-niedersachsen-ohne-studienbeitrage-178839.html",
+  "note": "Taxă de 500 €/semestru doar după ce depășești durata studiilor plus 6 semestre (taxă de studii lungi)."
+ },
+ {
+  "id": "hs-rhein-waal",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.hochschule-rhein-waal.de/en/academics/prospective-students"
+ },
+ {
+  "id": "hs-rheinmain",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.hs-rm.de/international/wege-an-die-hsrm/internationale-studierende/studium/stipendien-und-finanzierung"
+ },
+ {
+  "id": "hsg-st-gallen",
+  "currency": "CHF",
+  "min": 6687,
+  "max": 6687,
+  "year": "2026/27",
+  "url": "https://www.unisg.ch/en/studying/studying-at-hsg/costs-of-an-hsg-degree/"
+ },
+ {
+  "id": "hsuhk",
+  "currency": "HKD",
+  "min": 153820,
+  "max": 193240,
+  "year": "2026/27",
+  "url": "https://admission.hsu.edu.hk/undergraduate-admissions/year-1-entry/international-qualification/fees-and-bursaries/",
+  "note": "Sumele sunt pentru anul I; taxa anilor următori poate crește."
+ },
+ {
+  "id": "htw-berlin",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://gamedesign.htw-berlin.de/bachelor/"
+ },
+ {
+  "id": "hu-utrecht",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "huddersfield",
+  "currency": "GBP",
+  "min": 17600,
+  "max": 17600,
+  "year": "2026/27",
+  "url": "https://www.hud.ac.uk/international/fees-and-funding/",
+  "note": "Asistență medicală: 19.800 £/an; kinetoterapie/moașe: 18.700 £/an"
+ },
+ {
+  "id": "humanitas",
+  "currency": "EUR",
+  "min": 1250,
+  "max": 3250,
+  "year": "2026/27",
+  "url": "https://www.hunimed.eu/wp-content/uploads/2026/02/University-Fee-Regulations_Summary-for-International-Students_2026_2027-1.pdf",
+  "note": "Fizioterapie: 2.250–5.750 €/an; Osteopatie: ~6.750 €/an; Medicină: 10.000–23.000 €/an"
+ },
+ {
+  "id": "hwr-berlin",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.hwr-berlin.de/studium/international-studieren/international-students"
+ },
+ {
+  "id": "hyperion",
+  "currency": "RON",
+  "min": 3900,
+  "max": 8000,
+  "year": "2026/27",
+  "url": "https://www.hyperion.ro/index.php?option=com_attachments&task=download&id=627"
+ },
+ {
+  "id": "hz-uas",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://hz.nl/en/practical-information/fees-and-finances"
+ },
+ {
+  "id": "iba-kolding",
+  "currency": "DKK",
+  "min": 75000,
+  "max": 75000,
+  "year": "2027/28",
+  "url": "https://iba.dk/international/bachelor/bsc-in-international-business-management/",
+  "note": "Programele în daneză sunt gratuite pentru studenții din UE"
+ },
+ {
+  "id": "ie-dun-laoghaire-institute-of-art-design-and-technology",
+  "currency": "EUR",
+  "min": 2350,
+  "max": 2350,
+  "year": "2026/27",
+  "url": "https://www.citizensinformation.ie/en/education/third-level-education/fees-and-supports-for-third-level-education/fees/"
+ },
+ {
+  "id": "ie-mary-immaculate-college-limerick",
+  "currency": "EUR",
+  "min": 2350,
+  "max": 2350,
+  "year": "2026/27",
+  "url": "https://www.citizensinformation.ie/en/education/third-level-education/fees-and-supports-for-third-level-education/fees/"
+ },
+ {
+  "id": "ie-national-college-of-art-and-design",
+  "currency": "EUR",
+  "min": 2350,
+  "max": 2350,
+  "year": "2026/27",
+  "url": "https://www.ncad.ie/study-at-ncad/fees/"
+ },
+ {
+  "id": "ie-rcsi-university-of-medicine-and-health-sciences",
+  "currency": "EUR",
+  "min": 2350,
+  "max": 2350,
+  "year": "2026/27",
+  "url": "https://www.rcsi.com/dublin/undergraduate/medicine/fees-and-funding",
+  "note": "Taxe suplimentare de aproximativ 990 € pe an (IT, control medical, înscriere NUI), pe lângă contribuția studentului."
+ },
+ {
+  "id": "ie-technological-university-of-the-shannon",
+  "currency": "EUR",
+  "min": 2350,
+  "max": 2350,
+  "year": "2026/27",
+  "url": "https://tus.ie/grants-fees/midlands/"
+ },
+ {
+  "id": "ie-university",
+  "currency": "EUR",
+  "min": 27300,
+  "max": 31020,
+  "year": "2027/28",
+  "url": "https://www.ie.edu/university/admission/fees-scholarships/",
+  "note": "Global BBA: 45.120 €/an; contribuție unică IE Foundation: 1.200 €."
+ },
+ {
+  "id": "imc-krems",
+  "currency": "EUR",
+  "min": 727,
+  "max": 727,
+  "year": "2026/27",
+  "url": "https://www.imc.ac.at/en/study/application/study-fees/",
+  "note": "Plus contribuția pentru asociația studenților (26,20 €/semestru)."
+ },
+ {
+  "id": "imperial",
+  "currency": "GBP",
+  "min": 44850,
+  "max": 47800,
+  "year": "2027/28",
+  "url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/aeronautical-engineering/",
+  "note": "Medicină: 61.550 £/an. Interval din câteva programe; altele pot costa diferit."
+ },
+ {
+  "id": "inalco",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "inholland",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "inn",
+  "currency": "NOK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyinnorway.no/tuition-fees-students-outside-eueea-and-switzerland"
+ },
+ {
+  "id": "insa-rennes",
+  "currency": "EUR",
+  "min": 630,
+  "max": 630,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Diploma de inginer: 630 €/an, taxă stabilită de stat."
+ },
+ {
+  "id": "insa-toulouse",
+  "currency": "EUR",
+  "min": 630,
+  "max": 630,
+  "year": "2026/27",
+  "url": "https://www.insa-toulouse.fr/admissions-insa-toulouse/",
+  "note": "Diploma de inginer: 630 €/an, taxă stabilită de stat."
+ },
+ {
+  "id": "ioan-slavici",
+  "currency": "EUR",
+  "min": 590,
+  "max": 690,
+  "year": "2026/27",
+  "url": "https://islavici.ro/admitere/"
+ },
+ {
+  "id": "iscte",
+  "currency": "EUR",
+  "min": 697,
+  "max": 697,
+  "year": "2026/27",
+  "url": "https://ibs.iscte-iul.pt/curso/codigo/9147/licenciatura-gestao/planoestudos"
+ },
+ {
+  "id": "ism-vilnius",
+  "currency": "EUR",
+  "min": 7140,
+  "max": 8330,
+  "year": "2026/27",
+  "url": "https://www.ism.lt/en/bachelor-studies/finance/",
+  "note": "Bursa ISM de până la 50% poate reduce taxa la jumătate (de ex. 3.570 €/an)."
+ },
+ {
+  "id": "itb-bucuresti",
+  "currency": "EUR",
+  "min": 630,
+  "max": 630,
+  "year": "2026/27",
+  "url": "https://itb.ro/admitere-zi/"
+ },
+ {
+  "id": "itp-bucuresti",
+  "currency": "EUR",
+  "min": 700,
+  "max": 700,
+  "year": "2026/27",
+  "url": "https://www.itpbucuresti.ro/admitere-licenta/"
+ },
+ {
+  "id": "itu-copenhagen",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "iuav",
+  "currency": "EUR",
+  "min": 0,
+  "max": 2806,
+  "year": "2026/27",
+  "url": "https://www.iuav.it/it/tasse-e-contributi/quanto-si-paga",
+  "note": "Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "iulm",
+  "currency": "EUR",
+  "min": 8760,
+  "max": 8760,
+  "year": "2026/27",
+  "url": "https://www.iulm.it/wps/wcm/connect/iulm/a5276c9e-b358-4600-976b-c11f41fd4ade/Regolamento+Tasse+AA+2026-2027.pdf?MOD=AJPERES",
+  "note": "Pentru familii cu venituri în străinătate. Cu familia în Italia taxele sunt mai mici."
+ },
+ {
+  "id": "iuls",
+  "currency": "RON",
+  "min": 3500,
+  "max": 4450,
+  "year": "2026/27",
+  "url": "https://iuls.ro/agricultura/wp-content/uploads/2026/04/Decizie-taxe-scolarizare_IF_2026-2027.pdf",
+  "note": "Medicină veterinară: 8.450 lei/an în anii I-II.",
+  "budgetFree": true
+ },
+ {
+  "id": "jku-linz",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.jku.at/studium/studierende/dein-studienstart/oeh-und-studienbeitrag/",
+  "note": "Taxa de școlarizare de 363,36 €/semestru se plătește doar după durata prevăzută a studiilor plus 2 semestre; până atunci se plătește doar cotizația ÖH (circa 26 €/semestru)."
+ },
+ {
+  "id": "johncabot",
+  "currency": "EUR",
+  "min": 22700,
+  "max": 22700,
+  "year": "2026/27",
+  "url": "https://www.johncabot.edu/admissions/tuition-and-fees/fall-2026-spring-2027-eur.aspx"
+ },
+ {
+  "id": "johns-hopkins",
+  "currency": "USD",
+  "min": 68670,
+  "max": 68670,
+  "year": "2026/27",
+  "url": "https://sfs.jhu.edu/cost-tuition/"
+ },
+ {
+  "id": "jyvaskyla",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.jyu.fi/en/study-with-us/tuition-fees-and-other-financial-matters"
+ },
+ {
+  "id": "karlstad-university",
+  "currency": "SEK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.kau.se/en/education/explore-student-life/application-admission/tuition-fees"
+ },
+ {
+  "id": "keele",
+  "currency": "GBP",
+  "min": 18900,
+  "max": 26600,
+  "year": "2026/27",
+  "url": "https://www.keele.ac.uk/study/undergraduate/tuitionfeesandfunding/undergraduatetuitionfees/undergraduatetuitionfeesinternationalstudents/undergraduatetuitionfees2026internationalstudents/",
+  "note": "Medicină, medicină veterinară și unele programe au tarife separate"
+ },
+ {
+  "id": "kent",
+  "currency": "GBP",
+  "min": 21950,
+  "max": 23950,
+  "year": "2027/28",
+  "url": "https://www.kent.ac.uk/courses/undergraduate/124/computer-science",
+  "note": "Interval din câteva programe; altele pot costa diferit."
+ },
+ {
+  "id": "kit",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.sle.kit.edu/english/imstudium/703.php"
+ },
+ {
+  "id": "kolding-design",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "korea-university",
+  "currency": "KRW",
+  "min": 11600000,
+  "max": 15600000,
+  "year": "2026/27",
+  "url": "https://oia.korea.ac.kr/oia2026/Tuition.do",
+  "note": "Sumă aproximativă, după pagina universității."
+ },
+ {
+  "id": "kp-copenhagen",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "kristiania",
+  "currency": "NOK",
+  "min": 124200,
+  "max": 124200,
+  "year": "2026/27",
+  "url": "https://www.kristiania.no/en/study-at-kristiania/price-overview/",
+  "note": "Suma este pentru programul Computer Arts; alte programe pot costa diferit."
+ },
+ {
+  "id": "kth",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.kth.se/en/studies/bachelor/information-communication-technology/fees-1.646274",
+  "note": "Gratuit pentru cetățenii UE; trebuie să dovedești cetățenia la înscriere."
+ },
+ {
+  "id": "ktu",
+  "currency": "EUR",
+  "min": 3250,
+  "max": 4201,
+  "year": "2026/27",
+  "url": "https://admissions.ktu.edu/programme/b-applied-chemistry/",
+  "note": "Tehnologii muzicale: 9.184 €/an."
+ },
+ {
+  "id": "ku",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "ku-leuven",
+  "currency": "EUR",
+  "min": 1181,
+  "max": 1181,
+  "year": "2026/27",
+  "url": "https://www.kuleuven.be/english/education/student/fees/tuition-fee-breakdown"
+ },
+ {
+  "id": "kunstakademiet",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "kyung-hee",
+  "currency": "KRW",
+  "min": 9954800,
+  "max": 13436800,
+  "year": "2026/27",
+  "url": "https://com.khu.ac.kr/upload/contents/202608/202608140232586120.pdf",
+  "note": "Sumele sunt pentru campusul Seul; campusul Global poate avea alte taxe."
+ },
+ {
+  "id": "la-rochelle-universite",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "lancashire",
+  "currency": "GBP",
+  "min": 17750,
+  "max": 19500,
+  "year": "2027/28",
+  "url": "https://www.lancashire.ac.uk/study/fees-and-finance/eu-and-international-students",
+  "note": "Medicină: 49.950 £/an; medicină veterinară: 39.500 £/an; stomatologie: mai scumpă"
+ },
+ {
+  "id": "lancaster",
+  "currency": "GBP",
+  "min": 31700,
+  "max": 31700,
+  "year": "2027/28",
+  "url": "https://www.lancaster.ac.uk/study/undergraduate/courses/physical-geography-bsc-hons-f840/2026/",
+  "note": "Suma este pentru programul de Geografie fizică; alte programe pot costa diferit."
+ },
+ {
+  "id": "lasalle",
+  "currency": "SGD",
+  "min": 30380,
+  "max": 30380,
+  "year": "2027/28",
+  "url": "https://www.lasalle.edu.sg/study/admissions/ba-hons-admissions/",
+  "note": "Taxa este pentru intrarea din august 2027. Cu Tuition Grant (obligă la 3 ani de muncă în Singapore) taxa este mai mică; suma nu apare pe pagină."
+ },
+ {
+  "id": "lbtu",
+  "currency": "EUR",
+  "min": 2750,
+  "max": 3500,
+  "year": "2026/27",
+  "url": "https://apply.lbtu.lv/courses/course/48",
+  "note": "Medicină veterinară (5 ani): 9.600 €/an."
+ },
+ {
+  "id": "lcc-international",
+  "currency": "EUR",
+  "min": 4500,
+  "max": 4500,
+  "year": "2027/28",
+  "url": "https://lcc.lt/tuition-and-fees",
+  "note": "Ajutorul financiar și bursele pot acoperi până la 90% din taxă."
+ },
+ {
+  "id": "le-havre-normandie",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "le-mans-universite",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "leeds",
+  "currency": "GBP",
+  "min": 27300,
+  "max": 33700,
+  "year": "2027/28",
+  "url": "https://courses.leeds.ac.uk/3260/computer-science-bsc",
+  "note": "Interval din câteva programe; altele pot costa diferit."
+ },
+ {
+  "id": "leeds-beckett",
+  "currency": "GBP",
+  "min": 17345,
+  "max": 17345,
+  "year": "2027/28",
+  "url": "https://www.leedsbeckett.ac.uk/international-students/course-fees-and-living-costs/"
+ },
+ {
+  "id": "leicester",
+  "currency": "GBP",
+  "min": 22200,
+  "max": 26550,
+  "year": "2026/27",
+  "url": "https://le.ac.uk/study/undergraduates/fees-funding/tuition-fees",
+  "note": "Medicină: 30.150 £/an (anii 1–2), 48.900 £/an (anii 3–5)"
+ },
+ {
+  "id": "leiden",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "lingnan-hk",
+  "currency": "HKD",
+  "min": 205000,
+  "max": 205000,
+  "year": "2027/28",
+  "url": "https://www.ln.edu.hk/admissions/ug/your-future-begins-now-apply/fees-and-scholarships",
+  "note": "Programele autofinanțate costă între 145.000 și 230.000 HK$ pe an."
+ },
+ {
+  "id": "linkoping-university",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://liu.se/en/article/application-and-tuition-fees",
+  "note": "Gratuit pentru cetățenii UE; trebuie să dovedești cetățenia la înscriere."
+ },
+ {
+  "id": "liuc",
+  "currency": "EUR",
+  "min": 7800,
+  "max": 8500,
+  "year": "2026/27",
+  "url": "https://www.liuc.it/entra-in-liuc/laurea-triennale/tasse-e-contributi/",
+  "note": "Programele în engleză: 9.500 €/an"
+ },
+ {
+  "id": "liverpool",
+  "currency": "GBP",
+  "min": 28000,
+  "max": 33000,
+  "year": "2027/28",
+  "url": "https://www.liverpool.ac.uk/study/undergraduate/courses/computer-science-bsc-hons/fees-finance",
+  "note": "Interval din câteva programe; altele pot costa diferit."
+ },
+ {
+  "id": "lmu",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.lmu.de/en/workspace-for-students/abc-study-guide/fees-and-tuition-fees/"
+ },
+ {
+  "id": "london-south-bank",
+  "currency": "GBP",
+  "min": 16440,
+  "max": 16440,
+  "year": "2026/27",
+  "url": "https://www.lsbu.ac.uk/international/fees-and-funding",
+  "note": "Suma minimă; unele programe costă mai mult."
+ },
+ {
+  "id": "loughborough",
+  "currency": "GBP",
+  "min": 24700,
+  "max": 33000,
+  "year": "2026/27",
+  "url": "https://www.lboro.ac.uk/study/undergraduate/fees-funding/fees/international-fees-2026-27/"
+ },
+ {
+  "id": "lse",
+  "currency": "GBP",
+  "min": 28900,
+  "max": 39900,
+  "year": "2026/27",
+  "url": "https://info.lse.ac.uk/staff/divisions/Planning-Division/Assets/Documents/Table-of-Fees-2026-27-and-PGR-structure-combined-28Nov2025.pdf"
+ },
+ {
+  "id": "lsmu",
+  "currency": "EUR",
+  "min": 4201,
+  "max": 5700,
+  "year": "2026/27",
+  "url": "https://lsmu.lt/en/admission/tuition-fees/",
+  "note": "Medicină: 12.800-13.300 €/an; Stomatologie: 13.600-14.100 €/an; Medicină veterinară: 9.200-10.700 €/an."
+ },
+ {
+  "id": "lt-vilniaus-dailes-akademija",
+  "currency": "EUR",
+  "min": 5676,
+  "max": 5676,
+  "year": "2026/27",
+  "url": "https://www.vda.lt/en/admission/tuition-fees"
+ },
+ {
+  "id": "lu-riga",
+  "currency": "EUR",
+  "min": 2600,
+  "max": 2600,
+  "year": "2026/27",
+  "url": "https://www.lu.lv/en/studies/study-programmes-1/bachelors-study-programmes/english-european-languages-and-business-studies/",
+  "note": "Suma este pentru programul English and European Languages and Business Studies; alte programe pot costa diferit."
+ },
+ {
+  "id": "luiss",
+  "currency": "EUR",
+  "min": 14000,
+  "max": 14000,
+  "year": "2026/27",
+  "url": "https://www.luiss.it/en/orientation-and-admissions/admission-procedures/admission-bachelors-and-masters-degree-programs-law/registration",
+  "note": "Suma este pentru primul an de studiu."
+ },
+ {
+  "id": "lum",
+  "currency": "EUR",
+  "min": 5700,
+  "max": 6200,
+  "year": "2026/27",
+  "url": "https://www.lum.it/wp-content/uploads/2026/06/Manifesto-studenti-26-27-1.pdf",
+  "note": "Enogastronomia: 9.750 €/an. Infermieristică: 4.000 €/an în anul 1. Medicină și Chirurgie: 16.500 €/an în anul 1. Reduceri după nota de la bacalaureat."
+ },
+ {
+  "id": "lumsa",
+  "currency": "EUR",
+  "min": 3500,
+  "max": 8750,
+  "year": "2026/27",
+  "url": "https://backoffice.lumsa.it/sites/default/files/file/3564/2026-07/guida-pratica-per-lo-studente-aa2627.pdf",
+  "note": "Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "lund",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.universityadmissions.se/en/fees-scholarships-residence-permit/",
+  "note": "Gratuit pentru cetățenii UE; trebuie să dovedești cetățenia la înscriere."
+ },
+ {
+  "id": "lut",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.lut.fi/en/studies/apply-lut/applying-masters-programmes/tuition-fee"
+ },
+ {
+  "id": "lyon-1",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "lyon-2",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "lyon-3",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "maastricht",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp",
+  "note": "University College Maastricht și Global Studies: 4.465 €/an"
+ },
+ {
+  "id": "malmo-university",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://mau.se/en/education/tuition-fees/",
+  "note": "Gratuit pentru cetățenii UE; trebuie să dovedești cetățenia la înscriere."
+ },
+ {
+  "id": "manchester",
+  "currency": "GBP",
+  "min": 29200,
+  "max": 39700,
+  "year": "2027/28",
+  "url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/00560/bsc-computer-science/",
+  "note": "Interval din câteva programe; altele pot costa diferit."
+ },
+ {
+  "id": "marie-louis-pasteur",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "martec",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "masaryk",
+  "currency": "EUR",
+  "min": 3000,
+  "max": 4500,
+  "year": "2026/27",
+  "url": "https://www.muni.cz/en/admissions/bachelors-and-masters-studies/tuition-fees-and-financial-aid",
+  "note": "Medicină: 380.000 CZK/an; Stomatologie: 400.000 CZK/an; Farmacie: 7.500 €/an; Analiză de date: 14.000 €/an; unele facultăți cer taxa în coroane (ex. Litere 76.000 CZK/an). Studiile în limba cehă sunt gratuite."
+ },
+ {
+  "id": "maynooth-university",
+  "currency": "EUR",
+  "min": 2350,
+  "max": 2350,
+  "year": "2026/27",
+  "url": "https://www.citizensinformation.ie/en/education/third-level-education/fees-and-supports-for-third-level-education/fees/"
+ },
+ {
+  "id": "mcgill",
+  "currency": "CAD",
+  "min": 31837,
+  "max": 71687,
+  "year": "2026/27",
+  "url": "https://www.mcgill.ca/student-accounts/files/student-accounts/new_intl_ugrad_degree_students_admitted_2026-27_0.pdf",
+  "note": "Cel mai scump program este Commerce (71.687 CAD/an); Medicina și Stomatologia costă mai mult."
+ },
+ {
+  "id": "mci-innsbruck",
+  "currency": "EUR",
+  "min": 727,
+  "max": 727,
+  "year": "2026/27",
+  "url": "https://www.mci.edu/en/study/bachelor/business-management",
+  "note": "Plus contribuția pentru asociația studenților (ÖH)."
+ },
+ {
+  "id": "meduni-innsbruck",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.i-med.ac.at/studium/zulassung/studienbeitraege/",
+  "note": "Gratuit în durata normală a studiilor plus 2 semestre; apoi 363,36 €/semestru. Se plătește doar contribuția mică pentru asociația studenților (ÖH)."
+ },
+ {
+  "id": "meduni-wien",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.meduniwien.ac.at/web/en/studies-further-education/application-admission/tuition-fees/",
+  "note": "Gratuit în durata normală a studiilor plus 2 semestre; apoi 363,36 €/semestru. Se plătește doar contribuția mică pentru asociația studenților (ÖH)."
+ },
+ {
+  "id": "mendelu-brno",
+  "currency": "CZK",
+  "min": 80000,
+  "max": 80000,
+  "year": "2024/25",
+  "url": "https://pef.mendelu.cz/en/tuition-fee/",
+  "note": "Suma este pentru Facultatea de Economie (PEF); alte facultăți pot costa diferit. Studiile în limba cehă sunt gratuite."
+ },
+ {
+  "id": "metropolia",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.metropolia.fi/en/admissions/tuition-fees"
+ },
+ {
+  "id": "middlesex",
+  "currency": "GBP",
+  "min": 18300,
+  "max": 18300,
+  "year": "2027/28",
+  "url": "https://www.mdx.ac.uk/international/course-fees-and-costs-for-international-students/"
+ },
+ {
+  "id": "mit",
+  "currency": "USD",
+  "min": 66720,
+  "max": 66720,
+  "year": "2026/27",
+  "url": "https://sfs.mit.edu/undergraduate-students/the-cost-of-attendance/annual-student-budget/"
+ },
+ {
+  "id": "montanuni-leoben",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://ssc.unileoben.ac.at/en/interest-in-studies/tuition-fees",
+  "note": "Gratuit în durata normală a studiilor plus 2 semestre; apoi 363,36 €/semestru. Se plătește doar contribuția mică pentru asociația studenților (ÖH)."
+ },
+ {
+  "id": "montpellier-paul-valery",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.univ-montp3.fr/fr/international/etudes-%C3%A0-montpellier-en-lmd/venir-en-individuel",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "mu-plovdiv",
+  "currency": "EUR",
+  "min": 4500,
+  "max": 10000,
+  "year": "2026/27",
+  "url": "https://mu-plovdiv.bg/en/admission-info/",
+  "note": "Sumele sunt pentru primul an, la programele în engleză. Medicină și Stomatologie: 10.000 €/an."
+ },
+ {
+  "id": "munster-technological-university",
+  "currency": "EUR",
+  "min": 2350,
+  "max": 2350,
+  "year": "2026/27",
+  "url": "https://www.citizensinformation.ie/en/education/third-level-education/fees-and-supports-for-third-level-education/fees/"
+ },
+ {
+  "id": "mykolas-romeris",
+  "currency": "EUR",
+  "min": 3250,
+  "max": 4200,
+  "year": "2026/27",
+  "url": "https://www.mruni.eu/en/admission_procedure/fees/"
+ },
+ {
+  "id": "naba",
+  "currency": "EUR",
+  "min": 8450,
+  "max": 21850,
+  "year": "2026/27",
+  "url": "https://www.naba.it/en/undergraduate-counseling/tuition-fee-scholarships-financial-aid",
+  "note": "Taxa depinde de veniturile familiei."
+ },
+ {
+  "id": "nantes-universite",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "newcastle",
+  "currency": "GBP",
+  "min": 25350,
+  "max": 32600,
+  "year": "2027/28",
+  "url": "https://www.ncl.ac.uk/undergraduate/degrees/i195/",
+  "note": "Interval din câteva programe; altele pot costa diferit."
+ },
+ {
+  "id": "nhh",
+  "currency": "NOK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyinnorway.no/tuition-fees-students-outside-eueea-and-switzerland"
+ },
+ {
+  "id": "nhl-stenden",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "nmbu",
+  "currency": "NOK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyinnorway.no/tuition-fees-students-outside-eueea-and-switzerland"
+ },
+ {
+  "id": "nord",
+  "currency": "NOK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyinnorway.no/tuition-fees-students-outside-eueea-and-switzerland"
+ },
+ {
+  "id": "northampton",
+  "currency": "GBP",
+  "min": 17000,
+  "max": 17000,
+  "year": "2026/27",
+  "url": "https://www.northampton.ac.uk/courses/english-ba/",
+  "note": "Suma este pentru programul de Engleză; alte programe pot costa diferit."
+ },
+ {
+  "id": "northumbria",
+  "currency": "GBP",
+  "min": 19850,
+  "max": 21500,
+  "year": "2027/28",
+  "url": "https://www.northumbria.ac.uk/study-at-northumbria/fees-funding/international-fees-funding/international-ug-fees/"
+ },
+ {
+  "id": "northwestern",
+  "currency": "USD",
+  "min": 71802,
+  "max": 71802,
+  "year": "2026/27",
+  "url": "https://www.northwestern.edu/sfs/tuition/undergraduate/"
+ },
+ {
+  "id": "notre-dame",
+  "currency": "USD",
+  "min": 69280,
+  "max": 69280,
+  "year": "2026/27",
+  "url": "https://financialaid.nd.edu/costs-and-affordability/"
+ },
+ {
+  "id": "nottingham",
+  "currency": "GBP",
+  "min": 24700,
+  "max": 34000,
+  "year": "2026/27",
+  "url": "https://www.nottingham.ac.uk/fees/tuitionfees/202627/undergraduate.aspx",
+  "note": "Medicină (BMBS): 47.000 £/an; Veterinară: 41.800 £/an"
+ },
+ {
+  "id": "nottingham-trent",
+  "currency": "GBP",
+  "min": 18400,
+  "max": 19150,
+  "year": "2027/28",
+  "url": "https://www.ntu.ac.uk/international/scholarships-and-fees/tuition-fees"
+ },
+ {
+  "id": "ntnu",
+  "currency": "NOK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.ntnu.edu/web/studies/tuition-fee"
+ },
+ {
+  "id": "ntu-singapore",
+  "currency": "SGD",
+  "min": 36350,
+  "max": 45600,
+  "year": "2026/27",
+  "url": "https://www.ntu.edu.sg/admissions/undergraduate/fees-and-funding/tuition-fees/accepted-programme-offer-in-2026",
+  "note": "Cu Tuition Grant (obligă la 3 ani de muncă în Singapore): 21.400–21.800 S$/an. Medicină (cu Tuition Grant): 91.250 S$/an."
+ },
+ {
+  "id": "ntua-atena",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyingreece.edu.gr/bachelors/",
+  "note": "Programele în greacă sunt gratuite."
+ },
+ {
+  "id": "nyenrode",
+  "currency": "EUR",
+  "min": 25000,
+  "max": 28000,
+  "year": "2027/28",
+  "url": "https://www.nyenrode.nl/en/programs/p/bachelor-of-science-in-business-administration",
+  "note": "Taxa crește de la an la an."
+ },
+ {
+  "id": "oslomet",
+  "currency": "NOK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://student.oslomet.no/en/tuition-fees-for-international-students-from-outside-eu-eea"
+ },
+ {
+  "id": "ostfalia",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.mwk.niedersachsen.de/startseite/hochschulen/studium/studieren_ohne_studienbeitrage/studieren-in-niedersachsen-ohne-studienbeitrage-178839.html",
+  "note": "Taxă de 500 €/semestru doar după ce depășești durata studiilor plus 6 semestre (taxă de studii lungi)."
+ },
+ {
+  "id": "oth-regensburg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.oth-regensburg.de/studieren/international/studium-in-regensburg/internationale-studierende"
+ },
+ {
+  "id": "oulu",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.oulu.fi/en/for-students/study-right/annual-registration/tuition-fees-and-scholarships-for-continuing-students"
+ },
+ {
+  "id": "ovgu-magdeburg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.fmb.ovgu.de/fmb2/en/FAQ/Organizing+your+studies+in+Germany/Finances.html"
+ },
+ {
+  "id": "ovidius",
+  "currency": "RON",
+  "min": 5000,
+  "max": 6900,
+  "year": "2026/27",
+  "url": "https://admitere.univ-ovidius.ro/wp-content/uploads/2026/06/Taxe-Admitere-UOC-LICENTA_2026-2027_rev.-2.pdf",
+  "note": "Medicină: 12.000 lei/an; Medicină dentară: 11.000; Farmacie: 9.000; Arte (actorie, muzică): 9.200",
+  "budgetFree": true
+ },
+ {
+  "id": "oxford",
+  "currency": "GBP",
+  "min": 39620,
+  "max": 66580,
+  "year": "2027/28",
+  "url": "https://www.ox.ac.uk/admissions/undergraduate/fees-and-funding/course-fees",
+  "note": "Medicina clinică are taxe mai mari (vezi pagina cursului de Medicină)"
+ },
+ {
+  "id": "paris-1-pantheon-sorbonne",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "paris-8",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "paris-cite",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "paris-dauphine",
+  "currency": "EUR",
+  "min": 0,
+  "max": 4848,
+  "year": "2026/27",
+  "url": "https://dauphine.psl.eu/formations/scolarite/droits-et-tarifs",
+  "note": "Taxa depinde de venitul părinților: de la scutire până la 4.848 € pe an (licența Științe ale organizațiilor)"
+ },
+ {
+  "id": "paris-nanterre",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "paris-pantheon-assas",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "paris-saclay",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "partium",
+  "currency": "EUR",
+  "min": 300,
+  "max": 500,
+  "year": "2026/27",
+  "url": "https://partium.ro/hu/felveteli/beiratkozas/dijak-es-anyakonyvezes",
+  "note": "Muzică - Canto: 1.000 €/an"
+ },
+ {
+  "id": "pg-gdansk",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/tuition-fee",
+  "note": "Gratuit pentru cetățenii UE, inclusiv la programele în engleză."
+ },
+ {
+  "id": "pl-politechnika-poznanska",
+  "currency": "PLN",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://put.poznan.pl/en/admission-for-international/studies-free-of-charge",
+  "note": "Gratuit pentru cetățenii UE, în poloneză și în engleză."
+ },
+ {
+  "id": "pl-uniwersytet-medyczny-im-karola-marcinkowskiego-w-poznaniu",
+  "currency": "PLN",
+  "min": 71000,
+  "max": 85750,
+  "year": "2026/27",
+  "url": "https://pums.edu.pl/admissions/medicine-program/tuition-costs-of-living/",
+  "note": "Suma este pentru programul de Medicină; Stomatologia poate costa diferit."
+ },
+ {
+  "id": "pl-uniwersytet-medyczny-im-piastow-slaskich-we-wroclawiu",
+  "currency": "PLN",
+  "min": 32700,
+  "max": 32700,
+  "year": "2026/27",
+  "url": "https://admission.umw.edu.pl/tuition-fee/",
+  "note": "Suma este pentru Asistență medicală (licență). Medicină: 67.900 PLN/an; Stomatologie: 78.700 PLN/an."
+ },
+ {
+  "id": "pl-uniwersytet-medyczny-w-bialymstoku",
+  "currency": "EUR",
+  "min": 15100,
+  "max": 15100,
+  "year": "2026/27",
+  "url": "https://umb.edu.pl/en/admission/tuition_and_fees",
+  "note": "Suma este pentru programul de Medicină; taxa poate crește în anii următori."
+ },
+ {
+  "id": "pl-uniwersytet-medyczny-w-lodzi",
+  "currency": "EUR",
+  "min": 14900,
+  "max": 16800,
+  "year": "2026/27",
+  "url": "https://studymed.umed.pl/admission/5-year-dmd-dentistry/tuition-other-fees/",
+  "note": "Medicină: 15.100 € în anul 1, apoi 14.900 €/an; Stomatologie: 16.800 € în anul 1, apoi 16.600 €/an."
+ },
+ {
+  "id": "plymouth",
+  "currency": "GBP",
+  "min": 18700,
+  "max": 18700,
+  "year": "2027/28",
+  "url": "https://www.plymouth.ac.uk/courses/undergraduate/bsc-international-relations",
+  "note": "Suma este pentru programul de Relații internaționale; alte programe pot costa diferit."
+ },
+ {
+  "id": "poliba",
+  "currency": "EUR",
+  "min": 0,
+  "max": 2258,
+  "year": "2026/27",
+  "url": "https://www.poliba.it/sites/default/files/Tasse/Regolamento_contribuzione_studentesca_Politecnico_di_Bari_26_27_.pdf",
+  "note": "Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "polimi",
+  "currency": "EUR",
+  "min": 723,
+  "max": 3726,
+  "year": "2026/27",
+  "url": "https://www.normativa.polimi.it/fileadmin/user_upload/regolamenti/studenti/D.r._regolamento_contribuzione_studentesca_2026-2027.pdf",
+  "note": "Taxa depinde de veniturile familiei (ISEE). Cu ISEE până la 22.000 € există scutire totală; se adaugă taxe de ~170 €."
+ },
+ {
+  "id": "polito",
+  "currency": "EUR",
+  "min": 0,
+  "max": 3600,
+  "year": "2026/27",
+  "url": "https://www.polito.it/sites/default/files/2026-07/Regolamento%20L%20imma%2025_26%20+%20LM_LS.pdf",
+  "note": "Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "portsmouth",
+  "currency": "GBP",
+  "min": 17750,
+  "max": 20950,
+  "year": "2027/28",
+  "url": "https://www.port.ac.uk/study/international-students/tuition-fees",
+  "note": "Taxa internațională întreagă. Bursa UE a universității (cetățeni UE care au locuit în UE ultimii 3 ani) reduce taxa la 10.900 £/an în 2027/28 (10.300 £ în 2026/27)."
+ },
+ {
+  "id": "princeton",
+  "currency": "USD",
+  "min": 68140,
+  "max": 68140,
+  "year": "2026/27",
+  "url": "https://admission.princeton.edu/cost-aid/fees-payment-options"
+ },
+ {
+  "id": "pwr-wroclaw",
+  "currency": "PLN",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/free-of-charge-studies/",
+  "note": "Gratuit pentru cetățenii UE, la programele în poloneză și în engleză."
+ },
+ {
+  "id": "qmul",
+  "currency": "GBP",
+  "min": 26950,
+  "max": 32950,
+  "year": "2026/27",
+  "url": "https://www.qmul.ac.uk/registry-services/media/arcs/askqm/UG-Fee-Schedule.pdf",
+  "note": "Medicină și Stomatologie: 53.950 £/an; Igienă dentară și Sănătate orală: 39.400 £/an"
+ },
+ {
+  "id": "qub",
+  "currency": "GBP",
+  "min": 22400,
+  "max": 26600,
+  "year": "2026/27",
+  "url": "https://www.qub.ac.uk/Study/international-students/tuition-fees/fees-26-27/",
+  "note": "Medicină: 39.200 £/an (preclinic) și 47.000 £/an (clinic), plus taxa clinică anuală de 12.133 £"
+ },
+ {
+  "id": "queens",
+  "currency": "CAD",
+  "min": 44810,
+  "max": 60839,
+  "year": "2026/27",
+  "url": "https://www.queensu.ca/registrar/tuition-fees/undergraduate"
+ },
+ {
+  "id": "radboud",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "rau",
+  "currency": "EUR",
+  "min": 3400,
+  "max": 3400,
+  "year": "2027/28",
+  "url": "https://www.rau.ro/taxe-de-studii/",
+  "note": "Taxa pentru cei înmatriculați din octombrie 2027; se plătește în lei la cursul BNR. Programe în engleză: 4.700 €/an."
+ },
+ {
+  "id": "rcs",
+  "currency": "GBP",
+  "min": 27968,
+  "max": 29786,
+  "year": "2026/27",
+  "url": "https://www.rcs.ac.uk/study/fees-funding/fees/"
+ },
+ {
+  "id": "rdam-music",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "reading",
+  "currency": "GBP",
+  "min": 26850,
+  "max": 31800,
+  "year": "2027/28",
+  "url": "https://www.reading.ac.uk/ready-to-study/study/fees-and-funding/fees-and-funding-ug/international-undergraduate-student-fees"
+ },
+ {
+  "id": "rennes-2",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "rgsl-riga",
+  "currency": "EUR",
+  "min": 4500,
+  "max": 4500,
+  "year": "2026/27",
+  "url": "https://www.rgsl.edu.lv/study/fees-and-funding"
+ },
+ {
+  "id": "rice",
+  "currency": "USD",
+  "min": 71140,
+  "max": 71140,
+  "year": "2026/27",
+  "url": "https://financialaid.rice.edu/cost-attendance"
+ },
+ {
+  "id": "rietveld-academie",
+  "currency": "EUR",
+  "min": 3245,
+  "max": 3245,
+  "year": "2026/27",
+  "url": "https://rietveldacademie.nl/nl/document/36962?slug=tuition-fees-ba-ma-2026-2027-v2-en",
+  "note": "Taxă majorată pentru programe mici (3.245 € în loc de 2.694 €)."
+ },
+ {
+  "id": "riseba-riga",
+  "currency": "EUR",
+  "min": 3800,
+  "max": 6800,
+  "year": "2026/27",
+  "url": "https://riseba.lv/en/program/european-business-studies/",
+  "note": "Programele la distanță costă 3.600 €/an."
+ },
+ {
+  "id": "rmc-copenhagen",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://rmc.dk/en/tuition"
+ },
+ {
+  "id": "rmit",
+  "currency": "AUD",
+  "min": 37440,
+  "max": 37440,
+  "year": "2027",
+  "url": "https://www.rmit.edu.au/study-with-us/levels-of-study/undergraduate-study/bachelor-degrees/bachelor-of-education-bp320",
+  "note": "Suma este pentru programul de Educație; alte programe pot costa diferit."
+ },
+ {
+  "id": "robert-gordon",
+  "currency": "GBP",
+  "min": 17570,
+  "max": 17570,
+  "year": "2026/27",
+  "url": "https://www.rgu.ac.uk/study/courses/ba-hons-international-hospitality-management",
+  "note": "Suma este pentru programul de Management hotelier internațional; alte programe pot costa diferit."
+ },
+ {
+  "id": "roma-tre",
+  "currency": "EUR",
+  "min": 0,
+  "max": 2060,
+  "year": "2026/27",
+  "url": "https://www.uniroma3.it/wp-content/uploads/file_locked/2026/01/Regolamento-tasse.pdf",
+  "note": "Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "roskilde",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://ruc.dk/en/step-4-application-fee-and-tuition-fees"
+ },
+ {
+  "id": "rotterdam-uas",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "royal-academy-of-music",
+  "currency": "GBP",
+  "min": 30850,
+  "max": 30850,
+  "year": "2027/28",
+  "url": "https://www.ram.ac.uk/apply/fees-and-funding"
+ },
+ {
+  "id": "royal-college-of-music",
+  "currency": "GBP",
+  "min": 32600,
+  "max": 32600,
+  "year": "2027/28",
+  "url": "https://www.rcm.ac.uk/media/Tuition%20Fees%20and%20Other%20Charges%202027-28.pdf"
+ },
+ {
+  "id": "royal-danish-academy",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://royaldanishacademy.com/en/admission-bachelor"
+ },
+ {
+  "id": "royal-holloway",
+  "currency": "GBP",
+  "min": 23000,
+  "max": 27900,
+  "year": "2027/28",
+  "url": "https://www.royalholloway.ac.uk/studying-here/undergraduate/computer-science/computer-science/",
+  "note": "Interval din câteva programe; altele pot costa diferit."
+ },
+ {
+  "id": "rptu",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://make-it-in.rlp.de/fuer-fachkraefte/fortbilden/studium-in-rheinland-pfalz"
+ },
+ {
+  "id": "rsu-riga",
+  "currency": "EUR",
+  "min": 3300,
+  "max": 15500,
+  "year": "2026/27",
+  "url": "https://www.rsu.lv/en/study-here/admissions/tuition-fees-studies-english",
+  "note": "Business: 3.300 €/an; Medicină: 13.500 €/an; Stomatologie: 15.500 €/an."
+ },
+ {
+  "id": "rug",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://www.rug.nl/education/application-enrolment-tuition-fees/tuition-fee/bachelor",
+  "note": "Programele Liberal Arts (UCG) și Global Politics & Sustainability (Campus Fryslân): 5.343 €/an"
+ },
+ {
+  "id": "ruhr-uni-bochum",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studium.ruhr-uni-bochum.de/en/costs-studying-rub"
+ },
+ {
+  "id": "rvc",
+  "currency": "GBP",
+  "min": 20800,
+  "max": 28890,
+  "year": "2027/28",
+  "url": "https://www.rvc.ac.uk/study/undergraduate/bsc-biological-science",
+  "note": "Medicină veterinară (BVetMed, 5 ani): 52.880 £/an; licența BSc în asistență veterinară: 20.800 £/an"
+ },
+ {
+  "id": "rwth",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.rwth-aachen.de/cms/root/studium/vor-dem-studium/zugangsvoraussetzungen/~bxip/besonderheiten-internationale-studienint/?lidx=1"
+ },
+ {
+  "id": "sapientia",
+  "currency": "EUR",
+  "min": 250,
+  "max": 900,
+  "year": "2026/27",
+  "url": "https://sapientia.ro/content/Hallgatoknak/RO/Taxe%20administrative_2026.pdf",
+  "note": "Taxa diferă după program."
+ },
+ {
+  "id": "sapienza",
+  "currency": "EUR",
+  "min": 700,
+  "max": 700,
+  "year": "2026/27",
+  "url": "https://www.uniroma1.it/sites/default/files/field_file_allegati/regolamento2026-2027.pdf",
+  "note": "Dacă familia are venituri și în Italia, taxa depinde de ISEE (până la 2.821–2.925 €)."
+ },
+ {
+  "id": "savoie-mont-blanc",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "saxion",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "sciences-po",
+  "currency": "EUR",
+  "min": 0,
+  "max": 14900,
+  "year": "2026/27",
+  "url": "https://www.sciencespo.fr/students/fr/financer/droits-scolarite/",
+  "note": "Taxa depinde de venitul familiei: de la 0 € la 14.900 € pe an"
+ },
+ {
+  "id": "sciences-po-lille",
+  "currency": "EUR",
+  "min": 180,
+  "max": 6400,
+  "year": "2026/27",
+  "url": "https://sciencespo-lille.eu/wp-content/uploads/2026/08/Evaluation-tranches-2026-1.pdf",
+  "note": "Taxa depinde de venitul familiei: de la 180 la 6.400 €/an, în funcție de venitul brut al familiei."
+ },
+ {
+  "id": "sdmk",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "sdu",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.sdu.dk/en/uddannelse/bachelor/bachelor-admission"
+ },
+ {
+  "id": "se-handelshogskolan-i-stockholm",
+  "currency": "SEK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.hhs.se/education/bachelor/"
+ },
+ {
+  "id": "se-jonkoping-university",
+  "currency": "SEK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://ju.se/en/study-at-ju/application-and-admission/application-and-tuition-fees.html"
+ },
+ {
+  "id": "se-karolinska-institutet",
+  "currency": "SEK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://education.ki.se/bachelors-masters-studies/tuition-fees"
+ },
+ {
+  "id": "se-lulea-tekniska-universitet",
+  "currency": "SEK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.ltu.se/en/education/tuition-and-application-fees"
+ },
+ {
+  "id": "se-malardalens-universitet",
+  "currency": "SEK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.mdu.se/en/malardalen-university/education/international/application-and-admission/tuition-fee"
+ },
+ {
+  "id": "se-sveriges-lantbruksuniversitet",
+  "currency": "SEK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.slu.se/en/study/application-and-admission/tuition-fees-and-scholarships/tuition-fees/"
+ },
+ {
+  "id": "sea-esbjerg",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "sfu",
+  "currency": "CAD",
+  "min": 38944,
+  "max": 38944,
+  "year": "2026/27",
+  "url": "https://www.sfu.ca/students/admission/fees-scholarships.html",
+  "note": "Suma este pentru un program tipic de Arte sau Științe (include abonamentul de transport); alte programe pot costa diferit."
+ },
+ {
+  "id": "sgh-warszawa",
+  "currency": "EUR",
+  "min": 5000,
+  "max": 5000,
+  "year": "2026/27",
+  "url": "https://www.sgh.waw.pl/en/table-fees-undergraduate-studies",
+  "note": "Programele în poloneză sunt fără taxă pentru cetățenii UE."
+ },
+ {
+  "id": "sheffield",
+  "currency": "GBP",
+  "min": 27650,
+  "max": 34670,
+  "year": "2027/28",
+  "url": "https://sheffield.ac.uk/new-students/tuition-fees/undergraduate-overseas",
+  "note": "Medicină: 51.380 £/an; Stomatologie: 55.000 £/an"
+ },
+ {
+  "id": "sheffield-hallam",
+  "currency": "GBP",
+  "min": 18900,
+  "max": 20900,
+  "year": "2027/28",
+  "url": "https://www.shu.ac.uk/study-here/undergraduate/fees"
+ },
+ {
+  "id": "simac",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "sns-pisa",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.sns.it/sites/default/files/2026-06/bando_sns_2026_27_eng_rettificato.pdf"
+ },
+ {
+  "id": "snspa",
+  "currency": "RON",
+  "min": 3500,
+  "max": 3500,
+  "year": "2026/27",
+  "url": "https://snspa.ro/snspa/informatii-publice/taxe-snspa/",
+  "note": "Suma minimă; unele programe costă mai mult.",
+  "budgetFree": true
+ },
+ {
+  "id": "soas",
+  "currency": "GBP",
+  "min": 24730,
+  "max": 24730,
+  "year": "2027/28",
+  "url": "https://www.soas.ac.uk/study/fees-and-funding/tuition-fees/undergraduate-fees"
+ },
+ {
+  "id": "sorbonne",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "sorbonne-nouvelle",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "sorbonne-paris-nord",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "southampton",
+  "currency": "GBP",
+  "min": 26800,
+  "max": 34100,
+  "year": "2027/28",
+  "url": "https://www.southampton.ac.uk/courses/fees/undergraduate/tuition-fees.page",
+  "note": "Medicină (transfer internațional, BMBS): 35.900 £/an, apoi 64.900 £/an în anii clinici"
+ },
+ {
+  "id": "spiru-haret",
+  "currency": "EUR",
+  "min": 1900,
+  "max": 2400,
+  "year": "2026/27",
+  "url": "https://www.spiruharet.ro/data/taxe/2026-2027_taxe_anexa_1-lei.pdf"
+ },
+ {
+  "id": "sse-riga",
+  "currency": "EUR",
+  "min": 8350,
+  "max": 8350,
+  "year": "2027/28",
+  "url": "https://www.sseriga.edu/education/bachelor/tuition-fee",
+  "note": "Taxa de listă este 8.350 €/an; studenții din UE primesc automat o bursă de 2.400 €/an timp de trei ani, deci plătesc 5.950 €/an."
+ },
+ {
+  "id": "st-andrews",
+  "currency": "GBP",
+  "min": 33250,
+  "max": 33250,
+  "year": "2026/27",
+  "url": "https://www.st-andrews.ac.uk/study/undergraduate/fees/world/",
+  "note": "Medicină: 39.620 £/an"
+ },
+ {
+  "id": "staffordshire",
+  "currency": "GBP",
+  "min": 17085,
+  "max": 17085,
+  "year": "2026/27",
+  "url": "https://www.staffs.ac.uk/international/your-application-journey/scholarships-fees"
+ },
+ {
+  "id": "stanford",
+  "currency": "USD",
+  "min": 67731,
+  "max": 67731,
+  "year": "2026/27",
+  "url": "https://financialaid.stanford.edu/undergrad/budget/index.html"
+ },
+ {
+  "id": "stirling",
+  "currency": "GBP",
+  "min": 20000,
+  "max": 23700,
+  "year": "2027/28",
+  "url": "https://www.stir.ac.uk/courses/fees/"
+ },
+ {
+  "id": "stockholm-university",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.universityadmissions.se/en/fees-scholarships-residence-permit/",
+  "note": "Gratuit pentru cetățenii UE; trebuie să dovedești cetățenia la înscriere."
+ },
+ {
+  "id": "sunderland",
+  "currency": "GBP",
+  "min": 18500,
+  "max": 18500,
+  "year": "2027/28",
+  "url": "https://www.sunderland.ac.uk/undergraduate-fees",
+  "note": "Farmacie (MPharm): 21.000 £/an"
+ },
+ {
+  "id": "surrey",
+  "currency": "GBP",
+  "min": 22700,
+  "max": 28100,
+  "year": "2027/28",
+  "url": "https://www.surrey.ac.uk/undergraduate/computer-science",
+  "note": "Interval din câteva programe; altele pot costa diferit."
+ },
+ {
+  "id": "sutd",
+  "currency": "SGD",
+  "min": 62076,
+  "max": 62076,
+  "year": "2026/27",
+  "url": "https://www.sutd.edu.sg/admissions/undergraduate/education-expenses/fees/tuition-fees/",
+  "note": "Cu Tuition Grant (obligă la 3 ani de muncă în Singapore): 31.600 S$/an."
+ },
+ {
+  "id": "swansea",
+  "currency": "GBP",
+  "min": 20950,
+  "max": 26450,
+  "year": "2027/28",
+  "url": "https://www.swansea.ac.uk/undergraduate/courses/maths-comp-sci/computer-science/bsc-computer-science/",
+  "note": "Interval din câteva programe; altele pot costa diferit."
+ },
+ {
+  "id": "swinburne",
+  "currency": "AUD",
+  "min": 35590,
+  "max": 48300,
+  "year": "2027",
+  "url": "https://www.swinburne.edu.au/courses/fees/fees-for-international-students/"
+ },
+ {
+  "id": "swu-blagoevgrad",
+  "currency": "EUR",
+  "min": 946,
+  "max": 3470,
+  "year": "2026/27",
+  "url": "https://www.swu.bg/bg/studentsbg/feesbg/78-studentscat/2372-feespay2627",
+  "note": "Sumele sunt pentru anii I–II, la zi, pe locurile cu taxă; în anii III–V taxa diferă."
+ },
+ {
+  "id": "sydney",
+  "currency": "AUD",
+  "min": 51700,
+  "max": 63600,
+  "year": "2027",
+  "url": "https://www.sydney.edu.au/study/fees-and-loans/international-student-tuition-fees.html",
+  "note": "Unele programe de științe ale sănătății: până la 69.200 A$/an."
+ },
+ {
+  "id": "taltech",
+  "currency": "EUR",
+  "min": 0,
+  "max": 5000,
+  "year": "2026/27",
+  "url": "https://oigusaktid.taltech.ee/en/tuition-fee-rates-for-i-and-ii-level-students-and-external-students-in-degree-study-in-the-academic-year/",
+  "note": "Școala de Business și Guvernare: 5.000 €/an; celelalte școli sunt gratuite pentru cetățenii UE."
+ },
+ {
+  "id": "tampere",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.tuni.fi/en/study-with-us/apply-to-tampere-university/financial-matters/tuition-fees"
+ },
+ {
+  "id": "teesside",
+  "currency": "GBP",
+  "min": 17000,
+  "max": 17000,
+  "year": "2026/27",
+  "url": "https://www.tees.ac.uk/sections/international/fees.cfm"
+ },
+ {
+  "id": "teknika",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "th-deggendorf",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.th-deg.de/en/study-with-us/funding"
+ },
+ {
+  "id": "th-koeln",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.th-koeln.de/internationales/finanzierung_6561.php",
+  "note": "Taxe de studii există doar la masterele de formare continuă."
+ },
+ {
+  "id": "th-nuernberg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.th-nuernberg.de/internationales/ohm-international-school/internationale-semesterbeitraege/",
+  "note": "Taxa de școlarizare se aplică doar studenților din afara SEE."
+ },
+ {
+  "id": "the-hague-uas",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "thm",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.thm.de/site/en/studies/planning-your-studies/studienfinanzierung.html"
+ },
+ {
+  "id": "thws",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://international.thws.de/en/thws-international/ways-to-thws/formalities-and-finances/"
+ },
+ {
+  "id": "tibiscus",
+  "currency": "RON",
+  "min": 7500,
+  "max": 8800,
+  "year": "2026/27",
+  "url": "https://tibiscus.ro/download/149/2026/4128/regulament-taxe-2026-2027.pdf"
+ },
+ {
+  "id": "tilburg-university",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "tio",
+  "currency": "EUR",
+  "min": 24950,
+  "max": 24950,
+  "year": "2027/28",
+  "url": "https://www.tio.nl/en/business-management/tuition-fees/"
+ },
+ {
+  "id": "tlu-tallinn",
+  "currency": "EUR",
+  "min": 4600,
+  "max": 5800,
+  "year": "2027/28",
+  "url": "https://www.tlu.ee/en/tuition-fees",
+  "note": "Sumele sunt pentru programele în engleză pentru intrarea 2027/28."
+ },
+ {
+  "id": "toronto",
+  "currency": "CAD",
+  "min": 66110,
+  "max": 72860,
+  "year": "2026/27",
+  "url": "https://www.registrar.utoronto.ca/financial-aid-awards/us-student-aid/",
+  "note": "Sumele sunt pentru anul I; în anii următori taxa poate fi diferită."
+ },
+ {
+  "id": "toulouse-capitole",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "toulouse-jean-jaures",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "trinity-college-dublin",
+  "currency": "EUR",
+  "min": 2350,
+  "max": 2350,
+  "year": "2026/27",
+  "url": "https://www.tcd.ie/courses/undergraduate/fees/"
+ },
+ {
+  "id": "tu-bergakademie-freiberg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://tu-freiberg.de/en/study/your-studies/central-student-advisory-services/frequently-asked-questions"
+ },
+ {
+  "id": "tu-berlin",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.tu.berlin/en/studying/organizing-your-studies/financing-your-studies"
+ },
+ {
+  "id": "tu-braunschweig",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.tu-braunschweig.de/studium-lehre/im-studium/finanzierung"
+ },
+ {
+  "id": "tu-chemnitz",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.tu-chemnitz.de/studierendenservice/zsb/finanzierung.php"
+ },
+ {
+  "id": "tu-darmstadt",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.mathematik.tu-darmstadt.de/studium/studieninteressierte/faq_studieninteressierte/faq_studieninteressierte.de.jsp"
+ },
+ {
+  "id": "tu-delft",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "tu-dortmund",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://musik.kmst.tu-dortmund.de/studium/studienangebot/musikjournalismus-und-musikvermittlung/faq/"
+ },
+ {
+  "id": "tu-dresden",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://tu-dresden.de/studium/vor-dem-studium/studienangebot/sins/sins_studiengang_faq_general"
+ },
+ {
+  "id": "tu-dublin",
+  "currency": "EUR",
+  "min": 2350,
+  "max": 2350,
+  "year": "2026/27",
+  "url": "https://www.citizensinformation.ie/en/education/third-level-education/fees-and-supports-for-third-level-education/fees/"
+ },
+ {
+  "id": "tu-eindhoven",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "tu-graz",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.tugraz.at/en/studying-and-teaching/studying-at-tu-graz/prospective-students/financial-matters/tuition-fees-and-the-austrian-student-union-fee",
+  "note": "Taxa de școlarizare de 363,36 €/semestru se plătește doar după durata prevăzută a studiilor plus 2 semestre; până atunci se plătește doar cotizația ÖH (circa 26 €/semestru)."
+ },
+ {
+  "id": "tu-ilmenau",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.tu-ilmenau.de/en/international/campus-international/we4you/funding"
+ },
+ {
+  "id": "tu-wien",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20002128&Paragraf=91",
+  "note": "Taxa de școlarizare de 363,36 €/semestru se plătește doar după durata prevăzută a studiilor plus 2 semestre; până atunci se plătește doar cotizația ÖH (circa 26 €/semestru)."
+ },
+ {
+  "id": "tufts",
+  "currency": "USD",
+  "min": 74862,
+  "max": 74862,
+  "year": "2026/27",
+  "url": "https://students.tufts.edu/financial-services/undergrad-aid/award-letter/undergraduate-cost-attendance"
+ },
+ {
+  "id": "tuiasi",
+  "currency": "RON",
+  "min": 4500,
+  "max": 4500,
+  "year": "2026/27",
+  "url": "https://www.tuiasi.ro/licenta/taxe-si-finantare/",
+  "budgetFree": true
+ },
+ {
+  "id": "tul-lodz",
+  "currency": "PLN",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+  "note": "Gratuit pentru cetățenii UE, în poloneză și în engleză; rămâne taxa de înscriere."
+ },
+ {
+  "id": "tum",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.tum.de/en/studies/fees/tuition",
+  "note": "Taxa pentru studenții din afara UE crește din 2027/28; cetățenii UE nu plătesc taxă"
+ },
+ {
+  "id": "turku",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.utu.fi/en/study-at-utu/scholarships-and-tuition-fees"
+ },
+ {
+  "id": "twente",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "u-bordeaux",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "u-picardie",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "ua-alicante",
+  "currency": "EUR",
+  "min": 767,
+  "max": 1080,
+  "year": "2025/26",
+  "url": "https://www.uv.es/graus/normatives/autonomica/Decret%20taxes%202024-101%20de%202%20agost%202024%20generalitat.pdf"
+ },
+ {
+  "id": "uab",
+  "currency": "RON",
+  "min": 3500,
+  "max": 6000,
+  "year": "2026/27",
+  "url": "https://www.uab.ro/postari/438-admitere-licenta-taxe-de-studiu/",
+  "note": "Cinematografie, fotografie, media: 15.000 lei/an",
+  "budgetFree": true
+ },
+ {
+  "id": "uab-barcelona",
+  "currency": "EUR",
+  "min": 1061,
+  "max": 1061,
+  "year": "2026/27",
+  "url": "https://universitats.gencat.cat/ca/acces-universitat/sobre-preus-beques/preus-estudis-universitaris/"
+ },
+ {
+  "id": "uacg-sofia",
+  "currency": "EUR",
+  "min": 430,
+  "max": 5200,
+  "year": "2026/27",
+  "url": "https://uacg.bg/page/taksi",
+  "note": "430 €/an la locurile finanțate de stat; 5.200 € în anul I la locurile cu taxă."
+ },
+ {
+  "id": "uacores",
+  "currency": "EUR",
+  "min": 697,
+  "max": 697,
+  "year": "2026/27",
+  "url": "https://uac.pt/sites/default/files/tabela_de_propinas_2026-2027_clarificacao.pdf"
+ },
+ {
+  "id": "uaic",
+  "currency": "RON",
+  "min": 2400,
+  "max": 6000,
+  "year": "2026/27",
+  "url": "https://admitere.uaic.ro/avada_portfolio/drept-admitere-licenta/?portfolioCats=9",
+  "note": "Taxa diferă de la o facultate la alta.",
+  "budgetFree": true
+ },
+ {
+  "id": "ual",
+  "currency": "GBP",
+  "min": 30890,
+  "max": 30890,
+  "year": "2026/27",
+  "url": "https://www.arts.ac.uk/study-at-ual/fees-and-funding/tuition-fees/undergraduate-tuition-fees"
+ },
+ {
+  "id": "ualg",
+  "currency": "EUR",
+  "min": 697,
+  "max": 697,
+  "year": "2025/26",
+  "url": "https://www.ualg.pt/propinas-e-emolumentos"
+ },
+ {
+  "id": "uam-madrid",
+  "currency": "EUR",
+  "min": 1015,
+  "max": 1241,
+  "year": "2026/27",
+  "url": "https://www.upm.es/gsfs/SFS50990"
+ },
+ {
+  "id": "uauim",
+  "currency": "RON",
+  "min": 4500,
+  "max": 10000,
+  "year": "2026/27",
+  "url": "https://www.uauim.ro/universitatea/2026-2027/Decizie%20taxe%202026-2027.pdf",
+  "budgetFree": true
+ },
+ {
+  "id": "uav-arad",
+  "currency": "RON",
+  "min": 4000,
+  "max": 7500,
+  "year": "2026/27",
+  "url": "https://cdn.uav.ro/documente/taxe/2026-2027/Licenta-An-I-promotia-2026-2029-2030.pdf",
+  "note": "Muzică - Canto: 9.500 lei/an. Plata integrală la confirmarea locului: reducere de 5%.",
+  "budgetFree": true
+ },
+ {
+  "id": "uaveiro",
+  "currency": "EUR",
+  "min": 697,
+  "max": 697,
+  "year": "2026/27",
+  "url": "https://api-portal.ua.pt/api/v1/file/90554"
+ },
+ {
+  "id": "ub-bacau",
+  "currency": "RON",
+  "min": 3500,
+  "max": 6500,
+  "year": "2026/27",
+  "url": "https://www.ub.ro/storage/1776850213A3363_Taxe_2026-2027.pdf",
+  "budgetFree": true
+ },
+ {
+  "id": "ub-barcelona",
+  "currency": "EUR",
+  "min": 1061,
+  "max": 1061,
+  "year": "2026/27",
+  "url": "https://universitats.gencat.cat/ca/acces-universitat/sobre-preus-beques/preus-estudis-universitaris/"
+ },
+ {
+  "id": "ubb-cluj",
+  "currency": "RON",
+  "min": 4000,
+  "max": 6500,
+  "year": "2026/27",
+  "url": "https://www.ubbcluj.ro/ro/taxe/files/2026-2027/Regulament-privind-taxe-de-admitere_scolarizare_finalizare-a-studiilor-2026-2027.pdf",
+  "budgetFree": true
+ },
+ {
+  "id": "ubc",
+  "currency": "CAD",
+  "min": 51530,
+  "max": 66678,
+  "year": "2026/27",
+  "url": "https://vancouver.calendar.ubc.ca/fees/tuition-fees/undergraduate",
+  "note": "Inginerie (Applied Science): aproximativ 66.200 CAD/an; suma este pentru anul I."
+ },
+ {
+  "id": "ubi",
+  "currency": "EUR",
+  "min": 697,
+  "max": 697,
+  "year": "2026/27",
+  "url": "https://www.ubi.pt/entidade/novos_alunos"
+ },
+ {
+  "id": "ubo-brest",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "uc-berkeley",
+  "currency": "USD",
+  "min": 54858,
+  "max": 54858,
+  "year": "2026/27",
+  "url": "https://financialaid.berkeley.edu/cost-of-attendance/"
+ },
+ {
+  "id": "uc-syd",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "uc3m-madrid",
+  "currency": "EUR",
+  "min": 1015,
+  "max": 1241,
+  "year": "2026/27",
+  "url": "https://www.upm.es/gsfs/SFS50990"
+ },
+ {
+  "id": "ucatolica",
+  "currency": "EUR",
+  "min": 6000,
+  "max": 6000,
+  "year": "2026/27",
+  "url": "https://fd.lisboa.ucp.pt/pt-pt/undergraduate-degree-law/undergraduate-law/propinas-e-bolsas",
+  "note": "Suma este pentru Licența în Drept din Lisabona; alte programe pot costa diferit."
+ },
+ {
+  "id": "ucb-pitesti",
+  "currency": "RON",
+  "min": 5000,
+  "max": 6000,
+  "year": "2025/26",
+  "url": "https://www.univcb.ro/burse-si-taxe"
+ },
+ {
+  "id": "ucdc",
+  "currency": "EUR",
+  "min": 1250,
+  "max": 1600,
+  "year": "2026/27",
+  "url": "https://www.ucdc.ro/admitere/",
+  "note": "Reducere de 100 € pentru plata integrală a taxei."
+ },
+ {
+  "id": "uchicago",
+  "currency": "USD",
+  "min": 75960,
+  "max": 75960,
+  "year": "2026/27",
+  "url": "https://financialaid.uchicago.edu/undergraduate/how-aid-works/undergraduate-costs/"
+ },
+ {
+  "id": "ucl-odense",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "ucla",
+  "currency": "USD",
+  "min": 54858,
+  "max": 54858,
+  "year": "2026/27",
+  "url": "https://admission.ucla.edu/tuition-aid/tuition-fees"
+ },
+ {
+  "id": "uclan-larnaca",
+  "currency": "EUR",
+  "min": 9950,
+  "max": 9950,
+  "year": "2026/27",
+  "url": "https://www.uclancyprus.ac.cy/study/admissions/fees-scholarships/",
+  "note": "Universitatea acordă o reducere de 950 € pe an (taxa plătită: 9.000 €); unele programe au burse speciale."
+ },
+ {
+  "id": "uclouvain",
+  "currency": "EUR",
+  "min": 374,
+  "max": 1194,
+  "year": "2026/27",
+  "url": "https://uclouvain.be/en/enrolment/registration-fee-amount",
+  "note": "Taxa poate fi mai mică pentru familiile cu venituri mici."
+ },
+ {
+  "id": "ucm-madrid",
+  "currency": "EUR",
+  "min": 1015,
+  "max": 1241,
+  "year": "2026/27",
+  "url": "https://www.upm.es/gsfs/SFS50990"
+ },
+ {
+  "id": "ucn",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "uct-prague",
+  "currency": "CZK",
+  "min": 84500,
+  "max": 110000,
+  "year": "2026/27",
+  "url": "https://study.vscht.cz/studying-at-uct/tuition-fees",
+  "note": "Studiile în limba cehă sunt gratuite."
+ },
+ {
+  "id": "ucv",
+  "currency": "RON",
+  "min": 4000,
+  "max": 4000,
+  "year": "2026/27",
+  "url": "https://www.ucv.ro/pdf/admitere/2026/Taxe-de-scolarizare-si-administrative-2026-2027.pdf",
+  "budgetFree": true
+ },
+ {
+  "id": "uea",
+  "currency": "GBP",
+  "min": 23100,
+  "max": 29300,
+  "year": "2026/27",
+  "url": "https://assets.uea.ac.uk/f/185167/x/6e045e4fae/fees_table_2026-27_-_international_v6.pdf",
+  "note": "Medicină: 47.500 £/an"
+ },
+ {
+  "id": "ueb",
+  "currency": "RON",
+  "min": 5000,
+  "max": 6500,
+  "year": "2026/27",
+  "url": "https://ueb.ro/wp-content/uploads/2026/04/Taxe_UEB_2026-2027.pdf"
+ },
+ {
+  "id": "uef",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uef.fi/en/tuition-fees-waivers-and-scholarships"
+ },
+ {
+  "id": "uer",
+  "currency": "EUR",
+  "min": 3950,
+  "max": 7250,
+  "year": "2026/27",
+  "url": "https://www.uer.it/wp-content/uploads/2018/04/All.-DR-132-Regolamento-tasse-e-contributi-2026-2027-immatricolati-e-iscritti-a.a.-23-24-e-24-25-1.pdf",
+  "note": "Medicină și Chirurgie: 18.250 €/an"
+ },
+ {
+  "id": "uevora",
+  "currency": "EUR",
+  "min": 697,
+  "max": 697,
+  "year": "2026/27",
+  "url": "https://gdoc.uevora.pt/402894"
+ },
+ {
+  "id": "ugal",
+  "currency": "RON",
+  "min": 2700,
+  "max": 4500,
+  "year": "2026/27",
+  "url": "https://www.ugal.ro/files/taxe/2026-2027/Anexa_la_HS_nr._49_din_20.3.2026_Taxe_2026-2027_licenta_IF_si_dual_modificat_cu_FSM3000.pdf",
+  "budgetFree": true
+ },
+ {
+  "id": "ugr-granada",
+  "currency": "EUR",
+  "min": 757,
+  "max": 757,
+  "year": "2025/26",
+  "url": "https://www.ugr.es/info/perfiles/futuros-estudiantes/oferta-formativa/grados-oferta-academica-informacion-general"
+ },
+ {
+  "id": "uia",
+  "currency": "NOK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyinnorway.no/tuition-fees-students-outside-eueea-and-switzerland"
+ },
+ {
+  "id": "uib",
+  "currency": "NOK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyinnorway.no/tuition-fees-students-outside-eueea-and-switzerland"
+ },
+ {
+  "id": "uio",
+  "currency": "NOK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyinnorway.no/tuition-fees-students-outside-eueea-and-switzerland"
+ },
+ {
+  "id": "uit-tromso",
+  "currency": "NOK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://en.uit.no/admission"
+ },
+ {
+  "id": "ulb",
+  "currency": "EUR",
+  "min": 374,
+  "max": 1194,
+  "year": "2026/27",
+  "url": "https://www.ulb.be/en/enrolment/tuitions-fees",
+  "note": "Taxa poate fi mai mică pentru familiile cu venituri mici."
+ },
+ {
+  "id": "ulbs",
+  "currency": "RON",
+  "min": 4200,
+  "max": 6600,
+  "year": "2026/27",
+  "url": "https://senat.ulbsibiu.ro/wp-content/uploads/220526/2_Taxe%20de%20scolarizare%202026-2027_Senat_mai2026.pdf",
+  "note": "Muzică 7.200; Farmacie 8.000; Medicină și Medicină dentară 10.000; Artele spectacolului 13.000 lei/an",
+  "budgetFree": true
+ },
+ {
+  "id": "ulco",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "uliege",
+  "currency": "EUR",
+  "min": 1194,
+  "max": 1194,
+  "year": "2026/27",
+  "url": "https://www.enseignement.uliege.be/cms/c_9059359/fr/cout-des-etudes",
+  "note": "Taxa poate fi mai mică pentru studenții cu venituri mici sau bursieri."
+ },
+ {
+  "id": "ulisboa",
+  "currency": "EUR",
+  "min": 697,
+  "max": 697,
+  "year": "2026/27",
+  "url": "https://www.ulisboa.pt/en/info/tuition-fees"
+ },
+ {
+  "id": "ulster",
+  "currency": "GBP",
+  "min": 17490,
+  "max": 17490,
+  "year": "2026/27",
+  "url": "https://www.ulster.ac.uk/student/fees/tuition-fees/international/tuition-fees-202627-international-and-eu-excluding-roi",
+  "note": "Medicină: 39.630 £/an"
+ },
+ {
+  "id": "uma-malaga",
+  "currency": "EUR",
+  "min": 757,
+  "max": 757,
+  "year": "2025/26",
+  "url": "https://cat.us.es/sites/default/files/documentos/2025-10/boja-05-05-2023-y-modificacion-de-09-09-25.pdf"
+ },
+ {
+  "id": "umc",
+  "currency": "RON",
+  "min": 5200,
+  "max": 6000,
+  "year": "2026/27",
+  "url": "https://cmu-edu.eu/wp-content/uploads/2026/06/taxe-scolare-an-1_2026-2027.pdf",
+  "budgetFree": true
+ },
+ {
+  "id": "umea-university",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.universityadmissions.se/en/fees-scholarships-residence-permit/",
+  "note": "Gratuit pentru cetățenii UE; trebuie să dovedești cetățenia la înscriere."
+ },
+ {
+  "id": "umf-carol-davila",
+  "currency": "RON",
+  "min": 8000,
+  "max": 10000,
+  "year": "2026/27",
+  "url": "https://umfcd.ro/wp-content/uploads/2026/NORME_LEGALE/Taxe%20UMFCD%202026-2027.pdf",
+  "note": "Medicină și Stomatologie: 19.000 lei/an",
+  "budgetFree": true
+ },
+ {
+  "id": "umf-cluj",
+  "currency": "RON",
+  "min": 4800,
+  "max": 10000,
+  "year": "2026/27",
+  "url": "https://cdn.umfcluj.ro/uploads/2026/05/ANEXA-TAXE-PENTRU-ANUL-UNIVERSITAR-2026_2027.pdf",
+  "note": "Medicină și Medicină Dentară: 14.000 lei în anul I, 10.000-12.000 lei în anii următori",
+  "budgetFree": true
+ },
+ {
+  "id": "umf-craiova",
+  "currency": "RON",
+  "min": 6500,
+  "max": 11000,
+  "year": "2026/27",
+  "url": "https://www.umfcv.ro/ro/admitere/admitere-licenta-2026/taxe-de-scolarizare-an-i-an-univ-2026-2027",
+  "note": "Medicină și Medicină dentară: 13.000 lei/an",
+  "budgetFree": true
+ },
+ {
+  "id": "umfst",
+  "currency": "RON",
+  "min": 3000,
+  "max": 8000,
+  "year": "2026/27",
+  "url": "https://umfst.ro/fileadmin/documente_oficiale/taxe/Taxe_UMFST_2026_2027.pdf",
+  "note": "Medicină și Medicină dentară: 15.000 lei/an în anul I",
+  "budgetFree": true
+ },
+ {
+  "id": "umft",
+  "currency": "RON",
+  "min": 6000,
+  "max": 7500,
+  "year": "2026/27",
+  "url": "https://www.umft.ro/wp-content/uploads/2026/02/8.-Cuantumul-taxelor-de-scolarizare-si-modalitatea-de-plata-tip-I-si-II-2026.pdf",
+  "note": "Medicină și Medicină dentară: 15.000 lei/an",
+  "budgetFree": true
+ },
+ {
+  "id": "umons",
+  "currency": "EUR",
+  "min": 1194,
+  "max": 1194,
+  "year": "2026/27",
+  "url": "https://web.umons.ac.be/eshs/fr/minerval-2026-2027-ce-qui-change-dans-lenseignement-superieur/"
+ },
+ {
+  "id": "umontpellier",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "unamur",
+  "currency": "EUR",
+  "min": 1194,
+  "max": 1194,
+  "year": "2026/27",
+  "url": "https://www.unamur.be/en/registration/tuition",
+  "note": "Taxa poate fi mai mică pentru studenții cu venituri mici (bursieri)."
+ },
+ {
+  "id": "unarte",
+  "currency": "RON",
+  "min": 5800,
+  "max": 6500,
+  "year": "2026/27",
+  "url": "https://unarte.org/wp-content/uploads/2026/06/Lista-taxelor-pentru-servicii-universitare-2026-2027.pdf",
+  "budgetFree": true
+ },
+ {
+  "id": "unatc",
+  "currency": "RON",
+  "min": 5500,
+  "max": 12000,
+  "year": "2026/27",
+  "url": "https://unatc.ro/devunatc/wp-content/uploads/2026/06/Hotarare_senat_anexe_290_1_2026.pdf",
+  "budgetFree": true
+ },
+ {
+  "id": "unav-navarra",
+  "currency": "EUR",
+  "min": 11750,
+  "max": 19250,
+  "year": "2026/27",
+  "url": "https://www.unav.edu/admision-y-ayudas/grado/cuanto-cuesta-estudiar-en-la-universidad/precios-de-primer-curso",
+  "note": "Medicină: 20.400 €/an; taxa de secretariat: +95 €."
+ },
+ {
+  "id": "unc-chapel-hill",
+  "currency": "USD",
+  "min": 47472,
+  "max": 47472,
+  "year": "2026/27",
+  "url": "https://cashier.unc.edu/tuition-fees/undergraduate-programs/"
+ },
+ {
+  "id": "unefs",
+  "currency": "RON",
+  "min": 5685,
+  "max": 7200,
+  "year": "2026/27",
+  "url": "https://admitere.unefs.ro/storage/others/taxe-de-studii.pdf",
+  "note": "Arta circului: 8.000 lei/an",
+  "budgetFree": true
+ },
+ {
+  "id": "uni-augsburg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-augsburg.de/en/portal/internationals/abschluss/costs-financing-scholarships/"
+ },
+ {
+  "id": "uni-bamberg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-bamberg.de/studienstart/"
+ },
+ {
+  "id": "uni-bayreuth",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-bayreuth.de/bachelor/bwl"
+ },
+ {
+  "id": "uni-bielefeld",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-bielefeld.de/studium/studierende/start-ins-studium/finanzierung/"
+ },
+ {
+  "id": "uni-bonn",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-bonn.de/en/studying/application-admission-and-enrollment/costs"
+ },
+ {
+  "id": "uni-bremen",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-bremen.de/en/studies/starting-your-studies/formalitaeten/re-registration-and-semester-fee"
+ },
+ {
+  "id": "uni-due",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-due.de/international/programmstudierende.php"
+ },
+ {
+  "id": "uni-frankfurt",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-frankfurt.de/120844584/Immatrikulation"
+ },
+ {
+  "id": "uni-freiburg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://uni-freiburg.de/en/studies/during-your-studies/tuition-fees-international-students/"
+ },
+ {
+  "id": "uni-gdansk",
+  "currency": "EUR",
+  "min": 2100,
+  "max": 2820,
+  "year": "2026/27",
+  "url": "https://rekrutacja.ug.edu.pl/en/recrutation/tuition-fees/"
+ },
+ {
+  "id": "uni-giessen",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-giessen.de/en/org/admin/departments/b/5/studoffice/sc"
+ },
+ {
+  "id": "uni-graz",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2025/26",
+  "url": "https://www.uni-graz.at/en/study/studying-at-the-university-of-graz/financing-your-studies/",
+  "note": "Taxa de școlarizare de 363,36 €/semestru se plătește doar după durata prevăzută a studiilor plus 2 semestre; până atunci se plătește doar cotizația ÖH (circa 26 €/semestru)."
+ },
+ {
+  "id": "uni-greifswald",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-greifswald.de/international/incoming/warum-nach-greifswald-1/"
+ },
+ {
+  "id": "uni-halle",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://immaamt.verwaltung.uni-halle.de/bewerbung/faq-bewerbung/"
+ },
+ {
+  "id": "uni-hamburg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-hamburg.de/en/campuscenter/studienorganisation/studienverlauf/beitraege-gebuehren.html"
+ },
+ {
+  "id": "uni-hannover",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-hannover.de/studium/finanzierung-foerderung/studienfinanzierung"
+ },
+ {
+  "id": "uni-hohenheim",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-hohenheim.de/en/tuition-fees"
+ },
+ {
+  "id": "uni-innsbruck",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uibk.ac.at/de/studium/studienstart/studienbeitrag-und-foerderungen/",
+  "note": "Taxa de școlarizare de 363,36 €/semestru se plătește doar după durata prevăzută a studiilor plus 2 semestre; până atunci se plătește doar cotizația ÖH (circa 26 €/semestru)."
+ },
+ {
+  "id": "uni-jena",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-jena.de/1965/leben-in-jena"
+ },
+ {
+  "id": "uni-kassel",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://verwaltungsportal.hessen.de/leistung?leistung_id=L100001_8979000"
+ },
+ {
+  "id": "uni-kiel",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-kiel.de/en/aef/study/studying-worldwide/studying-in-kiel"
+ },
+ {
+  "id": "uni-klagenfurt",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.aau.at/university-fees",
+  "note": "Gratuit în durata normală a studiilor plus 2 semestre; apoi 363,36 €/semestru. Se plătește doar contribuția mică pentru asociația studenților (ÖH)."
+ },
+ {
+  "id": "uni-koeln",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-koeln.de/en/international/study-in-cologne/costs-financing"
+ },
+ {
+  "id": "uni-konstanz",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-konstanz.de/studieren/vor-dem-studium/gibt-es-in-konstanz-studiengebuehren/"
+ },
+ {
+  "id": "uni-leipzig",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-leipzig.de/en/international/studying-at-leipzig-university/getting-started-with-studies-and-life-in-leipzig"
+ },
+ {
+  "id": "uni-ljubljana",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2025/26",
+  "url": "https://www.uni-lj.si/assets/Sluzba-za-1-in-2-stopnjo/Cenik/2025-2026/Anglescina/General-conditions-for-the-payment-of-tuition-fees.pdf",
+  "note": "Gratuit pentru studiile la zi; se plătește doar dacă ai deja o diplomă de același nivel sau repeți anul."
+ },
+ {
+  "id": "uni-mainz",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.studium.uni-mainz.de/en/during-your-studies/organizing-your-studies/financial-matters/"
+ },
+ {
+  "id": "uni-mannheim",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-mannheim.de/en/academics/during-your-studies/organizing-your-studies/fees/tuition-fees-for-international-students/"
+ },
+ {
+  "id": "uni-marburg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-marburg.de/de/studium/im-studium/campusleben/studienfinanzierung"
+ },
+ {
+  "id": "uni-maribor",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://moja.um.si/en/future-students/Strani/co-funding.aspx",
+  "note": "Gratuit pentru cetățenii UE la studiile de licență la zi finanțate de stat; se plătește doar dacă ai deja o diplomă de același nivel sau repeți anul."
+ },
+ {
+  "id": "uni-muenster",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-muenster.de/studieninteressierte/en/einschreibung/semesterbeitrag.shtml"
+ },
+ {
+  "id": "uni-nova-gorica",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://ung.si/en/education/fees/",
+  "note": "Studiile cu frecvență redusă costă 2.800–3.500 € pe an."
+ },
+ {
+  "id": "uni-oldenburg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://uol.de/en/study-in-oldenburg/finances",
+  "note": "Taxă de 500 €/semestru doar după ce depășești durata studiilor plus 6 semestre (taxă de studii lungi)."
+ },
+ {
+  "id": "uni-osnabrueck",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.mwk.niedersachsen.de/startseite/hochschulen/studium/studieren_ohne_studienbeitrage/studieren-in-niedersachsen-ohne-studienbeitrage-178839.html",
+  "note": "Taxă de 500 €/semestru doar după ce depășești durata studiilor plus 6 semestre (taxă de studii lungi)."
+ },
+ {
+  "id": "uni-paderborn",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-paderborn.de/studium/international-office/degree-students/leben-in-paderborn-und-am-campus/finanzen"
+ },
+ {
+  "id": "uni-passau",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-passau.de/kosten-finanzierung/semesterbeitrag/studienzuschuesse"
+ },
+ {
+  "id": "uni-potsdam",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-potsdam.de/de/studium/konkret/wohnen-finanzen/kosten"
+ },
+ {
+  "id": "uni-primorska",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.upr.si/en/study--enrolment/529-tuition-fees/",
+  "note": "Se plătește taxă doar dacă ai deja o diplomă de același nivel."
+ },
+ {
+  "id": "uni-regensburg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-regensburg.de/international/wege-nach-regensburg/studienabschluss-an-der-ur/studien-lebenskosten"
+ },
+ {
+  "id": "uni-rostock",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.ief.uni-rostock.de/studium/erstsemester/studienkosten-versicherung-finanzierung/"
+ },
+ {
+  "id": "uni-saarland",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-saarland.de/studium/organisation/beitraege.html"
+ },
+ {
+  "id": "uni-salzburg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.plus.ac.at/studium/vor-dem-studium-3/studienbeitrag/beitragsfreie-zeit/?lang=en",
+  "note": "Taxa de școlarizare de 363,36 €/semestru se plătește doar după durata prevăzută a studiilor plus 2 semestre; până atunci se plătește doar cotizația ÖH (circa 26 €/semestru)."
+ },
+ {
+  "id": "uni-siegen",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://faq.tools.phil.uni-siegen.de/index.php?action=faq&artlang=de&cat=42&id=271"
+ },
+ {
+  "id": "uni-stuttgart",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-stuttgart.de/en/study/application/international-degree/application/"
+ },
+ {
+  "id": "uni-trier",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://make-it-in.rlp.de/fuer-fachkraefte/fortbilden/studium-in-rheinland-pfalz"
+ },
+ {
+  "id": "uni-tuebingen",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://uni-tuebingen.de/en/study/organizing-your-studies/fees/tuition-fees/"
+ },
+ {
+  "id": "uni-ulm",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-ulm.de/studium/studienorganisation/studiengebuehren/"
+ },
+ {
+  "id": "uni-warszawa",
+  "currency": "EUR",
+  "min": 0,
+  "max": 4300,
+  "year": "2026/27",
+  "url": "https://rekrutacja.uw.edu.pl/files/pdf/tuition_fees_2026-2027_06.2026.pdf",
+  "note": "Unele programe sunt gratuite pentru cetățenii UE. Psihologie (studii de 5 ani): 25.200 PLN/an."
+ },
+ {
+  "id": "uni-wroclaw",
+  "currency": "EUR",
+  "min": 2300,
+  "max": 3000,
+  "year": "2026/27",
+  "url": "https://international.uni.wroc.pl/en/admission-full-degree-studies/tuition-fees"
+ },
+ {
+  "id": "uni-wuerzburg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-wuerzburg.de/en/studying-at-jmu/studienangelegenheiten/degree-programmes/before-arrival/costs-and-financing/"
+ },
+ {
+  "id": "uni-wuppertal",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://cs.uni-wuppertal.de/en/computer-science/faq/"
+ },
+ {
+  "id": "uniba",
+  "currency": "EUR",
+  "min": 1000,
+  "max": 1000,
+  "year": "2026/27",
+  "url": "https://www.uniba.it/it/ateneo/statuto-regolamenti/regolamenti-generali/regolamento-contribuzione-studentesca-2026-2027",
+  "note": "Dacă familia are venituri și în Italia se aplică scala ISEE (maxim 2.950 €)."
+ },
+ {
+  "id": "unibas",
+  "currency": "CHF",
+  "min": 1700,
+  "max": 1700,
+  "year": "2026/27",
+  "url": "https://www.unibas.ch/dam/jcr:ffbe9073-5d53-44d3-b64e-dc3fd26d6973/442_600_05.pdf"
+ },
+ {
+  "id": "unibas-it",
+  "currency": "EUR",
+  "min": 0,
+  "max": 2100,
+  "year": "2026/27",
+  "url": "https://portale.unibas.it/site/home/studenti/regolamento-contribuzione-studentesca/documento50738.html",
+  "note": "Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "unibe",
+  "currency": "CHF",
+  "min": 5100,
+  "max": 5100,
+  "year": "2026/27",
+  "url": "https://www.unibe.ch/studium/organisatorisches/semestereinschreibung/gebuehren/index_ger.html",
+  "note": "Studenții cu domiciliul în Elveția plătesc doar 850 CHF/semestru."
+ },
+ {
+  "id": "unibo",
+  "currency": "EUR",
+  "min": 0,
+  "max": 2040,
+  "year": "2026/27",
+  "url": "https://www.unibo.it/en/attachments/Tabellaimportimassimi2627.pdf",
+  "note": "Taxa depinde de veniturile familiei (ISEE). Medicină: până la 3.315 €/an; Stomatologie: până la 4.080 €/an; se adaugă ~157 € taxe fixe."
+ },
+ {
+  "id": "unibuc",
+  "currency": "RON",
+  "min": 5500,
+  "max": 8800,
+  "year": "2026/27",
+  "url": "https://unibuc.ro/wp-content/uploads/2026/03/Taxe-de-scolarizare-Studii-licenta-2026-2027.pdf",
+  "note": "Taxa nominală este 8.000 lei, dar în anul I se plătește temporar 5.500 lei la majoritatea facultăților.",
+  "budgetFree": true
+ },
+ {
+  "id": "unibz",
+  "currency": "EUR",
+  "min": 1200,
+  "max": 1200,
+  "year": "2027/28",
+  "url": "https://www.unibz.it/en/faculties/engineering/bachelor-computer-science",
+  "note": "Suma e fixă, nu depinde de venit; o bursă de studiu poate rambursa taxa"
+ },
+ {
+  "id": "unic-nicosia",
+  "currency": "EUR",
+  "min": 10200,
+  "max": 11700,
+  "year": "2026/27",
+  "url": "https://www.unic.ac.cy/wp-content/uploads/2026/10/UNIC-NIC-Tuition-Fees-CY-EU-EN-2026-2027.pdf",
+  "note": "Medicină: 24.000 €/an; Medicină veterinară: 21.000 €/an."
+ },
+ {
+  "id": "unica",
+  "currency": "EUR",
+  "min": 0,
+  "max": 3472,
+  "year": "2026/27",
+  "url": "https://www.unica.it/sites/default/files/2026-07/Regolamento_contribuzione_studentesca_anno_accademico_2026_2027.pdf",
+  "note": "Taxa depinde de veniturile familiei (ISEE). Medicină: până la 3.499 €/an."
+ },
+ {
+  "id": "unicaen",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "unical",
+  "currency": "EUR",
+  "min": 0,
+  "max": 2000,
+  "year": "2026/27",
+  "url": "https://www.unical.it/media/medias/2026/ALLEGATO_1_-_Tasse_a.a._26-27.pdf",
+  "note": "Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "unicam",
+  "currency": "EUR",
+  "min": 800,
+  "max": 800,
+  "year": "2026/27",
+  "url": "https://www.unicam.it/sites/default/files/documenti-pag/2026/SOLO_MANIFESTO_studi%202026-27_v1_29_giugno_signed.pdf",
+  "note": "Taxă fixă pentru familiile cu venituri în străinătate."
+ },
+ {
+  "id": "unicamillus",
+  "currency": "EUR",
+  "min": 3000,
+  "max": 8000,
+  "year": "2026/27",
+  "url": "https://unicamillus.org/wp-content/uploads/regolamenti/201r-regolamento_tassecontributi_cdl-triennali-studenti-ue-2026-2027-sede-roma.pdf"
+ },
+ {
+  "id": "unicampus",
+  "currency": "EUR",
+  "min": 2351,
+  "max": 7000,
+  "year": "2026/27",
+  "url": "https://www.unicampus.it/ammissioni-corsi-di-laurea/tasse-e-contributi/",
+  "note": "Medicină și Chirurgie: de la 19.000 €/an"
+ },
+ {
+  "id": "unicas",
+  "currency": "EUR",
+  "min": 1400,
+  "max": 1400,
+  "year": "2026/27",
+  "url": "https://www.unicas.it/media/pesjjo4e/regolamento-tasse-e-contributi-2026-2027-dr-n-482-del-02072026.pdf",
+  "note": "Taxă fixă pentru studenții străini, după țara de cetățenie."
+ },
+ {
+  "id": "unicatt",
+  "currency": "EUR",
+  "min": 6580,
+  "max": 6580,
+  "year": "2026/27",
+  "url": "https://international.unicatt.it/ucscinternational-ammissioni-e-tasse-tasse-e-borse-di-studio",
+  "note": "Fără documente de venit se aplică taxa maximă de 11.500 €"
+ },
+ {
+  "id": "unich",
+  "currency": "EUR",
+  "min": 1300,
+  "max": 1300,
+  "year": "2024/25",
+  "url": "https://www.dda.unich.it/sites/st01/files/regolamento_tasse_e_contributi_2024-25.pdf",
+  "note": "Taxă fixă pentru familiile cu venituri în străinătate. Valabil pentru studenții cu venituri doar în străinătate."
+ },
+ {
+  "id": "unict",
+  "currency": "EUR",
+  "min": 150,
+  "max": 150,
+  "year": "2026/27",
+  "url": "https://www.unict.it/sites/default/files/documenti_sito/dr_manifesto_degli_studi_26-27_con_allegato_signed.pdf",
+  "note": "Pentru UE cu domiciliul în afara Italiei. Cu familia în Italia taxa depinde de ISEE (0–2.150 €)."
+ },
+ {
+  "id": "unicz",
+  "currency": "EUR",
+  "min": 0,
+  "max": 1764,
+  "year": "2025/26",
+  "url": "https://web.unicz.it/uploads/2025/11/regolamento-tasse-2025-2026-def.pdf",
+  "note": "Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "unife",
+  "currency": "EUR",
+  "min": 0,
+  "max": 2092,
+  "year": "2026/27",
+  "url": "https://www.unife.it/it/iscriviti/tasse/tasse/simulazione-tasse/come-calcolare-il-contributo",
+  "note": "Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "unige",
+  "currency": "EUR",
+  "min": 0,
+  "max": 3300,
+  "year": "2026/27",
+  "url": "https://unige.it/en/tasse-e-benefici/calcolo-contributo-universitario",
+  "note": "Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "unikore",
+  "currency": "EUR",
+  "min": 3750,
+  "max": 6500,
+  "year": "2026/27",
+  "url": "https://admin.uke.it/wp-content/uploads/2026/03/REGOLAMENTO_TASSE_2026-27.pdf",
+  "note": "Medicină și Chirurgie: 18.000 €/an"
+ },
+ {
+  "id": "unilim",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "unilu",
+  "currency": "CHF",
+  "min": 2050,
+  "max": 2050,
+  "year": "2024/25",
+  "url": "https://www.unilu.ch/fileadmin/universitaet/dienste/sd/dok/merkblaetter/Info_Gebuehren_deutsch_neu_23.04.2024.pdf",
+  "note": "Studenții cu studii liceale în Elveția plătesc 725 CHF/semestru. Cifrele sunt din documentul oficial din aprilie 2024."
+ },
+ {
+  "id": "unime",
+  "currency": "EUR",
+  "min": 0,
+  "max": 2650,
+  "year": "2026/27",
+  "url": "https://www.unime.it/sites/default/files/2026-07/III%20CdA%2006.07.2026%20All.%201%20Tabella%20determinazione%20COA%20%20%281%29.pdf",
+  "note": "Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "unimol",
+  "currency": "EUR",
+  "min": 1566,
+  "max": 1606,
+  "year": "2026/27",
+  "url": "https://apistrapi.unimol.it/uploads/REGOLAMENTO_CONTRIBUZIONE_STUDENTESCA_307541d9cd.pdf",
+  "note": "Medicină: 1.676 €/an Taxă fixă pentru familiile cu venituri în străinătate."
+ },
+ {
+  "id": "unimore",
+  "currency": "EUR",
+  "min": 0,
+  "max": 1815,
+  "year": "2026/27",
+  "url": "https://www.unimore.it/sites/default/files/2026-06/ESTRATTO%20delibera%20tasse%202026%202027.pdf",
+  "note": "Digital Marketing: 5.031 €/an; Medicină: 3.457 €/an"
+ },
+ {
+  "id": "unina",
+  "currency": "EUR",
+  "min": 0,
+  "max": 2384,
+  "year": "2026/27",
+  "url": "https://www.unina.it/documents/d/guest/guida_studente_rapida_26-27_10-7-2026",
+  "note": "Taxa depinde de veniturile familiei (ISEE). Reducere de 50% pentru media 100 cu mențiune la bacalaureat."
+ },
+ {
+  "id": "unint",
+  "currency": "EUR",
+  "min": 6900,
+  "max": 6900,
+  "year": "2026/27",
+  "url": "https://www.unint.eu/entra-in-unint/tasse-e-contributi-2026-2027/",
+  "note": "Reduceri după nota de la bacalaureat: până la 4.500 €/an."
+ },
+ {
+  "id": "unior",
+  "currency": "EUR",
+  "min": 734,
+  "max": 734,
+  "year": "2026/27",
+  "url": "https://www.unior.it/sites/default/files/2026-07/Regolamento%20in%20materia%20di%20Contribuzione%20Studentesca%20a.a.%202026-2027%20(3).pdf",
+  "note": "Taxă fixă pentru familiile cu venituri în străinătate. Cu ISEE italian poate fi între 0 și 1.300 €."
+ },
+ {
+  "id": "uniovi-oviedo",
+  "currency": "EUR",
+  "min": 518,
+  "max": 942,
+  "year": "2025/26",
+  "url": "https://www.uniovi.es/documents/39158/13774579/Decreto+precios+p%C3%BAblicos+2025-2026.pdf/5e742835-5e4a-8900-5b2d-301d4969f73e?t=1775805487231",
+  "note": "Prețul este cel brut; în 2025/26 studenții noi din anul I au fost scutiți de taxă prin decret."
+ },
+ {
+  "id": "unipa",
+  "currency": "EUR",
+  "min": 341,
+  "max": 2914,
+  "year": "2026/27",
+  "url": "https://www.unipa.it/servizi/segreterie/.content/documenti/regolamenti_calendari/2026/contrib-stu-2026_27.pdf",
+  "note": "Taxa depinde de veniturile familiei (ISEE). Medicină: până la 3.298 €/an; profesii sanitare: până la 3.431 €/an."
+ },
+ {
+  "id": "uniparthenope",
+  "currency": "EUR",
+  "min": 0,
+  "max": 2324,
+  "year": "2025/26",
+  "url": "https://international.uniparthenope.it/wp-content/uploads/2025/12/DECRETO-EMANAZIONE-REGOLAMENTO-TASSE-STUDENTI_2526-7.pdf",
+  "note": "Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "unipd",
+  "currency": "EUR",
+  "min": 0,
+  "max": 3000,
+  "year": "2026/27",
+  "url": "https://www.unipd.it/en/tuition-fees",
+  "note": "Taxa depinde de veniturile familiei (ISEE). Suma este aproximativă, conform universității."
+ },
+ {
+  "id": "unipg",
+  "currency": "EUR",
+  "min": 150,
+  "max": 2200,
+  "year": "2026/27",
+  "url": "https://www.unipg.it/internazionale/studenti-incoming-e-internazionali/studenti-internazionali/contribuzione-universitaria-e-borse-di-studio",
+  "note": "Taxa depinde de veniturile familiei (ISEE). Suma este cea indicată ca uzuală de universitate."
+ },
+ {
+  "id": "unipi",
+  "currency": "EUR",
+  "min": 2900,
+  "max": 2900,
+  "year": "2026/27",
+  "url": "https://www.unipi.it/wp-content/uploads/Regolamento_tasse_2026_2027-2.pdf",
+  "note": "Se poate cere calculul pe baza ISEEU parificato, pentru o taxă mai mică"
+ },
+ {
+  "id": "unipi-pireu",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyingreece.edu.gr/bachelors/",
+  "note": "Programele în greacă sunt gratuite."
+ },
+ {
+  "id": "unipr",
+  "currency": "EUR",
+  "min": 0,
+  "max": 2070,
+  "year": "2026/27",
+  "url": "https://www.unipr.it/sites/default/files/2026-04/Allegato%203%20-%20Tasse%20e%20contribuzione.pdf",
+  "note": "Taxa depinde de veniturile familiei (ISEE). Medicină: până la 2.190 €/an; Stomatologie: până la 2.725 €/an."
+ },
+ {
+  "id": "uniroma4",
+  "currency": "EUR",
+  "min": 0,
+  "max": 1340,
+  "year": "2024/25",
+  "url": "https://www.uniroma4.it/wp-content/uploads/2025/05/Regolamento_Tasse_Contributi_Studenti_prot_3015_05-06-2024_da-aa-2024-25.pdf",
+  "note": "Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "unisalento",
+  "currency": "EUR",
+  "min": 1000,
+  "max": 1000,
+  "year": "2026/27",
+  "url": "https://www.unisalento.it/documents/20143/132441/Manifesto_Studi_2026-2027.pdf/d3ad628f-ad4d-c4ea-174c-3541ca7a3fca",
+  "note": "Taxă fixă pentru studenții internaționali, indiferent de venituri."
+ },
+ {
+  "id": "unisannio",
+  "currency": "EUR",
+  "min": 500,
+  "max": 500,
+  "year": "2026/27",
+  "url": "https://www.unisannio.it/it/studente/studente-iscritto/tasse-di-iscrizione",
+  "note": "Taxă fixă pentru studenții străini cu rezidența în străinătate."
+ },
+ {
+  "id": "unisg",
+  "currency": "EUR",
+  "min": 15500,
+  "max": 15500,
+  "year": "2026/27",
+  "url": "https://www.unisg.it/course/laurea-triennale-in-scienze-e-culture-gastronomiche/",
+  "note": "Suma este pentru programul de Științe și Culturi Gastronomice; alte programe pot costa diferit."
+ },
+ {
+  "id": "unisob",
+  "currency": "EUR",
+  "min": 3080,
+  "max": 5180,
+  "year": "2026/27",
+  "url": "https://www.unisob.na.it/ateneo/economia/tasse.htm?vr=1",
+  "note": "Suma este pentru programul Economia aziendale e Green Economy; alte programe pot costa diferit. Taxa depinde de veniturile familiei (ISEE). Fără contribuția de 500 € la înscriere."
+ },
+ {
+  "id": "unisr",
+  "currency": "EUR",
+  "min": 2590,
+  "max": 7690,
+  "year": "2026/27",
+  "url": "https://www.unisr.it/servizi/tasse-contributi/corsi-di-laurea-triennale-e-magistrale",
+  "note": "Medicină și Chirurgie: 20.190 €/an"
+ },
+ {
+  "id": "uniss",
+  "currency": "EUR",
+  "min": 0,
+  "max": 1750,
+  "year": "2026/27",
+  "url": "https://www.uniss.it/it/didattica/servizi-agli-studenti/guide-studenti/tasse-e-isee",
+  "note": "Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "unistra",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "unistrapg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 1470,
+  "year": "2026/27",
+  "url": "https://www.unistrapg.it/node/183",
+  "note": "Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "unistrasi",
+  "currency": "EUR",
+  "min": 0,
+  "max": 2200,
+  "year": "2026/27",
+  "url": "https://www.unistrasi.it/public/articoli/3478/DR%20325.26%20emanazione%20Regolamento%20tasse%20universitarie%202026.pdf",
+  "note": "Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "unitbv",
+  "currency": "RON",
+  "min": 4200,
+  "max": 6500,
+  "year": "2026/27",
+  "url": "https://www.unitbv.ro/studenti/administrative/taxe/taxe-anul-universitar-2026-2027.html",
+  "note": "Medicină: 8.400 lei/an",
+  "budgetFree": true
+ },
+ {
+  "id": "unite",
+  "currency": "EUR",
+  "min": 600,
+  "max": 600,
+  "year": "2026/27",
+  "url": "https://www.unite.it/UniTE/Home/Segreteria_Studenti/Tasse/Importi_delle_tasse",
+  "note": "Taxă fixă pentru familiile cu venituri în străinătate."
+ },
+ {
+  "id": "units",
+  "currency": "EUR",
+  "min": 800,
+  "max": 800,
+  "year": "2026/27",
+  "url": "https://repo.units.it/docs/units_CdL_tasse-avvisoTasse_en.2026-2027.pdf",
+  "note": "Pentru domiciliul în străinătate. Cu domiciliul în Italia taxa depinde de ISEE. Se adaugă 20% dacă nu sunt îndeplinite condițiile de credite."
+ },
+ {
+  "id": "unitus",
+  "currency": "EUR",
+  "min": 0,
+  "max": 2394,
+  "year": "2026/27",
+  "url": "https://www.unitus.it/wp-content/uploads/2026/07/ALL.A_DISCIPLINA-TASSE-E-CONTRIBUTI-A.A.-2026-2027_POST-SEDUTA.rev-aa_18.6.2026-2.pdf",
+  "note": "Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "uniud",
+  "currency": "EUR",
+  "min": 0,
+  "max": 2000,
+  "year": "2026/27",
+  "url": "https://www.uniud.it/it/didattica/area-servizi-studenti/servizi-studenti/diritto-allo-studio/tasse_merito/tasse-riduzioni-esoneri/info_generali",
+  "note": "Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "uniupo",
+  "currency": "EUR",
+  "min": 0,
+  "max": 2280,
+  "year": "2026/27",
+  "url": "https://www.uniupo.it/it/infostudenti/tasse-e-contributi/seconda-rata-e-successive",
+  "note": "Medicină și Farmacie: până la 2.622 €/an Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "uniurb",
+  "currency": "EUR",
+  "min": 753,
+  "max": 1998,
+  "year": "2026/27",
+  "url": "https://www.uniurb.it/studiaconnoi/studenti/contributi/importo-del-contributo-annuale",
+  "note": "Conservare și Restaurare (ciclu unic): între 2.138 și 6.252 €/an Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "univ-angers",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "univ-artois",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "univ-evry",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "univ-lille",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "univ-lorraine",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "univ-orleans",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.univ-orleans.fr/fr/univ/formation/droits-dinscriptions/montant-des-droits-dinscription",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC. Inginer (Polytech'Orléans): 630 €/an."
+ },
+ {
+  "id": "univ-pau",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "univ-perpignan",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "univ-poitiers",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "univ-reims",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "univ-rennes",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "univ-rouen",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "univ-st-etienne",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "univ-toulon",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "univ-toulouse",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "univ-tours",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "univaq",
+  "currency": "EUR",
+  "min": 0,
+  "max": 1600,
+  "year": "2026/27",
+  "url": "https://www.univaq.it/include/utilities/blob.php?table=avviso&id=17197&item=allegato",
+  "note": "Taxa depinde de veniturile familiei (ISEE)."
+ },
+ {
+  "id": "univda",
+  "currency": "EUR",
+  "min": 1061,
+  "max": 1061,
+  "year": "2026/27",
+  "url": "https://www.univda.it/wp-content/uploads/2026/05/Allegato-delibera-tasse-2026.2027-1-2.pdf",
+  "note": "Suma include taxa regională și timbrul. Studenții care nu locuiesc în Italia sunt trecuți automat în prima treaptă."
+ },
+ {
+  "id": "unive",
+  "currency": "EUR",
+  "min": 0,
+  "max": 2177,
+  "year": "2026/27",
+  "url": "https://www.unive.it/pag/50459/",
+  "note": "Digital Management: 8.726 €/an; Hospitality Innovation and e-Tourism: 6.915 €/an"
+ },
+ {
+  "id": "university-college-cork",
+  "currency": "EUR",
+  "min": 2350,
+  "max": 2350,
+  "year": "2026/27",
+  "url": "https://www.citizensinformation.ie/en/education/third-level-education/fees-and-supports-for-third-level-education/fees/"
+ },
+ {
+  "id": "university-college-dublin",
+  "currency": "EUR",
+  "min": 2350,
+  "max": 2350,
+  "year": "2026/27",
+  "url": "https://www.citizensinformation.ie/en/education/third-level-education/fees-and-supports-for-third-level-education/fees/"
+ },
+ {
+  "id": "university-of-antwerp",
+  "currency": "EUR",
+  "min": 1181,
+  "max": 1181,
+  "year": "2026/27",
+  "url": "https://www.uantwerpen.be/en/study/admission-and-enrolment/enrolment/tuition-fees/tuition-fees-2026-2027/"
+ },
+ {
+  "id": "university-of-galway",
+  "currency": "EUR",
+  "min": 2350,
+  "max": 2350,
+  "year": "2026/27",
+  "url": "https://www.citizensinformation.ie/en/education/third-level-education/fees-and-supports-for-third-level-education/fees/"
+ },
+ {
+  "id": "university-of-limerick",
+  "currency": "EUR",
+  "min": 2350,
+  "max": 2350,
+  "year": "2026/27",
+  "url": "https://www.citizensinformation.ie/en/education/third-level-education/fees-and-supports-for-third-level-education/fees/"
+ },
+ {
+  "id": "university-of-the-arts-the-hague",
+  "currency": "EUR",
+  "min": 2771,
+  "max": 2771,
+  "year": "2027/28",
+  "url": "https://www.kabk.nl/en/practical-matters/tuition-fees"
+ },
+ {
+  "id": "univie",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20002128&Paragraf=91",
+  "note": "Taxa de școlarizare de 363,36 €/semestru se plătește doar după durata prevăzută a studiilor plus 2 semestre; până atunci se plătește doar cotizația ÖH (circa 26 €/semestru)."
+ },
+ {
+  "id": "univnt",
+  "currency": "RON",
+  "min": 4400,
+  "max": 4400,
+  "year": "2026/27",
+  "url": "https://www.univnt.ro/wp-content/uploads/taxe/2026-2027/taxe_drept.pdf",
+  "note": "Suma este pentru Facultatea de Drept; alte facultăți pot costa diferit."
+ },
+ {
+  "id": "univr",
+  "currency": "EUR",
+  "min": 0,
+  "max": 2021,
+  "year": "2026/27",
+  "url": "https://cdn.docs.univr.it/documenti/Concorso/bando/bando878281.pdf",
+  "note": "Taxa depinde de veniturile familiei (ISEE). Stomatologie: până la 3.212 €/an."
+ },
+ {
+  "id": "unizar-zaragoza",
+  "currency": "EUR",
+  "min": 786,
+  "max": 1201,
+  "year": "2025/26",
+  "url": "https://educacion.unizar.es/sites/educacion/files/archivos/decreto_precios_2025-26-4.pdf"
+ },
+ {
+  "id": "unl-nova",
+  "currency": "EUR",
+  "min": 697,
+  "max": 697,
+  "year": "2026/27",
+  "url": "https://www.fct.unl.pt/sites/default/files/despacho_14_2026_propinas_26_27.pdf",
+  "note": "Valoarea este de la NOVA FCT; NOVA SBE indică tot 697 €."
+ },
+ {
+  "id": "unmb",
+  "currency": "RON",
+  "min": 4000,
+  "max": 7000,
+  "year": "2026/27",
+  "url": "https://www.unmb.ro/wp-content/uploads/2026/07/Taxe-de-scolarizare-an-universitar-2026-2027.pdf",
+  "budgetFree": true
+ },
+ {
+  "id": "unsw",
+  "currency": "AUD",
+  "min": 49680,
+  "max": 66720,
+  "year": "2027",
+  "url": "https://www.unsw.edu.au/student/managing-your-studies/fees/international",
+  "note": "Medicină: 104.400 A$/an."
+ },
+ {
+  "id": "unyp-prague",
+  "currency": "CZK",
+  "min": 258500,
+  "max": 258500,
+  "year": "2026/27",
+  "url": "https://www.unyp.cz/tuition-fees/"
+ },
+ {
+  "id": "uoa-atena",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyingreece.edu.gr/bachelors/",
+  "note": "Programele în greacă sunt gratuite; cele în engleză sunt cu taxă."
+ },
+ {
+  "id": "uoc-heraklion",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyingreece.edu.gr/bachelors/",
+  "note": "Programele în greacă sunt gratuite; Medicina internațională în engleză este cu taxă."
+ },
+ {
+  "id": "uoi-ioannina",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyingreece.edu.gr/bachelors/",
+  "note": "Programele în greacă sunt gratuite."
+ },
+ {
+  "id": "uol-limassol",
+  "currency": "EUR",
+  "min": 9138,
+  "max": 9138,
+  "year": "2026/27",
+  "url": "https://www.uol.ac.cy/Tuition-Fees/",
+  "note": "Calculat din taxa totală pe 4 ani."
+ },
+ {
+  "id": "upa-iasi",
+  "currency": "RON",
+  "min": 10000,
+  "max": 11000,
+  "year": "2026/27",
+  "url": "http://www.upa.ro/wp-content/uploads/2026/03/HCA8_02.03.2026.pdf",
+  "note": "Anii II-IV sunt mai ieftini (6.800-9.300 lei)"
+ },
+ {
+  "id": "upatras-patras",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyingreece.edu.gr/bachelors/",
+  "note": "Programele în greacă sunt gratuite; Medicina în engleză este cu taxă."
+ },
+ {
+  "id": "upb",
+  "currency": "RON",
+  "min": 6200,
+  "max": 6200,
+  "year": "2026/27",
+  "url": "https://www.upit.ro/_document/313449/sistem_de_taxe_2026-2027.pdf",
+  "note": "Taxa de 6.200 lei este pentru Centrul București; programele în limbi străine: 7.500 lei/an.",
+  "budgetFree": true
+ },
+ {
+  "id": "upc-barcelona",
+  "currency": "EUR",
+  "min": 1061,
+  "max": 1061,
+  "year": "2026/27",
+  "url": "https://universitats.gencat.cat/ca/acces-universitat/sobre-preus-beques/preus-estudis-universitaris/"
+ },
+ {
+  "id": "upec",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2865"
+ },
+ {
+  "id": "upenn",
+  "currency": "USD",
+  "min": 65670,
+  "max": 65670,
+  "year": "2026/27",
+  "url": "https://penntoday.upenn.edu/news/penn-trustees-approve-2026-2027-undergraduate-charges-and-financial-aid-budget"
+ },
+ {
+  "id": "upet",
+  "currency": "RON",
+  "min": 2700,
+  "max": 2700,
+  "year": "2026/27",
+  "url": "https://www.upet.ro/documente/2026/Taxe%20%C3%AEnva%C8%9B%C4%83m%C3%A2nt%20ptr.%20anul%20universitar%202026-2027.pdf",
+  "budgetFree": true
+ },
+ {
+  "id": "upg",
+  "currency": "RON",
+  "min": 4100,
+  "max": 4500,
+  "year": "2026/27",
+  "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2026/03/Cuantum-taxe-2026-2027.pdf",
+  "note": "Plata integrală la semnarea contractului: reducere de 400 lei.",
+  "budgetFree": true
+ },
+ {
+  "id": "uphf",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "upm-madrid",
+  "currency": "EUR",
+  "min": 1015,
+  "max": 1241,
+  "year": "2026/27",
+  "url": "https://www.upm.es/gsfs/SFS50990"
+ },
+ {
+  "id": "uporto",
+  "currency": "EUR",
+  "min": 697,
+  "max": 697,
+  "year": "2025/26",
+  "url": "https://www.up.pt/portal/pt/estudar/licenciaturas-e-mestrados-integrados/funcionamento-e-propinas/"
+ },
+ {
+  "id": "uppsala",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.universityadmissions.se/en/fees-scholarships-residence-permit/",
+  "note": "Gratuit pentru cetățenii UE; trebuie să dovedești cetățenia la înscriere."
+ },
+ {
+  "id": "upsc-chisinau",
+  "currency": "MDL",
+  "min": 9000,
+  "max": 16000,
+  "year": "2026/27",
+  "url": "https://upsc.md/wp-content/uploads/2026/07/taxe_licenta_2026_2027.pdf",
+  "note": "Taxa este în lei moldovenești (MDL)."
+ },
+ {
+  "id": "upt",
+  "currency": "RON",
+  "min": 3600,
+  "max": 5100,
+  "year": "2026/27",
+  "url": "https://www.upt.ro/educatie/licenta/taxa-studii",
+  "budgetFree": true
+ },
+ {
+  "id": "upv-valencia",
+  "currency": "EUR",
+  "min": 767,
+  "max": 1080,
+  "year": "2025/26",
+  "url": "https://www.uv.es/graus/normatives/autonomica/Decret%20taxes%202024-101%20de%202%20agost%202024%20generalitat.pdf"
+ },
+ {
+  "id": "uq",
+  "currency": "AUD",
+  "min": 48080,
+  "max": 60952,
+  "year": "2027",
+  "url": "https://study.uq.edu.au/study-options/programs/bachelor-arts-2000",
+  "note": "Sumele sunt din paginile câtorva programe; alte programe pot costa diferit."
+ },
+ {
+  "id": "us-bates-college",
+  "currency": "USD",
+  "min": 73760,
+  "max": 73760,
+  "year": "2026/27",
+  "url": "https://www.bates.edu/financial-services/costs-and-payment/",
+  "note": "Suma este partea de taxă de școlarizare din taxa unică (taxa unică include și cămin și masă)."
+ },
+ {
+  "id": "us-bowdoin-college",
+  "currency": "USD",
+  "min": 74268,
+  "max": 74268,
+  "year": "2026/27",
+  "url": "https://www.bowdoin.edu/admissions/costs-and-aid/index.html"
+ },
+ {
+  "id": "us-brandeis-university",
+  "currency": "USD",
+  "min": 73080,
+  "max": 73080,
+  "year": "2026/27",
+  "url": "https://www.brandeis.edu/student-financial-services/tuition-calculator/index.html"
+ },
+ {
+  "id": "us-case-western-reserve-university",
+  "currency": "USD",
+  "min": 71410,
+  "max": 71410,
+  "year": "2026/27",
+  "url": "https://case.edu/admission/cost-and-aid/tuition-and-costs"
+ },
+ {
+  "id": "us-katowice",
+  "currency": "PLN",
+  "min": 0,
+  "max": 0,
+  "year": "2025/26",
+  "url": "https://us.edu.pl/kandydat/en/cudzoziemcy/oplaty-za-studia/",
+  "note": "Gratuit pentru cetățenii UE, în poloneză și în engleză; rămâne taxa de înscriere."
+ },
+ {
+  "id": "us-macalester-college",
+  "currency": "USD",
+  "min": 74394,
+  "max": 74394,
+  "year": "2026/27",
+  "url": "https://www.macalester.edu/financial-aid/tuition/",
+  "note": "Suma include materialele de curs obligatorii."
+ },
+ {
+  "id": "us-northeastern-university",
+  "currency": "USD",
+  "min": 71050,
+  "max": 71050,
+  "year": "2026/27",
+  "url": "https://studentfinance.northeastern.edu/tuition-and-fees/",
+  "note": "Suma este pentru două semestre (toamnă și primăvară), fără taxele obligatorii."
+ },
+ {
+  "id": "us-ohio-state-university-main-campus",
+  "currency": "USD",
+  "min": 47374,
+  "max": 47374,
+  "year": "2026/27",
+  "url": "https://undergrad.osu.edu/cost-and-aid/basic-costs",
+  "note": "Suma include și taxele obligatorii ale universității."
+ },
+ {
+  "id": "us-pennsylvania-state-university-main-campus",
+  "currency": "USD",
+  "min": 44574,
+  "max": 44574,
+  "year": "2026/27",
+  "url": "https://www.psu.edu/news/administration/story/board-trustees-approves-2026-27-operating-budget-tuition-schedules",
+  "note": "Taxa crește în ultimii doi ani."
+ },
+ {
+  "id": "us-pomona-college",
+  "currency": "USD",
+  "min": 71660,
+  "max": 71660,
+  "year": "2026/27",
+  "url": "https://www.pomona.edu/financial-aid/cost-attendance"
+ },
+ {
+  "id": "us-purdue-university-main-campus",
+  "currency": "USD",
+  "min": 32104,
+  "max": 32104,
+  "year": "2026/27",
+  "url": "https://www.purdue.edu/treasurer/finance/bursar-office/tuition/fee-rates-2026-2027/undergraduate-tuition-and-fees-2026-2027/",
+  "note": "Suma include și taxele obligatorii ale universității."
+ },
+ {
+  "id": "us-rutgers-university-new-brunswick",
+  "currency": "USD",
+  "min": 36831,
+  "max": 36831,
+  "year": "2026/27",
+  "url": "https://admissions.rutgers.edu/costs-and-aid/tuition-fees",
+  "note": "Plus taxe obligatorii de aproximativ 4.008 $/an"
+ },
+ {
+  "id": "us-sevilla",
+  "currency": "EUR",
+  "min": 757,
+  "max": 757,
+  "year": "2025/26",
+  "url": "https://cat.us.es/sites/default/files/documentos/2025-10/boja-05-05-2023-y-modificacion-de-09-09-25.pdf"
+ },
+ {
+  "id": "us-swarthmore-college",
+  "currency": "USD",
+  "min": 72722,
+  "max": 72722,
+  "year": "2026/27",
+  "url": "https://www.swarthmore.edu/financial-aid/tuition-books-housing-food-plan-activities-fee",
+  "note": "Suma include un credit de 800 $ pentru manuale."
+ },
+ {
+  "id": "us-university-of-california-davis",
+  "currency": "USD",
+  "min": 54858,
+  "max": 54858,
+  "year": "2026/27",
+  "url": "https://financialaid.ucdavis.edu/undergraduate/cost/2627-entering"
+ },
+ {
+  "id": "us-university-of-california-irvine",
+  "currency": "USD",
+  "min": 54858,
+  "max": 54858,
+  "year": "2026/27",
+  "url": "https://www.ofas.uci.edu/cost/undergraduate-costs/new-students.php"
+ },
+ {
+  "id": "us-university-of-california-san-diego",
+  "currency": "USD",
+  "min": 54858,
+  "max": 54858,
+  "year": "2026/27",
+  "url": "https://students.ucsd.edu/finances/fees/registration/2026-27/index.html"
+ },
+ {
+  "id": "us-university-of-california-santa-barbara",
+  "currency": "USD",
+  "min": 54858,
+  "max": 54858,
+  "year": "2026/27",
+  "url": "https://www.finaid.ucsb.edu/costs-estimated-aid/cost-attendance/ucsb-undergraduate-cost-attendance-budget"
+ },
+ {
+  "id": "us-university-of-illinois-urbana-champaign",
+  "currency": "USD",
+  "min": 42248,
+  "max": 53078,
+  "year": "2026/27",
+  "url": "https://admissions.illinois.edu/invest/tuition",
+  "note": "Suma include și taxele obligatorii ale universității."
+ },
+ {
+  "id": "us-university-of-maryland-college-park",
+  "currency": "USD",
+  "min": 42266,
+  "max": 42266,
+  "year": "2026/27",
+  "url": "https://academiccatalog.umd.edu/undergraduate/fees-expenses-financial-aid/tuition-fees/",
+  "note": "Afaceri, inginerie, informatică (anii 3-4): +138 $ pe credit"
+ },
+ {
+  "id": "us-university-of-virginia-main-campus",
+  "currency": "USD",
+  "min": 57432,
+  "max": 57432,
+  "year": "2026/27",
+  "url": "https://www.virginia.edu/consumer-information/",
+  "note": "Suma include și taxele obligatorii ale universității."
+ },
+ {
+  "id": "us-university-of-washington-seattle-campus",
+  "currency": "USD",
+  "min": 44460,
+  "max": 44460,
+  "year": "2026/27",
+  "url": "https://admit.washington.edu/costs/coa/"
+ },
+ {
+  "id": "us-university-of-wisconsin-madison",
+  "currency": "USD",
+  "min": 44232,
+  "max": 44232,
+  "year": "2026/27",
+  "url": "https://bursar.wisc.edu/tuition-and-fees/fall-2026-increase",
+  "note": "Inginerie +3.200 $, Afaceri +3.000 $, Asistență medicală +1.500 $ pe an"
+ },
+ {
+  "id": "us-vassar-college",
+  "currency": "USD",
+  "min": 76140,
+  "max": 76140,
+  "year": "2026/27",
+  "url": "https://www.vassar.edu/admission/financial-aid/tuition/"
+ },
+ {
+  "id": "us-wake-forest-university",
+  "currency": "USD",
+  "min": 71894,
+  "max": 71894,
+  "year": "2026/27",
+  "url": "https://admissions.wfu.edu/afford/"
+ },
+ {
+  "id": "us-wellesley-college",
+  "currency": "USD",
+  "min": 72570,
+  "max": 72570,
+  "year": "2026/27",
+  "url": "https://www.wellesley.edu/admission-aid/student-financial-services/tuition-cost"
+ },
+ {
+  "id": "usal-salamanca",
+  "currency": "EUR",
+  "min": 625,
+  "max": 1107,
+  "year": "2024/25",
+  "url": "https://bocyl.jcyl.es/boletines/2024/06/03/pdf/BOCYL-D-03062024-2.pdf",
+  "note": "Prețurile din acest decret se aplică și în anii următori până la unul nou."
+ },
+ {
+  "id": "usamv-bucuresti",
+  "currency": "RON",
+  "min": 4000,
+  "max": 4000,
+  "year": "2026/27",
+  "url": "https://usamv.ro/wp-content/uploads/2026/03/Anexa-2-Cuantumul-taxei-de-studii-anul-I.pdf",
+  "note": "Medicină veterinară: 10.000 lei/an",
+  "budgetFree": true
+ },
+ {
+  "id": "usamv-cluj",
+  "currency": "RON",
+  "min": 4500,
+  "max": 4500,
+  "year": "2026/27",
+  "url": "https://admitere.usamvcluj.ro/studii-de-licenta/443-2/",
+  "note": "Medicină veterinară: 6.500 lei/an",
+  "budgetFree": true
+ },
+ {
+  "id": "usask",
+  "currency": "CAD",
+  "min": 39007,
+  "max": 59383,
+  "year": "2026/27",
+  "url": "https://admissions.usask.ca/money/tuition.php",
+  "note": "Farmacie, Drept și Stomatologie costă mai mult."
+ },
+ {
+  "id": "usc",
+  "currency": "USD",
+  "min": 75384,
+  "max": 75384,
+  "year": "2026/27",
+  "url": "https://financialaid.usc.edu/undergraduate/cost-of-attendance/"
+ },
+ {
+  "id": "usc-santiago",
+  "currency": "EUR",
+  "min": 591,
+  "max": 836,
+  "year": "2026/27",
+  "url": "https://www.usc.gal/gl/admision/prezos-titulacions-academicas"
+ },
+ {
+  "id": "usi-lugano",
+  "currency": "CHF",
+  "min": 10000,
+  "max": 10000,
+  "year": "2027/28",
+  "url": "https://www.usi.ch/en/education/tuition-and-scholarships",
+  "note": "Pentru cei înscriși înainte de 2027/28 se păstrează taxa mai mică de la înscriere."
+ },
+ {
+  "id": "usm-chisinau",
+  "currency": "MDL",
+  "min": 8000,
+  "max": 18000,
+  "year": "2025/26",
+  "url": "https://usm.md/wp-content/uploads/LISTA-TAXE-de-STUDII-2025-2026.pdf",
+  "note": "Taxa este în lei moldovenești (MDL); cetățenii României plătesc taxa stabilită pentru cetățenii Moldovei. Lista pentru 2026/27 nu există încă pe site."
+ },
+ {
+  "id": "ut-austin",
+  "currency": "USD",
+  "min": 42554,
+  "max": 51106,
+  "year": "2026/27",
+  "url": "https://catalog.utexas.edu/general-information/registration-tuition-and-fees/tuition-and-fees/tables-tuition-for-fall-and-spring/",
+  "note": "Planul opțional Longhorn Fixed Tuition are taxe mai mari, dar fixe pe toată perioada studiilor."
+ },
+ {
+  "id": "utad",
+  "currency": "EUR",
+  "min": 697,
+  "max": 697,
+  "year": "2026/27",
+  "url": "https://www.utad.pt/sa/inicio/propinas-para-ano-letivo-corrente/"
+ },
+ {
+  "id": "utb-zlin",
+  "currency": "CZK",
+  "min": 54000,
+  "max": 60000,
+  "year": "2027/28",
+  "url": "https://fai.utb.cz/en/study/how-to-study/degree-studies/bachelors-degree-studies/",
+  "note": "Studiile în limba cehă sunt gratuite."
+ },
+ {
+  "id": "utbm",
+  "currency": "EUR",
+  "min": 630,
+  "max": 630,
+  "year": "2026/27",
+  "url": "https://www.utbm.fr/admissions/inscription-cursus-ingenieur-2/",
+  "note": "Diploma de inginer: 630 €/an, taxă stabilită de stat."
+ },
+ {
+  "id": "utc-compiegne",
+  "currency": "EUR",
+  "min": 630,
+  "max": 630,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Diploma de inginer: 630 €/an, taxă stabilită de stat."
+ },
+ {
+  "id": "utcb",
+  "currency": "RON",
+  "min": 4200,
+  "max": 6600,
+  "year": "2026/27",
+  "url": "https://utcb.ro/descopera/taxe/",
+  "budgetFree": true
+ },
+ {
+  "id": "utcn",
+  "currency": "RON",
+  "min": 2940,
+  "max": 5400,
+  "year": "2026/27",
+  "url": "https://utcluj.ro/documente/5724fc42-b72d-4626-a90e-8e1cfeab0288/descarcare",
+  "budgetFree": true
+ },
+ {
+  "id": "uth-volos",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyingreece.edu.gr/bachelors/",
+  "note": "Programele în greacă sunt gratuite; Medicina în engleză este cu taxă."
+ },
+ {
+  "id": "utm",
+  "currency": "EUR",
+  "min": 900,
+  "max": 2450,
+  "year": "2026/27",
+  "url": "https://www.utm.ro/wp-content/uploads/2026/10/Regulament-Privind-Nomenclatorul-De-Taxe-Pentru-Anul-Universitar-2026-%E2%80%93-2027.pdf",
+  "note": "Medicină: 10.000 €/an în anul I (în engleză 13.500); Medicină dentară și Farmacie sunt de asemenea mult mai scumpe"
+ },
+ {
+  "id": "utrecht",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "utt-troyes",
+  "currency": "EUR",
+  "min": 630,
+  "max": 630,
+  "year": "2026/27",
+  "url": "https://www.utt.fr/formations/diplome-d-ingenieur/candidater-en-tronc-commun",
+  "note": "Diploma de inginer: 630 €/an, taxă stabilită de stat."
+ },
+ {
+  "id": "uv-valencia",
+  "currency": "EUR",
+  "min": 767,
+  "max": 1080,
+  "year": "2025/26",
+  "url": "https://www.uv.es/graus/normatives/autonomica/Decret%20taxes%202024-101%20de%202%20agost%202024%20generalitat.pdf"
+ },
+ {
+  "id": "uva",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "uvsq",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-06/montant-des-droits-de-scolarit-au-titre-de-l-ann-e-universitaire-2026-2027---tablissements-publics-relevant-du-ministre-charg-de-l-enseignement-superi-40672.pdf",
+  "note": "Taxa de 178 €/an este stabilită de stat; se adaugă contribuția CVEC (nu e taxă de școlarizare)."
+ },
+ {
+  "id": "uvt",
+  "currency": "RON",
+  "min": 4500,
+  "max": 6300,
+  "year": "2026/27",
+  "url": "https://uvt.ro/wp-content/uploads/sites/3/2026/08/Taxe-de-studiu-anul-univ.-2026-2027.pdf",
+  "note": "Muzică și Teatru: 10.000 lei/an (Muzică: 6.000). Plata integrală până la 31 octombrie 2026: reducere de 10%.",
+  "budgetFree": true
+ },
+ {
+  "id": "uvvg",
+  "currency": "RON",
+  "min": 5000,
+  "max": 10000,
+  "year": "2026/27",
+  "url": "https://uvvg.ro/taxe-de-studiu/",
+  "note": "Medicină: 40.000 lei/an; Medicină dentară: 29.000; Farmacie: 15.000"
+ },
+ {
+  "id": "uwe-bristol",
+  "currency": "GBP",
+  "min": 17500,
+  "max": 17500,
+  "year": "2027/28",
+  "url": "https://courses.uwe.ac.uk/G400/computer-science",
+  "note": "Interval din câteva programe; altele pot costa diferit."
+ },
+ {
+  "id": "valahia",
+  "currency": "RON",
+  "min": 4500,
+  "max": 4500,
+  "year": "2026/27",
+  "url": "https://fs.valahia.ro/wp-content/uploads/Cuantum-taxe.pdf",
+  "note": "Suma este de pe pagina Facultății de Științe și Arte; alte facultăți pot avea taxe diferite.",
+  "budgetFree": true
+ },
+ {
+  "id": "van-hall-larenstein",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "vanderbilt",
+  "currency": "USD",
+  "min": 69822,
+  "max": 69822,
+  "year": "2026/27",
+  "url": "https://www.vanderbilt.edu/stuaccts/fees/tuition_fees_2026-27_ugrd/"
+ },
+ {
+  "id": "venta-ventspils",
+  "currency": "EUR",
+  "min": 3000,
+  "max": 3500,
+  "year": "2027/28",
+  "url": "https://en.venta.lv/join-us/tuition-fees",
+  "note": "Taxa crește cu 3% în fiecare an următor."
+ },
+ {
+  "id": "via-uc",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://en.via.dk/programmes/bachelor/admissions-eu"
+ },
+ {
+  "id": "vilnius-university",
+  "currency": "EUR",
+  "min": 3250,
+  "max": 5000,
+  "year": "2026/27",
+  "url": "https://www.vu.lt/en/studies/bachelor-studies/software-engineering",
+  "note": "Asistent medical: 6.000 €/an; Medicină: 14.100 €/an; Stomatologie: 15.000 €/an."
+ },
+ {
+  "id": "vrije-universiteit-brussel",
+  "currency": "EUR",
+  "min": 1181,
+  "max": 1181,
+  "year": "2026/27",
+  "url": "https://www.vub.be/sites/default/files/2026-05/2025_Studiegeld_tarieven_EER_2627_ENG.pdf"
+ },
+ {
+  "id": "vsb-ostrava",
+  "currency": "CZK",
+  "min": 100000,
+  "max": 100000,
+  "year": "2026/27",
+  "url": "https://www.vsb.cz/en/study/admissions/tuition-fees/",
+  "note": "Studiile în limba cehă sunt gratuite."
+ },
+ {
+  "id": "vse-praga",
+  "currency": "EUR",
+  "min": 5000,
+  "max": 5000,
+  "year": "2023/24",
+  "url": "https://ibb.vse.cz/study-obligations/tuition-fee/",
+  "note": "Suma este pentru programul Bachelor of International Business (studenți admiși din 2023/24); alte programe pot costa diferit. Studiile în limba cehă sunt gratuite."
+ },
+ {
+  "id": "vu-amsterdam",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp",
+  "note": "Liberal Arts and Sciences: 5.580 €/an; Philosophy, Politics and Economics: 5.130 €/an"
+ },
+ {
+  "id": "vut-brno",
+  "currency": "EUR",
+  "min": 1000,
+  "max": 1000,
+  "year": "2027/28",
+  "url": "https://www.fekt.vut.cz/en/applicants/studies_in_english/fees",
+  "note": "Suma este pentru Facultatea de Inginerie Electrică și Comunicații; alte facultăți pot costa diferit. Studiile în limba cehă sunt gratuite."
+ },
+ {
+  "id": "vytautas-magnus",
+  "currency": "EUR",
+  "min": 3250,
+  "max": 5676,
+  "year": "2026/27",
+  "url": "https://www.vdu.lt/en/studies/degree-studies/tuition-fees/",
+  "note": "Muzică și Arte spectacol: 9.184 €/an."
+ },
+ {
+  "id": "wageningen",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp"
+ },
+ {
+  "id": "warwick",
+  "currency": "GBP",
+  "min": 29260,
+  "max": 37310,
+  "year": "2027/28",
+  "url": "https://warwick.ac.uk/services/finance/studentfinance/fees/overseasfees/",
+  "note": "Medicină (MBChB): 34.135 £/an în anul 1 și 59.495 £/an în anii 2-4"
+ },
+ {
+  "id": "washu",
+  "currency": "USD",
+  "min": 71310,
+  "max": 71310,
+  "year": "2026/27",
+  "url": "https://financialaid.washu.edu/costs/"
+ },
+ {
+  "id": "waterloo",
+  "currency": "CAD",
+  "min": 47196,
+  "max": 69884,
+  "year": "2026/27",
+  "url": "https://uwaterloo.ca/finance/fee-schedule-international-undergraduate-students-fall-2026",
+  "note": "Taxa este calculată pentru două semestre de studii pe an."
+ },
+ {
+  "id": "westminster",
+  "currency": "GBP",
+  "min": 19000,
+  "max": 19000,
+  "year": "2027/28",
+  "url": "https://www.westminster.ac.uk/computer-science-and-engineering-courses/2027-28/september/full-time/computer-science-bsc-honours",
+  "note": "Interval din câteva programe; altele pot costa diferit."
+ },
+ {
+  "id": "williams",
+  "currency": "USD",
+  "min": 76300,
+  "max": 76300,
+  "year": "2026/27",
+  "url": "https://www.williams.edu/admission-aid/tuition-aid/"
+ },
+ {
+  "id": "windesheim",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://www.windesheim.com/practical-information/finance"
+ },
+ {
+  "id": "wolverhampton",
+  "currency": "GBP",
+  "min": 17600,
+  "max": 18700,
+  "year": "2026/27",
+  "url": "https://www.wlv.ac.uk/international/making-an-application/international-fees/"
+ },
+ {
+  "id": "wu-wien",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20002128&Paragraf=91",
+  "note": "Taxa de școlarizare de 363,36 €/semestru se plătește doar după durata prevăzută a studiilor plus 2 semestre; până atunci se plătește doar cotizația ÖH (circa 26 €/semestru)."
+ },
+ {
+  "id": "yale",
+  "currency": "USD",
+  "min": 72500,
+  "max": 72500,
+  "year": "2026/27",
+  "url": "https://student-accounts.yale.edu/tuition-and-fees"
+ },
+ {
+  "id": "yonsei",
+  "currency": "KRW",
+  "min": 9326000,
+  "max": 16618000,
+  "year": "2026/27",
+  "url": "https://www.yonsei.ac.kr/sites/en_sc/down/2026_fee1.pdf",
+  "note": "În primul an, studenții internaționali învață la Global Leaders College (≈14.562.000 ₩/an); Medicină/Stomatologie: ≈15.806.000 ₩/an."
+ },
+ {
+  "id": "york",
+  "currency": "GBP",
+  "min": 27800,
+  "max": 33500,
+  "year": "2027/28",
+  "url": "https://www.york.ac.uk/study/undergraduate/courses/bsc-economics-and-management/",
+  "note": "Interval din câteva programe; altele pot costa diferit."
+ },
+ {
+  "id": "zealand-academy",
+  "currency": "DKK",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://studyindenmark.dk/study-options/tuition-fees-and-scholarships"
+ },
+ {
+  "id": "zuyd",
+  "currency": "EUR",
+  "min": 2694,
+  "max": 2694,
+  "year": "2026/27",
+  "url": "https://duo.nl/particulier/tuition-fees.jsp",
+  "note": "Hospitality Management (cu normă întreagă): 4.250 €/an"
+ }
+]

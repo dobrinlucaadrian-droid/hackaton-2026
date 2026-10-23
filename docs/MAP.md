@@ -192,7 +192,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/universitati/[id]  (1 files)
 
-- `page.tsx` (335) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
+- `page.tsx` (359) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/universitati  (1 files)
 
@@ -320,13 +320,14 @@ _Open only the files listed here; a file's description is its first comment line
 - `us-institutions.json`
 - `us-programs.jsonl.gz`
 
-### apps/web/data  (17 files)
+### apps/web/data  (18 files)
 
 - `categories.json` (13) — JSON array, 10 items
 - `curricula.json` (2190) — JSON array, 40 items
 - `curriculum-links.json` (288) — JSON array, 57 items
 - `domains.json` (43) — JSON array, 40 items
 - `faculties-ro.json`
+- `fees.json` (6608) — JSON array, 772 items
 - `guides.json` (3254) — JSON array, 32 items
 - `photo-rejects.json` (181) — JSON array, 178 items
 - `photos.json` (4683) — JSON array, 520 items
@@ -340,7 +341,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `universities-ro.json` (4201) — JSON array, 83 items
 - `university-sources.json`
 
-### apps/web/lib  (38 files)
+### apps/web/lib  (40 files)
 
 - `activities.test.ts` (57) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
 - `activities.ts` (73) — Activities a student can add (competitions, volunteering, extracurriculars): labels, areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, describeActivity
@@ -354,6 +355,8 @@ _Open only the files listed here; a file's description is its first comment line
 - `data.ts` (16) — Loads the small seeded JSON (profiles, questions, domains, specializations, categories, testimonials) as typed arrays. The universities are apart: lib/universities.ts (index, for the browser) and lib/sheets.ts (full sheets, server only).. Exports: profiles, questions, domains, specializations, categories, testimonials
 - `faculties.test.ts` (55) — Tests the faculty sheets: each one belongs to a real faculty of the official list, has valid values and official links, and gets a unique page address.
 - `faculties.ts` (24) — Profile sheets of Romanian faculties (data/faculties-ro.json) and the address of each one. Used on the server: by the faculty page and by the university page, which links to them.. Exports: faculties, facultySlug, facultyHref, facultiesOf, facultyBySlug
+- `fees.test.ts` (33) — Tests the exact tuition data: each entry belongs to a real sheet, has a known currency, a sane range, an academic year and an official link, and is written the way the sheet shows it.
+- `fees.ts` (75) — Exact yearly tuition of the university sheets (data/fees.json), each with its academic year and the official page it comes from; amounts in the university's own currency plus an approximate value in euro. Server only.. Exports: EUR_PER, feeOf, feeText
 - `guides.test.ts` (61) — Tests the country guides: complete texts, a country that has university sheets, official links, and no amounts or calendar dates (they change every year).
 - `guides.ts` (15) — Country guides ("how a Romanian student applies to bachelor studies in ..."), written from official pages and checked twice. Small: pages may import it freely.. Exports: guides, guideById, guideForCountry
 - `labels.ts` (77) — Romanian labels for the values on a university sheet, plus two small helpers every list uses. Kept apart from the university data so pages can use the labels without loading the sheets.. Exports: PRESTIGE_LABEL, BUDGET_LABEL, BUDGET_FILTER_LABEL, BUDGET_RANGE, BUDGET_EXPLAINED, ADMISSION_LABEL, CERTIFICATE_LABEL, normalize, …

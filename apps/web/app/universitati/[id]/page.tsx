@@ -13,6 +13,7 @@ import { BudgetBadge, PrestigeBadge } from "@/components/UniversityBadges";
 import { UniversityDomains } from "@/components/UniversityDomains";
 import { catalogCountryOfSheet } from "@/lib/catalog";
 import { curriculumLinkFor } from "@/lib/curricula";
+import { feeOf, feeText } from "@/lib/fees";
 import { testimonialsFor } from "@/lib/testimonials";
 import { domains } from "@/lib/data";
 import { facultiesOf, facultyHref } from "@/lib/faculties";
@@ -82,6 +83,7 @@ export default async function UniversityPage({ params }: Props) {
   const guide = guideForCountry(u.country); // the "how to apply" guide of this country, when there is one
   const catalog = catalogCountryOfSheet(u.id); // the country dataset that lists this university's programmes, if any
   const certs = u.certificates.map((c) => CERTIFICATE_LABEL[c]).filter(Boolean);
+  const fee = feeOf(u.id); // exact yearly tuition, only when an official page confirmed it
   const admission = u.admissionTypes.map((a) => ADMISSION_LABEL[a]).filter(Boolean);
   const hasPros = u.pros.length > 0 || u.cons.length > 0;
   const faculties = u.faculties ?? [];
@@ -175,6 +177,28 @@ export default async function UniversityPage({ params }: Props) {
               {u.budgetNote ? ` — ${u.budgetNote}` : ""}
             </p>
             {u.tuition && <p>Taxe: {u.tuition}</p>}
+            {fee && (
+              <div className="mt-2 rounded-2xl bg-primary-tint/60 p-4">
+                <p className="text-sm font-bold uppercase tracking-wide text-ink-soft">Taxa de școlarizare pe an ({fee.year})</p>
+                {fee.budgetFree && fee.max === 0 ? (
+                  <p className="mt-1 font-black text-ink">0 lei — doar locuri la buget</p>
+                ) : fee.budgetFree ? (
+                  <p className="mt-1 text-ink">
+                    <span className="font-black">0 lei la buget</span>; la locurile cu taxă:{" "}
+                    <span className="font-black">{feeText(fee)}</span>
+                  </p>
+                ) : (
+                  <p className="mt-1 font-black text-ink">{feeText(fee)}</p>
+                )}
+                {fee.note && <p className="mt-1">{fee.note}</p>}
+                <p className="mt-2 text-sm">
+                  <a href={fee.url} target="_blank" rel="noopener noreferrer" className="font-bold text-primary underline underline-offset-2">
+                    Pagina oficială cu taxele ↗
+                  </a>
+                  {fee.currency !== "EUR" && fee.max > 0 && " · suma în euro e orientativă"}
+                </p>
+              </div>
+            )}
           </Section>
           <div className="grid gap-4 sm:grid-cols-2">
             <Section title="Burse">

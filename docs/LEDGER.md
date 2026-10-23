@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-23 19:00 — taxa exactă pe an pe fiecare fișă
+- Cerut: sumele exacte ale taxelor pe toate fișele; echipa a ales: la statul român „0 lei la buget” + taxa la locurile cu taxă, moneda locală + aprox. în euro, interval min–max, iar fără sumă oficială rămâne doar nivelul
+- Făcut: locul de pe fișă („Cât costă” → „Taxa de școlarizare pe an (an universitar)”, cu linkul oficial), datele separat în `data/fees.json`, cursurile orientative în `lib/fees.ts`, teste; 20 de agenți au căutat sumele pe paginile oficiale și 20 de agenți le-au reverificat. Rezultat: 772 din 898 de fișe au suma exactă cu anul și linkul oficial; 126 rămân doar cu nivelul (site blocat, sumă neclară, fără an sau neconfirmată la a doua verificare). Anul poate fi și calendaristic (Australia, Asia). Nepotriviri sumă–nivel lăsate echipei: unisob, hotelschool-the-hague, vut-brno, sse-riga
+- Fișiere: `apps/web/lib/fees.ts`, `apps/web/lib/fees.test.ts`, `apps/web/data/fees.json`, `apps/web/app/universitati/[id]/page.tsx`
+- Poartă: TRECUT (gate.mjs cu 772 de sume; în browser: unibuc buget + taxă în lei, Oxford în lire pe telefon, TUM 0 €, UNSW an calendaristic, ANI doar buget, Sciences Po după venit)
+- Urmează: echipa decide cele 4 nepotriviri; sumele trebuie reverificate anual (la fiecare an universitar nou)
+
 ### 2026-10-23 13:00 — universități noi cu fișă completă
 - Cerut: cât mai multe universități renumite, doar din țările pe care le avem, cu fișă completă din surse oficiale (altfel sărite) și cu poză
 - Făcut: în trei runde, 147 de fișe noi (SUA 24, Germania 18, Spania 13, Franța 12, Marea Britanie 10, Australia 6, Polonia 6, Austria 6, Irlanda 6, Suedia 6, Canada 6, Belgia 5, Italia 4, Portugalia 4, Finlanda 4, Cehia 3, Norvegia 3, Letonia 2, Hong Kong 2 și câte una în Bulgaria, Elveția, Lituania, Coreea de Sud, Estonia, Grecia, Singapore); fiecare scrisă de un agent din paginile oficiale și reverificată de un al doilea agent (greșelile corectate, nesigurul scos); sursele în `university-sources.json`; instituțiile din catalog legate de fișa nouă (`hasSheet`); indexul refăcut. Poze de pe Wikimedia Commons pentru 82 dintre ele, fiecare văzută de mine; 13 poze proaste respinse (`photo-rejects.json`); celelalte nu au o poză bună liberă de drepturi. Universitățile fără date oficiale complete au fost sărite (lista cu motive în notele agenților)
@@ -947,6 +954,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-23 14:03 `8e52be8` feat: add 147 university sheets with official sources and photos
 - 2026-10-23 12:13 `60a3d62` feat: favourite heart on the university search cards
 - 2026-10-23 12:06 `c833f37` feat: search suggestions, phone menu, accessibility fixes, page titles
 - 2026-10-23 11:39 `23ff2fc` feat: keep the university search when coming back from a sheet
@@ -976,5 +984,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-14 03:00 `5dec06e` perf: render Romanian programme lists with the page
 - 2026-10-13 23:08 `c08b7a1` fix: recheck unconfirmed facts and audit the whole site
 - 2026-10-13 15:54 `01ecc44` feat: choose several cities in the university search
-- 2026-10-13 15:43 `c909e83` feat: add 367 double-checked faculty sheets for Romania
 <!-- commits:end -->
