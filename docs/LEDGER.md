@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-23 04:00 — poze pe fișe și a treia verificare a taxelor
+- Cerut: poze la universități și facultăți; continuarea verificării taxelor rămase
+- Făcut: (Poze) `scripts/data/photos.mjs` alege pentru fiecare fișă poza instituției din Wikidata (site oficial identic cu al nostru): poza principală dacă e lată și mare, altfel cea mai bună din categoria Commons cu numele clădirii (mărime, potrivire 16:9, insigne de calitate, vechime, lumină, contrast, claritate); doar licențe libere (fără NC/ND), fără logouri, hărți, interioare, evenimente; salvată 1280×720 WebP în `public/photos`, cu autorul, licența și linkul în `data/photos.json`. Toate pozele au fost apoi văzute de Claude una câte una; cele nepotrivite (oameni, interioare, semne, peisaje fără clădire) sunt în `data/photo-rejects.json` și nu se mai aleg. Rezultat: 438 din 751 de universități cu poză (30 din 83 în România), 53 MB. Poza apare sus (16:9) pe fișa universității și pe fișele facultăților ei, cu „Foto: autor · licență · Wikimedia Commons”; pagina „Surse de date” explică. (Taxe) a treia rundă, cu regulamente PDF și copii arhivate ale paginilor oficiale: 746 din 751 confirmate; schimbate cu aprobarea echipei Florența și Toruń (mică → medie); 5 rămase în `docs/taxe.md`
+- Fișiere: `scripts/data/photos.mjs`, `apps/web/data/photos.json`, `apps/web/public/photos/`, `apps/web/lib/photos.ts`, `apps/web/lib/photos.test.ts`, `apps/web/components/UniversityPhoto.tsx`, `apps/web/app/universitati/[id]/page.tsx`, `apps/web/app/universitati/[id]/[facultate]/page.tsx`, `apps/web/app/surse/page.tsx`, `apps/web/data/universities-abroad.json`, `apps/web/data/universities-index.json`, `docs/taxe.md`
+- Poartă: TRECUT (gate.mjs); local: poza și creditul apar pe fișa UBB și pe o fișă de facultate a ei
+- Urmează: lansarea, când hotărăște echipa
+
 ### 2026-10-23 02:20 — „Surse de date” scos din josul paginilor
 - Cerut: linkul „Surse de date” să nu mai fie în josul fiecărei pagini; rămâne doar „Confidențialitate”
 - Făcut: scos din subsolul comun (`components/Shell.tsx`). Pagina /surse rămâne (licențele datelor cer atribuirea), accesibilă din „De unde sunt datele” pe pagina „Programe de licență” și din linkurile mici de sub listele de programe de pe fișe
@@ -912,6 +919,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-23 01:57 `774d9f6` feat: keep only the privacy link in the page footer
 - 2026-10-23 01:53 `54da51b` feat: operator name and contact email on the privacy page
 - 2026-10-23 01:25 `abc6d65` feat: email code for admins, security emails on password change and deletion
 - 2026-10-22 02:47 `d1f4f32` docs: launch preparation, production database and settings ready
@@ -941,5 +949,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-13 11:54 `f850e61` feat: faculty sheets for Romania and a fact-check of all Romanian sheets
 - 2026-10-12 02:18 `64390f3` docs: production database ready, test address, site name shortlist
 - 2026-10-12 00:44 `efe2ff9` feat: lighter pages, several cities in the questionnaire, script fix
-- 2026-10-12 00:07 `35da68e` feat: welcome window to make an account or continue without one
 <!-- commits:end -->

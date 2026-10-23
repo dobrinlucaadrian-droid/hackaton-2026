@@ -71,6 +71,10 @@ export default function SourcesPage() {
       <Block title="Alte informații din aplicație">
         <p>Fișele universităților (descriere, admitere, costuri, plusuri și minusuri) sunt scrise de echipa FindMyUni și sunt orientative. Materiile pe ani sunt luate din câte un plan de învățământ oficial, cu link la fiecare. Părerile sunt ale studenților care le-au scris.</p>
       </Block>
+
+      <Block title="Fotografii">
+        <p>Fotografiile universităților sunt de pe Wikimedia Commons și au licențe libere (de exemplu Creative Commons sau domeniu public). Le-am ales pe cele mai potrivite (late, clare, cu clădirile universității), le-am micșorat și le-am decupat; sub fiecare fotografie scrie autorul, licența și linkul către original. Fișele facultăților folosesc fotografia universității lor.</p>
+      </Block>
     </Shell>
   );
 }

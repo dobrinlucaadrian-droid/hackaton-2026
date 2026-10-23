@@ -47,8 +47,14 @@ taxa 2026 nestabilită), uni-warszawa (tabel greu de citit), unisob (un singur p
 
 Corectat pe fișă: bournemouth — reducerea automată pentru UE începe abia pentru cei care încep în 2027.
 
-## Rămase neverificate (45)
+## A treia verificare (2026-10-23)
 
-Site-urile lor blochează accesul sau nu publică taxele; nivelul a rămas cel vechi:
+Reluate cele 45 rămase, citind regulamentele oficiale în PDF, monitoarele oficiale regionale și copii arhivate (web.archive.org) ale paginilor oficiale. Rezultat total: **746 din 751** fișe confirmate.
 
-apollonia, athenaeum, itp-cluj, timotheus, kcl, west-london, lincoln-uk, northampton, hull, polito, univr, unipr, uv-valencia, upv-valencia, usal-salamanca, um-malta, ua-alicante, unito, unimi, unifi, unimib, unipv, univpm, unicampania, unitn, unisi, unibs, unibg, uniparthenope, uer, uniroma4, ouc-nicosia, neapolis-pafos, sciences-po-bordeaux, sciences-po-lyon, sciences-po-lille, mcmaster, usmf-chisinau, umk-torun, palacky-olomouc, unwe-sofia, upsc-chisinau, usarb-balti, skku, acu
+Schimbate (aprobate de echipă): unifi mică → medie (taxă calculată automat pentru familiile din străinătate, România în grupa de venit mare); umk-torun mică → medie (programele în engleză).
+
+Nesigure, nefăcute: univpm (fără taxă doar dacă nu se depun acte de venit), usmf-chisinau (nu e clar dacă românii plătesc ca moldovenii), ouc-nicosia (taxă pe modul, două programe citite), sciences-po-bordeaux/lyon/lille (taxa depinde de venit).
+
+## Rămase neverificate (5)
+
+itp-cluj, timotheus, neapolis-pafos, unwe-sofia, usarb-balti

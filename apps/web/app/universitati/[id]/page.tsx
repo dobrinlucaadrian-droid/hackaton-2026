@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FavoriteButton } from "@/components/FavoriteButton";
+import { UniversityPhoto } from "@/components/UniversityPhoto";
 import { OfficialPrograms } from "@/components/OfficialPrograms";
 import { ProgramGroups } from "@/components/ProgramGroups";
 import { Shell } from "@/components/Shell";
@@ -99,6 +100,8 @@ export default async function UniversityPage({ params }: Props) {
         <Link href="/universitati" className="inline-flex min-h-11 items-center rounded-full border-2 border-primary px-5 py-2 font-bold text-primary transition hover:bg-primary-tint">
           ← Înapoi la universități
         </Link>
+
+        <UniversityPhoto universityId={u.id} alt={`${u.name}, ${u.city}`} />
 
         <header className="rise mt-5">
           <h1 className="text-3xl font-black leading-tight tracking-tighter text-ink sm:text-5xl">{u.name}</h1>

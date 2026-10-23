@@ -16931,7 +16931,7 @@
   "tuition": "programele de licență în engleză au taxă pe semestru; la universitățile publice din Polonia studiile cu frecvență în poloneză sunt fără taxă pentru cetățenii UE",
   "about": "Universitate publică din Toruń, cu 16 facultăți și peste o sută de programe de studiu; partea de medicină (Collegium Medicum) este la Bydgoszcz. La Toruń are cinci licențe în engleză: chimie, studii engleze, management, economie digitală și studii de sustenabilitate urbană.",
   "prestige": "national",
-  "budget": "mic",
+  "budget": "mediu",
   "budgetNote": "Programele în engleză au o taxă pe semestru, publicată într-o listă de prețuri, la un nivel mic față de vestul Europei; întreabă universitatea ce se aplică unui cetățean UE. Studiile cu frecvență în poloneză sunt fără taxă pentru cetățenii UE.",
   "admissionTypes": [
    "dosar",
@@ -19602,8 +19602,8 @@
   "tuition": "cu taxă, în funcție de venitul familiei, pentru studenții din UE",
   "about": "Universitate publică mare din Florența, cu sedii în mai multe locuri din oraș, un campus științific la Sesto Fiorentino și sedii la Prato, Empoli, Pistoia și Calenzano. Predă aproape toate domeniile, inclusiv arhitectură, inginerie, medicină, agronomie și științe umaniste.",
   "prestige": "international",
-  "budget": "mic",
-  "budgetNote": "Taxa depinde de venitul familiei (ISEE) și de cât de regulat îți dai examenele; fără declarația de venit poți plăti suma maximă. Pe site există un simulator de taxă.",
+  "budget": "mediu",
+  "budgetNote": "Pentru familiile cu venituri în străinătate, universitatea calculează taxa după grupa de venit a țării, iar pentru România iese o taxă medie; taxa depinde și de cât de regulat îți dai examenele. Pe site există un simulator de taxă.",
   "admissionTypes": [
    "examen",
    "dosar"

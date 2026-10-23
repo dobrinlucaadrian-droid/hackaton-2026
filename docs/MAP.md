@@ -171,7 +171,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/surse  (1 files)
 
-- `page.tsx` (77) — Data sources page: where the catalogue of universities and programmes comes from, country by country, how it was built and what its limits are.. Routes: /surse. Exports: metadata, SourcesPage
+- `page.tsx` (81) — Data sources page: where the catalogue of universities and programmes comes from, country by country, how it was built and what its limits are.. Routes: /surse. Exports: metadata, SourcesPage
 
 ### apps/web/app/test  (1 files)
 
@@ -179,17 +179,17 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/universitati/[id]/[facultate]  (1 files)
 
-- `page.tsx` (119) — Profile sheet of one Romanian faculty: what you study there, how you get in, its bachelor programmes from the official list and the official links.. Routes: /universitati/[id]/[facultate]. Exports: generateStaticParams, generateMetadata, FacultyPage
+- `page.tsx` (122) — Profile sheet of one Romanian faculty: what you study there, how you get in, its bachelor programmes from the official list and the official links.. Routes: /universitati/[id]/[facultate]. Exports: generateStaticParams, generateMetadata, FacultyPage
 
 ### apps/web/app/universitati/[id]  (1 files)
 
-- `page.tsx` (333) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
+- `page.tsx` (336) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/universitati  (1 files)
 
 - `page.tsx` (29) — University finder page: search box, filters and the results, 10 at a time (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
 
-### apps/web/components  (40 files)
+### apps/web/components  (41 files)
 
 - `ActivitiesStep.tsx` (227) — Quiz step "Ce ai făcut până acum?": add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
 - `ActivitiesSummary.tsx` (33) — Read-only list of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
@@ -225,12 +225,13 @@ _Open only the files listed here; a file's description is its first comment line
 - `UniversityDomains.tsx` (87) — "Ce poți studia aici" on a university sheet: tapping a domain opens, on the same page, its specializations and the subjects per year.. Exports: UniversityDomains
 - `UniversityList.tsx` (48) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList
 - `UniversityOpinions.tsx` (32) — "Ce spun studenții" on a university sheet: the opinions about this university, including approved ones from the database. Renders nothing when there are none.. Exports: UniversityOpinions
+- `UniversityPhoto.tsx` (25) — A university's photo at the top of its sheet, with the author and licence underneath (the free licences of Wikimedia Commons require them).. Exports: UniversityPhoto
 - `UniversitySearch.tsx` (466) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
 - `VisitTracker.tsx` (38) — Counts page views anonymously: sends only the page path and, on the first page of a visit, the country and the site the visitor came from. No cookie, no stored id.. Exports: VisitTracker
 - `WelcomeActions.tsx` (40) — The two choices under the welcome on the home page: make an account (opens the account window) or go on without one (scrolls to the big buttons). Signed-in visitors see a greeting with their name instead (the account is in the top menu).. Exports: WelcomeActions
 - `WelcomeDialog.tsx` (63) — Account window: opens over the current page when the home page's "Intră în cont" button or the result page's account card is pressed, with the account form (sign in, new account, forgotten password). It never opens by itself.. Exports: openSignIn, WelcomeDialog
 - `WhatIf.tsx` (69) — Collapsible "Ce-ar fi dacă?" panel: one slider per inclination, controlled by the result page.. Exports: WhatIf
-- `domainStyle.ts` (67) — Colour family and emoji for every study domain id, used on the result cards.. Exports: FAMILY_CLASSES, domainStyle
+- … +1 more
 
 ### apps/web/convex/_generated  (5 files)
 
@@ -310,7 +311,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `us-institutions.json`
 - `us-programs.jsonl.gz`
 
-### apps/web/data  (15 files)
+### apps/web/data  (17 files)
 
 - `categories.json` (13) — JSON array, 10 items
 - `curricula.json` (2190) — JSON array, 40 items
@@ -318,6 +319,8 @@ _Open only the files listed here; a file's description is its first comment line
 - `domains.json` (43) — JSON array, 40 items
 - `faculties-ro.json`
 - `guides.json` (3254) — JSON array, 32 items
+- `photo-rejects.json` (168) — JSON array, 165 items
+- `photos.json` (3945) — JSON array, 438 items
 - `profiles.json` (15) — JSON array, 12 items
 - `questions.json` (729) — JSON array, 18 items
 - `ro-cities.json` (25) — JSON array, 22 items
@@ -328,7 +331,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `universities-ro.json` (4201) — JSON array, 83 items
 - `university-sources.json`
 
-### apps/web/lib  (34 files)
+### apps/web/lib  (36 files)
 
 - `activities.test.ts` (57) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
 - `activities.ts` (73) — Activities a student can add (competitions, volunteering, extracurriculars): labels, areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, describeActivity
@@ -349,6 +352,8 @@ _Open only the files listed here; a file's description is its first comment line
 - `match.ts` (178) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: matchDomains, studentTraits, matchByTraits
 - `name.ts` (12) — The one rule for a person's full name, used by the sign-in form, the account page and the server.. Exports: NAME_MAX, cleanName
 - `pendingSave.ts` (60) — Keeps a questionnaire result or a hearted university on this device while the student signs in or makes an account, so it can be saved to the account afterwards.. Exports: setPendingResult, setPendingFavorite, takePendingFavorite, takePendingResult
+- `photos.test.ts` (28) — Tests the university photos: each one belongs to a real sheet, its file is in public/photos, its licence is free (no NC/ND) and it carries an author and a link to Wikimedia Commons.
+- `photos.ts` (12) — Freely licensed photos of the universities (Wikimedia Commons, saved small in public/photos by scripts/data/photos.mjs), with the author and licence the page must show. Server only.. Exports: photoOf
 - `roPrograms.test.ts` (29) — Tests the programme lists the Romanian sheets render on the server: every faculty sheet finds its programmes and the rows carry only what a page shows.
 - `roPrograms.ts` (24) — The Romanian bachelor programmes from the official list, read straight from the catalogue file so a sheet can show them without waiting for the database. Large: import it only from server code (the university and faculty pages) and from tests.. Exports: roProgramsOf, roProgramsOfFaculty
 - `seo.test.ts` (38) — Tests the search-engine helpers: descriptions are trimmed at a word, and the sitemap lists every public sheet once, on the official address, never a personal page.
@@ -370,6 +375,50 @@ _Open only the files listed here; a file's description is its first comment line
 - `logo.jpg`
 - `logo.png`
 - `world-universities.json`
+
+### apps/web/public/photos  (438 files)
+
+- `aalborg.webp`
+- `aalto.webp`
+- `aarhus-architecture.webp`
+- `aarhus.webp`
+- `absalon.webp`
+- `acu.webp`
+- `agh-krakow.webp`
+- `ahk-amsterdam.webp`
+- `aix-marseille.webp`
+- `amherst.webp`
+- `amtap-chisinau.webp`
+- `anglia-ruskin.webp`
+- `arte-iasi.webp`
+- `artez.webp`
+- `ase-bucuresti.webp`
+- `asem-chisinau.webp`
+- `aston.webp`
+- `aubg-blagoevgrad.webp`
+- `aueb-atena.webp`
+- `auth-salonic.webp`
+- `bangor.webp`
+- `bath.webp`
+- `bht-berlin.webp`
+- `birmingham-city.webp`
+- `birmingham.webp`
+- `boku-wien.webp`
+- `bordeaux-montaigne.webp`
+- `bourgogne-europe.webp`
+- `bournemouth.webp`
+- `bretagne-sud.webp`
+- `bristol.webp`
+- `brown.webp`
+- `buas.webp`
+- `business-academy-aarhus.webp`
+- `cardiff-met.webp`
+- `cardiff.webp`
+- `carnegie-mellon.webp`
+- `cbs.webp`
+- `chalmers.webp`
+- `che-ede.webp`
+- … +398 more
 
 ### apps/web/public/studenti  (20 files)
 

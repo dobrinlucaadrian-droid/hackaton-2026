@@ -10,6 +10,7 @@ import { ADMISSION_LABEL } from "@/lib/labels";
 import { roProgramsOfFaculty } from "@/lib/roPrograms";
 import { universityById } from "@/lib/sheets";
 import { clip } from "@/lib/seo";
+import { UniversityPhoto } from "@/components/UniversityPhoto";
 
 type Props = { params: Promise<{ id: string; facultate: string }> };
 
@@ -57,6 +58,8 @@ export default async function FacultyPage({ params }: Props) {
         <Link href={`/universitati/${u.id}`} className="inline-flex min-h-11 items-center rounded-full border-2 border-primary px-5 py-2 font-bold text-primary transition hover:bg-primary-tint">
           ← {u.name}
         </Link>
+
+        <UniversityPhoto universityId={u.id} alt={`${u.name}, ${u.city}`} />
 
         <header className="rise mt-5">
           <p className="text-sm font-extrabold uppercase tracking-wide text-primary">Fișa facultății</p>
