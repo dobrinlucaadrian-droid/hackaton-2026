@@ -1,6 +1,9 @@
 // Sign-in page: reached when a page needs an account (for example "Contul meu"). Everyday sign-in happens in the account window; this page shows the same form.
+import type { Metadata } from "next";
 import { Shell } from "@/components/Shell";
 import { SignInForm } from "@/components/SignInForm";
+
+export const metadata: Metadata = { title: "Conectare | FindMyUni", robots: { index: false } };
 
 export default function SignInPage() {
   return (

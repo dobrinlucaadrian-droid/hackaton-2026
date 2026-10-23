@@ -189,3 +189,24 @@ export function searchWorld(list: WorldUniversity[], query: string, limit = 20):
   hits.sort((a, b) => Number(b.prefix) - Number(a.prefix)); // stable: keeps list order inside each group
   return hits.slice(0, limit).map((h) => h.w);
 }
+
+/** One line under the search box while typing: a university (opens its sheet) or a city / country (searches that place). */
+export type Suggestion = { label: string; sub: string; href?: string; query?: string };
+
+/** Up to 2 matching places and up to 6 universities for what the student has typed so far (from 2 letters; diacritics do not matter). */
+export function suggest(query: string): Suggestion[] {
+  const q = normalize(query).trim();
+  if (q.length < 2) return [];
+  const starts = (text: string) => normalize(text).split(/[\s-]+/).some((w) => w.startsWith(q)) || normalize(text).startsWith(q);
+  const places: Suggestion[] = [];
+  for (const c of countries()) if (places.length < 2 && starts(c)) places.push({ label: c, sub: "Țară · toate universitățile de acolo", query: c });
+  const cities = new Map<string, string>();
+  for (const u of universities) if (!cities.has(u.city) && starts(u.city)) cities.set(u.city, u.country);
+  for (const [city, country] of cities) if (places.length < 2) places.push({ label: city, sub: `Oraș, ${country} · toate universitățile de acolo`, query: city });
+  // Romanian universities first (the site is for Romanian pupils), keeping the search order inside each group.
+  const found = searchUniversities(query, 40);
+  const unis = [...found.filter((u) => u.region === "ro"), ...found.filter((u) => u.region !== "ro")]
+    .slice(0, 6)
+    .map((u) => ({ label: u.name, sub: `${u.city}, ${u.country}`, href: `/universitati/${u.id}` }));
+  return [...places, ...unis];
+}

@@ -6,7 +6,7 @@ import { categories, domains } from "@/lib/data";
 import type { AdmissionType, Budget, CertificateId, Filters, Prestige, WorldUniversity } from "@/lib/types";
 import { ADMISSION_LABEL, BUDGET_EXPLAINED, BUDGET_RANGE, BUDGET_FILTER_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, PRESTIGE_LABEL } from "@/lib/labels";
 import { rememberSearch } from "@/lib/lastSearch";
-import { citiesIn, countries, filterUniversities, searchUniversities, searchWorld } from "@/lib/universities";
+import { citiesIn, countries, filterUniversities, searchUniversities, searchWorld, suggest } from "@/lib/universities";
 import { SearchBox } from "./SearchBox";
 import { UniversityCard } from "./UniversityCard";
 
@@ -219,7 +219,7 @@ export function UniversitySearch() {
 
   return (
     <div>
-      <SearchBox key={q} initial={q} id="cauta-uni" onSearch={(v) => setParam("q", v || undefined)} />
+      <SearchBox key={q} initial={q} id="cauta-uni" suggest={suggest} onSearch={(v) => setParam("q", v || undefined)} />
 
       <div className="mt-4 grid gap-4 sm:grid-cols-2">
         <div>

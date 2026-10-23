@@ -157,7 +157,7 @@ export function SignInForm({ idPrefix = "", startWith = "signIn" }: { idPrefix?:
 
   return (
     <div data-account-form={mode}>
-      <h3 className="mt-6 text-xl font-black tracking-tight text-ink">{TITLE[mode]}</h3>
+      <h2 className="mt-6 text-xl font-black tracking-tight text-ink">{TITLE[mode]}</h2>
       {info && (
         <p className="mt-2 rounded-2xl bg-primary-tint p-3 text-sm text-primary-dark" role="status">
           {info}

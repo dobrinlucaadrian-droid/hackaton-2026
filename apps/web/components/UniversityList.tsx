@@ -24,7 +24,7 @@ export function UniversityList({ title, items, abroad, allHref }: { title: strin
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`Site-ul ${u.name} (se deschide într-o pagină nouă)`}
-                className="shrink-0 rounded-lg px-2 py-1 text-sm font-semibold text-ink-soft hover:text-primary"
+                className="inline-flex min-h-11 shrink-0 items-center rounded-lg px-3 text-sm font-semibold text-ink-soft hover:text-primary"
               >
                 Site ↗
               </a>

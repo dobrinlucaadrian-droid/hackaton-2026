@@ -15,9 +15,10 @@ const LINKS = [
 export function NavLinks() {
   const path = usePathname();
   const { isAuthenticated } = useConvexAuth();
+  // On a phone the links wrap onto a second row instead of hiding off-screen to the right.
   return (
-    <nav aria-label="Navigare principală" className="-mx-1 max-w-full overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-      <ul className="flex items-center gap-1 whitespace-nowrap px-1">
+    <nav aria-label="Navigare principală" className="-mx-1 w-full sm:w-auto">
+      <ul className="flex flex-wrap items-center gap-1 px-1">
         {[...LINKS, ...(isAuthenticated ? ([["/cont", "Contul meu"]] as const) : [])].map(([href, label]) => {
           const on = href === "/" ? path === "/" : path === href || path.startsWith(`${href}/`);
           return (

@@ -10,7 +10,7 @@ export default function Home() {
       <section className="mt-2 grid items-center gap-4 md:grid-cols-2">
         <div className="rise text-center md:text-left">
           <h1 className="mt-4 text-4xl font-black leading-[0.95] tracking-tighter text-ink sm:text-5xl lg:text-6xl">
-            Bine ai venit pe <span className="text-primary">FindMy</span><span className="text-teal">Uni</span>!
+            Bine ai venit pe <span className="text-primary">FindMy</span><span className="text-[#a8761a]">Uni</span>!
           </h1>
           <p className="mx-auto mt-4 max-w-md text-lg text-ink-soft md:mx-0">
             Ghidul tău între liceu și facultate: afli ce să studiezi și unde. Poți folosi tot site-ul fără cont; cu un cont gratuit îți păstrezi rezultatul chestionarului.

@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-23 07:00 — sugestii în căutare, verificarea pe telefon și accesibilitate
+- Cerut: (5) sugestii în timp ce scrii; (3) verificare pe telefon; (6) accesibilitate; reparat direct ce e mic
+- Făcut: (Sugestii) sub căsuța de căutare a universităților apar, de la 2 litere și fără diacritice, cel mult 2 locuri (oraș sau țară; clic caută acolo) și 6 universități (românești întâi; clic deschide fișa); merge cu săgețile, Enter și Escape și e anunțată corect de cititoarele de ecran (combobox). (Verificare) toate paginile la 375 px, cu un control automat (ieșire în lateral, butoane mici, text mic, imagini fără descriere, câmpuri fără etichetă, contrast, titluri) plus privit cu ochiul; build-ul real verificat separat (dublurile de pagină din dezvoltare nu există acolo). Reparat: meniul de sus se rupe pe două rânduri pe telefon (înainte „Chestionar”, „Studenți” și „Contul meu” erau ascunse în dreapta); auriul mare „Uni” mai închis (contrast 3,5:1); linkurile „Site ↗” de 44 px; titlul formularului de cont e nivel 2 (nu mai sare de la 1 la 3); titluri proprii în tab pentru chestionar, rezultat, conectare, formularul de păreri, cont și administrare (cont, conectare și administrare marcate „nu indexa”); textul din căsuța de căutare scurtat ca să încapă pe telefon
+- Fișiere: `apps/web/components/SearchBox.tsx`, `apps/web/components/UniversitySearch.tsx`, `apps/web/lib/universities.ts`, `apps/web/lib/suggest.test.ts`, `apps/web/components/NavLinks.tsx`, `apps/web/app/page.tsx`, `apps/web/components/UniversityList.tsx`, `apps/web/components/SignInForm.tsx`, `apps/web/app/conectare/page.tsx`, `apps/web/app/test/layout.tsx`, `apps/web/app/quiz/layout.tsx`, `apps/web/app/rezultat/layout.tsx`, `apps/web/app/studenti/parere/layout.tsx`, `apps/web/app/cont/layout.tsx`, `apps/web/app/admin/layout.tsx`
+- Poartă: TRECUT (gate.mjs); local: „poli” → Politehnicile românești, săgeată jos + Enter → fișa UPB; meniul pe telefon pe două rânduri, fără ieșire în lateral
+- Urmează: lansarea, când hotărăște echipa
+
 ### 2026-10-23 06:00 — căutarea de universități rămâne la întoarcere
 - Cerut: după ce intri pe o universitate și te întorci, căutarea să nu se mai șteargă
 - Făcut: butonul „← Înapoi la universități” de pe fișă ducea la căutarea goală; acum duce la ultima căutare din fila browserului (`components/BackToSearch.tsx`, `lib/lastSearch.ts`). Și numărul de rezultate deschise cu „Arată încă 10” se păstrează în adresă (`?arata=20`), așa că și butonul „înapoi” al browserului readuce aceeași listă; o căutare sau un filtru nou pornește iar de la 10
@@ -926,6 +933,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-23 11:39 `23ff2fc` feat: keep the university search when coming back from a sheet
 - 2026-10-23 11:33 `0e5c950` feat: freely licensed university photos on sheets, third fee check
 - 2026-10-23 01:57 `774d9f6` feat: keep only the privacy link in the page footer
 - 2026-10-23 01:53 `54da51b` feat: operator name and contact email on the privacy page
@@ -955,5 +963,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-13 15:43 `c909e83` feat: add 367 double-checked faculty sheets for Romania
 - 2026-10-13 14:48 `b977652` fix: fact-check the 320 university sheets from abroad
 - 2026-10-13 11:54 `f850e61` feat: faculty sheets for Romania and a fact-check of all Romanian sheets
-- 2026-10-12 02:18 `64390f3` docs: production database ready, test address, site name shortlist
 <!-- commits:end -->
