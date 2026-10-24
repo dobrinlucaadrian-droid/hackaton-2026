@@ -159,27 +159,36 @@ export function feeFrom(u: UniversitySummary): number {
   return u.feeFromEur ?? LEVEL_FROM_EUR[u.budget];
 }
 
+/** The team's choice (2026-10-24) of the Romanian universities shown first, in this order, when a list holds only Romanian universities. */
+export const RO_FIRST = ["ase-bucuresti", "upb", "umf-carol-davila", "unibuc", "ubb-cluj", "uaic", "utcn", "uvt", "upt", "umf-cluj"];
+const roFirstRank = (u: UniversitySummary) => {
+  const i = RO_FIRST.indexOf(u.id);
+  return i < 0 ? RO_FIRST.length : i;
+};
+
 /** The best universities for the given filters (all conditions together), at most `limit`, best first. */
 export function filterUniversities(filters: Filters, limit = 10): UniversitySummary[] {
   const maxBudget = filters.budget ? BUDGET_ORDER.indexOf(filters.budget) : -1;
   const maxPrestige = filters.prestige && filters.prestige !== "national" ? PRESTIGE_ORDER.indexOf(filters.prestige) : -1;
-  return universities
-    .filter((u) => {
-      if (filters.country && u.country !== filters.country) return false;
-      if (filters.region && u.region !== filters.region) return false;
-      if (filters.cities?.length && !filters.cities.includes(u.city)) return false;
-      if (filters.domainId && !u.domainIds.includes(filters.domainId)) return false;
-      if (maxBudget >= 0 && BUDGET_ORDER.indexOf(u.budget) > maxBudget) return false;
-      if (filters.maxFee !== undefined && feeFrom(u) > filters.maxFee) return false;
-      if (maxPrestige >= 0 && PRESTIGE_ORDER.indexOf(u.prestige) > maxPrestige) return false;
-      if (filters.admissionType && !u.admissionTypes.includes(filters.admissionType)) return false;
-      if (filters.scholarships && !u.scholarships) return false;
-      if (filters.dorms && !u.dorms) return false;
-      if (filters.withoutCertificate && u.certificates.includes(filters.withoutCertificate)) return false;
-      return true;
-    })
+  const found = universities.filter((u) => {
+    if (filters.country && u.country !== filters.country) return false;
+    if (filters.region && u.region !== filters.region) return false;
+    if (filters.cities?.length && !filters.cities.includes(u.city)) return false;
+    if (filters.domainId && !u.domainIds.includes(filters.domainId)) return false;
+    if (maxBudget >= 0 && BUDGET_ORDER.indexOf(u.budget) > maxBudget) return false;
+    if (filters.maxFee !== undefined && feeFrom(u) > filters.maxFee) return false;
+    if (maxPrestige >= 0 && PRESTIGE_ORDER.indexOf(u.prestige) > maxPrestige) return false;
+    if (filters.admissionType && !u.admissionTypes.includes(filters.admissionType)) return false;
+    if (filters.scholarships && !u.scholarships) return false;
+    if (filters.dorms && !u.dorms) return false;
+    if (filters.withoutCertificate && u.certificates.includes(filters.withoutCertificate)) return false;
+    return true;
+  });
+  const onlyRomanian = found.length > 0 && found.every((u) => u.region === "ro");
+  return found
     .sort(
       (a, b) =>
+        (onlyRomanian ? roFirstRank(a) - roFirstRank(b) : 0) ||
         PRESTIGE_ORDER.indexOf(a.prestige) - PRESTIGE_ORDER.indexOf(b.prestige) ||
         BUDGET_ORDER.indexOf(a.budget) - BUDGET_ORDER.indexOf(b.budget) ||
         a.name.localeCompare(b.name, "ro"),

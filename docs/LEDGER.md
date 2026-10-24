@@ -21,6 +21,20 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-24 12:30 — primele 10 universități din România, în ordinea echipei
+- Cerut: lista din România să înceapă cu ASE, apoi Politehnica; echipa a ales ordinea primelor 10
+- Făcut: `RO_FIRST` în `lib/universities.ts`: ASE, Politehnica București, UMF „Carol Davila”, Universitatea din București, Babeș-Bolyai, UAIC, UTCN, UVT, Politehnica Timișoara, UMF Cluj. Se aplică doar când lista are numai universități din România (filtrul „În România”, țara România sau orașe românești); lista mixtă rămâne ca înainte
+- Fișiere: `apps/web/lib/universities.ts`, `apps/web/lib/universities.data.test.ts`
+- Poartă: TRECUT (gate.mjs; în browser: „În România” începe cu cele 10, în ordinea aleasă)
+- Urmează: salvare cu /git-workflow
+
+### 2026-10-24 12:00 — ordonarea „Cele mai ieftine” încercată și scoasă; taxa Artifex corectată
+- Cerut: rezultatele ordonate după taxă; după ce a văzut-o, echipa a cerut s-o scoatem (universitățile renumite ajungeau prea jos; filtrul „Cât poți plăti pe an?” ajunge)
+- Făcut: ordonarea a fost scoasă complet (codul revine la cel salvat). Rămâne doar corectura de date: Artifex 7.200 lei/an, anul 1 gratuit doar cu condiția terminării celor 3 ani (în notă)
+- Fișiere: `apps/web/data/fees.json`, `apps/web/data/universities-index.json`
+- Poartă: TRECUT (gate.mjs; în browser: butoanele de ordine nu mai apar, România începe iar cu ASE, UAIC, UBB)
+- Urmează: salvare cu /git-workflow
+
 ### 2026-10-24 11:00 — numărul de universități la fiecare oraș
 - Cerut: la orașele din filtrul de pe „Universități” să scrie câte instituții are fiecare; ales: numărul în buton, după nume, și toate universitățile orașului (nu doar cele din filtre)
 - Făcut: `cityCounts()` numără universitățile pe oraș pentru țara sau regiunea aleasă; butonul arată „București 29”, iar cititorul de ecran aude „București, 29 universități”
@@ -968,6 +982,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-24 21:49 `eacbed4` feat: show how many universities each city has in the city filter
 - 2026-10-24 03:19 `d70a411` feat: filter universities by the yearly tuition they start from
 - 2026-10-23 23:40 `9723d41` feat: show the exact yearly tuition on 772 university sheets
 - 2026-10-23 14:03 `8e52be8` feat: add 147 university sheets with official sources and photos
@@ -997,5 +1012,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-19 01:53 `ec9d731` feat: rename the site to FindMyUni
 - 2026-10-15 02:33 `b9900d1` feat: at least ten university sheets per country where data allows
 - 2026-10-14 12:18 `36c9928` feat: country guides and 236 new university sheets in six countries
-- 2026-10-14 03:00 `5dec06e` perf: render Romanian programme lists with the page
 <!-- commits:end -->

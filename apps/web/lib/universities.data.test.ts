@@ -4,7 +4,7 @@ import feesJson from "../data/fees.json";
 import { domains } from "./data";
 import { EUR_PER } from "./fees";
 import { universities, universityById } from "./sheets";
-import { feeFrom, filterUniversities, searchUniversities, universities as summaries } from "./universities";
+import { feeFrom, filterUniversities, RO_FIRST, searchUniversities, universities as summaries } from "./universities";
 
 const IVY = ["harvard", "yale", "princeton", "columbia", "upenn", "brown", "dartmouth", "cornell"];
 
@@ -107,6 +107,16 @@ describe("fee filter", () => {
     expect(free.every((u) => feeFrom(u) === 0)).toBe(true);
     expect(free.some((u) => u.id === "tum")).toBe(true);
     expect(filterUniversities({ maxFee: 1_000_000 }, 10000).length).toBe(summaries.length);
+  });
+});
+
+describe("Romanian lists", () => {
+  it("start with the team's chosen universities, in their order, only when the list is all Romanian", () => {
+    const ro = filterUniversities({ region: "ro" }, 20).map((u) => u.id);
+    expect(ro.slice(0, RO_FIRST.length)).toEqual(RO_FIRST);
+    const bucharest = filterUniversities({ cities: ["București"] }, 5).map((u) => u.id);
+    expect(bucharest.slice(0, 4)).toEqual(["ase-bucuresti", "upb", "umf-carol-davila", "unibuc"]);
+    expect(filterUniversities({}, 1)[0].region).toBe("abroad"); // the mixed list keeps its usual order
   });
 });
 

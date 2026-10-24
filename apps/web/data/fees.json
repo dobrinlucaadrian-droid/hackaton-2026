@@ -243,11 +243,11 @@
  {
   "id": "artifex",
   "currency": "RON",
-  "min": 0,
+  "min": 7200,
   "max": 7200,
   "year": "2026/27",
   "url": "https://www.artifex.org.ro/admitere/taxe/",
-  "note": "Promoția 2026–2029: anul 1 este gratuit (dacă termini cele 3 ani), anii 2 și 3 costă câte 7.200 lei; în medie 4.800 lei/an"
+  "note": "Anul 1 este gratuit dacă termini toți cei 3 ani; în medie ajungi la 4.800 lei/an."
  },
  {
   "id": "ase-bucuresti",
