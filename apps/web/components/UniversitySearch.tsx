@@ -4,7 +4,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { categories, domains } from "@/lib/data";
 import type { AdmissionType, Budget, CertificateId, Filters, Prestige, WorldUniversity } from "@/lib/types";
-import { ADMISSION_LABEL, BUDGET_EXPLAINED, BUDGET_RANGE, BUDGET_FILTER_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, PRESTIGE_LABEL } from "@/lib/labels";
+import { ADMISSION_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, FEE_STEPS, PRESTIGE_LABEL } from "@/lib/labels";
 import { rememberSearch } from "@/lib/lastSearch";
 import { citiesIn, countries, filterUniversities, searchUniversities, searchWorld, suggest } from "@/lib/universities";
 import { SearchBox } from "./SearchBox";
@@ -15,6 +15,13 @@ const PRESTIGE_CHOICES: Prestige[] = ["ivy", "top", "international"];
 // How many city chips are shown before "Vezi toate orașele".
 const CITY_PREVIEW = 12;
 const PRESTIGE_CHIP: Record<string, string> = { ivy: "Ivy League", top: "De top mondial", international: "Cunoscută internațional" };
+
+/** "Fără taxă", "Până la 3.000 €" (as a chip of the active filters: "Taxă: până la 3.000 €/an"). */
+function feeStepLabel(eur: number, active = false): string {
+  if (eur === 0) return active ? "Taxă: fără taxă" : "Fără taxă";
+  const sum = `${new Intl.NumberFormat("ro-RO").format(eur)} €`;
+  return active ? `Taxă: până la ${sum}/an` : `Până la ${sum}`;
+}
 
 let worldCache: WorldUniversity[] | null = null;
 /** Loads the world list once; resolves to null when it cannot be loaded (the next search retries). */
@@ -46,8 +53,11 @@ function readFilters(p: URLSearchParams): Filters {
   if (orase.length) f.cities = orase;
   const domeniu = p.get("domeniu");
   if (domeniu) f.domainId = domeniu;
+  const taxa = Number(p.get("taxa"));
+  if (p.get("taxa") !== null && (FEE_STEPS as readonly number[]).includes(taxa)) f.maxFee = taxa;
+  // older links used the cost levels: turn them into the amount each level ends at
   const buget = pick<Budget>(p.get("buget"), BUDGET_LABEL);
-  if (buget) f.budget = buget;
+  if (buget && f.maxFee === undefined && buget !== "mare") f.maxFee = { gratuit: 0, mic: 2000, mediu: 6000 }[buget];
   const prestigiu = pick<Prestige>(p.get("prestigiu"), PRESTIGE_LABEL);
   if (prestigiu && prestigiu !== "national") f.prestige = prestigiu;
   const admitere = pick<AdmissionType>(p.get("admitere"), ADMISSION_LABEL);
@@ -65,6 +75,7 @@ const PARAM_OF: Record<keyof Filters, string> = {
   cities: "oras",
   domainId: "domeniu",
   budget: "buget",
+  maxFee: "taxa",
   prestige: "prestigiu",
   admissionType: "admitere",
   scholarships: "burse",
@@ -122,6 +133,7 @@ export function UniversitySearch() {
     const next = new URLSearchParams(params.toString());
     if (value) next.set(key, value);
     else next.delete(key);
+    if (key === "taxa") next.delete("buget"); // the amount replaces an old level from a saved link
     go(next);
   }
   /** Choosing another country or region drops the chosen cities, which belong to the old one. */
@@ -197,7 +209,7 @@ export function UniversitySearch() {
   const rest = domains.filter((d) => !inCat.has(d.id));
 
   const countryList = countries();
-  const hiddenCount = (["budget", "prestige", "admissionType", "scholarships", "dorms", "withoutCertificate"] as const).filter((k) => filters[k] !== undefined).length;
+  const hiddenCount = (["maxFee", "prestige", "admissionType", "scholarships", "dorms", "withoutCertificate"] as const).filter((k) => filters[k] !== undefined).length;
   // Cities to choose from: those of the chosen country or region; with nothing chosen, the Romanian ones.
   const cityPlace = filters.country ? { country: filters.country } : { region: filters.region ?? ("ro" as const) };
   const cityOptions = filters.region === "abroad" && !filters.country ? [] : citiesIn(cityPlace);
@@ -210,7 +222,7 @@ export function UniversitySearch() {
   for (const c of chosenCities) chips.push({ key: `city-${c}`, label: `Oraș: ${c}`, remove: () => toggleCity(c) });
   if (filters.country) add("country", filters.country);
   if (filters.domainId) add("domainId", domains.find((d) => d.id === filters.domainId)?.name ?? filters.domainId);
-  if (filters.budget) add("budget", `Buget: ${BUDGET_FILTER_LABEL[filters.budget].toLowerCase()}`);
+  if (filters.maxFee !== undefined) add("maxFee", feeStepLabel(filters.maxFee, true));
   if (filters.prestige) add("prestige", PRESTIGE_CHIP[filters.prestige]);
   if (filters.admissionType) add("admissionType", ADMISSION_LABEL[filters.admissionType]);
   if (filters.scholarships) add("scholarships", "Are burse");
@@ -319,21 +331,17 @@ export function UniversitySearch() {
           <Group
             title="Cât poți plăti pe an?"
             hint={
-              <>
-                <ul className="space-y-0.5">
-                  {(Object.keys(BUDGET_EXPLAINED) as Budget[]).map((b) => (
-                    <li key={b}>
-                      <span className="font-bold text-ink">{BUDGET_LABEL[b]} ({BUDGET_RANGE[b]}):</span> {BUDGET_EXPLAINED[b]}.
-                    </li>
-                  ))}
-                </ul>
-                <p className="mt-1">Sumele sunt doar taxa de școlarizare, fără cazare și masă, și sunt orientative; ce plătești la o universitate anume scrie pe fișa ei.</p>
-              </>
+              <p>
+                Arătăm universitățile unde cel mai ieftin program de licență costă cel mult suma aleasă (doar taxa de școlarizare, fără cazare și masă). La
+                universitățile de stat din România contează taxa de la locurile cu taxă; unde nu avem suma exactă, folosim nivelul taxei. Sumele în alte monede
+                sunt transformate orientativ în euro; suma exactă scrie pe fișa fiecărei universități.
+              </p>
             }
           >
-            {(Object.keys(BUDGET_FILTER_LABEL) as Budget[]).map((b) => (
-              <Chip key={b} on={filters.budget === b} onClick={() => toggle("budget", b, filters.budget)}>
-                {BUDGET_FILTER_LABEL[b]}
+            <Chip on={filters.maxFee === undefined} onClick={() => setParam("taxa", undefined)}>Oricât</Chip>
+            {FEE_STEPS.map((s) => (
+              <Chip key={s} on={filters.maxFee === s} onClick={() => setParam("taxa", filters.maxFee === s ? undefined : String(s))}>
+                {feeStepLabel(s)}
               </Chip>
             ))}
           </Group>

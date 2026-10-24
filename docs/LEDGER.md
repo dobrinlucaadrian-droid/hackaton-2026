@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-24 10:00 — filtrul „Cât poți plăti pe an?” cu sume
+- Cerut: filtru după taxa exactă (ideea 4); recomandările alese: butoane cu sume, la statul român contează taxa de la locurile cu taxă, fără sumă exactă se folosește nivelul
+- Făcut: butoanele Oricât / Fără taxă / Până la 1.000, 3.000, 6.000, 10.000, 20.000 €; fiecare universitate are în index taxa cea mai mică în euro (`feeFromEur`, din `fees.json` și cursurile din `data/eur-rates.json`), iar fără sumă exactă contează începutul nivelului; linkurile vechi cu `buget=` merg în continuare. Ideea 2 (facultățile în căutare) rămâne cum e, la cererea echipei
+- Fișiere: `apps/web/components/UniversitySearch.tsx`, `apps/web/lib/universities.ts`, `apps/web/lib/types.ts`, `apps/web/lib/labels.ts`, `apps/web/lib/fees.ts`, `apps/web/data/eur-rates.json`, `apps/web/data/universities-index.json`, `scripts/data/sheets-index.mjs`, `apps/web/lib/universities.data.test.ts`
+- Poartă: TRECUT (gate.mjs; în browser: „Până la 3.000 €” și „Fără taxă” filtrează și schimbă adresa, linkul vechi `buget=mic` devine „până la 2.000 €/an”)
+- Urmează: salvare cu /git-workflow
+
 ### 2026-10-23 19:00 — taxa exactă pe an pe fiecare fișă
 - Cerut: sumele exacte ale taxelor pe toate fișele; echipa a ales: la statul român „0 lei la buget” + taxa la locurile cu taxă, moneda locală + aprox. în euro, interval min–max, iar fără sumă oficială rămâne doar nivelul
 - Făcut: locul de pe fișă („Cât costă” → „Taxa de școlarizare pe an (an universitar)”, cu linkul oficial), datele separat în `data/fees.json`, cursurile orientative în `lib/fees.ts`, teste; 20 de agenți au căutat sumele pe paginile oficiale și 20 de agenți le-au reverificat. Rezultat: 772 din 898 de fișe au suma exactă cu anul și linkul oficial; 126 rămân doar cu nivelul (site blocat, sumă neclară, fără an sau neconfirmată la a doua verificare). Anul poate fi și calendaristic (Australia, Asia). Nepotriviri sumă–nivel lăsate echipei: unisob, hotelschool-the-hague, vut-brno, sse-riga
@@ -954,6 +961,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-23 23:40 `9723d41` feat: show the exact yearly tuition on 772 university sheets
 - 2026-10-23 14:03 `8e52be8` feat: add 147 university sheets with official sources and photos
 - 2026-10-23 12:13 `60a3d62` feat: favourite heart on the university search cards
 - 2026-10-23 12:06 `c833f37` feat: search suggestions, phone menu, accessibility fixes, page titles
@@ -983,5 +991,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-14 12:18 `36c9928` feat: country guides and 236 new university sheets in six countries
 - 2026-10-14 03:00 `5dec06e` perf: render Romanian programme lists with the page
 - 2026-10-13 23:08 `c08b7a1` fix: recheck unconfirmed facts and audit the whole site
-- 2026-10-13 15:54 `01ecc44` feat: choose several cities in the university search
 <!-- commits:end -->

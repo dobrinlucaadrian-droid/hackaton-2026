@@ -1,4 +1,5 @@
 // Exact yearly tuition of the university sheets (data/fees.json), each with its academic year and the official page it comes from; amounts in the university's own currency plus an approximate value in euro. Server only.
+import ratesJson from "../data/eur-rates.json";
 import feesJson from "../data/fees.json";
 
 export type Fee = {
@@ -13,25 +14,8 @@ export type Fee = {
   budgetFree?: boolean;
 };
 
-/** Approximate euro value of one unit of each currency (rounded rates, autumn 2026); only for the "aprox." figure. */
-export const EUR_PER: Record<string, number> = {
-  EUR: 1,
-  RON: 0.2,
-  MDL: 0.051,
-  GBP: 1.17,
-  USD: 0.88,
-  CHF: 1.05,
-  DKK: 0.134,
-  SEK: 0.09,
-  NOK: 0.086,
-  PLN: 0.235,
-  CZK: 0.04,
-  CAD: 0.64,
-  AUD: 0.58,
-  KRW: 0.00067,
-  HKD: 0.113,
-  SGD: 0.68,
-};
+/** Approximate euro value of one unit of each currency (rounded rates, autumn 2026, data/eur-rates.json); for the "aprox." figure and the fee filter. */
+export const EUR_PER: Record<string, number> = ratesJson;
 
 const NAME: Record<string, string> = {
   EUR: "€",

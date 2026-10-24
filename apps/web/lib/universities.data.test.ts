@@ -1,8 +1,10 @@
 // Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
 import { describe, expect, it } from "vitest";
+import feesJson from "../data/fees.json";
 import { domains } from "./data";
+import { EUR_PER } from "./fees";
 import { universities, universityById } from "./sheets";
-import { filterUniversities, searchUniversities } from "./universities";
+import { feeFrom, filterUniversities, searchUniversities, universities as summaries } from "./universities";
 
 const IVY = ["harvard", "yale", "princeton", "columbia", "upenn", "brown", "dartmouth", "cornell"];
 
@@ -94,12 +96,32 @@ describe("sources of the newer profile sheets", () => {
   });
 });
 
+describe("fee filter", () => {
+  it("keeps only universities whose cheapest tuition fits, using the level when there is no exact fee", () => {
+    const res = filterUniversities({ maxFee: 3000 }, 10000);
+    expect(res.length).toBeGreaterThan(0);
+    expect(res.every((u) => feeFrom(u) <= 3000)).toBe(true);
+    expect(res.some((u) => u.id === "unibuc")).toBe(true); // paid places from about 1.100 €
+    expect(res.some((u) => u.id === "oxford")).toBe(false);
+    const free = filterUniversities({ maxFee: 0 }, 10000);
+    expect(free.every((u) => feeFrom(u) === 0)).toBe(true);
+    expect(free.some((u) => u.id === "tum")).toBe(true);
+    expect(filterUniversities({ maxFee: 1_000_000 }, 10000).length).toBe(summaries.length);
+  });
+});
+
 describe("generated index of the sheets", () => {
   it("matches the full sheets (run node scripts/data/sheets-index.mjs after changing a sheet)", async () => {
     const LONG = ["about", "budgetNote", "admission", "scholarshipsNote", "dormsNote", "pros", "cons"];
     const index = (await import("../data/universities-index.json")).default as Record<string, unknown>[];
     const cities = (await import("../data/ro-cities.json")).default as string[];
-    const expected = universities.map((u) => Object.fromEntries(Object.entries(u).filter(([k]) => !LONG.includes(k))));
+    const fees = new Map(feesJson.map((f) => [f.id, f]));
+    const expected = universities.map((u) => {
+      const s: Record<string, unknown> = Object.fromEntries(Object.entries(u).filter(([k]) => !LONG.includes(k)));
+      const fee = fees.get(u.id);
+      if (fee) s.feeFromEur = Math.round(fee.min * EUR_PER[fee.currency]);
+      return s;
+    });
     expect(index).toEqual(expected);
     const count = new Map<string, number>();
     for (const u of universities) if (u.region === "ro") count.set(u.city, (count.get(u.city) ?? 0) + 1);

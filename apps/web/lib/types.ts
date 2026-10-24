@@ -87,7 +87,9 @@ export type University = {
 };
 
 /** A sheet without its long texts: what search, filters and result cards need. This is what the browser loads (data/universities-index.json). */
-export type UniversitySummary = Omit<University, "about" | "budgetNote" | "admission" | "scholarshipsNote" | "dormsNote" | "pros" | "cons">;
+export type UniversitySummary = Omit<University, "about" | "budgetNote" | "admission" | "scholarshipsNote" | "dormsNote" | "pros" | "cons"> & {
+  feeFromEur?: number; // cheapest yearly tuition in euro (approximate), only when an official page confirmed it (data/fees.json)
+};
 
 /** One faculty of a university with its bachelor (licență) study programmes, official names. */
 export type Faculty = { name: string; programs: string[] };
@@ -135,6 +137,7 @@ export type Filters = {
   cities?: string[]; // exact `city` values; a university in any of them passes
   domainId?: string;
   budget?: Budget; // this level or cheaper
+  maxFee?: number; // euro per year the student can pay: the university's cheapest tuition (or, without an exact fee, its level) is at most this
   prestige?: Prestige; // "ivy" = Ivy only; "top" = ivy + top; "international" = ivy + top + international
   admissionType?: AdmissionType;
   scholarships?: boolean; // true = only with scholarships

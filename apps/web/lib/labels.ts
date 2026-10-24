@@ -21,6 +21,8 @@ export const BUDGET_FILTER_LABEL: Record<Budget, string> = {
   mediu: "Până la o taxă medie",
   mare: "Oricât",
 };
+/** The amounts of the "Cât poți plăti pe an?" filter, in euro per year (0 = only free). */
+export const FEE_STEPS = [0, 1000, 3000, 6000, 10000, 20000] as const;
 /** The yearly tuition band of each cost level (tuition only), checked against official fee pages on 2026-10-22 (docs/taxe.md). */
 export const BUDGET_RANGE: Record<Budget, string> = {
   gratuit: "0 €",

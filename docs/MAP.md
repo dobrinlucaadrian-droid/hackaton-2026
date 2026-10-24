@@ -236,7 +236,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `UniversityList.tsx` (48) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList
 - `UniversityOpinions.tsx` (32) — "Ce spun studenții" on a university sheet: the opinions about this university, including approved ones from the database. Renders nothing when there are none.. Exports: UniversityOpinions
 - `UniversityPhoto.tsx` (25) — A university's photo at the top of its sheet, with the author and licence underneath (the free licences of Wikimedia Commons require them).. Exports: UniversityPhoto
-- `UniversitySearch.tsx` (477) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
+- `UniversitySearch.tsx` (485) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
 - `VisitTracker.tsx` (38) — Counts page views anonymously: sends only the page path and, on the first page of a visit, the country and the site the visitor came from. No cookie, no stored id.. Exports: VisitTracker
 - `WelcomeActions.tsx` (40) — The two choices under the welcome on the home page: make an account (opens the account window) or go on without one (scrolls to the big buttons). Signed-in visitors see a greeting with their name instead (the account is in the top menu).. Exports: WelcomeActions
 - `WelcomeDialog.tsx` (63) — Account window: opens over the current page when the home page's "Intră în cont" button or the result page's account card is pressed, with the account form (sign in, new account, forgotten password). It never opens by itself.. Exports: openSignIn, WelcomeDialog
@@ -320,12 +320,13 @@ _Open only the files listed here; a file's description is its first comment line
 - `us-institutions.json`
 - `us-programs.jsonl.gz`
 
-### apps/web/data  (18 files)
+### apps/web/data  (19 files)
 
 - `categories.json` (13) — JSON array, 10 items
 - `curricula.json` (2190) — JSON array, 40 items
 - `curriculum-links.json` (288) — JSON array, 57 items
 - `domains.json` (43) — JSON array, 40 items
+- `eur-rates.json` (19) — JSON; keys: EUR, RON, MDL, GBP, USD, CHF, DKK, SEK
 - `faculties-ro.json`
 - `fees.json` (6608) — JSON array, 772 items
 - `guides.json` (3254) — JSON array, 32 items
@@ -356,10 +357,10 @@ _Open only the files listed here; a file's description is its first comment line
 - `faculties.test.ts` (55) — Tests the faculty sheets: each one belongs to a real faculty of the official list, has valid values and official links, and gets a unique page address.
 - `faculties.ts` (24) — Profile sheets of Romanian faculties (data/faculties-ro.json) and the address of each one. Used on the server: by the faculty page and by the university page, which links to them.. Exports: faculties, facultySlug, facultyHref, facultiesOf, facultyBySlug
 - `fees.test.ts` (33) — Tests the exact tuition data: each entry belongs to a real sheet, has a known currency, a sane range, an academic year and an official link, and is written the way the sheet shows it.
-- `fees.ts` (75) — Exact yearly tuition of the university sheets (data/fees.json), each with its academic year and the official page it comes from; amounts in the university's own currency plus an approximate value in euro. Server only.. Exports: EUR_PER, feeOf, feeText
+- `fees.ts` (59) — Exact yearly tuition of the university sheets (data/fees.json), each with its academic year and the official page it comes from; amounts in the university's own currency plus an approximate value in euro. Server only.. Exports: EUR_PER, feeOf, feeText
 - `guides.test.ts` (61) — Tests the country guides: complete texts, a country that has university sheets, official links, and no amounts or calendar dates (they change every year).
 - `guides.ts` (15) — Country guides ("how a Romanian student applies to bachelor studies in ..."), written from official pages and checked twice. Small: pages may import it freely.. Exports: guides, guideById, guideForCountry
-- `labels.ts` (77) — Romanian labels for the values on a university sheet, plus two small helpers every list uses. Kept apart from the university data so pages can use the labels without loading the sheets.. Exports: PRESTIGE_LABEL, BUDGET_LABEL, BUDGET_FILTER_LABEL, BUDGET_RANGE, BUDGET_EXPLAINED, ADMISSION_LABEL, CERTIFICATE_LABEL, normalize, …
+- `labels.ts` (79) — Romanian labels for the values on a university sheet, plus two small helpers every list uses. Kept apart from the university data so pages can use the labels without loading the sheets.. Exports: PRESTIGE_LABEL, BUDGET_LABEL, BUDGET_FILTER_LABEL, FEE_STEPS, BUDGET_RANGE, BUDGET_EXPLAINED, ADMISSION_LABEL, CERTIFICATE_LABEL, …
 - `lastSearch.ts` (22) — Remembers the student's last university search (text, filters, how many results) in this browser tab, so the "back" button on a sheet returns to it.. Exports: rememberSearch, lastSearchHref
 - `match.test.ts` (267) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
 - `match.ts` (178) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: matchDomains, studentTraits, matchByTraits
@@ -376,10 +377,10 @@ _Open only the files listed here; a file's description is its first comment line
 - `suggest.test.ts` (27) — Tests the search suggestions: they start at 2 letters, ignore diacritics, put places first and lead universities to their sheets.
 - `testimonials.ts` (29) — Links student opinions to the universities that have a profile sheet, so the search and the sheets can show them.. Exports: universityIdOf, testimonialsFor
 - `traits.ts` (18) — The ten inclinations the questionnaire measures and their Romanian names. Kept apart from the matching so pages can show them without loading the university data.. Exports: TRAITS, TRAIT_LABEL
-- `types.ts` (265) — Shared data contract for FindMyUni: profiles, questions, domains, universities and match results.
-- `universities.data.test.ts` (109) — Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
+- `types.ts` (268) — Shared data contract for FindMyUni: profiles, questions, domains, universities and match results.
+- `universities.data.test.ts` (131) — Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
 - `universities.test.ts` (229) — Tests the specializations and categories data and the university search/filter logic.
-- `universities.ts` (213) — Search and filter over the universities with a profile sheet. Works on the index (sheets without their long texts), which is what the browser loads.. Exports: universities, countries, citiesIn, searchUniversities, filterUniversities, searchWorld, suggest
+- `universities.ts` (222) — Search and filter over the universities with a profile sheet. Works on the index (sheets without their long texts), which is what the browser loads.. Exports: universities, countries, citiesIn, searchUniversities, feeFrom, filterUniversities, searchWorld, suggest
 - `useTestimonials.ts` (34) — All student opinions the pages can show: the ones gathered by the team (in the app's data) plus the approved ones from the database.. Exports: useTestimonials, useTestimonialsFor
 - `username.test.ts` (26) — Tests the username, password and email rules shared by the account forms and the server.
 - `username.ts` (24) — The rules for a username and a password, used by the account forms and by the server, so both check exactly the same thing.. Exports: USERNAME_MIN, USERNAME_MAX, PASSWORD_MIN, PASSWORD_MAX, cleanUsername, validPassword, cleanEmail

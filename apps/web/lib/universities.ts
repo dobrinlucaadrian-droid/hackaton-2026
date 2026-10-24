@@ -146,6 +146,14 @@ export function searchUniversities(query: string, limit = 20): UniversitySummary
   return hits.slice(0, limit).map((h) => h.u);
 }
 
+/** Lowest yearly tuition of each cost level in euro, used for universities without an exact fee. */
+const LEVEL_FROM_EUR: Record<Budget, number> = { gratuit: 0, mic: 1, mediu: 2000, mare: 6000 };
+
+/** The cheapest yearly tuition in euro: the confirmed fee when there is one, otherwise the lower end of the university's level. */
+export function feeFrom(u: UniversitySummary): number {
+  return u.feeFromEur ?? LEVEL_FROM_EUR[u.budget];
+}
+
 /** The best universities for the given filters (all conditions together), at most `limit`, best first. */
 export function filterUniversities(filters: Filters, limit = 10): UniversitySummary[] {
   const maxBudget = filters.budget ? BUDGET_ORDER.indexOf(filters.budget) : -1;
@@ -157,6 +165,7 @@ export function filterUniversities(filters: Filters, limit = 10): UniversitySumm
       if (filters.cities?.length && !filters.cities.includes(u.city)) return false;
       if (filters.domainId && !u.domainIds.includes(filters.domainId)) return false;
       if (maxBudget >= 0 && BUDGET_ORDER.indexOf(u.budget) > maxBudget) return false;
+      if (filters.maxFee !== undefined && feeFrom(u) > filters.maxFee) return false;
       if (maxPrestige >= 0 && PRESTIGE_ORDER.indexOf(u.prestige) > maxPrestige) return false;
       if (filters.admissionType && !u.admissionTypes.includes(filters.admissionType)) return false;
       if (filters.scholarships && !u.scholarships) return false;
