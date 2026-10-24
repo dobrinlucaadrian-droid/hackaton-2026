@@ -144,7 +144,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/ghiduri  (1 files)
 
-- `page.tsx` (26) — Country guides index: a search box and one tile per country that has a "how to apply" guide.. Routes: /ghiduri. Exports: metadata, GuidesPage
+- `page.tsx` (32) — Country guides index: a search box and one tile per country that has a "how to apply" guide.. Routes: /ghiduri. Exports: metadata, GuidesPage
 
 ### apps/web/app/programe  (1 files)
 
@@ -166,7 +166,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/specializari  (1 files)
 
-- `page.tsx` (30) — All study fields: category tiles and a "what do you like" picker, or filtered domains and specializations when the student types.. Routes: /specializari. Exports: metadata, SpecializationsPage
+- `page.tsx` (26) — All study fields: category tiles and a "what do you like" picker, or filtered domains and specializations when the student types.. Routes: /specializari. Exports: metadata, SpecializationsPage
 
 ### apps/web/app/studenti  (1 files)
 
@@ -196,7 +196,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/universitati  (1 files)
 
-- `page.tsx` (29) — University finder page: search box, filters and the results, 10 at a time (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
+- `page.tsx` (35) — University finder page: search box, filters and the results, 10 at a time (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
 
 ### apps/web/components  (42 files)
 
@@ -213,7 +213,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `FacultyPrograms.tsx` (24) — On a faculty sheet: the bachelor programmes of that faculty from the official list. Plain markup: the faculty page gives it the rows, read on the server.. Exports: FacultyPrograms
 - `FavoriteButton.tsx` (85) — The heart on a university sheet (or, compact, in the corner of a search result card): adds the university to the student's favourites (shown in "Contul meu") or removes it; without an account it opens the account window and adds it once the student is signed in.. Exports: FavoriteButton
 - `GuideFinder.tsx` (56) — Country guides index body: a search box with a magnifier that filters the country tiles as you type (diacritics do not matter).. Exports: GuideFinder
-- `Illustrations.tsx` (105) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots, the start-page hero and the broken road of the error page.. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene, BrokenPath
+- `Illustrations.tsx` (198) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots, the start-page hero, the broken road of the error page, and the page drawings of Universități, Ghiduri, Specializări and "nothing found".. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene, BrokenPath, …
 - `InterestPicker.tsx` (129) — "Ce îți place?": the student picks up to three interests and sees the specializations that fit them best, ranked, with links to universities.. Exports: InterestPicker
 - `MatchCard.tsx` (201) — One result card: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
 - `NavBubbles.tsx` (35) — The four big buttons on the home page (Specializări, Universități, Chestionar, Studenți, Ghiduri pe țări), drawn as little clouds.. Exports: NavBubbles
@@ -236,7 +236,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `UniversityList.tsx` (48) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList
 - `UniversityOpinions.tsx` (32) — "Ce spun studenții" on a university sheet: the opinions about this university, including approved ones from the database. Renders nothing when there are none.. Exports: UniversityOpinions
 - `UniversityPhoto.tsx` (25) — A university's photo at the top of its sheet, with the author and licence underneath (the free licences of Wikimedia Commons require them).. Exports: UniversityPhoto
-- `UniversitySearch.tsx` (491) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
+- `UniversitySearch.tsx` (492) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
 - `VisitTracker.tsx` (38) — Counts page views anonymously: sends only the page path and, on the first page of a visit, the country and the site the visitor came from. No cookie, no stored id.. Exports: VisitTracker
 - `WelcomeActions.tsx` (40) — The two choices under the welcome on the home page: make an account (opens the account window) or go on without one (scrolls to the big buttons). Signed-in visitors see a greeting with their name instead (the account is in the top menu).. Exports: WelcomeActions
 - `WelcomeDialog.tsx` (63) — Account window: opens over the current page when the home page's "Intră în cont" button or the result page's account card is pressed, with the account form (sign in, new account, forgotten password). It never opens by itself.. Exports: openSignIn, WelcomeDialog

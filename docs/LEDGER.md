@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-24 13:30 — desene noi pe pagini
+- Cerut: mai multe elemente vizuale; ales: Universități, Ghiduri pe țări, Specializări și ecranul „nu am găsit nimic”, în stilul de acum
+- Făcut: patru desene SVG noi în culorile site-ului, cu aceeași mișcare ușoară: clădire de universitate cu lupă (Universități), glob cu avion de hârtie (Ghiduri), eprubetă–laptop–balanță–pensulă (Specializări, în locul cărților), lupă cu semn de întrebare și căciulă (fără rezultate, în locul emoji-ului). Pe telefon, desenele de la Universități și Ghiduri se ascund ca să nu înghesuie titlul
+- Fișiere: `apps/web/components/Illustrations.tsx`, `apps/web/app/universitati/page.tsx`, `apps/web/app/ghiduri/page.tsx`, `apps/web/app/specializari/page.tsx`, `apps/web/components/UniversitySearch.tsx`
+- Poartă: TRECUT (gate.mjs; în browser: cele 4 desene văzute pe paginile lor și mărite)
+- Urmează: salvare cu /git-workflow
+
 ### 2026-10-24 12:30 — primele 10 universități din România, în ordinea echipei
 - Cerut: lista din România să înceapă cu ASE, apoi Politehnica; echipa a ales ordinea primelor 10
 - Făcut: `RO_FIRST` în `lib/universities.ts`: ASE, Politehnica București, UMF „Carol Davila”, Universitatea din București, Babeș-Bolyai, UAIC, UTCN, UVT, Politehnica Timișoara, UMF Cluj. Se aplică doar când lista are numai universități din România (filtrul „În România”, țara România sau orașe românești); lista mixtă rămâne ca înainte
@@ -982,6 +989,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-24 22:08 `fcc2f62` feat: list the team's top Romanian universities first; fix Artifex fee
 - 2026-10-24 21:49 `eacbed4` feat: show how many universities each city has in the city filter
 - 2026-10-24 03:19 `d70a411` feat: filter universities by the yearly tuition they start from
 - 2026-10-23 23:40 `9723d41` feat: show the exact yearly tuition on 772 university sheets
@@ -1011,5 +1019,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-19 02:11 `efdb4e4` feat: welcome home page with cloud buttons, hide counts, collapse cities
 - 2026-10-19 01:53 `ec9d731` feat: rename the site to FindMyUni
 - 2026-10-15 02:33 `b9900d1` feat: at least ten university sheets per country where data allows
-- 2026-10-14 12:18 `36c9928` feat: country guides and 236 new university sheets in six countries
 <!-- commits:end -->

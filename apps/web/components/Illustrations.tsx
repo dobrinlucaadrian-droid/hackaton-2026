@@ -1,4 +1,4 @@
-// Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots, the start-page hero and the broken road of the error page.
+// Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots, the start-page hero, the broken road of the error page, and the page drawings of Universități, Ghiduri, Specializări and "nothing found".
 import type { SVGProps } from "react";
 type P = SVGProps<SVGSVGElement>;
 
@@ -99,6 +99,99 @@ export function BrokenPath(props: P) {
       <line x1="140" y1="30" x2="140" y2="50" className="stroke-primary" strokeWidth="2" />
       <circle cx="140" cy="52" r="3" className="fill-primary" />
       <text x="110" y="80" textAnchor="middle" fontSize="20" fontWeight="700" className="fill-primary">?</text>
+    </svg>
+  );
+}
+
+/** Universități: a university building with columns and a magnifying glass in front of it. */
+export function UniversityScene(props: P) {
+  return (
+    <svg viewBox="0 0 160 120" aria-hidden {...props}>
+      <circle cx="80" cy="64" r="54" className="fill-primary-tint" />
+      {/* building */}
+      <polygon points="80,18 128,40 32,40" className="fill-primary" />
+      <polygon points="80,18 128,40 80,34 32,40" className="fill-white/20" />
+      <rect x="36" y="40" width="88" height="6" rx="2" className="fill-primary-dark" />
+      {[44, 60, 76, 92, 108].map((x) => (
+        <rect key={x} x={x} y="48" width="8" height="36" rx="2" className="fill-white stroke-ink" strokeWidth="2" />
+      ))}
+      <rect x="30" y="84" width="100" height="8" rx="2" className="fill-ink" />
+      <rect x="24" y="92" width="112" height="6" rx="2" className="fill-sky" />
+      {/* magnifying glass */}
+      <line x1="128" y1="96" x2="146" y2="114" className="stroke-ink" strokeWidth="7" strokeLinecap="round" />
+      <circle cx="118" cy="86" r="17" className="fill-white/80 stroke-ink" strokeWidth="5" />
+      <path d="M109 80a10 10 0 0 1 9-5" fill="none" className="stroke-teal" strokeWidth="3" strokeLinecap="round" />
+      <Sparkle x="14" y="20" width="14" height="14" className="twinkle fill-teal" />
+      <Sparkle x="138" y="16" width="10" height="10" className="twinkle fill-violet" />
+    </svg>
+  );
+}
+
+/** Ghiduri pe țări: a globe with a paper plane flying around it on a dashed path. */
+export function GlobeScene(props: P) {
+  return (
+    <svg viewBox="0 0 160 120" aria-hidden {...props}>
+      <circle cx="78" cy="64" r="44" className="fill-sky" />
+      {/* land */}
+      <path d="M50 44c8-6 18-4 22 2s-2 12 4 16 4 12-4 14-14-4-18-10-12-14-4-22z" className="fill-teal" />
+      <path d="M92 32c8 2 16 8 18 16-6 2-10-2-14 2s-8 2-10-4 0-14 6-14z" className="fill-teal" />
+      <path d="M90 82c6-2 14 0 16 6-4 6-12 10-18 8s-4-12 2-14z" className="fill-teal" />
+      <ellipse cx="78" cy="64" rx="44" ry="16" fill="none" className="stroke-white/40" strokeWidth="2" />
+      <line x1="78" y1="20" x2="78" y2="108" className="stroke-white/40" strokeWidth="2" />
+      {/* flight path and plane */}
+      <path d="M14 96C30 118 120 118 136 70" fill="none" className="stroke-primary" strokeWidth="2.5" strokeDasharray="5 6" strokeLinecap="round" />
+      <g transform="translate(130 44) rotate(-30)">
+        <polygon points="0,10 30,0 12,14" className="fill-white stroke-ink" strokeWidth="2" strokeLinejoin="round" />
+        <polygon points="12,14 30,0 16,22" className="fill-primary-tint stroke-ink" strokeWidth="2" strokeLinejoin="round" />
+      </g>
+      <Sparkle x="10" y="30" width="14" height="14" className="twinkle fill-violet" />
+      <Sparkle x="128" y="96" width="10" height="10" className="twinkle fill-teal" />
+    </svg>
+  );
+}
+
+/** Specializări: small signs of different fields around a circle: a flask, a laptop, the scales of justice and a paint brush. */
+export function FieldsScene(props: P) {
+  return (
+    <svg viewBox="0 0 160 120" aria-hidden {...props}>
+      <circle cx="80" cy="62" r="52" className="fill-primary-tint" />
+      {/* laptop (centre) */}
+      <rect x="54" y="42" width="52" height="34" rx="4" className="fill-ink" />
+      <rect x="59" y="47" width="42" height="24" rx="2" className="fill-sky-tint" />
+      <path d="M66 55l-4 4 4 4M94 55l4 4-4 4M84 52l-8 14" fill="none" className="stroke-sky" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M46 78h68l-6 6H52z" className="fill-ink" />
+      {/* flask (left) */}
+      <path d="M22 26h12v14l10 20c2 4-1 8-5 8H17c-4 0-7-4-5-8l10-20z" className="fill-white stroke-ink" strokeWidth="2.5" strokeLinejoin="round" />
+      <path d="M15 58l6-12h14l6 12c1 3-1 5-4 5H19c-3 0-5-2-4-5z" className="fill-teal" />
+      <rect x="20" y="22" width="16" height="5" rx="2" className="fill-ink" />
+      {/* scales (right) */}
+      <line x1="134" y1="20" x2="134" y2="60" className="stroke-ink" strokeWidth="3" strokeLinecap="round" />
+      <line x1="116" y1="28" x2="152" y2="28" className="stroke-ink" strokeWidth="3" strokeLinecap="round" />
+      <path d="M110 44a8 4 0 0 0 16 0l-8-16z" className="fill-violet" />
+      <path d="M142 44a8 4 0 0 0 16 0l-8-16z" className="fill-violet" />
+      <rect x="126" y="58" width="16" height="5" rx="2" className="fill-ink" />
+      {/* brush (bottom) */}
+      <g transform="rotate(-35 80 104)">
+        <rect x="56" y="100" width="30" height="7" rx="3.5" className="fill-primary" />
+        <rect x="86" y="99" width="8" height="9" className="fill-teal" />
+        <path d="M94 99c8 0 14 2 16 4.5-2 2.5-8 4.5-16 4.5z" className="fill-ink" />
+      </g>
+      <Sparkle x="64" y="12" width="12" height="12" className="twinkle fill-teal" />
+      <Sparkle x="140" y="84" width="10" height="10" className="twinkle fill-violet" />
+    </svg>
+  );
+}
+
+/** "Nothing found": a magnifying glass with a question mark and a small cap waiting next to it. */
+export function NothingFound(props: P) {
+  return (
+    <svg viewBox="0 0 140 100" aria-hidden {...props}>
+      <ellipse cx="70" cy="90" rx="52" ry="6" className="fill-ink/10" />
+      <line x1="80" y1="62" x2="102" y2="84" className="stroke-ink" strokeWidth="8" strokeLinecap="round" />
+      <circle cx="62" cy="44" r="28" className="fill-white stroke-ink" strokeWidth="6" />
+      <text x="62" y="56" textAnchor="middle" fontSize="34" fontWeight="900" className="fill-primary">?</text>
+      <Cap x="98" y="20" width="36" height="36" />
+      <Sparkle x="14" y="16" width="12" height="12" className="twinkle fill-teal" />
     </svg>
   );
 }

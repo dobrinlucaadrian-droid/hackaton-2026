@@ -7,6 +7,7 @@ import type { AdmissionType, Budget, CertificateId, Filters, Prestige, WorldUniv
 import { ADMISSION_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, FEE_STEPS, PRESTIGE_LABEL } from "@/lib/labels";
 import { rememberSearch } from "@/lib/lastSearch";
 import { citiesIn, cityCounts, countries, filterUniversities, searchUniversities, searchWorld, suggest } from "@/lib/universities";
+import { NothingFound } from "./Illustrations";
 import { SearchBox } from "./SearchBox";
 import { UniversityCard } from "./UniversityCard";
 
@@ -416,7 +417,7 @@ export function UniversitySearch() {
 
       {results.length === 0 ? (
         <div className="mt-4 rounded-3xl bg-card p-8 text-center shadow-sm ring-1 ring-line" role="status">
-          <p className="text-4xl" aria-hidden>🔎</p>
+          <NothingFound className="float mx-auto h-24 w-32" />
           <p className="mt-2 text-lg font-black text-ink">Nu am găsit nicio universitate.</p>
           <p className="mt-1 text-ink-soft">
             {activeCount > 0 ? "Încearcă să scoți unele filtre sau schimbă ce cauți." : "Încearcă alt cuvânt, de exemplu un oraș sau o țară."}

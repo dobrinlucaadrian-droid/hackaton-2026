@@ -1,6 +1,6 @@
 // All study fields: category tiles and a "what do you like" picker, or filtered domains and specializations when the student types.
 import type { Metadata } from "next";
-import { Books, Sparkle } from "@/components/Illustrations";
+import { FieldsScene } from "@/components/Illustrations";
 import { Shell } from "@/components/Shell";
 import { SpecializationsBrowser } from "@/components/SpecializationsBrowser";
 
@@ -17,11 +17,7 @@ export default function SpecializationsPage() {
           <h1 className="text-4xl font-black tracking-tighter text-ink sm:text-5xl">Ce poți studia</h1>
           <p className="mt-2 text-ink-soft">Alege o categorie sau caută direct o specializare.</p>
         </div>
-        <div aria-hidden className="flex shrink-0 items-end gap-1">
-          <Sparkle className="twinkle h-5 w-5 fill-teal" />
-          <Books className="float h-20 w-20 sm:h-24 sm:w-24" />
-          <Sparkle className="twinkle h-4 w-4 fill-violet" />
-        </div>
+        <FieldsScene className="float h-20 w-28 shrink-0 sm:h-28 sm:w-36 md:h-32 md:w-44" />
       </div>
       <SpecializationsBrowser />
     </Shell>
