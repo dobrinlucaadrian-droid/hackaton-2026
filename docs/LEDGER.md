@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-24 11:00 — numărul de universități la fiecare oraș
+- Cerut: la orașele din filtrul de pe „Universități” să scrie câte instituții are fiecare; ales: numărul în buton, după nume, și toate universitățile orașului (nu doar cele din filtre)
+- Făcut: `cityCounts()` numără universitățile pe oraș pentru țara sau regiunea aleasă; butonul arată „București 29”, iar cititorul de ecran aude „București, 29 universități”
+- Fișiere: `apps/web/lib/universities.ts`, `apps/web/lib/universities.test.ts`, `apps/web/components/UniversitySearch.tsx`
+- Poartă: TRECUT (gate.mjs; în browser: București 29, Cluj-Napoca 9, Iași 7, Timișoara 6 …)
+- Urmează: salvare cu /git-workflow
+
 ### 2026-10-24 10:00 — filtrul „Cât poți plăti pe an?” cu sume
 - Cerut: filtru după taxa exactă (ideea 4); recomandările alese: butoane cu sume, la statul român contează taxa de la locurile cu taxă, fără sumă exactă se folosește nivelul
 - Făcut: butoanele Oricât / Fără taxă / Până la 1.000, 3.000, 6.000, 10.000, 20.000 €; fiecare universitate are în index taxa cea mai mică în euro (`feeFromEur`, din `fees.json` și cursurile din `data/eur-rates.json`), iar fără sumă exactă contează începutul nivelului; linkurile vechi cu `buget=` merg în continuare. Ideea 2 (facultățile în căutare) rămâne cum e, la cererea echipei
@@ -961,6 +968,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-24 03:19 `d70a411` feat: filter universities by the yearly tuition they start from
 - 2026-10-23 23:40 `9723d41` feat: show the exact yearly tuition on 772 university sheets
 - 2026-10-23 14:03 `8e52be8` feat: add 147 university sheets with official sources and photos
 - 2026-10-23 12:13 `60a3d62` feat: favourite heart on the university search cards
@@ -990,5 +998,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-15 02:33 `b9900d1` feat: at least ten university sheets per country where data allows
 - 2026-10-14 12:18 `36c9928` feat: country guides and 236 new university sheets in six countries
 - 2026-10-14 03:00 `5dec06e` perf: render Romanian programme lists with the page
-- 2026-10-13 23:08 `c08b7a1` fix: recheck unconfirmed facts and audit the whole site
 <!-- commits:end -->

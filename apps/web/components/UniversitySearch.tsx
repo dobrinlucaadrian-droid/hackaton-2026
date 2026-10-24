@@ -6,7 +6,7 @@ import { categories, domains } from "@/lib/data";
 import type { AdmissionType, Budget, CertificateId, Filters, Prestige, WorldUniversity } from "@/lib/types";
 import { ADMISSION_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, FEE_STEPS, PRESTIGE_LABEL } from "@/lib/labels";
 import { rememberSearch } from "@/lib/lastSearch";
-import { citiesIn, countries, filterUniversities, searchUniversities, searchWorld, suggest } from "@/lib/universities";
+import { citiesIn, cityCounts, countries, filterUniversities, searchUniversities, searchWorld, suggest } from "@/lib/universities";
 import { SearchBox } from "./SearchBox";
 import { UniversityCard } from "./UniversityCard";
 
@@ -213,6 +213,7 @@ export function UniversitySearch() {
   // Cities to choose from: those of the chosen country or region; with nothing chosen, the Romanian ones.
   const cityPlace = filters.country ? { country: filters.country } : { region: filters.region ?? ("ro" as const) };
   const cityOptions = filters.region === "abroad" && !filters.country ? [] : citiesIn(cityPlace);
+  const cityCount = cityCounts(cityPlace);
   const chosenCities = filters.cities ?? [];
   const cityTitle = filters.country ? `Orașe din ${filters.country}` : "Orașe din România";
   const cityShown = allCities ? cityOptions : cityOptions.filter((c, i) => i < CITY_PREVIEW || chosenCities.includes(c));
@@ -277,6 +278,11 @@ export function UniversitySearch() {
             {cityShown.map((c) => (
               <Chip key={c} on={chosenCities.includes(c)} onClick={() => toggleCity(c)}>
                 {c}
+                {/* how many universities the city has on the site, whatever the other filters */}
+                <span aria-hidden className="ml-1.5 font-semibold opacity-60">
+                  {cityCount.get(c)}
+                </span>
+                <span className="sr-only">, {cityCount.get(c) === 1 ? "o universitate" : `${cityCount.get(c)} universități`}</span>
               </Chip>
             ))}
             {cityOptions.length > cityShown.length && (

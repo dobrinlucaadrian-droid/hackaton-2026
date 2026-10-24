@@ -19,12 +19,17 @@ export function countries(): string[] {
 
 /** Cities that have at least one university sheet in the given country (or in Romania / abroad), the ones with most universities first. */
 export function citiesIn(where: { country?: string; region?: "ro" | "abroad" }): string[] {
+  return [...cityCounts(where)].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ro")).map(([c]) => c);
+}
+
+/** How many universities with a sheet each city of the country (or region) has; with neither, every city. */
+export function cityCounts(where: { country?: string; region?: "ro" | "abroad" }): Map<string, number> {
   const count = new Map<string, number>();
   for (const u of universities) {
     if (where.country ? u.country !== where.country : where.region ? u.region !== where.region : false) continue;
     count.set(u.city, (count.get(u.city) ?? 0) + 1);
   }
-  return [...count].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ro")).map(([c]) => c);
+  return count;
 }
 
 // Extra words people type for a country; applied to every university of that country.

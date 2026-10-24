@@ -236,7 +236,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `UniversityList.tsx` (48) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList
 - `UniversityOpinions.tsx` (32) — "Ce spun studenții" on a university sheet: the opinions about this university, including approved ones from the database. Renders nothing when there are none.. Exports: UniversityOpinions
 - `UniversityPhoto.tsx` (25) — A university's photo at the top of its sheet, with the author and licence underneath (the free licences of Wikimedia Commons require them).. Exports: UniversityPhoto
-- `UniversitySearch.tsx` (485) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
+- `UniversitySearch.tsx` (491) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
 - `VisitTracker.tsx` (38) — Counts page views anonymously: sends only the page path and, on the first page of a visit, the country and the site the visitor came from. No cookie, no stored id.. Exports: VisitTracker
 - `WelcomeActions.tsx` (40) — The two choices under the welcome on the home page: make an account (opens the account window) or go on without one (scrolls to the big buttons). Signed-in visitors see a greeting with their name instead (the account is in the top menu).. Exports: WelcomeActions
 - `WelcomeDialog.tsx` (63) — Account window: opens over the current page when the home page's "Intră în cont" button or the result page's account card is pressed, with the account form (sign in, new account, forgotten password). It never opens by itself.. Exports: openSignIn, WelcomeDialog
@@ -379,8 +379,8 @@ _Open only the files listed here; a file's description is its first comment line
 - `traits.ts` (18) — The ten inclinations the questionnaire measures and their Romanian names. Kept apart from the matching so pages can show them without loading the university data.. Exports: TRAITS, TRAIT_LABEL
 - `types.ts` (268) — Shared data contract for FindMyUni: profiles, questions, domains, universities and match results.
 - `universities.data.test.ts` (131) — Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
-- `universities.test.ts` (229) — Tests the specializations and categories data and the university search/filter logic.
-- `universities.ts` (222) — Search and filter over the universities with a profile sheet. Works on the index (sheets without their long texts), which is what the browser loads.. Exports: universities, countries, citiesIn, searchUniversities, feeFrom, filterUniversities, searchWorld, suggest
+- `universities.test.ts` (239) — Tests the specializations and categories data and the university search/filter logic.
+- `universities.ts` (227) — Search and filter over the universities with a profile sheet. Works on the index (sheets without their long texts), which is what the browser loads.. Exports: universities, countries, citiesIn, cityCounts, searchUniversities, feeFrom, filterUniversities, searchWorld, …
 - `useTestimonials.ts` (34) — All student opinions the pages can show: the ones gathered by the team (in the app's data) plus the approved ones from the database.. Exports: useTestimonials, useTestimonialsFor
 - `username.test.ts` (26) — Tests the username, password and email rules shared by the account forms and the server.
 - `username.ts` (24) — The rules for a username and a password, used by the account forms and by the server, so both check exactly the same thing.. Exports: USERNAME_MIN, USERNAME_MAX, PASSWORD_MIN, PASSWORD_MAX, cleanUsername, validPassword, cleanEmail

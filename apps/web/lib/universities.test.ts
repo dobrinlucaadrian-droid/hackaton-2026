@@ -4,7 +4,7 @@ import { categories, domains, specializations } from "./data";
 import { counted, normalize, specializationsFor } from "./labels";
 import { TRAITS } from "./match";
 import { universities, universityById } from "./sheets";
-import { citiesIn, countries, filterUniversities, searchUniversities, searchWorld } from "./universities";
+import { citiesIn, cityCounts, countries, filterUniversities, searchUniversities, searchWorld } from "./universities";
 
 const PRESTIGE = ["ivy", "top", "international", "national"];
 const BUDGET = ["gratuit", "mic", "mediu", "mare"];
@@ -108,6 +108,16 @@ describe("searchUniversities", () => {
     expect(searchUniversities("universitatea", 3).length).toBeLessThanOrEqual(3);
     const res = searchUniversities("delft", 5);
     expect(normalize(res[0].name)).toContain("delft");
+  });
+});
+
+describe("cityCounts", () => {
+  it("counts the universities of each city, in the same order citiesIn uses", () => {
+    const counts = cityCounts({ region: "ro" });
+    const cities = citiesIn({ region: "ro" });
+    expect([...counts.keys()].sort()).toEqual([...cities].sort());
+    for (let i = 1; i < cities.length; i++) expect(counts.get(cities[i - 1])!).toBeGreaterThanOrEqual(counts.get(cities[i])!);
+    expect([...counts.values()].reduce((a, b) => a + b, 0)).toBe(universities.filter((u) => u.region === "ro").length);
   });
 });
 
