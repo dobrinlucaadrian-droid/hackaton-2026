@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-26 10:00 — ca elevii să recomande site-ul: previzualizare, „Trimite”, rezultatul ca imagine de story
+- Cerut: partea 2 din planul „să ne găsească și să ne recomande”; alese: imagine cu nume, loc și taxă; meniul de trimis al telefonului + copierea linkului; story cu cele 3 domenii și procente
+- Făcut: (1) fiecare fișă de universitate are imaginea ei de previzualizare (`opengraph-image.tsx`, 1200×630: sigla, numele, orașul și țara, taxa pe an în moneda universității) și titlul/linkul ei în metadatele pentru WhatsApp, Facebook etc. (înainte toate arătau „FindMyUni” și pagina de start); textul e așezat literă cu literă, fiindcă desenatorul de imagini lăsa spații greșite după unele cuvinte; (2) butonul „Trimite” lângă „Adaugă la favorite”: pe telefon deschide meniul de trimis, altfel copiază linkul („Link copiat ✓”); (3) pe pagina de rezultat, „Arată-le și prietenilor” face în browser o imagine 1080×1920 cu cele 3 domenii, procentele și findmyuni.ro, fără nume sau date, apoi o trimite prin meniul telefonului sau o descarcă
+- Fișiere: `apps/web/app/universitati/[id]/opengraph-image.tsx`, `apps/web/app/universitati/[id]/page.tsx`, `apps/web/components/ShareButton.tsx`, `apps/web/components/ShareResult.tsx`, `apps/web/app/rezultat/page.tsx`, `apps/web/public/logo-cap.png`
+- Poartă: TRECUT (gate.mjs; în browser: imaginile pentru UniBuc, UMF Carol Davila, Oxford, ETH; „Trimite” copiază linkul și cheamă meniul de trimis; imaginea de story 1080×1920 cu numele lungi pe două rânduri; în versiunea de producție og:image duce la https://findmyuni.ro/…)
+- Urmează: salvare cu /git-workflow; apoi partea 1 (lansarea, Google Search Console, Instagram, profesori)
+
 ### 2026-10-25 14:30 — „Ghiduri” în meniul de sus
 - Cerut: butonul pentru ghidurile pe țări în meniul de sus, păstrând „Acasă”
 - Făcut: „Ghiduri” după „Universități” în meniu; e evidențiat pe pagina ghidurilor și pe fiecare ghid de țară; pe telefon meniul rămâne pe două rânduri
@@ -1032,6 +1039,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-25 03:29 `5a90f6d` feat: add the country guides to the top menu
 - 2026-10-25 03:12 `cfc7f98` feat: new drawings on the students and questionnaire pages
 - 2026-10-25 03:00 `a519dc1` feat: English-taught filter, multi-choice filters, empty-result help
 - 2026-10-24 23:30 `13518bf` feat: add drawings to the universities, guides and fields pages
@@ -1061,5 +1069,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-20 01:00 `cd56f9b` feat: restore NTUA in the Greek programme catalogue
 - 2026-10-19 18:15 `673cf7b` feat: add programme catalogues for seven more EU countries
 - 2026-10-19 04:19 `caece3c` feat: username and password accounts with email code verification
-- 2026-10-19 03:23 `90b1388` feat: guides for every country, hide data counts, guide search
 <!-- commits:end -->

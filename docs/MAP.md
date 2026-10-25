@@ -158,7 +158,7 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/app/rezultat  (2 files)
 
 - `layout.tsx` (10) — The result page's title in the browser tab (the page itself runs in the browser).. Exports: metadata, Layout
-- `page.tsx` (165) — Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /rezultat. Exports: ResultPage
+- `page.tsx` (168) — Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /rezultat. Exports: ResultPage
 
 ### apps/web/app/specializari/[categorie]  (1 files)
 
@@ -190,15 +190,16 @@ _Open only the files listed here; a file's description is its first comment line
 
 - `page.tsx` (122) — Profile sheet of one Romanian faculty: what you study there, how you get in, its bachelor programmes from the official list and the official links.. Routes: /universitati/[id]/[facultate]. Exports: generateStaticParams, generateMetadata, FacultyPage
 
-### apps/web/app/universitati/[id]  (1 files)
+### apps/web/app/universitati/[id]  (2 files)
 
-- `page.tsx` (359) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
+- `opengraph-image.tsx` (79) — The picture shown when a university's sheet is shared (WhatsApp, Instagram, Facebook …): FindMyUni, the university's name, place and yearly tuition when we have it.. Exports: alt, size, contentType, Image
+- `page.tsx` (366) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/universitati  (1 files)
 
 - `page.tsx` (35) — University finder page: search box, filters and the results, 10 at a time (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
 
-### apps/web/components  (42 files)
+### apps/web/components  (44 files)
 
 - `ActivitiesStep.tsx` (227) — Quiz step "Ce ai făcut până acum?": add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
 - `ActivitiesSummary.tsx` (33) — Read-only list of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
@@ -224,6 +225,8 @@ _Open only the files listed here; a file's description is its first comment line
 - `ProgramSearch.tsx` (99) — Search over the bachelor programmes of the catalogue: country, free text, study domain and city; the state lives in the URL so links and Back work.. Exports: ProgramSearch
 - `SaveResult.tsx` (99) — Under the result: signed-in students save it with one button; the others see a card with the benefits of an account, which opens the account window on "new account" and saves the result once the account exists.. Exports: SaveResult
 - `SearchBox.tsx` (126) — Search box with a magnifier icon; submits to /universitati?q=... or calls onSearch when given. With `suggest`, a list of suggestions opens while typing (arrows, Enter and Escape work; screen readers hear it as a combobox).. Exports: SearchBox
+- `ShareButton.tsx` (41) — "Trimite" on a university sheet: on a phone it opens the phone's own share menu (WhatsApp, Instagram, messages …); where that menu does not exist, it copies the link.. Exports: ShareButton
+- `ShareResult.tsx` (184) — Under the result: draws a story-sized picture (1080×1920) of the 3 matched domains with their percentages and "findmyuni.ro", in the browser only. Exports: ShareResult
 - `Shell.tsx` (45) — Page frame shared by all screens: header with the FindMyUni logo, a centered content column and a footer with the privacy link.. Exports: Shell, Notice
 - `SignInForm.tsx` (284) — The account form, shared by the account window and the sign-in page: sign in with username and password, make an account (username, full name, email, password, then the 6-digit code from the email) and reset a forgotten password with a code.. Exports: SignInForm
 - `SpecializationsBrowser.tsx` (82) — /specializari body: a text filter over all categories, domains and specializations; without text it shows the category tiles.. Exports: SpecializationsBrowser
@@ -238,9 +241,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `UniversityPhoto.tsx` (25) — A university's photo at the top of its sheet, with the author and licence underneath (the free licences of Wikimedia Commons require them).. Exports: UniversityPhoto
 - `UniversitySearch.tsx` (665) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
 - `VisitTracker.tsx` (38) — Counts page views anonymously: sends only the page path and, on the first page of a visit, the country and the site the visitor came from. No cookie, no stored id.. Exports: VisitTracker
-- `WelcomeActions.tsx` (40) — The two choices under the welcome on the home page: make an account (opens the account window) or go on without one (scrolls to the big buttons). Signed-in visitors see a greeting with their name instead (the account is in the top menu).. Exports: WelcomeActions
-- `WelcomeDialog.tsx` (63) — Account window: opens over the current page when the home page's "Intră în cont" button or the result page's account card is pressed, with the account form (sign in, new account, forgotten password). It never opens by itself.. Exports: openSignIn, WelcomeDialog
-- … +2 more
+- … +4 more
 
 ### apps/web/convex/_generated  (5 files)
 
@@ -386,8 +387,9 @@ _Open only the files listed here; a file's description is its first comment line
 - `username.test.ts` (26) — Tests the username, password and email rules shared by the account forms and the server.
 - `username.ts` (24) — The rules for a username and a password, used by the account forms and by the server, so both check exactly the same thing.. Exports: USERNAME_MIN, USERNAME_MAX, PASSWORD_MIN, PASSWORD_MAX, cleanUsername, validPassword, cleanEmail
 
-### apps/web/public  (3 files)
+### apps/web/public  (4 files)
 
+- `logo-cap.png`
 - `logo.jpg`
 - `logo.png`
 - `world-universities.json`

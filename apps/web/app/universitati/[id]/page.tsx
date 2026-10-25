@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BackToSearch } from "@/components/BackToSearch";
 import { FavoriteButton } from "@/components/FavoriteButton";
+import { ShareButton } from "@/components/ShareButton";
 import { UniversityPhoto } from "@/components/UniversityPhoto";
 import { OfficialPrograms } from "@/components/OfficialPrograms";
 import { ProgramGroups } from "@/components/ProgramGroups";
@@ -32,9 +33,14 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const u = universityById(id);
-  return u
-    ? { title: `${u.name}: admitere, costuri, programe | FindMyUni`, description: clip(`${u.city}, ${u.country}. ${u.about}`) }
-    : { title: "Universitate | FindMyUni" };
+  if (!u) return { title: "Universitate | FindMyUni" };
+  const description = clip(`${u.city}, ${u.country}. ${u.about}`);
+  return {
+    title: `${u.name}: admitere, costuri, programe | FindMyUni`,
+    description,
+    // what WhatsApp, Instagram or Facebook show when the sheet is shared (the picture comes from opengraph-image.tsx next to this page)
+    openGraph: { title: u.name, description, url: `/universitati/${u.id}`, siteName: "FindMyUni", locale: "ro_RO", type: "website" },
+  };
 }
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
@@ -113,8 +119,9 @@ export default async function UniversityPage({ params }: Props) {
             <PrestigeBadge prestige={u.prestige} />
             <BudgetBadge budget={u.budget} />
           </div>
-          <div className="mt-4">
+          <div className="mt-4 flex flex-wrap items-start gap-3">
             <FavoriteButton university={{ universityId: u.id, name: u.name, place: `${u.city}, ${u.country}` }} />
+            <ShareButton title={u.name} text={`${u.name} (${u.city}, ${u.country}) pe FindMyUni`} path={`/universitati/${u.id}`} />
           </div>
           {u.about && <p className="mt-4 text-lg text-ink">{u.about}</p>}
           {guide && (

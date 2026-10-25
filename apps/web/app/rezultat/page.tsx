@@ -8,6 +8,7 @@ import { Confetti } from "@/components/Confetti";
 import { Diploma, Sparkle } from "@/components/Illustrations";
 import { MatchCard } from "@/components/MatchCard";
 import { SaveResult } from "@/components/SaveResult";
+import { ShareResult } from "@/components/ShareResult";
 import { Notice, Shell } from "@/components/Shell";
 import { WhatIf } from "@/components/WhatIf";
 import { api } from "@/convex/_generated/api";
@@ -147,6 +148,8 @@ export default function ResultPage() {
           </div>
         ))}
       </div>
+
+      <ShareResult matches={shown} />
 
       <p className="mx-auto mt-8 max-w-2xl rounded-2xl bg-primary-tint p-4 text-sm text-primary-dark" role="note">
         Chestionarul nu este un test psihologic validat: rezultatul e un punct de pornire, nu un verdict. Vorbește și cu
