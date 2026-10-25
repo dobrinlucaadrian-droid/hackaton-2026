@@ -160,6 +160,17 @@ describe("filterUniversities", () => {
       if (p === 0) expect(BUDGET.indexOf(all[i - 1].budget)).toBeLessThanOrEqual(BUDGET.indexOf(all[i].budget));
     }
   });
+  it("with several choices in a group, keeps a university that matches any of them", () => {
+    const two = filterUniversities({ domainIds: ["medicina", "farmacie"] }, 10000);
+    expect(two.every((u) => u.domainIds.includes("medicina") || u.domainIds.includes("farmacie"))).toBe(true);
+    expect(two.length).toBeGreaterThanOrEqual(filterUniversities({ domainIds: ["medicina"] }, 10000).length);
+    const adm = filterUniversities({ admissionTypes: ["bac", "dosar"] }, 10000);
+    expect(adm.every((u) => u.admissionTypes.includes("bac") || u.admissionTypes.includes("dosar"))).toBe(true);
+    const pr = filterUniversities({ prestiges: ["top", "international"] }, 10000);
+    expect(pr.every((u) => u.prestige !== "national")).toBe(true);
+    expect(filterUniversities({ prestiges: ["international"] }, 10000).every((u) => u.prestige === "international")).toBe(true);
+  });
+
   it("treats prestige as this level or better", () => {
     expect(filterUniversities({ prestige: "ivy" }, 1000).every((u) => u.prestige === "ivy")).toBe(true);
     expect(filterUniversities({ prestige: "top" }, 1000).every((u) => ["ivy", "top"].includes(u.prestige))).toBe(true);

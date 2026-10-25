@@ -3,16 +3,17 @@
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { categories, domains } from "@/lib/data";
-import type { AdmissionType, Budget, CertificateId, Filters, Prestige, WorldUniversity } from "@/lib/types";
+import type { AdmissionType, Budget, CertificateId, Filters, Prestige, UniversitySummary, WorldUniversity } from "@/lib/types";
 import { ADMISSION_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, FEE_STEPS, PRESTIGE_LABEL } from "@/lib/labels";
 import { rememberSearch } from "@/lib/lastSearch";
-import { citiesIn, cityCounts, countries, filterUniversities, searchUniversities, searchWorld, suggest } from "@/lib/universities";
+import { citiesIn, cityCounts, countries, feeFrom, filterUniversities, searchUniversities, searchWorld, suggest } from "@/lib/universities";
 import { NothingFound } from "./Illustrations";
 import { SearchBox } from "./SearchBox";
 import { UniversityCard } from "./UniversityCard";
 
 const NOTE = "Informațiile sunt orientative. Verifică mereu site-ul universității.";
-const PRESTIGE_CHOICES: Prestige[] = ["ivy", "top", "international"];
+// No "Ivy League" button: it only confused students; the Ivy League shows up under "De top mondial".
+const PRESTIGE_CHOICES: Prestige[] = ["top", "international"];
 // How many city chips are shown before "Vezi toate orașele".
 const CITY_PREVIEW = 12;
 const PRESTIGE_CHIP: Record<string, string> = { ivy: "Ivy League", top: "De top mondial", international: "Cunoscută internațional" };
@@ -52,17 +53,22 @@ function readFilters(p: URLSearchParams): Filters {
   if (regiune === "ro" || regiune === "abroad") f.region = regiune;
   const orase = [...new Set(p.getAll("oras").filter(Boolean))];
   if (orase.length) f.cities = orase;
-  const domeniu = p.get("domeniu");
-  if (domeniu) f.domainId = domeniu;
+  // Domains, prestige levels and admission types may be chosen several at once (?domeniu=a&domeniu=b).
+  const domenii = [...new Set(p.getAll("domeniu").filter((d) => domains.some((x) => x.id === d)))];
+  if (domenii.length) f.domainIds = domenii;
+  const engleza = p.get("engleza");
+  if (engleza === "unele") f.english = "some";
+  if (engleza === "toate") f.english = "all";
   const taxa = Number(p.get("taxa"));
   if (p.get("taxa") !== null && (FEE_STEPS as readonly number[]).includes(taxa)) f.maxFee = taxa;
   // older links used the cost levels: turn them into the amount each level ends at
   const buget = pick<Budget>(p.get("buget"), BUDGET_LABEL);
   if (buget && f.maxFee === undefined && buget !== "mare") f.maxFee = { gratuit: 0, mic: 2000, mediu: 6000 }[buget];
-  const prestigiu = pick<Prestige>(p.get("prestigiu"), PRESTIGE_LABEL);
-  if (prestigiu && prestigiu !== "national") f.prestige = prestigiu;
-  const admitere = pick<AdmissionType>(p.get("admitere"), ADMISSION_LABEL);
-  if (admitere) f.admissionType = admitere;
+  // an older link with "ivy" now means "top", which includes the Ivy League
+  const prestigii = [...new Set(p.getAll("prestigiu").map((x) => (x === "ivy" ? "top" : x)))].filter((x): x is Prestige => x in PRESTIGE_LABEL && x !== "national");
+  if (prestigii.length) f.prestiges = prestigii;
+  const admiteri = [...new Set(p.getAll("admitere"))].filter((x): x is AdmissionType => x in ADMISSION_LABEL);
+  if (admiteri.length) f.admissionTypes = admiteri;
   if (p.get("burse") === "1") f.scholarships = true;
   if (p.get("camin") === "1") f.dorms = true;
   const fara = pick<CertificateId>(p.get("fara"), CERTIFICATE_LABEL);
@@ -77,11 +83,15 @@ const PARAM_OF: Record<keyof Filters, string> = {
   domainId: "domeniu",
   budget: "buget",
   maxFee: "taxa",
+  english: "engleza",
   prestige: "prestigiu",
   admissionType: "admitere",
   scholarships: "burse",
   dorms: "camin",
   withoutCertificate: "fara",
+  domainIds: "domeniu",
+  admissionTypes: "admitere",
+  prestiges: "prestigiu",
 };
 
 const selectClass = "mt-1 min-h-11 w-full rounded-xl border-2 border-transparent bg-paper px-3 text-ink ring-1 ring-line focus:border-primary focus:outline-none";
@@ -109,6 +119,96 @@ function Group({ title, children, hint }: { title: string; children: React.React
       {hint && <div className="mt-2 text-sm text-ink-soft">{hint}</div>}
     </fieldset>
   );
+}
+
+/** "o universitate", "7 universități", "83 de universități" (Romanian puts "de" after 20 and above). */
+function universitiesCount(n: number): string {
+  if (n === 1) return "o universitate";
+  const r = n % 100;
+  return `${n} ${r === 0 || r >= 20 ? "de " : ""}universități`;
+}
+
+/** The universities for a text search and filters together (the text search alone when there are no filters). */
+function findMatches(q: string, filters: Filters): UniversitySummary[] {
+  if (!q) return filterUniversities(filters, 10000);
+  const found = searchUniversities(q, 100);
+  if (Object.keys(filters).length === 0) return found;
+  const ok = new Set(filterUniversities(filters, 10000).map((u) => u.id));
+  return found.filter((u) => ok.has(u.id));
+}
+
+/** The same filters without one of them (or without one value of a group where several can be chosen). */
+function dropFilter(filters: Filters, key: keyof Filters, value?: string): Filters {
+  const next: Filters = { ...filters };
+  const current = next[key];
+  if (value !== undefined && Array.isArray(current)) {
+    const left = (current as string[]).filter((v) => v !== value);
+    if (left.length) (next as Record<string, unknown>)[key] = left;
+    else delete next[key];
+  } else delete next[key];
+  return next;
+}
+
+/** A plain explanation for filter combinations that can never match in Romania, so an empty list does not look like a broken site. */
+/**
+ * Plain explanations of why a search found nothing, worked out from the data: for the chosen place (a country, România or "străinătate"),
+ * each other filter that alone already finds nothing there gets one sentence (at most two are shown).
+ */
+function whyNothing(filters: Filters, place: { name: string; filter: Filters } | null): string[] {
+  const out: string[] = [];
+  const alone = (extra: Filters) => filterUniversities({ ...(place?.filter ?? {}), ...extra }, 10000).length;
+  if (filters.withoutCertificate === "bac" && alone({ withoutCertificate: "bac" }) === 0)
+    out.push("Aproape toate universitățile cer diploma de bacalaureat; doar câteva academii de artă și muzică primesc studenți după probele de talent.");
+  if (!place) return out.slice(0, 2);
+  const loc = place.name;
+  const here = filterUniversities(place.filter, 10000);
+  const ro = loc === "România";
+  if (filters.maxFee !== undefined && alone({ maxFee: filters.maxFee }) === 0) {
+    // the cheapest confirmed fee; universities without an exact fee only tell their level, so then the honest wording is "peste" the level's lower end
+    const exact = here.filter((u) => u.feeFromEur !== undefined).map((u) => u.feeFromEur!);
+    const levels = here.filter((u) => u.feeFromEur === undefined).map(feeFrom);
+    const minExact = exact.length ? Math.min(...exact) : Infinity;
+    const minLevel = levels.length ? Math.min(...levels) : Infinity;
+    const fmt = (n: number) => `${new Intl.NumberFormat("ro-RO").format(Math.round(n / 100) * 100)} €`;
+    const from = minExact <= minLevel ? `pornește de la aproximativ ${fmt(minExact)}` : `este de peste ${fmt(minLevel)}`;
+    out.push(
+      filters.maxFee === 0
+        ? `În ${loc} nu există universități fără taxă pentru un student din România; cea mai mică taxă ${from} pe an.`
+        : `În ${loc}, cea mai mică taxă pentru un student din România ${from} pe an.`,
+    );
+  }
+  if (filters.english && alone({ english: filters.english }) === 0) {
+    const some = here.filter((u) => u.english === "some" || u.english === "all").length;
+    out.push(
+      filters.english === "all" && some > 0
+        ? `În ${loc} nicio universitate de pe site nu are toate licențele în engleză, dar ${some} au cel puțin o licență în engleză.`
+        : `În ${loc} nu avem nicio universitate cu licențe predate în engleză.`,
+    );
+  }
+  if (filters.prestiges?.length && alone({ prestiges: filters.prestiges }) === 0)
+    out.push(
+      ro && filters.prestiges.every((p) => p === "top" || p === "ivy")
+        ? "Nicio universitate din România nu este printre primele aproximativ 100 din lume; cele mai cunoscute sunt la „Cunoscută internațional”."
+        : `Dintre universitățile din ${loc} de pe site, niciuna nu este marcată „${filters.prestiges.map((p) => PRESTIGE_CHIP[p]).join("” sau „")}”.`,
+    );
+  if (filters.admissionTypes?.length && alone({ admissionTypes: filters.admissionTypes }) === 0) {
+    if (ro && filters.admissionTypes.every((a) => a === "test-standardizat"))
+      out.push("În România nu se dă SAT, ACT sau alt test standardizat: admiterea se face după media de la bacalaureat, un examen, probe de aptitudini sau un dosar.");
+    else {
+      const used = (Object.keys(ADMISSION_LABEL) as AdmissionType[]).filter((a) => here.some((u) => u.admissionTypes.includes(a)));
+      const lower = (s: string) => s.charAt(0).toLowerCase() + s.slice(1); // "test standardizat (SAT, ACT etc.)" keeps its capitals
+      out.push(`La universitățile din ${loc} de pe site, admiterea se face prin: ${used.map((a) => lower(ADMISSION_LABEL[a])).join(", ")}.`);
+    }
+  }
+  if (filters.scholarships && alone({ scholarships: true }) === 0)
+    out.push(`Niciuna dintre universitățile din ${loc} de pe site nu are burse pe care un student din România le poate obține.`);
+  if (filters.dorms && alone({ dorms: true }) === 0)
+    out.push(`Niciuna dintre universitățile din ${loc} de pe site nu are cămin propriu sau al unui partener oficial.`);
+  if (filters.withoutCertificate && filters.withoutCertificate !== "bac" && alone({ withoutCertificate: filters.withoutCertificate }) === 0)
+    out.push(`Toate universitățile din ${loc} de pe site cer: ${CERTIFICATE_LABEL[filters.withoutCertificate].charAt(0).toLowerCase()}${CERTIFICATE_LABEL[filters.withoutCertificate].slice(1)}.`);
+  if (filters.domainIds?.length && alone({ domainIds: filters.domainIds }) === 0)
+    out.push(`În ${loc} nu avem nicio universitate cu ${filters.domainIds.map((d) => domains.find((x) => x.id === d)?.name ?? d).join(" sau ")}.`);
+  return out.slice(0, 2);
 }
 
 /** How many universities the list shows at first and adds with each "Arată încă 10". */
@@ -152,8 +252,13 @@ export function UniversitySearch() {
     for (const c of chosen.includes(city) ? chosen.filter((x) => x !== city) : [...chosen, city]) next.append("oras", c);
     go(next);
   }
-  function toggle<K extends keyof Filters>(key: K, value: string, current: unknown) {
-    setParam(PARAM_OF[key], current === value ? undefined : value);
+  /** Adds or removes one value of a group where several can be chosen (domains, prestige, admission). */
+  function toggleMulti(param: string, value: string) {
+    const next = new URLSearchParams(params.toString());
+    const chosen = next.getAll(param);
+    next.delete(param);
+    for (const v of chosen.includes(value) ? chosen.filter((x) => x !== value) : [...chosen, value]) next.append(param, v);
+    go(next);
   }
   function clearFilters() {
     const next = new URLSearchParams();
@@ -161,15 +266,7 @@ export function UniversitySearch() {
     go(next);
   }
 
-  const matches = useMemo(() => {
-    if (q) {
-      const found = searchUniversities(q, 100);
-      if (activeCount === 0) return found;
-      const ok = new Set(filterUniversities(filters, 10000).map((u) => u.id));
-      return found.filter((u) => ok.has(u.id));
-    }
-    return filterUniversities(filters, 10000);
-  }, [q, filters, activeCount]);
+  const matches = useMemo(() => findMatches(q, filters), [q, filters]);
 
   // 10 at first, 10 more on each "Arată încă 10"; back to 10 whenever the search or the filters change.
   // How many results are open is kept in the address too (?arata=20), so coming back to the search shows the same list.
@@ -210,26 +307,49 @@ export function UniversitySearch() {
   const rest = domains.filter((d) => !inCat.has(d.id));
 
   const countryList = countries();
-  const hiddenCount = (["maxFee", "prestige", "admissionType", "scholarships", "dorms", "withoutCertificate"] as const).filter((k) => filters[k] !== undefined).length;
+  const hiddenCount = (["maxFee", "english", "prestiges", "admissionTypes", "scholarships", "dorms", "withoutCertificate"] as const).filter((k) => filters[k] !== undefined).length;
   // Cities to choose from: those of the chosen country or region; with nothing chosen, the Romanian ones.
   const cityPlace = filters.country ? { country: filters.country } : { region: filters.region ?? ("ro" as const) };
   const cityOptions = filters.region === "abroad" && !filters.country ? [] : citiesIn(cityPlace);
   const cityCount = cityCounts(cityPlace);
   const chosenCities = filters.cities ?? [];
+  const chosenDomains = filters.domainIds ?? [];
   const cityTitle = filters.country ? `Orașe din ${filters.country}` : "Orașe din România";
   const cityShown = allCities ? cityOptions : cityOptions.filter((c, i) => i < CITY_PREVIEW || chosenCities.includes(c));
-  const chips: { key: string; label: string; remove: () => void }[] = [];
-  const add = (key: keyof Filters, label: string) => chips.push({ key, label, remove: () => setParam(PARAM_OF[key], undefined) });
+  // Each active filter as a removable chip; `without` is the same search without it (used to suggest what to remove when nothing is found).
+  const chips: { key: string; label: string; remove: () => void; without: Filters }[] = [];
+  const add = (key: keyof Filters, label: string) => chips.push({ key, label, remove: () => setParam(PARAM_OF[key], undefined), without: dropFilter(filters, key) });
+  const addOne = <K extends "cities" | "domainIds" | "prestiges" | "admissionTypes">(key: K, value: string, label: string, remove: () => void) =>
+    chips.push({ key: `${key}-${value}`, label, remove, without: dropFilter(filters, key, value) });
   if (filters.region) add("region", filters.region === "ro" ? "În România" : "În străinătate");
-  for (const c of chosenCities) chips.push({ key: `city-${c}`, label: `Oraș: ${c}`, remove: () => toggleCity(c) });
+  for (const c of chosenCities) addOne("cities", c, `Oraș: ${c}`, () => toggleCity(c));
   if (filters.country) add("country", filters.country);
-  if (filters.domainId) add("domainId", domains.find((d) => d.id === filters.domainId)?.name ?? filters.domainId);
+  for (const d of filters.domainIds ?? []) addOne("domainIds", d, domains.find((x) => x.id === d)?.name ?? d, () => toggleMulti("domeniu", d));
   if (filters.maxFee !== undefined) add("maxFee", feeStepLabel(filters.maxFee, true));
-  if (filters.prestige) add("prestige", PRESTIGE_CHIP[filters.prestige]);
-  if (filters.admissionType) add("admissionType", ADMISSION_LABEL[filters.admissionType]);
+  if (filters.english) add("english", filters.english === "all" ? "Toate licențele în engleză" : "Licență în engleză");
+  for (const p of filters.prestiges ?? []) addOne("prestiges", p, PRESTIGE_CHIP[p], () => toggleMulti("prestigiu", p));
+  for (const a of filters.admissionTypes ?? []) addOne("admissionTypes", a, ADMISSION_LABEL[a], () => toggleMulti("admitere", a));
   if (filters.scholarships) add("scholarships", "Are burse");
   if (filters.dorms) add("dorms", "Are cămin");
   if (filters.withoutCertificate) add("withoutCertificate", `Fără: ${CERTIFICATE_LABEL[filters.withoutCertificate]}`);
+  // When nothing is found: which single filter to remove to get results again (the biggest gains first), and why, for the known Romanian cases.
+  const nothing = matches.length === 0 && activeCount > 0;
+  const suggestions = nothing
+    ? chips
+        .map((c) => ({ ...c, count: findMatches(q, c.without).length }))
+        .filter((c) => c.count > 0)
+        .sort((a, b) => b.count - a.count)
+        .slice(0, 3)
+    : [];
+  // The place the explanations talk about: the chosen country, otherwise România (region or Romanian cities) or "străinătate".
+  const place: { name: string; filter: Filters } | null = filters.country
+    ? { name: filters.country, filter: { country: filters.country } }
+    : filters.region === "ro" || (chosenCities.length > 0 && filters.region !== "abroad")
+      ? { name: "România", filter: { region: "ro" } }
+      : filters.region === "abroad"
+        ? { name: "străinătate", filter: { region: "abroad" } }
+        : null;
+  const why = nothing ? whyNothing(filters, place) : [];
 
   return (
     <div>
@@ -250,24 +370,41 @@ export function UniversitySearch() {
           </div>
         </div>
         <div>
-          <label htmlFor="f-domeniu" className="text-sm font-extrabold uppercase tracking-wide text-primary">Domeniu</label>
-          <select id="f-domeniu" value={filters.domainId ?? ""} onChange={(e) => setParam("domeniu", e.target.value || undefined)} className={selectClass}>
-            <option value="">Oricare</option>
+          <label htmlFor="f-domeniu" className="text-sm font-extrabold uppercase tracking-wide text-primary">Domeniu (poți alege mai multe)</label>
+          {/* each choice is added to the list below; the select always goes back to its prompt */}
+          <select
+            id="f-domeniu"
+            value=""
+            onChange={(e) => e.target.value && !chosenDomains.includes(e.target.value) && toggleMulti("domeniu", e.target.value)}
+            className={selectClass}
+          >
+            <option value="">{chosenDomains.length ? "Adaugă încă un domeniu" : "Oricare"}</option>
             {grouped.map(({ c, ds }) => (
               <optgroup key={c.id} label={c.name}>
                 {ds.map((d) => (
-                  <option key={d.id} value={d.id}>{d.name}</option>
+                  <option key={d.id} value={d.id} disabled={chosenDomains.includes(d.id)}>{d.name}</option>
                 ))}
               </optgroup>
             ))}
             {rest.length > 0 && (
               <optgroup label="Alte domenii">
                 {rest.map((d) => (
-                  <option key={d.id} value={d.id}>{d.name}</option>
+                  <option key={d.id} value={d.id} disabled={chosenDomains.includes(d.id)}>{d.name}</option>
                 ))}
               </optgroup>
             )}
           </select>
+          {chosenDomains.length > 0 && (
+            <div className="mt-2 flex flex-wrap gap-2">
+              {chosenDomains.map((d) => (
+                <Chip key={d} on onClick={() => toggleMulti("domeniu", d)}>
+                  {domains.find((x) => x.id === d)?.name ?? d}
+                  <span aria-hidden className="ml-1.5">✕</span>
+                  <span className="sr-only"> (scoate)</span>
+                </Chip>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 
@@ -283,7 +420,7 @@ export function UniversitySearch() {
                 <span aria-hidden className="ml-1.5 font-semibold opacity-60">
                   {cityCount.get(c)}
                 </span>
-                <span className="sr-only">, {cityCount.get(c) === 1 ? "o universitate" : `${cityCount.get(c)} universități`}</span>
+                <span className="sr-only">, {universitiesCount(cityCount.get(c) ?? 0)}</span>
               </Chip>
             ))}
             {cityOptions.length > cityShown.length && (
@@ -353,18 +490,31 @@ export function UniversitySearch() {
             ))}
           </Group>
 
-          <Group title="Prestigiu">
-            <Chip on={!filters.prestige} onClick={() => setParam("prestigiu", undefined)}>Oricare</Chip>
+          <Group
+            title="Predare în engleză"
+            hint={<p>Doar programele de licență complete contează; cursurile sau semestrele în engleză și masteratele nu. Lista exactă a programelor e pe fișa fiecărei universități.</p>}
+          >
+            <Chip on={!filters.english} onClick={() => setParam("engleza", undefined)}>Oricare</Chip>
+            <Chip on={filters.english === "some"} onClick={() => setParam("engleza", filters.english === "some" ? undefined : "unele")}>
+              Cel puțin o licență în engleză
+            </Chip>
+            <Chip on={filters.english === "all"} onClick={() => setParam("engleza", filters.english === "all" ? undefined : "toate")}>
+              Toate licențele în engleză
+            </Chip>
+          </Group>
+
+          <Group title="Prestigiu (poți alege mai multe)">
+            <Chip on={!filters.prestiges} onClick={() => setParam("prestigiu", undefined)}>Oricare</Chip>
             {PRESTIGE_CHOICES.map((p) => (
-              <Chip key={p} on={filters.prestige === p} onClick={() => toggle("prestige", p, filters.prestige)}>
+              <Chip key={p} on={!!filters.prestiges?.includes(p)} onClick={() => toggleMulti("prestigiu", p)}>
                 {PRESTIGE_CHIP[p]}
               </Chip>
             ))}
           </Group>
 
-          <Group title="Modalitate de admitere">
+          <Group title="Modalitate de admitere (poți alege mai multe)" hint={<p>Apar universitățile care au oricare dintre modalitățile alese.</p>}>
             {(Object.keys(ADMISSION_LABEL) as AdmissionType[]).map((a) => (
-              <Chip key={a} on={filters.admissionType === a} onClick={() => toggle("admissionType", a, filters.admissionType)}>
+              <Chip key={a} on={!!filters.admissionTypes?.includes(a)} onClick={() => toggleMulti("admitere", a)}>
                 {ADMISSION_LABEL[a]}
               </Chip>
             ))}
@@ -419,9 +569,32 @@ export function UniversitySearch() {
         <div className="mt-4 rounded-3xl bg-card p-8 text-center shadow-sm ring-1 ring-line" role="status">
           <NothingFound className="float mx-auto h-24 w-32" />
           <p className="mt-2 text-lg font-black text-ink">Nu am găsit nicio universitate.</p>
-          <p className="mt-1 text-ink-soft">
-            {activeCount > 0 ? "Încearcă să scoți unele filtre sau schimbă ce cauți." : "Încearcă alt cuvânt, de exemplu un oraș sau o țară."}
+          {why.map((w) => (
+            <p key={w} className="mx-auto mt-2 max-w-xl rounded-2xl bg-teal-tint p-3 text-sm font-bold text-teal-ink">
+              {w}
+            </p>
+          ))}
+          <p className="mt-2 text-ink-soft">
+            {activeCount === 0
+              ? "Încearcă alt cuvânt, de exemplu un oraș sau o țară."
+              : suggestions.length > 0
+                ? "Filtrele alese nu se potrivesc împreună. Scoate unul dintre ele:"
+                : "Încearcă să scoți unele filtre sau schimbă ce cauți."}
           </p>
+          {suggestions.length > 0 && (
+            <div className="mt-3 flex flex-wrap justify-center gap-2">
+              {suggestions.map((s) => (
+                <button
+                  key={s.key}
+                  type="button"
+                  onClick={s.remove}
+                  className="min-h-11 rounded-full bg-primary-tint px-4 text-sm font-bold text-primary-dark transition hover:bg-primary hover:text-white"
+                >
+                  Scoate „{s.label}” → {universitiesCount(s.count)}
+                </button>
+              ))}
+            </div>
+          )}
           {activeCount > 0 && (
             <button type="button" onClick={clearFilters} className="mt-4 min-h-11 rounded-2xl bg-primary px-6 font-bold text-white hover:bg-primary-dark">
               Șterge filtrele
@@ -432,7 +605,7 @@ export function UniversitySearch() {
         <ol className="mt-4 grid gap-4 md:grid-cols-2">
           {results.map((u, i) => (
             <li key={u.id}>
-              <UniversityCard u={u} rank={q ? undefined : i + 1} domainId={filters.domainId} />
+              <UniversityCard u={u} rank={q ? undefined : i + 1} domainId={chosenDomains.find((d) => u.domainIds.includes(d))} />
             </li>
           ))}
         </ol>

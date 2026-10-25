@@ -21,6 +21,35 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-25 13:00 — explicații pentru toate combinațiile de filtre fără rezultate
+- Cerut: verificarea tuturor combinațiilor de filtre care nu se potrivesc și o explicație pentru fiecare
+- Făcut: am verificat fiecare țară (plus România și străinătate) cu fiecare filtru, apoi perechile de filtre fără loc. Explicațiile se calculează acum din date pentru locul ales: taxa cea mai mică (din sumele confirmate, altfel „peste” pragul nivelului), modalitățile de admitere care există acolo, câte au cel puțin o licență în engleză, prestigiu, burse, cămin, certificate cerute de toate, domenii lipsă, plus „Fără bacalaureat” (doar câteva academii de artă). Cele trei texte speciale pentru România rămân. Se arată cel mult două explicații, apoi butoanele „Scoate …”
+- Fișiere: `apps/web/components/UniversitySearch.tsx`
+- Poartă: TRECUT (gate.mjs; în browser 12 combinații: Marea Britanie + 3.000 €, Franța + media de la bac, Danemarca + toate în engleză, Germania + top, România + fără bac, Malta + burse, Australia + fără taxă, Olanda + 1.000 €, Marea Britanie + fără engleză etc. — fiecare cu explicația corectă)
+- Urmează: salvare cu /git-workflow
+
+### 2026-10-25 12:00 — când nu sunt rezultate: de ce și ce filtru să scoți
+- Cerut: dacă elevul alege România și „Test standardizat (SAT …)”, sub lupă să apară un mesaj că filtrul nu se potrivește, fiindcă în România nu se cere așa ceva
+- Făcut: la zero rezultate apar (1) explicația pentru cazurile din România care nu pot avea rezultate: test standardizat, toate licențele în engleză (cu numărul calculat din date al celor cu cel puțin una), De top mondial; (2) până la 3 butoane „Scoate «filtru» → N universități”, cu filtrele care aduc cele mai multe rezultate înapoi; plus „Șterge filtrele”. Numerele se scriu corect în română („83 de universități”), și la textul citit pentru orașe
+- Fișiere: `apps/web/components/UniversitySearch.tsx`
+- Poartă: TRECUT (gate.mjs; în browser: România + test standardizat, România + toate licențele în engleză, București + De top mondial — fiecare cu explicația și butoanele potrivite)
+- Urmează: salvare cu /git-workflow
+
+### 2026-10-25 11:00 — mai multe alegeri în același filtru
+- Cerut: să poți bifa mai multe variante deodată, ca să nu cauți de două ori; ales: Domeniu, Prestigiu și Modalitate de admitere, iar o universitate apare dacă se potrivește cu oricare dintre alegeri
+- Făcut: câmpurile `domainIds`, `prestiges`, `admissionTypes` (mai multe valori în adresă, de ex. `?domeniu=medicina&domeniu=farmacie`); la Domeniu fiecare alegere se adaugă ca etichetă cu ✕ sub listă; la Prestigiu și Admitere butoanele se bifează pe rând; „De top mondial” include și Ivy League. Linkurile vechi cu o singură valoare merg în continuare
+- Fișiere: `apps/web/lib/types.ts`, `apps/web/lib/universities.ts`, `apps/web/lib/universities.test.ts`, `apps/web/components/UniversitySearch.tsx`
+- Poartă: TRECUT (gate.mjs; în browser: Medicină + Farmacie, De top mondial + Cunoscută internațional, Media + Dosar → toate cele 6 active deodată, rezultatele încep cu Karolinska, Imperial)
+- Urmează: salvare cu /git-workflow (împreună cu filtrul „Predare în engleză”)
+- Apoi, la cererea echipei: scos butonul „Ivy League” din filtrul Prestigiu (încurca elevii); Ivy League apare la „De top mondial”, iar linkurile vechi cu `prestigiu=ivy` deschid „De top mondial”. Observat: doar 25 de universități sunt „De top mondial” (plus 8 Ivy), de ex. nicio universitate germană — de corectat dacă echipa vrea
+
+### 2026-10-25 10:00 — filtrul „Predare în engleză”
+- Cerut: filtru pentru universitățile unde se poate studia în engleză; ales: două variante („cel puțin o licență” și „toate licențele”), în „Mai multe filtre”
+- Făcut: `data/english.json` dă fiecărei fișe o categorie (toate / unele / niciuna dintre licențe în engleză). România din lista oficială a programelor (41 de universități cu cel puțin o licență în engleză); străinătatea din textul despre limba de predare, clasificat de un agent și comparat cu o clasificare automată, iar cele 92 de diferențe sau cazuri neclare citite una câte una (la neclar, varianta prudentă: cursurile sau semestrele în engleză nu contează). Total: 258 toate, 356 unele, 284 niciuna. Indexul primește câmpul `english`; filtrul `?engleza=unele|toate`
+- Fișiere: `apps/web/data/english.json`, `apps/web/data/universities-index.json`, `scripts/data/sheets-index.mjs`, `apps/web/lib/types.ts`, `apps/web/lib/universities.ts`, `apps/web/lib/universities.data.test.ts`, `apps/web/components/UniversitySearch.tsx`
+- Poartă: TRECUT (gate.mjs; în browser: Germania + „Cel puțin o licență în engleză” → Freiburg, FAU, TUM, UdK, Frankfurt School …; butoanele apar în panou)
+- Urmează: salvare cu /git-workflow
+
 ### 2026-10-24 13:30 — desene noi pe pagini
 - Cerut: mai multe elemente vizuale; ales: Universități, Ghiduri pe țări, Specializări și ecranul „nu am găsit nimic”, în stilul de acum
 - Făcut: patru desene SVG noi în culorile site-ului, cu aceeași mișcare ușoară: clădire de universitate cu lupă (Universități), glob cu avion de hârtie (Ghiduri), eprubetă–laptop–balanță–pensulă (Specializări, în locul cărților), lupă cu semn de întrebare și căciulă (fără rezultate, în locul emoji-ului). Pe telefon, desenele de la Universități și Ghiduri se ascund ca să nu înghesuie titlul
@@ -989,6 +1018,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-24 23:30 `13518bf` feat: add drawings to the universities, guides and fields pages
 - 2026-10-24 22:08 `fcc2f62` feat: list the team's top Romanian universities first; fix Artifex fee
 - 2026-10-24 21:49 `eacbed4` feat: show how many universities each city has in the city filter
 - 2026-10-24 03:19 `d70a411` feat: filter universities by the yearly tuition they start from
@@ -1018,5 +1048,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-19 03:23 `90b1388` feat: guides for every country, hide data counts, guide search
 - 2026-10-19 02:11 `efdb4e4` feat: welcome home page with cloud buttons, hide counts, collapse cities
 - 2026-10-19 01:53 `ec9d731` feat: rename the site to FindMyUni
-- 2026-10-15 02:33 `b9900d1` feat: at least ten university sheets per country where data allows
 <!-- commits:end -->

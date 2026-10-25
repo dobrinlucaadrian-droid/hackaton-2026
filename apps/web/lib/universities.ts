@@ -177,11 +177,16 @@ export function filterUniversities(filters: Filters, limit = 10): UniversitySumm
     if (filters.domainId && !u.domainIds.includes(filters.domainId)) return false;
     if (maxBudget >= 0 && BUDGET_ORDER.indexOf(u.budget) > maxBudget) return false;
     if (filters.maxFee !== undefined && feeFrom(u) > filters.maxFee) return false;
+    if (filters.english === "all" && u.english !== "all") return false;
+    if (filters.english === "some" && u.english !== "all" && u.english !== "some") return false;
     if (maxPrestige >= 0 && PRESTIGE_ORDER.indexOf(u.prestige) > maxPrestige) return false;
     if (filters.admissionType && !u.admissionTypes.includes(filters.admissionType)) return false;
     if (filters.scholarships && !u.scholarships) return false;
     if (filters.dorms && !u.dorms) return false;
     if (filters.withoutCertificate && u.certificates.includes(filters.withoutCertificate)) return false;
+    if (filters.domainIds?.length && !filters.domainIds.some((d) => u.domainIds.includes(d))) return false;
+    if (filters.admissionTypes?.length && !filters.admissionTypes.some((a) => u.admissionTypes.includes(a))) return false;
+    if (filters.prestiges?.length && !filters.prestiges.some((p) => u.prestige === p || (p === "top" && u.prestige === "ivy"))) return false;
     return true;
   });
   const onlyRomanian = found.length > 0 && found.every((u) => u.region === "ro");

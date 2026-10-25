@@ -1,5 +1,6 @@
 // Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
 import { describe, expect, it } from "vitest";
+import englishJson from "../data/english.json";
 import feesJson from "../data/fees.json";
 import { domains } from "./data";
 import { EUR_PER } from "./fees";
@@ -110,6 +111,24 @@ describe("fee filter", () => {
   });
 });
 
+describe("English-taught bachelors", () => {
+  it("every sheet has a known value", () => {
+    const en = englishJson as Record<string, string>;
+    for (const u of universities) expect(["all", "some", "none"], u.id).toContain(en[u.id]);
+    expect(Object.keys(en).length).toBe(universities.length);
+  });
+  it("filters: at least one (some or all) and all only", () => {
+    const some = filterUniversities({ english: "some" }, 10000);
+    const all = filterUniversities({ english: "all" }, 10000);
+    expect(all.length).toBeGreaterThan(0);
+    expect(some.length).toBeGreaterThan(all.length);
+    expect(all.every((u) => u.english === "all")).toBe(true);
+    expect(some.every((u) => u.english === "all" || u.english === "some")).toBe(true);
+    expect(all.some((u) => u.id === "oxford")).toBe(true);
+    expect(some.some((u) => u.id === "eth-zurich")).toBe(false); // German at bachelor level, English only at master's
+  });
+});
+
 describe("Romanian lists", () => {
   it("start with the team's chosen universities, in their order, only when the list is all Romanian", () => {
     const ro = filterUniversities({ region: "ro" }, 20).map((u) => u.id);
@@ -130,6 +149,8 @@ describe("generated index of the sheets", () => {
       const s: Record<string, unknown> = Object.fromEntries(Object.entries(u).filter(([k]) => !LONG.includes(k)));
       const fee = fees.get(u.id);
       if (fee) s.feeFromEur = Math.round(fee.min * EUR_PER[fee.currency]);
+      const en = (englishJson as Record<string, string>)[u.id];
+      if (en) s.english = en;
       return s;
     });
     expect(index).toEqual(expected);

@@ -89,7 +89,11 @@ export type University = {
 /** A sheet without its long texts: what search, filters and result cards need. This is what the browser loads (data/universities-index.json). */
 export type UniversitySummary = Omit<University, "about" | "budgetNote" | "admission" | "scholarshipsNote" | "dormsNote" | "pros" | "cons"> & {
   feeFromEur?: number; // cheapest yearly tuition in euro (approximate), only when an official page confirmed it (data/fees.json)
+  english?: EnglishBachelors; // whether full bachelor programmes are taught in English (data/english.json)
 };
+
+/** Bachelor programmes taught in English: all (or practically all), some (at least one full programme), or none. */
+export type EnglishBachelors = "all" | "some" | "none";
 
 /** One faculty of a university with its bachelor (licență) study programmes, official names. */
 export type Faculty = { name: string; programs: string[] };
@@ -137,12 +141,17 @@ export type Filters = {
   cities?: string[]; // exact `city` values; a university in any of them passes
   domainId?: string;
   budget?: Budget; // this level or cheaper
+  english?: "some" | "all"; // "some" = at least one bachelor in English (includes "all"); "all" = all bachelors in English
   maxFee?: number; // euro per year the student can pay: the university's cheapest tuition (or, without an exact fee, its level) is at most this
   prestige?: Prestige; // "ivy" = Ivy only; "top" = ivy + top; "international" = ivy + top + international
   admissionType?: AdmissionType;
   scholarships?: boolean; // true = only with scholarships
   dorms?: boolean; // true = only with student housing
   withoutCertificate?: CertificateId; // exclude universities that need this certificate
+  // Several choices in one group: a university passes when it matches any of them.
+  domainIds?: string[];
+  admissionTypes?: AdmissionType[];
+  prestiges?: Prestige[]; // exact levels, except that "top" also lets the Ivy League through
 };
 
 export type ActivityKind = "concurs" | "voluntariat" | "extra";
