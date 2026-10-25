@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-25 14:30 — „Ghiduri” în meniul de sus
+- Cerut: butonul pentru ghidurile pe țări în meniul de sus, păstrând „Acasă”
+- Făcut: „Ghiduri” după „Universități” în meniu; e evidențiat pe pagina ghidurilor și pe fiecare ghid de țară; pe telefon meniul rămâne pe două rânduri
+- Fișiere: `apps/web/components/NavLinks.tsx`
+- Poartă: TRECUT (gate.mjs; în browser: butonul apare pe calculator și pe telefon, evidențiat pe ghidul Germaniei)
+- Urmează: salvare cu /git-workflow
+
 ### 2026-10-25 14:00 — desene noi pe paginile Studenți și Chestionar
 - Cerut: alt desen pe pagina cu studenții și pe cea a chestionarului, în locul tocii (căciula de absolvent)
 - Făcut: două desene SVG noi, în același stil: două baloane de vorbire cu ghilimele, puncte și o inimă (Studenți) și o foaie cu bife și un creion (Chestionar); căciula rămâne doar în desenul de pe pagina de start și în cel de la „nu am găsit nimic”
@@ -1025,6 +1032,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-25 03:12 `cfc7f98` feat: new drawings on the students and questionnaire pages
 - 2026-10-25 03:00 `a519dc1` feat: English-taught filter, multi-choice filters, empty-result help
 - 2026-10-24 23:30 `13518bf` feat: add drawings to the universities, guides and fields pages
 - 2026-10-24 22:08 `fcc2f62` feat: list the team's top Romanian universities first; fix Artifex fee
@@ -1054,5 +1062,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-19 18:15 `673cf7b` feat: add programme catalogues for seven more EU countries
 - 2026-10-19 04:19 `caece3c` feat: username and password accounts with email code verification
 - 2026-10-19 03:23 `90b1388` feat: guides for every country, hide data counts, guide search
-- 2026-10-19 02:11 `efdb4e4` feat: welcome home page with cloud buttons, hide counts, collapse cities
 <!-- commits:end -->
