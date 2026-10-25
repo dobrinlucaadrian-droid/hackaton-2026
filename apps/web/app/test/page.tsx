@@ -2,7 +2,7 @@
 // Questionnaire start screen: its own title, the 3-step explanation and the button that starts the quiz (the profile is asked inside the quiz).
 import { useRouter } from "next/navigation";
 import type { CSSProperties } from "react";
-import { Cap, Sparkle } from "@/components/Illustrations";
+import { QuizScene } from "@/components/Illustrations";
 import { Shell } from "@/components/Shell";
 import { questions } from "@/lib/data";
 import { saveDraft } from "@/lib/session";
@@ -25,11 +25,7 @@ export default function QuestionnaireStart() {
   return (
     <Shell>
       <section className="rise pt-4 text-center">
-        <div className="flex items-end justify-center gap-2">
-          <Sparkle className="twinkle h-5 w-5 fill-teal" />
-          <Cap className="float h-16 w-16" />
-          <Sparkle className="twinkle h-5 w-5 fill-violet" />
-        </div>
+        <QuizScene className="float mx-auto h-24 w-32" />
         <h1 className="mt-3 text-4xl font-black tracking-tighter text-ink sm:text-5xl">Chestionarul FindMyUni</h1>
         <p className="mx-auto mt-3 max-w-md text-lg text-ink-soft">
           Răspunzi la {questions.length} situații din viața de zi cu zi și afli ce domenii ți se potrivesc. Durează cam 6 minute.

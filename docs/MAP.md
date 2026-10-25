@@ -184,7 +184,7 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/app/test  (2 files)
 
 - `layout.tsx` (10) — The questionnaire start page's title in the browser tab (the page itself runs in the browser).. Exports: metadata, Layout
-- `page.tsx` (70) — Questionnaire start screen: its own title, the 3-step explanation and the button that starts the quiz (the profile is asked inside the quiz).. Routes: /test. Exports: QuestionnaireStart
+- `page.tsx` (66) — Questionnaire start screen: its own title, the 3-step explanation and the button that starts the quiz (the profile is asked inside the quiz).. Routes: /test. Exports: QuestionnaireStart
 
 ### apps/web/app/universitati/[id]/[facultate]  (1 files)
 
@@ -213,7 +213,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `FacultyPrograms.tsx` (24) — On a faculty sheet: the bachelor programmes of that faculty from the official list. Plain markup: the faculty page gives it the rows, read on the server.. Exports: FacultyPrograms
 - `FavoriteButton.tsx` (85) — The heart on a university sheet (or, compact, in the corner of a search result card): adds the university to the student's favourites (shown in "Contul meu") or removes it; without an account it opens the account window and adds it once the student is signed in.. Exports: FavoriteButton
 - `GuideFinder.tsx` (56) — Country guides index body: a search box with a magnifier that filters the country tiles as you type (diacritics do not matter).. Exports: GuideFinder
-- `Illustrations.tsx` (198) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots, the start-page hero, the broken road of the error page, and the page drawings of Universități, Ghiduri, Specializări and "nothing found".. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene, BrokenPath, …
+- `Illustrations.tsx` (252) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots, the start-page hero, the broken road of the error page, and the page drawings of Universități, Ghiduri, Specializări, Studenți, Chestionar and "nothing found".. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene, BrokenPath, …
 - `InterestPicker.tsx` (129) — "Ce îți place?": the student picks up to three interests and sees the specializations that fit them best, ranked, with links to universities.. Exports: InterestPicker
 - `MatchCard.tsx` (201) — One result card: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
 - `NavBubbles.tsx` (35) — The four big buttons on the home page (Specializări, Universități, Chestionar, Studenți, Ghiduri pe țări), drawn as little clouds.. Exports: NavBubbles

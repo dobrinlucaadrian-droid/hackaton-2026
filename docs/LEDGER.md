@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-25 14:00 — desene noi pe paginile Studenți și Chestionar
+- Cerut: alt desen pe pagina cu studenții și pe cea a chestionarului, în locul tocii (căciula de absolvent)
+- Făcut: două desene SVG noi, în același stil: două baloane de vorbire cu ghilimele, puncte și o inimă (Studenți) și o foaie cu bife și un creion (Chestionar); căciula rămâne doar în desenul de pe pagina de start și în cel de la „nu am găsit nimic”
+- Fișiere: `apps/web/components/Illustrations.tsx`, `apps/web/app/studenti/page.tsx`, `apps/web/app/test/page.tsx`
+- Poartă: TRECUT (gate.mjs; în browser: ambele desene văzute pe paginile lor și mărite)
+- Urmează: salvare cu /git-workflow
+
 ### 2026-10-25 13:00 — explicații pentru toate combinațiile de filtre fără rezultate
 - Cerut: verificarea tuturor combinațiilor de filtre care nu se potrivesc și o explicație pentru fiecare
 - Făcut: am verificat fiecare țară (plus România și străinătate) cu fiecare filtru, apoi perechile de filtre fără loc. Explicațiile se calculează acum din date pentru locul ales: taxa cea mai mică (din sumele confirmate, altfel „peste” pragul nivelului), modalitățile de admitere care există acolo, câte au cel puțin o licență în engleză, prestigiu, burse, cămin, certificate cerute de toate, domenii lipsă, plus „Fără bacalaureat” (doar câteva academii de artă). Cele trei texte speciale pentru România rămân. Se arată cel mult două explicații, apoi butoanele „Scoate …”
@@ -1018,6 +1025,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-25 03:00 `a519dc1` feat: English-taught filter, multi-choice filters, empty-result help
 - 2026-10-24 23:30 `13518bf` feat: add drawings to the universities, guides and fields pages
 - 2026-10-24 22:08 `fcc2f62` feat: list the team's top Romanian universities first; fix Artifex fee
 - 2026-10-24 21:49 `eacbed4` feat: show how many universities each city has in the city filter
@@ -1047,5 +1055,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-19 04:19 `caece3c` feat: username and password accounts with email code verification
 - 2026-10-19 03:23 `90b1388` feat: guides for every country, hide data counts, guide search
 - 2026-10-19 02:11 `efdb4e4` feat: welcome home page with cloud buttons, hide counts, collapse cities
-- 2026-10-19 01:53 `ec9d731` feat: rename the site to FindMyUni
 <!-- commits:end -->

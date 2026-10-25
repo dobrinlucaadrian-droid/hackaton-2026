@@ -1,4 +1,4 @@
-// Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots, the start-page hero, the broken road of the error page, and the page drawings of Universități, Ghiduri, Specializări and "nothing found".
+// Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots, the start-page hero, the broken road of the error page, and the page drawings of Universități, Ghiduri, Specializări, Studenți, Chestionar and "nothing found".
 import type { SVGProps } from "react";
 type P = SVGProps<SVGSVGElement>;
 
@@ -192,6 +192,60 @@ export function NothingFound(props: P) {
       <text x="62" y="56" textAnchor="middle" fontSize="34" fontWeight="900" className="fill-primary">?</text>
       <Cap x="98" y="20" width="36" height="36" />
       <Sparkle x="14" y="16" width="12" height="12" className="twinkle fill-teal" />
+    </svg>
+  );
+}
+
+/** Studenți: two speech bubbles talking to each other, one with quotation marks and one with three dots, and a small heart. */
+export function VoicesScene(props: P) {
+  return (
+    <svg viewBox="0 0 160 120" aria-hidden {...props}>
+      <circle cx="80" cy="62" r="52" className="fill-primary-tint" />
+      {/* big bubble (left) with quotation marks */}
+      <path d="M22 22h70a12 12 0 0 1 12 12v30a12 12 0 0 1-12 12H48l-16 14 3-14H22a12 12 0 0 1-12-12V34a12 12 0 0 1 12-12z" className="fill-primary" />
+      <path d="M38 40c-6 0-9 4-9 10s4 9 8 9c3 0 5-2 5-5s-2-5-5-5c0-3 1-5 4-6zM62 40c-6 0-9 4-9 10s4 9 8 9c3 0 5-2 5-5s-2-5-5-5c0-3 1-5 4-6z" className="fill-white" />
+      <rect x="72" y="46" width="22" height="4" rx="2" className="fill-white/60" />
+      <rect x="72" y="55" width="16" height="4" rx="2" className="fill-white/60" />
+      {/* small bubble (right) with three dots */}
+      <path d="M96 60h44a10 10 0 0 1 10 10v18a10 10 0 0 1-10 10h-8l3 12-14-12H96a10 10 0 0 1-10-10V70a10 10 0 0 1 10-10z" className="fill-white stroke-ink" strokeWidth="2.5" strokeLinejoin="round" />
+      <circle cx="106" cy="79" r="4" className="fill-sky" />
+      <circle cx="118" cy="79" r="4" className="fill-teal" />
+      <circle cx="130" cy="79" r="4" className="fill-violet" />
+      {/* heart */}
+      <path d="M128 30c-3-5-11-3-11 3 0 6 11 12 11 12s11-6 11-12c0-6-8-8-11-3z" className="fill-violet" />
+      <Sparkle x="6" y="96" width="12" height="12" className="twinkle fill-teal" />
+      <Sparkle x="146" y="46" width="10" height="10" className="twinkle fill-sky" />
+    </svg>
+  );
+}
+
+/** Chestionar: a clipboard with a checklist being ticked and a pencil leaning on it. */
+export function QuizScene(props: P) {
+  return (
+    <svg viewBox="0 0 160 120" aria-hidden {...props}>
+      <circle cx="80" cy="62" r="52" className="fill-primary-tint" />
+      {/* clipboard */}
+      <rect x="46" y="14" width="64" height="94" rx="8" className="fill-primary" />
+      <rect x="52" y="24" width="52" height="78" rx="4" className="fill-white" />
+      <rect x="64" y="8" width="28" height="12" rx="4" className="fill-ink" />
+      {/* checklist rows */}
+      {[38, 58, 78].map((y, i) => (
+        <g key={y}>
+          <rect x="58" y={y - 6} width="12" height="12" rx="3" className={i < 2 ? "fill-teal" : "fill-white stroke-ink"} strokeWidth="2" />
+          {i < 2 && <path d={`M60.5 ${y}l3 3 5-6`} fill="none" className="stroke-white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />}
+          <rect x="76" y={y - 3} width={i === 1 ? 18 : 24} height="5" rx="2.5" className="fill-ink/25" />
+        </g>
+      ))}
+      {/* pencil */}
+      <g transform="rotate(35 120 70)">
+        <rect x="112" y="30" width="12" height="54" rx="2" className="fill-teal" />
+        <rect x="112" y="30" width="12" height="9" rx="2" className="fill-violet" />
+        <rect x="112" y="38" width="12" height="4" className="fill-sky-tint" />
+        <path d="M112 84h12l-6 13z" className="fill-paper stroke-ink" strokeWidth="1.5" strokeLinejoin="round" />
+        <path d="M116.5 93.5l1.5 3.5 1.5-3.5z" className="fill-ink" />
+      </g>
+      <Sparkle x="20" y="26" width="14" height="14" className="twinkle fill-teal" />
+      <Sparkle x="22" y="88" width="10" height="10" className="twinkle fill-violet" />
     </svg>
   );
 }

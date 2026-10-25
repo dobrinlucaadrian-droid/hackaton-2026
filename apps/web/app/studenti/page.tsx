@@ -1,6 +1,6 @@
 // Student voices: real opinions from students and graduates, with a search by faculty or university.
 import Link from "next/link";
-import { Cap } from "@/components/Illustrations";
+import { VoicesScene } from "@/components/Illustrations";
 import { Shell } from "@/components/Shell";
 import { StudentVoices } from "@/components/StudentVoices";
 
@@ -20,7 +20,7 @@ export default function Students() {
           ← Înapoi
         </Link>
         <section className="rise pt-6 text-center">
-          <Cap className="float mx-auto h-16 w-16" />
+          <VoicesScene className="float mx-auto h-24 w-32" />
           <h1 className="mt-2 text-4xl font-black tracking-tighter text-ink sm:text-5xl">Ce spun studenții</h1>
           <p className="mx-auto mt-3 max-w-md text-ink-soft">
             Păreri adevărate de la studenți și absolvenți, despre facultatea lor.
