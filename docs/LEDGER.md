@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-26 20:00 — Google Search Console
+- Cerut: site-ul să fie găsit mai repede pe Google
+- Făcut: proprietatea https://findmyuni.ro/ adăugată în Search Console (cont dobrinlucaadrian@gmail.com; contul echipei findmyuni.ro@gmail.com se adaugă ca proprietar după verificare); verificare prin fișierul Google `apps/web/public/google1be60cb25521a893.html` (trebuie să rămână pe site)
+- Fișiere: `apps/web/public/google1be60cb25521a893.html`
+- Poartă: TRECUT (gate.mjs); fișierul răspunde local cu textul Google
+- Urmează: publicare, „Verify”, harta site-ului trimisă, indexare cerută pentru / și /en, contul echipei adăugat
+
 ### 2026-10-26 19:00 — chestionarul în engleză: din nou „România / în afara României / oriunde”, fără orașe
 - Cerut: în engleză, aceleași variante ca în română la „unde vrei să studiezi”, dar fără pasul cu orașele
 - Făcut: pe paginile englezești pasul „Where do you want to study?” are iar trei variante (In Romania / Outside Romania / Anywhere); oricare duce direct la rezultat, fără orașe (toate orașele). Româna neschimbată (cu orașe)
@@ -1088,6 +1095,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-26 01:45 `2362444` feat: English quiz keeps the three study places, without cities
 - 2026-10-26 01:38 `05aab39` feat: English version of the site under /en
 - 2026-10-26 00:52 `7dd583d` feat: searchable university field, FindMyUni share image, drop UniPath
 - 2026-10-25 23:43 `8074524` fix: update Next.js and Zod, prerender share images
@@ -1117,5 +1125,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-21 03:10 `3739afd` feat: favourite universities in the account, findmyuni.ro in link previews
 - 2026-10-21 02:32 `98a6891` feat: account card first on the result page
 - 2026-10-21 00:29 `72d63d0` feat: faster navigation, Frankfurt region, findmyuni.ro domain
-- 2026-10-20 02:24 `df419da` feat: bot check on sign-up, data retention, backups, launch guide
 <!-- commits:end -->

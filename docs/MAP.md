@@ -407,8 +407,9 @@ _Open only the files listed here; a file's description is its first comment line
 - `universities.data.test.ts` (162) — Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
 - … +5 more
 
-### apps/web/public  (2 files)
+### apps/web/public  (3 files)
 
+- `google1be60cb25521a893.html` (1) — _no description: add a first-line comment_
 - `logo-cap.png`
 - `world-universities.json`
 
