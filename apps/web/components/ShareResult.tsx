@@ -1,7 +1,9 @@
 "use client";
-// Under the result: draws a story-sized picture (1080×1920) of the 3 matched domains with their percentages and "findmyuni.ro", in the browser only
+// Under the result (text in the page language): draws a story-sized picture (1080×1920) of the 3 matched domains with their percentages and "findmyuni.ro", in the browser only
 // (nothing is sent anywhere), and shares it through the phone's menu (Instagram, WhatsApp …) or downloads it where sharing files is not possible.
 import { useState } from "react";
+import { useLang, useT } from "@/components/LangProvider";
+import type { Lang } from "@/lib/i18n";
 import type { Match } from "@/lib/types";
 import { domainStyle } from "./domainStyle";
 
@@ -33,7 +35,7 @@ function fit(ctx: CanvasRenderingContext2D, text: string, weight: number, family
   return s;
 }
 
-async function draw(matches: Match[]): Promise<Blob> {
+async function draw(matches: Match[], lang: Lang): Promise<Blob> {
   await document.fonts.ready;
   const family = getComputedStyle(document.body).fontFamily || "system-ui, sans-serif";
   const canvas = document.createElement("canvas");
@@ -61,7 +63,7 @@ async function draw(matches: Match[]): Promise<Blob> {
   // title
   ctx.fillStyle = C.ink;
   ctx.font = `900 104px ${family}`;
-  ctx.fillText("Mi se potrivesc:", 96, 420);
+  ctx.fillText(lang === "en" ? "My best matches:" : "Mi se potrivesc:", 96, 420);
 
   // the three domains
   let y = 540;
@@ -118,7 +120,7 @@ async function draw(matches: Match[]): Promise<Blob> {
   ctx.fillStyle = C.soft;
   ctx.font = `600 48px ${family}`;
   ctx.textAlign = "center";
-  ctx.fillText("Fă și tu chestionarul pe", W / 2, 1640);
+  ctx.fillText(lang === "en" ? "Take the quiz yourself on" : "Fă și tu chestionarul pe", W / 2, 1640);
   ctx.fillStyle = C.primary;
   ctx.font = `900 88px ${family}`;
   ctx.fillText("findmyuni.ro", W / 2, 1750);
@@ -128,6 +130,8 @@ async function draw(matches: Match[]): Promise<Blob> {
 }
 
 export function ShareResult({ matches }: { matches: Match[] }) {
+  const lang = useLang();
+  const t = useT();
   const [busy, setBusy] = useState(false);
   const [note, setNote] = useState<string | null>(null);
 
@@ -135,10 +139,10 @@ export function ShareResult({ matches }: { matches: Match[] }) {
     setBusy(true);
     setNote(null);
     try {
-      const file = new File([await draw(matches)], "findmyuni-rezultat.png", { type: "image/png" });
+      const file = new File([await draw(matches, lang)], "findmyuni-rezultat.png", { type: "image/png" });
       if (navigator.canShare?.({ files: [file] })) {
         try {
-          await navigator.share({ files: [file], text: "Fă și tu chestionarul pe findmyuni.ro" });
+          await navigator.share({ files: [file], text: t("Fă și tu chestionarul pe findmyuni.ro", "Take the quiz yourself on findmyuni.ro") });
         } catch (e) {
           if (!(e instanceof DOMException && e.name === "AbortError")) throw e;
         }
@@ -149,10 +153,10 @@ export function ShareResult({ matches }: { matches: Match[] }) {
         a.download = file.name;
         a.click();
         setTimeout(() => URL.revokeObjectURL(url), 1000);
-        setNote("Imaginea s-a descărcat. Pune-o la story de pe telefon.");
+        setNote(t("Imaginea s-a descărcat. Pune-o la story de pe telefon.", "The image was downloaded. Post it to your story from your phone."));
       }
     } catch {
-      setNote("Nu am putut face imaginea. Încearcă din nou.");
+      setNote(t("Nu am putut face imaginea. Încearcă din nou.", "We could not make the image. Try again."));
     } finally {
       setBusy(false);
     }
@@ -160,8 +164,8 @@ export function ShareResult({ matches }: { matches: Match[] }) {
 
   return (
     <section className="mx-auto mt-8 max-w-2xl rounded-3xl bg-card p-6 text-center shadow-sm ring-1 ring-line">
-      <h2 className="text-xl font-black text-ink">Arată-le și prietenilor</h2>
-      <p className="mt-1 text-ink-soft">Facem o imagine cu cele 3 domenii, bună de pus la story. Fără numele tău sau alte date.</p>
+      <h2 className="text-xl font-black text-ink">{t("Arată-le și prietenilor", "Show your friends")}</h2>
+      <p className="mt-1 text-ink-soft">{t("Facem o imagine cu cele 3 domenii, bună de pus la story. Fără numele tău sau alte date.", "We make an image with the 3 fields, ready to post to a story. No name or other data.")}</p>
       <button
         type="button"
         onClick={() => void share()}
@@ -171,7 +175,7 @@ export function ShareResult({ matches }: { matches: Match[] }) {
         <svg aria-hidden viewBox="0 0 24 24" className="h-5 w-5 fill-none stroke-current" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6" />
         </svg>
-        {busy ? "Se face imaginea…" : "Distribuie rezultatul"}
+        {busy ? t("Se face imaginea…", "Making the image…") : t("Distribuie rezultatul", "Share your result")}
       </button>
       {note && (
         <p className="mt-3 text-sm font-bold text-primary-dark" role="status">

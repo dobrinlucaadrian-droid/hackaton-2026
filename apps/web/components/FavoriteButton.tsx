@@ -5,9 +5,11 @@ import { ConvexError } from "convex/values";
 import { useState } from "react";
 import { api } from "@/convex/_generated/api";
 import { setPendingFavorite, type PendingFavorite } from "@/lib/pendingSave";
+import { useT } from "./LangProvider";
 import { openSignIn } from "./WelcomeDialog";
 
 export function FavoriteButton({ university, compact = false }: { university: PendingFavorite; compact?: boolean }) {
+  const t = useT();
   const { isAuthenticated, isLoading } = useConvexAuth();
   const favorites = useQuery(api.favorites.mine, isAuthenticated ? {} : "skip");
   const add = useMutation(api.favorites.add);
@@ -29,7 +31,7 @@ export function FavoriteButton({ university, compact = false }: { university: Pe
       if (on) await remove({ universityId: university.universityId });
       else await add(university);
     } catch (e) {
-      setError(e instanceof ConvexError ? String(e.data) : "Nu a mers. Încearcă din nou.");
+      setError(e instanceof ConvexError ? String(e.data) : t("Nu a mers. Încearcă din nou.", "That did not work. Please try again."));
     } finally {
       setBusy(false);
     }
@@ -43,8 +45,8 @@ export function FavoriteButton({ university, compact = false }: { university: Pe
           onClick={() => void onClick()}
           disabled={isLoading || busy || (isAuthenticated && favorites === undefined)}
           aria-pressed={on}
-          aria-label={on ? `Scoate ${university.name} de la favorite` : `Adaugă ${university.name} la favorite`}
-          title={on ? "La favorite" : "Adaugă la favorite"}
+          aria-label={on ? t(`Scoate ${university.name} de la favorite`, `Remove ${university.name} from favourites`) : t(`Adaugă ${university.name} la favorite`, `Add ${university.name} to favourites`)}
+          title={on ? t("La favorite", "In your favourites") : t("Adaugă la favorite", "Add to favourites")}
           className={`flex h-11 w-11 items-center justify-center rounded-full text-2xl leading-none transition disabled:opacity-50 ${
             on ? "bg-primary text-white hover:bg-primary-dark" : "bg-card text-primary ring-1 ring-line hover:bg-primary-tint"
           }`}
@@ -72,7 +74,7 @@ export function FavoriteButton({ university, compact = false }: { university: Pe
         }`}
       >
         <span aria-hidden className="text-lg leading-none">{on ? "♥" : "♡"}</span>
-        {on ? "La favorite" : "Adaugă la favorite"}
+        {on ? t("La favorite", "In your favourites") : t("Adaugă la favorite", "Add to favourites")}
       </button>
       {error && (
         <p className="mt-2 text-sm font-bold text-primary-dark" role="alert">

@@ -1,8 +1,9 @@
 "use client";
-// Search box with a magnifier icon; submits to /universitati?q=... or calls onSearch when given. With `suggest`, a list of suggestions opens while typing (arrows, Enter and Escape work; screen readers hear it as a combobox).
+// Search box (in the page language) with a magnifier icon; submits to /universitati?q=... or calls onSearch when given. With `suggest`, a list of suggestions opens while typing (arrows, Enter and Escape work; screen readers hear it as a combobox).
 import { useRouter } from "next/navigation";
 import { useId, useState, type FormEvent, type KeyboardEvent } from "react";
 import type { Suggestion } from "@/lib/universities";
+import { useHref, useT } from "./LangProvider";
 
 export function SearchBox({
   initial = "",
@@ -16,6 +17,8 @@ export function SearchBox({
   suggest?: (q: string) => Suggestion[];
 }) {
   const router = useRouter();
+  const t = useT();
+  const href = useHref();
   const listId = useId();
   const [value, setValue] = useState(initial);
   const [open, setOpen] = useState(false);
@@ -25,12 +28,12 @@ export function SearchBox({
   function search(q: string) {
     setOpen(false);
     if (onSearch) onSearch(q);
-    else router.push(q ? `/universitati?q=${encodeURIComponent(q)}` : "/universitati");
+    else router.push(href(q ? `/universitati?q=${encodeURIComponent(q)}` : "/universitati"));
   }
 
   function pick(s: Suggestion) {
     setOpen(false);
-    if (s.href) router.push(s.href);
+    if (s.href) router.push(href(s.href));
     else {
       setValue(s.query ?? s.label);
       search(s.query ?? s.label);
@@ -60,7 +63,7 @@ export function SearchBox({
   return (
     <form onSubmit={submit} role="search" className="flex w-full gap-2">
       <label htmlFor={id} className="sr-only">
-        Caută o universitate, un oraș, o țară sau un domeniu
+        {t("Caută o universitate, un oraș, o țară sau un domeniu", "Search for a university, a city, a country or a field")}
       </label>
       <div className="relative flex-1">
         <svg aria-hidden viewBox="0 0 24 24" className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 fill-none stroke-ink-soft" strokeWidth="2.2" strokeLinecap="round">
@@ -79,7 +82,7 @@ export function SearchBox({
           }}
           onKeyDown={keys}
           onBlur={() => setOpen(false)}
-          placeholder="Universitate, oraș, țară, domeniu…"
+          placeholder={t("Universitate, oraș, țară, domeniu…", "University, city, country, field…")}
           {...(suggest
             ? {
                 role: "combobox",
@@ -92,7 +95,7 @@ export function SearchBox({
           className="min-h-12 w-full rounded-2xl border-2 border-transparent bg-card py-3 pl-12 pr-4 text-ink shadow-sm ring-1 ring-line placeholder:text-ink-soft/80 focus:border-primary focus:outline-none"
         />
         {items.length > 0 && (
-          <ul id={listId} role="listbox" aria-label="Sugestii" className="absolute inset-x-0 top-full z-30 mt-2 overflow-hidden rounded-2xl bg-card shadow-xl ring-1 ring-line">
+          <ul id={listId} role="listbox" aria-label={t("Sugestii", "Suggestions")} className="absolute inset-x-0 top-full z-30 mt-2 overflow-hidden rounded-2xl bg-card shadow-xl ring-1 ring-line">
             {items.map((s, i) => (
               <li
                 key={`${s.href ?? s.query}-${s.label}`}
@@ -118,7 +121,7 @@ export function SearchBox({
         type="submit"
         className="min-h-12 rounded-2xl bg-primary px-5 font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark active:scale-[0.98]"
       >
-        Caută
+        {t("Caută", "Search")}
       </button>
     </form>
   );

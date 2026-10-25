@@ -53,4 +53,11 @@ describe("activities in the matching", () => {
     );
     expect(describeActivity({ kind: "voluntariat", areaId: "sanatate-oameni" })).toBe("Voluntariat, Sănătate și ajutorarea oamenilor");
   });
+
+  it("describeActivity speaks English on English pages", () => {
+    expect(describeActivity({ kind: "concurs", areaId: "stiinte", level: "national", name: "Biology Olympiad" }, "en")).toBe(
+      "Biology Olympiad — competition, Sciences (biology, chemistry, physics), national level",
+    );
+    expect(describeActivity({ kind: "voluntariat", areaId: "sanatate-oameni" }, "en")).toBe("Volunteering, Health and helping people");
+  });
 });

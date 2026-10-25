@@ -105,6 +105,16 @@ describe("matchDomains", () => {
     }
   });
 
+  it("gives the same domains in English with English reasons", () => {
+    const a = answersFor("real-mate-info", ["logic", "tehnic"]);
+    const ro = matchDomains(a);
+    const en = matchDomains(a, "en");
+    expect(en.map((m) => m.domain.id)).toEqual(ro.map((m) => m.domain.id));
+    expect(en.map((m) => m.percent)).toEqual(ro.map((m) => m.percent));
+    expect(en.flatMap((m) => m.reasons).some((r) => /[ăîșțâ]/.test(r))).toBe(false);
+    expect(ro.flatMap((m) => m.reasons).some((r) => /Îți|Ai |Te |Ești|Profilul|Domeniul/.test(r))).toBe(true);
+  });
+
   it("filters universities by where", () => {
     const base = answersFor("real-mate-info", ["logic", "tehnic"]);
     for (const m of matchDomains({ ...base, where: "ro" })) {

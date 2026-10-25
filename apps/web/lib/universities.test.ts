@@ -2,6 +2,7 @@
 import { describe, expect, it } from "vitest";
 import { categories, domains, specializations } from "./data";
 import { counted, normalize, specializationsFor } from "./labels";
+import { universityName } from "./i18n-data";
 import { TRAITS } from "./match";
 import { universities, universityById } from "./sheets";
 import { citiesIn, cityCounts, countries, filterUniversities, searchUniversities, searchWorld } from "./universities";
@@ -245,5 +246,17 @@ describe("counted", () => {
     expect(counted(105, "program", "programe")).toBe("105 programe");
     expect(counted(4117, "instituție", "instituții")).toBe("4.117 instituții");
     expect(counted(100187, "program", "programe")).toBe("100.187 de programe");
+  });
+});
+
+describe("English page helpers", () => {
+  it("counted writes plain English plurals", () => {
+    expect(counted(1, "programme", "programmes", "en")).toBe("1 programme");
+    expect(counted(4117, "institution", "institutions", "en")).toBe("4,117 institutions");
+  });
+
+  it("searchUniversities finds by English name and still by Romanian name", () => {
+    expect(searchUniversities(universityName(universityById("ase-bucuresti")!, "en"), 5, "en").some((u) => u.id === "ase-bucuresti")).toBe(true);
+    expect(searchUniversities("academia de studii economice", 5, "en").some((u) => u.id === "ase-bucuresti")).toBe(true);
   });
 });

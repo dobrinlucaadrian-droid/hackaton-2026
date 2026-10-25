@@ -1,7 +1,9 @@
-// Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).
+// Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits); the reasons and the domain texts come in the page language.
 import { MAX_ACTIVITIES, activityArea, activityTraits, describeActivity } from "./activities";
 import { cityList } from "./cities";
 import { domains, profiles, questions, specializations } from "./data";
+import type { Lang } from "./i18n";
+import { localDomain, localProfile, localSpecialization } from "./i18n-data";
 import { TRAITS, TRAIT_LABEL } from "./traits";
 import { universities } from "./universities";
 import type { Activity, Answers, Match, Profile, StudyPlace, TraitId, TraitWeights } from "./types";
@@ -9,6 +11,19 @@ import type { Activity, Answers, Match, Profile, StudyPlace, TraitId, TraitWeigh
 export { TRAITS, TRAIT_LABEL };
 
 const PROFILE_SHARE = 0.25; // how much of the student vector comes from the high-school profile
+
+const TRAIT_REASON_EN: Record<TraitId, string> = {
+  logic: "You like numbers and logic problems, and here you use them every day.",
+  tehnic: "You like building things and making them work, and here there is plenty of hands-on work.",
+  stiinte: "Science attracts you and you want to find out how the world works, which is exactly what you do here.",
+  ingrijire: "You want to take care of people or animals, and this field is about that.",
+  oameni: "You feel good around people, and here you work with them a lot.",
+  limbaj: "You have a talent for words, and here writing and speaking matter a lot.",
+  creativ: "You are creative and have original ideas, and here you have room to show them.",
+  business: "You think about money, organisation and business, and here you learn exactly that.",
+  societate: "You are interested in how society, laws and history work, and here you study them.",
+  miscare: "You like movement and working outdoors, and here you are not always sitting at a desk.",
+};
 
 const TRAIT_REASON: Record<TraitId, string> = {
   logic: "Îți plac cifrele și problemele de logică, iar aici le folosești zilnic.",
@@ -92,7 +107,9 @@ function rank(
   where: StudyPlace | undefined,
   activities: Activity[] = [],
   cities?: string[],
+  lang: Lang = "ro",
 ): Match[] {
+  const en = lang === "en";
   const scored = domains
     .map((domain) => {
       const dv = toVec(domain.traits);
@@ -112,19 +129,19 @@ function rank(
     const ranked = TRAITS.filter((t) => dv[t] > 0 && liked[t] > 0)
       .sort((a, b) => dv[b] * (student[b] + 0.001) - dv[a] * (student[a] + 0.001))
       .slice(0, 2);
-    const reasons = ranked.map((t) => TRAIT_REASON[t]);
+    const reasons = ranked.map((t) => (en ? TRAIT_REASON_EN : TRAIT_REASON)[t]);
     // The activity that overlaps most with this domain (if any) becomes the first reason.
     let best: { a: Activity; score: number } | undefined;
     for (const a of activities) {
       const score = cosine(toVec(activityArea(a)?.traits ?? {}), dv);
       if (score >= 0.5 && (!best || score > best.score)) best = { a, score };
     }
-    if (best) reasons.unshift(`Ai deja experiență care contează aici: ${describeActivity(best.a)}.`);
+    if (best) reasons.unshift(en ? `You already have experience that counts here: ${describeActivity(best.a, lang)}.` : `Ai deja experiență care contează aici: ${describeActivity(best.a)}.`);
     if (profile) {
       const shared = TRAITS.some((t) => (profile.traits[t] ?? 0) >= 2 && dv[t] >= 2);
-      if (shared) reasons.push(`Profilul tău de liceu (${profile.name}) te pregătește bine pentru acest domeniu.`);
+      if (shared) reasons.push(en ? `What you focused on in high school (${localProfile(profile, lang).name.toLowerCase()}) prepares you well for this field.` : `Profilul tău de liceu (${profile.name}) te pregătește bine pentru acest domeniu.`);
     }
-    if (reasons.length < 2) reasons.push("Domeniul se potrivește cu ce ai ales în chestionar.");
+    if (reasons.length < 2) reasons.push(en ? "The field matches what you chose in the quiz." : "Domeniul se potrivește cu ce ai ales în chestionar.");
 
     const offered = universities.filter((u) => u.domainIds.includes(domain.id));
     const ro = offered.filter((u) => u.region === "ro").sort((a, b) => a.city.localeCompare(b.city, "ro") || a.name.localeCompare(b.name, "ro"));
@@ -134,11 +151,11 @@ function rank(
     const inCity = chosen ? ro.filter((u) => chosen.includes(u.city)) : ro;
     const cityMissing = !!chosen && where !== "abroad" && inCity.length === 0;
     return {
-      domain,
+      domain: localDomain(domain, lang),
       percent,
       reasons: reasons.slice(0, 3),
       universitiesRo: where === "abroad" ? [] : cityMissing ? ro : inCity,
-      ...(cityMissing && chosen ? { cityMissing: cityList(chosen) } : {}),
+      ...(cityMissing && chosen ? { cityMissing: cityList(chosen, lang) } : {}),
       universitiesAbroad: where === "ro" ? [] : abroad,
       // The domain's specializations, closest to the student's inclinations first.
       specializations: specializations
@@ -146,14 +163,14 @@ function rank(
         .map((s) => ({ s, sim: cosine(student, toVec(s.traits)) }))
         .sort((a, b) => b.sim - a.sim)
         .slice(0, 3)
-        .map((x) => x.s),
+        .map((x) => localSpecialization(x.s, lang)),
     };
   });
 }
 
-export function matchDomains(answers: Answers): Match[] {
+export function matchDomains(answers: Answers, lang: Lang = "ro"): Match[] {
   const { student, picks, profile } = vectors(answers);
-  return rank(student, picks, profile, answers?.where, validActivities(answers), answers?.cities);
+  return rank(student, picks, profile, answers?.where, validActivities(answers), answers?.cities, lang);
 }
 
 /** The student's inclinations from profile + answers, each an integer 0..100 (strongest = 100; all 0 when there are no answers). */
@@ -166,12 +183,12 @@ export function studentTraits(answers: Answers): Record<TraitId, number> {
 }
 
 /** Top 3 matches for an arbitrary trait vector (values 0..100), e.g. from the "what if" sliders. */
-export function matchByTraits(traits: Record<TraitId, number>, where: StudyPlace, profileId?: string, cities?: string[]): Match[] {
+export function matchByTraits(traits: Record<TraitId, number>, where: StudyPlace, profileId?: string, cities?: string[], lang: Lang = "ro"): Match[] {
   const vec = emptyVec();
   for (const t of TRAITS) {
     const v = Number(traits?.[t]);
     vec[t] = Number.isFinite(v) && v > 0 ? v : 0;
   }
   const profile = profiles.find((p) => p.id === profileId);
-  return rank(vec, vec, profile, where, [], cities);
+  return rank(vec, vec, profile, where, [], cities, lang);
 }

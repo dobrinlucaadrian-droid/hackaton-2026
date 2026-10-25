@@ -1,26 +1,32 @@
 "use client";
-// /specializari body: a text filter over all categories, domains and specializations; without text it shows the category tiles.
+// /specializari body: a text filter over all categories, domains and specializations (in the page language); without text it shows the category tiles.
 import { useMemo, useState } from "react";
 import { categories, domains } from "@/lib/data";
+import { localCategory, localDomain, localSpecialization } from "@/lib/i18n-data";
 import { normalize, specializationsFor } from "@/lib/labels";
 import { CategoryTiles } from "./CategoryTiles";
 import { DomainDetails } from "./DomainDetails";
 import { InterestPicker } from "./InterestPicker";
+import { useLang, useT } from "./LangProvider";
 
 export function SpecializationsBrowser() {
+  const lang = useLang();
+  const t = useT();
   const [query, setQuery] = useState("");
   const q = normalize(query.trim());
 
   const view = useMemo(() => {
     if (!q) return [];
     return categories
-      .map((c) => {
+      .map((rawCat) => {
+        const c = localCategory(rawCat, lang);
         const catHit = normalize(`${c.name} ${c.short}`).includes(q);
         const items = c.domainIds
           .map((id) => domains.find((d) => d.id === id))
           .filter((d): d is NonNullable<typeof d> => !!d)
-          .map((d) => {
-            const all = specializationsFor(d.id);
+          .map((rawDomain) => {
+            const d = localDomain(rawDomain, lang);
+            const all = specializationsFor(d.id).map((s) => localSpecialization(s, lang));
             if (catHit) return { domain: d, specs: all };
             const domHit = normalize(`${d.name} ${d.short}`).includes(q);
             const specs = domHit ? all : all.filter((s) => normalize(`${s.name} ${s.short}`).includes(q));
@@ -30,19 +36,19 @@ export function SpecializationsBrowser() {
         return { category: c, items };
       })
       .filter((c) => c.items.length > 0);
-  }, [q]);
+  }, [q, lang]);
 
   return (
     <div>
       <label htmlFor="filtru-spec" className="sr-only">
-        Caută o specializare
+        {t("Caută o specializare", "Search for a specialisation")}
       </label>
       <input
         id="filtru-spec"
         type="search"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        placeholder="Caută o specializare…"
+        placeholder={t("Caută o specializare…", "Search for a specialisation…")}
         className="min-h-12 w-full rounded-2xl border-2 border-transparent bg-card px-4 py-3 text-ink shadow-sm ring-1 ring-line focus:border-primary focus:outline-none"
       />
 
@@ -53,10 +59,10 @@ export function SpecializationsBrowser() {
         </div>
       ) : view.length === 0 ? (
         <div className="mt-4 rounded-2xl bg-card p-6 text-center ring-1 ring-line" role="status">
-          <p className="font-bold text-ink">Nu am găsit nimic pentru „{query.trim()}”.</p>
-          <p className="mt-1 text-ink-soft">Încearcă un cuvânt mai scurt sau altă scriere.</p>
+          <p className="font-bold text-ink">{t(`Nu am găsit nimic pentru „${query.trim()}”.`, `We found nothing for “${query.trim()}”.`)}</p>
+          <p className="mt-1 text-ink-soft">{t("Încearcă un cuvânt mai scurt sau altă scriere.", "Try a shorter word or a different spelling.")}</p>
           <button type="button" onClick={() => setQuery("")} className="mt-3 min-h-11 rounded-full border-2 border-primary px-5 font-bold text-primary hover:bg-primary-tint">
-            Șterge căutarea
+            {t("Șterge căutarea", "Clear search")}
           </button>
         </div>
       ) : (

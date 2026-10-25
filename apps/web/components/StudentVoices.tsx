@@ -1,9 +1,10 @@
 "use client";
-// Student opinions with a search box: type a faculty or university and see every opinion we have from there.
-import Link from "next/link";
+// Student opinions with a search box: type a faculty or university and see every opinion we have from there (the opinions keep their original words; the page around them is in the page language).
 import { useState } from "react";
 import { Books, Sparkle } from "@/components/Illustrations";
 import { StudentCard } from "@/components/StudentCard";
+import { useT } from "@/components/LangProvider";
+import Link from "@/components/LocalLink";
 import { useTestimonials } from "@/lib/useTestimonials";
 import type { Testimonial } from "@/lib/types";
 
@@ -42,6 +43,16 @@ const EXTRA_WORDS: Record<string, string> = {
   "Universidad Europea": "spania madrid valencia europeana",
 };
 
+// English words for the Romanian ones in university names, so English searches also find them.
+const EN_WORDS: [string, string][] = [
+  ["București", "Bucharest"],
+  ["Universitatea", "University"],
+  ["Facultatea", "Faculty"],
+  ["Medicină", "Medicine"],
+  ["Politehnica", "Polytechnic"],
+  ["Franța", "France"],
+];
+
 type Group = { university: string; people: Testimonial[] };
 
 /** Groups opinions by university, keeping the order in which each university first appears. */
@@ -61,11 +72,12 @@ function matches(t: Testimonial, query: string): boolean {
   const words = normalize(query).split(" ").filter(Boolean);
   if (words.length === 0) return true;
   const university = t.university ?? t.faculty;
-  const haystack = normalize(`${university} ${t.faculty} ${EXTRA_WORDS[university] ?? ""} ${t.name}`).split(" ");
+  const haystack = normalize(`${university} ${t.faculty} ${EXTRA_WORDS[university] ?? ""} ${t.name} ${EN_WORDS.filter(([ro]) => `${university} ${t.faculty}`.includes(ro)).map(([, en]) => en).join(" ")}`).split(" ");
   return words.every((w) => haystack.some((h) => h.startsWith(w)));
 }
 
 export function StudentVoices() {
+  const tr = useT();
   const testimonials = useTestimonials();
   const [query, setQuery] = useState("");
   const q = query.trim();
@@ -79,7 +91,7 @@ export function StudentVoices() {
           <Books className="h-16 w-16" />
           <Sparkle className="twinkle h-6 w-6 fill-violet" />
         </div>
-        <p className="mt-4 text-ink-soft">Adunăm acum primele păreri. Revino în curând.</p>
+        <p className="mt-4 text-ink-soft">{tr("Adunăm acum primele păreri. Revino în curând.", "We are collecting the first opinions now. Come back soon.")}</p>
       </div>
     );
   }
@@ -88,7 +100,7 @@ export function StudentVoices() {
     <>
       <form role="search" onSubmit={(e) => e.preventDefault()} className="mx-auto mt-6 max-w-2xl">
         <label htmlFor="cauta-studenti" className="sr-only">
-          Caută o facultate sau o universitate
+          {tr("Caută o facultate sau o universitate", "Search for a faculty or a university")}
         </label>
         <div className="relative">
           <svg
@@ -106,34 +118,34 @@ export function StudentVoices() {
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Caută o facultate sau o universitate…"
+            placeholder={tr("Caută o facultate sau o universitate…", "Search for a faculty or a university…")}
             className="min-h-12 w-full rounded-2xl border-2 border-transparent bg-card py-3 pl-12 pr-4 text-ink shadow-sm ring-1 ring-line placeholder:text-ink-soft/80 focus:border-primary focus:outline-none"
           />
         </div>
         <p className="mt-2 text-center text-sm text-ink-soft" aria-live="polite">
           {q === ""
-            ? "Scrie numele unei facultăți ca să le vezi doar pe cele de acolo."
+            ? tr("Scrie numele unei facultăți ca să le vezi doar pe cele de acolo.", "Type the name of a faculty to see only the opinions from there.")
             : ""}
         </p>
       </form>
 
       {found.length === 0 ? (
         <div className="mx-auto mt-6 max-w-2xl rounded-3xl bg-card p-8 text-center shadow-sm ring-1 ring-line">
-          <p className="text-lg font-extrabold text-ink">Nu avem încă o părere de la un student de acolo.</p>
-          <p className="mt-2 text-ink-soft">Poți vedea totuși informații despre universitate.</p>
+          <p className="text-lg font-extrabold text-ink">{tr("Nu avem încă o părere de la un student de acolo.", "We do not have an opinion from a student there yet.")}</p>
+          <p className="mt-2 text-ink-soft">{tr("Poți vedea totuși informații despre universitate.", "You can still see information about the university.")}</p>
           <div className="mt-5 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
             <Link
               href={`/universitati?q=${encodeURIComponent(q)}`}
               className="inline-flex min-h-11 items-center rounded-2xl bg-primary px-5 py-2 font-bold text-white shadow-lg shadow-primary/30 hover:bg-primary-dark"
             >
-              Caută „{q}” la Universități
+              {tr(`Caută „${q}” la Universități`, `Search for “${q}” in Universities`)}
             </Link>
             <button
               type="button"
               onClick={() => setQuery("")}
               className="min-h-11 rounded-full border-2 border-primary px-5 py-2 font-bold text-primary hover:bg-primary-tint"
             >
-              Vezi toate părerile
+              {tr("Vezi toate părerile", "See all opinions")}
             </button>
           </div>
         </div>

@@ -1,4 +1,6 @@
-// Remembers the student's last university search (text, filters, how many results) in this browser tab, so the "back" button on a sheet returns to it.
+// Remembers the student's last university search (text, filters, how many results) in this browser tab, so the "back" button on a sheet returns to it (in the page language).
+import { localHref, type Lang } from "./i18n";
+
 const KEY = "findmyuni-last-search";
 
 /** Called by the search page with its current address query. */
@@ -11,11 +13,11 @@ export function rememberSearch(query: string): void {
 }
 
 /** The address of the last search, or the plain search page. */
-export function lastSearchHref(): string {
+export function lastSearchHref(lang: Lang = "ro"): string {
   try {
     const q = window.sessionStorage.getItem(KEY);
-    return q ? `/universitati?${q}` : "/universitati";
+    return localHref(lang, q ? `/universitati?${q}` : "/universitati");
   } catch {
-    return "/universitati";
+    return localHref(lang, "/universitati");
   }
 }

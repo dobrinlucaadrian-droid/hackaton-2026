@@ -30,3 +30,11 @@ describe("tuition text", () => {
     expect(feeText({ currency: "EUR", min: 0, max: 0 })).toBe("fără taxă (0 €)");
   });
 });
+
+describe("tuition text in English", () => {
+  it("writes currencies and the approximate euro value in English", () => {
+    expect(feeText({ currency: "EUR", min: 1100, max: 1300 }, "en")).toBe("€1,100–1,300/year");
+    expect(feeText({ currency: "GBP", min: 24730, max: 24730 }, "en")).toBe("24,730 pounds sterling/year (approx. €28,900)");
+    expect(feeText({ currency: "EUR", min: 0, max: 0 }, "en")).toBe("no tuition fee (€0)");
+  });
+});

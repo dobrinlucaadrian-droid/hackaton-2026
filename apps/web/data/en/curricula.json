@@ -1,0 +1,1874 @@
+{
+  "medicina": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Anatomy and Embryology",
+          "Biophysics",
+          "Biochemistry",
+          "Genetics",
+          "Cell and Molecular Biology",
+          "Physiology"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Anatomy and Embryology",
+          "Histology",
+          "Microbiology – Bacteriology",
+          "Physiology",
+          "Clinical Biochemistry",
+          "Medical Informatics and Biostatistics"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Medical Semiology",
+          "Hygiene",
+          "Pharmacology",
+          "Pathophysiology",
+          "Immunology",
+          "Pathological Anatomy",
+          "Microbiology – Virology and Parasitology"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Cardiology",
+          "Pulmonology",
+          "Gastroenterology",
+          "General Surgery and Surgical Semiology",
+          "Orthopaedics and Traumatology",
+          "Medical Oncology",
+          "Radiology and Medical Imaging"
+        ]
+      },
+      {
+        "year": 5,
+        "subjects": [
+          "Rheumatology",
+          "Nephrology",
+          "Paediatrics and Childcare",
+          "General Surgery",
+          "Neurology",
+          "Urology",
+          "Endocrinology and Diabetes"
+        ]
+      },
+      {
+        "year": 6,
+        "subjects": [
+          "Infectious Diseases",
+          "Ophthalmology",
+          "Psychiatry",
+          "Otorhinolaryngology",
+          "Dermatovenereology",
+          "Obstetrics and Gynaecology",
+          "Family Medicine"
+        ]
+      }
+    ]
+  },
+  "medicina-dentara": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Anatomy and Embryology",
+          "Physiology",
+          "Biochemistry",
+          "Histology",
+          "Morphology of Teeth and Dental Arches",
+          "Cell and Molecular Biology",
+          "Biophysics"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Dental Materials",
+          "Pathological Anatomy",
+          "Pathophysiology and Immunology",
+          "Microbiology",
+          "Dental Prosthesis Technology",
+          "Periodontology",
+          "Genetics"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Restorative Dentistry",
+          "Internal Medicine",
+          "Pharmacology",
+          "Dental Prosthetics",
+          "Endodontics",
+          "Oral and Dental Prevention",
+          "Radiology and Medical Imaging"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Restorative Dentistry",
+          "Occlusology",
+          "Paediatric Dentistry",
+          "Endodontics",
+          "Oral and Maxillofacial Surgery",
+          "Infectious Diseases and Epidemiology",
+          "Paediatrics"
+        ]
+      },
+      {
+        "year": 5,
+        "subjects": [
+          "Oral and Maxillofacial Surgery",
+          "Periodontology",
+          "Oral Rehabilitation",
+          "Dental Implantology",
+          "Orthodontics and Dento-Facial Orthopaedics",
+          "Dental Practice Management",
+          "Dermatovenereology"
+        ]
+      },
+      {
+        "year": 6,
+        "subjects": [
+          "Oral and Maxillofacial Surgery",
+          "Dental Implantology",
+          "Orthodontics and Dento-Facial Orthopaedics",
+          "Dental Prosthetics",
+          "Oral Pathology",
+          "Paediatric Dentistry",
+          "Oral and Community Health"
+        ]
+      }
+    ]
+  },
+  "farmacie": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "General and Inorganic Chemistry",
+          "Pharmaceutical Botany",
+          "Pharmaceutical Physics",
+          "Cell and Molecular Biology",
+          "Human Anatomy",
+          "Human Physiology"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Analytical and Instrumental Chemistry",
+          "Organic Chemistry",
+          "Physical Chemistry",
+          "Human Physiology and Pathophysiology",
+          "Microbiology",
+          "Immunology"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Pharmaceutical Technology",
+          "Pharmaceutical and Therapeutic Chemistry",
+          "Pharmacognosy",
+          "Pharmaceutical Biochemistry",
+          "Pharmacology",
+          "Biological Medicines"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Pharmaceutical Technology",
+          "Pharmacology and Pharmacotherapy",
+          "Pharmaceutical and Therapeutic Chemistry",
+          "Clinical Pathology",
+          "Pharmaceutical Legislation",
+          "Toxicology"
+        ]
+      },
+      {
+        "year": 5,
+        "subjects": [
+          "Drug Analysis",
+          "The Pharmaceutical Industry",
+          "Clinical Pharmacy",
+          "Biopharmaceutics",
+          "Pharmaceutical Care",
+          "Communication with the Patient"
+        ]
+      }
+    ]
+  },
+  "medicina-veterinara": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Anatomy",
+          "Histology and Embryology",
+          "Chemistry",
+          "Biochemistry",
+          "Animal Biology",
+          "Genetics",
+          "Physics"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Anatomy",
+          "Microbiology",
+          "Physiology",
+          "Pathophysiology",
+          "Biochemistry",
+          "Animal Husbandry"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Immunology",
+          "Epidemiology",
+          "Semiology",
+          "Pathological Anatomy",
+          "Pharmacology",
+          "Parasitology and Parasitic Diseases",
+          "Anaesthesiology"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Medical Clinic",
+          "Surgical Clinic",
+          "Infectious Diseases and Preventive Medicine",
+          "Reproduction",
+          "Obstetrics",
+          "Toxicology",
+          "Oncology"
+        ]
+      },
+      {
+        "year": 5,
+        "subjects": [
+          "Medical Clinic",
+          "Surgical Clinic",
+          "Infectious Diseases and Preventive Medicine",
+          "Reproductive Disorders",
+          "Radiology and Imaging",
+          "Emergency Veterinary Medicine",
+          "Inspection of Food Products of Animal Origin"
+        ]
+      },
+      {
+        "year": 6,
+        "subjects": [
+          "Forensic Medicine and Necropsy Diagnosis",
+          "Pharmacy",
+          "Veterinary Legislation",
+          "Deontology",
+          "Therapeutics",
+          "Disease Management in Farm Animals",
+          "Disease Management in Companion Animals"
+        ]
+      }
+    ]
+  },
+  "asistenta-medicala": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Anatomy",
+          "Physiology",
+          "Biochemistry",
+          "Microbiology",
+          "Pathophysiology",
+          "Pharmacology",
+          "General Nursing"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Internal Medicine",
+          "General Surgery",
+          "Clinical Nursing",
+          "Radiology and Medical Imaging",
+          "Clinical Laboratory and Sample Preservation"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Medical Emergencies and First Aid",
+          "Infectious Diseases",
+          "Paediatrics and Paediatric Nursing",
+          "Neurology",
+          "Anaesthesia and Intensive Care",
+          "Epidemiology",
+          "Public Health and Management"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Psychiatry",
+          "Obstetrics and Gynaecology",
+          "Care in Medical Pathology",
+          "Care in Surgical Pathology",
+          "Care in Paediatric Pathology",
+          "Care in Chronic Pathology",
+          "Legal Aspects of the Profession"
+        ]
+      }
+    ]
+  },
+  "informatica": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Mathematical Analysis",
+          "Algebraic Foundations of Computer Science",
+          "Fundamental Algorithms",
+          "Fundamentals of Programming",
+          "Mathematical and Computational Logic",
+          "Object-Oriented Programming",
+          "Data Structures"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Graph Algorithms",
+          "Formal Languages and Compilers",
+          "Databases",
+          "Artificial Intelligence",
+          "Computer Networks",
+          "Advanced Programming Methods",
+          "Numerical Computation"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Software Engineering",
+          "Human-Computer Interfaces",
+          "Web Application Development",
+          "IT Project Management",
+          "Parallel, Concurrent and Distributed Programming",
+          "Probability and Statistics"
+        ]
+      }
+    ]
+  },
+  "calculatoare-it": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Mathematical Analysis",
+          "Linear Algebra, Analytic Geometry and Differential Equations",
+          "Computer Programming and Programming Languages",
+          "Logic Design",
+          "Data Structures and Algorithms",
+          "Numerical Methods",
+          "Electrical Engineering"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Object-Oriented Programming",
+          "Operating Systems",
+          "Analysis of Algorithms",
+          "Algorithm Design",
+          "Programming Paradigms",
+          "Communication Protocols",
+          "Computer Structure and Organisation"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Formal Languages and Automata",
+          "Local Computer Networks",
+          "Elements of Computer Graphics",
+          "Parallel and Distributed Algorithms",
+          "Microprocessor Design",
+          "Artificial Intelligence",
+          "Databases"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Parallel Architectures and Processing",
+          "Network Design",
+          "Performance Evaluation",
+          "Embedded Systems",
+          "Signal Processing",
+          "Technical Project in Computer Engineering"
+        ]
+      }
+    ]
+  },
+  "inginerie-electrica-electronica": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Mathematical Analysis",
+          "Linear Algebra, Analytic and Differential Geometry",
+          "Physics",
+          "Fundamentals of Electrical Engineering",
+          "Materials for Electronics",
+          "Computer Programming",
+          "Electronic Devices"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Circuit Analysis and Synthesis",
+          "Signals and Systems",
+          "Analogue Integrated Circuits",
+          "Digital Integrated Circuits",
+          "Digital Signal Processing",
+          "Microcontrollers",
+          "Measurements in Electronics and Telecommunications"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Power Electronics",
+          "Data Communications",
+          "Electronic Measuring and Control Instruments",
+          "Information Transmission Theory",
+          "Communication Protocols",
+          "Radio Communications",
+          "Telephone Transmissions"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Testing of Electronic Telecommunications Equipment",
+          "Traffic Engineering",
+          "Telecommunications Software",
+          "Telecommunications Software Project",
+          "Management and Marketing",
+          "Development Project"
+        ]
+      }
+    ]
+  },
+  "inginerie-mecanica": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Mathematical Analysis",
+          "Descriptive Geometry",
+          "Chemistry",
+          "Materials Science and Engineering",
+          "Computer Programming",
+          "Physics",
+          "Mechanics"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Technical Drawing and Computer Graphics",
+          "Mechanics",
+          "Strength of Materials",
+          "Applied Electronics",
+          "Fluid Mechanics and Machines",
+          "Mechanisms",
+          "Machine Elements"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Thermal Engineering and Heat Engines",
+          "Mechanical Vibrations",
+          "Hydraulic and Pneumatic Drives",
+          "Machine Elements",
+          "Vehicle Dynamics",
+          "Vehicle Calculation and Design",
+          "Finite Element Method"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Vehicle Electrical and Electronic Systems",
+          "Vehicle Manufacturing and Assembly Technologies",
+          "Vehicle Calculation and Design",
+          "Calculation and Design of Internal Combustion Engines",
+          "Functional Characteristics of Vehicle Energy Supply Systems",
+          "Diploma Project"
+        ]
+      }
+    ]
+  },
+  "inginerie-civila": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Mathematical Analysis",
+          "Linear Algebra and Analytic Geometry",
+          "Descriptive Geometry",
+          "Chemistry",
+          "Physics",
+          "Mechanics",
+          "Construction Materials"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Mechanics",
+          "Strength of Materials",
+          "Hydraulics",
+          "Structural Statics",
+          "Reinforced and Prestressed Concrete",
+          "Engineering Geology",
+          "Elements of Architecture"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Reinforced and Prestressed Concrete",
+          "Structural Statics",
+          "Geotechnics",
+          "Timber Structures",
+          "Civil Buildings",
+          "Introduction to the Finite Element Method",
+          "Structural Dynamics and Seismic Engineering"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Reinforced Concrete Structures",
+          "Steel Structures",
+          "Construction Management",
+          "Construction Works Technology",
+          "Masonry Mechanics",
+          "Building Services",
+          "Structural Safety"
+        ]
+      }
+    ]
+  },
+  "arhitectura": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Architectural Design Studio",
+          "History of Settlements in Europe",
+          "Design Theory",
+          "Descriptive Geometry",
+          "Construction Materials",
+          "Study of Form",
+          "Introduction to Structural Theory"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Architectural Design Studio",
+          "Timber and Steel Architectural Construction",
+          "Building Structures",
+          "History of Modern Architecture",
+          "Morpho-Typological Urban Analysis",
+          "Computer-Aided Design",
+          "Masonry and Concrete Architectural Construction"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Architectural Design Studio",
+          "Structural Engineering",
+          "Urban Design Techniques",
+          "Architectural Details",
+          "Introduction to Building Physics",
+          "Theories of Modern and Contemporary Architecture",
+          "Building Services"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Architectural Design Studio",
+          "Urban Design",
+          "Requirements and Performance in Construction",
+          "Heritage Protection",
+          "Urban Composition",
+          "Special Structures",
+          "Restoration – Theory and Design"
+        ]
+      },
+      {
+        "year": 5,
+        "subjects": [
+          "Architectural Design Studio",
+          "Urban Design",
+          "Technological Design Studio",
+          "Comparative Architecture",
+          "Urban Planning Law",
+          "Aesthetics",
+          "Administrative Procedures in the Architect's Profession"
+        ]
+      },
+      {
+        "year": 6,
+        "subjects": [
+          "Internship in Architecture Offices",
+          "Research Theory – Ethics and Academic Integrity",
+          "Study – Foundations of the Diploma Project",
+          "Diploma Project",
+          "Architectural Practice and Society"
+        ]
+      }
+    ]
+  },
+  "inginerie-chimica-materiale": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Linear Algebra, Analytic Geometry",
+          "Fundamentals of Analytical Chemistry",
+          "Fundamentals of Inorganic Chemistry",
+          "Applied Computer Science",
+          "Mathematical Analysis",
+          "Analytical Chemistry and Instrumental Analysis",
+          "Physics"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Fundamentals of Organic Chemistry",
+          "Chemical Thermodynamics",
+          "Environmental Protection",
+          "Electrical Engineering and Electronics",
+          "Organic Chemistry",
+          "Fundamentals of Chemical Engineering",
+          "Science of Inorganic and Composite Materials"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Chemical Kinetics and Surface Phenomena",
+          "Theoretical and Applied Electrochemistry",
+          "Heat Transfer Phenomena",
+          "Momentum Transfer Phenomena",
+          "Hydrodynamic Operations",
+          "Heat Transfer Operations",
+          "Industrial Microbiology"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Mass Transfer Operations",
+          "Chemical and Biochemical Reactors",
+          "Chemical and Biochemical Unit Processes",
+          "Chemical and Biochemical Process Simulators",
+          "Optimisation of Chemical and Biochemical Processes",
+          "Process Automation in the Chemical Industry",
+          "Design of Chemical and Biochemical Plants"
+        ]
+      }
+    ]
+  },
+  "energie-petrol-mediu": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Mathematical Analysis",
+          "Applied Computer Science",
+          "General Chemistry",
+          "Descriptive Geometry and Technical Drawing",
+          "Linear Algebra, Analytic and Differential Geometry",
+          "Materials Technology",
+          "Mechanics"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Mechanics",
+          "Physics",
+          "General and Stratigraphic Geology",
+          "Thermal Engineering and Heat Engines",
+          "Strength of Materials",
+          "Electrical Engineering and Electrical Machines",
+          "Physical Chemistry"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "General Hydraulics",
+          "Physics of Hydrocarbon Reservoirs",
+          "Drilling Fluids and Well Cements",
+          "Gas Extraction",
+          "Well Geophysics",
+          "Subsurface Hydraulics",
+          "Geology of Hydrocarbon Reservoirs"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Well Drilling",
+          "Oil Extraction",
+          "Design of Hydrocarbon Reservoir Exploitation",
+          "Hydrodynamic Investigations",
+          "Secondary Recovery of Reservoirs",
+          "Environmental Protection",
+          "Diploma Project"
+        ]
+      }
+    ]
+  },
+  "matematica": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Algebra 1 (Linear Algebra)",
+          "Mathematical Analysis 1 (Analysis on R)",
+          "Geometry 1 (Analytic Geometry)",
+          "Algorithms and Programming",
+          "Mathematical Logic and Set Theory",
+          "Data Structures",
+          "Mathematical Analysis 2"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Complex Analysis",
+          "Differential Equations",
+          "Theoretical Mechanics",
+          "Topology",
+          "Real Analysis",
+          "Probability Theory",
+          "Geometry 3 (Differential Geometry)"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Number Theory",
+          "Partial Differential Equations",
+          "Functional Analysis",
+          "Mathematical Statistics",
+          "Optimisation Techniques",
+          "Astronomy",
+          "Bachelor's Thesis"
+        ]
+      }
+    ]
+  },
+  "fizica": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Real Analysis",
+          "Algebra, Geometry and Differential Equations",
+          "Physical Mechanics",
+          "Molecular Physics and Heat",
+          "Electricity and Magnetism",
+          "Equations of Mathematical Physics",
+          "Complex Analysis"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Optics",
+          "Analytical Mechanics",
+          "Electrodynamics and Theory of Relativity",
+          "Fundamentals of Atomic Physics",
+          "Quantum Mechanics",
+          "Electronics",
+          "Nuclear Physics"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Quantum Mechanics",
+          "Molecular Physics",
+          "Solid State Physics",
+          "Elementary Particle Physics",
+          "Spectroscopy and Lasers",
+          "Bachelor's Thesis"
+        ]
+      }
+    ]
+  },
+  "chimie": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "General Chemistry",
+          "Qualitative and Quantitative Analytical Chemistry",
+          "Fundamentals of Organic Chemistry",
+          "Differential and Integral Calculus",
+          "Physics",
+          "Chemistry of Non-Metals",
+          "Chemical Thermodynamics"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Structure of Atoms and Molecules",
+          "Chemistry of Metals",
+          "Multifunctional Organic Compounds and Heterocycles",
+          "Instrumental Analysis",
+          "Coordination Chemistry",
+          "Electrochemistry",
+          "Chemical Technology"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Catalysis and Catalysts",
+          "Chromatography",
+          "Chemistry of Macromolecules and Colloids",
+          "Natural Compounds",
+          "Supramolecular Chemistry",
+          "Research Activity for the Bachelor's Thesis"
+        ]
+      }
+    ]
+  },
+  "biologie": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Invertebrate Systematics and Biology",
+          "Plant Cytology",
+          "Human Anatomy and Hygiene",
+          "Biophysics",
+          "Cell Biology",
+          "Animal Histology and Embryology",
+          "Plant Morphology and Anatomy"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Systematic Botany",
+          "General Microbiology",
+          "General Ecology",
+          "Biochemistry",
+          "Vertebrate Biology",
+          "Immunobiology",
+          "Biochemistry of Metabolism"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "General Genetics",
+          "Plant Physiology",
+          "Relational Functions in Animals",
+          "Physiology of Plant Nutrition and Development",
+          "Genomics",
+          "Methodology of Writing the Bachelor's Thesis"
+        ]
+      }
+    ]
+  },
+  "geografie-mediu": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "General Physical Geography",
+          "Cartography, Topography and Photogrammetry",
+          "Population Geography",
+          "General Human Geography",
+          "Meteorology and Climatology",
+          "Hydrology and Oceanography",
+          "Economic Geography"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Geomorphology",
+          "Biogeography",
+          "Urban and Rural Geography",
+          "Soil Geography",
+          "Geography of Europe",
+          "Social Geography",
+          "Remote Sensing"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Tourism Geography",
+          "Physical Geography of Romania",
+          "Human Geography of Romania",
+          "Spatial Planning",
+          "Environmental Geography",
+          "Regional Geography",
+          "Geography of Natural Hazards and Risks"
+        ]
+      }
+    ]
+  },
+  "agronomie-silvicultura": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Mathematics and Statistics",
+          "Biochemistry",
+          "Biophysics and Agrometeorology",
+          "Surveying and Technical Drawing",
+          "Power Base and Agricultural Machinery",
+          "Botany",
+          "Pedology"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Plant Physiology",
+          "Genetics",
+          "Entomology",
+          "Phytopathology",
+          "Agrochemistry",
+          "Agrotechnics",
+          "Microbiology"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Experimental Technique",
+          "Land Improvement",
+          "Field Crop Science",
+          "Horticultural Technologies",
+          "Grassland and Forage Crop Cultivation",
+          "Plant Breeding and Seed Production",
+          "Accounting and Economic Management"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Grassland and Forage Crop Cultivation",
+          "Plant Breeding and Seed Production",
+          "Conditioning and Storage of Agricultural Products",
+          "Animal Husbandry",
+          "Field Crop Science",
+          "Management",
+          "Marketing"
+        ]
+      }
+    ]
+  },
+  "economie-finante": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Microeconomics",
+          "Macroeconomics",
+          "Management",
+          "Public Finance",
+          "Applied Mathematics in Economics",
+          "Fundamentals of Accounting",
+          "Business Law"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Descriptive Statistics",
+          "Financial Accounting",
+          "Databases and Software",
+          "Corporate Finance",
+          "Financial Markets",
+          "Insurance",
+          "Monetary Institutions and Mechanisms"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Advanced Corporate Finance",
+          "Fundamentals of Econometrics",
+          "Public Budget and Treasury",
+          "Financial Management",
+          "Financial Analysis",
+          "International Finance",
+          "Portfolio Management"
+        ]
+      }
+    ]
+  },
+  "business-management": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Microeconomics",
+          "Macroeconomics",
+          "Management",
+          "Applied Mathematics in Economics",
+          "Fundamentals of Accounting",
+          "Economic Informatics",
+          "Business Law"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Financial Accounting",
+          "Corporate Finance",
+          "Descriptive Statistics",
+          "Human Resources Management",
+          "Production Management",
+          "Services Management"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Strategic Management",
+          "Project Management",
+          "Labour Management",
+          "Logistics",
+          "Operations Management"
+        ]
+      }
+    ]
+  },
+  "marketing": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Microeconomics",
+          "Macroeconomics",
+          "Management",
+          "Fundamentals of Marketing",
+          "Business Law",
+          "Economic Informatics",
+          "Applied Mathematics in Economics"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Financial Accounting",
+          "Corporate Finance",
+          "Descriptive Statistics",
+          "Consumer Behaviour",
+          "Marketing Research",
+          "Small Business Marketing"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Operational Marketing",
+          "Services Marketing",
+          "Branding",
+          "Online Marketing",
+          "Merchandising",
+          "Social Media Marketing"
+        ]
+      }
+    ]
+  },
+  "drept": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "General Theory of Law",
+          "Constitutional Law",
+          "Introduction to Civil Law",
+          "Civil Law. Persons",
+          "History of Romanian Law",
+          "Roman Law",
+          "Civil Law. Legal Acts"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Civil Law. Legal Facts",
+          "Administrative Law II",
+          "Criminal Law – General Part I",
+          "Public International Law",
+          "Civil Law. Obligations",
+          "European Union Law I",
+          "Tax Law"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Civil Law. Special Contracts",
+          "Commercial Law",
+          "Criminal Law – Special Part",
+          "Criminal Procedure Law",
+          "European Union Law II",
+          "Civil Procedure Law I"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Civil Procedure Law",
+          "Criminal Procedure Law III",
+          "Private International Law",
+          "Civil Law. Succession",
+          "Family Law",
+          "Labour Law",
+          "Professional Practice"
+        ]
+      }
+    ]
+  },
+  "stiinte-politice-relatii-internationale": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Fundamental Concepts in Political Science",
+          "Fundamental Concepts in Sociology",
+          "History of Social and Political Thought",
+          "Introduction to European Studies",
+          "Political Institutions",
+          "Introduction to International Relations",
+          "Social and Political Research Methods"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Public Policy",
+          "Political Ideologies",
+          "Political Philosophy",
+          "Comparative Politics",
+          "Institutions of the European Union",
+          "European Politics"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Security Studies",
+          "Romanian Politics",
+          "Voting Behaviour",
+          "American Politics",
+          "Political Ethics",
+          "Project Development and Implementation"
+        ]
+      }
+    ]
+  },
+  "administratie-publica": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Introduction to Public Administration",
+          "Sociology",
+          "Introduction to Political Science",
+          "Research Methods and Techniques in the Social Sciences",
+          "Political Economy",
+          "Law for Public Administration",
+          "Constitutional System and Political Institutions in Romania"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Administrative Law",
+          "Public Finance",
+          "Regional Development",
+          "Financial Management",
+          "Organisational Theories",
+          "Comparative Administrative Systems"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Human Resources Management",
+          "Public Policy",
+          "Public Management",
+          "The European Union: Mechanisms and Institutions",
+          "Programme and Performance Evaluation",
+          "Ethics in Public Administration",
+          "Project Management in Public and Non-Profit Organisations"
+        ]
+      }
+    ]
+  },
+  "comunicare-jurnalism": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Romanian Language. Journalistic Discourse",
+          "The Press in Romanian Cultural History",
+          "Introduction to the Sciences of Language and Communication",
+          "Introduction to the Mass Media System",
+          "Journalistic Genres and Species",
+          "Current Romanian Mass Media",
+          "IT Skills for Journalists"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Research Methods in the Social Sciences",
+          "TV Broadcasting",
+          "Practical Skills. Mass Media",
+          "Journalistic Ethics and Deontology",
+          "Mass Media in the Digital Age",
+          "Radio Broadcasting",
+          "Specialised Working Techniques"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Professional Internship",
+          "Media Techniques",
+          "Visual Communication. Journalistic Design",
+          "Public Communication. Public Relations"
+        ]
+      }
+    ]
+  },
+  "psihologie": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Fundamentals of Psychology",
+          "Methodology of Psychological Research",
+          "History of Psychology",
+          "Neuropsychology",
+          "Applied Statistics in Psychology",
+          "Developmental Psychology",
+          "Experimental Psychology"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Personality Psychology",
+          "Cognitive Psychology",
+          "Group Dynamics",
+          "Introduction to Health Psychology",
+          "Work Psychology",
+          "Introduction to Psychotherapy",
+          "Psychology of Learning"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Educational Psychology",
+          "Psychopathology",
+          "Managerial Psychology",
+          "Experiential Psychotherapies",
+          "Psychology of Couple and Family Relationships",
+          "Educational and Vocational Counselling"
+        ]
+      }
+    ]
+  },
+  "sociologie-asistenta-sociala": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "General Sociology",
+          "Sociological Research Methods and Techniques",
+          "Introduction to Anthropology",
+          "Modern Sociological Theories",
+          "Social Statistics and Data Analysis"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Contemporary Sociological Theories",
+          "Socio-Anthropology of Work",
+          "Advanced Quantitative Methods",
+          "Social Psychology",
+          "Qualitative Methods of Sociological Research",
+          "Social Policy"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Urban Sociology",
+          "Rural Sociology",
+          "Social Stratification and Mobility",
+          "Demography and Sociology of Population",
+          "Sociology of Communication and Mass Media"
+        ]
+      }
+    ]
+  },
+  "stiintele-educatiei": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Fundamentals of Pedagogy",
+          "Fundamentals of Psychology",
+          "Fundamentals of Special Psychopedagogy",
+          "Curriculum Theory and Methodology",
+          "History of Educational Ideas",
+          "Early Education",
+          "Developmental Psychology"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Theory and Methodology of Instruction",
+          "Research Methodology in Educational Sciences",
+          "Educational Psychology",
+          "Theory and Methodology of Assessment",
+          "Educational Counselling",
+          "Educational and Social Policies",
+          "Sociology of Education"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Educational Management",
+          "Career Counselling and Guidance",
+          "Comparative Pedagogy and Educational Alternatives",
+          "Pedagogy of Higher Education",
+          "Adult Education",
+          "European Education"
+        ]
+      }
+    ]
+  },
+  "litere-limbi-straine": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Introduction to Literary Theory",
+          "Introduction to Comparative Literature",
+          "Introduction to Linguistics",
+          "Romanian Language (I): Lexicology and Semantics",
+          "Romanian Language (II): Phonetics and Dialectology",
+          "Ethnology and Folklore",
+          "Introduction to Academic Writing"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Romanian Literature (II): The Great Classics",
+          "Romanian Literature (IV): Interwar Prose",
+          "Romanian Language (III): Morphology",
+          "Romanian Language (IV): Syntax",
+          "Romanian Language (V): History of the Romanian Language"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Romanian Literature (V): Interwar Poetry",
+          "Romanian Literature (VI): Postwar Romanian Literature",
+          "Romanian Language (VI): History of the Literary Romanian Language",
+          "Scientific Research Methodology and Use of New Technologies"
+        ]
+      }
+    ]
+  },
+  "istorie": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Introduction to Universal Ancient History",
+          "Introduction to the Ancient History of Romania",
+          "General Prehistory",
+          "Auxiliary Sciences of History",
+          "Introduction to Universal Medieval History",
+          "Introduction to the Medieval History of Romania",
+          "History of Byzantium"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Introduction to Universal Modern History",
+          "Introduction to the Modern History of Romania",
+          "Introduction to Universal Contemporary History",
+          "Introduction to the Contemporary History of Romania",
+          "History of International Relations in the 20th Century",
+          "History of European Integration",
+          "History of Collective Mentalities"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "History and Theory of Art",
+          "Introduction to the Theory of History",
+          "Introduction to Archaeology",
+          "Academic Writing",
+          "Logic and Argumentation"
+        ]
+      }
+    ]
+  },
+  "filosofie": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Philosophical Propaedeutics",
+          "General Logic",
+          "History of Ancient Philosophy",
+          "History of Medieval Philosophy",
+          "History of Romanian Philosophy",
+          "Social Philosophy",
+          "Political Philosophy"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Ethics",
+          "Symbolic Logic",
+          "Philosophy of Early Modernity",
+          "Theory of Knowledge",
+          "Epistemology",
+          "Classical German Philosophy",
+          "Applied Ethics"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Aesthetics",
+          "Contemporary Philosophy (19th Century)",
+          "Philosophy of Culture",
+          "Metaphysics",
+          "Contemporary Philosophy (20th Century)",
+          "Philosophy of Art",
+          "Philosophy of Religion"
+        ]
+      }
+    ]
+  },
+  "teologie": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Study of the Old Testament",
+          "Study of the New Testament",
+          "History of the Romanian Orthodox Church",
+          "Universal Church History",
+          "Church Music and Ritual",
+          "Greek Language",
+          "Patrology and Post-Patristic Literature"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Study of the Old Testament",
+          "Study of the New Testament",
+          "History of the Romanian Orthodox Church",
+          "Universal Church History",
+          "Patrology and Post-Patristic Literature",
+          "History and Spirituality of Byzantium"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Orthodox Dogmatic Theology",
+          "Christian Morality",
+          "Orthodox Missiology",
+          "Orthodox Canon Law",
+          "Liturgical Theology",
+          "Catechetics",
+          "History and Philosophy of Religions"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Orthodox Dogmatic Theology",
+          "Orthodox Spirituality: Asceticism and Mysticism",
+          "Orthodox Missiology",
+          "Homiletics",
+          "Orthodox Canon Law",
+          "Liturgical Chant and Oratory"
+        ]
+      }
+    ]
+  },
+  "arte-vizuale-design": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Drawing Studies",
+          "Colour Studies",
+          "Composition Studies",
+          "Chromatology, Easel Painting Techniques",
+          "Computer Image Processing"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Two- and Three-Dimensional Representation Techniques",
+          "Colour Studies for Painting",
+          "Professional Internship",
+          "Chromatology, Easel Painting Techniques, Restoration"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Colour Studies for Painting",
+          "Form, Colour, Concept in Painting",
+          "Drawing Studies for Painting",
+          "Painting Composition",
+          "Easel Painting Technology and Restoration",
+          "Bachelor's Thesis"
+        ]
+      }
+    ]
+  },
+  "muzica": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Singing",
+          "Vocal Accompaniment",
+          "Acting and Stage Movement",
+          "General Piano",
+          "Theory–Solfeggio–Dictation",
+          "History of Music and Musical Styles",
+          "Diction and Declamation in Musical Performance"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Singing",
+          "Opera",
+          "Lied–Oratorio",
+          "General Piano",
+          "Theory–Solfeggio–Dictation",
+          "Harmony and Harmonic Analysis",
+          "History of Music and Musical Styles"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Singing",
+          "Vocal Accompaniment",
+          "Musical Forms and Analysis",
+          "Theory–Solfeggio–Dictation",
+          "History of Music and Musical Styles",
+          "Elements of Polyphony"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Singing",
+          "Vocal Accompaniment",
+          "Musical Aesthetics",
+          "Research and Documentation",
+          "Artistic Practice"
+        ]
+      }
+    ]
+  },
+  "teatru-film": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "History of Culture and Civilisation",
+          "Philosophy",
+          "Analysis of the Stage Process",
+          "Introduction to the Art of Acting",
+          "Stage Speech",
+          "Vocal Technique",
+          "Physical Theatre and Body Language in the Art of Acting"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "World Theatre",
+          "Theory of Theatre",
+          "Romanian Theatre",
+          "Theatrical Creation Workshop",
+          "Analysis of the Stage Process",
+          "Stage Speech",
+          "Vocal Technique"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "World Theatre",
+          "Romanian Theatre",
+          "Theatrical Creation Workshop",
+          "Commedia dell'arte",
+          "Stage Combat",
+          "Film Acting",
+          "Aesthetics"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Aesthetics",
+          "Creative Strategies in Contemporary Theatre",
+          "Theatrical Creation Workshop",
+          "Dramatic Writing",
+          "Cultural Management and Entrepreneurship",
+          "Bachelor's Thesis"
+        ]
+      }
+    ]
+  },
+  "sport-kinetoterapie": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Anatomy",
+          "Physiology",
+          "Biomechanics",
+          "Kinesiology",
+          "Hygiene and First Aid",
+          "Theory of Motor Activities",
+          "Biochemistry"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Anatomy III",
+          "Semiology",
+          "Pathophysiology",
+          "Massage",
+          "General Foundations of Physiotherapy",
+          "Assessment Methods in Physiotherapy",
+          "Exercise Physiology"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Physiotherapy in Orthopaedic and Traumatic Conditions",
+          "Physiotherapy in Geriatrics and Gerontology",
+          "Physiotherapy in Respiratory Conditions",
+          "Physiotherapy in Paediatrics",
+          "Physiotherapy in Neurological Conditions",
+          "Physiotherapy in Cardiovascular Conditions",
+          "Kinetic Prophylaxis"
+        ]
+      }
+    ]
+  },
+  "militar-politie": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Military Sciences",
+          "Military Psychosociology",
+          "Military Pedagogy",
+          "Organisation Theory",
+          "Security and Intelligence",
+          "Fundamentals of National Security",
+          "Military History"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Leadership and Organisational Change",
+          "Probability and Statistics",
+          "Teaching Methodology of the Military Specialty",
+          "Tactics of Manoeuvre Subunits 1"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Communication and Negotiation Techniques",
+          "International Humanitarian Law",
+          "Management of the Military Organisation",
+          "Modelling and Simulation of Military Actions",
+          "Civil-Military Relations",
+          "Interoperability in Military Actions",
+          "Cybersecurity"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Command of Military Subunits",
+          "Staff Standards and Operating Procedures",
+          "Tactical Scenarios of Manoeuvre Subunit Operations",
+          "Bachelor's Thesis"
+        ]
+      }
+    ]
+  },
+  "marina-transporturi": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Mathematical Analysis",
+          "Physics",
+          "Technical Drawing and Computer Graphics",
+          "Applied Computer Science",
+          "Fundamentals of Navigation",
+          "Seamanship",
+          "English Language"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Mechanics",
+          "Strength of Materials",
+          "Electrical Engineering and Electrical Machines",
+          "Ship Theory and Construction",
+          "Hydrodynamics",
+          "Celestial Navigation",
+          "Procedures for Carrying Out the Navigation Watch"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Navigation Equipment and Systems",
+          "Meteorology and Oceanography",
+          "Leadership",
+          "Ports and Waterways",
+          "International Maritime Law",
+          "Naval Communications",
+          "Radar Navigation"
+        ]
+      },
+      {
+        "year": 4,
+        "subjects": [
+          "Maritime Transport Technology",
+          "Ship Handling",
+          "Electronic Navigation",
+          "River Navigation",
+          "Search and Rescue at Sea",
+          "Voyage Planning and Execution",
+          "Marine Environment Protection"
+        ]
+      }
+    ]
+  },
+  "turism-servicii": {
+    "plan": [
+      {
+        "year": 1,
+        "subjects": [
+          "Microeconomics",
+          "Macroeconomics",
+          "Management",
+          "Fundamentals of Accounting",
+          "Fundamentals of Marketing",
+          "Business Law",
+          "Service Conception and Design"
+        ]
+      },
+      {
+        "year": 2,
+        "subjects": [
+          "Financial Accounting",
+          "Corporate Finance",
+          "Trade Economics",
+          "Tourism Economics",
+          "Marketing Research in Tourism and Trade",
+          "Innovation and Automation in Services"
+        ]
+      },
+      {
+        "year": 3,
+        "subjects": [
+          "Marketing Policies",
+          "Services Marketing",
+          "Trade Marketing",
+          "Tourism Marketing",
+          "Rural Tourism",
+          "International Tourism",
+          "Promotion Instruments and Techniques"
+        ]
+      }
+    ]
+  }
+}

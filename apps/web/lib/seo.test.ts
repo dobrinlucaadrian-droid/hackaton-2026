@@ -25,6 +25,14 @@ describe("sitemap", () => {
     for (const g of guides) expect(urls).toContain(`${SITE_URL}/ghiduri/${g.id}`);
   });
 
+  it("pairs the English address with the Romanian one, but never for the Romanian country guides", () => {
+    expect(urls).toContain(`${SITE_URL}/en`);
+    expect(urls).toContain(`${SITE_URL}/en/universitati`);
+    for (const g of guides) expect(urls).not.toContain(`${SITE_URL}/en/ghiduri/${g.id}`);
+    const home = sitemap().find((e) => e.url === SITE_URL);
+    expect(home?.alternates?.languages).toEqual({ ro: SITE_URL, en: `${SITE_URL}/en` });
+  });
+
   it("never lists personal pages", () => {
     expect(urls.some((u) => /\/(cont|admin|conectare|rezultat|quiz)(\/|$)/.test(u))).toBe(false);
   });

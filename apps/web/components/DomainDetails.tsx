@@ -1,11 +1,18 @@
+"use client";
 // One study domain as a native <details>: summary with emoji, name, count and chevron; inside the short text, specializations, the subjects per year and a link to universities.
-import Link from "next/link";
+import { localDomain, localSpecialization } from "@/lib/i18n-data";
 import type { Domain, Specialization } from "@/lib/types";
 import { curriculumFor } from "@/lib/curricula";
 import { CurriculumPlan } from "./CurriculumPlan";
 import { FAMILY_CLASSES, domainStyle } from "./domainStyle";
+import { useLang, useT } from "./LangProvider";
+import Link from "./LocalLink";
 
-export function DomainDetails({ domain, specs, open = false }: { domain: Domain; specs: Specialization[]; open?: boolean }) {
+export function DomainDetails({ domain: baseDomain, specs: baseSpecs, open = false }: { domain: Domain; specs: Specialization[]; open?: boolean }) {
+  const lang = useLang();
+  const t = useT();
+  const domain = localDomain(baseDomain, lang);
+  const specs = baseSpecs.map((s) => localSpecialization(s, lang));
   const { family, emoji } = domainStyle(domain.id);
   const f = FAMILY_CLASSES[family];
   return (
@@ -32,7 +39,7 @@ export function DomainDetails({ domain, specs, open = false }: { domain: Domain;
         {curriculumFor(domain.id) && (
           <details className="group/plan mt-3 rounded-2xl bg-paper ring-1 ring-line">
             <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-2 px-4 py-2 font-bold text-ink [&::-webkit-details-marker]:hidden">
-              Ce înveți, an cu an
+              {t("Ce înveți, an cu an", "What you study, year by year")}
               <span aria-hidden className="text-primary transition-transform group-open/plan:rotate-180">▾</span>
             </summary>
             <div className="px-4 pb-4">
@@ -44,7 +51,7 @@ export function DomainDetails({ domain, specs, open = false }: { domain: Domain;
           href={`/universitati?domeniu=${domain.id}`}
           className="mt-3 inline-flex min-h-11 items-center font-bold text-primary underline decoration-primary/40 underline-offset-2 hover:text-primary-dark"
         >
-          Vezi universitățile →
+          {t("Vezi universitățile →", "See the universities →")}
         </Link>
       </div>
     </details>

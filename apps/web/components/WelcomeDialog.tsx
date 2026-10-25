@@ -1,7 +1,8 @@
 "use client";
-// Account window: opens over the current page when the home page's "Intră în cont" button or the result page's account card is pressed, with the account form (sign in, new account, forgotten password). It never opens by itself.
+// Account window (in the page language): opens over the current page when the home page's "Intră în cont" button or the result page's account card is pressed, with the account form (sign in, new account, forgotten password). It never opens by itself.
 import { useConvexAuth } from "convex/react";
 import { useEffect, useState } from "react";
+import { useT } from "./LangProvider";
 import { SignInForm } from "./SignInForm";
 
 const OPEN_EVENT = "findmyuni:open-signin";
@@ -12,6 +13,7 @@ export function openSignIn(startWith: "signIn" | "signUp" = "signIn") {
 }
 
 export function WelcomeDialog() {
+  const t = useT();
   const { isAuthenticated } = useConvexAuth();
   const [shown, setShown] = useState(false);
   const [startWith, setStartWith] = useState<"signIn" | "signUp">("signIn");
@@ -44,17 +46,17 @@ export function WelcomeDialog() {
     <div className="fixed inset-0 z-50 flex justify-center overflow-y-auto bg-ink/50 p-4" data-welcome>
       <div role="dialog" aria-modal="true" aria-labelledby="welcome-title" className="rise mt-auto w-full max-w-md rounded-3xl sm:mb-auto bg-card p-6 shadow-xl ring-1 ring-line sm:p-8">
         <div className="flex items-start justify-between gap-3">
-          <h2 id="welcome-title" className="text-3xl font-black tracking-tight text-ink">Contul tău</h2>
-          <button type="button" onClick={() => setShown(false)} aria-label="Închide" className="-mr-2 -mt-2 flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-2xl text-ink-soft hover:bg-primary-tint hover:text-primary-dark">
+          <h2 id="welcome-title" className="text-3xl font-black tracking-tight text-ink">{t("Contul tău", "Your account")}</h2>
+          <button type="button" onClick={() => setShown(false)} aria-label={t("Închide", "Close")} className="-mr-2 -mt-2 flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-2xl text-ink-soft hover:bg-primary-tint hover:text-primary-dark">
             <span aria-hidden>×</span>
           </button>
         </div>
         <p className="mt-2 text-ink-soft">
-          Intră cu numele de utilizator și parola sau fă-ți un cont nou. Contul e gratuit și îți păstrează rezultatul chestionarului și universitățile favorite.
+          {t("Intră cu numele de utilizator și parola sau fă-ți un cont nou. Contul e gratuit și îți păstrează rezultatul chestionarului și universitățile favorite.", "Sign in with your username and password or make a new account. The account is free and keeps your quiz result and your favourite universities.")}
         </p>
         <SignInForm key={startWith} idPrefix="bun-venit-" startWith={startWith} />
         <button type="button" onClick={() => setShown(false)} className="mt-4 min-h-11 w-full font-bold text-primary underline underline-offset-2">
-          Continui fără cont
+          {t("Continui fără cont", "Continue without an account")}
         </button>
       </div>
     </div>

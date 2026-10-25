@@ -1,6 +1,7 @@
-// One result card: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.
+// One result card, in the page language: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.
 import type { CSSProperties, ReactNode } from "react";
-import Link from "next/link";
+import Link from "@/components/LocalLink";
+import { useLang, useT } from "@/components/LangProvider";
 import { cityList } from "@/lib/cities";
 import type { Match, StudyPlace, UniversitySummary } from "@/lib/types";
 import { curriculumFor } from "@/lib/curricula";
@@ -11,10 +12,11 @@ import { FAMILY_CLASSES, domainStyle } from "./domainStyle";
 import { UniversityList } from "./UniversityList";
 
 function Ring({ percent, stroke }: { percent: number; stroke: string }) {
+  const t = useT();
   const r = 34;
   const c = 2 * Math.PI * r;
   return (
-    <div className="relative h-24 w-24 shrink-0" role="img" aria-label={`${percent} la sută potrivire`}>
+    <div className="relative h-24 w-24 shrink-0" role="img" aria-label={t(`${percent} la sută potrivire`, `${percent} percent match`)}>
       <svg viewBox="0 0 80 80" className="h-full w-full -rotate-90">
         <circle cx="40" cy="40" r={r} fill="none" strokeWidth="8" className="stroke-white" />
         <circle
@@ -49,6 +51,8 @@ function Row({ title, children }: { title: string; children: ReactNode }) {
 }
 
 export function MatchCard({ match, rank, where, cities }: { match: Match; rank: number; where?: StudyPlace; cities?: string[] }) {
+  const lang = useLang();
+  const t = useT();
   const best = rank === 1;
   const { domain } = match;
   const { family, emoji } = domainStyle(domain.id);
@@ -56,13 +60,13 @@ export function MatchCard({ match, rank, where, cities }: { match: Match; rank: 
   const regionParam = where === "ro" ? "&regiune=ro" : where === "abroad" ? "&regiune=abroad" : "";
   // The chosen cities are used in titles and links only when they really have universities for this domain.
   const chosen = cities?.length ? cities : undefined;
-  const inCity = chosen && !match.cityMissing ? cityList(chosen) : undefined;
+  const inCity = chosen && !match.cityMissing ? cityList(chosen, lang) : undefined;
   // The link to the university search carries every chosen city.
   const cityParam = inCity && chosen ? chosen.map((c) => `&oras=${encodeURIComponent(c)}`).join("") : "";
   const hasUnis = match.universitiesRo.length > 0 || match.universitiesAbroad.length > 0;
   const lists: { title: string; items: UniversitySummary[]; abroad: boolean }[] = [
-    { title: inCity ? `În ${inCity}` : match.cityMissing ? "În alte orașe din România" : "În România", items: match.universitiesRo, abroad: false },
-    { title: "În străinătate", items: match.universitiesAbroad, abroad: true },
+    { title: inCity ? t(`În ${inCity}`, `In ${inCity}`) : match.cityMissing ? t("În alte orașe din România", "In other cities in Romania") : t("În România", "In Romania"), items: match.universitiesRo, abroad: false },
+    { title: t("În străinătate", "Abroad"), items: match.universitiesAbroad, abroad: true },
   ];
   const base = `/universitati?domeniu=${domain.id}`;
 
@@ -70,7 +74,7 @@ export function MatchCard({ match, rank, where, cities }: { match: Match; rank: 
     <div className={`space-y-3 p-6 ${best ? "sm:p-8" : ""}`}>
       {match.reasons.length > 0 && (
         <section>
-          <h3 className="font-extrabold text-ink">De ce ți se potrivește</h3>
+          <h3 className="font-extrabold text-ink">{t("De ce ți se potrivește", "Why it suits you")}</h3>
           <ul className="mt-2 list-disc space-y-1 pl-5 text-ink-soft marker:text-primary">
             {match.reasons.map((r, i) => (
               <li key={i}>{r}</li>
@@ -79,12 +83,12 @@ export function MatchCard({ match, rank, where, cities }: { match: Match; rank: 
         </section>
       )}
 
-      <Row title="Ce îți trebuie la admitere">
+      <Row title={t("Ce îți trebuie la admitere", "What you need to get in")}>
         <p className="text-ink-soft">{domain.admission}</p>
       </Row>
 
       {domain.careers.length > 0 && (
-        <Row title="Ce poți lucra">
+        <Row title={t("Ce poți lucra", "What you can work as")}>
           <ul className="flex flex-wrap gap-2">
             {domain.careers.map((c) => (
               <li key={c} className={`rounded-full px-3 py-1 text-sm font-semibold ${f.chip}`}>
@@ -96,7 +100,7 @@ export function MatchCard({ match, rank, where, cities }: { match: Match; rank: 
       )}
 
       {match.specializations.length > 0 && (
-        <Row title="Specializări care ți se potrivesc">
+        <Row title={t("Specializări care ți se potrivesc", "Specialisations that suit you")}>
           <ul className="space-y-2">
             {match.specializations.map((s) => (
               <li key={s.id} className={`rounded-xl ${f.band} px-4 py-3`}>
@@ -109,27 +113,30 @@ export function MatchCard({ match, rank, where, cities }: { match: Match; rank: 
       )}
 
       {curriculumFor(domain.id) && (
-        <Row title="Ce înveți, an cu an">
+        <Row title={t("Ce înveți, an cu an", "What you learn, year by year")}>
           <CurriculumPlan domainId={domain.id} />
         </Row>
       )}
 
       {where !== "abroad" && (
-        <Row title={chosen ? `Programe de licență în ${cityList(chosen)}` : "Programe de licență în România"}>
+        <Row title={chosen ? t(`Programe de licență în ${cityList(chosen)}`, `Bachelor's programmes in ${cityList(chosen, lang)}`) : t("Programe de licență în România", "Bachelor's programmes in Romania")}>
           <DomainPrograms domainId={domain.id} cities={chosen} sheetIds={[...match.universitiesRo, ...match.universitiesAbroad].map((u) => u.id)} />
         </Row>
       )}
       {where !== "ro" && catalogCountries.some((c) => c.cc !== "RO" && (c.domains[domain.id] ?? 0) > 0) && (
-        <Row title="Programe de licență în alte țări">
+        <Row title={t("Programe de licență în alte țări", "Bachelor's programmes in other countries")}>
           <DomainAbroad domainId={domain.id} />
         </Row>
       )}
 
       <section className="border-t border-line pt-4">
-        <h3 className="font-extrabold text-ink">Unde poți studia</h3>
+        <h3 className="font-extrabold text-ink">{t("Unde poți studia", "Where you can study")}</h3>
         {match.cityMissing && match.universitiesRo.length > 0 && (
           <p className="mt-2 rounded-xl bg-primary-tint px-4 py-3 text-sm text-primary-dark" role="note">
-            În {match.cityMissing} nu am găsit universități pentru acest domeniu. Iată din alte orașe:
+            {t(
+              `În ${match.cityMissing} nu am găsit universități pentru acest domeniu. Iată din alte orașe:`,
+              `We found no universities for this field in ${match.cityMissing}. Here are some from other cities:`,
+            )}
           </p>
         )}
         {hasUnis ? (
@@ -140,7 +147,10 @@ export function MatchCard({ match, rank, where, cities }: { match: Match; rank: 
             ))
         ) : (
           <p className="mt-2 text-ink-soft">
-            Nu avem încă facultăți listate pentru această alegere. Caută pe site-urile universităților.
+            {t(
+              "Nu avem încă facultăți listate pentru această alegere. Caută pe site-urile universităților.",
+              "We have no faculties listed for this choice yet. Look on the universities' websites.",
+            )}
           </p>
         )}
       </section>
@@ -149,7 +159,7 @@ export function MatchCard({ match, rank, where, cities }: { match: Match; rank: 
         href={`${base}${regionParam}${where === "ro" ? cityParam : ""}`}
         className="mt-2 inline-flex min-h-12 w-full items-center justify-center rounded-2xl bg-primary px-6 py-3 text-center font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark active:scale-[0.98]"
       >
-        Vezi universitățile pentru acest domeniu
+        {t("Vezi universitățile pentru acest domeniu", "See the universities for this field")}
       </Link>
     </div>
   );
@@ -158,11 +168,11 @@ export function MatchCard({ match, rank, where, cities }: { match: Match; rank: 
     return (
       <article className={`overflow-hidden rounded-3xl bg-card shadow-xl shadow-primary/15 ring-2 ${f.ring}`}>
         <div className={`${f.band} p-6 sm:p-8`}>
-          <p className={`mb-3 inline-block rounded-full ${f.badge} px-3 py-1 text-sm font-bold text-white`}>Cea mai bună potrivire</p>
+          <p className={`mb-3 inline-block rounded-full ${f.badge} px-3 py-1 text-sm font-bold text-white`}>{t("Cea mai bună potrivire", "Best match")}</p>
           <div className="flex items-center gap-4">
             <Ring percent={match.percent} stroke={f.stroke} />
             <div className="min-w-0">
-              <p className={`text-sm font-bold ${f.text}`}>Locul {rank}</p>
+              <p className={`text-sm font-bold ${f.text}`}>{t(`Locul ${rank}`, `Place ${rank}`)}</p>
               {/* On a phone the title is smaller and the emoji is hidden, so a long word such as "kinetoterapie" fits on one line. */}
               <h2 className="flex items-center gap-2 text-xl font-black leading-tight tracking-tight text-ink sm:text-3xl">
                 <span aria-hidden className="hidden shrink-0 sm:inline">{emoji}</span>

@@ -1,11 +1,16 @@
-// Grid of category tiles (emoji and name), each linking to its category page.
-import Link from "next/link";
+"use client";
+// Grid of category tiles (emoji and name), each linking to its category page, in the page language.
 import { categories } from "@/lib/data";
+import { localCategory } from "@/lib/i18n-data";
+import { useLang } from "./LangProvider";
+import Link from "./LocalLink";
 
 export function CategoryTiles() {
+  const lang = useLang();
   return (
     <ul className="grid grid-cols-2 gap-3 lg:grid-cols-5">
-      {categories.map((c) => {
+      {categories.map((raw) => {
+        const c = localCategory(raw, lang);
         return (
           <li key={c.id}>
             <Link

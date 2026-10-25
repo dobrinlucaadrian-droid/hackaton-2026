@@ -87,160 +87,167 @@ _Open only the files listed here; a file's description is its first comment line
 - `next.config.ts` (25) — Next.js configuration: security headers sent with every response (the content security policy itself is added per request in proxy.ts).
 - `package.json` (36) — package "web"; scripts: dev, build, start, lint, test
 - `postcss.config.mjs` (8) — _no description: add a first-line comment_
-- `proxy.ts` (41) — Runs before every page: on the live site sends other addresses (www, vercel.app) to findmyuni.ro, adds the content security policy, keeps the sign-in session fresh and sends visitors who are not signed in away from the account and administration pages.. Exports: proxy, config
+- `proxy.ts` (57) — Runs before every page: on the live site sends other addresses (www, vercel.app) to findmyuni.ro, serves the plain addresses in Romanian and /en in English, adds the content security policy, keeps the sign-in session fresh and sends visitors who are not signed in away from the account and administration pages.. Exports: proxy, config
 - `tsconfig.json` (35) — JSON; keys: compilerOptions, include, exclude
 - `vercel.json` (5) — JSON; keys: $schema, regions
 - `vitest.config.ts` (9) — Vitest setup: the Convex function tests run with convex-test, which must be bundled by Vitest.
 
-### apps/web/app/admin  (1 files)
+### apps/web/app/[lang]/[...rest]  (1 files)
 
-- `layout.tsx` (10) — The administration pages' title in the browser tab (the pages themselves run in the browser).. Exports: metadata, Layout
+- `page.tsx` (7) — Any address that matches no page shows the friendly 404 page (not-found.tsx), in the page's language.. Routes: /[lang]/[...rest]. Exports: UnknownPage
 
-### apps/web/app/admin/pareri  (1 files)
+### apps/web/app/[lang]/admin  (1 files)
 
-- `page.tsx` (120) — Administration page for student opinions: the team reads what came through the form and approves, rejects or deletes it. Only administrators get any data.. Routes: /admin/pareri. Exports: AdminReviewsPage
+- `layout.tsx` (13) — The administration pages' title in the browser tab, in the page language (the pages themselves run in the browser).. Exports: generateMetadata, Layout
 
-### apps/web/app/admin/statistici  (1 files)
+### apps/web/app/[lang]/admin/pareri  (1 files)
 
-- `page.tsx` (247) — Administration page with statistics and maintenance: visits, where they come from, finished questionnaires and how people answered, the state of the database, and a CSV download. Only administrators get any data.. Routes: /admin/statistici. Exports: AdminStatsPage
+- `page.tsx` (124) — Administration page (in the page language) for student opinions: the team reads what came through the form and approves, rejects or deletes it. Only administrators get any data.. Routes: /[lang]/admin/pareri. Exports: AdminReviewsPage
 
-### apps/web/app  (13 files)
+### apps/web/app/[lang]/admin/statistici  (1 files)
+
+- `page.tsx` (259) — Administration page (in the page language) with statistics and maintenance: visits, where they come from, finished questionnaires and how people answered, the state of the database, and a CSV download. Only administrators get any data.. Routes: /[lang]/admin/statistici. Exports: AdminStatsPage
+
+### apps/web/app/[lang]/conectare  (1 files)
+
+- `page.tsx` (30) — Sign-in page: reached when a page needs an account (for example "Contul meu"). Everyday sign-in happens in the account window; this page shows the same form, in the page language.. Routes: /[lang]/conectare. Exports: generateMetadata, SignInPage
+
+### apps/web/app/[lang]/confidentialitate  (1 files)
+
+- `page.tsx` (505) — Privacy page: in plain language (Romanian, with an English translation), who is responsible, what FindMyUni stores, why, on what legal basis, for how long, who processes it, your rights and how to use them. Working draft until a lawyer checks it.. Routes: /[lang]/confidentialitate. Exports: generateMetadata, PrivacyPage
+
+### apps/web/app/[lang]/cont/datele-mele  (1 files)
+
+- `page.tsx` (140) — "Datele mele" (in the page language): opened only from a small link in "Contul meu" or the privacy page, only when signed in; shows everything the site keeps about the account and lets the student download a copy (GDPR right of access and portability).. Routes: /[lang]/cont/datele-mele. Exports: MyDataPage
+
+### apps/web/app/[lang]/cont  (2 files)
+
+- `layout.tsx` (13) — The account pages' title in the browser tab, in the page language (the pages themselves run in the browser).. Exports: generateMetadata, Layout
+- `page.tsx` (281) — "Contul meu" (in the page language): shows who is signed in (username, name and email; the name can be changed) the saved questionnaire result and the favourite universities, a small link to "Datele mele", and lets the student sign out or delete the account.. Routes: /[lang]/cont. Exports: AccountPage
+
+### apps/web/app/[lang]  (6 files)
+
+- `error.tsx` (34) — Shown instead of a page that broke while loading: the usual header, the broken-road drawing, a short message that it is not the student's fault and a "try again" button, in the page language. Nothing technical is shown.. Exports: PageError
+- `layout.tsx` (78) — Root layout: fonts, page metadata, the page language (ro at the plain addresses, en under /en), the database connection and the anonymous visit counter shared by every page.. Exports: generateStaticParams, generateMetadata, RootLayout
+- `loading.tsx` (17) — Shown the instant a link is pressed, while the next page comes from the server: the usual header and a small spinner, so a tap never looks ignored (in the page language).. Exports: Loading
+- `not-found.tsx` (22) — Friendly 404 page shown for unknown routes and unknown university ids, in the page language.. Exports: NotFound
+- `opengraph-image.tsx` (53) — The picture shown when the site itself is shared (WhatsApp, Instagram, Facebook …): the cap from the logo, "FindMyUni" and what the site does. Drawn once, when the site is built.. Exports: alt, size, contentType, dynamicParams, generateStaticParams, Image
+- `page.tsx` (50) — Home page: the welcome with the drawing and the account choice, the big buttons drawn as clouds, in the page language.. Routes: /[lang]. Exports: generateMetadata, Home
+
+### apps/web/app/[lang]/ghiduri/[tara]  (1 files)
+
+- `page.tsx` (131) — One country guide (Romanian pages only; English pages show 404): the steps to apply, the documents, language, costs, money and housing, with the official links.. Routes: /[lang]/ghiduri/[tara]. Exports: generateStaticParams, generateMetadata, GuidePage
+
+### apps/web/app/[lang]/ghiduri  (1 files)
+
+- `page.tsx` (47) — Guides index: Romanian pages show one tile per country guide; English pages show the single guide "How to apply to a university in Romania".. Routes: /[lang]/ghiduri. Exports: generateMetadata, GuidesPage
+
+### apps/web/app/[lang]/programe  (1 files)
+
+- `page.tsx` (47) — Programme finder: search the bachelor programmes of every country in the catalogue (official national datasets).. Routes: /[lang]/programe. Exports: generateMetadata, ProgramsPage
+
+### apps/web/app/[lang]/quiz  (2 files)
+
+- `layout.tsx` (13) — The questionnaire's title in the browser tab, in the page language (the page itself runs in the browser).. Exports: generateMetadata, Layout
+- `page.tsx` (337) — Quiz screen (in the page language): the high-school profile first (on English pages a general "what did you focus on"), then one question per step with progress and encouragement, the activities step and the "where" step (Romanian cities; on English pages only Romania).. Routes: /[lang]/quiz. Exports: QuizPage
+
+### apps/web/app/[lang]/rezultat  (2 files)
+
+- `layout.tsx` (13) — The result page's title in the browser tab, in the page language (the page itself runs in the browser).. Exports: generateMetadata, Layout
+- `page.tsx` (185) — Result screen (in the page language): top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /[lang]/rezultat. Exports: ResultPage
+
+### apps/web/app/[lang]/specializari/[categorie]  (1 files)
+
+- `page.tsx` (67) — One category: its study domains as collapsible rows with their specializations, in the page language.. Routes: /[lang]/specializari/[categorie]. Exports: generateStaticParams, generateMetadata, CategoryPage
+
+### apps/web/app/[lang]/specializari  (1 files)
+
+- `page.tsx` (38) — All study fields: category tiles and a "what do you like" picker, or filtered domains and specializations when the student types, in the page language.. Routes: /[lang]/specializari. Exports: generateMetadata, SpecializationsPage
+
+### apps/web/app/[lang]/studenti  (1 files)
+
+- `page.tsx` (66) — Student voices: real opinions from students and graduates, with a search by faculty or university, in the page language (the opinions keep their original words).. Routes: /[lang]/studenti. Exports: generateMetadata, Students
+
+### apps/web/app/[lang]/studenti/parere  (2 files)
+
+- `layout.tsx` (13) — The opinion form's title in the browser tab, in the page language (the page itself runs in the browser).. Exports: generateMetadata, Layout
+- `page.tsx` (137) — Public form (in the page language) where a student writes an opinion about their faculty. No account needed; the opinion appears only after the team approves it.. Routes: /[lang]/studenti/parere. Exports: ReviewFormPage
+
+### apps/web/app/[lang]/surse  (1 files)
+
+- `page.tsx` (147) — Data sources page: where the catalogue of universities and programmes comes from, country by country, how it was built and what its limits are, in the page language.. Routes: /[lang]/surse. Exports: generateMetadata, SourcesPage
+
+### apps/web/app/[lang]/test  (2 files)
+
+- `layout.tsx` (13) — The questionnaire start page's title in the browser tab, in the page language (the page itself runs in the browser).. Exports: generateMetadata, Layout
+- `page.tsx` (76) — Questionnaire start screen in the page language: its own title, the 3-step explanation and the button that starts the quiz (the profile is asked inside the quiz).. Routes: /[lang]/test. Exports: QuestionnaireStart
+
+### apps/web/app/[lang]/universitati/[id]/[facultate]  (1 files)
+
+- `page.tsx` (143) — Profile sheet of one Romanian faculty (in the page language): what you study there, how you get in, its bachelor programmes from the official list and the official links.. Routes: /[lang]/universitati/[id]/[facultate]. Exports: generateStaticParams, generateMetadata, FacultyPage
+
+### apps/web/app/[lang]/universitati/[id]  (2 files)
+
+- `opengraph-image.tsx` (95) — The picture shown when a university's sheet is shared (WhatsApp, Instagram, Facebook …): FindMyUni, the university's name, place and yearly tuition when we have it.. Exports: alt, size, contentType, dynamicParams, generateStaticParams, Image
+- `page.tsx` (403) — Full profile sheet of one university in the page language, statically generated for every university.. Routes: /[lang]/universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
+
+### apps/web/app/[lang]/universitati  (1 files)
+
+- `page.tsx` (48) — University finder page: search box, filters and the results, 10 at a time (the client part reads the URL query).. Routes: /[lang]/universitati. Exports: generateMetadata, UniversitiesPage
+
+### apps/web/app  (7 files)
 
 - `apple-icon.png`
-- `error.tsx` (32) — Shown instead of a page that broke while loading: the usual header, the broken-road drawing, a short message that it is not the student's fault and a "try again" button. Nothing technical is shown.. Exports: PageError
 - `favicon.ico`
-- `global-error.tsx` (26) — Shown in the rare case the whole site fails to start (even the page frame): a plain page with its own colours, since the site's styles are not loaded here.. Exports: GlobalError
+- `global-error.tsx` (32) — Shown in the rare case the whole site fails to start (even the page frame): a plain page with its own colours, since the site's styles are not loaded here. The language comes from the address (/en = English).. Exports: GlobalError
 - `globals.css` (130) — _no description: add a first-line comment_
 - `icon.png`
-- `layout.tsx` (53) — Root layout: fonts, page metadata, the database connection and the anonymous visit counter shared by every page.. Exports: metadata, RootLayout
-- `loading.tsx` (14) — Shown the instant a link is pressed, while the next page comes from the server: the usual header and a small spinner, so a tap never looks ignored.. Exports: Loading
-- `not-found.tsx` (11) — Friendly 404 page shown for unknown routes and unknown university ids.. Exports: NotFound
-- `opengraph-image.tsx` (46) — The picture shown when the site itself is shared (WhatsApp, Instagram, Facebook …): the cap from the logo, "FindMyUni" and what the site does. Drawn once, when the site is built.. Exports: alt, size, contentType, Image
-- `page.tsx` (32) — Home page: the welcome with the drawing and the account choice, the four big buttons drawn as clouds.. Routes: /. Exports: Home
-- `robots.ts` (12) — Rules for search engines (/robots.txt): on the live site, everything public may be indexed except personal pages; test copies of the site are never indexed.. Exports: robots
-- `sitemap.ts` (21) — The list of every public page for search engines (/sitemap.xml): the main pages, every university and faculty sheet, every country guide and study category.. Exports: sitemap
+- `robots.ts` (12) — Rules for search engines (/robots.txt): on the live site, everything public may be indexed (in both languages) except personal pages; test copies of the site are never indexed.. Exports: robots
+- `sitemap.ts` (33) — The list of every public page for search engines (/sitemap.xml): the main pages, every university and faculty sheet, every country guide and study category, with the English address (/en/...) next to the Romanian one wherever the page exists in English.. Exports: sitemap
 
-### apps/web/app/conectare  (1 files)
+### apps/web/components  (48 files)
 
-- `page.tsx` (21) — Sign-in page: reached when a page needs an account (for example "Contul meu"). Everyday sign-in happens in the account window; this page shows the same form.. Routes: /conectare. Exports: metadata, SignInPage
-
-### apps/web/app/confidentialitate  (1 files)
-
-- `page.tsx` (211) — Privacy page: in plain Romanian, who is responsible, what FindMyUni stores, why, on what legal basis, for how long, who processes it, your rights and how to use them. Working draft until a lawyer checks it.. Routes: /confidentialitate. Exports: metadata, PrivacyPage
-
-### apps/web/app/cont/datele-mele  (1 files)
-
-- `page.tsx` (135) — "Datele mele": opened only from a small link in "Contul meu" or the privacy page, only when signed in; shows everything the site keeps about the account and lets the student download a copy (GDPR right of access and portability).. Routes: /cont/datele-mele. Exports: MyDataPage
-
-### apps/web/app/cont  (2 files)
-
-- `layout.tsx` (10) — The account pages' title in the browser tab (the pages themselves run in the browser).. Exports: metadata, Layout
-- `page.tsx` (267) — "Contul meu": shows who is signed in (username, name and email; the name can be changed) the saved questionnaire result and the favourite universities, a small link to "Datele mele", and lets the student sign out or delete the account.. Routes: /cont. Exports: AccountPage
-
-### apps/web/app/ghiduri/[tara]  (1 files)
-
-- `page.tsx` (129) — One country guide: the steps to apply, the documents, language, costs, money and housing, with the official links.. Routes: /ghiduri/[tara]. Exports: generateStaticParams, generateMetadata, GuidePage
-
-### apps/web/app/ghiduri  (1 files)
-
-- `page.tsx` (32) — Country guides index: a search box and one tile per country that has a "how to apply" guide.. Routes: /ghiduri. Exports: metadata, GuidesPage
-
-### apps/web/app/programe  (1 files)
-
-- `page.tsx` (32) — Programme finder: search the bachelor programmes of every country in the catalogue (official national datasets).. Routes: /programe. Exports: metadata, ProgramsPage
-
-### apps/web/app/quiz  (2 files)
-
-- `layout.tsx` (10) — The questionnaire's title in the browser tab (the page itself runs in the browser).. Exports: metadata, Layout
-- `page.tsx` (288) — Quiz screen: the high-school profile first, then one question per step with progress and encouragement, the activities step and the "where" step (with one or more Romanian cities).. Routes: /quiz. Exports: QuizPage
-
-### apps/web/app/rezultat  (2 files)
-
-- `layout.tsx` (10) — The result page's title in the browser tab (the page itself runs in the browser).. Exports: metadata, Layout
-- `page.tsx` (168) — Result screen: top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /rezultat. Exports: ResultPage
-
-### apps/web/app/specializari/[categorie]  (1 files)
-
-- `page.tsx` (50) — One category: its study domains as collapsible rows with their specializations.. Routes: /specializari/[categorie]. Exports: generateStaticParams, generateMetadata, CategoryPage
-
-### apps/web/app/specializari  (1 files)
-
-- `page.tsx` (26) — All study fields: category tiles and a "what do you like" picker, or filtered domains and specializations when the student types.. Routes: /specializari. Exports: metadata, SpecializationsPage
-
-### apps/web/app/studenti  (1 files)
-
-- `page.tsx` (50) — Student voices: real opinions from students and graduates, with a search by faculty or university.. Routes: /studenti. Exports: metadata, Students
-
-### apps/web/app/studenti/parere  (2 files)
-
-- `layout.tsx` (10) — The opinion form's title in the browser tab (the page itself runs in the browser).. Exports: metadata, Layout
-- `page.tsx` (133) — Public form where a student writes an opinion about their faculty. No account needed; the opinion appears only after the team approves it.. Routes: /studenti/parere. Exports: ReviewFormPage
-
-### apps/web/app/surse  (1 files)
-
-- `page.tsx` (81) — Data sources page: where the catalogue of universities and programmes comes from, country by country, how it was built and what its limits are.. Routes: /surse. Exports: metadata, SourcesPage
-
-### apps/web/app/test  (2 files)
-
-- `layout.tsx` (10) — The questionnaire start page's title in the browser tab (the page itself runs in the browser).. Exports: metadata, Layout
-- `page.tsx` (66) — Questionnaire start screen: its own title, the 3-step explanation and the button that starts the quiz (the profile is asked inside the quiz).. Routes: /test. Exports: QuestionnaireStart
-
-### apps/web/app/universitati/[id]/[facultate]  (1 files)
-
-- `page.tsx` (122) — Profile sheet of one Romanian faculty: what you study there, how you get in, its bachelor programmes from the official list and the official links.. Routes: /universitati/[id]/[facultate]. Exports: generateStaticParams, generateMetadata, FacultyPage
-
-### apps/web/app/universitati/[id]  (2 files)
-
-- `opengraph-image.tsx` (85) — The picture shown when a university's sheet is shared (WhatsApp, Instagram, Facebook …): FindMyUni, the university's name, place and yearly tuition when we have it.. Exports: alt, size, contentType, dynamicParams, generateStaticParams, Image
-- `page.tsx` (366) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
-
-### apps/web/app/universitati  (1 files)
-
-- `page.tsx` (35) — University finder page: search box, filters and the results, 10 at a time (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
-
-### apps/web/components  (45 files)
-
-- `ActivitiesStep.tsx` (227) — Quiz step "Ce ai făcut până acum?": add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
-- `ActivitiesSummary.tsx` (33) — Read-only list of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
-- `AdminGate.tsx` (91) — Shown on the admin pages until this device is unlocked: sends a 6-digit code to the admin's email and checks it; the pages open for 8 hours, then it asks again.. Exports: AdminGate
-- `BackToSearch.tsx` (23) — "← Înapoi la universități" on a university sheet: returns to the student's last search with its text and filters (plain search page when there is none).. Exports: BackToSearch
-- `CategoryTiles.tsx` (24) — Grid of category tiles (emoji and name), each linking to its category page.. Exports: CategoryTiles
+- `ActivitiesStep.tsx` (234) — Quiz step "Ce ai făcut până acum?" in the page language: add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
+- `ActivitiesSummary.tsx` (36) — Read-only list (in the page language) of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
+- `AdminGate.tsx` (95) — (In the page language.) Shown on the admin pages until this device is unlocked: sends a 6-digit code to the admin's email and checks it; the pages open for 8 hours, then it asks again.. Exports: AdminGate
+- `BackToSearch.tsx` (26) — "← Înapoi la universități" on a university sheet: returns to the student's last search with its text and filters (plain search page when there is none).. Exports: BackToSearch
+- `CategoryTiles.tsx` (29) — Grid of category tiles (emoji and name), each linking to its category page, in the page language.. Exports: CategoryTiles
 - `Confetti.tsx` (41) — A short burst of cool-coloured confetti, shown once when mounted and removed after about 3 seconds.. Exports: Confetti
 - `ConvexClientProvider.tsx` (12) — Connects the pages to the Convex database and keeps the sign-in session available to every component.. Exports: ConvexClientProvider
-- `CurriculumPlan.tsx` (38) — "Ce înveți, an cu an": the main subjects of each study year for a domain, taken from one official curriculum, with a link to it.. Exports: CurriculumPlan
-- `DomainDetails.tsx` (53) — One study domain as a native <details>: summary with emoji, name, count and chevron; inside the short text, specializations, the subjects per year and a link to universities.. Exports: DomainDetails
-- `DomainPrograms.tsx` (66) — On a result card: real bachelor programmes of the matched study domain in Romania (in the student's chosen cities when there are any), and the other countries where the catalogue has some.. Exports: DomainPrograms, DomainAbroad
-- `FacultyPrograms.tsx` (24) — On a faculty sheet: the bachelor programmes of that faculty from the official list. Plain markup: the faculty page gives it the rows, read on the server.. Exports: FacultyPrograms
-- `FavoriteButton.tsx` (85) — The heart on a university sheet (or, compact, in the corner of a search result card): adds the university to the student's favourites (shown in "Contul meu") or removes it; without an account it opens the account window and adds it once the student is signed in.. Exports: FavoriteButton
-- `GuideFinder.tsx` (56) — Country guides index body: a search box with a magnifier that filters the country tiles as you type (diacritics do not matter).. Exports: GuideFinder
+- `CurriculumPlan.tsx` (44) — "Ce înveți, an cu an": the main subjects of each study year for a domain, taken from one official curriculum, with a link to it.. Exports: CurriculumPlan
+- `DomainDetails.tsx` (60) — One study domain as a native <details>: summary with emoji, name, count and chevron; inside the short text, specializations, the subjects per year and a link to universities.. Exports: DomainDetails
+- `DomainPrograms.tsx` (72) — On a result card, in the page language: real bachelor programmes of the matched study domain in Romania (in the student's chosen cities when there are any), and the other countries where the catalogue has some.. Exports: DomainPrograms, DomainAbroad
+- `FacultyPrograms.tsx` (26) — On a faculty sheet: the bachelor programmes of that faculty from the official list. Plain markup: the faculty page gives it the rows (read on the server) and the page language.. Exports: FacultyPrograms
+- `FavoriteButton.tsx` (87) — The heart on a university sheet (or, compact, in the corner of a search result card): adds the university to the student's favourites (shown in "Contul meu") or removes it; without an account it opens the account window and adds it once the student is signed in.. Exports: FavoriteButton
+- `GuideFinder.tsx` (60) — Country guides index body (Romanian pages): a search box with a magnifier that filters the country tiles as you type (diacritics do not matter).. Exports: GuideFinder
+- `GuideRomania.tsx` (60) — The English guide "How to apply to a university in Romania": title, intro, sections, official source links and the date it was checked, read from data/en/guide-romania.json.. Exports: romaniaGuide, GuideRomania
 - `Illustrations.tsx` (252) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots, the start-page hero, the broken road of the error page, and the page drawings of Universități, Ghiduri, Specializări, Studenți, Chestionar and "nothing found".. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene, BrokenPath, …
-- `InterestPicker.tsx` (129) — "Ce îți place?": the student picks up to three interests and sees the specializations that fit them best, ranked, with links to universities.. Exports: InterestPicker
-- `MatchCard.tsx` (201) — One result card: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
-- `NavBubbles.tsx` (35) — The four big buttons on the home page (Specializări, Universități, Chestionar, Studenți, Ghiduri pe țări), drawn as little clouds.. Exports: NavBubbles
-- `NavLinks.tsx` (44) — Header navigation links with the current page highlighted; signed-in visitors also get "Contul meu" (signing in starts from the home page).. Exports: NavLinks
-- `OfficialPrograms.tsx` (12) — On a university sheet outside Romania: every bachelor programme of the institution from its country's official dataset, read from the database (those lists are too large to ship with the pages). Romanian sheets render the same list on the server, from the catalogue file.. Exports: OfficialPrograms
-- `ProgramGroups.tsx` (69) — The list of an institution's bachelor programmes, grouped by faculty (or by field when the source has no faculties). Plain markup with no browser code, so a page can render it on the server.. Exports: ProgramGroups
-- `ProgramRow.tsx` (68) — One bachelor programme from the catalogue, as a compact row: name and the small facts its source gives (language, study form, years, places, status).. Exports: FORM_LABEL, ProgramRow
-- `ProgramSearch.tsx` (99) — Search over the bachelor programmes of the catalogue: country, free text, study domain and city; the state lives in the URL so links and Back work.. Exports: ProgramSearch
-- `SaveResult.tsx` (99) — Under the result: signed-in students save it with one button; the others see a card with the benefits of an account, which opens the account window on "new account" and saves the result once the account exists.. Exports: SaveResult
-- `SearchBox.tsx` (126) — Search box with a magnifier icon; submits to /universitati?q=... or calls onSearch when given. With `suggest`, a list of suggestions opens while typing (arrows, Enter and Escape work; screen readers hear it as a combobox).. Exports: SearchBox
-- `ShareButton.tsx` (41) — "Trimite" on a university sheet: on a phone it opens the phone's own share menu (WhatsApp, Instagram, messages …); where that menu does not exist, it copies the link.. Exports: ShareButton
-- `ShareResult.tsx` (184) — Under the result: draws a story-sized picture (1080×1920) of the 3 matched domains with their percentages and "findmyuni.ro", in the browser only. Exports: ShareResult
-- `Shell.tsx` (45) — Page frame shared by all screens: header with the FindMyUni logo, a centered content column and a footer with the privacy link.. Exports: Shell, Notice
-- `SignInForm.tsx` (284) — The account form, shared by the account window and the sign-in page: sign in with username and password, make an account (username, full name, email, password, then the 6-digit code from the email) and reset a forgotten password with a code.. Exports: SignInForm
-- `SpecializationsBrowser.tsx` (82) — /specializari body: a text filter over all categories, domains and specializations; without text it shows the category tiles.. Exports: SpecializationsBrowser
-- `StudentCard.tsx` (38) — One student opinion: photo (or initial), name, faculty and their own words. Used on the students page and on university sheets.. Exports: StudentCard
-- `StudentVoices.tsx` (164) — Student opinions with a search box: type a faculty or university and see every opinion we have from there.. Exports: StudentVoices
-- `Turnstile.tsx` (38) — Cloudflare Turnstile bot check: shows the widget and reports its token; the token is verified on the server before anything is stored.. Exports: Turnstile
-- `UniversityBadges.tsx` (23) — Small coloured badges for a university's prestige and budget level, shared by result cards and the profile sheet.. Exports: PrestigeBadge, BudgetBadge
-- `UniversityCard.tsx` (73) — Compact university result card: name, place, badges, three short facts, whether we have student opinions, a heart for the favourites and a link to the full sheet (the whole card is clickable, the heart sits above it).. Exports: UniversityCard
-- `UniversityDomains.tsx` (87) — "Ce poți studia aici" on a university sheet: tapping a domain opens, on the same page, its specializations and the subjects per year.. Exports: UniversityDomains
-- `UniversityList.tsx` (48) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList
-- `UniversityOpinions.tsx` (32) — "Ce spun studenții" on a university sheet: the opinions about this university, including approved ones from the database. Renders nothing when there are none.. Exports: UniversityOpinions
-- `UniversityPhoto.tsx` (25) — A university's photo at the top of its sheet, with the author and licence underneath (the free licences of Wikimedia Commons require them).. Exports: UniversityPhoto
-- `UniversityPicker.tsx` (103) — University field of the opinion form: the student types a few letters and picks the university from the suggestions (Romanian ones first), or "Altă universitate" when it is not in our list.. Exports: OTHER, UniversityPicker
-- `UniversitySearch.tsx` (665) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
-- … +5 more
+- `InterestPicker.tsx` (153) — "Ce îți place?": the student picks up to three interests and sees the specializations that fit them best, ranked, with links to universities (in the page language).. Exports: InterestPicker
+- `LangProvider.tsx` (26) — Gives every component in the browser the language of the page (ro or en), set once by the root layout from the address.. Exports: LangProvider, useLang, useHref, useT
+- `LocalLink.tsx` (11) — A link inside the site that stays in the page's language: href="/universitati" becomes "/en/universitati" on the English pages. Use it instead of next/link for addresses of this site.. Exports: LocalLink
+- `MatchCard.tsx` (211) — One result card, in the page language: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
+- `NavBubbles.tsx` (38) — The big buttons on the home page (Specializări, Universități, Chestionar, Studenți, Ghiduri pe țări), drawn as little clouds, in the page language.. Exports: NavBubbles
+- `NavLinks.tsx` (63) — Header navigation links with the current page highlighted, the RO / EN language switch; signed-in visitors also get "Contul meu" (signing in starts from the home page).. Exports: NavLinks
+- `OfficialPrograms.tsx` (15) — On a university sheet outside Romania: every bachelor programme of the institution from its country's official dataset, read from the database (those lists are too large to ship with the pages). Romanian sheets render the same list on the server, from the catalogue file.. Exports: OfficialPrograms
+- `ProgramGroups.tsx` (75) — The list of an institution's bachelor programmes, grouped by faculty (or by field when the source has no faculties). Plain markup, so a page can render it on the server; the page language comes in as `lang`.. Exports: ProgramGroups
+- `ProgramRow.tsx` (77) — One bachelor programme from the catalogue, as a compact row: name and the small facts its source gives (language, study form, years, places, status).. Exports: FORM_LABEL, ProgramRow
+- `ProgramSearch.tsx` (104) — Search over the bachelor programmes of the catalogue: country, free text, study domain and city; the state lives in the URL so links and Back work.. Exports: ProgramSearch
+- `SaveResult.tsx` (108) — Under the result, in the page language: signed-in students save it with one button; the others see a card with the benefits of an account, which opens the account window on "new account" and saves the result once the account exists.. Exports: SaveResult
+- `SearchBox.tsx` (129) — Search box (in the page language) with a magnifier icon; submits to /universitati?q=... or calls onSearch when given. With `suggest`, a list of suggestions opens while typing (arrows, Enter and Escape work; screen readers hear it as a combobox).. Exports: SearchBox
+- `ShareButton.tsx` (44) — "Trimite" on a university sheet: on a phone it opens the phone's own share menu (WhatsApp, Instagram, messages …); where that menu does not exist, it copies the link.. Exports: ShareButton
+- `ShareResult.tsx` (188) — Under the result (text in the page language): draws a story-sized picture (1080×1920) of the 3 matched domains with their percentages and "findmyuni.ro", in the browser only. Exports: ShareResult
+- `Shell.tsx` (48) — Page frame shared by all screens: header with the FindMyUni logo, a centered content column and a footer with the privacy link, in the page language.. Exports: Shell, Notice
+- `SignInForm.tsx` (291) — The account form, in the page language, shared by the account window and the sign-in page: sign in with username and password, make an account (username, full name, email, password, then the 6-digit code from the email) and reset a forgotten password with a code.. Exports: SignInForm
+- `SpecializationsBrowser.tsx` (88) — /specializari body: a text filter over all categories, domains and specializations (in the page language); without text it shows the category tiles.. Exports: SpecializationsBrowser
+- `StudentCard.tsx` (41) — One student opinion: photo (or initial), name, faculty and their own words. Used on the students page and on university sheets; the opinion stays in its original words, only the photo label is in the page language.. Exports: StudentCard
+- `StudentVoices.tsx` (176) — Student opinions with a search box: type a faculty or university and see every opinion we have from there (the opinions keep their original words; the page around them is in the page language).. Exports: StudentVoices
+- `Turnstile.tsx` (40) — Cloudflare Turnstile bot check (in the page language): shows the widget and reports its token; the token is verified on the server before anything is stored.. Exports: Turnstile
+- `UniversityBadges.tsx` (25) — Small coloured badges for a university's prestige and budget level, shared by result cards and the profile sheet (in the page language).. Exports: PrestigeBadge, BudgetBadge
+- `UniversityCard.tsx` (78) — Compact university result card: name, place, badges, three short facts, whether we have student opinions, a heart for the favourites and a link to the full sheet (the whole card is clickable, the heart sits above it).. Exports: UniversityCard
+- `UniversityDomains.tsx` (89) — "Ce poți studia aici" on a university sheet: tapping a domain opens, on the same page, its specializations and the subjects per year.. Exports: UniversityDomains
+- `UniversityList.tsx` (53) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList
+- `UniversityOpinions.tsx` (34) — "Ce spun studenții" on a university sheet: the opinions about this university, including approved ones from the database. Renders nothing when there are none.. Exports: UniversityOpinions
+- … +8 more
 
 ### apps/web/convex/_generated  (5 files)
 
@@ -343,13 +350,26 @@ _Open only the files listed here; a file's description is its first comment line
 - `universities-ro.json` (4201) — JSON array, 83 items
 - `university-sources.json`
 
-### apps/web/lib  (40 files)
+### apps/web/data/en  (10 files)
 
-- `activities.test.ts` (57) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
-- `activities.ts` (73) — Activities a student can add (competitions, volunteering, extracurriculars): labels, areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, describeActivity
+- `categories.json` (43) — JSON; keys: sanatate, it, inginerie, stiinte, business, drept-politica, sociale-educatie, umaniste
+- `curricula.json` (1875) — JSON; keys: medicina, medicina-dentara, farmacie, medicina-veterinara, asistenta-medicala, informatica, calculatoare-it, inginerie-electrica-electronica
+- `domains.json` (443) — JSON; keys: medicina, medicina-dentara, farmacie, medicina-veterinara, asistenta-medicala, informatica, calculatoare-it, inginerie-electrica-electronica
+- `faculties.json`
+- `guide-romania.json` (179) — JSON; keys: title, intro, sections, links, checked
+- `profiles.json` (51) — JSON; keys: real-mate-info, real-stiinte-naturii, uman-filologie, uman-stiinte-sociale, tehnologic-tehnic, tehnologic-servicii, tehnologic-resurse-mediu, voc-artistic
+- `questions.json` (182) — JSON; keys: proiect-de-grup, prieten-stresat, peste-zece-ani, zi-de-lucru, atelier-gratuit, canalul-scolii, job-de-vara, internet-picat
+- `specializations.json` (827) — JSON; keys: medicina-generala, medicina-de-urgenta, neurostiinte, sanatate-publica, biomedicina, medicina-dentara-generala, ortodontie, tehnica-dentara
+- `universities.json` (1414) — JSON; keys: unibuc, upb, ase-bucuresti, umf-carol-davila, snspa, uauim, utcb, usamv-bucuresti
+- `university-names.json` (33) — JSON; keys: unibuc, snspa, umf-carol-davila, uauim, unmb, unarte, ubb-cluj, umf-cluj
+
+### apps/web/lib  (45 files)
+
+- `activities.test.ts` (64) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
+- `activities.ts` (89) — Activities a student can add (competitions, volunteering, extracurriculars): labels (Romanian and English), areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, labelOf, describeActivity
 - `catalog.test.ts` (124) — Tests the programme catalogue files: every country follows the shared contract, the summary matches the files, and Romania matches the official list.
 - `catalog.ts` (20) — The per-country summary of the programme catalogue (counts, cities, sources), small enough to ship to the browser; the programmes themselves stay in the database.. Exports: catalogCountries, catalogTotals, catalogCountryOfSheet, catalogSheetIds
-- `cities.ts` (13) — Romanian cities that have at least one university sheet, the ones with most universities first. A small generated list (scripts/data/sheets-index.mjs), so the questionnaire does not load the university data.. Exports: romanianCities, cityList
+- `cities.ts` (16) — Romanian cities that have at least one university sheet, the ones with most universities first. A small generated list (scripts/data/sheets-index.mjs), so the questionnaire does not load the university data.. Exports: romanianCities, cityList
 - `csp.test.ts` (38) — Tests the Content-Security-Policy builder: scripts only with the nonce, the database and the bot check allowed, nothing else.
 - `csp.ts` (34) — Builds the Content-Security-Policy header: the list of places the browser may load scripts, styles, images and data from.. Exports: buildCsp
 - `curricula.test.ts` (61) — Tests the curricula data: every plan belongs to a real domain, covers its years in order and links to an official web page.
@@ -357,34 +377,35 @@ _Open only the files listed here; a file's description is its first comment line
 - `data.ts` (16) — Loads the small seeded JSON (profiles, questions, domains, specializations, categories, testimonials) as typed arrays. The universities are apart: lib/universities.ts (index, for the browser) and lib/sheets.ts (full sheets, server only).. Exports: profiles, questions, domains, specializations, categories, testimonials
 - `faculties.test.ts` (55) — Tests the faculty sheets: each one belongs to a real faculty of the official list, has valid values and official links, and gets a unique page address.
 - `faculties.ts` (24) — Profile sheets of Romanian faculties (data/faculties-ro.json) and the address of each one. Used on the server: by the faculty page and by the university page, which links to them.. Exports: faculties, facultySlug, facultyHref, facultiesOf, facultyBySlug
-- `fees.test.ts` (33) — Tests the exact tuition data: each entry belongs to a real sheet, has a known currency, a sane range, an academic year and an official link, and is written the way the sheet shows it.
-- `fees.ts` (59) — Exact yearly tuition of the university sheets (data/fees.json), each with its academic year and the official page it comes from; amounts in the university's own currency plus an approximate value in euro. Server only.. Exports: EUR_PER, feeOf, feeText
+- `fees.test.ts` (41) — Tests the exact tuition data: each entry belongs to a real sheet, has a known currency, a sane range, an academic year and an official link, and is written the way the sheet shows it.
+- `fees.ts` (83) — Exact yearly tuition of the university sheets (data/fees.json), each with its academic year and the official page it comes from; amounts in the university's own currency plus an approximate value in euro. Server only.. Exports: EUR_PER, feeOf, feeText
 - `guides.test.ts` (61) — Tests the country guides: complete texts, a country that has university sheets, official links, and no amounts or calendar dates (they change every year).
 - `guides.ts` (15) — Country guides ("how a Romanian student applies to bachelor studies in ..."), written from official pages and checked twice. Small: pages may import it freely.. Exports: guides, guideById, guideForCountry
-- `labels.ts` (79) — Romanian labels for the values on a university sheet, plus two small helpers every list uses. Kept apart from the university data so pages can use the labels without loading the sheets.. Exports: PRESTIGE_LABEL, BUDGET_LABEL, BUDGET_FILTER_LABEL, FEE_STEPS, BUDGET_RANGE, BUDGET_EXPLAINED, ADMISSION_LABEL, CERTIFICATE_LABEL, …
-- `lastSearch.ts` (22) — Remembers the student's last university search (text, filters, how many results) in this browser tab, so the "back" button on a sheet returns to it.. Exports: rememberSearch, lastSearchHref
-- `match.test.ts` (267) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
-- `match.ts` (178) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits).. Exports: matchDomains, studentTraits, matchByTraits
+- `i18n-data.ts` (113) — English versions of the seeded data, read from data/en/*.json (keyed by id) and laid over the Romanian data; anything not translated yet stays in Romanian. Small: safe in the browser (the long sheet texts are in lib/i18n-sheets.ts, server only).. Exports: COUNTRY_EN, countryName, cityName, universityName, localDomain, localSpecialization, localCategory, localProfile, …
+- `i18n-sheets.ts` (30) — English versions of the long texts of the university and faculty sheets (data/en/universities.json and data/en/faculties.json), laid over the Romanian sheets. Large: server only, like lib/sheets.ts.. Exports: hasEnglishSheet, localUniversity, localFaculty
+- `i18n.ts` (26) — The site's two languages: Romanian at the plain addresses (/universitati) and English under /en (/en/universitati), plus the helper that builds a link in the current language.. Routes: /en. Exports: LANGS, DEFAULT_LANG, hasLang, localHref, switchLangHref, tr
+- `labels.ts` (136) — Romanian (and English, by language) labels for the values on a university sheet, plus two small helpers every list uses. Kept apart from the university data so pages can use the labels without loading the sheets.. Exports: PRESTIGE_LABEL, BUDGET_LABEL, BUDGET_FILTER_LABEL, FEE_STEPS, BUDGET_RANGE, BUDGET_EXPLAINED, ADMISSION_LABEL, CERTIFICATE_LABEL, …
+- `lastSearch.ts` (24) — Remembers the student's last university search (text, filters, how many results) in this browser tab, so the "back" button on a sheet returns to it (in the page language).. Exports: rememberSearch, lastSearchHref
+- `match.test.ts` (277) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
+- `match.ts` (195) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits); the reasons and the domain texts come in the page language.. Exports: matchDomains, studentTraits, matchByTraits
 - `name.ts` (12) — The one rule for a person's full name, used by the sign-in form, the account page and the server.. Exports: NAME_MAX, cleanName
 - `pendingSave.ts` (60) — Keeps a questionnaire result or a hearted university on this device while the student signs in or makes an account, so it can be saved to the account afterwards.. Exports: setPendingResult, setPendingFavorite, takePendingFavorite, takePendingResult
 - `photos.test.ts` (28) — Tests the university photos: each one belongs to a real sheet, its file is in public/photos, its licence is free (no NC/ND) and it carries an author and a link to Wikimedia Commons.
 - `photos.ts` (12) — Freely licensed photos of the universities (Wikimedia Commons, saved small in public/photos by scripts/data/photos.mjs), with the author and licence the page must show. Server only.. Exports: photoOf
 - `roPrograms.test.ts` (29) — Tests the programme lists the Romanian sheets render on the server: every faculty sheet finds its programmes and the rows carry only what a page shows.
 - `roPrograms.ts` (24) — The Romanian bachelor programmes from the official list, read straight from the catalogue file so a sheet can show them without waiting for the database. Large: import it only from server code (the university and faculty pages) and from tests.. Exports: roProgramsOf, roProgramsOfFaculty
-- `seo.test.ts` (38) — Tests the search-engine helpers: descriptions are trimmed at a word, and the sitemap lists every public sheet once, on the official address, never a personal page.
+- `seo.test.ts` (46) — Tests the search-engine helpers: descriptions are trimmed at a word, and the sitemap lists every public sheet once, on the official address, never a personal page.
 - `seo.ts` (11) — The site's one official address and a helper that trims a text to the length search engines show under a result.. Exports: SITE_URL, clip
+- `serverMessages.test.ts` (19) — Tests that server messages are translated on English pages and left alone in Romanian.
+- `serverMessages.ts` (51) — English versions of the Romanian messages the Convex functions send to the forms: serverMessage(text, lang) returns the English text on English pages and the original otherwise.. Exports: serverMessage
 - `session.ts` (117) — Keeps the student's answers (and optional activities with photos) in sessionStorage between pages (safe on the server).. Exports: MAX_CITIES, loadDraft, saveDraft, clearDraft, toAnswers, shrinkImage
 - `sheets.ts` (11) — The full university sheets, with all their long texts. Large: import it only from server code (the university page) and from tests, never from a component that runs in the browser — those use lib/universities.ts.. Exports: universities, universityById
-- `suggest.test.ts` (27) — Tests the search suggestions: they start at 2 letters, ignore diacritics, put places first and lead universities to their sheets.
+- `suggest.test.ts` (40) — Tests the search suggestions: they start at 2 letters, ignore diacritics, put places first and lead universities to their sheets.
 - `testimonials.ts` (29) — Links student opinions to the universities that have a profile sheet, so the search and the sheets can show them.. Exports: universityIdOf, testimonialsFor
-- `traits.ts` (18) — The ten inclinations the questionnaire measures and their Romanian names. Kept apart from the matching so pages can show them without loading the university data.. Exports: TRAITS, TRAIT_LABEL
+- `traits.ts` (37) — The ten inclinations the questionnaire measures and their names in Romanian and English. Kept apart from the matching so pages can show them without loading the university data.. Exports: TRAITS, TRAIT_LABEL, TRAIT_LABEL_EN, traitLabel
 - `types.ts` (277) — Shared data contract for FindMyUni: profiles, questions, domains, universities and match results.
 - `universities.data.test.ts` (162) — Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
-- `universities.test.ts` (250) — Tests the specializations and categories data and the university search/filter logic.
-- `universities.ts` (241) — Search and filter over the universities with a profile sheet. Works on the index (sheets without their long texts), which is what the browser loads.. Exports: universities, countries, citiesIn, cityCounts, searchUniversities, feeFrom, RO_FIRST, filterUniversities, …
-- `useTestimonials.ts` (34) — All student opinions the pages can show: the ones gathered by the team (in the app's data) plus the approved ones from the database.. Exports: useTestimonials, useTestimonialsFor
-- `username.test.ts` (26) — Tests the username, password and email rules shared by the account forms and the server.
-- `username.ts` (24) — The rules for a username and a password, used by the account forms and by the server, so both check exactly the same thing.. Exports: USERNAME_MIN, USERNAME_MAX, PASSWORD_MIN, PASSWORD_MAX, cleanUsername, validPassword, cleanEmail
+- … +5 more
 
 ### apps/web/public  (2 files)
 

@@ -21,6 +21,27 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-26 18:00 — chestionarul în engleză, adaptat pentru străini
+- Cerut: „pentru un român să arate la fel, iar pentru un străin altceva”; ales: în loc de filiera de liceu, „What did you focus on most in high school?”; în loc de „România / străinătate / oriunde”, direct orașele din România
+- Făcut: pe paginile englezești primul pas are 7 variante generale (maths and computer science, sciences, languages and literature, social sciences, a technical or vocational school, arts, sport), fiecare legată intern de profilul românesc potrivit, deci potrivirea se calculează la fel; pasul „unde” sare direct la orașele din România (salvează where = ro); motivul din rezultat: „What you focused on in high school (…) prepares you well”. Paginile românești neschimbate
+- Fișiere: `apps/web/app/[lang]/quiz/page.tsx`, `apps/web/app/[lang]/test/page.tsx`, `apps/web/lib/match.ts`, `apps/web/data/en/profiles.json`
+- Poartă: TRECUT (gate.mjs); în browser: /en/quiz → „What did you focus on most in high school?” cu 7 variante, după activități direct „In which cities…” (fără „Abroad”), rezultat cu where = ro și motivul nou; /quiz în română: aceleași 12 filiere în 3 grupe și „În România / În străinătate / Oriunde”
+- Urmează: echipa se uită pe /en; salvare și publicare când cere echipa
+
+### 2026-10-26 17:00 — versiunea în engleză, pasul 2: tot site-ul și datele
+- Cerut: „da, pornește” — traducerea întregului site cu ajutori în paralel
+- Făcut: patru ajutori pe pagini și componente (căutare + fișe + programe; chestionar + rezultat; conturi + formulare + administrare + pagini de eroare + mesajele serverului, `lib/serverMessages.ts`; specializări + studenți + ghiduri + surse + confidențialitate), toate cu `t("ro", "en")`, `LocalLink` și datele din `data/en`; textul românesc neschimbat (comparat cuvânt cu cuvânt cu findmyuni.ro pe 17 pagini: diferă doar butonul EN). Date traduse și verificate a doua oară de alt ajutor: 83 de fișe românești (`data/en/universities.json`), 30 de nume oficiale în engleză luate de pe site-urile universităților (`university-names.json`; restul rămân cu numele românesc), 474 de fișe de facultăți (17 corecturi la verificare), domenii, specializări, categorii, chestionar, profiluri, materii pe ani (0 greșeli de sens găsite). Ghid nou „How to apply to a university in Romania” (`data/en/guide-romania.json`, 9 secțiuni, 17 linkuri oficiale; la verificare 11 afirmații scoase sau corectate; fără sume și date). Ghidurile românești pe țări dau 404 în engleză. Fișele din străinătate rămân în română cu o notă în engleză (runda a doua). Pe fișele românești în engleză, la costuri: notă că sumele sunt pentru români și cetățeni UE, cu link la ghid. Harta site-ului cu perechi ro/en (hreflang), robots blochează și paginile personale /en. Emailurile trimise de site rămân în română
+- Fișiere: `apps/web/app/**`, `apps/web/components/**`, `apps/web/lib/**` (inclusiv `i18n-data.ts`, `i18n-sheets.ts`, `serverMessages.ts`), `apps/web/data/en/*.json`
+- Poartă: TRECUT (gate.mjs: build, 193 de teste, lint curat); în browser: fișa ASE în engleză, chestionarul în engleză parcurs până la rezultat (18 întrebări, activități, „In Romania”, „Any city” → „Your matching fields”, motive în engleză); titlurile paginilor corecte în ambele limbi
+- Urmează: echipa se uită pe /en; de hotărât: întrebarea despre filiera de liceu (pentru străini nu se potrivește) și pasul „Abroad”; fișele din străinătate (runda a doua); emailurile în engleză; publicare când cere echipa
+
+### 2026-10-26 14:00 — versiunea în engleză, pasul 1: fundația
+- Cerut: site-ul și în engleză, pentru străinii care vor să studieze în România; tot tradus, inclusiv fișele (întâi cele românești, apoi restul); buton RO / EN sus, cu adrese proprii /en/...; ghidurile vechi (pentru români care pleacă) înlocuite în engleză cu un ghid nou „cum aplici la o universitate din România”, din surse oficiale
+- Făcut: toate paginile mutate în `app/[lang]` (ro și en); `proxy.ts` servește adresele simple în română (aceleași adrese ca înainte) și /en în engleză, trimite /ro/... la adresa simplă, iar redirecționările spre conectare/cont rămân în limba paginii; `lib/i18n.ts` (`localHref`, `switchLangHref`, `tr`), `components/LangProvider.tsx` (`useLang`, `useHref`, `useT`), `components/LocalLink.tsx` (link care păstrează limba), pagina de 404 pentru orice adresă necunoscută (`[...rest]`); poza de distribuire a site-ului desenată la construire pentru fiecare limbă. Traduse deja: antetul (meniul + butonul RO / EN), subsolul, pagina de start
+- Fișiere: `apps/web/app/[lang]/**` (mutate), `apps/web/app/[lang]/layout.tsx`, `apps/web/app/[lang]/page.tsx`, `apps/web/app/[lang]/[...rest]/page.tsx`, `apps/web/app/[lang]/opengraph-image.tsx`, `apps/web/proxy.ts`, `apps/web/lib/i18n.ts`, `apps/web/components/LangProvider.tsx`, `apps/web/components/LocalLink.tsx`, `apps/web/components/Shell.tsx`, `apps/web/components/NavLinks.tsx`, `apps/web/components/NavBubbles.tsx`, `apps/web/components/WelcomeActions.tsx`
+- Poartă: TRECUT (gate.mjs); local: toate paginile românești pe aceleași adrese (200, `lang="ro"`), /en și /en/universitati cu `lang="en"`, /ro/universitati → /universitati (308), /cont → /conectare și /en/cont → /en/conectare, adresă necunoscută → „Nu am găsit pagina”; pagina de start în engleză văzută în browser
+- Urmează: restul paginilor și componentelor, datele (fișele românești, facultăți, specializări, chestionar), ghidul nou, harta site-ului cu adresele /en; nimic publicat
+
 ### 2026-10-26 13:00 — formularul de păreri: universitatea se caută scriind; „UniPath” scos
 - Cerut: în formularul de păreri elevul doar glisa printr-o listă lungă de universități; ales: scrie câteva litere și alege din sugestii. Apoi: „UniPath” înlocuit peste tot cu FindMyUni
 - Făcut: câmp nou `UniversityPicker` (scrii 2+ litere, până la 8 sugestii, cele din România primele, săgeți/Enter/Escape, ultimul rând „Altă universitate”, sub alegere apare orașul și țara); facultatea rămâne scrisă liber. Pe site-ul public „UniPath” nu mai apărea nicăieri (verificat pe findmyuni.ro); redenumite numele interne de memorare din browser (`findmyuni-…`), fișierul CSV din statistici (`findmyuni-statistici-…`) și titlul + adresa din README. Imaginea de previzualizare a site-ului (văzută pe telefon la „Trimite”) avea vechea siglă „UniPath”: înlocuită cu `app/opengraph-image.tsx` (căciula, „FindMyUni”, „Alege facultatea potrivită”, desenată la construire); `public/logo.png` și `logo.jpg` (sigla veche) șterse, antetul folosește `logo-cap.png`. Rămân cu numele vechi doar proiectele „unipath” din Vercel și Convex și adresa unipath-taupe-mu.vercel.app (trimite spre findmyuni.ro), pe care vizitatorii nu le văd
@@ -1060,6 +1081,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-26 00:52 `7dd583d` feat: searchable university field, FindMyUni share image, drop UniPath
 - 2026-10-25 23:43 `8074524` fix: update Next.js and Zod, prerender share images
 - 2026-10-25 23:23 `5df325a` feat: share previews, share button and quiz result story image
 - 2026-10-25 03:29 `5a90f6d` feat: add the country guides to the top menu
@@ -1089,5 +1111,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-21 00:29 `72d63d0` feat: faster navigation, Frankfurt region, findmyuni.ro domain
 - 2026-10-20 02:24 `df419da` feat: bot check on sign-up, data retention, backups, launch guide
 - 2026-10-20 01:55 `31da3e0` feat: rate limits, 16+ accounts, privacy page, my-data page, ZAP scan
-- 2026-10-20 01:00 `cd56f9b` feat: restore NTUA in the Greek programme catalogue
 <!-- commits:end -->

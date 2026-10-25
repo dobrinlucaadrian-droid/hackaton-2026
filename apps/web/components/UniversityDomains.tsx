@@ -1,20 +1,22 @@
 "use client";
 // "Ce poți studia aici" on a university sheet: tapping a domain opens, on the same page, its specializations and the subjects per year.
-import Link from "next/link";
 import { useState } from "react";
 import { curriculumFor } from "@/lib/curricula";
 import { CurriculumPlan } from "./CurriculumPlan";
 import { FAMILY_CLASSES, domainStyle } from "./domainStyle";
+import { useT } from "./LangProvider";
+import Link from "./LocalLink";
 
 type Item = { id: string; name: string; short: string; specs: { id: string; name: string; short: string }[] };
 
 export function UniversityDomains({ items, showPlan = true }: { items: Item[]; showPlan?: boolean }) {
+  const t = useT();
   const [openId, setOpenId] = useState<string | null>(null);
   const open = items.find((d) => d.id === openId);
 
   return (
     <div>
-      <p className="text-sm">Apasă pe un domeniu ca să vezi ce poți studia.</p>
+      <p className="text-sm">{t("Apasă pe un domeniu ca să vezi ce poți studia.", "Tap a field to see what you can study.")}</p>
       <ul className="mt-2 flex flex-wrap gap-2">
         {items.map((d) => {
           const { family, emoji } = domainStyle(d.id);
@@ -47,7 +49,7 @@ export function UniversityDomains({ items, showPlan = true }: { items: Item[]; s
 
             {open.specs.length > 0 && (
               <>
-                <p className="mt-3 text-sm font-extrabold text-primary-dark">Specializări din acest domeniu</p>
+                <p className="mt-3 text-sm font-extrabold text-primary-dark">{t("Specializări din acest domeniu", "Specialisations in this field")}</p>
                 <ul className="mt-2 space-y-3">
                   {open.specs.map((s) => (
                     <li key={s.id} className="border-l-4 border-line pl-3">
@@ -56,14 +58,14 @@ export function UniversityDomains({ items, showPlan = true }: { items: Item[]; s
                     </li>
                   ))}
                 </ul>
-                <p className="mt-2 text-xs">Lista exactă a specializărilor de la această universitate o găsești pe site-ul ei.</p>
+                <p className="mt-2 text-xs">{t("Lista exactă a specializărilor de la această universitate o găsești pe site-ul ei.", "You will find the exact list of specialisations at this university on its website.")}</p>
               </>
             )}
 
             {showPlan && curriculumFor(open.id) && (
               <details className="group mt-3 rounded-2xl bg-card ring-1 ring-line">
                 <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-2 px-4 py-2 font-bold text-ink [&::-webkit-details-marker]:hidden">
-                  Ce înveți, an cu an
+                  {t("Ce înveți, an cu an", "What you study, year by year")}
                   <span aria-hidden className="text-primary transition-transform group-open:rotate-180">▾</span>
                 </summary>
                 <div className="px-4 pb-4">
@@ -76,7 +78,7 @@ export function UniversityDomains({ items, showPlan = true }: { items: Item[]; s
               href={`/universitati?domeniu=${open.id}`}
               className="mt-2 inline-flex min-h-11 items-center text-sm font-bold text-primary underline decoration-primary/40 underline-offset-2 hover:text-primary-dark"
             >
-              Vezi și alte universități cu acest domeniu →
+              {t("Vezi și alte universități cu acest domeniu →", "See other universities with this field →")}
             </Link>
           </div>
         )}

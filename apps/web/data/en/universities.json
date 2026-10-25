@@ -1,0 +1,1413 @@
+{
+ "unibuc": {
+  "about": "One of the oldest state universities in the country, with 20 faculties of science, law, letters and social sciences. It is known for its tradition and its wide range of programmes.",
+  "budgetNote": "It has state-funded places with no tuition fee, and the fee-paying ones are cheaper than in Western Europe.",
+  "admission": "The admission method differs from one faculty to another: at some the Romanian Baccalaureate (bac) average counts, at others an exam or a written test. Read the guide of the faculty you are interested in.",
+  "scholarshipsNote": "You can receive merit scholarships for good grades, and social scholarships if your family's situation requires it.",
+  "dormsNote": "It has student dormitories, but places are limited and are usually given according to grades.",
+  "pros": [
+   "A great many programmes, so it is easier to change direction",
+   "A name known in the country and abroad, useful on a CV",
+   "Based in the centre of the capital, with a rich cultural life"
+  ],
+  "cons": [
+   "The city is expensive, especially the rent",
+   "The faculties are crowded, with large groups",
+   "Few dormitory places compared with the number of students"
+  ]
+ },
+ "upb": {
+  "about": "The largest engineering school in the country, with engineering and computer science faculties in Bucharest, plus the Pitești University Centre (the former University of Pitești, with which it merged), which also has faculties of science, economics, law and letters. It is known for graduates that companies look for.",
+  "budgetNote": "You can study for free on a state-funded place if you get good grades at admission; the other places are fee-paying.",
+  "admission": "At most faculties you get in on the basis of your file, with your high-school grades in subjects such as mathematics and physics; for Automatic Control and Computers and for part of Electronics you take a written exam. The rules differ by faculty, so check the admission regulations.",
+  "scholarshipsNote": "There are merit and social scholarships, and some students can also receive performance scholarships.",
+  "dormsNote": "There are student dormitories; there are few compared with the demand, so apply early.",
+  "pros": [
+   "Its students are in great demand with IT and engineering firms",
+   "Many technical faculties in one place",
+   "A large campus with dormitories and student activities"
+  ],
+  "cons": [
+   "The courses are hard and many students fall behind",
+   "The big faculties have crowded groups",
+   "The campus in the capital is far from the centre"
+  ]
+ },
+ "ase-bucuresti": {
+  "about": "The best-known university of economics in the country, with faculties of finance, management, marketing and economic informatics. It is recognised by employers in the financial field.",
+  "budgetNote": "State-funded places are tuition-free, and if you do not get one you can choose a fee-paying place, which is more affordable than abroad.",
+  "admission": "The admission method differs from one faculty to another: at some the Romanian Baccalaureate (bac) average counts, at others an exam or a written test. Read the guide of the faculty you are interested in.",
+  "scholarshipsNote": "Scholarships are given for grades, along with social scholarships; you can find the conditions in the university's regulations.",
+  "dormsNote": "It offers accommodation in dormitories, depending on your grade average and your situation; other students rent in the city.",
+  "pros": [
+   "A degree valued in banks, companies and consulting",
+   "Many business and finance programmes",
+   "Partnerships with companies for placements and internships"
+  ],
+  "cons": [
+   "Strong competition for the most sought-after faculties",
+   "Many students each year, so large groups",
+   "Bucharest rents raise the costs"
+  ]
+ },
+ "umf-carol-davila": {
+  "about": "The oldest and largest medical university in the country, with faculties of medicine, dentistry, pharmacy, and midwifery and nursing. Check the university's website to see in which Bucharest hospitals the practical training takes place.",
+  "budgetNote": "It has state-funded places with no tuition fee, and the fee-paying ones are cheaper than in Western Europe.",
+  "admission": "For medicine and dentistry you take a multiple-choice test in biology and, as you choose, chemistry or physics; for pharmacy, in organic chemistry and biology. For midwifery and nursing you get in with your file, based on your Baccalaureate (bac) average and your high-school average. A medical certificate is also required.",
+  "scholarshipsNote": "You can receive merit scholarships for good grades, and social scholarships if your family's situation requires it.",
+  "dormsNote": "It has student dormitories, but places are limited and are usually given according to grades.",
+  "pros": [
+   "Practical training in large, varied hospitals in the capital",
+   "A degree recognised in Europe",
+   "Many medical programmes in the same place"
+  ],
+  "cons": [
+   "Very competitive admission",
+   "The schedule is heavy and demands a lot of study",
+   "Rent and living costs in Bucharest are high"
+  ]
+ },
+ "snspa": {
+  "about": "A state school focused on political science, administration, communication and public management. It suits you if you want a career in institutions, diplomacy or communication.",
+  "budgetNote": "You can study for free on a state-funded place if you get good grades at admission; the other places are fee-paying.",
+  "admission": "The admission method differs from one faculty to another: at some the Romanian Baccalaureate (bac) average counts, at others an exam or a written test. Read the guide of the faculty you are interested in.",
+  "scholarshipsNote": "There are merit and social scholarships, and some students can also receive performance scholarships.",
+  "dormsNote": "There are student dormitories; there are few compared with the demand, so apply early.",
+  "pros": [
+   "Clear specialisation in administration and politics",
+   "Smaller groups than at the big universities",
+   "Links with public institutions and organisations"
+  ],
+  "cons": [
+   "It does not offer a great variety of fields",
+   "You may end up with a narrow degree if you change your mind",
+   "Few state-funded places"
+  ]
+ },
+ "uauim": {
+  "about": "The main school of architecture in Bucharest, named after the architect Ion Mincu. It trains architects, urban planners and landscape specialists.",
+  "budgetNote": "State-funded places are tuition-free, and if you do not get one you can choose a fee-paying place, which is more affordable than abroad.",
+  "admission": "For architecture you take a single practical drawing test (graphic representation), held at the university's premises, which counts the most; the Baccalaureate (bac) average counts too. No portfolio is required, and the exercises differ by programme. For Urbanism and Territorial Administration (Sibiu) you get in with an eliminatory online interview and the Baccalaureate (bac) average.",
+  "scholarshipsNote": "Scholarships are given for grades, along with social scholarships; you can find the conditions in the university's regulations.",
+  "dormsNote": "It offers accommodation in dormitories, depending on your grade average and your situation; other students rent in the city.",
+  "pros": [
+   "The only faculty in the capital dedicated solely to architecture",
+   "Practical studio work and projects from the first year",
+   "A degree valued in the country and in Europe"
+  ],
+  "cons": [
+   "The programme is long and demanding (6 years)",
+   "A lot of time spent on projects, sometimes at night",
+   "Materials for models cost money"
+  ]
+ },
+ "utcb": {
+  "about": "A technical state university for construction, with faculties of civil engineering, hydrotechnics, geodesy and building services. It trains engineers for building sites and design.",
+  "budgetNote": "It has state-funded places with no tuition fee, and the fee-paying ones are cheaper than in Western Europe.",
+  "admission": "You get in without an exam, with your Baccalaureate (bac) results: for engineering, the bac average counts together with the mathematics grade. For programmes in foreign languages you also take a language test, graded pass or fail. Check the admission regulations.",
+  "scholarshipsNote": "You can receive merit scholarships for good grades, and social scholarships if your family's situation requires it.",
+  "dormsNote": "It has student dormitories, but places are limited and are usually given according to grades.",
+  "pros": [
+   "Construction always has a demand for engineers",
+   "Clear, practical programmes",
+   "Close links with construction companies"
+  ],
+  "cons": [
+   "Fewer fields than at a large university",
+   "Mathematics and physics are hard",
+   "Work on building sites can be demanding"
+  ]
+ },
+ "usamv-bucuresti": {
+  "about": "A state university for agriculture, horticulture, veterinary medicine and animal science. It has its own farms and laboratories for practical training.",
+  "budgetNote": "You can study for free on a state-funded place if you get good grades at admission; the other places are fee-paying.",
+  "admission": "At almost all faculties you get in without an exam: the Baccalaureate (bac) average counts the most, plus the grade in a bac exam of your choice. For veterinary medicine in Romanian you take a written test in biology and chemistry, which counts the most. Check the regulations.",
+  "scholarshipsNote": "There are merit and social scholarships, and some students can also receive performance scholarships.",
+  "dormsNote": "There are student dormitories; there are few compared with the demand, so apply early.",
+  "pros": [
+   "Practical training on its own farm and in its own laboratories",
+   "A field with a real need for specialists",
+   "A green campus in Bucharest"
+  ],
+  "cons": [
+   "It may involve work outside the city",
+   "Fewer faculties than other universities",
+   "Prestige is lower outside its field"
+  ]
+ },
+ "unatc": {
+  "about": "The most important theatre and film school in the country, named after I.L. Caragiale. It trains actors, directors, cinematographers and screenwriters.",
+  "budgetNote": "State-funded places are tuition-free, and if you do not get one you can choose a fee-paying place, which is more affordable than abroad.",
+  "admission": "Admission is through talent tests and an interview, not just grades; you are asked to show what you can do. Details differ by programme.",
+  "scholarshipsNote": "Scholarships are given for grades, along with social scholarships; you can find the conditions in the university's regulations.",
+  "dormsNote": "It offers accommodation in dormitories, depending on your grade average and your situation; other students rent in the city.",
+  "pros": [
+   "Teachers who are well-known actors and directors",
+   "A lot of practical work, on stage or in front of the camera",
+   "You can work on films and shows while still at university"
+  ],
+  "cons": [
+   "Very hard admission, with few places",
+   "The profession has an uncertain income",
+   "The schedule is intense and irregular"
+  ]
+ },
+ "unmb": {
+  "about": "A state university for music, with programmes in performance, composition and musicology. Students play in concerts and auditions.",
+  "budgetNote": "It has state-funded places with no tuition fee, and the fee-paying ones are cheaper than in Western Europe.",
+  "admission": "Admission is only through music tests: a recital on an instrument or in voice, and tests in theory, solfège and dictation; the Baccalaureate (bac) only has to be passed. You are asked to show what you can do. Details differ by programme.",
+  "scholarshipsNote": "You can receive merit scholarships for good grades, and social scholarships if your family's situation requires it.",
+  "dormsNote": "It has student dormitories, but places are limited and are usually given according to grades.",
+  "pros": [
+   "Individual lessons with teachers who are musicians",
+   "Many concerts and chances to perform in public",
+   "Its own dormitory and music library"
+  ],
+  "cons": [
+   "It requires years of musical study before admission",
+   "The job market for musicians is small",
+   "A lot of daily practice time"
+  ]
+ },
+ "unarte": {
+  "about": "A state university for fine arts, design and decorative arts, with studios for painting, graphic art, sculpture and design. It trains artists and designers.",
+  "budgetNote": "You can study for free on a state-funded place if you get good grades at admission; the other places are fee-paying.",
+  "admission": "You get in on the basis of practical drawing or specialist tests, the first of which is eliminatory, followed by an interview in which you present your portfolio of works. The Baccalaureate (bac) average only counts as a tie-breaker. Details differ by programme.",
+  "scholarshipsNote": "There are merit and social scholarships, and some students can also receive performance scholarships.",
+  "dormsNote": "There are student dormitories; there are few compared with the demand, so apply early.",
+  "pros": [
+   "Studios with plenty of space and materials for practice",
+   "Varied creative fields: painting, design, fashion",
+   "Exhibitions and projects from your time at university"
+  ],
+  "cons": [
+   "Admission with drawing tests and strong competition",
+   "Uncertain income at the start of a career",
+   "Art materials can cost money"
+  ]
+ },
+ "unefs": {
+  "about": "A state university for physical education and sport, with programmes for coach, sports teacher and physiotherapy. It has its own gyms and sports facilities.",
+  "budgetNote": "State-funded places are tuition-free, and if you do not get one you can choose a fee-paying place, which is more affordable than abroad.",
+  "admission": "Besides the Baccalaureate (bac) average, you have to pass physical or sports tests and you need a medical certificate. Details differ by programme.",
+  "scholarshipsNote": "Scholarships are given for grades, along with social scholarships; you can find the conditions in the university's regulations.",
+  "dormsNote": "It offers accommodation in dormitories, depending on your grade average and your situation; other students rent in the city.",
+  "pros": [
+   "Its own sports facilities for training",
+   "Training for active careers: coach, physiotherapist",
+   "Classmates who are passionate about movement"
+  ],
+  "cons": [
+   "Good physical condition is required at admission",
+   "A narrow specialisation, in sport and movement",
+   "Jobs can be seasonal"
+  ]
+ },
+ "academia-politie": {
+  "about": "A state institution of the Ministry of Internal Affairs that trains police officers, border police, gendarmes and firefighters, with studies in law, public order and safety, and building services. Graduates have a job guaranteed at the end of their studies.",
+  "budgetNote": "For full-time courses the places are state-funded, and the academy also pays for accommodation, meals and equipment. Only the distance-learning Law programme is fee-paying.",
+  "admission": "Admission requires written tests, physical tests and a medical check, as at any military institution; strict entry rules apply. Ask the institution for information.",
+  "scholarshipsNote": "On full-time courses you receive accommodation, food, equipment and medical care free of charge during your studies. Check with the academy whether you also receive money monthly.",
+  "dormsNote": "Accommodation and meals are provided on site, usually for the whole period of study.",
+  "pros": [
+   "You have a secure job after graduation",
+   "You receive accommodation and food during your studies",
+   "Law training and practice in the field"
+  ],
+  "cons": [
+   "Strict discipline and a demanding schedule",
+   "After graduation you work for a number of years in the system",
+   "The physical and medical tests eliminate many candidates"
+  ]
+ },
+ "atm": {
+  "about": "A state military institution that trains officer-engineers in fields such as electronics, mechanics, computer science and military construction. Students also receive military training.",
+  "budgetNote": "You can study for free on a state-funded place if you get good grades at admission; the other places are fee-paying.",
+  "admission": "For the state-funded places you first pass the selection made by the institution recruiting you (medical, sports and psychological tests), then take a multiple-choice test in mathematics, computer science and physics. For fee-paying places you get in on the Baccalaureate (bac) average. Ask the institution for information.",
+  "scholarshipsNote": "You receive accommodation, food and a monthly allowance during your studies, on top of the usual scholarships.",
+  "dormsNote": "On state-funded places, accommodation in the dormitory on site and meals are provided free of charge during your studies. Students on fee-paying places do not receive accommodation and meals.",
+  "pros": [
+   "Technical studies plus military training",
+   "Accommodation, food and an allowance provided",
+   "A guaranteed post in the army after graduation"
+  ],
+  "cons": [
+   "Barracks life is strict, with a fixed schedule",
+   "You are obliged to work in the army for a number of years",
+   "Admission with physical and medical tests"
+  ]
+ },
+ "ubb-cluj": {
+  "about": "The largest university in the country, teaching in Romanian, Hungarian and German, across more than 20 faculties. It is known for research and for its wide range of programmes.",
+  "budgetNote": "State-funded places are tuition-free, and if you do not get one you can choose a fee-paying place, which is more affordable than abroad.",
+  "admission": "The admission method differs from one faculty to another: at some the Romanian Baccalaureate (bac) average counts, at others an exam or a written test. Read the guide of the faculty you are interested in.",
+  "scholarshipsNote": "Scholarships are given for grades, along with social scholarships; you can find the conditions in the university's regulations.",
+  "dormsNote": "It offers accommodation in dormitories, depending on your grade average and your situation; other students rent in the city.",
+  "pros": [
+   "The most varied range of faculties in the country",
+   "Teaching also in Hungarian or German, on some programmes",
+   "A young city, full of student events"
+  ],
+  "cons": [
+   "Cluj-Napoca is an expensive city",
+   "Strong competition for the popular faculties",
+   "Not enough dormitory places for the number of students"
+  ]
+ },
+ "utcn": {
+  "about": "A technical state university, with faculties of automatic control, electronics, construction, mechanics and architecture. It is one of the best engineering schools in the country.",
+  "budgetNote": "It has state-funded places with no tuition fee, and the fee-paying ones are cheaper than in Western Europe.",
+  "admission": "At most faculties you get in through a competition of files, with your Baccalaureate (bac) average and grades. For Automatic Control and Computers there is a multiple-choice test in mathematics, and for Architecture a drawing test; the rules differ by faculty, so check the admission guide.",
+  "scholarshipsNote": "You can receive merit scholarships for good grades, and social scholarships if your family's situation requires it.",
+  "dormsNote": "It has student dormitories in two complexes in Cluj-Napoca and in Baia Mare; places are limited and are requested by application at the start of the academic year.",
+  "pros": [
+   "Highly valued by IT companies in Cluj",
+   "Good teachers and laboratories for computers",
+   "Many students do placements in companies while still at university"
+  ],
+  "cons": [
+   "The courses are hard and demand a lot of work",
+   "Rents in Cluj are high",
+   "Competitive admission for computers"
+  ]
+ },
+ "umf-cluj": {
+  "about": "A university of medicine and pharmacy in Cluj, with programmes also in Romanian, English and French. It is among the most respected medical schools in the country.",
+  "budgetNote": "You can study for free on a state-funded place if you get good grades at admission; the other places are fee-paying.",
+  "admission": "For medicine and dental medicine there is a multiple-choice written exam in biology and organic chemistry, and for pharmacy in biology or organic chemistry. For shorter programmes, such as nursing, your high-school and Baccalaureate (bac) averages count. A medical certificate is also required.",
+  "scholarshipsNote": "There are performance scholarships, for good academic results, and social scholarships; students with outstanding scientific results can also receive a scientific scholarship.",
+  "dormsNote": "There are student dormitories; there are few compared with the demand, so apply early.",
+  "pros": [
+   "Large clinical hospitals in the same city",
+   "Teaching also in English or French on some programmes",
+   "Graduates valued in the country and abroad"
+  ],
+  "cons": [
+   "Hard admission, with a lot of competition",
+   "The schedule is heavy",
+   "Living in Cluj is expensive"
+  ]
+ },
+ "usamv-cluj": {
+  "about": "A state university for agriculture, horticulture, veterinary medicine and food technology. It has teaching farms and a campus with green spaces.",
+  "budgetNote": "State-funded places are tuition-free, and if you do not get one you can choose a fee-paying place, which is more affordable than abroad.",
+  "admission": "At almost all faculties you get in with the Baccalaureate (bac) average. For veterinary medicine, besides the bac average, you also take two short multiple-choice tests, in biology and chemistry. Check the guide.",
+  "scholarshipsNote": "Scholarships are given for grades, along with social scholarships; you can find the conditions in the university's regulations.",
+  "dormsNote": "It offers accommodation in dormitories, depending on your grade average and your situation; other students rent in the city.",
+  "pros": [
+   "Practical training on its own farms and in its own laboratories",
+   "Fields in demand in agriculture and the food industry",
+   "A large city with many work opportunities"
+  ],
+  "cons": [
+   "Fewer fields than the big universities",
+   "Practical work can mean hours in the field or on the farm",
+   "Rent in Cluj is expensive"
+  ]
+ },
+ "uad-cluj": {
+  "about": "A state university for fine arts, design and decorative arts, with studios for painting, sculpture, graphic art and design. It is one of the well-known art schools in the country.",
+  "budgetNote": "It has state-funded places with no tuition fee, and the fee-paying ones are cheaper than in Western Europe.",
+  "admission": "You get in on the basis of a practical specialist test and an interview based on your portfolio of works, which count equally. The Baccalaureate (bac) only counts as a tie-breaker, when averages are equal. For art history and theory, a motivation letter is assessed, and the bac average makes up half of the final grade.",
+  "scholarshipsNote": "You can receive performance scholarships for good results, and social scholarships if your family's situation requires it.",
+  "dormsNote": "It has two student dormitories; places are limited and are requested by application, by the deadlines announced by the university. Most places are given by grade average, and some are kept for social cases.",
+  "pros": [
+   "Well-equipped studios for creative work",
+   "Varied fields: design, photography, graphic art, ceramics",
+   "An active art scene in Cluj"
+  ],
+  "cons": [
+   "Admission with practical tests and strong competition",
+   "Uncertain income after graduation",
+   "Materials for projects can cost money"
+  ]
+ },
+ "amgd-cluj": {
+  "about": "A state academy for music, with programmes in performance, composition and music pedagogy. It is named after the composer Gheorghe Dima.",
+  "budgetNote": "You can study for free on a state-funded place if you get good grades at admission; the other places are fee-paying.",
+  "admission": "Admission is through specialist tests, for example performance on an instrument or in voice, or solfège and a music theory test, not just grades; you are asked to show what you can do. Details differ by programme.",
+  "scholarshipsNote": "There are study scholarships and merit scholarships, based on grade average, and social scholarships.",
+  "dormsNote": "There are student dormitories; there are few compared with the demand, so apply early.",
+  "pros": [
+   "Individual lessons with specialist teachers",
+   "Concerts and projects in the cultural city of Transylvania",
+   "A dormitory dedicated to students"
+  ],
+  "cons": [
+   "It requires serious musical training beforehand",
+   "The job market is small for musicians",
+   "A lot of individual daily practice"
+  ]
+ },
+ "uaic": {
+  "about": "The oldest university in the country, founded in 1860, with faculties of science, law, letters, economics and many more. It is an important university centre in Moldavia.",
+  "budgetNote": "State-funded places are tuition-free, and if you do not get one you can choose a fee-paying place, which is more affordable than abroad.",
+  "admission": "The admission method differs from one faculty to another: at some the Romanian Baccalaureate (bac) average counts, at others an exam or a written test. Read the guide of the faculty you are interested in.",
+  "scholarshipsNote": "Scholarships are given for grades, along with social scholarships; you can find the conditions in the university's regulations.",
+  "dormsNote": "It offers accommodation in dormitories, depending on your grade average and your situation; other students rent in the city.",
+  "pros": [
+   "It has great tradition and prestige, since 1860",
+   "A wide range of programmes in a single city",
+   "Iași is cheaper than the capital and Cluj"
+  ],
+  "cons": [
+   "The sought-after faculties are crowded",
+   "The city is far from the west and from the capital",
+   "Few dormitory places compared with demand"
+  ]
+ },
+ "tuiasi": {
+  "about": "A technical state university, with faculties of automatic control, electronics, construction, mechanics, chemistry and architecture. It is the largest technical university in the region and among the top in the country, with a tradition of over two centuries in training engineers.",
+  "budgetNote": "It has state-funded places with no tuition fee, and the fee-paying ones are cheaper than in Western Europe.",
+  "admission": "At most faculties you get in through a competition of files, with your Baccalaureate (bac) average or grades. For Automatic Control and Computers there is a multiple-choice test in mathematics or computer science, and for Architecture a drawing test; check the rules of your faculty.",
+  "scholarshipsNote": "You can receive merit scholarships for good grades, and social scholarships if your family's situation requires it.",
+  "dormsNote": "It has student dormitories, but places are limited and are usually given according to grades.",
+  "pros": [
+   "A varied technical offer, from IT to construction",
+   "Living costs lower than in Cluj or Bucharest",
+   "IT companies in Iași hire many graduates"
+  ],
+  "cons": [
+   "Mathematics and physics demand a lot of effort",
+   "Some buildings and laboratories are older",
+   "Competition for state-funded places in computers"
+  ]
+ },
+ "umf-iasi": {
+  "about": "A university of medicine in Iași, with medicine, dentistry, pharmacy and nursing. It is one of the largest medical schools in the country.",
+  "budgetNote": "You can study for free on a state-funded place if you get good grades at admission; the other places are fee-paying.",
+  "admission": "Admission is through a competition with a written, multiple-choice test for bachelor's programmes; the exam subjects differ by programme, so check the methodology. A medical certificate is also required.",
+  "scholarshipsNote": "There are merit and social scholarships, and some students can also receive performance scholarships.",
+  "dormsNote": "There are student dormitories; there are few compared with the demand, so apply early.",
+  "pros": [
+   "Large university hospitals in Iași",
+   "Living costs lower than in other big cities",
+   "Programmes in Romanian and in English"
+  ],
+  "cons": [
+   "Competitive admission",
+   "The schedule is heavy",
+   "There can be many students in a course"
+  ]
+ },
+ "iuls": {
+  "about": "A state university for agriculture, horticulture, animal science and veterinary medicine, with practice farms. It is named after the agronomist Ion Ionescu de la Brad.",
+  "budgetNote": "State-funded places are tuition-free, and if you do not get one you can choose a fee-paying place, which is more affordable than abroad.",
+  "admission": "You get in without an exam, through a competition based on your Baccalaureate (bac) grades: the grade from the written Romanian language test and the grade from another written test of your choice. The same rule applies to veterinary medicine. Check the methodology.",
+  "scholarshipsNote": "Scholarships are given for grades, along with social scholarships; you can find the conditions in the university's regulations.",
+  "dormsNote": "It offers accommodation in dormitories, depending on your grade average and your situation; other students rent in the city.",
+  "pros": [
+   "Its own farms and stations for practice",
+   "Fields in demand in agriculture and food",
+   "Iași offers cheaper living than other big cities"
+  ],
+  "cons": [
+   "Fewer fields than at a large university",
+   "Practical work can be outside the city",
+   "Prestige is lower outside its field"
+  ]
+ },
+ "arte-iasi": {
+  "about": "A state university for the arts, with programmes in music, fine arts, design and theatre. It is named after the composer George Enescu.",
+  "budgetNote": "It has state-funded places with no tuition fee, and the fee-paying ones are cheaper than in Western Europe.",
+  "admission": "Admission is through talent tests and an interview, not just grades; you are asked to show what you can do. Details differ by programme.",
+  "scholarshipsNote": "You can receive merit scholarships for good grades, and social scholarships if your family's situation requires it.",
+  "dormsNote": "It has one student dormitory in Iași; places are limited and are requested at the start of the academic year, from the accommodation committee.",
+  "pros": [
+   "Brings together music, visual arts and theatre",
+   "Small groups and attention from teachers",
+   "A rich cultural life in Iași"
+  ],
+  "cons": [
+   "Admission with talent tests, with few places",
+   "Uncertain income in the arts",
+   "Facilities differ from one field to another"
+  ]
+ },
+ "uvt": {
+  "about": "A state university in Timișoara, with faculties of science, letters, economics, law, arts and others. It is a university centre open to Western Europe.",
+  "budgetNote": "You can study for free on a state-funded place if you get good grades at admission; the other places are fee-paying.",
+  "admission": "For each programme you take an admission test: a test of knowledge in the field, the UVT test of language and reasoning skills or, in arts, music and sport, aptitude tests. At some faculties the Baccalaureate (bac) grades also count. Read the regulations of the faculty you are interested in.",
+  "scholarshipsNote": "There are performance scholarships and social scholarships, and some students can also receive special scholarships or scholarships for sporting performance.",
+  "dormsNote": "There are student dormitories; there are few compared with the demand, so apply early.",
+  "pros": [
+   "A varied offer, from computer science to the arts",
+   "A multicultural city, close to the border with Western Europe",
+   "Many foreign students, so an international environment"
+  ],
+  "cons": [
+   "Competition for state-funded places at some faculties",
+   "Dormitories with limited places",
+   "Rent in Timișoara has gone up"
+  ]
+ },
+ "upt": {
+  "about": "A technical state university in Timișoara, with faculties of automatic control, electronics, mechanics, construction, chemistry and architecture. It is known for its links with industry in the west.",
+  "budgetNote": "State-funded places are tuition-free, and if you do not get one you can choose a fee-paying place, which is more affordable than abroad.",
+  "admission": "At most faculties you get in through a competition of files, with the Baccalaureate (bac) average. For Automatic Control and Computers you take a test in mathematics or computer science or present a portfolio, and for Architecture a practical test and an interview; check the admission guide.",
+  "scholarshipsNote": "Scholarships are given for grades, along with social scholarships; you can find the conditions in the university's regulations.",
+  "dormsNote": "It offers accommodation in dormitories, depending on your grade average and your situation; other students rent in the city.",
+  "pros": [
+   "Large companies in Timișoara hire graduates",
+   "Modern laboratories at some faculties",
+   "A dynamic, young city"
+  ],
+  "cons": [
+   "The courses are difficult",
+   "Rent in Timișoara is rising",
+   "Crowding at the popular faculties"
+  ]
+ },
+ "umft": {
+  "about": "A university of medicine in Timișoara, with medicine, dentistry, pharmacy and nursing. It also offers programmes in English and French.",
+  "budgetNote": "It has state-funded places with no tuition fee, and the fee-paying ones are cheaper than in Western Europe.",
+  "admission": "For medicine and dental medicine there is a multiple-choice test in biology and chemistry. For pharmacy and the other programmes there is a multiple-choice test in biology, and the Baccalaureate (bac) also counts towards the average. A medical certificate is also required.",
+  "scholarshipsNote": "You can receive merit scholarships for good grades, and social scholarships if your family's situation requires it.",
+  "dormsNote": "It has student dormitories, but places are limited; the accommodation request (pre-accommodation) is made online, in good time. Students in later years have priority, and the grade average counts mainly for the dormitories with two-person rooms.",
+  "pros": [
+   "Programmes in Romanian, English and French",
+   "University hospitals in the city",
+   "International students, so a mixed environment"
+  ],
+  "cons": [
+   "Very competitive admission",
+   "The schedule is demanding",
+   "Living in Timișoara costs more"
+  ]
+ },
+ "usvt": {
+  "about": "A state university for agriculture, horticulture, veterinary medicine and rural tourism, in Timișoara. It has its own farms and research stations.",
+  "budgetNote": "You can study for free on a state-funded place if you get good grades at admission; the other places are fee-paying.",
+  "admission": "You get in on the basis of your file, without an exam: the Baccalaureate (bac) average counts most, along with the average of your high-school years. Check the admission guide of your faculty.",
+  "scholarshipsNote": "The university gives performance scholarships, for good academic results, and social scholarships; there are also special scholarships and scholarships for sporting performance. You can find the conditions in the scholarship regulations.",
+  "dormsNote": "There are dormitories on campus, but places are limited: first-year students have priority, and the others are chosen by grade average. Students from Timișoara and nearby do not get a place.",
+  "pros": [
+   "Its own farms and laboratories for practice",
+   "Also includes newer fields such as rural tourism",
+   "A city with a developed job market"
+  ],
+  "cons": [
+   "Fewer fields than at a large university",
+   "Practical work can be outside the city",
+   "Lower prestige outside its field"
+  ]
+ },
+ "unitbv": {
+  "about": "A large state university in Brașov, with faculties of engineering, forestry, economics, medicine, law and music. It is known for its varied offer and modern campus.",
+  "budgetNote": "State-funded places are tuition-free, and if you do not get one you can choose a fee-paying place, which is more affordable than abroad.",
+  "admission": "The admission method differs from one faculty to another: at most the Baccalaureate (bac) average counts, at Medicine there is a written test, and at Music aptitude tests. Read the guide of the faculty you are interested in.",
+  "scholarshipsNote": "Scholarships are given for grades, along with social scholarships; you can find the conditions in the university's regulations.",
+  "dormsNote": "It offers accommodation in dormitories, depending on your grade average and your situation; other students rent in the city.",
+  "pros": [
+   "A very varied offer, from forestry to medicine",
+   "A mountain city, ideal for winter sports",
+   "A campus with dormitories and faculties close together"
+  ],
+  "cons": [
+   "Brașov is farther from the big research centres",
+   "Winter is long and cold",
+   "Few dormitory places compared with the number of requests"
+  ]
+ },
+ "ucv": {
+  "about": "A state university in Craiova, with faculties of science, engineering, economics, law and letters. It is the main university centre in the south of Oltenia.",
+  "budgetNote": "It has state-funded places with no tuition fee, and the fee-paying ones are cheaper than in Western Europe.",
+  "admission": "The admission method differs from one faculty to another: at most the Baccalaureate (bac) average counts, at a few there is also a written test, and for sport, music and theatre there are aptitude tests. Read the guide of the faculty you are interested in.",
+  "scholarshipsNote": "The university gives performance and merit scholarships, for good academic results, and social scholarships; you can find the conditions in the scholarship regulations.",
+  "dormsNote": "It has student dormitories, but places are limited and are usually given according to grades.",
+  "pros": [
+   "A varied offer for the south of the country",
+   "Living costs lower than in the big cities",
+   "Groups that are sometimes smaller, with more attention"
+  ],
+  "cons": [
+   "A city with fewer IT job opportunities",
+   "Lower prestige than the big universities",
+   "Some faculties have old laboratories"
+  ]
+ },
+ "umf-craiova": {
+  "about": "A university of medicine in Craiova, with medicine, dentistry, pharmacy and nursing. It is the main medical school in the south of Oltenia.",
+  "budgetNote": "You can study for free on a state-funded place if you get good grades at admission; the other places are fee-paying.",
+  "admission": "For all programmes there is an admission exam: biology and organic chemistry for medicine, dental medicine and pharmacy, and biology only for the others. A medical certificate is also required.",
+  "scholarshipsNote": "There are performance scholarships, for good academic results, social scholarships and special scholarships.",
+  "dormsNote": "There are student dormitories; there are few compared with the demand, so apply early.",
+  "pros": [
+   "A university hospital in Craiova",
+   "Living costs lower than in the big cities",
+   "Smaller groups, with more attention"
+  ],
+  "cons": [
+   "Competitive admission",
+   "A heavy schedule",
+   "A smaller city, with a limited cultural life"
+  ]
+ },
+ "ovidius": {
+  "about": "A state university in Constanța, with faculties of law, letters, medicine, science, economics and others. It has the advantage of a city by the sea.",
+  "budgetNote": "State-funded places are tuition-free, and if you do not get one you can choose a fee-paying place, which is more affordable than abroad.",
+  "admission": "The admission method differs from one faculty to another: at some the Baccalaureate (bac) average counts, at Medicine there is a written exam, and at Arts there are aptitude tests. Read the guide of the faculty you are interested in.",
+  "scholarshipsNote": "Scholarships are given for grades, along with social scholarships; you can find the conditions in the university's regulations.",
+  "dormsNote": "It offers accommodation in dormitories, depending on your grade average and your situation; other students rent in the city.",
+  "pros": [
+   "You study by the sea, with summer life",
+   "Many faculties, including medicine and law",
+   "A city with a port and tourism, so job opportunities"
+  ],
+  "cons": [
+   "In winter the city is quieter",
+   "Dormitories with limited places",
+   "Lower prestige than universities in the big centres"
+  ]
+ },
+ "umc": {
+  "about": "A state university in Constanța that trains merchant navy officers and naval engineers. Students do practical training on ships.",
+  "budgetNote": "It has state-funded places with no tuition fee, and the fee-paying ones are cheaper than in Western Europe.",
+  "admission": "You get in on the basis of your file, without an exam: the Baccalaureate (bac) average counts and, for state-funded places, also the mathematics grade from the bac. For programmes in English a language test or certificate is also required.",
+  "scholarshipsNote": "You can receive performance scholarships for good results, and social scholarships if your family's situation requires it.",
+  "dormsNote": "It has student dormitories, but places are limited and are usually given according to grades.",
+  "pros": [
+   "Practical training on ships and the possibility of working abroad",
+   "A profession with high salaries for seafarers",
+   "A clear specialisation, with a global market"
+  ],
+  "cons": [
+   "Life at sea means months away from home",
+   "Good medical condition is required",
+   "A very specialised field"
+  ]
+ },
+ "anmb": {
+  "about": "A state military institution in Constanța that trains naval officers. It also has a civilian section, with programmes in navigation and naval engineering.",
+  "budgetNote": "In the military section the places are state-funded, with no fee. In the civilian section the places are fee-paying, and the best-ranked students can receive a scholarship from the academy.",
+  "admission": "In the military section you first go through recruitment and selection, with aptitude tests and a medical examination, then take a multiple-choice test in mathematics, computer science and physics. In the civilian section you get in on the basis of your file, with the Baccalaureate (bac) average.",
+  "scholarshipsNote": "Military students receive accommodation, food and equipment free of charge and have a monthly pay (soldă), but they do not receive scholarships. Students in the civilian section can receive study, performance or social scholarships.",
+  "dormsNote": "Military students have accommodation provided for the whole period of their studies, and food and equipment are free. Civilian students can get a place in a dormitory, as places allow.",
+  "pros": [
+   "Secure jobs in the Navy",
+   "Accommodation and food provided during your studies",
+   "Practical training on ships"
+  ],
+  "cons": [
+   "A strict life, with military discipline",
+   "You are obliged to work in the army for a number of years",
+   "Admission with physical and medical tests"
+  ]
+ },
+ "ulbs": {
+  "about": "A state university in Sibiu, with faculties of engineering, medicine, law, letters, theology and economics. It is known for the atmosphere of the old town.",
+  "budgetNote": "State-funded places are tuition-free, and if you do not get one you can choose a fee-paying place, which is more affordable than abroad.",
+  "admission": "The admission method differs from one faculty to another: at some the Romanian Baccalaureate (bac) average counts, at others an exam or a written test. Read the guide of the faculty you are interested in.",
+  "scholarshipsNote": "Scholarships are given for grades, along with social scholarships; you can find the conditions in the university's regulations.",
+  "dormsNote": "It offers accommodation in dormitories, depending on your grade average and your situation; other students rent in the city.",
+  "pros": [
+   "A beautiful, safe city that is easy to get around on foot",
+   "A varied offer, including medicine and engineering",
+   "Partnerships with companies in the area"
+  ],
+  "cons": [
+   "A smaller city, with fewer opportunities than Cluj",
+   "Competition for state-funded places in medicine",
+   "Not enough dormitories"
+  ]
+ },
+ "ugal": {
+  "about": "A state university in Galați, with faculties of naval engineering, computer science, law, letters and medicine. It is known for fields linked to the Danube and industry.",
+  "budgetNote": "It has state-funded places with no tuition fee, and the fee-paying ones are cheaper than in Western Europe.",
+  "admission": "The admission method differs from one faculty to another: at some the Romanian Baccalaureate (bac) average counts, at others an exam or a written test. Read the guide of the faculty you are interested in.",
+  "scholarshipsNote": "You can receive merit scholarships for good grades, and social scholarships if your family's situation requires it.",
+  "dormsNote": "It has student dormitories, but places are limited and are usually given according to grades.",
+  "pros": [
+   "Specialisation in naval and industrial engineering",
+   "Low living costs",
+   "A city on the Danube with a port and industry"
+  ],
+  "cons": [
+   "A city less economically developed than the big centres",
+   "Fewer opportunities in IT",
+   "Lower prestige than the big universities"
+  ]
+ },
+ "uoradea": {
+  "about": "A state university in Oradea, with medicine, science, engineering, law, arts and theology. It is the university centre of the north-west of the country.",
+  "budgetNote": "You can study for free on a state-funded place if you get good grades at admission; the other places are fee-paying.",
+  "admission": "The admission method differs from one faculty to another: at most the Baccalaureate (bac) average counts, at medicine and pharmacy there is a multiple-choice test, and for arts, architecture and sport there are aptitude tests. Read the guide of the faculty you are interested in.",
+  "scholarshipsNote": "The university gives performance scholarships, for very good academic results, in research or in sport, and social scholarships; you can find the conditions in the scholarship regulations.",
+  "dormsNote": "There are student dormitories; there are few compared with the demand, so apply early.",
+  "pros": [
+   "A beautiful, clean city that is developing",
+   "Close to the border with Hungary",
+   "A varied offer, from medicine to the arts"
+  ],
+  "cons": [
+   "Fewer large IT companies than in Cluj",
+   "Lower prestige than the big universities",
+   "Dormitories with limited places"
+  ]
+ },
+ "umfst": {
+  "about": "A university of medicine and science in Târgu Mureș, with programmes in Romanian, Hungarian and English. It is named after George Emil Palade, a Nobel laureate.",
+  "budgetNote": "State-funded places are tuition-free, and if you do not get one you can choose a fee-paying place, which is more affordable than abroad.",
+  "admission": "For Medicine, Dental Medicine and Pharmacy there is a written multiple-choice test, which counts the most, along with the Baccalaureate (bac) average. For nursing and other health programmes the bac average counts, while for engineering, computer science, letters, economics and law the high-school averages count, with no exam. For sport and architecture there are practical tests. A medical certificate is also required.",
+  "scholarshipsNote": "Scholarships are given for grades, along with social scholarships; you can find the conditions in the university's regulations.",
+  "dormsNote": "It offers accommodation in dormitories, depending on your grade average and your situation; other students rent in the city.",
+  "pros": [
+   "Programmes in Romanian, Hungarian and English",
+   "University hospitals in the city",
+   "Newer fields, such as medical IT and engineering"
+  ],
+  "cons": [
+   "Competitive admission to medicine",
+   "A small city, with a limited cultural life",
+   "The schedule is heavy"
+  ]
+ },
+ "usv-suceava": {
+  "about": "A state university in Suceava, with faculties of engineering, economics, letters, law and forestry. It is the university centre of northern Moldavia.",
+  "budgetNote": "It has state-funded places with no tuition fee, and the fee-paying ones are cheaper than in Western Europe.",
+  "admission": "The admission method differs from one faculty to another: at most the Baccalaureate (bac) average and grades count, at the Faculty of Medicine and Biological Sciences there is also a written test (multiple-choice) for some programmes, and for sport a sports test. Read the guide of the faculty you are interested in.",
+  "scholarshipsNote": "You can receive scholarships to encourage performance, if you have outstanding academic results, and social scholarships, if your family's situation requires it; there are also special scholarships and scholarships for sporting performance.",
+  "dormsNote": "It has student dormitories, but places are limited and are usually given according to grades.",
+  "pros": [
+   "Low living costs",
+   "A strong forestry faculty, in an area with forests",
+   "Small groups, with attention to students"
+  ],
+  "cons": [
+   "A small city, with fewer entry-level jobs",
+   "Lower prestige than the big universities",
+   "Many students leave for other cities after graduating"
+  ]
+ },
+ "upg": {
+  "about": "A state university in Ploiești, known for petroleum and gas engineering. It trains engineers for industry and also has faculties of economic sciences and of letters and sciences.",
+  "budgetNote": "You can study for free on a state-funded place if you get good grades at admission; the other places are fee-paying.",
+  "admission": "You get in with the Baccalaureate (bac) average, with no exam in mathematics or physics. Only a few programmes have a further test: a multiple-choice test for Psychology and eliminatory tests for pedagogy and foreign languages. Check the admission guide.",
+  "scholarshipsNote": "There are performance scholarships, for outstanding academic results, and social scholarships; in addition there are scholarships offered by companies and foundations, such as the Romgaz Scholarship.",
+  "dormsNote": "There are student dormitories right next to the university, and the university says it can meet all accommodation requests.",
+  "pros": [
+   "A rare specialisation in oil and gas, in demand in industry",
+   "Close to Bucharest, easy to reach",
+   "Companies in the field hire graduates"
+  ],
+  "cons": [
+   "The oil field is declining in favour of green energy",
+   "A narrower offer than at a large university",
+   "The city does not have an equally active student life"
+  ]
+ },
+ "uab": {
+  "about": "A state university in Alba Iulia, with faculties of history, law, theology, economics and computer science. It is a smaller university in a historic city.",
+  "budgetNote": "State-funded places are tuition-free, and if you do not get one you can choose a fee-paying place, which is more affordable than abroad.",
+  "admission": "For almost all programmes only the Baccalaureate (bac) average counts. For a few, an aptitude test is added (for example in sport or pedagogy) or an interview (for example in theology). Read the criteria of the programme you are interested in.",
+  "scholarshipsNote": "Scholarships are given for grades, along with social scholarships; you can find the conditions in the university's regulations.",
+  "dormsNote": "It offers accommodation in dormitories, depending on your grade average and your situation; other students rent in the city.",
+  "pros": [
+   "A historic, quiet and safe city",
+   "Small groups, with attention from teachers",
+   "Low living costs"
+  ],
+  "cons": [
+   "A small city, with a modest student life",
+   "A narrower offer than the big universities",
+   "Fewer local job opportunities"
+  ]
+ },
+ "valahia": {
+  "about": "A state university in Târgoviște, with faculties of engineering, economics, law, humanities and theology. It is the university centre of Dâmbovița county.",
+  "budgetNote": "It has state-funded places with no tuition fee, and the fee-paying ones are cheaper than in Western Europe.",
+  "admission": "At most faculties only the Baccalaureate (bac) average counts. For sport, music and educational sciences you also take aptitude tests, and for theology a written exam. Read the guide of the faculty you are interested in.",
+  "scholarshipsNote": "You can receive merit scholarships for good grades, and social scholarships if your family's situation requires it.",
+  "dormsNote": "It has student dormitories, but places are limited and are usually given according to grades.",
+  "pros": [
+   "Close to Bucharest, easy to commute",
+   "Low living costs in a historic city",
+   "Smaller groups, with attention to students"
+  ],
+  "cons": [
+   "A narrower offer than the big universities",
+   "Fewer local job opportunities",
+   "Student life is modest"
+  ]
+ },
+ "ub-bacau": {
+  "about": "A state university in Bacău, with faculties of engineering, science, letters, economics and physical education. It is the main university centre in southern Moldavia.",
+  "budgetNote": "You can study for free on a state-funded place if you get good grades at admission; the other places are fee-paying.",
+  "admission": "For the bachelor's you do not take a written exam: the Baccalaureate (bac) average and the averages of your high-school years count. For sport you take practical tests, and for pedagogy an eliminatory aptitude test. Read the guide of the faculty you are interested in.",
+  "scholarshipsNote": "There are merit and social scholarships, and some students can also receive performance scholarships.",
+  "dormsNote": "There are student dormitories; there are few compared with the demand, so apply early.",
+  "pros": [
+   "Technical and science programmes in an accessible city",
+   "Low living costs",
+   "Partnerships with companies in local industry"
+  ],
+  "cons": [
+   "The city has fewer IT jobs",
+   "Lower prestige than the big universities",
+   "Many young people leave for other cities after university"
+  ]
+ },
+ "uav-arad": {
+  "about": "A state university in Arad, with faculties of engineering, economics, humanities, physical education, theology and arts. It is near the western border.",
+  "budgetNote": "State-funded places are tuition-free, and if you do not get one you can choose a fee-paying place, which is more affordable than abroad.",
+  "admission": "At most faculties the Baccalaureate (bac) average counts, with no written exam. For design and sport you take aptitude tests, for pedagogy an eliminatory test, and for theology an interview. Read the guide of the faculty you are interested in.",
+  "scholarshipsNote": "Scholarships are given for grades, along with social scholarships; you can find the conditions in the university's regulations.",
+  "dormsNote": "It offers accommodation in dormitories, depending on your grade average and your situation; other students rent in the city.",
+  "pros": [
+   "Close to Timișoara and the border with Hungary",
+   "A quiet city, with moderate costs",
+   "A varied offer, including arts and theology"
+  ],
+  "cons": [
+   "Fewer options than at a large university",
+   "Lower prestige than those in the big centres",
+   "A more limited student life"
+  ]
+ },
+ "utgjiu": {
+  "about": "A state university in Târgu Jiu, Brâncuși's city, with four faculties: engineering, economic sciences, education, law and public administration, and medical sciences and sport. It is the university centre of Gorj.",
+  "budgetNote": "It has state-funded places with no tuition fee, and the fee-paying ones are cheaper than in Western Europe.",
+  "admission": "At all faculties the Baccalaureate (bac) average counts, along with the grade from the first written test of the bac. For a few programmes, eliminatory pass/fail tests are added: drawing and an interview for Design, sports tests for sport and physiotherapy, a multiple-choice test for nursing and pharmacy assistance, and an aptitude test for pedagogy.",
+  "scholarshipsNote": "You can receive merit scholarships for good grades, and social scholarships if your family's situation requires it.",
+  "dormsNote": "It has student dormitories, but places are limited and are usually given according to grades.",
+  "pros": [
+   "Very low living costs",
+   "Small groups and approachable teachers",
+   "A city with the Brâncuși Ensemble, full of culture"
+  ],
+  "cons": [
+   "A small city, with few jobs for graduates",
+   "A narrower offer",
+   "Lower national prestige"
+  ]
+ },
+ "upet": {
+  "about": "A state university in Petroșani, known for its mining faculty and for electrical and mechanical engineering. It also has programmes in economics and administration.",
+  "budgetNote": "You can study for free on a state-funded place if you get good grades at admission; the other places are fee-paying.",
+  "admission": "You do not take an admission exam: an average is calculated between the Baccalaureate (bac) average and the grade from one written bac test (for engineering, mathematics). The test taken into account differs by faculty, so check the admission guide.",
+  "scholarshipsNote": "There are performance scholarships for good academic results and social scholarships, and good athletes can receive a scholarship for sporting performance.",
+  "dormsNote": "There are student dormitories; there are few compared with the demand, so apply early.",
+  "pros": [
+   "One of the few mining schools in the country",
+   "Located in the Jiu Valley, close to the mountains",
+   "Small groups, with attention to students"
+  ],
+  "cons": [
+   "The mining industry is in decline",
+   "A small city, far from the big centres",
+   "A limited offer, only three faculties"
+  ]
+ },
+ "aft-sibiu": {
+  "about": "A state military institution in Sibiu that trains officers for the Land Forces. Students receive military training and specialist studies.",
+  "budgetNote": "You do not pay tuition for the bachelor's: all places are paid for by the state, for the army and for other defence and public order institutions.",
+  "admission": "First you go through recruitment and selection: psychological assessment, physical tests, an interview and a medical examination. Then you take a written test, a multiple-choice test in mathematics, computer science and physics. Start at the information and recruitment office in your county.",
+  "scholarshipsNote": "As a military student you do not pay tuition, and accommodation, meals and equipment are free. For the monthly pay (soldă), ask the information and recruitment office.",
+  "dormsNote": "Accommodation and meals are provided on site, usually for the whole period of study.",
+  "pros": [
+   "A guaranteed post in the army after graduation",
+   "Accommodation, food and an allowance provided",
+   "Practical training and discipline, useful in life"
+  ],
+  "cons": [
+   "A strict life, with a military schedule",
+   "You are obliged to work in the army for a number of years",
+   "The physical and medical tests are eliminatory"
+  ]
+ },
+ "afa-brasov": {
+  "about": "A state military institution in Brașov that trains officers for the Air Force and specialists in aviation and air management. It is named after the aviation pioneer Henri Coandă.",
+  "budgetNote": "All bachelor's places are funded from the state budget, so you do not pay tuition. No fee is paid for the admission competition either.",
+  "admission": "You apply through the army's information and recruitment office. First you pass the eliminatory tests (psychological assessment, sports tests, an interview and a medical examination), then you take a multiple-choice test in mathematics, computer science and physics. You also need an English certificate at B2 level, which can be the one from the Baccalaureate (bac).",
+  "scholarshipsNote": "As a military student you do not pay tuition, and accommodation, meals and equipment are free. For the monthly pay (soldă), ask the information and recruitment office.",
+  "dormsNote": "Accommodation and meals are provided free of charge during your studies. On the days of the admission competition you arrange your own accommodation and meals.",
+  "pros": [
+   "Training in aviation and air defence",
+   "Accommodation, food and an allowance provided",
+   "A guaranteed post in the army"
+  ],
+  "cons": [
+   "A strict life, with military discipline",
+   "You are obliged to work in the army for a number of years",
+   "Very demanding medical tests are required"
+  ]
+ },
+ "unap": {
+  "about": "A state military institution in Bucharest for the training and further training of officers, mainly at master's and doctoral level and through courses. It is aimed mainly at those who are already in the army.",
+  "budgetNote": "You can study for free on a state-funded place if you get good grades at admission; the other places are fee-paying.",
+  "admission": "Admission requires written tests, physical tests and a medical check, as at any military institution; strict entry rules apply. Ask the institution for information.",
+  "scholarshipsNote": "You receive accommodation, food and a monthly allowance during your studies, on top of the usual scholarships.",
+  "dormsNote": "Accommodation and meals are provided on site, usually for the whole period of study.",
+  "pros": [
+   "Advanced studies in defence and security",
+   "Links with military structures in the country and abroad",
+   "Courses and master's programmes useful for a military career"
+  ],
+  "cons": [
+   "It is not an ordinary faculty for high-school graduates",
+   "It is aimed especially at those already in the army",
+   "An offer limited to the military field"
+  ]
+ },
+ "uat-tgmures": {
+  "about": "A state university in Târgu Mureș, with programmes in acting, directing, puppetry, choreography, set design, music and audiovisual communication. It has one faculty in Romanian and one in Hungarian.",
+  "budgetNote": "State-funded places are tuition-free, and if you do not get one you can choose a fee-paying place, which is more affordable than abroad.",
+  "admission": "For acting and puppetry you take practical talent tests: musical and rhythm aptitudes, poems, a monologue, improvisation. For audiovisual communication you have an introductory interview and the Baccalaureate (bac) average also counts. Details differ by programme.",
+  "scholarshipsNote": "Scholarships are given for grades, along with social scholarships; you can find the conditions in the university's regulations.",
+  "dormsNote": "It has a small dormitory with few rooms, and the places are shared out by a university committee; many students rent in the city.",
+  "pros": [
+   "A theatre school with tradition, in Romanian and Hungarian",
+   "Small groups, with a lot of practical work",
+   "Its own university theatre for performances"
+  ],
+  "cons": [
+   "Admission with talent tests, with few places",
+   "The profession has an uncertain income",
+   "A very narrow field"
+  ]
+ },
+ "rau": {
+  "about": "A private university in Bucharest, with faculties of law, management-marketing, managerial informatics and tourism. It was founded in the 1990s and follows the model of American universities.",
+  "budgetNote": "It is a private university and you pay a tuition fee; programmes in English are more expensive. The fee can also be paid in instalments.",
+  "admission": "At most faculties the Baccalaureate (bac) average counts, along with a high-school attestation or certificate; if you do not have one, you take an essay or a motivation interview. For Psychology and Nursing you take a multiple-choice test, and for Sport a practical test.",
+  "scholarshipsNote": "Some of the students with the highest admission averages receive a place free of charge (a full study scholarship); the conditions are in the scholarship regulations.",
+  "dormsNote": "It has a dormitory on campus, with rooms for 1–3 people with their own bathroom; places are limited and are paid for separately, so apply early.",
+  "pros": [
+   "At most programmes, admission without a written exam",
+   "Programmes oriented towards business, law and IT",
+   "Smaller groups than at the large state universities"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "Lower prestige with some employers than a large state university",
+   "A narrower range of fields"
+  ]
+ },
+ "utm": {
+  "about": "A private university in Bucharest, known for its faculty of medicine and its faculty of dental medicine, plus law and psychology. It is named after the critic Titu Maiorescu.",
+  "budgetNote": "It is a private university and you pay a tuition fee: at most programmes it is low, but for medicine, dental medicine and pharmacy it is much higher.",
+  "admission": "For Medicine you take an exam: a multiple-choice test in biology and, as you choose, in chemistry or physics. For Nursing a biology test and the Baccalaureate (bac) average count. At the other faculties the rules are different, so read the methodology of your faculty.",
+  "scholarshipsNote": "You can ask the secretariat whether there are scholarships or fee reductions for good results.",
+  "dormsNote": "It has two student dormitories in Bucharest; you submit an application, and places are shared out according to the dormitory regulations.",
+  "pros": [
+   "A chance to study medicine at a private university, on fee-paying places",
+   "Partner hospitals for practical training",
+   "Its own dormitories in Bucharest"
+  ],
+  "cons": [
+   "Fees for medicine, dental medicine and pharmacy are much higher",
+   "The degree does not have the same prestige as at the state medical universities",
+   "For Medicine you take an admission exam, as at the state universities"
+  ]
+ },
+ "univnt": {
+  "about": "A private university in Bucharest, specialising in law and in economic and administrative sciences. It is named after the diplomat Nicolae Titulescu.",
+  "budgetNote": "It has no state-funded places, but the fees are generally affordable and you can pay them in instalments.",
+  "admission": "At all faculties, admission to the bachelor's is based on the Baccalaureate (bac) average, with no exam and no interview: you submit your file and are ranked by average.",
+  "scholarshipsNote": "Students with very good results can receive merit scholarships and special scholarships; there are also fee reductions, for example for siblings or spouses who study here.",
+  "dormsNote": "It has its own dormitory in Bucharest, with rooms for 2–4 people with their own bathroom; you get a place as far as places are available, so ask early.",
+  "pros": [
+   "Specialisation in law and administration",
+   "Accessible admission, based on your file",
+   "A flexible schedule, suitable if you also work"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "Lower prestige than the state faculties",
+   "A narrow range of fields"
+  ]
+ },
+ "ucdc": {
+  "about": "A private university with faculties in Bucharest and Cluj-Napoca, for law, administration, economics, foreign languages and education. It is named after the scholar Dimitrie Cantemir.",
+  "budgetNote": "It is a private university, so you pay a fee; it is generally lower than at private universities in Western Europe.",
+  "admission": "Admission to the bachelor's is based on the Baccalaureate (bac) average, with no exam: you submit your file during the enrolment period. For Primary Education Pedagogy and Early Education you also take an eliminatory test of communication and aptitudes.",
+  "scholarshipsNote": "There are fee reductions, for example for the students with the highest averages each year and for those who pay the whole fee at once; ask the secretariat about scholarships.",
+  "dormsNote": "Do not count on a dormitory: ask at admission or look for a rental in the city.",
+  "pros": [
+   "Present in Bucharest and in Cluj-Napoca",
+   "Accessible admission, based on your file",
+   "A schedule that also suits those who work"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "Lower prestige than the large state universities",
+   "Less research and practical training"
+  ]
+ },
+ "spiru-haret": {
+  "about": "A private university that presents itself as the largest in Romania, with faculties in Bucharest, Brașov, Craiova, Constanța and Câmpulung and with many fields. It is named after the mathematician and school reformer Spiru Haret.",
+  "budgetNote": "It has no state-funded places, but the fees are generally affordable and you can pay them in instalments.",
+  "admission": "You submit your file and take an interview-type assessment test, graded by a committee. The final average is made up of the grade on this test, which counts more, and the Baccalaureate (bac) average. For sport there is a practical test. The rules may differ by faculty.",
+  "scholarshipsNote": "The university has a scholarship regulation and offers a few full study scholarships for high-school students (the “Liceenii” Scholarship); ask the secretariat what the conditions are.",
+  "dormsNote": "Do not count on a dormitory: ask at admission or look for a rental in the city.",
+  "pros": [
+   "Present in several cities, close to home",
+   "A wide range of programmes",
+   "Simple admission and affordable fees"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "Not all programmes have the same reputation with employers",
+   "Check that the programme you choose is accredited"
+  ]
+ },
+ "sapientia": {
+  "about": "A private university teaching in Hungarian. The rectorate is in Cluj-Napoca, and the faculties are in four cities: Miercurea Ciuc, Târgu Mureș, Cluj-Napoca and Sfântu Gheorghe. It is aimed especially at young Hungarians in Romania.",
+  "budgetNote": "Although it is a private university, it also has places with no fee, as well as places with a reduced fee and places with a full fee. The no-fee places are filled in order of admission averages.",
+  "admission": "Admission is a competition in Hungarian: you apply online, and the admission average is calculated from the Baccalaureate (bac) average and grades. For some programmes there is also an entrance exam of its own, a practical test or an interview. The rules differ by faculty.",
+  "scholarshipsNote": "The university gives merit scholarships, study scholarships and social scholarships, according to its own regulations.",
+  "dormsNote": "It has dormitories or accommodation for students; places are limited, so ask early.",
+  "pros": [
+   "You study in Hungarian, with campuses in Transylvania",
+   "Small groups and a community atmosphere",
+   "Technical and applied science programmes"
+  ],
+  "cons": [
+   "Teaching is in Hungarian, not in Romanian",
+   "No-fee places are limited; for the others you pay a fee",
+   "A narrower offer than the big universities"
+  ]
+ },
+ "uvvg": {
+  "about": "A private university in Arad, known for its faculties of medicine, dental medicine and pharmacy. It also has law, economics and computer science.",
+  "budgetNote": "It is a private university: at most programmes the fee is low, but for medicine it is much higher; ask which instalments are possible.",
+  "admission": "For medicine, dental medicine and pharmacy you take a written multiple-choice test (biology and chemistry; for pharmacy, biology). For the other programmes, for example nursing, dental technology or nutrition, the Baccalaureate (bac) average counts. The rules differ by faculty.",
+  "scholarshipsNote": "The university announces excellence, merit and social scholarships; ask the secretariat what conditions you must meet.",
+  "dormsNote": "It has its own dormitory in Arad, close to the campus, with a canteen in the same building; places are limited, so ask early.",
+  "pros": [
+   "You can study medicine in a smaller city, without the competition for state-funded places",
+   "Partner clinics and hospitals in the area",
+   "Close to Timișoara and the border with Hungary"
+  ],
+  "cons": [
+   "Fees for medicine are much higher",
+   "Lower prestige than the state medical universities",
+   "A small city, with a limited cultural offer"
+  ]
+ },
+ "upa-iasi": {
+  "about": "A private university in Iași, founded in 1990, which presents itself as the largest private higher education institution in Moldavia. It has two faculties: one of law, economics, political and administrative sciences, and one of psychology, educational sciences and social work.",
+  "budgetNote": "It is a private university, so you pay a fee; it is generally lower than at private universities in Western Europe.",
+  "admission": "You do not take an exam: you submit your file (also online), and the admission average is calculated from the Baccalaureate (bac) average and the grade from the written Romanian language test of the bac.",
+  "scholarshipsNote": "The university has a regulation for awarding scholarships; ask the secretariat what conditions you must meet.",
+  "dormsNote": "Do not count on a dormitory: ask at admission or look for a rental in the city.",
+  "pros": [
+   "Programmes in social sciences and law",
+   "Accessible admission, based on your file",
+   "Small groups, with more attention"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "Lower prestige than UAIC",
+   "A limited offer, only two faculties"
+  ]
+ },
+ "hyperion": {
+  "about": "A private university in Bucharest, founded in 1990, with seven faculties: law, economics, journalism, psychology, exact and engineering sciences, social sciences and humanities, arts.",
+  "budgetNote": "It has no state-funded places, but the fees are generally affordable and you can pay them in instalments.",
+  "admission": "At most programmes you get in on the basis of your file, with your Baccalaureate (bac) diploma and average. At the Faculty of Psychology and Educational Sciences and the Faculty of Arts, admission is by exam. Read the methodology on the website.",
+  "scholarshipsNote": "The website announces fee reductions and scholarships for students with very high averages, at some programmes, and a reduction when two members of the same family enrol.",
+  "dormsNote": "The university has its own student hostel in Bucharest, with rooms with a bathroom; places are reserved in advance, by phone.",
+  "pros": [
+   "A varied offer for a private university",
+   "A faculty of journalism and of arts in the capital",
+   "Small groups and approachable teachers"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "Less well known than the state universities",
+   "Practical training depends a lot on the faculty"
+  ]
+ },
+ "ueb": {
+  "about": "A private university in Bucharest, with six faculties: law, psychology, financial management, communication sciences, ecology and environmental protection, physical education and sport. It puts the emphasis on the environment and sustainable development.",
+  "budgetNote": "It is a private university, so you pay a fee; it is generally lower than at private universities in Western Europe.",
+  "admission": "Admission is a competition of files: the Baccalaureate (bac) average counts, with no exam. For Physical Education and Sport there is also a practical test. The rules may differ by faculty.",
+  "scholarshipsNote": "The university gives performance scholarships, according to its own regulations, and a small reduction if you pay the whole fee at the start.",
+  "dormsNote": "Do not count on a dormitory: ask at admission or look for a rental in the city.",
+  "pros": [
+   "Specialisation in the environment and ecological management",
+   "Accessible admission, based on your file",
+   "A schedule that also suits those who work"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "Less well known than the state universities",
+   "Fewer programmes than at the large universities"
+  ]
+ },
+ "danubius": {
+  "about": "A private university in Galați (until 2024 it was called the “Danubius” University of Galați), with five faculties: law and international governance, business and leadership, media, design and technology, life sciences and human development, and education. It is in the south-east of Moldavia.",
+  "budgetNote": "It is a private university, so you pay a tuition fee. You can pay it all at once or in instalments.",
+  "admission": "You take no exam and have no interview: only the overall Baccalaureate (bac) average counts. The exception is Primary Education Pedagogy, which also has two eliminatory aptitude tests. There is also a pre-admission for pupils, based on high-school averages. You can apply online.",
+  "scholarshipsNote": "The university gives scholarships and prizes for outstanding merit and fee reductions for involvement in activities.",
+  "dormsNote": "Do not count on a dormitory: ask at admission or look for a rental in the city.",
+  "pros": [
+   "Offers modern programmes: media, design and technology",
+   "Accessible admission, based on your file",
+   "Small groups, with attention to students"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "Less well known than the state universities",
+   "A city with fewer opportunities than the big centres"
+  ]
+ },
+ "ucb-pitesti": {
+  "about": "A private university based in Pitești, with faculties in three cities: Pitești, Râmnicu Vâlcea and Brăila. You can study management, accounting, trade and tourism, law and public administration; most programmes are in Râmnicu Vâlcea.",
+  "budgetNote": "It is a private university, so you usually pay a fee. There are, however, a few places with no fee, paid for by the university, for those who win the pre-admission competition. Ask the secretariat about instalments.",
+  "admission": "Admission is based on your file and the Baccalaureate (bac) average. Check the rules for each faculty on the website.",
+  "scholarshipsNote": "The university offers, from its own funds, places with no fee, which are won in a pre-admission competition with a multiple-choice test, plus merit scholarships and social assistance scholarships.",
+  "dormsNote": "Do not count on a dormitory; ask at admission or look for a rental in the city.",
+  "pros": [
+   "You can study economics or law in Pitești without moving",
+   "It also has faculties in Râmnicu Vâlcea and Brăila",
+   "Simple admission, based on your file"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "The range of fields is narrower than at the large universities",
+   "Fewer student activities than in a big centre"
+  ]
+ },
+ "andrei-saguna": {
+  "about": "A private, non-profit university in Constanța, with bachelor's programmes in law, psychology, management, accounting and public administration. It has been accredited by law since 2005.",
+  "budgetNote": "Tuition fees are payable; there are no state-funded places.",
+  "admission": "You get in on the basis of the Baccalaureate (bac) average, with no extra exams. For some programmes you also have a motivation talk of a few minutes with a teacher, who cannot eliminate you. You can apply online.",
+  "scholarshipsNote": "Ask the secretariat whether there are scholarships or fee reductions for good results.",
+  "dormsNote": "The university has its own accommodation in Constanța, which students can also use, with the approval of the management. Ask early whether there are places.",
+  "pros": [
+   "You can study by the sea, in a city with many activities in summer",
+   "Law and psychology programmes in a small university",
+   "Admission without a hard exam"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "A small university, less well known outside the region",
+   "The range of programmes is narrower"
+  ]
+ },
+ "george-bacovia": {
+  "about": "A private university in Bacău, accredited by ARACIS, with a single faculty, of economic, legal and administrative sciences. You can study management, trade and tourism, law, public administration and computer science.",
+  "budgetNote": "Tuition fees are payable; there are no state-funded places.",
+  "admission": "Admission is based on your file, with no exam and no interview: candidates are ranked by their Baccalaureate (bac) average. You can also apply online. Read the admission regulations on the website.",
+  "scholarshipsNote": "The university gives merit scholarships in the form of a fee reduction for very good results; the graduates' association and the Bacovia Foundation also contribute to the scholarship fund.",
+  "dormsNote": "Check with the secretariat whether the university offers accommodation for students; otherwise, look early for a rental in Bacău.",
+  "pros": [
+   "Scholarships also offered by graduates and a foundation",
+   "You study economics or law in a smaller, quiet city",
+   "Courses supported by an online platform"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "A single faculty, so few fields",
+   "Less well known outside the region"
+  ]
+ },
+ "emanuel-oradea": {
+  "about": "A private Christian Baptist university in Oradea, with theology and management, plus programmes such as music, social work and English language. It teaches in Romanian.",
+  "budgetNote": "Tuition fees are payable; there are no state-funded places.",
+  "admission": "For all programmes you have a motivation interview and a test on the Baptist Confession of Faith. For management and economic informatics you also take a test, for music an aptitude test, and for Romanian-English an English interview. As a rule you must be a baptised member of an evangelical church and bring a recommendation from the pastor.",
+  "scholarshipsNote": "The university has a scholarship for results and involvement (“Integrity and Excellence”) and a tuition scholarship; the conditions are in the scholarship regulations.",
+  "dormsNote": "It has accommodation and meals on campus, plus a chapel and a medical office.",
+  "pros": [
+   "A campus with accommodation, a canteen and services for students",
+   "Baptist theology, a rare programme in the country",
+   "A small community, where the teachers know you"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "A confessional environment: as a rule, baptised members of evangelical churches are accepted",
+   "Few fields apart from theology and management"
+  ]
+ },
+ "partium": {
+  "about": "A private university in Oradea, the first accredited private university in Romania teaching in Hungarian. It has two faculties: one of letters and arts and one of economic and social sciences, teaching mainly in Hungarian.",
+  "budgetNote": "Although it is a private university, some of the places have no fee and the rest are fee-paying. Each year the places are reallocated according to academic results.",
+  "admission": "Admission is generally based on your file, with the Baccalaureate (bac) average; for some programmes there may also be a test. The programmes are taught mostly in Hungarian, so you need to know it well.",
+  "scholarshipsNote": "The university gives merit scholarships, study scholarships and social scholarships, plus an excellence scholarship for students on the economics programmes.",
+  "dormsNote": "It has its own dormitory in Oradea, with rooms for 2–4 people and a canteen in the building; ask early how places are given.",
+  "pros": [
+   "You can study in Hungarian in Romania",
+   "A small university, with attention to students",
+   "Programmes in letters, economics and arts in one place"
+  ],
+  "cons": [
+   "No-fee places are limited; for the others you pay a fee",
+   "You need Hungarian for most programmes",
+   "The range of programmes is limited"
+  ]
+ },
+ "agora-oradea": {
+  "about": "A private university in Oradea, with a faculty of economic sciences and a faculty of legal and administrative sciences. It offers bachelor's and master's studies.",
+  "budgetNote": "Tuition fees are payable; there are no state-funded places.",
+  "admission": "You get in without an exam, on the basis of your file: your place in the ranking depends on your Baccalaureate (bac) average. You can also apply online. For details, see the admission page.",
+  "scholarshipsNote": "It has three kinds of scholarships that cover the fee, in full or in part: the Agora Scholarship, won through a competition at admission, the merit scholarship and the social scholarship.",
+  "dormsNote": "Do not count on a dormitory; ask at admission or look for a rental in the city.",
+  "pros": [
+   "You can study law or economics in Oradea",
+   "Courses supported by an online platform",
+   "Simple admission, without an exam"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "Only two faculties",
+   "Less well known than the state universities in the city"
+  ]
+ },
+ "tibiscus": {
+  "about": "A private university in Timișoara, with four faculties: computers and applied informatics, law and public administration, psychology, and economic sciences.",
+  "budgetNote": "Tuition fees are payable; there are no state-funded places.",
+  "admission": "Admission is through a competition of files, with no exam. For law, for example, the admission average is calculated from the Baccalaureate (bac) average and the Romanian language averages from high school. Each faculty has its own methodology, so read it on the website.",
+  "scholarshipsNote": "The university offers reductions on the tuition fee, called social scholarships and merit scholarships (for very good academic or research results). You receive them on the basis of an application submitted to the faculty secretariat.",
+  "dormsNote": "Do not count on a dormitory; ask at admission or look for a rental in the city.",
+  "pros": [
+   "You can study computer science or psychology in Timișoara",
+   "A large student city, with many opportunities",
+   "Smaller groups than at the state universities"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "Only four faculties, with few programmes",
+   "Less well known than the big state universities in the city"
+  ]
+ },
+ "apollonia": {
+  "about": "A private university in Iași, with two faculties. The Faculty of Medicine has programmes such as dental medicine, dental technology, general nursing and balneophysiokinetotherapy, and at the Faculty of Communication Sciences you can study communication and journalism.",
+  "budgetNote": "Tuition fees are payable; there are no state-funded places. Medical studies usually have higher fees than economics ones.",
+  "admission": "At the Faculty of Medicine (dental medicine, dental technology, nursing and others) you take a multiple-choice test and an interview in biology (human anatomy and physiology), which counts the most; the rest of the average comes from the Baccalaureate (bac) average. For communication, an interview and the bac average count.",
+  "scholarshipsNote": "Ask the secretariat whether there are scholarships or fee reductions for good results.",
+  "dormsNote": "Do not count on a dormitory; ask at admission or look for a rental in the city.",
+  "pros": [
+   "Focused on dental medicine and related fields",
+   "Iași is a large university centre",
+   "Training in an environment specialised in dentistry"
+  ],
+  "cons": [
+   "You pay a tuition fee, higher for medicine",
+   "A narrow offer: only health and communication",
+   "Medical studies demand a lot of work and money for materials"
+  ]
+ },
+ "athenaeum": {
+  "about": "A private university in Bucharest, with a faculty of economic sciences and a faculty of public administration. The bachelor's programmes generally last three years.",
+  "budgetNote": "Tuition fees are payable; there are no state-funded places.",
+  "admission": "Admission is generally based on your file, with the Baccalaureate (bac) average. For the exact rules, see the admission page.",
+  "scholarshipsNote": "Ask the secretariat whether there are scholarships or fee reductions for good results.",
+  "dormsNote": "The university has no dormitory of its own, but has an agreement with a few dormitories; the accommodation request is submitted to the secretariat at the start of the academic year.",
+  "pros": [
+   "You can study economic informatics or management in the capital",
+   "Three-year programmes, shorter",
+   "Simple admission, based on your file"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "Only two faculties",
+   "Less well known than the large state universities"
+  ]
+ },
+ "bioterra": {
+  "about": "A private university in Bucharest, accredited by law in 2002. It has programmes in agriculture and rural development, law, food products and nursing, in Bucharest and in Buzău.",
+  "budgetNote": "Tuition fees are payable; there are no state-funded places.",
+  "admission": "Admission is generally based on your file and the Baccalaureate (bac) average. The methodology is published on the website every year.",
+  "scholarshipsNote": "The website says there are merit scholarships and social scholarships, in the form of a partial or total fee waiver, and a reduction when several family members study here; ask the secretariat about the conditions.",
+  "dormsNote": "The website presents a university complex with five student dormitories and a canteen-restaurant; ask at admission how to get a place.",
+  "pros": [
+   "Rare programmes at a private university: agriculture and food products",
+   "Accessible admission, without a hard exam",
+   "It also has a branch in another city, Buzău"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "Less well known than the state universities",
+   "The faculties are small, with fewer activities"
+  ]
+ },
+ "artifex": {
+  "about": "A private university in Bucharest, with a faculty of finance and accounting and a faculty of management and marketing. Its bachelor's programmes are accredited.",
+  "budgetNote": "Tuition fees are payable; there are no state-funded places.",
+  "admission": "You get in on the basis of your file: the admission average is the average of the Baccalaureate (bac) grade and the average of your high-school years. See the rules and open programmes on the website.",
+  "scholarshipsNote": "Ask the secretariat whether there are scholarships or fee reductions for good results.",
+  "dormsNote": "The university has its own dormitory in Bucharest, in Sector 6, with rooms for one, two or three people; accommodation is paid for.",
+  "pros": [
+   "You can study finance, management or marketing in the capital",
+   "A small university, with small groups",
+   "The bachelor's programmes are accredited"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "The offer is limited to economics",
+   "Less well known than the large universities of economics"
+  ]
+ },
+ "adventus": {
+  "about": "A private Adventist university near Bucharest, with the Faculty of Theology and Social Sciences. It has bachelor's degrees in pastoral Adventist theology, social work, primary education pedagogy and early education, all in Romanian.",
+  "budgetNote": "Tuition fees are payable; there are no state-funded places.",
+  "admission": "For all programmes there is first an eliminatory interview. For Theology you then take tests in biblical knowledge, Romanian and English, and you must be a baptised member of the Adventist Church; for Social Work and Pedagogy the Baccalaureate (bac) average counts.",
+  "scholarshipsNote": "The university gives study, merit and social scholarships; Theology students supported by the Conference they belong to do not pay the tuition fee.",
+  "dormsNote": "It has student dormitories and a canteen on campus; accommodation and meals are paid for.",
+  "pros": [
+   "A small, close-knit community in a quiet place",
+   "The theology programme has been re-accredited by ARACIS",
+   "Very small groups, with attention to each student"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "It suits mainly those from the Adventist community",
+   "Only four bachelor's programmes"
+  ]
+ },
+ "ani-bucuresti": {
+  "about": "A state institution in Bucharest that belongs to the Romanian Intelligence Service (SRI) and trains intelligence officers. The bachelor's lasts three years and has two tracks: operations officer and analyst officer.",
+  "budgetNote": "The places are state-funded, so you do not pay tuition; if you drop out along the way, the study contract provides that you repay the maintenance and training costs.",
+  "admission": "First you go through a selection made by the SRI: interviews, tests, a psychological examination, a medical examination and security checks. Only then do you take the academy's competition, with a general knowledge test and an aptitude test; the Baccalaureate (bac) and high-school averages count a little. You apply from winter and there is an age limit.",
+  "scholarshipsNote": "The student guide says that the institution provides accommodation, meals and equipment for all military students.",
+  "dormsNote": "The academy has accommodation on campus for students. Check the academy's website whether you also receive accommodation on the days of the admission competition.",
+  "pros": [
+   "You pay no fee, and accommodation and meals are provided",
+   "After graduation you are assigned to an SRI unit",
+   "Training that is rare in the country: intelligence analysis and operations"
+  ],
+  "cons": [
+   "A long selection, with medical, psychological and security checks",
+   "You are a military student, with strict rules and many restrictions",
+   "You must accept to work anywhere in the country"
+  ]
+ },
+ "itb-bucuresti": {
+  "about": "A confessional school at university level, under the spiritual authority of the Baptist Union of Romania, which trains ministers for Baptist churches. It has a single bachelor's degree, pastoral Baptist theology, full-time and distance learning.",
+  "budgetNote": "It has no state-funded places, but the annual fee is small and can be paid in instalments; the website says the institute covers most of the real cost of tuition.",
+  "admission": "First there is an eliminatory oral test: an interview and questions from the Baptist Confession of Faith. Then an essay sent with your file is graded, and the Baccalaureate (bac) average counts too; you need recommendations from your church.",
+  "scholarshipsNote": "All students receive financial support for the fee, accommodation and canteen; in addition there is a merit scholarship and a few social scholarships.",
+  "dormsNote": "It has a dormitory and canteen at the headquarters on Str. Berzei, for pastoral theology students, and another, larger dormitory in the city.",
+  "pros": [
+   "Low costs, with support for the fee, accommodation and meals",
+   "Dormitory and canteen right at the headquarters",
+   "You can also study by distance learning"
+  ],
+  "cons": [
+   "It suits only those who want to serve in Baptist churches",
+   "You need recommendations from the pastor and the church",
+   "A single programme and very few full-time places"
+  ]
+ },
+ "itp-bucuresti": {
+  "about": "A private theological institute in Bucharest, accredited by law in 2008, which trains ministers for Pentecostal churches. The bachelor's in pastoral Pentecostal theology lasts four years.",
+  "budgetNote": "It has no state-funded places; the annual fee is small compared with other private faculties, and accommodation and meals are paid separately.",
+  "admission": "There are two tests: an interview with public speaking, which is eliminatory, and a written test of biblical knowledge. You must be a baptised member of a Pentecostal church and have recommendations from your church.",
+  "scholarshipsNote": "The candidate with the highest grade on the written test receives a scholarship; siblings who study at the same time pay a reduced fee and there is support for accommodation and meals, within the limits of funds.",
+  "dormsNote": "It has a dormitory with rooms for three to four people, with their own bathroom, and a canteen on course days; both are paid for.",
+  "pros": [
+   "Dormitory and canteen at the institute",
+   "A small fee and reductions for siblings",
+   "A small group, in a close-knit community"
+  ],
+  "cons": [
+   "It is only for baptised members of Pentecostal churches",
+   "A single bachelor's programme",
+   "The degree prepares you mainly for service in the church"
+  ]
+ },
+ "bogdan-voda": {
+  "about": "A private university in Cluj-Napoca, with over 30 years of activity and three faculties: Law, Economic Sciences and Physical Education and Sport.",
+  "budgetNote": "Tuition fees are payable; there are no state-funded places.",
+  "admission": "For Law and Economic Sciences the Baccalaureate (bac) average and the average of your high-school years count. For Physical Education and Sport you also take an eliminatory practical sports test: sprint, standing long jump and push-ups.",
+  "scholarshipsNote": "The university has a scholarship regulation and other forms of support for students; ask the secretariat what conditions you must meet.",
+  "dormsNote": "We found no information about a dormitory on the website; ask at admission or look for a rental in the city.",
+  "pros": [
+   "Admission without a written exam for Law and Economic Sciences",
+   "You can study sport in a big student city",
+   "It also has part-time courses"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "Only three faculties, with few programmes",
+   "Less well known than the state universities in Cluj"
+  ]
+ },
+ "itp-cluj": {
+  "about": "A theological institute in the centre of Cluj that trains pastors for the Reformed, Evangelical-Lutheran and Unitarian churches in Transylvania. The bachelor's in pastoral Protestant theology lasts four years and is taught in Hungarian.",
+  "budgetNote": "The admission pages mention an enrolment fee and the cost of the boarding house and meals, announced before enrolment; ask the secretariat what you pay per year.",
+  "admission": "For the Reformed track you first take part in a pre-admission camp with an interview, then take oral tests on the Bible and the catechism, a church singing test and Hungarian. You must be a member of the church and have your community's recommendation; each church has its own rules.",
+  "scholarshipsNote": "There are study, merit, performance and social scholarships, offered by churches and partner foundations in Hungary, the Netherlands and other countries.",
+  "dormsNote": "The institute has a boarding house in its own building for Reformed and Lutheran students; Unitarian students live in a separate dormitory.",
+  "pros": [
+   "A boarding house right in the institute's building, in the centre of Cluj",
+   "Many kinds of scholarships, plus study scholarships in Western Europe",
+   "Three Protestant traditions in the same school"
+  ],
+  "cons": [
+   "Teaching and admission are in Hungarian",
+   "It is only for members of the churches that support the institute",
+   "A single programme, which prepares you to be a pastor"
+  ]
+ },
+ "dragan-lugoj": {
+  "about": "A private university in Lugoj, Timiș county, which started classes in the 1992/1993 academic year. It has two faculties: Law and Economic Sciences.",
+  "budgetNote": "Tuition fees are payable, in instalments; there are no state-funded places.",
+  "admission": "You do not take an exam: you submit your file, and the admission average is your Baccalaureate (bac) average. Candidates are admitted in order of averages, as places allow.",
+  "scholarshipsNote": "The admission regulations provide fee reductions, for example for pupils with prizes at olympiads and competitions, and exemptions from the enrolment fee for some categories.",
+  "dormsNote": "We found no information about a dormitory on the website; ask at admission or look for a rental in the city.",
+  "pros": [
+   "Simple admission, based on the Baccalaureate (bac) average",
+   "Fee reductions for results at olympiads and competitions",
+   "A small, quiet town, close to Timișoara"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "Only two bachelor's programmes",
+   "A small town, with fewer places for practical training and work"
+  ]
+ },
+ "cantemir-tgmures": {
+  "about": "A private university in Târgu Mureș, with faculties of dental medicine, law, economic sciences, geography and psychology. It has its own student dormitory.",
+  "budgetNote": "Tuition fees are payable, in instalments; there are no state-funded places, and dental medicine costs much more than the other programmes.",
+  "admission": "For Law, Psychology, Tourism Geography and Economics of Trade, Tourism and Services you get in on the basis of the Baccalaureate (bac) average. For Dental Medicine you take a multiple-choice test, based on a bibliography published by the faculty.",
+  "scholarshipsNote": "We found no scholarships or reductions on the admission and fees pages; ask the secretariat.",
+  "dormsNote": "It has its own dormitory in Târgu Mureș, with three-bed rooms and a bathroom in the room; you submit your request at the admission centre.",
+  "pros": [
+   "Its own dormitory, with a bathroom in every room",
+   "You can study dental medicine at a private university",
+   "Admission based on the Baccalaureate (bac) average for most programmes"
+  ],
+  "cons": [
+   "You pay a tuition fee, high for dental medicine",
+   "Only one bachelor's programme per faculty",
+   "Less well known than the state university in the city"
+  ]
+ },
+ "timotheus": {
+  "about": "A theological institute at university level in Bucharest, founded in 1992 by the Christian Church According to the Gospel of Romania. It has a four-year bachelor's in pastoral theology.",
+  "budgetNote": "It is a private school, with no state-funded places; the website only mentions the enrolment fee, so ask the secretariat what you pay per year.",
+  "admission": "You apply online, then have an eliminatory interview, also online. You also write an essay on a given topic, and the average takes into account the essay grade and the Baccalaureate (bac) average; members of the church need a recommendation.",
+  "scholarshipsNote": "The website says the institute gives merit scholarships and study scholarships; details are requested from the secretariat.",
+  "dormsNote": "We found no information about accommodation on the website; ask the secretariat before you apply.",
+  "pros": [
+   "Online enrolment and interview",
+   "There are merit and study scholarships",
+   "A small group, with attention to each student"
+  ],
+  "cons": [
+   "It suits mainly those from the Christian Church According to the Gospel",
+   "A single bachelor's programme",
+   "We found no information about accommodation on the website"
+  ]
+ },
+ "ioan-slavici": {
+  "about": "A private university in Timișoara, founded in 2000 within the foundation of the same name. It has a faculty of engineering, with information technology, and one of economic sciences.",
+  "budgetNote": "Tuition fees are payable, in instalments; there are no state-funded places, and in engineering the fee is somewhat higher than in economics.",
+  "admission": "You do not take a written exam: you enrol and take a pass/fail interview, and the committee makes the ranking taking the Baccalaureate (bac) average into account. There are two sessions, in summer and in autumn.",
+  "scholarshipsNote": "Students with good results can receive fee reductions, partial or total, and annual prizes.",
+  "dormsNote": "The university has hotel-type dormitories, with priority for its own students, and a canteen-restaurant.",
+  "pros": [
+   "Its own dormitories and canteen",
+   "You can study information technology at a private university",
+   "Fee reductions for good results"
+  ],
+  "cons": [
+   "You pay a tuition fee",
+   "Only three bachelor's programmes",
+   "Less well known than the state universities in Timișoara"
+  ]
+ }
+}

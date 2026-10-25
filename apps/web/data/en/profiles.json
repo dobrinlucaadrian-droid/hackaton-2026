@@ -1,0 +1,50 @@
+{
+  "real-mate-info": {
+    "filiera": "Theoretical",
+    "name": "Maths and computer science"
+  },
+  "real-stiinte-naturii": {
+    "filiera": "Theoretical",
+    "name": "Sciences (biology, chemistry, physics)"
+  },
+  "uman-filologie": {
+    "filiera": "Theoretical",
+    "name": "Languages and literature"
+  },
+  "uman-stiinte-sociale": {
+    "filiera": "Theoretical",
+    "name": "Social sciences (history, economics, geography)"
+  },
+  "tehnologic-tehnic": {
+    "filiera": "Technological",
+    "name": "A technical or vocational school"
+  },
+  "tehnologic-servicii": {
+    "filiera": "Technological",
+    "name": "Technological — Services"
+  },
+  "tehnologic-resurse-mediu": {
+    "filiera": "Technological",
+    "name": "Technological — Natural Resources and Environmental Protection"
+  },
+  "voc-artistic": {
+    "filiera": "Vocational",
+    "name": "Arts (music, visual arts, theatre)"
+  },
+  "voc-sportiv": {
+    "filiera": "Vocational",
+    "name": "Sport"
+  },
+  "voc-pedagogic": {
+    "filiera": "Vocational",
+    "name": "Vocational — Teaching"
+  },
+  "voc-teologic": {
+    "filiera": "Vocational",
+    "name": "Vocational — Theology"
+  },
+  "voc-militar": {
+    "filiera": "Vocational",
+    "name": "Vocational — Military"
+  }
+}

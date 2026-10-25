@@ -1,7 +1,8 @@
 "use client";
-// Collapsible "Ce-ar fi dacă?" panel: one slider per inclination, controlled by the result page.
+// Collapsible "Ce-ar fi dacă?" panel (in the page language): one slider per inclination, controlled by the result page.
 import { useState } from "react";
-import { TRAITS, TRAIT_LABEL } from "@/lib/traits";
+import { useLang, useT } from "@/components/LangProvider";
+import { TRAITS, traitLabel } from "@/lib/traits";
 import type { TraitId } from "@/lib/types";
 
 type Props = {
@@ -12,13 +13,15 @@ type Props = {
 };
 
 export function WhatIf({ values, changed, onChange, onReset }: Props) {
+  const lang = useLang();
+  const t = useT();
   const [open, setOpen] = useState(false);
   return (
     <section className="mx-auto mt-6 max-w-2xl rounded-3xl bg-card p-5 ring-1 ring-line sm:max-w-3xl">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
-          <h2 className="text-xl font-bold text-ink">Ce-ar fi dacă?</h2>
-          <p className="text-ink-soft">Mută cursoarele și vezi cum se schimbă domeniile potrivite.</p>
+          <h2 className="text-xl font-bold text-ink">{t("Ce-ar fi dacă?", "What if?")}</h2>
+          <p className="text-ink-soft">{t("Mută cursoarele și vezi cum se schimbă domeniile potrivite.", "Move the sliders and see how the matching fields change.")}</p>
         </div>
         <button
           type="button"
@@ -27,7 +30,7 @@ export function WhatIf({ values, changed, onChange, onReset }: Props) {
           onClick={() => setOpen(!open)}
           className="rounded-2xl border-2 border-primary px-5 py-2 font-bold text-primary hover:bg-primary-tint"
         >
-          {open ? "Închide" : "Încearcă"}
+          {open ? t("Închide", "Close") : t("Încearcă", "Try it")}
         </button>
       </div>
       {open && (
@@ -36,7 +39,7 @@ export function WhatIf({ values, changed, onChange, onReset }: Props) {
             {TRAITS.map((id) => (
               <div key={id}>
                 <label htmlFor={`trait-${id}`} className="flex justify-between font-medium text-ink">
-                  <span>{TRAIT_LABEL[id]}</span>
+                  <span>{traitLabel(id, lang)}</span>
                   <span className="tabular-nums text-primary">{values[id]}</span>
                 </label>
                 <input
@@ -58,7 +61,7 @@ export function WhatIf({ values, changed, onChange, onReset }: Props) {
               onClick={onReset}
               className="mt-4 rounded-2xl bg-primary px-5 py-2 font-bold text-white hover:bg-primary-dark"
             >
-              Revino la răspunsurile mele
+              {t("Revino la răspunsurile mele", "Back to my answers")}
             </button>
           )}
         </div>

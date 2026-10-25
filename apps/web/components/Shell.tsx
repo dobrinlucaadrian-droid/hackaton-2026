@@ -1,9 +1,12 @@
-// Page frame shared by all screens: header with the FindMyUni logo, a centered content column and a footer with the privacy link.
-import Link from "next/link";
+"use client";
+// Page frame shared by all screens: header with the FindMyUni logo, a centered content column and a footer with the privacy link, in the page language.
 import type { ReactNode } from "react";
+import { useT } from "./LangProvider";
+import Link from "./LocalLink";
 import { NavLinks } from "./NavLinks";
 
 export function Shell({ children, wide = false }: { children: ReactNode; wide?: boolean }) {
+  const t = useT();
   return (
     <div className="relative flex flex-1 flex-col">
       <header className="mx-auto flex w-full max-w-5xl flex-wrap items-center justify-between gap-x-4 gap-y-1 px-5 py-4">
@@ -21,7 +24,7 @@ export function Shell({ children, wide = false }: { children: ReactNode; wide?: 
       <main className={`mx-auto w-full flex-1 px-5 pb-16 ${wide ? "max-w-5xl" : "max-w-2xl"}`}>{children}</main>
       <footer className="mx-auto w-full max-w-5xl px-5 pb-8 text-center text-sm text-ink-soft">
         <Link href="/confidentialitate" className="inline-flex min-h-11 items-center font-bold underline decoration-primary/40 underline-offset-2 hover:text-primary-dark">
-          Confidențialitate
+          {t("Confidențialitate", "Privacy")}
         </Link>
       </footer>
     </div>

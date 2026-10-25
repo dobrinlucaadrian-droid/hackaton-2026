@@ -1,0 +1,178 @@
+{
+  "title": "How to apply to a university in Romania",
+  "intro": "A short guide for international students who want to start a bachelor's degree in Romania. It is based only on official Romanian pages: the Ministry of Education, Study in Romania, CNRED, the Ministry of Foreign Affairs and the General Inspectorate for Immigration. Rules, fees and deadlines change every year, so always check the current year's details on the official pages listed at the end and on the website of the university you choose.",
+  "sections": [
+    {
+      "id": "who",
+      "heading": "Which route is yours?",
+      "paragraphs": [
+        "Romania has different routes depending on your citizenship. If you are a citizen of an EU or EEA country or of Switzerland, you apply under the same conditions as Romanian citizens.",
+        "If you are a citizen of any other country (a \"non-EU\" or third-country applicant), you apply to the university, and the Ministry of Education must then issue you a Letter of Acceptance for Studies before you can get a student visa.",
+        "Ethnic Romanians living abroad, including in the Republic of Moldova, have their own route with special places (see the last section)."
+      ]
+    },
+    {
+      "id": "choose",
+      "heading": "Choose a programme and a university",
+      "paragraphs": [
+        "Romania has public and private universities, evaluated regularly by the national quality agency ARACIS. Choose an accredited university and an accredited programme. You can search all programmes on the official Study in Romania portal.",
+        "Most bachelor's programmes take three years; engineering and some other fields take four. Medicine, dentistry, pharmacy and veterinary medicine take longer.",
+        "Universities are autonomous: each one sets its own admission rules and may ask for its own documents. Read the admission page of the university you choose and check the current year's deadline with the university."
+      ]
+    },
+    {
+      "id": "language",
+      "heading": "Language of study and the preparatory year",
+      "paragraphs": [
+        "Programmes are taught in Romanian, and some in English, French, German or Hungarian. For a programme taught in a foreign language, the university may ask for a certificate in that language.",
+        "For a programme taught in Romanian you must prove you know Romanian, at least at level B1. If you do not speak Romanian yet, you can first take the preparatory year of Romanian language, run by accredited universities.",
+        "The preparatory year ends with an exam at level B1. If you pass, you receive a certificate that lets you apply to degree programmes. The Study in Romania portal lists the universities that offer it."
+      ]
+    },
+    {
+      "id": "eu-route",
+      "heading": "EU, EEA and Swiss citizens",
+      "paragraphs": [
+        "You apply directly to the university, under the same conditions as Romanian citizens. Each university publishes its own admission methodology, so contact the admissions office of the programme you want.",
+        "Your secondary-school diploma must also be recognised (see the next section)."
+      ]
+    },
+    {
+      "id": "recognition",
+      "heading": "Recognition of your secondary-school diploma",
+      "paragraphs": [
+        "Diplomas obtained abroad are recognised by CNRED, the National Centre for the Recognition and Equivalence of Diplomas. For non-EU applicants, the university checks your study documents as part of the application.",
+        "For EU, EEA and Swiss citizens, CNRED issues a certificate recognising your secondary-school studies for admission to a bachelor's degree. You or the university can apply online on CNRED's ROePAS platform, or you can send the file by post. The file contains:"
+      ],
+      "bullets": [
+        "the CNRED application form",
+        "a copy of the document proving you finished secondary school (with a certified Romanian translation, unless it is in Romanian, English, French, Spanish or Italian)",
+        "a copy of your passport or ID card",
+        "proof that you paid the evaluation fee",
+        "a Hague Apostille on the diploma if your country is part of the Apostille Convention, or legalisation if it is not"
+      ]
+    },
+    {
+      "id": "non-eu-route",
+      "heading": "Non-EU applicants: the Letter of Acceptance",
+      "paragraphs": [
+        "Send your application file to the university, usually online. The university may ask you to take an admission exam, often online. If the university accepts your file, it sends it to the Ministry of Education, which issues the Letter of Acceptance for Studies. You then confirm your place, pay the fees and arrange accommodation.",
+        "The letter is valid only for that university, that academic year and that study cycle. You need it for the student visa and for your first residence permit.",
+        "All documents must be translated (certified translation into Romanian, English or French) and carry a Hague Apostille, or be legalised if your country is not part of the Apostille Convention. Each university may ask for more documents."
+      ],
+      "bullets": [
+        "passport",
+        "birth certificate",
+        "secondary-school diploma or certificate",
+        "transcript of records from secondary school",
+        "medical certificate",
+        "proof of permanent address abroad or national ID card",
+        "a language certificate, if the programme or university requires one"
+      ]
+    },
+    {
+      "id": "tuition",
+      "heading": "Tuition and scholarships",
+      "paragraphs": [
+        "EU citizens pay the same fees as Romanian students. If your application ranks high enough, you can get a state-funded (tuition-free) place; otherwise you study on a fee-paying place. Universities may also waive fees for merit, social situation or other reasons.",
+        "Non-EU students on fee-paying places pay the fee in foreign currency. You must show proof of tuition payment when you apply for the visa.",
+        "The Romanian Ministry of Foreign Affairs offers scholarships to non-EU citizens. Bachelor's scholarship holders study in Romanian, after the preparatory year if needed. You apply on the official scholarships portal; check the current year's deadline there."
+      ]
+    },
+    {
+      "id": "visa",
+      "heading": "Student visa, residence and health insurance",
+      "paragraphs": [
+        "EU and EEA citizens do not need a student visa. To live in Romania while studying, EU and EEA citizens can register with the General Inspectorate for Immigration (IGI); for students, IGI asks for proof of enrolment at an accredited institution, means of support and health insurance.",
+        "Non-EU students need a long-stay visa for studies, after they receive the Letter of Acceptance. Fill in the application on the e-VISA portal, then lodge it in person at the Romanian embassy or consulate and attend an interview.",
+        "After you arrive, apply to IGI for a residence permit for studies, in person or on IGI's online portal, well before the stay allowed by your visa ends. You will need the Letter of Acceptance (first time only), a certificate from the university, proof of means of support and accommodation, and a medical certificate."
+      ],
+      "bullets": [
+        "Visa documents usually asked: passport and photos",
+        "the Letter of Acceptance for Studies",
+        "proof of tuition payment and of means of support (not for scholarship holders)",
+        "a criminal record certificate",
+        "medical insurance for the whole visa period"
+      ]
+    },
+    {
+      "id": "romanians-abroad",
+      "heading": "Ethnic Romanians and the Republic of Moldova",
+      "paragraphs": [
+        "Ethnic Romanians living abroad can compete for special places at Romanian universities: tuition-free with a monthly scholarship, tuition-free without a scholarship, or fee-paying places. Selection is through the university's admission competition.",
+        "You sign a declaration that you assume Romanian cultural identity, and you need a Letter of Acceptance and proof that you know Romanian. Citizens of the Republic of Moldova can also apply to the extensions of Romanian universities in Chișinău, Cahul and Bălți. The current rules are on the Ministry of Education's page for Romanians abroad."
+      ]
+    }
+  ],
+  "links": [
+    {
+      "label": "Study in Romania: admission procedure",
+      "url": "https://studyinromania.gov.ro/procedures"
+    },
+    {
+      "label": "Study in Romania: find a study programme",
+      "url": "https://studyinromania.gov.ro/choose-program"
+    },
+    {
+      "label": "Study in Romania: higher education in Romania",
+      "url": "https://studyinromania.gov.ro/hes"
+    },
+    {
+      "label": "Study in Romania: learning Romanian (preparatory year)",
+      "url": "https://studyinromania.gov.ro/learning"
+    },
+    {
+      "label": "Study in Romania: recognition of prior studies",
+      "url": "https://studyinromania.gov.ro/recognition"
+    },
+    {
+      "label": "Study in Romania: visa",
+      "url": "https://studyinromania.gov.ro/visa"
+    },
+    {
+      "label": "Study in Romania: scholarships",
+      "url": "https://studyinromania.gov.ro/scholarships"
+    },
+    {
+      "label": "Romanian Government scholarships portal (Ministry of Foreign Affairs)",
+      "url": "https://scholarships.studyinromania.gov.ro/"
+    },
+    {
+      "label": "CNRED: recognition of secondary studies for EU, EEA and Swiss citizens",
+      "url": "https://cnred.edu.ro/en/recognition-studies-european-citizens-admission-undergraduate-studies-in-romania/"
+    },
+    {
+      "label": "Ministry of Education: Romanians abroad",
+      "url": "https://edu.ro/romanii-de-pretutindeni"
+    },
+    {
+      "label": "Order 5552/2024: schooling of Romanians abroad and foreign citizens (Romanian)",
+      "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/286316"
+    },
+    {
+      "label": "Order 5516/2024: preparatory year of Romanian language (Romanian)",
+      "url": "https://legislatie.just.ro/public/DetaliiDocument/285980"
+    },
+    {
+      "label": "e-VISA portal (Ministry of Foreign Affairs)",
+      "url": "https://evisa.mae.ro/"
+    },
+    {
+      "label": "Romanian embassies and consulates",
+      "url": "https://www.mae.ro/en/romanian-missions"
+    },
+    {
+      "label": "IGI: long-stay visa for studies",
+      "url": "https://igi.mai.gov.ro/en/how-can-i-obtain-a-long-stay-visa-for-studies/"
+    },
+    {
+      "label": "IGI: residence permit for studies",
+      "url": "https://igi.mai.gov.ro/en/content/studies%20"
+    },
+    {
+      "label": "IGI: citizens of the EU and EEA",
+      "url": "https://igi.mai.gov.ro/en/citizens-of-eu-eea/"
+    }
+  ],
+  "checked": "2026-10-26"
+}

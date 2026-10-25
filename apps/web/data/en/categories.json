@@ -1,0 +1,42 @@
+{
+  "sanatate": {
+    "name": "Health",
+    "short": "Doctors, pharmacists, nurses and everyone who cares for people and animals."
+  },
+  "it": {
+    "name": "IT and Computer Science",
+    "short": "Programming, computers, data and digital technology."
+  },
+  "inginerie": {
+    "name": "Engineering and Technology",
+    "short": "Machines, buildings, electronics, materials and energy."
+  },
+  "stiinte": {
+    "name": "Mathematics and Natural Sciences",
+    "short": "Mathematics, physics, chemistry, biology and nature."
+  },
+  "business": {
+    "name": "Business and Economics",
+    "short": "Money, companies, markets and how they are run."
+  },
+  "drept-politica": {
+    "name": "Law, Politics and Administration",
+    "short": "Laws, institutions, politics and relations between countries."
+  },
+  "sociale-educatie": {
+    "name": "Social Sciences and Education",
+    "short": "People, society, communication and education."
+  },
+  "umaniste": {
+    "name": "Literature, History and Philosophy",
+    "short": "Languages, texts, the past, ideas and faith."
+  },
+  "arte": {
+    "name": "Arts, Architecture and Performance",
+    "short": "Design, buildings, music, film and theatre."
+  },
+  "sport-servicii": {
+    "name": "Sport, Defence, Transport and Tourism",
+    "short": "Movement, safety, travel and services."
+  }
+}

@@ -1,0 +1,826 @@
+{
+  "medicina-generala": {
+    "name": "General Medicine",
+    "short": "You learn how the human body works and how diseases are treated; you become a doctor and then choose a speciality."
+  },
+  "medicina-de-urgenta": {
+    "name": "Emergency Medicine",
+    "short": "You learn to save people in critical situations, quickly and under pressure; you work in hospitals or on ambulances."
+  },
+  "neurostiinte": {
+    "name": "Neuroscience",
+    "short": "You study the brain and the nervous system; you can become a researcher or a doctor specialised in neurology."
+  },
+  "sanatate-publica": {
+    "name": "Public Health",
+    "short": "You learn how diseases are prevented across whole communities; you work in health institutions or in research."
+  },
+  "biomedicina": {
+    "name": "Biomedical Sciences",
+    "short": "You combine biology with medicine to understand diseases and find new treatments; you work in laboratories."
+  },
+  "medicina-dentara-generala": {
+    "name": "Dental Medicine",
+    "short": "You learn to treat patients' teeth and mouths; you become a dentist."
+  },
+  "ortodontie": {
+    "name": "Orthodontics and Dental Aesthetics",
+    "short": "You learn how teeth are straightened and how a beautiful smile is created; you combine medicine with manual precision."
+  },
+  "tehnica-dentara": {
+    "name": "Dental Technology",
+    "short": "You learn to shape dentures, crowns and dental appliances; you work in dental laboratories."
+  },
+  "igiena-orala": {
+    "name": "Oral Hygiene",
+    "short": "You learn to prevent dental diseases and to do professional cleaning; you work alongside the dentist."
+  },
+  "farmacie-generala": {
+    "name": "Pharmacy",
+    "short": "You learn how medicines are made, how they act and how they are dispensed; you become a pharmacist."
+  },
+  "chimie-farmaceutica": {
+    "name": "Pharmaceutical Chemistry",
+    "short": "You learn how substances that become medicines are discovered and synthesised; you work in the pharmaceutical industry."
+  },
+  "cosmetologie": {
+    "name": "Cosmetology and Cosmetic Products",
+    "short": "You learn how skincare products are created and tested; you work in the cosmetics industry."
+  },
+  "asigurarea-calitatii-medicamente": {
+    "name": "Medicine Quality Control",
+    "short": "You learn to check that medicines are safe and correct; you work in laboratories and factories."
+  },
+  "medicina-veterinara-generala": {
+    "name": "Veterinary Medicine",
+    "short": "You learn to treat pets and farm animals; you become a veterinarian."
+  },
+  "siguranta-alimentara": {
+    "name": "Food Safety",
+    "short": "You learn how food of animal origin is inspected and how people's health is protected."
+  },
+  "zootehnie-bunastare-animala": {
+    "name": "Animal Husbandry and Animal Welfare",
+    "short": "You learn how farm animals are raised and cared for in good conditions; you work on farms or in inspection."
+  },
+  "biotehnologii-animale": {
+    "name": "Veterinary Biotechnology",
+    "short": "You use laboratory techniques for animal health; you work in research or industry."
+  },
+  "asistenta-medicala-generala": {
+    "name": "General Nursing",
+    "short": "You learn to care for patients in hospital and at home; you work alongside doctors."
+  },
+  "moase": {
+    "name": "Midwifery",
+    "short": "You learn to assist childbirth and to care for the mother and the baby."
+  },
+  "nutritie-dietetica": {
+    "name": "Nutrition and Dietetics",
+    "short": "You learn how food affects health and how to make meal plans; you work in clinics or practices."
+  },
+  "balneofiziokinetoterapie": {
+    "name": "Balneology, Physical Medicine and Physiotherapy",
+    "short": "You learn treatments through movement, water and equipment for recovery; you work in clinics and spa resorts."
+  },
+  "tehnica-medicala-laborator": {
+    "name": "Medical Laboratory Technology",
+    "short": "You learn to run medical tests that help doctors make diagnoses; you work in laboratories."
+  },
+  "informatica-generala": {
+    "name": "Computer Science",
+    "short": "You learn programming, algorithms and databases; you work as a programmer or researcher."
+  },
+  "informatica-economica": {
+    "name": "Economic Informatics",
+    "short": "You build software for companies and banks; you combine programming with economics."
+  },
+  "inteligenta-artificiala": {
+    "name": "Artificial Intelligence",
+    "short": "You learn how machines are made to learn and to make decisions; you work with data and models."
+  },
+  "securitate-cibernetica": {
+    "name": "Cybersecurity",
+    "short": "You learn how systems are defended against cyberattacks; you work as a security specialist."
+  },
+  "data-science": {
+    "name": "Data Science",
+    "short": "You learn to analyse large amounts of data and draw conclusions from them; you work as a data analyst."
+  },
+  "bioinformatica": {
+    "name": "Bioinformatics",
+    "short": "You use programming for problems in biology and medicine; you work in research."
+  },
+  "calculatoare": {
+    "name": "Computer Engineering",
+    "short": "You learn how a computer works, from components to programs; you work as a computer engineer."
+  },
+  "ingineria-sistemelor": {
+    "name": "Systems Engineering",
+    "short": "You learn to design systems that control themselves automatically; you work in industry and robotics."
+  },
+  "automatica": {
+    "name": "Automation and Applied Informatics",
+    "short": "You learn about robots, sensors and programs that control machines; you work in factories and research."
+  },
+  "retele-telecomunicatii": {
+    "name": "Networks and Telecommunications",
+    "short": "You learn how devices communicate through the internet and mobile networks; you work in telecom and IT."
+  },
+  "ingineria-software": {
+    "name": "Software Engineering",
+    "short": "You learn to build large applications in a team; you work as a software developer."
+  },
+  "dezvoltare-jocuri": {
+    "name": "Game Development",
+    "short": "You learn to program video games and make them fun; you work in game studios."
+  },
+  "electronica-telecomunicatii": {
+    "name": "Electronics and Telecommunications",
+    "short": "You learn circuits, signals and wireless communications; you work in electronics and telecom."
+  },
+  "inginerie-electrica": {
+    "name": "Electrical Engineering",
+    "short": "You learn how electric current is produced, transported and used; you work in the power sector."
+  },
+  "electronica-aplicata": {
+    "name": "Applied Electronics",
+    "short": "You learn to design electronic devices, from sensors to phones."
+  },
+  "microelectronica": {
+    "name": "Microelectronics",
+    "short": "You learn how the chips in computers and phones are made; you work in the electronics industry."
+  },
+  "mecatronica": {
+    "name": "Mechatronics",
+    "short": "You combine mechanics, electronics and programming for robots and smart machines."
+  },
+  "inginerie-mecanica-generala": {
+    "name": "Mechanical Engineering",
+    "short": "You learn to design machines and mechanisms; you work in industry."
+  },
+  "autovehicule-rutiere": {
+    "name": "Road Vehicles",
+    "short": "You learn how cars are built and how they work; you work in the automotive industry."
+  },
+  "inginerie-industriala": {
+    "name": "Industrial Engineering",
+    "short": "You learn how a factory and its production are organised; you work as a production engineer."
+  },
+  "aeronave-aerospatial": {
+    "name": "Aerospace Engineering",
+    "short": "You learn how aircraft, drones and rockets are designed; you work in aviation and space."
+  },
+  "robotica": {
+    "name": "Robotics",
+    "short": "You learn to build and program robots; you work in automation and research."
+  },
+  "constructii-civile": {
+    "name": "Civil, Industrial and Agricultural Construction",
+    "short": "You learn to design and build safe buildings; you work on construction sites or in design."
+  },
+  "cai-ferate-drumuri-poduri": {
+    "name": "Railways, Roads and Bridges",
+    "short": "You learn how roads, bridges and railways are built; you work in infrastructure."
+  },
+  "inginerie-geodezica": {
+    "name": "Land Surveying and Cadastre",
+    "short": "You learn to measure land and make precise maps; you work in the field with modern instruments."
+  },
+  "instalatii-constructii": {
+    "name": "Building Services Engineering",
+    "short": "You learn about the heating, water and ventilation of buildings; you work in design and execution."
+  },
+  "hidrotehnica": {
+    "name": "Hydraulic Engineering",
+    "short": "You learn to build dams and canals and to control water; you work in infrastructure."
+  },
+  "arhitectura-generala": {
+    "name": "Architecture",
+    "short": "You learn to design buildings that are beautiful and useful; you become an architect."
+  },
+  "urbanism": {
+    "name": "Urban Planning and Spatial Planning",
+    "short": "You learn how cities and public spaces are planned; you work in town halls and urban planning offices."
+  },
+  "design-interior": {
+    "name": "Interior Design",
+    "short": "You learn to arrange interior spaces, from homes to offices; you work as a designer."
+  },
+  "peisagistica": {
+    "name": "Landscape Architecture",
+    "short": "You learn to design parks and gardens; you combine architecture with nature."
+  },
+  "restaurare-patrimoniu": {
+    "name": "Restoration and Built Heritage",
+    "short": "You learn to save historic buildings; you work on monuments and in museums."
+  },
+  "inginerie-chimica": {
+    "name": "Chemical Engineering",
+    "short": "You learn how substances are produced on a large scale, from plastic to medicines; you work in industry."
+  },
+  "stiinta-materialelor": {
+    "name": "Materials Science and Engineering",
+    "short": "You learn how new materials are made, light or strong; you work in industry and research."
+  },
+  "ingineria-polimerilor": {
+    "name": "Polymer Engineering",
+    "short": "You learn about plastic, rubber and fibres; you work in the materials industry."
+  },
+  "tehnologii-alimentare": {
+    "name": "Food Technology",
+    "short": "You learn how food is made and preserved in factories; you work in the food industry."
+  },
+  "inginerie-biochimica": {
+    "name": "Biochemical Engineering and Biotechnology",
+    "short": "You use living organisms to make useful products; you work in laboratories and factories."
+  },
+  "ingineria-mediului": {
+    "name": "Environmental Engineering",
+    "short": "You learn to protect nature and reduce pollution; you work in environmental companies and institutions."
+  },
+  "energetica": {
+    "name": "Power Engineering",
+    "short": "You learn how energy is produced, including from green sources; you work in power plants and grids."
+  },
+  "energii-regenerabile": {
+    "name": "Renewable Energy",
+    "short": "You learn about solar panels, wind and hydrogen; you work in green energy."
+  },
+  "petrol-gaze": {
+    "name": "Petroleum and Gas Engineering",
+    "short": "You learn how oil and gas are extracted and processed; you work in the energy industry."
+  },
+  "geologie-mine": {
+    "name": "Geology and Mining",
+    "short": "You learn about rocks, resources and deposits; you work in the field, in mines and in research."
+  },
+  "matematica-pura": {
+    "name": "Mathematics",
+    "short": "You learn theories and proofs; you can be a researcher, a teacher or an analyst."
+  },
+  "matematici-aplicate": {
+    "name": "Applied Mathematics",
+    "short": "You use mathematics for real-world problems, from finance to engineering."
+  },
+  "statistica": {
+    "name": "Statistics",
+    "short": "You learn to analyse data and estimate how likely things are; you work in research and business."
+  },
+  "matematica-informatica": {
+    "name": "Mathematics and Computer Science",
+    "short": "You combine mathematics with programming; you work as a programmer or researcher."
+  },
+  "actuariat": {
+    "name": "Actuarial Science and Financial Mathematics",
+    "short": "You use mathematics for risk in insurance and banks; you work as an actuary."
+  },
+  "fizica-generala": {
+    "name": "Physics",
+    "short": "You learn how the universe works, from atoms to stars; you work in research or education."
+  },
+  "fizica-tehnologica": {
+    "name": "Technological Physics",
+    "short": "You apply physics in new technologies, from lasers to sensors."
+  },
+  "astronomie-astrofizica": {
+    "name": "Astronomy and Astrophysics",
+    "short": "You learn about stars, planets and galaxies; you work in observatories and research."
+  },
+  "fizica-medicala": {
+    "name": "Medical Physics",
+    "short": "You use physics for hospital equipment such as MRI or radiotherapy."
+  },
+  "fizica-nucleara": {
+    "name": "Nuclear and Particle Physics",
+    "short": "You study the atomic nucleus and elementary particles; you work in research."
+  },
+  "chimie-generala": {
+    "name": "Chemistry",
+    "short": "You learn how substances combine and how new ones are made; you work in laboratories."
+  },
+  "chimie-aplicata": {
+    "name": "Applied Chemistry",
+    "short": "You apply chemistry in industry, from paints to detergents."
+  },
+  "biochimie": {
+    "name": "Biochemistry",
+    "short": "You learn the chemical reactions in the living body; you work in research and the medical industry."
+  },
+  "chimie-analitica": {
+    "name": "Analytical Chemistry and Quality Control",
+    "short": "You learn to analyse what samples contain; you work in testing laboratories."
+  },
+  "chimia-mediului": {
+    "name": "Environmental Chemistry",
+    "short": "You study the substances in air, water and soil; you work for a cleaner environment."
+  },
+  "biologie-generala": {
+    "name": "Biology",
+    "short": "You learn about life, from cells to ecosystems; you work in research or education."
+  },
+  "biochimie-biologie": {
+    "name": "Biochemistry and Molecular Biology",
+    "short": "You study the molecules of life and genes; you work in laboratories."
+  },
+  "ecologie": {
+    "name": "Ecology and Environmental Protection",
+    "short": "You learn how plants and animals live together and how we protect them; you work in the field."
+  },
+  "genetica": {
+    "name": "Genetics and Biotechnology",
+    "short": "You learn how traits are passed on and how genes are used in technology."
+  },
+  "microbiologie": {
+    "name": "Microbiology",
+    "short": "You study bacteria and viruses; you work in laboratories and in health."
+  },
+  "geografie": {
+    "name": "Geography",
+    "short": "You learn about landforms, climate and people on Earth; you work in education, tourism or research."
+  },
+  "geografia-turismului": {
+    "name": "Tourism Geography",
+    "short": "You learn how beautiful places are discovered and put to good use; you work in tourism and local development."
+  },
+  "gis-cartografie": {
+    "name": "Cartography and GIS",
+    "short": "You learn to make digital maps and analyse space with a computer; you work in geographic data companies."
+  },
+  "hidrologie-meteorologie": {
+    "name": "Hydrology and Meteorology",
+    "short": "You study water and weather; you work in forecasting and flood protection."
+  },
+  "stiintele-mediului": {
+    "name": "Environmental Science",
+    "short": "You learn how nature is changing and how we protect it; you work in environmental institutions and projects."
+  },
+  "agronomie": {
+    "name": "Agronomy",
+    "short": "You learn how to grow plants efficiently; you work in agriculture or consultancy."
+  },
+  "horticultura": {
+    "name": "Horticulture",
+    "short": "You learn to grow vegetables, fruit and flowers; you work on farms, in greenhouses and in gardens."
+  },
+  "silvicultura": {
+    "name": "Forestry",
+    "short": "You learn to look after and protect forests; you work in the field, in forest districts."
+  },
+  "inginerie-agricola": {
+    "name": "Agricultural Mechanisation",
+    "short": "You learn about farm machinery and modern farm technologies; you work in modern agriculture."
+  },
+  "management-agricol": {
+    "name": "Agricultural Management",
+    "short": "You learn how to run a farm like a business; you work in agribusiness."
+  },
+  "viticultura-oenologie": {
+    "name": "Viticulture and Oenology",
+    "short": "You learn to grow grapevines and make wine; you work in wineries."
+  },
+  "finante-banci": {
+    "name": "Finance and Banking",
+    "short": "You learn how money circulates, how investments are made and how banks work; you work in banks and companies."
+  },
+  "contabilitate-informatica-gestiune": {
+    "name": "Accounting and Management Informatics",
+    "short": "You learn to keep a company's financial records; you work as an accountant or auditor."
+  },
+  "economie-generala": {
+    "name": "General Economics",
+    "short": "You understand how the economy of a country and of the world works; you work in analysis or institutions."
+  },
+  "economie-internationala": {
+    "name": "International Economics",
+    "short": "You learn about trade between countries and global markets; you work in international companies."
+  },
+  "statistica-previziune-economica": {
+    "name": "Statistics and Economic Forecasting",
+    "short": "You use data to anticipate how the economy will develop."
+  },
+  "cibernetica-economica": {
+    "name": "Economic Cybernetics",
+    "short": "You use mathematics and computer science for economic problems; you work in analysis and IT."
+  },
+  "management": {
+    "name": "Management",
+    "short": "You learn how a company or a team is led and organised."
+  },
+  "administrarea-afacerilor": {
+    "name": "Business Administration",
+    "short": "You learn how a business is started and run from scratch."
+  },
+  "antreprenoriat": {
+    "name": "Entrepreneurship",
+    "short": "You learn to turn an idea into a company; you work on your own or in startups."
+  },
+  "business-international": {
+    "name": "International Business",
+    "short": "You learn how companies do business across countries; you work in companies with customers all over the world."
+  },
+  "resurse-umane": {
+    "name": "Human Resources Management",
+    "short": "You learn to hire, motivate and develop people in a company."
+  },
+  "logistica-afaceri": {
+    "name": "Logistics and Supply Chains",
+    "short": "You learn how products get from the producer to the customer; you work in distribution companies."
+  },
+  "marketing-general": {
+    "name": "Marketing",
+    "short": "You learn to understand customers and sell products; you work in companies and agencies."
+  },
+  "marketing-digital": {
+    "name": "Digital Marketing",
+    "short": "You learn to promote online, through social media, ads and websites."
+  },
+  "publicitate": {
+    "name": "Advertising",
+    "short": "You learn to create campaigns that attract attention; you work in advertising agencies."
+  },
+  "relatii-publice": {
+    "name": "Public Relations",
+    "short": "You learn how the image of a company or a person is built; you work in communication."
+  },
+  "cercetare-de-piata": {
+    "name": "Market Research",
+    "short": "You learn to find out what people want through studies and data; you work in analysis."
+  },
+  "comert-vanzari": {
+    "name": "Commerce and Sales",
+    "short": "You learn how to sell effectively; you work in retail, trade or negotiation."
+  },
+  "drept-general": {
+    "name": "Law",
+    "short": "You learn the laws and how they are applied; you can become a lawyer, a judge or a prosecutor."
+  },
+  "drept-european": {
+    "name": "European and International Law",
+    "short": "You learn the laws of the European Union and between countries; you work in institutions and international companies."
+  },
+  "drept-afaceri": {
+    "name": "Business Law",
+    "short": "You learn contracts and laws for companies; you work as a legal adviser in companies."
+  },
+  "drept-penal-criminalistica": {
+    "name": "Forensic Science and Criminal Law",
+    "short": "You learn how crimes are investigated and tried."
+  },
+  "notariat-administrativ": {
+    "name": "Administrative and Notarial Law",
+    "short": "You learn the documents and rules of institutions; you work as a notary or as a legal adviser in administration."
+  },
+  "stiinte-politice": {
+    "name": "Political Science",
+    "short": "You learn how states, parties and elections work; you work in politics or analysis."
+  },
+  "relatii-internationale": {
+    "name": "International Relations",
+    "short": "You learn how countries cooperate; you work in diplomacy or international organisations."
+  },
+  "studii-europene": {
+    "name": "European Studies",
+    "short": "You learn how the European Union works; you work in European institutions."
+  },
+  "securitate-studii-strategice": {
+    "name": "Security and Strategic Studies",
+    "short": "You learn about defence and global risks; you work in security analysis."
+  },
+  "diplomatie-organizatii": {
+    "name": "Diplomacy and International Organisations",
+    "short": "You learn negotiation and work in the UN or NGOs; you work on international projects."
+  },
+  "administratie-publica-generala": {
+    "name": "Public Administration",
+    "short": "You learn how state institutions work; you work in town halls and ministries."
+  },
+  "management-public": {
+    "name": "Public Management",
+    "short": "You learn to lead public institutions and projects; you work in the public sector."
+  },
+  "politici-publice": {
+    "name": "Public Policy",
+    "short": "You learn how government decisions are made and evaluated."
+  },
+  "fonduri-europene": {
+    "name": "European Funds Projects",
+    "short": "You learn to write and manage projects funded by the EU."
+  },
+  "administratie-locala": {
+    "name": "Local Administration",
+    "short": "You learn how cities and communes are run; you work in town halls."
+  },
+  "jurnalism": {
+    "name": "Journalism",
+    "short": "You learn to write news, do interviews and make reports; you work in the press, radio or online."
+  },
+  "comunicare-relatii-publice": {
+    "name": "Communication and Public Relations",
+    "short": "You learn to communicate well for companies and institutions."
+  },
+  "audiovizual": {
+    "name": "Audio-Video Production",
+    "short": "You learn to make films, shows and podcasts; you work in television and online."
+  },
+  "comunicare-digitala": {
+    "name": "Digital Communication and Social Media",
+    "short": "You learn to create content and communicate online."
+  },
+  "studii-media": {
+    "name": "Media Studies",
+    "short": "You learn how the media influences society; you work in research and communication."
+  },
+  "psihologie-generala": {
+    "name": "Psychology",
+    "short": "You learn how people think, feel and behave; you become a psychologist."
+  },
+  "psihologie-clinica": {
+    "name": "Clinical Psychology",
+    "short": "You learn to understand and help people with emotional difficulties."
+  },
+  "psihologia-muncii": {
+    "name": "Work and Organisational Psychology",
+    "short": "You learn how to select, motivate and support employees."
+  },
+  "psihopedagogie": {
+    "name": "Special Needs Psychopedagogy",
+    "short": "You learn to help children with special needs to learn."
+  },
+  "neuropsihologie": {
+    "name": "Neuropsychology",
+    "short": "You learn the link between the brain and behaviour; you work in research or clinics."
+  },
+  "sociologie": {
+    "name": "Sociology",
+    "short": "You learn how groups of people behave and how society changes."
+  },
+  "asistenta-sociala": {
+    "name": "Social Work",
+    "short": "You learn to help people and families in difficulty."
+  },
+  "antropologie": {
+    "name": "Anthropology",
+    "short": "You study cultures and people's ways of life."
+  },
+  "cercetare-sociala": {
+    "name": "Social Research",
+    "short": "You learn to run surveys and studies about people."
+  },
+  "dezvoltare-comunitara": {
+    "name": "Community Development",
+    "short": "You learn to support communities through social projects; you work in NGOs."
+  },
+  "pedagogia-invatamantului-primar": {
+    "name": "Primary and Preschool Education",
+    "short": "You learn to work with young children; you become a primary school teacher or an early years educator."
+  },
+  "pedagogie": {
+    "name": "Pedagogy",
+    "short": "You learn how people learn and how to teach; you work in education."
+  },
+  "educatie-speciala": {
+    "name": "Special Education",
+    "short": "You learn to work with children with special needs."
+  },
+  "management-educational": {
+    "name": "Educational Management",
+    "short": "You learn to lead schools and educational projects."
+  },
+  "tehnologia-educatiei": {
+    "name": "Educational Technology",
+    "short": "You learn to use technology for teaching."
+  },
+  "limba-literatura-romana": {
+    "name": "Romanian Language and Literature",
+    "short": "You learn literature and language; you work as a teacher, editor or writer."
+  },
+  "limbi-moderne-aplicate": {
+    "name": "Applied Modern Languages",
+    "short": "You learn foreign languages for translation and business; you work as a translator or in companies."
+  },
+  "engleza-traducere": {
+    "name": "English Language and Translation",
+    "short": "You learn advanced English; you work as a translator or in communication."
+  },
+  "lingvistica": {
+    "name": "Linguistics",
+    "short": "You study how languages work; you work in research and technology."
+  },
+  "studii-culturale": {
+    "name": "Cultural Studies",
+    "short": "You learn about literature, art and different cultures."
+  },
+  "traducere-interpretariat": {
+    "name": "Translation and Interpreting",
+    "short": "You learn to translate texts and interpret speeches."
+  },
+  "istorie-generala": {
+    "name": "History",
+    "short": "You learn what happened in the past and why; you work as a teacher, in museums or in research."
+  },
+  "arheologie": {
+    "name": "Archaeology",
+    "short": "You research ancient traces in the ground; you work in museums and on archaeological sites."
+  },
+  "patrimoniu-muzeologie": {
+    "name": "Museology and Heritage",
+    "short": "You learn to preserve and present historical objects; you work in museums."
+  },
+  "istoria-artei": {
+    "name": "Art History",
+    "short": "You learn about art and styles through time."
+  },
+  "istorie-relatii-internationale": {
+    "name": "History and International Relations",
+    "short": "You learn the history and politics of countries; you work in analysis or research."
+  },
+  "filosofie-generala": {
+    "name": "Philosophy",
+    "short": "You learn to think deeply about truth, ethics and existence."
+  },
+  "etica-aplicata": {
+    "name": "Ethics and Bioethics",
+    "short": "You learn to judge moral problems in medicine and technology."
+  },
+  "logica-filosofia-stiintei": {
+    "name": "Logic and Philosophy of Science",
+    "short": "You learn to reason rigorously and to understand how science is done."
+  },
+  "studii-religioase": {
+    "name": "Religious Studies",
+    "short": "You learn about the world's religions and their role in society."
+  },
+  "filosofie-politica": {
+    "name": "Political and Social Philosophy",
+    "short": "You learn the ideas about rights, power and society."
+  },
+  "teologie-ortodoxa-pastorala": {
+    "name": "Pastoral Orthodox Theology",
+    "short": "You learn about faith and service; you become a priest or work in a community."
+  },
+  "teologie-didactica": {
+    "name": "Didactic Orthodox Theology",
+    "short": "You learn to teach religion in schools."
+  },
+  "teologie-asistenta-sociala": {
+    "name": "Theology and Social Work",
+    "short": "You learn to help the community through the church."
+  },
+  "teologie-arta-sacra": {
+    "name": "Theology and Sacred Art",
+    "short": "You learn church art and restoration."
+  },
+  "teologie-catolica": {
+    "name": "Roman Catholic Theology",
+    "short": "You learn theology and service in the Catholic church."
+  },
+  "arte-plastice": {
+    "name": "Fine Arts",
+    "short": "You learn painting, graphic art and sculpture; you become an artist."
+  },
+  "design-grafic": {
+    "name": "Graphic Design",
+    "short": "You learn to create logos, posters and beautiful websites; you work as a designer."
+  },
+  "design-vestimentar": {
+    "name": "Fashion Design",
+    "short": "You learn to create clothes and fashion."
+  },
+  "design-produs": {
+    "name": "Product Design",
+    "short": "You learn to create objects that are useful and beautiful."
+  },
+  "fotografie-media": {
+    "name": "Photography and Video",
+    "short": "You learn to do photography and video."
+  },
+  "animatie": {
+    "name": "Animation and Illustration",
+    "short": "You learn to create cartoons and digital illustrations."
+  },
+  "interpretare-muzicala": {
+    "name": "Music Performance",
+    "short": "You learn to play an instrument or sing; you become a musician."
+  },
+  "compozitie": {
+    "name": "Music Composition",
+    "short": "You learn to create new music."
+  },
+  "pedagogie-muzicala": {
+    "name": "Music Education",
+    "short": "You learn to teach music; you become a music teacher."
+  },
+  "muzica-moderna-jazz": {
+    "name": "Pop and Jazz Music",
+    "short": "You learn modern music, jazz and production."
+  },
+  "muzicologie": {
+    "name": "Musicology",
+    "short": "You study the history and theory of music."
+  },
+  "actorie": {
+    "name": "Acting",
+    "short": "You learn to act on stage and in film; you become an actor."
+  },
+  "regie-film": {
+    "name": "Film Directing",
+    "short": "You learn to lead a film from idea to screen; you become a director."
+  },
+  "imagine-film": {
+    "name": "Film Cinematography",
+    "short": "You learn to shoot with the camera; you become a camera operator or director of photography."
+  },
+  "scenografie": {
+    "name": "Set and Costume Design",
+    "short": "You learn to create the sets and costumes of shows."
+  },
+  "scenaristica": {
+    "name": "Screenwriting",
+    "short": "You learn to write scripts."
+  },
+  "coregrafie": {
+    "name": "Choreography and Dance",
+    "short": "You learn to dance and to create choreography."
+  },
+  "educatie-fizica-sport": {
+    "name": "Physical Education and Sport",
+    "short": "You learn to coach and teach sport; you become a physical education teacher."
+  },
+  "kinetoterapie": {
+    "name": "Physiotherapy",
+    "short": "You learn exercises and therapies for recovery; you work in clinics."
+  },
+  "antrenorat": {
+    "name": "Coaching",
+    "short": "You learn to train athletes."
+  },
+  "management-sportiv": {
+    "name": "Sport Management",
+    "short": "You learn to organise clubs and sports events."
+  },
+  "sport-performanta": {
+    "name": "Sport Science",
+    "short": "You learn how physical performance is achieved."
+  },
+  "management-militar": {
+    "name": "Military Management",
+    "short": "You learn to lead military units; you become an officer."
+  },
+  "politie": {
+    "name": "Police",
+    "short": "You learn to enforce the law and protect the community; you become a police officer."
+  },
+  "ordine-siguranta-publica": {
+    "name": "Public Order and Safety",
+    "short": "You learn to maintain order and safety."
+  },
+  "tehnica-militara": {
+    "name": "Military Technology",
+    "short": "You learn about military equipment."
+  },
+  "situatii-urgenta": {
+    "name": "Emergency Situations",
+    "short": "You learn to respond to fires and disasters; you become a firefighter officer."
+  },
+  "navigatie-transport-maritim": {
+    "name": "Navigation and Maritime Transport",
+    "short": "You learn to operate ships; you become an officer on vessels."
+  },
+  "inginerie-navala": {
+    "name": "Naval Engineering",
+    "short": "You learn to design ships."
+  },
+  "transporturi": {
+    "name": "Transport Engineering",
+    "short": "You learn to organise the transport of people and goods."
+  },
+  "aviatie-pilotaj": {
+    "name": "Aviation and Air Navigation",
+    "short": "You learn to navigate aircraft; you can become a pilot or a controller."
+  },
+  "logistica-transporturi": {
+    "name": "Logistics and Transport",
+    "short": "You learn how goods move; you work in transport companies."
+  },
+  "turism": {
+    "name": "Tourism",
+    "short": "You learn to organise trips and holidays; you work in agencies and hotels."
+  },
+  "hotelier-gastronomie": {
+    "name": "Hotel Management and Gastronomy",
+    "short": "You learn to run hotels and restaurants."
+  },
+  "evenimente": {
+    "name": "Event Management",
+    "short": "You learn to organise festivals and conferences."
+  },
+  "servicii-publice": {
+    "name": "Service Management",
+    "short": "You learn about the quality and organisation of services."
+  },
+  "ecoturism": {
+    "name": "Ecotourism and Rural Tourism",
+    "short": "You learn to promote tourism in nature."
+  }
+}

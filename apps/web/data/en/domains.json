@@ -1,0 +1,442 @@
+{
+  "medicina": {
+    "name": "Medicine",
+    "short": "You learn how the human body works and how diseases are treated.",
+    "admission": "Usually a written exam in biology and chemistry or physics, plus the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Family doctor",
+      "Specialist doctor",
+      "Surgeon",
+      "Medical researcher"
+    ]
+  },
+  "medicina-dentara": {
+    "name": "Dental Medicine",
+    "short": "You learn to treat teeth and the mouth, with precision and a steady hand.",
+    "admission": "Usually a written exam in biology and chemistry or physics; some faculties may also ask for a practical test. Check the faculty's website.",
+    "careers": [
+      "Dentist",
+      "Orthodontist",
+      "Oral and maxillofacial surgeon",
+      "Doctor in a private clinic"
+    ]
+  },
+  "farmacie": {
+    "name": "Pharmacy",
+    "short": "You learn how medicines are made and how to use them safely.",
+    "admission": "Usually an exam in chemistry and biology, or the average grade from the Romanian Baccalaureate (bac), depending on the faculty. Check the faculty's website.",
+    "careers": [
+      "Pharmacist",
+      "Researcher in the pharmaceutical industry",
+      "Medicine quality control",
+      "Medical sales representative"
+    ]
+  },
+  "medicina-veterinara": {
+    "name": "Veterinary Medicine",
+    "short": "You learn to care for and treat animals, from cats to cows.",
+    "admission": "Usually an exam in biology or chemistry, or the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Veterinarian",
+      "Farm vet",
+      "Veterinary health inspector",
+      "Animal health researcher"
+    ]
+  },
+  "asistenta-medicala": {
+    "name": "Nursing",
+    "short": "You learn to care for patients and to work alongside doctors.",
+    "admission": "Usually the average grade from the Romanian Baccalaureate (bac), sometimes a biology test. Check the faculty's website.",
+    "careers": [
+      "Nurse",
+      "Midwife",
+      "Hospital assistant",
+      "Nutritionist"
+    ]
+  },
+  "informatica": {
+    "name": "Computer Science",
+    "short": "You learn programming, algorithms and how to solve problems with a computer.",
+    "admission": "Usually an exam in mathematics or computer science, or the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Programmer",
+      "Data specialist",
+      "Artificial intelligence researcher",
+      "Software tester"
+    ]
+  },
+  "calculatoare-it": {
+    "name": "Computers and IT",
+    "short": "You learn how computers, networks and applications are built.",
+    "admission": "Usually an exam in mathematics and physics or computer science, or the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Software engineer",
+      "Network administrator",
+      "Cybersecurity specialist",
+      "Game developer"
+    ]
+  },
+  "inginerie-electrica-electronica": {
+    "name": "Electrical and Electronic Engineering",
+    "short": "You learn how electric current, circuits and electronic devices work.",
+    "admission": "Usually an exam in mathematics and physics, or the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Electronics engineer",
+      "Telecommunications engineer",
+      "Automation engineer",
+      "Equipment designer"
+    ]
+  },
+  "inginerie-mecanica": {
+    "name": "Mechanical Engineering",
+    "short": "You learn how machines, engines and equipment are designed.",
+    "admission": "Usually an exam in mathematics and physics, or the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Mechanical engineer",
+      "Automotive designer",
+      "Production engineer",
+      "Robotics specialist"
+    ]
+  },
+  "inginerie-civila": {
+    "name": "Civil Engineering",
+    "short": "You learn to design and build buildings, bridges and roads.",
+    "admission": "Usually an exam in mathematics, or the average grade from the Romanian Baccalaureate (bac), sometimes technical drawing too. Check the faculty's website.",
+    "careers": [
+      "Construction engineer",
+      "Structural designer",
+      "Site supervisor",
+      "Road and bridge engineer"
+    ]
+  },
+  "arhitectura": {
+    "name": "Architecture",
+    "short": "You learn to draw and design buildings and cities that are beautiful and useful.",
+    "admission": "Usually aptitude tests, especially drawing, which may be combined with the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Architect",
+      "Urban planner",
+      "Interior designer",
+      "Building restorer"
+    ]
+  },
+  "inginerie-chimica-materiale": {
+    "name": "Chemical Engineering and Materials",
+    "short": "You learn how plastic, metal and other materials are made and improved.",
+    "admission": "Usually an exam in chemistry or mathematics, or the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Chemical engineer",
+      "New materials specialist",
+      "Process engineer",
+      "Factory quality control"
+    ]
+  },
+  "energie-petrol-mediu": {
+    "name": "Energy, Petroleum and Environment",
+    "short": "You learn how energy is produced and how to protect nature at the same time.",
+    "admission": "Usually an exam in mathematics or physics, or the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Petroleum and gas engineer",
+      "Power engineer",
+      "Green energy specialist",
+      "Environmental engineer"
+    ]
+  },
+  "matematica": {
+    "name": "Mathematics",
+    "short": "You learn theories and methods for solving hard problems with numbers and logic.",
+    "admission": "Usually an exam in mathematics, or the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Mathematician",
+      "Quantitative analyst",
+      "Mathematics teacher",
+      "Actuary"
+    ]
+  },
+  "fizica": {
+    "name": "Physics",
+    "short": "You learn the laws of nature, from atoms to stars.",
+    "admission": "Usually an exam in physics and mathematics, or the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Physicist",
+      "Researcher",
+      "Nuclear energy specialist",
+      "Physics teacher"
+    ]
+  },
+  "chimie": {
+    "name": "Chemistry",
+    "short": "You learn what things are made of and how they change into one another.",
+    "admission": "Usually an exam in chemistry, or the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Chemist",
+      "Laboratory researcher",
+      "Quality control specialist",
+      "Chemistry teacher"
+    ]
+  },
+  "biologie": {
+    "name": "Biology",
+    "short": "You learn about plants, animals, cells and how life works.",
+    "admission": "Usually an exam in biology, or the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Biologist",
+      "Genetics researcher",
+      "Nature conservation specialist",
+      "Biology teacher"
+    ]
+  },
+  "geografie-mediu": {
+    "name": "Geography and Environment",
+    "short": "You learn about landforms, climate, cities and how we can protect the planet.",
+    "admission": "Usually the average grade from the Romanian Baccalaureate (bac), sometimes a geography test. Check the faculty's website.",
+    "careers": [
+      "Geographer",
+      "Environmental protection specialist",
+      "Urban planner",
+      "GIS and digital mapping specialist"
+    ]
+  },
+  "agronomie-silvicultura": {
+    "name": "Agronomy and Forestry",
+    "short": "You learn to grow plants, raise crops and look after forests.",
+    "admission": "Usually the average grade from the Romanian Baccalaureate (bac), sometimes a biology or chemistry test. Check the faculty's website.",
+    "careers": [
+      "Agronomist",
+      "Forestry engineer",
+      "Modern farmer",
+      "Agricultural consultant"
+    ]
+  },
+  "economie-finante": {
+    "name": "Economics and Finance",
+    "short": "You learn how money, banks, markets and a country's economy work.",
+    "admission": "Usually the average grade from the Romanian Baccalaureate (bac), sometimes a mathematics exam. Check the faculty's website.",
+    "careers": [
+      "Financial analyst",
+      "Accountant",
+      "Banker",
+      "Economic consultant"
+    ]
+  },
+  "business-management": {
+    "name": "Business and Management",
+    "short": "You learn to lead a team and to start or grow a business.",
+    "admission": "Usually the average grade from the Romanian Baccalaureate (bac), sometimes an interview or a test. Check the faculty's website.",
+    "careers": [
+      "Manager",
+      "Entrepreneur",
+      "Business consultant",
+      "Human resources specialist"
+    ]
+  },
+  "marketing": {
+    "name": "Marketing",
+    "short": "You learn to make people discover and want a product or an idea.",
+    "admission": "Usually the average grade from the Romanian Baccalaureate (bac), sometimes an interview. Check the faculty's website.",
+    "careers": [
+      "Marketing specialist",
+      "Brand manager",
+      "Social media specialist",
+      "Market researcher"
+    ]
+  },
+  "drept": {
+    "name": "Law",
+    "short": "You learn the laws and how people's rights are defended.",
+    "admission": "Usually a general knowledge test or a test in Romanian language and history, or the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Lawyer",
+      "Judge",
+      "Prosecutor",
+      "Legal adviser"
+    ]
+  },
+  "stiinte-politice-relatii-internationale": {
+    "name": "Political Science and International Relations",
+    "short": "You learn how states are governed and how countries work together.",
+    "admission": "Usually the average grade from the Romanian Baccalaureate (bac), sometimes a history or foreign language test. Check the faculty's website.",
+    "careers": [
+      "Diplomat",
+      "Political analyst",
+      "Adviser in European institutions",
+      "Official in international organisations"
+    ]
+  },
+  "administratie-publica": {
+    "name": "Public Administration",
+    "short": "You learn how town halls, ministries and public services work.",
+    "admission": "Usually the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Civil servant",
+      "Town hall adviser",
+      "Public project manager",
+      "European funds specialist"
+    ]
+  },
+  "comunicare-jurnalism": {
+    "name": "Communication and Journalism",
+    "short": "You learn to write, to speak and to tell stories in the press and online.",
+    "admission": "Usually the average grade from the Romanian Baccalaureate (bac), sometimes a general culture test or an essay. Check the faculty's website.",
+    "careers": [
+      "Journalist",
+      "PR specialist",
+      "Editor",
+      "Content creator"
+    ]
+  },
+  "psihologie": {
+    "name": "Psychology",
+    "short": "You learn how people think, feel and behave.",
+    "admission": "Usually the average grade from the Romanian Baccalaureate (bac), sometimes a knowledge test or an interview. Check the faculty's website.",
+    "careers": [
+      "Clinical psychologist",
+      "School psychologist",
+      "Human resources specialist",
+      "Personal development counsellor"
+    ]
+  },
+  "sociologie-asistenta-sociala": {
+    "name": "Sociology and Social Work",
+    "short": "You learn how people live in a community and how to help them when they need it.",
+    "admission": "Usually the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Social worker",
+      "Sociologist",
+      "Social projects specialist",
+      "Social science researcher"
+    ]
+  },
+  "stiintele-educatiei": {
+    "name": "Educational Sciences",
+    "short": "You learn how children learn and how to be a good teacher.",
+    "admission": "Usually the average grade from the Romanian Baccalaureate (bac), sometimes a Romanian language test or an interview. Check the faculty's website.",
+    "careers": [
+      "Primary school teacher",
+      "Early years educator",
+      "School counsellor",
+      "Trainer"
+    ]
+  },
+  "litere-limbi-straine": {
+    "name": "Literature and Foreign Languages",
+    "short": "You study languages, literature and translation.",
+    "admission": "Usually the average grade from the Romanian Baccalaureate (bac), sometimes a test in Romanian or in the chosen foreign language. Check the faculty's website.",
+    "careers": [
+      "Translator",
+      "Language teacher",
+      "Editor",
+      "Book editor"
+    ]
+  },
+  "istorie": {
+    "name": "History",
+    "short": "You learn what happened in the past and why today's world looks the way it does.",
+    "admission": "Usually the average grade from the Romanian Baccalaureate (bac), sometimes a history test. Check the faculty's website.",
+    "careers": [
+      "Historian",
+      "Museum curator",
+      "History teacher",
+      "Archivist"
+    ]
+  },
+  "filosofie": {
+    "name": "Philosophy",
+    "short": "You learn to ask big questions and to think clearly about them.",
+    "admission": "Usually the average grade from the Romanian Baccalaureate (bac), sometimes an essay or an interview. Check the faculty's website.",
+    "careers": [
+      "Philosophy teacher",
+      "Researcher",
+      "Editor",
+      "Ethics adviser"
+    ]
+  },
+  "teologie": {
+    "name": "Theology",
+    "short": "You study religion, its history and its role in people's lives.",
+    "admission": "Usually the average grade from the Romanian Baccalaureate (bac), sometimes an interview or a recommendation, depending on the denomination. Check the faculty's website.",
+    "careers": [
+      "Priest",
+      "Religion teacher",
+      "Religious social worker",
+      "Theology researcher"
+    ]
+  },
+  "arte-vizuale-design": {
+    "name": "Visual Arts and Design",
+    "short": "You learn to draw, to paint and to create original images and objects.",
+    "admission": "Usually aptitude tests, for example drawing or a portfolio, which may be combined with the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Graphic designer",
+      "Illustrator",
+      "Painter",
+      "Product designer"
+    ]
+  },
+  "muzica": {
+    "name": "Music",
+    "short": "You learn to play, to compose and to understand music at a high level.",
+    "admission": "Usually aptitude tests, such as performance on an instrument or singing and music theory, plus the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Instrumentalist",
+      "Singer",
+      "Composer",
+      "Music teacher"
+    ]
+  },
+  "teatru-film": {
+    "name": "Theatre and Film",
+    "short": "You learn to act, to direct and to make films or stage shows.",
+    "admission": "Usually aptitude tests and auditions, plus the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Actor",
+      "Director",
+      "Cinematographer",
+      "Screenwriter"
+    ]
+  },
+  "sport-kinetoterapie": {
+    "name": "Sport and Physiotherapy",
+    "short": "You learn about movement, training and how to help people recover.",
+    "admission": "Usually sports or aptitude tests, plus the average grade from the Romanian Baccalaureate (bac); a medical certificate is sometimes required too. Check the faculty's website.",
+    "careers": [
+      "Coach",
+      "Physical education teacher",
+      "Physiotherapist",
+      "Fitness instructor"
+    ]
+  },
+  "militar-politie": {
+    "name": "Military and Police",
+    "short": "You prepare for a career in the army, the police or the defence of the country.",
+    "admission": "Usually physical tests, a medical and psychological check and a written test, plus the average grade from the Romanian Baccalaureate (bac). Check the faculty's website.",
+    "careers": [
+      "Officer",
+      "Police officer",
+      "Firefighter",
+      "Security specialist"
+    ]
+  },
+  "marina-transporturi": {
+    "name": "Maritime and Transport",
+    "short": "You learn to operate ships and to organise the transport of people and goods.",
+    "admission": "Usually an exam in mathematics or the average grade from the Romanian Baccalaureate (bac), plus a medical check. Check the faculty's website.",
+    "careers": [
+      "Naval officer",
+      "Naval engineer",
+      "Logistics specialist",
+      "Pilot or air traffic controller"
+    ]
+  },
+  "turism-servicii": {
+    "name": "Tourism and Services",
+    "short": "You learn to organise trips, hotels and experiences for people.",
+    "admission": "Usually the average grade from the Romanian Baccalaureate (bac), sometimes a foreign language test. Check the faculty's website.",
+    "careers": [
+      "Hotel manager",
+      "Travel agent",
+      "Tour guide",
+      "Event organiser"
+    ]
+  }
+}

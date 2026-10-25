@@ -1,0 +1,181 @@
+{
+  "proiect-de-grup": {
+    "text": "In a group project, nobody has taken their part yet. Which one do you take?",
+    "options": [
+      "I make the plan: who does what, and by when",
+      "I do the calculations, tables and charts",
+      "I write the text and present it to the class",
+      "I do the visual part: design, images, video",
+      "I build the model or the app"
+    ]
+  },
+  "prieten-stresat": {
+    "text": "Someone close to you is very stressed before an exam. What do you do?",
+    "options": [
+      "I listen and try to calm things down",
+      "I explain the lessons they haven't understood",
+      "I suggest a walk or a game so they can let off steam",
+      "I make a study schedule, by days and hours",
+      "I explain what happens in the body under stress and how to calm it down"
+    ]
+  },
+  "peste-zece-ani": {
+    "text": "In ten years, what would you like people to say about your work?",
+    "options": [
+      "It improved the lives of many people who were sick or in need",
+      "It discovered something new about how the world works",
+      "It changed a law, or the way a community is run, for the better",
+      "It created something people remember",
+      "It started a business and made it grow"
+    ]
+  },
+  "zi-de-lucru": {
+    "text": "Which working day would suit you best?",
+    "options": [
+      "A clear schedule, precise rules, everything in its place",
+      "Every day different, always on the move, out in the field",
+      "Quiet and focus, with a hard problem to solve",
+      "Always among people: students, customers, patients",
+      "Freedom: I choose my own projects and my own pace"
+    ]
+  },
+  "atelier-gratuit": {
+    "text": "You have a free day and a free workshop at school. Which one do you pick?",
+    "options": [
+      "Electronics: you build a circuit that really works",
+      "First aid: you learn what to do until the ambulance arrives",
+      "Debating: you defend an opinion in front of a jury",
+      "Photography or film: you tell a story through pictures",
+      "Nature exploration: you recognise plants, animals and tracks"
+    ]
+  },
+  "canalul-scolii": {
+    "text": "The school is launching an online channel run by students. What role would you like?",
+    "options": [
+      "Writer: I write articles and interviews",
+      "Field reporter: I cover the matches, trips and events",
+      "Video editor or graphic designer",
+      "The one who builds the website and fixes the technical problems",
+      "The one who finds sponsors and manages the budget"
+    ]
+  },
+  "job-de-vara": {
+    "text": "You can work one summer in one of these places. Which appeals to you most?",
+    "options": [
+      "A vet's practice or a care centre for the elderly",
+      "A building site, a farm or bike courier work",
+      "A shop: you advise customers on what to buy",
+      "A weather station or a laboratory: you measure and record",
+      "A summer camp: you are an activity leader for children"
+    ]
+  },
+  "internet-picat": {
+    "text": "The internet goes down in your whole building. What do you do?",
+    "options": [
+      "I check the cables and the router and try one thing after another",
+      "I note what changed today and rule out the causes one by one",
+      "I ask the neighbours if they have the same problem and we call the provider together",
+      "I write a clear complaint and ask for what I am entitled to"
+    ]
+  },
+  "specie-pe-cale-de-disparitie": {
+    "text": "You find out that a species in the lake near your town is disappearing. What do you do?",
+    "options": [
+      "I want to understand the causes: water samples, observations",
+      "I gather volunteers and organise an action",
+      "I run a campaign: a poster, a clip, a story that catches on",
+      "I ask for stricter rules through a petition",
+      "I go and clean the shore with my own hands"
+    ]
+  },
+  "ce-te-motiveaza": {
+    "text": "What would keep you going with an activity, even after months?",
+    "options": [
+      "I see myself improving: times, scores, records",
+      "I help someone make progress",
+      "I keep learning new things about how the world works",
+      "I get responsibility and things go well because of me",
+      "I can do things my own, original way"
+    ]
+  },
+  "documentar": {
+    "text": "You have a free hour. Which documentary would you choose?",
+    "options": [
+      "How a bridge, an aeroplane or a satellite is built",
+      "How an empire fell or how a country changed",
+      "How the cell, the brain or the universe works",
+      "How doctors and nurses work in an emergency hospital",
+      "How a small company grew into a well-known one"
+    ]
+  },
+  "sanatate-in-scoala": {
+    "text": "You are asked to do something for the health of the students in your school. Where do you start?",
+    "options": [
+      "I find out what problems students have: conversations and a short survey",
+      "I organise active breaks and a sports tournament",
+      "I give talks about sleep and nutrition, with checked information",
+      "I write a clear letter to the head teacher, with arguments and proposals",
+      "I work out the cost and look for who could fund us"
+    ]
+  },
+  "doua-ore-fara-plictiseala": {
+    "text": "Which of these activities could you do for two hours without getting bored?",
+    "options": [
+      "Sorting data in a table and finding what repeats",
+      "Repairing or assembling something from parts",
+      "Explaining something to someone until they understand",
+      "Sketching or composing something from scratch",
+      "Reading about a problem in society and forming an opinion"
+    ]
+  },
+  "unde-lucrezi": {
+    "text": "Where would you like to spend most of your working time?",
+    "options": [
+      "Outdoors: in a field, in a forest, on a building site or on a sports ground",
+      "In a hospital or a clinic, next to people who need help",
+      "In an office with a team: discussions, plans, meetings",
+      "In a workshop or a laboratory, with equipment",
+      "In a studio or a newsroom, where something is being created"
+    ]
+  },
+  "cearta-in-echipa": {
+    "text": "Two teammates are arguing and the project is stuck. What do you do?",
+    "options": [
+      "I listen to both and look for a solution they can agree on",
+      "I suggest clear rules and divide the tasks differently",
+      "I put the facts on the table: who said what, what happened",
+      "I suggest a break with some movement so everyone can relax",
+      "I tell each of them how the situation looks from the other's side"
+    ]
+  },
+  "regula-nedreapta": {
+    "text": "The student council votes for a rule that is unfair to some of your classmates. What do you do?",
+    "options": [
+      "I read the regulations and the students' rights, then I challenge it",
+      "I run a survey and bring figures that show the effects",
+      "I tell real cases so everyone understands what it means",
+      "I bring together the people affected and we talk it through",
+      "I quickly set up an online petition with a simple website"
+    ]
+  },
+  "mandru-de-tine": {
+    "text": "At the end of the year, which of these would make you happiest?",
+    "options": [
+      "I finished something hard with my own hands: I repaired or built it",
+      "I helped a person or an animal in need",
+      "I improved at a sport through steady training",
+      "I understood something complicated about nature or science",
+      "I convinced people and organised something big"
+    ]
+  },
+  "problema-de-cartier": {
+    "text": "There is a problem in your neighbourhood that bothers everyone (rubbish, a damaged road, a run-down playground). What role do you take?",
+    "options": [
+      "I collect signatures and go to the town hall to ask for a fix",
+      "I work out what it would cost and what can be done with little money",
+      "I roll up my sleeves and we fix together what can be fixed",
+      "I find the causes: what pollutes, what breaks and why",
+      "I write a post or a letter that people will read"
+    ]
+  }
+}

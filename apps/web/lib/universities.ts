@@ -1,6 +1,8 @@
-// Search and filter over the universities with a profile sheet. Works on the index (sheets without their long texts), which is what the browser loads.
+// Search and filter over the universities with a profile sheet (names also searchable in English). Works on the index (sheets without their long texts), which is what the browser loads.
 import indexJson from "../data/universities-index.json";
 import { domains } from "./data";
+import type { Lang } from "./i18n";
+import { cityName, countryName, universityName } from "./i18n-data";
 import { normalize, specializationsFor } from "./labels";
 import type { Budget, Filters, Prestige, UniversitySummary, WorldUniversity } from "./types";
 
@@ -84,7 +86,7 @@ const tokens = (text: string): string[] => normalize(text).replace(/[^a-z0-9]+/g
 
 const domainName = new Map(domains.map((d) => [d.id, d.name]));
 
-function buildIndex(u: UniversitySummary): Index {
+function buildIndex(u: UniversitySummary, lang: Lang): Index {
   const prefix = ["umf", "usamv", "uad", "amgd"].find((p) => u.id.startsWith(`${p}-`));
   const aliasText = [
     u.id,
@@ -92,6 +94,7 @@ function buildIndex(u: UniversitySummary): Index {
     ALIASES[u.id] ?? "",
     u.city,
     u.country,
+    lang === "en" ? `${cityName(u.city, "en")} ${countryName(u.country, "en")} ${universityName(u, "en")}` : "",
     COUNTRY_ALIASES[u.country] ?? "",
     u.prestige === "ivy" ? "ivy league" : "",
   ].join(" ");
@@ -100,17 +103,23 @@ function buildIndex(u: UniversitySummary): Index {
     .join(" ");
   // the university's own faculties and bachelor programmes, when we have them: they rank above generic domain words
   const ownText = (u.faculties ?? []).flatMap((f) => [f.name, ...f.programs]).join(" ");
-  return { u, name: normalize(u.name), alias: tokens(aliasText), own: tokens(ownText), keywords: tokens(keywordText) };
+  return { u, name: normalize(universityName(u, lang)), alias: tokens(aliasText), own: tokens(ownText), keywords: tokens(keywordText) };
 }
 
-let index: Index[] | null = null;
-let indexedFor = 0;
-function getIndex(): Index[] {
-  if (!index || indexedFor !== universities.length) {
-    index = universities.map(buildIndex);
-    indexedFor = universities.length;
+// One search index per page language; on English pages the Romanian name still finds the university (it stays in the alias words).
+const indexes: Partial<Record<Lang, { list: Index[]; size: number }>> = {};
+function getIndex(lang: Lang): Index[] {
+  const cached = indexes[lang];
+  if (!cached || cached.size !== universities.length) {
+    const list = universities.map((u) => {
+      const e = buildIndex(u, lang);
+      if (lang === "en") e.alias = [...e.alias, ...tokens(u.name)];
+      return e;
+    });
+    indexes[lang] = { list, size: universities.length };
+    return list;
   }
-  return index;
+  return cached.list;
 }
 
 const hasPrefix = (list: string[], word: string) => list.some((t) => t.startsWith(word));
@@ -125,11 +134,11 @@ function wordRank(e: Index, word: string): Rank | null {
 }
 
 /** Universities matching a free-text query (name, city, country, domain, specialization, keywords), best first. */
-export function searchUniversities(query: string, limit = 20): UniversitySummary[] {
+export function searchUniversities(query: string, limit = 20, lang: Lang = "ro"): UniversitySummary[] {
   const words = normalize(query).split(" ").filter(Boolean);
   if (words.length === 0) return [];
   const hits: { u: UniversitySummary; rank: number }[] = [];
-  for (const e of getIndex()) {
+  for (const e of getIndex(lang)) {
     let rank = 0;
     let ok = true;
     for (const w of words) {
@@ -222,19 +231,19 @@ export function searchWorld(list: WorldUniversity[], query: string, limit = 20):
 export type Suggestion = { label: string; sub: string; href?: string; query?: string };
 
 /** Up to 2 matching places and up to 6 universities for what the student has typed so far (from 2 letters; diacritics do not matter). */
-export function suggest(query: string): Suggestion[] {
+export function suggest(query: string, lang: Lang = "ro"): Suggestion[] {
   const q = normalize(query).trim();
   if (q.length < 2) return [];
   const starts = (text: string) => normalize(text).split(/[\s-]+/).some((w) => w.startsWith(q)) || normalize(text).startsWith(q);
   const places: Suggestion[] = [];
-  for (const c of countries()) if (places.length < 2 && starts(c)) places.push({ label: c, sub: "Țară · toate universitățile de acolo", query: c });
+  for (const c of countries()) if (places.length < 2 && (starts(c) || (lang === "en" && starts(countryName(c, "en"))))) places.push({ label: countryName(c, lang), sub: lang === "en" ? "Country · all universities there" : "Țară · toate universitățile de acolo", query: countryName(c, lang) });
   const cities = new Map<string, string>();
-  for (const u of universities) if (!cities.has(u.city) && starts(u.city)) cities.set(u.city, u.country);
-  for (const [city, country] of cities) if (places.length < 2) places.push({ label: city, sub: `Oraș, ${country} · toate universitățile de acolo`, query: city });
+  for (const u of universities) if (!cities.has(u.city) && (starts(u.city) || (lang === "en" && starts(cityName(u.city, "en"))))) cities.set(u.city, u.country);
+  for (const [city, country] of cities) if (places.length < 2) places.push({ label: cityName(city, lang), sub: lang === "en" ? `City, ${countryName(country, "en")} · all universities there` : `Oraș, ${country} · toate universitățile de acolo`, query: cityName(city, lang) });
   // Romanian universities first (the site is for Romanian pupils), keeping the search order inside each group.
-  const found = searchUniversities(query, 40);
+  const found = searchUniversities(query, 40, lang);
   const unis = [...found.filter((u) => u.region === "ro"), ...found.filter((u) => u.region !== "ro")]
     .slice(0, 6)
-    .map((u) => ({ label: u.name, sub: `${u.city}, ${u.country}`, href: `/universitati/${u.id}` }));
+    .map((u) => ({ label: universityName(u, lang), sub: `${cityName(u.city, lang)}, ${countryName(u.country, lang)}`, href: `/universitati/${u.id}` }));
   return [...places, ...unis];
 }

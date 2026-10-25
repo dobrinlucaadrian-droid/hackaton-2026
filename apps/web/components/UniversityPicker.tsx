@@ -1,13 +1,17 @@
 "use client";
-// University field of the opinion form: the student types a few letters and picks the university from the suggestions (Romanian ones first), or "Altă universitate" when it is not in our list.
+// University field of the opinion form (in the page language): the student types a few letters and picks the university from the suggestions (Romanian ones first), or "Altă universitate" when it is not in our list.
 import { useId, useState } from "react";
+import { cityName, countryName, universityName } from "@/lib/i18n-data";
 import { searchUniversities, universities } from "@/lib/universities";
+import { useLang, useT } from "./LangProvider";
 
 export const OTHER = "__alta__";
 
 type Props = { value: string; onChange: (id: string) => void; className: string };
 
 export function UniversityPicker({ value, onChange, className }: Props) {
+  const lang = useLang();
+  const t = useT();
   const chosen = universities.find((u) => u.id === value);
   const [text, setText] = useState(chosen?.name ?? "");
   const [open, setOpen] = useState(false);
@@ -17,7 +21,7 @@ export function UniversityPicker({ value, onChange, className }: Props) {
   const found = text.trim().length >= 2 ? searchUniversities(text, 40) : [];
   const hits = [...found.filter((u) => u.region === "ro"), ...found.filter((u) => u.region !== "ro")].slice(0, 8);
   // the last row is always "Altă universitate"
-  const rows = [...hits.map((u) => ({ id: u.id, label: u.name, sub: `${u.city}, ${u.country}` })), { id: OTHER, label: "Altă universitate", sub: "nu e în listă: o scrii tu" }];
+  const rows = [...hits.map((u) => ({ id: u.id, label: universityName(u, lang), sub: `${cityName(u.city, lang)}, ${countryName(u.country, lang)}` })), { id: OTHER, label: t("Altă universitate", "Another university"), sub: t("nu e în listă: o scrii tu", "not in the list: you write it") }];
   const showList = open && text.trim().length >= 2 && value === "";
 
   function pick(id: string) {
@@ -46,9 +50,9 @@ export function UniversityPicker({ value, onChange, className }: Props) {
   if (value === OTHER) {
     return (
       <p className="mt-1 flex flex-wrap items-center gap-2 text-sm text-ink-soft">
-        Universitatea nu e în listă: scrie-o mai jos.
+        {t("Universitatea nu e în listă: scrie-o mai jos.", "The university is not in the list: write it below.")}
         <button type="button" onClick={() => { onChange(""); setText(""); }} className="font-bold text-primary underline underline-offset-2">
-          Caut-o din nou
+          {t("Caut-o din nou", "Search again")}
         </button>
       </p>
     );
@@ -73,12 +77,12 @@ export function UniversityPicker({ value, onChange, className }: Props) {
         onFocus={() => setOpen(true)}
         onBlur={() => setTimeout(() => setOpen(false), 150)}
         onKeyDown={onKey}
-        placeholder="Scrie numele, de exemplu: ASE sau Politehnica"
+        placeholder={t("Scrie numele, de exemplu: ASE sau Politehnica", "Type the name, for example: ASE or Politehnica")}
         autoComplete="off"
         required
         className={className}
       />
-      {chosen && <p className="mt-1 text-xs font-bold text-teal-ink">✓ {chosen.city}, {chosen.country}</p>}
+      {chosen && <p className="mt-1 text-xs font-bold text-teal-ink">✓ {cityName(chosen.city, lang)}, {countryName(chosen.country, lang)}</p>}
       {showList && (
         <ul id={listId} role="listbox" className="absolute z-20 mt-1 max-h-80 w-full overflow-auto rounded-xl bg-card py-1 shadow-lg ring-1 ring-line">
           {rows.map((r, i) => (

@@ -1,15 +1,18 @@
-// One student opinion: photo (or initial), name, faculty and their own words. Used on the students page and on university sheets.
+"use client";
+// One student opinion: photo (or initial), name, faculty and their own words. Used on the students page and on university sheets; the opinion stays in its original words, only the photo label is in the page language.
 import Image from "next/image";
 import type { Testimonial } from "@/lib/types";
+import { useT } from "./LangProvider";
 
 export function StudentCard({ t, as: Tag = "li" }: { t: Testimonial; as?: "li" | "div" }) {
+  const tr = useT();
   return (
     <Tag className="rounded-3xl bg-card p-6 shadow-sm ring-1 ring-line">
       <div className="flex items-center gap-4">
         {t.photo ? (
           <Image
             src={t.photo}
-            alt={`Poză: ${t.name}`}
+            alt={tr(`Poză: ${t.name}`, `Photo: ${t.name}`)}
             width={320}
             height={320}
             loading="eager"

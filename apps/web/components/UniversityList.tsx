@@ -1,10 +1,15 @@
+"use client";
 // Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.
-import Link from "next/link";
+import { cityName, countryName, universityName } from "@/lib/i18n-data";
 import type { UniversitySummary } from "@/lib/types";
+import { useLang, useT } from "./LangProvider";
+import Link from "./LocalLink";
 
 const LIMIT = 3;
 
 export function UniversityList({ title, items, abroad, allHref }: { title: string; items: UniversitySummary[]; abroad: boolean; allHref: string }) {
+  const lang = useLang();
+  const t = useT();
   const shown = items.slice(0, LIMIT);
   return (
     <div className="mt-4">
@@ -17,29 +22,29 @@ export function UniversityList({ title, items, abroad, allHref }: { title: strin
                 href={`/universitati/${u.id}`}
                 className="font-semibold text-primary-dark underline decoration-primary/40 underline-offset-2 hover:text-primary-dark"
               >
-                {u.name}
+                {universityName(u, lang)}
               </Link>
               <a
                 href={u.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={`Site-ul ${u.name} (se deschide într-o pagină nouă)`}
+                aria-label={t(`Site-ul ${u.name} (se deschide într-o pagină nouă)`, `${universityName(u, lang)} website (opens in a new page)`)}
                 className="inline-flex min-h-11 shrink-0 items-center rounded-lg px-3 text-sm font-semibold text-ink-soft hover:text-primary"
               >
-                Site ↗
+                {t("Site ↗", "Website ↗")}
               </a>
             </div>
             <p className="text-sm text-ink-soft">
-              {abroad ? `${u.city}, ${u.country}` : u.city}
-              {abroad && u.language ? ` · limba: ${u.language}` : ""}
-              {abroad && u.tuition ? ` · taxe: ${u.tuition}` : ""}
+              {abroad ? `${cityName(u.city, lang)}, ${countryName(u.country, lang)}` : cityName(u.city, lang)}
+              {abroad && u.language ? ` · ${t("limba", "language")}: ${u.language}` : ""}
+              {abroad && u.tuition ? ` · ${t("taxe", "fees")}: ${u.tuition}` : ""}
             </p>
           </li>
         ))}
       </ul>
       {items.length > LIMIT && (
         <Link href={allHref} className="mt-1 inline-flex min-h-11 items-center rounded-lg px-1 text-sm font-bold text-primary underline decoration-primary/40 underline-offset-2 hover:text-primary-dark">
-          Vezi toate →
+          {t("Vezi toate →", "See all →")}
         </Link>
       )}
     </div>
