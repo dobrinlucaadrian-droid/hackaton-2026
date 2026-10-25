@@ -149,7 +149,7 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/app/[lang]/quiz  (2 files)
 
 - `layout.tsx` (13) — The questionnaire's title in the browser tab, in the page language (the page itself runs in the browser).. Exports: generateMetadata, Layout
-- `page.tsx` (337) — Quiz screen (in the page language): the high-school profile first (on English pages a general "what did you focus on"), then one question per step with progress and encouragement, the activities step and the "where" step (Romanian cities; on English pages only Romania).. Routes: /[lang]/quiz. Exports: QuizPage
+- `page.tsx` (337) — Quiz screen (in the page language): the high-school profile first (on English pages a general "what did you focus on"), then one question per step with progress and encouragement, the activities step and the "where" step (with one or more Romanian cities; on English pages no city step).. Routes: /[lang]/quiz. Exports: QuizPage
 
 ### apps/web/app/[lang]/rezultat  (2 files)
 

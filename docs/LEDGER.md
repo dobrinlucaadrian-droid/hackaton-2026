@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-26 19:00 — chestionarul în engleză: din nou „România / în afara României / oriunde”, fără orașe
+- Cerut: în engleză, aceleași variante ca în română la „unde vrei să studiezi”, dar fără pasul cu orașele
+- Făcut: pe paginile englezești pasul „Where do you want to study?” are iar trei variante (In Romania / Outside Romania / Anywhere); oricare duce direct la rezultat, fără orașe (toate orașele). Româna neschimbată (cu orașe)
+- Fișiere: `apps/web/app/[lang]/quiz/page.tsx`
+- Poartă: TRECUT (gate.mjs); în browser: /en/quiz → „In Romania / Outside Romania / Anywhere”, „In Romania” → direct „Your matching fields” cu universități din toată România (where = ro, fără orașe)
+- Urmează: salvare și publicare când cere echipa
+
 ### 2026-10-26 18:00 — chestionarul în engleză, adaptat pentru străini
 - Cerut: „pentru un român să arate la fel, iar pentru un străin altceva”; ales: în loc de filiera de liceu, „What did you focus on most in high school?”; în loc de „România / străinătate / oriunde”, direct orașele din România
 - Făcut: pe paginile englezești primul pas are 7 variante generale (maths and computer science, sciences, languages and literature, social sciences, a technical or vocational school, arts, sport), fiecare legată intern de profilul românesc potrivit, deci potrivirea se calculează la fel; pasul „unde” sare direct la orașele din România (salvează where = ro); motivul din rezultat: „What you focused on in high school (…) prepares you well”. Paginile românești neschimbate
@@ -1081,6 +1088,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-26 01:38 `05aab39` feat: English version of the site under /en
 - 2026-10-26 00:52 `7dd583d` feat: searchable university field, FindMyUni share image, drop UniPath
 - 2026-10-25 23:43 `8074524` fix: update Next.js and Zod, prerender share images
 - 2026-10-25 23:23 `5df325a` feat: share previews, share button and quiz result story image
@@ -1110,5 +1118,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-21 02:32 `98a6891` feat: account card first on the result page
 - 2026-10-21 00:29 `72d63d0` feat: faster navigation, Frankfurt region, findmyuni.ro domain
 - 2026-10-20 02:24 `df419da` feat: bot check on sign-up, data retention, backups, launch guide
-- 2026-10-20 01:55 `31da3e0` feat: rate limits, 16+ accounts, privacy page, my-data page, ZAP scan
 <!-- commits:end -->

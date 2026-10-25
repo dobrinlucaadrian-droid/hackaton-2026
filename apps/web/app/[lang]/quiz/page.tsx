@@ -1,5 +1,5 @@
 "use client";
-// Quiz screen (in the page language): the high-school profile first (on English pages a general "what did you focus on"), then one question per step with progress and encouragement, the activities step and the "where" step (Romanian cities; on English pages only Romania).
+// Quiz screen (in the page language): the high-school profile first (on English pages a general "what did you focus on"), then one question per step with progress and encouragement, the activities step and the "where" step (with one or more Romanian cities; on English pages no city step).
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { Books, Cap, Diploma, Sparkle } from "@/components/Illustrations";
@@ -51,11 +51,11 @@ export default function QuizPage() {
         : Array.from(new Set(profiles.map((p) => p.filiera))).map((f) => ({ name: f, items: profiles.filter((p) => p.filiera === f) })),
     [profiles, lang],
   );
-  // Students from other countries come to study in Romania: the "where" step goes straight to the Romanian cities.
-  const onlyRomania = lang === "en";
+  // On the English pages the "where" step has the same three choices, but no Romanian city step after it.
+  const askCities = lang !== "en";
   const places: { value: StudyPlace; label: string }[] = [
     { value: "ro", label: t("În România", "In Romania") },
-    { value: "abroad", label: t("În străinătate", "Abroad") },
+    { value: "abroad", label: t("În străinătate", "Outside Romania") },
     { value: "any", label: t("Oriunde", "Anywhere") },
   ];
   const [draft, setDraft] = useState<Draft | null>(null);
@@ -113,7 +113,7 @@ export default function QuizPage() {
       setStep(0); // the profile is needed for the result
       return;
     }
-    if (where === "abroad") {
+    if (where === "abroad" || !askCities) {
       saveDraft({ ...draft, where, cities: undefined });
       router.push(href("/rezultat"));
       return;
@@ -137,7 +137,7 @@ export default function QuizPage() {
       setStep(0); // the profile is needed for the result
       return;
     }
-    saveDraft({ ...draft, ...(onlyRomania ? { where: "ro" as StudyPlace } : {}), cities: any ? undefined : chosenCities });
+    saveDraft({ ...draft, cities: any ? undefined : chosenCities });
     router.push(href("/rezultat"));
   }
 
@@ -186,7 +186,7 @@ export default function QuizPage() {
           {isProfile
             ? t("Ce profil de liceu urmezi?", "What did you focus on most in high school?")
             : isWhere
-              ? askCity || onlyRomania
+              ? askCity
                 ? t("În ce orașe vrei să studiezi?", "In which cities do you want to study?")
                 : t("Unde vrei să studiezi?", "Where do you want to study?")
               : isActivities
@@ -250,7 +250,7 @@ export default function QuizPage() {
               </button>
             </div>
           </>
-        ) : isWhere && (askCity || onlyRomania) ? (
+        ) : isWhere && askCity ? (
           <>
             <p className="mt-2 text-ink-soft">
               {t(
@@ -316,7 +316,7 @@ export default function QuizPage() {
         {step > 0 ? (
           <button
             type="button"
-            onClick={() => (isWhere && askCity && !onlyRomania ? setAskCity(false) : setStep(step - 1))}
+            onClick={() => (isWhere && askCity ? setAskCity(false) : setStep(step - 1))}
             className="min-h-11 rounded-full border-2 border-primary px-5 py-2 font-bold text-primary hover:bg-primary-tint"
           >
             {t("← Înapoi", "← Back")}
