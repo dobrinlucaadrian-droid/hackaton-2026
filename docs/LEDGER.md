@@ -6,7 +6,7 @@ lista de commit-uri de la final se reface singură.
 ## Acum lucrăm la
 
 - **Scop:** UniPath — ghid între liceu și facultate. Hackathonul s-a încheiat (prezentare pe 2026-10-05); acum se construiește versiunea de producție: conturi, bază de date Convex, păreri moderate, securitate
-- **Unde:** versiunea de producție e pe ramura `production` (nepublicată; rulează local cu `npm run dev --prefix apps/web` și folosește baza Convex de dezvoltare, proiectul „unipath”). Versiunea prezentată e pe `main`, publică la https://findmyuni.ro (și https://unipath-taupe-mu.vercel.app), și nu se atinge până nu cere echipa. Planul: `docs/production-plan.md`
+- **Unde:** din 2026-10-26 versiunea de producție (conturi, păreri, catalog) e publică la https://findmyuni.ro; `main` = `production`, baza Convex de producție `impartial-heron-254`. Se lucrează în continuare pe `production` și se publică doar când cere echipa. Planul: `docs/production-plan.md`
 - **Urmează:** ordinea hotărâtă de echipă (vezi `docs/ultimii-pasi.md`): (1) baza de date completă — FĂCUT și verificat pentru 11 țări (100.186 programe; Germania și Austria parțiale; starea pe țări în `docs/catalog-status.md`); rămân: Marea Britanie și alte țări fără date deschise, universitățile lumii din ROR, fișe pentru cele 10 instituții românești noi; (2) calitate tehnică (viteza paginilor, acum generate la fiecare vizită); (3) ultimii pași: chei reale, domeniu, administratori, baza de producție, lansare
 - **De știut:** Vercel CLI și Convex CLI sunt logate doar din aplicația Claude (Vercel: cont `dobrinlucaadrian-7970`; Convex: echipa `dobrinlucaadrian`, proiect `unipath`, bază de dezvoltare `adjoining-duck-455`). `apps/web/.env.local` NU e în Git: dacă lipsește, `npx convex dev --once` în `apps/web` îl reface, iar `NEXT_PUBLIC_TURNSTILE_SITE_KEY` de probă este `1x00000000000000000000AA`. Catalogul se reîncarcă în Convex cu `node scripts/data/import.mjs`. Pe baza de dezvoltare sunt puse `AUTH_DEV_LOG_LINKS=1` (linkul de conectare apare în `npx convex logs`), cheile de probă Turnstile și `ADMIN_EMAILS=admin.test@example.com`. Echipa vrea să lucrez cât mai mult local înainte să-i cer conturi sau chei
 
@@ -20,6 +20,20 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT / PICAT / NEVERIFICAT (și ce anume)
 - Urmează: pasul următor
 -->
+
+### 2026-10-26 13:00 — formularul de păreri: universitatea se caută scriind; „UniPath” scos
+- Cerut: în formularul de păreri elevul doar glisa printr-o listă lungă de universități; ales: scrie câteva litere și alege din sugestii. Apoi: „UniPath” înlocuit peste tot cu FindMyUni
+- Făcut: câmp nou `UniversityPicker` (scrii 2+ litere, până la 8 sugestii, cele din România primele, săgeți/Enter/Escape, ultimul rând „Altă universitate”, sub alegere apare orașul și țara); facultatea rămâne scrisă liber. Pe site-ul public „UniPath” nu mai apărea nicăieri (verificat pe findmyuni.ro); redenumite numele interne de memorare din browser (`findmyuni-…`), fișierul CSV din statistici (`findmyuni-statistici-…`) și titlul + adresa din README. Imaginea de previzualizare a site-ului (văzută pe telefon la „Trimite”) avea vechea siglă „UniPath”: înlocuită cu `app/opengraph-image.tsx` (căciula, „FindMyUni”, „Alege facultatea potrivită”, desenată la construire); `public/logo.png` și `logo.jpg` (sigla veche) șterse, antetul folosește `logo-cap.png`. Rămân cu numele vechi doar proiectele „unipath” din Vercel și Convex și adresa unipath-taupe-mu.vercel.app (trimite spre findmyuni.ro), pe care vizitatorii nu le văd
+- Fișiere: `apps/web/components/UniversityPicker.tsx`, `apps/web/app/studenti/parere/page.tsx`, `apps/web/app/admin/statistici/page.tsx`, `apps/web/app/rezultat/page.tsx`, `apps/web/lib/pendingSave.ts`, `apps/web/lib/lastSearch.ts`, `apps/web/lib/session.ts`, `apps/web/components/WelcomeDialog.tsx`, `apps/web/app/opengraph-image.tsx`, `apps/web/app/layout.tsx`, `apps/web/components/Shell.tsx`, `README.md` (șterse: `app/opengraph-image.png`, `app/opengraph-image.alt.txt`, `public/logo.png`, `public/logo.jpg`)
+- Poartă: TRECUT (gate.mjs); în browser, local: „ase” → ASE primul în sugestii, Enter îl alege și arată „București, România”; imaginea nouă de previzualizare văzută, antetul neschimbat
+- Urmează: salvare cu /git-workflow, apoi publicare pe findmyuni.ro când cere echipa
+
+### 2026-10-26 12:00 — LANSARE: versiunea de producție pe findmyuni.ro
+- Cerut: „lansăm, sunt hotărât”
+- Făcut: (1) `npx convex deploy` în producție (`impartial-heron-254`): funcțiile la zi, indexurile noi pentru codul de administrator; (2) `node scripts/data/import.mjs --prod`: 4.334 instituții și 107.155 programe; (3) `main` adus la `production` (fast-forward, 8074524) și trimis pe GitHub; (4) `vercel deploy --prod` din `apps/web`: Ready. Înainte: legătura Vercel–GitHub oprită de echipă (construirile automate picau, căutau site-ul în dosarul principal); protecțiile GitHub (Secret scanning, Push protection, Dependabot alerts) și 2FA pornite de echipă
+- Fișiere: `docs/LEDGER.md`, `CLAUDE.md`
+- Poartă: TRECUT înainte de publicare (commitul 8074524); pe findmyuni.ro: 13 pagini publice cu 200, /cont → /conectare, www și unipath-taupe-mu.vercel.app → findmyuni.ro (308), CSP + HSTS + X-Frame-Options, poza de distribuire a fișei ASE, programele Aalto citite din baza de producție, formularul de conectare se afișează. NEVERIFICAT: un cont nou cu email real, o părere trimisă și aprobată, paginile de administrare cu codul de pe email (le face echipa, pe telefon)
+- Urmează: echipa face un cont de probă și trimite o părere; prima copie de rezervă a producției (`node scripts/backup.mjs`, parola o alege echipa); catalogul scos din baza de dezvoltare; Google Search Console
 
 ### 2026-10-26 11:00 — control de securitate și reparațiile lui
 - Cerut: „control complet”, ca să nu se poată întâmpla nimic (supraîncărcare sau altceva); apoi „fă-le pe toate”
@@ -1046,6 +1060,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-25 23:43 `8074524` fix: update Next.js and Zod, prerender share images
 - 2026-10-25 23:23 `5df325a` feat: share previews, share button and quiz result story image
 - 2026-10-25 03:29 `5a90f6d` feat: add the country guides to the top menu
 - 2026-10-25 03:12 `cfc7f98` feat: new drawings on the students and questionnaire pages
@@ -1075,5 +1090,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-20 02:24 `df419da` feat: bot check on sign-up, data retention, backups, launch guide
 - 2026-10-20 01:55 `31da3e0` feat: rate limits, 16+ accounts, privacy page, my-data page, ZAP scan
 - 2026-10-20 01:00 `cd56f9b` feat: restore NTUA in the Greek programme catalogue
-- 2026-10-19 18:15 `673cf7b` feat: add programme catalogues for seven more EU countries
 <!-- commits:end -->

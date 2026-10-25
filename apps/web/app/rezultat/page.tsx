@@ -18,7 +18,7 @@ import { clearDraft, loadDraft, toAnswers, type StoredActivity } from "@/lib/ses
 import type { Answers, Match, TraitId } from "@/lib/types";
 
 type Traits = Record<TraitId, number>;
-const COUNTED_KEY = "unipath-counted";
+const COUNTED_KEY = "findmyuni-counted";
 type State =
   | { status: "loading" }
   | { status: "empty" }

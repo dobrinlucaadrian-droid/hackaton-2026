@@ -11,7 +11,7 @@ export type Draft = {
   activities?: StoredActivity[];
 };
 
-const KEY = "unipath-draft";
+const KEY = "findmyuni-draft";
 /** How many Romanian cities a student can choose in the questionnaire. */
 export const MAX_CITIES = 10;
 

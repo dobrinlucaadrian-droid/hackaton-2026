@@ -6,12 +6,11 @@ import Link from "next/link";
 import { useCallback, useState } from "react";
 import { Shell } from "@/components/Shell";
 import { Turnstile } from "@/components/Turnstile";
+import { OTHER, UniversityPicker } from "@/components/UniversityPicker";
 import { api } from "@/convex/_generated/api";
 import { universities } from "@/lib/universities";
 
 const LIMITS = { name: 60, faculty: 120, university: 120, status: 40, textMin: 40, textMax: 3000 };
-const OTHER = "__alta__";
-const sorted = [...universities].sort((a, b) => (a.region === b.region ? a.name.localeCompare(b.name, "ro") : a.region === "ro" ? -1 : 1));
 
 const field = "mt-1 min-h-12 w-full rounded-xl border-2 border-transparent bg-paper px-4 text-ink ring-1 ring-line focus:border-primary focus:outline-none";
 const label = "text-sm font-extrabold uppercase tracking-wide text-primary";
@@ -91,13 +90,7 @@ export default function ReviewFormPage() {
         </div>
         <div>
           <label htmlFor="p-uni" className={label}>Universitatea</label>
-          <select id="p-uni" value={uni} onChange={(e) => setUni(e.target.value)} required className={field}>
-            <option value="">Alege universitatea</option>
-            {sorted.map((u) => (
-              <option key={u.id} value={u.id}>{u.name}{u.region === "abroad" ? ` (${u.country})` : ""}</option>
-            ))}
-            <option value={OTHER}>Altă universitate</option>
-          </select>
+          <UniversityPicker value={uni} onChange={setUni} className={field} />
           {uni === OTHER && (
             <input aria-label="Numele universității" value={otherUni} onChange={(e) => setOtherUni(e.target.value)} maxLength={LIMITS.university} placeholder="Numele universității și țara" className={field} />
           )}

@@ -4,7 +4,7 @@ import { useConvexAuth } from "convex/react";
 import { useEffect, useState } from "react";
 import { SignInForm } from "./SignInForm";
 
-const OPEN_EVENT = "unipath:open-signin";
+const OPEN_EVENT = "findmyuni:open-signin";
 
 /** Opens the account window on the current page, on the sign-in form or straight on "new account". */
 export function openSignIn(startWith: "signIn" | "signUp" = "signIn") {

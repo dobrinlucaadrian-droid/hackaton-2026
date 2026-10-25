@@ -9,7 +9,7 @@ export type PendingResult = {
   topDomains: string[];
 };
 
-const KEY = "unipath-pending-result";
+const KEY = "findmyuni-pending-result";
 
 export function setPendingResult(result: PendingResult): void {
   try {
@@ -22,7 +22,7 @@ export function setPendingResult(result: PendingResult): void {
 /** A university the student hearted before signing in; added to the favourites once the account is ready. */
 export type PendingFavorite = { universityId: string; name: string; place: string };
 
-const FAVORITE_KEY = "unipath-pending-favorite";
+const FAVORITE_KEY = "findmyuni-pending-favorite";
 
 export function setPendingFavorite(favorite: PendingFavorite): void {
   try {

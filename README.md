@@ -1,8 +1,8 @@
-# UniPath
+# FindMyUni
 
 > The middle man between high school and university: a Romanian website that guides high-school students to the study domain that fits them.
 
-**Live demo:** https://unipath-taupe-mu.vercel.app
+**Site:** https://findmyuni.ro
 
 ## Problem
 

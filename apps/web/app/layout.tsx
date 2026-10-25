@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 const description =
   "FindMyUni te ajută să alegi domeniul de studiu potrivit: răspunzi la câteva întrebări și afli unde poți studia, în România sau în străinătate.";
 
-// The icons and the link-preview image (the team logo) come from icon.png, apple-icon.png, favicon.ico and opengraph-image.png in this folder.
+// The icons and the link-preview image (the team logo) come from icon.png, apple-icon.png, favicon.ico and opengraph-image.tsx in this folder.
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "FindMyUni — alege facultatea potrivită",

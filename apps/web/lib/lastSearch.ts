@@ -1,5 +1,5 @@
 // Remembers the student's last university search (text, filters, how many results) in this browser tab, so the "back" button on a sheet returns to it.
-const KEY = "unipath-last-search";
+const KEY = "findmyuni-last-search";
 
 /** Called by the search page with its current address query. */
 export function rememberSearch(query: string): void {

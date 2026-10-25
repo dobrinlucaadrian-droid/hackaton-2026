@@ -104,7 +104,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 - `page.tsx` (247) — Administration page with statistics and maintenance: visits, where they come from, finished questionnaires and how people answered, the state of the database, and a CSV download. Only administrators get any data.. Routes: /admin/statistici. Exports: AdminStatsPage
 
-### apps/web/app  (14 files)
+### apps/web/app  (13 files)
 
 - `apple-icon.png`
 - `error.tsx` (32) — Shown instead of a page that broke while loading: the usual header, the broken-road drawing, a short message that it is not the student's fault and a "try again" button. Nothing technical is shown.. Exports: PageError
@@ -115,8 +115,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `layout.tsx` (53) — Root layout: fonts, page metadata, the database connection and the anonymous visit counter shared by every page.. Exports: metadata, RootLayout
 - `loading.tsx` (14) — Shown the instant a link is pressed, while the next page comes from the server: the usual header and a small spinner, so a tap never looks ignored.. Exports: Loading
 - `not-found.tsx` (11) — Friendly 404 page shown for unknown routes and unknown university ids.. Exports: NotFound
-- `opengraph-image.alt.txt` (1) — _no description: add a first-line comment_
-- `opengraph-image.png`
+- `opengraph-image.tsx` (46) — The picture shown when the site itself is shared (WhatsApp, Instagram, Facebook …): the cap from the logo, "FindMyUni" and what the site does. Drawn once, when the site is built.. Exports: alt, size, contentType, Image
 - `page.tsx` (32) — Home page: the welcome with the drawing and the account choice, the four big buttons drawn as clouds.. Routes: /. Exports: Home
 - `robots.ts` (12) — Rules for search engines (/robots.txt): on the live site, everything public may be indexed except personal pages; test copies of the site are never indexed.. Exports: robots
 - `sitemap.ts` (21) — The list of every public page for search engines (/sitemap.xml): the main pages, every university and faculty sheet, every country guide and study category.. Exports: sitemap
@@ -175,7 +174,7 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/app/studenti/parere  (2 files)
 
 - `layout.tsx` (10) — The opinion form's title in the browser tab (the page itself runs in the browser).. Exports: metadata, Layout
-- `page.tsx` (140) — Public form where a student writes an opinion about their faculty. No account needed; the opinion appears only after the team approves it.. Routes: /studenti/parere. Exports: ReviewFormPage
+- `page.tsx` (133) — Public form where a student writes an opinion about their faculty. No account needed; the opinion appears only after the team approves it.. Routes: /studenti/parere. Exports: ReviewFormPage
 
 ### apps/web/app/surse  (1 files)
 
@@ -199,7 +198,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 - `page.tsx` (35) — University finder page: search box, filters and the results, 10 at a time (the client part reads the URL query).. Routes: /universitati. Exports: metadata, UniversitiesPage
 
-### apps/web/components  (44 files)
+### apps/web/components  (45 files)
 
 - `ActivitiesStep.tsx` (227) — Quiz step "Ce ai făcut până acum?": add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
 - `ActivitiesSummary.tsx` (33) — Read-only list of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
@@ -239,9 +238,9 @@ _Open only the files listed here; a file's description is its first comment line
 - `UniversityList.tsx` (48) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList
 - `UniversityOpinions.tsx` (32) — "Ce spun studenții" on a university sheet: the opinions about this university, including approved ones from the database. Renders nothing when there are none.. Exports: UniversityOpinions
 - `UniversityPhoto.tsx` (25) — A university's photo at the top of its sheet, with the author and licence underneath (the free licences of Wikimedia Commons require them).. Exports: UniversityPhoto
+- `UniversityPicker.tsx` (103) — University field of the opinion form: the student types a few letters and picks the university from the suggestions (Romanian ones first), or "Altă universitate" when it is not in our list.. Exports: OTHER, UniversityPicker
 - `UniversitySearch.tsx` (665) — Search and filters for universities; all state lives in the URL query so links and the Back button work.. Exports: UniversitySearch
-- `VisitTracker.tsx` (38) — Counts page views anonymously: sends only the page path and, on the first page of a visit, the country and the site the visitor came from. No cookie, no stored id.. Exports: VisitTracker
-- … +4 more
+- … +5 more
 
 ### apps/web/convex/_generated  (5 files)
 
@@ -387,11 +386,9 @@ _Open only the files listed here; a file's description is its first comment line
 - `username.test.ts` (26) — Tests the username, password and email rules shared by the account forms and the server.
 - `username.ts` (24) — The rules for a username and a password, used by the account forms and by the server, so both check exactly the same thing.. Exports: USERNAME_MIN, USERNAME_MAX, PASSWORD_MIN, PASSWORD_MAX, cleanUsername, validPassword, cleanEmail
 
-### apps/web/public  (4 files)
+### apps/web/public  (2 files)
 
 - `logo-cap.png`
-- `logo.jpg`
-- `logo.png`
 - `world-universities.json`
 
 ### apps/web/public/photos  (520 files)

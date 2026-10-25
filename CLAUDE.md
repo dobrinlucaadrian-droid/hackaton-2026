@@ -77,9 +77,9 @@ Sign-in (decided 2026-10-19): Convex Auth with a unique username and a
 password; the email is asked only at sign-up and confirmed with a 6-digit code
 (sent with Resend), forgotten passwords are reset with a code; no Google. Reviews come through a public form and are shown only after an
 administrator approves them. The plan, the security checklist and the open
-points are in `docs/production-plan.md`. `main` and the public address stay
-as presented until the team says otherwise; nothing from `production` is
-deployed to the public address without the team asking.
+points are in `docs/production-plan.md`. Launched on 2026-10-26: `main` and https://findmyuni.ro
+run the production version (Convex prod `impartial-heron-254`). Work goes on
+in `production`; nothing is deployed publicly without the team asking.
 
 **Constraint: the app must run on Vercel**, because Claude deploys it with the
 Vercel CLI (`/deploy-demo`) and the team cannot deploy any other way. Choose:

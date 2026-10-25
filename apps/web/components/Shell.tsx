@@ -10,7 +10,7 @@ export function Shell({ children, wide = false }: { children: ReactNode; wide?: 
         <Link href="/" className="flex items-center gap-2 rounded-lg font-bold tracking-tight text-ink">
           <span
             aria-hidden
-            className="h-11 w-11 shrink-0 bg-[url('/logo.png')] bg-[length:123px_123px] bg-[position:-40px_-24px] bg-no-repeat"
+            className="h-11 w-11 shrink-0 bg-[url('/logo-cap.png')] bg-contain bg-center bg-no-repeat"
           />
           <span className="font-serif text-2xl">
             FindMy<span className="text-primary">Uni</span>
