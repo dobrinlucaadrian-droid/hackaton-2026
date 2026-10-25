@@ -3,13 +3,19 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { feeOf, feeText } from "@/lib/fees";
-import { universityById } from "@/lib/sheets";
+import { universities, universityById } from "@/lib/sheets";
 
 export const alt = "Fișa universității pe FindMyUni";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 type Props = { params: Promise<{ id: string }> };
+
+// Every picture is drawn once, when the site is built; an unknown address gets a 404 instead of a new drawing, so nobody can make the server draw on demand.
+export const dynamicParams = false;
+export function generateStaticParams() {
+  return universities.map((u) => ({ id: u.id }));
+}
 
 /**
  * Text laid out letter by letter inside each word, with even gaps between words. The image renderer measures kerned words

@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-26 11:00 — control de securitate și reparațiile lui
+- Cerut: „control complet”, ca să nu se poată întâmpla nimic (supraîncărcare sau altceva); apoi „fă-le pe toate”
+- Făcut: verificare doar-citire: pachete, baza de date fără cont (convex-probe: nimic privat), anteturile de siguranță, limitele formularelor, chei în Git (nimic), codul nou. Reparat: (1) Next.js 16.3.8 → 16.4.3 (breșă critică cunoscută) și eslint-config-next la fel; (2) `npm audit fix` pentru Zod (slăbiciune de memorie) — acum 0 probleme; (3) pozele de distribuire ale fișelor se desenează o singură dată la construire (`generateStaticParams`, `dynamicParams = false`), deci nu mai pot fi folosite ca să încarce serverul; o adresă necunoscută arată „Nu am găsit pagina”. Rămân la echipă: protecțiile GitHub (Secret scanning, Push protection, Dependabot alerts), 2FA pe toate conturile, limită de cheltuieli în Vercel
+- Fișiere: `apps/web/package.json`, `apps/web/package-lock.json`, `apps/web/app/universitati/[id]/opengraph-image.tsx`
+- Poartă: TRECUT (secrete, fișiere, registru, build, teste, aplicația pornește); verificat local: poza ASE vine gata făcută (cache HIT, 12 ms), adresă necunoscută → „Nu am găsit pagina”; `npm audit` → 0 probleme
+- Urmează: echipa pornește protecțiile GitHub și 2FA; reparația Next.js ajunge pe findmyuni.ro doar la lansare sau dacă echipa cere o reparație separată pe `main`
+
 ### 2026-10-26 10:00 — ca elevii să recomande site-ul: previzualizare, „Trimite”, rezultatul ca imagine de story
 - Cerut: partea 2 din planul „să ne găsească și să ne recomande”; alese: imagine cu nume, loc și taxă; meniul de trimis al telefonului + copierea linkului; story cu cele 3 domenii și procente
 - Făcut: (1) fiecare fișă de universitate are imaginea ei de previzualizare (`opengraph-image.tsx`, 1200×630: sigla, numele, orașul și țara, taxa pe an în moneda universității) și titlul/linkul ei în metadatele pentru WhatsApp, Facebook etc. (înainte toate arătau „FindMyUni” și pagina de start); textul e așezat literă cu literă, fiindcă desenatorul de imagini lăsa spații greșite după unele cuvinte; (2) butonul „Trimite” lângă „Adaugă la favorite”: pe telefon deschide meniul de trimis, altfel copiază linkul („Link copiat ✓”); (3) pe pagina de rezultat, „Arată-le și prietenilor” face în browser o imagine 1080×1920 cu cele 3 domenii, procentele și findmyuni.ro, fără nume sau date, apoi o trimite prin meniul telefonului sau o descarcă
@@ -1039,6 +1046,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-25 23:23 `5df325a` feat: share previews, share button and quiz result story image
 - 2026-10-25 03:29 `5a90f6d` feat: add the country guides to the top menu
 - 2026-10-25 03:12 `cfc7f98` feat: new drawings on the students and questionnaire pages
 - 2026-10-25 03:00 `a519dc1` feat: English-taught filter, multi-choice filters, empty-result help
@@ -1068,5 +1076,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-20 01:55 `31da3e0` feat: rate limits, 16+ accounts, privacy page, my-data page, ZAP scan
 - 2026-10-20 01:00 `cd56f9b` feat: restore NTUA in the Greek programme catalogue
 - 2026-10-19 18:15 `673cf7b` feat: add programme catalogues for seven more EU countries
-- 2026-10-19 04:19 `caece3c` feat: username and password accounts with email code verification
 <!-- commits:end -->

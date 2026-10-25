@@ -192,7 +192,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/universitati/[id]  (2 files)
 
-- `opengraph-image.tsx` (79) — The picture shown when a university's sheet is shared (WhatsApp, Instagram, Facebook …): FindMyUni, the university's name, place and yearly tuition when we have it.. Exports: alt, size, contentType, Image
+- `opengraph-image.tsx` (85) — The picture shown when a university's sheet is shared (WhatsApp, Instagram, Facebook …): FindMyUni, the university's name, place and yearly tuition when we have it.. Exports: alt, size, contentType, dynamicParams, generateStaticParams, Image
 - `page.tsx` (366) — Full profile sheet of one university, statically generated for every university.. Routes: /universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/universitati  (1 files)
