@@ -21,12 +21,20 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-26 21:00 — butoanele de sus centrate pe telefon
+- Cerut: pe telefon, butoanele din meniul de sus nu erau centrate
+- Făcut: pe ecrane înguste rândurile de butoane (Acasă … EN) sunt centrate; pe calculator rămân ca înainte, aliniate la dreapta logo-ului
+- Fișiere: `apps/web/components/NavLinks.tsx`
+- Poartă: TRECUT (gate.mjs); pe telefon (375 px): rândul 1 la 26 px de fiecare margine, rândul 2 la 12 px, deci centrate
+- Urmează: salvare și publicare când cere echipa
+
 ### 2026-10-26 20:00 — Google Search Console
 - Cerut: site-ul să fie găsit mai repede pe Google
 - Făcut: proprietatea https://findmyuni.ro/ adăugată în Search Console (cont dobrinlucaadrian@gmail.com; contul echipei findmyuni.ro@gmail.com se adaugă ca proprietar după verificare); verificare prin fișierul Google `apps/web/public/google1be60cb25521a893.html` (trebuie să rămână pe site)
 - Fișiere: `apps/web/public/google1be60cb25521a893.html`
 - Poartă: TRECUT (gate.mjs); fișierul răspunde local cu textul Google
-- Urmează: publicare, „Verify”, harta site-ului trimisă, indexare cerută pentru / și /en, contul echipei adăugat
+- Apoi: fișierul publicat pe findmyuni.ro, proprietatea verificată („Ownership verified”), harta site-ului trimisă („Sitemap submitted successfully”), indexare cerută (coada prioritară) pentru /, /en și /universitati (Google nu cunoștea încă site-ul: „URL is not on Google”), findmyuni.ro@gmail.com adăugat ca proprietar
+- Urmează: în câteva zile, raportul „Pages” din Search Console arată câte pagini a indexat Google
 
 ### 2026-10-26 19:00 — chestionarul în engleză: din nou „România / în afara României / oriunde”, fără orașe
 - Cerut: în engleză, aceleași variante ca în română la „unde vrei să studiezi”, dar fără pasul cu orașele
@@ -1095,6 +1103,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-26 01:55 `0fc9fd1` chore: add Google Search Console verification file
 - 2026-10-26 01:45 `2362444` feat: English quiz keeps the three study places, without cities
 - 2026-10-26 01:38 `05aab39` feat: English version of the site under /en
 - 2026-10-26 00:52 `7dd583d` feat: searchable university field, FindMyUni share image, drop UniPath
@@ -1124,5 +1133,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-21 03:24 `d99a168` feat: greet signed-in visitors on the home page, go home after sign-out
 - 2026-10-21 03:10 `3739afd` feat: favourite universities in the account, findmyuni.ro in link previews
 - 2026-10-21 02:32 `98a6891` feat: account card first on the result page
-- 2026-10-21 00:29 `72d63d0` feat: faster navigation, Frankfurt region, findmyuni.ro domain
 <!-- commits:end -->

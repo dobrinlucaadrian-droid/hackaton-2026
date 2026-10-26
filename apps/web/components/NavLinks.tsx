@@ -1,5 +1,5 @@
 "use client";
-// Header navigation links with the current page highlighted, the RO / EN language switch; signed-in visitors also get "Contul meu" (signing in starts from the home page).
+// Header navigation links with the current page highlighted (centred on phones), the RO / EN language switch; signed-in visitors also get "Contul meu" (signing in starts from the home page).
 import { useConvexAuth } from "convex/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -27,7 +27,7 @@ export function NavLinks() {
   // On a phone the links wrap onto a second row instead of hiding off-screen to the right.
   return (
     <nav aria-label={t("Navigare principală", "Main navigation")} className="-mx-1 w-full sm:w-auto">
-      <ul className="flex flex-wrap items-center gap-1 px-1">
+      <ul className="flex flex-wrap items-center justify-center gap-1 px-1 sm:justify-start">
         {links.map(([to, label]) => {
           const on = to === "/" ? path === "/" : path === to || path.startsWith(`${to}/`);
           return (
