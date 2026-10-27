@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-27 16:00 — control complet al site-ului (date, linkuri, pagini)
+- Cerut: verificarea întregului site, ca să nu mai existe informații greșite sau universități „lipite” ca Politehnica
+- Făcut: (1) verificări automate pe toate datele: 29 de universități românești au programe și în alte orașe, iar la 9 dintre ele unele domenii se predau doar acolo (cele mari: Tehnica din Cluj → Baia Mare, 12 domenii; Sapientia → Miercurea Ciuc/Târgu Mureș/Sfântu Gheorghe, 14 domenii); împărțirea pe orașe de la Politehnica e acum generală (`lib/campuses.ts`): pe fișă, „Ce poți studia aici” are un grup pentru orașul fișei și câte unul pentru fiecare oraș care predă un domeniu în plus. Lămurite fără schimbare: 12 domenii de pe fișe fără program oficial cu același domeniu (interpretări rezonabile, de ex. „Inginerie economică” → Business), 26 de niveluri de cost diferite de taxă (decizii luate cu echipa în `docs/taxe.md`: taxe după venit, burse automate, costuri obligatorii), 49 de orașe scrise altfel decât în catalog (Viena/Wien, campusuri de lângă oraș), ani în texte (anul înființării, „din 2021”). (2) 8.708 linkuri oficiale verificate: 427 refuză programele automate (403, merg în browser), ~100 lente sau cu certificate vechi, 46 chiar stricate, dintre care doar 3 la vedere pe site; înlocuite cu adresele oficiale noi (taxele Metropolia, ghidul CAO din ghidul Irlandei, admiterea la Științe Economice și Drept, Politehnica Pitești); celelalte sunt doar în lista internă de surse. (3) toate cele 2.860 de pagini (harta site-ului + linkurile interne) deschise pe o copie locală: 32 de linkuri stricate în engleză (fișele din străinătate trimiteau la ghidurile pe țări, care există doar în română) → linkul spre ghid apare acum doar în română. De știut: o pagină inexistentă răspunde cu 200 (nu 404), dar are „noindex”, deci Google n-o indexează; 29 de taxe au anul 2023/24–2025/26 (cele mai noi publicate atunci; anul e afișat pe fișă)
+- Fișiere: `apps/web/lib/campuses.ts`, `apps/web/app/[lang]/universitati/[id]/page.tsx`, `apps/web/data/fees.json`, `apps/web/data/guides.json`, `apps/web/data/faculties-ro.json`
+- Poartă: TRECUT (gate.mjs); local: grupele pe orașe la UPB, UTCN, Sapientia, UBB, UPT, UB; ASE rămâne o listă
+- Urmează: salvare și publicare când cere echipa; de hotărât: o rundă de reverificare a conținutului fișelor pe paginile oficiale și reîmprospătarea celor 29 de taxe mai vechi
+
 ### 2026-10-27 13:00 — chestionarul echilibrat (Teologie prea sus) și Politehnica împărțită București / Pitești
 - Cerut: Teologie apărea în primele 3 la 20% din chestionare (plângeri); pe fișa Politehnicii București apăreau toate domeniile
 - Făcut: (chestionar) cauza: domeniile descrise prin multe înclinații (Teologie: oameni + societate + limbaj + îngrijire; Comunicare, Turism, Sport) semănau puțin cu oricine și umpleau primele 3, iar cele precise (Medicină, Matematică) apăreau rar. Acum fiecare domeniu e comparat cu cum iese la un elev oarecare (4.000 de elevi închipuiți, mereu aceiași): contează cât de mult peste obișnuit se potrivește (scor z); procentul afișat = 50 + 15 × scor, cel mult 97. Simulare pe 20.000 de chestionare la întâmplare: Teologie 19,6% → 4,8%, Medicină 2,3% → 8,4%, Matematică 1,9% → 8,6%; cel mai des domeniu 20,4% → 10,8% (corect ar fi 7,5% fiecare); elevul „ideal” al fiecăruia dintre cele 40 de domenii își primește domeniul în primele 3 (40/40, ca înainte). Două teste noi păzesc echilibrul. (Politehnica) lista oficială a universității include și facultățile din Pitești (plus extensiile din Alexandria, Câmpulung, Râmnicu Vâlcea, Slatina): pe fișă, „Ce poți studia aici” are acum două grupe, Politehnica București și Politehnica Pitești, după orașul fiecărui program din lista oficială (`lib/campuses.ts`)
@@ -1117,6 +1124,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-27 03:07 `379a35f` fix: balance the quiz domains and split Politehnica by campus
 - 2026-10-27 02:19 `0f89013` feat: sheets for every university in the student opinions
 - 2026-10-26 13:34 `7cdf543` fix: centre the header buttons on phones
 - 2026-10-26 01:55 `0fc9fd1` chore: add Google Search Console verification file
@@ -1146,5 +1154,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-21 17:39 `0a5d0cf` feat: clearer cost filter with euro bands, 10 more results, checked fees
 - 2026-10-21 16:19 `091c093` feat: friendly error pages with the broken-road drawing
 - 2026-10-21 16:09 `c6c72c5` feat: sitemap, robots rules, one official address and page descriptions
-- 2026-10-21 03:24 `d99a168` feat: greet signed-in visitors on the home page, go home after sign-out
 <!-- commits:end -->

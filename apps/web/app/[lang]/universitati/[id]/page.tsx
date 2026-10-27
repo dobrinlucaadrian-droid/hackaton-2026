@@ -107,7 +107,8 @@ export default async function UniversityPage({ params }: Props) {
   const untranslated = lang === "en" && !hasEnglishSheet(id);
   const uniDomains = u.domainIds.map((d) => domains.find((x) => x.id === d)).filter((d): d is NonNullable<typeof d> => !!d).map((d) => localDomain(d, lang));
   const planLink = u.region === "ro" ? curriculumLinkFor(u.id) : undefined;
-  const guide = guideForCountry(base.country); // the "how to apply" guide of this country, when there is one
+  // the "how to apply" guide of this country, when there is one; those guides are written for Romanian students and exist only in Romanian
+  const guide = lang === "ro" ? guideForCountry(base.country) : undefined;
   const catalog = catalogCountryOfSheet(u.id); // the country dataset that lists this university's programmes, if any
   const certs = u.certificates.map((c) => L.CERTIFICATE[c]).filter(Boolean);
   const fee = feeOf(u.id); // exact yearly tuition, only when an official page confirmed it
@@ -290,8 +291,8 @@ export default async function UniversityPage({ params }: Props) {
                     short: d.short,
                     specs: specializationsFor(d.id).map((x) => localSpecialization(x, lang)).map((x) => ({ id: x.id, name: x.name, short: x.short })),
                   }));
-                // a university with separate campuses (e.g. Politehnica București and Pitești) shows one group per campus
-                const groups = u.region === "ro" ? campusGroups(u.id, uniDomains.map((d) => d.id)) : undefined;
+                // a university that teaches some domains only in other cities (e.g. Politehnica: Pitești) shows one group per city
+                const groups = u.region === "ro" ? campusGroups(u.id, base.city, uniDomains.map((d) => d.id)) : undefined;
                 if (!groups) return <UniversityDomains showPlan={u.region === "ro"} items={toItems(uniDomains)} />;
                 return groups.map((g) => (
                   <div key={g.ro} className="mt-4 first:mt-0" data-campus>

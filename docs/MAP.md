@@ -189,7 +189,7 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/app/[lang]/universitati/[id]  (2 files)
 
 - `opengraph-image.tsx` (95) — The picture shown when a university's sheet is shared (WhatsApp, Instagram, Facebook …): FindMyUni, the university's name, place and yearly tuition when we have it.. Exports: alt, size, contentType, dynamicParams, generateStaticParams, Image
-- `page.tsx` (414) — Full profile sheet of one university in the page language, statically generated for every university.. Routes: /[lang]/universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
+- `page.tsx` (415) — Full profile sheet of one university in the page language, statically generated for every university.. Routes: /[lang]/universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/[lang]/universitati  (1 files)
 
@@ -367,7 +367,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 - `activities.test.ts` (64) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
 - `activities.ts` (89) — Activities a student can add (competitions, volunteering, extracurriculars): labels (Romanian and English), areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, labelOf, describeActivity
-- `campuses.ts` (46) — Universities whose official programme list spans separate campuses: on their sheet, "Ce poți studia aici" is split by campus,. Exports: campusGroups
+- `campuses.ts` (54) — Universities whose official programme list spans several cities: on their sheet, "Ce poți studia aici" is split by city, using. Exports: campusGroups
 - `catalog.test.ts` (124) — Tests the programme catalogue files: every country follows the shared contract, the summary matches the files, and Romania matches the official list.
 - `catalog.ts` (20) — The per-country summary of the programme catalogue (counts, cities, sources), small enough to ship to the browser; the programmes themselves stay in the database.. Exports: catalogCountries, catalogTotals, catalogCountryOfSheet, catalogSheetIds
 - `cities.ts` (16) — Romanian cities that have at least one university sheet, the ones with most universities first. A small generated list (scripts/data/sheets-index.mjs), so the questionnaire does not load the university data.. Exports: romanianCities, cityList
