@@ -309,7 +309,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `gr-programs.json` (2) — JSON array, 335 items
 - `ie-institutions.json` (498) — JSON array, 45 items
 - `ie-programs.json`
-- `index.json` (2590) — JSON array, 18 items
+- `index.json` (2592) — JSON array, 18 items
 - `it-institutions.json` (1015) — JSON array, 92 items
 - `it-programs.json`
 - `lt-institutions.json` (300) — JSON array, 27 items
@@ -333,10 +333,10 @@ _Open only the files listed here; a file's description is its first comment line
 - `curricula.json` (2190) — JSON array, 40 items
 - `curriculum-links.json` (288) — JSON array, 57 items
 - `domains.json` (43) — JSON array, 40 items
-- `english.json` (901) — JSON; keys: aalborg, aalto, aams-aarhus, aarhus, aarhus-architecture, aau-prague, aberdeen, abertay
+- `english.json` (905) — JSON; keys: aalborg, aalto, aams-aarhus, aarhus, aarhus-architecture, aau-prague, aberdeen, abertay
 - `eur-rates.json` (19) — JSON; keys: EUR, RON, MDL, GBP, USD, CHF, DKK, SEK
 - `faculties-ro.json`
-- `fees.json` (6608) — JSON array, 772 items
+- `fees.json` (6642) — JSON array, 776 items
 - `guides.json` (3254) — JSON array, 32 items
 - `photo-rejects.json` (181) — JSON array, 178 items
 - `photos.json` (4683) — JSON array, 520 items
@@ -401,7 +401,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `session.ts` (117) — Keeps the student's answers (and optional activities with photos) in sessionStorage between pages (safe on the server).. Exports: MAX_CITIES, loadDraft, saveDraft, clearDraft, toAnswers, shrinkImage
 - `sheets.ts` (11) — The full university sheets, with all their long texts. Large: import it only from server code (the university page) and from tests, never from a component that runs in the browser — those use lib/universities.ts.. Exports: universities, universityById
 - `suggest.test.ts` (40) — Tests the search suggestions: they start at 2 letters, ignore diacritics, put places first and lead universities to their sheets.
-- `testimonials.ts` (29) — Links student opinions to the universities that have a profile sheet, so the search and the sheets can show them.. Exports: universityIdOf, testimonialsFor
+- `testimonials.ts` (43) — Links student opinions to the universities that have a profile sheet, so the search and the sheets can show them.. Exports: universityIdOf, testimonialsFor
 - `traits.ts` (37) — The ten inclinations the questionnaire measures and their names in Romanian and English. Kept apart from the matching so pages can show them without loading the university data.. Exports: TRAITS, TRAIT_LABEL, TRAIT_LABEL_EN, traitLabel
 - `types.ts` (277) — Shared data contract for FindMyUni: profiles, questions, domains, universities and match results.
 - `universities.data.test.ts` (162) — Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.

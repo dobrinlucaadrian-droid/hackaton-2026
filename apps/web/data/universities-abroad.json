@@ -43724,5 +43724,213 @@
    "Admiterea cere portofoliu sau audiție",
    "Costul vieții în Singapore este ridicat"
   ]
+ },
+ {
+  "id": "es-universidad-ramon-llull",
+  "name": "Universitat Ramon Llull",
+  "city": "Barcelona",
+  "country": "Spania",
+  "region": "abroad",
+  "website": "https://www.url.edu",
+  "domainIds": [
+   "medicina",
+   "farmacie",
+   "asistenta-medicala",
+   "informatica",
+   "calculatoare-it",
+   "inginerie-electrica-electronica",
+   "inginerie-mecanica",
+   "arhitectura",
+   "inginerie-chimica-materiale",
+   "matematica",
+   "chimie",
+   "biologie",
+   "economie-finante",
+   "business-management",
+   "marketing",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "comunicare-jurnalism",
+   "psihologie",
+   "sociologie-asistenta-sociala",
+   "stiintele-educatiei",
+   "filosofie",
+   "arte-vizuale-design",
+   "sport-kinetoterapie"
+  ],
+  "language": "catalană, spaniolă și engleză; unele programe de licență sunt predate complet în engleză",
+  "tuition": "universitate privată, cu taxă pentru toți studenții; taxa diferă de la o școală la alta",
+  "about": "Universitate privată din Barcelona, formată din mai multe școli, fiecare cu propriile programe: printre ele IQS (chimie, inginerie, business), Blanquerna (sănătate, psihologie, comunicare), La Salle (inginerie digitală și arhitectură) și Esade (business și drept).",
+  "prestige": "international",
+  "budget": "mare",
+  "budgetNote": "Taxa anuală e ridicată la toate programele și diferă de la o școală și de la un program la altul (medicina e printre cele mai scumpe); în plus, viața în Barcelona e scumpă.",
+  "admissionTypes": [
+   "dosar",
+   "examen"
+  ],
+  "admission": "Fiecare școală are propria admitere: aplici online, trimiți notele din ultimii ani de liceu, iar la multe programe dai un test al școlii (de exemplu, un test de aptitudini și de engleză la IQS sau un test scris la medicină). Diploma de bacalaureat trebuie să-ți dea acces la facultate în România, iar la programele în engleză ai nevoie de un nivel bun de engleză, dovedit cu un certificat sau cu un test al școlii.",
+  "scholarships": true,
+  "scholarshipsNote": "Școlile au burse și reduceri proprii (de exemplu, pentru rezultate foarte bune la învățătură), iar universitatea are și burse Santander-URL; condițiile diferă de la o școală la alta.",
+  "dorms": true,
+  "dormsNote": "Universitatea are locuri în trei cămine administrate de RESA (unul chiar în campusul La Salle și unul lângă campusul Esade din Sant Cugat) și te ajută să cauți și alte locuințe.",
+  "certificates": [
+   "bac",
+   "engleza"
+  ],
+  "pros": [
+   "Multe programe în engleză, la business, inginerie, comunicare și relații internaționale",
+   "Ofertă foarte largă, de la medicină la inginerie și arhitectură",
+   "Grupe mici și legătură strânsă cu profesorii"
+  ],
+  "cons": [
+   "Taxe mari la toate programele",
+   "Multe programe sunt în catalană și spaniolă",
+   "Barcelona e un oraș scump, mai ales la chirie"
+  ]
+ },
+ {
+  "id": "es-universidad-europea-de-madrid",
+  "name": "Universidad Europea de Madrid",
+  "city": "Madrid (campusul principal la Villaviciosa de Odón)",
+  "country": "Spania",
+  "region": "abroad",
+  "website": "https://universidadeuropea.com/en/about-ue/madrid/",
+  "domainIds": [
+   "medicina",
+   "medicina-dentara",
+   "medicina-veterinara",
+   "asistenta-medicala",
+   "calculatoare-it",
+   "inginerie-mecanica",
+   "inginerie-civila",
+   "arhitectura",
+   "fizica",
+   "biologie",
+   "geografie-mediu",
+   "economie-finante",
+   "business-management",
+   "marketing",
+   "drept",
+   "stiinte-politice-relatii-internationale",
+   "comunicare-jurnalism",
+   "psihologie",
+   "stiintele-educatiei",
+   "arte-vizuale-design",
+   "sport-kinetoterapie"
+  ],
+  "language": "spaniolă și engleză; multe programe de licență se pot urma și în engleză",
+  "tuition": "universitate privată, cu taxă pentru toți studenții",
+  "about": "Universitate privată din Madrid, cu campusuri la Villaviciosa de Odón, Alcobendas și în centrul orașului (Creative Campus). Este cunoscută pentru studiile de sănătate, sport, inginerie și design, cu multe programe în engleză și mulți studenți străini.",
+  "prestige": "national",
+  "budget": "mare",
+  "budgetNote": "Taxa anuală e ridicată la aproape toate programele și diferă mult între ele (medicina e printre cele mai scumpe); la ea se adaugă taxa de rezervare a locului și cea de înscriere.",
+  "admissionTypes": [
+   "examen",
+   "interviu",
+   "dosar"
+  ],
+  "admission": "Iei legătura cu biroul de admitere și dai testele universității (aptitudini, cultură generală, limbă) și un interviu; dacă ești admis, plătești rezervarea locului și apoi te înscrii, trimițând actele de studii. Diplomele din țări UE, cum e bacalaureatul românesc, nu trebuie apostilate.",
+  "scholarships": true,
+  "scholarshipsNote": "Universitatea are burse și reduceri proprii, de exemplu pentru rezultate bune la învățătură sau pentru sportivi de performanță.",
+  "dorms": true,
+  "dormsNote": "În campusul de la Villaviciosa de Odón sunt două reședințe pentru studenți, administrate de Xior, cu peste cinci sute de locuri.",
+  "certificates": [
+   "bac",
+   "engleza"
+  ],
+  "pros": [
+   "Multe programe de licență predate în engleză",
+   "Ofertă largă la sănătate, sport și inginerie",
+   "Mediu internațional, cu studenți din multe țări"
+  ],
+  "cons": [
+   "Taxe mari, iar la medicină foarte mari",
+   "Campusul principal e în afara centrului Madridului",
+   "Mai puțin cunoscută în străinătate decât marile universități de stat"
+  ]
+ },
+ {
+  "id": "institut-lyfe",
+  "name": "Institut Lyfe",
+  "city": "Écully (lângă Lyon)",
+  "country": "Franța",
+  "region": "abroad",
+  "website": "https://www.institutlyfe.com",
+  "domainIds": [
+   "turism-servicii",
+   "business-management"
+  ],
+  "language": "franceză și engleză; programele de licență au variante în franceză, bilingve sau complet în engleză",
+  "tuition": "școală privată, cu taxă pentru toți studenții",
+  "about": "Școală privată de arte culinare, hotelărie și restaurante, numită până de curând Institut Paul Bocuse, după marele bucătar care a sprijinit-o de la început. Studenții învață și practic, în restaurantele-școală și în hotelul-școală ale institutului.",
+  "prestige": "international",
+  "budget": "mare",
+  "budgetNote": "Taxa anuală e ridicată și se adaugă o taxă de înscriere; o parte din cost poate fi acoperită de o bursă a fundației școlii.",
+  "admissionTypes": [
+   "dosar",
+   "examen",
+   "interviu"
+  ],
+  "admission": "Cu bacalaureat românesc aplici direct pe site-ul școlii (nu prin Parcoursup), apoi treci printr-o selecție: un test grilă de cultură generală, calcule și logică, un test de engleză sau franceză și un interviu despre motivația ta.",
+  "scholarships": true,
+  "scholarshipsNote": "Fundația Institut Lyfe dă burse de excelență, deschise și studenților străini cu medii foarte mari la bacalaureat; bursele de stat franceze (CROUS) nu sunt, de regulă, pentru studenții străini.",
+  "dorms": true,
+  "dormsNote": "Școala are propria reședință pentru studenți, Le Clipper, aproape de campus, cu prioritate pentru studenții străini din anul întâi; te ajută și să găsești chirie în zonă.",
+  "certificates": [
+   "bac",
+   "engleza"
+  ],
+  "pros": [
+   "Școală renumită în gastronomie și hotelărie",
+   "Multă practică în restaurante și în hotelul-școală",
+   "Se poate studia și complet în engleză"
+  ],
+  "cons": [
+   "Taxe mari",
+   "Domenii înguste: doar hotelărie, restaurante și arte culinare",
+   "Campusul e în afara Lyonului, la Écully"
+  ]
+ },
+ {
+  "id": "les-roches",
+  "name": "Les Roches",
+  "city": "Crans-Montana",
+  "country": "Elveția",
+  "region": "abroad",
+  "website": "https://lesroches.edu",
+  "domainIds": [
+   "turism-servicii",
+   "business-management"
+  ],
+  "language": "engleză",
+  "tuition": "școală privată, cu taxe foarte mari pentru toți studenții",
+  "about": "Școală privată de management în hotelărie, cu campusul principal în Alpii elvețieni, la Crans-Montana. Este acreditată în Elveția ca institut universitar de științe aplicate și pune accent pe practică și stagii în industrie.",
+  "prestige": "international",
+  "budget": "mare",
+  "budgetNote": "Taxele sunt foarte mari, iar în primii ani cazarea și masa în campus sunt obligatorii și se plătesc în plus.",
+  "admissionTypes": [
+   "dosar",
+   "interviu"
+  ],
+  "admission": "Aplici online și încarci CV-ul, foile matricole, dovada nivelului de engleză și un scurt eseu de motivație; urmează un interviu și evaluări scrise. Fără experiență în domeniu, începi cu un an pregătitor practic (Experiential Year), apoi urmezi cei trei ani de licență.",
+  "scholarships": true,
+  "scholarshipsNote": "Școala dă un număr mic de burse pe merit, care reduc o parte din taxa primului semestru; se acordă de la caz la caz.",
+  "dorms": true,
+  "dormsNote": "Campusul are în jur de nouă clădiri de cazare; în primii ani locuiești obligatoriu în campus, iar în ultimii ani te poți muta în oraș.",
+  "certificates": [
+   "bac",
+   "engleza",
+   "motivatie"
+  ],
+  "pros": [
+   "Totul în engleză, cu colegi din toată lumea",
+   "Multă practică și stagii în hoteluri",
+   "Campus în Alpi, cu multe activități în aer liber"
+  ],
+  "cons": [
+   "Taxe foarte mari, plus cazare și masă obligatorii în campus",
+   "Doar hotelărie și management în ospitalitate",
+   "Stațiune mică de munte, departe de orașele mari"
+  ]
  }
 ]

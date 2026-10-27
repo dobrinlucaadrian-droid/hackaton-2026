@@ -6603,5 +6603,39 @@
   "year": "2026/27",
   "url": "https://duo.nl/particulier/tuition-fees.jsp",
   "note": "Hospitality Management (cu normă întreagă): 4.250 €/an"
+ },
+ {
+  "id": "es-universidad-ramon-llull",
+  "currency": "EUR",
+  "min": 11437,
+  "max": 19656,
+  "year": "2027/28",
+  "url": "https://www.blanquerna.edu/en/bachelors-degree-medicine",
+  "note": "Sumele sunt de la Blanquerna și IQS; fiecare școală (de exemplu ESADE sau La Salle) are taxele ei, verifică pe site-ul școlii"
+ },
+ {
+  "id": "es-universidad-europea-de-madrid",
+  "currency": "EUR",
+  "min": 6240,
+  "max": 24120,
+  "year": "2026/27",
+  "url": "https://universidadeuropea.com/resources/media/documents/TARIFARIOS_GRADO_2026_2027.pdf"
+ },
+ {
+  "id": "institut-lyfe",
+  "currency": "EUR",
+  "min": 13390,
+  "max": 13905,
+  "year": "2026/27",
+  "url": "https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=32258"
+ },
+ {
+  "id": "les-roches",
+  "currency": "CHF",
+  "min": 66900,
+  "max": 66900,
+  "year": "2027/28",
+  "url": "https://lesroches.edu/apply/tuition-fees/",
+  "note": "Anul pregătitor opțional (Experiential Year): 33.450 CHF; cazarea și masa în campus sunt obligatorii și se plătesc separat"
  }
 ]

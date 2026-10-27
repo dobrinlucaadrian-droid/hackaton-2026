@@ -222,10 +222,11 @@ describe("student opinions per university", async () => {
   const { testimonialsFor, universityIdOf } = await import("./testimonials");
   const { testimonials } = await import("./data");
 
-  it("every linked opinion points to a university that has a sheet", () => {
+  it("every opinion is linked to a university that has a sheet", () => {
     for (const t of testimonials) {
       const id = universityIdOf(t);
-      if (id) expect(universities.some((u) => u.id === id), id).toBe(true);
+      expect(id, `${t.name}: no sheet linked`).toBeDefined();
+      expect(universities.some((u) => u.id === id), String(id)).toBe(true);
     }
   });
 

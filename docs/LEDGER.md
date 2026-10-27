@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-27 10:00 — fișe pentru toate universitățile din părerile studenților
+- Cerut: universitățile despre care avem păreri de la studenți să aibă toate fișă
+- Făcut: din 24 de păreri, 10 nu erau legate de nicio fișă. 5 aveau deja fișă și le lipsea doar legătura (Lyon 3, Paris-Saclay, Wisconsin–Madison, Inholland, iar „Medicină, Lyon” → Lyon 1, confirmat de echipă). Pentru celelalte, 4 fișe noi scrise din pagini oficiale și verificate a doua oară: Universitat Ramon Llull (Barcelona; ESADE și La Salle sunt școlile ei), Universidad Europea de Madrid (confirmat de echipă), Institut Lyfe (Écully, lângă Lyon), Les Roches (Crans-Montana, campusul din Elveția, confirmat de echipă); fiecare cu taxa pe an și linkul oficial (`fees.json`) și cu programele în engleză (`english.json`); Ramon Llull și UE Madrid legate de catalogul oficial spaniol. La verificare s-au scos afirmațiile despre ESADE/La Salle care nu se puteau confirma (site-urile lor au refuzat accesul). Test nou: fiecare părere trebuie să fie legată de o fișă
+- Fișiere: `apps/web/lib/testimonials.ts`, `apps/web/lib/universities.test.ts`, `apps/web/data/universities-abroad.json`, `apps/web/data/university-sources.json`, `apps/web/data/fees.json`, `apps/web/data/english.json`, `apps/web/data/universities-index.json`, `apps/web/data/catalog/es-institutions.json`, `apps/web/data/catalog/index.json`
+- Poartă: TRECUT (gate.mjs, inclusiv testul nou: toate cele 24 de păreri au fișă); local: cele 4 fișe noi și Lyon 1 / Inholland se deschid (200), cu taxa pe an afișată
+- Urmează: salvare și publicare când cere echipa (fișele noi nu au încă traducere în engleză, ca restul fișelor din străinătate)
+
 ### 2026-10-26 21:00 — butoanele de sus centrate pe telefon
 - Cerut: pe telefon, butoanele din meniul de sus nu erau centrate
 - Făcut: pe ecrane înguste rândurile de butoane (Acasă … EN) sunt centrate; pe calculator rămân ca înainte, aliniate la dreapta logo-ului
@@ -1103,6 +1110,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-26 13:34 `7cdf543` fix: centre the header buttons on phones
 - 2026-10-26 01:55 `0fc9fd1` chore: add Google Search Console verification file
 - 2026-10-26 01:45 `2362444` feat: English quiz keeps the three study places, without cities
 - 2026-10-26 01:38 `05aab39` feat: English version of the site under /en
@@ -1132,5 +1140,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-21 16:09 `c6c72c5` feat: sitemap, robots rules, one official address and page descriptions
 - 2026-10-21 03:24 `d99a168` feat: greet signed-in visitors on the home page, go home after sign-out
 - 2026-10-21 03:10 `3739afd` feat: favourite universities in the account, findmyuni.ro in link previews
-- 2026-10-21 02:32 `98a6891` feat: account card first on the result page
 <!-- commits:end -->

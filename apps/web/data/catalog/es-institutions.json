@@ -663,7 +663,7 @@
   "officialName": "Universidad Europea de Madrid",
   "city": "Villaviciosa de Odón",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://madrid.universidadeuropea.es/",
   "programs": 54
  },
@@ -915,7 +915,7 @@
   "officialName": "Universidad Ramón Llull",
   "city": "Barcelona",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.url.edu",
   "programs": 54
  },

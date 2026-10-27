@@ -15,6 +15,20 @@ const UNIVERSITY_ID: Record<string, string> = {
   "Columbia University": "columbia",
   "UMF „Carol Davila” București": "umf-carol-davila",
   "Universitatea de Vest din Timișoara": "uvt",
+  "Université Jean Moulin Lyon 3": "lyon-3",
+  "Universitatea Paris-Saclay": "paris-saclay",
+  "University of Wisconsin–Madison": "us-university-of-wisconsin-madison",
+  "Hogeschool Inholland": "inholland",
+  // the student studies medicine at Lyon 1 (confirmed by the team)
+  "Medicină, Lyon (Franța)": "lyon-1",
+  // ESADE and La Salle are schools of Universitat Ramon Llull
+  ESADE: "es-universidad-ramon-llull",
+  "La Salle Barcelona": "es-universidad-ramon-llull",
+  "Institut Lyfe": "institut-lyfe",
+  // the Swiss campus (Crans-Montana), confirmed by the team
+  "Les Roches": "les-roches",
+  // the Madrid university of the group, confirmed by the team
+  "Universidad Europea": "es-universidad-europea-de-madrid",
 };
 
 /** The id of the university an opinion is about, or undefined when that university has no sheet in the app. */

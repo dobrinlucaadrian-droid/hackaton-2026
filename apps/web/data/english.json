@@ -896,5 +896,9 @@
  "york": "all",
  "york-university": "all",
  "zealand-academy": "none",
- "zuyd": "some"
+ "zuyd": "some",
+ "es-universidad-ramon-llull": "some",
+ "es-universidad-europea-de-madrid": "some",
+ "institut-lyfe": "some",
+ "les-roches": "all"
 }
