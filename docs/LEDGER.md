@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-27 18:00 — căutarea de universități: paranteze și doar ce avem pe site
+- Cerut: căutarea „Stanford (California)” nu găsea nimic; căutarea să arate doar ce avem pe site; Stanford adăugată
+- Făcut: Stanford avea deja fișă (/universitati/stanford); căutarea nu o găsea pentru că sugestia de oraș „Stanford (California)” păstra parantezele în cuvinte. Acum căutarea desparte cuvintele ca indexul (fără paranteze, cratime, ghilimele), test nou. Scoasă lista „Alte universități din lume” de sub rezultate (10.248 de universități fără fișă, doar nume și site): `public/world-universities.json`, `searchWorld` și testul ei șterse
+- Fișiere: `apps/web/lib/universities.ts`, `apps/web/lib/universities.test.ts`, `apps/web/lib/types.ts`, `apps/web/components/UniversitySearch.tsx`, `apps/web/public/world-universities.json` (șters)
+- Poartă: TRECUT (gate.mjs); în browser, local: „Stanford (California)” → Stanford University, fără lista „Alte universități din lume”
+- Urmează: salvare și publicare când cere echipa
+
 ### 2026-10-27 16:00 — control complet al site-ului (date, linkuri, pagini)
 - Cerut: verificarea întregului site, ca să nu mai existe informații greșite sau universități „lipite” ca Politehnica
 - Făcut: (1) verificări automate pe toate datele: 29 de universități românești au programe și în alte orașe, iar la 9 dintre ele unele domenii se predau doar acolo (cele mari: Tehnica din Cluj → Baia Mare, 12 domenii; Sapientia → Miercurea Ciuc/Târgu Mureș/Sfântu Gheorghe, 14 domenii); împărțirea pe orașe de la Politehnica e acum generală (`lib/campuses.ts`): pe fișă, „Ce poți studia aici” are un grup pentru orașul fișei și câte unul pentru fiecare oraș care predă un domeniu în plus. Lămurite fără schimbare: 12 domenii de pe fișe fără program oficial cu același domeniu (interpretări rezonabile, de ex. „Inginerie economică” → Business), 26 de niveluri de cost diferite de taxă (decizii luate cu echipa în `docs/taxe.md`: taxe după venit, burse automate, costuri obligatorii), 49 de orașe scrise altfel decât în catalog (Viena/Wien, campusuri de lângă oraș), ani în texte (anul înființării, „din 2021”). (2) 8.708 linkuri oficiale verificate: 427 refuză programele automate (403, merg în browser), ~100 lente sau cu certificate vechi, 46 chiar stricate, dintre care doar 3 la vedere pe site; înlocuite cu adresele oficiale noi (taxele Metropolia, ghidul CAO din ghidul Irlandei, admiterea la Științe Economice și Drept, Politehnica Pitești); celelalte sunt doar în lista internă de surse. (3) toate cele 2.860 de pagini (harta site-ului + linkurile interne) deschise pe o copie locală: 32 de linkuri stricate în engleză (fișele din străinătate trimiteau la ghidurile pe țări, care există doar în română) → linkul spre ghid apare acum doar în română. De știut: o pagină inexistentă răspunde cu 200 (nu 404), dar are „noindex”, deci Google n-o indexează; 29 de taxe au anul 2023/24–2025/26 (cele mai noi publicate atunci; anul e afișat pe fișă)
@@ -1124,6 +1131,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-27 03:48 `fb729e8` fix: split every multi-city university by city, repair broken links
 - 2026-10-27 03:07 `379a35f` fix: balance the quiz domains and split Politehnica by campus
 - 2026-10-27 02:19 `0f89013` feat: sheets for every university in the student opinions
 - 2026-10-26 13:34 `7cdf543` fix: centre the header buttons on phones
@@ -1153,5 +1161,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-21 18:16 `c711921` feat: second fee check, 11 more levels corrected from official pages
 - 2026-10-21 17:39 `0a5d0cf` feat: clearer cost filter with euro bands, 10 more results, checked fees
 - 2026-10-21 16:19 `091c093` feat: friendly error pages with the broken-road drawing
-- 2026-10-21 16:09 `c6c72c5` feat: sitemap, robots rules, one official address and page descriptions
 <!-- commits:end -->

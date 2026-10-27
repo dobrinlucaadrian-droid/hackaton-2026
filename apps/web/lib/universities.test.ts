@@ -5,7 +5,7 @@ import { counted, normalize, specializationsFor } from "./labels";
 import { universityName } from "./i18n-data";
 import { TRAITS } from "./match";
 import { universities, universityById } from "./sheets";
-import { citiesIn, cityCounts, countries, filterUniversities, searchUniversities, searchWorld } from "./universities";
+import { citiesIn, cityCounts, countries, filterUniversities, searchUniversities } from "./universities";
 
 const PRESTIGE = ["ivy", "top", "international", "national"];
 const BUDGET = ["gratuit", "mic", "mediu", "mare"];
@@ -194,27 +194,12 @@ describe("filterUniversities", () => {
   });
 });
 
-describe("searchWorld", () => {
-  const list = [
-    { n: "Universitatea Alfa", c: "Franța", w: "https://alfa.example" },
-    { n: "Institut Beta", c: "Norvegia", w: "https://beta.example" },
-    { n: "Alfa Institute of Technology", c: "Norvegia", w: "https://alfa-it.example" },
-    { n: "Ştiinţe Gamma University", c: "Japonia", w: "https://gamma.example" },
-  ];
-  it("returns nothing for an empty query", () => {
-    expect(searchWorld(list, "")).toEqual([]);
-  });
-  it("matches name and country, ignoring diacritics, and puts name-prefix matches first", () => {
-    expect(searchWorld(list, "alfa").map((w) => w.w)).toEqual(["https://alfa-it.example", "https://alfa.example"]);
-    expect(searchWorld(list, "institute alfa").map((w) => w.n)).toEqual(["Alfa Institute of Technology"]);
-    expect(searchWorld(list, "norvegia").length).toBe(2);
-    expect(searchWorld(list, "stiinte gamma").length).toBe(1);
-    expect(searchWorld(list, "norvegia", 1).length).toBe(1);
-  });
-  it("excludes universities we already have a sheet for", () => {
-    const ubb = universityById("ubb-cluj")!;
-    const withKnown = [{ n: ubb.name.toUpperCase(), c: ubb.country, w: "x" }, ...list];
-    expect(searchWorld(withKnown, ubb.name).length).toBe(0);
+
+describe("search ignores punctuation in the query", () => {
+  it("finds a university by a place written with brackets or hyphens, as the suggestions write it", () => {
+    expect(searchUniversities("Stanford (California)").map((u) => u.id)).toContain("stanford");
+    expect(searchUniversities("Cluj-Napoca").map((u) => u.id)).toContain("ubb-cluj");
+    expect(searchUniversities("„ASE”").map((u) => u.id)).toContain("ase-bucuresti");
   });
 });
 

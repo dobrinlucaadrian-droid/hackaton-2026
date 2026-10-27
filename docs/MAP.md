@@ -404,14 +404,13 @@ _Open only the files listed here; a file's description is its first comment line
 - `suggest.test.ts` (40) — Tests the search suggestions: they start at 2 letters, ignore diacritics, put places first and lead universities to their sheets.
 - `testimonials.ts` (43) — Links student opinions to the universities that have a profile sheet, so the search and the sheets can show them.. Exports: universityIdOf, testimonialsFor
 - `traits.ts` (37) — The ten inclinations the questionnaire measures and their names in Romanian and English. Kept apart from the matching so pages can show them without loading the university data.. Exports: TRAITS, TRAIT_LABEL, TRAIT_LABEL_EN, traitLabel
-- `types.ts` (277) — Shared data contract for FindMyUni: profiles, questions, domains, universities and match results.
+- `types.ts` (274) — Shared data contract for FindMyUni: profiles, questions, domains, universities and match results.
 - … +6 more
 
-### apps/web/public  (3 files)
+### apps/web/public  (2 files)
 
 - `google1be60cb25521a893.html` (1) — _no description: add a first-line comment_
 - `logo-cap.png`
-- `world-universities.json`
 
 ### apps/web/public/photos  (520 files)
 

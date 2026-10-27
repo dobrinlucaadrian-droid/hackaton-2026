@@ -4,7 +4,7 @@ import { domains } from "./data";
 import type { Lang } from "./i18n";
 import { cityName, countryName, universityName } from "./i18n-data";
 import { normalize, specializationsFor } from "./labels";
-import type { Budget, Filters, Prestige, UniversitySummary, WorldUniversity } from "./types";
+import type { Budget, Filters, Prestige, UniversitySummary } from "./types";
 
 /** Every university that has a sheet, without the long texts of the sheet. */
 export const universities = indexJson as UniversitySummary[];
@@ -135,7 +135,8 @@ function wordRank(e: Index, word: string): Rank | null {
 
 /** Universities matching a free-text query (name, city, country, domain, specialization, keywords), best first. */
 export function searchUniversities(query: string, limit = 20, lang: Lang = "ro"): UniversitySummary[] {
-  const words = normalize(query).split(" ").filter(Boolean);
+  // split like the index, so punctuation in the query ("Stanford (California)", "Cluj-Napoca") does not stop a match
+  const words = tokens(query);
   if (words.length === 0) return [];
   const hits: { u: UniversitySummary; rank: number }[] = [];
   for (const e of getIndex(lang)) {
@@ -208,23 +209,6 @@ export function filterUniversities(filters: Filters, limit = 10): UniversitySumm
         a.name.localeCompare(b.name, "ro"),
     )
     .slice(0, limit);
-}
-
-/** Entries of the world list (name, country, website only) matching the query, excluding ones we already have a sheet for. */
-export function searchWorld(list: WorldUniversity[], query: string, limit = 20): WorldUniversity[] {
-  const q = normalize(query);
-  const words = q.split(" ").filter(Boolean);
-  if (words.length === 0) return [];
-  const known = new Set(universities.map((u) => normalize(u.name)));
-  const hits: { w: WorldUniversity; prefix: boolean }[] = [];
-  for (const w of list) {
-    const name = normalize(w.n);
-    if (known.has(name)) continue;
-    const text = `${name} ${normalize(w.c)}`;
-    if (words.every((x) => text.includes(x))) hits.push({ w, prefix: name.startsWith(q) });
-  }
-  hits.sort((a, b) => Number(b.prefix) - Number(a.prefix)); // stable: keeps list order inside each group
-  return hits.slice(0, limit).map((h) => h.w);
 }
 
 /** One line under the search box while typing: a university (opens its sheet) or a city / country (searches that place). */

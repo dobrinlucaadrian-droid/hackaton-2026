@@ -131,9 +131,6 @@ export type Category = {
   domainIds: string[];
 };
 
-/** An entry of the world list (name, country, website only), used for search. */
-export type WorldUniversity = { n: string; c: string; w: string };
-
 /** Filters for the university search; an absent field means "any". */
 export type Filters = {
   country?: string; // exact `country` value

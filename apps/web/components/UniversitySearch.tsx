@@ -3,12 +3,12 @@
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { categories, domains } from "@/lib/data";
-import type { AdmissionType, Budget, CertificateId, Filters, Prestige, UniversitySummary, WorldUniversity } from "@/lib/types";
+import type { AdmissionType, Budget, CertificateId, Filters, Prestige, UniversitySummary } from "@/lib/types";
 import { tr, type Lang } from "@/lib/i18n";
 import { cityName, countryName, localCategory, localDomain } from "@/lib/i18n-data";
 import { ADMISSION_LABEL, BUDGET_LABEL, CERTIFICATE_LABEL, FEE_STEPS, PRESTIGE_LABEL, formatNumber, labelsFor } from "@/lib/labels";
 import { rememberSearch } from "@/lib/lastSearch";
-import { citiesIn, cityCounts, countries, feeFrom, filterUniversities, searchUniversities, searchWorld, suggest } from "@/lib/universities";
+import { citiesIn, cityCounts, countries, feeFrom, filterUniversities, searchUniversities, suggest } from "@/lib/universities";
 import { NothingFound } from "./Illustrations";
 import { useHref, useLang, useT } from "./LangProvider";
 import { SearchBox } from "./SearchBox";
@@ -35,21 +35,6 @@ function feeStepLabel(eur: number, active = false, lang: Lang = "ro"): string {
   return active ? `Taxă: până la ${sum}/an` : `Până la ${sum}`;
 }
 
-let worldCache: WorldUniversity[] | null = null;
-/** Loads the world list once; resolves to null when it cannot be loaded (the next search retries). */
-async function loadWorld(): Promise<WorldUniversity[] | null> {
-  if (worldCache) return worldCache;
-  try {
-    const res = await fetch("/world-universities.json");
-    if (!res.ok) return null;
-    const data: unknown = await res.json();
-    if (!Array.isArray(data)) return null;
-    worldCache = data as WorldUniversity[];
-    return worldCache;
-  } catch {
-    return null;
-  }
-}
 
 function pick<T extends string>(value: string | null, allowed: Record<string, unknown>): T | undefined {
   return value && value in allowed ? (value as T) : undefined;
@@ -244,7 +229,6 @@ export function UniversitySearch() {
   const activeCount = Object.keys(filters).length;
   const [panel, setPanel] = useState(false);
   const [allCities, setAllCities] = useState(false);
-  const [world, setWorld] = useState<{ q: string; items: WorldUniversity[]; failed: boolean } | null>(null);
 
   // Any new search or filter starts again from the first 10 results.
   function go(next: URLSearchParams) {
@@ -304,23 +288,6 @@ export function UniversitySearch() {
   }, [params]);
   const results = matches.slice(0, count);
 
-  const wantWorld = q !== "" && activeCount === 0;
-  useEffect(() => {
-    if (!wantWorld) return;
-    let cancelled = false;
-    loadWorld().then((list) => {
-      if (!cancelled) setWorld({ q, items: list ? searchWorld(list, q, 20) : [], failed: list === null });
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, [wantWorld, q]);
-  const worldReady = wantWorld && world?.q === q;
-  const worldFailed = worldReady && world?.failed === true;
-  const worldItems = worldReady && world ? world.items : [];
-  const known = new Set(matches.map((u) => u.name.toLowerCase()));
-  // The world list is third-party data: only plain web links are shown.
-  const worldShown = worldItems.filter((w) => /^https?:\/\//i.test(w.w) && !known.has(w.n.toLowerCase()));
 
   const grouped = categories
     .map((c) => ({ c, ds: c.domainIds.map((id) => domains.find((d) => d.id === id)).filter((d): d is NonNullable<typeof d> => !!d) }))
@@ -646,42 +613,6 @@ export function UniversitySearch() {
         </div>
       )}
 
-      {q && (
-        <details className="group mt-10 rounded-3xl bg-card shadow-sm ring-1 ring-line">
-          <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-2 px-5 py-3 [&::-webkit-details-marker]:hidden">
-            <h2 id="alte-uni" className="text-xl font-black tracking-tight text-ink">
-              {t("Alte universități din lume", "Other universities in the world")}
-            </h2>
-            <span aria-hidden className="text-primary transition-transform group-open:rotate-180">▾</span>
-          </summary>
-          <div className="px-5 pb-5">
-          {activeCount > 0 ? (
-            <p className="text-ink-soft">{t("Lista de mai jos nu poate fi filtrată. Șterge filtrele ca să o vezi.", "The list below cannot be filtered. Clear the filters to see it.")}</p>
-          ) : !worldReady ? (
-            <p className="mt-2 text-ink-soft">{t("Se caută în lista universităților din lume…", "Searching the list of universities in the world…")}</p>
-          ) : worldFailed ? (
-            <p className="mt-2 text-ink-soft">{t("Lista completă a universităților din lume nu s-a putut încărca. Încearcă din nou peste puțin timp.", "The full list of universities in the world could not be loaded. Please try again in a little while.")}</p>
-          ) : worldShown.length === 0 ? (
-            <p className="mt-2 text-ink-soft">{t("Nu am găsit alte universități pentru această căutare.", "We found no other universities for this search.")}</p>
-          ) : (
-            <>
-              <p className="mt-1 text-sm text-ink-soft">{t("Pentru acestea nu avem încă o fișă completă. Verifică direct pe site-ul lor.", "We do not have a full sheet for these yet. Check their websites directly.")}</p>
-              <ul className="mt-3 grid gap-2 sm:grid-cols-2">
-                {worldShown.map((w) => (
-                  <li key={`${w.n}-${w.w}`} className="rounded-xl bg-card px-4 py-3 ring-1 ring-line">
-                    <p className="font-bold text-ink">{w.n}</p>
-                    <p className="text-sm text-ink-soft">{w.c}</p>
-                    <a href={w.w} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center text-sm font-bold text-primary underline decoration-primary/40 underline-offset-2">
-                      {t("Site-ul universității ↗", "University website ↗")}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </>
-          )}
-          </div>
-        </details>
-      )}
     </div>
   );
 }
