@@ -1,4 +1,4 @@
-// Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits); the reasons and the domain texts come in the page language.
+// Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits, compared with how an ordinary student scores on each domain, so broad domains do not crowd the top); the reasons and the domain texts come in the page language.
 import { MAX_ACTIVITIES, activityArea, activityTraits, describeActivity } from "./activities";
 import { cityList } from "./cities";
 import { domains, profiles, questions, specializations } from "./data";
@@ -99,6 +99,33 @@ function vectors(answers: Answers): { student: Vec; picks: Vec; profile: Profile
   return { student, picks: pickVec, profile };
 }
 
+/**
+ * How each domain scores for an ordinary student: mean and spread of its similarity over a fixed set of made-up students who
+ * answer at random. Domains described by many traits (e.g. Teologie: oameni + societate + limbaj + îngrijire) are a little
+ * similar to almost anyone and used to fill the top 3 for everybody; ranking by "how much more than usual" fixes that.
+ * Computed once, the same every time (fixed seed).
+ */
+let CALIBRATION: { mean: number; sd: number }[] | undefined;
+function calibration(): { mean: number; sd: number }[] {
+  if (CALIBRATION) return CALIBRATION;
+  let seed = 7;
+  const rnd = () => (seed = (seed * 1103515245 + 12345) % 2147483648) / 2147483648;
+  const sample: Vec[] = [];
+  for (let i = 0; i < 4000; i++) {
+    const choices: Record<string, number> = {};
+    for (const q of questions) choices[q.id] = Math.floor(rnd() * q.options.length);
+    sample.push(vectors({ profileId: profiles[Math.floor(rnd() * profiles.length)].id, where: "any", choices }).student);
+  }
+  CALIBRATION = domains.map((d) => {
+    const dv = toVec(d.traits);
+    const sims = sample.map((s) => cosine(s, dv));
+    const mean = sims.reduce((a, b) => a + b, 0) / sims.length;
+    const sd = Math.sqrt(sims.reduce((a, b) => a + (b - mean) ** 2, 0) / sims.length) || 1;
+    return { mean, sd };
+  });
+  return CALIBRATION;
+}
+
 /** Ranks all domains against a student vector and builds the top 3 matches. */
 function rank(
   student: Vec,
@@ -110,18 +137,21 @@ function rank(
   lang: Lang = "ro",
 ): Match[] {
   const en = lang === "en";
+  const cal = calibration();
   const scored = domains
-    .map((domain) => {
+    .map((domain, k) => {
       const dv = toVec(domain.traits);
-      const sim = cosine(student, dv);
-      return { domain, dv, sim };
+      // how far above an ordinary student this one is, in spreads (z-score)
+      const z = (cosine(student, dv) - cal[k].mean) / cal[k].sd;
+      return { domain, dv, z };
     })
-    .sort((a, b) => b.sim - a.sim)
+    .sort((a, b) => b.z - a.z)
     .slice(0, 3);
 
   let prev = Infinity;
-  return scored.map(({ domain, dv, sim }) => {
-    let percent = Math.round(100 * Math.pow(Math.max(sim, 0), 0.8));
+  return scored.map(({ domain, dv, z }) => {
+    // 50% = an ordinary match; each spread above it adds 15 points (capped at 97)
+    let percent = Math.round(50 + 15 * z);
     percent = Math.min(97, Math.max(0, percent));
     if (percent >= prev) percent = Math.max(0, prev - 1); // avoid identical percents unless truly stuck at 0
     prev = percent;

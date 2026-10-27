@@ -189,7 +189,7 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/app/[lang]/universitati/[id]  (2 files)
 
 - `opengraph-image.tsx` (95) — The picture shown when a university's sheet is shared (WhatsApp, Instagram, Facebook …): FindMyUni, the university's name, place and yearly tuition when we have it.. Exports: alt, size, contentType, dynamicParams, generateStaticParams, Image
-- `page.tsx` (403) — Full profile sheet of one university in the page language, statically generated for every university.. Routes: /[lang]/universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
+- `page.tsx` (414) — Full profile sheet of one university in the page language, statically generated for every university.. Routes: /[lang]/universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/[lang]/universitati  (1 files)
 
@@ -363,10 +363,11 @@ _Open only the files listed here; a file's description is its first comment line
 - `universities.json` (1414) — JSON; keys: unibuc, upb, ase-bucuresti, umf-carol-davila, snspa, uauim, utcb, usamv-bucuresti
 - `university-names.json` (33) — JSON; keys: unibuc, snspa, umf-carol-davila, uauim, unmb, unarte, ubb-cluj, umf-cluj
 
-### apps/web/lib  (45 files)
+### apps/web/lib  (46 files)
 
 - `activities.test.ts` (64) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
 - `activities.ts` (89) — Activities a student can add (competitions, volunteering, extracurriculars): labels (Romanian and English), areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, labelOf, describeActivity
+- `campuses.ts` (46) — Universities whose official programme list spans separate campuses: on their sheet, "Ce poți studia aici" is split by campus,. Exports: campusGroups
 - `catalog.test.ts` (124) — Tests the programme catalogue files: every country follows the shared contract, the summary matches the files, and Romania matches the official list.
 - `catalog.ts` (20) — The per-country summary of the programme catalogue (counts, cities, sources), small enough to ship to the browser; the programmes themselves stay in the database.. Exports: catalogCountries, catalogTotals, catalogCountryOfSheet, catalogSheetIds
 - `cities.ts` (16) — Romanian cities that have at least one university sheet, the ones with most universities first. A small generated list (scripts/data/sheets-index.mjs), so the questionnaire does not load the university data.. Exports: romanianCities, cityList
@@ -386,8 +387,8 @@ _Open only the files listed here; a file's description is its first comment line
 - `i18n.ts` (26) — The site's two languages: Romanian at the plain addresses (/universitati) and English under /en (/en/universitati), plus the helper that builds a link in the current language.. Routes: /en. Exports: LANGS, DEFAULT_LANG, hasLang, localHref, switchLangHref, tr
 - `labels.ts` (136) — Romanian (and English, by language) labels for the values on a university sheet, plus two small helpers every list uses. Kept apart from the university data so pages can use the labels without loading the sheets.. Exports: PRESTIGE_LABEL, BUDGET_LABEL, BUDGET_FILTER_LABEL, FEE_STEPS, BUDGET_RANGE, BUDGET_EXPLAINED, ADMISSION_LABEL, CERTIFICATE_LABEL, …
 - `lastSearch.ts` (24) — Remembers the student's last university search (text, filters, how many results) in this browser tab, so the "back" button on a sheet returns to it (in the page language).. Exports: rememberSearch, lastSearchHref
-- `match.test.ts` (277) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
-- `match.ts` (195) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits); the reasons and the domain texts come in the page language.. Exports: matchDomains, studentTraits, matchByTraits
+- `match.test.ts` (314) — Tests the seeded data (domains, profiles, questions) and the rule-based matching.
+- `match.ts` (225) — Rule-based matching: turns a student's answers into the top 3 study domains (cosine similarity on 10 traits, compared with how an ordinary student scores on each domain, so broad domains do not crowd the top); the reasons and the domain texts come in the page language.. Exports: matchDomains, studentTraits, matchByTraits
 - `name.ts` (12) — The one rule for a person's full name, used by the sign-in form, the account page and the server.. Exports: NAME_MAX, cleanName
 - `pendingSave.ts` (60) — Keeps a questionnaire result or a hearted university on this device while the student signs in or makes an account, so it can be saved to the account afterwards.. Exports: setPendingResult, setPendingFavorite, takePendingFavorite, takePendingResult
 - `photos.test.ts` (28) — Tests the university photos: each one belongs to a real sheet, its file is in public/photos, its licence is free (no NC/ND) and it carries an author and a link to Wikimedia Commons.
@@ -404,8 +405,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `testimonials.ts` (43) — Links student opinions to the universities that have a profile sheet, so the search and the sheets can show them.. Exports: universityIdOf, testimonialsFor
 - `traits.ts` (37) — The ten inclinations the questionnaire measures and their names in Romanian and English. Kept apart from the matching so pages can show them without loading the university data.. Exports: TRAITS, TRAIT_LABEL, TRAIT_LABEL_EN, traitLabel
 - `types.ts` (277) — Shared data contract for FindMyUni: profiles, questions, domains, universities and match results.
-- `universities.data.test.ts` (162) — Tests the integrated university data: complete profile sheets, the eight Ivy League entries, and search and filters on real entries.
-- … +5 more
+- … +6 more
 
 ### apps/web/public  (3 files)
 

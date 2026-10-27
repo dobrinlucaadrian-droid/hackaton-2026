@@ -274,3 +274,40 @@ describe("chosen cities", async () => {
     expect(new Set(list).size).toBe(list.length);
   });
 });
+
+describe("balance between domains", () => {
+  // made-up students who answer at random (fixed seed, so the test always sees the same students)
+  let seed = 12345;
+  const rnd = () => (seed = (seed * 1103515245 + 12345) % 2147483648) / 2147483648;
+  const randomAnswers = (): Answers => {
+    const choices: Record<string, number> = {};
+    for (const q of questions) choices[q.id] = Math.floor(rnd() * q.options.length);
+    return { profileId: profiles[Math.floor(rnd() * profiles.length)].id, where: "any", choices };
+  };
+
+  it("no domain fills the top 3 for everybody, and none is almost never shown (fair share is 3 in 40 = 7.5%)", () => {
+    const n = 3000, count: Record<string, number> = {};
+    for (let i = 0; i < n; i++) for (const m of matchDomains(randomAnswers())) count[m.domain.id] = (count[m.domain.id] ?? 0) + 1;
+    for (const d of domains) {
+      const share = (count[d.id] ?? 0) / n;
+      expect(share, `${d.id} ${(100 * share).toFixed(1)}%`).toBeLessThan(0.14);
+      expect(share, `${d.id} ${(100 * share).toFixed(1)}%`).toBeGreaterThan(0.02);
+    }
+  });
+
+  it("a student who always picks the answers closest to a domain gets that domain in the top 3", () => {
+    const cos = (a: Record<string, number>, b: Record<string, number>) => {
+      const dot = TRAIT_IDS.reduce((s, t) => s + (a[t] ?? 0) * (b[t] ?? 0), 0);
+      const na = Math.hypot(...TRAIT_IDS.map((t) => a[t] ?? 0)), nb = Math.hypot(...TRAIT_IDS.map((t) => b[t] ?? 0));
+      return na && nb ? dot / (na * nb) : 0;
+    };
+    for (const d of domains) {
+      const best = <T>(list: T[], traits: (x: T) => Record<string, number>) => list.reduce((a, b) => (cos(traits(b), d.traits) > cos(traits(a), d.traits) ? b : a));
+      const choices: Record<string, number> = {};
+      for (const q of questions) choices[q.id] = q.options.indexOf(best(q.options, (o) => o.traits));
+      const profileId = best(profiles, (p) => p.traits).id;
+      const top = matchDomains({ profileId, where: "any", choices }).map((m) => m.domain.id);
+      expect(top, d.id).toContain(d.id);
+    }
+  });
+});

@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-27 13:00 — chestionarul echilibrat (Teologie prea sus) și Politehnica împărțită București / Pitești
+- Cerut: Teologie apărea în primele 3 la 20% din chestionare (plângeri); pe fișa Politehnicii București apăreau toate domeniile
+- Făcut: (chestionar) cauza: domeniile descrise prin multe înclinații (Teologie: oameni + societate + limbaj + îngrijire; Comunicare, Turism, Sport) semănau puțin cu oricine și umpleau primele 3, iar cele precise (Medicină, Matematică) apăreau rar. Acum fiecare domeniu e comparat cu cum iese la un elev oarecare (4.000 de elevi închipuiți, mereu aceiași): contează cât de mult peste obișnuit se potrivește (scor z); procentul afișat = 50 + 15 × scor, cel mult 97. Simulare pe 20.000 de chestionare la întâmplare: Teologie 19,6% → 4,8%, Medicină 2,3% → 8,4%, Matematică 1,9% → 8,6%; cel mai des domeniu 20,4% → 10,8% (corect ar fi 7,5% fiecare); elevul „ideal” al fiecăruia dintre cele 40 de domenii își primește domeniul în primele 3 (40/40, ca înainte). Două teste noi păzesc echilibrul. (Politehnica) lista oficială a universității include și facultățile din Pitești (plus extensiile din Alexandria, Câmpulung, Râmnicu Vâlcea, Slatina): pe fișă, „Ce poți studia aici” are acum două grupe, Politehnica București și Politehnica Pitești, după orașul fiecărui program din lista oficială (`lib/campuses.ts`)
+- Fișiere: `apps/web/lib/match.ts`, `apps/web/lib/match.test.ts`, `apps/web/lib/campuses.ts`, `apps/web/app/[lang]/universitati/[id]/page.tsx`
+- Poartă: TRECUT (gate.mjs, cu testele noi de echilibru); local: fișa UPB arată cele două grupe (București 10 domenii, Pitești 28); un chestionar întreg parcurs local până la rezultat
+- Urmează: salvare și publicare când cere echipa; statisticile de până acum din administrare rămân cu vechiul calcul
+
 ### 2026-10-27 10:00 — fișe pentru toate universitățile din părerile studenților
 - Cerut: universitățile despre care avem păreri de la studenți să aibă toate fișă
 - Făcut: din 24 de păreri, 10 nu erau legate de nicio fișă. 5 aveau deja fișă și le lipsea doar legătura (Lyon 3, Paris-Saclay, Wisconsin–Madison, Inholland, iar „Medicină, Lyon” → Lyon 1, confirmat de echipă). Pentru celelalte, 4 fișe noi scrise din pagini oficiale și verificate a doua oară: Universitat Ramon Llull (Barcelona; ESADE și La Salle sunt școlile ei), Universidad Europea de Madrid (confirmat de echipă), Institut Lyfe (Écully, lângă Lyon), Les Roches (Crans-Montana, campusul din Elveția, confirmat de echipă); fiecare cu taxa pe an și linkul oficial (`fees.json`) și cu programele în engleză (`english.json`); Ramon Llull și UE Madrid legate de catalogul oficial spaniol. La verificare s-au scos afirmațiile despre ESADE/La Salle care nu se puteau confirma (site-urile lor au refuzat accesul). Test nou: fiecare părere trebuie să fie legată de o fișă
@@ -1110,6 +1117,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-27 02:19 `0f89013` feat: sheets for every university in the student opinions
 - 2026-10-26 13:34 `7cdf543` fix: centre the header buttons on phones
 - 2026-10-26 01:55 `0fc9fd1` chore: add Google Search Console verification file
 - 2026-10-26 01:45 `2362444` feat: English quiz keeps the three study places, without cities
@@ -1139,5 +1147,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-21 16:19 `091c093` feat: friendly error pages with the broken-road drawing
 - 2026-10-21 16:09 `c6c72c5` feat: sitemap, robots rules, one official address and page descriptions
 - 2026-10-21 03:24 `d99a168` feat: greet signed-in visitors on the home page, go home after sign-out
-- 2026-10-21 03:10 `3739afd` feat: favourite universities in the account, findmyuni.ro in link previews
 <!-- commits:end -->

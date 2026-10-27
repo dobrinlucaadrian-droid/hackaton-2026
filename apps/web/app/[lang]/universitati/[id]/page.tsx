@@ -12,6 +12,7 @@ import { Shell } from "@/components/Shell";
 import { UniversityOpinions } from "@/components/UniversityOpinions";
 import { BudgetBadge, PrestigeBadge } from "@/components/UniversityBadges";
 import { UniversityDomains } from "@/components/UniversityDomains";
+import { campusGroups } from "@/lib/campuses";
 import { catalogCountryOfSheet } from "@/lib/catalog";
 import { curriculumLinkFor } from "@/lib/curricula";
 import { feeOf, feeText } from "@/lib/fees";
@@ -281,15 +282,25 @@ export default async function UniversityPage({ params }: Props) {
           )}
           {uniDomains.length > 0 && (
             <Section title={t("Ce poți studia aici", "What you can study here")}>
-              <UniversityDomains
-                showPlan={u.region === "ro"}
-                items={uniDomains.map((d) => ({
-                  id: d.id,
-                  name: d.name,
-                  short: d.short,
-                  specs: specializationsFor(d.id).map((x) => localSpecialization(x, lang)).map((x) => ({ id: x.id, name: x.name, short: x.short })),
-                }))}
-              />
+              {(() => {
+                const toItems = (list: typeof uniDomains) =>
+                  list.map((d) => ({
+                    id: d.id,
+                    name: d.name,
+                    short: d.short,
+                    specs: specializationsFor(d.id).map((x) => localSpecialization(x, lang)).map((x) => ({ id: x.id, name: x.name, short: x.short })),
+                  }));
+                // a university with separate campuses (e.g. Politehnica București and Pitești) shows one group per campus
+                const groups = u.region === "ro" ? campusGroups(u.id, uniDomains.map((d) => d.id)) : undefined;
+                if (!groups) return <UniversityDomains showPlan={u.region === "ro"} items={toItems(uniDomains)} />;
+                return groups.map((g) => (
+                  <div key={g.ro} className="mt-4 first:mt-0" data-campus>
+                    <h3 className="text-lg font-black text-ink">{t(g.ro, g.en)}</h3>
+                    {g.noteRo && <p className="text-sm">{t(g.noteRo, g.noteEn ?? g.noteRo)}</p>}
+                    <UniversityDomains showPlan items={toItems(uniDomains.filter((d) => g.domainIds.includes(d.id)))} />
+                  </div>
+                ));
+              })()}
             </Section>
           )}
           {facultySheets.length > 0 && (
