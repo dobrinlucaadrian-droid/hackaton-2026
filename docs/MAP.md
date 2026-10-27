@@ -84,7 +84,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `CLAUDE.md` (2) — _no description: add a first-line comment_
 - `README.md` (37) — _no description: add a first-line comment_
 - `eslint.config.mjs` (21) — _no description: add a first-line comment_
-- `next.config.ts` (25) — Next.js configuration: security headers sent with every response (the content security policy itself is added per request in proxy.ts).
+- `next.config.ts` (41) — Next.js configuration: security headers sent with every response (the content security policy itself is added per request in proxy.ts) and redirects for pages that moved.
 - `package.json` (36) — package "web"; scripts: dev, build, start, lint, test
 - `postcss.config.mjs` (8) — _no description: add a first-line comment_
 - `proxy.ts` (57) — Runs before every page: on the live site sends other addresses (www, vercel.app) to findmyuni.ro, serves the plain addresses in Romanian and /en in English, adds the content security policy, keeps the sign-in session fresh and sends visitors who are not signed in away from the account and administration pages.. Exports: proxy, config
@@ -189,7 +189,7 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/app/[lang]/universitati/[id]  (2 files)
 
 - `opengraph-image.tsx` (95) — The picture shown when a university's sheet is shared (WhatsApp, Instagram, Facebook …): FindMyUni, the university's name, place and yearly tuition when we have it.. Exports: alt, size, contentType, dynamicParams, generateStaticParams, Image
-- `page.tsx` (415) — Full profile sheet of one university in the page language, statically generated for every university.. Routes: /[lang]/universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
+- `page.tsx` (422) — Full profile sheet of one university in the page language, statically generated for every university.. Routes: /[lang]/universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/[lang]/universitati  (1 files)
 
@@ -333,10 +333,10 @@ _Open only the files listed here; a file's description is its first comment line
 - `curricula.json` (2190) — JSON array, 40 items
 - `curriculum-links.json` (288) — JSON array, 57 items
 - `domains.json` (43) — JSON array, 40 items
-- `english.json` (905) — JSON; keys: aalborg, aalto, aams-aarhus, aarhus, aarhus-architecture, aau-prague, aberdeen, abertay
+- `english.json` (906) — JSON; keys: aalborg, aalto, aams-aarhus, aarhus, aarhus-architecture, aau-prague, aberdeen, abertay
 - `eur-rates.json` (19) — JSON; keys: EUR, RON, MDL, GBP, USD, CHF, DKK, SEK
 - `faculties-ro.json`
-- `fees.json` (6642) — JSON array, 776 items
+- `fees.json` (6652) — JSON array, 777 items
 - `guides.json` (3254) — JSON array, 32 items
 - `photo-rejects.json` (181) — JSON array, 178 items
 - `photos.json` (4683) — JSON array, 520 items
@@ -347,7 +347,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `testimonials.json` (169) — JSON array, 24 items
 - `universities-abroad.json`
 - `universities-index.json`
-- `universities-ro.json` (4201) — JSON array, 83 items
+- `universities-ro.json` (4248) — JSON array, 84 items
 - `university-sources.json`
 
 ### apps/web/data/en  (10 files)
@@ -360,15 +360,15 @@ _Open only the files listed here; a file's description is its first comment line
 - `profiles.json` (51) — JSON; keys: real-mate-info, real-stiinte-naturii, uman-filologie, uman-stiinte-sociale, tehnologic-tehnic, tehnologic-servicii, tehnologic-resurse-mediu, voc-artistic
 - `questions.json` (182) — JSON; keys: proiect-de-grup, prieten-stresat, peste-zece-ani, zi-de-lucru, atelier-gratuit, canalul-scolii, job-de-vara, internet-picat
 - `specializations.json` (827) — JSON; keys: medicina-generala, medicina-de-urgenta, neurostiinte, sanatate-publica, biomedicina, medicina-dentara-generala, ortodontie, tehnica-dentara
-- `universities.json` (1414) — JSON; keys: unibuc, upb, ase-bucuresti, umf-carol-davila, snspa, uauim, utcb, usamv-bucuresti
+- `universities.json` (1431) — JSON; keys: unibuc, upb, ase-bucuresti, umf-carol-davila, snspa, uauim, utcb, usamv-bucuresti
 - `university-names.json` (33) — JSON; keys: unibuc, snspa, umf-carol-davila, uauim, unmb, unarte, ubb-cluj, umf-cluj
 
 ### apps/web/lib  (46 files)
 
 - `activities.test.ts` (64) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
 - `activities.ts` (89) — Activities a student can add (competitions, volunteering, extracurriculars): labels (Romanian and English), areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, labelOf, describeActivity
-- `campuses.ts` (54) — Universities whose official programme list spans several cities: on their sheet, "Ce poți studia aici" is split by city, using. Exports: campusGroups
-- `catalog.test.ts` (124) — Tests the programme catalogue files: every country follows the shared contract, the summary matches the files, and Romania matches the official list.
+- `campuses.ts` (47) — Universities whose official programme list spans several cities: on their sheet, "Ce poți studia aici" is split by city, using. Exports: campusGroups, RELATED_SHEETS
+- `catalog.test.ts` (126) — Tests the programme catalogue files: every country follows the shared contract, the summary matches the files, and Romania matches the official list.
 - `catalog.ts` (20) — The per-country summary of the programme catalogue (counts, cities, sources), small enough to ship to the browser; the programmes themselves stay in the database.. Exports: catalogCountries, catalogTotals, catalogCountryOfSheet, catalogSheetIds
 - `cities.ts` (16) — Romanian cities that have at least one university sheet, the ones with most universities first. A small generated list (scripts/data/sheets-index.mjs), so the questionnaire does not load the university data.. Exports: romanianCities, cityList
 - `csp.test.ts` (38) — Tests the Content-Security-Policy builder: scripts only with the nonce, the database and the bot check allowed, nothing else.
@@ -376,7 +376,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `curricula.test.ts` (61) — Tests the curricula data: every plan belongs to a real domain, covers its years in order and links to an official web page.
 - `curricula.ts` (18) — Curricula data: for each study domain one official "plan de învățământ" (subjects per year), and for Romanian universities the official page with their curricula.. Exports: curricula, curriculumLinks, curriculumFor, curriculumLinkFor
 - `data.ts` (16) — Loads the small seeded JSON (profiles, questions, domains, specializations, categories, testimonials) as typed arrays. The universities are apart: lib/universities.ts (index, for the browser) and lib/sheets.ts (full sheets, server only).. Exports: profiles, questions, domains, specializations, categories, testimonials
-- `faculties.test.ts` (55) — Tests the faculty sheets: each one belongs to a real faculty of the official list, has valid values and official links, and gets a unique page address.
+- `faculties.test.ts` (57) — Tests the faculty sheets: each one belongs to a real faculty of the official list, has valid values and official links, and gets a unique page address.
 - `faculties.ts` (24) — Profile sheets of Romanian faculties (data/faculties-ro.json) and the address of each one. Used on the server: by the faculty page and by the university page, which links to them.. Exports: faculties, facultySlug, facultyHref, facultiesOf, facultyBySlug
 - `fees.test.ts` (41) — Tests the exact tuition data: each entry belongs to a real sheet, has a known currency, a sane range, an academic year and an official link, and is written the way the sheet shows it.
 - `fees.ts` (83) — Exact yearly tuition of the university sheets (data/fees.json), each with its academic year and the official page it comes from; amounts in the university's own currency plus an approximate value in euro. Server only.. Exports: EUR_PER, feeOf, feeText
@@ -394,7 +394,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `photos.test.ts` (28) — Tests the university photos: each one belongs to a real sheet, its file is in public/photos, its licence is free (no NC/ND) and it carries an author and a link to Wikimedia Commons.
 - `photos.ts` (12) — Freely licensed photos of the universities (Wikimedia Commons, saved small in public/photos by scripts/data/photos.mjs), with the author and licence the page must show. Server only.. Exports: photoOf
 - `roPrograms.test.ts` (29) — Tests the programme lists the Romanian sheets render on the server: every faculty sheet finds its programmes and the rows carry only what a page shows.
-- `roPrograms.ts` (24) — The Romanian bachelor programmes from the official list, read straight from the catalogue file so a sheet can show them without waiting for the database. Large: import it only from server code (the university and faculty pages) and from tests.. Exports: roProgramsOf, roProgramsOfFaculty
+- `roPrograms.ts` (36) — The Romanian bachelor programmes from the official list, read straight from the catalogue file so a sheet can show them without waiting for the database. Large: import it only from server code (the university and faculty pages) and from tests.. Exports: SPLIT_SHEETS, roProgramsOf, roProgramsOfFaculty
 - `seo.test.ts` (46) — Tests the search-engine helpers: descriptions are trimmed at a word, and the sitemap lists every public sheet once, on the official address, never a personal page.
 - `seo.ts` (11) — The site's one official address and a helper that trims a text to the length search engines show under a result.. Exports: SITE_URL, clip
 - `serverMessages.test.ts` (19) — Tests that server messages are translated on English pages and left alone in Romanian.

@@ -2047,7 +2047,7 @@
       "Computer science"
     ]
   },
-  "upb|Facultatea de Electronică, Comunicații și Calculatoare": {
+  "upb-pitesti|Facultatea de Electronică, Comunicații și Calculatoare": {
     "name": "Faculty of Electronics, Communications and Computers",
     "about": "The faculty is in Pitești, at the Pitești University Centre of the Bucharest Polytechnic. Here you learn computers, applied electronics, telecommunications networks and software, and electromechanics.",
     "admission": "You enter through a file-based competition: your high-school averages (grades 9-11) in Mathematics and in a second subject that you choose from the faculty's list count, together with the Romanian Baccalaureate (bac) average. There is no written exam."
@@ -2107,7 +2107,7 @@
     "about": "Here you learn the engineering behind medicine: medical devices and systems, biomaterials and software used in hospitals. The medical training part is done together with the \"Carol Davila\" University of Medicine and Pharmacy. The faculty was founded in 2010.",
     "admission": "You enter through a file-based competition: your high-school averages (grades 9-11) in Mathematics and in a second subject that you choose from the faculty's list count, together with the Romanian Baccalaureate (bac) average. There is no written exam."
   },
-  "upb|Facultatea de Mecanică și Tehnologie": {
+  "upb-pitesti|Facultatea de Mecanică și Tehnologie": {
     "name": "Faculty of Mechanics and Technology",
     "about": "The faculty is in Pitești, at the Pitești University Centre of the Bucharest Polytechnic. Here you learn about road vehicles, transport and traffic engineering, machine-building technology and industrial economic engineering. The faculty has existed since 1969 and combines engineering with economics.",
     "admission": "You enter through a file-based competition: your high-school averages (grades 9-11) in Mathematics and in a second subject that you choose from the faculty's list count, together with the Romanian Baccalaureate (bac) average. There is no written exam."
@@ -2117,7 +2117,7 @@
     "about": "Here you learn about the materials things are made of: metals and alloys, but also modern materials such as composites, powders or shape-memory materials. The faculty comes from the Polytechnic's metallurgy tradition and also has programmes in medical engineering, environmental engineering and economic engineering.",
     "admission": "You enter through a file-based competition: your high-school averages (grades 9-11) in two subjects chosen from the faculty's list count, together with the Romanian Baccalaureate (bac) average. There is no written exam."
   },
-  "upb|Facultatea de Științe ale Educației, Științe Sociale și Psihologie": {
+  "upb-pitesti|Facultatea de Științe ale Educației, Științe Sociale și Psihologie": {
     "name": "Faculty of Educational Sciences, Social Sciences and Psychology",
     "about": "The faculty is in Pitești, at the Pitești University Centre of the Bucharest Polytechnic. Here you can study psychology, social work, journalism, human resources and pedagogy, for those who want to become primary school teachers or early-years educators. Some pedagogy programmes are also held in Râmnicu Vâlcea, Slatina, Alexandria and Câmpulung.",
     "admission": "You enter through a file-based competition: your high-school averages (grades 9-11) in Romanian Language and Literature and in a second subject of your choice count, together with the Romanian Baccalaureate (bac) average. There is no written exam."
@@ -2127,12 +2127,12 @@
     "about": "Here you learn mathematics, physics and computer science used in engineering. The programmes are Mathematics and Applied Computer Science in Engineering, Engineering Physics and Computer Security and Data Science. The faculty was founded in 2005 and has its own research centres and laboratories.",
     "admission": "You enter through a file-based competition: your high-school averages (grades 9-11) in Mathematics and in a second subject that you choose from the faculty's list count, together with the Romanian Baccalaureate (bac) average. There is no written exam."
   },
-  "upb|Facultatea de Științe Economice și Drept": {
+  "upb-pitesti|Facultatea de Științe Economice și Drept": {
     "name": "Faculty of Economic Sciences and Law",
     "about": "The faculty is in Pitești, at the Pitești University Centre of the Bucharest Polytechnic. Here you can study finance and banking, accounting and management information systems, management, business administration, public administration and law. It trains specialists for the economic and legal fields and for public administration.",
     "admission": "You enter through a file-based competition: your high-school averages (grades 9-11) in Romanian Language and Literature and in a second subject of your choice count, together with the Romanian Baccalaureate (bac) average. There is no written exam."
   },
-  "upb|Facultatea de Științe, Educație Fizică și Informatică": {
+  "upb-pitesti|Facultatea de Științe, Educație Fizică și Informatică": {
     "name": "Faculty of Sciences, Physical Education and Computer Science",
     "about": "The faculty is in Pitești, at the Pitești University Centre of the Bucharest Polytechnic. Here you can study biology, chemistry, mathematics, computer science, ecology and environmental engineering, horticulture, as well as nursing, physiotherapy or physical education and sport. It trains teachers and specialists in health, sport, computer science and the environment.",
     "admission": "For most programmes you enter through a file-based competition, with your high-school averages in two subjects of your choice and the Romanian Baccalaureate (bac) average. For Physical Education and Sport you take sports tests, and for General Nursing you also take a written test in Biology (human anatomy and physiology).",
@@ -2140,7 +2140,7 @@
       "Biology (human anatomy and physiology)"
     ]
   },
-  "upb|Facultatea de Teologie, Litere, Istorie și Arte": {
+  "upb-pitesti|Facultatea de Teologie, Litere, Istorie și Arte": {
     "name": "Faculty of Theology, Letters, History and Arts",
     "about": "The faculty is in Pitești, at the Pitești University Centre of the Bucharest Polytechnic. Here you can study Romanian and foreign languages, applied modern languages, history, Orthodox theology with social work, music, sacred art and acting. It continues the humanities and arts tradition of the University of Pitești.",
     "admission": "For theology, letters, applied modern languages and history you enter through a file-based competition, with your high-school averages and the Romanian Baccalaureate (bac) average. For Music and Acting you take aptitude tests (for example musical dictation and solfeggio, and improvisation and performance of a text, respectively), and for Sacred Art you take a drawing test."

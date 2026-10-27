@@ -56,6 +56,7 @@ const ALIASES: Record<string, string> = {
   "ubb-cluj": "ubb babes bolyai",
   "ase-bucuresti": "ase academia de studii economice",
   upb: "upb politehnica bucuresti poli",
+  "upb-pitesti": "upit politehnica pitesti universitatea din pitesti poli",
   utcn: "politehnica cluj utcluj",
   upt: "politehnica timisoara",
   uaic: "uaic cuza iasi",

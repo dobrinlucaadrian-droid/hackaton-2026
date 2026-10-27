@@ -1409,5 +1409,22 @@
    "Only three bachelor's programmes",
    "Less well known than the state universities in Timișoara"
   ]
+ },
+ "upb-pitesti": {
+  "about": "The former University of Pitești, which has been part of POLITEHNICA Bucharest since 2023. It has six faculties in Pitești, from automotive engineering and computers to sciences, economics, law, languages and the arts, and primary-school teaching can also be studied in Alexandria, Câmpulung, Râmnicu Vâlcea and Slatina.",
+  "budgetNote": "You can study for free on a state-funded place if you rank high enough; on fee-paying places you pay a yearly fee, and for some programmes the fee is higher, for example engineering, law, physiotherapy, music, acting and general nursing.",
+  "admission": "For most programmes you are admitted on your school record: your high-school grades in the chosen subjects, your overall averages in years 9 to 11 and your high-school activities count. Sport, music and acting have aptitude tests, general nursing has a written biology test and sacred art has a drawing test; you apply online at admitere.pub.ro.",
+  "scholarshipsNote": "There are merit scholarships, based on grades, and social scholarships for students from low-income families or in special situations; only students on state-funded places can get them.",
+  "dormsNote": "There are halls of residence in Pitești: the cheaper places go to students on state-funded places, while fee-paying students can get places at the full price. You apply at the start of the year, and there is also a canteen with reduced prices for students.",
+  "pros": [
+   "A very wide choice, from automotive engineering and computers to law, psychology, music and theatre",
+   "A degree from POLITEHNICA Bucharest, a large university",
+   "Primary-school teaching can also be studied in four nearby towns"
+  ],
+  "cons": [
+   "Fewer engineering programmes than in Bucharest",
+   "Fees are higher for some programmes, for example engineering, law, acting and general nursing",
+   "Scholarships go only to students on state-funded places"
+  ]
  }
 }

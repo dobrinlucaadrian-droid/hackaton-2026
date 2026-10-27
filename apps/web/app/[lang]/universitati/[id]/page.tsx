@@ -12,7 +12,7 @@ import { Shell } from "@/components/Shell";
 import { UniversityOpinions } from "@/components/UniversityOpinions";
 import { BudgetBadge, PrestigeBadge } from "@/components/UniversityBadges";
 import { UniversityDomains } from "@/components/UniversityDomains";
-import { campusGroups } from "@/lib/campuses";
+import { RELATED_SHEETS, campusGroups } from "@/lib/campuses";
 import { catalogCountryOfSheet } from "@/lib/catalog";
 import { curriculumLinkFor } from "@/lib/curricula";
 import { feeOf, feeText } from "@/lib/fees";
@@ -283,6 +283,13 @@ export default async function UniversityPage({ params }: Props) {
           )}
           {uniDomains.length > 0 && (
             <Section title={t("Ce poți studia aici", "What you can study here")}>
+              {RELATED_SHEETS[u.id] && (
+                <p className="mb-3">
+                  <Link href={localHref(lang, `/universitati/${RELATED_SHEETS[u.id].id}`)} className="font-bold text-primary underline decoration-primary/40 underline-offset-2 hover:text-primary-dark">
+                    {t(RELATED_SHEETS[u.id].ro, RELATED_SHEETS[u.id].en)}
+                  </Link>
+                </p>
+              )}
               {(() => {
                 const toItems = (list: typeof uniDomains) =>
                   list.map((d) => ({

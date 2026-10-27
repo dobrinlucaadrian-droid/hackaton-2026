@@ -3,6 +3,7 @@ import { describe, expect, it } from "vitest";
 import programsJson from "../data/catalog/ro-programs.json";
 import { faculties, facultyBySlug, facultyHref, facultySlug } from "./faculties";
 import { universities } from "./sheets";
+import { SPLIT_SHEETS } from "./roPrograms";
 
 const ADMISSION = ["examen", "bac", "dosar", "interviu", "aptitudini", "test-standardizat"];
 const official = new Set((programsJson as { institutionId: string; faculty?: string }[]).map((p) => `${p.institutionId}|${p.faculty ?? ""}`));
@@ -12,7 +13,8 @@ describe("faculty sheets", () => {
     const ids = new Set(universities.map((u) => u.id));
     for (const f of faculties) {
       expect(ids.has(f.universityId), f.universityId).toBe(true);
-      expect(official.has(`${f.universityId}|${f.name}`), `${f.universityId}: ${f.name}`).toBe(true);
+      const institution = SPLIT_SHEETS[f.universityId]?.institution ?? f.universityId; // Politehnica București and Pitești share one entry of the official list
+      expect(official.has(`${institution}|${f.name}`), `${f.universityId}: ${f.name}`).toBe(true);
     }
   });
 

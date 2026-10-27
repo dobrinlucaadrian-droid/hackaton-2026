@@ -69,34 +69,15 @@
         "domainIds": [
             "calculatoare-it",
             "informatica",
-            "matematica",
             "fizica",
-            "chimie",
-            "biologie",
             "inginerie-electrica-electronica",
             "inginerie-mecanica",
             "inginerie-chimica-materiale",
             "energie-petrol-mediu",
             "marina-transporturi",
-            "agronomie-silvicultura",
             "business-management",
-            "economie-finante",
             "drept",
-            "administratie-publica",
-            "psihologie",
-            "sociologie-asistenta-sociala",
-            "stiintele-educatiei",
-            "comunicare-jurnalism",
-            "litere-limbi-straine",
-            "istorie",
-            "sport-kinetoterapie",
-            "asistenta-medicala",
-            "geografie-mediu",
-            "turism-servicii",
-            "teologie",
-            "muzica",
-            "arte-vizuale-design",
-            "teatru-film"
+            "comunicare-jurnalism"
         ],
         "about": "Cea mai mare școală de ingineri din țară, cu facultăți de inginerie și calculatoare în București, plus Centrul Universitar Pitești (fosta Universitate din Pitești, cu care a fuzionat), unde sunt și facultăți de științe, economie, drept și litere. Este cunoscută pentru absolvenții căutați de companii.",
         "prestige": "international",
@@ -4195,6 +4176,72 @@
             "Plătești taxă de școlarizare",
             "Doar trei programe de licență",
             "Mai puțin cunoscută decât universitățile de stat din Timișoara"
+        ]
+    },
+    {
+        "id": "upb-pitesti",
+        "name": "Universitatea Națională de Știință și Tehnologie POLITEHNICA București – Centrul Universitar Pitești",
+        "city": "Pitești",
+        "country": "România",
+        "region": "ro",
+        "website": "https://www.upit.ro",
+        "domainIds": [
+            "biologie",
+            "chimie",
+            "agronomie-silvicultura",
+            "energie-petrol-mediu",
+            "sport-kinetoterapie",
+            "psihologie",
+            "asistenta-medicala",
+            "geografie-mediu",
+            "informatica",
+            "matematica",
+            "inginerie-mecanica",
+            "marina-transporturi",
+            "calculatoare-it",
+            "inginerie-electrica-electronica",
+            "business-management",
+            "turism-servicii",
+            "economie-finante",
+            "drept",
+            "administratie-publica",
+            "stiintele-educatiei",
+            "sociologie-asistenta-sociala",
+            "comunicare-jurnalism",
+            "teologie",
+            "litere-limbi-straine",
+            "istorie",
+            "muzica",
+            "arte-vizuale-design",
+            "teatru-film"
+        ],
+        "about": "Fosta Universitate din Pitești, care din 2023 face parte din POLITEHNICA București. Are șase facultăți în Pitești, de la inginerie auto și calculatoare la științe, economie, drept, litere și arte, iar pedagogia se poate studia și în Alexandria, Câmpulung, Râmnicu Vâlcea și Slatina.",
+        "prestige": "national",
+        "budget": "gratuit",
+        "budgetNote": "Poți învăța gratuit pe un loc la buget, dacă intri printre primii; pe locurile cu taxă plătești pe an, iar la unele programe taxa e mai mare, de exemplu la inginerie, drept, kinetoterapie, muzică, actorie și asistență medicală.",
+        "admissionTypes": [
+            "dosar",
+            "aptitudini",
+            "examen"
+        ],
+        "admission": "La cele mai multe programe intri pe bază de dosar: contează mediile din liceu la materiile alese, mediile generale din clasele a IX-a – a XI-a și activitățile tale din liceu. La sport, muzică și actorie dai probe de aptitudini, la asistență medicală o probă scrisă de biologie, iar la artă sacră o probă de desen; înscrierea se face online, pe admitere.pub.ro.",
+        "scholarships": true,
+        "scholarshipsNote": "Există burse de performanță, după note, și burse sociale, pentru familii cu venituri mici sau situații speciale; le primesc doar studenții de pe locurile la buget.",
+        "dorms": true,
+        "dormsNote": "Ai cămine în Pitești: locurile mai ieftine sunt pentru studenții la buget, iar cei de la taxă pot primi locuri cu plată integrală. Cererea se depune la începutul anului și există și o cantină cu prețuri reduse pentru studenți.",
+        "certificates": [
+            "bac",
+            "medical"
+        ],
+        "pros": [
+            "Ofertă foarte largă, de la inginerie auto și calculatoare la drept, psihologie, muzică și teatru",
+            "Diplomă de la POLITEHNICA București, o universitate mare",
+            "Pedagogia se poate face și în patru orașe din apropiere"
+        ],
+        "cons": [
+            "Mai puține programe de inginerie decât la București",
+            "Taxa e mai mare la unele programe, de exemplu la inginerie, drept, actorie și asistență medicală",
+            "Bursele se dau doar studenților de pe locurile la buget"
         ]
     }
 ]

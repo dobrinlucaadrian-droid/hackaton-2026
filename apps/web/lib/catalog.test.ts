@@ -6,6 +6,7 @@ import { catalogCountries, catalogCountryOfSheet, catalogTotals } from "./catalo
 import { domains } from "./data";
 import { universities } from "./sheets";
 import type { CatalogInstitution, CatalogProgram } from "./types";
+import { SPLIT_SHEETS } from "./roPrograms";
 
 const DIR = new URL("../data/catalog/", import.meta.url);
 function read<T>(cc: string, name: "institutions" | "programs"): T[] {
@@ -78,7 +79,8 @@ describe("catalogue: Romania (HG 606/2026, academic year 2026-2027)", () => {
 
   it("links every Romanian university sheet to the official list, and the other way round", () => {
     const ro = universities.filter((u) => u.region === "ro").map((u) => u.id);
-    for (const id of ro) expect(institutions.some((i) => i.id === id && i.hasSheet), id).toBe(true);
+    // a sheet made from part of an institution (Politehnica: București, Pitești) is linked through that institution
+    for (const id of ro) expect(institutions.some((i) => i.id === (SPLIT_SHEETS[id]?.institution ?? id) && i.hasSheet), id).toBe(true);
     expect(institutions.filter((i) => !i.hasSheet)).toHaveLength(1);
     expect(catalogCountryOfSheet("upb")?.cc).toBe("RO");
     expect(catalogCountryOfSheet("nu-exista")).toBeUndefined();

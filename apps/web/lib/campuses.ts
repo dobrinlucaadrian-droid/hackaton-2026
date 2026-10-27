@@ -1,27 +1,14 @@
 // Universities whose official programme list spans several cities: on their sheet, "Ce poți studia aici" is split by city, using
-// the city of each programme in the official list (data/catalog/ro-programs.json), so a domain taught only in a branch (e.g. Teologie
-// of Politehnica, taught in Pitești) is not shown as if it were in the main city. Server only (it reads the catalogue).
+// the city of each programme in the official list (data/catalog/ro-programs.json), so a domain taught only in a branch (e.g. the domains
+// of Tehnica din Cluj taught in Baia Mare) is not shown as if it were in the main city. Server only (it reads the catalogue).
 import { roProgramsOf } from "./roPrograms";
 
 export type CampusGroup = { ro: string; en: string; noteRo?: string; noteEn?: string; domainIds: string[] };
 
-// Names for the groups of universities whose campuses are known by their own name.
-const NAMES: Record<string, Record<string, Omit<CampusGroup, "domainIds">>> = {
-  upb: {
-    București: { ro: "Politehnica București", en: "Politehnica Bucharest" },
-    // the Pitești faculties also teach in their branches in nearby towns, listed under Pitești
-    Pitești: {
-      ro: "Politehnica Pitești",
-      en: "Politehnica Pitești",
-      noteRo: "Facultățile din Pitești, cu extensii în Alexandria, Câmpulung, Râmnicu Vâlcea și Slatina.",
-      noteEn: "The faculties in Pitești, with branches in Alexandria, Câmpulung, Râmnicu Vâlcea and Slatina.",
-    },
-  },
-};
+// Names for city groups known by their own name (none at the moment: Politehnica București and Pitești are separate sheets).
+const NAMES: Record<string, Record<string, Omit<CampusGroup, "domainIds">>> = {};
 // Branch towns counted with a larger campus of the same university (same faculties in the official list).
-const BRANCH_OF: Record<string, Record<string, string>> = {
-  upb: { Alexandria: "Pitești", Câmpulung: "Pitești", "Râmnicu Vâlcea": "Pitești", Slatina: "Pitești" },
-};
+const BRANCH_OF: Record<string, Record<string, string>> = {};
 
 /**
  * The sheet's domains split by city, or undefined when every domain is taught in the sheet's own city. The sheet's city comes
@@ -51,3 +38,9 @@ export function campusGroups(universityId: string, sheetCity: string, domainIds:
     ...others.map(([c, set]) => ({ ...name(c), domainIds: domainIds.filter((d) => set.has(d)) })),
   ].filter((g) => g.domainIds.length > 0);
 }
+
+/** Sheets made from one institution (lib/roPrograms.ts SPLIT_SHEETS) point to each other under "Ce poți studia aici". */
+export const RELATED_SHEETS: Record<string, { id: string; ro: string; en: string }> = {
+  upb: { id: "upb-pitesti", ro: "Facultățile din Pitești ale Politehnicii au fișa lor: Politehnica Pitești →", en: "Politehnica's faculties in Pitești have their own sheet: Politehnica Pitești →" },
+  "upb-pitesti": { id: "upb", ro: "Facultățile din București au fișa lor: Politehnica București →", en: "The faculties in Bucharest have their own sheet: Politehnica Bucharest →" },
+};

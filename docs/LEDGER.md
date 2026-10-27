@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-27 20:00 — Politehnica Pitești, fișă proprie
+- Cerut: Politehnica Pitești să apară pe site separat de Politehnica București (echipa a ales „fișă proprie”)
+- Făcut: fișă nouă `upb-pitesti` (oraș Pitești, 28 de domenii, scrisă și verificată din pagini oficiale, taxa 2026/27 din PDF-ul oficial, text în engleză). Fișa `upb` păstrează doar cele 11 domenii din București. Programele oficiale se împart pe oraș (`SPLIT_SHEETS`), cele 6 facultăți din Pitești s-au mutat la fișa nouă, iar vechile adrese ale facultăților duc automat la noile adrese. Legături între cele două fișe. Căutarea găsește fișa și după „upit”, „Universitatea din Pitești”, „Politehnica Pitești”
+- Fișiere: `apps/web/lib/roPrograms.ts`, `apps/web/lib/campuses.ts`, `apps/web/lib/universities.ts`, `apps/web/app/[lang]/universitati/[id]/page.tsx`, `apps/web/next.config.ts`, `apps/web/lib/catalog.test.ts`, `apps/web/lib/faculties.test.ts`, `apps/web/data/*` (fișe, facultăți, taxe, engleză, surse, indexuri)
+- Poartă: TRECUT (secrete, fișiere, build, 193 teste, aplicația pornește; pagini, redirect și căutare verificate local)
+- Urmează: echipa verifică fișa și spune „salvează și publică”
+
 ### 2026-10-27 18:00 — căutarea de universități: paranteze și doar ce avem pe site
 - Cerut: căutarea „Stanford (California)” nu găsea nimic; căutarea să arate doar ce avem pe site; Stanford adăugată
 - Făcut: Stanford avea deja fișă (/universitati/stanford); căutarea nu o găsea pentru că sugestia de oraș „Stanford (California)” păstra parantezele în cuvinte. Acum căutarea desparte cuvintele ca indexul (fără paranteze, cratime, ghilimele), test nou. Scoasă lista „Alte universități din lume” de sub rezultate (10.248 de universități fără fișă, doar nume și site): `public/world-universities.json`, `searchWorld` și testul ei șterse
@@ -1131,6 +1138,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-27 03:57 `bfc1ee4` fix: university search ignores punctuation and shows only our sheets
 - 2026-10-27 03:48 `fb729e8` fix: split every multi-city university by city, repair broken links
 - 2026-10-27 03:07 `379a35f` fix: balance the quiz domains and split Politehnica by campus
 - 2026-10-27 02:19 `0f89013` feat: sheets for every university in the student opinions
@@ -1160,5 +1168,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-22 02:47 `d1f4f32` docs: launch preparation, production database and settings ready
 - 2026-10-21 18:16 `c711921` feat: second fee check, 11 more levels corrected from official pages
 - 2026-10-21 17:39 `0a5d0cf` feat: clearer cost filter with euro bands, 10 more results, checked fees
-- 2026-10-21 16:19 `091c093` feat: friendly error pages with the broken-road drawing
 <!-- commits:end -->

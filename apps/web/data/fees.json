@@ -6637,5 +6637,15 @@
   "year": "2027/28",
   "url": "https://lesroches.edu/apply/tuition-fees/",
   "note": "Anul pregătitor opțional (Experiential Year): 33.450 CHF; cazarea și masa în campus sunt obligatorii și se plătesc separat"
+ },
+ {
+  "id": "upb-pitesti",
+  "currency": "RON",
+  "min": 5200,
+  "max": 10000,
+  "year": "2026/27",
+  "url": "https://upb.ro/wp-content/uploads/2026/07/Sistem-de-taxe-2026-2027-02.pdf",
+  "note": "Taxa de 5.200 lei/an este la majoritatea programelor; la unele (inginerie, drept, kinetoterapie, muzică, artă sacră) 5.900 lei/an; la Actorie și Asistență medicală generală 10.000 lei/an.",
+  "budgetFree": true
  }
 ]
