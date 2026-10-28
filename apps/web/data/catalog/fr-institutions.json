@@ -499,7 +499,7 @@
   "officialName": "AUDENCIA - SAINT-OUEN",
   "city": "Clichy",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.audencia.com",
   "programs": 4
  },
@@ -1673,7 +1673,7 @@
   "officialName": "ECOLE DE MANAGEMENT DE LYON",
   "city": "Lyon",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://bba.em-lyon.com/fr",
   "programs": 5
  },
@@ -2645,7 +2645,7 @@
   "officialName": "EPITA Paris",
   "city": "Puteaux",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.epita.fr/",
   "programs": 8
  },
@@ -3125,7 +3125,7 @@
   "officialName": "ESSCA School of Management",
   "city": "Angers",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.essca.eu",
   "programs": 2
  },
@@ -3281,7 +3281,7 @@
   "officialName": "EXCELIA",
   "city": "La Rochelle",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.excelia-group.fr/",
   "programs": 4
  },
@@ -6628,7 +6628,7 @@
   "officialName": "Institut national universitaire Champollion",
   "city": "Albi",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.univ-jfc.fr",
   "programs": 33
  },
@@ -8284,7 +8284,7 @@
   "officialName": "NEOMA Business School - Campus de Reims",
   "city": "Reims",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.neoma-bs.fr/",
   "programs": 3
  },
@@ -8308,7 +8308,7 @@
   "officialName": "Nîmes Université",
   "city": "Nîmes",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.unimes.fr",
   "programs": 27
  },
@@ -8680,7 +8680,7 @@
   "officialName": "Sciences Po Aix – Institut d'études politiques",
   "city": "Aix-en-Provence",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.sciencespo-aix.fr",
   "programs": 3
  },
@@ -8776,7 +8776,7 @@
   "officialName": "Sciences Po Grenoble - Institut d'études politiques",
   "city": "Saint-Martin-d'Hères",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.sciencespo-grenoble.fr",
   "programs": 1
  },
@@ -8824,7 +8824,7 @@
   "officialName": "Sciences Po Rennes – Institut d'études politiques",
   "city": "Rennes",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.sciencespo-rennes.fr",
   "programs": 1
  },
@@ -8848,7 +8848,7 @@
   "officialName": "Sciences Po Saint-Germain-en-Laye – Institut d'études politiques",
   "city": "Saint-Germain-en-Laye",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.sciencespo-saintgermainenlaye.fr/",
   "programs": 1
  },
@@ -8860,7 +8860,7 @@
   "officialName": "Sciences Po Strasbourg – Institut d'études politiques",
   "city": "Strasbourg",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.sciencespo-strasbourg.fr/",
   "programs": 1
  },
@@ -8872,7 +8872,7 @@
   "officialName": "Sciences Po Toulouse – Institut d'études politiques",
   "city": "Toulouse",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.sciencespo-toulouse.fr/",
   "programs": 2
  },

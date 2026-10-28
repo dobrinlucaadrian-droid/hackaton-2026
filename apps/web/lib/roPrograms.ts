@@ -1,10 +1,14 @@
 // The Romanian bachelor programmes from the official list, read straight from the catalogue file so a sheet can show them without waiting for the database. Large: import it only from server code (the university and faculty pages) and from tests.
 // One institution of the official list can be split into several sheets by city (Politehnica București: București and the Pitești centre).
 import programsJson from "../data/catalog/ro-programs.json";
-import type { ProgramView } from "@/components/ProgramRow";
+import admissionJson from "../data/admission-ro.json";
+import type { AdmissionAverage, ProgramView } from "@/components/ProgramRow";
 import type { CatalogProgram } from "./types";
 
 const all = programsJson as CatalogProgram[];
+
+/** Last admission averages from the official results of the faculties (data/admission-ro.json), by programme key. */
+export const admission = admissionJson as { year: string; entries: Record<string, Omit<AdmissionAverage, "year">> };
 
 /** Sheets made from part of an official institution: sheet id -> the institution and which of its cities belong to the sheet. */
 export const SPLIT_SHEETS: Record<string, { institution: string; inSheet: (city: string) => boolean }> = {
@@ -21,7 +25,9 @@ function ofSheet(sheetId: string): CatalogProgram[] {
 function view(p: CatalogProgram): ProgramView {
   const { search, source, domainId, ...rest } = p;
   void search; void source;
-  return domainId ? { ...rest, domainId } : rest;
+  const row: ProgramView = domainId ? { ...rest, domainId } : rest;
+  const avg = admission.entries[p.key];
+  return avg ? { ...row, admission: { ...avg, year: admission.year } } : row;
 }
 
 /** All bachelor programmes of one Romanian sheet, in the order of the official list. */

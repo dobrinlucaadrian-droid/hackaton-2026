@@ -217,7 +217,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `CurriculumPlan.tsx` (44) — "Ce înveți, an cu an": the main subjects of each study year for a domain, taken from one official curriculum, with a link to it.. Exports: CurriculumPlan
 - `DomainDetails.tsx` (60) — One study domain as a native <details>: summary with emoji, name, count and chevron; inside the short text, specializations, the subjects per year and a link to universities.. Exports: DomainDetails
 - `DomainPrograms.tsx` (72) — On a result card, in the page language: real bachelor programmes of the matched study domain in Romania (in the student's chosen cities when there are any), and the other countries where the catalogue has some.. Exports: DomainPrograms, DomainAbroad
-- `FacultyPrograms.tsx` (26) — On a faculty sheet: the bachelor programmes of that faculty from the official list. Plain markup: the faculty page gives it the rows (read on the server) and the page language.. Exports: FacultyPrograms
+- `FacultyPrograms.tsx` (27) — On a faculty sheet: the bachelor programmes of that faculty from the official list. Plain markup: the faculty page gives it the rows (read on the server) and the page language.. Exports: FacultyPrograms
 - `FavoriteButton.tsx` (87) — The heart on a university sheet (or, compact, in the corner of a search result card): adds the university to the student's favourites (shown in "Contul meu") or removes it; without an account it opens the account window and adds it once the student is signed in.. Exports: FavoriteButton
 - `GuideFinder.tsx` (60) — Country guides index body (Romanian pages): a search box with a magnifier that filters the country tiles as you type (diacritics do not matter).. Exports: GuideFinder
 - `GuideRomania.tsx` (60) — The English guide "How to apply to a university in Romania": title, intro, sections, official source links and the date it was checked, read from data/en/guide-romania.json.. Exports: romaniaGuide, GuideRomania
@@ -229,8 +229,8 @@ _Open only the files listed here; a file's description is its first comment line
 - `NavBubbles.tsx` (38) — The big buttons on the home page (Specializări, Universități, Chestionar, Studenți, Ghiduri pe țări), drawn as little clouds, in the page language.. Exports: NavBubbles
 - `NavLinks.tsx` (63) — Header navigation links with the current page highlighted (centred on phones), the RO / EN language switch; signed-in visitors also get "Contul meu" (signing in starts from the home page).. Exports: NavLinks
 - `OfficialPrograms.tsx` (15) — On a university sheet outside Romania: every bachelor programme of the institution from its country's official dataset, read from the database (those lists are too large to ship with the pages). Romanian sheets render the same list on the server, from the catalogue file.. Exports: OfficialPrograms
-- `ProgramGroups.tsx` (75) — The list of an institution's bachelor programmes, grouped by faculty (or by field when the source has no faculties). Plain markup, so a page can render it on the server; the page language comes in as `lang`.. Exports: ProgramGroups
-- `ProgramRow.tsx` (77) — One bachelor programme from the catalogue, as a compact row: name and the small facts its source gives (language, study form, years, places, status).. Exports: FORM_LABEL, ProgramRow
+- `ProgramGroups.tsx` (76) — The list of an institution's bachelor programmes, grouped by faculty (or by field when the source has no faculties). Plain markup, so a page can render it on the server; the page language comes in as `lang`.. Exports: ProgramGroups
+- `ProgramRow.tsx` (98) — One bachelor programme from the catalogue, as a compact row: name and the small facts its source gives (language, study form, years, places, status) and, for Romania, the last admission average with its official source.. Exports: FORM_LABEL, ProgramRow
 - `ProgramSearch.tsx` (104) — Search over the bachelor programmes of the catalogue: country, free text, study domain and city; the state lives in the URL so links and Back work.. Exports: ProgramSearch
 - `SaveResult.tsx` (108) — Under the result, in the page language: signed-in students save it with one button; the others see a card with the benefits of an account, which opens the account window on "new account" and saves the result once the account exists.. Exports: SaveResult
 - `SearchBox.tsx` (129) — Search box (in the page language) with a magnifier icon; submits to /universitati?q=... or calls onSearch when given. With `suggest`, a list of suggestions opens while typing (arrows, Enter and Escape work; screen readers hear it as a combobox).. Exports: SearchBox
@@ -287,6 +287,30 @@ _Open only the files listed here; a file's description is its first comment line
 - `turnstile.ts` (20) — Checks a Cloudflare Turnstile token (the "I am not a robot" box) with Cloudflare, on the server. Used by the review form, the sign-up and the forgotten-password step.. Exports: verifyTurnstile
 - `users.ts` (14) — Server-only lookups by username, used by the sign-in code: the email behind a username never leaves the server.. Exports: emailOfUsername
 
+### apps/web/data  (21 files)
+
+- `admission-ro.json` (3196) — JSON; keys: year, entries
+- `categories.json` (13) — JSON array, 10 items
+- `curricula.json` (2190) — JSON array, 40 items
+- `curriculum-links.json` (288) — JSON array, 57 items
+- `domains.json` (43) — JSON array, 40 items
+- `english.json` (994) — JSON; keys: aalborg, aalto, aams-aarhus, aarhus, aarhus-architecture, aau-prague, aberdeen, abertay
+- `eur-rates.json` (19) — JSON; keys: EUR, RON, MDL, GBP, USD, CHF, DKK, SEK
+- `faculties-ro.json`
+- `fees.json` (7345) — JSON array, 856 items
+- `guides.json` (3254) — JSON array, 32 items
+- `photo-rejects.json` (181) — JSON array, 178 items
+- `photos.json` (4683) — JSON array, 520 items
+- `profiles.json` (15) — JSON array, 12 items
+- `questions.json` (729) — JSON array, 18 items
+- `ro-cities.json` (25) — JSON array, 22 items
+- `specializations.json` (209) — JSON array, 206 items
+- `testimonials.json` (169) — JSON array, 24 items
+- `universities-abroad.json`
+- `universities-index.json`
+- `universities-ro.json` (4248) — JSON array, 84 items
+- `university-sources.json`
+
 ### apps/web/data/catalog  (37 files)
 
 - `at-institutions.json` (696) — JSON array, 63 items
@@ -309,7 +333,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `gr-programs.json` (2) — JSON array, 335 items
 - `ie-institutions.json` (498) — JSON array, 45 items
 - `ie-programs.json`
-- `index.json` (2592) — JSON array, 18 items
+- `index.json` (2635) — JSON array, 18 items
 - `it-institutions.json` (1015) — JSON array, 92 items
 - `it-programs.json`
 - `lt-institutions.json` (300) — JSON array, 27 items
@@ -326,29 +350,6 @@ _Open only the files listed here; a file's description is its first comment line
 - `si-programs.json` (2) — JSON array, 333 items
 - `us-institutions.json`
 - `us-programs.jsonl.gz`
-
-### apps/web/data  (20 files)
-
-- `categories.json` (13) — JSON array, 10 items
-- `curricula.json` (2190) — JSON array, 40 items
-- `curriculum-links.json` (288) — JSON array, 57 items
-- `domains.json` (43) — JSON array, 40 items
-- `english.json` (906) — JSON; keys: aalborg, aalto, aams-aarhus, aarhus, aarhus-architecture, aau-prague, aberdeen, abertay
-- `eur-rates.json` (19) — JSON; keys: EUR, RON, MDL, GBP, USD, CHF, DKK, SEK
-- `faculties-ro.json`
-- `fees.json` (6652) — JSON array, 777 items
-- `guides.json` (3254) — JSON array, 32 items
-- `photo-rejects.json` (181) — JSON array, 178 items
-- `photos.json` (4683) — JSON array, 520 items
-- `profiles.json` (15) — JSON array, 12 items
-- `questions.json` (729) — JSON array, 18 items
-- `ro-cities.json` (25) — JSON array, 22 items
-- `specializations.json` (209) — JSON array, 206 items
-- `testimonials.json` (169) — JSON array, 24 items
-- `universities-abroad.json`
-- `universities-index.json`
-- `universities-ro.json` (4248) — JSON array, 84 items
-- `university-sources.json`
 
 ### apps/web/data/en  (10 files)
 
@@ -367,7 +368,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 - `activities.test.ts` (64) — Tests that competitions, volunteering and extracurriculars are weighed and used by the matching.
 - `activities.ts` (89) — Activities a student can add (competitions, volunteering, extracurriculars): labels (Romanian and English), areas and how much each one weighs in the matching.. Exports: MAX_ACTIVITIES, ACTIVITY_KINDS, ACTIVITY_LEVELS, ACTIVITY_AREAS, activityArea, activityTraits, labelOf, describeActivity
-- `campuses.ts` (47) — Universities whose official programme list spans several cities: on their sheet, "Ce poți studia aici" is split by city, using. Exports: campusGroups, RELATED_SHEETS
+- `campuses.ts` (49) — Universities whose official programme list spans several cities: on their sheet, "Ce poți studia aici" is split by city, using. Exports: campusGroups, RELATED_SHEETS
 - `catalog.test.ts` (126) — Tests the programme catalogue files: every country follows the shared contract, the summary matches the files, and Romania matches the official list.
 - `catalog.ts` (20) — The per-country summary of the programme catalogue (counts, cities, sources), small enough to ship to the browser; the programmes themselves stay in the database.. Exports: catalogCountries, catalogTotals, catalogCountryOfSheet, catalogSheetIds
 - `cities.ts` (16) — Romanian cities that have at least one university sheet, the ones with most universities first. A small generated list (scripts/data/sheets-index.mjs), so the questionnaire does not load the university data.. Exports: romanianCities, cityList
@@ -393,8 +394,8 @@ _Open only the files listed here; a file's description is its first comment line
 - `pendingSave.ts` (60) — Keeps a questionnaire result or a hearted university on this device while the student signs in or makes an account, so it can be saved to the account afterwards.. Exports: setPendingResult, setPendingFavorite, takePendingFavorite, takePendingResult
 - `photos.test.ts` (28) — Tests the university photos: each one belongs to a real sheet, its file is in public/photos, its licence is free (no NC/ND) and it carries an author and a link to Wikimedia Commons.
 - `photos.ts` (12) — Freely licensed photos of the universities (Wikimedia Commons, saved small in public/photos by scripts/data/photos.mjs), with the author and licence the page must show. Server only.. Exports: photoOf
-- `roPrograms.test.ts` (29) — Tests the programme lists the Romanian sheets render on the server: every faculty sheet finds its programmes and the rows carry only what a page shows.
-- `roPrograms.ts` (36) — The Romanian bachelor programmes from the official list, read straight from the catalogue file so a sheet can show them without waiting for the database. Large: import it only from server code (the university and faculty pages) and from tests.. Exports: SPLIT_SHEETS, roProgramsOf, roProgramsOfFaculty
+- `roPrograms.test.ts` (41) — Tests the programme lists the Romanian sheets render on the server: every faculty sheet finds its programmes and the rows carry only what a page shows.
+- `roPrograms.ts` (42) — The Romanian bachelor programmes from the official list, read straight from the catalogue file so a sheet can show them without waiting for the database. Large: import it only from server code (the university and faculty pages) and from tests.. Exports: admission, SPLIT_SHEETS, roProgramsOf, roProgramsOfFaculty
 - `seo.test.ts` (46) — Tests the search-engine helpers: descriptions are trimmed at a word, and the sitemap lists every public sheet once, on the official address, never a personal page.
 - `seo.ts` (11) — The site's one official address and a helper that trims a text to the length search engines show under a result.. Exports: SITE_URL, clip
 - `serverMessages.test.ts` (19) — Tests that server messages are translated on English pages and left alone in Romanian.

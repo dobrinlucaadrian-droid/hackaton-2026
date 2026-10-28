@@ -67,6 +67,7 @@ export function ProgramGroups({ rows, city, sourceLabel, year, hasCapacity, facu
         {hasCapacity
           ? t("„Locuri” înseamnă numărul maxim de studenți care pot fi înscriși în anul I, la buget și la taxă împreună. ", "“Places” is the maximum number of students who can enrol in the first year, state-funded and fee-paying places together. ")
           : t("Numele programelor sunt în limba sursei. ", "Programme names are in the language of the source. ")}
+        {rows.some((p) => p.admission) && t("„Ultima medie de intrare” este media ultimului candidat admis în sesiunea din iulie, din rezultatele oficiale ale facultății (fără locurile speciale, de exemplu pentru romi sau pentru absolvenții din mediul rural); anul acesta poate fi alta. ", "“Last admission score” is the score of the last candidate admitted in the July session, from the faculty's official results (not counting special places, e.g. for Roma or rural graduates); this year it may differ. ")}
         <Link href="/surse" className="font-bold text-primary underline underline-offset-2">{t("De unde sunt datele", "Where the data comes from")}</Link>
       </p>
     </section>

@@ -7,7 +7,7 @@
   "officialName": "Akademie der bildenden Künste Wien",
   "city": "Wien",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 2
  },
  {
@@ -106,7 +106,7 @@
   "officialName": "Fachhochschule Kärnten",
   "city": "Klagenfurt",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 15
  },
  {
@@ -183,7 +183,7 @@
   "officialName": "FH Kufstein Tirol Bildungs GmbH",
   "city": "Kufstein",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 8
  },
  {
@@ -458,7 +458,7 @@
   "officialName": "Universität für Musik und darstellende Kunst Graz",
   "city": "Graz",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 4
  },
  {
@@ -491,7 +491,7 @@
   "officialName": "Veterinärmedizinische Universität Wien",
   "city": "Wien",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 1
  },
  {
@@ -502,7 +502,7 @@
   "officialName": "Webster Vienna Private University",
   "city": "Wien",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 2
  },
  {

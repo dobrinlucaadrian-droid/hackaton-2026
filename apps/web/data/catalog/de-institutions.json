@@ -187,7 +187,7 @@
   "officialName": "Bauhaus-Universität Weimar",
   "city": "Weimar",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.uni-weimar.de",
   "programs": 9
  },
@@ -499,7 +499,7 @@
   "officialName": "EBS Universität für Wirtschaft und Recht (Priv.)",
   "city": "Oestrich-Winkel",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.ebs.edu",
   "programs": 3
  },
@@ -1183,7 +1183,7 @@
   "officialName": "Hochschule Bonn-Rhein-Sieg",
   "city": "Sankt Augustin",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.h-brs.de/en",
   "programs": 20
  },
@@ -1459,7 +1459,7 @@
   "officialName": "Hochschule für angewandte Wissenschaften Coburg",
   "city": "Coburg",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.hs-coburg.de",
   "programs": 22
  },
@@ -1483,7 +1483,7 @@
   "officialName": "Hochschule für angewandte Wissenschaften Kempten",
   "city": "Kempten",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.hochschule-kempten.de",
   "programs": 23
  },
@@ -1495,7 +1495,7 @@
   "officialName": "Hochschule für angewandte Wissenschaften Landshut",
   "city": "Landshut",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.haw-landshut.de/",
   "programs": 38
  },
@@ -1531,7 +1531,7 @@
   "officialName": "Hochschule für angewandte Wissenschaften Rosenheim",
   "city": "Rosenheim",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.th-rosenheim.de/",
   "programs": 31
  },
@@ -1843,7 +1843,7 @@
   "officialName": "Hochschule für Technik, Wirtschaft und Kultur Leipzig",
   "city": "Leipzig",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.htwk-leipzig.de",
   "programs": 5
  },
@@ -1891,7 +1891,7 @@
   "officialName": "Hochschule Hamm-Lippstadt",
   "city": "Hamm",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.hshl.de/en/",
   "programs": 14
  },
@@ -1903,7 +1903,7 @@
   "officialName": "Hochschule Hannover (FH)",
   "city": "Hannover",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.hs-hannover.de/start/index.html",
   "programs": 32
  },
@@ -2131,7 +2131,7 @@
   "officialName": "Hochschule Reutlingen",
   "city": "Reutlingen",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.reutlingen-university.de",
   "programs": 19
  },
@@ -2599,7 +2599,7 @@
   "officialName": "Munich Business School München (Priv. FH)",
   "city": "Munich",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.munich-business-school.de",
   "programs": 2
  },

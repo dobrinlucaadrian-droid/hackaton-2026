@@ -151,7 +151,7 @@
   "officialName": "LUCA School of Arts",
   "city": "Schaarbeek",
   "kind": "unknown",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "http://www.luca-arts.be/",
   "programs": 10
  },

@@ -39,8 +39,10 @@ export function campusGroups(universityId: string, sheetCity: string, domainIds:
   ].filter((g) => g.domainIds.length > 0);
 }
 
-/** Sheets made from one institution (lib/roPrograms.ts SPLIT_SHEETS) point to each other under "Ce poți studia aici". */
+/** Sheets made from one institution (lib/roPrograms.ts SPLIT_SHEETS), or a school with its own sheet and its university, point to each other under "Ce poți studia aici". */
 export const RELATED_SHEETS: Record<string, { id: string; ro: string; en: string }> = {
   upb: { id: "upb-pitesti", ro: "Facultățile din Pitești ale Politehnicii au fișa lor: Politehnica Pitești →", en: "Politehnica's faculties in Pitești have their own sheet: Politehnica Pitești →" },
+  esade: { id: "es-universidad-ramon-llull", ro: "Esade face parte din Universitatea Ramon Llull, care are și alte școli: Universitat Ramon Llull →", en: "Esade is part of Ramon Llull University, which has other schools too: Universitat Ramon Llull →" },
+  "es-universidad-ramon-llull": { id: "esade", ro: "Esade, școala de business și drept a universității, are fișa ei: Esade →", en: "Esade, the university's business and law school, has its own sheet: Esade →" },
   "upb-pitesti": { id: "upb", ro: "Facultățile din București au fișa lor: Politehnica București →", en: "The faculties in Bucharest have their own sheet: Politehnica Bucharest →" },
 };

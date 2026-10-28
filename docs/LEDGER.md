@@ -21,6 +21,20 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-28 12:00 — ESADE, fișă proprie
+- Cerut: ESADE să aibă pagina ei, cu părerea studentului acolo, scoasă de pe Ramon Llull
+- Făcut: fișa `esade` (Barcelona) scrisă din paginile oficiale esade.edu trimise de Pilot (licențe, admitere, taxe, burse; căminele din pagina Ramon Llull): taxa 21.300 € / 24.500 € (dublă licență) pentru 2027/28, programe în engleză. Părerea despre ESADE apare acum doar pe fișa Esade; fișele Esade și Ramon Llull au link una spre alta
+- Fișiere: `apps/web/data/universities-abroad.json`, `apps/web/data/university-sources.json`, `apps/web/data/fees.json`, `apps/web/data/english.json`, indexuri, `apps/web/lib/testimonials.ts`, `apps/web/lib/campuses.ts`
+- Poartă: TRECUT (secrete, fișiere, build, teste, aplicația pornește; fișele Esade și Ramon Llull deschise local)
+- Urmează: echipa se uită pe fișa Esade și spune „salvează și publică” (odată cu mediile și cele 87 de fișe)
+
+### 2026-10-27 22:30 — mediile de admitere 2025 și 87 de universități noi
+- Cerut: ultimele medii de admitere (buget și taxă) la programele din România; ~100 de universități noi, doar cu fișă completă (țările unde merg mulți români, școli de business și artă, Tomis); ESADE
+- Făcut: 653 de programe din România (22 de universități) arată „Ultima medie de intrare, iulie 2025” la buget și/sau taxă, cu link la rezultatele oficiale (`data/admission-ro.json`, citit în `lib/roPrograms.ts`, afișat în `ProgramRow`). Fiecare valoare a fost luată din documentul oficial și recalculată de un al doilea agent; ce era nesigur (locuri speciale amestecate, sesiune neclară, programe redenumite) a fost lăsat deoparte. 87 de fișe noi (Marea Britanie 25, Franța 19, Germania 15, Spania 8, Italia 7, Austria 6, Elveția 4, Olanda 2, Belgia 1), scrise și verificate de două ori din pagini oficiale, cu taxa exactă la 78 dintre ele și programele în engleză. Tomis sărită (taxa nu e publicată), ESADE sărită (site-ul blochează citirea automată), Deusto și TBS scoase la verificare (site blocat)
+- Fișiere: `apps/web/data/admission-ro.json` (nou), `apps/web/lib/roPrograms.ts`, `apps/web/lib/roPrograms.test.ts`, `apps/web/components/ProgramRow.tsx`, `apps/web/components/FacultyPrograms.tsx`, `apps/web/components/ProgramGroups.tsx`, `apps/web/data/*` (fișe, surse, taxe, engleză, catalog, indexuri)
+- Poartă: TRECUT (secrete, fișiere, build, 194 de teste, aplicația pornește; 9 fișe noi și o fișă de facultate cu medii deschise local)
+- Urmează: echipa se uită pe câteva fișe și spune „salvează și publică”; ESADE doar dacă echipa trimite textul paginilor oficiale
+
 ### 2026-10-27 20:00 — Politehnica Pitești, fișă proprie
 - Cerut: Politehnica Pitești să apară pe site separat de Politehnica București (echipa a ales „fișă proprie”)
 - Făcut: fișă nouă `upb-pitesti` (oraș Pitești, 28 de domenii, scrisă și verificată din pagini oficiale, taxa 2026/27 din PDF-ul oficial, text în engleză). Fișa `upb` păstrează doar cele 11 domenii din București. Programele oficiale se împart pe oraș (`SPLIT_SHEETS`), cele 6 facultăți din Pitești s-au mutat la fișa nouă, iar vechile adrese ale facultăților duc automat la noile adrese. Legături între cele două fișe. Căutarea găsește fișa și după „upit”, „Universitatea din Pitești”, „Politehnica Pitești”
@@ -1138,6 +1152,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-27 15:46 `62d0b6f` feat: separate sheet for Politehnica Pitesti
 - 2026-10-27 03:57 `bfc1ee4` fix: university search ignores punctuation and shows only our sheets
 - 2026-10-27 03:48 `fb729e8` fix: split every multi-city university by city, repair broken links
 - 2026-10-27 03:07 `379a35f` fix: balance the quiz domains and split Politehnica by campus
@@ -1167,5 +1182,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-23 01:25 `abc6d65` feat: email code for admins, security emails on password change and deletion
 - 2026-10-22 02:47 `d1f4f32` docs: launch preparation, production database and settings ready
 - 2026-10-21 18:16 `c711921` feat: second fee check, 11 more levels corrected from official pages
-- 2026-10-21 17:39 `0a5d0cf` feat: clearer cost filter with euro bands, 10 more results, checked fees
 <!-- commits:end -->

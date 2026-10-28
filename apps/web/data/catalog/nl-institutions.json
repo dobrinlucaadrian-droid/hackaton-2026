@@ -876,7 +876,7 @@
   "officialName": "University of Applied Sciences Europe B.V",
   "city": "Amsterdam",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 1
  },
  {
@@ -887,7 +887,7 @@
   "officialName": "Unknown University of Applied Sciences",
   "city": "'s-Gravenhage",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "programs": 2
  },
  {

@@ -6647,5 +6647,698 @@
   "url": "https://upb.ro/wp-content/uploads/2026/07/Sistem-de-taxe-2026-2027-02.pdf",
   "note": "Taxa de 5.200 lei/an este la majoritatea programelor; la unele (inginerie, drept, kinetoterapie, muzică, artă sacră) 5.900 lei/an; la Actorie și Asistență medicală generală 10.000 lei/an.",
   "budgetFree": true
+ },
+ {
+  "id": "glasgow-school-of-art",
+  "currency": "GBP",
+  "min": 24800,
+  "max": 24800,
+  "year": "2026/27",
+  "url": "https://www.gsa.ac.uk/study-at-the-gsa/fees-finance"
+ },
+ {
+  "id": "rncm",
+  "currency": "GBP",
+  "min": 29400,
+  "max": 32250,
+  "year": "2027/28",
+  "url": "https://www.rncm.ac.uk/study/apply/fees-funding/tuition-fees/",
+  "note": "BMus: 30.700 £/an."
+ },
+ {
+  "id": "guildhall-school",
+  "currency": "GBP",
+  "min": 31790,
+  "max": 31790,
+  "year": "2026/27",
+  "url": "https://www.gsmd.ac.uk/study-with-guildhall/fee-schedule-202627"
+ },
+ {
+  "id": "ied-milano",
+  "currency": "EUR",
+  "min": 6500,
+  "max": 21500,
+  "year": "2027/28",
+  "url": "http://www.ied.it/docs/IED-Italia-Undergraduate-Courses-Pricelist-Eng.pdf",
+  "note": "Taxa depinde de venitul familiei și de program: Comunicare 6.500-18.900 €/an, Modă, Interior și Product Design 8.600-21.500 €/an (cu taxa de înscriere de 2.500 €); fără acte de venit se plătește maximul."
+ },
+ {
+  "id": "polimoda",
+  "currency": "EUR",
+  "min": 18000,
+  "max": 18000,
+  "year": "2026/27",
+  "url": "https://www.polimoda.com/courses/undergraduate/fashion-marketing-management/"
+ },
+ {
+  "id": "be-luca-school-of-arts",
+  "currency": "EUR",
+  "min": 1181,
+  "max": 1181,
+  "year": "2026/27",
+  "url": "https://www.luca-arts.be/en/tuition-fees-and-master-mind-scholarship-fout",
+  "note": "Plus 330 €/an alte costuri de studiu."
+ },
+ {
+  "id": "de-bauhaus-universitat-weimar",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.uni-weimar.de/en/studies-1/new-students/",
+  "note": "Fără taxă de școlarizare; plătești doar contribuția pe semestru: 338,20 € (iarna 2026/27)."
+ },
+ {
+  "id": "arts-university-bournemouth",
+  "currency": "GBP",
+  "min": 19950,
+  "max": 19950,
+  "year": "2027/28",
+  "url": "https://aub.ac.uk/fees/undergraduate"
+ },
+ {
+  "id": "fr-ecole-de-management-de-lyon",
+  "currency": "EUR",
+  "min": 15050,
+  "max": 15050,
+  "year": "2027/28",
+  "url": "https://em-lyon.com/en/student/bachelor/global-bba",
+  "note": "Plus 450 €/an taxă administrativă."
+ },
+ {
+  "id": "fr-neoma-business-school-campus-de-reims",
+  "currency": "EUR",
+  "min": 14000,
+  "max": 14000,
+  "year": "2027/28",
+  "url": "https://neoma-bs.com/programmes/global-bba",
+  "note": "Plus 500 €/an taxă administrativă."
+ },
+ {
+  "id": "ehl",
+  "currency": "CHF",
+  "min": 30951,
+  "max": 30951,
+  "year": "2027/28",
+  "url": "https://www.ehl.edu/hubfs/DL_Docs/Tuition_Fees_BOS_EN.pdf",
+  "note": "Media pe 4 ani (123.802 CHF în total, cu anul pregătitor); în plus, taxe obligatorii de infrastructură și servicii (48.210 CHF) și masă (11.863 CHF) pe toată durata."
+ },
+ {
+  "id": "de-ebs-universitat-fur-wirtschaft-und-recht",
+  "currency": "EUR",
+  "min": 17500,
+  "max": 17500,
+  "year": "2027/28",
+  "url": "https://www.ebs.edu/en/ebs-business-school/bachelor-in-business-studies",
+  "note": "8.750 € pe semestru; cu toate taxele, 54.480 € pentru 6 semestre."
+ },
+ {
+  "id": "fr-essca-school-of-management",
+  "currency": "EUR",
+  "min": 12500,
+  "max": 12500,
+  "year": "2027/28",
+  "url": "https://www.essca.eu/en/programmes/all-programmes/bachelor-in-international-management/tuition-fees-and-financing/"
+ },
+ {
+  "id": "de-munich-business-school-munchen",
+  "currency": "EUR",
+  "min": 13920,
+  "max": 13920,
+  "year": "2027/28",
+  "url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+  "note": "6.960 € pe semestru; plus o taxă de înscriere de 690 €, o singură dată."
+ },
+ {
+  "id": "glion",
+  "currency": "CHF",
+  "min": 44125,
+  "max": 44125,
+  "year": "2027/28",
+  "url": "https://app.papirfly.com/original/gallery/39472/files/original/8fcdc77c-6935-48d4-a352-e2e32d2ebf2d.pdf",
+  "note": "Media pe 4 ani (176.500 CHF în total); în plus, alte taxe obligatorii, asigurare, masă și cazare."
+ },
+ {
+  "id": "fr-audencia-saint-ouen",
+  "currency": "EUR",
+  "min": 13000,
+  "max": 13000,
+  "year": "2027/28",
+  "url": "https://www.audencia.com/en/our-programs/global-bba/overview",
+  "note": "Plus 500 €/an taxă de servicii."
+ },
+ {
+  "id": "fr-excelia",
+  "currency": "EUR",
+  "min": 12400,
+  "max": 12400,
+  "year": "2027/28",
+  "url": "https://business.excelia-group.com/programmes/bachelors/bba-international"
+ },
+ {
+  "id": "at-akademie-der-bildenden-kunste-wien",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.akbild.ac.at/en/studies/general-study-information/tuition-fees",
+  "note": "Studenții din UE nu plătesc taxă pe durata normală a studiilor plus două semestre; plătesc doar contribuția ÖH."
+ },
+ {
+  "id": "at-fachhochschule-karnten",
+  "currency": "EUR",
+  "min": 727,
+  "max": 727,
+  "year": "2026/27",
+  "url": "https://www.cu-hochschule-kaernten.at/en/study/study-in-english",
+  "note": "363,36 € pe semestru, plus contribuția ÖH."
+ },
+ {
+  "id": "at-fh-kufstein-tirol-bildungs-gmbh",
+  "currency": "EUR",
+  "min": 727,
+  "max": 727,
+  "year": "2026/27",
+  "url": "https://www.hok.ac.at/en/admissions/tuition-fees",
+  "note": "363,36 € pe semestru, plus contribuția ÖH."
+ },
+ {
+  "id": "at-universitat-fur-musik-und-darstellende-kunst-graz",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.kug.ac.at/en/studying/before-studying/studying-costs",
+  "note": "Studenții din UE nu plătesc taxă pe durata normală a studiilor plus două semestre; plătesc doar contribuția ÖH."
+ },
+ {
+  "id": "at-veterinarmedizinische-universitat-wien",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.vetmeduni.ac.at/en/studies/admission/students-union-membership-fee-and-tuition-fee",
+  "note": "Studenții din UE nu plătesc taxă pe durata normală a studiilor; plătesc doar contribuția ÖH (26,20 € pe semestru)."
+ },
+ {
+  "id": "at-webster-vienna-private-university",
+  "currency": "EUR",
+  "min": 24068,
+  "max": 24068,
+  "year": "2026/27",
+  "url": "https://www.webster.ac.at/financialinformation/tuitionandfees.php"
+ },
+ {
+  "id": "de-hochschule-bonn-rhein-sieg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.h-brs.de/en/d5/fees",
+  "note": "Fără taxă de școlarizare; plătești doar contribuția pe semestru: 367 € (iarna 2026/27)."
+ },
+ {
+  "id": "de-hochschule-fur-angewandte-wissenschaften-coburg",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.hs-coburg.de/en/coburg-university-2/organization/service-centers/department-of-student-affairs/semester-fee/",
+  "note": "Fără taxă de școlarizare; plătești doar contribuția pe semestru: 157,38 € (iarna 2026/27)."
+ },
+ {
+  "id": "de-hochschule-fur-angewandte-wissenschaften-kempten",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.hs-kempten.de/en/international/incoming/international-regular-students/funding-and-costs",
+  "note": "Fără taxă de școlarizare; plătești doar contribuția pe semestru: 115 €."
+ },
+ {
+  "id": "de-hochschule-fur-angewandte-wissenschaften-landshut",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.haw-landshut.de/en/international/incoming/international-program-students/finanzierung",
+  "note": "Fără taxă de școlarizare; plătești doar contribuția pe semestru."
+ },
+ {
+  "id": "de-hochschule-fur-angewandte-wissenschaften-rosenheim",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.th-rosenheim.de/en/studies-and-further-education/before-your-studies/what-are-the-costs-of-studying-at-th-rosenheim-tuition-fees-and-student-union-fees",
+  "note": "Fără taxă de școlarizare; plătești doar contribuția pe semestru: 97 €."
+ },
+ {
+  "id": "de-hochschule-fur-technik-wirtschaft-und-kultur-leipzig",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.htwk-leipzig.de/en/studieren/im-studium/rueckmeldung-und-beurlaubung",
+  "note": "Fără taxă de școlarizare; plătești doar contribuția pe semestru: 333,20 € (iarna 2026/27)."
+ },
+ {
+  "id": "de-hochschule-hamm-lippstadt",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.hshl.de/en/studying/information-about-your-studies/",
+  "note": "Fără taxă de școlarizare; plătești doar contribuția pe semestru: 362,80 € (iarna 2026/27)."
+ },
+ {
+  "id": "de-hochschule-hannover-fh",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.hs-hannover.de/fileadmin/HsH/Hochschule_Hannover/Organisation/Studierendenverwaltung/Antraege/Semesterbeitrag_WiSe_2026_27_Ende.pdf",
+  "note": "Fără taxă de școlarizare; plătești doar contribuția pe semestru: 459,80 € (iarna 2026/27)."
+ },
+ {
+  "id": "dshs-koeln",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.dshs-koeln.de/en/studium/waehrend-des-studiums/rueckmeldung",
+  "note": "Fără taxă de școlarizare; plătești doar contribuția pe semestru: 353,30 € (iarna 2026/27)."
+ },
+ {
+  "id": "hka-karlsruhe",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.h-ka.de/en/study/guidance-counseling/financing",
+  "note": "Fără taxă de școlarizare; plătești doar contribuția pe semestru: 194,70 €."
+ },
+ {
+  "id": "viadrina",
+  "currency": "EUR",
+  "min": 0,
+  "max": 0,
+  "year": "2026/27",
+  "url": "https://www.europa-uni.de/en/studium/im-studium/semesterbeitrag/index.html",
+  "note": "Fără taxă de școlarizare; plătești doar contribuția pe semestru: 402,80 € în primul semestru (iarna 2026/27)."
+ },
+ {
+  "id": "fr-sciences-po-aix-institut-d-etudes-politiques",
+  "currency": "EUR",
+  "min": 983,
+  "max": 983,
+  "year": "2025/26",
+  "url": "https://www.sciencespo-aix.fr/formations/diplome-sciencespo-aix-parcours-voie-generale/",
+  "note": "805 € taxa școlii plus 178 € taxa națională."
+ },
+ {
+  "id": "fr-sciences-po-grenoble-institut-d-etudes-politiques",
+  "currency": "EUR",
+  "min": 0,
+  "max": 6300,
+  "year": "2026/27",
+  "url": "https://www.sciencespo-grenoble.fr/admission/scolarite-infos-pratiques",
+  "note": "Taxa depinde de venitul familiei: de la 0 la 6.300 €/an; familiile din România trimit actele de venit traduse."
+ },
+ {
+  "id": "fr-sciences-po-toulouse-institut-d-etudes-politiques",
+  "currency": "EUR",
+  "min": 0,
+  "max": 5470,
+  "year": "2026/27",
+  "url": "https://www.sciencespo-toulouse.fr/fr/formations/admissions/droits-dinscription-modules-1",
+  "note": "Taxa depinde de venitul familiei: de la 0 la 5.470 €/an; părinții din străinătate trimit actele de venit traduse."
+ },
+ {
+  "id": "fr-sciences-po-strasbourg-institut-d-etudes-politiques",
+  "currency": "EUR",
+  "min": 0,
+  "max": 4000,
+  "year": "2026/27",
+  "url": "https://www.sciencespo-strasbourg.fr/websites/sciencespo/images/Tarifs_droit_modules_26-27.pdf",
+  "note": "Taxa depinde de venitul familiei: de la 0 la 4.000 €/an în primii trei ani, plus taxele naționale; fără acte de venit se plătește maximul."
+ },
+ {
+  "id": "fr-sciences-po-saint-germain-en-laye-institut-d-etudes-politiqu",
+  "currency": "EUR",
+  "min": 300,
+  "max": 5000,
+  "year": "2026/27",
+  "url": "https://www.sciencespo-saintgermainenlaye.fr/admissions/droits-de-scolarite/",
+  "note": "Taxa depinde de venitul familiei: de la 300 la 5.000 €/an, plus 34 € pentru bibliotecă."
+ },
+ {
+  "id": "envt-toulouse",
+  "currency": "EUR",
+  "min": 2859,
+  "max": 2859,
+  "year": "2026/27",
+  "url": "https://www.oniris-nantes.fr/formations/frais-scolarite-bourses",
+  "note": "Aceeași taxă, stabilită prin ordin al ministerului, la toate cele patru școli veterinare de stat."
+ },
+ {
+  "id": "vetagro-sup",
+  "currency": "EUR",
+  "min": 2859,
+  "max": 2859,
+  "year": "2026/27",
+  "url": "https://www.oniris-nantes.fr/formations/frais-scolarite-bourses",
+  "note": "Aceeași taxă, stabilită prin ordin al ministerului, la toate cele patru școli veterinare de stat."
+ },
+ {
+  "id": "enva-alfort",
+  "currency": "EUR",
+  "min": 2859,
+  "max": 2859,
+  "year": "2026/27",
+  "url": "https://www.oniris-nantes.fr/formations/frais-scolarite-bourses",
+  "note": "Aceeași taxă, stabilită prin ordin al ministerului, la toate cele patru școli veterinare de stat."
+ },
+ {
+  "id": "oniris",
+  "currency": "EUR",
+  "min": 2859,
+  "max": 2859,
+  "year": "2026/27",
+  "url": "https://www.oniris-nantes.fr/formations/frais-scolarite-bourses",
+  "note": "Aceeași taxă, stabilită prin ordin al ministerului, la toate cele patru școli veterinare de stat."
+ },
+ {
+  "id": "fr-epita-paris",
+  "currency": "EUR",
+  "min": 9990,
+  "max": 12490,
+  "year": "2027/28",
+  "url": "https://www.epita.fr/tarifs-et-financement/",
+  "note": "Ciclul pregătitor (primii doi ani): 10.350 € în primul an, 9.990 € în al doilea; ciclul de inginer: 12.490 €/an (12.950 € la prima înscriere)."
+ },
+ {
+  "id": "aup-paris",
+  "currency": "EUR",
+  "min": 38080,
+  "max": 38080,
+  "year": "2026/27",
+  "url": "https://www.aup.edu/admissions/undergraduate/tuition-costs",
+  "note": "Plus taxe unice la intrare: 900 € și 500 €."
+ },
+ {
+  "id": "fr-nimes-universite",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.unimes.fr/fr/formations/inscriptions/inscriptions.html",
+  "note": "Plus contribuția CVEC de 105 €/an."
+ },
+ {
+  "id": "fr-institut-national-universitaire-champollion",
+  "currency": "EUR",
+  "min": 178,
+  "max": 178,
+  "year": "2026/27",
+  "url": "https://www.univ-jfc.fr/formation/sinscrire-candidater/droits-dinscription",
+  "note": "Plus contribuția CVEC."
+ },
+ {
+  "id": "es-universidad-rovira-i-virgili",
+  "currency": "EUR",
+  "min": 1061,
+  "max": 1061,
+  "year": "2026/27",
+  "url": "https://www.urv.cat/ca/estudis/graus/informacio-economica/",
+  "note": "17,69 € pe credit (60 de credite pe an), prețul public din Catalonia."
+ },
+ {
+  "id": "es-universitat-de-les-illes-balears",
+  "currency": "EUR",
+  "min": 671,
+  "max": 1205,
+  "year": "2026/27",
+  "url": "https://estudis.uib.cat/estudis-de-grau/Com-hi-pots-accedir/Matricula/cost_estudis_uib/",
+  "note": "Între 11,18 și 20,08 € pe credit (60 de credite pe an); Medicina e cea mai scumpă."
+ },
+ {
+  "id": "es-universidad-de-lleida",
+  "currency": "EUR",
+  "min": 1061,
+  "max": 1061,
+  "year": "2026/27",
+  "url": "https://www.udl.cat/ca/serveis/oficina/Noticies/El-precio-de-los-grados-se-mantiene-en-1769-por-credito",
+  "note": "17,69 € pe credit (60 de credite pe an), prețul public din Catalonia."
+ },
+ {
+  "id": "es-universidad-publica-de-navarra",
+  "currency": "EUR",
+  "min": 906,
+  "max": 1283,
+  "year": "2026/27",
+  "url": "https://www2.unavarra.es/gesadj/Estudios/Precios/OrdenForalPrecios.pdf",
+  "note": "Între 15,10 și 21,38 € pe credit (60 de credite pe an)."
+ },
+ {
+  "id": "es-universitat-internacional-de-catalunya",
+  "currency": "EUR",
+  "min": 12720,
+  "max": 12720,
+  "year": "2026/27",
+  "url": "https://www.uic.es/en/estudis-uic/business-administration/bachelors-degree-business-administration-and-management-english",
+  "note": "Taxa pentru Business Administration în engleză (anul I); celelalte programe au taxe proprii."
+ },
+ {
+  "id": "es-universidad-francisco-de-vitoria",
+  "currency": "EUR",
+  "min": 11740,
+  "max": 11740,
+  "year": "2027/28",
+  "url": "https://www.ufv.es/en/study-degree-international-relations-madrid-spain/",
+  "note": "Taxa pentru Relații internaționale (anul I); celelalte programe au taxe proprii."
+ },
+ {
+  "id": "es-universidad-san-pablo-ceu",
+  "currency": "EUR",
+  "min": 12300,
+  "max": 13500,
+  "year": "2026/27",
+  "url": "https://www.uspceu.com/oferta/grado/administracion-direccion-empresas",
+  "note": "Taxa pentru Administrarea afacerilor: 12.300 €/an în spaniolă, 13.500 €/an în engleză; plus 950 € rezervarea locului, o singură dată."
+ },
+ {
+  "id": "accademia-brera",
+  "currency": "EUR",
+  "min": 0,
+  "max": 3200,
+  "year": "2026/27",
+  "url": "https://www.accademiadibrera.milano.it/sites/default/files/inline-images/image_61.png",
+  "note": "Taxa depinde de venitul familiei: scutire sau cel mult 1.189 € până la ISEE 30.000, apoi până la 3.200 €/an; fără acte de venit se plătește maximul. Plus taxa regională."
+ },
+ {
+  "id": "domus-academy",
+  "currency": "EUR",
+  "min": 12800,
+  "max": 12800,
+  "year": "2026/27",
+  "url": "https://www.domusacademy.com/fees-scholarships/"
+ },
+ {
+  "id": "accademia-firenze",
+  "currency": "EUR",
+  "min": 0,
+  "max": 2500,
+  "year": "2026/27",
+  "url": "https://www.accademia.firenze.it/images/a.a.%202024-2025/MODULISTICA/Nuova%2026_27/Fasce%20contributive%202026.pdf",
+  "note": "Taxa depinde de venitul familiei: 0 € până la ISEE 26.000, cel mult 2.500 €/an; plus taxa regională de 140 €."
+ },
+ {
+  "id": "conservatorio-milano",
+  "currency": "EUR",
+  "min": 1250,
+  "max": 2900,
+  "year": "2026/27",
+  "url": "https://www.consmi.it/wp-content/uploads/2025/11/20230531_Regolamento-tasse-e-contributi_4144.pdf",
+  "note": "Taxa depinde de venitul familiei; plus 187,43 € taxe fixe."
+ },
+ {
+  "id": "nl-unknown-university-of-applied-sciences",
+  "currency": "EUR",
+  "min": 15000,
+  "max": 15000,
+  "year": "2026/27",
+  "url": "https://www.unknown-universityas.com/finance",
+  "note": "17.400 € dacă se plătește în rate."
+ },
+ {
+  "id": "trinity-laban",
+  "currency": "GBP",
+  "min": 24120,
+  "max": 28100,
+  "year": "2027/28",
+  "url": "https://www.trinitylaban.ac.uk/fees-your-finances/undergraduate-fees/"
+ },
+ {
+  "id": "uws",
+  "currency": "GBP",
+  "min": 16275,
+  "max": 16275,
+  "year": "2026/27",
+  "url": "https://www.uws.ac.uk/study/undergraduate/undergraduate-course-search/psychology/"
+ },
+ {
+  "id": "bradford",
+  "currency": "GBP",
+  "min": 16100,
+  "max": 16890,
+  "year": "2026/27",
+  "url": "https://www.bradford.ac.uk/money/fees/undergraduate-international-students-including-eu-students"
+ },
+ {
+  "id": "bath-spa",
+  "currency": "GBP",
+  "min": 17310,
+  "max": 19330,
+  "year": "2026/27",
+  "url": "https://www.bathspa.ac.uk/students/student-finance/tuition-fees/international-fees/"
+ },
+ {
+  "id": "qmu",
+  "currency": "GBP",
+  "min": 9725,
+  "max": 17325,
+  "year": "2026/27",
+  "url": "https://www.qmu.ac.uk/current-students/current-students-general-information/fees-and-charges/2026-27-undergraduate-fees",
+  "note": "Programele de sănătate: 17.325 £/an."
+ },
+ {
+  "id": "roehampton",
+  "currency": "GBP",
+  "min": 17628,
+  "max": 17628,
+  "year": "2026/27",
+  "url": "https://www.roehampton.ac.uk/study/undergraduate-courses/psychology/",
+  "note": "Bursă pentru cetățenii UE: 7.000 £ reducere în fiecare an, taxa scade la 10.628 £/an."
+ },
+ {
+  "id": "chester",
+  "currency": "GBP",
+  "min": 15450,
+  "max": 15450,
+  "year": "2027/28",
+  "url": "https://www.chester.ac.uk/international/fees-scholarships-and-finance/fees/"
+ },
+ {
+  "id": "royal-agricultural-university",
+  "currency": "GBP",
+  "min": 16950,
+  "max": 16950,
+  "year": "2026/27",
+  "url": "https://www.rau.ac.uk/student-life/undergraduate-funding"
+ },
+ {
+  "id": "solent",
+  "currency": "GBP",
+  "min": 18508,
+  "max": 18508,
+  "year": "2027/28",
+  "url": "https://www.solent.ac.uk/courses/undergraduate/business-management-bsc",
+  "note": "Pentru intrarea din 2026, bursa automată pentru cetățenii UE a coborât taxa la 10.500 £/an."
+ },
+ {
+  "id": "winchester",
+  "currency": "GBP",
+  "min": 16700,
+  "max": 16700,
+  "year": "2027/28",
+  "url": "https://www.winchester.ac.uk/study/undergraduate/courses/BA-Hons-Accounting-and-Finance/",
+  "note": "Bursă automată pentru studenții internaționali: 4.000 £ (2026/27)."
+ },
+ {
+  "id": "uca",
+  "currency": "GBP",
+  "min": 19800,
+  "max": 19800,
+  "year": "2027/28",
+  "url": "https://www.uca.ac.uk/study-at-uca/fees-finance/undergraduate/",
+  "note": "Bursă automată pentru studenții din UE: taxa scade la 10.050 £/an."
+ },
+ {
+  "id": "rada",
+  "currency": "GBP",
+  "min": 29033,
+  "max": 29033,
+  "year": "2027/28",
+  "url": "https://www.rada.ac.uk/courses/ba-hons-acting/"
+ },
+ {
+  "id": "york-st-john",
+  "currency": "GBP",
+  "min": 12300,
+  "max": 12300,
+  "year": "2027/28",
+  "url": "https://www.yorksj.ac.uk/courses/undergraduate/english-literature/english-literature-ba-hons/"
+ },
+ {
+  "id": "worcester",
+  "currency": "GBP",
+  "min": 9790,
+  "max": 9790,
+  "year": "2026/27",
+  "url": "https://www.worcester.ac.uk/study/International/international-applicants/fees-scholarships-and-loans/",
+  "note": "La cele mai multe programe, studenții din UE plătesc taxa britanică."
+ },
+ {
+  "id": "liverpool-hope",
+  "currency": "GBP",
+  "min": 15225,
+  "max": 15225,
+  "year": "2026/27",
+  "url": "https://www.hope.ac.uk/international/feesandscholarships/internationaltuitionfees/",
+  "note": "Bursă automată: cel puțin 2.000 £ în primul an."
+ },
+ {
+  "id": "chichester",
+  "currency": "GBP",
+  "min": 16800,
+  "max": 16800,
+  "year": "2026/27",
+  "url": "https://www.chi.ac.uk/wp-content/uploads/2026/05/2026-2027-UG-Fees-v4.pdf",
+  "note": "Bursă automată pentru studenții din UE: taxa scade la 9.790 £/an."
+ },
+ {
+  "id": "leeds-conservatoire",
+  "currency": "GBP",
+  "min": 21700,
+  "max": 22150,
+  "year": "2027/28",
+  "url": "https://www.leedsconservatoire.ac.uk/courses/international-applicants/fees-funding/tuition-fees-scholarships/"
+ },
+ {
+  "id": "wrexham",
+  "currency": "GBP",
+  "min": 11750,
+  "max": 11750,
+  "year": "2026/27",
+  "url": "https://wrexham.ac.uk/international-students/international-fees/"
+ },
+ {
+  "id": "cumbria",
+  "currency": "GBP",
+  "min": 16000,
+  "max": 16900,
+  "year": "2026/27",
+  "url": "https://www.cumbria.ac.uk/study/international-students/fees-and-finance/",
+  "note": "Programele de sănătate: 16.900 £/an."
+ },
+ {
+  "id": "esade",
+  "currency": "EUR",
+  "min": 21300,
+  "max": 24500,
+  "year": "2027/28",
+  "url": "https://www.esade.edu/bachelor/en/degrees/tuition-fees",
+  "note": "Taxa pentru primul an: 21.300 € la o licență, 24.500 € la o dublă licență"
  }
 ]

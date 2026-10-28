@@ -414,7 +414,7 @@
   "officialName": "Universidad de La Laguna",
   "city": "Santa Cruz de Tenerife",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.ull.es",
   "programs": 56
  },
@@ -474,7 +474,7 @@
   "officialName": "Universidad de Lleida",
   "city": "Lleida",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.udl.es/ca/es/",
   "programs": 46
  },
@@ -723,7 +723,7 @@
   "officialName": "Universidad Francisco de Vitoria",
   "city": "Pozuelo de Alarcón",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.ufv.es",
   "programs": 46
  },
@@ -903,7 +903,7 @@
   "officialName": "Universidad Pública de Navarra",
   "city": "Pamplona/Iruña",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.unavarra.es",
   "programs": 35
  },
@@ -939,7 +939,7 @@
   "officialName": "Universidad Rovira i Virgili",
   "city": "Tarragona",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.urv.cat/ca",
   "programs": 56
  },
@@ -963,7 +963,7 @@
   "officialName": "Universidad San Pablo-CEU",
   "city": "Madrid",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.uspceu.com",
   "programs": 44
  },
@@ -1021,7 +1021,7 @@
   "officialName": "Universitat de les Illes Balears",
   "city": "Palma",
   "kind": "public",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.uib.es/",
   "programs": 44
  },
@@ -1045,7 +1045,7 @@
   "officialName": "Universitat Internacional de Catalunya",
   "city": "Barcelona",
   "kind": "private",
-  "hasSheet": false,
+  "hasSheet": true,
   "website": "https://www.uic.es",
   "programs": 16
  },

@@ -1,0 +1,3195 @@
+{
+ "year": "2025",
+ "entries": {
+  "ro-ase-bucuresti--administrarea-afacerilor--engleza-if": {
+   "budget": 9.58,
+   "fee": 8.4,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--administrarea-afacerilor--franceza-if": {
+   "budget": 7.34,
+   "fee": 6.39,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--administrarea-afacerilor--germana-if": {
+   "budget": 6.86,
+   "fee": 6.11,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--administrarea-afacerilor-in-comert-turism-servicii-merceolog--engleza-if": {
+   "budget": 6.95,
+   "fee": 6.58,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--administrarea-afacerilor-in-comert-turism-servicii-merceolog--romana-if": {
+   "budget": 7.96,
+   "fee": 5.79,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--administratie-publica--romana-if": {
+   "budget": 7.62,
+   "fee": 6.26,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--cibernetica-economica--romana-if": {
+   "budget": 7.2,
+   "fee": 5.13,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--contabilitate-si-informatica-de-gestiune--engleza-if": {
+   "budget": 6.68,
+   "fee": 6.52,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--contabilitate-si-informatica-de-gestiune--romana-id": {
+   "fee": 6.77,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_ID_finale.pdf"
+  },
+  "ro-ase-bucuresti--contabilitate-si-informatica-de-gestiune--romana-if": {
+   "budget": 8.76,
+   "fee": 6.55,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--drept--romana-if": {
+   "budget": 8.02,
+   "fee": 5.77,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--economie-agroalimentara-si-a-mediului--romana-id-tulcea": {
+   "fee": 6.66,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_ID_finale.pdf"
+  },
+  "ro-ase-bucuresti--economie-agroalimentara-si-a-mediului--romana-if": {
+   "budget": 6.44,
+   "fee": 6.48,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--economie-si-afaceri-internationale--engleza-if": {
+   "budget": 9.11,
+   "fee": 8.52,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--economie-si-afaceri-internationale--romana-if": {
+   "budget": 8.92,
+   "fee": 7.03,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--economie-si-comunicare-economica-in-afaceri--romana-if": {
+   "budget": 6.49,
+   "fee": 6.43,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--finante-si-banci--engleza-if": {
+   "budget": 8.35,
+   "fee": 7.12,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--finante-si-banci--romana-id": {
+   "fee": 6.89,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_ID_finale.pdf"
+  },
+  "ro-ase-bucuresti--finante-si-banci--romana-if": {
+   "budget": 8.37,
+   "fee": 6.44,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--informatica-economica--engleza-if": {
+   "budget": 6.96,
+   "fee": 5.1,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--informatica-economica--romana-id": {
+   "fee": 5,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_ID_finale.pdf"
+  },
+  "ro-ase-bucuresti--informatica-economica--romana-if": {
+   "budget": 6.76,
+   "fee": 5.01,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--limbi-moderne-aplicate-engleza-franceza--romana-if": {
+   "budget": 6.79,
+   "fee": 7.06,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--management--engleza-if": {
+   "budget": 7.77,
+   "fee": 6.66,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--management--romana-id": {
+   "fee": 7.74,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_ID_finale.pdf"
+  },
+  "ro-ase-bucuresti--management--romana-id-deva": {
+   "fee": 6.62,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_ID_finale.pdf"
+  },
+  "ro-ase-bucuresti--management--romana-id-piatra-neamt": {
+   "fee": 6.13,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_ID_finale.pdf"
+  },
+  "ro-ase-bucuresti--management--romana-if": {
+   "budget": 8.45,
+   "fee": 6.25,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--marketing--engleza-if": {
+   "budget": 8.51,
+   "fee": 8.08,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--marketing--romana-id": {
+   "fee": 7.31,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_ID_finale.pdf"
+  },
+  "ro-ase-bucuresti--marketing--romana-id-buzau": {
+   "fee": 6.86,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_ID_finale.pdf"
+  },
+  "ro-ase-bucuresti--marketing--romana-if": {
+   "budget": 8.75,
+   "fee": 7.62,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--marketing--romana-ifr": {
+   "fee": 6.65,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_ID_finale.pdf"
+  },
+  "ro-ase-bucuresti--resurse-umane--romana-if": {
+   "budget": 8.88,
+   "fee": 6.75,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-ase-bucuresti--statistica-economica-si-data-science--romana-if": {
+   "budget": 5.16,
+   "fee": 5.43,
+   "url": "https://admitere.ase.ro/licenta-2025/medii-admitere/Medii_IF_finale.pdf"
+  },
+  "ro-snspa--management--romana-if": {
+   "budget": 9.55,
+   "fee": 9.4,
+   "url": "https://www.facultateademanagement.ro/wp-content/uploads/2025/07/REZULTATE-ADMITERE_LICENTA-IULIE-2025_FM.pdf"
+  },
+  "ro-uaic--administrarea-afacerilor--engleza-if": {
+   "budget": 6.86,
+   "fee": 6.08,
+   "url": "https://www.feaa.uaic.ro/wp-content/uploads/2025/07/Final-raport-licenta-clasament-1-cod-1.pdf"
+  },
+  "ro-uaic--administratie-publica--romana-if": {
+   "budget": 6.83,
+   "fee": 6,
+   "url": "https://www.feaa.uaic.ro/wp-content/uploads/2025/07/Final-raport-licenta-clasament-1-cod-1.pdf"
+  },
+  "ro-uaic--contabilitate-si-informatica-de-gestiune--romana-if": {
+   "budget": 8.3,
+   "fee": 6.3,
+   "url": "https://www.feaa.uaic.ro/wp-content/uploads/2025/07/Final-raport-licenta-clasament-1-cod-1.pdf"
+  },
+  "ro-uaic--drept--romana-if": {
+   "budget": 8.45,
+   "fee": 8.18,
+   "url": "https://laws.uaic.ro/component/content/article/924"
+  },
+  "ro-uaic--drept--romana-ifr": {
+   "fee": 7.32,
+   "url": "https://laws.uaic.ro/component/content/article/924"
+  },
+  "ro-uaic--economia-comertului-turismului-si-serviciilor--romana-if": {
+   "budget": 6.01,
+   "fee": 6.16,
+   "url": "https://www.feaa.uaic.ro/wp-content/uploads/2025/07/Final-raport-licenta-clasament-1-cod-1.pdf"
+  },
+  "ro-uaic--economie-si-afaceri-internationale--romana-if": {
+   "budget": 6.13,
+   "fee": 6.28,
+   "url": "https://www.feaa.uaic.ro/wp-content/uploads/2025/07/Final-raport-licenta-clasament-1-cod-1.pdf"
+  },
+  "ro-uaic--educatie-fizica-si-sportiva--romana-if": {
+   "budget": 8.56,
+   "fee": 7.74,
+   "url": "https://www.sport.uaic.ro/tmp/files/2025/08/T5_01_08_EFS-Repartizate-Statistic_Buget_34-locuri_fara-nume.pdf"
+  },
+  "ro-uaic--finante-si-banci--romana-if": {
+   "budget": 7.43,
+   "fee": 6.13,
+   "url": "https://www.feaa.uaic.ro/wp-content/uploads/2025/07/Final-raport-licenta-clasament-1-cod-1.pdf"
+  },
+  "ro-uaic--informatica--engleza-if": {
+   "budget": 5.35,
+   "fee": 6.27,
+   "url": "https://info.uaic.ro/noutati/rezultate-dupa-a-patra-runda-de-confirmari-admitere-iulie-2025/"
+  },
+  "ro-uaic--informatica--romana-if": {
+   "budget": 7.8,
+   "fee": 7.11,
+   "url": "https://info.uaic.ro/noutati/rezultate-dupa-a-patra-runda-de-confirmari-admitere-iulie-2025/"
+  },
+  "ro-uaic--informatica-economica--romana-if": {
+   "budget": 8.65,
+   "fee": 6,
+   "url": "https://www.feaa.uaic.ro/wp-content/uploads/2025/07/Final-raport-licenta-clasament-1-cod-1.pdf"
+  },
+  "ro-uaic--inteligenta-artificiala--romana-if": {
+   "budget": 7.52,
+   "fee": 5.98,
+   "url": "https://info.uaic.ro/noutati/rezultate-dupa-a-patra-runda-de-confirmari-admitere-iulie-2025/"
+  },
+  "ro-uaic--jurnalism--romana-if": {
+   "budget": 7.88,
+   "fee": 6.35,
+   "url": "https://litere.uaic.ro/wp-content/uploads/2025/07/28072025-clasament_3-licenta-ALL.pdf"
+  },
+  "ro-uaic--management--romana-if": {
+   "budget": 7.18,
+   "fee": 6.46,
+   "url": "https://www.feaa.uaic.ro/wp-content/uploads/2025/07/Final-raport-licenta-clasament-1-cod-1.pdf"
+  },
+  "ro-uaic--marketing--romana-if": {
+   "budget": 7.6,
+   "fee": 6.01,
+   "url": "https://www.feaa.uaic.ro/wp-content/uploads/2025/07/Final-raport-licenta-clasament-1-cod-1.pdf"
+  },
+  "ro-uaic--sport-si-performanta-motrica--romana-if": {
+   "budget": 7.97,
+   "fee": 6.74,
+   "url": "https://www.sport.uaic.ro/tmp/files/2025/08/T5_01_08_SPM-Repartizate-statistic_18-locuri_fara-nume.pdf"
+  },
+  "ro-uaic--statistica-economica-si-data-science--romana-if": {
+   "budget": 6,
+   "fee": 6.2,
+   "url": "https://www.feaa.uaic.ro/wp-content/uploads/2025/07/Final-raport-licenta-clasament-1-cod-1.pdf"
+  },
+  "ro-uaic--studii-americane--engleza-if": {
+   "budget": 6.33,
+   "fee": 6.16,
+   "url": "https://litere.uaic.ro/wp-content/uploads/2025/07/28072025-clasament_3-licenta-ALL.pdf"
+  },
+  "ro-ub-bacau--biologie--romana-if": {
+   "budget": 6.3,
+   "fee": 8.62,
+   "url": "https://stiinte.ub.ro/uploads/admitere/2025/biologie_dupa_confirmari.pdf"
+  },
+  "ro-ub-bacau--informatica--romana-if": {
+   "budget": 7.21,
+   "fee": 7.08,
+   "url": "https://stiinte.ub.ro/uploads/admitere/2025/info_dupa_confirmari.pdf"
+  },
+  "ro-ub-bacau--informatica--romana-ifr": {
+   "fee": 6.22,
+   "url": "https://stiinte.ub.ro/uploads/admitere/2025/ifr_dupa_confirmari.pdf"
+  },
+  "ro-ub-bacau--matematica--romana-if": {
+   "budget": 7.22,
+   "fee": 7.65,
+   "url": "https://stiinte.ub.ro/uploads/admitere/2025/mate_dupa_confirmari.pdf"
+  },
+  "ro-ubb-cluj--administrarea-afacerilor--engleza-if": {
+   "budget": 6.91,
+   "fee": 5.66,
+   "url": "https://tbs.ubbcluj.ro/wp-content/uploads/2025/09/Licenta_Vara_Toate_Specializarile_15_09_2025-PUB-1.pdf"
+  },
+  "ro-ubb-cluj--administrarea-afacerilor--germana-if": {
+   "budget": 6.9,
+   "fee": 6.85,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--administrarea-afacerilor--romana-id": {
+   "fee": 6,
+   "url": "https://tbs.ubbcluj.ro/wp-content/uploads/2025/09/Licenta_Vara_Toate_Specializarile_15_09_2025-PUB-1.pdf"
+  },
+  "ro-ubb-cluj--administrarea-afacerilor--romana-if": {
+   "budget": 8.51,
+   "fee": 6.06,
+   "url": "https://tbs.ubbcluj.ro/wp-content/uploads/2025/09/Licenta_Vara_Toate_Specializarile_15_09_2025-PUB-1.pdf"
+  },
+  "ro-ubb-cluj--administrarea-afacerilor--romana-if-bistrita": {
+   "budget": 8.51,
+   "fee": 6.16,
+   "url": "https://tbs.ubbcluj.ro/wp-content/uploads/2025/09/Licenta_Vara_Toate_Specializarile_15_09_2025-PUB-1.pdf"
+  },
+  "ro-ubb-cluj--administrarea-afacerilor-in-servicii-de-ospitalitate--engleza-if": {
+   "budget": 7.3,
+   "fee": 4.83,
+   "url": "https://tbs.ubbcluj.ro/wp-content/uploads/2025/09/Licenta_Vara_Toate_Specializarile_15_09_2025-PUB-1.pdf"
+  },
+  "ro-ubb-cluj--administrarea-afacerilor-in-servicii-de-ospitalitate--romana-id": {
+   "fee": 6,
+   "url": "https://tbs.ubbcluj.ro/wp-content/uploads/2025/09/Licenta_Vara_Toate_Specializarile_15_09_2025-PUB-1.pdf"
+  },
+  "ro-ubb-cluj--administrarea-afacerilor-in-servicii-de-ospitalitate--romana-if": {
+   "budget": 8.05,
+   "fee": 6.05,
+   "url": "https://tbs.ubbcluj.ro/wp-content/uploads/2025/09/Licenta_Vara_Toate_Specializarile_15_09_2025-PUB-1.pdf"
+  },
+  "ro-ubb-cluj--administratie-europeana--romana-if": {
+   "budget": 7.72,
+   "fee": 9.42,
+   "url": "https://euro.ubbcluj.ro/wp-content/uploads/Lista_Admisi_Pe_Etapa_Vara-_ADMINISTRATIE_EUROPEANA_29_07_2025_.pdf"
+  },
+  "ro-ubb-cluj--antropologie--maghiara-if": {
+   "budget": 6.88,
+   "url": "https://socasis.ubbcluj.ro/wp-content/uploads/2025/07/Antro-LM.pdf"
+  },
+  "ro-ubb-cluj--antropologie--romana-if": {
+   "budget": 6.71,
+   "url": "https://socasis.ubbcluj.ro/wp-content/uploads/2025/07/Antropologie-2.pdf"
+  },
+  "ro-ubb-cluj--asistenta-sociala--maghiara-id": {
+   "fee": 6.22,
+   "url": "https://socasis.ubbcluj.ro/wp-content/uploads/2025/07/Asistenta-Sociala-LM-2.pdf"
+  },
+  "ro-ubb-cluj--asistenta-sociala--maghiara-if": {
+   "budget": 6.93,
+   "fee": 8.13,
+   "url": "https://socasis.ubbcluj.ro/wp-content/uploads/2025/07/Asistenta-Sociala-LM-2.pdf"
+  },
+  "ro-ubb-cluj--asistenta-sociala--romana-id": {
+   "fee": 6,
+   "url": "https://socasis.ubbcluj.ro/wp-content/uploads/2025/07/Asistenta-Sociala-2.pdf"
+  },
+  "ro-ubb-cluj--asistenta-sociala--romana-if": {
+   "budget": 6.16,
+   "fee": 6.78,
+   "url": "https://socasis.ubbcluj.ro/wp-content/uploads/2025/07/Asistenta-Sociala-2.pdf"
+  },
+  "ro-ubb-cluj--asistenta-sociala--romana-if-resita": {
+   "budget": 6.1,
+   "fee": 5.56,
+   "url": "https://socasis.ubbcluj.ro/wp-content/uploads/2025/07/Asistenta-Sociala-Resita-2.pdf"
+  },
+  "ro-ubb-cluj--biochimie--romana-if": {
+   "budget": 8.71,
+   "fee": 6.58,
+   "url": "https://biogeo.ubbcluj.ro/wp-content/uploads/2025/07/Lista_Admisi_Pe_Etapa_Vara-_Toate-specializarile_29_07_2025_de-afisat.pdf"
+  },
+  "ro-ubb-cluj--biologie--maghiara-if": {
+   "budget": 8.25,
+   "fee": 6.7,
+   "url": "https://biogeo.ubbcluj.ro/wp-content/uploads/2025/07/Lista_Admisi_Pe_Etapa_Vara-_Toate-specializarile_29_07_2025_de-afisat.pdf"
+  },
+  "ro-ubb-cluj--biologie--romana-if": {
+   "budget": 6.83,
+   "fee": 6.93,
+   "url": "https://biogeo.ubbcluj.ro/wp-content/uploads/2025/07/Lista_Admisi_Pe_Etapa_Vara-_Toate-specializarile_29_07_2025_de-afisat.pdf"
+  },
+  "ro-ubb-cluj--biologie-ambientala--romana-if": {
+   "budget": 7.7,
+   "url": "https://biogeo.ubbcluj.ro/wp-content/uploads/2025/07/Lista_Admisi_Pe_Etapa_Vara-_Toate-specializarile_29_07_2025_de-afisat.pdf"
+  },
+  "ro-ubb-cluj--biotehnologii-industriale--romana-if": {
+   "budget": 7.33,
+   "fee": 6.91,
+   "url": "https://biogeo.ubbcluj.ro/wp-content/uploads/2025/07/Lista_Admisi_Pe_Etapa_Vara-_Toate-specializarile_29_07_2025_de-afisat.pdf"
+  },
+  "ro-ubb-cluj--contabilitate-si-informatica-de-gestiune--engleza-if": {
+   "budget": 6.33,
+   "fee": 6.23,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--contabilitate-si-informatica-de-gestiune--romana-id": {
+   "fee": 6,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--contabilitate-si-informatica-de-gestiune--romana-id-sighetu-marmatie": {
+   "fee": 6.01,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--contabilitate-si-informatica-de-gestiune--romana-if": {
+   "budget": 9.83,
+   "fee": 6.01,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--contabilitate-si-informatica-de-gestiune--romana-if-resita": {
+   "budget": 6,
+   "fee": 8.61,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--contabilitate-si-informatica-de-gestiune--romana-if-sighetu-marmatie": {
+   "budget": 7.35,
+   "fee": 6.08,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--diplomatie-in-afaceri--romana-if": {
+   "budget": 6.82,
+   "fee": 8.8,
+   "url": "https://euro.ubbcluj.ro/wp-content/uploads/Lista_Admisi_Pe_Etapa_Vara-_DIPLOMATIE_IN_AFACERI_29_07_2025_.pdf"
+  },
+  "ro-ubb-cluj--ecologie-si-protectia-mediului--maghiara-if": {
+   "budget": 9.13,
+   "url": "https://biogeo.ubbcluj.ro/wp-content/uploads/2025/07/Lista_Admisi_Pe_Etapa_Vara-_Toate-specializarile_29_07_2025_de-afisat.pdf"
+  },
+  "ro-ubb-cluj--economia-comertului-turismului-si-serviciilor--romana-id": {
+   "fee": 6.18,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--economia-comertului-turismului-si-serviciilor--romana-if": {
+   "budget": 6.91,
+   "fee": 6.03,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--economia-firmei--maghiara-id-sfantu-gheorghe": {
+   "fee": 6.1,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--economia-firmei--maghiara-if-sfantu-gheorghe": {
+   "budget": 6.55,
+   "fee": 6.48,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--economie-agroalimentara-si-a-mediului--romana-if": {
+   "budget": 6.15,
+   "fee": 7.68,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--economie-generala--romana-if": {
+   "budget": 8.18,
+   "fee": 6.2,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--economie-si-afaceri-internationale--engleza-if": {
+   "budget": 9.35,
+   "fee": 6,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--economie-si-afaceri-internationale--romana-id": {
+   "fee": 6.15,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--economie-si-afaceri-internationale--romana-if": {
+   "budget": 8.25,
+   "fee": 6.08,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--etnologie--maghiara-if": {
+   "budget": 8.31,
+   "url": "https://lett.ubbcluj.ro/wp-content/uploads/2025/07/Etnologie-maghiara-final-Litere-UBB-iulie-2025.pdf"
+  },
+  "ro-ubb-cluj--filologie-clasica-limba-si-literatura-latina-limba-si-litera--romana-if": {
+   "budget": 7.76,
+   "fee": 9.43,
+   "url": "https://lett.ubbcluj.ro/wp-content/uploads/2025/07/Filologie-clasica-final-Litere-UBB-iulie-2025.pdf"
+  },
+  "ro-ubb-cluj--finante-si-banci--engleza-if": {
+   "budget": 7.78,
+   "fee": 6.7,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--finante-si-banci--maghiara-if": {
+   "budget": 7.85,
+   "fee": 6.05,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--finante-si-banci--romana-id": {
+   "fee": 6.51,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--finante-si-banci--romana-if": {
+   "budget": 8.1,
+   "fee": 6,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--fizica--maghiara-if": {
+   "budget": 6.1,
+   "fee": 7.19,
+   "url": "https://phys.ubbcluj.ro/admitere/2025/Liste%20Publice_Admisi_Pe_Etapa_Vara%20_LICENTA_Toate%20specializarile_29_07_2025.pdf"
+  },
+  "ro-ubb-cluj--fizica--romana-if": {
+   "budget": 8.68,
+   "fee": 8.01,
+   "url": "https://phys.ubbcluj.ro/admitere/2025/Liste%20Publice_Admisi_Pe_Etapa_Vara%20_LICENTA_Toate%20specializarile_29_07_2025.pdf"
+  },
+  "ro-ubb-cluj--fizica-informatica--maghiara-if": {
+   "budget": 9.6,
+   "url": "https://phys.ubbcluj.ro/admitere/2025/Liste%20Publice_Admisi_Pe_Etapa_Vara%20_LICENTA_Toate%20specializarile_29_07_2025.pdf"
+  },
+  "ro-ubb-cluj--fizica-informatica--romana-if": {
+   "budget": 9.5,
+   "fee": 8.55,
+   "url": "https://phys.ubbcluj.ro/admitere/2025/Liste%20Publice_Admisi_Pe_Etapa_Vara%20_LICENTA_Toate%20specializarile_29_07_2025.pdf"
+  },
+  "ro-ubb-cluj--fizica-medicala--romana-if": {
+   "budget": 7.16,
+   "url": "https://phys.ubbcluj.ro/admitere/2025/Liste%20Publice_Admisi_Pe_Etapa_Vara%20_LICENTA_Toate%20specializarile_29_07_2025.pdf"
+  },
+  "ro-ubb-cluj--fizica-tehnologica--maghiara-if": {
+   "budget": 6.97,
+   "fee": 7.61,
+   "url": "https://phys.ubbcluj.ro/admitere/2025/Liste%20Publice_Admisi_Pe_Etapa_Vara%20_LICENTA_Toate%20specializarile_29_07_2025.pdf"
+  },
+  "ro-ubb-cluj--fizica-tehnologica--romana-if": {
+   "budget": 8.71,
+   "fee": 9.5,
+   "url": "https://phys.ubbcluj.ro/admitere/2025/Liste%20Publice_Admisi_Pe_Etapa_Vara%20_LICENTA_Toate%20specializarile_29_07_2025.pdf"
+  },
+  "ro-ubb-cluj--geologie--maghiara-if": {
+   "budget": 7.47,
+   "url": "https://biogeo.ubbcluj.ro/wp-content/uploads/2025/07/Lista_Admisi_Pe_Etapa_Vara-_Toate-specializarile_29_07_2025_de-afisat.pdf"
+  },
+  "ro-ubb-cluj--geologie--romana-if": {
+   "budget": 6.53,
+   "fee": 9.7,
+   "url": "https://biogeo.ubbcluj.ro/wp-content/uploads/2025/07/Lista_Admisi_Pe_Etapa_Vara-_Toate-specializarile_29_07_2025_de-afisat.pdf"
+  },
+  "ro-ubb-cluj--informatica--engleza-if": {
+   "budget": 6.32,
+   "fee": 5.13,
+   "url": "https://www.cs.ubbcluj.ro/files/admitere/2025-iulie/licenta/4/Informatica%20Engleza.pdf"
+  },
+  "ro-ubb-cluj--informatica--germana-if": {
+   "budget": 5.18,
+   "fee": 6.06,
+   "url": "https://www.cs.ubbcluj.ro/files/admitere/2025-iulie/licenta/4/Informatica%20Germana.pdf"
+  },
+  "ro-ubb-cluj--informatica--maghiara-if": {
+   "budget": 5,
+   "url": "https://www.cs.ubbcluj.ro/files/admitere/2025-iulie/licenta/4/Informatica%20Maghiara.pdf"
+  },
+  "ro-ubb-cluj--informatica--romana-if": {
+   "budget": 7.06,
+   "fee": 5.36,
+   "url": "https://www.cs.ubbcluj.ro/files/admitere/2025-iulie/licenta/4/Informatica%20Romana.pdf"
+  },
+  "ro-ubb-cluj--informatica-economica--maghiara-if": {
+   "budget": 8.17,
+   "fee": 6.67,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--informatica-economica--romana-id": {
+   "fee": 6.11,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--informatica-economica--romana-if": {
+   "budget": 9.2,
+   "fee": 6.25,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--ingineria-informatiei--engleza-if": {
+   "budget": 5.37,
+   "fee": 5.73,
+   "url": "https://www.cs.ubbcluj.ro/files/admitere/2025-iulie/licenta/4/Ingineria%20Informatiei%20Engleza.pdf"
+  },
+  "ro-ubb-cluj--ingineria-informatiei--maghiara-if": {
+   "budget": 5.12,
+   "url": "https://www.cs.ubbcluj.ro/files/admitere/2025-iulie/licenta/4/Ingineria%20Informatiei%20Maghiara.pdf"
+  },
+  "ro-ubb-cluj--inginerie-geologica--romana-if": {
+   "budget": 6.23,
+   "fee": 7.09,
+   "url": "https://biogeo.ubbcluj.ro/wp-content/uploads/2025/07/Lista_Admisi_Pe_Etapa_Vara-_Toate-specializarile_29_07_2025_de-afisat.pdf"
+  },
+  "ro-ubb-cluj--inteligenta-artificiala--engleza-if": {
+   "budget": 8.9,
+   "fee": 6.94,
+   "url": "https://www.cs.ubbcluj.ro/files/admitere/2025-iulie/licenta/4/Inteligenta%20Artificiala%20Engleza.pdf"
+  },
+  "ro-ubb-cluj--limba-si-literatura-chineza-limba-si-literatura-romana-maghi--romana-if": {
+   "budget": 8.49,
+   "fee": 7.96,
+   "group": "Limba și literatura chineză, toate combinațiile",
+   "url": "https://lett.ubbcluj.ro/wp-content/uploads/2025/07/CH-A-final-Litere-UBB-iulie-2025.pdf"
+  },
+  "ro-ubb-cluj--limba-si-literatura-coreeana-limba-si-literatura-romana-magh--romana-if": {
+   "budget": 9.18,
+   "fee": 6.95,
+   "group": "Limba și literatura coreeană, toate combinațiile",
+   "url": "https://lett.ubbcluj.ro/wp-content/uploads/2025/07/CO-A-final-Litere-UBB-iulie-2025.pdf"
+  },
+  "ro-ubb-cluj--limba-si-literatura-finlandeza-limba-si-literatura-romana-ma--romana-if": {
+   "budget": 7.88,
+   "group": "Limba și literatura finlandeză, toate combinațiile",
+   "url": "https://lett.ubbcluj.ro/wp-content/uploads/2025/07/Finlandeza-A-final-Litere-UBB-iulie-2025.pdf"
+  },
+  "ro-ubb-cluj--limba-si-literatura-japoneza-limba-si-literatura-romana-magh--romana-if": {
+   "budget": 8.8,
+   "fee": 7.02,
+   "group": "Limba și literatura japoneză, toate combinațiile",
+   "url": "https://lett.ubbcluj.ro/wp-content/uploads/2025/07/Japoneza-A-final-Litere-UBB-iulie-2025.pdf"
+  },
+  "ro-ubb-cluj--limba-si-literatura-maghiara--romana-if": {
+   "budget": 7.86,
+   "fee": 8.56,
+   "url": "https://lett.ubbcluj.ro/wp-content/uploads/2025/07/Maghiara-monospecializare-final-Litere-UBB-iulie-2025.pdf"
+  },
+  "ro-ubb-cluj--limba-si-literatura-norvegiana-limba-si-literatura-romana-ma--romana-if": {
+   "budget": 8.28,
+   "fee": 7.46,
+   "group": "Limba și literatura norvegiană, toate combinațiile",
+   "url": "https://lett.ubbcluj.ro/wp-content/uploads/2025/07/Norvegiana-A-final-Litere-UBB-iulie-2025.pdf"
+  },
+  "ro-ubb-cluj--limba-si-literatura-portugheza-limba-si-literatura-romana-li--romana-if": {
+   "budget": 8.76,
+   "fee": 8.21,
+   "group": "Limba și literatura portugheză, toate combinațiile",
+   "url": "https://lett.ubbcluj.ro/wp-content/uploads/2025/07/Portugheza-A-final-Litere-UBB-iulie-2025.pdf"
+  },
+  "ro-ubb-cluj--limba-si-literatura-romana-limba-si-literatura-maghiara-mode--romana-if": {
+   "budget": 9.1,
+   "fee": 7.38,
+   "group": "Limba și literatura română, toate combinațiile",
+   "url": "https://lett.ubbcluj.ro/wp-content/uploads/2025/07/Romana-A-final-Litere-UBB-iulie-2025.pdf"
+  },
+  "ro-ubb-cluj--limba-si-literatura-ucraineana-limba-si-literatura-romana-ma--romana-if": {
+   "budget": 7.69,
+   "fee": 8.19,
+   "group": "Limba și literatura ucraineană, toate combinațiile",
+   "url": "https://lett.ubbcluj.ro/wp-content/uploads/2025/07/Ucraineana-A-final-Litere-UBB-iulie-2025.pdf"
+  },
+  "ro-ubb-cluj--limbi-moderne-aplicate-engleza-franceza-germana-italiana-rus--romana-if": {
+   "budget": 7.94,
+   "fee": 8.92,
+   "url": "https://lett.ubbcluj.ro/wp-content/uploads/2025/07/LMA-final-Litere-UBB-iulie-2025.pdf"
+  },
+  "ro-ubb-cluj--literatura-universala-si-comparata-limba-si-literatura-roman--romana-if": {
+   "budget": 9.08,
+   "fee": 8.26,
+   "url": "https://lett.ubbcluj.ro/wp-content/uploads/2025/07/Comparata-A-final-Litere-UBB-iulie-2025.pdf"
+  },
+  "ro-ubb-cluj--management--engleza-if": {
+   "budget": 7.86,
+   "fee": 5.87,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--management--maghiara-id": {
+   "fee": 6.08,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--management--maghiara-if": {
+   "budget": 7.3,
+   "fee": 6.13,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--management--romana-id": {
+   "fee": 6.05,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--management--romana-if": {
+   "budget": 8.51,
+   "fee": 6.06,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--management--romana-if-2": {
+   "budget": 6.5,
+   "fee": 9.75,
+   "url": "https://euro.ubbcluj.ro/wp-content/uploads/Lista_Admisi_Pe_Etapa_Vara-_MANAGEMENT__29_07_2025_.pdf"
+  },
+  "ro-ubb-cluj--marketing--maghiara-if": {
+   "budget": 6.98,
+   "fee": 6.35,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--marketing--romana-id": {
+   "fee": 6.18,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--marketing--romana-id-resita": {
+   "fee": 6.18,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--marketing--romana-if": {
+   "budget": 8.63,
+   "fee": 6.03,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--marketing--romana-if-resita": {
+   "budget": 6.21,
+   "fee": 6.48,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ubb-cluj--matematica--maghiara-if": {
+   "budget": 5.06,
+   "url": "https://www.cs.ubbcluj.ro/files/admitere/2025-iulie/licenta/4/Matematica%20Maghiara.pdf"
+  },
+  "ro-ubb-cluj--matematica--romana-if": {
+   "budget": 7.54,
+   "fee": 5.31,
+   "url": "https://www.cs.ubbcluj.ro/files/admitere/2025-iulie/licenta/4/Matematica%20Romana.pdf"
+  },
+  "ro-ubb-cluj--matematica-informatica--engleza-if": {
+   "budget": 5.16,
+   "url": "https://www.cs.ubbcluj.ro/files/admitere/2025-iulie/licenta/4/Matematica%20Informatica%20Engleza.pdf"
+  },
+  "ro-ubb-cluj--matematica-informatica--maghiara-if": {
+   "budget": 7,
+   "url": "https://www.cs.ubbcluj.ro/files/admitere/2025-iulie/licenta/4/Matematica%20Informatica%20Maghiara.pdf"
+  },
+  "ro-ubb-cluj--matematica-informatica--romana-if": {
+   "budget": 7.33,
+   "fee": 5.31,
+   "url": "https://www.cs.ubbcluj.ro/files/admitere/2025-iulie/licenta/4/Matematica%20Informatica%20Romana.pdf"
+  },
+  "ro-ubb-cluj--relatii-internationale-si-studii-europene--engleza-if": {
+   "budget": 9,
+   "fee": 5.7,
+   "url": "https://euro.ubbcluj.ro/wp-content/uploads/Lista_Admisi_Pe_Etapa_Vara-_RELATII_INTERNATIONALE_SI_STUDII_EUROPENE_IN_LIMBA_ENGLEZA_29_07_2025_.pdf"
+  },
+  "ro-ubb-cluj--relatii-internationale-si-studii-europene--germana-if": {
+   "budget": 7.67,
+   "fee": 7.52,
+   "url": "https://euro.ubbcluj.ro/wp-content/uploads/Lista_Admisi_Pe_Etapa_Vara-_RELATII_INTERNATIONALE_SI_STUDII_EUROPENE_IN_LIMBA_GERMANA_29_07_2025_.pdf"
+  },
+  "ro-ubb-cluj--relatii-internationale-si-studii-europene--romana-id": {
+   "fee": 6.34,
+   "url": "https://euro.ubbcluj.ro/wp-content/uploads/ID-Lista_Admisi_Pe_Etapa_Vara-_RELATII_INTERNATIONALE_SI_STUDII_EUROPENE_29_07_2025_.pdf"
+  },
+  "ro-ubb-cluj--relatii-internationale-si-studii-europene--romana-if-2": {
+   "budget": 7.27,
+   "fee": 6.02,
+   "url": "https://euro.ubbcluj.ro/wp-content/uploads/Lista_Admisi_Pe_Etapa_Vara-_RELATII_INTERNATIONALE_SI_STUDII_EUROPENE_29_07_2025_.pdf"
+  },
+  "ro-ubb-cluj--resurse-umane--maghiara-if": {
+   "budget": 6.73,
+   "url": "https://socasis.ubbcluj.ro/wp-content/uploads/2025/07/Resurse-Umane-LM-2.pdf"
+  },
+  "ro-ubb-cluj--resurse-umane--romana-if": {
+   "budget": 6.13,
+   "fee": 6.11,
+   "url": "https://socasis.ubbcluj.ro/wp-content/uploads/2025/07/Resurse-Umane-2.pdf"
+  },
+  "ro-ubb-cluj--sociologie--maghiara-if": {
+   "budget": 6.25,
+   "url": "https://socasis.ubbcluj.ro/wp-content/uploads/2025/07/Sociologie-LM-2.pdf"
+  },
+  "ro-ubb-cluj--sociologie--romana-if": {
+   "budget": 6.11,
+   "fee": 7.5,
+   "url": "https://socasis.ubbcluj.ro/wp-content/uploads/2025/07/Sociologie-3.pdf"
+  },
+  "ro-ubb-cluj--statistica-economica-si-data-science--romana-if": {
+   "budget": 7.1,
+   "fee": 6.4,
+   "url": "https://econ.ubbcluj.ro/admitere/2025/iulie/rezultate/FSEGA_Lista_finala_admisi_licenta_Iulie_2025_afisaj.pdf"
+  },
+  "ro-ucv--administratie-publica--romana-if": {
+   "budget": 7.15,
+   "fee": 6.3,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--administratie-publica--romana-if-drobeta-turnu-se": {
+   "budget": 6.46,
+   "fee": 6.06,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--agricultura--romana-if": {
+   "budget": 5.75,
+   "fee": 8.2,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--agricultura--romana-ifr": {
+   "fee": 6.05,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--arta-sacra--romana-if": {
+   "budget": 6.48,
+   "fee": 7.92,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--arte-plastice-pictura--romana-if": {
+   "budget": 6.16,
+   "fee": 8.26,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--artele-spectacolului-actorie--romana-if": {
+   "budget": 9.5,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--asistenta-sociala--romana-if": {
+   "budget": 7.35,
+   "fee": 6.08,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--automatica-si-informatica-aplicata--romana-if": {
+   "budget": 5.72,
+   "fee": 5.98,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--autovehicule-rutiere--romana-if": {
+   "budget": 6.11,
+   "fee": 6,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--biochimie-tehnologica--romana-if": {
+   "budget": 5.75,
+   "fee": 7.16,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--biologie--romana-if": {
+   "budget": 6.4,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--calculatoare--engleza-if": {
+   "budget": 5.53,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--calculatoare--romana-if": {
+   "budget": 5.77,
+   "fee": 6.72,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--cinematografie-fotografie-media-comunicare-audiovizuala-scen--romana-if": {
+   "budget": 9,
+   "fee": 9.25,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--comunicare-si-relatii-publice--romana-if": {
+   "budget": 7.16,
+   "fee": 6.38,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--constructii-civile-industriale-si-agricole--romana-if": {
+   "budget": 7.53,
+   "fee": 8.05,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--contabilitate-si-informatica-de-gestiune--romana-id": {
+   "fee": 6.1,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--contabilitate-si-informatica-de-gestiune--romana-if": {
+   "budget": 6.16,
+   "fee": 8,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--contabilitate-si-informatica-de-gestiune--romana-if-drobeta-turnu-se": {
+   "budget": 6.03,
+   "fee": 8.03,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--controlul-si-expertiza-produselor-alimentare--romana-if": {
+   "budget": 6.26,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--drept--romana-if": {
+   "budget": 8.3,
+   "fee": 6.01,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--drept--romana-ifr": {
+   "fee": 6,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--echipamente-si-instalatii-de-aviatie--romana-if": {
+   "budget": 6.73,
+   "fee": 6.28,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--economie-si-afaceri-internationale--engleza-if": {
+   "budget": 5.5,
+   "fee": 8.83,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--economie-si-afaceri-internationale--romana-if": {
+   "budget": 6.01,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--educatie-fizica-si-sportiva--romana-if": {
+   "budget": 7.95,
+   "fee": 5.14,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--educatie-fizica-si-sportiva--romana-if-drobeta-turnu-se": {
+   "budget": 7.02,
+   "fee": 5.33,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--electromecanica--romana-if": {
+   "budget": 5.8,
+   "fee": 8.85,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--electromecanica--romana-ifr": {
+   "fee": 6.18,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--electronica-aplicata--romana-if": {
+   "budget": 6.04,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--finante-si-banci--romana-if": {
+   "budget": 6.01,
+   "fee": 6.63,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--fizica-informatica--romana-if": {
+   "budget": 6.01,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--fizica-medicala--romana-if": {
+   "budget": 6.05,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--geografia-turismului--romana-if": {
+   "budget": 6.06,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--geografie--romana-if": {
+   "budget": 6.43,
+   "fee": 6.75,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--horticultura--romana-if": {
+   "budget": 6.16,
+   "fee": 8.63,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--informatica--romana-if": {
+   "budget": 6.01,
+   "fee": 6.98,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--informatica-economica--romana-if": {
+   "budget": 6.03,
+   "fee": 8.55,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--ingineria-mediului--romana-if": {
+   "budget": 5.57,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--ingineria-produselor-alimentare--romana-if": {
+   "budget": 6.1,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--ingineria-si-protectia-mediului-in-industrie--romana-if-drobeta-turnu-se": {
+   "budget": 6.03,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--ingineria-sistemelor-electroenergetice--romana-if": {
+   "budget": 6.23,
+   "fee": 7.13,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--ingineria-sistemelor-multimedia--romana-if": {
+   "budget": 6.21,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--ingineria-transporturilor-si-a-traficului--romana-if": {
+   "budget": 5.5,
+   "fee": 6.01,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--inginerie-economica-industriala--romana-if-drobeta-turnu-se": {
+   "budget": 6.06,
+   "fee": 9.19,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--inginerie-electrica-si-calculatoare--romana-if": {
+   "budget": 6,
+   "fee": 6.01,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--interpretare-muzicala-canto--romana-if": {
+   "budget": 6,
+   "fee": 9.8,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--interpretare-muzicala-instrumente--romana-if": {
+   "budget": 7.4,
+   "fee": 9.2,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--kinetoterapie-si-motricitate-speciala--romana-if": {
+   "budget": 6.3,
+   "fee": 5.84,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--kinetoterapie-si-motricitate-speciala--romana-if-drobeta-turnu-se": {
+   "budget": 6.61,
+   "fee": 6.09,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--limba-si-literatura-moderna-engleza-franceza-limba-si-litera--romana-if": {
+   "budget": 6.9,
+   "fee": 5.76,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--limba-si-literatura-romana-limba-si-literatura-latina--romana-if": {
+   "budget": 7.15,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--limba-si-literatura-romana-limba-si-literatura-moderna-engle--romana-id": {
+   "fee": 6,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--limba-si-literatura-romana-limba-si-literatura-moderna-engle--romana-if": {
+   "budget": 7.4,
+   "fee": 6.5,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--limba-si-literatura-romana-limba-si-literatura-moderna-engle--romana-if-drobeta-turnu-se": {
+   "budget": 6.68,
+   "fee": 6.83,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--management--romana-id": {
+   "fee": 6.03,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--management--romana-if": {
+   "budget": 7.16,
+   "fee": 6.11,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--management--romana-if-drobeta-turnu-se": {
+   "budget": 6,
+   "fee": 6.67,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--marketing--romana-if": {
+   "budget": 6.86,
+   "fee": 6,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--masuratori-terestre-si-cadastru--romana-if": {
+   "budget": 6.18,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--matematica-informatica--romana-if": {
+   "budget": 6.65,
+   "fee": 6.91,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--muzica--romana-if": {
+   "budget": 6,
+   "fee": 9,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--navigatie-si-transport-maritim-si-fluvial--romana-if-drobeta-turnu-se": {
+   "budget": 6.11,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--relatii-internationale-si-studii-europene--romana-if": {
+   "budget": 6.38,
+   "fee": 7.25,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--silvicultura--romana-if": {
+   "budget": 6.01,
+   "fee": 7.96,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--sociologie--romana-if": {
+   "budget": 6,
+   "fee": 6.46,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--tehnologia-constructiilor-de-masini--romana-if": {
+   "budget": 6,
+   "fee": 6.06,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-ucv--teologie-ortodoxa-pastorala--romana-if": {
+   "budget": 5.67,
+   "fee": 6.16,
+   "url": "https://evstud.ucv.ro/rezultate-admitere/"
+  },
+  "ro-umf-carol-davila--asistenta-medicala-generala--romana-if": {
+   "budget": 5,
+   "url": "https://umfcd.ro/wp-content/uploads/2025/ADMITERE_2025/LISTE_FINALE/FMAM_AMG_rezultate%20finale%20buget%2Bbursa.pdf"
+  },
+  "ro-umf-carol-davila--balneofiziokinetoterapie-si-recuperare--romana-if": {
+   "budget": 6.5,
+   "fee": 5.25,
+   "url": "https://umfcd.ro/wp-content/uploads/2025/ADMITERE_2025/LISTE_FINALE/FMAM_BFKT_rezultate%20finale%20buget%2Bbursa.pdf"
+  },
+  "ro-umf-carol-davila--farmacie--romana-if": {
+   "budget": 5,
+   "url": "https://umfcd.ro/wp-content/uploads/2025/ADMITERE_2025/LISTE_FINALE/Farmacie_rezultate%20finale%20buget%2Bbursa.pdf"
+  },
+  "ro-umf-carol-davila--medicina--romana-if": {
+   "budget": 7.7,
+   "fee": 7.1,
+   "url": "https://umfcd.ro/wp-content/uploads/2025/ADMITERE_2025/LISTE_FINALE/Medicina_rezultate%20finale%20buget%2Bbursa.pdf"
+  },
+  "ro-umf-carol-davila--medicina-dentara--romana-if": {
+   "budget": 7.3,
+   "fee": 6.4,
+   "url": "https://umfcd.ro/wp-content/uploads/2025/ADMITERE_2025/LISTE_FINALE/Stomatologie_rezultate%20finale%20buget%2Bbursa.pdf"
+  },
+  "ro-umf-carol-davila--moase--romana-if": {
+   "budget": 5.17,
+   "url": "https://umfcd.ro/wp-content/uploads/2025/ADMITERE_2025/LISTE_FINALE/FMAM_Moase_rezultate%20finale%20buget%2Bbursa.pdf"
+  },
+  "ro-umf-carol-davila--radiologie-si-imagistica--romana-if": {
+   "budget": 5,
+   "url": "https://umfcd.ro/wp-content/uploads/2025/ADMITERE_2025/LISTE_FINALE/FMAM_Radiologie%20si%20Imagistica_rezultate%20finale%20buget%2Bbursa.pdf"
+  },
+  "ro-umf-carol-davila--tehnica-dentara--romana-if": {
+   "budget": 6.5,
+   "fee": 5.25,
+   "url": "https://umfcd.ro/wp-content/uploads/2025/ADMITERE_2025/LISTE_FINALE/FMAM_TD_rezultate%20finale%20buget%2Bbursa.pdf"
+  },
+  "ro-umf-cluj--asistenta-medicala-generala--romana-if": {
+   "fee": 8.55,
+   "url": "https://cdn.umfcluj.ro/uploads/2025/07/ADM2025-RF_asistenta_medicala_taxa_anonim.pdf"
+  },
+  "ro-umf-cluj--asistenta-medicala-generala--romana-if-baia-mare": {
+   "fee": 7.9,
+   "url": "https://cdn.umfcluj.ro/uploads/2025/07/ADM2025-RF_asistenta_medicala_baia_mare_taxa_anonim.pdf"
+  },
+  "ro-umf-cluj--balneofiziokinetoterapie-si-recuperare--romana-if": {
+   "fee": 8.94,
+   "url": "https://cdn.umfcluj.ro/uploads/2025/07/ADM2025-RF_bfk_taxa_anonim.pdf"
+  },
+  "ro-umf-cluj--cosmetica-medicala-si-tehnologia-produsului-cosmetic--romana-if": {
+   "fee": 8.63,
+   "url": "https://cdn.umfcluj.ro/uploads/2025/07/ADM2025-RF_cosmetica_medicala_taxa_anonim.pdf"
+  },
+  "ro-umf-cluj--farmacie--romana-if": {
+   "fee": 5.08,
+   "url": "https://cdn.umfcluj.ro/uploads/2025/07/ADM2025-RF_farmacie_taxa_anonim.pdf"
+  },
+  "ro-umf-cluj--medicina--romana-if": {
+   "fee": 8.28,
+   "url": "https://cdn.umfcluj.ro/uploads/2025/07/ADM2025-RF_medicina_taxa_anonim.pdf"
+  },
+  "ro-umf-cluj--medicina-dentara--romana-if": {
+   "fee": 7.56,
+   "url": "https://cdn.umfcluj.ro/uploads/2025/07/ADM2025-RF_medicina_dentara_taxa_anonim.pdf"
+  },
+  "ro-umf-cluj--nutritie-si-dietetica--romana-if": {
+   "fee": 8.84,
+   "url": "https://cdn.umfcluj.ro/uploads/2025/07/ADM2025-RF_nutritie_dietetica_taxa_anonim.pdf"
+  },
+  "ro-umf-cluj--radiologie-si-imagistica--romana-if": {
+   "fee": 9.25,
+   "url": "https://cdn.umfcluj.ro/uploads/2025/07/ADM2025-RF_radiologie_taxa_anonim.pdf"
+  },
+  "ro-umf-cluj--tehnica-dentara--romana-if": {
+   "fee": 9.2,
+   "url": "https://cdn.umfcluj.ro/uploads/2025/07/ADM2025-RF_tehnica_dentara_taxa_anonim.pdf"
+  },
+  "ro-umf-iasi--asistenta-de-profilaxie-stomatologica--romana-if": {
+   "budget": 7.4,
+   "fee": 6.4,
+   "url": "https://www.umfiasi.ro/ro/admitere/program-de-licenta/Documents/2025/test%20grila/Rezultate%20finale/Asisten%C8%9B%C4%83%20de%20profilaxie%20stomatologic%C4%83/Asisten%C8%9B%C4%83%20de%20profilaxie%20stomatologic%C4%83%20-%20buget.pdf"
+  },
+  "ro-umf-iasi--asistenta-medicala-generala--romana-if": {
+   "budget": 5.14,
+   "fee": 5.1,
+   "url": "https://www.umfiasi.ro/ro/admitere/program-de-licenta/Documents/2025/test%20grila/Rezultate%20finale/Asisten%C8%9B%C4%83%20medical%C4%83%20general%C4%83/Asisten%C8%9B%C4%83%20Medical%C4%83%20General%C4%83%20-%20buget.pdf"
+  },
+  "ro-umf-iasi--audiologie-si-protezare-auditiva--romana-if": {
+   "budget": 6.2,
+   "url": "https://www.umfiasi.ro/ro/admitere/program-de-licenta/Documents/2025/test%20grila/Rezultate%20finale/Audilogie%20%C8%99i%20protezare%20auditiv%C4%83/Audiologie%20-%20buget.pdf"
+  },
+  "ro-umf-iasi--balneofiziokinetoterapie-si-recuperare--romana-if": {
+   "budget": 6.8,
+   "fee": 5,
+   "url": "https://www.umfiasi.ro/ro/admitere/program-de-licenta/Documents/2025/test%20grila/Rezultate%20finale/Balneo-fiziokinetoterapie%20%C8%99i%20recuperare/Balneo-fiziokinetoterapie%20%C8%99i%20recuperare%20-%20buget.pdf"
+  },
+  "ro-umf-iasi--bioinginerie--romana-if": {
+   "budget": 5,
+   "fee": 6.4,
+   "url": "https://www.umfiasi.ro/ro/admitere/program-de-licenta/Documents/2025/test%20grila/Rezultate%20finale/Bioinginerie/Bioinginerie%20-%20buget.pdf"
+  },
+  "ro-umf-iasi--cosmetica-medicala-si-tehnologia-produsului-cosmetic--romana-if": {
+   "budget": 5.8,
+   "fee": 7.4,
+   "url": "https://www.umfiasi.ro/ro/admitere/program-de-licenta/Documents/2025/test%20grila/Rezultate%20finale/Cosmetic%C4%83%20medical%C4%83%20%C8%99i%20tehnologia%20produsului%20cosmetic/Cosmetic%C4%83%20medical%C4%83%20%C8%99i%20tehnologia%20produsului%20cosmetic%20-%20buget.pdf"
+  },
+  "ro-umf-iasi--farmacie--romana-if": {
+   "budget": 5,
+   "fee": 5.56,
+   "url": "https://www.umfiasi.ro/ro/admitere/program-de-licenta/Documents/2025/test%20grila/Rezultate%20finale/Farmacie/Farmacie%20-%20buget.pdf"
+  },
+  "ro-umf-iasi--medicina--romana-if": {
+   "budget": 7.7,
+   "fee": 7.6,
+   "url": "https://www.umfiasi.ro/ro/admitere/program-de-licenta/Documents/2025/test%20grila/Rezultate%20finale/Medicin%C4%83/Medicina%20-%20buget.pdf"
+  },
+  "ro-umf-iasi--medicina-dentara--romana-if": {
+   "budget": 6,
+   "fee": 5.3,
+   "url": "https://www.umfiasi.ro/ro/admitere/program-de-licenta/Documents/2025/test%20grila/Rezultate%20finale/Medicin%C4%83%20dentar%C4%83/Medicin%C4%83%20Dentar%C4%83%20-%20buget.pdf"
+  },
+  "ro-umf-iasi--nutritie-si-dietetica--romana-if": {
+   "budget": 6.2,
+   "fee": 5.8,
+   "url": "https://www.umfiasi.ro/ro/admitere/program-de-licenta/Documents/2025/test%20grila/Rezultate%20finale/Nutri%C8%9Bie%20%C8%99i%20dietetic%C4%83/Nutritie%20si%20dietetica%20-%20buget.pdf"
+  },
+  "ro-umf-iasi--tehnica-dentara--romana-if": {
+   "budget": 6.4,
+   "fee": 5,
+   "url": "https://www.umfiasi.ro/ro/admitere/program-de-licenta/Documents/2025/test%20grila/Rezultate%20finale/Tehnic%C4%83%20dentar%C4%83/Tehnic%C4%83%20dentar%C4%83%20-%20buget.pdf"
+  },
+  "ro-umfst--arhitectura--engleza-if": {
+   "budget": 6.14,
+   "fee": 6.18,
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/Rezultate_ARHITECTURA-1.pdf"
+  },
+  "ro-umfst--asistenta-de-farmacie--romana-if-bistrita": {
+   "budget": 6.76,
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/Asist-Farmacie-Bistrita-clasament-fara-nume-2025-07-17-.pdf"
+  },
+  "ro-umfst--asistenta-medicala-generala-linia-de-studii-romana-si-linia---romana-if": {
+   "budget": 8.72,
+   "group": "linia română",
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/dupa-confirmari-AMG-LR-clasament.pdf"
+  },
+  "ro-umfst--balneofiziokinetoterapie-si-recuperare--romana-if": {
+   "budget": 8.35,
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/dupa-confirmari-BFK-clasament-.pdf"
+  },
+  "ro-umfst--chimie-medicala--romana-if": {
+   "budget": 7.64,
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/CHM_Clasament-fara-nume-2025-07-28-14-35-.pdf"
+  },
+  "ro-umfst--drept--romana-id": {
+   "fee": 8.4,
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/Drept-ID-1.pdf"
+  },
+  "ro-umfst--drept--romana-if": {
+   "fee": 9.32,
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/Drept-IF-1.pdf"
+  },
+  "ro-umfst--informatica--maghiara-if": {
+   "budget": 8.77,
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/Rezultate_INFORMATICA_LM.pdf"
+  },
+  "ro-umfst--informatica--romana-if": {
+   "budget": 8.87,
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/Rezultate_INFORMATICA.pdf"
+  },
+  "ro-umfst--inginerie-economica-industriala--romana-if": {
+   "budget": 6.98,
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/Rezultate_IEI.pdf"
+  },
+  "ro-umfst--inginerie-medicala--romana-if": {
+   "budget": 9.38,
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/Rezultate_IMD.pdf"
+  },
+  "ro-umfst--limbi-moderne-aplicate-engleza-franceza-germana-italiana--romana-if": {
+   "fee": 9.46,
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/Limbi-moderne-aplicate-En.-Fr.-Ge.-It.-1.pdf"
+  },
+  "ro-umfst--management--romana-id": {
+   "fee": 5.47,
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/Management-ID-1.pdf"
+  },
+  "ro-umfst--medicina--maghiara-if": {
+   "budget": 5.93,
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/Med-LM_-rezultate_dupa-confirmari_2025.pdf"
+  },
+  "ro-umfst--medicina--romana-if": {
+   "budget": 7.7,
+   "fee": 7.14,
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/M_LR.pdf"
+  },
+  "ro-umfst--medicina-dentara-linia-de-studii-romana-si-linia-de-studii-m--romana-if": {
+   "budget": 6.95,
+   "fee": 6.3,
+   "group": "linia română",
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/MD-LR_-rezultate_dupa-confirmari_2025.pdf"
+  },
+  "ro-umfst--psihologie--romana-if": {
+   "fee": 8.49,
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/Psihologie-3.pdf"
+  },
+  "ro-umfst--studii-de-securitate--romana-if": {
+   "fee": 6.7,
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/Studii-de-securitate..pdf"
+  },
+  "ro-umfst--tehnica-dentara--romana-if": {
+   "budget": 8.74,
+   "fee": 7.83,
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/TD-dupa-confirmari.pdf"
+  },
+  "ro-umfst--tehnologia-constructiilor-de-masini--romana-if": {
+   "budget": 8.77,
+   "fee": 7.98,
+   "url": "https://adminfo.umfst.ro/wp-content/uploads/2025/07/Rezultate_TCM.pdf"
+  },
+  "ro-umft--asistenta-de-farmacie--romana-if-deva": {
+   "budget": 6.74,
+   "url": "https://www.umft.ro/wp-content/uploads/2025/07/ASFD_tip2_dupa_taxa_scolarizare_31.07.2025_public.pdf"
+  },
+  "ro-umft--asistenta-de-profilaxie-stomatologica--romana-if": {
+   "budget": 5.94,
+   "fee": 7.41,
+   "url": "https://www.umft.ro/wp-content/uploads/2025/07/APS_tip2_dupa_taxa_scolarizare_31.07.2025_public.pdf"
+  },
+  "ro-umft--asistenta-medicala-generala--romana-if": {
+   "budget": 9.15,
+   "fee": 6.79,
+   "url": "https://www.umft.ro/wp-content/uploads/2025/07/AMG_tip2_dupa_taxa_scolarizare_31.07.2025_public.pdf"
+  },
+  "ro-umft--asistenta-medicala-generala--romana-if-lugoj": {
+   "budget": 8.17,
+   "fee": 6.26,
+   "url": "https://www.umft.ro/wp-content/uploads/2025/07/AMGL_tip2_dupa_taxa_scolarizare_31.07.2025_public.pdf"
+  },
+  "ro-umft--asistenta-medicala-generala-deva--romana-if": {
+   "budget": 8.11,
+   "fee": 6.31,
+   "url": "https://www.umft.ro/wp-content/uploads/2025/07/AMGD_tip2_dupa_taxa_scolarizare_31.07.2025_public.pdf"
+  },
+  "ro-umft--balneofiziokinetoterapie-si-recuperare--romana-if": {
+   "budget": 8.4,
+   "fee": 5.63,
+   "url": "https://www.umft.ro/wp-content/uploads/2025/07/BFKT_tip2_dupa_taxa_scolarizare_31.07.2025_public.pdf"
+  },
+  "ro-umft--cosmetica-medicala-si-tehnologia-produsului-cosmetic--romana-if": {
+   "budget": 6.26,
+   "fee": 5.77,
+   "url": "https://www.umft.ro/wp-content/uploads/2025/07/Cosmetica_tip2_dupa_taxa_scolarizare_31.07.2025_public.pdf"
+  },
+  "ro-umft--farmacie--romana-if": {
+   "budget": 5.67,
+   "fee": 5.18,
+   "url": "https://www.umft.ro/wp-content/uploads/2025/07/FARMA_tip2_dupa_taxa_scolarizare_31.07.2025_public.pdf"
+  },
+  "ro-umft--medicina--romana-if": {
+   "budget": 8.33,
+   "fee": 7.33,
+   "url": "https://www.umft.ro/wp-content/uploads/2025/07/M_tip1_dupa_taxa_scolarizare_31.07.2025_public.pdf"
+  },
+  "ro-umft--medicina-dentara--romana-if": {
+   "budget": 7.84,
+   "fee": 6.75,
+   "url": "https://www.umft.ro/wp-content/uploads/2025/07/MD_tip1_dupa_taxa_scolarizare_31.07.2025_public.pdf"
+  },
+  "ro-umft--nutritie-si-dietetica--romana-if": {
+   "budget": 6.42,
+   "fee": 6.75,
+   "url": "https://www.umft.ro/wp-content/uploads/2025/07/ND_tip2_dupa_taxa_scolarizare_31.07.2025_public.pdf"
+  },
+  "ro-umft--tehnica-dentara--romana-if": {
+   "budget": 8.26,
+   "fee": 5.43,
+   "url": "https://www.umft.ro/wp-content/uploads/2025/07/TD_tip2_dupa_taxa_scolarizare_31.07.2025_public.pdf"
+  },
+  "ro-unibuc--arta-sacra--romana-if": {
+   "budget": 6.88,
+   "fee": 7.16,
+   "url": "https://ftoub.unibuc.ro/rezultatele-finale-admitere-licenta-iulie-2025-dupa-confirmari/"
+  },
+  "ro-unibuc--asistenta-manageriala-si-administrativa--romana-if": {
+   "budget": 7.94,
+   "fee": 6.44,
+   "url": "https://litere.ro/admitere-licenta-2025/"
+  },
+  "ro-unibuc--asistenta-sociala--romana-id": {
+   "fee": 7.36,
+   "url": "https://sas.unibuc.ro/admitere-2025-rezultate-licenta-si-informatii-despre-confirmari/"
+  },
+  "ro-unibuc--asistenta-sociala--romana-if": {
+   "budget": 8.45,
+   "fee": 6.8,
+   "url": "https://sas.unibuc.ro/admitere-2025-rezultate-licenta-si-informatii-despre-confirmari/"
+  },
+  "ro-unibuc--biochimie--romana-if": {
+   "budget": 8.33,
+   "fee": 6.08,
+   "url": "https://bio.unibuc.ro/rezultate-admitere-programe-de-licenta/"
+  },
+  "ro-unibuc--biochimie-tehnologica--romana-if": {
+   "budget": 6.96,
+   "fee": 6.08,
+   "url": "https://chimie.unibuc.ro/index.php/admitere-in-ciclul-de-licenta/302-admitere-in-ciclul-de-licenta-2025/3253-rezultate-finale-admitere-licenta-sesiunea-iulie-2031"
+  },
+  "ro-unibuc--biologie--romana-if": {
+   "budget": 8.35,
+   "fee": 6.05,
+   "url": "https://bio.unibuc.ro/rezultate-admitere-programe-de-licenta/"
+  },
+  "ro-unibuc--cartografie--romana-if": {
+   "budget": 7.15,
+   "fee": 6.08,
+   "url": "https://geo.unibuc.ro/admitere-licenta-iulie-2025/"
+  },
+  "ro-unibuc--chimie--romana-if": {
+   "budget": 6.15,
+   "fee": 7.48,
+   "url": "https://chimie.unibuc.ro/index.php/admitere-in-ciclul-de-licenta/302-admitere-in-ciclul-de-licenta-2025/3253-rezultate-finale-admitere-licenta-sesiunea-iulie-2031"
+  },
+  "ro-unibuc--chimie-farmaceutica--romana-if": {
+   "budget": 8.11,
+   "fee": 7.9,
+   "url": "https://chimie.unibuc.ro/index.php/admitere-in-ciclul-de-licenta/302-admitere-in-ciclul-de-licenta-2025/3253-rezultate-finale-admitere-licenta-sesiunea-iulie-2031"
+  },
+  "ro-unibuc--chimie-medicala--romana-if": {
+   "budget": 9.03,
+   "fee": 7.9,
+   "url": "https://chimie.unibuc.ro/index.php/admitere-in-ciclul-de-licenta/302-admitere-in-ciclul-de-licenta-2025/3253-rezultate-finale-admitere-licenta-sesiunea-iulie-2031"
+  },
+  "ro-unibuc--comunicare-si-relatii-publice--romana-if": {
+   "budget": 7.09,
+   "fee": 5.84,
+   "url": "https://fjsc.unibuc.ro/2025/08/01/rezultatele-finale-ale-examenului-de-admitere-nivel-licenta-sesiunea-iulie-2025/"
+  },
+  "ro-unibuc--comunicare-si-relatii-publice--romana-if-2": {
+   "budget": 9.05,
+   "fee": 8.34,
+   "url": "https://litere.ro/admitere-licenta-2025/"
+  },
+  "ro-unibuc--comunicare-si-relatii-publice--romana-ifr": {
+   "fee": 5.72,
+   "url": "https://litere.ro/admitere-licenta-2025/"
+  },
+  "ro-unibuc--drept--romana-id": {
+   "fee": 50,
+   "scale": 100,
+   "url": "https://drept.unibuc.ro/Admitere-2025-s1442-ro.htm"
+  },
+  "ro-unibuc--drept--romana-if": {
+   "budget": 66,
+   "fee": 56,
+   "scale": 100,
+   "url": "https://drept.unibuc.ro/Admitere-2025-s1442-ro.htm"
+  },
+  "ro-unibuc--ecologie-si-protectia-mediului--romana-if": {
+   "budget": 7.11,
+   "fee": 6.18,
+   "url": "https://bio.unibuc.ro/rezultate-admitere-programe-de-licenta/"
+  },
+  "ro-unibuc--etnologie--romana-if": {
+   "budget": 6,
+   "fee": 7.85,
+   "url": "https://litere.ro/admitere-licenta-2025/"
+  },
+  "ro-unibuc--filosofie--romana-if": {
+   "budget": 6.3,
+   "fee": 6.03,
+   "url": "https://filosofie.unibuc.ro/admitere-licenta/"
+  },
+  "ro-unibuc--geofizica--romana-if": {
+   "budget": 6.66,
+   "url": "https://gg.unibuc.ro/admitere-licenta-2025/"
+  },
+  "ro-unibuc--geografia-mediului--romana-if": {
+   "budget": 6.08,
+   "fee": 8.78,
+   "url": "https://geo.unibuc.ro/admitere-licenta-iulie-2025/"
+  },
+  "ro-unibuc--geografia-turismului--romana-id": {
+   "fee": 6.03,
+   "url": "https://geo.unibuc.ro/admitere-licenta-iulie-2025/"
+  },
+  "ro-unibuc--geografia-turismului--romana-if": {
+   "budget": 6.56,
+   "fee": 6.01,
+   "url": "https://geo.unibuc.ro/admitere-licenta-iulie-2025/"
+  },
+  "ro-unibuc--geografia-turismului--romana-if-focsani": {
+   "budget": 6.06,
+   "url": "https://geo.unibuc.ro/admitere-licenta-iulie-2025/"
+  },
+  "ro-unibuc--geografie--romana-if": {
+   "budget": 7.11,
+   "fee": 6.16,
+   "url": "https://geo.unibuc.ro/admitere-licenta-iulie-2025/"
+  },
+  "ro-unibuc--geologie--romana-if": {
+   "budget": 6.36,
+   "url": "https://gg.unibuc.ro/admitere-licenta-2025/"
+  },
+  "ro-unibuc--hidrologie-si-meteorologie--romana-if": {
+   "budget": 6.18,
+   "fee": 6.28,
+   "url": "https://geo.unibuc.ro/admitere-licenta-iulie-2025/"
+  },
+  "ro-unibuc--informatica--romana-if": {
+   "budget": 5.74,
+   "fee": 5.25,
+   "group": "Domeniul Informatică",
+   "url": "https://fmi.unibuc.ro/admitere-licenta-iulie-2025/"
+  },
+  "ro-unibuc--inginerie-geologica--romana-if": {
+   "budget": 6.03,
+   "fee": 6.9,
+   "url": "https://gg.unibuc.ro/admitere-licenta-2025/"
+  },
+  "ro-unibuc--istoria-artei--romana-if": {
+   "budget": 7.66,
+   "fee": 6.21,
+   "url": "https://istorie.unibuc.ro/wp-content/uploads/2025/07/05.Istoria-Artei-Admisi-Buget-30-iulie-2025.pdf"
+  },
+  "ro-unibuc--istorie--romana-id": {
+   "fee": 6.98,
+   "url": "https://istorie.unibuc.ro/wp-content/uploads/2025/07/07.ISTORIE-ID-Admisi-30-iulie-2025.pdf"
+  },
+  "ro-unibuc--istorie--romana-if": {
+   "budget": 8.8,
+   "fee": 6,
+   "url": "https://istorie.unibuc.ro/wp-content/uploads/2025/07/01.Istorie-Admisi-Buget-30-iulie-2025.pdf"
+  },
+  "ro-unibuc--jurnalism--romana-if": {
+   "budget": 7.51,
+   "fee": 6.06,
+   "url": "https://fjsc.unibuc.ro/2025/08/01/rezultatele-finale-ale-examenului-de-admitere-nivel-licenta-sesiunea-iulie-2025/"
+  },
+  "ro-unibuc--limba-si-literatura-romana-limba-si-literatura-moderna-engle--romana-if": {
+   "budget": 9.28,
+   "fee": 8.35,
+   "url": "https://litere.ro/admitere-licenta-2025/"
+  },
+  "ro-unibuc--literatura-universala-si-comparata-limba-si-literatura-moder--romana-if": {
+   "budget": 9.24,
+   "fee": 8.52,
+   "url": "https://litere.ro/admitere-licenta-2025/"
+  },
+  "ro-unibuc--matematica--romana-if": {
+   "budget": 5.09,
+   "fee": 5.06,
+   "group": "Domeniul Matematică",
+   "url": "https://fmi.unibuc.ro/admitere-licenta-iulie-2025/"
+  },
+  "ro-unibuc--matematica-informatica--romana-if": {
+   "budget": 5.09,
+   "fee": 5.06,
+   "group": "Domeniul Matematică",
+   "url": "https://fmi.unibuc.ro/admitere-licenta-iulie-2025/"
+  },
+  "ro-unibuc--matematici-aplicate--romana-if": {
+   "budget": 5.09,
+   "fee": 5.06,
+   "group": "Domeniul Matematică",
+   "url": "https://fmi.unibuc.ro/admitere-licenta-iulie-2025/"
+  },
+  "ro-unibuc--planificare-teritoriala--romana-if": {
+   "budget": 6.23,
+   "fee": 6.06,
+   "url": "https://geo.unibuc.ro/admitere-licenta-iulie-2025/"
+  },
+  "ro-unibuc--planificare-teritoriala--romana-if-drobeta-turnu-se": {
+   "budget": 6.21,
+   "fee": 8.5,
+   "url": "https://geo.unibuc.ro/admitere-licenta-iulie-2025/"
+  },
+  "ro-unibuc--publicitate--romana-if": {
+   "budget": 7.03,
+   "fee": 5.59,
+   "url": "https://fjsc.unibuc.ro/2025/08/01/rezultatele-finale-ale-examenului-de-admitere-nivel-licenta-sesiunea-iulie-2025/"
+  },
+  "ro-unibuc--relatii-internationale-si-studii-europene--romana-if": {
+   "budget": 8.76,
+   "fee": 7.05,
+   "url": "https://istorie.unibuc.ro/wp-content/uploads/2025/07/08.RISE-Admisi-Buget-30-iulie-2025.pdf"
+  },
+  "ro-unibuc--resurse-umane--romana-if": {
+   "budget": 9,
+   "fee": 7.6,
+   "url": "https://sas.unibuc.ro/admitere-2025-rezultate-licenta-si-informatii-despre-confirmari/"
+  },
+  "ro-unibuc--servicii-si-politici-de-sanatate-publica-public-health--romana-if": {
+   "budget": 9.3,
+   "fee": 8.77,
+   "url": "https://fsi.unibuc.ro/wp-content/uploads/2025/07/Admisi-Buget.pdf"
+  },
+  "ro-unibuc--sociologie--engleza-if": {
+   "budget": 8.12,
+   "fee": 6.42,
+   "url": "https://sas.unibuc.ro/admitere-2025-rezultate-licenta-si-informatii-despre-confirmari/"
+  },
+  "ro-unibuc--sociologie--romana-if": {
+   "budget": 8.22,
+   "fee": 6.9,
+   "url": "https://sas.unibuc.ro/admitere-2025-rezultate-licenta-si-informatii-despre-confirmari/"
+  },
+  "ro-unibuc--stiinte-ale-informarii-si-documentarii--romana-if": {
+   "budget": 8.1,
+   "fee": 5.62,
+   "url": "https://litere.ro/admitere-licenta-2025/"
+  },
+  "ro-unibuc--studii-europene--romana-if": {
+   "budget": 7.94,
+   "fee": 6.25,
+   "url": "https://litere.ro/admitere-licenta-2025/"
+  },
+  "ro-unibuc--tehnologia-informatiei--romana-if": {
+   "budget": 5.08,
+   "fee": 5.2,
+   "group": "Domeniul Calculatoare și Tehnologia Informației",
+   "url": "https://fmi.unibuc.ro/admitere-licenta-iulie-2025/"
+  },
+  "ro-unibuc--teologie-baptista-asistenta-sociala--romana-if": {
+   "budget": 7.74,
+   "fee": 9.45,
+   "url": "https://ftb.unibuc.ro/wp-content/uploads/2025/07/Lista-admitere-licenta_buget_2025_iulie.pdf"
+  },
+  "ro-unibuc--teologie-ortodoxa-asistenta-sociala--romana-if": {
+   "budget": 7.88,
+   "fee": 8.08,
+   "url": "https://ftoub.unibuc.ro/rezultatele-finale-admitere-licenta-iulie-2025-dupa-confirmari/"
+  },
+  "ro-unibuc--teologie-ortodoxa-pastorala--romana-if": {
+   "budget": 7,
+   "fee": 7.59,
+   "url": "https://ftoub.unibuc.ro/rezultatele-finale-admitere-licenta-iulie-2025-dupa-confirmari/"
+  },
+  "ro-unibuc--teologie-romano-catolica-asistenta-sociala--romana-if": {
+   "budget": 8.1,
+   "url": "https://ftcub.unibuc.ro/wp-content/uploads/2025/07/Rezultate-admitere-licenta_iulie-2025.pdf"
+  },
+  "ro-unitbv--administrarea-afacerilor--engleza-if": {
+   "budget": 7.85,
+   "fee": 7.23,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--afaceri-internationale--romana-id": {
+   "fee": 6.01,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--afaceri-internationale--romana-if": {
+   "budget": 7.91,
+   "fee": 5.6,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--antreprenoriat-in-ingineria-materialelor--romana-if": {
+   "budget": 7.25,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--asistenta-medicala-generala--romana-if": {
+   "budget": 8.78,
+   "fee": 8,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--asistenta-sociala--romana-if": {
+   "budget": 8.45,
+   "fee": 6,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--automatica-si-informatica-aplicata--romana-if": {
+   "budget": 6.56,
+   "fee": 5.94,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--autovehicule-rutiere--engleza-if": {
+   "budget": 5.6,
+   "fee": 6.14,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--autovehicule-rutiere--romana-if": {
+   "budget": 5.13,
+   "fee": 6.1,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--autovehicule-rutiere--romana-ifr": {
+   "fee": 6.13,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--balneofiziokinetoterapie-si-recuperare--romana-if": {
+   "budget": 8.59,
+   "fee": 8.12,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--cai-ferate-drumuri-si-poduri--romana-if": {
+   "budget": 5.6,
+   "fee": 5.72,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--calculatoare--romana-if": {
+   "budget": 7.86,
+   "fee": 5.99,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--cinegetica--romana-id": {
+   "fee": 6.01,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--cinegetica--romana-if": {
+   "budget": 6.08,
+   "fee": 6,
+   "group": "Silvicultură / Exploatări forestiere / Cinegetică",
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--comunicare-si-relatii-publice--romana-if": {
+   "budget": 8.65,
+   "fee": 6.16,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--constructii-aerospatiale--romana-if": {
+   "budget": 7.73,
+   "fee": 6.68,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--constructii-civile-industriale-si-agricole--romana-if": {
+   "budget": 7.56,
+   "fee": 6.13,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--contabilitate-si-informatica-de-gestiune--romana-id": {
+   "fee": 6.01,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--contabilitate-si-informatica-de-gestiune--romana-if": {
+   "budget": 8.63,
+   "fee": 6.05,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--controlul-si-expertiza-produselor-alimentare--romana-if": {
+   "budget": 6.06,
+   "fee": 6.03,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--design-industrial--engleza-if": {
+   "budget": 6,
+   "fee": 6.36,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--design-industrial--romana-if": {
+   "budget": 6.05,
+   "fee": 6.73,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--drept--romana-if": {
+   "budget": 9.58,
+   "fee": 8.23,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--drept--romana-ifr": {
+   "fee": 8.33,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--economia-comertului-turismului-si-serviciilor--romana-id": {
+   "fee": 6,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--economia-comertului-turismului-si-serviciilor--romana-if": {
+   "budget": 7.43,
+   "fee": 6.36,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--educatie-fizica-si-sportiva--romana-if": {
+   "budget": 8.7,
+   "fee": 5.77,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--educatie-fizica-si-sportiva--romana-ifr": {
+   "fee": 8,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--electronica-aplicata--romana-if": {
+   "budget": 5.94,
+   "fee": 5.9,
+   "group": "Electronică aplicată / Tehnologii şi sisteme de telecomunicaţii",
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--electrotehnica--romana-if": {
+   "budget": 5.88,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--exploatari-forestiere--romana-if": {
+   "budget": 6.08,
+   "fee": 6,
+   "group": "Silvicultură / Exploatări forestiere / Cinegetică",
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--finante-si-banci--romana-if": {
+   "budget": 8.35,
+   "fee": 6.13,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--informatica--romana-id": {
+   "fee": 6.27,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--informatica--romana-if": {
+   "budget": 6.46,
+   "fee": 6.3,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--informatica-aplicata--germana-if": {
+   "budget": 6.25,
+   "fee": 6,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--informatica-aplicata--romana-if": {
+   "budget": 9.15,
+   "fee": 6,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--informatica-economica--romana-if": {
+   "budget": 7.79,
+   "fee": 6.46,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--ingineria-prelucrarii-lemnului--romana-if": {
+   "budget": 6.01,
+   "fee": 6.1,
+   "group": "Ingineria prelucrării lemnului / Ingineria şi designul produselor finite din lemn",
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--ingineria-prelucrarii-lemnului--romana-ifr": {
+   "fee": 6.68,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--ingineria-produselor-alimentare--romana-if": {
+   "budget": 6.13,
+   "fee": 6.13,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--ingineria-securitatii-in-industrie--romana-if": {
+   "budget": 6.63,
+   "fee": 7.2,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--ingineria-si-designul-produselor-finite-din-lemn--romana-if": {
+   "budget": 6.01,
+   "fee": 6.1,
+   "group": "Ingineria prelucrării lemnului / Ingineria şi designul produselor finite din lemn",
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--ingineria-si-managementul-afacerilor--romana-if": {
+   "budget": 6.93,
+   "fee": 6.3,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--ingineria-si-managementul-calitatii--romana-if": {
+   "budget": 6.13,
+   "fee": 8.18,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--ingineria-sistemelor-de-energii-regenerabile--romana-if": {
+   "budget": 6.13,
+   "fee": 6.45,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--ingineria-sudarii--romana-if": {
+   "budget": 6.25,
+   "fee": 6.86,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--ingineria-transporturilor-si-a-traficului--romana-if": {
+   "budget": 6.23,
+   "fee": 8.12,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--inginerie-electrica-si-calculatoare--engleza-if": {
+   "budget": 6.31,
+   "fee": 6.33,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--inginerie-mecanica--romana-if": {
+   "budget": 6.05,
+   "fee": 5.78,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--inginerie-mecanica--romana-ifr": {
+   "fee": 5.88,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--inginerie-medicala--romana-if": {
+   "budget": 7.46,
+   "fee": 6.18,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--inginerie-si-management-in-alimentatia-publica-si-agroturism--romana-if": {
+   "budget": 6.1,
+   "fee": 6.6,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--inginerie-si-management-in-industria-turismului--romana-if": {
+   "budget": 7.63,
+   "fee": 6.06,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--instalatii-pentru-constructii--romana-if": {
+   "budget": 5.94,
+   "fee": 5.52,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--interpretare-muzicala-canto--romana-if": {
+   "budget": 8.35,
+   "fee": 6.45,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--interpretare-muzicala-instrumente--engleza-if": {
+   "budget": 7.7,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--interpretare-muzicala-instrumente--romana-if": {
+   "budget": 6.09,
+   "fee": 6.82,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--kinetoterapie-si-motricitate-speciala--romana-if": {
+   "budget": 7.69,
+   "fee": 5.83,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--laborator-clinic--romana-if": {
+   "budget": 8.53,
+   "fee": 7.95,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--limba-si-literatura-chineza-limba-si-literatura-romana-limba--romana-if": {
+   "budget": 7.03,
+   "fee": 9.56,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--limba-si-literatura-engleza-limba-si-literatura-moderna-fran--romana-if": {
+   "budget": 6.98,
+   "fee": 6.08,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--limba-si-literatura-romana-limba-si-literatura-moderna-engle--romana-id": {
+   "fee": 6.08,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--limba-si-literatura-romana-limba-si-literatura-moderna-engle--romana-if": {
+   "budget": 8.05,
+   "fee": 6.05,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--limbi-moderne-aplicate-engleza-franceza-germana--romana-if": {
+   "budget": 6.65,
+   "fee": 7.18,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--management--romana-id": {
+   "fee": 7.08,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--management--romana-if": {
+   "budget": 8.05,
+   "fee": 6.06,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--marketing--romana-id": {
+   "fee": 6.33,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--marketing--romana-if": {
+   "budget": 7.91,
+   "fee": 5.47,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--masuratori-terestre-si-cadastru--romana-if": {
+   "budget": 6,
+   "fee": 6.01,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--matematica-informatica--romana-if": {
+   "budget": 8.69,
+   "fee": 6.74,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--mecatronica--romana-if": {
+   "budget": 6.06,
+   "fee": 6.5,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--media-digitala--engleza-if": {
+   "budget": 8.16,
+   "fee": 7.6,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--media-digitala--romana-if": {
+   "budget": 8.85,
+   "fee": 7.6,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--medicina--romana-if": {
+   "budget": 8.4,
+   "fee": 8.2,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--muzica--romana-if": {
+   "budget": 8.47,
+   "fee": 6.46,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--optometrie--romana-if": {
+   "budget": 6.23,
+   "fee": 6.06,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--psihologie--romana-id": {
+   "fee": 9.35,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--psihologie--romana-if": {
+   "budget": 9.56,
+   "fee": 8.83,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--psihopedagogie-speciala--romana-if": {
+   "budget": 8.73,
+   "fee": 7.58,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--resurse-umane--romana-if": {
+   "budget": 8.58,
+   "fee": 6.75,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--robotica--romana-if": {
+   "budget": 6.65,
+   "fee": 6.92,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--silvicultura--romana-if": {
+   "budget": 6.08,
+   "fee": 6,
+   "group": "Silvicultură / Exploatări forestiere / Cinegetică",
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--sisteme-de-productie-digitale--romana-if": {
+   "budget": 6.16,
+   "fee": 6.06,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--sociologie--romana-if": {
+   "budget": 8.2,
+   "fee": 6.05,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--sport-si-performanta-motrica--romana-if": {
+   "budget": 8.06,
+   "fee": 6.3,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--sport-si-performanta-motrica--romana-ifr": {
+   "fee": 5.5,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--stiinta-materialelor--romana-if": {
+   "budget": 6.03,
+   "fee": 6.15,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--studii-americane--engleza-if": {
+   "budget": 6.23,
+   "fee": 6,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--tehnologia-constructiilor-de-masini--romana-if": {
+   "budget": 6.01,
+   "fee": 8.38,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--tehnologia-informatiei--romana-if": {
+   "budget": 7.44,
+   "fee": 6.78,
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-unitbv--tehnologii-si-sisteme-de-telecomunicatii--romana-if": {
+   "budget": 5.94,
+   "fee": 5.9,
+   "group": "Electronică aplicată / Tehnologii şi sisteme de telecomunicaţii",
+   "url": "https://admitere.unitbv.ro/images/documente/medii-admitere/Medii_admitere_IULIE_2025_IF_ID_IFR.pdf"
+  },
+  "ro-uoradea--administrarea-afacerilor--engleza-if": {
+   "budget": 7.18,
+   "fee": 6.28,
+   "url": "https://steconomice.uoradea.ro/wp-content/uploads/2025/08/GDPR-Rezultate-finale-Licenta-Iulie-2025.pdf"
+  },
+  "ro-uoradea--afaceri-internationale--engleza-if": {
+   "budget": 6.71,
+   "fee": 6.05,
+   "url": "https://steconomice.uoradea.ro/wp-content/uploads/2025/08/GDPR-Rezultate-finale-Licenta-Iulie-2025.pdf"
+  },
+  "ro-uoradea--afaceri-internationale--romana-if": {
+   "budget": 7.3,
+   "fee": 6.07,
+   "url": "https://steconomice.uoradea.ro/wp-content/uploads/2025/08/GDPR-Rezultate-finale-Licenta-Iulie-2025.pdf"
+  },
+  "ro-uoradea--arte-decorative--romana-if": {
+   "budget": 6.33,
+   "fee": 7,
+   "url": "https://arte.uoradea.ro/images/3vizuale/Documente_PDF/2024-25/admitere/Licenta.2025.pdf"
+  },
+  "ro-uoradea--arte-plastice-grafica--romana-if": {
+   "budget": 8,
+   "fee": 6,
+   "url": "https://arte.uoradea.ro/images/3vizuale/Documente_PDF/2024-25/admitere/Licenta.2025.pdf"
+  },
+  "ro-uoradea--arte-plastice-pictura--romana-if": {
+   "budget": 7,
+   "fee": 7,
+   "url": "https://arte.uoradea.ro/images/3vizuale/Documente_PDF/2024-25/admitere/Licenta.2025.pdf"
+  },
+  "ro-uoradea--contabilitate-si-informatica-de-gestiune--romana-id": {
+   "fee": 6,
+   "url": "https://steconomice.uoradea.ro/wp-content/uploads/2025/08/GDPR-Rezultate-finale-Licenta-Iulie-2025.pdf"
+  },
+  "ro-uoradea--contabilitate-si-informatica-de-gestiune--romana-if": {
+   "budget": 8.71,
+   "fee": 6.08,
+   "url": "https://steconomice.uoradea.ro/wp-content/uploads/2025/08/GDPR-Rezultate-finale-Licenta-Iulie-2025.pdf"
+  },
+  "ro-uoradea--design--romana-if": {
+   "budget": 8.66,
+   "fee": 6.33,
+   "url": "https://arte.uoradea.ro/images/3vizuale/Documente_PDF/2024-25/admitere/Licenta.2025.pdf"
+  },
+  "ro-uoradea--economia-comertului-turismului-si-serviciilor--romana-if": {
+   "budget": 7.28,
+   "fee": 6,
+   "url": "https://steconomice.uoradea.ro/wp-content/uploads/2025/08/GDPR-Rezultate-finale-Licenta-Iulie-2025.pdf"
+  },
+  "ro-uoradea--finante-si-banci--romana-if": {
+   "budget": 7.82,
+   "fee": 6.11,
+   "url": "https://steconomice.uoradea.ro/wp-content/uploads/2025/08/GDPR-Rezultate-finale-Licenta-Iulie-2025.pdf"
+  },
+  "ro-uoradea--management--romana-id": {
+   "fee": 6.66,
+   "url": "https://steconomice.uoradea.ro/wp-content/uploads/2025/08/GDPR-Rezultate-finale-Licenta-Iulie-2025.pdf"
+  },
+  "ro-uoradea--management--romana-if": {
+   "budget": 8.41,
+   "fee": 6.01,
+   "url": "https://steconomice.uoradea.ro/wp-content/uploads/2025/08/GDPR-Rezultate-finale-Licenta-Iulie-2025.pdf"
+  },
+  "ro-uoradea--marketing--romana-if": {
+   "budget": 8.21,
+   "fee": 6,
+   "url": "https://steconomice.uoradea.ro/wp-content/uploads/2025/08/GDPR-Rezultate-finale-Licenta-Iulie-2025.pdf"
+  },
+  "ro-uoradea--moda-design-vestimentar--romana-if": {
+   "budget": 7,
+   "fee": 6.33,
+   "url": "https://arte.uoradea.ro/images/3vizuale/Documente_PDF/2024-25/admitere/Licenta.2025.pdf"
+  },
+  "ro-upg--administratie-publica--romana-if": {
+   "budget": 7.73,
+   "fee": 6.23,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/ls_set2_lic_ft.pdf"
+  },
+  "ro-upg--asistenta-manageriala-si-administrativa--romana-if": {
+   "budget": 7,
+   "fee": 6.1,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/ls_set2_lic_ft.pdf"
+  },
+  "ro-upg--automatica-si-informatica-aplicata--romana-if": {
+   "budget": 6.18,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/ime_set2_lic_ft.pdf"
+  },
+  "ro-upg--automatica-si-informatica-aplicata--romana-ifr": {
+   "fee": 6.05,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/ime_set2_lic_ct.pdf"
+  },
+  "ro-upg--calculatoare--romana-if": {
+   "budget": 6.03,
+   "fee": 8.73,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/ime_set2_lic_ft.pdf"
+  },
+  "ro-upg--contabilitate-si-informatica-de-gestiune--romana-id": {
+   "fee": 6,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/se_set2_lic_ct.pdf"
+  },
+  "ro-upg--contabilitate-si-informatica-de-gestiune--romana-if": {
+   "budget": 7.05,
+   "fee": 6.06,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/se_set2_lic_ft.pdf"
+  },
+  "ro-upg--controlul-si-securitatea-produselor-alimentare--romana-if": {
+   "budget": 6,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/tpp_set2_lic_ft.pdf"
+  },
+  "ro-upg--economia-comertului-turismului-si-serviciilor--romana-if": {
+   "budget": 7.36,
+   "fee": 6.28,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/se_set2_lic_ft.pdf"
+  },
+  "ro-upg--economie-si-comunicare-economica-in-afaceri--romana-if": {
+   "budget": 6.38,
+   "fee": 6.05,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/se_set2_lic_ft.pdf"
+  },
+  "ro-upg--electromecanica--romana-if": {
+   "budget": 6.18,
+   "fee": 6.06,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/ime_set2_lic_ft.pdf"
+  },
+  "ro-upg--finante-si-banci--romana-if": {
+   "budget": 7.26,
+   "fee": 6.36,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/se_set2_lic_ft.pdf"
+  },
+  "ro-upg--geologia-resurselor-petroliere--romana-if": {
+   "budget": 6.21,
+   "fee": 6,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/ipg_set2_lic_ft.pdf"
+  },
+  "ro-upg--informatica--romana-if": {
+   "budget": 6.05,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/ls_set2_lic_ft.pdf"
+  },
+  "ro-upg--informatica-economica--romana-if": {
+   "budget": 6.03,
+   "fee": 6.43,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/se_set2_lic_ft.pdf"
+  },
+  "ro-upg--ingineria-designului-de-produs--romana-if": {
+   "budget": 6.1,
+   "fee": 8.2,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/ime_set2_lic_ft.pdf"
+  },
+  "ro-upg--ingineria-si-protectia-mediului-in-industrie--romana-if": {
+   "budget": 6.05,
+   "fee": 6.93,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/tpp_set2_lic_ft.pdf"
+  },
+  "ro-upg--inginerie-de-petrol-si-gaze--romana-if": {
+   "budget": 7.11,
+   "fee": 6.55,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/ipg_set2_lic_ft.pdf"
+  },
+  "ro-upg--inginerie-de-petrol-si-gaze--romana-ifr": {
+   "fee": 6.08,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/ipg_set2_lic_ct.pdf"
+  },
+  "ro-upg--inginerie-economica-in-domeniul-mecanic--romana-id": {
+   "fee": 5.83,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/ime_set2_lic_ct.pdf"
+  },
+  "ro-upg--inginerie-economica-in-domeniul-mecanic--romana-if": {
+   "budget": 6.13,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/ime_set2_lic_ft.pdf"
+  },
+  "ro-upg--limba-si-literatura-engleza-limba-si-literatura-franceza--romana-if": {
+   "budget": 6,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/ls_set2_lic_ft.pdf"
+  },
+  "ro-upg--limba-si-literatura-romana-limba-si-literatura-engleza--romana-if": {
+   "budget": 7.6,
+   "fee": 6.01,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/ls_set2_lic_ft.pdf"
+  },
+  "ro-upg--management--romana-id": {
+   "fee": 6.9,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/se_set2_lic_ct.pdf"
+  },
+  "ro-upg--management--romana-if": {
+   "budget": 7.64,
+   "fee": 6.91,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/se_set2_lic_ft.pdf"
+  },
+  "ro-upg--merceologie-si-managementul-calitatii--romana-if": {
+   "budget": 6.1,
+   "fee": 6.05,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/se_set2_lic_ft.pdf"
+  },
+  "ro-upg--pedagogie--romana-if": {
+   "budget": 7.25,
+   "fee": 6.61,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/ls_set2_lic_ft.pdf"
+  },
+  "ro-upg--prelucrarea-petrolului-si-petrochimie--engleza-if": {
+   "budget": 6.35,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/tpp_set2_lic_ft.pdf"
+  },
+  "ro-upg--prelucrarea-petrolului-si-petrochimie--romana-if": {
+   "budget": 6.01,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/tpp_set2_lic_ft.pdf"
+  },
+  "ro-upg--transportul-depozitarea-si-distributia-hidrocarburilor--romana-if": {
+   "budget": 6.68,
+   "fee": 6,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/ipg_set2_lic_ft.pdf"
+  },
+  "ro-upg--utilaje-petroliere-si-petrochimice--romana-if": {
+   "budget": 6,
+   "fee": 7.16,
+   "url": "https://www.upg-ploiesti.ro/wp-content/uploads/2025/07/ime_set2_lic_ft.pdf"
+  },
+  "ro-upt--chimia-si-ingineria-substantelor-organice-petrochimie-si-car--romana-if": {
+   "budget": 6.36,
+   "fee": 7.8,
+   "group": "Inginerie Chimică",
+   "url": "https://chim.upt.ro/wp-content/uploads/2025/07/Rezultate-admitere-R3.pdf"
+  },
+  "ro-upt--controlul-si-expertiza-produselor-alimentare--romana-if": {
+   "budget": 6.1,
+   "group": "Ingineria Produselor Alimentare",
+   "url": "https://chim.upt.ro/wp-content/uploads/2025/07/Rezultate-admitere-R3.pdf"
+  },
+  "ro-upt--informatica-aplicata-in-ingineria-mediului--romana-if": {
+   "budget": 6.55,
+   "group": "Ingineria Mediului",
+   "url": "https://chim.upt.ro/wp-content/uploads/2025/07/Rezultate-admitere-R3.pdf"
+  },
+  "ro-upt--ingineria-si-informatica-proceselor-chimice-si-biochimice--romana-if": {
+   "budget": 6.36,
+   "fee": 7.8,
+   "group": "Inginerie Chimică",
+   "url": "https://chim.upt.ro/wp-content/uploads/2025/07/Rezultate-admitere-R3.pdf"
+  },
+  "ro-upt--ingineria-si-protectia-mediului-in-industrie--romana-if": {
+   "budget": 6.55,
+   "group": "Ingineria Mediului",
+   "url": "https://chim.upt.ro/wp-content/uploads/2025/07/Rezultate-admitere-R3.pdf"
+  },
+  "ro-upt--ingineria-substantelor-anorganice-si-protectia-mediului--romana-if": {
+   "budget": 6.36,
+   "fee": 7.8,
+   "group": "Inginerie Chimică",
+   "url": "https://chim.upt.ro/wp-content/uploads/2025/07/Rezultate-admitere-R3.pdf"
+  },
+  "ro-upt--inginerie-medicala--romana-if": {
+   "budget": 8.41,
+   "fee": 8.31,
+   "url": "https://mec.upt.ro/wp-content/uploads/2025/07/FINAL-LICENTA-IULIE-2025.pdf"
+  },
+  "ro-usamv-bucuresti--agricultura--romana-if": {
+   "budget": 5.72,
+   "url": "https://agro-bucuresti.ro/wp-content/uploads/2025/08/agric_b_a.pdf"
+  },
+  "ro-usamv-bucuresti--agricultura--romana-ifr": {
+   "fee": 5.82,
+   "url": "https://agro-bucuresti.ro/wp-content/uploads/2025/08/agric_ifr_a.pdf"
+  },
+  "ro-usamv-bucuresti--biologie--romana-if": {
+   "budget": 6.29,
+   "fee": 6.37,
+   "url": "https://agro-bucuresti.ro/wp-content/uploads/2025/08/biol_b_a.pdf"
+  },
+  "ro-usamv-bucuresti--biologie--romana-ifr": {
+   "fee": 6.35,
+   "url": "https://agro-bucuresti.ro/wp-content/uploads/2025/08/biol_ifr_a.pdf"
+  },
+  "ro-usamv-bucuresti--biotehnologii--engleza-if": {
+   "budget": 7.19,
+   "url": "https://biotehnologii.usamv.ro/wp-content/uploads/2025/08/bioth_en_b_a.pdf"
+  },
+  "ro-usamv-bucuresti--horticultura--romana-id": {
+   "fee": 6.06,
+   "url": "https://horticultura-bucuresti.ro/wp-content/uploads/2025/08/horti_id_a.pdf"
+  },
+  "ro-usamv-bucuresti--horticultura--romana-if": {
+   "budget": 6.04,
+   "url": "https://horticultura-bucuresti.ro/wp-content/uploads/2025/08/horti_b_a.pdf"
+  },
+  "ro-usamv-bucuresti--imbunatatiri-funciare-si-dezvoltare-rurala--romana-if": {
+   "budget": 6.17,
+   "url": "https://fifim.ro/wp-content/uploads/2025/08/ifdr_b_a.pdf"
+  },
+  "ro-usamv-bucuresti--ingineria-si-managementul-afacerilor-agricole--romana-id": {
+   "fee": 6.08,
+   "url": "https://managusamv.ro/wp-content/uploads/2025/08/imaa_id_t_a.pdf"
+  },
+  "ro-usamv-bucuresti--ingineria-si-managementul-afacerilor-agricole--romana-if": {
+   "budget": 5.83,
+   "url": "https://managusamv.ro/wp-content/uploads/2025/08/imaa_b_a.pdf"
+  },
+  "ro-usamv-bucuresti--ingineria-si-managementul-afacerilor-agricole--romana-if-calarasi": {
+   "budget": 6.77,
+   "fee": 5.63,
+   "url": "https://managusamv.ro/wp-content/uploads/2025/08/imaa_Calarasi_b_a.pdf"
+  },
+  "ro-usamv-bucuresti--ingineria-si-managementul-afacerilor-agricole--romana-if-slatina": {
+   "budget": 7.08,
+   "fee": 6.02,
+   "url": "https://managusamv.ro/wp-content/uploads/2025/08/imaa_Slatina_b_a.pdf"
+  },
+  "ro-usamv-bucuresti--ingineria-si-protectia-mediului-in-agricultura--romana-if": {
+   "budget": 6.32,
+   "url": "https://fifim.ro/wp-content/uploads/2025/08/ipma_b_a.pdf"
+  },
+  "ro-usamv-bucuresti--ingineria-si-protectia-mediului-in-agricultura--romana-ifr": {
+   "fee": 6.16,
+   "url": "https://fifim.ro/wp-content/uploads/2025/08/ipma_ifr_a.pdf"
+  },
+  "ro-usamv-bucuresti--inginerie-circulara-si-tranzitie-verde--romana-if": {
+   "budget": 5.63,
+   "url": "https://fifim.ro/wp-content/uploads/2025/08/ictv_dual_b_a.pdf"
+  },
+  "ro-usamv-bucuresti--inginerie-si-management-in-alimentatia-publica-si-agroturism--romana-id": {
+   "fee": 5.76,
+   "url": "https://managusamv.ro/wp-content/uploads/2025/08/imapa_id_t_a.pdf"
+  },
+  "ro-usamv-bucuresti--inginerie-si-management-in-alimentatia-publica-si-agroturism--romana-if": {
+   "budget": 5.83,
+   "url": "https://managusamv.ro/wp-content/uploads/2025/08/imapa_b_a.pdf"
+  },
+  "ro-usamv-bucuresti--inginerie-si-management-in-constructii--romana-if": {
+   "budget": 5.73,
+   "url": "https://fifim.ro/wp-content/uploads/2025/08/imc_b_a.pdf"
+  },
+  "ro-usamv-bucuresti--masuratori-terestre-si-cadastru--romana-if": {
+   "budget": 5.8,
+   "url": "https://fifim.ro/wp-content/uploads/2025/08/mtc_b_a.pdf"
+  },
+  "ro-usamv-bucuresti--masuratori-terestre-si-cadastru--romana-ifr": {
+   "fee": 6,
+   "url": "https://fifim.ro/wp-content/uploads/2025/08/mtc_ifr_a.pdf"
+  },
+  "ro-usamv-bucuresti--medicina-veterinara--romana-if": {
+   "budget": 5.96,
+   "fee": 5.34,
+   "url": "https://fmvb.ro/wp-content/uploads/2025/08/mv_b_a.pdf"
+  },
+  "ro-usamv-bucuresti--peisagistica--romana-if": {
+   "budget": 7.9,
+   "fee": 6.7,
+   "url": "https://horticultura-bucuresti.ro/wp-content/uploads/2025/08/peis_b_a.pdf"
+  },
+  "ro-usamv-bucuresti--silvicultura--romana-if": {
+   "budget": 6.51,
+   "url": "https://agro-bucuresti.ro/wp-content/uploads/2025/08/silv_b_a.pdf"
+  },
+  "ro-usvt--ingineria-si-managementul-afacerilor-agricole--engleza-if": {
+   "budget": 6.3,
+   "url": "https://assets.usvt.ro/media/legacy/utilizatori/management/file/studenti/2024-2025/Admitere/Iulie/Rezultate/USV%20-%20Raport%20candida%C5%A3i%20admi%C5%9Fi%20IMAA%20ENGLEZ%C4%82%20BUGET%20COD-1.pdf"
+  },
+  "ro-usvt--ingineria-si-managementul-afacerilor-agricole--romana-if": {
+   "budget": 6.4,
+   "fee": 6.38,
+   "url": "https://assets.usvt.ro/media/legacy/utilizatori/management/file/studenti/2024-2025/Admitere/Iulie/Rezultate/USV%20-%20Raport%20candida%C5%A3i%20admi%C5%9Fi%20IMAA%20BUGET%20COD-1.pdf"
+  },
+  "ro-usvt--inginerie-si-management-in-alimentatia-publica-si-agroturism--romana-if": {
+   "budget": 6.57,
+   "fee": 6.27,
+   "url": "https://assets.usvt.ro/media/legacy/utilizatori/management/file/studenti/2024-2025/Admitere/Iulie/Rezultate/USV%20-%20Raport%20candida%C5%A3i%20admi%C5%9Fi%20IMAPA%20BUGET%20NORMAL%20COD-1.pdf"
+  },
+  "ro-usvt--inginerie-si-management-in-industria-turismului--romana-if": {
+   "budget": 6.75,
+   "fee": 6.41,
+   "url": "https://assets.usvt.ro/media/legacy/utilizatori/management/file/studenti/2024-2025/Admitere/Iulie/Rezultate/USV%20-%20Raport%20candida%C5%A3i%20admi%C5%9Fi%20IMIT%20NORMAL%20COD%20BUGET-1.pdf"
+  },
+  "ro-utcn--amenajari-si-constructii-hidrotehnice--romana-if": {
+   "budget": 7.81,
+   "fee": 6,
+   "group": "Inginerie civilă (RO/EN) (Cluj)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--arhitectura--romana-if": {
+   "budget": 7.67,
+   "fee": 7.63,
+   "group": "Arhitectură",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C1_A.pdf"
+  },
+  "ro-utcn--arte-plastice-pictura--romana-if": {
+   "budget": 6.67,
+   "fee": 7.07,
+   "group": "Arte vizuale",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C4_A.pdf"
+  },
+  "ro-utcn--asistenta-sociala--romana-if": {
+   "budget": 8.2,
+   "fee": 6,
+   "group": "Asistență socială",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C4_A.pdf"
+  },
+  "ro-utcn--automatica-si-informatica-aplicata--engleza-if": {
+   "budget": 6.02,
+   "group": "Automatica, Informatica aplicata si Sisteme Inteligente(RO/EN) (Cluj)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--automatica-si-informatica-aplicata--romana-if": {
+   "budget": 6.02,
+   "group": "Automatica, Informatica aplicata si Sisteme Inteligente(RO/EN) (Cluj)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--automatica-si-informatica-aplicata--romana-if-satu-mare": {
+   "budget": 6.11,
+   "group": "Automatica, Informatica aplicata si Sisteme Inteligente (Satu Mare)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--autovehicule-rutiere--romana-if": {
+   "budget": 5.23,
+   "group": "Ingineria Autovehiculelor",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--biologie--romana-if": {
+   "budget": 6.64,
+   "fee": 8.71,
+   "group": "Biologie",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C5_A.pdf"
+  },
+  "ro-utcn--cai-ferate-drumuri-si-poduri--romana-if": {
+   "budget": 7.81,
+   "fee": 6,
+   "group": "Inginerie civilă (RO/EN) (Cluj)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--calculatoare--engleza-if": {
+   "budget": 6.16,
+   "fee": 6.1,
+   "group": "Calculatoare și tehnologia informației (RO/EN)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--calculatoare--romana-if": {
+   "budget": 6.16,
+   "fee": 6.1,
+   "group": "Calculatoare și tehnologia informației (RO/EN)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--calculatoare--romana-if-2": {
+   "budget": 5.85,
+   "group": "Calculatoare și tehnologia informației",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C3_A.pdf"
+  },
+  "ro-utcn--chimie--romana-if": {
+   "budget": 6.18,
+   "fee": 8.15,
+   "group": "Chimie",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C5_A.pdf"
+  },
+  "ro-utcn--chimie-medicala--romana-if": {
+   "budget": 6.18,
+   "fee": 8.15,
+   "group": "Chimie",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C5_A.pdf"
+  },
+  "ro-utcn--comunicare-si-relatii-publice--romana-if": {
+   "budget": 6.3,
+   "fee": 6.01,
+   "group": "Științe ale comunicării",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C4_A.pdf"
+  },
+  "ro-utcn--constructii-civile-industriale-si-agricole--engleza-if": {
+   "budget": 7.81,
+   "fee": 6,
+   "group": "Inginerie civilă (RO/EN) (Cluj)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--constructii-civile-industriale-si-agricole--romana-if": {
+   "budget": 7.81,
+   "fee": 6,
+   "group": "Inginerie civilă (RO/EN) (Cluj)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--constructii-civile-industriale-si-agricole--romana-if-baia-mare": {
+   "budget": 6.51,
+   "fee": 6.43,
+   "group": "Inginerie civilă (Baia Mare)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--controlul-si-expertiza-produselor-alimentare--romana-if": {
+   "budget": 6.89,
+   "group": "Ingineria produselor alimentare",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C5_A.pdf"
+  },
+  "ro-utcn--design-industrial--romana-if": {
+   "budget": 6.46,
+   "fee": 6.76,
+   "group": "Inginerie industrială (RO/EN/DE) (Cluj)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--echipamente-si-sisteme-de-comanda-si-control-pentru-autovehi--romana-if": {
+   "budget": 5.23,
+   "group": "Ingineria Autovehiculelor",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--economia-firmei--romana-if": {
+   "budget": 8.78,
+   "fee": 6,
+   "group": "Administrarea afacerilor",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C5_A.pdf"
+  },
+  "ro-utcn--electromecanica--romana-if": {
+   "budget": 7.76,
+   "fee": 6.08,
+   "group": "Inginerie electrică",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--electromecanica--romana-if-2": {
+   "budget": 6.01,
+   "fee": 7.57,
+   "group": "Inginerie electrică",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C3_A.pdf"
+  },
+  "ro-utcn--electronica-aplicata--engleza-if": {
+   "budget": 6,
+   "fee": 8.21,
+   "group": "Inginerie electronică, telecomunicații și tehnologii informaționale (RO/EN)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--electronica-aplicata--romana-if": {
+   "budget": 6,
+   "fee": 8.21,
+   "group": "Inginerie electronică, telecomunicații și tehnologii informaționale (RO/EN)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--electronica-aplicata--romana-if-2": {
+   "budget": 6.46,
+   "fee": 6.56,
+   "group": "Inginerie electronică, telecomunicații și tehnologii informaționale",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C3_A.pdf"
+  },
+  "ro-utcn--electronica-de-putere-si-actionari-electrice--romana-if": {
+   "budget": 7.76,
+   "fee": 6.08,
+   "group": "Inginerie electrică",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--electrotehnica--romana-if": {
+   "budget": 7.76,
+   "fee": 6.08,
+   "group": "Inginerie electrică",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--etnologie--romana-if": {
+   "budget": 6.25,
+   "fee": 6.15,
+   "group": "Studii culturale",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C4_A.pdf"
+  },
+  "ro-utcn--filosofie--romana-if": {
+   "budget": 6.25,
+   "fee": 6.5,
+   "group": "Filosofie",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C4_A.pdf"
+  },
+  "ro-utcn--informatica--romana-if": {
+   "budget": 6.88,
+   "fee": 6.21,
+   "group": "Informatică",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C5_A.pdf"
+  },
+  "ro-utcn--informatica-economica--romana-if": {
+   "budget": 6.95,
+   "group": "Cibernetică, statistică și informatică economică",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C5_A.pdf"
+  },
+  "ro-utcn--ingineria-procesarii-materialelor--romana-if": {
+   "budget": 7,
+   "group": "Ingineria materialelor",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--ingineria-procesarii-materialelor--romana-if-2": {
+   "budget": 6.41,
+   "fee": 7.12,
+   "group": "Ingineria materialelor (IMat-BM)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C3_A.pdf"
+  },
+  "ro-utcn--ingineria-produselor-alimentare--romana-if": {
+   "budget": 6.89,
+   "group": "Ingineria produselor alimentare",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C5_A.pdf"
+  },
+  "ro-utcn--ingineria-si-protectia-mediului-in-industrie--romana-if": {
+   "budget": 7.01,
+   "fee": 8.1,
+   "group": "Ingineria mediului",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--ingineria-si-protectia-mediului-in-industrie--romana-if-2": {
+   "budget": 6.17,
+   "fee": 7.79,
+   "group": "Ingineria mediului (IMed-BM)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C3_A.pdf"
+  },
+  "ro-utcn--ingineria-sistemelor-electroenergetice--romana-if": {
+   "budget": 6.98,
+   "fee": 6.73,
+   "group": "Inginerie energetică",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--ingineria-sistemelor-electroenergetice--romana-if-2": {
+   "budget": 6.31,
+   "fee": 8.01,
+   "group": "Inginerie energetică",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C3_A.pdf"
+  },
+  "ro-utcn--ingineria-transporturilor-si-a-traficului--romana-if": {
+   "budget": 6.1,
+   "fee": 6.94,
+   "group": "Ingineria Transporturilor",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--inginerie-economica-in-domeniul-electric-electronic-si-energ--romana-if": {
+   "budget": 6.58,
+   "fee": 7.73,
+   "group": "Inginerie și management",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--inginerie-economica-in-domeniul-electric-electronic-si-energ--romana-if-2": {
+   "budget": 6.41,
+   "fee": 8.63,
+   "group": "Inginerie și management",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--inginerie-economica-in-domeniul-mecanic--romana-if": {
+   "budget": 6.33,
+   "fee": 8.87,
+   "group": "Inginerie și management",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C3_A.pdf"
+  },
+  "ro-utcn--inginerie-economica-industriala--romana-if": {
+   "budget": 6.21,
+   "fee": 8.63,
+   "group": "Inginerie și management (Cluj)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--inginerie-economica-industriala--romana-if-bistrita": {
+   "budget": 6.33,
+   "fee": 6.05,
+   "group": "Inginerie și management (Bistrița)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--inginerie-economica-industriala--romana-if-satu-mare": {
+   "budget": 6.28,
+   "fee": 8.11,
+   "group": "Inginerie și management (Satu Mare)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--inginerie-medicala--romana-if": {
+   "budget": 9.15,
+   "fee": 8.61,
+   "group": "Științe inginerești aplicate",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--inginerie-medicala--romana-if-bistrita": {
+   "budget": 6.25,
+   "fee": 8.29,
+   "group": "Științe inginerești aplicate (Bistrița)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--inginerie-si-management-in-constructii--romana-if": {
+   "budget": 7.62,
+   "fee": 6.07,
+   "group": "Inginerie și management",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--inginerie-urbana-si-dezvoltare-regionala--romana-if": {
+   "budget": 7.81,
+   "fee": 6,
+   "group": "Inginerie civilă (RO/EN) (Cluj)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--instalatii-pentru-constructii--romana-if": {
+   "budget": 6.33,
+   "fee": 7.13,
+   "group": "Ingineria Instalațiilor",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--instrumentatie-si-achizitii-de-date--romana-if": {
+   "budget": 7.76,
+   "fee": 6.08,
+   "group": "Inginerie electrică",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--limba-si-literatura-romana--romana-if": {
+   "budget": 6.86,
+   "fee": 6,
+   "group": "Limba și literatura (EN/FR)(LLR)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C4_A.pdf"
+  },
+  "ro-utcn--limba-si-literatura-romana-limba-si-literatura-moderna-engle--romana-if": {
+   "budget": 6.86,
+   "fee": 6,
+   "group": "Limba și literatura (EN/FR)(LLR)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C4_A.pdf"
+  },
+  "ro-utcn--limbi-moderne-aplicate-engleza-franceza-germana--romana-if": {
+   "budget": 6.16,
+   "fee": 7.5,
+   "group": "Limbi moderne aplicate (EN-FR/DE)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C4_A.pdf"
+  },
+  "ro-utcn--management--romana-if": {
+   "budget": 8.53,
+   "fee": 6.13,
+   "group": "Management",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C5_A.pdf"
+  },
+  "ro-utcn--management--romana-ifr": {
+   "fee": 6.13,
+   "group": "Management (IFR)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C5_A.pdf"
+  },
+  "ro-utcn--masini-si-instalatii-pentru-agricultura-si-industrie-aliment--romana-if": {
+   "budget": 6.06,
+   "group": "Inginerie Mecanică (Cluj)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--masuratori-terestre-si-cadastru--romana-if": {
+   "budget": 6.38,
+   "group": "Inginerie Geodezică",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--matematica-informatica--romana-if": {
+   "budget": 7.52,
+   "fee": 8.6,
+   "group": "Matematică",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C5_A.pdf"
+  },
+  "ro-utcn--mecatronica--engleza-if": {
+   "budget": 6.25,
+   "group": "Mecatronică și Robotică",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--mecatronica--romana-if": {
+   "budget": 6.25,
+   "group": "Mecatronică și Robotică",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--microelectronica-optoelectronica-si-nanotehnologii--romana-if": {
+   "budget": 6,
+   "fee": 8.21,
+   "group": "Inginerie electronică, telecomunicații și tehnologii informaționale (RO/EN)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--robotica--engleza-if": {
+   "budget": 6.34,
+   "fee": 6.01,
+   "group": "Mecatronică și Robotică (RO/EN) (Cluj)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--robotica--romana-if": {
+   "budget": 6.34,
+   "fee": 6.01,
+   "group": "Mecatronică și Robotică (RO/EN) (Cluj)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--robotica--romana-if-bistrita": {
+   "budget": 6.57,
+   "group": "Mecatronică și Robotică (Bistrița)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--sisteme-de-productie-digitale--romana-if-bistrita": {
+   "budget": 6.2,
+   "fee": 8.88,
+   "group": "Inginerie industrială (Bistrița)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--sisteme-electrice--romana-if-bistrita": {
+   "budget": 6.46,
+   "fee": 6.31,
+   "group": "Inginerie electrică (Bistrița)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--sisteme-si-echipamente-termice--romana-if": {
+   "budget": 6.06,
+   "group": "Inginerie Mecanică (Cluj)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--sisteme-si-echipamente-termice--romana-if-alba-iulia": {
+   "budget": 6.3,
+   "fee": 6.82,
+   "group": "Inginerie Mecanică (Alba)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--stiinta-materialelor--romana-if": {
+   "budget": 7,
+   "group": "Ingineria materialelor",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--tehnologia-constructiilor-de-masini--engleza-if": {
+   "budget": 6.46,
+   "fee": 6.76,
+   "group": "Inginerie industrială (RO/EN/DE) (Cluj)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--tehnologia-constructiilor-de-masini--germana-if": {
+   "budget": 6.46,
+   "fee": 6.76,
+   "group": "Inginerie industrială (RO/EN/DE) (Cluj)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--tehnologia-constructiilor-de-masini--romana-if": {
+   "budget": 6.46,
+   "fee": 6.76,
+   "group": "Inginerie industrială (RO/EN/DE) (Cluj)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--tehnologia-constructiilor-de-masini--romana-if-2": {
+   "budget": 6.74,
+   "fee": 7.06,
+   "group": "Inginerie industrială",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C3_A.pdf"
+  },
+  "ro-utcn--tehnologia-constructiilor-de-masini--romana-if-satu-mare": {
+   "budget": 6.15,
+   "fee": 7.44,
+   "group": "Inginerie industrială (Satu Mare)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--tehnologia-constructiilor-de-masini--romana-if-zalau": {
+   "budget": 6.2,
+   "fee": 7.89,
+   "group": "Inginerie industrială (Zalău)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--tehnologia-informatiei--romana-if": {
+   "budget": 6.16,
+   "fee": 6.1,
+   "group": "Calculatoare și tehnologia informației (RO/EN)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--tehnologii-si-sisteme-de-telecomunicatii--engleza-if": {
+   "budget": 6,
+   "fee": 8.21,
+   "group": "Inginerie electronică, telecomunicații și tehnologii informaționale (RO/EN)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--tehnologii-si-sisteme-de-telecomunicatii--romana-if": {
+   "budget": 6,
+   "fee": 8.21,
+   "group": "Inginerie electronică, telecomunicații și tehnologii informaționale (RO/EN)",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C2_A.pdf"
+  },
+  "ro-utcn--teologie-ortodoxa-pastorala--romana-if": {
+   "budget": 6.13,
+   "fee": 6.9,
+   "group": "Teologie",
+   "url": "https://admitereonline.utcluj.ro/docs/2025/rezultate/23072025/R_C4_A.pdf"
+  },
+  "ro-utgjiu--administratie-publica--romana-if": {
+   "budget": 8.92,
+   "fee": 5.9,
+   "url": "https://admitere.utgjiu.ro/wp-content/uploads/2025/08/Rezultate-Finale-Licenta-IF-02.08.2025.pdf"
+  },
+  "ro-utgjiu--asistenta-de-farmacie--romana-if": {
+   "budget": 5.86,
+   "fee": 7.52,
+   "url": "https://admitere.utgjiu.ro/wp-content/uploads/2025/08/Rezultate-Finale-Licenta.pdf"
+  },
+  "ro-utgjiu--asistenta-medicala-generala--romana-if": {
+   "budget": 6.98,
+   "fee": 9.5,
+   "url": "https://admitere.utgjiu.ro/wp-content/uploads/2025/08/Rezultate-Finale-Licenta.pdf"
+  },
+  "ro-utgjiu--drept--romana-id": {
+   "fee": 7.99,
+   "url": "https://admitere.utgjiu.ro/wp-content/uploads/2025/08/Rezultate-Finale-Licenta-ID-02.08.2025.pdf"
+  },
+  "ro-utgjiu--drept--romana-if": {
+   "budget": 9.5,
+   "fee": 6.64,
+   "url": "https://admitere.utgjiu.ro/wp-content/uploads/2025/08/Rezultate-Finale-Licenta-IF-02.08.2025.pdf"
+  },
+  "ro-utgjiu--educatie-fizica-si-sportiva--romana-if": {
+   "budget": 6.1,
+   "fee": 6.01,
+   "url": "https://admitere.utgjiu.ro/wp-content/uploads/2025/08/Rezultate-Finale-Licenta.pdf"
+  },
+  "ro-utgjiu--kinetoterapie-si-motricitate-speciala--romana-if": {
+   "budget": 6.39,
+   "fee": 7.1,
+   "url": "https://admitere.utgjiu.ro/wp-content/uploads/2025/08/Rezultate-Finale-Licenta.pdf"
+  },
+  "ro-utgjiu--limba-si-literatura-engleza-limba-si-literatura-romana--romana-if": {
+   "budget": 9.68,
+   "fee": 6.38,
+   "url": "https://admitere.utgjiu.ro/wp-content/uploads/2025/08/Rezultate-Finale-Licenta-IF-02.08.2025.pdf"
+  },
+  "ro-utgjiu--relatii-internationale-si-studii-europene--romana-if": {
+   "budget": 9.42,
+   "fee": 8.9,
+   "url": "https://admitere.utgjiu.ro/wp-content/uploads/2025/08/Rezultate-Finale-Licenta-IF-02.08.2025.pdf"
+  },
+  "ro-utm--asistenta-medicala-generala--romana-if-2": {
+   "fee": 9.33,
+   "url": "https://www.utm.ro/wp-content/uploads/2025/08/DE-AFISAT-ADMISI-SESIUNEA-CU-ANONIMIZARE-2022.pdf"
+  },
+  "ro-utm--drept--romana-id": {
+   "fee": 7.3,
+   "url": "https://www.utm.ro/wp-content/uploads/2025/08/lista_definitiva_admisi_anonimizat.pdf"
+  },
+  "ro-utm--drept--romana-if": {
+   "fee": 8.05,
+   "url": "https://www.utm.ro/wp-content/uploads/2025/08/lista_definitiva_admisi_anonimizat_.pdf"
+  },
+  "ro-uvt--administratie-publica--romana-if": {
+   "budget": 6.1,
+   "fee": 7.75,
+   "url": "https://fsgc.uvt.ro/wp-content/uploads/2025/07/Clasament-RO-Licenta-admisi-18.07.2025-Runda-finala-anonimizat.pdf"
+  },
+  "ro-uvt--arte-decorative--romana-if": {
+   "budget": 8,
+   "url": "https://arte.uvt.ro/wp-content/uploads/2025/07/Admisi-FINAL-FAD-licenta-iulie-2025.pdf"
+  },
+  "ro-uvt--arte-plastice-fotografie-videoprocesarea-computerizata-a-ima--romana-if": {
+   "budget": 7.33,
+   "url": "https://arte.uvt.ro/wp-content/uploads/2025/07/Admisi-FINAL-FAD-licenta-iulie-2025.pdf"
+  },
+  "ro-uvt--arte-plastice-grafica--romana-if": {
+   "budget": 6.33,
+   "fee": 8,
+   "url": "https://arte.uvt.ro/wp-content/uploads/2025/07/Admisi-FINAL-FAD-licenta-iulie-2025.pdf"
+  },
+  "ro-uvt--arte-plastice-pictura--romana-if": {
+   "budget": 7,
+   "fee": 7,
+   "url": "https://arte.uvt.ro/wp-content/uploads/2025/07/Admisi-FINAL-FAD-licenta-iulie-2025.pdf"
+  },
+  "ro-uvt--arte-plastice-sculptura--romana-if": {
+   "budget": 8,
+   "fee": 8.33,
+   "url": "https://arte.uvt.ro/wp-content/uploads/2025/07/Admisi-FINAL-FAD-licenta-iulie-2025.pdf"
+  },
+  "ro-uvt--artele-spectacolului-actorie--germana-if": {
+   "budget": 6.51,
+   "url": "https://fmt.uvt.ro/wp-content/uploads/2025/07/Admitere-FMT-Rezultate-finale-licenta-dom.-Teatru.pdf"
+  },
+  "ro-uvt--artele-spectacolului-actorie--romana-if": {
+   "budget": 6.71,
+   "fee": 7.81,
+   "url": "https://fmt.uvt.ro/wp-content/uploads/2025/07/Admitere-FMT-Rezultate-finale-licenta-dom.-Teatru.pdf"
+  },
+  "ro-uvt--asistenta-sociala--romana-id": {
+   "fee": 6,
+   "url": "https://fsp.uvt.ro/wp-content/uploads/2025/07/AS-finale-iulie-2025-de-afisat.pdf"
+  },
+  "ro-uvt--asistenta-sociala--romana-if": {
+   "budget": 6.1,
+   "fee": 6.49,
+   "url": "https://fsp.uvt.ro/wp-content/uploads/2025/07/AS-finale-iulie-2025-de-afisat.pdf"
+  },
+  "ro-uvt--biochimie--romana-if": {
+   "budget": 6.21,
+   "fee": 7.65,
+   "url": "https://cbg.uvt.ro/wp-content/uploads/2025/07/Lista-finala_Biologie-Biochimie_fara-nume-1.pdf"
+  },
+  "ro-uvt--biologie--romana-if": {
+   "budget": 6.4,
+   "fee": 6.3,
+   "url": "https://cbg.uvt.ro/wp-content/uploads/2025/07/Lista-finala_Biologie-Biochimie_fara-nume-1.pdf"
+  },
+  "ro-uvt--chimie--romana-if": {
+   "budget": 6.3,
+   "fee": 6.78,
+   "url": "https://cbg.uvt.ro/wp-content/uploads/2025/07/Lista-FINALA_admisi_CH_CM_fara-nume_corectat.pdf"
+  },
+  "ro-uvt--chimie-medicala--romana-if": {
+   "budget": 6.11,
+   "fee": 8.25,
+   "url": "https://cbg.uvt.ro/wp-content/uploads/2025/07/Lista-FINALA_admisi_CH_CM_fara-nume_corectat.pdf"
+  },
+  "ro-uvt--comunicare-si-relatii-publice--romana-if": {
+   "budget": 8.07,
+   "fee": 6.5,
+   "url": "https://fsgc.uvt.ro/wp-content/uploads/2025/07/Clasament-RO-Licenta-admisi-18.07.2025-Runda-finala-anonimizat.pdf"
+  },
+  "ro-uvt--conservare-si-restaurare--romana-if": {
+   "budget": 7.66,
+   "url": "https://arte.uvt.ro/wp-content/uploads/2025/07/Admisi-FINAL-FAD-licenta-iulie-2025.pdf"
+  },
+  "ro-uvt--filosofie--romana-if": {
+   "budget": 8.17,
+   "fee": 8.79,
+   "url": "https://lift.uvt.ro/wp-content/uploads/2025-07-21-Rezultate-finale-licenta-inmatriculati.pdf"
+  },
+  "ro-uvt--geografia-turismului--romana-if": {
+   "budget": 6.33,
+   "fee": 7.6,
+   "url": "https://cbg.uvt.ro/wp-content/uploads/2025/07/Rezultate-licenta_DG_lista-finala_admisi_fara-nume.pdf"
+  },
+  "ro-uvt--geografie--romana-if": {
+   "budget": 6.24,
+   "fee": 6.22,
+   "url": "https://cbg.uvt.ro/wp-content/uploads/2025/07/Rezultate-licenta_DG_lista-finala_admisi_fara-nume.pdf"
+  },
+  "ro-uvt--geoinformatica--romana-if": {
+   "budget": 6.1,
+   "fee": 8.85,
+   "url": "https://cbg.uvt.ro/wp-content/uploads/2025/07/Rezultate-licenta_Geoinformatica_lista-finala_admisi_fara-nume.pdf"
+  },
+  "ro-uvt--interpretare-muzicala-canto--romana-if": {
+   "budget": 7.28,
+   "fee": 9.76,
+   "url": "https://fmt.uvt.ro/wp-content/uploads/2025/07/Admitere-FMT-Rezultate-finale-licenta-dom.-Muzica.pdf"
+  },
+  "ro-uvt--interpretare-muzicala-instrumente--romana-if": {
+   "budget": 6.56,
+   "url": "https://fmt.uvt.ro/wp-content/uploads/2025/07/Admitere-FMT-Rezultate-finale-licenta-dom.-Muzica.pdf"
+  },
+  "ro-uvt--istorie--romana-if": {
+   "budget": 8,
+   "fee": 7.87,
+   "url": "https://lift.uvt.ro/wp-content/uploads/2025-07-21-Rezultate-finale-licenta-inmatriculati.pdf"
+  },
+  "ro-uvt--jurnalism--romana-if": {
+   "budget": 6.17,
+   "fee": 7.05,
+   "url": "https://fsgc.uvt.ro/wp-content/uploads/2025/07/Clasament-RO-Licenta-admisi-18.07.2025-Runda-finala-anonimizat.pdf"
+  },
+  "ro-uvt--limba-si-literatura-engleza-limba-si-literatura-moderna-rusa--romana-if": {
+   "fee": 8.62,
+   "url": "https://lift.uvt.ro/wp-content/uploads/2025-07-21-Rezultate-finale-licenta-inmatriculati.pdf"
+  },
+  "ro-uvt--limba-si-literatura-franceza-limba-si-literatura-moderna-eng--romana-if": {
+   "budget": 7.8,
+   "group": "opțiunea „Limbă și literatură-Franceză”",
+   "url": "https://lift.uvt.ro/wp-content/uploads/2025-07-21-Rezultate-finale-licenta-inmatriculati.pdf"
+  },
+  "ro-uvt--limba-si-literatura-germana-limba-si-literatura-moderna-engl--romana-if": {
+   "budget": 8.72,
+   "fee": 9.95,
+   "group": "opțiunea „Limbă și literatură-Germană”",
+   "url": "https://lift.uvt.ro/wp-content/uploads/2025-07-21-Rezultate-finale-licenta-inmatriculati.pdf"
+  },
+  "ro-uvt--limba-si-literatura-sarba-limba-si-literatura-moderna-englez--romana-if": {
+   "budget": 7.35,
+   "group": "opțiunea „Limbă și literatură-Sârbă”",
+   "url": "https://lift.uvt.ro/wp-content/uploads/2025-07-21-Rezultate-finale-licenta-inmatriculati.pdf"
+  },
+  "ro-uvt--limbi-moderne-aplicate-engleza-franceza-germana-spaniola-rus--romana-if": {
+   "budget": 6.64,
+   "fee": 9.43,
+   "url": "https://lift.uvt.ro/wp-content/uploads/2025-07-21-Rezultate-finale-licenta-inmatriculati.pdf"
+  },
+  "ro-uvt--media-digitala--romana-if": {
+   "budget": 7.77,
+   "fee": 6.15,
+   "url": "https://fsgc.uvt.ro/wp-content/uploads/2025/07/Clasament-RO-Licenta-admisi-18.07.2025-Runda-finala-anonimizat.pdf"
+  },
+  "ro-uvt--moda-design-vestimentar--romana-if": {
+   "budget": 7.33,
+   "fee": 6.33,
+   "url": "https://arte.uvt.ro/wp-content/uploads/2025/07/Admisi-FINAL-FAD-licenta-iulie-2025.pdf"
+  },
+  "ro-uvt--muzica--romana-if": {
+   "budget": 6.95,
+   "fee": 9.93,
+   "url": "https://fmt.uvt.ro/wp-content/uploads/2025/07/Admitere-FMT-Rezultate-finale-licenta-dom.-Muzica.pdf"
+  },
+  "ro-uvt--pedagogie--romana-if": {
+   "budget": 6.25,
+   "fee": 6.03,
+   "url": "https://fsp.uvt.ro/wp-content/uploads/2025/07/PEDAPPS-finale-iulie-2025-de-afisat.pdf"
+  },
+  "ro-uvt--psihologie--romana-if": {
+   "budget": 7.82,
+   "fee": 6.96,
+   "url": "https://fsp.uvt.ro/wp-content/uploads/2025/07/PSIHO-finale-iulie-2025-de-afisat.pdf"
+  },
+  "ro-uvt--psihologie-stiinte-cognitive--engleza-if": {
+   "budget": 7.04,
+   "fee": 6.24,
+   "url": "https://fsp.uvt.ro/wp-content/uploads/2025/07/PSIHO-EN-finale-iulie-2025-de-afisat.pdf"
+  },
+  "ro-uvt--psihopedagogie-speciala--romana-if": {
+   "budget": 6.95,
+   "fee": 6.32,
+   "url": "https://fsp.uvt.ro/wp-content/uploads/2025/07/PEDAPPS-finale-iulie-2025-de-afisat.pdf"
+  },
+  "ro-uvt--publicitate--romana-if": {
+   "budget": 6.12,
+   "fee": 6.55,
+   "url": "https://fsgc.uvt.ro/wp-content/uploads/2025/07/Clasament-RO-Licenta-admisi-18.07.2025-Runda-finala-anonimizat.pdf"
+  },
+  "ro-uvt--relatii-internationale-si-studii-europene--romana-if": {
+   "budget": 8.15,
+   "fee": 7.12,
+   "url": "https://fsgc.uvt.ro/wp-content/uploads/2025/07/Clasament-RO-Licenta-admisi-18.07.2025-Runda-finala-anonimizat.pdf"
+  },
+  "ro-uvt--resurse-umane--romana-if": {
+   "budget": 6.47,
+   "fee": 6.01,
+   "url": "https://fsp.uvt.ro/wp-content/uploads/2025/07/SOCIO-finale-iulie-2025-de-afisat.pdf"
+  },
+  "ro-uvt--sociologie--romana-if": {
+   "budget": 6.05,
+   "fee": 6.07,
+   "url": "https://fsp.uvt.ro/wp-content/uploads/2025/07/SOCIO-finale-iulie-2025-de-afisat.pdf"
+  },
+  "ro-uvt--stiinte-aplicate-in-criminalistica--romana-if": {
+   "budget": 8.02,
+   "fee": 7.8,
+   "url": "https://cbg.uvt.ro/wp-content/uploads/2025/07/Lista-FINALA_admisi_SAC_fara-nume.pdf"
+  },
+  "ro-uvt--stiinte-politice--romana-if": {
+   "budget": 6.4,
+   "fee": 7.45,
+   "url": "https://fsgc.uvt.ro/wp-content/uploads/2025/07/Clasament-RO-Licenta-admisi-18.07.2025-Runda-finala-anonimizat.pdf"
+  },
+  "ro-uvt--studii-de-securitate--romana-if": {
+   "budget": 7.02,
+   "fee": 6.82,
+   "url": "https://fsgc.uvt.ro/wp-content/uploads/2025/07/Clasament-RO-Licenta-admisi-18.07.2025-Runda-finala-anonimizat.pdf"
+  },
+  "ro-uvt--teologie-ortodoxa-pastorala--romana-if": {
+   "budget": 8.5,
+   "fee": 7.88,
+   "url": "https://lift.uvt.ro/wp-content/uploads/2025-07-21-Rezultate-finale-licenta-inmatriculati.pdf"
+  }
+ }
+}

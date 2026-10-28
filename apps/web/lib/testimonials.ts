@@ -21,8 +21,8 @@ const UNIVERSITY_ID: Record<string, string> = {
   "Hogeschool Inholland": "inholland",
   // the student studies medicine at Lyon 1 (confirmed by the team)
   "Medicină, Lyon (Franța)": "lyon-1",
-  // ESADE and La Salle are schools of Universitat Ramon Llull
-  ESADE: "es-universidad-ramon-llull",
+  // ESADE has its own sheet; La Salle is a school of Universitat Ramon Llull
+  ESADE: "esade",
   "La Salle Barcelona": "es-universidad-ramon-llull",
   "Institut Lyfe": "institut-lyfe",
   // the Swiss campus (Crans-Montana), confirmed by the team
