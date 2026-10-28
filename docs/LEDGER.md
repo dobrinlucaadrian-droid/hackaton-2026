@@ -26,7 +26,7 @@ lista de commit-uri de la final se reface singură.
 - Făcut: resetarea parolei exista deja (cod pe email, pornită pe site); linkul „Am uitat parola” e mutat din josul formularului imediat sub căsuța de parolă, aliniat la dreapta. Tot pe site, publicat la cererea Pilotului: lista oficială de programe pe fișa Esade (intrarea de mai jos)
 - Fișiere: `apps/web/components/SignInForm.tsx`
 - Poartă: TRECUT (secrete, fișiere, build, teste, aplicația pornește; linkul văzut pe pagina de conectare, în format de telefon)
-- Urmează: Pilotul verifică pe telefon conectarea și fișa Esade
+- Urmează: nimic urgent; Pilotul a văzut pe telefon, pe findmyuni.ro, linkul nou și lista de programe Esade — arată bine
 
 ### 2026-10-28 15:00 — programele oficiale pe fișa Esade
 - Cerut: „adaugă programele pe fișa Esade”
@@ -1173,6 +1173,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-28 05:08 `905a494` feat: put the forgotten-password link right under the password field
 - 2026-10-28 04:40 `362b031` feat: show Esade's official programmes on its sheet
 - 2026-10-28 04:36 `d089e19` docs: ledger entry for the production catalogue reload
 - 2026-10-28 04:29 `0b50d42` feat: 2025 admission averages, 87 new sheets and an ESADE sheet
@@ -1202,5 +1203,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-23 11:39 `23ff2fc` feat: keep the university search when coming back from a sheet
 - 2026-10-23 11:33 `0e5c950` feat: freely licensed university photos on sheets, third fee check
 - 2026-10-23 01:57 `774d9f6` feat: keep only the privacy link in the page footer
-- 2026-10-23 01:53 `54da51b` feat: operator name and contact email on the privacy page
 <!-- commits:end -->
