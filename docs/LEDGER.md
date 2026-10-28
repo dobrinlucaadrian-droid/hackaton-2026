@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-28 15:00 — programele oficiale pe fișa Esade
+- Cerut: „adaugă programele pe fișa Esade”
+- Făcut: fișa Esade arată acum lista oficială a Spaniei filtrată pe facultățile Esade (5 programe: BBA, Business și AI, Leadership și impact social, Drept, Global Governance), citită din lista Universității Ramon Llull (`SCHOOL_PROGRAMS` în `lib/catalog.ts`, filtrul `faculty` în `OfficialPrograms`); test nou în `lib/catalog.test.ts`
+- Fișiere: `apps/web/lib/catalog.ts`, `apps/web/lib/catalog.test.ts`, `apps/web/components/OfficialPrograms.tsx`, `apps/web/app/[lang]/universitati/[id]/page.tsx`
+- Poartă: TRECUT (secrete, fișiere, build, teste, aplicația pornește; lista nu a putut fi văzută local)
+- Urmează: publicare la „salvează și publică”, apoi verificat lista pe findmyuni.ro/universitati/esade (local, fereastra de previzualizare nu se conectează la baza de test)
+
 ### 2026-10-28 14:00 — catalogul reîncărcat pe site
 - Cerut: „reîncarcă catalogul”, ca universitățile cu fișe noi să aibă link din căutarea de programe
 - Făcut: `node scripts/data/import.mjs --prod` — 4.334 de instituții și 107.155 de programe în baza de producție; verificat pe findmyuni.ro: programele Universității din Lleida duc acum la fișa ei
@@ -1159,6 +1166,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-28 04:36 `d089e19` docs: ledger entry for the production catalogue reload
 - 2026-10-28 04:29 `0b50d42` feat: 2025 admission averages, 87 new sheets and an ESADE sheet
 - 2026-10-27 15:46 `62d0b6f` feat: separate sheet for Politehnica Pitesti
 - 2026-10-27 03:57 `bfc1ee4` fix: university search ignores punctuation and shows only our sheets
@@ -1188,5 +1196,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-23 01:57 `774d9f6` feat: keep only the privacy link in the page footer
 - 2026-10-23 01:53 `54da51b` feat: operator name and contact email on the privacy page
 - 2026-10-23 01:25 `abc6d65` feat: email code for admins, security emails on password change and deletion
-- 2026-10-22 02:47 `d1f4f32` docs: launch preparation, production database and settings ready
 <!-- commits:end -->

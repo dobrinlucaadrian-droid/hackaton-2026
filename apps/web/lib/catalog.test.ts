@@ -2,7 +2,7 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { gunzipSync } from "node:zlib";
 import { describe, expect, it } from "vitest";
-import { catalogCountries, catalogCountryOfSheet, catalogTotals } from "./catalog";
+import { SCHOOL_PROGRAMS, catalogCountries, catalogCountryOfSheet, catalogTotals } from "./catalog";
 import { domains } from "./data";
 import { universities } from "./sheets";
 import type { CatalogInstitution, CatalogProgram } from "./types";
@@ -84,6 +84,15 @@ describe("catalogue: Romania (HG 606/2026, academic year 2026-2027)", () => {
     expect(institutions.filter((i) => !i.hasSheet)).toHaveLength(1);
     expect(catalogCountryOfSheet("upb")?.cc).toBe("RO");
     expect(catalogCountryOfSheet("nu-exista")).toBeUndefined();
+  });
+
+  it("shows a school sheet the programmes its university's official list files under that school", () => {
+    for (const [sheet, s] of Object.entries(SCHOOL_PROGRAMS)) {
+      const cc = catalogCountryOfSheet(sheet)?.cc;
+      expect(cc, sheet).toBeDefined();
+      const rows = read<CatalogProgram>(cc!.toLowerCase(), "programs").filter((p) => p.institutionId === s.institutionId && p.faculty?.includes(s.faculty));
+      expect(rows.length, sheet).toBeGreaterThan(0);
+    }
   });
 
   it("has every programme row of the list, each with complete official fields", () => {

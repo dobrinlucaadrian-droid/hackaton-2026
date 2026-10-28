@@ -10,9 +10,15 @@ export const catalogTotals = {
   programs: catalogCountries.reduce((n, c) => n + c.programs, 0),
 };
 
-/** The country whose catalogue includes this university sheet, if any. */
+/** Schools with their own sheet whose programmes the official list files under their university: the sheet shows the university's faculties whose name contains `faculty`. */
+export const SCHOOL_PROGRAMS: Record<string, { institutionId: string; faculty: string }> = {
+  esade: { institutionId: "es-universidad-ramon-llull", faculty: "ESADE" },
+};
+
+/** The country whose catalogue includes this university sheet (or the university of a school sheet), if any. */
 export function catalogCountryOfSheet(sheetId: string): CatalogCountry | undefined {
-  return catalogCountries.find((c) => c.sheetIds.includes(sheetId));
+  const id = SCHOOL_PROGRAMS[sheetId]?.institutionId ?? sheetId;
+  return catalogCountries.find((c) => c.sheetIds.includes(id));
 }
 
 /** Every university sheet id that has programmes in the catalogue. */

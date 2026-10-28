@@ -13,7 +13,7 @@ import { UniversityOpinions } from "@/components/UniversityOpinions";
 import { BudgetBadge, PrestigeBadge } from "@/components/UniversityBadges";
 import { UniversityDomains } from "@/components/UniversityDomains";
 import { RELATED_SHEETS, campusGroups } from "@/lib/campuses";
-import { catalogCountryOfSheet } from "@/lib/catalog";
+import { SCHOOL_PROGRAMS, catalogCountryOfSheet } from "@/lib/catalog";
 import { curriculumLinkFor } from "@/lib/curricula";
 import { feeOf, feeText } from "@/lib/fees";
 import { testimonialsFor } from "@/lib/testimonials";
@@ -340,7 +340,7 @@ export default async function UniversityPage({ params }: Props) {
             />
           )}
           {catalog && catalog.cc !== "RO" && (
-            <OfficialPrograms institutionId={u.id} city={base.city} sourceLabel={catalog.source.attribution} year={catalog.source.year} hasCapacity={false} />
+            <OfficialPrograms institutionId={SCHOOL_PROGRAMS[u.id]?.institutionId ?? u.id} faculty={SCHOOL_PROGRAMS[u.id]?.faculty} city={base.city} sourceLabel={catalog.source.attribution} year={catalog.source.year} hasCapacity={false} />
           )}
           {!catalog && faculties.length > 0 && (
             <Section title={t("Facultăți și specializări", "Faculties and specialisations")}>
