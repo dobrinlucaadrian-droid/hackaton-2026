@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-28 14:00 — catalogul reîncărcat pe site
+- Cerut: „reîncarcă catalogul”, ca universitățile cu fișe noi să aibă link din căutarea de programe
+- Făcut: `node scripts/data/import.mjs --prod` — 4.334 de instituții și 107.155 de programe în baza de producție; verificat pe findmyuni.ro: programele Universității din Lleida duc acum la fișa ei
+- Fișiere: niciun fișier de cod (doar baza de date de producție)
+- Poartă: TRECUT
+- Urmează: nimic urgent; fișa Esade arată bine pe telefon (verificat de Pilot)
+
 ### 2026-10-28 12:00 — ESADE, fișă proprie
 - Cerut: ESADE să aibă pagina ei, cu părerea studentului acolo, scoasă de pe Ramon Llull
 - Făcut: fișa `esade` (Barcelona) scrisă din paginile oficiale esade.edu trimise de Pilot (licențe, admitere, taxe, burse; căminele din pagina Ramon Llull): taxa 21.300 € / 24.500 € (dublă licență) pentru 2027/28, programe în engleză. Părerea despre ESADE apare acum doar pe fișa Esade; fișele Esade și Ramon Llull au link una spre alta
@@ -1152,6 +1159,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-28 04:29 `0b50d42` feat: 2025 admission averages, 87 new sheets and an ESADE sheet
 - 2026-10-27 15:46 `62d0b6f` feat: separate sheet for Politehnica Pitesti
 - 2026-10-27 03:57 `bfc1ee4` fix: university search ignores punctuation and shows only our sheets
 - 2026-10-27 03:48 `fb729e8` fix: split every multi-city university by city, repair broken links
@@ -1181,5 +1189,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-23 01:53 `54da51b` feat: operator name and contact email on the privacy page
 - 2026-10-23 01:25 `abc6d65` feat: email code for admins, security emails on password change and deletion
 - 2026-10-22 02:47 `d1f4f32` docs: launch preparation, production database and settings ready
-- 2026-10-21 18:16 `c711921` feat: second fee check, 11 more levels corrected from official pages
 <!-- commits:end -->
