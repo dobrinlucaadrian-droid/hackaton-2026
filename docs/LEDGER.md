@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-28 16:00 — „Am uitat parola” lângă parolă
+- Cerut: butonul pentru parola uitată să se vadă; Pilotul credea că nu există
+- Făcut: resetarea parolei exista deja (cod pe email, pornită pe site); linkul „Am uitat parola” e mutat din josul formularului imediat sub căsuța de parolă, aliniat la dreapta. Tot pe site, publicat la cererea Pilotului: lista oficială de programe pe fișa Esade (intrarea de mai jos)
+- Fișiere: `apps/web/components/SignInForm.tsx`
+- Poartă: TRECUT (secrete, fișiere, build, teste, aplicația pornește; linkul văzut pe pagina de conectare, în format de telefon)
+- Urmează: Pilotul verifică pe telefon conectarea și fișa Esade
+
 ### 2026-10-28 15:00 — programele oficiale pe fișa Esade
 - Cerut: „adaugă programele pe fișa Esade”
 - Făcut: fișa Esade arată acum lista oficială a Spaniei filtrată pe facultățile Esade (5 programe: BBA, Business și AI, Leadership și impact social, Drept, Global Governance), citită din lista Universității Ramon Llull (`SCHOOL_PROGRAMS` în `lib/catalog.ts`, filtrul `faculty` în `OfficialPrograms`); test nou în `lib/catalog.test.ts`
@@ -1166,6 +1173,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-28 04:40 `362b031` feat: show Esade's official programmes on its sheet
 - 2026-10-28 04:36 `d089e19` docs: ledger entry for the production catalogue reload
 - 2026-10-28 04:29 `0b50d42` feat: 2025 admission averages, 87 new sheets and an ESADE sheet
 - 2026-10-27 15:46 `62d0b6f` feat: separate sheet for Politehnica Pitesti
@@ -1195,5 +1203,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-23 11:33 `0e5c950` feat: freely licensed university photos on sheets, third fee check
 - 2026-10-23 01:57 `774d9f6` feat: keep only the privacy link in the page footer
 - 2026-10-23 01:53 `54da51b` feat: operator name and contact email on the privacy page
-- 2026-10-23 01:25 `abc6d65` feat: email code for admins, security emails on password change and deletion
 <!-- commits:end -->

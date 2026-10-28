@@ -233,6 +233,11 @@ export function SignInForm({ idPrefix = "", startWith = "signIn" }: { idPrefix?:
               className={field}
             />
             {mode !== "signIn" && <p className="mt-1 text-xs text-ink-soft">{t(`Cel puțin ${PASSWORD_MIN} caractere.`, `At least ${PASSWORD_MIN} characters.`)}</p>}
+            {mode === "signIn" && (
+              <div className="mt-1 text-right text-sm">
+                <button type="button" onClick={() => go("forgot")} className={textButton}>{t("Am uitat parola", "I forgot my password")}</button>
+              </div>
+            )}
           </div>
         )}
 
@@ -259,12 +264,7 @@ export function SignInForm({ idPrefix = "", startWith = "signIn" }: { idPrefix?:
       </form>
 
       <div className="mt-4 flex flex-col items-start gap-1 text-sm">
-        {mode === "signIn" && (
-          <>
-            <button type="button" onClick={() => go("signUp")} className={textButton}>{t("Nu ai cont? Fă-ți unul", "No account? Make one")}</button>
-            <button type="button" onClick={() => go("forgot")} className={textButton}>{t("Am uitat parola", "I forgot my password")}</button>
-          </>
-        )}
+        {mode === "signIn" && <button type="button" onClick={() => go("signUp")} className={textButton}>{t("Nu ai cont? Fă-ți unul", "No account? Make one")}</button>}
         {mode === "signUp" && <button type="button" onClick={() => go("signIn")} className={textButton}>{t("Ai deja cont? Conectează-te", "Already have an account? Sign in")}</button>}
         {mode === "code" && (
           <button
