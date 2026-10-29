@@ -209,7 +209,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 - `ActivitiesStep.tsx` (234) — Quiz step "Ce ai făcut până acum?" in the page language: add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
 - `ActivitiesSummary.tsx` (36) — Read-only list (in the page language) of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
-- `AdminGate.tsx` (95) — (In the page language.) Shown on the admin pages until this device is unlocked: sends a 6-digit code to the admin's email and checks it; the pages open for 8 hours, then it asks again.. Exports: AdminGate
+- `AdminGate.tsx` (95) — (In the page language.) Shown on the admin pages until this device is unlocked: sends a 6-digit code to the admin's email and checks it; the pages open for 1 hour, then it asks again.. Exports: AdminGate
 - `BackToSearch.tsx` (26) — "← Înapoi la universități" on a university sheet: returns to the student's last search with its text and filters (plain search page when there is none).. Exports: BackToSearch
 - `CategoryTiles.tsx` (29) — Grid of category tiles (emoji and name), each linking to its category page, in the page language.. Exports: CategoryTiles
 - `Confetti.tsx` (41) — A short burst of cool-coloured confetti, shown once when mounted and removed after about 3 seconds.. Exports: Confetti
@@ -264,7 +264,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `account.test.ts` (82) — @vitest-environment edge-runtime
 - `account.ts` (105) — The signed-in user's own account: who they are (username, name and email), a copy of everything saved about them, whether email codes can be sent, and deleting the account with everything saved in it.. Exports: me, usernameFree, setName, signInMethods, remove, exportMine
 - `adminUnlock.test.ts` (78) — @vitest-environment edge-runtime
-- `adminUnlock.ts` (108) — Second step for administrators: the admin pages unlock only after a 6-digit code sent to the admin's email, for 8 hours on that device (sign-in session). Without it the admin functions refuse, even with the right password.. Exports: CODE_MINUTES, MAX_TRIES, UNLOCK_HOURS, ADMIN_LOCKED, unlockedUntil, status, adminEmail, storeCode, …
+- `adminUnlock.ts` (108) — Second step for administrators: the admin pages unlock only after a 6-digit code sent to the admin's email, for 1 hour on that device (sign-in session). Without it the admin functions refuse, even with the right password.. Exports: CODE_MINUTES, MAX_TRIES, UNLOCK_HOURS, ADMIN_LOCKED, unlockedUntil, status, adminEmail, storeCode, …
 - `analytics.test.ts` (97) — @vitest-environment edge-runtime
 - `analytics.ts` (197) — Anonymous usage statistics: page views and finished questionnaires are counted without any name, cookie, IP address or visitor id; only administrators read the numbers.. Exports: trackVisit, recordQuizRun, overview
 - `auth.config.ts` (12) — Tells Convex which issuer signs the session tokens (this deployment itself, through Convex Auth).

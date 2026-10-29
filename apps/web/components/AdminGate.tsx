@@ -1,5 +1,5 @@
 "use client";
-// (In the page language.) Shown on the admin pages until this device is unlocked: sends a 6-digit code to the admin's email and checks it; the pages open for 8 hours, then it asks again.
+// (In the page language.) Shown on the admin pages until this device is unlocked: sends a 6-digit code to the admin's email and checks it; the pages open for 1 hour, then it asks again.
 import { useAction, useMutation, useQuery } from "convex/react";
 import { ConvexError } from "convex/values";
 import { useEffect, useState, type ReactNode } from "react";
@@ -19,7 +19,7 @@ export function AdminGate({ children }: { children: ReactNode }) {
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
 
-  // Re-check the time every minute, so the pages lock again when the 8 hours are over.
+  // Re-check the time every minute, so the pages lock again when the hour is over.
   useEffect(() => {
     const id = window.setInterval(() => setNow(Date.now()), 60_000);
     return () => window.clearInterval(id);
@@ -61,7 +61,7 @@ export function AdminGate({ children }: { children: ReactNode }) {
     <div className="mx-auto mt-10 max-w-md rounded-3xl bg-card p-6 text-center shadow-sm ring-1 ring-line" data-admin-gate>
       <h1 className="text-2xl font-black tracking-tight text-ink">{t("Confirmă că ești tu", "Confirm it is you")}</h1>
       <p className="mt-2 text-ink-soft">
-        {t("Pentru administrare, pe lângă parolă îți trimitem un cod pe email. După ce îl scrii, paginile de administrare rămân deschise 8 ore pe acest dispozitiv.", "For administration, besides your password we send you a code by email. After you enter it, the administration pages stay open for 8 hours on this device.")}
+        {t("Pentru administrare, pe lângă parolă îți trimitem un cod pe email. După ce îl scrii, paginile de administrare rămân deschise o oră pe acest dispozitiv.", "For administration, besides your password we send you a code by email. After you enter it, the administration pages stay open for 1 hour on this device.")}
       </p>
       <button
         type="button"

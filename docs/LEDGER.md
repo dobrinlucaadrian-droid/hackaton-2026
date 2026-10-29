@@ -21,6 +21,20 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-29 02:30 — administrarea rămâne deschisă o oră, nu 8
+- Cerut: paginile de administrare să nu mai rămână deschise 8 ore după codul de pe email; Pilotul a ales 1 oră
+- Făcut: deblocarea cu codul de pe email ține acum 1 oră pe dispozitiv (`UNLOCK_HOURS = 1`); textul de pe ecranul „Confirmă că ești tu” spune „o oră” (română și engleză)
+- Fișiere: `apps/web/convex/adminUnlock.ts`, `apps/web/components/AdminGate.tsx`
+- Poartă: TRECUT (gate complet); NEVERIFICAT: ecranul de admin în browser (cere conectarea ca administrator)
+- Urmează: publicare pe findmyuni.ro (Convex prod + Vercel) doar când echipa spune „salvează și publică”
+
+### 2026-10-28 17:00 — idei de design nou (amânat)
+- Cerut: un design nou, „modern și îndrăzneț”, cu aceleași culori; întâi biblioteci de pe GitHub și machete, nimic schimbat pe site.
+- Făcut: găsite shadcn/ui, lucide (iconițe), Magic UI; arătate machete: carduri rotunde (respins: „arată vibecodat”), colțuri drepte ziar/afiș (respins: „de pe vremea lui Ceaușescu”), pagină în stil Apple cu poze mari (nu a convins). Echipa a amânat decizia.
+- Fișiere: niciun fișier al site-ului.
+- Poartă: NEVERIFICAT (nu s-a schimbat cod)
+- Urmează: când echipa știe ce vrea, adusă o pagină reală care le place ca exemplu.
+
 ### 2026-10-28 16:00 — „Am uitat parola” lângă parolă
 - Cerut: butonul pentru parola uitată să se vadă; Pilotul credea că nu există
 - Făcut: resetarea parolei exista deja (cod pe email, pornită pe site); linkul „Am uitat parola” e mutat din josul formularului imediat sub căsuța de parolă, aliniat la dreapta. Tot pe site, publicat la cererea Pilotului: lista oficială de programe pe fișa Esade (intrarea de mai jos)
@@ -1173,6 +1187,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-28 05:20 `120c301` docs: phone check of the sign-in link and the Esade programmes
 - 2026-10-28 05:08 `905a494` feat: put the forgotten-password link right under the password field
 - 2026-10-28 04:40 `362b031` feat: show Esade's official programmes on its sheet
 - 2026-10-28 04:36 `d089e19` docs: ledger entry for the production catalogue reload
@@ -1202,5 +1217,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-23 12:06 `c833f37` feat: search suggestions, phone menu, accessibility fixes, page titles
 - 2026-10-23 11:39 `23ff2fc` feat: keep the university search when coming back from a sheet
 - 2026-10-23 11:33 `0e5c950` feat: freely licensed university photos on sheets, third fee check
-- 2026-10-23 01:57 `774d9f6` feat: keep only the privacy link in the page footer
 <!-- commits:end -->

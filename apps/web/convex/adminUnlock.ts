@@ -1,4 +1,4 @@
-// Second step for administrators: the admin pages unlock only after a 6-digit code sent to the admin's email, for 8 hours on that device (sign-in session). Without it the admin functions refuse, even with the right password.
+// Second step for administrators: the admin pages unlock only after a 6-digit code sent to the admin's email, for 1 hour on that device (sign-in session). Without it the admin functions refuse, even with the right password.
 import { getAuthSessionId, getAuthUserId } from "@convex-dev/auth/server";
 import { ConvexError, v } from "convex/values";
 import { internal } from "./_generated/api";
@@ -10,7 +10,7 @@ import { sendEmail } from "./email";
 const MINUTE = 60 * 1000;
 export const CODE_MINUTES = 10;
 export const MAX_TRIES = 5;
-export const UNLOCK_HOURS = 8;
+export const UNLOCK_HOURS = 1;
 export const ADMIN_LOCKED = "Administrarea este blocată: confirmă cu codul primit pe email.";
 
 async function sha256(text: string): Promise<string> {
@@ -83,7 +83,7 @@ export const sendCode = action({
   },
 });
 
-/** Checks the typed code; on success unlocks the admin pages on this device for 8 hours. Wrong tries are counted (a refusal is returned, not thrown, so the count is kept). */
+/** Checks the typed code; on success unlocks the admin pages on this device for UNLOCK_HOURS (1 hour). Wrong tries are counted (a refusal is returned, not thrown, so the count is kept). */
 export const verify = mutation({
   args: { code: v.string() },
   returns: v.object({ ok: v.boolean(), message: v.optional(v.string()) }),
