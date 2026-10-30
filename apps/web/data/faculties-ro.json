@@ -10098,5 +10098,51 @@
    "https://ftose.valahia.ro/",
    "https://ftose.valahia.ro/admitere-teologie-licenta/"
   ]
+ },
+ {
+  "universityId": "unap",
+  "name": "Facultatea de Comandă și Stat Major",
+  "about": "Facultatea pregătește viitori ofițeri, în domeniul Științe militare. Programele de licență sunt Conducere interarme – forțe terestre, Logistică și Intendență. Intendența durează 4 ani și se face la zi, pe locuri plătite de stat.",
+  "admissionTypes": [
+   "examen"
+  ],
+  "admission": "În 2026 s-a dat admitere la licență doar la Intendență, pentru formarea ofițerilor. Candidații trec întâi printr-o selecție la centrele militare de selecție și recrutare, apoi dau un test grilă la Matematică, Informatică și Fizică. Media de admitere este nota de la acest test.",
+  "examSubjects": [
+   "Matematică",
+   "Informatică",
+   "Fizică"
+  ],
+  "website": "https://www.unap.ro/index.php/ro/facultati-si-departamente/fcsm",
+  "admissionUrl": "https://www.unap.ro/index.php/ro/admitere-fcsm",
+  "address": "Șos. Panduri nr. 68-72, București",
+  "sources": [
+   "https://www.unap.ro/index.php/ro/",
+   "https://www.unap.ro/index.php/ro/admitere/licenta",
+   "https://www.unap.ro/index.php/ro/facultati-si-departamente/fcsm",
+   "https://www.unap.ro/index.php/ro/admitere-fcsm",
+   "https://www.unap.ro/RO/PREZENTARE_GENERALA/Regulament%20de%20admitere%20UNAp%20LICENTA.pdf",
+   "https://www.unap.ro/index.php/ro/contact"
+  ]
+ },
+ {
+  "universityId": "unap",
+  "name": "Facultatea de Securitate și Apărare",
+  "about": "Aici studiezi securitate și apărare, comunicare publică și interculturală în domeniul securității și apărării sau sisteme informaționale, în domeniul Științe militare, informații și ordine publică. Studiile durează 3 ani, la zi, iar candidații civili pot intra doar pe locuri cu taxă.",
+  "admissionTypes": [
+   "examen",
+   "bac"
+  ],
+  "admission": "Susții oral, în fața unei comisii, un eseu: unul argumentativ la limba și literatura română pentru Comunicare publică și interculturală, sau unul motivațional la istorie pentru Securitate și apărare. Eseul contează 70% și media de bacalaureat 30%. În 2026 nu s-a dat admitere la Sisteme informaționale.",
+  "website": "https://www.unap.ro/index.php/ro/facultati-si-departamente/fsa",
+  "admissionUrl": "https://www.unap.ro/index.php/ro/admitere-fsa-licenta",
+  "address": "Șos. Panduri nr. 68-72, București",
+  "sources": [
+   "https://www.unap.ro/index.php/ro/",
+   "https://www.unap.ro/index.php/ro/admitere/licenta",
+   "https://www.unap.ro/index.php/ro/facultati-si-departamente/fsa",
+   "https://www.unap.ro/index.php/ro/admitere-fsa-licenta",
+   "https://www.unap.ro/RO/PREZENTARE_GENERALA/Regulament%20de%20admitere%20UNAp%20LICENTA.pdf",
+   "https://www.unap.ro/index.php/ro/contact"
+  ]
  }
 ]

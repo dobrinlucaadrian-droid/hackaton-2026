@@ -6,7 +6,7 @@ import { useLang, useT } from "./LangProvider";
 import Link from "./LocalLink";
 
 /** The score of the last candidate admitted in one admission year, from the official results (Romanian programmes only). */
-export type AdmissionAverage = { year: string; budget?: number; fee?: number; scale?: number; group?: string; url: string };
+export type AdmissionAverage = { year: string; budget?: number; fee?: number; scale?: number; group?: string; url: string; feeUrl?: string }; // feeUrl: the fee list, when it is a separate document
 
 export type ProgramView = {
   key: string;
@@ -88,8 +88,16 @@ export function ProgramRow({ p, where, sheetIds }: { p: ProgramView; where?: boo
           {p.admission.scale && p.admission.scale !== 10 ? t(` (puncte din ${p.admission.scale})`, ` (points out of ${p.admission.scale})`) : ""}
           {p.admission.group ? t(` (lista comună: ${p.admission.group})`, ` (common list: ${p.admission.group})`) : ""}{" "}
           <a href={p.admission.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline decoration-primary/40 underline-offset-2">
-            {t("rezultate oficiale", "official results")} <span aria-hidden>↗</span>
+            {p.admission.feeUrl ? t("rezultate buget", "state-funded results") : t("rezultate oficiale", "official results")} <span aria-hidden>↗</span>
           </a>
+          {p.admission.feeUrl && (
+            <>
+              {" · "}
+              <a href={p.admission.feeUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline decoration-primary/40 underline-offset-2">
+                {t("rezultate taxă", "fee-paying results")} <span aria-hidden>↗</span>
+              </a>
+            </>
+          )}
         </p>
       )}
     </li>

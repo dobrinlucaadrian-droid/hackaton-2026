@@ -2766,5 +2766,20 @@
     "examSubjects": [
       "Orthodox dogmatic theology"
     ]
+  },
+  "unap|Facultatea de Comandă și Stat Major": {
+    "name": "Faculty of Command and Staff",
+    "about": "The faculty trains future officers, in the field of Military Sciences. The bachelor programmes are Combined Arms Command – Land Forces, Logistics and Quartermaster. Quartermaster lasts 4 years, full-time, on state-funded places.",
+    "admission": "In 2026 bachelor admission was held only for Quartermaster, for officer training. Candidates first go through a selection at the military selection and recruitment centres, then take a multiple-choice test in Mathematics, Computer Science and Physics. The admission average is the grade from this test.",
+    "examSubjects": [
+      "Mathematics",
+      "Computer Science",
+      "Physics"
+    ]
+  },
+  "unap|Facultatea de Securitate și Apărare": {
+    "name": "Faculty of Security and Defence",
+    "about": "Here you study security and defence, public and intercultural communication in security and defence, or information systems, in the field of Military Sciences, Intelligence and Public Order. Studies last 3 years, full-time, and civilian candidates can only enter on fee-paying places.",
+    "admission": "You present an essay orally before a committee: an argumentative one on Romanian language and literature for Public and Intercultural Communication, or a motivational one on history for Security and Defence. The essay counts 70% and the Romanian Baccalaureate (bac) average 30%. In 2026 there was no admission to Information Systems."
   }
 }

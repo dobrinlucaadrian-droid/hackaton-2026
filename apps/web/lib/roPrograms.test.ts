@@ -35,6 +35,8 @@ describe("Romanian programme lists", () => {
       const max = a.scale ?? 10;
       for (const v of [a.budget, a.fee]) if (v !== undefined) expect(v > 0 && v <= max, `${key}: ${v}`).toBe(true);
       expect(a.url, key).toMatch(/^https?:\/\//);
+      if (a.year !== undefined) expect(a.year, key).toMatch(/^20\d\d$/);
+      if (a.feeUrl !== undefined) expect(a.feeUrl, key).toMatch(/^https?:\/\//);
     }
   });
 });

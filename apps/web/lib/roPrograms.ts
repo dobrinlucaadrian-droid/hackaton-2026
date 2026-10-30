@@ -7,8 +7,8 @@ import type { CatalogProgram } from "./types";
 
 const all = programsJson as CatalogProgram[];
 
-/** Last admission averages from the official results of the faculties (data/admission-ro.json), by programme key. */
-export const admission = admissionJson as { year: string; entries: Record<string, Omit<AdmissionAverage, "year">> };
+/** Last admission averages from the official results of the faculties (data/admission-ro.json), by programme key; an entry without its own year is from the file's default year. */
+export const admission = admissionJson as { year: string; entries: Record<string, Omit<AdmissionAverage, "year"> & { year?: string }> };
 
 /** Sheets made from part of an official institution: sheet id -> the institution and which of its cities belong to the sheet. */
 export const SPLIT_SHEETS: Record<string, { institution: string; inSheet: (city: string) => boolean }> = {
@@ -27,7 +27,7 @@ function view(p: CatalogProgram): ProgramView {
   void search; void source;
   const row: ProgramView = domainId ? { ...rest, domainId } : rest;
   const avg = admission.entries[p.key];
-  return avg ? { ...row, admission: { ...avg, year: admission.year } } : row;
+  return avg ? { ...row, admission: { ...avg, year: avg.year ?? admission.year } } : row;
 }
 
 /** All bachelor programmes of one Romanian sheet, in the order of the official list. */
