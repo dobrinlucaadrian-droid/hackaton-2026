@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-30 12:00 — verificare completă a site-ului și 3 reparații mici
+- Cerut: site fără buguri; după verificare, Pilotul a cerut reparația celor 3 probleme găsite
+- Făcut: verificate toate cele 3.039 de pagini de pe findmyuni.ro (toate merg), linkurile din paginile în engleză, chestionarul complet și căutarea cu adrese ciudate. Reparat: (1) nu mai apare fereastra „Sigur pleci?” din cauza contorului de vizite; (2) formularul de păreri resetează căsuța anti-robot după o trimitere eșuată, ca să poți trimite din nou fără să reîncarci; (3) erorile de la favorite apar în engleză pe paginile în engleză
+- Fișiere: `apps/web/components/ConvexClientProvider.tsx`, `apps/web/app/[lang]/studenti/parere/page.tsx`, `apps/web/components/FavoriteButton.tsx`
+- Poartă: vezi rularea de după schimbare; NEVERIFICAT: conectarea și contul (cer un cont real)
+- Urmează: publicare pe findmyuni.ro doar când echipa spune „salvează și publică”
+
 ### 2026-10-29 02:30 — administrarea rămâne deschisă o oră, nu 8
 - Cerut: paginile de administrare să nu mai rămână deschise 8 ore după codul de pe email; Pilotul a ales 1 oră
 - Făcut: deblocarea cu codul de pe email ține acum 1 oră pe dispozitiv (`UNLOCK_HOURS = 1`); textul de pe ecranul „Confirmă că ești tu” spune „o oră” (română și engleză)
@@ -1187,6 +1194,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-29 02:30 `d3935a0` feat: keep the admin pages unlocked for 1 hour instead of 8
 - 2026-10-28 05:20 `120c301` docs: phone check of the sign-in link and the Esade programmes
 - 2026-10-28 05:08 `905a494` feat: put the forgotten-password link right under the password field
 - 2026-10-28 04:40 `362b031` feat: show Esade's official programmes on its sheet
@@ -1216,5 +1224,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-23 12:13 `60a3d62` feat: favourite heart on the university search cards
 - 2026-10-23 12:06 `c833f37` feat: search suggestions, phone menu, accessibility fixes, page titles
 - 2026-10-23 11:39 `23ff2fc` feat: keep the university search when coming back from a sheet
-- 2026-10-23 11:33 `0e5c950` feat: freely licensed university photos on sheets, third fee check
 <!-- commits:end -->

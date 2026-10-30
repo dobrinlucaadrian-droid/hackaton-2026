@@ -30,6 +30,7 @@ export default function ReviewFormPage() {
   const [consent, setConsent] = useState(false);
   const [website, setWebsite] = useState("");
   const [token, setToken] = useState("");
+  const [robotKey, setRobotKey] = useState(0); // a token works once, so the box is reset after a failed send
   const [state, setState] = useState<"idle" | "sending" | "sent">("idle");
   const [error, setError] = useState<string | null>(null);
   const onToken = useCallback((tok: string) => setToken(tok), []);
@@ -58,6 +59,8 @@ export default function ReviewFormPage() {
       setState("sent");
     } catch (err) {
       setError(err instanceof ConvexError && typeof err.data === "string" ? serverMessage(err.data, lang) : t("Nu am putut trimite părerea. Încearcă din nou peste un minut.", "We could not send your opinion. Try again in a minute."));
+      setToken("");
+      setRobotKey((k) => k + 1);
       setState("idle");
     }
   }
@@ -125,7 +128,7 @@ export default function ReviewFormPage() {
             <Link href="/confidentialitate" className="font-bold text-primary underline underline-offset-2" target="_blank">{t("Ce date păstrăm", "What data we keep")}</Link>
           </span>
         </label>
-        <Turnstile onToken={onToken} />
+        <Turnstile key={robotKey} onToken={onToken} />
         {error && <p className="text-sm font-bold text-primary-dark" role="alert">{error}</p>}
         <button type="submit" disabled={!canSend} className="min-h-12 w-full rounded-2xl bg-primary px-6 py-3 text-lg font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark disabled:cursor-not-allowed disabled:opacity-50">
           {state === "sending" ? t("Se trimite...", "Sending...") : t("Trimite părerea", "Send your opinion")}

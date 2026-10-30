@@ -5,11 +5,13 @@ import { ConvexError } from "convex/values";
 import { useState } from "react";
 import { api } from "@/convex/_generated/api";
 import { setPendingFavorite, type PendingFavorite } from "@/lib/pendingSave";
-import { useT } from "./LangProvider";
+import { serverMessage } from "@/lib/serverMessages";
+import { useLang, useT } from "./LangProvider";
 import { openSignIn } from "./WelcomeDialog";
 
 export function FavoriteButton({ university, compact = false }: { university: PendingFavorite; compact?: boolean }) {
   const t = useT();
+  const lang = useLang();
   const { isAuthenticated, isLoading } = useConvexAuth();
   const favorites = useQuery(api.favorites.mine, isAuthenticated ? {} : "skip");
   const add = useMutation(api.favorites.add);
@@ -31,7 +33,7 @@ export function FavoriteButton({ university, compact = false }: { university: Pe
       if (on) await remove({ universityId: university.universityId });
       else await add(university);
     } catch (e) {
-      setError(e instanceof ConvexError ? String(e.data) : t("Nu a mers. Încearcă din nou.", "That did not work. Please try again."));
+      setError(e instanceof ConvexError ? serverMessage(String(e.data), lang) : t("Nu a mers. Încearcă din nou.", "That did not work. Please try again."));
     } finally {
       setBusy(false);
     }

@@ -171,7 +171,7 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/app/[lang]/studenti/parere  (2 files)
 
 - `layout.tsx` (13) — The opinion form's title in the browser tab, in the page language (the page itself runs in the browser).. Exports: generateMetadata, Layout
-- `page.tsx` (137) — Public form (in the page language) where a student writes an opinion about their faculty. No account needed; the opinion appears only after the team approves it.. Routes: /[lang]/studenti/parere. Exports: ReviewFormPage
+- `page.tsx` (140) — Public form (in the page language) where a student writes an opinion about their faculty. No account needed; the opinion appears only after the team approves it.. Routes: /[lang]/studenti/parere. Exports: ReviewFormPage
 
 ### apps/web/app/[lang]/surse  (1 files)
 
@@ -213,12 +213,12 @@ _Open only the files listed here; a file's description is its first comment line
 - `BackToSearch.tsx` (26) — "← Înapoi la universități" on a university sheet: returns to the student's last search with its text and filters (plain search page when there is none).. Exports: BackToSearch
 - `CategoryTiles.tsx` (29) — Grid of category tiles (emoji and name), each linking to its category page, in the page language.. Exports: CategoryTiles
 - `Confetti.tsx` (41) — A short burst of cool-coloured confetti, shown once when mounted and removed after about 3 seconds.. Exports: Confetti
-- `ConvexClientProvider.tsx` (12) — Connects the pages to the Convex database and keeps the sign-in session available to every component.. Exports: ConvexClientProvider
+- `ConvexClientProvider.tsx` (13) — Connects the pages to the Convex database and keeps the sign-in session available to every component.. Exports: ConvexClientProvider
 - `CurriculumPlan.tsx` (44) — "Ce înveți, an cu an": the main subjects of each study year for a domain, taken from one official curriculum, with a link to it.. Exports: CurriculumPlan
 - `DomainDetails.tsx` (60) — One study domain as a native <details>: summary with emoji, name, count and chevron; inside the short text, specializations, the subjects per year and a link to universities.. Exports: DomainDetails
 - `DomainPrograms.tsx` (72) — On a result card, in the page language: real bachelor programmes of the matched study domain in Romania (in the student's chosen cities when there are any), and the other countries where the catalogue has some.. Exports: DomainPrograms, DomainAbroad
 - `FacultyPrograms.tsx` (27) — On a faculty sheet: the bachelor programmes of that faculty from the official list. Plain markup: the faculty page gives it the rows (read on the server) and the page language.. Exports: FacultyPrograms
-- `FavoriteButton.tsx` (87) — The heart on a university sheet (or, compact, in the corner of a search result card): adds the university to the student's favourites (shown in "Contul meu") or removes it; without an account it opens the account window and adds it once the student is signed in.. Exports: FavoriteButton
+- `FavoriteButton.tsx` (89) — The heart on a university sheet (or, compact, in the corner of a search result card): adds the university to the student's favourites (shown in "Contul meu") or removes it; without an account it opens the account window and adds it once the student is signed in.. Exports: FavoriteButton
 - `GuideFinder.tsx` (60) — Country guides index body (Romanian pages): a search box with a magnifier that filters the country tiles as you type (diacritics do not matter).. Exports: GuideFinder
 - `GuideRomania.tsx` (60) — The English guide "How to apply to a university in Romania": title, intro, sections, official source links and the date it was checked, read from data/en/guide-romania.json.. Exports: romaniaGuide, GuideRomania
 - `Illustrations.tsx` (252) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots, the start-page hero, the broken road of the error page, and the page drawings of Universități, Ghiduri, Specializări, Studenți, Chestionar and "nothing found".. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene, BrokenPath, …
