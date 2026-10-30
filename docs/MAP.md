@@ -171,7 +171,7 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/app/[lang]/studenti/parere  (2 files)
 
 - `layout.tsx` (13) — The opinion form's title in the browser tab, in the page language (the page itself runs in the browser).. Exports: generateMetadata, Layout
-- `page.tsx` (178) — Public form (in the page language) where a student writes an opinion about their faculty. No account needed; the opinion appears only after the team approves it.. Routes: /[lang]/studenti/parere. Exports: ReviewFormPage
+- `page.tsx` (181) — Public form (in the page language) where a student writes an opinion about their faculty. No account needed; the opinion appears only after the team approves it.. Routes: /[lang]/studenti/parere. Exports: ReviewFormPage
 
 ### apps/web/app/[lang]/surse  (1 files)
 
@@ -229,7 +229,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `NavBubbles.tsx` (38) — The big buttons on the home page (Specializări, Universități, Chestionar, Studenți, Ghiduri pe țări), drawn as little clouds, in the page language.. Exports: NavBubbles
 - `NavLinks.tsx` (63) — Header navigation links with the current page highlighted (centred on phones), the RO / EN language switch; signed-in visitors also get "Contul meu" (signing in starts from the home page).. Exports: NavLinks
 - `OfficialPrograms.tsx` (17) — On a university sheet outside Romania: every bachelor programme of the institution from its country's official dataset, read from the database (those lists are too large to ship with the pages). Romanian sheets render the same list on the server, from the catalogue file.. Exports: OfficialPrograms
-- `PhotoPicker.tsx` (135) — Optional face photo on the opinion form (in the page language): the student picks a picture, moves and zooms it inside the same circle the site shows, and keeps a small square JPEG of exactly that view.. Exports: PhotoPicker
+- `PhotoPicker.tsx` (148) — Optional face photo on the opinion form (in the page language): the student picks a picture, moves and zooms it inside the same circle the site shows, and keeps a small square JPEG of exactly that view (kept automatically if the form is sent while the circle is still open).. Exports: PhotoPicker
 - `ProgramGroups.tsx` (76) — The list of an institution's bachelor programmes, grouped by faculty (or by field when the source has no faculties). Plain markup, so a page can render it on the server; the page language comes in as `lang`.. Exports: ProgramGroups
 - `ProgramRow.tsx` (98) — One bachelor programme from the catalogue, as a compact row: name and the small facts its source gives (language, study form, years, places, status) and, for Romania, the last admission average with its official source.. Exports: FORM_LABEL, ProgramRow
 - `ProgramSearch.tsx` (104) — Search over the bachelor programmes of the catalogue: country, free text, study domain and city; the state lives in the URL so links and Back work.. Exports: ProgramSearch

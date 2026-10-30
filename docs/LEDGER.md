@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-30 14:00 — poza nu se mai pierde dacă trimiți fără „E bine, păstrez poza”
+- Cerut: Pilotul a trimis o părere cu poză de pe telefon, dar în admin nu se vedea poza
+- Făcut: cauza — părerea a ajuns fără poză (verificat în baza de producție); dacă cercul de centrare era încă deschis și omul apăsa direct „Trimite părerea”, poza nu se păstra și fereastra de acord nu apărea. Acum, la „Trimite”, poza din cerc se păstrează automat exact cum e potrivită, apoi apare fereastra „Îți arătăm și fața?” (ales de Pilot)
+- Fișiere: `apps/web/components/PhotoPicker.tsx`, `apps/web/app/[lang]/studenti/parere/page.tsx`
+- Poartă: vezi rularea de după schimbare. Văzut în browser (local, baza de test): poză aleasă, fără „E bine”, „Trimite” → fereastra de acord cu poza → „Trimite cu poză” → în baza de test părerea are poza și acordul
+- Urmează: publicare la „salvează și publică”; apoi Pilotul reîncearcă de pe telefon și aprobă din admin
+
 ### 2026-10-30 13:00 — poză opțională la părerile studenților
 - Cerut: la formularul de păreri să se poată pune o poză (opțional), cu previzualizare a centrării, și la final o fereastră în care omul bifează că e de acord să i se afișeze fața. Pilotul a ales: poza se mută și se mărește în cerc; fără bifă părerea pleacă fără poză; adminul vede poza și o poate șterge separat; se actualizează pagina de confidențialitate
 - Făcut: componenta `PhotoPicker` (alegi poza, o tragi și o mărești într-un cerc de aceeași formă ca pe site, păstrezi un JPEG pătrat de 400×400 exact cu ce se vede); la „Trimite”, dacă există poză, apare fereastra „Îți arătăm și fața?” — fără bifă poza nu pleacă de pe dispozitiv. Serverul primește poza doar cu acordul, verifică să fie JPEG sub 300 KB, o salvează în stocarea Convex și o șterge dacă părerea e refuzată. Poza apare pe cardul părerii aprobate; în admin se vede poza și butonul „Șterge doar poza”; poza se șterge odată cu părerea (manual sau la curățenia automată). Pagina de confidențialitate spune ce se întâmplă cu poza (actualizată 30 octombrie 2026). Imaginile de la baza de date au voie în politica de securitate (CSP). Test nou pentru poză și ștergerea ei
@@ -1201,6 +1208,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-30 03:47 `644b425` feat: optional face photo on student opinions, with crop preview and separate consent
 - 2026-10-30 03:31 `75179fc` fix: no leave-site prompt, reset robot check after failed review, translate favourite errors
 - 2026-10-29 02:30 `d3935a0` feat: keep the admin pages unlocked for 1 hour instead of 8
 - 2026-10-28 05:20 `120c301` docs: phone check of the sign-in link and the Esade programmes
@@ -1230,5 +1238,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-23 23:40 `9723d41` feat: show the exact yearly tuition on 772 university sheets
 - 2026-10-23 14:03 `8e52be8` feat: add 147 university sheets with official sources and photos
 - 2026-10-23 12:13 `60a3d62` feat: favourite heart on the university search cards
-- 2026-10-23 12:06 `c833f37` feat: search suggestions, phone menu, accessibility fixes, page titles
 <!-- commits:end -->

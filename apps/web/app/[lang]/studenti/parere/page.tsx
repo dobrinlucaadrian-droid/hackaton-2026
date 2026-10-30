@@ -2,11 +2,11 @@
 // Public form (in the page language) where a student writes an opinion about their faculty. No account needed; the opinion appears only after the team approves it.
 import { useAction } from "convex/react";
 import { ConvexError } from "convex/values";
-import { useCallback, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { useLang, useT } from "@/components/LangProvider";
 import Link from "@/components/LocalLink";
 import { Shell } from "@/components/Shell";
-import { PhotoPicker, type Photo } from "@/components/PhotoPicker";
+import { PhotoPicker, type Photo, type PhotoPickerHandle } from "@/components/PhotoPicker";
 import { Turnstile } from "@/components/Turnstile";
 import { OTHER, UniversityPicker } from "@/components/UniversityPicker";
 import { api } from "@/convex/_generated/api";
@@ -33,6 +33,7 @@ export default function ReviewFormPage() {
   const [token, setToken] = useState("");
   const [robotKey, setRobotKey] = useState(0); // a token works once, so the box is reset after a failed send
   const [photo, setPhoto] = useState<Photo | null>(null);
+  const picker = useRef<PhotoPickerHandle>(null);
   const [askFace, setAskFace] = useState(false); // the last window: may we show your face?
   const [faceOk, setFaceOk] = useState(false);
   const [state, setState] = useState<"idle" | "sending" | "sent">("idle");
@@ -46,7 +47,9 @@ export default function ReviewFormPage() {
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!canSend) return;
-    if (photo) {
+    // A photo still being placed in the circle is kept as it is, so it is never lost by sending too early.
+    const kept = picker.current ? await picker.current.finish() : photo;
+    if (kept) {
       setFaceOk(false);
       setAskFace(true);
       return;
@@ -134,7 +137,7 @@ export default function ReviewFormPage() {
             {textLen < LIMITS.textMin ? t(`Mai scrie cel puțin ${LIMITS.textMin - textLen} caractere.`, `Write at least ${LIMITS.textMin - textLen} more characters.`) : t(`${textLen} din ${LIMITS.textMax} caractere.`, `${textLen} of ${LIMITS.textMax} characters.`)}
           </p>
         </div>
-        <PhotoPicker photo={photo} onChange={setPhoto} />
+        <PhotoPicker ref={picker} photo={photo} onChange={setPhoto} />
         {/* Hidden from people; bots fill it in and are ignored. */}
         <div aria-hidden className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
           <label htmlFor="p-website">Website</label>

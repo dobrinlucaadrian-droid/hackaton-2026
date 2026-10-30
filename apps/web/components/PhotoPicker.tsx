@@ -1,6 +1,6 @@
 "use client";
-// Optional face photo on the opinion form (in the page language): the student picks a picture, moves and zooms it inside the same circle the site shows, and keeps a small square JPEG of exactly that view.
-import { useEffect, useRef, useState } from "react";
+// Optional face photo on the opinion form (in the page language): the student picks a picture, moves and zooms it inside the same circle the site shows, and keeps a small square JPEG of exactly that view (kept automatically if the form is sent while the circle is still open).
+import { useEffect, useImperativeHandle, useRef, useState, type Ref } from "react";
 import { useT } from "./LangProvider";
 
 const VIEW = 240; // size of the circle on screen, in CSS pixels
@@ -9,8 +9,10 @@ const OUT = 400; // size of the saved square photo, in pixels
 type Pick = { url: string; w: number; h: number };
 /** The cropped photo and a local address to preview it. */
 export type Photo = { blob: Blob; url: string };
+/** Lets the form keep a photo that is still being placed in the circle when it is sent. */
+export type PhotoPickerHandle = { finish: () => Promise<Photo | null> };
 
-export function PhotoPicker({ photo, onChange }: { photo: Photo | null; onChange: (photo: Photo | null) => void }) {
+export function PhotoPicker({ photo, onChange, ref }: { photo: Photo | null; onChange: (photo: Photo | null) => void; ref?: Ref<PhotoPickerHandle> }) {
   const t = useT();
   const input = useRef<HTMLInputElement>(null);
   const [pick, setPick] = useState<Pick | null>(null);
@@ -59,28 +61,39 @@ export function PhotoPicker({ photo, onChange }: { photo: Photo | null; onChange
     setPos((p) => clamp(p, pick.w * base * z, pick.h * base * z));
   }
 
-  // Draws exactly what the circle shows onto a square canvas and keeps it as a JPEG.
-  function accept() {
-    if (!pick) return;
-    const img = new Image();
-    img.onload = () => {
-      const canvas = document.createElement("canvas");
-      canvas.width = OUT;
-      canvas.height = OUT;
-      const ctx = canvas.getContext("2d");
-      if (!ctx) return;
-      const k = OUT / VIEW;
-      ctx.fillStyle = "#fff";
-      ctx.fillRect(0, 0, OUT, OUT);
-      ctx.drawImage(img, (VIEW / 2 + pos.x - dw / 2) * k, (VIEW / 2 + pos.y - dh / 2) * k, dw * k, dh * k);
-      canvas.toBlob((blob) => {
-        if (!blob) return setError(t("Poza nu a putut fi pregătită. Încearcă alta.", "The photo could not be prepared. Try another one."));
-        set({ blob, url: URL.createObjectURL(blob) });
-        setPick(null);
-      }, "image/jpeg", 0.85);
-    };
-    img.src = pick.url;
+  // Draws exactly what the circle shows onto a square canvas and keeps it as a JPEG; resolves to the kept photo (or null when it failed).
+  function accept(): Promise<Photo | null> {
+    if (!pick) return Promise.resolve(photo);
+    return new Promise((resolve) => {
+      const failed = () => {
+        setError(t("Poza nu a putut fi pregătită. Încearcă alta.", "The photo could not be prepared. Try another one."));
+        resolve(null);
+      };
+      const img = new Image();
+      img.onerror = failed;
+      img.onload = () => {
+        const canvas = document.createElement("canvas");
+        canvas.width = OUT;
+        canvas.height = OUT;
+        const ctx = canvas.getContext("2d");
+        if (!ctx) return failed();
+        const k = OUT / VIEW;
+        ctx.fillStyle = "#fff";
+        ctx.fillRect(0, 0, OUT, OUT);
+        ctx.drawImage(img, (VIEW / 2 + pos.x - dw / 2) * k, (VIEW / 2 + pos.y - dh / 2) * k, dw * k, dh * k);
+        canvas.toBlob((blob) => {
+          if (!blob) return failed();
+          const kept = { blob, url: URL.createObjectURL(blob) };
+          set(kept);
+          setPick(null);
+          resolve(kept);
+        }, "image/jpeg", 0.85);
+      };
+      img.src = pick.url;
+    });
   }
+
+  useImperativeHandle(ref, () => ({ finish: accept }));
 
   const btn = "min-h-11 rounded-full px-5 text-sm font-bold";
   return (
@@ -108,7 +121,7 @@ export function PhotoPicker({ photo, onChange }: { photo: Photo | null; onChange
             <span aria-hidden>+</span>
           </label>
           <div className="mt-4 flex flex-wrap justify-center gap-2">
-            <button type="button" onClick={accept} className={`${btn} bg-primary text-white hover:bg-primary-dark`}>{t("E bine, păstrez poza", "Looks good, keep it")}</button>
+            <button type="button" onClick={() => void accept()} className={`${btn} bg-primary text-white hover:bg-primary-dark`}>{t("E bine, păstrez poza", "Looks good, keep it")}</button>
             <button type="button" onClick={() => input.current?.click()} className={`${btn} border-2 border-primary text-primary hover:bg-primary-tint`}>{t("Altă poză", "Another photo")}</button>
             <button type="button" onClick={() => setPick(null)} className={`${btn} text-ink-soft underline underline-offset-2`}>{t("Renunță", "Cancel")}</button>
           </div>
