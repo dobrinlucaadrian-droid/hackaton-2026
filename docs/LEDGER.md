@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-31 10:00 — butoane TikTok și Instagram în subsol
+- Cerut: două butoane, TikTok și Instagram; Pilotul a ales subsolul, pe toate paginile; Instagram: @findmyuni.ro
+- Făcut: în subsolul comun, lângă „Confidențialitate”, două butoane mici cu sigla, care deschid într-o filă nouă tiktok.com/@findmyuni.ro și instagram.com/findmyuni.ro
+- Fișiere: `apps/web/components/Shell.tsx`
+- Poartă: vezi rularea de după schimbare. Văzut în browser (local): butoanele apar pe pagina principală cu linkurile corecte
+- Urmează: publicare la „salvează și publică”
+
 ### 2026-10-30 21:00 — mediile din iulie 2026, taxe la zi și fișele Universității de Apărare
 - Cerut: (1) fișele facultăților care lipsesc și (3) datele vechi la zi; Pilotul a ales anul scris lângă fiecare medie și lucru cu ajutoare + verificare
 - Făcut: 4 ajutoare au cules mediile din iulie 2026 din documentele oficiale, apoi 4 verificatori independenți au recitit fiecare valoare (ce nu se potrivea sau nu venea dintr-o listă finală a fost scos). Acum 475 de programe arată „iulie 2026” (26 dintre ele nu aveau medie înainte); 204 rămân cu „iulie 2025”, cu anul scris (de ex. UPG Ploiești: listele 2026 publicate nu sunt finale). Unde media de taxă era mai mare decât cea de buget, media de taxă a fost scoasă (94 de cazuri). Când lista de taxă e alt document, rândul programului are două linkuri („rezultate buget” · „rezultate taxă”). 19 din 31 de taxe vechi confirmate pentru 2026/27 (sumele neschimbate). 2 fișe noi de facultăți la Universitatea Națională de Apărare, verificate independent. Fișele de la Pitești existau deja (număram greșit: lipseau 18, nu 24)
@@ -1216,6 +1223,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-30 20:32 `c94b6d3` feat: July 2026 admission averages, refreshed fees and the UNAp faculty sheets
 - 2026-10-30 10:31 `e479e3a` fix: keep the photo still being placed in the circle when the opinion is sent
 - 2026-10-30 03:47 `644b425` feat: optional face photo on student opinions, with crop preview and separate consent
 - 2026-10-30 03:31 `75179fc` fix: no leave-site prompt, reset robot check after failed review, translate favourite errors
@@ -1245,5 +1253,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-24 21:49 `eacbed4` feat: show how many universities each city has in the city filter
 - 2026-10-24 03:19 `d70a411` feat: filter universities by the yearly tuition they start from
 - 2026-10-23 23:40 `9723d41` feat: show the exact yearly tuition on 772 university sheets
-- 2026-10-23 14:03 `8e52be8` feat: add 147 university sheets with official sources and photos
 <!-- commits:end -->
