@@ -21,6 +21,14 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-31 11:30 — butoanele TikTok și Instagram mutate sub „Urmărește-ne!”
+- Cerut: butoanele sub „Urmărește-ne!”, mai mari; jos pe pagini să rămână doar „Confidențialitate”
+- Făcut: sub titlu și fraza de la „Urmărește-ne!”, două butoane mari (TikTok negru, Instagram colorat, cu sigla) care deschid conturile; indicația „Apasă pe o aplicație din telefon” scoasă; din subsolul tuturor paginilor scoase butoanele, rămâne doar „Confidențialitate”; telefonul desenat rămâne
+- Fișiere: `apps/web/components/SocialPhone.tsx`, `apps/web/components/Shell.tsx`
+- Poartă: vezi rularea de după schimbare. Văzut în browser (local): pe calculator butoanele sub text, telefonul alături; pe telefon (375 px) butoanele sub text, fără derulare laterală; subsolul are doar „Confidențialitate”; fără erori
+- Apoi, la cererea Pilotului: textul și butoanele stau mereu în stânga, telefonul mereu în dreapta, și pe ecranul de telefon (acolo desenul e mai mic, butoanele unul sub altul). Văzut local la 375 px: butoanele în stânga, telefonul în dreapta, fără derulare laterală; la 1280 px la fel, cu butoanele unul lângă altul
+- Urmează: publicare la „salvează și publică”
+
 ### 2026-10-31 11:00 — „Urmărește-ne!” cu telefonul desenat în locul norișorilor
 - Cerut: scoși norișorii de pe pagina principală; în locul lor un mesaj despre social media și un desen interactiv cu butoane spre conturi. Ales: telefon desenat cu aplicațiile; titlul „Urmărește-ne!” și o frază; „Continui fără cont” duce la chestionar
 - Făcut: componenta `SocialPhone` (titlu, frază, telefon desenat care plutește ușor, cu iconițele TikTok și Instagram ca linkuri spre conturi; iconițele sar la trecerea mouse-ului sau la apăsare, mai puțin când vizitatorul a cerut mișcare redusă); secțiunea „De unde vrei să începi?” și `NavBubbles` scoase; „Continui fără cont” deschide /test; săgeata indicației arată în jos pe telefon și spre dreapta pe ecran lat
@@ -1230,6 +1238,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-30 21:50 `47afcb5` feat: follow-us phone with TikTok and Instagram instead of the home page clouds
 - 2026-10-30 21:36 `b61bab3` feat: TikTok and Instagram links in the footer
 - 2026-10-30 20:32 `c94b6d3` feat: July 2026 admission averages, refreshed fees and the UNAp faculty sheets
 - 2026-10-30 10:31 `e479e3a` fix: keep the photo still being placed in the circle when the opinion is sent
@@ -1259,5 +1268,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-24 23:30 `13518bf` feat: add drawings to the universities, guides and fields pages
 - 2026-10-24 22:08 `fcc2f62` feat: list the team's top Romanian universities first; fix Artifex fee
 - 2026-10-24 21:49 `eacbed4` feat: show how many universities each city has in the city filter
-- 2026-10-24 03:19 `d70a411` feat: filter universities by the yearly tuition they start from
 <!-- commits:end -->

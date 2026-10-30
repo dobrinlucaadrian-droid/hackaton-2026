@@ -1,4 +1,4 @@
-// "Urmărește-ne!" on the home page (in the page language): a short message and a drawn phone whose two app icons open our TikTok and Instagram accounts; the icons jump when pointed at or tapped.
+// "Urmărește-ne!" on the home page (in the page language): a short message, two big buttons to our TikTok and Instagram accounts and a drawn phone whose app icons open the same accounts (they jump when pointed at or tapped).
 import { tr, type Lang } from "@/lib/i18n";
 
 const APPS = [
@@ -29,32 +29,43 @@ const APPS = [
 export function SocialPhone({ lang }: { lang: Lang }) {
   const t = tr(lang);
   return (
-    <section aria-labelledby="social-titlu" className="mx-auto mt-16 grid max-w-4xl items-center gap-8 md:grid-cols-2">
-      <div className="text-center md:text-left">
-        <h2 id="social-titlu" className="text-3xl font-black tracking-tight text-ink">
+    <section aria-labelledby="social-titlu" className="mx-auto mt-16 grid max-w-4xl grid-cols-[1fr_auto] items-center gap-4 sm:gap-8 md:grid-cols-2">
+      {/* Text and buttons always on the left, the phone always on the right (smaller on narrow screens). */}
+      <div className="text-left">
+        <h2 id="social-titlu" className="text-2xl font-black tracking-tight text-ink sm:text-3xl">
           {t("Urmărește-ne!", "Follow us!")}
         </h2>
-        <p className="mx-auto mt-3 max-w-md text-lg text-ink-soft md:mx-0">
+        <p className="mt-3 max-w-md text-base text-ink-soft sm:text-lg">
           {t(
             "Clipuri scurte despre facultăți, admitere și ce nu știai despre viața de student.",
             "Short videos about universities, admission and what you didn't know about student life.",
           )}
         </p>
-        <p className="mt-3 text-sm font-bold text-primary">
-          {t("Apasă pe o aplicație din telefon", "Tap an app on the phone")} <span aria-hidden className="md:hidden">👇</span>
-          <span aria-hidden className="hidden md:inline">👉</span>
-        </p>
+        <div className="mt-5 flex flex-col items-start gap-2.5 sm:mt-6 sm:flex-row sm:flex-wrap sm:gap-3">
+          {APPS.map((app) => (
+            <a
+              key={app.name}
+              href={app.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex min-h-12 items-center gap-2 rounded-2xl px-4 py-2.5 text-base font-black sm:min-h-14 sm:gap-3 sm:px-6 sm:py-3 sm:text-lg text-white shadow-lg shadow-ink/20 transition hover:brightness-110 active:scale-[0.98] ${app.tile}`}
+            >
+              <span className="flex h-7 w-7 items-center justify-center sm:h-8 sm:w-8 [&>svg]:h-6 [&>svg]:w-6 sm:[&>svg]:h-7 sm:[&>svg]:w-7">{app.icon}</span>
+              {app.name}
+            </a>
+          ))}
+        </div>
       </div>
 
       {/* The drawn phone: frame, notch, a small FindMyUni header and the two app icons as real links. */}
-      <div className="float mx-auto w-56 rounded-[2.5rem] bg-ink p-3 shadow-2xl shadow-ink/30">
-        <div className="relative flex h-96 flex-col items-center rounded-[2rem] bg-paper px-5 pt-8">
-          <span aria-hidden className="absolute top-2.5 h-5 w-20 rounded-full bg-ink" />
-          <p aria-hidden className="text-lg font-black tracking-tight text-ink">
+      <div className="float mx-auto w-32 rounded-[1.75rem] bg-ink p-2 shadow-2xl shadow-ink/30 sm:w-56 sm:rounded-[2.5rem] sm:p-3">
+        <div className="relative flex h-60 flex-col items-center rounded-[1.4rem] bg-paper px-2 pt-6 sm:h-96 sm:rounded-[2rem] sm:px-5 sm:pt-8">
+          <span aria-hidden className="absolute top-2 h-3.5 w-12 rounded-full bg-ink sm:top-2.5 sm:h-5 sm:w-20" />
+          <p aria-hidden className="text-sm font-black tracking-tight text-ink sm:text-lg">
             <span className="text-primary">FindMy</span>
             <span className="text-[#a8761a]">Uni</span>
           </p>
-          <div className="mt-10 grid grid-cols-2 gap-6">
+          <div className="mt-6 grid grid-cols-2 gap-3 sm:mt-10 sm:gap-6">
             {APPS.map((app) => (
               <a
                 key={app.name}
@@ -62,21 +73,21 @@ export function SocialPhone({ lang }: { lang: Lang }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={t(`FindMyUni pe ${app.name} (se deschide într-o filă nouă)`, `FindMyUni on ${app.name} (opens in a new tab)`)}
-                className="group flex flex-col items-center gap-2 rounded-2xl outline-offset-4"
+                className="group flex flex-col items-center gap-1 rounded-2xl outline-offset-4 sm:gap-2"
               >
                 <span
-                  className={`relative flex h-16 w-16 items-center justify-center rounded-2xl shadow-lg ${app.tile} transition-transform duration-200 motion-safe:group-hover:-translate-y-2 motion-safe:group-hover:-rotate-6 motion-safe:group-active:scale-90 motion-safe:group-focus-visible:-translate-y-2`}
+                  className={`relative flex h-11 w-11 items-center justify-center rounded-xl shadow-lg sm:h-16 sm:w-16 sm:rounded-2xl [&>svg]:h-6 [&>svg]:w-6 sm:[&>svg]:h-9 sm:[&>svg]:w-9 ${app.tile} transition-transform duration-200 motion-safe:group-hover:-translate-y-2 motion-safe:group-hover:-rotate-6 motion-safe:group-active:scale-90 motion-safe:group-focus-visible:-translate-y-2`}
                 >
                   {app.icon}
-                  <span aria-hidden className="twinkle absolute -right-1.5 -top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-[11px] font-black text-white ring-2 ring-paper">
+                  <span aria-hidden className="twinkle absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[9px] sm:h-5 sm:w-5 sm:text-[11px] font-black text-white ring-2 ring-paper">
                     1
                   </span>
                 </span>
-                <span className="text-xs font-bold text-ink">{app.name}</span>
+                <span className="text-[10px] font-bold text-ink sm:text-xs">{app.name}</span>
               </a>
             ))}
           </div>
-          <span aria-hidden className="absolute bottom-3 h-1.5 w-24 rounded-full bg-ink/20" />
+          <span aria-hidden className="absolute bottom-2 h-1 w-14 rounded-full bg-ink/20 sm:bottom-3 sm:h-1.5 sm:w-24" />
         </div>
       </div>
     </section>
