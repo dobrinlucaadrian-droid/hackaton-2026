@@ -1,4 +1,4 @@
-// "Urmărește-ne!" on the home page (in the page language): a short message, two big buttons to our TikTok and Instagram accounts and a drawn phone whose app icons open the same accounts (they jump when pointed at or tapped).
+// "Urmărește-ne!" on the home page (in the page language): a drawn phone on the left and, on the right, a short message, two big buttons to our TikTok and Instagram accounts (the phone's app icons open the same accounts and jump when pointed at or tapped).
 import { tr, type Lang } from "@/lib/i18n";
 
 const APPS = [
@@ -29,8 +29,8 @@ const APPS = [
 export function SocialPhone({ lang }: { lang: Lang }) {
   const t = tr(lang);
   return (
-    <section aria-labelledby="social-titlu" className="mx-auto mt-16 grid max-w-4xl grid-cols-[1fr_auto] items-center gap-4 sm:gap-8 md:grid-cols-2">
-      {/* Text and buttons always on the left, the phone always on the right (smaller on narrow screens). */}
+    <section aria-labelledby="social-titlu" className="mx-auto mt-16 grid max-w-4xl grid-cols-[auto_1fr] items-center gap-4 sm:gap-8 md:grid-cols-2">
+      {/* The phone always on the left (smaller on narrow screens), text and buttons on the right; the text comes first for screen readers. */}
       <div className="text-left">
         <h2 id="social-titlu" className="text-2xl font-black tracking-tight text-ink sm:text-3xl">
           {t("Urmărește-ne!", "Follow us!")}
@@ -58,7 +58,7 @@ export function SocialPhone({ lang }: { lang: Lang }) {
       </div>
 
       {/* The drawn phone: frame, notch, a small FindMyUni header and the two app icons as real links. */}
-      <div className="float mx-auto w-32 rounded-[1.75rem] bg-ink p-2 shadow-2xl shadow-ink/30 sm:w-56 sm:rounded-[2.5rem] sm:p-3">
+      <div className="float order-first mx-auto w-32 rounded-[1.75rem] bg-ink p-2 shadow-2xl shadow-ink/30 sm:w-56 sm:rounded-[2.5rem] sm:p-3">
         <div className="relative flex h-60 flex-col items-center rounded-[1.4rem] bg-paper px-2 pt-6 sm:h-96 sm:rounded-[2rem] sm:px-5 sm:pt-8">
           <span aria-hidden className="absolute top-2 h-3.5 w-12 rounded-full bg-ink sm:top-2.5 sm:h-5 sm:w-20" />
           <p aria-hidden className="text-sm font-black tracking-tight text-ink sm:text-lg">

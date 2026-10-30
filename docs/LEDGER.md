@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-31 12:00 — „Urmărește-ne!”: telefonul în stânga, textul în dreapta
+- Cerut: inversate părțile secțiunii, ca pagina să alterneze (sus text–desen, jos desen–text)
+- Făcut: telefonul desenat stă acum în stânga, titlul, fraza și butoanele în dreapta, pe orice ecran; în cod textul rămâne primul, pentru cititoarele de ecran
+- Fișiere: `apps/web/components/SocialPhone.tsx`
+- Poartă: vezi rularea de după schimbare. Văzut local: la 1280 px telefonul în stânga, textul în dreapta; la 375 px la fel, fără derulare laterală; fără erori
+- Urmează: publicare la „salvează și publică”
+
 ### 2026-10-31 11:30 — butoanele TikTok și Instagram mutate sub „Urmărește-ne!”
 - Cerut: butoanele sub „Urmărește-ne!”, mai mari; jos pe pagini să rămână doar „Confidențialitate”
 - Făcut: sub titlu și fraza de la „Urmărește-ne!”, două butoane mari (TikTok negru, Instagram colorat, cu sigla) care deschid conturile; indicația „Apasă pe o aplicație din telefon” scoasă; din subsolul tuturor paginilor scoase butoanele, rămâne doar „Confidențialitate”; telefonul desenat rămâne
@@ -1238,6 +1245,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-30 21:57 `4604195` feat: big TikTok and Instagram buttons beside the phone; footer keeps only the privacy link
 - 2026-10-30 21:50 `47afcb5` feat: follow-us phone with TikTok and Instagram instead of the home page clouds
 - 2026-10-30 21:36 `b61bab3` feat: TikTok and Instagram links in the footer
 - 2026-10-30 20:32 `c94b6d3` feat: July 2026 admission averages, refreshed fees and the UNAp faculty sheets
@@ -1267,5 +1275,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-25 03:00 `a519dc1` feat: English-taught filter, multi-choice filters, empty-result help
 - 2026-10-24 23:30 `13518bf` feat: add drawings to the universities, guides and fields pages
 - 2026-10-24 22:08 `fcc2f62` feat: list the team's top Romanian universities first; fix Artifex fee
-- 2026-10-24 21:49 `eacbed4` feat: show how many universities each city has in the city filter
 <!-- commits:end -->
