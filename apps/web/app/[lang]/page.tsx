@@ -1,8 +1,8 @@
-// Home page: the welcome with the drawing and the account choice, the big buttons drawn as clouds, in the page language.
+// Home page: the welcome with the drawing and the account choice, then "Urmărește-ne!" with the drawn phone that opens our TikTok and Instagram, in the page language.
 import type { Metadata } from "next";
 import { HeroScene } from "@/components/Illustrations";
-import { NavBubbles } from "@/components/NavBubbles";
 import { Shell } from "@/components/Shell";
+import { SocialPhone } from "@/components/SocialPhone";
 import { WelcomeActions } from "@/components/WelcomeActions";
 import { hasLang, tr } from "@/lib/i18n";
 
@@ -19,7 +19,8 @@ export async function generateMetadata({ params }: PageProps<"/[lang]">): Promis
 
 export default async function Home({ params }: PageProps<"/[lang]">) {
   const { lang } = await params;
-  const t = tr(hasLang(lang) ? lang : "ro");
+  const l = hasLang(lang) ? lang : "ro";
+  const t = tr(l);
   return (
     <Shell wide>
       <section className="mt-2 grid items-center gap-4 md:grid-cols-2">
@@ -38,12 +39,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         <HeroScene className="float mx-auto w-full max-w-[12rem] sm:max-w-sm md:max-w-none" />
       </section>
 
-      <section id="exploreaza" aria-labelledby="exploreaza-titlu" className="mx-auto mt-14 max-w-4xl scroll-mt-6">
-        <h2 id="exploreaza-titlu" className="mb-6 text-center text-3xl font-black tracking-tight text-ink">
-          {t("De unde vrei să începi?", "Where do you want to start?")}
-        </h2>
-        <NavBubbles />
-      </section>
+      <SocialPhone lang={l} />
     </Shell>
   );
 }

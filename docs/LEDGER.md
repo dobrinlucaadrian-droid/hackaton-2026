@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-31 11:00 — „Urmărește-ne!” cu telefonul desenat în locul norișorilor
+- Cerut: scoși norișorii de pe pagina principală; în locul lor un mesaj despre social media și un desen interactiv cu butoane spre conturi. Ales: telefon desenat cu aplicațiile; titlul „Urmărește-ne!” și o frază; „Continui fără cont” duce la chestionar
+- Făcut: componenta `SocialPhone` (titlu, frază, telefon desenat care plutește ușor, cu iconițele TikTok și Instagram ca linkuri spre conturi; iconițele sar la trecerea mouse-ului sau la apăsare, mai puțin când vizitatorul a cerut mișcare redusă); secțiunea „De unde vrei să începi?” și `NavBubbles` scoase; „Continui fără cont” deschide /test; săgeata indicației arată în jos pe telefon și spre dreapta pe ecran lat
+- Fișiere: `apps/web/components/SocialPhone.tsx` (nou), `apps/web/app/[lang]/page.tsx`, `apps/web/components/WelcomeActions.tsx`, `apps/web/components/NavBubbles.tsx` (șters)
+- Poartă: vezi rularea de după schimbare. Văzut în browser (local): pe calculator telefonul stă lângă text, pe telefon (375 px) sub text, fără derulare laterală; linkurile duc la @findmyuni.ro; „Continui fără cont” → /test; fără erori
+- Urmează: Pilotul verifică pe telefon după publicare
+
 ### 2026-10-31 10:00 — butoane TikTok și Instagram în subsol
 - Cerut: două butoane, TikTok și Instagram; Pilotul a ales subsolul, pe toate paginile; Instagram: @findmyuni.ro
 - Făcut: în subsolul comun, lângă „Confidențialitate”, două butoane mici cu sigla, care deschid într-o filă nouă tiktok.com/@findmyuni.ro și instagram.com/findmyuni.ro
@@ -1223,6 +1230,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-30 21:36 `b61bab3` feat: TikTok and Instagram links in the footer
 - 2026-10-30 20:32 `c94b6d3` feat: July 2026 admission averages, refreshed fees and the UNAp faculty sheets
 - 2026-10-30 10:31 `e479e3a` fix: keep the photo still being placed in the circle when the opinion is sent
 - 2026-10-30 03:47 `644b425` feat: optional face photo on student opinions, with crop preview and separate consent
@@ -1252,5 +1260,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-24 22:08 `fcc2f62` feat: list the team's top Romanian universities first; fix Artifex fee
 - 2026-10-24 21:49 `eacbed4` feat: show how many universities each city has in the city filter
 - 2026-10-24 03:19 `d70a411` feat: filter universities by the yearly tuition they start from
-- 2026-10-23 23:40 `9723d41` feat: show the exact yearly tuition on 772 university sheets
 <!-- commits:end -->

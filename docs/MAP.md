@@ -132,7 +132,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `loading.tsx` (17) — Shown the instant a link is pressed, while the next page comes from the server: the usual header and a small spinner, so a tap never looks ignored (in the page language).. Exports: Loading
 - `not-found.tsx` (22) — Friendly 404 page shown for unknown routes and unknown university ids, in the page language.. Exports: NotFound
 - `opengraph-image.tsx` (53) — The picture shown when the site itself is shared (WhatsApp, Instagram, Facebook …): the cap from the logo, "FindMyUni" and what the site does. Drawn once, when the site is built.. Exports: alt, size, contentType, dynamicParams, generateStaticParams, Image
-- `page.tsx` (50) — Home page: the welcome with the drawing and the account choice, the big buttons drawn as clouds, in the page language.. Routes: /[lang]. Exports: generateMetadata, Home
+- `page.tsx` (46) — Home page: the welcome with the drawing and the account choice, then "Urmărește-ne!" with the drawn phone that opens our TikTok and Instagram, in the page language.. Routes: /[lang]. Exports: generateMetadata, Home
 
 ### apps/web/app/[lang]/ghiduri/[tara]  (1 files)
 
@@ -226,7 +226,6 @@ _Open only the files listed here; a file's description is its first comment line
 - `LangProvider.tsx` (26) — Gives every component in the browser the language of the page (ro or en), set once by the root layout from the address.. Exports: LangProvider, useLang, useHref, useT
 - `LocalLink.tsx` (11) — A link inside the site that stays in the page's language: href="/universitati" becomes "/en/universitati" on the English pages. Use it instead of next/link for addresses of this site.. Exports: LocalLink
 - `MatchCard.tsx` (211) — One result card, in the page language: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
-- `NavBubbles.tsx` (38) — The big buttons on the home page (Specializări, Universități, Chestionar, Studenți, Ghiduri pe țări), drawn as little clouds, in the page language.. Exports: NavBubbles
 - `NavLinks.tsx` (63) — Header navigation links with the current page highlighted (centred on phones), the RO / EN language switch; signed-in visitors also get "Contul meu" (signing in starts from the home page).. Exports: NavLinks
 - `OfficialPrograms.tsx` (17) — On a university sheet outside Romania: every bachelor programme of the institution from its country's official dataset, read from the database (those lists are too large to ship with the pages). Romanian sheets render the same list on the server, from the catalogue file.. Exports: OfficialPrograms
 - `PhotoPicker.tsx` (148) — Optional face photo on the opinion form (in the page language): the student picks a picture, moves and zooms it inside the same circle the site shows, and keeps a small square JPEG of exactly that view (kept automatically if the form is sent while the circle is still open).. Exports: PhotoPicker
@@ -239,6 +238,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `ShareResult.tsx` (188) — Under the result (text in the page language): draws a story-sized picture (1080×1920) of the 3 matched domains with their percentages and "findmyuni.ro", in the browser only. Exports: ShareResult
 - `Shell.tsx` (60) — Page frame shared by all screens: header with the FindMyUni logo, a centered content column and a footer with the TikTok and Instagram links and the privacy link, in the page language.. Exports: Shell, Notice
 - `SignInForm.tsx` (291) — The account form, in the page language, shared by the account window and the sign-in page: sign in with username and password, make an account (username, full name, email, password, then the 6-digit code from the email) and reset a forgotten password with a code.. Exports: SignInForm
+- `SocialPhone.tsx` (85) — "Urmărește-ne!" on the home page (in the page language): a short message and a drawn phone whose two app icons open our TikTok and Instagram accounts; the icons jump when pointed at or tapped.. Exports: SocialPhone
 - `SpecializationsBrowser.tsx` (88) — /specializari body: a text filter over all categories, domains and specializations (in the page language); without text it shows the category tiles.. Exports: SpecializationsBrowser
 - `StudentCard.tsx` (51) — One student opinion: photo (or initial), name, faculty and their own words. Used on the students page and on university sheets; the opinion stays in its original words, only the photo label is in the page language.. Exports: StudentCard
 - `StudentVoices.tsx` (176) — Student opinions with a search box: type a faculty or university and see every opinion we have from there (the opinions keep their original words; the page around them is in the page language).. Exports: StudentVoices
