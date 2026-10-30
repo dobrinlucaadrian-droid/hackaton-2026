@@ -73,7 +73,7 @@ export default async function PrivacyPage({ params }: PageProps<"/[lang]/confide
   const lang = hasLang(rawLang) ? rawLang : "ro";
   const en = lang === "en";
   const t = (ro: ReactNode, enText: ReactNode): ReactNode => (en ? enText : ro);
-  const LAST_UPDATED = en ? "20 October 2026" : "20 octombrie 2026";
+  const LAST_UPDATED = en ? "30 October 2026" : "30 octombrie 2026";
 
   return (
     <Shell>
@@ -150,12 +150,12 @@ export default async function PrivacyPage({ params }: PageProps<"/[lang]/confide
             labels={en ? ["What data", "Why", "Legal basis"] : ["Ce date", "De ce", "Temeiul legal"]}
             title={t("2. Părerile scrise de studenți", "2. Opinions written by students")}
             data={t(
-              "numele, universitatea, facultatea, anul (dacă îl treci), textul părerii, data trimiterii și acordul tău pentru publicare; după verificare, și cine din echipă a aprobat sau a respins părerea și când.",
-              "your name, university, faculty, year (if you give it), the text of the opinion, the date it was sent and your agreement to publish it; after checking, also which team member approved or rejected the opinion and when.",
+              "numele, universitatea, facultatea, anul (dacă îl treci), textul părerii, data trimiterii și acordul tău pentru publicare; după verificare, și cine din echipă a aprobat sau a respins părerea și când. Dacă vrei, și o poză cu tine: e opțională, o decupezi tu înainte de trimitere și o păstrăm doar dacă bifezi separat că ești de acord să ți se afișeze fața; altfel poza nu pleacă de pe dispozitivul tău.",
+              "your name, university, faculty, year (if you give it), the text of the opinion, the date it was sent and your agreement to publish it; after checking, also which team member approved or rejected the opinion and when. If you wish, also a photo of yourself: it is optional, you crop it yourself before sending and we keep it only if you separately tick that you agree to show your face; otherwise the photo never leaves your device.",
             )}
             why={t(
-              "ca să le arătăm elevilor păreri reale despre facultăți. După ce echipa aprobă părerea, numele, facultatea, universitatea, anul și textul apar public pe site.",
-              "so that we can show students real opinions about faculties. Once the team approves the opinion, the name, faculty, university, year and text appear publicly on the site.",
+              "ca să le arătăm elevilor păreri reale despre facultăți. După ce echipa aprobă părerea, numele, facultatea, universitatea, anul, textul și poza (dacă ai trimis una) apar public pe site. Echipa poate șterge poza și păstra doar părerea.",
+              "so that we can show students real opinions about faculties. Once the team approves the opinion, the name, faculty, university, year, text and photo (if you sent one) appear publicly on the site. The team may delete the photo and keep only the opinion.",
             )}
             basis={t(
               <>consimțământul tău, pe care îl dai bifând căsuța din formular (GDPR, art. 6 alin. 1 lit. a). Îl poți retrage oricând scriindu-ne la <ContactEmail />, iar părerea este scoasă de pe site.</>,
@@ -226,8 +226,8 @@ export default async function PrivacyPage({ params }: PageProps<"/[lang]/confide
           <li>
             <span className="font-bold text-ink">{t("Părerile:", "The opinions:")}</span>{" "}
             {t(
-              "cele aprobate rămân pe site până ne ceri să le scoatem. Cele respinse se șterg automat după 30 de zile de la decizie, iar cele pe care nu le-a citit nimeni, după 90 de zile.",
-              "approved ones stay on the site until you ask us to remove them. Rejected ones are deleted automatically 30 days after the decision, and ones that nobody has read, after 90 days.",
+              "cele aprobate rămân pe site până ne ceri să le scoatem. Cele respinse se șterg automat după 30 de zile de la decizie, iar cele pe care nu le-a citit nimeni, după 90 de zile. Poza se șterge odată cu părerea; ne poți cere oricând să ștergem doar poza.",
+              "approved ones stay on the site until you ask us to remove them. Rejected ones are deleted automatically 30 days after the decision, and ones that nobody has read, after 90 days. The photo is deleted together with the opinion; you can ask us at any time to delete only the photo.",
             )}
           </li>
           <li>

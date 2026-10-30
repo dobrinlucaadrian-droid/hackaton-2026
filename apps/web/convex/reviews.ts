@@ -1,13 +1,16 @@
-// Student reviews: anyone can read the approved ones and send a new one through the checked public form; only administrators see the queue, approve, reject or delete.
+// Student reviews: anyone can read the approved ones and send a new one (optionally with a photo of their face) through the checked public form; only administrators see the queue, approve, reject, remove a photo or delete.
 import { HOUR, RateLimiter } from "@convex-dev/rate-limiter";
 import { ConvexError, v } from "convex/values";
 import { components, internal } from "./_generated/api";
+import type { Id } from "./_generated/dataModel";
 import { action, internalMutation, query, type MutationCtx } from "./_generated/server";
 import { adminMutation, adminQuery } from "./access";
 import { verifyTurnstile } from "./turnstile";
 import { reviewState } from "./schema";
 
 export const LIMITS = { name: 60, faculty: 120, university: 120, status: 40, textMin: 40, textMax: 3000 };
+/** The photo comes already cropped to a small square JPEG in the browser; anything larger or not a JPEG is refused. */
+export const PHOTO_MAX_BYTES = 300_000;
 
 // At most 20 new reviews per hour for the whole site; enough for real use, small enough to stop a flood.
 const rateLimiter = new RateLimiter(components.rateLimiter, {
@@ -32,6 +35,7 @@ const publicReview = v.object({
   universityId: v.optional(v.string()),
   status: v.optional(v.string()),
   text: v.string(),
+  photoUrl: v.optional(v.string()),
 });
 
 /** Approved reviews, oldest first. Returns only what the page shows: no moderation fields. */
@@ -43,15 +47,21 @@ export const listApproved = query({
       .query("reviews")
       .withIndex("by_state", (q) => q.eq("state", "approved"))
       .take(500);
-    return rows.map((r) => ({
-      id: r._id,
-      name: r.name,
-      faculty: r.faculty,
-      ...(r.university ? { university: r.university } : {}),
-      ...(r.universityId ? { universityId: r.universityId } : {}),
-      ...(r.status ? { status: r.status } : {}),
-      text: r.text,
-    }));
+    return Promise.all(
+      rows.map(async (r) => {
+        const photoUrl = r.photoId ? await ctx.storage.getUrl(r.photoId) : null;
+        return {
+          id: r._id,
+          name: r.name,
+          faculty: r.faculty,
+          ...(r.university ? { university: r.university } : {}),
+          ...(r.universityId ? { universityId: r.universityId } : {}),
+          ...(r.status ? { status: r.status } : {}),
+          text: r.text,
+          ...(photoUrl ? { photoUrl } : {}),
+        };
+      }),
+    );
   },
 });
 
@@ -59,11 +69,12 @@ export const listApproved = query({
 export const listByState = adminQuery({
   args: { state: reviewState },
   handler: async (ctx, { state }) => {
-    return ctx.db
+    const rows = await ctx.db
       .query("reviews")
       .withIndex("by_state", (q) => q.eq("state", state))
       .order("desc")
       .take(200);
+    return Promise.all(rows.map(async (r) => ({ ...r, photoUrl: r.photoId ? await ctx.storage.getUrl(r.photoId) : null })));
   },
 });
 
@@ -84,8 +95,23 @@ export const remove = adminMutation({
   args: { id: v.id("reviews") },
   returns: v.null(),
   handler: async (ctx, { id }) => {
-    if (!(await ctx.db.get(id))) throw new ConvexError("Părerea nu mai există.");
+    const review = await ctx.db.get(id);
+    if (!review) throw new ConvexError("Părerea nu mai există.");
+    if (review.photoId) await ctx.storage.delete(review.photoId);
     await ctx.db.delete(id);
+    return null;
+  },
+});
+
+/** Deletes only the photo of a review (for example when it is not a real face); the opinion stays. Administrators only. */
+export const removePhoto = adminMutation({
+  args: { id: v.id("reviews") },
+  returns: v.null(),
+  handler: async (ctx, { id }) => {
+    const review = await ctx.db.get(id);
+    if (!review) throw new ConvexError("Părerea nu mai există.");
+    if (review.photoId) await ctx.storage.delete(review.photoId);
+    await ctx.db.patch(id, { photoId: undefined, photoConsent: undefined });
     return null;
   },
 });
@@ -94,6 +120,7 @@ export const remove = adminMutation({
 async function insertChecked(
   ctx: MutationCtx,
   args: { name: string; faculty: string; university?: string; universityId?: string; status?: string; text: string; consent: boolean },
+  photoId?: Id<"_storage">,
 ) {
   const clean = (s: string) => s.trim().replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n");
   const name = clean(args.name);
@@ -116,6 +143,8 @@ async function insertChecked(
     ...(status ? { status } : {}),
     text,
     consent: true,
+    // A photo is stored only when its author ticked the separate "show my face" box.
+    ...(photoId ? { photoId, photoConsent: true } : {}),
     state: "pending",
     submittedAt: Date.now(),
   });
@@ -130,12 +159,12 @@ export const insertPending = internalMutation({
 
 /** Like insertPending, but counted against the hourly limit. Internal: called by the public form after the bot check. */
 export const insertLimited = internalMutation({
-  args: reviewFields,
+  args: { ...reviewFields, photoId: v.optional(v.id("_storage")) },
   returns: v.null(),
-  handler: async (ctx, args) => {
+  handler: async (ctx, { photoId, ...args }) => {
     const { ok } = await rateLimiter.limit(ctx, "submitReview");
     if (!ok) throw new ConvexError("Am primit foarte multe păreri în ultima oră. Te rugăm să încerci din nou mai târziu.");
-    await insertChecked(ctx, args);
+    await insertChecked(ctx, args, photoId);
     return null;
   },
 });
@@ -146,12 +175,26 @@ export const submit = action({
     ...reviewFields,
     token: v.string(), // Turnstile token from the form
     website: v.optional(v.string()), // hidden field that people never fill in; bots do
+    photo: v.optional(v.bytes()), // the cropped JPEG, stored only together with photoConsent
+    photoConsent: v.optional(v.boolean()), // the separate "show my face" box
   },
   returns: v.null(),
-  handler: async (ctx, { token, website, ...review }) => {
+  handler: async (ctx, { token, website, photo, photoConsent, ...review }) => {
     if (website) return null; // pretend it worked, store nothing
     await verifyTurnstile(token);
-    await ctx.runMutation(internal.reviews.insertLimited, review);
+    let photoId: Id<"_storage"> | undefined;
+    if (photo && photoConsent === true) {
+      const b = new Uint8Array(photo);
+      const jpeg = b.length > 3 && b[0] === 0xff && b[1] === 0xd8 && b[2] === 0xff;
+      if (!jpeg || b.length > PHOTO_MAX_BYTES) throw new ConvexError("Poza nu este bună. Alege altă poză sau trimite părerea fără poză.");
+      photoId = await ctx.storage.store(new Blob([photo], { type: "image/jpeg" }));
+    }
+    try {
+      await ctx.runMutation(internal.reviews.insertLimited, { ...review, ...(photoId ? { photoId } : {}) });
+    } catch (e) {
+      if (photoId) await ctx.storage.delete(photoId); // nothing is kept when the review is refused
+      throw e;
+    }
     return null;
   },
 });

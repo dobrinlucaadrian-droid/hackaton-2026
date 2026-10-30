@@ -102,7 +102,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/[lang]/admin/pareri  (1 files)
 
-- `page.tsx` (124) — Administration page (in the page language) for student opinions: the team reads what came through the form and approves, rejects or deletes it. Only administrators get any data.. Routes: /[lang]/admin/pareri. Exports: AdminReviewsPage
+- `page.tsx` (148) — Administration page (in the page language) for student opinions: the team reads what came through the form (with the photo, when there is one) and approves, rejects, deletes the photo or deletes the opinion. Only administrators get any data.. Routes: /[lang]/admin/pareri. Exports: AdminReviewsPage
 
 ### apps/web/app/[lang]/admin/statistici  (1 files)
 
@@ -171,7 +171,7 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/app/[lang]/studenti/parere  (2 files)
 
 - `layout.tsx` (13) — The opinion form's title in the browser tab, in the page language (the page itself runs in the browser).. Exports: generateMetadata, Layout
-- `page.tsx` (140) — Public form (in the page language) where a student writes an opinion about their faculty. No account needed; the opinion appears only after the team approves it.. Routes: /[lang]/studenti/parere. Exports: ReviewFormPage
+- `page.tsx` (178) — Public form (in the page language) where a student writes an opinion about their faculty. No account needed; the opinion appears only after the team approves it.. Routes: /[lang]/studenti/parere. Exports: ReviewFormPage
 
 ### apps/web/app/[lang]/surse  (1 files)
 
@@ -205,7 +205,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `robots.ts` (12) — Rules for search engines (/robots.txt): on the live site, everything public may be indexed (in both languages) except personal pages; test copies of the site are never indexed.. Exports: robots
 - `sitemap.ts` (33) — The list of every public page for search engines (/sitemap.xml): the main pages, every university and faculty sheet, every country guide and study category, with the English address (/en/...) next to the Romanian one wherever the page exists in English.. Exports: sitemap
 
-### apps/web/components  (48 files)
+### apps/web/components  (49 files)
 
 - `ActivitiesStep.tsx` (234) — Quiz step "Ce ai făcut până acum?" in the page language: add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
 - `ActivitiesSummary.tsx` (36) — Read-only list (in the page language) of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
@@ -229,6 +229,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `NavBubbles.tsx` (38) — The big buttons on the home page (Specializări, Universități, Chestionar, Studenți, Ghiduri pe țări), drawn as little clouds, in the page language.. Exports: NavBubbles
 - `NavLinks.tsx` (63) — Header navigation links with the current page highlighted (centred on phones), the RO / EN language switch; signed-in visitors also get "Contul meu" (signing in starts from the home page).. Exports: NavLinks
 - `OfficialPrograms.tsx` (17) — On a university sheet outside Romania: every bachelor programme of the institution from its country's official dataset, read from the database (those lists are too large to ship with the pages). Romanian sheets render the same list on the server, from the catalogue file.. Exports: OfficialPrograms
+- `PhotoPicker.tsx` (135) — Optional face photo on the opinion form (in the page language): the student picks a picture, moves and zooms it inside the same circle the site shows, and keeps a small square JPEG of exactly that view.. Exports: PhotoPicker
 - `ProgramGroups.tsx` (76) — The list of an institution's bachelor programmes, grouped by faculty (or by field when the source has no faculties). Plain markup, so a page can render it on the server; the page language comes in as `lang`.. Exports: ProgramGroups
 - `ProgramRow.tsx` (98) — One bachelor programme from the catalogue, as a compact row: name and the small facts its source gives (language, study form, years, places, status) and, for Romania, the last admission average with its official source.. Exports: FORM_LABEL, ProgramRow
 - `ProgramSearch.tsx` (104) — Search over the bachelor programmes of the catalogue: country, free text, study domain and city; the state lives in the URL so links and Back work.. Exports: ProgramSearch
@@ -239,15 +240,14 @@ _Open only the files listed here; a file's description is its first comment line
 - `Shell.tsx` (48) — Page frame shared by all screens: header with the FindMyUni logo, a centered content column and a footer with the privacy link, in the page language.. Exports: Shell, Notice
 - `SignInForm.tsx` (291) — The account form, in the page language, shared by the account window and the sign-in page: sign in with username and password, make an account (username, full name, email, password, then the 6-digit code from the email) and reset a forgotten password with a code.. Exports: SignInForm
 - `SpecializationsBrowser.tsx` (88) — /specializari body: a text filter over all categories, domains and specializations (in the page language); without text it shows the category tiles.. Exports: SpecializationsBrowser
-- `StudentCard.tsx` (41) — One student opinion: photo (or initial), name, faculty and their own words. Used on the students page and on university sheets; the opinion stays in its original words, only the photo label is in the page language.. Exports: StudentCard
+- `StudentCard.tsx` (51) — One student opinion: photo (or initial), name, faculty and their own words. Used on the students page and on university sheets; the opinion stays in its original words, only the photo label is in the page language.. Exports: StudentCard
 - `StudentVoices.tsx` (176) — Student opinions with a search box: type a faculty or university and see every opinion we have from there (the opinions keep their original words; the page around them is in the page language).. Exports: StudentVoices
 - `Turnstile.tsx` (40) — Cloudflare Turnstile bot check (in the page language): shows the widget and reports its token; the token is verified on the server before anything is stored.. Exports: Turnstile
 - `UniversityBadges.tsx` (25) — Small coloured badges for a university's prestige and budget level, shared by result cards and the profile sheet (in the page language).. Exports: PrestigeBadge, BudgetBadge
 - `UniversityCard.tsx` (78) — Compact university result card: name, place, badges, three short facts, whether we have student opinions, a heart for the favourites and a link to the full sheet (the whole card is clickable, the heart sits above it).. Exports: UniversityCard
 - `UniversityDomains.tsx` (89) — "Ce poți studia aici" on a university sheet: tapping a domain opens, on the same page, its specializations and the subjects per year.. Exports: UniversityDomains
 - `UniversityList.tsx` (53) — Labelled list of the first 3 universities with links, then a "Vezi toate (N)" link to the full search.. Exports: UniversityList
-- `UniversityOpinions.tsx` (34) — "Ce spun studenții" on a university sheet: the opinions about this university, including approved ones from the database. Renders nothing when there are none.. Exports: UniversityOpinions
-- … +8 more
+- … +9 more
 
 ### apps/web/convex/_generated  (5 files)
 
@@ -259,7 +259,7 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/convex  (27 files)
 
-- `access.test.ts` (219) — @vitest-environment edge-runtime
+- `access.test.ts` (239) — @vitest-environment edge-runtime
 - `access.ts` (36) — Shared access rules: every function that needs a signed-in user or an administrator is built from these wrappers, so the check cannot be forgotten. Administrators also need the email code of convex/adminUnlock.ts.. Exports: userQuery, userMutation, adminQuery, adminMutation
 - `account.test.ts` (82) — @vitest-environment edge-runtime
 - `account.ts` (105) — The signed-in user's own account: who they are (username, name and email), a copy of everything saved about them, whether email codes can be sent, and deleting the account with everything saved in it.. Exports: me, usernameFree, setName, signInMethods, remove, exportMine
@@ -280,9 +280,9 @@ _Open only the files listed here; a file's description is its first comment line
 - `http.ts` (9) — HTTP routes of the Convex backend: only the ones Convex Auth needs for sign-in.
 - `results.ts` (77) — A student's saved questionnaire result: each signed-in user can save, read and delete only their own.. Exports: mine, save, remove
 - `retention.test.ts` (82) — @vitest-environment edge-runtime
-- `retention.ts` (103) — How long the site keeps each kind of data, and the daily clean-up that deletes what is older (GDPR storage limitation). The periods are the team's choice and are written on the privacy page; change them only together.. Exports: KEEP, deleteUserEverywhere, cleanup
-- `reviews.ts` (158) — Student reviews: anyone can read the approved ones and send a new one through the checked public form; only administrators see the queue, approve, reject or delete.. Exports: LIMITS, listApproved, listByState, moderate, remove, insertPending, insertLimited, submit
-- `schema.ts` (150) — Database tables for FindMyUni: users (from Convex Auth, plus a username and a server-written role), saved questionnaire results, favourite universities, student reviews, the catalogue of institutions and programmes, and anonymous usage statistics.. Exports: reviewState
+- `retention.ts` (105) — How long the site keeps each kind of data, and the daily clean-up that deletes what is older (GDPR storage limitation). The periods are the team's choice and are written on the privacy page; change them only together.. Exports: KEEP, deleteUserEverywhere, cleanup
+- `reviews.ts` (201) — Student reviews: anyone can read the approved ones and send a new one (optionally with a photo of their face) through the checked public form; only administrators see the queue, approve, reject, remove a photo or delete.. Exports: LIMITS, PHOTO_MAX_BYTES, listApproved, listByState, moderate, remove, removePhoto, insertPending, …
+- `schema.ts` (151) — Database tables for FindMyUni: users (from Convex Auth, plus a username and a server-written role), saved questionnaire results, favourite universities, student reviews, the catalogue of institutions and programmes, and anonymous usage statistics.. Exports: reviewState
 - `tsconfig.json` (26) — JSON (invalid)
 - `turnstile.ts` (20) — Checks a Cloudflare Turnstile token (the "I am not a robot" box) with Cloudflare, on the server. Used by the review form, the sign-up and the forgotten-password step.. Exports: verifyTurnstile
 - `users.ts` (14) — Server-only lookups by username, used by the sign-in code: the email behind a username never leaves the server.. Exports: emailOfUsername
@@ -372,7 +372,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `catalog.test.ts` (135) — Tests the programme catalogue files: every country follows the shared contract, the summary matches the files, and Romania matches the official list.
 - `catalog.ts` (26) — The per-country summary of the programme catalogue (counts, cities, sources), small enough to ship to the browser; the programmes themselves stay in the database.. Exports: catalogCountries, catalogTotals, SCHOOL_PROGRAMS, catalogCountryOfSheet, catalogSheetIds
 - `cities.ts` (16) — Romanian cities that have at least one university sheet, the ones with most universities first. A small generated list (scripts/data/sheets-index.mjs), so the questionnaire does not load the university data.. Exports: romanianCities, cityList
-- `csp.test.ts` (38) — Tests the Content-Security-Policy builder: scripts only with the nonce, the database and the bot check allowed, nothing else.
+- `csp.test.ts` (42) — Tests the Content-Security-Policy builder: scripts only with the nonce, the database and the bot check allowed, nothing else.
 - `csp.ts` (34) — Builds the Content-Security-Policy header: the list of places the browser may load scripts, styles, images and data from.. Exports: buildCsp
 - `curricula.test.ts` (61) — Tests the curricula data: every plan belongs to a real domain, covers its years in order and links to an official web page.
 - `curricula.ts` (18) — Curricula data: for each study domain one official "plan de învățământ" (subjects per year), and for Romanian universities the official page with their curricula.. Exports: curricula, curriculumLinks, curriculumFor, curriculumLinkFor
@@ -399,7 +399,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `seo.test.ts` (46) — Tests the search-engine helpers: descriptions are trimmed at a word, and the sitemap lists every public sheet once, on the official address, never a personal page.
 - `seo.ts` (11) — The site's one official address and a helper that trims a text to the length search engines show under a result.. Exports: SITE_URL, clip
 - `serverMessages.test.ts` (19) — Tests that server messages are translated on English pages and left alone in Romanian.
-- `serverMessages.ts` (51) — English versions of the Romanian messages the Convex functions send to the forms: serverMessage(text, lang) returns the English text on English pages and the original otherwise.. Exports: serverMessage
+- `serverMessages.ts` (52) — English versions of the Romanian messages the Convex functions send to the forms: serverMessage(text, lang) returns the English text on English pages and the original otherwise.. Exports: serverMessage
 - `session.ts` (117) — Keeps the student's answers (and optional activities with photos) in sessionStorage between pages (safe on the server).. Exports: MAX_CITIES, loadDraft, saveDraft, clearDraft, toAnswers, shrinkImage
 - `sheets.ts` (11) — The full university sheets, with all their long texts. Large: import it only from server code (the university page) and from tests, never from a component that runs in the browser — those use lib/universities.ts.. Exports: universities, universityById
 - `suggest.test.ts` (40) — Tests the search suggestions: they start at 2 letters, ignore diacritics, put places first and lead universities to their sheets.

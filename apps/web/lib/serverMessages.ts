@@ -30,6 +30,7 @@ const EN: Record<string, string> = {
   "Codul a expirat sau nu a fost cerut. Cere un cod nou.": "The code has expired or was not requested. Ask for a new code.",
   "Prea multe coduri greșite. Cere un cod nou.": "Too many wrong codes. Ask for a new code.",
   "Codul nu este corect.": "The code is not correct.",
+  "Poza nu este bună. Alege altă poză sau trimite părerea fără poză.": "The photo is not right. Choose another photo or send your opinion without one.",
 };
 
 const PATTERNS: [RegExp, (m: RegExpMatchArray) => string][] = [

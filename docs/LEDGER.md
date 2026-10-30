@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-10-30 13:00 — poză opțională la părerile studenților
+- Cerut: la formularul de păreri să se poată pune o poză (opțional), cu previzualizare a centrării, și la final o fereastră în care omul bifează că e de acord să i se afișeze fața. Pilotul a ales: poza se mută și se mărește în cerc; fără bifă părerea pleacă fără poză; adminul vede poza și o poate șterge separat; se actualizează pagina de confidențialitate
+- Făcut: componenta `PhotoPicker` (alegi poza, o tragi și o mărești într-un cerc de aceeași formă ca pe site, păstrezi un JPEG pătrat de 400×400 exact cu ce se vede); la „Trimite”, dacă există poză, apare fereastra „Îți arătăm și fața?” — fără bifă poza nu pleacă de pe dispozitiv. Serverul primește poza doar cu acordul, verifică să fie JPEG sub 300 KB, o salvează în stocarea Convex și o șterge dacă părerea e refuzată. Poza apare pe cardul părerii aprobate; în admin se vede poza și butonul „Șterge doar poza”; poza se șterge odată cu părerea (manual sau la curățenia automată). Pagina de confidențialitate spune ce se întâmplă cu poza (actualizată 30 octombrie 2026). Imaginile de la baza de date au voie în politica de securitate (CSP). Test nou pentru poză și ștergerea ei
+- Fișiere: `apps/web/components/PhotoPicker.tsx` (nou), `apps/web/app/[lang]/studenti/parere/page.tsx`, `apps/web/app/[lang]/admin/pareri/page.tsx`, `apps/web/components/StudentCard.tsx`, `apps/web/lib/useTestimonials.ts`, `apps/web/lib/types.ts`, `apps/web/lib/csp.ts`, `apps/web/lib/csp.test.ts`, `apps/web/lib/serverMessages.ts`, `apps/web/convex/reviews.ts`, `apps/web/convex/schema.ts`, `apps/web/convex/retention.ts`, `apps/web/convex/access.test.ts`, `apps/web/app/[lang]/confidentialitate/page.tsx`
+- Poartă: vezi rularea de după schimbare. Văzut în browser (local, baza de test): alegerea și centrarea pozei, pe calculator și pe telefon; fereastra de acord; trimiterea cu poză (salvată cu acordul în baza de test); poza se încarcă de la baza de date fără blocaj. NEVERIFICAT: cardul cu poză pe pagina „Studenți” după aprobare și butonul „Șterge doar poza” în admin (cer conectarea ca administrator)
+- Urmează: Pilotul aprobă din admin părerea de test „Test Poza” (pe baza de test) sau o încearcă după publicare; publicare doar la „salvează și publică” (trebuie și Convex prod, s-au schimbat funcțiile)
+
 ### 2026-10-30 12:00 — verificare completă a site-ului și 3 reparații mici
 - Cerut: site fără buguri; după verificare, Pilotul a cerut reparația celor 3 probleme găsite
 - Făcut: verificate toate cele 3.039 de pagini de pe findmyuni.ro (toate merg), linkurile din paginile în engleză, chestionarul complet și căutarea cu adrese ciudate. Reparat: (1) nu mai apare fereastra „Sigur pleci?” din cauza contorului de vizite; (2) formularul de păreri resetează căsuța anti-robot după o trimitere eșuată, ca să poți trimite din nou fără să reîncarci; (3) erorile de la favorite apar în engleză pe paginile în engleză
@@ -1194,6 +1201,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-30 03:31 `75179fc` fix: no leave-site prompt, reset robot check after failed review, translate favourite errors
 - 2026-10-29 02:30 `d3935a0` feat: keep the admin pages unlocked for 1 hour instead of 8
 - 2026-10-28 05:20 `120c301` docs: phone check of the sign-in link and the Esade programmes
 - 2026-10-28 05:08 `905a494` feat: put the forgotten-password link right under the password field
@@ -1223,5 +1231,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-23 14:03 `8e52be8` feat: add 147 university sheets with official sources and photos
 - 2026-10-23 12:13 `60a3d62` feat: favourite heart on the university search cards
 - 2026-10-23 12:06 `c833f37` feat: search suggestions, phone menu, accessibility fixes, page titles
-- 2026-10-23 11:39 `23ff2fc` feat: keep the university search when coming back from a sheet
 <!-- commits:end -->

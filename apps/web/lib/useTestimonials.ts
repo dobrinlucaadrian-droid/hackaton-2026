@@ -20,6 +20,7 @@ export function useTestimonials(): Testimonial[] {
         ...(r.universityId ? { universityId: r.universityId } : {}),
         ...(r.status ? { status: r.status } : {}),
         text: r.text,
+        ...(r.photoUrl ? { photo: r.photoUrl } : {}),
       })),
     ],
     [approved],

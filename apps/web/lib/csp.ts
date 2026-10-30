@@ -17,8 +17,8 @@ export function buildCsp(nonce: string, options: { convexUrl?: string; dev?: boo
     ["script-src", ["'self'", `'nonce-${nonce}'`, "'strict-dynamic'", ...(options.dev ? ["'unsafe-eval'"] : [])]],
     // Inline style attributes are used for progress bars and animations; no user text ever reaches a style.
     ["style-src", ["'self'", "'unsafe-inline'"]],
-    // data: and blob: are the diploma photos a student picks, which never leave the device.
-    ["img-src", ["'self'", "data:", "blob:"]],
+    // data: and blob: are photos a student picks on the device; the database host serves the approved review photos.
+    ["img-src", ["'self'", "data:", "blob:", ...convex.filter((h) => h.startsWith("https:"))]],
     ["font-src", ["'self'"]],
     ["connect-src", ["'self'", ...convex, turnstile]],
     ["frame-src", [turnstile]],

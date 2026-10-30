@@ -139,7 +139,8 @@ export default defineSchema({
     universityId: v.optional(v.string()), // id of a university that has a sheet in the app
     status: v.optional(v.string()), // e.g. "absolventă", "anul 2"
     text: v.string(),
-    photoId: v.optional(v.id("_storage")),
+    photoId: v.optional(v.id("_storage")), // a cropped photo of the author's face, optional
+    photoConsent: v.optional(v.boolean()), // the author ticked the separate box to show their face
     consent: v.boolean(), // the author agreed to publication
     state: reviewState,
     submittedAt: v.number(),

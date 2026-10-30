@@ -21,6 +21,10 @@ describe("buildCsp", () => {
     expect(part(buildCsp("n", { convexUrl: "not a url" }), "connect-src")).toBe("connect-src 'self' https://challenges.cloudflare.com");
   });
 
+  it("allows images only from the site, the device and the Convex database", () => {
+    expect(part(csp, "img-src")).toBe("img-src 'self' data: blob: https://happy-animal-1.convex.cloud");
+  });
+
   it("asks the browser to upgrade to the secure connection only when the site is already on one", () => {
     expect(csp).not.toContain("upgrade-insecure-requests");
     expect(buildCsp("n", { https: true })).toContain("upgrade-insecure-requests");

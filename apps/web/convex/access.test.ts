@@ -101,6 +101,26 @@ describe("reviews", () => {
     expect(await t.query(api.reviews.listApproved, {})).toEqual([]);
   });
 
+  it("a photo shows on the approved opinion; only an administrator can delete it, and the opinion stays", async () => {
+    const { t, alice, admin, as } = await setup();
+    const id = await t.mutation(internal.reviews.insertPending, REVIEW);
+    const photoId = await t.run(async (ctx) => {
+      const p = await ctx.storage.store(new Blob(["jpeg"], { type: "image/jpeg" }));
+      await ctx.db.patch(id, { photoId: p, photoConsent: true });
+      return p;
+    });
+    await as(admin).mutation(api.reviews.moderate, { id, state: "approved" });
+    expect((await t.query(api.reviews.listApproved, {}))[0].photoUrl).toBeTruthy();
+
+    await expect(t.mutation(api.reviews.removePhoto, { id })).rejects.toThrow("Trebuie să fii conectat");
+    await expect(as(alice).mutation(api.reviews.removePhoto, { id })).rejects.toThrow("Nu ai drept de administrator");
+    await as(admin).mutation(api.reviews.removePhoto, { id });
+    const shown = await t.query(api.reviews.listApproved, {});
+    expect(shown).toHaveLength(1);
+    expect(shown[0].photoUrl).toBeUndefined();
+    expect(await t.run((ctx) => ctx.storage.getUrl(photoId))).toBeNull();
+  });
+
   it("the role cannot be faked: a user with no role in the database is refused", async () => {
     const { t, bob } = await setup();
     const fake = t.withIdentity({ subject: `${bob}|s`, role: "admin", name: "admin" });

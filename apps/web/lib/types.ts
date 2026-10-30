@@ -187,7 +187,7 @@ export type Testimonial = {
   university?: string; // used to show people from the same university side by side; defaults to `faculty`
   universityId?: string; // set on opinions from the database when the university has a sheet in the app
   status?: string; // optional, e.g. "studentă în anul 3", "absolvent"
-  photo?: string; // optional path under public/, shown with the person's consent
+  photo?: string; // optional path under public/ (or the database address of an approved opinion's photo), shown with the person's consent
   text: string; // their own words; paragraphs separated by a blank line
 };
 

@@ -9,7 +9,17 @@ export function StudentCard({ t, as: Tag = "li" }: { t: Testimonial; as?: "li" |
   return (
     <Tag className="rounded-3xl bg-card p-6 shadow-sm ring-1 ring-line">
       <div className="flex items-center gap-4">
-        {t.photo ? (
+        {t.photo?.startsWith("https://") ? (
+          // A photo sent with an approved opinion, served by the database (already a small square).
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={t.photo}
+            alt={tr(`Poză: ${t.name}`, `Photo: ${t.name}`)}
+            width={320}
+            height={320}
+            className="h-20 w-20 shrink-0 rounded-full object-cover ring-2 ring-teal"
+          />
+        ) : t.photo ? (
           <Image
             src={t.photo}
             alt={tr(`Poză: ${t.name}`, `Photo: ${t.name}`)}

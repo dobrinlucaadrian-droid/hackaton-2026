@@ -6,6 +6,7 @@ import { useCallback, useState } from "react";
 import { useLang, useT } from "@/components/LangProvider";
 import Link from "@/components/LocalLink";
 import { Shell } from "@/components/Shell";
+import { PhotoPicker, type Photo } from "@/components/PhotoPicker";
 import { Turnstile } from "@/components/Turnstile";
 import { OTHER, UniversityPicker } from "@/components/UniversityPicker";
 import { api } from "@/convex/_generated/api";
@@ -31,6 +32,9 @@ export default function ReviewFormPage() {
   const [website, setWebsite] = useState("");
   const [token, setToken] = useState("");
   const [robotKey, setRobotKey] = useState(0); // a token works once, so the box is reset after a failed send
+  const [photo, setPhoto] = useState<Photo | null>(null);
+  const [askFace, setAskFace] = useState(false); // the last window: may we show your face?
+  const [faceOk, setFaceOk] = useState(false);
   const [state, setState] = useState<"idle" | "sending" | "sent">("idle");
   const [error, setError] = useState<string | null>(null);
   const onToken = useCallback((tok: string) => setToken(tok), []);
@@ -42,9 +46,21 @@ export default function ReviewFormPage() {
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!canSend) return;
+    if (photo) {
+      setFaceOk(false);
+      setAskFace(true);
+      return;
+    }
+    await send(false);
+  }
+
+  // Without the "show my face" tick the photo never leaves the device.
+  async function send(withPhoto: boolean) {
+    setAskFace(false);
     setState("sending");
     setError(null);
     try {
+      const picture = withPhoto && photo ? { photo: await photo.blob.arrayBuffer(), photoConsent: true } : {};
       await submit({
         name,
         faculty,
@@ -55,6 +71,7 @@ export default function ReviewFormPage() {
         consent,
         token,
         ...(website ? { website } : {}),
+        ...picture,
       });
       setState("sent");
     } catch (err) {
@@ -117,6 +134,7 @@ export default function ReviewFormPage() {
             {textLen < LIMITS.textMin ? t(`Mai scrie cel puțin ${LIMITS.textMin - textLen} caractere.`, `Write at least ${LIMITS.textMin - textLen} more characters.`) : t(`${textLen} din ${LIMITS.textMax} caractere.`, `${textLen} of ${LIMITS.textMax} characters.`)}
           </p>
         </div>
+        <PhotoPicker photo={photo} onChange={setPhoto} />
         {/* Hidden from people; bots fill it in and are ignored. */}
         <div aria-hidden className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
           <label htmlFor="p-website">Website</label>
@@ -134,6 +152,26 @@ export default function ReviewFormPage() {
           {state === "sending" ? t("Se trimite...", "Sending...") : t("Trimite părerea", "Send your opinion")}
         </button>
       </form>
+      {askFace && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-ink/50 p-4" onClick={() => setAskFace(false)}>
+          <div role="dialog" aria-modal="true" aria-labelledby="p-face-title" className="w-full max-w-md rounded-3xl bg-card p-6 shadow-xl" onClick={(e) => e.stopPropagation()}>
+            <h2 id="p-face-title" className="text-2xl font-black tracking-tight text-ink">{t("Îți arătăm și fața?", "Shall we show your face too?")}</h2>
+            {/* eslint-disable-next-line @next/next/no-img-element -- a local preview of the cropped photo */}
+            {photo && <img src={photo.url} alt="" className="mx-auto mt-4 h-24 w-24 rounded-full object-cover ring-2 ring-teal" />}
+            <label className="mt-4 flex cursor-pointer items-start gap-3 rounded-2xl bg-paper p-4 ring-1 ring-line">
+              <input type="checkbox" checked={faceOk} onChange={(e) => setFaceOk(e.target.checked)} className="mt-1 h-5 w-5 shrink-0 accent-primary" />
+              <span className="text-sm text-ink">{t("Sunt de acord ca poza mea, în care mi se vede fața, să fie afișată pe FindMyUni lângă părerea mea. Pot cere oricând să fie ștearsă.", "I agree that my photo, which shows my face, is shown on FindMyUni next to my opinion. I can ask for it to be deleted at any time.")}</span>
+            </label>
+            <p className="mt-2 text-xs text-ink-soft">{faceOk ? t("Poza apare doar după ce echipa aprobă părerea.", "The photo appears only after the team approves the opinion.") : t("Dacă nu bifezi, părerea se trimite fără poză.", "If you do not tick it, your opinion is sent without the photo.")}</p>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <button type="button" autoFocus onClick={() => void send(faceOk)} className="min-h-12 flex-1 rounded-2xl bg-primary px-6 py-3 font-black text-white shadow-lg shadow-primary/30 hover:bg-primary-dark">
+                {faceOk ? t("Trimite cu poză", "Send with photo") : t("Trimite fără poză", "Send without photo")}
+              </button>
+              <button type="button" onClick={() => setAskFace(false)} className="min-h-12 rounded-2xl px-4 font-bold text-ink-soft underline underline-offset-2">{t("Înapoi", "Back")}</button>
+            </div>
+          </div>
+        </div>
+      )}
     </Shell>
   );
 }

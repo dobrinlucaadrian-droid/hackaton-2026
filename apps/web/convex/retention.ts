@@ -62,6 +62,7 @@ export const cleanup = internalMutation({
     // Rejected reviews, counted from the decision; pending ones nobody moderated, counted from when they came.
     for (const r of await ctx.db.query("reviews").withIndex("by_state", (q) => q.eq("state", "rejected")).take(BATCH)) {
       if ((r.moderatedAt ?? r.submittedAt) < now - KEEP.rejectedReview * DAY) {
+        if (r.photoId) await ctx.storage.delete(r.photoId);
         await ctx.db.delete(r._id);
         reviews++;
       }
@@ -70,6 +71,7 @@ export const cleanup = internalMutation({
       .query("reviews")
       .withIndex("by_state", (q) => q.eq("state", "pending").lt("submittedAt", now - KEEP.pendingReview * DAY))
       .take(BATCH)) {
+      if (r.photoId) await ctx.storage.delete(r.photoId);
       await ctx.db.delete(r._id);
       reviews++;
     }

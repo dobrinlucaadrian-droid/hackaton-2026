@@ -1,5 +1,5 @@
 "use client";
-// Administration page (in the page language) for student opinions: the team reads what came through the form and approves, rejects or deletes it. Only administrators get any data.
+// Administration page (in the page language) for student opinions: the team reads what came through the form (with the photo, when there is one) and approves, rejects, deletes the photo or deletes the opinion. Only administrators get any data.
 import { useConvexAuth, useMutation, useQuery } from "convex/react";
 import { useState } from "react";
 import { AdminGate } from "@/components/AdminGate";
@@ -17,6 +17,7 @@ function Queue({ state }: { state: State }) {
   const rows = useQuery(api.reviews.listByState, { state });
   const moderate = useMutation(api.reviews.moderate);
   const remove = useMutation(api.reviews.remove);
+  const removePhoto = useMutation(api.reviews.removePhoto);
   const [busy, setBusy] = useState<Id<"reviews"> | null>(null);
 
   async function set(id: Id<"reviews">, next: "approved" | "rejected") {
@@ -39,12 +40,35 @@ function Queue({ state }: { state: State }) {
     }
   }
 
+  // The opinion stays; only its photo is deleted (for example when it is not a real face).
+  async function delPhoto(id: Id<"reviews">) {
+    if (!window.confirm(t("Ștergi poza? Părerea rămâne, fără poză.", "Delete the photo? The opinion stays, without it."))) return;
+    setBusy(id);
+    try {
+      await removePhoto({ id });
+    } finally {
+      setBusy(null);
+    }
+  }
+
   if (rows === undefined) return <p className="mt-6 text-ink-soft">{t("Se încarcă...", "Loading...")}</p>;
   if (rows.length === 0) return <p className="mt-6 rounded-2xl bg-card p-6 text-ink-soft ring-1 ring-line">{t("Nu este nimic aici.", "There is nothing here.")}</p>;
   return (
     <ul className="mt-6 space-y-4" data-queue={state}>
       {rows.map((r) => (
         <li key={r._id} className="rounded-3xl bg-card p-6 shadow-sm ring-1 ring-line">
+          {r.photoUrl && (
+            <div className="mb-3 flex items-center gap-3">
+              {/* eslint-disable-next-line @next/next/no-img-element -- the photo sent with the opinion */}
+              <img src={r.photoUrl} alt={t(`Poza trimisă de ${r.name}`, `Photo sent by ${r.name}`)} className="h-20 w-20 rounded-full object-cover ring-2 ring-teal" />
+              <div>
+                <p className="text-xs text-ink-soft">{t("A bifat că e de acord să i se afișeze fața.", "Ticked that they agree to show their face.")}</p>
+                <button type="button" disabled={busy === r._id} onClick={() => void delPhoto(r._id)} className="mt-1 text-sm font-bold text-primary underline underline-offset-2 disabled:opacity-50">
+                  {t("Șterge doar poza", "Delete only the photo")}
+                </button>
+              </div>
+            </div>
+          )}
           <p className="text-xl font-extrabold text-ink">{r.name}</p>
           <p className="mt-1 text-sm font-bold text-primary">
             {r.faculty}
