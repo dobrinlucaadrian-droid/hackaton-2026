@@ -37,3 +37,6 @@ Thumbs.db
 
 # Deploy
 .vercel/
+
+# Third-party design skill (~39 MB, kept only on this computer; source: github.com/Leonxlnx/taste-skill)
+.claude/skills/design-taste-frontend/

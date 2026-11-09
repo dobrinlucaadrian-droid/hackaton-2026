@@ -86,12 +86,63 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT (gate complet); NEVERIFICAT: ecranul de admin în browser (cere conectarea ca administrator)
 - Urmează: publicare pe findmyuni.ro (Convex prod + Vercel) doar când echipa spune „salvează și publică”
 
+### 2026-11-09 — designul desenat pe site, pasul 1: baza și pagina principală
+- Cerut: mutăm designul desenat pe site, dar păstrăm designul vechi ca să ne putem întoarce.
+- Făcut: designul vechi e salvat ca eticheta git `design-vechi` (commit b8d1b9a) și rămâne neatins pe ramura `production`; lucrul nou e pe ramura `design-desenat`. Baza: fonturile Bricolage Grotesque și Caveat, clasele de desen (contur de cerneală, notă scrisă de mână, carduri cu umbră plată), desene mici pe fundal în loc de puncte, meniul și subsolul (cu „De unde sunt datele”). Pagina principală: scena cu drumul de la liceu la universitate, butoanele de cont cu iconițe desenate și „merge și fără cont!”, drumul punctat și telefonul înclinat cu desene în jur (TikTok/Instagram la locul lor).
+- Fișiere: apps/web/app/[lang]/layout.tsx, apps/web/app/globals.css, apps/web/app/[lang]/page.tsx, apps/web/components/{Shell,Doodles,HomeScene,NavLinks,WelcomeActions,SocialPhone}.tsx
+- Poartă: TRECUT (build, teste, aplicația pornește); pagina principală verificată în browser la 1440 și 390 px, fără erori în consolă
+- Urmează: celelalte pagini, pe rând (Specializări, Universități, fișele, Ghiduri, Chestionar, Studenți, contul și restul), cu poarta după fiecare.
+
+### 2026-11-09 — machete desenate pentru restul paginilor
+- Cerut: același design pe tot site-ul, ca echipa să fie sigură înainte de a-l pune pe site.
+- Făcut: încă 11 machete în același stil (făcute de trei ajutoare după un brief comun, `BRIEF.md`, apoi verificate de mine): o categorie (Sănătate), fișa Facultății de Drept UBB, ghidul Olanda, căutarea de programe, conectare și cont nou, Contul meu, Datele mele, formularul de păreri, De unde sunt datele, Confidențialitate, paginile de eroare. Date și texte din sursele site-ului; valorile personale sunt marcate „exemplu”. Toate legate din meniu și din subsol; verificate la 1440 și 390 px, nimic nu iese din ecran. Nu am făcut paginile de administrare.
+- Fișiere: .impeccable/mocks/home2/ (nesalvat în git)
+- Poartă: NEVERIFICAT (site-ul nu s-a schimbat)
+- Urmează: echipa le vede; dacă e convinsă, mutăm designul pe site pas cu pas (pe production, cu poarta după fiecare pas, fără publicare fără acord).
+
+### 2026-11-09 — machete desenate pentru cele 5 pagini din meniu
+- Cerut: același stil desenat ca pagina principală, pentru restul paginilor; tot machete separate, nimic pe site.
+- Făcut: stil comun (`style.css`) și 8 ecrane legate între ele din meniu: Specializări (10 categorii desenate, „Ce îți place?”), Universități (căutare, filtre, carduri cu poze) și fișa UBB, Ghiduri (cărți poștale cu steaguri), Studenți (perete cu păreri reale, scurtate), Chestionar (început în 3 pași, o întrebare cu progresul ca un drum, rezultatul cu podium; procentele din rezultat sunt doar exemplu). Texte și date luate din datele site-ului. Verificate la 1440 și 390 px, nimic nu iese din ecran.
+- Fișiere: .impeccable/mocks/home2/ (nesalvat în git)
+- Poartă: NEVERIFICAT (site-ul nu s-a schimbat)
+- Urmează: echipa le vede (`node .impeccable/mocks/home2/serve.mjs` → http://127.0.0.1:5057) și spune ce schimbă.
+- Apoi (cerut de echipă): pe Specializări, cartonașele categoriilor sunt mici și joase (desen, nume, număr de domenii; fără descriere), 5 pe rând pe calculator (5 + 5), 2 pe telefon, centrate sub titlu; restul paginii a rămas ca înainte.
+
+### 2026-11-09 — verificarea de securitate a skill-urilor Impeccable și Taste
+- Cerut: scanare completă, pentru că prin pachete de skill-uri se pot instala viruși.
+- Făcut: programul descărcat de Impeccable (`~/.impeccable/bin/0.1.19/impeccable.exe`) are exact amprenta (SHA-256) a celui construit de GitHub Actions în release-ul oficial și e semnat valid (Renaissance Geek, Inc., certificat Microsoft); Windows Defender: nicio amenințare în el și în `.claude/skills`. În cele 160 de scripturi: nicio citire de parole/chei, nimic ascuns (eval, base64), adrese doar spre site-uri publice de poze, hărți și fonturi și spre calculatorul propriu; programe pornite doar Chrome, ffmpeg, node, taskkill. Setările și hook-urile Claude neschimbate. Risc rămas: modul `/impeccable live` poate porni Claude fără să ceară voie; nu îl folosim.
+- Fișiere: niciunul schimbat
+- Poartă: NEVERIFICAT (nu s-a schimbat cod)
+- Urmează: continuăm machetele pentru cele 5 pagini din meniu.
+
+### 2026-11-09 — a doua machetă: pagina principală desenată
+- Cerut: „Foaia de examen” nu a plăcut („arată urât”); altă idee, dar butoanele principale și telefonul cu TikTok/Instagram rămân unde sunt, cu mai multe desene.
+- Făcut: machetă nouă cu aceeași așezare ca site-ul de acum: sus titlul, textul și cele două butoane de cont, în dreapta o scenă desenată (elevul merge pe drum de la liceu la universitatea de pe deal, nori, soare, avion de hârtie, căciula aruncată); un drum punctat duce la „Urmărește-ne!”, cu telefonul înconjurat de desene (inimioare, bulă de chat, play, note muzicale). Verificată la 1440 și 390 px. Pornire: `node .impeccable/mocks/home2/serve.mjs` → http://127.0.0.1:5057
+- Fișiere: .impeccable/mocks/home2/ (nesalvat în git)
+- Poartă: NEVERIFICAT (site-ul nu s-a schimbat)
+- Urmează: părerea echipei.
+
+### 2026-11-09 — machetă nouă a paginii principale: „Foaia de examen”
+- Cerut: o idee de design originală (fără UNIT), cu aceleași culori; echipa m-a lăsat pe mine să aleg direcția.
+- Făcut: cu Impeccable: scris `PRODUCT.md` (ce e site-ul, confirmat de echipă), direcția trasă la sorți și aleasă „Foaia de examen” (pagina principală arată ca foaia de la Bac: „Testul la care nu poți pica”, prima întrebare reală bifabilă pe loc, corectura pe margine, Subiectul II căutarea, Subiectul III părerile reale). Machetă separată, verificată la 1440 și 390 de pixeli, trecută prin detectorul Impeccable (rămâne doar fundalul bej, păstrat intenționat pentru că e culoarea brandului).
+- Fișiere: PRODUCT.md, .impeccable/surfaces/ (planul direcției), .impeccable/mocks/home/ (macheta, nesalvată în git)
+- Poartă: NEVERIFICAT (site-ul nu s-a schimbat)
+- Urmează: echipa se uită la machetă; dacă o vrea, o mutăm pe site pas cu pas (întâi pagina principală).
+
+### 2026-11-08 — skill-uri de design: Impeccable și Taste
+- Cerut: instalarea celor două pachete de design din clipul de pe Instagram (Impeccable, Taste), ca designul să nu mai arate „făcut de AI”.
+- Făcut: citite înainte (SKILL.md, scripturile de descărcare și de rețea); copiate în `.claude/skills/impeccable` (pbakaus/impeccable, Apache-2.0) și `.claude/skills/design-taste-frontend` (Leonxlnx/taste-skill, MIT, ~39 MB cu poze și exemple; pus în `.gitignore`, rămâne doar pe calculatorul Pilotului, pentru că e mare și cuvântul „token” din fișierele lui de design declanșa alarma de parole a porții). Fără hook-ul automat al lui Impeccable; telemetria lui oprită în `.impeccable/config.json`. Impeccable își descarcă la prima folosire un program de pe GitHub (verificat cu sumă de control) în `~/.impeccable`.
+- Fișiere: .claude/skills/impeccable/, .claude/skills/design-taste-frontend/ (nesalvat în git), .impeccable/config.json, .gitignore
+- Poartă: TRECUT (site-ul nu s-a schimbat)
+- Urmează: refăcută macheta FindMyUni cu `/impeccable` (pagina principală), apoi echipa alege.
+
 ### 2026-10-28 17:00 — idei de design nou (amânat)
 - Cerut: un design nou, „modern și îndrăzneț”, cu aceleași culori; întâi biblioteci de pe GitHub și machete, nimic schimbat pe site.
 - Făcut: găsite shadcn/ui, lucide (iconițe), Magic UI; arătate machete: carduri rotunde (respins: „arată vibecodat”), colțuri drepte ziar/afiș (respins: „de pe vremea lui Ceaușescu”), pagină în stil Apple cu poze mari (nu a convins). Echipa a amânat decizia.
 - Fișiere: niciun fișier al site-ului.
 - Poartă: NEVERIFICAT (nu s-a schimbat cod)
 - Urmează: când echipa știe ce vrea, adusă o pagină reală care le place ca exemplu.
+- 2026-11-05: cerut „ca site-ul UNIT al lui MGK”. UNIT (băutura lui MGK666) nu are site, doar Instagram (@unitenergydrink); făcută o machetă FindMyUni în stilul lui (negru, litere groase înclinate, roșu, poze alb-negru), în afara proiectului. Așteaptă părerea echipei.
 
 ### 2026-10-28 16:00 — „Am uitat parola” lângă parolă
 - Cerut: butonul pentru parola uitată să se vadă; Pilotul credea că nu există
@@ -1245,6 +1296,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-10-30 22:05 `b8d1b9a` feat: phone on the left, follow-us text and buttons on the right
 - 2026-10-30 21:57 `4604195` feat: big TikTok and Instagram buttons beside the phone; footer keeps only the privacy link
 - 2026-10-30 21:50 `47afcb5` feat: follow-us phone with TikTok and Instagram instead of the home page clouds
 - 2026-10-30 21:36 `b61bab3` feat: TikTok and Instagram links in the footer
@@ -1274,5 +1326,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-25 03:12 `cfc7f98` feat: new drawings on the students and questionnaire pages
 - 2026-10-25 03:00 `a519dc1` feat: English-taught filter, multi-choice filters, empty-result help
 - 2026-10-24 23:30 `13518bf` feat: add drawings to the universities, guides and fields pages
-- 2026-10-24 22:08 `fcc2f62` feat: list the team's top Romanian universities first; fix Artifex fee
 <!-- commits:end -->
