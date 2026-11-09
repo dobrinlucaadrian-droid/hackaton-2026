@@ -37,7 +37,7 @@ export function NavLinks() {
                 prefetch
                 aria-current={on ? "page" : undefined}
                 className={`inline-flex min-h-11 items-center rounded-full px-3 text-sm font-bold transition sm:px-4 sm:text-base ${
-                  on ? "bg-primary text-white" : "text-ink-soft hover:bg-primary-tint hover:text-primary-dark"
+                  on ? "bg-primary text-white" : "text-ink hover:bg-primary-tint hover:text-primary-dark"
                 }`}
               >
                 {label}
@@ -51,7 +51,7 @@ export function NavLinks() {
             hrefLang={other}
             lang={other}
             aria-label={other === "en" ? "English version" : "Versiunea în română"}
-            className="inline-flex min-h-11 items-center rounded-full px-3 text-sm font-black text-primary ring-1 ring-primary/40 transition hover:bg-primary-tint"
+            className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full border-2 border-line px-3 text-sm font-extrabold text-ink transition hover:bg-primary-tint"
           >
             {other === "en" ? "EN" : "RO"}
           </Link>

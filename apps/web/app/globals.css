@@ -27,7 +27,8 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-sans: var(--font-bricolage), system-ui, sans-serif;
+  --font-hand: var(--font-caveat), cursive;
   --font-mono: var(--font-geist-mono);
 }
 
@@ -37,34 +38,20 @@ body {
   font-family: var(--font-sans);
 }
 
-/* Halftone dots fading in from two corners. */
-body::before,
-body::after {
-  content: "";
-  position: fixed;
-  z-index: -1;
-  width: min(80vw, 640px);
-  height: min(80vw, 640px);
-  pointer-events: none;
-  background-image: radial-gradient(circle, var(--color-primary) 1.3px, transparent 1.8px);
-  background-size: 14px 14px;
-  opacity: 0.22;
-}
-body::before {
-  top: 0;
-  left: 0;
-  mask-image: radial-gradient(circle at 0 0, #000, transparent 70%);
-}
-body::after {
-  right: 0;
-  bottom: 0;
-  mask-image: radial-gradient(circle at 100% 100%, #000, transparent 70%);
-}
+::selection { background: rgb(200 150 46 / 0.4); }
+input, textarea { caret-color: var(--color-primary); }
 
 :focus-visible {
   outline: 3px solid var(--color-primary);
   outline-offset: 2px;
 }
+
+/* The drawn look: ink outlines in every drawing, a hand-written note style, and outlined cards with a flat ink shadow. */
+.o { stroke: var(--color-ink); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+.hand { font-family: var(--font-hand); font-weight: 700; }
+.drawn { border: 3px solid var(--color-ink); box-shadow: 0 4px 0 var(--color-ink); }
+.drawn-link { transition: transform 0.2s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.2s; }
+.drawn-link:hover { transform: translateY(-4px) rotate(-0.6deg); box-shadow: 0 8px 0 var(--color-ink); }
 
 /* What-if sliders. */
 input[type="range"] {
@@ -115,12 +102,23 @@ input[type="range"] {
   animation-delay: var(--d, 0ms);
 }
 .bar-anim { transition: width 0.5s cubic-bezier(0.2, 0.7, 0.2, 1); }
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes drift {
+  from { transform: translateX(-14px); }
+  to { transform: translateX(14px); }
+}
+.bob { animation: bob 4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.drift { animation: drift 9s ease-in-out infinite alternate; }
+.walk { animation: bob 1.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
 .opt { transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease; }
 .opt:hover { transform: translateY(-2px) scale(1.01); box-shadow: 0 8px 20px -8px rgb(59 91 219 / 0.45); }
 .opt:active { transform: scale(0.97); }
 
 @media (prefers-reduced-motion: reduce) {
-  .rise, .slide-in, .float, .twinkle, .card-flash, .ring-anim, .confetti-piece, .opt, .bar-anim {
+  .rise, .slide-in, .float, .twinkle, .card-flash, .ring-anim, .confetti-piece, .opt, .bar-anim, .bob, .drift, .walk, .drawn-link {
     animation: none !important;
     transition: none !important;
   }

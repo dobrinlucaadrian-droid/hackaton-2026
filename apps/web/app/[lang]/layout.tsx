@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import { notFound } from "next/navigation";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bricolage_Grotesque, Caveat, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import { ConvexAuthNextjsServerProvider } from "@convex-dev/auth/nextjs/server";
 import { ConvexClientProvider } from "@/components/ConvexClientProvider";
@@ -12,8 +12,15 @@ import { WelcomeDialog } from "@/components/WelcomeDialog";
 import { hasLang, LANGS } from "@/lib/i18n";
 import { SITE_URL } from "@/lib/seo";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// The drawn look: Bricolage Grotesque for all text, Caveat for the small handwritten notes.
+const bricolage = Bricolage_Grotesque({
+  variable: "--font-bricolage",
+  subsets: ["latin", "latin-ext"],
+});
+
+const caveat = Caveat({
+  variable: "--font-caveat",
+  weight: ["700"],
   subsets: ["latin", "latin-ext"],
 });
 
@@ -60,7 +67,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
     <ConvexAuthNextjsServerProvider>
     <html
       lang={lang}
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${bricolage.variable} ${caveat.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">
         <LangProvider lang={lang}>

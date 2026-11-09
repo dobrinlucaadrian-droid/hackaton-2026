@@ -86,6 +86,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT (gate complet); NEVERIFICAT: ecranul de admin în browser (cere conectarea ca administrator)
 - Urmează: publicare pe findmyuni.ro (Convex prod + Vercel) doar când echipa spune „salvează și publică”
 
+### 2026-11-09 — pasul 1 salvat în git, pe ramura design-desenat
+- Cerut: salvează pasul 1 (fără push, fără publicare) și continuă.
+- Făcut: două commit-uri pe `design-desenat`: uneltele de design (Impeccable, PRODUCT.md) și pasul 1 al designului. Subsolul păstrează doar „Confidențialitate”, cum a hotărât echipa (am scos „De unde sunt datele”, pus din greșeală). Șterse 4 fișiere goale create din greșeală de o comandă și planul direcției „Foaia de examen”, respinsă.
+- Fișiere: apps/web/components/Shell.tsx
+- Poartă: vezi commit-ul
+- Urmează: Specializări.
+
 ### 2026-11-09 — designul desenat pe site, pasul 1: baza și pagina principală
 - Cerut: mutăm designul desenat pe site, dar păstrăm designul vechi ca să ne putem întoarce.
 - Făcut: designul vechi e salvat ca eticheta git `design-vechi` (commit b8d1b9a) și rămâne neatins pe ramura `production`; lucrul nou e pe ramura `design-desenat`. Baza: fonturile Bricolage Grotesque și Caveat, clasele de desen (contur de cerneală, notă scrisă de mână, carduri cu umbră plată), desene mici pe fundal în loc de puncte, meniul și subsolul (cu „De unde sunt datele”). Pagina principală: scena cu drumul de la liceu la universitate, butoanele de cont cu iconițe desenate și „merge și fără cont!”, drumul punctat și telefonul înclinat cu desene în jur (TikTok/Instagram la locul lor).
@@ -1296,6 +1303,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-11-09 03:28 `2b44956` chore: add the Impeccable design skill and the product record
 - 2026-10-30 22:05 `b8d1b9a` feat: phone on the left, follow-us text and buttons on the right
 - 2026-10-30 21:57 `4604195` feat: big TikTok and Instagram buttons beside the phone; footer keeps only the privacy link
 - 2026-10-30 21:50 `47afcb5` feat: follow-us phone with TikTok and Instagram instead of the home page clouds
@@ -1325,5 +1333,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-25 03:29 `5a90f6d` feat: add the country guides to the top menu
 - 2026-10-25 03:12 `cfc7f98` feat: new drawings on the students and questionnaire pages
 - 2026-10-25 03:00 `a519dc1` feat: English-taught filter, multi-choice filters, empty-result help
-- 2026-10-24 23:30 `13518bf` feat: add drawings to the universities, guides and fields pages
 <!-- commits:end -->
