@@ -195,11 +195,11 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/app/[lang]/universitati/[id]  (2 files)
 
 - `opengraph-image.tsx` (95) — The picture shown when a university's sheet is shared (WhatsApp, Instagram, Facebook …): FindMyUni, the university's name, place and yearly tuition when we have it.. Exports: alt, size, contentType, dynamicParams, generateStaticParams, Image
-- `page.tsx` (422) — Full profile sheet of one university in the page language, statically generated for every university.. Routes: /[lang]/universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
+- `page.tsx` (424) — Full profile sheet of one university in the page language, statically generated for every university.. Routes: /[lang]/universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/[lang]/universitati  (1 files)
 
-- `page.tsx` (48) — University finder page: search box, filters and the results, 10 at a time (the client part reads the URL query).. Routes: /[lang]/universitati. Exports: generateMetadata, UniversitiesPage
+- `page.tsx` (51) — University finder page in the drawn look: the opening with its drawing, a link to the programme search, then the search box, filters and the results, 10 at a time (the client part reads the URL query).. Routes: /[lang]/universitati. Exports: generateMetadata, UniversitiesPage
 
 ### apps/web/app  (7 files)
 
@@ -216,7 +216,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `ActivitiesStep.tsx` (234) — Quiz step "Ce ai făcut până acum?" in the page language: add up to 5 activities (kind, area, level, name, optional diploma photo).. Exports: ActivitiesStep
 - `ActivitiesSummary.tsx` (36) — Read-only list (in the page language) of the student's activities with thumbnails (a tap opens the photo larger).. Exports: ActivitiesSummary
 - `AdminGate.tsx` (95) — (In the page language.) Shown on the admin pages until this device is unlocked: sends a 6-digit code to the admin's email and checks it; the pages open for 1 hour, then it asks again.. Exports: AdminGate
-- `BackToSearch.tsx` (26) — "← Înapoi la universități" on a university sheet: returns to the student's last search with its text and filters (plain search page when there is none).. Exports: BackToSearch
+- `BackToSearch.tsx` (27) — "← Înapoi la universități" on a university sheet: returns to the student's last search with its text and filters (plain search page when there is none).. Exports: BackToSearch
 - `CategoryIcon.tsx` (26) — A small round ink drawing for each study category (stethoscope, laptop, gear, flask, briefcase, scales, people, book, palette, globe), used on the category tiles and in the search results.. Exports: CategoryIcon
 - `CategoryTiles.tsx` (33) — Grid of short drawn category tiles (a small ink drawing, the name and how many domains), five to a row on wide screens, centred, each linking to its category page, in the page language.. Exports: CategoryTiles
 - `Confetti.tsx` (41) — A short burst of cool-coloured confetti, shown once when mounted and removed after about 3 seconds.. Exports: Confetti
@@ -227,7 +227,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `Doodles.tsx` (22) — Small faint pen doodles (a cross, squiggles, a heart, an arrow, a star, a smile) scattered behind the page on wide screens; purely decorative.. Exports: Doodles
 - `Drawn.tsx` (38) — Small shared pieces of the drawn look: the gold squiggle under page titles, a section title with a hand-drawn arrow, and the page opening (title and text on the left, a drawing on the right).. Exports: Squiggle, SectionTitle, PageOpening
 - `FacultyPrograms.tsx` (27) — On a faculty sheet: the bachelor programmes of that faculty from the official list. Plain markup: the faculty page gives it the rows (read on the server) and the page language.. Exports: FacultyPrograms
-- `FavoriteButton.tsx` (89) — The heart on a university sheet (or, compact, in the corner of a search result card): adds the university to the student's favourites (shown in "Contul meu") or removes it; without an account it opens the account window and adds it once the student is signed in.. Exports: FavoriteButton
+- `FavoriteButton.tsx` (98) — The heart on a university sheet (or, compact, in the corner of a search result card): adds the university to the student's favourites (shown in "Contul meu") or removes it; without an account it opens the account window and adds it once the student is signed in.. Exports: FavoriteButton
 - `GuideFinder.tsx` (60) — Country guides index body (Romanian pages): a search box with a magnifier that filters the country tiles as you type (diacritics do not matter).. Exports: GuideFinder
 - `GuideRomania.tsx` (60) — The English guide "How to apply to a university in Romania": title, intro, sections, official source links and the date it was checked, read from data/en/guide-romania.json.. Exports: romaniaGuide, GuideRomania
 - `HomeScene.tsx` (94) — The big drawing on the home page, in ink outlines: a student walks the road from the high school up to a university on the hill, with clouds, the sun, a paper plane and a cap thrown in the air (labels in the page language).. Exports: HomeScene
@@ -238,13 +238,13 @@ _Open only the files listed here; a file's description is its first comment line
 - `MatchCard.tsx` (211) — One result card, in the page language: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
 - `NavLinks.tsx` (63) — Header navigation links with the current page highlighted (centred on phones), the RO / EN language switch; signed-in visitors also get "Contul meu" (signing in starts from the home page).. Exports: NavLinks
 - `OfficialPrograms.tsx` (17) — On a university sheet outside Romania: every bachelor programme of the institution from its country's official dataset, read from the database (those lists are too large to ship with the pages). Romanian sheets render the same list on the server, from the catalogue file.. Exports: OfficialPrograms
-- `PageScenes.tsx` (38) — The ink drawings at the top of the pages in the drawn look (each on a soft blue blob): study fields (books, flask, palette, gear).. Exports: FieldsDrawing
+- `PageScenes.tsx` (67) — The ink drawings at the top of the pages in the drawn look (each on a soft blue blob): study fields (books, flask, palette, gear) and universities (a magnifier over a town).. Exports: FieldsDrawing, UniversitiesDrawing
 - `PhotoPicker.tsx` (148) — Optional face photo on the opinion form (in the page language): the student picks a picture, moves and zooms it inside the same circle the site shows, and keeps a small square JPEG of exactly that view (kept automatically if the form is sent while the circle is still open).. Exports: PhotoPicker
 - `ProgramGroups.tsx` (76) — The list of an institution's bachelor programmes, grouped by faculty (or by field when the source has no faculties). Plain markup, so a page can render it on the server; the page language comes in as `lang`.. Exports: ProgramGroups
 - `ProgramRow.tsx` (106) — One bachelor programme from the catalogue, as a compact row: name and the small facts its source gives (language, study form, years, places, status) and, for Romania, the last admission average with its official source.. Exports: FORM_LABEL, ProgramRow
 - `ProgramSearch.tsx` (104) — Search over the bachelor programmes of the catalogue: country, free text, study domain and city; the state lives in the URL so links and Back work.. Exports: ProgramSearch
 - `SaveResult.tsx` (108) — Under the result, in the page language: signed-in students save it with one button; the others see a card with the benefits of an account, which opens the account window on "new account" and saves the result once the account exists.. Exports: SaveResult
-- `SearchBox.tsx` (129) — Search box (in the page language) with a magnifier icon; submits to /universitati?q=... or calls onSearch when given. With `suggest`, a list of suggestions opens while typing (arrows, Enter and Escape work; screen readers hear it as a combobox).. Exports: SearchBox
+- `SearchBox.tsx` (137) — Search box (in the page language) with a magnifier icon; submits to /universitati?q=... or calls onSearch when given. With `suggest`, a list of suggestions opens while typing (arrows, Enter and Escape work; screen readers hear it as a combobox).. Exports: SearchBox
 - `ShareButton.tsx` (44) — "Trimite" on a university sheet: on a phone it opens the phone's own share menu (WhatsApp, Instagram, messages …); where that menu does not exist, it copies the link.. Exports: ShareButton
 - `ShareResult.tsx` (188) — Under the result (text in the page language): draws a story-sized picture (1080×1920) of the 3 matched domains with their percentages and "findmyuni.ro", in the browser only. Exports: ShareResult
 - `Shell.tsx` (51) — Page frame shared by all screens: header with the FindMyUni logo, faint pen doodles behind the page, a centered content column and a footer with the privacy link, in the page language.. Exports: Shell, Notice

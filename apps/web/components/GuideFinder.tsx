@@ -34,7 +34,7 @@ export function GuideFinder({ tiles }: { tiles: GuideTile[] }) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder={t("Caută o țară, de exemplu „Spania”…", "Search for a country, for example “Spain”…")}
-          className="min-h-12 w-full rounded-2xl border-2 border-transparent bg-card py-3 pl-12 pr-4 text-ink shadow-sm ring-1 ring-line placeholder:text-ink-soft/80 focus:border-primary focus:outline-none"
+          className="min-h-12 w-full rounded-2xl border-2 border-transparent bg-card py-3 pl-12 pr-4 text-ink drawn placeholder:text-ink-soft/80 focus:border-primary focus:outline-none"
         />
       </div>
       {shown.length === 0 ? (
@@ -45,7 +45,7 @@ export function GuideFinder({ tiles }: { tiles: GuideTile[] }) {
         <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" data-guides>
           {shown.map((g) => (
             <li key={g.id}>
-              <Link href={`/ghiduri/${g.id}`} className="opt flex h-full min-h-36 flex-col rounded-3xl bg-card p-5 shadow-sm ring-1 ring-line hover:ring-primary/50">
+              <Link href={`/ghiduri/${g.id}`} className="opt flex h-full min-h-36 flex-col rounded-3xl bg-card p-5 drawn hover:ring-primary/50">
                 <span className="text-2xl font-black tracking-tight text-ink">{countryName(g.country, lang)}</span>
                 <span className="mt-2 text-sm text-ink-soft">{g.intro}</span>
                 <span className="mt-auto pt-3 text-sm font-bold text-primary">{t("Citește ghidul →", "Read the guide →")}</span>

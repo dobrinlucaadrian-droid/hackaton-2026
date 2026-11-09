@@ -89,7 +89,7 @@ const PARAM_OF: Record<keyof Filters, string> = {
   prestiges: "prestigiu",
 };
 
-const selectClass = "mt-1 min-h-11 w-full rounded-xl border-2 border-transparent bg-paper px-3 text-ink ring-1 ring-line focus:border-primary focus:outline-none";
+const selectClass = "mt-1 min-h-12 w-full rounded-2xl border-2 border-ink bg-card px-3 font-semibold text-ink focus:outline-none focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary";
 
 function Chip({ on, onClick, children }: { on: boolean; onClick: () => void; children: React.ReactNode }) {
   return (
@@ -97,8 +97,8 @@ function Chip({ on, onClick, children }: { on: boolean; onClick: () => void; chi
       type="button"
       aria-pressed={on}
       onClick={onClick}
-      className={`min-h-11 rounded-full px-4 text-sm font-bold transition ${
-        on ? "bg-primary text-white" : "bg-paper text-ink-soft ring-1 ring-line hover:ring-primary/50"
+      className={`min-h-11 rounded-full border-2 px-4 text-sm font-bold transition ${
+        on ? "border-ink bg-ink text-white" : "border-ink bg-card text-ink hover:-translate-y-0.5 hover:bg-teal-tint"
       }`}
     >
       {children}
@@ -432,7 +432,7 @@ export function UniversitySearch() {
           aria-expanded={panel}
           aria-controls="panou-filtre"
           onClick={() => setPanel(!panel)}
-          className="inline-flex min-h-11 items-center gap-2 rounded-full border-2 border-primary px-5 font-bold text-primary transition hover:bg-primary-tint"
+          className="inline-flex min-h-11 items-center gap-2 rounded-full border-2 border-ink bg-card px-5 font-bold text-ink transition hover:-translate-y-0.5 hover:bg-teal-tint"
         >
           <svg aria-hidden viewBox="0 0 24 24" className="h-5 w-5 fill-none stroke-current" strokeWidth="2.2" strokeLinecap="round">
             <path d="M4 6h16M7 12h10M10 18h4" />
@@ -452,7 +452,7 @@ export function UniversitySearch() {
         <section
           id="panou-filtre"
           aria-label={t("Filtre", "Filters")}
-          className="slide-in z-40 mt-3 space-y-5 bg-card p-5 shadow-sm ring-1 ring-line max-sm:fixed max-sm:inset-x-0 max-sm:bottom-0 max-sm:mt-0 max-sm:max-h-[88vh] max-sm:overflow-y-auto max-sm:rounded-t-3xl sm:rounded-3xl"
+          className="slide-in drawn z-40 mt-3 space-y-5 bg-card p-5 max-sm:fixed max-sm:inset-x-0 max-sm:bottom-0 max-sm:mt-0 max-sm:max-h-[88vh] max-sm:overflow-y-auto max-sm:rounded-t-3xl sm:rounded-3xl"
         >
           <div className="flex items-center justify-between sm:hidden">
             <h2 className="text-xl font-black text-ink">{t("Mai multe filtre", "More filters")}</h2>
@@ -539,7 +539,7 @@ export function UniversitySearch() {
                 type="button"
                 onClick={c.remove}
                 aria-label={t(`Scoate filtrul ${c.label}`, `Remove filter ${c.label}`)}
-                className="inline-flex min-h-11 items-center gap-2 rounded-full bg-primary-tint px-4 text-sm font-bold text-primary-dark transition hover:bg-primary hover:text-white"
+                className="inline-flex min-h-11 items-center gap-2 rounded-full border-2 border-primary bg-primary-tint px-4 text-sm font-bold text-primary-dark transition hover:bg-primary hover:text-white"
               >
                 {c.label}
                 <span aria-hidden>✕</span>
@@ -549,14 +549,14 @@ export function UniversitySearch() {
         </ul>
       )}
 
-      <p className="mt-4 rounded-2xl bg-primary-tint p-3 text-sm text-primary-dark" role="note">{t(NOTE, NOTE_EN)}</p>
+      <p className="mt-5 rounded-2xl bg-primary-tint p-3 text-sm text-primary-dark ring-2 ring-primary/20" role="note">{t(NOTE, NOTE_EN)}</p>
 
-      <h2 className="mt-6 text-2xl font-black tracking-tight text-ink" aria-live="polite">
+      <h2 className="mt-8 text-2xl font-extrabold tracking-tight text-ink sm:text-3xl" aria-live="polite">
         {q ? t(`Rezultate pentru „${q}”`, `Results for “${q}”`) : t("Universități pentru tine", "Universities for you")}
       </h2>
 
       {results.length === 0 ? (
-        <div className="mt-4 rounded-3xl bg-card p-8 text-center shadow-sm ring-1 ring-line" role="status">
+        <div className="drawn mt-4 rounded-3xl bg-card p-8 text-center" role="status">
           <NothingFound className="float mx-auto h-24 w-32" />
           <p className="mt-2 text-lg font-black text-ink">{t("Nu am găsit nicio universitate.", "We did not find any university.")}</p>
           {why.map((w) => (
@@ -586,13 +586,13 @@ export function UniversitySearch() {
             </div>
           )}
           {activeCount > 0 && (
-            <button type="button" onClick={clearFilters} className="mt-4 min-h-11 rounded-2xl bg-primary px-6 font-bold text-white hover:bg-primary-dark">
+            <button type="button" onClick={clearFilters} className="mt-4 min-h-12 rounded-2xl bg-primary px-6 font-extrabold text-white shadow-[0_3px_0_var(--color-primary-dark)] hover:bg-primary-dark">
               {t("Șterge filtrele", "Clear filters")}
             </button>
           )}
         </div>
       ) : (
-        <ol className="mt-4 grid gap-4 md:grid-cols-2">
+        <ol className="mt-4 grid gap-5 md:grid-cols-2">
           {results.map((u, i) => (
             <li key={u.id}>
               <UniversityCard u={u} rank={q ? undefined : i + 1} domainId={chosenDomains.find((d) => u.domainIds.includes(d))} />
@@ -606,7 +606,7 @@ export function UniversitySearch() {
           <button
             type="button"
             onClick={showMore}
-            className="min-h-12 rounded-full border-2 border-primary px-8 py-3 font-black text-primary hover:bg-primary-tint"
+            className="min-h-12 rounded-2xl border-[2.5px] border-primary bg-card px-8 py-3 font-extrabold text-primary transition hover:-translate-y-0.5 hover:bg-primary-tint"
           >
             {t("Arată încă 10", "Show 10 more")}
           </button>

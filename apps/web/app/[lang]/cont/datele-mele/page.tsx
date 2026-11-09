@@ -71,7 +71,7 @@ export default function MyDataPage() {
       <h1 className="mt-2 text-4xl font-black tracking-tighter text-ink">{t("Datele mele", "My data")}</h1>
       <p className="mt-2 text-ink-soft">{t("Aici vezi tot ce păstrăm despre contul tău. Doar tu poți vedea această pagină.", "Here you see everything we keep about your account. Only you can see this page.")}</p>
 
-      <section className="mt-6 rounded-3xl bg-card p-5 shadow-sm ring-1 ring-line" data-my-data>
+      <section className="mt-6 rounded-3xl bg-card p-5 drawn" data-my-data>
         <h2 className="text-xl font-black text-ink">{t("Contul", "The account")}</h2>
         <dl className="mt-2">
           <Row label={t("Nume de utilizator", "Username")} value={copy.cont.numeUtilizator ?? "—"} />
@@ -83,7 +83,7 @@ export default function MyDataPage() {
         </dl>
       </section>
 
-      <section className="mt-4 rounded-3xl bg-card p-5 shadow-sm ring-1 ring-line">
+      <section className="mt-4 rounded-3xl bg-card p-5 drawn">
         <h2 className="text-xl font-black text-ink">{t("Rezultatul salvat", "The saved result")}</h2>
         {r ? (
           <dl className="mt-2">
@@ -99,7 +99,7 @@ export default function MyDataPage() {
         )}
       </section>
 
-      <section className="mt-4 rounded-3xl bg-card p-5 shadow-sm ring-1 ring-line">
+      <section className="mt-4 rounded-3xl bg-card p-5 drawn">
         <h2 className="text-xl font-black text-ink">{t("Universități favorite", "Favourite universities")}</h2>
         {copy.universitatiFavorite?.length ? (
           <ul className="mt-2 space-y-1 text-sm text-ink">
@@ -112,7 +112,7 @@ export default function MyDataPage() {
         )}
       </section>
 
-      <section className="mt-4 rounded-3xl bg-card p-5 shadow-sm ring-1 ring-line">
+      <section className="mt-4 rounded-3xl bg-card p-5 drawn">
         <h2 className="text-xl font-black text-ink">{t("Conectări", "Sign-ins")}</h2>
         {copy.sesiuniDeConectare.length ? (
           <ul className="mt-2 space-y-1 text-sm text-ink">

@@ -1,8 +1,9 @@
-// University finder page: search box, filters and the results, 10 at a time (the client part reads the URL query).
+// University finder page in the drawn look: the opening with its drawing, a link to the programme search, then the search box, filters and the results, 10 at a time (the client part reads the URL query).
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
-import { UniversityScene } from "@/components/Illustrations";
+import { PageOpening } from "@/components/Drawn";
+import { UniversitiesDrawing } from "@/components/PageScenes";
 import { Shell } from "@/components/Shell";
 import { UniversitySearch } from "@/components/UniversitySearch";
 import { hasLang, localHref, tr } from "@/lib/i18n";
@@ -27,13 +28,15 @@ export default async function UniversitiesPage({ params }: PageProps<"/[lang]/un
   const t = tr(lang);
   return (
     <Shell wide>
-      <div className="rise flex items-center justify-between gap-4">
-        <div>
-          <h1 className="text-4xl font-black tracking-tighter text-ink sm:text-5xl">{t("Găsește universitatea potrivită", "Find the right university")}</h1>
-          <p className="mt-2 text-ink-soft">{t("Caută după nume, oraș sau țară, sau alege filtrele; îți arătăm câte 10, iar cu „Arată încă 10” vezi mai multe.", "Search by name, city or country, or use the filters; we show 10 at a time, and “Show 10 more” gives you more.")}</p>
-        </div>
-        <UniversityScene className="float hidden h-28 w-36 shrink-0 sm:block md:h-32 md:w-44" />
-      </div>
+      <PageOpening
+        title={
+          <>
+            {t("Unde vrei să", "Where do you want to")} <span className="text-primary">{t("ajungi?", "go?")}</span>
+          </>
+        }
+        lead={t("Caută după nume, oraș sau țară, sau alege filtrele; îți arătăm câte 10, iar cu „Arată încă 10” vezi mai multe.", "Search by name, city or country, or use the filters; we show 10 at a time, and “Show 10 more” gives you more.")}
+        scene={<UniversitiesDrawing label={t("Desen: o lupă mare peste un oraș cu clădiri de universități", "Drawing: a big magnifying glass over a town of university buildings")} />}
+      />
       <p className="mb-5">
         <Link href={localHref(lang, "/programe")} className="inline-flex min-h-11 items-center font-bold text-primary underline decoration-primary/40 underline-offset-2 hover:text-primary-dark">
           {t("Cauți un program anume? Vezi toate programele de licență din România →", "Looking for a specific programme? See all bachelor's programmes in Romania →")}

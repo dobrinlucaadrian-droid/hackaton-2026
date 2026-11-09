@@ -55,7 +55,7 @@ export default async function Students({ params }: PageProps<"/[lang]/studenti">
       <div className="mt-10 text-center">
         <Link
           href="/test"
-          className="inline-block rounded-2xl bg-primary px-6 py-3 font-bold text-white shadow-lg shadow-primary/30 hover:bg-primary-dark"
+          className="inline-block rounded-2xl bg-primary px-6 py-3 font-bold text-white shadow-[0_3px_0_var(--color-primary-dark)] hover:bg-primary-dark"
         >
           {t("Completează chestionarul și află ce ți se potrivește", "Take the quiz and find out what suits you")}
         </Link>

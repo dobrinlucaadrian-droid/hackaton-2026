@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <section className="mt-4 rounded-3xl bg-card p-5 shadow-sm ring-1 ring-line sm:p-6">
+    <section className="mt-4 rounded-3xl bg-card p-5 drawn sm:p-6">
       <h2 className="text-xl font-black tracking-tight text-ink">{title}</h2>
       <div className="mt-2 space-y-2 text-ink-soft">{children}</div>
     </section>
@@ -114,7 +114,7 @@ export default async function GuidePage({ params }: Props) {
           <p className="mt-6">
             <Link
               href={`/universitati?tara=${encodeURIComponent(g.country)}`}
-              className="inline-flex min-h-12 items-center justify-center rounded-2xl bg-primary px-6 py-3 font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark"
+              className="inline-flex min-h-12 items-center justify-center rounded-2xl bg-primary px-6 py-3 font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark"
             >
               Vezi universitățile din {g.country} →
             </Link>

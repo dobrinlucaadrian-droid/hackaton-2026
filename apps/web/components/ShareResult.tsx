@@ -163,14 +163,14 @@ export function ShareResult({ matches }: { matches: Match[] }) {
   }
 
   return (
-    <section className="mx-auto mt-8 max-w-2xl rounded-3xl bg-card p-6 text-center shadow-sm ring-1 ring-line">
+    <section className="mx-auto mt-8 max-w-2xl rounded-3xl bg-card p-6 text-center drawn">
       <h2 className="text-xl font-black text-ink">{t("Arată-le și prietenilor", "Show your friends")}</h2>
       <p className="mt-1 text-ink-soft">{t("Facem o imagine cu cele 3 domenii, bună de pus la story. Fără numele tău sau alte date.", "We make an image with the 3 fields, ready to post to a story. No name or other data.")}</p>
       <button
         type="button"
         onClick={() => void share()}
         disabled={busy}
-        className="mt-4 inline-flex min-h-12 items-center gap-2 rounded-full bg-primary px-7 font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark disabled:opacity-60"
+        className="mt-4 inline-flex min-h-12 items-center gap-2 rounded-full bg-primary px-7 font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark disabled:opacity-60"
       >
         <svg aria-hidden viewBox="0 0 24 24" className="h-5 w-5 fill-none stroke-current" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6" />

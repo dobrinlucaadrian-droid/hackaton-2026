@@ -66,7 +66,7 @@ export function SearchBox({
         {t("Caută o universitate, un oraș, o țară sau un domeniu", "Search for a university, a city, a country or a field")}
       </label>
       <div className="relative flex-1">
-        <svg aria-hidden viewBox="0 0 24 24" className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 fill-none stroke-ink-soft" strokeWidth="2.2" strokeLinecap="round">
+        <svg aria-hidden viewBox="0 0 24 24" className="pointer-events-none absolute left-4 top-1/2 h-6 w-6 -translate-y-1/2 fill-none stroke-ink" strokeWidth="2.6" strokeLinecap="round">
           <circle cx="11" cy="11" r="7" />
           <path d="m20 20-3.5-3.5" />
         </svg>
@@ -92,10 +92,10 @@ export function SearchBox({
                 ...(active >= 0 ? { "aria-activedescendant": `${listId}-${active}` } : {}),
               }
             : {})}
-          className="min-h-12 w-full rounded-2xl border-2 border-transparent bg-card py-3 pl-12 pr-4 text-ink shadow-sm ring-1 ring-line placeholder:text-ink-soft/80 focus:border-primary focus:outline-none"
+          className="min-h-14 w-full rounded-[1.4rem] border-[3px] border-ink bg-card py-3 pl-12 pr-4 text-lg text-ink shadow-[0_4px_0_var(--color-ink)] placeholder:text-ink-soft/80 focus:outline-none focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary"
         />
         {items.length > 0 && (
-          <ul id={listId} role="listbox" aria-label={t("Sugestii", "Suggestions")} className="absolute inset-x-0 top-full z-30 mt-2 overflow-hidden rounded-2xl bg-card shadow-xl ring-1 ring-line">
+          <ul id={listId} role="listbox" aria-label={t("Sugestii", "Suggestions")} className="drawn absolute inset-x-0 top-full z-30 mt-2 overflow-hidden rounded-2xl bg-card">
             {items.map((s, i) => (
               <li
                 key={`${s.href ?? s.query}-${s.label}`}
@@ -110,7 +110,15 @@ export function SearchBox({
                 onMouseEnter={() => setActive(i)}
                 className={`flex min-h-12 cursor-pointer flex-col justify-center px-4 py-2 ${i === active ? "bg-primary-tint" : ""} ${i > 0 ? "border-t border-line" : ""}`}
               >
-                <span className="font-bold text-ink">{s.href ? s.label : `📍 ${s.label}`}</span>
+                <span className="flex items-center gap-1.5 font-bold text-ink">
+                  {!s.href && (
+                    <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 shrink-0 text-primary" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round">
+                      <path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z" />
+                      <circle cx="12" cy="10" r="2.5" />
+                    </svg>
+                  )}
+                  {s.label}
+                </span>
                 <span className="text-sm text-ink-soft">{s.sub}</span>
               </li>
             ))}
@@ -119,7 +127,7 @@ export function SearchBox({
       </div>
       <button
         type="submit"
-        className="min-h-12 rounded-2xl bg-primary px-5 font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark active:scale-[0.98]"
+        className="min-h-14 rounded-[1.4rem] bg-primary px-6 font-extrabold text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:-translate-y-0.5 hover:bg-primary-dark active:translate-y-px active:scale-[0.98]"
       >
         {t("Caută", "Search")}
       </button>

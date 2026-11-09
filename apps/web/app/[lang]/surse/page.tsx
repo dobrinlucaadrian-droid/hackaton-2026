@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/surse">): 
 
 function Block({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <section className="mt-6 rounded-3xl bg-card p-6 shadow-sm ring-1 ring-line">
+    <section className="mt-6 rounded-3xl bg-card p-6 drawn">
       <h2 className="text-2xl font-black tracking-tight text-ink">{title}</h2>
       <div className="mt-2 space-y-2 text-ink-soft">{children}</div>
     </section>

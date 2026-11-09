@@ -62,7 +62,7 @@ export function SaveResult({ result }: { result: PendingResult }) {
           <button
             type="button"
             onClick={() => startAccount("signUp")}
-            className="min-h-12 rounded-2xl bg-primary px-8 py-3 font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark"
+            className="min-h-12 rounded-2xl bg-primary px-8 py-3 font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark"
           >
             {t("Fă-mi cont și salvează", "Create my account and save")}
           </button>
@@ -78,7 +78,7 @@ export function SaveResult({ result }: { result: PendingResult }) {
   }
 
   return (
-    <div className="mx-auto mt-6 max-w-2xl rounded-3xl bg-card p-5 text-center shadow-sm ring-1 ring-line" data-save-result>
+    <div className="mx-auto mt-6 max-w-2xl rounded-3xl bg-card p-5 text-center drawn" data-save-result>
       {state === "saved" ? (
         <p className="font-bold text-teal-ink" role="status">
           {t("Rezultatul e salvat în contul tău.", "Your result is saved in your account.")}{" "}
@@ -93,7 +93,7 @@ export function SaveResult({ result }: { result: PendingResult }) {
             type="button"
             onClick={() => void onClick()}
             disabled={isLoading || state === "saving"}
-            className="mt-3 min-h-12 rounded-2xl bg-primary px-6 py-3 font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark disabled:opacity-50"
+            className="mt-3 min-h-12 rounded-2xl bg-primary px-6 py-3 font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark disabled:opacity-50"
           >
             {state === "saving" ? t("Se salvează...", "Saving...") : t("Salvează în contul meu", "Save to my account")}
           </button>

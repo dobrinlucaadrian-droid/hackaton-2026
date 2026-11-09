@@ -129,14 +129,14 @@ export default function AccountPage() {
         </p>
       )}
 
-      <section className="mt-6 rounded-3xl bg-card p-6 shadow-sm ring-1 ring-line" aria-labelledby="rezultat-salvat">
+      <section className="mt-6 rounded-3xl bg-card p-6 drawn" aria-labelledby="rezultat-salvat">
         <h2 id="rezultat-salvat" className="text-2xl font-black tracking-tight text-ink">{t("Rezultatul tău salvat", "Your saved result")}</h2>
         {result === undefined ? (
           <p className="mt-2 text-ink-soft">{t("Se încarcă...", "Loading...")}</p>
         ) : result === null ? (
           <>
             <p className="mt-2 text-ink-soft">{t("Încă nu ai salvat un rezultat. Completează chestionarul și apasă „Salvează în contul meu”.", "You have not saved a result yet. Complete the quiz and press “Save in my account”.")}</p>
-            <Link href="/test" className="mt-4 inline-flex min-h-12 items-center rounded-2xl bg-primary px-6 py-3 font-black text-white shadow-lg shadow-primary/30 hover:bg-primary-dark">
+            <Link href="/test" className="mt-4 inline-flex min-h-12 items-center rounded-2xl bg-primary px-6 py-3 font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] hover:bg-primary-dark">
               {t("Completează chestionarul", "Complete the quiz")}
             </Link>
           </>
@@ -171,7 +171,7 @@ export default function AccountPage() {
         )}
       </section>
 
-      <section className="mt-6 rounded-3xl bg-card p-6 shadow-sm ring-1 ring-line" aria-labelledby="favorite">
+      <section className="mt-6 rounded-3xl bg-card p-6 drawn" aria-labelledby="favorite">
         <h2 id="favorite" className="text-2xl font-black tracking-tight text-ink">{t("Universități favorite", "Favourite universities")}</h2>
         {favorites === undefined ? (
           <p className="mt-2 text-ink-soft">{t("Se încarcă...", "Loading...")}</p>
@@ -205,7 +205,7 @@ export default function AccountPage() {
         )}
       </section>
 
-      <section className="mt-6 rounded-3xl bg-card p-6 shadow-sm ring-1 ring-line" aria-labelledby="cont-setari">
+      <section className="mt-6 rounded-3xl bg-card p-6 drawn" aria-labelledby="cont-setari">
         <h2 id="cont-setari" className="text-2xl font-black tracking-tight text-ink">{t("Cont", "Account")}</h2>
         <div className="mt-3" data-name-box>
           <p className="text-sm font-extrabold uppercase tracking-wide text-primary">{t("Numele tău", "Your name")}</p>

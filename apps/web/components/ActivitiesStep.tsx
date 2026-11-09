@@ -216,7 +216,7 @@ export function ActivitiesStep({ activities, onChange }: Props) {
             type="button"
             disabled={!ready}
             onClick={add}
-            className="min-h-12 w-full rounded-2xl bg-primary px-6 py-3 font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark disabled:cursor-not-allowed disabled:bg-line disabled:text-ink-soft disabled:shadow-none"
+            className="min-h-12 w-full rounded-2xl bg-primary px-6 py-3 font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark disabled:cursor-not-allowed disabled:bg-line disabled:text-ink-soft disabled:shadow-none"
           >
             {t("Adaugă activitatea", "Add the activity")}
           </button>

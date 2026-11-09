@@ -16,7 +16,7 @@ import { Turnstile } from "./Turnstile";
 
 const field = "mt-1 min-h-12 w-full rounded-xl border-2 border-transparent bg-paper px-4 text-ink ring-1 ring-line focus:border-primary focus:outline-none";
 const label = "text-sm font-extrabold uppercase tracking-wide text-primary";
-const primary = "min-h-12 w-full rounded-2xl bg-primary px-6 py-3 text-lg font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark disabled:cursor-not-allowed disabled:opacity-50";
+const primary = "min-h-12 w-full rounded-2xl bg-primary px-6 py-3 text-lg font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark disabled:cursor-not-allowed disabled:opacity-50";
 const textButton = "min-h-11 font-bold text-primary underline underline-offset-2";
 
 // What the browser's password manager should offer in the password field.

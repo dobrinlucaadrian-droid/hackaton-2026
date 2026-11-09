@@ -40,7 +40,7 @@ export default function QuestionnaireStart() {
         <button
           type="button"
           onClick={start}
-          className="mt-6 min-h-14 w-full rounded-2xl bg-primary px-8 py-4 text-lg font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark active:scale-[0.98] sm:w-auto"
+          className="mt-6 min-h-14 w-full rounded-2xl bg-primary px-8 py-4 text-lg font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark active:scale-[0.98] sm:w-auto"
         >
           {t("Începe chestionarul", "Start the quiz")}
         </button>
@@ -56,7 +56,7 @@ export default function QuestionnaireStart() {
 
       <ol className="grid gap-3 sm:grid-cols-3">
         {steps.map(([n, title, text], i) => (
-          <li key={n} style={delay(100 + i * 100)} className="rise rounded-2xl bg-card p-4 shadow-sm ring-1 ring-line">
+          <li key={n} style={delay(100 + i * 100)} className="rise rounded-2xl bg-card p-4 drawn">
             <span className={`flex h-9 w-9 items-center justify-center rounded-full font-black ${tones[i]}`}>{n}</span>
             <p className="mt-2 font-extrabold text-ink">{title}</p>
             <p className="mt-1 text-sm text-ink-soft">{text}</p>

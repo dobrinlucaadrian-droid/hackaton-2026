@@ -7,7 +7,7 @@ import { useT } from "./LangProvider";
 export function StudentCard({ t, as: Tag = "li" }: { t: Testimonial; as?: "li" | "div" }) {
   const tr = useT();
   return (
-    <Tag className="rounded-3xl bg-card p-6 shadow-sm ring-1 ring-line">
+    <Tag className="rounded-3xl bg-card p-6 drawn">
       <div className="flex items-center gap-4">
         {t.photo?.startsWith("https://") ? (
           // A photo sent with an approved opinion, served by the database (already a small square).
@@ -44,7 +44,7 @@ export function StudentCard({ t, as: Tag = "li" }: { t: Testimonial; as?: "li" |
           </p>
         </div>
       </div>
-      <blockquote className="mt-4 whitespace-pre-line border-l-4 border-teal pl-4 text-ink-soft">„{t.text}”</blockquote>
+      <blockquote className="mt-4 whitespace-pre-line text-ink-soft">„{t.text}”</blockquote>
     </Tag>
   );
 }

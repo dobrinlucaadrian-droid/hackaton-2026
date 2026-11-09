@@ -32,7 +32,7 @@ export function ShareButton({ title, text, path }: { title: string; text: string
     <button
       type="button"
       onClick={() => void share()}
-      className="inline-flex min-h-11 items-center gap-2 rounded-full border-2 border-primary px-5 font-bold text-primary transition hover:bg-primary-tint"
+      className="inline-flex min-h-12 items-center gap-2 rounded-2xl border-[2.5px] border-primary bg-card px-5 font-extrabold text-primary transition hover:-translate-y-0.5 hover:bg-primary-tint"
     >
       <svg aria-hidden viewBox="0 0 24 24" className="h-5 w-5 fill-none stroke-current" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6" />

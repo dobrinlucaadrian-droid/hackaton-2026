@@ -88,10 +88,10 @@ export default function ReviewFormPage() {
   if (state === "sent") {
     return (
       <Shell>
-        <div className="rise mt-10 rounded-3xl bg-card p-8 text-center shadow-sm ring-1 ring-line" role="status">
+        <div className="rise mt-10 rounded-3xl bg-card p-8 text-center drawn" role="status">
           <h1 className="text-3xl font-black tracking-tight text-ink">{t("Mulțumim!", "Thank you!")}</h1>
           <p className="mt-3 text-ink-soft">{t("Am primit părerea ta. O citește cineva din echipă și, după aprobare, apare pe pagina „Studenți”.", "We received your opinion. Someone from the team reads it and, once approved, it appears on the “Students” page.")}</p>
-          <Link href="/studenti" className="mt-6 inline-block rounded-2xl bg-primary px-6 py-3 font-bold text-white shadow-lg shadow-primary/30 hover:bg-primary-dark">
+          <Link href="/studenti" className="mt-6 inline-block rounded-2xl bg-primary px-6 py-3 font-bold text-white shadow-[0_3px_0_var(--color-primary-dark)] hover:bg-primary-dark">
             {t("Înapoi la păreri", "Back to opinions")}
           </Link>
         </div>
@@ -109,7 +109,7 @@ export default function ReviewFormPage() {
         {t("Ești student sau ai terminat o facultate? Spune-le liceenilor cum e, cu vorbele tale. Părerea apare pe site doar după ce o citește și o aprobă echipa FindMyUni.", "Are you a student or a graduate? Tell future students what it is really like, in your own words. Your opinion appears on the site only after the FindMyUni team reads and approves it.")}
       </p>
 
-      <form onSubmit={onSubmit} className="mt-6 space-y-5 rounded-3xl bg-card p-6 shadow-sm ring-1 ring-line sm:p-8" noValidate>
+      <form onSubmit={onSubmit} className="mt-6 space-y-5 rounded-3xl bg-card p-6 drawn sm:p-8" noValidate>
         <div>
           <label htmlFor="p-nume" className={label}>{t("Numele tău", "Your name")}</label>
           <input id="p-nume" value={name} onChange={(e) => setName(e.target.value)} maxLength={LIMITS.name} autoComplete="name" required className={field} />
@@ -151,7 +151,7 @@ export default function ReviewFormPage() {
         </label>
         <Turnstile key={robotKey} onToken={onToken} />
         {error && <p className="text-sm font-bold text-primary-dark" role="alert">{error}</p>}
-        <button type="submit" disabled={!canSend} className="min-h-12 w-full rounded-2xl bg-primary px-6 py-3 text-lg font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark disabled:cursor-not-allowed disabled:opacity-50">
+        <button type="submit" disabled={!canSend} className="min-h-12 w-full rounded-2xl bg-primary px-6 py-3 text-lg font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark disabled:cursor-not-allowed disabled:opacity-50">
           {state === "sending" ? t("Se trimite...", "Sending...") : t("Trimite părerea", "Send your opinion")}
         </button>
       </form>
@@ -167,7 +167,7 @@ export default function ReviewFormPage() {
             </label>
             <p className="mt-2 text-xs text-ink-soft">{faceOk ? t("Poza apare doar după ce echipa aprobă părerea.", "The photo appears only after the team approves the opinion.") : t("Dacă nu bifezi, părerea se trimite fără poză.", "If you do not tick it, your opinion is sent without the photo.")}</p>
             <div className="mt-5 flex flex-wrap gap-3">
-              <button type="button" autoFocus onClick={() => void send(faceOk)} className="min-h-12 flex-1 rounded-2xl bg-primary px-6 py-3 font-black text-white shadow-lg shadow-primary/30 hover:bg-primary-dark">
+              <button type="button" autoFocus onClick={() => void send(faceOk)} className="min-h-12 flex-1 rounded-2xl bg-primary px-6 py-3 font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] hover:bg-primary-dark">
                 {faceOk ? t("Trimite cu poză", "Send with photo") : t("Trimite fără poză", "Send without photo")}
               </button>
               <button type="button" onClick={() => setAskFace(false)} className="min-h-12 rounded-2xl px-4 font-bold text-ink-soft underline underline-offset-2">{t("Înapoi", "Back")}</button>

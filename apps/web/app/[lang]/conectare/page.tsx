@@ -14,7 +14,7 @@ export default async function SignInPage({ params }: PageProps<"/[lang]/conectar
   const t = tr(hasLang(lang) ? lang : "ro");
   return (
     <Shell>
-      <div className="rise mx-auto mt-6 max-w-md rounded-3xl bg-card p-6 shadow-sm ring-1 ring-line sm:p-8">
+      <div className="rise mx-auto mt-6 max-w-md rounded-3xl bg-card p-6 drawn sm:p-8">
         <h1 className="text-3xl font-black tracking-tight text-ink">{t("Conectare", "Sign in")}</h1>
         <p className="mt-2 text-ink-soft">
           {t(

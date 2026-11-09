@@ -19,7 +19,7 @@ export function GuideRomania() {
       </header>
 
       {g.sections.map((s) => (
-        <section key={s.id} id={s.id} className="mt-4 rounded-3xl bg-card p-5 shadow-sm ring-1 ring-line sm:p-6">
+        <section key={s.id} id={s.id} className="mt-4 rounded-3xl bg-card p-5 drawn sm:p-6">
           <h2 className="text-xl font-black tracking-tight text-ink">{s.heading}</h2>
           <div className="mt-2 space-y-2 text-ink-soft">
             {s.paragraphs.map((p, i) => (
@@ -37,7 +37,7 @@ export function GuideRomania() {
       ))}
 
       {g.links.length > 0 && (
-        <section className="mt-4 rounded-3xl bg-card p-5 shadow-sm ring-1 ring-line sm:p-6">
+        <section className="mt-4 rounded-3xl bg-card p-5 drawn sm:p-6">
           <h2 className="text-xl font-black tracking-tight text-ink">Official sources</h2>
           <ul className="mt-2 flex flex-col">
             {g.links.map((l) => (

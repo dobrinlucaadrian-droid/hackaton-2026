@@ -237,7 +237,7 @@ export default function QuizPage() {
               <button
                 type="button"
                 onClick={() => setStep(step + 1)}
-                className="min-h-12 flex-1 rounded-2xl bg-primary px-6 py-3 text-lg font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark"
+                className="min-h-12 flex-1 rounded-2xl bg-primary px-6 py-3 text-lg font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark"
               >
                 {t("Continuă", "Continue")}
               </button>
@@ -284,7 +284,7 @@ export default function QuizPage() {
                 type="button"
                 disabled={chosenCities.length === 0}
                 onClick={() => finishCities(false)}
-                className="min-h-14 w-full rounded-2xl bg-primary px-6 py-4 text-lg font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark disabled:cursor-not-allowed disabled:opacity-50"
+                className="min-h-14 w-full rounded-2xl bg-primary px-6 py-4 text-lg font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark disabled:cursor-not-allowed disabled:opacity-50"
                 data-cities-done
               >
                 {chosenCities.length === 0

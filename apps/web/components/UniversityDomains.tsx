@@ -52,7 +52,7 @@ export function UniversityDomains({ items, showPlan = true }: { items: Item[]; s
                 <p className="mt-3 text-sm font-extrabold text-primary-dark">{t("Specializări din acest domeniu", "Specialisations in this field")}</p>
                 <ul className="mt-2 space-y-3">
                   {open.specs.map((s) => (
-                    <li key={s.id} className="border-l-4 border-line pl-3">
+                    <li key={s.id} className="rounded-xl bg-card px-3 py-2 ring-2 ring-line">
                       <p className="text-sm font-bold text-ink">{s.name}</p>
                       <p className="text-sm">{s.short}</p>
                     </li>

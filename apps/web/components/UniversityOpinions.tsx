@@ -10,8 +10,11 @@ export function UniversityOpinions({ universityId }: { universityId: string }) {
   const opinions = useTestimonialsFor(universityId);
   if (opinions.length === 0) return null;
   return (
-    <section id="studenti" aria-labelledby="studenti-t" className="mt-8 scroll-mt-20">
-      <h2 id="studenti-t" className="text-2xl font-black tracking-tight text-ink">{t("Ce spun studenții", "What students say")}</h2>
+    <section id="studenti" aria-labelledby="studenti-t" className="mt-10 scroll-mt-20">
+      <h2 id="studenti-t" className="flex items-center gap-3 text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
+        <svg aria-hidden viewBox="0 0 40 30" className="h-7 w-9 shrink-0" fill="none" stroke="#61122d" strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round"><path d="M4 22c10-14 20 6 32-12" /><path d="M28 8l8 2-2 8" /></svg>
+        {t("Ce spun studenții", "What students say")}
+      </h2>
       <div className="mt-3 space-y-4">
         <p className="text-ink-soft">
           {opinions.length === 1 ? t("O părere reală de la un student de aici.", "A real opinion from a student here.") : t("Păreri reale de la studenți de aici.", "Real opinions from students here.")}

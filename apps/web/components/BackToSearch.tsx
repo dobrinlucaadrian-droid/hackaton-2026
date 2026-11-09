@@ -17,9 +17,10 @@ export function BackToSearch() {
         e.preventDefault();
         router.push(lastSearchHref(lang));
       }}
-      className="inline-flex min-h-11 items-center rounded-full border-2 border-primary px-5 py-2 font-bold text-primary transition hover:bg-primary-tint"
+      className="inline-flex min-h-11 items-center gap-2 font-extrabold text-primary transition hover:text-primary-dark"
     >
-      {t("← Înapoi la universități", "← Back to universities")}
+      <svg aria-hidden viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M11 6l-6 6 6 6" /></svg>
+      {t("Înapoi la universități", "Back to universities")}
     </Link>
   );
 }

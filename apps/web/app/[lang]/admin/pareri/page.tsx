@@ -56,7 +56,7 @@ function Queue({ state }: { state: State }) {
   return (
     <ul className="mt-6 space-y-4" data-queue={state}>
       {rows.map((r) => (
-        <li key={r._id} className="rounded-3xl bg-card p-6 shadow-sm ring-1 ring-line">
+        <li key={r._id} className="rounded-3xl bg-card p-6 drawn">
           {r.photoUrl && (
             <div className="mb-3 flex items-center gap-3">
               {/* eslint-disable-next-line @next/next/no-img-element -- the photo sent with the opinion */}
@@ -80,7 +80,7 @@ function Queue({ state }: { state: State }) {
             {r.universityId ? t(` · legată de fișa „${r.universityId}”`, ` · linked to the sheet “${r.universityId}”`) : t(" · fără fișă de universitate", " · no university sheet")}
           </p>
           {/* Plain text only: React escapes it, so nothing typed in the form can run as code. */}
-          <blockquote className="mt-4 whitespace-pre-line border-l-4 border-teal pl-4 text-ink-soft">{r.text}</blockquote>
+          <blockquote className="mt-4 whitespace-pre-line text-ink-soft">{r.text}</blockquote>
           <div className="mt-4 flex flex-wrap gap-3">
             {state !== "approved" && (
               <button type="button" disabled={busy === r._id} onClick={() => void set(r._id, "approved")} className="min-h-11 rounded-full bg-primary px-5 font-black text-white hover:bg-primary-dark disabled:opacity-50">

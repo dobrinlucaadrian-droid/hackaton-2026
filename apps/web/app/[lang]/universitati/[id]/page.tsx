@@ -60,8 +60,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <section className="rounded-3xl bg-card p-5 shadow-sm ring-1 ring-line sm:p-6">
-      <h3 className="text-xl font-black tracking-tight text-ink">{title}</h3>
+    <section className="rounded-3xl bg-card p-5 drawn sm:p-6">
+      <h3 className="text-xl font-extrabold tracking-tight text-ink">{title}</h3>
       <div className="mt-2 space-y-2 text-ink-soft">{children}</div>
     </section>
   );
@@ -69,8 +69,9 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 function Group({ id, title, children }: { id: string; title: string; children: React.ReactNode }) {
   return (
-    <section id={id} aria-labelledby={`${id}-t`} className="mt-8 scroll-mt-20">
-      <h2 id={`${id}-t`} className="text-2xl font-black tracking-tight text-ink">
+    <section id={id} aria-labelledby={`${id}-t`} className="mt-10 scroll-mt-20">
+      <h2 id={`${id}-t`} className="flex items-center gap-3 text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
+        <svg aria-hidden viewBox="0 0 40 30" className="h-7 w-9 shrink-0" fill="none" stroke="#61122d" strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round"><path d="M4 22c10-14 20 6 32-12" /><path d="M28 8l8 2-2 8" /></svg>
         {title}
       </h2>
       <div className="mt-3 space-y-4">{children}</div>
@@ -80,8 +81,8 @@ function Group({ id, title, children }: { id: string; title: string; children: R
 
 function Tile({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-2xl bg-card p-4 shadow-sm ring-1 ring-line">
-      <p className="text-xs font-extrabold uppercase tracking-wide text-primary">{label}</p>
+    <div className="rounded-2xl bg-card p-4 drawn">
+      <p className="text-sm font-extrabold text-primary">{label}</p>
       <p className="mt-1 font-bold leading-snug text-ink">{value}</p>
     </div>
   );
@@ -89,7 +90,7 @@ function Tile({ label, value }: { label: string; value: string }) {
 
 function Yes({ on, lang }: { on: boolean; lang: Lang }) {
   return (
-    <p className={`inline-block rounded-full px-3 py-1 text-sm font-bold ${on ? "bg-teal-tint text-teal-ink" : "bg-paper text-ink-soft ring-1 ring-line"}`}>
+    <p className={`inline-block rounded-full border-2 border-ink px-3 py-0.5 text-sm font-extrabold ${on ? "bg-teal-tint text-ink" : "bg-paper text-ink-soft"}`}>
       {on ? tr(lang)("Da", "Yes") : tr(lang)("Nu", "No")}
     </p>
   );
@@ -139,7 +140,8 @@ export default async function UniversityPage({ params }: Props) {
         <UniversityPhoto universityId={u.id} alt={`${u.name}, ${u.city}`} lang={lang} />
 
         <header className="rise mt-5">
-          <h1 className="text-3xl font-black leading-tight tracking-tighter text-ink sm:text-5xl">{u.name}</h1>
+          <h1 className="text-4xl font-extrabold leading-none tracking-tight text-ink sm:text-5xl">{u.name}</h1>
+          <svg aria-hidden viewBox="0 0 300 16" className="mt-2 block h-4 w-56 sm:w-72"><path d="M3 10c36-9 62 7 98-2s62 7 98-2 62 7 98-4" fill="none" stroke="#c8962e" strokeWidth="5" strokeLinecap="round" /></svg>
           <p className="mt-1 text-lg text-ink-soft">
             {u.city}, {u.country}
           </p>
@@ -171,7 +173,7 @@ export default async function UniversityPage({ params }: Props) {
           <ul className="flex gap-2 whitespace-nowrap">
             {anchors.map(([a, label]) => (
               <li key={a}>
-                <a href={`#${a}`} className="inline-flex min-h-11 items-center rounded-full bg-card px-4 text-sm font-bold text-primary-dark ring-1 ring-line transition hover:bg-primary-tint">
+                <a href={`#${a}`} className="inline-flex min-h-11 items-center rounded-full border-2 border-ink bg-card px-4 text-sm font-bold text-ink transition hover:bg-teal-tint">
                   {label}
                 </a>
               </li>
@@ -185,7 +187,7 @@ export default async function UniversityPage({ params }: Props) {
               {admission.length > 0 && (
                 <ul className="flex flex-wrap gap-2">
                   {admission.map((a) => (
-                    <li key={a} className="rounded-full bg-primary-tint px-3 py-1 text-sm font-semibold text-primary-dark">
+                    <li key={a} className="rounded-full border-2 border-ink bg-primary-tint px-3 py-0.5 text-sm font-bold text-primary-dark">
                       {a}
                     </li>
                   ))}
@@ -319,7 +321,7 @@ export default async function UniversityPage({ params }: Props) {
               <ul className="mt-2 grid gap-2 sm:grid-cols-2" data-faculty-sheets>
                 {facultySheets.map((f) => (
                   <li key={f.name}>
-                    <Link href={href(facultyHref(f))} className="flex min-h-11 items-center rounded-2xl bg-paper px-4 py-2 text-sm font-bold text-ink ring-1 ring-line transition hover:ring-primary/50">
+                    <Link href={href(facultyHref(f))} className="flex min-h-11 items-center rounded-2xl border-2 border-ink bg-paper px-4 py-2 text-sm font-bold text-ink transition hover:-translate-y-0.5 hover:bg-teal-tint">
                       {localFaculty(f, lang).name} →
                     </Link>
                   </li>
@@ -406,7 +408,7 @@ export default async function UniversityPage({ params }: Props) {
             href={u.website}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex min-h-12 items-center rounded-2xl bg-primary px-8 py-3 font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark"
+            className="inline-flex min-h-12 items-center rounded-2xl bg-primary px-8 py-3 font-extrabold text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:-translate-y-0.5 hover:bg-primary-dark"
           >
             {t("Site-ul oficial ↗", "Official website ↗")}
           </a>

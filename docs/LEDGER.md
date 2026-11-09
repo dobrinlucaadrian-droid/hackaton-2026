@@ -86,6 +86,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT (gate complet); NEVERIFICAT: ecranul de admin în browser (cere conectarea ca administrator)
 - Urmează: publicare pe findmyuni.ro (Convex prod + Vercel) doar când echipa spune „salvează și publică”
 
+### 2026-11-09 — designul desenat, pasul 3: Universități și fișele
+- Cerut: continuă cu Universități (căutarea și fișa).
+- Făcut: Universități are deschiderea desenată („Unde vrei să ajungi?”, lupa peste oraș), căutarea cu chenar de cerneală, filtre și butoane desenate și cardurile de rezultat cu contur, umbră plată, pin la oraș și o bulă de chat în loc de emoji. Fișa universității: poza „lipită cu bandă”, titlul cu linia aurie, inima desenată la favorite, butoanele, secțiunile cu săgeata desenată. Pe tot site-ul, cardurile vechi (umbră moale și contur subțire) au devenit carduri desenate, iar butoanele principale au umbra plată; au dispărut și barele colorate groase din stânga citatelor (27 de fișiere, inclusiv paginile de administrare). Cardurile din căutare au rămas fără poze (pozele cer autorul și licența lângă ele).
+- Fișiere: apps/web/app/[lang]/universitati/page.tsx, apps/web/app/[lang]/universitati/[id]/page.tsx, apps/web/components/{UniversitySearch,UniversityCard,UniversityBadges,SearchBox,UniversityPhoto,BackToSearch,FavoriteButton,ShareButton,UniversityOpinions,UniversityDomains,StudentCard,PageScenes}.tsx și alte componente cu carduri
+- Poartă: vezi commit-ul; verificat în browser la 1440 și 390 px (/universitati, fișa UBB, fișa Facultății de Drept UBB, /programe), fără erori în consolă
+- Urmează: Ghiduri, Chestionar, Studenți, contul și restul; emoji-urile domeniilor rămân de înlocuit.
+
 ### 2026-11-09 — designul desenat, pasul 2: Specializări și paginile de categorie
 - Cerut: continuă mutarea designului desenat, pagină cu pagină.
 - Făcut: Specializări are deschiderea desenată (titlu, text cu numerele luate din date, căutare desenată, desenul cu cărți, eprubetă, paletă și roată dințată) și cartonașele categoriilor mici, 5 pe rând, centrate, cu desene în loc de emoji; „Nu știi de unde să începi?” e o casetă aurie cu butoane desenate. Pagina unei categorii: link înapoi, desenul categoriei, „Cele N domenii”, iar fiecare domeniu e un rând desenat cu desenul categoriei, specializările ca mici cartonașe și materiile pe ani. Piese comune noi: `Drawn.tsx` (linia aurie, titlu de secțiune cu săgeată, deschiderea paginii), `CategoryIcon.tsx`, `PageScenes.tsx`.
@@ -1310,6 +1317,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-11-09 03:33 `7b8e662` feat: drawn look, step 2: fields of study and category pages
 - 2026-11-09 03:29 `5ecfedb` feat: drawn look, step 1: fonts, header, doodles and the home page
 - 2026-11-09 03:28 `2b44956` chore: add the Impeccable design skill and the product record
 - 2026-10-30 22:05 `b8d1b9a` feat: phone on the left, follow-us text and buttons on the right
@@ -1339,5 +1347,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-25 23:43 `8074524` fix: update Next.js and Zod, prerender share images
 - 2026-10-25 23:23 `5df325a` feat: share previews, share button and quiz result story image
 - 2026-10-25 03:29 `5a90f6d` feat: add the country guides to the top menu
-- 2026-10-25 03:12 `cfc7f98` feat: new drawings on the students and questionnaire pages
 <!-- commits:end -->

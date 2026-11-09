@@ -49,14 +49,14 @@ export function FavoriteButton({ university, compact = false }: { university: Pe
           aria-pressed={on}
           aria-label={on ? t(`Scoate ${university.name} de la favorite`, `Remove ${university.name} from favourites`) : t(`Adaugă ${university.name} la favorite`, `Add ${university.name} to favourites`)}
           title={on ? t("La favorite", "In your favourites") : t("Adaugă la favorite", "Add to favourites")}
-          className={`flex h-11 w-11 items-center justify-center rounded-full text-2xl leading-none transition disabled:opacity-50 ${
-            on ? "bg-primary text-white hover:bg-primary-dark" : "bg-card text-primary ring-1 ring-line hover:bg-primary-tint"
+          className={`flex h-11 w-11 items-center justify-center rounded-full border-[2.5px] border-ink transition disabled:opacity-50 ${
+            on ? "bg-primary text-white hover:bg-primary-dark" : "bg-card text-primary hover:bg-primary-tint"
           }`}
         >
-          <span aria-hidden>{on ? "♥" : "♡"}</span>
+          <Heart filled={on} />
         </button>
         {error && (
-          <p className="absolute right-0 top-12 z-20 w-56 rounded-xl bg-card p-2 text-xs font-bold text-primary-dark shadow-lg ring-1 ring-line" role="alert">
+          <p className="drawn absolute right-0 top-12 z-20 w-56 rounded-xl bg-card p-2 text-xs font-bold text-primary-dark" role="alert">
             {error}
           </p>
         )}
@@ -71,11 +71,11 @@ export function FavoriteButton({ university, compact = false }: { university: Pe
         onClick={() => void onClick()}
         disabled={isLoading || busy || (isAuthenticated && favorites === undefined)}
         aria-pressed={on}
-        className={`inline-flex min-h-11 items-center gap-2 rounded-full border-2 px-5 font-bold transition disabled:opacity-50 ${
-          on ? "border-primary bg-primary text-white hover:bg-primary-dark" : "border-primary text-primary hover:bg-primary-tint"
+        className={`inline-flex min-h-12 items-center gap-2 rounded-2xl border-[2.5px] px-5 font-extrabold transition hover:-translate-y-0.5 disabled:opacity-50 ${
+          on ? "border-primary bg-primary text-white shadow-[0_3px_0_var(--color-primary-dark)] hover:bg-primary-dark" : "border-primary bg-card text-primary hover:bg-primary-tint"
         }`}
       >
-        <span aria-hidden className="text-lg leading-none">{on ? "♥" : "♡"}</span>
+        <Heart filled={on} />
         {on ? t("La favorite", "In your favourites") : t("Adaugă la favorite", "Add to favourites")}
       </button>
       {error && (
@@ -84,5 +84,14 @@ export function FavoriteButton({ university, compact = false }: { university: Pe
         </p>
       )}
     </div>
+  );
+}
+
+/** The drawn heart: outlined when the university is not a favourite, filled when it is. */
+function Heart({ filled }: { filled: boolean }) {
+  return (
+    <svg aria-hidden viewBox="0 0 24 24" className="h-5 w-5" fill={filled ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2.4" strokeLinejoin="round">
+      <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z" />
+    </svg>
   );
 }

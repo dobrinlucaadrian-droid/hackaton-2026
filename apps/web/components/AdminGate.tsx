@@ -58,7 +58,7 @@ export function AdminGate({ children }: { children: ReactNode }) {
   }
 
   return (
-    <div className="mx-auto mt-10 max-w-md rounded-3xl bg-card p-6 text-center shadow-sm ring-1 ring-line" data-admin-gate>
+    <div className="mx-auto mt-10 max-w-md rounded-3xl bg-card p-6 text-center drawn" data-admin-gate>
       <h1 className="text-2xl font-black tracking-tight text-ink">{t("Confirmă că ești tu", "Confirm it is you")}</h1>
       <p className="mt-2 text-ink-soft">
         {t("Pentru administrare, pe lângă parolă îți trimitem un cod pe email. După ce îl scrii, paginile de administrare rămân deschise o oră pe acest dispozitiv.", "For administration, besides your password we send you a code by email. After you enter it, the administration pages stay open for 1 hour on this device.")}
@@ -67,7 +67,7 @@ export function AdminGate({ children }: { children: ReactNode }) {
         type="button"
         onClick={() => void send()}
         disabled={busy}
-        className="mt-5 min-h-12 rounded-2xl bg-primary px-6 py-3 font-black text-white shadow-lg shadow-primary/30 hover:bg-primary-dark disabled:opacity-50"
+        className="mt-5 min-h-12 rounded-2xl bg-primary px-6 py-3 font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] hover:bg-primary-dark disabled:opacity-50"
       >
         {sent ? t("Trimite alt cod", "Send another code") : t("Trimite codul pe email", "Send the code by email")}
       </button>

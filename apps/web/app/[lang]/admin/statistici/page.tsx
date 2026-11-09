@@ -28,7 +28,7 @@ function countryName(code: string, lang: Lang) {
 
 function Card({ label, value, hint }: { label: string; value: string; hint?: string }) {
   return (
-    <div className="rounded-2xl bg-card p-4 shadow-sm ring-1 ring-line">
+    <div className="rounded-2xl bg-card p-4 drawn">
       <p className="text-sm text-ink-soft">{label}</p>
       <p className="mt-1 text-3xl font-black tracking-tight text-ink">{value}</p>
       {hint && <p className="mt-1 text-xs text-ink-soft">{hint}</p>}
@@ -75,7 +75,7 @@ function Section({ title, hint, children }: { title: string; hint?: string; chil
 
 function Panel({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="rounded-2xl bg-card p-4 shadow-sm ring-1 ring-line">
+    <div className="rounded-2xl bg-card p-4 drawn">
       <h3 className="mb-3 font-extrabold text-ink">{title}</h3>
       {children}
     </div>
@@ -151,7 +151,7 @@ function Statistics() {
       </div>
 
       <Section title={t("Accesări pe zile", "Visits per day")} hint={t("Bara arată afișările de pagini; în dreapta: afișări · vizite · chestionare terminate.", "The bar shows page views; on the right: views · visits · quizzes finished.")}>
-        <div className="rounded-2xl bg-card p-4 shadow-sm ring-1 ring-line">
+        <div className="rounded-2xl bg-card p-4 drawn">
           <ul className="space-y-1" data-days>
             {[...data.days].reverse().map((d) => (
               <li key={d.day} className="grid grid-cols-[5.5rem_1fr_auto] items-center gap-3 text-sm">
@@ -194,7 +194,7 @@ function Statistics() {
             const rows = answersOf(q.id, q.options.length);
             const total = sum(rows);
             return (
-              <details key={q.id} className="group rounded-2xl bg-card px-4 py-1 shadow-sm ring-1 ring-line">
+              <details key={q.id} className="group rounded-2xl bg-card px-4 py-1 drawn">
                 <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 font-bold text-ink [&::-webkit-details-marker]:hidden">
                   <span>{i + 1}. {q.text}</span>
                   <span className="shrink-0 text-sm font-semibold text-ink-soft">{nr(total)} <span aria-hidden className="text-primary-dark transition-transform group-open:rotate-180">▾</span></span>
@@ -221,7 +221,7 @@ function Statistics() {
             <> <Link href="/admin/pareri" className="font-bold text-primary underline underline-offset-2">{t("Vezi părerile de aprobat →", "See the opinions to approve →")}</Link></>
           )}
         </p>
-        <div className="mt-3 rounded-2xl bg-card p-4 shadow-sm ring-1 ring-line">
+        <div className="mt-3 rounded-2xl bg-card p-4 drawn">
           <h3 className="mb-3 font-extrabold text-ink">{t("Programe pe țări (fișierele catalogului)", "Programmes per country (catalogue files)")}</h3>
           <Bars rows={catalogCountries.map((c) => ({ key: `${c.name} · ${nr(c.institutions)} ${t("instituții", "institutions")}`, count: c.programs }))} />
         </div>

@@ -157,7 +157,7 @@ export function MatchCard({ match, rank, where, cities }: { match: Match; rank: 
 
       <Link
         href={`${base}${regionParam}${where === "ro" ? cityParam : ""}`}
-        className="mt-2 inline-flex min-h-12 w-full items-center justify-center rounded-2xl bg-primary px-6 py-3 text-center font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark active:scale-[0.98]"
+        className="mt-2 inline-flex min-h-12 w-full items-center justify-center rounded-2xl bg-primary px-6 py-3 text-center font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark active:scale-[0.98]"
       >
         {t("Vezi universitățile pentru acest domeniu", "See the universities for this field")}
       </Link>
@@ -188,7 +188,7 @@ export function MatchCard({ match, rank, where, cities }: { match: Match; rank: 
   }
 
   return (
-    <article className="overflow-hidden rounded-3xl bg-card shadow-sm ring-1 ring-line">
+    <article className="overflow-hidden rounded-3xl bg-card drawn">
       <details className="group">
         <summary className={`flex min-h-20 cursor-pointer list-none items-center gap-3 ${f.band} p-4 [&::-webkit-details-marker]:hidden`}>
           <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${f.badge} text-sm font-black text-white`}>{rank}</span>

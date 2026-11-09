@@ -23,7 +23,7 @@ export default function PageError({ error, retry }: { error: Error & { digest?: 
         <button
           type="button"
           onClick={() => retry()}
-          className="mt-6 min-h-12 rounded-2xl bg-primary px-6 py-3 font-black text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark"
+          className="mt-6 min-h-12 rounded-2xl bg-primary px-6 py-3 font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark"
         >
           {t("Încearcă din nou", "Try again")}
         </button>

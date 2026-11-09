@@ -30,7 +30,7 @@ export function ProgramGroups({ rows, city, sourceLabel, year, hasCapacity, facu
   const list = byFaculty ? [...groups] : [...groups].sort((a, b) => a[0].localeCompare(b[0]));
 
   return (
-    <section className="rounded-3xl bg-card p-5 shadow-sm ring-1 ring-line sm:p-6" data-official-programs>
+    <section className="rounded-3xl bg-card p-5 drawn sm:p-6" data-official-programs>
       <h3 className="text-xl font-black tracking-tight text-ink">{byFaculty ? t("Facultăți și programe de licență", "Faculties and bachelor's programmes") : t("Programe de licență, pe domenii", "Bachelor's programmes, by field")}</h3>
       <p className="mt-2 text-sm text-ink-soft">
         {t(`Programele de licență (${year}), după ${sourceLabel}. Apasă pe ${byFaculty ? "o facultate" : "un domeniu"} ca să vezi programele.`, `Bachelor's programmes (${year}), from ${sourceLabel}. Tap ${byFaculty ? "a faculty" : "a field"} to see its programmes.`)}

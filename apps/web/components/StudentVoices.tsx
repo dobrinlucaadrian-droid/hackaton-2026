@@ -86,7 +86,7 @@ export function StudentVoices() {
 
   if (testimonials.length === 0) {
     return (
-      <div className="rise mx-auto mt-10 max-w-2xl rounded-3xl bg-card p-8 text-center shadow-sm ring-1 ring-line">
+      <div className="rise mx-auto mt-10 max-w-2xl rounded-3xl bg-card p-8 text-center drawn">
         <div className="flex items-end justify-center gap-3">
           <Books className="h-16 w-16" />
           <Sparkle className="twinkle h-6 w-6 fill-violet" />
@@ -119,7 +119,7 @@ export function StudentVoices() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder={tr("Caută o facultate sau o universitate…", "Search for a faculty or a university…")}
-            className="min-h-12 w-full rounded-2xl border-2 border-transparent bg-card py-3 pl-12 pr-4 text-ink shadow-sm ring-1 ring-line placeholder:text-ink-soft/80 focus:border-primary focus:outline-none"
+            className="min-h-12 w-full rounded-2xl border-2 border-transparent bg-card py-3 pl-12 pr-4 text-ink drawn placeholder:text-ink-soft/80 focus:border-primary focus:outline-none"
           />
         </div>
         <p className="mt-2 text-center text-sm text-ink-soft" aria-live="polite">
@@ -130,13 +130,13 @@ export function StudentVoices() {
       </form>
 
       {found.length === 0 ? (
-        <div className="mx-auto mt-6 max-w-2xl rounded-3xl bg-card p-8 text-center shadow-sm ring-1 ring-line">
+        <div className="mx-auto mt-6 max-w-2xl rounded-3xl bg-card p-8 text-center drawn">
           <p className="text-lg font-extrabold text-ink">{tr("Nu avem încă o părere de la un student de acolo.", "We do not have an opinion from a student there yet.")}</p>
           <p className="mt-2 text-ink-soft">{tr("Poți vedea totuși informații despre universitate.", "You can still see information about the university.")}</p>
           <div className="mt-5 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
             <Link
               href={`/universitati?q=${encodeURIComponent(q)}`}
-              className="inline-flex min-h-11 items-center rounded-2xl bg-primary px-5 py-2 font-bold text-white shadow-lg shadow-primary/30 hover:bg-primary-dark"
+              className="inline-flex min-h-11 items-center rounded-2xl bg-primary px-5 py-2 font-bold text-white shadow-[0_3px_0_var(--color-primary-dark)] hover:bg-primary-dark"
             >
               {tr(`Caută „${q}” la Universități`, `Search for “${q}” in Universities`)}
             </Link>
