@@ -1,8 +1,9 @@
-// Guides index: Romanian pages show one tile per country guide; English pages show the single guide "How to apply to a university in Romania".
+// Guides index: Romanian pages show the drawn opening (a globe with a plane) and one postcard per country guide; English pages show the single guide "How to apply to a university in Romania".
 import type { Metadata } from "next";
 import { GuideFinder } from "@/components/GuideFinder";
 import { GuideRomania, romaniaGuide } from "@/components/GuideRomania";
-import { GlobeScene } from "@/components/Illustrations";
+import { PageOpening } from "@/components/Drawn";
+import { GuidesDrawing } from "@/components/PageScenes";
 import { Shell } from "@/components/Shell";
 import { guides } from "@/lib/guides";
 
@@ -28,15 +29,15 @@ export default async function GuidesPage({ params }: PageProps<"/[lang]/ghiduri"
   }
   return (
     <Shell wide>
-      <div className="rise flex items-center justify-between gap-4">
-        <div>
-          <h1 className="text-4xl font-black tracking-tighter text-ink sm:text-5xl">Cum aplici în altă țară</h1>
-          <p className="mt-2 max-w-2xl text-ink-soft">
-            Câte un ghid scurt pentru fiecare țară: pe ce platformă te înscrii, ce acte îți trebuie, cât costă pentru un elev din România, ce burse poți primi și cum găsești cazare.
-          </p>
-        </div>
-        <GlobeScene className="float hidden h-28 w-36 shrink-0 sm:block md:h-32 md:w-44" />
-      </div>
+      <PageOpening
+        title={
+          <>
+            Vrei să studiezi <span className="text-primary">afară?</span>
+          </>
+        }
+        lead={`Câte un ghid scurt pentru fiecare dintre cele ${guides.length} de țări: pe ce platformă te înscrii, ce acte îți trebuie, cât costă pentru un elev din România, ce burse poți primi și cum găsești cazare.`}
+        scene={<GuidesDrawing label="Desen: un glob pământesc, un avion care zboară în jurul lui și o valiză" />}
+      />
       <GuideFinder tiles={guides.map(({ id, country, intro }) => ({ id, country, intro }))} />
       <p className="mt-6 rounded-2xl bg-primary-tint p-3 text-sm text-primary-dark" role="note">
         Ghidurile sunt scrise după paginile oficiale ale fiecărei țări și sunt orientative. Regulile, taxele și termenele se schimbă: verifică mereu la sursă.

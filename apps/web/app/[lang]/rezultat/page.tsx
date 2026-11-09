@@ -5,7 +5,8 @@ import Link from "@/components/LocalLink";
 import { useEffect, useMemo, useState } from "react";
 import { ActivitiesSummary } from "@/components/ActivitiesSummary";
 import { Confetti } from "@/components/Confetti";
-import { Diploma, Sparkle } from "@/components/Illustrations";
+import { Squiggle } from "@/components/Drawn";
+import { PodiumDrawing } from "@/components/PageScenes";
 import { useLang, useT } from "@/components/LangProvider";
 import { MatchCard } from "@/components/MatchCard";
 import { SaveResult } from "@/components/SaveResult";
@@ -108,12 +109,13 @@ export default function ResultPage() {
     <Shell wide>
       <Confetti />
       <div className="rise mx-auto max-w-2xl text-center">
-        <div className="flex items-center justify-center gap-3">
-          <Sparkle className="twinkle h-6 w-6 fill-teal" />
-          <Diploma className="float h-16 w-16" />
-          <Sparkle className="twinkle h-5 w-5 fill-violet" />
+        <div className="mx-auto w-full max-w-[15rem]">
+          <PodiumDrawing label={t("Desen: un podium cu locurile 1, 2 și 3", "Drawing: a podium with places 1, 2 and 3")} />
         </div>
-        <h1 className="mt-2 text-4xl font-black tracking-tighter text-ink sm:text-5xl">{t("Domeniile tale potrivite", "Your matching fields")}</h1>
+        <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">
+          {t("Domeniile tale", "Your matching")} <span className="text-primary">{t("potrivite", "fields")}</span>
+        </h1>
+        <Squiggle className="mx-auto" />
         <p className="mt-2 text-ink-soft">
           {t("Iată cele 3 domenii care ți se potrivesc cel mai bine.", "Here are the 3 fields that suit you best.")}
           {state.answers.cities?.length
@@ -175,7 +177,7 @@ export default function ResultPage() {
       </p>
 
       <div className="mt-8 text-center">
-        <Link href="/test" onClick={clearDraft} className="inline-flex min-h-12 items-center rounded-full border-2 border-primary px-8 py-3 font-black text-primary hover:bg-primary-tint">
+        <Link href="/test" onClick={clearDraft} className="inline-flex min-h-12 items-center rounded-2xl border-[2.5px] border-primary bg-card px-8 py-3 font-extrabold text-primary transition hover:-translate-y-0.5 hover:bg-primary-tint">
           {t("Reia chestionarul", "Retake the quiz")}
         </Link>
       </div>

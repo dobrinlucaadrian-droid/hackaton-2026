@@ -86,6 +86,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT (gate complet); NEVERIFICAT: ecranul de admin în browser (cere conectarea ca administrator)
 - Urmează: publicare pe findmyuni.ro (Convex prod + Vercel) doar când echipa spune „salvează și publică”
 
+### 2026-11-09 — designul desenat, pasul 4: Ghiduri și Chestionar
+- Cerut: continuă cu Ghiduri și Chestionar.
+- Făcut: Ghiduri are deschiderea desenată („Vrei să studiezi afară?”, globul cu avion și valiză, numărul de ghiduri luat din date), căutarea cu chenar de cerneală și țările ca niște cărți poștale ușor înclinate, cu timbru punctat. Ghidul unei țări: link înapoi desenat, titlul cu linia aurie (fără eticheta de deasupra), pașii ca un drum punctat cu cercuri numerotate. Chestionarul: pagina de început cu clipboard-ul desenat, titlu, buton și cei 3 pași pe cartonașe cu cerc numerotat; întrebările au răspunsuri cu contur, progresul ca o bară conturată și încurajarea scrisă de mână; rezultatul are podiumul desenat, cel mai bun domeniu pe un card desenat cu desenul categoriei și steluță în loc de emoji, celelalte rânduri cu desene și procentul în cerc, caseta „Nu-ți pierde rezultatul” cu iconițe desenate, „Ce-ar fi dacă?” desenat. Și alte câteva carduri simple au devenit desenate (activități, programe, admin).
+- Fișiere: apps/web/app/[lang]/ghiduri/page.tsx, apps/web/app/[lang]/ghiduri/[tara]/page.tsx, apps/web/app/[lang]/test/page.tsx, apps/web/app/[lang]/quiz/page.tsx, apps/web/app/[lang]/rezultat/page.tsx, apps/web/components/{GuideFinder,PageScenes,MatchCard,SaveResult,WhatIf,ActivitiesStep,ActivitiesSummary,ProgramSearch}.tsx, apps/web/app/[lang]/admin/pareri/page.tsx
+- Poartă: vezi commit-ul; verificat în browser la 1440 și 390 px (/ghiduri, /ghiduri/olanda, /test, /quiz, chestionarul parcurs până la /rezultat)
+- Urmează: Studenți și formularul de păreri, contul (conectare, Contul meu, Datele mele), sursele, confidențialitatea, paginile de eroare și ghidul în engleză.
+
 ### 2026-11-09 — designul desenat, pasul 3: Universități și fișele
 - Cerut: continuă cu Universități (căutarea și fișa).
 - Făcut: Universități are deschiderea desenată („Unde vrei să ajungi?”, lupa peste oraș), căutarea cu chenar de cerneală, filtre și butoane desenate și cardurile de rezultat cu contur, umbră plată, pin la oraș și o bulă de chat în loc de emoji. Fișa universității: poza „lipită cu bandă”, titlul cu linia aurie, inima desenată la favorite, butoanele, secțiunile cu săgeata desenată. Pe tot site-ul, cardurile vechi (umbră moale și contur subțire) au devenit carduri desenate, iar butoanele principale au umbra plată; au dispărut și barele colorate groase din stânga citatelor (27 de fișiere, inclusiv paginile de administrare). Cardurile din căutare au rămas fără poze (pozele cer autorul și licența lângă ele).
@@ -1317,6 +1324,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-11-09 03:39 `a2aace3` feat: drawn look, step 3: university search and sheets
 - 2026-11-09 03:33 `7b8e662` feat: drawn look, step 2: fields of study and category pages
 - 2026-11-09 03:29 `5ecfedb` feat: drawn look, step 1: fonts, header, doodles and the home page
 - 2026-11-09 03:28 `2b44956` chore: add the Impeccable design skill and the product record
@@ -1346,5 +1354,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-26 00:52 `7dd583d` feat: searchable university field, FindMyUni share image, drop UniPath
 - 2026-10-25 23:43 `8074524` fix: update Next.js and Zod, prerender share images
 - 2026-10-25 23:23 `5df325a` feat: share previews, share button and quiz result story image
-- 2026-10-25 03:29 `5a90f6d` feat: add the country guides to the top menu
 <!-- commits:end -->

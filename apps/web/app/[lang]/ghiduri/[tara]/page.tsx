@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="mt-4 rounded-3xl bg-card p-5 drawn sm:p-6">
-      <h2 className="text-xl font-black tracking-tight text-ink">{title}</h2>
+      <h2 className="text-xl font-extrabold tracking-tight text-ink sm:text-2xl">{title}</h2>
       <div className="mt-2 space-y-2 text-ink-soft">{children}</div>
     </section>
   );
@@ -40,21 +40,22 @@ export default async function GuidePage({ params }: Props) {
   return (
     <Shell wide>
       <div className="mx-auto max-w-3xl">
-        <Link href="/ghiduri" className="inline-flex min-h-11 items-center rounded-full border-2 border-primary px-5 py-2 font-bold text-primary transition hover:bg-primary-tint">
-          ← Toate ghidurile
+        <Link href="/ghiduri" className="inline-flex min-h-11 items-center gap-2 font-extrabold text-primary transition hover:text-primary-dark">
+          <svg aria-hidden viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M11 6l-6 6 6 6" /></svg>
+          Toate ghidurile
         </Link>
 
         <header className="rise mt-5">
-          <p className="text-sm font-extrabold uppercase tracking-wide text-primary">Ghid pe țară</p>
-          <h1 className="mt-1 text-3xl font-black leading-tight tracking-tighter text-ink sm:text-5xl">{g.title}</h1>
+          <h1 className="text-4xl font-extrabold leading-none tracking-tight text-ink sm:text-5xl">{g.title}</h1>
+          <svg aria-hidden viewBox="0 0 300 16" className="mt-2 block h-4 w-56 sm:w-72"><path d="M3 10c36-9 62 7 98-2s62 7 98-2 62 7 98-4" fill="none" stroke="#c8962e" strokeWidth="5" strokeLinecap="round" /></svg>
           <p className="mt-4 text-lg text-ink">{g.intro}</p>
         </header>
 
         <Section title="Pașii, pe rând">
-          <ol className="space-y-3" data-guide-steps>
+          <ol className="relative space-y-3 before:absolute before:top-6 before:bottom-6 before:left-[1.4rem] before:border-l-[3px] before:border-dashed before:border-ink/40 before:content-['']" data-guide-steps>
             {g.steps.map((s, i) => (
-              <li key={s.title} className="flex gap-3 rounded-2xl bg-paper p-4 ring-1 ring-line">
-                <span aria-hidden className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-base font-black text-white">
+              <li key={s.title} className="relative flex gap-3 rounded-2xl p-2">
+                <span aria-hidden className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-[2.5px] border-ink text-base font-extrabold ${i === g.steps.length - 1 ? "bg-teal text-ink" : "bg-primary text-white"}`}>
                   {i + 1}
                 </span>
                 <div>

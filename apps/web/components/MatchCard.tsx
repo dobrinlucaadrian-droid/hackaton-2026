@@ -8,6 +8,8 @@ import { curriculumFor } from "@/lib/curricula";
 import { CurriculumPlan } from "./CurriculumPlan";
 import { DomainAbroad, DomainPrograms } from "./DomainPrograms";
 import { catalogCountries } from "@/lib/catalog";
+import { categories } from "@/lib/data";
+import { CategoryIcon } from "./CategoryIcon";
 import { FAMILY_CLASSES, domainStyle } from "./domainStyle";
 import { UniversityList } from "./UniversityList";
 
@@ -32,7 +34,7 @@ function Ring({ percent, stroke }: { percent: number; stroke: string }) {
           className={`ring-anim ${stroke}`}
         />
       </svg>
-      <span className="absolute inset-0 flex items-center justify-center text-xl font-black text-ink">{percent}%</span>
+      <span className="absolute inset-0 flex items-center justify-center text-xl font-extrabold text-ink">{percent}%</span>
     </div>
   );
 }
@@ -40,7 +42,7 @@ function Ring({ percent, stroke }: { percent: number; stroke: string }) {
 /** A closed-by-default row with a label and a rotating chevron. */
 function Row({ title, children }: { title: string; children: ReactNode }) {
   return (
-    <details className="group rounded-2xl bg-paper ring-1 ring-line">
+    <details className="group rounded-2xl bg-paper ring-2 ring-line">
       <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-2 px-4 py-2 font-extrabold text-ink [&::-webkit-details-marker]:hidden">
         {title}
         <span aria-hidden className="text-primary transition-transform group-open:rotate-180">▾</span>
@@ -55,7 +57,8 @@ export function MatchCard({ match, rank, where, cities }: { match: Match; rank: 
   const t = useT();
   const best = rank === 1;
   const { domain } = match;
-  const { family, emoji } = domainStyle(domain.id);
+  const { family } = domainStyle(domain.id);
+  const categoryId = categories.find((c) => c.domainIds.includes(domain.id))?.id ?? "";
   const f = FAMILY_CLASSES[family];
   const regionParam = where === "ro" ? "&regiune=ro" : where === "abroad" ? "&regiune=abroad" : "";
   // The chosen cities are used in titles and links only when they really have universities for this domain.
@@ -166,16 +169,19 @@ export function MatchCard({ match, rank, where, cities }: { match: Match; rank: 
 
   if (best) {
     return (
-      <article className={`overflow-hidden rounded-3xl bg-card shadow-xl shadow-primary/15 ring-2 ${f.ring}`}>
+      <article className="drawn overflow-hidden rounded-[1.8rem] bg-card [box-shadow:0_6px_0_var(--color-ink)]">
         <div className={`${f.band} p-6 sm:p-8`}>
-          <p className={`mb-3 inline-block rounded-full ${f.badge} px-3 py-1 text-sm font-bold text-white`}>{t("Cea mai bună potrivire", "Best match")}</p>
+          <p className="mb-3 inline-flex items-center gap-1.5 rounded-full border-2 border-ink bg-teal px-3 py-0.5 text-sm font-extrabold text-ink">
+            <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z" /></svg>
+            {t("Cea mai bună potrivire", "Best match")}
+          </p>
           <div className="flex items-center gap-4">
             <Ring percent={match.percent} stroke={f.stroke} />
             <div className="min-w-0">
               <p className={`text-sm font-bold ${f.text}`}>{t(`Locul ${rank}`, `Place ${rank}`)}</p>
-              {/* On a phone the title is smaller and the emoji is hidden, so a long word such as "kinetoterapie" fits on one line. */}
-              <h2 className="flex items-center gap-2 text-xl font-black leading-tight tracking-tight text-ink sm:text-3xl">
-                <span aria-hidden className="hidden shrink-0 sm:inline">{emoji}</span>
+              {/* On a phone the title is smaller and the drawing is hidden, so a long word such as "kinetoterapie" fits on one line. */}
+              <h2 className="flex items-center gap-2 text-xl font-extrabold leading-tight tracking-tight text-ink sm:text-3xl">
+                <CategoryIcon id={categoryId} className="hidden h-10 w-10 shrink-0 sm:inline" />
                 <span className="min-w-0 hyphens-auto break-words">{domain.name}</span>
               </h2>
             </div>
@@ -191,15 +197,15 @@ export function MatchCard({ match, rank, where, cities }: { match: Match; rank: 
     <article className="overflow-hidden rounded-3xl bg-card drawn">
       <details className="group">
         <summary className={`flex min-h-20 cursor-pointer list-none items-center gap-3 ${f.band} p-4 [&::-webkit-details-marker]:hidden`}>
-          <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${f.badge} text-sm font-black text-white`}>{rank}</span>
+          <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-ink ${f.badge} text-sm font-extrabold text-white`}>{rank}</span>
           <span className="min-w-0 flex-1">
-            <span className="flex items-center gap-2 font-black leading-tight text-ink">
-              <span aria-hidden>{emoji}</span>
+            <span className="flex items-center gap-2 text-lg font-extrabold leading-tight text-ink">
+              <CategoryIcon id={categoryId} className="h-8 w-8 shrink-0" />
               <span>{domain.name}</span>
             </span>
             {match.reasons[0] && <span className="mt-0.5 block truncate text-sm text-ink-soft">{match.reasons[0]}</span>}
           </span>
-          <span className="shrink-0 text-lg font-black text-ink">{match.percent}%</span>
+          <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-[2.5px] border-ink bg-card text-base font-extrabold text-ink">{match.percent}%</span>
           <span aria-hidden className="shrink-0 text-primary transition-transform group-open:rotate-180">▾</span>
         </summary>
         <p className="px-6 pt-4 text-ink-soft">{domain.short}</p>

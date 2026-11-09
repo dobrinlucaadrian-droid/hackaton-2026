@@ -1,14 +1,15 @@
 "use client";
-// Questionnaire start screen in the page language: its own title, the 3-step explanation and the button that starts the quiz (the profile is asked inside the quiz).
+// Questionnaire start screen in the page language, in the drawn look: the clipboard drawing, its own title, the button that starts the quiz and the 3-step explanation (the profile is asked inside the quiz).
 import { useRouter } from "next/navigation";
 import type { CSSProperties } from "react";
-import { QuizScene } from "@/components/Illustrations";
+import { SectionTitle, Squiggle } from "@/components/Drawn";
+import { QuizDrawing } from "@/components/PageScenes";
 import { useHref, useT } from "@/components/LangProvider";
 import { Shell } from "@/components/Shell";
 import { questions } from "@/lib/data";
 import { saveDraft } from "@/lib/session";
 
-const tones = ["bg-primary-tint text-primary-dark", "bg-teal-tint text-teal-ink", "bg-violet-tint text-violet-ink"];
+const tones = ["bg-primary text-white", "bg-teal text-ink", "bg-sky text-white"];
 
 const delay = (ms: number) => ({ "--d": `${ms}ms` }) as CSSProperties;
 
@@ -29,8 +30,13 @@ export default function QuestionnaireStart() {
   return (
     <Shell>
       <section className="rise pt-4 text-center">
-        <QuizScene className="float mx-auto h-24 w-32" />
-        <h1 className="mt-3 text-4xl font-black tracking-tighter text-ink sm:text-5xl">{t("Chestionarul FindMyUni", "The FindMyUni quiz")}</h1>
+        <div className="mx-auto w-full max-w-[16rem]">
+          <QuizDrawing label={t("Desen: un clipboard cu bife și un creion mare", "Drawing: a clipboard with ticks and a big pencil")} />
+        </div>
+        <h1 className="mt-3 text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">
+          {t("Chestionarul", "The")} <span className="text-primary">FindMyUni</span>{t("", " quiz")}
+        </h1>
+        <Squiggle className="mx-auto" />
         <p className="mx-auto mt-3 max-w-md text-lg text-ink-soft">
           {t(
             `Răspunzi la ${questions.length} situații din viața de zi cu zi și afli ce domenii ți se potrivesc. Durează cam 6 minute.`,
@@ -40,25 +46,19 @@ export default function QuestionnaireStart() {
         <button
           type="button"
           onClick={start}
-          className="mt-6 min-h-14 w-full rounded-2xl bg-primary px-8 py-4 text-lg font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark active:scale-[0.98] sm:w-auto"
+          className="mt-6 min-h-14 w-full rounded-2xl bg-primary px-8 py-4 text-lg font-extrabold text-white shadow-[0_3px_0_var(--color-primary-dark),0_14px_26px_-12px_rgb(97_18_45_/_0.6)] transition hover:-translate-y-0.5 hover:bg-primary-dark active:scale-[0.98] sm:w-auto"
         >
           {t("Începe chestionarul", "Start the quiz")}
         </button>
       </section>
 
-      <div aria-hidden className="my-8 flex items-center gap-0">
-        <span className="h-px flex-1 bg-primary/30" />
-        <span className="rounded-full border-2 border-primary bg-paper px-6 py-1.5 text-sm font-bold text-primary">
-          {t("3 pași simpli", "3 simple steps")}
-        </span>
-        <span className="h-px flex-1 bg-primary/30" />
-      </div>
+      <SectionTitle center>{t("3 pași simpli", "3 simple steps")}</SectionTitle>
 
-      <ol className="grid gap-3 sm:grid-cols-3">
+      <ol className="mt-8 grid gap-8 sm:grid-cols-3 sm:gap-4">
         {steps.map(([n, title, text], i) => (
-          <li key={n} style={delay(100 + i * 100)} className="rise rounded-2xl bg-card p-4 drawn">
-            <span className={`flex h-9 w-9 items-center justify-center rounded-full font-black ${tones[i]}`}>{n}</span>
-            <p className="mt-2 font-extrabold text-ink">{title}</p>
+          <li key={n} style={delay(100 + i * 100)} className="rise drawn relative rounded-3xl bg-card px-5 pt-8 pb-5">
+            <span className={`absolute -top-5 left-5 flex h-11 w-11 items-center justify-center rounded-full border-[3px] border-ink text-lg font-extrabold ${tones[i]}`}>{n}</span>
+            <p className="text-lg font-extrabold text-ink">{title}</p>
             <p className="mt-1 text-sm text-ink-soft">{text}</p>
           </li>
         ))}

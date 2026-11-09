@@ -17,10 +17,10 @@ export function WhatIf({ values, changed, onChange, onReset }: Props) {
   const t = useT();
   const [open, setOpen] = useState(false);
   return (
-    <section className="mx-auto mt-6 max-w-2xl rounded-3xl bg-card p-5 ring-1 ring-line sm:max-w-3xl">
+    <section className="mx-auto mt-6 max-w-2xl drawn rounded-3xl bg-card p-5 sm:max-w-3xl">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
-          <h2 className="text-xl font-bold text-ink">{t("Ce-ar fi dacă?", "What if?")}</h2>
+          <h2 className="text-xl font-extrabold text-ink">{t("Ce-ar fi dacă?", "What if?")}</h2>
           <p className="text-ink-soft">{t("Mută cursoarele și vezi cum se schimbă domeniile potrivite.", "Move the sliders and see how the matching fields change.")}</p>
         </div>
         <button
@@ -28,7 +28,7 @@ export function WhatIf({ values, changed, onChange, onReset }: Props) {
           aria-expanded={open}
           aria-controls="whatif-panel"
           onClick={() => setOpen(!open)}
-          className="rounded-2xl border-2 border-primary px-5 py-2 font-bold text-primary hover:bg-primary-tint"
+          className="min-h-11 rounded-2xl border-[2.5px] border-primary bg-card px-5 py-2 font-extrabold text-primary transition hover:-translate-y-0.5 hover:bg-primary-tint"
         >
           {open ? t("Închide", "Close") : t("Încearcă", "Try it")}
         </button>

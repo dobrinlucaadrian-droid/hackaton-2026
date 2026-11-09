@@ -142,8 +142,8 @@ export default function QuizPage() {
   }
 
   const optionClass = (on: boolean) =>
-    `opt min-h-14 w-full rounded-2xl border-2 px-5 py-4 text-left text-lg font-semibold ${
-      on ? "border-primary bg-primary-tint text-primary-dark" : "border-transparent bg-card text-ink ring-1 ring-line hover:ring-primary/50"
+    `opt min-h-14 w-full rounded-2xl border-[2.5px] px-5 py-4 text-left text-lg font-semibold ${
+      on ? "border-primary bg-primary-tint text-primary-dark shadow-[0_4px_0_var(--color-primary)]" : "border-ink bg-card text-ink hover:bg-teal-tint"
     }`;
 
   return (
@@ -165,14 +165,14 @@ export default function QuizPage() {
             aria-valuemax={total}
             aria-valuenow={step + 1}
             aria-label={t("Progres", "Progress")}
-            className="mt-2 h-4 overflow-hidden rounded-full bg-white ring-1 ring-line"
+            className="mt-2 h-5 overflow-hidden rounded-full border-[2.5px] border-ink bg-card"
           >
             <div
-              className="bar-anim h-full rounded-full bg-gradient-to-r from-primary via-sky to-teal"
+              className="bar-anim h-full rounded-full bg-primary bg-[repeating-linear-gradient(90deg,transparent_0_10px,rgb(255_253_249_/_0.35)_10px_16px)]"
               style={{ width: `${((step + 1) / total) * 100}%` }}
             />
           </div>
-          <p className="mt-2 font-bold text-teal-ink" aria-live="polite">
+          <p className="hand mt-2 text-2xl leading-none text-primary" aria-live="polite">
             {encouragement(qi, questions.length, lang)}
           </p>
         </div>
@@ -182,7 +182,7 @@ export default function QuizPage() {
       </div>
 
       <div key={step} className="slide-in">
-        <h1 className="mt-6 text-3xl font-black leading-tight tracking-tight text-ink sm:text-4xl">
+        <h1 className="mt-6 text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
           {isProfile
             ? t("Ce profil de liceu urmezi?", "What did you focus on most in high school?")
             : isWhere
@@ -206,10 +206,10 @@ export default function QuizPage() {
                       type="button"
                       aria-pressed={pr.id === draft.profileId}
                       onClick={() => pickProfile(pr.id)}
-                      className={`opt min-h-12 rounded-2xl border-2 px-4 py-3 text-left font-semibold ${
+                      className={`opt min-h-12 rounded-2xl border-[2.5px] px-4 py-3 text-left font-semibold ${
                         pr.id === draft.profileId
-                          ? "border-primary bg-primary-tint text-primary-dark"
-                          : "border-transparent bg-card text-ink-soft ring-1 ring-line hover:ring-primary/50"
+                          ? "border-primary bg-primary-tint text-primary-dark shadow-[0_3px_0_var(--color-primary)]"
+                          : "border-ink bg-card text-ink hover:bg-teal-tint"
                       }`}
                     >
                       {pr.name}
@@ -237,14 +237,14 @@ export default function QuizPage() {
               <button
                 type="button"
                 onClick={() => setStep(step + 1)}
-                className="min-h-12 flex-1 rounded-2xl bg-primary px-6 py-3 text-lg font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark"
+                className="min-h-12 flex-1 rounded-2xl bg-primary px-6 py-3 text-lg font-extrabold text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:-translate-y-0.5 hover:bg-primary-dark"
               >
                 {t("Continuă", "Continue")}
               </button>
               <button
                 type="button"
                 onClick={() => setStep(step + 1)}
-                className="min-h-12 rounded-2xl border-2 border-primary px-6 py-3 font-bold text-primary hover:bg-primary-tint"
+                className="min-h-12 rounded-2xl border-[2.5px] border-primary bg-card px-6 py-3 font-extrabold text-primary transition hover:-translate-y-0.5 hover:bg-primary-tint"
               >
                 {t("Sar peste", "Skip")}
               </button>
@@ -268,10 +268,10 @@ export default function QuizPage() {
                   type="button"
                   aria-pressed={chosenCities.includes(c)}
                   onClick={() => toggleCity(c)}
-                  className={`opt min-h-12 rounded-2xl border-2 px-4 py-3 text-left font-semibold ${
+                  className={`opt min-h-12 rounded-2xl border-[2.5px] px-4 py-3 text-left font-semibold ${
                     chosenCities.includes(c)
-                      ? "border-primary bg-primary-tint text-primary-dark"
-                      : "border-transparent bg-card text-ink ring-1 ring-line hover:ring-primary/50"
+                      ? "border-primary bg-primary-tint text-primary-dark shadow-[0_3px_0_var(--color-primary)]"
+                      : "border-ink bg-card text-ink hover:bg-teal-tint"
                   }`}
                 >
                   {chosenCities.includes(c) ? "✓ " : ""}
@@ -284,7 +284,7 @@ export default function QuizPage() {
                 type="button"
                 disabled={chosenCities.length === 0}
                 onClick={() => finishCities(false)}
-                className="min-h-14 w-full rounded-2xl bg-primary px-6 py-4 text-lg font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark disabled:cursor-not-allowed disabled:opacity-50"
+                className="min-h-14 w-full rounded-2xl bg-primary px-6 py-4 text-lg font-extrabold text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark disabled:cursor-not-allowed disabled:opacity-50"
                 data-cities-done
               >
                 {chosenCities.length === 0

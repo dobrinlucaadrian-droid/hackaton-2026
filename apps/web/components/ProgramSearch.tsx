@@ -78,11 +78,11 @@ export function ProgramSearch({ domains }: { domains: { id: string; name: string
 
       <div className="mt-6" aria-live="polite">
         {idle ? (
-          <p className="rounded-2xl bg-card p-6 text-ink-soft ring-1 ring-line">{t("Scrie ce cauți (de exemplu „informatică” sau „medicine”) sau alege un domeniu.", "Type what you are looking for (for example “computer science” or “medicine”) or pick a field.")}</p>
+          <p className="drawn rounded-2xl bg-card p-6 text-ink-soft">{t("Scrie ce cauți (de exemplu „informatică” sau „medicine”) sau alege un domeniu.", "Type what you are looking for (for example “computer science” or “medicine”) or pick a field.")}</p>
         ) : rows === undefined ? (
           <p className="text-ink-soft">{t("Se caută...", "Searching...")}</p>
         ) : rows.length === 0 ? (
-          <p className="rounded-2xl bg-card p-6 text-ink-soft ring-1 ring-line">{t("Nu am găsit programe. Încearcă alt cuvânt, alt oraș sau scoate filtrele.", "We found no programmes. Try another word or city, or remove the filters.")}</p>
+          <p className="drawn rounded-2xl bg-card p-6 text-ink-soft">{t("Nu am găsit programe. Încearcă alt cuvânt, alt oraș sau scoate filtrele.", "We found no programmes. Try another word or city, or remove the filters.")}</p>
         ) : (
           <>
             <h2 className="text-2xl font-black tracking-tight text-ink">

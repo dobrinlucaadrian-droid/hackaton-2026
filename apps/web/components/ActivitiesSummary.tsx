@@ -8,7 +8,7 @@ export function ActivitiesSummary({ activities }: { activities: StoredActivity[]
   const t = useT();
   if (activities.length === 0) return null;
   return (
-    <section className="rise mx-auto mt-6 max-w-2xl rounded-3xl bg-card p-5 ring-1 ring-line sm:max-w-3xl" aria-labelledby="activitati">
+    <section className="rise mx-auto mt-6 max-w-2xl drawn rounded-3xl bg-card p-5 sm:max-w-3xl" aria-labelledby="activitati">
       <h2 id="activitati" className="text-xl font-black tracking-tight text-ink">
         {t("Am ținut cont și de activitățile tale", "We also took your activities into account")}
       </h2>

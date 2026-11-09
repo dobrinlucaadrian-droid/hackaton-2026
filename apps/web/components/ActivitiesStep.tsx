@@ -111,7 +111,7 @@ export function ActivitiesStep({ activities, onChange }: Props) {
           )}
         </p>
       ) : (
-        <div className="space-y-5 rounded-3xl bg-card p-5 ring-1 ring-line">
+        <div className="space-y-5 drawn rounded-3xl bg-card p-5">
           <fieldset>
             <legend className="font-extrabold text-ink">{t("Ce fel de activitate este?", "What kind of activity is it?")}</legend>
             <div className="mt-2 grid gap-2">

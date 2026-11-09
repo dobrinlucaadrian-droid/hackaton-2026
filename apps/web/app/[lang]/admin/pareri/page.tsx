@@ -52,7 +52,7 @@ function Queue({ state }: { state: State }) {
   }
 
   if (rows === undefined) return <p className="mt-6 text-ink-soft">{t("Se încarcă...", "Loading...")}</p>;
-  if (rows.length === 0) return <p className="mt-6 rounded-2xl bg-card p-6 text-ink-soft ring-1 ring-line">{t("Nu este nimic aici.", "There is nothing here.")}</p>;
+  if (rows.length === 0) return <p className="mt-6 drawn rounded-2xl bg-card p-6 text-ink-soft">{t("Nu este nimic aici.", "There is nothing here.")}</p>;
   return (
     <ul className="mt-6 space-y-4" data-queue={state}>
       {rows.map((r) => (

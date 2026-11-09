@@ -10,15 +10,15 @@ import { openSignIn } from "./WelcomeDialog";
 
 // Only what the site really does today.
 const BENEFITS_RO = [
-  ["💾", "Îți păstrezi rezultatul", "Nu se pierde când închizi pagina: îl găsești oricând în „Contul meu”."],
-  ["📱", "Îl vezi de pe orice dispozitiv", "Intri de pe telefon sau de pe calculator și ai același rezultat."],
-  ["⚡", "Gratuit și rapid", "Durează sub un minut: nume, parolă și email (emailul doar pentru codul de confirmare)."],
+  ["save", "Îți păstrezi rezultatul", "Nu se pierde când închizi pagina: îl găsești oricând în „Contul meu”."],
+  ["phone", "Îl vezi de pe orice dispozitiv", "Intri de pe telefon sau de pe calculator și ai același rezultat."],
+  ["fast", "Gratuit și rapid", "Durează sub un minut: nume, parolă și email (emailul doar pentru codul de confirmare)."],
 ] as const;
 
 const BENEFITS_EN = [
-  ["💾", "You keep your result", "It is not lost when you close the page: you can always find it in “My account”."],
-  ["📱", "See it on any device", "Sign in from your phone or your computer and you have the same result."],
-  ["⚡", "Free and quick", "It takes under a minute: username, password and email (the email only for the confirmation code)."],
+  ["save", "You keep your result", "It is not lost when you close the page: you can always find it in “My account”."],
+  ["phone", "See it on any device", "Sign in from your phone or your computer and you have the same result."],
+  ["fast", "Free and quick", "It takes under a minute: username, password and email (the email only for the confirmation code)."],
 ] as const;
 
 export function SaveResult({ result }: { result: PendingResult }) {
@@ -46,14 +46,14 @@ export function SaveResult({ result }: { result: PendingResult }) {
 
   if (!isLoading && !isAuthenticated) {
     return (
-      <section aria-labelledby="cont-titlu" className="rise mx-auto mt-8 max-w-2xl rounded-3xl bg-primary-tint p-6 shadow-sm ring-1 ring-primary/20 sm:p-8" data-save-result>
-        <h2 id="cont-titlu" className="text-center text-2xl font-black tracking-tight text-ink sm:text-3xl">{t("Nu-ți pierde rezultatul", "Do not lose your result")}</h2>
+      <section aria-labelledby="cont-titlu" className="rise drawn mx-auto mt-10 max-w-2xl rounded-[1.8rem] bg-primary-tint p-6 sm:p-8" data-save-result>
+        <h2 id="cont-titlu" className="text-center text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">{t("Nu-ți pierde rezultatul", "Do not lose your result")}</h2>
         <p className="mt-2 text-center text-ink-soft">{t("Fă-ți un cont gratuit și rezultatul se salvează singur în el.", "Make a free account and your result is saved in it automatically.")}</p>
         <ul className="mt-5 grid gap-3 sm:grid-cols-3">
           {BENEFITS.map(([icon, title, text]) => (
-            <li key={title} className="rounded-2xl bg-card p-4 text-center ring-1 ring-line">
-              <span aria-hidden className="text-3xl">{icon}</span>
-              <p className="mt-1 font-black text-ink">{title}</p>
+            <li key={title} className="rounded-2xl bg-card p-4 text-center ring-2 ring-ink">
+              <BenefitIcon kind={icon} />
+              <p className="mt-1 font-extrabold text-ink">{title}</p>
               <p className="mt-1 text-sm text-ink-soft">{text}</p>
             </li>
           ))}
@@ -103,5 +103,16 @@ export function SaveResult({ result }: { result: PendingResult }) {
         </>
       )}
     </div>
+  );
+}
+
+/** Small drawn icons for the account benefits: a bookmark (keep), a phone (any device), a lightning bolt (quick). */
+function BenefitIcon({ kind }: { kind: string }) {
+  const d =
+    kind === "save" ? "M7 3h10v18l-5-4-5 4z" : kind === "phone" ? "M8 2h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zM11 18h2" : "M13 2L4 14h7l-1 8 9-12h-7z";
+  return (
+    <svg aria-hidden viewBox="0 0 24 24" className="mx-auto h-9 w-9 text-primary" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+      <path d={d} />
+    </svg>
   );
 }

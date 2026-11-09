@@ -142,11 +142,11 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/[lang]/ghiduri/[tara]  (1 files)
 
-- `page.tsx` (131) — One country guide (Romanian pages only; English pages show 404): the steps to apply, the documents, language, costs, money and housing, with the official links.. Routes: /[lang]/ghiduri/[tara]. Exports: generateStaticParams, generateMetadata, GuidePage
+- `page.tsx` (132) — One country guide (Romanian pages only; English pages show 404): the steps to apply, the documents, language, costs, money and housing, with the official links.. Routes: /[lang]/ghiduri/[tara]. Exports: generateStaticParams, generateMetadata, GuidePage
 
 ### apps/web/app/[lang]/ghiduri  (1 files)
 
-- `page.tsx` (47) — Guides index: Romanian pages show one tile per country guide; English pages show the single guide "How to apply to a university in Romania".. Routes: /[lang]/ghiduri. Exports: generateMetadata, GuidesPage
+- `page.tsx` (48) — Guides index: Romanian pages show the drawn opening (a globe with a plane) and one postcard per country guide; English pages show the single guide "How to apply to a university in Romania".. Routes: /[lang]/ghiduri. Exports: generateMetadata, GuidesPage
 
 ### apps/web/app/[lang]/programe  (1 files)
 
@@ -160,7 +160,7 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/app/[lang]/rezultat  (2 files)
 
 - `layout.tsx` (13) — The result page's title in the browser tab, in the page language (the page itself runs in the browser).. Exports: generateMetadata, Layout
-- `page.tsx` (185) — Result screen (in the page language): top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /[lang]/rezultat. Exports: ResultPage
+- `page.tsx` (187) — Result screen (in the page language): top 3 study domains from the saved answers, with a live "Ce-ar fi dacă?" slider panel.. Routes: /[lang]/rezultat. Exports: ResultPage
 
 ### apps/web/app/[lang]/specializari/[categorie]  (1 files)
 
@@ -186,7 +186,7 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/app/[lang]/test  (2 files)
 
 - `layout.tsx` (13) — The questionnaire start page's title in the browser tab, in the page language (the page itself runs in the browser).. Exports: generateMetadata, Layout
-- `page.tsx` (76) — Questionnaire start screen in the page language: its own title, the 3-step explanation and the button that starts the quiz (the profile is asked inside the quiz).. Routes: /[lang]/test. Exports: QuestionnaireStart
+- `page.tsx` (76) — Questionnaire start screen in the page language, in the drawn look: the clipboard drawing, its own title, the button that starts the quiz and the 3-step explanation (the profile is asked inside the quiz).. Routes: /[lang]/test. Exports: QuestionnaireStart
 
 ### apps/web/app/[lang]/universitati/[id]/[facultate]  (1 files)
 
@@ -228,22 +228,22 @@ _Open only the files listed here; a file's description is its first comment line
 - `Drawn.tsx` (38) — Small shared pieces of the drawn look: the gold squiggle under page titles, a section title with a hand-drawn arrow, and the page opening (title and text on the left, a drawing on the right).. Exports: Squiggle, SectionTitle, PageOpening
 - `FacultyPrograms.tsx` (27) — On a faculty sheet: the bachelor programmes of that faculty from the official list. Plain markup: the faculty page gives it the rows (read on the server) and the page language.. Exports: FacultyPrograms
 - `FavoriteButton.tsx` (98) — The heart on a university sheet (or, compact, in the corner of a search result card): adds the university to the student's favourites (shown in "Contul meu") or removes it; without an account it opens the account window and adds it once the student is signed in.. Exports: FavoriteButton
-- `GuideFinder.tsx` (60) — Country guides index body (Romanian pages): a search box with a magnifier that filters the country tiles as you type (diacritics do not matter).. Exports: GuideFinder
+- `GuideFinder.tsx` (68) — Country guides index body (Romanian pages): a drawn search box that filters the country postcards as you type (diacritics do not matter); each postcard has a dashed stamp with a plane.. Exports: GuideFinder
 - `GuideRomania.tsx` (60) — The English guide "How to apply to a university in Romania": title, intro, sections, official source links and the date it was checked, read from data/en/guide-romania.json.. Exports: romaniaGuide, GuideRomania
 - `HomeScene.tsx` (94) — The big drawing on the home page, in ink outlines: a student walks the road from the high school up to a university on the hill, with clouds, the sun, a paper plane and a cap thrown in the air (labels in the page language).. Exports: HomeScene
 - `Illustrations.tsx` (252) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots, the start-page hero, the broken road of the error page, and the page drawings of Universități, Ghiduri, Specializări, Studenți, Chestionar and "nothing found".. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene, BrokenPath, …
 - `InterestPicker.tsx` (153) — "Ce îți place?": the student picks up to three interests and sees the specializations that fit them best, ranked, with links to universities (in the page language).. Exports: InterestPicker
 - `LangProvider.tsx` (26) — Gives every component in the browser the language of the page (ro or en), set once by the root layout from the address.. Exports: LangProvider, useLang, useHref, useT
 - `LocalLink.tsx` (11) — A link inside the site that stays in the page's language: href="/universitati" becomes "/en/universitati" on the English pages. Use it instead of next/link for addresses of this site.. Exports: LocalLink
-- `MatchCard.tsx` (211) — One result card, in the page language: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
+- `MatchCard.tsx` (217) — One result card, in the page language: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
 - `NavLinks.tsx` (63) — Header navigation links with the current page highlighted (centred on phones), the RO / EN language switch; signed-in visitors also get "Contul meu" (signing in starts from the home page).. Exports: NavLinks
 - `OfficialPrograms.tsx` (17) — On a university sheet outside Romania: every bachelor programme of the institution from its country's official dataset, read from the database (those lists are too large to ship with the pages). Romanian sheets render the same list on the server, from the catalogue file.. Exports: OfficialPrograms
-- `PageScenes.tsx` (67) — The ink drawings at the top of the pages in the drawn look (each on a soft blue blob): study fields (books, flask, palette, gear) and universities (a magnifier over a town).. Exports: FieldsDrawing, UniversitiesDrawing
+- `PageScenes.tsx` (138) — The ink drawings at the top of the pages in the drawn look (each on a soft blue blob): study fields, universities, guides, the questionnaire (a clipboard and a pencil) and the result (a podium).. Exports: FieldsDrawing, UniversitiesDrawing, GuidesDrawing, QuizDrawing, PodiumDrawing
 - `PhotoPicker.tsx` (148) — Optional face photo on the opinion form (in the page language): the student picks a picture, moves and zooms it inside the same circle the site shows, and keeps a small square JPEG of exactly that view (kept automatically if the form is sent while the circle is still open).. Exports: PhotoPicker
 - `ProgramGroups.tsx` (76) — The list of an institution's bachelor programmes, grouped by faculty (or by field when the source has no faculties). Plain markup, so a page can render it on the server; the page language comes in as `lang`.. Exports: ProgramGroups
 - `ProgramRow.tsx` (106) — One bachelor programme from the catalogue, as a compact row: name and the small facts its source gives (language, study form, years, places, status) and, for Romania, the last admission average with its official source.. Exports: FORM_LABEL, ProgramRow
 - `ProgramSearch.tsx` (104) — Search over the bachelor programmes of the catalogue: country, free text, study domain and city; the state lives in the URL so links and Back work.. Exports: ProgramSearch
-- `SaveResult.tsx` (108) — Under the result, in the page language: signed-in students save it with one button; the others see a card with the benefits of an account, which opens the account window on "new account" and saves the result once the account exists.. Exports: SaveResult
+- `SaveResult.tsx` (119) — Under the result, in the page language: signed-in students save it with one button; the others see a card with the benefits of an account, which opens the account window on "new account" and saves the result once the account exists.. Exports: SaveResult
 - `SearchBox.tsx` (137) — Search box (in the page language) with a magnifier icon; submits to /universitati?q=... or calls onSearch when given. With `suggest`, a list of suggestions opens while typing (arrows, Enter and Escape work; screen readers hear it as a combobox).. Exports: SearchBox
 - `ShareButton.tsx` (44) — "Trimite" on a university sheet: on a phone it opens the phone's own share menu (WhatsApp, Instagram, messages …); where that menu does not exist, it copies the link.. Exports: ShareButton
 - `ShareResult.tsx` (188) — Under the result (text in the page language): draws a story-sized picture (1080×1920) of the 3 matched domains with their percentages and "findmyuni.ro", in the browser only. Exports: ShareResult

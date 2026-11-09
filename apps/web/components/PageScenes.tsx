@@ -1,4 +1,4 @@
-// The ink drawings at the top of the pages in the drawn look (each on a soft blue blob): study fields (books, flask, palette, gear) and universities (a magnifier over a town).
+// The ink drawings at the top of the pages in the drawn look (each on a soft blue blob): study fields, universities, guides, the questionnaire (a clipboard and a pencil) and the result (a podium).
 const BLOB = "M40 90C70 30 180 20 260 30s140 40 130 130-60 130-170 130S20 260 24 180 20 130 40 90z";
 
 function Spark({ x, y, delay = "0s" }: { x: number; y: number; delay?: string }) {
@@ -61,6 +61,77 @@ export function UniversitiesDrawing({ label }: { label: string }) {
         <path d="M276 116a30 30 0 0 1 22-10" className="o" fill="none" />
       </g>
       <Spark x={110} y={60} />
+    </svg>
+  );
+}
+
+/** Ghiduri: a globe with a paper plane flying round it and a suitcase. */
+export function GuidesDrawing({ label }: { label: string }) {
+  return (
+    <svg viewBox="0 0 420 320" role="img" aria-label={label} className="h-auto w-full">
+      <path d={BLOB} fill="#e2e8f4" />
+      <path d="M210 250v26M170 280h80" className="o" fill="none" />
+      <circle cx="210" cy="150" r="96" fill="#fffdf9" className="o" />
+      <path d="M150 104c20 6 26 26 16 40s6 30-10 40M240 74c-10 20 4 30 24 30s20 26 6 40M250 210c-14-6-30 4-26 20" fill="none" className="o" />
+      <path d="M150 100c14-6 30 0 34 14s-10 20-4 34-14 30-30 22-24-30-18-44 6-20 18-26z" fill="#f9eed3" className="o" strokeWidth="2.6" />
+      <path d="M236 96c16-8 40 0 44 18s-12 16-8 34-20 22-30 10 4-26-6-38-6-18 0-24z" fill="#f3e1e6" className="o" strokeWidth="2.6" />
+      <path d="M90 150c30-90 210-110 250-20" fill="none" stroke="#1a2a4c" strokeWidth="2.5" strokeDasharray="6 9" strokeLinecap="round" />
+      <g className="bob">
+        <path d="M330 112l26-14 8 4-16 16 14 10-4 6-18-6-12 8-4-2 4-12z" fill="#61122d" className="o" strokeWidth="2.4" />
+      </g>
+      <path d="M300 236h70v52h-70z" fill="#c8962e" className="o" />
+      <path d="M322 236v-12h26v12M300 256h70" fill="none" className="o" />
+      <Spark x={70} y={70} />
+    </svg>
+  );
+}
+
+/** Chestionar: a clipboard with ticked boxes and a big pencil. */
+export function QuizDrawing({ label }: { label: string }) {
+  return (
+    <svg viewBox="0 0 420 320" role="img" aria-label={label} className="h-auto w-full">
+      <path d={BLOB} fill="#e2e8f4" />
+      <g transform="rotate(-6 200 170)">
+        <path d="M120 60h160v220H120z" fill="#c8962e" className="o" />
+        <path d="M136 80h128v186H136z" fill="#fffdf9" className="o" />
+        <path d="M174 50h52v24h-52z" fill="#1a2a4c" className="o" />
+        <path d="M152 112h18v18h-18zM152 162h18v18h-18zM152 212h18v18h-18z" fill="#fffdf9" className="o" strokeWidth="2.6" />
+        <path d="M154 120l6 6 12-14M154 170l6 6 12-14" fill="none" stroke="#61122d" strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M184 120h62M184 170h50M184 220h56" className="o" />
+      </g>
+      <g className="bob">
+        <path d="M300 230l60-90 22 14-60 90-24 10z" fill="#f9eed3" className="o" />
+        <path d="M360 140l22 14 8-12-22-14z" fill="#9a3553" className="o" />
+        <path d="M298 254l2-24 22 14z" fill="#1a2a4c" />
+      </g>
+      <Spark x={90} y={60} />
+      <Spark x={340} y={70} delay="0.8s" />
+    </svg>
+  );
+}
+
+/** Rezultat: a podium with places 1, 2 and 3 and a little confetti. */
+export function PodiumDrawing({ label }: { label: string }) {
+  return (
+    <svg viewBox="0 0 300 240" role="img" aria-label={label} className="h-auto w-full">
+      <path d="M30 70C50 20 140 10 200 20s90 40 80 110-50 90-130 90S10 190 14 140 20 100 30 70z" fill="#e2e8f4" />
+      <path d="M40 210h220" className="o" fill="none" />
+      <path d="M115 210v-90h70v90z" fill="#c8962e" className="o" />
+      <path d="M45 210v-60h70v60z" fill="#e6ebf5" className="o" />
+      <path d="M185 210v-44h70v44z" fill="#f3e1e6" className="o" />
+      <text x="150" y="172" textAnchor="middle" fontWeight="800" fontSize="34" fill="#1a2a4c">1</text>
+      <text x="80" y="190" textAnchor="middle" fontWeight="800" fontSize="26" fill="#1a2a4c">2</text>
+      <text x="220" y="196" textAnchor="middle" fontWeight="800" fontSize="22" fill="#1a2a4c">3</text>
+      <g className="bob">
+        <path d="M128 92l22-8 22 8-22 8z" fill="#1a2a4c" className="o" />
+        <path d="M139 96v8c6 4 16 4 22 0v-8" fill="#1a2a4c" className="o" />
+      </g>
+      <g className="twinkle">
+        <rect x="70" y="60" width="10" height="5" rx="1" fill="#9a3553" transform="rotate(30 75 62)" />
+        <rect x="220" y="70" width="10" height="5" rx="1" fill="#c8962e" transform="rotate(-20 225 72)" />
+        <rect x="190" y="40" width="9" height="5" rx="1" fill="#5b6f9c" transform="rotate(50 194 42)" />
+        <rect x="100" y="36" width="9" height="5" rx="1" fill="#c8962e" />
+      </g>
     </svg>
   );
 }
