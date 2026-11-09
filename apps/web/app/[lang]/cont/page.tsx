@@ -111,7 +111,8 @@ export default function AccountPage() {
 
   return (
     <Shell>
-      <h1 className="mt-4 text-4xl font-black tracking-tighter text-ink">{t("Contul meu", "My account")}</h1>
+      <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">{t("Contul", "My")} <span className="text-primary">{t("meu", "account")}</span></h1>
+      <svg aria-hidden viewBox="0 0 300 16" className="mt-2 block h-4 w-56 sm:w-72"><path d="M3 10c36-9 62 7 98-2s62 7 98-2 62 7 98-4" fill="none" stroke="#c8962e" strokeWidth="5" strokeLinecap="round" /></svg>
       <p className="mt-2 text-ink-soft" data-who>
         {me?.name ? <>{t("Bună", "Hello")}, <span className="font-bold text-ink">{me.name}</span>! </> : null}
         {t("Ești conectat ca", "You are signed in as")} <span className="font-bold text-ink">{me?.username ?? t("contul tău", "your account")}</span>{me?.email ? <> (email: <span className="font-bold text-ink">{me.email}</span>)</> : null}
@@ -130,13 +131,13 @@ export default function AccountPage() {
       )}
 
       <section className="mt-6 rounded-3xl bg-card p-6 drawn" aria-labelledby="rezultat-salvat">
-        <h2 id="rezultat-salvat" className="text-2xl font-black tracking-tight text-ink">{t("Rezultatul tău salvat", "Your saved result")}</h2>
+        <h2 id="rezultat-salvat" className="text-2xl font-extrabold tracking-tight text-ink">{t("Rezultatul tău salvat", "Your saved result")}</h2>
         {result === undefined ? (
           <p className="mt-2 text-ink-soft">{t("Se încarcă...", "Loading...")}</p>
         ) : result === null ? (
           <>
             <p className="mt-2 text-ink-soft">{t("Încă nu ai salvat un rezultat. Completează chestionarul și apasă „Salvează în contul meu”.", "You have not saved a result yet. Complete the quiz and press “Save in my account”.")}</p>
-            <Link href="/test" className="mt-4 inline-flex min-h-12 items-center rounded-2xl bg-primary px-6 py-3 font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] hover:bg-primary-dark">
+            <Link href="/test" className="mt-4 inline-flex min-h-12 items-center rounded-2xl bg-primary px-6 py-3 font-extrabold text-white shadow-[0_3px_0_var(--color-primary-dark)] hover:bg-primary-dark">
               {t("Completează chestionarul", "Complete the quiz")}
             </Link>
           </>
@@ -150,7 +151,7 @@ export default function AccountPage() {
             <ol className="mt-4 space-y-2" data-saved-domains>
               {top.map((d, i) => (
                 <li key={d.id} className="flex items-center gap-3 rounded-2xl bg-paper px-4 py-3">
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-black text-white">{i + 1}</span>
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-extrabold text-white">{i + 1}</span>
                   <span aria-hidden>{domainStyle(d.id).emoji}</span>
                   <span className="min-w-0 flex-1 font-extrabold text-ink">{d.name}</span>
                   <Link href={`/universitati?domeniu=${d.id}`} className="shrink-0 text-sm font-bold text-primary underline decoration-primary/40 underline-offset-2">
@@ -160,7 +161,7 @@ export default function AccountPage() {
               ))}
             </ol>
             <div className="mt-4 flex flex-wrap gap-3">
-              <Link href="/test" className="inline-flex min-h-11 items-center rounded-full border-2 border-primary px-5 font-bold text-primary hover:bg-primary-tint">
+              <Link href="/test" className="inline-flex min-h-11 items-center rounded-2xl border-[2.5px] border-primary bg-card px-5 font-extrabold text-primary transition hover:-translate-y-0.5 hover:bg-primary-tint">
                 {t("Reia chestionarul", "Retake the quiz")}
               </Link>
               <button type="button" onClick={() => void removeResult({})} className="min-h-11 rounded-full px-5 font-bold text-ink-soft underline underline-offset-2 hover:text-primary-dark">
@@ -172,13 +173,13 @@ export default function AccountPage() {
       </section>
 
       <section className="mt-6 rounded-3xl bg-card p-6 drawn" aria-labelledby="favorite">
-        <h2 id="favorite" className="text-2xl font-black tracking-tight text-ink">{t("Universități favorite", "Favourite universities")}</h2>
+        <h2 id="favorite" className="text-2xl font-extrabold tracking-tight text-ink">{t("Universități favorite", "Favourite universities")}</h2>
         {favorites === undefined ? (
           <p className="mt-2 text-ink-soft">{t("Se încarcă...", "Loading...")}</p>
         ) : favorites.length === 0 ? (
           <>
             <p className="mt-2 text-ink-soft">{t("Încă nu ai nicio universitate la favorite. Pe pagina unei universități, apasă „♡ Adaugă la favorite”.", "You have no favourite universities yet. On a university page, press “♡ Add to favourites”.")}</p>
-            <Link href="/universitati" className="mt-4 inline-flex min-h-11 items-center rounded-full border-2 border-primary px-5 font-bold text-primary hover:bg-primary-tint">
+            <Link href="/universitati" className="mt-4 inline-flex min-h-11 items-center rounded-2xl border-[2.5px] border-primary bg-card px-5 font-extrabold text-primary transition hover:-translate-y-0.5 hover:bg-primary-tint">
               {t("Caută universități", "Search universities")}
             </Link>
           </>
@@ -206,9 +207,9 @@ export default function AccountPage() {
       </section>
 
       <section className="mt-6 rounded-3xl bg-card p-6 drawn" aria-labelledby="cont-setari">
-        <h2 id="cont-setari" className="text-2xl font-black tracking-tight text-ink">{t("Cont", "Account")}</h2>
+        <h2 id="cont-setari" className="text-2xl font-extrabold tracking-tight text-ink">{t("Cont", "Account")}</h2>
         <div className="mt-3" data-name-box>
-          <p className="text-sm font-extrabold uppercase tracking-wide text-primary">{t("Numele tău", "Your name")}</p>
+          <p className="text-sm font-extrabold text-ink">{t("Numele tău", "Your name")}</p>
           {nameDraft === null && me?.name ? (
             <p className="mt-1 flex flex-wrap items-center gap-3 text-ink">
               <span className="font-bold">{me.name}</span>
@@ -225,9 +226,9 @@ export default function AccountPage() {
                 value={nameDraft ?? ""}
                 onChange={(e) => setNameDraft(e.target.value)}
                 placeholder={t("Prenume și nume", "First name and surname")}
-                className="min-h-11 min-w-0 flex-1 rounded-xl border-2 border-transparent bg-paper px-4 text-ink ring-1 ring-line focus:border-primary focus:outline-none"
+                className="min-h-11 min-w-0 flex-1 rounded-xl border-2 border-ink bg-card px-4 text-ink focus:outline-none focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary"
               />
-              <button type="submit" className="min-h-11 rounded-full bg-primary px-5 font-black text-white hover:bg-primary-dark">
+              <button type="submit" className="min-h-11 rounded-full bg-primary px-5 font-extrabold text-white hover:bg-primary-dark">
                 {t("Salvează", "Save")}
               </button>
               {me?.name && (
@@ -247,7 +248,7 @@ export default function AccountPage() {
               leaving.current = true;
               void signOut().then(() => router.replace(href("/")));
             }}
-            className="min-h-11 rounded-full border-2 border-primary px-5 font-bold text-primary hover:bg-primary-tint"
+            className="min-h-11 rounded-2xl border-[2.5px] border-primary bg-card px-5 font-extrabold text-primary transition hover:-translate-y-0.5 hover:bg-primary-tint"
           >
             {t("Deconectare", "Sign out")}
           </button>
@@ -265,7 +266,7 @@ export default function AccountPage() {
             <p id="sterge-titlu" className="font-extrabold text-primary-dark">{t("Sigur vrei să ștergi contul?", "Are you sure you want to delete the account?")}</p>
             <p className="mt-1 text-sm text-primary-dark">{t("Ștergem numele de utilizator, numele, adresa de email, parola, rezultatul salvat și universitățile favorite. Nu se poate anula.", "We delete your username, your name, your email address, your password, your saved result and your favourite universities. This cannot be undone.")}</p>
             <div className="mt-3 flex flex-wrap gap-3">
-              <button type="button" disabled={busy} onClick={() => void deleteAccount()} className="min-h-11 rounded-full bg-primary px-5 font-black text-white hover:bg-primary-dark disabled:opacity-50">
+              <button type="button" disabled={busy} onClick={() => void deleteAccount()} className="min-h-11 rounded-full bg-primary px-5 font-extrabold text-white hover:bg-primary-dark disabled:opacity-50">
                 {busy ? t("Se șterge...", "Deleting...") : t("Da, șterge contul", "Yes, delete the account")}
               </button>
               <button type="button" disabled={busy} onClick={() => setConfirming(false)} className="min-h-11 rounded-full border-2 border-primary px-5 font-bold text-primary hover:bg-card">

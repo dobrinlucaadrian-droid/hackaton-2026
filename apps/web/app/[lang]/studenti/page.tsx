@@ -1,6 +1,7 @@
-// Student voices: real opinions from students and graduates, with a search by faculty or university, in the page language (the opinions keep their original words).
+// Student voices in the drawn look: the opening with three students talking, a box inviting students to write, then real opinions with a search by faculty or university, in the page language (the opinions keep their original words).
 import type { Metadata } from "next";
-import { VoicesScene } from "@/components/Illustrations";
+import { PageOpening } from "@/components/Drawn";
+import { VoicesDrawing } from "@/components/PageScenes";
 import Link from "@/components/LocalLink";
 import { Shell } from "@/components/Shell";
 import { StudentVoices } from "@/components/StudentVoices";
@@ -25,37 +26,40 @@ export default async function Students({ params }: PageProps<"/[lang]/studenti">
   const t = tr(hasLang(lang) ? lang : "ro");
   return (
     <Shell wide>
-      <div className="mx-auto max-w-2xl">
+      <PageOpening
+        title={
+          <>
+            {t("Ce spun", "What")} <span className="text-primary">{t("studenții", "students say")}</span>
+          </>
+        }
+        lead={
+          <>
+            {t("Păreri adevărate de la studenți și absolvenți, despre facultatea lor, cu cuvintele lor.", "Real opinions from students and graduates about their faculty, in their own words.")}
+            {lang === "en" && <span className="mt-2 block text-sm">Opinions are shown in the words their authors wrote them, mostly in Romanian.</span>}
+          </>
+        }
+        scene={<VoicesDrawing label={t("Desen: trei studenți care vorbesc, cu bule de dialog deasupra", "Drawing: three students talking, with speech bubbles above them")} />}
+      />
+      <section aria-labelledby="scrie-parere" className="drawn mx-auto mt-4 flex max-w-5xl flex-col items-center gap-4 rounded-[1.8rem] bg-primary-tint p-6 text-center sm:flex-row sm:justify-between sm:text-left">
+        <div>
+          <h2 id="scrie-parere" className="text-xl font-extrabold tracking-tight text-ink sm:text-2xl">{t("Ești student? Spune-le și altora cum e.", "Are you a student? Tell others what it is like.")}</h2>
+          <p className="mt-1 text-ink-soft">{t("Nu ai nevoie de cont. Părerea apare după ce o citește echipa.", "You do not need an account. Your opinion appears after the team reads it.")}</p>
+        </div>
         <Link
-          href="/"
-          className="inline-flex min-h-11 items-center rounded-full border-2 border-primary px-5 py-2 font-bold text-primary transition hover:bg-primary-tint"
+          href="/studenti/parere"
+          className="inline-flex min-h-12 shrink-0 items-center gap-2 rounded-2xl bg-primary px-6 py-3 font-extrabold text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:-translate-y-0.5 hover:bg-primary-dark"
         >
-          {t("← Înapoi", "← Back")}
+          <svg aria-hidden viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z" /></svg>
+          {t("Scrie părerea ta", "Write your opinion")}
         </Link>
-        <section className="rise pt-6 text-center">
-          <VoicesScene className="float mx-auto h-24 w-32" />
-          <h1 className="mt-2 text-4xl font-black tracking-tighter text-ink sm:text-5xl">{t("Ce spun studenții", "What students say")}</h1>
-          <p className="mx-auto mt-3 max-w-md text-ink-soft">
-            {t("Păreri adevărate de la studenți și absolvenți, despre facultatea lor.", "Real opinions from students and graduates about their faculty.")}
-          </p>
-          {lang === "en" && (
-            <p className="mx-auto mt-2 max-w-md text-sm text-ink-soft">Opinions are shown in the words their authors wrote them, mostly in Romanian.</p>
-          )}
-          <Link
-            href="/studenti/parere"
-            className="mt-2 inline-flex min-h-11 items-center font-bold text-primary underline decoration-primary/40 underline-offset-2 hover:text-primary-dark"
-          >
-            {t("Ești student? Scrie și tu o părere →", "Are you a student? Write an opinion too →")}
-          </Link>
-        </section>
-      </div>
+      </section>
 
       <StudentVoices />
 
       <div className="mt-10 text-center">
         <Link
           href="/test"
-          className="inline-block rounded-2xl bg-primary px-6 py-3 font-bold text-white shadow-[0_3px_0_var(--color-primary-dark)] hover:bg-primary-dark"
+          className="inline-block rounded-2xl bg-primary px-6 py-3 font-extrabold text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:-translate-y-0.5 hover:bg-primary-dark"
         >
           {t("Completează chestionarul și află ce ți se potrivește", "Take the quiz and find out what suits you")}
         </Link>

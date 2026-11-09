@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/surse">): 
 function Block({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="mt-6 rounded-3xl bg-card p-6 drawn">
-      <h2 className="text-2xl font-black tracking-tight text-ink">{title}</h2>
+      <h2 className="text-2xl font-extrabold tracking-tight text-ink">{title}</h2>
       <div className="mt-2 space-y-2 text-ink-soft">{children}</div>
     </section>
   );
@@ -36,7 +36,8 @@ export default async function SourcesPage({ params }: PageProps<"/[lang]/surse">
   const t = tr(lang);
   return (
     <Shell>
-      <h1 className="mt-4 text-4xl font-black tracking-tighter text-ink">{t("Surse de date", "Data sources")}</h1>
+      <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">{t("Surse de", "Data")} <span className="text-primary">{t("date", "sources")}</span></h1>
+      <svg aria-hidden viewBox="0 0 300 16" className="mt-2 block h-4 w-56 sm:w-72"><path d="M3 10c36-9 62 7 98-2s62 7 98-2 62 7 98-4" fill="none" stroke="#c8962e" strokeWidth="5" strokeLinecap="round" /></svg>
       <p className="mt-2 text-ink-soft">
         {t("Spunem de unde vine fiecare fel de informație, ca să o poți verifica singur.", "We say where each kind of information comes from, so you can check it yourself.")}
       </p>

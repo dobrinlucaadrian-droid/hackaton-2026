@@ -15,8 +15,8 @@ import { universities } from "@/lib/universities";
 
 const LIMITS = { name: 60, faculty: 120, university: 120, status: 40, textMin: 40, textMax: 3000 };
 
-const field = "mt-1 min-h-12 w-full rounded-xl border-2 border-transparent bg-paper px-4 text-ink ring-1 ring-line focus:border-primary focus:outline-none";
-const label = "text-sm font-extrabold uppercase tracking-wide text-primary";
+const field = "mt-1 min-h-12 w-full rounded-xl border-2 border-ink bg-card px-4 text-ink focus:outline-none focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary";
+const label = "text-sm font-extrabold text-ink";
 
 export default function ReviewFormPage() {
   const lang = useLang();
@@ -89,7 +89,7 @@ export default function ReviewFormPage() {
     return (
       <Shell>
         <div className="rise mt-10 rounded-3xl bg-card p-8 text-center drawn" role="status">
-          <h1 className="text-3xl font-black tracking-tight text-ink">{t("Mulțumim!", "Thank you!")}</h1>
+          <h1 className="text-3xl font-extrabold tracking-tight text-ink">{t("Mulțumim!", "Thank you!")}</h1>
           <p className="mt-3 text-ink-soft">{t("Am primit părerea ta. O citește cineva din echipă și, după aprobare, apare pe pagina „Studenți”.", "We received your opinion. Someone from the team reads it and, once approved, it appears on the “Students” page.")}</p>
           <Link href="/studenti" className="mt-6 inline-block rounded-2xl bg-primary px-6 py-3 font-bold text-white shadow-[0_3px_0_var(--color-primary-dark)] hover:bg-primary-dark">
             {t("Înapoi la păreri", "Back to opinions")}
@@ -101,10 +101,12 @@ export default function ReviewFormPage() {
 
   return (
     <Shell>
-      <Link href="/studenti" className="inline-flex min-h-11 items-center rounded-full border-2 border-primary px-5 py-2 font-bold text-primary hover:bg-primary-tint">
-        {t("← Înapoi", "← Back")}
+      <Link href="/studenti" className="inline-flex min-h-11 items-center gap-2 font-extrabold text-primary transition hover:text-primary-dark">
+        <svg aria-hidden viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M11 6l-6 6 6 6" /></svg>
+        {t("Înapoi la studenți", "Back to students")}
       </Link>
-      <h1 className="mt-4 text-4xl font-black tracking-tighter text-ink">{t("Scrie părerea ta", "Write your opinion")}</h1>
+      <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">{t("Scrie", "Write")} <span className="text-primary">{t("părerea ta", "your opinion")}</span></h1>
+      <svg aria-hidden viewBox="0 0 300 16" className="mt-2 block h-4 w-56 sm:w-72"><path d="M3 10c36-9 62 7 98-2s62 7 98-2 62 7 98-4" fill="none" stroke="#c8962e" strokeWidth="5" strokeLinecap="round" /></svg>
       <p className="mt-2 text-ink-soft">
         {t("Ești student sau ai terminat o facultate? Spune-le liceenilor cum e, cu vorbele tale. Părerea apare pe site doar după ce o citește și o aprobă echipa FindMyUni.", "Are you a student or a graduate? Tell future students what it is really like, in your own words. Your opinion appears on the site only after the FindMyUni team reads and approves it.")}
       </p>
@@ -143,7 +145,7 @@ export default function ReviewFormPage() {
           <label htmlFor="p-website">Website</label>
           <input id="p-website" tabIndex={-1} autoComplete="off" value={website} onChange={(e) => setWebsite(e.target.value)} />
         </div>
-        <label className="flex cursor-pointer items-start gap-3 rounded-2xl bg-paper p-4 ring-1 ring-line">
+        <label className="flex cursor-pointer items-start gap-3 rounded-2xl bg-paper p-4 ring-2 ring-line">
           <input type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} className="mt-1 h-5 w-5 shrink-0 accent-primary" />
           <span className="text-sm text-ink">{t("Sunt de acord ca numele meu și părerea mea să fie publicate pe FindMyUni. Am cel puțin 18 ani.", "I agree that my name and my opinion are published on FindMyUni. I am at least 18 years old.")}{" "}
             <Link href="/confidentialitate" className="font-bold text-primary underline underline-offset-2" target="_blank">{t("Ce date păstrăm", "What data we keep")}</Link>
@@ -151,23 +153,23 @@ export default function ReviewFormPage() {
         </label>
         <Turnstile key={robotKey} onToken={onToken} />
         {error && <p className="text-sm font-bold text-primary-dark" role="alert">{error}</p>}
-        <button type="submit" disabled={!canSend} className="min-h-12 w-full rounded-2xl bg-primary px-6 py-3 text-lg font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark disabled:cursor-not-allowed disabled:opacity-50">
+        <button type="submit" disabled={!canSend} className="min-h-12 w-full rounded-2xl bg-primary px-6 py-3 text-lg font-extrabold text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark disabled:cursor-not-allowed disabled:opacity-50">
           {state === "sending" ? t("Se trimite...", "Sending...") : t("Trimite părerea", "Send your opinion")}
         </button>
       </form>
       {askFace && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-ink/50 p-4" onClick={() => setAskFace(false)}>
-          <div role="dialog" aria-modal="true" aria-labelledby="p-face-title" className="w-full max-w-md rounded-3xl bg-card p-6 shadow-xl" onClick={(e) => e.stopPropagation()}>
-            <h2 id="p-face-title" className="text-2xl font-black tracking-tight text-ink">{t("Îți arătăm și fața?", "Shall we show your face too?")}</h2>
+          <div role="dialog" aria-modal="true" aria-labelledby="p-face-title" className="w-full max-w-md drawn rounded-3xl bg-card p-6" onClick={(e) => e.stopPropagation()}>
+            <h2 id="p-face-title" className="text-2xl font-extrabold tracking-tight text-ink">{t("Îți arătăm și fața?", "Shall we show your face too?")}</h2>
             {/* eslint-disable-next-line @next/next/no-img-element -- a local preview of the cropped photo */}
-            {photo && <img src={photo.url} alt="" className="mx-auto mt-4 h-24 w-24 rounded-full object-cover ring-2 ring-teal" />}
-            <label className="mt-4 flex cursor-pointer items-start gap-3 rounded-2xl bg-paper p-4 ring-1 ring-line">
+            {photo && <img src={photo.url} alt="" className="mx-auto mt-4 h-24 w-24 rounded-full object-cover ring-[3px] ring-ink" />}
+            <label className="mt-4 flex cursor-pointer items-start gap-3 rounded-2xl bg-paper p-4 ring-2 ring-line">
               <input type="checkbox" checked={faceOk} onChange={(e) => setFaceOk(e.target.checked)} className="mt-1 h-5 w-5 shrink-0 accent-primary" />
               <span className="text-sm text-ink">{t("Sunt de acord ca poza mea, în care mi se vede fața, să fie afișată pe FindMyUni lângă părerea mea. Pot cere oricând să fie ștearsă.", "I agree that my photo, which shows my face, is shown on FindMyUni next to my opinion. I can ask for it to be deleted at any time.")}</span>
             </label>
             <p className="mt-2 text-xs text-ink-soft">{faceOk ? t("Poza apare doar după ce echipa aprobă părerea.", "The photo appears only after the team approves the opinion.") : t("Dacă nu bifezi, părerea se trimite fără poză.", "If you do not tick it, your opinion is sent without the photo.")}</p>
             <div className="mt-5 flex flex-wrap gap-3">
-              <button type="button" autoFocus onClick={() => void send(faceOk)} className="min-h-12 flex-1 rounded-2xl bg-primary px-6 py-3 font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] hover:bg-primary-dark">
+              <button type="button" autoFocus onClick={() => void send(faceOk)} className="min-h-12 flex-1 rounded-2xl bg-primary px-6 py-3 font-extrabold text-white shadow-[0_3px_0_var(--color-primary-dark)] hover:bg-primary-dark">
                 {faceOk ? t("Trimite cu poză", "Send with photo") : t("Trimite fără poză", "Send without photo")}
               </button>
               <button type="button" onClick={() => setAskFace(false)} className="min-h-12 rounded-2xl px-4 font-bold text-ink-soft underline underline-offset-2">{t("Înapoi", "Back")}</button>

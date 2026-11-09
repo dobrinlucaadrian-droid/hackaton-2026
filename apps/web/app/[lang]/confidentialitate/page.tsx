@@ -45,7 +45,7 @@ function ContactEmail() {
 function Block({ title, children }: { title: React.ReactNode; children: React.ReactNode }) {
   return (
     <section className="mt-6 rounded-3xl bg-card p-6 drawn">
-      <h2 className="text-2xl font-black tracking-tight text-ink">{title}</h2>
+      <h2 className="text-2xl font-extrabold tracking-tight text-ink">{title}</h2>
       <div className="mt-2 space-y-2 text-ink-soft">{children}</div>
     </section>
   );
@@ -82,7 +82,8 @@ export default async function PrivacyPage({ params }: PageProps<"/[lang]/confide
           This is an English translation for convenience. The Romanian version is the one that applies.
         </p>
       )}
-      <h1 className="mt-4 text-4xl font-black tracking-tighter text-ink">{t("Confidențialitate", "Privacy")}</h1>
+      <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">{t("Confidențialitate", "Privacy")}</h1>
+      <svg aria-hidden viewBox="0 0 300 16" className="mt-2 block h-4 w-56 sm:w-72"><path d="M3 10c36-9 62 7 98-2s62 7 98-2 62 7 98-4" fill="none" stroke="#c8962e" strokeWidth="5" strokeLinecap="round" /></svg>
       <p className="mt-2 text-ink-soft">
         {t(
           "Pe scurt: păstrăm cât mai puține date, nu le vindem, nu avem reclame și le poți descărca sau șterge oricând.",

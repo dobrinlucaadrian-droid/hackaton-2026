@@ -98,7 +98,7 @@ export function StudentVoices() {
 
   return (
     <>
-      <form role="search" onSubmit={(e) => e.preventDefault()} className="mx-auto mt-6 max-w-2xl">
+      <form role="search" onSubmit={(e) => e.preventDefault()} className="mx-auto mt-10 max-w-2xl">
         <label htmlFor="cauta-studenti" className="sr-only">
           {tr("Caută o facultate sau o universitate", "Search for a faculty or a university")}
         </label>
@@ -106,7 +106,7 @@ export function StudentVoices() {
           <svg
             aria-hidden
             viewBox="0 0 24 24"
-            className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 fill-none stroke-ink-soft"
+            className="pointer-events-none absolute left-4 top-1/2 h-6 w-6 -translate-y-1/2 fill-none stroke-ink"
             strokeWidth="2.2"
             strokeLinecap="round"
           >
@@ -119,7 +119,7 @@ export function StudentVoices() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder={tr("Caută o facultate sau o universitate…", "Search for a faculty or a university…")}
-            className="min-h-12 w-full rounded-2xl border-2 border-transparent bg-card py-3 pl-12 pr-4 text-ink drawn placeholder:text-ink-soft/80 focus:border-primary focus:outline-none"
+            className="min-h-14 w-full rounded-[1.4rem] border-[3px] border-ink bg-card py-3 pl-12 pr-4 text-lg text-ink shadow-[0_4px_0_var(--color-ink)] placeholder:text-ink-soft/80 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary focus:outline-none"
           />
         </div>
         <p className="mt-2 text-center text-sm text-ink-soft" aria-live="polite">
@@ -143,7 +143,7 @@ export function StudentVoices() {
             <button
               type="button"
               onClick={() => setQuery("")}
-              className="min-h-11 rounded-full border-2 border-primary px-5 py-2 font-bold text-primary hover:bg-primary-tint"
+              className="min-h-11 rounded-2xl border-[2.5px] border-primary bg-card px-5 py-2 font-extrabold text-primary transition hover:-translate-y-0.5 hover:bg-primary-tint"
             >
               {tr("Vezi toate părerile", "See all opinions")}
             </button>
@@ -156,7 +156,7 @@ export function StudentVoices() {
             return (
               <section key={g.university} className={`mx-auto w-full ${together ? "max-w-5xl" : "max-w-2xl"}`}>
                 {together && (
-                  <h2 className="mb-3 text-sm font-bold uppercase tracking-wide text-teal-ink">
+                  <h2 className="mb-3 flex items-center gap-2 text-lg font-extrabold text-ink">
                     {g.university}
                   </h2>
                 )}

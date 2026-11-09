@@ -1,4 +1,4 @@
-// The ink drawings at the top of the pages in the drawn look (each on a soft blue blob): study fields, universities, guides, the questionnaire (a clipboard and a pencil) and the result (a podium).
+// The ink drawings of the pages in the drawn look (each on a soft blue blob): study fields, universities, guides, the questionnaire, the result, the students, and the two error drawings (a road ending at a question-mark sign, a broken road).
 const BLOB = "M40 90C70 30 180 20 260 30s140 40 130 130-60 130-170 130S20 260 24 180 20 130 40 90z";
 
 function Spark({ x, y, delay = "0s" }: { x: number; y: number; delay?: string }) {
@@ -131,6 +131,70 @@ export function PodiumDrawing({ label }: { label: string }) {
         <rect x="220" y="70" width="10" height="5" rx="1" fill="#c8962e" transform="rotate(-20 225 72)" />
         <rect x="190" y="40" width="9" height="5" rx="1" fill="#5b6f9c" transform="rotate(50 194 42)" />
         <rect x="100" y="36" width="9" height="5" rx="1" fill="#c8962e" />
+      </g>
+    </svg>
+  );
+}
+
+/** Studenți: three students talking, with speech bubbles (one with a heart) above them. */
+export function VoicesDrawing({ label }: { label: string }) {
+  return (
+    <svg viewBox="0 0 420 320" role="img" aria-label={label} className="h-auto w-full">
+      <path d={BLOB} fill="#e2e8f4" />
+      <path d="M30 290h360" className="o" fill="none" />
+      <path d="M70 290v-60c0-22 60-22 60 0v60" fill="#9a3553" className="o" />
+      <circle cx="100" cy="198" r="24" fill="#f0c8a0" className="o" />
+      <path d="M76 194c0-24 48-24 48 0-8-8-40-8-48 0z" fill="#1a2a4c" className="o" />
+      <path d="M170 290v-74c0-26 70-26 70 0v74" fill="#5b6f9c" className="o" />
+      <circle cx="205" cy="176" r="26" fill="#d9a77e" className="o" />
+      <path d="M180 172c0-30 50-30 50 0-4-14-46-14-50 0z" fill="#61122d" className="o" />
+      <path d="M280 290v-58c0-22 58-22 58 0v58" fill="#c8962e" className="o" />
+      <circle cx="309" cy="200" r="23" fill="#f0c8a0" className="o" />
+      <path d="M286 196c2-24 44-24 46 0l-6-8-8 4-10-6-10 6z" fill="#1a2a4c" className="o" />
+      <g className="bob">
+        <path d="M60 70h90a12 12 0 0 1 12 12v30a12 12 0 0 1-12 12h-50l-16 16v-16H60a12 12 0 0 1-12-12V82a12 12 0 0 1 12-12z" fill="#fffdf9" className="o" />
+        <path d="M64 92h70M64 106h44" className="o" />
+      </g>
+      <g className="bob" style={{ animationDelay: "1s" }}>
+        <path d="M250 50h104a12 12 0 0 1 12 12v30a12 12 0 0 1-12 12h-24v16l-16-16h-64a12 12 0 0 1-12-12V62a12 12 0 0 1 12-12z" fill="#f3e1e6" className="o" />
+        <path d="M298 92s-14-8-14-17a7 7 0 0 1 14-2 7 7 0 0 1 14 2c0 9-14 17-14 17z" fill="#9a3553" className="o" strokeWidth="2.4" />
+      </g>
+      <Spark x={200} y={70} />
+    </svg>
+  );
+}
+
+/** Pagina nu există: the road ends at a signpost with a question mark. */
+export function LostRoadDrawing({ label }: { label: string }) {
+  return (
+    <svg viewBox="0 0 320 200" role="img" aria-label={label} className="h-auto w-full">
+      <path d="M40 60C60 20 150 12 210 20s100 30 92 90-40 80-120 80S20 170 22 120 30 80 40 60z" fill="#e2e8f4" />
+      <path d="M30 170h260" className="o" fill="none" />
+      <path d="M120 170l26-96h28l26 96z" fill="#1a2a4c" />
+      <path d="M160 82v14M160 112v16M160 146v18" stroke="#fffdf9" strokeWidth="3" strokeLinecap="round" />
+      <path d="M230 170v-92" className="o" />
+      <path d="M200 60h60v40h-60z" fill="#fffdf9" className="o" />
+      <path d="M222 74a8 8 0 1 1 11 7c-2 1-3 3-3 5M230 93v1" fill="none" stroke="#61122d" strokeWidth="3.4" strokeLinecap="round" />
+      <path className="twinkle" d="M80 50l4 9 9 4-9 4-4 9-4-9-9-4 9-4z" fill="#c8962e" stroke="#1a2a4c" strokeWidth="2" />
+    </svg>
+  );
+}
+
+/** Ceva n-a mers: the road broken by a gap, with a warning sign. */
+export function BrokenRoadDrawing({ label }: { label: string }) {
+  return (
+    <svg viewBox="0 0 320 200" role="img" aria-label={label} className="h-auto w-full">
+      <path d="M40 60C60 20 150 12 210 20s100 30 92 90-40 80-120 80S20 170 22 120 30 80 40 60z" fill="#e2e8f4" />
+      <path d="M30 170h260" className="o" fill="none" />
+      <path d="M40 150c30-6 60-6 86-2l-6 18c-26-4-52-4-80 2z" fill="#1a2a4c" />
+      <path d="M150 146c40-6 80-2 120 10l-4 14c-40-12-78-14-116-8z" fill="#1a2a4c" />
+      <path d="M126 148l10 8-6 6 8 6M150 146l-8 8 6 6-6 8" fill="none" className="o" strokeWidth="2.4" />
+      <path d="M220 110v42" className="o" />
+      <path d="M220 66l26 44h-52z" fill="#c8962e" className="o" />
+      <path d="M220 82v14M220 102v1" stroke="#1a2a4c" strokeWidth="4" strokeLinecap="round" />
+      <g className="bob">
+        <path d="M84 60l22-8 22 8-22 8z" fill="#1a2a4c" className="o" />
+        <path d="M95 64v8c6 4 16 4 22 0v-8" fill="#1a2a4c" className="o" />
       </g>
     </svg>
   );

@@ -25,7 +25,7 @@ type Copy = {
 function Row({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex flex-col gap-0.5 border-b border-line py-2 last:border-0 sm:flex-row sm:gap-4">
-      <dt className="w-48 shrink-0 text-sm font-extrabold uppercase tracking-wide text-primary">{label}</dt>
+      <dt className="w-48 shrink-0 text-sm font-extrabold text-ink">{label}</dt>
       <dd className="min-w-0 break-words text-ink">{value}</dd>
     </div>
   );
@@ -66,13 +66,17 @@ export default function MyDataPage() {
   return (
     <Shell>
       <p className="mt-4">
-        <Link href="/cont" className="font-bold text-primary underline underline-offset-2">{t("← Contul meu", "← My account")}</Link>
+        <Link href="/cont" className="inline-flex min-h-11 items-center gap-2 font-extrabold text-primary transition hover:text-primary-dark">
+        <svg aria-hidden viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M11 6l-6 6 6 6" /></svg>
+        {t("Contul meu", "My account")}
+      </Link>
       </p>
-      <h1 className="mt-2 text-4xl font-black tracking-tighter text-ink">{t("Datele mele", "My data")}</h1>
+      <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">{t("Datele", "My")} <span className="text-primary">{t("mele", "data")}</span></h1>
+      <svg aria-hidden viewBox="0 0 300 16" className="mt-2 block h-4 w-56 sm:w-72"><path d="M3 10c36-9 62 7 98-2s62 7 98-2 62 7 98-4" fill="none" stroke="#c8962e" strokeWidth="5" strokeLinecap="round" /></svg>
       <p className="mt-2 text-ink-soft">{t("Aici vezi tot ce păstrăm despre contul tău. Doar tu poți vedea această pagină.", "Here you see everything we keep about your account. Only you can see this page.")}</p>
 
       <section className="mt-6 rounded-3xl bg-card p-5 drawn" data-my-data>
-        <h2 className="text-xl font-black text-ink">{t("Contul", "The account")}</h2>
+        <h2 className="text-xl font-extrabold text-ink">{t("Contul", "The account")}</h2>
         <dl className="mt-2">
           <Row label={t("Nume de utilizator", "Username")} value={copy.cont.numeUtilizator ?? "—"} />
           <Row label={t("Numele complet", "Full name")} value={copy.cont.numeComplet ?? "—"} />
@@ -84,7 +88,7 @@ export default function MyDataPage() {
       </section>
 
       <section className="mt-4 rounded-3xl bg-card p-5 drawn">
-        <h2 className="text-xl font-black text-ink">{t("Rezultatul salvat", "The saved result")}</h2>
+        <h2 className="text-xl font-extrabold text-ink">{t("Rezultatul salvat", "The saved result")}</h2>
         {r ? (
           <dl className="mt-2">
             <Row label={t("Profilul de liceu", "High-school profile")} value={(() => { const p = profiles.find((x) => x.id === r.profil); return p ? localProfile(p, lang).name : r.profil; })()} />
@@ -100,7 +104,7 @@ export default function MyDataPage() {
       </section>
 
       <section className="mt-4 rounded-3xl bg-card p-5 drawn">
-        <h2 className="text-xl font-black text-ink">{t("Universități favorite", "Favourite universities")}</h2>
+        <h2 className="text-xl font-extrabold text-ink">{t("Universități favorite", "Favourite universities")}</h2>
         {copy.universitatiFavorite?.length ? (
           <ul className="mt-2 space-y-1 text-sm text-ink">
             {copy.universitatiFavorite.map((f) => (
@@ -113,7 +117,7 @@ export default function MyDataPage() {
       </section>
 
       <section className="mt-4 rounded-3xl bg-card p-5 drawn">
-        <h2 className="text-xl font-black text-ink">{t("Conectări", "Sign-ins")}</h2>
+        <h2 className="text-xl font-extrabold text-ink">{t("Conectări", "Sign-ins")}</h2>
         {copy.sesiuniDeConectare.length ? (
           <ul className="mt-2 space-y-1 text-sm text-ink">
             {copy.sesiuniDeConectare.map((x) => (
@@ -126,7 +130,7 @@ export default function MyDataPage() {
       </section>
 
       <div className="mt-6 flex flex-wrap items-center gap-3">
-        <button type="button" onClick={download} className="min-h-11 rounded-full border-2 border-primary px-5 font-bold text-primary hover:bg-primary-tint">
+        <button type="button" onClick={download} className="min-h-11 rounded-2xl border-[2.5px] border-primary bg-card px-5 font-extrabold text-primary transition hover:-translate-y-0.5 hover:bg-primary-tint">
           {t("Descarcă o copie", "Download a copy")}
         </button>
         <p className="text-sm text-ink-soft">

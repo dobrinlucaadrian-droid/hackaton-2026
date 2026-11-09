@@ -72,7 +72,7 @@ export function SpecializationsBrowser({ title, lead, scene }: { title: ReactNod
         <div className="drawn mt-8 rounded-3xl bg-card p-6 text-center" role="status">
           <p className="font-bold text-ink">{t(`Nu am găsit nimic pentru „${query.trim()}”.`, `We found nothing for “${query.trim()}”.`)}</p>
           <p className="mt-1 text-ink-soft">{t("Încearcă un cuvânt mai scurt sau altă scriere.", "Try a shorter word or a different spelling.")}</p>
-          <button type="button" onClick={() => setQuery("")} className="mt-3 min-h-11 rounded-full border-2 border-primary px-5 font-bold text-primary hover:bg-primary-tint">
+          <button type="button" onClick={() => setQuery("")} className="mt-3 min-h-11 rounded-2xl border-[2.5px] border-primary bg-card px-5 font-extrabold text-primary transition hover:-translate-y-0.5 hover:bg-primary-tint">
             {t("Șterge căutarea", "Clear search")}
           </button>
         </div>

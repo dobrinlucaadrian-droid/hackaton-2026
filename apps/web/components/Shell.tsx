@@ -34,9 +34,10 @@ export function Shell({ children, wide = false }: { children: ReactNode; wide?: 
   );
 }
 
-export function Notice({ title, text, href, cta }: { title: string; text: string; href: string; cta: string }) {
+export function Notice({ title, text, href, cta, art }: { title: string; text: string; href: string; cta: string; art?: ReactNode }) {
   return (
     <div className="rise drawn mt-10 rounded-3xl bg-card p-8 text-center">
+      {art && <div className="mx-auto mb-2 w-full max-w-xs">{art}</div>}
       <h1 className="text-3xl font-extrabold tracking-tight text-ink">{title}</h1>
       <p className="mt-3 text-ink-soft">{text}</p>
       <Link

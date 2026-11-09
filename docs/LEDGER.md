@@ -86,6 +86,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT (gate complet); NEVERIFICAT: ecranul de admin în browser (cere conectarea ca administrator)
 - Urmează: publicare pe findmyuni.ro (Convex prod + Vercel) doar când echipa spune „salvează și publică”
 
+### 2026-11-09 — designul desenat, pasul 5: Studenți, contul și restul paginilor
+- Cerut: continuă cu Studenți, contul și restul paginilor.
+- Făcut: Studenți are deschiderea desenată (trei studenți care vorbesc), caseta „Ești student? Spune-le și altora cum e.” cu buton și cardurile de păreri cu pioneză, poză cu contur și numele scris de mână. Toate câmpurile de formular (păreri, conectare, fereastra de cont, Contul meu, căutarea de programe, admin) au contur de cerneală; etichetele nu mai sunt cu majuscule; butoanele cu contur au devenit butoane desenate pe tot site-ul. Titluri cu linia aurie pe Scrie părerea ta, Conectare, Contul meu, Datele mele, Surse de date, Confidențialitate și pe ghidul în engleză (fără eticheta „Guide”). Paginile de eroare au desene noi: drumul care se termină la un indicator cu semnul întrebării (404) și drumul rupt cu semn de atenție.
+- Fișiere: apps/web/app/[lang]/{studenti/page,studenti/parere/page,conectare/page,cont/page,cont/datele-mele/page,surse/page,confidentialitate/page,not-found,error,quiz/page,universitati/[id]/[facultate]/page,admin/pareri/page}.tsx, apps/web/components/{PageScenes,StudentVoices,StudentCard,SignInForm,WelcomeDialog,ProgramSearch,AdminGate,ActivitiesStep,Shell,GuideRomania,SpecializationsBrowser,UniversitySearch}.tsx
+- Poartă: vezi commit-ul; verificat în browser la 1440 și 390 px (/studenti, /studenti/parere, /conectare, fereastra de cont, /surse, /confidentialitate, o pagină care nu există, /en/ghiduri). „Contul meu” și „Datele mele” nu le-am văzut cu un cont conectat (nu am intrat într-un cont).
+- Urmează: echipa se uită la tot site-ul pe ramura design-desenat; dacă îi place, îl unim în production și îl publicăm doar cu acordul ei.
+
 ### 2026-11-09 — designul desenat, pasul 4: Ghiduri și Chestionar
 - Cerut: continuă cu Ghiduri și Chestionar.
 - Făcut: Ghiduri are deschiderea desenată („Vrei să studiezi afară?”, globul cu avion și valiză, numărul de ghiduri luat din date), căutarea cu chenar de cerneală și țările ca niște cărți poștale ușor înclinate, cu timbru punctat. Ghidul unei țări: link înapoi desenat, titlul cu linia aurie (fără eticheta de deasupra), pașii ca un drum punctat cu cercuri numerotate. Chestionarul: pagina de început cu clipboard-ul desenat, titlu, buton și cei 3 pași pe cartonașe cu cerc numerotat; întrebările au răspunsuri cu contur, progresul ca o bară conturată și încurajarea scrisă de mână; rezultatul are podiumul desenat, cel mai bun domeniu pe un card desenat cu desenul categoriei și steluță în loc de emoji, celelalte rânduri cu desene și procentul în cerc, caseta „Nu-ți pierde rezultatul” cu iconițe desenate, „Ce-ar fi dacă?” desenat. Și alte câteva carduri simple au devenit desenate (activități, programe, admin).
@@ -1324,6 +1331,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-11-09 03:45 `ed1c5e1` feat: drawn look, step 4: country guides and the questionnaire
 - 2026-11-09 03:39 `a2aace3` feat: drawn look, step 3: university search and sheets
 - 2026-11-09 03:33 `7b8e662` feat: drawn look, step 2: fields of study and category pages
 - 2026-11-09 03:29 `5ecfedb` feat: drawn look, step 1: fonts, header, doodles and the home page
@@ -1353,5 +1361,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-26 01:38 `05aab39` feat: English version of the site under /en
 - 2026-10-26 00:52 `7dd583d` feat: searchable university field, FindMyUni share image, drop UniPath
 - 2026-10-25 23:43 `8074524` fix: update Next.js and Zod, prerender share images
-- 2026-10-25 23:23 `5df325a` feat: share previews, share button and quiz result story image
 <!-- commits:end -->

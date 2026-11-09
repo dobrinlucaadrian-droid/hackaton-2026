@@ -70,7 +70,7 @@ export default async function FacultyPage({ params }: Props) {
   return (
     <Shell wide>
       <div className="mx-auto max-w-3xl">
-        <Link href={localHref(lang, `/universitati/${u.id}`)} className="inline-flex min-h-11 items-center rounded-full border-2 border-primary px-5 py-2 font-bold text-primary transition hover:bg-primary-tint">
+        <Link href={localHref(lang, `/universitati/${u.id}`)} className="inline-flex min-h-11 items-center rounded-2xl border-[2.5px] border-primary bg-card px-5 py-2 font-extrabold text-primary transition hover:-translate-y-0.5 hover:bg-primary-tint">
           ← {u.name}
         </Link>
 

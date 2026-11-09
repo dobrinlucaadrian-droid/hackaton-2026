@@ -15,7 +15,8 @@ export default async function SignInPage({ params }: PageProps<"/[lang]/conectar
   return (
     <Shell>
       <div className="rise mx-auto mt-6 max-w-md rounded-3xl bg-card p-6 drawn sm:p-8">
-        <h1 className="text-3xl font-black tracking-tight text-ink">{t("Conectare", "Sign in")}</h1>
+        <h1 className="text-4xl font-extrabold tracking-tight text-ink">{t("Conectare", "Sign in")}</h1>
+        <svg aria-hidden viewBox="0 0 300 16" className="mt-2 block h-4 w-56 sm:w-72"><path d="M3 10c36-9 62 7 98-2s62 7 98-2 62 7 98-4" fill="none" stroke="#c8962e" strokeWidth="5" strokeLinecap="round" /></svg>
         <p className="mt-2 text-ink-soft">
           {t(
             "Intră cu numele de utilizator și parola. Dacă ești la prima vizită, îți faci un cont în câteva secunde.",

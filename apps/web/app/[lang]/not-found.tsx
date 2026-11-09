@@ -1,6 +1,7 @@
 "use client";
-// Friendly 404 page shown for unknown routes and unknown university ids, in the page language.
+// Friendly 404 page shown for unknown routes and unknown university ids, with the drawn road that ends at a question-mark sign, in the page language.
 import { useT } from "@/components/LangProvider";
+import { LostRoadDrawing } from "@/components/PageScenes";
 import { Notice, Shell } from "@/components/Shell";
 
 export default function NotFound() {
@@ -15,6 +16,7 @@ export default function NotFound() {
         )}
         href="/universitati"
         cta={t("Înapoi la universități", "Back to universities")}
+        art={<LostRoadDrawing label={t("Desen: un drum care se termină la un indicator cu semnul întrebării", "Drawing: a road ending at a sign with a question mark")} />}
       />
     </Shell>
   );

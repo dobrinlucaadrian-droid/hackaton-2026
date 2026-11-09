@@ -122,7 +122,7 @@ export function ActivitiesStep({ activities, onChange }: Props) {
                   aria-pressed={kind === k.id}
                   onClick={() => setKind(k.id)}
                   className={`opt min-h-14 w-full rounded-2xl border-2 px-4 py-3 text-left text-lg font-semibold ${
-                    kind === k.id ? "border-primary bg-primary-tint text-primary-dark" : "border-transparent bg-paper text-ink ring-1 ring-line hover:ring-primary/50"
+                    kind === k.id ? "border-primary bg-primary-tint text-primary-dark" : "border-ink bg-card text-ink hover:bg-teal-tint"
                   }`}
                 >
                   <span aria-hidden className="mr-2">{k.emoji}</span>

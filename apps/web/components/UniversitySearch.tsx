@@ -525,7 +525,7 @@ export function UniversitySearch() {
             </select>
           </div>
 
-          <button type="button" onClick={clearFilters} disabled={activeCount === 0} className="min-h-11 rounded-full border-2 border-primary px-5 font-bold text-primary hover:bg-primary-tint disabled:cursor-not-allowed disabled:opacity-40">
+          <button type="button" onClick={clearFilters} disabled={activeCount === 0} className="min-h-11 rounded-2xl border-[2.5px] border-primary bg-card px-5 font-extrabold text-primary transition hover:-translate-y-0.5 hover:bg-primary-tint disabled:cursor-not-allowed disabled:opacity-40">
             {t("Șterge filtrele", "Clear filters")}
           </button>
         </section>

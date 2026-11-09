@@ -14,9 +14,9 @@ import { useLang, useT } from "./LangProvider";
 import Link from "./LocalLink";
 import { Turnstile } from "./Turnstile";
 
-const field = "mt-1 min-h-12 w-full rounded-xl border-2 border-transparent bg-paper px-4 text-ink ring-1 ring-line focus:border-primary focus:outline-none";
-const label = "text-sm font-extrabold uppercase tracking-wide text-primary";
-const primary = "min-h-12 w-full rounded-2xl bg-primary px-6 py-3 text-lg font-black text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark disabled:cursor-not-allowed disabled:opacity-50";
+const field = "mt-1 min-h-12 w-full rounded-xl border-2 border-ink bg-card px-4 text-ink focus:outline-none focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary";
+const label = "text-sm font-extrabold text-ink";
+const primary = "min-h-12 w-full rounded-2xl bg-primary px-6 py-3 text-lg font-extrabold text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:bg-primary-dark disabled:cursor-not-allowed disabled:opacity-50";
 const textButton = "min-h-11 font-bold text-primary underline underline-offset-2";
 
 // What the browser's password manager should offer in the password field.
@@ -161,7 +161,7 @@ export function SignInForm({ idPrefix = "", startWith = "signIn" }: { idPrefix?:
 
   return (
     <div data-account-form={mode}>
-      <h2 className="mt-6 text-xl font-black tracking-tight text-ink">{TITLE[mode]}</h2>
+      <h2 className="mt-6 text-xl font-extrabold tracking-tight text-ink">{TITLE[mode]}</h2>
       {info && (
         <p className="mt-2 rounded-2xl bg-primary-tint p-3 text-sm text-primary-dark" role="status">
           {info}

@@ -46,7 +46,7 @@ export function WelcomeDialog() {
     <div className="fixed inset-0 z-50 flex justify-center overflow-y-auto bg-ink/50 p-4" data-welcome>
       <div role="dialog" aria-modal="true" aria-labelledby="welcome-title" className="rise mt-auto w-full max-w-md rounded-3xl sm:mb-auto bg-card p-6 shadow-xl ring-1 ring-line sm:p-8">
         <div className="flex items-start justify-between gap-3">
-          <h2 id="welcome-title" className="text-3xl font-black tracking-tight text-ink">{t("Contul tău", "Your account")}</h2>
+          <h2 id="welcome-title" className="text-3xl font-extrabold tracking-tight text-ink">{t("Contul tău", "Your account")}</h2>
           <button type="button" onClick={() => setShown(false)} aria-label={t("Închide", "Close")} className="-mr-2 -mt-2 flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-2xl text-ink-soft hover:bg-primary-tint hover:text-primary-dark">
             <span aria-hidden>×</span>
           </button>

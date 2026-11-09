@@ -88,7 +88,7 @@ function Queue({ state }: { state: State }) {
               </button>
             )}
             {state !== "rejected" && (
-              <button type="button" disabled={busy === r._id} onClick={() => void set(r._id, "rejected")} className="min-h-11 rounded-full border-2 border-primary px-5 font-bold text-primary hover:bg-primary-tint disabled:opacity-50">
+              <button type="button" disabled={busy === r._id} onClick={() => void set(r._id, "rejected")} className="min-h-11 rounded-2xl border-[2.5px] border-primary bg-card px-5 font-extrabold text-primary transition hover:-translate-y-0.5 hover:bg-primary-tint disabled:opacity-50">
                 {state === "approved" ? t("Scoate de pe site", "Take off the site") : t("Respinge", "Reject")}
               </button>
             )}

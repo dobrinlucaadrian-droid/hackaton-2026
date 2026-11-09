@@ -317,7 +317,7 @@ export default function QuizPage() {
           <button
             type="button"
             onClick={() => (isWhere && askCity ? setAskCity(false) : setStep(step - 1))}
-            className="min-h-11 rounded-full border-2 border-primary px-5 py-2 font-bold text-primary hover:bg-primary-tint"
+            className="min-h-11 rounded-2xl border-[2.5px] border-primary bg-card px-5 py-2 font-extrabold text-primary transition hover:-translate-y-0.5 hover:bg-primary-tint"
           >
             {t("← Înapoi", "← Back")}
           </button>
@@ -325,7 +325,7 @@ export default function QuizPage() {
           <button
             type="button"
             onClick={() => router.push(href("/test"))}
-            className="min-h-11 rounded-full border-2 border-primary px-5 py-2 font-bold text-primary hover:bg-primary-tint"
+            className="min-h-11 rounded-2xl border-[2.5px] border-primary bg-card px-5 py-2 font-extrabold text-primary transition hover:-translate-y-0.5 hover:bg-primary-tint"
           >
             {t("← Înapoi la început", "← Back to the start")}
           </button>

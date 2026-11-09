@@ -9,8 +9,8 @@ import { useHref, useLang, useT } from "./LangProvider";
 import { ProgramRow } from "./ProgramRow";
 import { SearchBox } from "./SearchBox";
 
-const selectClass = "mt-1 min-h-11 w-full rounded-xl border-2 border-transparent bg-paper px-3 text-ink ring-1 ring-line focus:border-primary focus:outline-none";
-const labelClass = "text-sm font-extrabold uppercase tracking-wide text-primary";
+const selectClass = "mt-1 min-h-11 w-full rounded-xl border-2 border-ink bg-card px-3 text-ink focus:outline-none focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary";
+const labelClass = "text-sm font-extrabold text-ink";
 
 export function ProgramSearch({ domains }: { domains: { id: string; name: string }[] }) {
   const router = useRouter();
@@ -85,7 +85,7 @@ export function ProgramSearch({ domains }: { domains: { id: string; name: string
           <p className="drawn rounded-2xl bg-card p-6 text-ink-soft">{t("Nu am găsit programe. Încearcă alt cuvânt, alt oraș sau scoate filtrele.", "We found no programmes. Try another word or city, or remove the filters.")}</p>
         ) : (
           <>
-            <h2 className="text-2xl font-black tracking-tight text-ink">
+            <h2 className="text-2xl font-extrabold tracking-tight text-ink">
               {t("Programe", "Programmes")}
               {city ? t(` în ${city}`, ` in ${cityName(city, lang)}`) : t(` în ${country.name}`, ` in ${countryName(country.name, lang)}`)}
             </h2>

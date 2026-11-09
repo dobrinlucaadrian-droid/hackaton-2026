@@ -13,14 +13,14 @@ export function GuideRomania() {
   return (
     <div className="mx-auto max-w-3xl">
       <header className="rise mt-2">
-        <p className="text-sm font-extrabold uppercase tracking-wide text-primary">Guide</p>
-        <h1 className="mt-1 text-3xl font-black leading-tight tracking-tighter text-ink sm:text-5xl">{g.title}</h1>
+        <h1 className="text-4xl font-extrabold leading-none tracking-tight text-ink sm:text-5xl">{g.title}</h1>
+        <svg aria-hidden viewBox="0 0 300 16" className="mt-2 block h-4 w-56 sm:w-72"><path d="M3 10c36-9 62 7 98-2s62 7 98-2 62 7 98-4" fill="none" stroke="#c8962e" strokeWidth="5" strokeLinecap="round" /></svg>
         <p className="mt-4 text-lg text-ink">{g.intro}</p>
       </header>
 
       {g.sections.map((s) => (
         <section key={s.id} id={s.id} className="mt-4 rounded-3xl bg-card p-5 drawn sm:p-6">
-          <h2 className="text-xl font-black tracking-tight text-ink">{s.heading}</h2>
+          <h2 className="text-xl font-extrabold tracking-tight text-ink sm:text-2xl">{s.heading}</h2>
           <div className="mt-2 space-y-2 text-ink-soft">
             {s.paragraphs.map((p, i) => (
               <p key={i}>{p}</p>
@@ -38,7 +38,7 @@ export function GuideRomania() {
 
       {g.links.length > 0 && (
         <section className="mt-4 rounded-3xl bg-card p-5 drawn sm:p-6">
-          <h2 className="text-xl font-black tracking-tight text-ink">Official sources</h2>
+          <h2 className="text-xl font-extrabold tracking-tight text-ink sm:text-2xl">Official sources</h2>
           <ul className="mt-2 flex flex-col">
             {g.links.map((l) => (
               <li key={l.url}>

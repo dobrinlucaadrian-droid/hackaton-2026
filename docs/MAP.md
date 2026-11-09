@@ -116,27 +116,27 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/[lang]/conectare  (1 files)
 
-- `page.tsx` (30) — Sign-in page: reached when a page needs an account (for example "Contul meu"). Everyday sign-in happens in the account window; this page shows the same form, in the page language.. Routes: /[lang]/conectare. Exports: generateMetadata, SignInPage
+- `page.tsx` (31) — Sign-in page: reached when a page needs an account (for example "Contul meu"). Everyday sign-in happens in the account window; this page shows the same form, in the page language.. Routes: /[lang]/conectare. Exports: generateMetadata, SignInPage
 
 ### apps/web/app/[lang]/confidentialitate  (1 files)
 
-- `page.tsx` (505) — Privacy page: in plain language (Romanian, with an English translation), who is responsible, what FindMyUni stores, why, on what legal basis, for how long, who processes it, your rights and how to use them. Working draft until a lawyer checks it.. Routes: /[lang]/confidentialitate. Exports: generateMetadata, PrivacyPage
+- `page.tsx` (506) — Privacy page: in plain language (Romanian, with an English translation), who is responsible, what FindMyUni stores, why, on what legal basis, for how long, who processes it, your rights and how to use them. Working draft until a lawyer checks it.. Routes: /[lang]/confidentialitate. Exports: generateMetadata, PrivacyPage
 
 ### apps/web/app/[lang]/cont/datele-mele  (1 files)
 
-- `page.tsx` (140) — "Datele mele" (in the page language): opened only from a small link in "Contul meu" or the privacy page, only when signed in; shows everything the site keeps about the account and lets the student download a copy (GDPR right of access and portability).. Routes: /[lang]/cont/datele-mele. Exports: MyDataPage
+- `page.tsx` (144) — "Datele mele" (in the page language): opened only from a small link in "Contul meu" or the privacy page, only when signed in; shows everything the site keeps about the account and lets the student download a copy (GDPR right of access and portability).. Routes: /[lang]/cont/datele-mele. Exports: MyDataPage
 
 ### apps/web/app/[lang]/cont  (2 files)
 
 - `layout.tsx` (13) — The account pages' title in the browser tab, in the page language (the pages themselves run in the browser).. Exports: generateMetadata, Layout
-- `page.tsx` (281) — "Contul meu" (in the page language): shows who is signed in (username, name and email; the name can be changed) the saved questionnaire result and the favourite universities, a small link to "Datele mele", and lets the student sign out or delete the account.. Routes: /[lang]/cont. Exports: AccountPage
+- `page.tsx` (282) — "Contul meu" (in the page language): shows who is signed in (username, name and email; the name can be changed) the saved questionnaire result and the favourite universities, a small link to "Datele mele", and lets the student sign out or delete the account.. Routes: /[lang]/cont. Exports: AccountPage
 
 ### apps/web/app/[lang]  (6 files)
 
-- `error.tsx` (34) — Shown instead of a page that broke while loading: the usual header, the broken-road drawing, a short message that it is not the student's fault and a "try again" button, in the page language. Nothing technical is shown.. Exports: PageError
+- `error.tsx` (36) — Shown instead of a page that broke while loading: the usual header, the broken-road drawing, a short message that it is not the student's fault and a "try again" button, in the page language. Nothing technical is shown.. Exports: PageError
 - `layout.tsx` (85) — Root layout: fonts, page metadata, the page language (ro at the plain addresses, en under /en), the database connection and the anonymous visit counter shared by every page.. Exports: generateStaticParams, generateMetadata, RootLayout
 - `loading.tsx` (17) — Shown the instant a link is pressed, while the next page comes from the server: the usual header and a small spinner, so a tap never looks ignored (in the page language).. Exports: Loading
-- `not-found.tsx` (22) — Friendly 404 page shown for unknown routes and unknown university ids, in the page language.. Exports: NotFound
+- `not-found.tsx` (24) — Friendly 404 page shown for unknown routes and unknown university ids, with the drawn road that ends at a question-mark sign, in the page language.. Exports: NotFound
 - `opengraph-image.tsx` (53) — The picture shown when the site itself is shared (WhatsApp, Instagram, Facebook …): the cap from the logo, "FindMyUni" and what the site does. Drawn once, when the site is built.. Exports: alt, size, contentType, dynamicParams, generateStaticParams, Image
 - `page.tsx` (53) — Home page: the welcome with the big road drawing and the account choice, a dotted path down to "Urmărește-ne!" with the drawn phone that opens our TikTok and Instagram, in the page language.. Routes: /[lang]. Exports: generateMetadata, Home
 
@@ -172,16 +172,16 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/[lang]/studenti  (1 files)
 
-- `page.tsx` (66) — Student voices: real opinions from students and graduates, with a search by faculty or university, in the page language (the opinions keep their original words).. Routes: /[lang]/studenti. Exports: generateMetadata, Students
+- `page.tsx` (70) — Student voices in the drawn look: the opening with three students talking, a box inviting students to write, then real opinions with a search by faculty or university, in the page language (the opinions keep their original words).. Routes: /[lang]/studenti. Exports: generateMetadata, Students
 
 ### apps/web/app/[lang]/studenti/parere  (2 files)
 
 - `layout.tsx` (13) — The opinion form's title in the browser tab, in the page language (the page itself runs in the browser).. Exports: generateMetadata, Layout
-- `page.tsx` (181) — Public form (in the page language) where a student writes an opinion about their faculty. No account needed; the opinion appears only after the team approves it.. Routes: /[lang]/studenti/parere. Exports: ReviewFormPage
+- `page.tsx` (183) — Public form (in the page language) where a student writes an opinion about their faculty. No account needed; the opinion appears only after the team approves it.. Routes: /[lang]/studenti/parere. Exports: ReviewFormPage
 
 ### apps/web/app/[lang]/surse  (1 files)
 
-- `page.tsx` (147) — Data sources page: where the catalogue of universities and programmes comes from, country by country, how it was built and what its limits are, in the page language.. Routes: /[lang]/surse. Exports: generateMetadata, SourcesPage
+- `page.tsx` (148) — Data sources page: where the catalogue of universities and programmes comes from, country by country, how it was built and what its limits are, in the page language.. Routes: /[lang]/surse. Exports: generateMetadata, SourcesPage
 
 ### apps/web/app/[lang]/test  (2 files)
 
@@ -238,7 +238,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `MatchCard.tsx` (217) — One result card, in the page language: the best match is a full emphasised card, the others are collapsed rows that open on tap; details sit in compact rows.. Exports: MatchCard
 - `NavLinks.tsx` (63) — Header navigation links with the current page highlighted (centred on phones), the RO / EN language switch; signed-in visitors also get "Contul meu" (signing in starts from the home page).. Exports: NavLinks
 - `OfficialPrograms.tsx` (17) — On a university sheet outside Romania: every bachelor programme of the institution from its country's official dataset, read from the database (those lists are too large to ship with the pages). Romanian sheets render the same list on the server, from the catalogue file.. Exports: OfficialPrograms
-- `PageScenes.tsx` (138) — The ink drawings at the top of the pages in the drawn look (each on a soft blue blob): study fields, universities, guides, the questionnaire (a clipboard and a pencil) and the result (a podium).. Exports: FieldsDrawing, UniversitiesDrawing, GuidesDrawing, QuizDrawing, PodiumDrawing
+- `PageScenes.tsx` (202) — The ink drawings of the pages in the drawn look (each on a soft blue blob): study fields, universities, guides, the questionnaire, the result, the students, and the two error drawings (a road ending at a question-mark sign, a broken road).. Exports: FieldsDrawing, UniversitiesDrawing, GuidesDrawing, QuizDrawing, PodiumDrawing, VoicesDrawing, LostRoadDrawing, BrokenRoadDrawing
 - `PhotoPicker.tsx` (148) — Optional face photo on the opinion form (in the page language): the student picks a picture, moves and zooms it inside the same circle the site shows, and keeps a small square JPEG of exactly that view (kept automatically if the form is sent while the circle is still open).. Exports: PhotoPicker
 - `ProgramGroups.tsx` (76) — The list of an institution's bachelor programmes, grouped by faculty (or by field when the source has no faculties). Plain markup, so a page can render it on the server; the page language comes in as `lang`.. Exports: ProgramGroups
 - `ProgramRow.tsx` (106) — One bachelor programme from the catalogue, as a compact row: name and the small facts its source gives (language, study form, years, places, status) and, for Romania, the last admission average with its official source.. Exports: FORM_LABEL, ProgramRow
@@ -247,11 +247,11 @@ _Open only the files listed here; a file's description is its first comment line
 - `SearchBox.tsx` (137) — Search box (in the page language) with a magnifier icon; submits to /universitati?q=... or calls onSearch when given. With `suggest`, a list of suggestions opens while typing (arrows, Enter and Escape work; screen readers hear it as a combobox).. Exports: SearchBox
 - `ShareButton.tsx` (44) — "Trimite" on a university sheet: on a phone it opens the phone's own share menu (WhatsApp, Instagram, messages …); where that menu does not exist, it copies the link.. Exports: ShareButton
 - `ShareResult.tsx` (188) — Under the result (text in the page language): draws a story-sized picture (1080×1920) of the 3 matched domains with their percentages and "findmyuni.ro", in the browser only. Exports: ShareResult
-- `Shell.tsx` (51) — Page frame shared by all screens: header with the FindMyUni logo, faint pen doodles behind the page, a centered content column and a footer with the privacy link, in the page language.. Exports: Shell, Notice
+- `Shell.tsx` (52) — Page frame shared by all screens: header with the FindMyUni logo, faint pen doodles behind the page, a centered content column and a footer with the privacy link, in the page language.. Exports: Shell, Notice
 - `SignInForm.tsx` (291) — The account form, in the page language, shared by the account window and the sign-in page: sign in with username and password, make an account (username, full name, email, password, then the 6-digit code from the email) and reset a forgotten password with a code.. Exports: SignInForm
 - `SocialPhone.tsx` (122) — "Urmărește-ne!" on the home page (in the page language): a drawn, slightly tilted phone with pen doodles around it on the left and, on the right, a short message, two big buttons to our TikTok and Instagram accounts (the phone's app icons open the same accounts and jump when pointed at or tapped).. Exports: SocialPhone
 - `SpecializationsBrowser.tsx` (99) — /specializari body: the page opening (title, text, a drawn search box and the drawing), then a text filter over all categories, domains and specializations (in the page language); without text it shows the drawn category tiles, five to a row, and the interest picker.. Exports: SpecializationsBrowser
-- `StudentCard.tsx` (51) — One student opinion: photo (or initial), name, faculty and their own words. Used on the students page and on university sheets; the opinion stays in its original words, only the photo label is in the page language.. Exports: StudentCard
+- `StudentCard.tsx` (52) — One student opinion: photo (or initial), name, faculty and their own words. Used on the students page and on university sheets; the opinion stays in its original words, only the photo label is in the page language.. Exports: StudentCard
 - `StudentVoices.tsx` (176) — Student opinions with a search box: type a faculty or university and see every opinion we have from there (the opinions keep their original words; the page around them is in the page language).. Exports: StudentVoices
 - … +14 more
 
