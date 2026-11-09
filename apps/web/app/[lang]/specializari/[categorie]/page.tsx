@@ -1,7 +1,9 @@
-// One category: its study domains as collapsible rows with their specializations, in the page language.
+// One category in the drawn look: a back link, the opening with the category drawing, then its study domains as collapsible rows with their specializations, in the page language.
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { CategoryIcon } from "@/components/CategoryIcon";
 import { DomainDetails } from "@/components/DomainDetails";
+import { PageOpening, SectionTitle } from "@/components/Drawn";
 import Link from "@/components/LocalLink";
 import { Shell } from "@/components/Shell";
 import { categories, domains } from "@/lib/data";
@@ -41,16 +43,18 @@ export default async function CategoryPage({ params }: Props) {
 
   return (
     <Shell wide>
-      <div className="mx-auto max-w-3xl">
-        <Link href="/specializari" className="inline-flex min-h-11 items-center rounded-full border-2 border-primary px-5 py-2 font-bold text-primary transition hover:bg-primary-tint">
-          {t("← Toate categoriile", "← All categories")}
+      <div className="mx-auto max-w-4xl">
+        <Link href="/specializari" className="inline-flex min-h-11 items-center gap-2 font-extrabold text-primary hover:text-primary-dark">
+          <svg aria-hidden viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M11 6l-6 6 6 6" /></svg>
+          {t("Înapoi la specializări", "Back to fields of study")}
         </Link>
-        <header className="rise mt-5">
-          <p aria-hidden className="text-5xl">{c.emoji}</p>
-          <h1 className="mt-1 text-3xl font-black tracking-tighter text-ink sm:text-5xl">{c.name}</h1>
-          <p className="mt-2 text-ink-soft">{c.short}</p>
-        </header>
-        <div className="mt-6 space-y-3">
+        <PageOpening
+          title={c.name}
+          lead={c.short}
+          scene={<CategoryIcon id={c.id} className="bob mx-auto h-48 w-48 sm:h-60 sm:w-60" />}
+        />
+        <SectionTitle>{t(`Cele ${items.length} domenii`, `The ${items.length} fields`)}</SectionTitle>
+        <div className="space-y-3.5">
           {items.map((d, i) => (
             <DomainDetails
               key={d.id}

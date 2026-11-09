@@ -1,8 +1,9 @@
-// All study fields: category tiles and a "what do you like" picker, or filtered domains and specializations when the student types, in the page language.
+// All study fields: the drawn opening with a search box, then category tiles (five to a row) and a "what do you like" picker, or filtered domains and specializations when the student types, in the page language.
 import type { Metadata } from "next";
-import { FieldsScene } from "@/components/Illustrations";
+import { FieldsDrawing } from "@/components/PageScenes";
 import { Shell } from "@/components/Shell";
 import { SpecializationsBrowser } from "@/components/SpecializationsBrowser";
+import { categories, domains, specializations } from "@/lib/data";
 import { hasLang, tr } from "@/lib/i18n";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/specializari">): Promise<Metadata> {
@@ -22,16 +23,24 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/specializa
 export default async function SpecializationsPage({ params }: PageProps<"/[lang]/specializari">) {
   const { lang } = await params;
   const t = tr(hasLang(lang) ? lang : "ro");
+  // Counts come from the data, so the text stays true when the lists grow.
+  const nCat = categories.length;
+  const nDom = domains.length;
+  const nSpec = specializations.length;
   return (
     <Shell wide>
-      <div className="rise mb-5 flex items-center justify-between gap-4">
-        <div>
-          <h1 className="text-4xl font-black tracking-tighter text-ink sm:text-5xl">{t("Ce poți studia", "What you can study")}</h1>
-          <p className="mt-2 text-ink-soft">{t("Alege o categorie sau caută direct o specializare.", "Pick a category or search for a specialisation directly.")}</p>
-        </div>
-        <FieldsScene className="float h-20 w-28 shrink-0 sm:h-28 sm:w-36 md:h-32 md:w-44" />
-      </div>
-      <SpecializationsBrowser />
+      <SpecializationsBrowser
+        title={
+          <>
+            {t("Ce poți", "What can you")} <span className="text-primary">{t("studia?", "study?")}</span>
+          </>
+        }
+        lead={t(
+          `${nCat} categorii, ${nDom} de domenii și ${nSpec} de specializări, explicate simplu. Alege o categorie sau caută direct.`,
+          `${nCat} categories, ${nDom} fields and ${nSpec} specialisations, explained simply. Pick a category or search directly.`,
+        )}
+        scene={<FieldsDrawing label={t("Desen: cărți, o eprubetă, o paletă de pictor și o roată dințată", "Drawing: books, a flask, a painter's palette and a gear")} />}
+      />
     </Shell>
   );
 }

@@ -59,8 +59,8 @@ export function InterestPicker() {
   const full = picked.length >= MAX_PICKS;
 
   return (
-    <section aria-labelledby="ce-iti-place" className="mt-8 rounded-3xl bg-card p-6 shadow-sm ring-1 ring-line">
-      <h2 id="ce-iti-place" className="text-2xl font-black tracking-tight text-ink">
+    <section aria-labelledby="ce-iti-place" className="drawn mx-auto mt-12 max-w-5xl rounded-[1.75rem] bg-teal-tint p-6 text-center sm:p-8">
+      <h2 id="ce-iti-place" className="text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
         {t("Nu știi de unde să începi?", "Not sure where to start?")}
       </h2>
       <p className="mt-1 text-ink-soft">
@@ -70,7 +70,7 @@ export function InterestPicker() {
         )}
       </p>
 
-      <div className="mt-4 flex flex-wrap gap-2">
+      <div className="mt-5 flex flex-wrap justify-center gap-2">
         {TRAITS.map((tid) => {
           const on = picked.includes(tid);
           return (
@@ -80,10 +80,10 @@ export function InterestPicker() {
               aria-pressed={on}
               disabled={!on && full}
               onClick={() => toggle(tid)}
-              className={`opt min-h-11 rounded-full border-2 px-4 py-2 text-sm font-bold ${
+              className={`min-h-11 rounded-full border-2 px-4 py-2 text-sm font-bold transition ${
                 on
-                  ? "border-primary bg-primary text-white"
-                  : "border-transparent bg-paper text-ink ring-1 ring-line hover:ring-primary/50 disabled:cursor-not-allowed disabled:opacity-50"
+                  ? "border-ink bg-ink text-white"
+                  : "border-ink bg-card text-ink hover:-translate-y-0.5 hover:bg-teal-tint disabled:cursor-not-allowed disabled:opacity-50"
               }`}
             >
               {lang === "en" ? TRAIT_LABEL_EN[tid] : TRAIT_LABEL[tid]}
@@ -102,14 +102,14 @@ export function InterestPicker() {
       {results.length > 0 && (
         <>
           <h3 className="mt-5 text-lg font-black text-ink">{t("Specializări care se potrivesc cu ce ai ales", "Specialisations that match what you picked")}</h3>
-          <ol className="mt-3 grid gap-3 sm:grid-cols-2">
+          <ol className="mt-3 grid gap-3 text-left sm:grid-cols-2">
             {results.map(({ s, score }, i) => {
               const found = domains.find((d) => d.id === s.domainId);
               const domain = found && localDomain(found, lang);
               const style = domainStyle(s.domainId);
               const family = FAMILY_CLASSES[style.family];
               return (
-                <li key={s.id} className={`rounded-2xl p-4 ${family.band}`}>
+                <li key={s.id} className={`drawn rounded-2xl p-4 [border-width:2.5px] [box-shadow:0_3px_0_var(--color-ink)] ${family.band}`}>
                   <p className={`flex items-center justify-between gap-2 text-sm font-bold ${family.text}`}>
                     <span>
                       <span aria-hidden className="mr-1">{style.emoji}</span>
@@ -131,7 +131,7 @@ export function InterestPicker() {
               );
             })}
           </ol>
-          <div className="mt-5 flex flex-col items-start gap-3 rounded-2xl bg-paper p-4 sm:flex-row sm:items-center sm:justify-between">
+          <div className="mt-5 flex flex-col items-start gap-3 rounded-2xl bg-card p-4 text-left sm:flex-row sm:items-center sm:justify-between">
             <p className="text-sm text-ink-soft">
               {t(
                 "Acesta e doar un prim pas. Chestionarul ține cont și de profilul tău de liceu și de ce ai făcut până acum.",
@@ -140,7 +140,7 @@ export function InterestPicker() {
             </p>
             <Link
               href="/test"
-              className="inline-flex min-h-11 shrink-0 items-center rounded-2xl bg-primary px-5 py-2 font-black text-white shadow-lg shadow-primary/30 hover:bg-primary-dark"
+              className="inline-flex min-h-11 shrink-0 items-center rounded-2xl bg-primary px-5 py-2 font-extrabold text-white shadow-[0_3px_0_var(--color-primary-dark)] transition hover:-translate-y-0.5 hover:bg-primary-dark"
             >
               {t("Completează chestionarul", "Take the quiz")}
             </Link>

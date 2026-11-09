@@ -86,6 +86,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT (gate complet); NEVERIFICAT: ecranul de admin în browser (cere conectarea ca administrator)
 - Urmează: publicare pe findmyuni.ro (Convex prod + Vercel) doar când echipa spune „salvează și publică”
 
+### 2026-11-09 — designul desenat, pasul 2: Specializări și paginile de categorie
+- Cerut: continuă mutarea designului desenat, pagină cu pagină.
+- Făcut: Specializări are deschiderea desenată (titlu, text cu numerele luate din date, căutare desenată, desenul cu cărți, eprubetă, paletă și roată dințată) și cartonașele categoriilor mici, 5 pe rând, centrate, cu desene în loc de emoji; „Nu știi de unde să începi?” e o casetă aurie cu butoane desenate. Pagina unei categorii: link înapoi, desenul categoriei, „Cele N domenii”, iar fiecare domeniu e un rând desenat cu desenul categoriei, specializările ca mici cartonașe și materiile pe ani. Piese comune noi: `Drawn.tsx` (linia aurie, titlu de secțiune cu săgeată, deschiderea paginii), `CategoryIcon.tsx`, `PageScenes.tsx`.
+- Fișiere: apps/web/app/[lang]/specializari/page.tsx, apps/web/app/[lang]/specializari/[categorie]/page.tsx, apps/web/components/{SpecializationsBrowser,CategoryTiles,InterestPicker,DomainDetails,Drawn,CategoryIcon,PageScenes}.tsx
+- Poartă: vezi commit-ul; verificat în browser la 1440 și 390 px (/, /specializari, /specializari/sanatate), căutarea merge
+- Urmează: Universități (căutarea și fișa), apoi Ghiduri, Chestionar, Studenți, contul și restul. Emoji-urile domeniilor din rezultatele „Ce îți place?” și din alte pagini rămân de înlocuit.
+
 ### 2026-11-09 — pasul 1 salvat în git, pe ramura design-desenat
 - Cerut: salvează pasul 1 (fără push, fără publicare) și continuă.
 - Făcut: două commit-uri pe `design-desenat`: uneltele de design (Impeccable, PRODUCT.md) și pasul 1 al designului. Subsolul păstrează doar „Confidențialitate”, cum a hotărât echipa (am scos „De unde sunt datele”, pus din greșeală). Șterse 4 fișiere goale create din greșeală de o comandă și planul direcției „Foaia de examen”, respinsă.
@@ -1303,6 +1310,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-11-09 03:29 `5ecfedb` feat: drawn look, step 1: fonts, header, doodles and the home page
 - 2026-11-09 03:28 `2b44956` chore: add the Impeccable design skill and the product record
 - 2026-10-30 22:05 `b8d1b9a` feat: phone on the left, follow-us text and buttons on the right
 - 2026-10-30 21:57 `4604195` feat: big TikTok and Instagram buttons beside the phone; footer keeps only the privacy link
@@ -1332,5 +1340,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-25 23:23 `5df325a` feat: share previews, share button and quiz result story image
 - 2026-10-25 03:29 `5a90f6d` feat: add the country guides to the top menu
 - 2026-10-25 03:12 `cfc7f98` feat: new drawings on the students and questionnaire pages
-- 2026-10-25 03:00 `a519dc1` feat: English-taught filter, multi-choice filters, empty-result help
 <!-- commits:end -->
