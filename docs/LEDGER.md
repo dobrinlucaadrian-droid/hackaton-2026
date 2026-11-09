@@ -86,6 +86,13 @@ lista de commit-uri de la final se reface singură.
 - Poartă: TRECUT (gate complet); NEVERIFICAT: ecranul de admin în browser (cere conectarea ca administrator)
 - Urmează: publicare pe findmyuni.ro (Convex prod + Vercel) doar când echipa spune „salvează și publică”
 
+### 2026-11-09 — designul desenat publicat pe findmyuni.ro
+- Cerut: echipa a întrebat dacă statisticile și părerile rămân (da: stau în baza de date, iar designul nu a schimbat nimic în `convex`, `data` sau `lib`) și apoi a cerut publicarea.
+- Făcut: `production` și `main` aduse la `design-desenat` (fast-forward), poarta completă TRECUT pe `main`, trimise pe GitHub împreună cu eticheta `design-vechi` (designul vechi, commit b8d1b9a), publicat cu `vercel deploy --prod`. findmyuni.ro și www.findmyuni.ro arată designul nou; paginile principale răspund 200, fără erori în consolă; pagina Studenți arată părerile din baza de date.
+- Fișiere: docs/LEDGER.md
+- Poartă: TRECUT
+- Urmează: dacă echipa vrea designul vechi înapoi: `git switch production && git reset --hard design-vechi`, apoi publicare din nou (doar cu acordul echipei). De făcut: emoji-urile rămase la domenii și ștergerea desenelor vechi nefolosite.
+
 ### 2026-11-09 — designul desenat, pasul 5: Studenți, contul și restul paginilor
 - Cerut: continuă cu Studenți, contul și restul paginilor.
 - Făcut: Studenți are deschiderea desenată (trei studenți care vorbesc), caseta „Ești student? Spune-le și altora cum e.” cu buton și cardurile de păreri cu pioneză, poză cu contur și numele scris de mână. Toate câmpurile de formular (păreri, conectare, fereastra de cont, Contul meu, căutarea de programe, admin) au contur de cerneală; etichetele nu mai sunt cu majuscule; butoanele cu contur au devenit butoane desenate pe tot site-ul. Titluri cu linia aurie pe Scrie părerea ta, Conectare, Contul meu, Datele mele, Surse de date, Confidențialitate și pe ghidul în engleză (fără eticheta „Guide”). Paginile de eroare au desene noi: drumul care se termină la un indicator cu semnul întrebării (404) și drumul rupt cu semn de atenție.
@@ -1331,6 +1338,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-11-09 03:51 `ed32bf8` feat: drawn look, step 5: students, account and the remaining pages
 - 2026-11-09 03:45 `ed1c5e1` feat: drawn look, step 4: country guides and the questionnaire
 - 2026-11-09 03:39 `a2aace3` feat: drawn look, step 3: university search and sheets
 - 2026-11-09 03:33 `7b8e662` feat: drawn look, step 2: fields of study and category pages
@@ -1360,5 +1368,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-26 01:45 `2362444` feat: English quiz keeps the three study places, without cities
 - 2026-10-26 01:38 `05aab39` feat: English version of the site under /en
 - 2026-10-26 00:52 `7dd583d` feat: searchable university field, FindMyUni share image, drop UniPath
-- 2026-10-25 23:43 `8074524` fix: update Next.js and Zod, prerender share images
 <!-- commits:end -->
