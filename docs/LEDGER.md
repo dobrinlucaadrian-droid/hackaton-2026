@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-11-10 — raportul Google: prescurtările facultăților și pozele de distribuire
+- Cerut: citit raportul Google Search Console și reparat ce merită (prescurtări + adresele ciudate ale pozelor)
+- Făcut: (1) 157 de fișe de facultate au acum prescurtarea oficială (FSEGA, CSIE, FEFS …) în titlul paginii și lângă nume, fiecare cu pagina oficială unde apare (câmpurile `short`/`shortUrl`); găsite de 6 ajutoare și reverificate de alte 2, scoase cele care apăreau doar în adresa unei pagini; FGTS (Oradea) nu apare pe site-ul facultății, deci nu e pusă. (2) Pozele de distribuire ale universităților nu se desenau deloc din ziua versiunii în engleză (lipsea limba din lista de poze), așa că WhatsApp nu arăta nicio poză și Google vedea o pagină „noindex”; acum se desenează pentru ambele limbi
+- Fișiere: `apps/web/data/faculties-ro.json`, `apps/web/lib/types.ts`, `apps/web/lib/faculties.test.ts`, `apps/web/app/[lang]/universitati/[id]/[facultate]/page.tsx`, `apps/web/app/[lang]/universitati/[id]/opengraph-image.tsx`
+- Poartă: vezi rularea de după schimbare
+- Urmează: publicare la „salvează și publică”; peste 2-3 săptămâni ne uităm din nou în Search Console
+
 ### 2026-10-31 12:00 — „Urmărește-ne!”: telefonul în stânga, textul în dreapta
 - Cerut: inversate părțile secțiunii, ca pagina să alterneze (sus text–desen, jos desen–text)
 - Făcut: telefonul desenat stă acum în stânga, titlul, fraza și butoanele în dreapta, pe orice ecran; în cod textul rămâne primul, pentru cititoarele de ecran
@@ -1338,6 +1345,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-11-09 04:00 `acce275` docs: ledger entry for publishing the drawn design
 - 2026-11-09 03:51 `ed32bf8` feat: drawn look, step 5: students, account and the remaining pages
 - 2026-11-09 03:45 `ed1c5e1` feat: drawn look, step 4: country guides and the questionnaire
 - 2026-11-09 03:39 `a2aace3` feat: drawn look, step 3: university search and sheets
@@ -1367,5 +1375,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-26 01:55 `0fc9fd1` chore: add Google Search Console verification file
 - 2026-10-26 01:45 `2362444` feat: English quiz keeps the three study places, without cities
 - 2026-10-26 01:38 `05aab39` feat: English version of the site under /en
-- 2026-10-26 00:52 `7dd583d` feat: searchable university field, FindMyUni share image, drop UniPath
 <!-- commits:end -->

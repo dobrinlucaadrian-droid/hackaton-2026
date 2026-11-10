@@ -32,6 +32,10 @@ describe("faculty sheets", () => {
         if (url !== undefined) expect(url, where).toMatch(/^https?:\/\/[^\s]+$/);
       }
       for (const s of f.examSubjects ?? []) expect(s.trim().length, where).toBeGreaterThan(1);
+      if (f.short !== undefined) {
+        expect(f.short, where).toMatch(/^[A-Za-zĂÂÎȘȚăâîșț][A-Za-zĂÂÎȘȚăâîșț-]{1,9}$/);
+        expect(f.shortUrl, where).toMatch(/^https?:\/\/[^\s]+$/);
+      }
     }
   });
 

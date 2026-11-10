@@ -102,6 +102,8 @@ export type Faculty = { name: string; programs: string[] };
 export type FacultySheet = {
   universityId: string; // id of the university sheet (and of the catalogue institution)
   name: string;
+  short?: string; // the acronym the faculty itself uses ("FEFS", "ETTI"), only when its official site shows it; students search by it
+  shortUrl?: string; // the official page that shows the acronym
   about: string; // 2-3 sentences: what you study there
   admissionTypes: AdmissionType[];
   admission: string; // 1-2 sentences: how you get in, without averages, places or dates

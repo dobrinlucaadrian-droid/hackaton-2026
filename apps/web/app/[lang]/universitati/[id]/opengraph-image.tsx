@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { feeOf, feeText } from "@/lib/fees";
+import { LANGS } from "@/lib/i18n";
 import { cityName, countryName, universityName } from "@/lib/i18n-data";
 import { universities, universityById } from "@/lib/sheets";
 
@@ -13,9 +14,10 @@ export const contentType = "image/png";
 type Props = { params: Promise<{ lang: string; id: string }> };
 
 // Every picture is drawn once, when the site is built; an unknown address gets a 404 instead of a new drawing, so nobody can make the server draw on demand.
+// The language is listed too: a picture route does not get the languages of the page layouts, and without them no picture was drawn.
 export const dynamicParams = false;
 export function generateStaticParams() {
-  return universities.map((u) => ({ id: u.id }));
+  return LANGS.flatMap((lang) => universities.map((u) => ({ lang, id: u.id })));
 }
 
 /**

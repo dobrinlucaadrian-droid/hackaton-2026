@@ -190,11 +190,11 @@ _Open only the files listed here; a file's description is its first comment line
 
 ### apps/web/app/[lang]/universitati/[id]/[facultate]  (1 files)
 
-- `page.tsx` (143) — Profile sheet of one Romanian faculty (in the page language): what you study there, how you get in, its bachelor programmes from the official list and the official links.. Routes: /[lang]/universitati/[id]/[facultate]. Exports: generateStaticParams, generateMetadata, FacultyPage
+- `page.tsx` (147) — Profile sheet of one Romanian faculty (in the page language): what you study there, how you get in, its bachelor programmes from the official list and the official links.. Routes: /[lang]/universitati/[id]/[facultate]. Exports: generateStaticParams, generateMetadata, FacultyPage
 
 ### apps/web/app/[lang]/universitati/[id]  (2 files)
 
-- `opengraph-image.tsx` (95) — The picture shown when a university's sheet is shared (WhatsApp, Instagram, Facebook …): FindMyUni, the university's name, place and yearly tuition when we have it.. Exports: alt, size, contentType, dynamicParams, generateStaticParams, Image
+- `opengraph-image.tsx` (97) — The picture shown when a university's sheet is shared (WhatsApp, Instagram, Facebook …): FindMyUni, the university's name, place and yearly tuition when we have it.. Exports: alt, size, contentType, dynamicParams, generateStaticParams, Image
 - `page.tsx` (424) — Full profile sheet of one university in the page language, statically generated for every university.. Routes: /[lang]/universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/[lang]/universitati  (1 files)
@@ -383,7 +383,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `curricula.test.ts` (61) — Tests the curricula data: every plan belongs to a real domain, covers its years in order and links to an official web page.
 - `curricula.ts` (18) — Curricula data: for each study domain one official "plan de învățământ" (subjects per year), and for Romanian universities the official page with their curricula.. Exports: curricula, curriculumLinks, curriculumFor, curriculumLinkFor
 - `data.ts` (16) — Loads the small seeded JSON (profiles, questions, domains, specializations, categories, testimonials) as typed arrays. The universities are apart: lib/universities.ts (index, for the browser) and lib/sheets.ts (full sheets, server only).. Exports: profiles, questions, domains, specializations, categories, testimonials
-- `faculties.test.ts` (57) — Tests the faculty sheets: each one belongs to a real faculty of the official list, has valid values and official links, and gets a unique page address.
+- `faculties.test.ts` (61) — Tests the faculty sheets: each one belongs to a real faculty of the official list, has valid values and official links, and gets a unique page address.
 - `faculties.ts` (24) — Profile sheets of Romanian faculties (data/faculties-ro.json) and the address of each one. Used on the server: by the faculty page and by the university page, which links to them.. Exports: faculties, facultySlug, facultyHref, facultiesOf, facultyBySlug
 - `fees.test.ts` (41) — Tests the exact tuition data: each entry belongs to a real sheet, has a known currency, a sane range, an academic year and an official link, and is written the way the sheet shows it.
 - `fees.ts` (83) — Exact yearly tuition of the university sheets (data/fees.json), each with its academic year and the official page it comes from; amounts in the university's own currency plus an approximate value in euro. Server only.. Exports: EUR_PER, feeOf, feeText
@@ -411,7 +411,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `suggest.test.ts` (40) — Tests the search suggestions: they start at 2 letters, ignore diacritics, put places first and lead universities to their sheets.
 - `testimonials.ts` (43) — Links student opinions to the universities that have a profile sheet, so the search and the sheets can show them.. Exports: universityIdOf, testimonialsFor
 - `traits.ts` (37) — The ten inclinations the questionnaire measures and their names in Romanian and English. Kept apart from the matching so pages can show them without loading the university data.. Exports: TRAITS, TRAIT_LABEL, TRAIT_LABEL_EN, traitLabel
-- `types.ts` (274) — Shared data contract for FindMyUni: profiles, questions, domains, universities and match results.
+- `types.ts` (276) — Shared data contract for FindMyUni: profiles, questions, domains, universities and match results.
 - … +6 more
 
 ### apps/web/public  (2 files)

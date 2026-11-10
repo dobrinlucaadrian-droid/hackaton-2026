@@ -28,12 +28,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     if (!base || !baseUni) return { title: "Faculty | FindMyUni" };
     const f = localFaculty(base, "en");
     const u = localUniversity(baseUni, "en");
-    return { title: `${f.name} — ${u.name} | FindMyUni`, description: clip(`${f.about} How to get in, bachelor's programmes and official links.`) };
+    return { title: `${f.name}${f.short ? ` (${f.short})` : ""} — ${u.name} | FindMyUni`, description: clip(`${f.about} How to get in, bachelor's programmes and official links.`) };
   }
   const f = base;
   const u = baseUni;
   return f && u
-    ? { title: `${f.name} — ${u.name} | FindMyUni`, description: clip(`${f.about} Cum intri, programele de licență și linkurile oficiale.`) }
+    ? { title: `${f.name}${f.short ? ` (${f.short})` : ""} — ${u.name} | FindMyUni`, description: clip(`${f.about} Cum intri, programele de licență și linkurile oficiale.`) }
     : { title: "Facultate | FindMyUni" };
 }
 
@@ -84,7 +84,11 @@ export default async function FacultyPage({ params }: Props) {
 
         <header className="rise mt-5">
           <p className="text-sm font-extrabold uppercase tracking-wide text-primary">{t("Fișa facultății", "Faculty sheet")}</p>
-          <h1 className="mt-1 text-3xl font-black leading-tight tracking-tighter text-ink sm:text-4xl">{f.name}</h1>
+          <h1 className="mt-1 text-3xl font-black leading-tight tracking-tighter text-ink sm:text-4xl">
+            {f.name}
+            {baseFaculty.short && " "}
+            {baseFaculty.short && <span className="ml-1 align-middle text-xl font-bold text-ink-soft sm:text-2xl">({baseFaculty.short})</span>}
+          </h1>
           <p className="mt-1 text-lg text-ink-soft">
             {u.name} · {u.city}
           </p>

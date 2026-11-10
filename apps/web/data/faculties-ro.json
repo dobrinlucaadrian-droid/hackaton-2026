@@ -76,6 +76,8 @@
  {
   "universityId": "afa-brasov",
   "name": "Facultatea de Management Aeronautic",
+  "short": "FMA",
+  "shortUrl": "https://www.afahc.ro/ro/facultate/FMA.html",
   "about": "Aici se pregătesc viitorii ofițeri de aviație ai armatei. Admiterea se face la două programe de patru ani: Management aeronautic, pentru piloți, și Managementul spațiului aerian, pentru aviație nenaviganți (aici intră și controlorii de trafic aerian) și informații militare. În lista oficială mai apar programele mai vechi, de trei ani: Management în aviație și Managementul traficului aerian.",
   "admissionTypes": [
    "examen",
@@ -103,6 +105,8 @@
  {
   "universityId": "afa-brasov",
   "name": "Facultatea de Sisteme de Securitate Aeriană",
+  "short": "FSSA",
+  "shortUrl": "https://www.afahc.ro/ro/facultate/FSSA.html",
   "about": "Facultatea pregătește ofițeri pentru apărarea antiaeriană și supravegherea spațiului aerian. Are două programe de patru ani: Managementul sistemelor de rachete și artilerie antiaeriene și Managementul sistemelor de supraveghere aeriană, cu specializări în radiolocație și război electronic.",
   "admissionTypes": [
    "examen",
@@ -201,6 +205,8 @@
  {
   "universityId": "agora-oradea",
   "name": "Facultatea de Științe Economice",
+  "short": "FSE",
+  "shortUrl": "https://fse.univagora.ro",
   "about": "Aici studiezi Management sau Contabilitate și informatică de gestiune, câte trei ani. La Management începi cu economie, matematică, contabilitate și statistică, apoi treci la marketing, managementul proiectelor, al calității și al resurselor umane. În anul al doilea faci și practică.",
   "admissionTypes": [
    "dosar",
@@ -224,6 +230,8 @@
  {
   "universityId": "agora-oradea",
   "name": "Facultatea de Științe Juridice și Administrative",
+  "short": "FSJA",
+  "shortUrl": "https://fsja.univagora.ro",
   "about": "Aici studiezi Drept (patru ani), Administrație publică sau Poliție locală (câte trei ani). La Drept înveți drept civil, penal, constituțional și european, cu stagii de practică în ultimul an. La Poliție locală ai drept, ordine publică, investigație polițienească și regimul contravențiilor.",
   "admissionTypes": [
    "dosar",
@@ -412,6 +420,8 @@
  {
   "universityId": "anmb",
   "name": "Facultatea de Navigație și Management Naval",
+  "short": "FNMN",
+  "shortUrl": "https://www.anmb.ro/ro/files/structura/fnmn/",
   "about": "Aici se pregătesc ofițeri de punte pentru marina comercială și ingineri pentru nave și porturi. Programele de licență, de patru ani, sunt Navigație și transport maritim și fluvial și Inginerie și management naval și portuar. Ultimul are și o variantă militară, cu specialitatea logistică navală.",
   "admissionTypes": [
    "bac",
@@ -460,6 +470,8 @@
  {
   "universityId": "apollonia",
   "name": "Facultatea de Științe ale comunicării",
+  "short": "FSC",
+  "shortUrl": "https://www.univapollonia.ro/facultati/facultatea-de-stiinte-ale-comunicarii/",
   "about": "Aici studiezi Jurnalism sau Comunicare și relații publice și te pregătești pentru meserii din presă, relații publice și comunicare. Practica se face chiar în universitate, la Apollonia TV, Radio Apollonia, revista studențească și agenția de știri, dar și în instituții partenere.",
   "admissionTypes": [
    "bac"
@@ -476,6 +488,8 @@
  {
   "universityId": "arte-iasi",
   "name": "Facultatea de Arte Vizuale și Design",
+  "short": "FAVD",
+  "shortUrl": "https://www.arteiasi.ro/facultatea-de-arte-vizuale-si-design/",
   "about": "Aici studiezi pictură, sculptură, grafică, foto-video, artă murală, design, modă, arte textile, pedagogia artelor, conservare și restaurare sau istoria și teoria artei. Facultatea își are începuturile în 1860.",
   "admissionTypes": [
    "aptitudini",
@@ -579,6 +593,8 @@
  {
   "universityId": "ase-bucuresti",
   "name": "Facultatea de Administrarea Afacerilor, cu predare în limbi străine",
+  "short": "FABIZ",
+  "shortUrl": "https://www.fabiz.ase.ro/",
   "about": "Înveți cum se conduce și se dezvoltă o afacere, cu toate cursurile într-o limbă străină. Programul Administrarea afacerilor se poate urma în engleză, franceză sau germană.",
   "admissionTypes": [
    "bac",
@@ -600,6 +616,8 @@
  {
   "universityId": "ase-bucuresti",
   "name": "Facultatea de Administrație și Management Public",
+  "short": "FAMP",
+  "shortUrl": "https://famp.ase.ro/",
   "about": "Te pregătește pentru munca în instituțiile statului și în primării, dar și pentru lucrul cu oamenii dintr-o organizație. Are două programe de licență: Administrație publică și Resurse umane.",
   "admissionTypes": [
    "bac",
@@ -621,6 +639,8 @@
  {
   "universityId": "ase-bucuresti",
   "name": "Facultatea de Business și Turism",
+  "short": "BT",
+  "shortUrl": "https://bt.ase.ro/",
   "about": "Te pregătește pentru afaceri în comerț, turism și servicii și pentru lucrul cu calitatea produselor. Programul de licență, Administrarea afacerilor în comerț, turism, servicii, merceologie și managementul calității, se face în română sau în engleză.",
   "admissionTypes": [
    "bac",
@@ -642,6 +662,8 @@
  {
   "universityId": "ase-bucuresti",
   "name": "Facultatea de Cibernetică, Statistică și Informatică Economică",
+  "short": "CSIE",
+  "shortUrl": "https://csie.ase.ro/",
   "about": "Facultatea care îmbină economia cu IT-ul și lucrul cu date. Programele de licență sunt Informatică economică (și în engleză), Cibernetică economică, Statistică economică și data science și Inteligență artificială aplicată în economie și afaceri.",
   "admissionTypes": [
    "examen",
@@ -668,6 +690,8 @@
  {
   "universityId": "ase-bucuresti",
   "name": "Facultatea de Contabilitate și Informatică de Gestiune",
+  "short": "CIG",
+  "shortUrl": "https://cig.ase.ro/",
   "about": "Înveți să ții evidența banilor unei firme, să citești situațiile ei financiare și să folosești programele de calculator făcute pentru asta. Programul Contabilitate și informatică de gestiune se poate urma în română sau în engleză.",
   "admissionTypes": [
    "bac",
@@ -715,6 +739,8 @@
  {
   "universityId": "ase-bucuresti",
   "name": "Facultatea de Economie Agroalimentară și a Mediului",
+  "short": "EAM",
+  "shortUrl": "https://eam.ase.ro/",
   "about": "Studiezi economia aplicată la agricultură, alimentație și protecția mediului. Programul de licență se numește Economie agroalimentară și a mediului și pune accent pe o economie care are grijă de resurse.",
   "admissionTypes": [
    "bac",
@@ -757,6 +783,8 @@
  {
   "universityId": "ase-bucuresti",
   "name": "Facultatea de Finanțe, Asigurări, Bănci și Burse de Valori",
+  "short": "FABBV",
+  "shortUrl": "https://fabbv.ase.ro/",
   "about": "Înveți despre bani, bănci, asigurări, investiții și bursă. Programul de licență Finanțe și bănci se poate urma în română sau în engleză.",
   "admissionTypes": [
    "bac",
@@ -820,6 +848,8 @@
  {
   "universityId": "ase-bucuresti",
   "name": "Facultatea de Relații Economice Internaționale",
+  "short": "REI",
+  "shortUrl": "https://rei.ase.ro/",
   "about": "Studiezi comerțul și afacerile dintre țări. Are programul Economie și afaceri internaționale (în română sau în engleză) și programul Limbi moderne aplicate (engleză și franceză), pentru cei care vor să lucreze cu limbile străine în afaceri.",
   "admissionTypes": [
    "bac",
@@ -1486,6 +1516,8 @@
  {
   "universityId": "hyperion",
   "name": "Facultatea de Psihologie și Științe ale Educației",
+  "short": "FPSE",
+  "shortUrl": "https://www.psihologie.hyperion.ro/",
   "about": "Aici studiezi Psihologie, la cursuri de zi. Este una dintre cele două facultăți ale universității la care se dă examen de admitere.",
   "admissionTypes": [
    "examen",
@@ -1612,6 +1644,8 @@
  {
   "universityId": "ioan-slavici",
   "name": "Facultatea de Științe Economice",
+  "short": "FSE",
+  "shortUrl": "https://islavici.ro/prezentare-3/",
   "about": "Aici studiezi Finanțe și bănci sau Contabilitate și informatică de gestiune, câte trei ani. Înveți să ții evidența banilor unei firme și să analizezi informații financiare cu ajutorul calculatorului. Studenții pot face practică și proiecte aplicate împreună cu firme.",
   "admissionTypes": [
    "interviu",
@@ -1742,6 +1776,8 @@
  {
   "universityId": "iuls",
   "name": "Facultatea de Ingineria resurselor animale și alimentare",
+  "short": "FIRAA",
+  "shortUrl": "https://iuls.ro/firaa/",
   "about": "Este fosta Facultate de Zootehnie, înființată în 1951, care își poartă numele actual din 2021. Are trei programe de licență de patru ani, din care ieși inginer: Zootehnie (creșterea animalelor), Controlul și expertiza produselor alimentare și Inginerie și management în alimentația publică și agroturism.",
   "admissionTypes": [
    "bac"
@@ -1762,6 +1798,8 @@
  {
   "universityId": "iuls",
   "name": "Facultatea de Medicină Veterinară",
+  "short": "FMV",
+  "shortUrl": "https://iuls.ro/medicina/",
   "about": "Aici te pregătești să devii medic veterinar. Programul Medicină veterinară durează șase ani și are planuri de învățământ în română și în engleză. Începi cu anatomie, fiziologie și biochimie, apoi treci la clinică medicală, chirurgie, reproducere și siguranța alimentelor. Facultatea, înființată în 1961, are un spital veterinar cu urgențe, clinici, imagistică și laboratoare.",
   "admissionTypes": [
    "bac"
@@ -1823,6 +1861,8 @@
  {
   "universityId": "ovidius",
   "name": "Facultatea de Drept și Științe Administrative",
+  "short": "FDSA",
+  "shortUrl": "https://drept.univ-ovidius.ro/",
   "about": "Aici studiezi dreptul sau științele administrative: Drept, Administrație publică, Poliție locală și Asistență managerială și administrativă. Facultatea pregătește viitori juriști și oameni care lucrează în instituții publice. Dreptul durează patru ani, iar celelalte programe trei ani.",
   "admissionTypes": [
    "bac"
@@ -1844,6 +1884,8 @@
  {
   "universityId": "ovidius",
   "name": "Facultatea de Educație Fizică și Sport",
+  "short": "FEFS",
+  "shortUrl": "https://fefs.univ-ovidius.ro",
   "about": "Aici te pregătești să fii profesor de educație fizică, antrenor sau kinetoterapeut. Programele sunt Educație fizică și sportivă, Sport și performanță motrică și Kinetoterapie și motricitate specială, toate de trei ani. Faci multă practică sportivă, alături de materii despre corpul omenesc și antrenament.",
   "admissionTypes": [
    "aptitudini",
@@ -1891,6 +1933,8 @@
  {
   "universityId": "ovidius",
   "name": "Facultatea de Inginerie Mecanică, Industrială și Maritimă",
+  "short": "FIMIM",
+  "shortUrl": "https://imim.univ-ovidius.ro",
   "about": "Aici devii inginer pentru domenii legate de mașini, industrie și mare: autovehicule rutiere, energetică industrială, inginerie mecanică (program dual, cu o parte din pregătire în firme), informatică aplicată în inginerie industrială sau inginerie economică în domeniul mecanic. Studiile durează patru ani, iar facultatea lucrează cu șantiere navale, firme din port și din energie.",
   "admissionTypes": [
    "bac"
@@ -1913,6 +1957,8 @@
  {
   "universityId": "ovidius",
   "name": "Facultatea de Istorie și Științe Politice",
+  "short": "FISP",
+  "shortUrl": "https://isp.univ-ovidius.ro",
   "about": "Aici studiezi Istorie, Științe politice sau Relații internaționale și studii europene. Înveți cum au evoluat societățile, cum funcționează statele și cum se iau deciziile în politică și diplomație. Facultatea are biblioteci proprii și colaborează cu muzee și institute de cercetare.",
   "admissionTypes": [
    "bac"
@@ -1954,6 +2000,8 @@
  {
   "universityId": "ovidius",
   "name": "Facultatea de Matematică și Informatică",
+  "short": "FMI",
+  "shortUrl": "https://fmi.univ-ovidius.ro",
   "about": "Aici studiezi Informatică (în română sau în engleză) ori Matematică informatică. Înveți programare, algoritmi, baze de date, rețele și inteligență artificială, pe o bază solidă de matematică. Absolvenții lucrează mai ales ca programatori, analiști sau administratori de sisteme.",
   "admissionTypes": [
    "bac"
@@ -2050,6 +2098,8 @@
  {
   "universityId": "ovidius",
   "name": "Facultatea de Științe ale Naturii și Științe Agricole",
+  "short": "FSNSA",
+  "shortUrl": "https://snsa.univ-ovidius.ro",
   "about": "Aici studiezi natura și agricultura: Biologie, Ecologie și protecția mediului, Geografie, Geografia turismului și Agricultură. Este una dintre cele mai vechi facultăți ale universității din Constanța. Agricultura durează patru ani și se poate urma și cu frecvență redusă sau în sistem dual; celelalte programe durează trei ani.",
   "admissionTypes": [
    "bac"
@@ -2070,6 +2120,8 @@
  {
   "universityId": "ovidius",
   "name": "Facultatea de Științe Aplicate și Inginerie",
+  "short": "FSAI",
+  "shortUrl": "https://fsai.univ-ovidius.ro",
   "about": "Aici studiezi chimia, fizica și ingineria chimică aplicate în industrie: Chimie medicală, Chimie alimentară și tehnologii biochimice, Prelucrarea petrolului și petrochimie, Fizică tehnologică și protecția mediului în industrie. Unele programe sunt în sistem dual, adică o parte din pregătire se face în firme.",
   "admissionTypes": [
    "bac"
@@ -2132,6 +2184,8 @@
  {
   "universityId": "partium",
   "name": "Facultatea de Litere și Arte",
+  "short": "FLA",
+  "shortUrl": "https://partium.ro/ro/universitate/facultati-si-departamente/facultatea-de-litere-si-arte",
   "about": "Facultatea are două departamente, Limbă și Literatură și Arte, iar cursurile se țin în limba maghiară. Poți studia limba și literatura maghiară sau engleză, grafică (design grafic și animație) ori canto clasic (operă, lied, oratoriu). Se lucrează mult pe proiecte practice.",
   "admissionTypes": [
    "dosar",
@@ -2158,6 +2212,8 @@
  {
   "universityId": "partium",
   "name": "Facultatea de Științe Economice și Sociale",
+  "short": "FSES",
+  "shortUrl": "https://partium.ro/ro/universitate/facultati-si-departamente/facultatea-de-stiinte-economice-si-sociale",
   "about": "Aici sunt programele economice (Management, Finanțe și bănci, Informatică economică, Economia comerțului, turismului și serviciilor) și cele socio-umane (Asistență socială, Sociologie, Pedagogia învățământului primar). Cursurile se țin în limba maghiară, iar studenții fac stagii de practică la firme din țară și din străinătate.",
   "admissionTypes": [
    "dosar",
@@ -2484,6 +2540,8 @@
  {
   "universityId": "snspa",
   "name": "Facultatea de Administrație Publică",
+  "short": "FAP",
+  "shortUrl": "https://administratiepublica.eu/",
   "about": "Te pregătește să lucrezi în instituții publice din România și din Uniunea Europeană. Are programele Administrație publică (la zi și la distanță) și Administrație europeană, de câte trei ani. Facultatea pune accent pe integritate, transparență și răspundere față de cetățeni.",
   "admissionTypes": [
    "bac"
@@ -2504,6 +2562,8 @@
  {
   "universityId": "snspa",
   "name": "Facultatea de Comunicare și Relații Publice",
+  "short": "FCRP",
+  "shortUrl": "https://www.comunicare.ro/",
   "about": "Înveți cum comunică firmele, instituțiile și oamenii publici: relații publice, publicitate, mass-media, social media și comunicare de criză. Are trei programe de trei ani: Comunicare și relații publice, Publicitate și Comunicare și media emergente (în engleză). Practica se poate face în agenții, companii, instituții publice sau redacții.",
   "admissionTypes": [
    "bac"
@@ -2541,6 +2601,8 @@
  {
   "universityId": "snspa",
   "name": "Facultatea de Științe Politice",
+  "short": "FSP",
+  "shortUrl": "https://politice.ro/",
   "about": "Are patru programe de licență de trei ani: Științe politice, Relații internaționale și studii europene, Sociologie și Psihologie. Înveți cum funcționează statele, politica, societatea și comportamentul oamenilor, cu o bază teoretică și de cercetare.",
   "admissionTypes": [
    "examen"
@@ -2561,6 +2623,8 @@
  {
   "universityId": "spiru-haret",
   "name": "Facultatea de Educație Fizică și Sport",
+  "short": "FEFS",
+  "shortUrl": "https://efs.spiruharet.ro/",
   "about": "Aici studiezi Educație fizică și sportivă sau Kinetoterapie și motricitate specială, la București. Absolvenții pot lucra ca profesori de sport, instructori sau preparatori sportivi, respectiv ca kinetoterapeuți.",
   "admissionTypes": [
    "aptitudini",
@@ -2598,6 +2662,8 @@
  {
   "universityId": "spiru-haret",
   "name": "Facultatea de Medicină Veterinară",
+  "short": "FMV",
+  "shortUrl": "https://mvet.spiruharet.ro/",
   "about": "Pregătește medici veterinari: studiile durează 6 ani, la zi, și se termină cu titlul de doctor medic veterinar. Practica se face în laboratoare, în clinicile veterinare ale facultății (animale de companie și de fermă) și la ferme și unități partenere.",
   "admissionTypes": [
    "interviu",
@@ -2680,6 +2746,8 @@
  {
   "universityId": "spiru-haret",
   "name": "Facultatea de Științe Economice, Câmpulung",
+  "short": "FSE",
+  "shortUrl": "https://se-ag.spiruharet.ro/",
   "about": "Facultate a Universității „Spiru Haret”, la Câmpulung, cu un singur program de licență: Contabilitate și informatică de gestiune. Înveți contabilitate și cum se folosește calculatorul în evidența banilor unei firme.",
   "admissionTypes": [
    "interviu",
@@ -2773,6 +2841,8 @@
  {
   "universityId": "tibiscus",
   "name": "Facultatea de Calculatoare și Informatică Aplicată",
+  "short": "FCIA",
+  "shortUrl": "https://fcia.tibiscus.ro/",
   "about": "Aici înveți informatică: facultatea are un program de licență, Informatică, și un departament de informatică cu centru de cercetare. Funcționează din anul universitar 2000-2001 și a fost fondată de un grup de profesori de matematică și ingineri.",
   "admissionTypes": [
    "dosar",
@@ -2796,6 +2866,8 @@
  {
   "universityId": "tibiscus",
   "name": "Facultatea de Drept și Administrație Publică",
+  "short": "FDAP",
+  "shortUrl": "https://fdap.tibiscus.ro/",
   "about": "Aici studiezi dreptul și te pregătești pentru o carieră juridică. Cursurile teoretice se îmbină cu practica judiciară, iar printre profesori sunt oameni cu experiență în magistratură și avocatură.",
   "admissionTypes": [
    "dosar",
@@ -2835,6 +2907,8 @@
  {
   "universityId": "tibiscus",
   "name": "Facultatea de Științe Economice",
+  "short": "FSE",
+  "shortUrl": "https://fse.tibiscus.ro/",
   "about": "Aici înveți economie aplicată, în două programe de licență de câte 3 ani, la zi: Contabilitate și informatică de gestiune și Administrarea afacerilor. Facultatea funcționează în domeniul economic din 1997.",
   "admissionTypes": [
    "dosar",
@@ -2904,6 +2978,8 @@
  {
   "universityId": "tuiasi",
   "name": "Facultatea de Automatică și Calculatoare",
+  "short": "AC",
+  "shortUrl": "https://ac.tuiasi.ro/",
   "about": "Aici înveți programare, calculatoare și sisteme automate. Studiile durează patru ani, în două domenii: Calculatoare și tehnologia informației și Automatică, informatică aplicată și sisteme inteligente. La final primești titlul de inginer.",
   "admissionTypes": [
    "examen",
@@ -2928,6 +3004,8 @@
  {
   "universityId": "tuiasi",
   "name": "Facultatea de Construcții de Mașini și Management Industrial",
+  "short": "CMMI",
+  "shortUrl": "https://cmmi.tuiasi.ro/",
   "about": "Aici înveți cum se proiectează și se fabrică piese și mașini: tehnologia construcțiilor de mașini, sudare, sisteme de producție digitale, mecanică fină, sisteme hidraulice și pneumatice. Are și programe de inginerie economică și de fabricație pentru industria aerospațială. Studiile durează patru ani.",
   "admissionTypes": [
    "bac"
@@ -2967,6 +3045,8 @@
  {
   "universityId": "tuiasi",
   "name": "Facultatea de Design Industrial și Managementul Afacerilor",
+  "short": "DIMA",
+  "shortUrl": "https://dima.tuiasi.ro/",
   "about": "Aici înveți design industrial, tehnologia și designul produselor textile, al tricotajelor și al confecțiilor din piele, dar și inginerie economică și managementul afacerilor. Designul industrial se poate face și în limba engleză. Studenții fac practică în firme din industrie.",
   "admissionTypes": [
    "bac"
@@ -2986,6 +3066,8 @@
  {
   "universityId": "tuiasi",
   "name": "Facultatea de Electronică, Telecomunicații și Tehnologia Informației",
+  "short": "ETTI",
+  "shortUrl": "https://etti.tuiasi.ro/",
   "about": "Aici înveți electronică aplicată, microelectronică și telecomunicații: cum se proiectează circuitele, aparatele și rețelele prin care comunicăm. Studiile durează patru ani, iar programul de telecomunicații se face și în limba engleză.",
   "admissionTypes": [
    "bac"
@@ -3005,6 +3087,8 @@
  {
   "universityId": "tuiasi",
   "name": "Facultatea de Hidrotehnică, Geodezie și Ingineria Mediului",
+  "short": "HGIM",
+  "shortUrl": "https://hgim.tuiasi.ro/",
   "about": "Aici înveți despre construcții legate de apă (amenajări hidrotehnice), îmbunătățiri funciare și dezvoltare rurală, măsurători de teren și cadastru și protecția mediului în agricultură. Programele durează opt semestre, adică patru ani.",
   "admissionTypes": [
    "bac"
@@ -3024,6 +3108,8 @@
  {
   "universityId": "tuiasi",
   "name": "Facultatea de Inginerie Chimică și Protecția Mediului „Cristofor Simionescu\"",
+  "short": "ICPM",
+  "shortUrl": "https://icpm.tuiasi.ro/",
   "about": "Aici înveți inginerie chimică și ingineria mediului: cum se obțin substanțele și materialele în industrie și cum se protejează mediul. Are și un program de inginerie economică în industria chimică. Studiile durează patru ani și se fac în limba română. Facultatea are centre de cercetare și editează o revistă științifică de ingineria mediului.",
   "admissionTypes": [
    "bac"
@@ -3043,6 +3129,8 @@
  {
   "universityId": "tuiasi",
   "name": "Facultatea de Inginerie Electrică, Energetică și Informatică Aplicată",
+  "short": "IEEIA",
+  "shortUrl": "https://ieeia.tuiasi.ro/",
   "about": "Aici înveți inginerie electrică, energetică și informatică aplicată în aceste domenii: de la mașini și acționări electrice la producerea și distribuția energiei. Studiile durează patru ani. Istoria facultății este legată de academicienii Dragomir Hurmuzescu și Ștefan Procopiu.",
   "admissionTypes": [
    "bac"
@@ -3081,6 +3169,8 @@
  {
   "universityId": "tuiasi",
   "name": "Facultatea de Știința și Ingineria Materialelor",
+  "short": "SIM",
+  "shortUrl": "https://sim.tuiasi.ro/",
   "about": "Aici înveți despre materialele folosite în industrie și despre cum se prelucrează, dar și despre echipamente industriale și siguranța în industrie. Facultatea pregătește ingineri în trei domenii: ingineria materialelor, inginerie mecanică și inginerie industrială.",
   "admissionTypes": [
    "bac"
@@ -3100,6 +3190,8 @@
  {
   "universityId": "uab",
   "name": "Facultatea de Drept și Științe Sociale",
+  "short": "FDSS",
+  "shortUrl": "https://www.uab.ro/facultate/4-facultatea-de-drept-si-stiinte-sociale/",
   "about": "Facultate cu programe variate: Drept, Administrație publică, Sociologie, Asistență socială, Resurse umane, Terapie ocupațională, dar și Asistență medicală generală, Educație fizică și sportivă și Kinetoterapie. Dreptul și Asistența medicală durează patru ani, celelalte trei. Facultatea a fost înființată în 2003.",
   "admissionTypes": [
    "bac",
@@ -3121,6 +3213,8 @@
  {
   "universityId": "uab",
   "name": "Facultatea de Informatică și Inginerie",
+  "short": "FII",
+  "shortUrl": "https://www.uab.ro/facultate/1-facultatea-de-informatica-si-inginerie/",
   "about": "Este cea mai tânără facultate a universității. Poți studia Informatică (și în limba engleză), timp de trei ani, sau programe de inginerie de patru ani: Electronică aplicată, Măsurători terestre și cadastru, Ingineria mediului, Inginerie urbană și dezvoltare regională. Facultatea ține legătura cu firmele din regiune.",
   "admissionTypes": [
    "bac",
@@ -3142,6 +3236,8 @@
  {
   "universityId": "uab",
   "name": "Facultatea de Istorie, Litere și Științe ale Educației",
+  "short": "FILȘE",
+  "shortUrl": "https://www.uab.ro/facultate/3-facultatea-de-istorie-litere-si-stiinte-ale-educatiei/",
   "about": "Aici studiezi Istorie, Limba și literatura română împreună cu Limba și literatura engleză, Traducere și interpretare sau pedagogie pentru învățători și educatori. Istoria și filologia sunt printre cele mai vechi specializări ale universității. Studiile durează trei ani; pedagogia se poate face și la distanță, la Alba Iulia sau la Deva.",
   "admissionTypes": [
    "bac",
@@ -3163,6 +3259,8 @@
  {
   "universityId": "uab",
   "name": "Facultatea de Științe Economice",
+  "short": "FSE",
+  "shortUrl": "https://www.uab.ro/facultate/2-facultatea-de-stiinte-economice/",
   "about": "Poți studia Administrarea afacerilor (și în limba engleză), Contabilitate și informatică de gestiune, Finanțe și bănci, Marketing sau Economia comerțului, turismului și serviciilor. Studiile durează trei ani, iar unele programe se pot face și la distanță. Facultatea poartă acest nume din 2014.",
   "admissionTypes": [
    "bac",
@@ -3184,6 +3282,8 @@
  {
   "universityId": "uab",
   "name": "Facultatea de Teologie Ortodoxă",
+  "short": "FTO",
+  "shortUrl": "https://www.uab.ro/facultate/5-facultatea-de-teologie-ortodoxa/",
   "about": "Facultatea există din 1991 și pregătește viitori preoți la Teologie ortodoxă pastorală, program de patru ani. Tot aici poți studia, în programe de trei ani, Muzică religioasă, Artă sacră sau Cinematografie, fotografie, media.",
   "admissionTypes": [
    "bac",
@@ -3205,6 +3305,8 @@
  {
   "universityId": "uad-cluj",
   "name": "Facultatea de Arte Decorative și Design",
+  "short": "FADD",
+  "shortUrl": "https://uad.ro/structura/facultati/arte_decorative/index.htm",
   "about": "Aici studiezi design, modă și design vestimentar, arte textile, ceramică-sticlă-metal sau istoria și teoria artei. Programele de atelier îmbină pregătirea artistică cu cea practică, iar istoria și teoria artei este un program teoretic, despre artele vizuale.",
   "admissionTypes": [
    "aptitudini",
@@ -3227,6 +3329,8 @@
  {
   "universityId": "uad-cluj",
   "name": "Facultatea de Arte Plastice",
+  "short": "FAP",
+  "shortUrl": "https://uad.ro/structura/facultati/arte_plastice/index.htm",
   "about": "Aici studiezi pictură, sculptură, grafică, fotografie și video, conservarea și restaurarea picturii sau pedagogia artelor plastice și decorative. Facultatea are cinci departamente: Pictură, Sculptură, Grafică, Foto-video și Conservare-restaurare.",
   "admissionTypes": [
    "aptitudini",
@@ -3309,6 +3413,8 @@
  {
   "universityId": "uaic",
   "name": "Facultatea de Economie și Administrarea Afacerilor",
+  "short": "FEAA",
+  "shortUrl": "https://www.feaa.uaic.ro/",
   "about": "Aici studiezi economie și afaceri: contabilitate, finanțe și bănci, management, marketing, informatică economică, afaceri internaționale și administrație publică. Are și un program de administrarea afacerilor predat în limba engleză.",
   "admissionTypes": [
    "bac"
@@ -3329,6 +3435,8 @@
  {
   "universityId": "uaic",
   "name": "Facultatea de Educație Fizică și Sport",
+  "short": "FEFS",
+  "shortUrl": "https://www.sport.uaic.ro/",
   "about": "Aici te pregătești să fii profesor de educație fizică, antrenor, kinetoterapeut sau manager în sport. Facultatea a fost înființată în 1960 și are săli de sport, sală de fitness și pistă de atletism. Printre foștii studenți sunt campioni europeni și mondiali.",
   "admissionTypes": [
    "aptitudini",
@@ -3349,6 +3457,8 @@
  {
   "universityId": "uaic",
   "name": "Facultatea de Filosofie și Științe Social - Politice",
+  "short": "FSSP",
+  "shortUrl": "https://www.fssp.uaic.ro/",
   "about": "Aici studiezi omul și societatea: filosofie, sociologie, științe politice, relații internaționale și studii europene, asistență socială, resurse umane, comunicare și relații publice. Facultatea își are începuturile în 1860, odată cu Universitatea din Iași.",
   "admissionTypes": [
    "bac"
@@ -3390,6 +3500,8 @@
  {
   "universityId": "uaic",
   "name": "Facultatea de Geografie și Geologie",
+  "short": "FGG",
+  "shortUrl": "https://www.geo.uaic.ro/",
   "about": "Aici studiezi geografie, turism, mediu, meteorologie și hidrologie, planificarea teritoriului și geologie. Se învață mult pe teren și în laboratoare, iar facultatea are trei stațiuni pentru practica studenților.",
   "admissionTypes": [
    "bac",
@@ -3411,6 +3523,8 @@
  {
   "universityId": "uaic",
   "name": "Facultatea de Informatică",
+  "short": "FII",
+  "shortUrl": "https://info.uaic.ro/",
   "about": "Aici înveți programare și știința calculatoarelor: algoritmi, baze de date, inteligență artificială, securitate cibernetică, ingineria programării. Facultatea a fost înființată în 1992, are legături cu firmele de IT, iar studenții ei participă la concursuri de programare.",
   "admissionTypes": [
    "examen",
@@ -3497,6 +3611,8 @@
  {
   "universityId": "uaic",
   "name": "Facultatea de Psihologie și Științe ale Educației",
+  "short": "FPSE",
+  "shortUrl": "https://www.psih.uaic.ro/",
   "about": "Aici studiezi psihologie sau științele educației: Psihologie, Pedagogie, Psihopedagogie specială și Pedagogia învățământului primar (pentru viitorii învățători). Facultatea are laboratoare de cercetare și este cunoscută pentru psihologia socială și pentru partea clinică.",
   "admissionTypes": [
    "bac",
@@ -3632,6 +3748,8 @@
  {
   "universityId": "uauim",
   "name": "Facultatea de Arhitectură de Interior",
+  "short": "FAI",
+  "shortUrl": "https://www.uauim.ro/facultati/interior/",
   "about": "Este cea mai nouă facultate a universității. Aici înveți să proiectezi spații interioare și obiecte: Arhitectură de interior și Design de produs durează câte 5 ani (licență și master împreună), iar Mobilier și amenajări interioare durează 3 ani și este orientat spre practică.",
   "admissionTypes": [
    "aptitudini",
@@ -3731,6 +3849,8 @@
  {
   "universityId": "uav-arad",
   "name": "Facultatea de Inginerie Alimentară, Turism și Protecția Mediului",
+  "short": "FIATPM",
+  "shortUrl": "https://fiatpm.uav.ro",
   "about": "Înveți cum se produc și se verifică alimentele, cum se protejează mediul și consumatorul și cum se conduce o afacere în alimentație publică și agroturism; are și programul Nutriție și dietetică. Practica se face în laboratoare proprii, între care unul de procesare a cărnii și unul de gastronomie.",
   "admissionTypes": [
    "bac",
@@ -3755,6 +3875,8 @@
  {
   "universityId": "uav-arad",
   "name": "Facultatea de Științe ale Educației, Psihologie și Asistență Socială",
+  "short": "FSEPAS",
+  "shortUrl": "https://psihologie.uav.ro",
   "about": "Te pregătește să lucrezi cu oamenii: ca învățător sau educator (Pedagogia învățământului primar, Educație timpurie), cu copii cu nevoi speciale (Psihopedagogie specială), ca psiholog (Psihologie) sau ca asistent social (Asistență socială).",
   "admissionTypes": [
    "bac",
@@ -3814,6 +3936,8 @@
  {
   "universityId": "uav-arad",
   "name": "Facultatea de Științe Umaniste și Sociale",
+  "short": "FSUS",
+  "shortUrl": "https://stiinteumaniste.uav.ro",
   "about": "Reunește programe foarte diferite: Limba și literatura română – Limba și literatura engleză, Administrație publică, Jurnalism, Teologie penticostală didactică, Muzică și Interpretare muzicală – canto. Cele mai multe durează trei ani, iar canto patru.",
   "admissionTypes": [
    "bac",
@@ -3915,6 +4039,8 @@
  {
   "universityId": "ub-bacau",
   "name": "Facultatea de Științe ale Mișcării, Sportului și Sănătății",
+  "short": "FSMSS",
+  "shortUrl": "https://smss.ub.ro/",
   "about": "Facultatea se ocupă de educație fizică și sport, performanță sportivă, kinetoterapie și terapie ocupațională. Programele de licență, de 3 ani, sunt Educație fizică și sportivă, Sport și performanță motrică, Kinetoterapie și motricitate specială și Terapie ocupațională.",
   "admissionTypes": [
    "aptitudini",
@@ -3935,6 +4061,8 @@
  {
   "universityId": "ub-bacau",
   "name": "Facultatea de Științe Economice",
+  "short": "FSE",
+  "shortUrl": "https://stec.ub.ro/",
   "about": "Aici studiezi Administrarea afacerilor, Contabilitate și informatică de gestiune sau Marketing; fiecare program durează 3 ani. Contabilitatea se poate urma și cu frecvență redusă, iar Marketingul și la distanță. Absolvenții pot lucra, de exemplu, ca antreprenori, contabili sau specialiști în marketing.",
   "admissionTypes": [
    "bac"
@@ -3956,6 +4084,8 @@
  {
   "universityId": "ubb-cluj",
   "name": "Facultatea de Biologie și Geologie",
+  "short": "FBG",
+  "shortUrl": "https://biogeo.ubbcluj.ro/",
   "about": "Aici studiezi biologie, biochimie, ecologie și protecția mediului, biotehnologii industriale, geologie sau inginerie geologică. Facultatea coordonează științific muzeele de zoologie, botanică, mineralogie și paleontologie ale universității și Vivariumul. Unele programe se țin și în limba maghiară.",
   "admissionTypes": [
    "bac",
@@ -4001,6 +4131,8 @@
  {
   "universityId": "ubb-cluj",
   "name": "Facultatea de Chimie și Inginerie Chimică",
+  "short": "FCIC",
+  "shortUrl": "https://chem.ubbcluj.ro/",
   "about": "Aici studiezi chimie (inclusiv chimie farmaceutică) sau inginerie chimică, de la chimie alimentară la inginerie biochimică și nanoștiințe. Programele de chimie durează trei ani, iar cele de inginerie și dubla specializare Chimie-Fizică patru ani; unele se țin și în limba maghiară.",
   "admissionTypes": [
    "bac",
@@ -4051,6 +4183,8 @@
  {
   "universityId": "ubb-cluj",
   "name": "Facultatea de Educație Fizică și Sport",
+  "short": "FEFS",
+  "shortUrl": "https://sport.ubbcluj.ro/contact/",
   "about": "Aici te pregătești să devii profesor de educație fizică, antrenor sau kinetoterapeut. Programele se țin în română și maghiară la Cluj-Napoca; Educația fizică și sportivă se poate urma și la Bistrița și Reșița, în limba română.",
   "admissionTypes": [
    "aptitudini",
@@ -4146,6 +4280,8 @@
  {
   "universityId": "ubb-cluj",
   "name": "Facultatea de Istorie și Filosofie",
+  "short": "FIF",
+  "shortUrl": "https://hiphi.ubbcluj.ro",
   "about": "Aici studiezi istorie, arheologie, istoria artei, arhivistică, filosofie, etnologie, turism cultural, relații internaționale și studii europene sau studii de securitate. Cele mai multe programe se țin în română și maghiară, iar Studii de securitate și în engleză.",
   "admissionTypes": [
    "bac",
@@ -4192,6 +4328,8 @@
  {
   "universityId": "ubb-cluj",
   "name": "Facultatea de Matematică și Informatică",
+  "short": "FMI",
+  "shortUrl": "https://www.cs.ubbcluj.ro",
   "about": "Aici studiezi matematică, informatică, inteligență artificială sau ingineria informației. Programele durează trei sau patru ani și se țin în română, maghiară, germană sau engleză, în funcție de specializare.",
   "admissionTypes": [
    "examen"
@@ -4217,6 +4355,8 @@
  {
   "universityId": "ubb-cluj",
   "name": "Facultatea de Psihologie și Științe ale Educației",
+  "short": "FPSE",
+  "shortUrl": "https://psiedu.ubbcluj.ro",
   "about": "Aici studiezi psihologie, psihopedagogie specială, pedagogie sau te pregătești să devii învățător ori educator. Programele se țin în română, maghiară, germană sau engleză, în funcție de specializare. Pedagogia învățământului primar se poate urma și la Năsăud, Sighetu Marmației, Târgu Mureș, Satu Mare, Odorheiu Secuiesc și Reșița.",
   "admissionTypes": [
    "examen",
@@ -4243,6 +4383,8 @@
  {
   "universityId": "ubb-cluj",
   "name": "Facultatea de Sociologie și Asistență Socială",
+  "short": "FSAS",
+  "shortUrl": "https://socasis.ubbcluj.ro",
   "about": "Aici studiezi sociologie, antropologie, resurse umane sau asistență socială, adică felul în care funcționează societatea și cum pot fi ajutați oamenii aflați în dificultate. La Cluj-Napoca programele se țin în română și maghiară; Asistența socială se poate urma și la Reșița, în limba română.",
   "admissionTypes": [
    "bac",
@@ -4266,6 +4408,8 @@
  {
   "universityId": "ubb-cluj",
   "name": "Facultatea de Studii Europene",
+  "short": "FSE",
+  "shortUrl": "https://euro.ubbcluj.ro",
   "about": "Aici studiezi relații internaționale și studii europene, diplomație în afaceri, management sau administrație europeană. Programul de Relații internaționale și studii europene se ține în română, engleză sau germană.",
   "admissionTypes": [
    "bac",
@@ -4289,6 +4433,8 @@
  {
   "universityId": "ubb-cluj",
   "name": "Facultatea de Știința și Ingineria Mediului",
+  "short": "FSIM",
+  "shortUrl": "https://enviro.ubbcluj.ro",
   "about": "Aici înveți cum se studiază și se protejează mediul: știința mediului, management și audit de mediu sau ingineria mediului. Știința mediului se poate urma și în limba maghiară, la Cluj-Napoca și la Sfântu Gheorghe.",
   "admissionTypes": [
    "bac",
@@ -4311,6 +4457,8 @@
  {
   "universityId": "ubb-cluj",
   "name": "Facultatea de Științe Economice și Gestiunea Afacerilor",
+  "short": "FSEGA",
+  "shortUrl": "https://econ.ubbcluj.ro",
   "about": "Aici studiezi economie și afaceri: contabilitate, finanțe și bănci, management, marketing, informatică economică, statistică și data science, afaceri internaționale. Programele se țin în română, maghiară, germană sau engleză, la Cluj-Napoca, iar unele și la Sfântu Gheorghe, Sighetu Marmației și Reșița.",
   "admissionTypes": [
    "bac",
@@ -4358,6 +4506,8 @@
  {
   "universityId": "ubb-cluj",
   "name": "Facultatea de Științe Politice, Administrative și ale Comunicării",
+  "short": "FSPAC",
+  "shortUrl": "https://fspac.ubbcluj.ro/ro",
   "about": "Aici studiezi comunicare și relații publice, jurnalism, publicitate, media digitală, administrație publică, sănătate publică sau științe politice. Programele se țin în română, maghiară, germană sau engleză, în funcție de specializare, iar Administrația publică se poate urma și la Bistrița și Reșița.",
   "admissionTypes": [
    "bac",
@@ -4404,6 +4554,8 @@
  {
   "universityId": "ubb-cluj",
   "name": "Facultatea de Teologie Greco- Catolică",
+  "short": "FTGC",
+  "shortUrl": "https://gct.ubbcluj.ro/",
   "about": "Aici studiezi teologie greco-catolică, pe direcțiile pastorală, didactică și asistență socială, în limba română. Facultatea are trei departamente: la Cluj-Napoca, la Blaj și la Oradea; în ultimele două orașe se face doar Teologie pastorală.",
   "admissionTypes": [
    "bac",
@@ -4607,6 +4759,8 @@
  {
   "universityId": "ucdc",
   "name": "Facultatea de Limbi și Literaturi Străine",
+  "short": "FLLS",
+  "shortUrl": "https://limbi-straine.ucdc.ro/",
   "about": "Facultate din București, înființată în 1999, unde studiezi două limbi și literaturile lor: engleza împreună cu o altă limbă modernă sau româna împreună cu o limbă modernă. Printre limbile de pe site se află germana, spaniola, japoneza, chineza și rusa. Faci practică la institute culturale, birouri de traduceri, edituri sau centre de limbi străine.",
   "admissionTypes": [
    "bac"
@@ -4651,6 +4805,8 @@
  {
   "universityId": "ucdc",
   "name": "Facultatea de Științe Economice din Cluj-Napoca",
+  "short": "FSE",
+  "shortUrl": "https://www.cantemircluj.ro/",
   "about": "Facultate a universității la Cluj-Napoca, cu programul Contabilitate și informatică de gestiune, de 3 ani. Înveți contabilitate, fiscalitate, analiză financiară și audit, dar și programele informatice folosite în firme. Poți studia cu frecvență sau la distanță.",
   "admissionTypes": [
    "bac"
@@ -4734,6 +4890,8 @@
  {
   "universityId": "ucv",
   "name": "Facultatea de Automatică, Calculatoare și Electronică",
+  "short": "FACE",
+  "shortUrl": "https://ace.ucv.ro/",
   "about": "Aici înveți programare și calculatoare, automatică, sisteme multimedia, electronică, mecatronică și robotică. Programul Calculatoare se poate face în română sau în engleză, iar facultatea are laboratoare și centre de cercetare pentru robotică, inteligență artificială și securitate informatică.",
   "admissionTypes": [
    "examen",
@@ -4818,6 +4976,8 @@
  {
   "universityId": "ucv",
   "name": "Facultatea de Educație Fizică și Sport",
+  "short": "FEFS",
+  "shortUrl": "https://efs.ucv.ro/",
   "about": "Aici te pregătești să fii profesor de sport, antrenor sau instructor de fitness, ori kinetoterapeut, adică specialistul care ajută oamenii să își recapete mișcarea după accidente sau boli. Cursurile se țin la Craiova și la Drobeta-Turnu Severin.",
   "admissionTypes": [
    "aptitudini",
@@ -5141,6 +5301,8 @@
  {
   "universityId": "ulbs",
   "name": "Facultatea de Litere și Arte",
+  "short": "FLA",
+  "shortUrl": "https://litere.ulbsibiu.ro/",
   "about": "Aici studiezi limbi și literaturi (română, engleză, germană, franceză, chineză), limbi moderne aplicate, științe ale informării și documentării, dar și teatru: actorie, coregrafie și teatrologie (management cultural). Facultatea organizează conferințe și festivaluri de teatru și literatură.",
   "admissionTypes": [
    "bac",
@@ -5206,6 +5368,8 @@
  {
   "universityId": "ulbs",
   "name": "Facultatea de Științe Agricole, Industrie Alimentară și Protecția Mediului",
+  "short": "SAIAPM",
+  "shortUrl": "https://saiapm.ulbsibiu.ro/",
   "about": "Aici înveți cum se produc și se controlează alimentele, cum se conduce o afacere în alimentație publică și agroturism, cum se protejează mediul în agricultură și cum se lucrează în zona de munte (montanologie).",
   "admissionTypes": [
    "bac"
@@ -5241,6 +5405,8 @@
  {
   "universityId": "ulbs",
   "name": "Facultatea de Științe Socio- Umane",
+  "short": "FSSU",
+  "shortUrl": "https://socioumane.ulbsibiu.ro/",
   "about": "O facultate cu multe direcții: psihologie, pedagogia învățământului primar, sociologie, asistență socială, resurse umane, jurnalism, comunicare și relații publice, istorie, patrimoniu, conservare și restaurare, științe politice, relații internaționale, studii de securitate și teologie protestantă.",
   "admissionTypes": [
    "bac",
@@ -5319,6 +5485,8 @@
  {
   "universityId": "umf-carol-davila",
   "name": "Facultatea de Asistență Medicală",
+  "short": "FMAM",
+  "shortUrl": "https://umfcd.ro/educatie/facultati-si-resurse/facultatea-de-moase-si-asistenta-medicala/",
   "about": "Aici te pregătești pentru meserii medicale ca asistent medical generalist, moașă, kinetoterapeut sau tehnician dentar. Pe site-ul universității facultatea se numește „Facultatea de Moașe și Asistență Medicală”. Studiezi anatomie, fiziologie, etică și comunicare și faci practică în spitale și maternități.",
   "admissionTypes": [
    "dosar",
@@ -5513,6 +5681,8 @@
  {
   "universityId": "umf-craiova",
   "name": "Facultatea de Asistență Medicală",
+  "short": "FMAM",
+  "shortUrl": "https://umfcv.ro/ro/educatie/facultati/moase-si-asistenta-medicala",
   "about": "Este cea mai nouă facultate a universității, înființată în 2008; asistenți medicali se pregătesc însă la Craiova din 1999. Are patru programe de licență: Asistență medicală generală, de patru ani, și Balneofiziokinetoterapie și recuperare, Radiologie și imagistică, Nutriție și dietetică, de câte trei ani.",
   "admissionTypes": [
    "examen"
@@ -5986,6 +6156,8 @@
  {
   "universityId": "unarte",
   "name": "Facultatea de Arte Decorative și Design",
+  "short": "FADD",
+  "shortUrl": "https://unarte.org/fadd/",
   "about": "Aici înveți artele aplicate: artă murală, arte textile, ceramică-sticlă-metal, design, modă și scenografie. La Design, de exemplu, lucrezi pe trei direcții – design grafic, de produs și ambiental – și faci proiecte, machete și prototipuri.",
   "admissionTypes": [
    "aptitudini",
@@ -6008,6 +6180,8 @@
  {
   "universityId": "unarte",
   "name": "Facultatea de Arte Plastice",
+  "short": "FAP",
+  "shortUrl": "https://unarte.org/fap/",
   "about": "Facultatea are departamente de pictură, sculptură, grafică, foto-video și pedagogia artei. La Pictură, de exemplu, studiezi desenul, culoarea și compoziția, tehnicile picturii de șevalet și prelucrarea imaginii pe calculator.",
   "admissionTypes": [
    "aptitudini",
@@ -6030,6 +6204,8 @@
  {
   "universityId": "unarte",
   "name": "Facultatea de Istoria și Teoria Artei",
+  "short": "FITA",
+  "shortUrl": "https://unarte.org/fita/",
   "about": "Are două direcții. La Istoria și teoria artei studiezi arta europeană și românească din Antichitatea târzie până azi, plus muzeologie, management cultural și studii curatoriale. La Conservare și restaurare înveți să restaurezi pictură murală, pictură pe lemn și sculptură și faci practică pe șantiere de restaurare.",
   "admissionTypes": [
    "dosar",
@@ -6143,6 +6319,8 @@
  {
   "universityId": "unibuc",
   "name": "Facultatea de Administrație și Afaceri",
+  "short": "FAA",
+  "shortUrl": "https://faa.ro/",
   "about": "Aici înveți cum funcționează firmele și instituțiile publice: administrarea afacerilor (și în limba engleză), marketing, administrație publică și cibernetică economică. Facultatea are programe și la Focșani și pune accent pe practică și pe stagii în firme și instituții.",
   "admissionTypes": [
    "bac"
@@ -6339,6 +6517,8 @@
  {
   "universityId": "unibuc",
   "name": "Facultatea de Jurnalism și Științele Comunicării",
+  "short": "FJSC",
+  "shortUrl": "https://fjsc.unibuc.ro/",
   "about": "Te pregătești pentru presă scrisă, radio, televiziune și online, pentru relații publice sau publicitate. Programele de licență sunt Jurnalism, Comunicare și relații publice și Publicitate, cu practică în redacții și agenții și cu studio TV și laboratoare media.",
   "admissionTypes": [
    "examen",
@@ -6365,6 +6545,8 @@
  {
   "universityId": "unibuc",
   "name": "Facultatea de Limbi și Literaturi Străine",
+  "short": "FLLS",
+  "shortUrl": "https://lls.unibuc.ro/",
   "about": "Înveți una sau două limbi străine, cu literatura și cultura lor, de la engleză, franceză și germană până la arabă, chineză, japoneză, coreeană sau suedeză. Poți alege și Traducere și interpretare, Limbi moderne aplicate, Studii americane sau Studii iudaice.",
   "admissionTypes": [
    "bac"
@@ -6408,6 +6590,8 @@
  {
   "universityId": "unibuc",
   "name": "Facultatea de Matematică și Informatică",
+  "short": "FMI",
+  "shortUrl": "https://fmi.unibuc.ro/",
   "about": "Studiezi matematică, informatică (și în limba engleză) sau Calculatoare și tehnologia informației, un program de patru ani. Facultatea are laboratoare pentru baze de date, rețele, dezvoltare de software, aplicații mobile și robotică.",
   "admissionTypes": [
    "examen",
@@ -6436,6 +6620,8 @@
  {
   "universityId": "unibuc",
   "name": "Facultatea de Psihologie și Științele Educației",
+  "short": "FPSE",
+  "shortUrl": "https://fpse.unibuc.ro/",
   "about": "Aici studiezi psihologie (inclusiv Psihologie – Științe cognitive, și în limba engleză) sau te pregătești să lucrezi în educație: Pedagogie, Psihopedagogie specială, Pedagogia învățământului primar și Educație timpurie. Unele programe se fac și la Focșani.",
   "admissionTypes": [
    "examen",
@@ -6463,6 +6649,8 @@
  {
   "universityId": "unibuc",
   "name": "Facultatea de Sociologie și Asistență Socială",
+  "short": "SAS",
+  "shortUrl": "https://sas.unibuc.ro/",
   "about": "Înveți cum funcționează societatea și cum pot fi ajutați oamenii aflați în dificultate. Programele sunt Sociologie (și în limba engleză), Resurse umane și Asistență socială, cu practică în instituții publice și organizații neguvernamentale.",
   "admissionTypes": [
    "bac",
@@ -6483,6 +6671,8 @@
  {
   "universityId": "unibuc",
   "name": "Facultatea de Studii Interdisciplinare",
+  "short": "FSI",
+  "shortUrl": "https://fsi.unibuc.ro/",
   "about": "Este o facultate care îmbină mai multe domenii. Programul ei de licență, Servicii și politici de sănătate publică (Public Health), combină medicina, informatica, economia, sociologia, geografia, politicile publice și managementul.",
   "admissionTypes": [
    "bac",
@@ -6506,6 +6696,8 @@
  {
   "universityId": "unibuc",
   "name": "Facultatea de Științe Politice",
+  "short": "FSP",
+  "shortUrl": "https://fsp.unibuc.ro/",
   "about": "Studiezi cum se iau deciziile politice, cum funcționează statele și relațiile dintre ele. Programul de Științe politice se poate urma în română, engleză sau franceză, iar pe lângă el există Studii de securitate și Relații internaționale și studii europene (în engleză). Practica face parte din program.",
   "admissionTypes": [
    "dosar",
@@ -6527,6 +6719,8 @@
  {
   "universityId": "unibuc",
   "name": "Facultatea de Teologie Baptistă",
+  "short": "FTB",
+  "shortUrl": "https://ftb.unibuc.ro/",
   "about": "Studiezi teologie creștină baptistă împreună cu asistență socială: teologie sistematică, etică creștină și interpretarea Bibliei. Absolvenții pot lucra în biserici, în educație, în organizații neguvernamentale sau în proiecte sociale.",
   "admissionTypes": [
    "dosar",
@@ -6548,6 +6742,8 @@
  {
   "universityId": "unibuc",
   "name": "Facultatea de Teologie Ortodoxă",
+  "short": "FTOUB",
+  "shortUrl": "https://ftoub.unibuc.ro/",
   "about": "Studiezi teologie ortodoxă: Teologie pastorală (un program de patru ani), Teologie didactică, Teologie asistență socială și Artă sacră. Numele complet este Facultatea de Teologie Ortodoxă „Justinian Patriarhul”; are bibliotecă proprie și o extensie la Roma.",
   "admissionTypes": [
    "interviu",
@@ -6575,6 +6771,8 @@
  {
   "universityId": "unibuc",
   "name": "Facultatea de Teologie Romano-Catolică",
+  "short": "FTRC",
+  "shortUrl": "https://ftcub.unibuc.ro/",
   "about": "Studiezi teologie romano-catolică împreună cu asistență socială, într-un program de trei ani, cu materii de teologie și materii sociale și cu practică de specialitate; la cerere, calificarea poate fi echivalată cu cea de asistent social. Facultatea se află în curtea Catedralei Sfântul Iosif din București.",
   "admissionTypes": [
    "dosar",
@@ -6764,6 +6962,8 @@
  {
   "universityId": "unitbv",
   "name": "Facultatea de Inginerie Tehnologică și Management Industrial",
+  "short": "ITMI",
+  "shortUrl": "https://itmi.unitbv.ro/ro/",
   "about": "Continuă vechea facultate brașoveană de Tehnologia construcțiilor de mașini. Înveți cum se proiectează și se fabrică produsele industriale, cu programe ca tehnologia construcțiilor de mașini, construcții aerospațiale, sisteme de producție digitale, ingineria calității și inginerie economică. Studiile durează patru ani.",
   "admissionTypes": [
    "bac"
@@ -6989,6 +7189,8 @@
  {
   "universityId": "univnt",
   "name": "Facultatea de Economie și Administrarea afacerilor",
+  "short": "FEAA",
+  "shortUrl": "https://www.univnt.ro/index.php/facultati/facultatea-de-economie-si-administrarea-afacerilor/",
   "about": "Facultatea pregătește economiști prin două programe de licență: Administrarea afacerilor și Contabilitate și informatică de gestiune. Amândouă se pot urma la zi sau la distanță, iar studenții fac stagii de practică și pot pleca în mobilități Erasmus.",
   "admissionTypes": [
    "bac"
@@ -7006,6 +7208,8 @@
  {
   "universityId": "univnt",
   "name": "Facultatea de Relații internaționale și Administrație",
+  "short": "FRIA",
+  "shortUrl": "https://www.univnt.ro/index.php/facultati/facultatea-de-relatii-internationale-si-administratie/",
   "about": "Are un singur program de licență, Administrație publică, la zi sau la distanță. Pe lângă materiile de administrație înveți economie, drept și științe politice și faci practică în instituții publice sau private.",
   "admissionTypes": [
    "bac"
@@ -7077,6 +7281,8 @@
  {
   "universityId": "uoradea",
   "name": "Facultatea de Construcții, Cadastru și Arhitectură",
+  "short": "FCCA",
+  "shortUrl": "https://arhicon.uoradea.ro/ro/",
   "about": "Înveți să proiectezi și să ridici clădiri, rețele de apă și canalizare, să faci măsurători de teren și cadastru sau să devii arhitect. Facultatea are departamente de arhitectură, cadastru și inginerie civilă.",
   "admissionTypes": [
    "bac",
@@ -7136,6 +7342,8 @@
  {
   "universityId": "uoradea",
   "name": "Facultatea de Informatică și Științe",
+  "short": "FIS",
+  "shortUrl": "https://fis.uoradea.ro/",
   "about": "Aici studiezi informatică, matematică, biologie, chimie sau fizică medicală. Facultatea are patru departamente: Biologie, Chimie, Fizică și Matematică și Informatică.",
   "admissionTypes": [
    "bac"
@@ -7156,6 +7364,8 @@
  {
   "universityId": "uoradea",
   "name": "Facultatea de Inginerie Electrică și Tehnologia Informației",
+  "short": "IETI",
+  "shortUrl": "https://ieti.uoradea.ro/",
   "about": "Facultatea pregătește ingineri în calculatoare, tehnologia informației, automatică, electronică, telecomunicații și inginerie electrică. Are zece programe de licență, dintre care șase în zona IT, și colaborează cu firme pentru practică și internshipuri.",
   "admissionTypes": [
    "bac"
@@ -7176,6 +7386,8 @@
  {
   "universityId": "uoradea",
   "name": "Facultatea de Inginerie Energetică și Management Industrial",
+  "short": "IEMI",
+  "shortUrl": "https://iemi.uoradea.ro/",
   "about": "Înveți despre producerea și transportul energiei (electrică, solară, eoliană, hidro, termică), despre energii regenerabile și despre tehnologia tricotajelor și confecțiilor. Facultatea are și un program de inginerie economică industrială.",
   "admissionTypes": [
    "bac"
@@ -7195,6 +7407,8 @@
  {
   "universityId": "uoradea",
   "name": "Facultatea de Inginerie Managerială și Tehnologică",
+  "short": "FIMT",
+  "shortUrl": "https://imt.uoradea.ro/ro/",
   "about": "Aici devii inginer în domeniul mecanic: autovehicule rutiere, tehnologia construcțiilor de mașini, mecatronică, robotică sau inginerie economică. Unele programe au și variantă în limba engleză sau la distanță.",
   "admissionTypes": [
    "bac"
@@ -7214,6 +7428,8 @@
  {
   "universityId": "uoradea",
   "name": "Facultatea de Istorie, Relații Internaționale, Științe Politice și Științele Comunicării",
+  "short": "IRISPSC",
+  "shortUrl": "https://irispsc.uoradea.ro/ro/",
   "about": "Studiezi istorie, relații internaționale și studii europene, științe politice, studii de securitate, jurnalism sau comunicare. Facultatea are trei departamente, iar relațiile internaționale se pot urma și în limba engleză.",
   "admissionTypes": [
    "bac"
@@ -7253,6 +7469,8 @@
  {
   "universityId": "uoradea",
   "name": "Facultatea de Medicină și Farmacie",
+  "short": "FMF",
+  "shortUrl": "https://fmf.uoradea.ro/ro/",
   "about": "Pregătește medici, medici dentiști și farmaciști, dar și asistenți medicali, tehnicieni dentari și specialiști în nutriție, radiologie sau recuperare medicală. Medicina se poate urma și în limba engleză.",
   "admissionTypes": [
    "examen",
@@ -7298,6 +7516,8 @@
  {
   "universityId": "uoradea",
   "name": "Facultatea de Științe Economice",
+  "short": "FSE",
+  "shortUrl": "https://steconomice.uoradea.ro/",
   "about": "Aici înveți economie aplicată: management, marketing, contabilitate, finanțe și bănci, afaceri internaționale, administrarea afacerilor sau economia turismului și a serviciilor. Unele programe se predau în engleză, iar altele au și variantă la distanță.",
   "admissionTypes": [
    "bac"
@@ -7317,6 +7537,8 @@
  {
   "universityId": "uoradea",
   "name": "Facultatea de Științe Socio - Umane",
+  "short": "FSSU",
+  "shortUrl": "https://socioumane.uoradea.ro/",
   "about": "Studiezi psihologie, sociologie, asistență socială, resurse umane sau te pregătești să fii învățător ori educator. Facultatea are trei departamente, un program de pedagogie și la Beiuș și unul în limba maghiară.",
   "admissionTypes": [
    "bac"
@@ -7399,6 +7621,8 @@
  {
   "universityId": "upb",
   "name": "Facultatea de Antreprenoriat, Ingineria și Managementul Afacerilor",
+  "short": "FAIMA",
+  "shortUrl": "https://faima.upb.ro/",
   "about": "Aici înveți inginerie împreună cu management: cum se conduce o afacere, marketing, finanțe, resurse umane și managementul proiectelor. Este gândită pentru cei care vor o carieră în afaceri sau vor să își pornească propria firmă. În laboratoare se lucrează cu programe de simulare a afacerilor.",
   "admissionTypes": [
    "dosar",
@@ -7445,6 +7669,8 @@
  {
   "universityId": "upb-pitesti",
   "name": "Facultatea de Electronică, Comunicații și Calculatoare",
+  "short": "FECC",
+  "shortUrl": "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-electronica-comunicatii-si-calculatoare-2",
   "about": "Facultatea este în Pitești, la Centrul Universitar Pitești al Politehnicii București. Aici înveți calculatoare, electronică aplicată, rețele și software de telecomunicații și electromecanică.",
   "admissionTypes": [
    "dosar",
@@ -7464,6 +7690,8 @@
  {
   "universityId": "upb",
   "name": "Facultatea de Electronică, Telecomunicații și Tehnologia Informației",
+  "short": "ETTI",
+  "shortUrl": "https://etti.upb.ro/",
   "about": "Aici înveți electronică, microelectronică, telecomunicații și ingineria calculatoarelor: de la circuite și dispozitive până la rețele și software de telecomunicații. Facultatea are și programe de comunicare, cum ar fi Media digitală și Jurnalism.",
   "admissionTypes": [
    "examen",
@@ -7511,6 +7739,8 @@
  {
   "universityId": "upb",
   "name": "Facultatea de Ingineria Sistemelor Biotehnice",
+  "short": "ISB",
+  "shortUrl": "https://isb.pub.ro/",
   "about": "Aici înveți inginerie legată de agricultură, alimente și mediu: mașini și instalații pentru agricultură și industria alimentară, ingineria produselor alimentare, informatică aplicată în ingineria mediului și mecatronică pentru sisteme biotehnice.",
   "admissionTypes": [
    "dosar",
@@ -7591,6 +7821,8 @@
  {
   "universityId": "upb",
   "name": "Facultatea de Inginerie Industrială și Robotică",
+  "short": "FIIR",
+  "shortUrl": "https://fiir.upb.ro/index.php/ro/",
   "about": "Aici înveți cum se proiectează și se fabrică produsele industriale: tehnologia construcțiilor de mașini, sisteme de producție digitale, robotică, sudare, logistică industrială și ingineria calității. Există și programe de informatică aplicată în inginerie industrială și de inginerie economică.",
   "admissionTypes": [
    "dosar",
@@ -7612,6 +7844,8 @@
  {
   "universityId": "upb",
   "name": "Facultatea de Inginerie în Limbi Străine",
+  "short": "FILS",
+  "shortUrl": "https://fils.upb.ro/ro/home/",
   "about": "Aici faci inginerie cu toate cursurile predate într-o limbă străină: engleză, franceză sau germană. Poți alege între calculatoare și ingineria informației, electronică, inginerie mecanică, inginerie chimică sau inginerie economică. Facultatea primește și studenți din alte țări.",
   "admissionTypes": [
    "dosar",
@@ -7631,6 +7865,8 @@
  {
   "universityId": "upb",
   "name": "Facultatea de Inginerie Mecanică și Mecatronică",
+  "short": "FIMM",
+  "shortUrl": "https://mecanica.upb.ro/",
   "about": "Aici înveți inginerie mecanică și mecatronică: sisteme și echipamente termice, mașini hidraulice și pneumatice, echipamente pentru industrie, mecanică fină. Lucrezi cu proiectare pe calculator, simulări și măsurători de laborator. Facultatea are și programe de design industrial, inginerie economică și optometrie.",
   "admissionTypes": [
    "dosar",
@@ -7652,6 +7888,8 @@
  {
   "universityId": "upb",
   "name": "Facultatea de Inginerie Medicală",
+  "short": "FIM",
+  "shortUrl": "https://fim.upb.ro/",
   "about": "Aici înveți ingineria din spatele medicinei: aparate și sisteme medicale, dispozitive, biomateriale și programe software folosite în spitale. Partea de pregătire medicală se face împreună cu Universitatea de Medicină și Farmacie „Carol Davila”. Facultatea a fost înființată în 2010.",
   "admissionTypes": [
    "dosar",
@@ -7671,6 +7909,8 @@
  {
   "universityId": "upb-pitesti",
   "name": "Facultatea de Mecanică și Tehnologie",
+  "short": "FMT",
+  "shortUrl": "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-mecanica-si-tehnologie-2",
   "about": "Facultatea este în Pitești, la Centrul Universitar Pitești al Politehnicii București. Aici înveți despre autovehicule rutiere, ingineria transporturilor și a traficului, tehnologia construcțiilor de mașini și inginerie economică industrială. Facultatea există din 1969 și îmbină ingineria cu partea economică.",
   "admissionTypes": [
    "dosar",
@@ -7690,6 +7930,8 @@
  {
   "universityId": "upb",
   "name": "Facultatea de Știința și Ingineria Materialelor",
+  "short": "SIM",
+  "shortUrl": "https://www.sim.upb.ro/",
   "about": "Aici înveți despre materialele din care se fac lucrurile: metale și aliaje, dar și materiale moderne, cum sunt compozitele, pulberile sau materialele cu memoria formei. Facultatea vine din tradiția de metalurgie a Politehnicii și are și programe de inginerie medicală, ingineria mediului și inginerie economică.",
   "admissionTypes": [
    "dosar",
@@ -7712,6 +7954,8 @@
  {
   "universityId": "upb-pitesti",
   "name": "Facultatea de Științe ale Educației, Științe Sociale și Psihologie",
+  "short": "FSESSP",
+  "shortUrl": "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-stiintele-educatiei-stiinte-sociale-si-psihologie-2",
   "about": "Facultatea este în Pitești, la Centrul Universitar Pitești al Politehnicii București. Aici poți studia psihologie, asistență socială, jurnalism, resurse umane și pedagogie, pentru cei care vor să devină învățători sau educatori. Unele programe de pedagogie se țin și la Râmnicu Vâlcea, Slatina, Alexandria și Câmpulung.",
   "admissionTypes": [
    "dosar",
@@ -7731,6 +7975,8 @@
  {
   "universityId": "upb",
   "name": "Facultatea de Științe Aplicate",
+  "short": "FSA",
+  "shortUrl": "http://fsa.pub.ro/",
   "about": "Aici înveți matematică, fizică și informatică folosite în inginerie. Programele sunt Matematică și informatică aplicată în inginerie, Inginerie fizică și Securitate informatică și știința datelor. Facultatea a fost înființată în 2005 și are centre de cercetare și laboratoare proprii.",
   "admissionTypes": [
    "dosar",
@@ -7769,6 +8015,8 @@
  {
   "universityId": "upb-pitesti",
   "name": "Facultatea de Științe, Educație Fizică și Informatică",
+  "short": "FSEFI",
+  "shortUrl": "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-stiinte-educatie-fizica-si-informatica",
   "about": "Facultatea este în Pitești, la Centrul Universitar Pitești al Politehnicii București. Aici poți studia biologie, chimie, matematică, informatică, ecologie și ingineria mediului, horticultură, dar și asistență medicală, kinetoterapie sau educație fizică și sport. Pregătește profesori și specialiști în sănătate, sport, informatică și mediu.",
   "admissionTypes": [
    "dosar",
@@ -7793,6 +8041,8 @@
  {
   "universityId": "upb-pitesti",
   "name": "Facultatea de Teologie, Litere, Istorie și Arte",
+  "short": "FTLIA",
+  "shortUrl": "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-teologie-litere-istorie-si-arte",
   "about": "Facultatea este în Pitești, la Centrul Universitar Pitești al Politehnicii București. Aici poți studia limba română și limbi străine, limbi moderne aplicate, istorie, teologie ortodoxă cu asistență socială, muzică, artă sacră și actorie. Continuă tradiția de științe umaniste și arte a Universității din Pitești.",
   "admissionTypes": [
    "dosar",
@@ -7886,6 +8136,8 @@
  {
   "universityId": "upg",
   "name": "Facultatea de Ingineria Petrolului și Gazelor",
+  "short": "IPG",
+  "shortUrl": "https://ipg.upg-ploiesti.ro",
   "about": "Aici înveți cum se caută, se scot din pământ, se transportă și se depozitează petrolul și gazele. Programele sunt Inginerie de petrol și gaze, Geologia resurselor petroliere și Transportul, depozitarea și distribuția hidrocarburilor, cu stagii de practică la companii petroliere.",
   "admissionTypes": [
    "bac"
@@ -7907,6 +8159,8 @@
  {
   "universityId": "upg",
   "name": "Facultatea de Inginerie Mecanică și Electrică",
+  "short": "IME",
+  "shortUrl": "https://ime.upg-ploiesti.ro",
   "about": "Pregătește ingineri pentru utilaje petroliere și petrochimice, designul produselor, electromecanică, automatică și informatică aplicată, calculatoare și inginerie economică. Lucrezi în laboratoare cu echipamente moderne, inclusiv pentru imprimare 3D.",
   "admissionTypes": [
    "bac"
@@ -7973,6 +8227,8 @@
  {
   "universityId": "upg",
   "name": "Facultatea de Tehnologia Petrolului și Petrochimie",
+  "short": "TPP",
+  "shortUrl": "https://tpp.upg-ploiesti.ro",
   "about": "Aici înveți inginerie chimică: cum se prelucrează petrolul în rafinării, cum se controlează siguranța alimentelor și cum se protejează mediul în industrie. Studiezi multă chimie și lucrezi în laboratoare.",
   "admissionTypes": [
    "bac"
@@ -8018,6 +8274,8 @@
  {
   "universityId": "upt",
   "name": "Facultatea de Automatică și Calculatoare",
+  "short": "AC",
+  "shortUrl": "https://ac.upt.ro/",
   "about": "Facultatea pregătește ingineri în calculatoare, tehnologia informației și automatică: programare, rețele, inteligență artificială, robotică și securitate cibernetică. Programul Calculatoare se poate face și în limba engleză. Studiile durează patru ani.",
   "admissionTypes": [
    "examen",
@@ -8113,6 +8371,8 @@
  {
   "universityId": "upt",
   "name": "Facultatea de Inginerie din Hunedoara",
+  "short": "FIH",
+  "shortUrl": "https://fih.upt.ro/",
   "about": "Este facultatea Politehnicii din Timișoara care funcționează în orașul Hunedoara. Aici studiezi autovehicule rutiere, inginerie electrică și calculatoare, ingineria mediului, inginerie și management sau informatică industrială. Studiile durează patru ani și au legături cu firme din zonă.",
   "admissionTypes": [
    "bac"
@@ -8159,6 +8419,8 @@
  {
   "universityId": "upt",
   "name": "Facultatea de Management în Producție și Transporturi",
+  "short": "MPT",
+  "shortUrl": "https://mpt.upt.ro/",
   "about": "Facultatea îmbină ingineria cu managementul: înveți cum funcționează marile industrii, cum se conduce o afacere și cum se organizează producția și logistica. Are programe de inginerie și management, de patru ani, și un program de administrație publică, de trei ani.",
   "admissionTypes": [
    "bac"
@@ -8229,6 +8491,8 @@
  {
   "universityId": "upt",
   "name": "Facultatea de Științe ale Comunicării",
+  "short": "FSC",
+  "shortUrl": "https://www.sc.upt.ro/ro/",
   "about": "Facultatea are programe de comunicare și relații publice și de traducere și interpretare (engleză, franceză, germană). Înveți să faci strategii de PR, să conduci campanii digitale și să traduci texte de specialitate. Studiile durează trei ani.",
   "admissionTypes": [
    "bac"
@@ -8331,6 +8595,8 @@
  {
   "universityId": "usamv-bucuresti",
   "name": "Facultatea de Îmbunătățiri Funciare și Ingineria Mediului",
+  "short": "FIFIM",
+  "shortUrl": "https://fifim.ro/",
   "about": "Aici devii inginer pentru lucrări legate de pământ, apă și construcții: gospodărirea apelor și amenajarea terenurilor, protecția mediului în agricultură, construcții, măsurători terestre și cadastru. Are și un program de inginerie circulară și tranziție verde.",
   "admissionTypes": [
    "bac"
@@ -8371,6 +8637,8 @@
  {
   "universityId": "usamv-bucuresti",
   "name": "Facultatea de Medicină Veterinară",
+  "short": "FMVB",
+  "shortUrl": "https://fmvb.ro/",
   "about": "Aici te pregătești să devii medic veterinar. Programul durează șase ani, îmbină teoria cu practica și se poate urma în limba română, engleză sau franceză.",
   "admissionTypes": [
    "examen",
@@ -8430,6 +8698,8 @@
  {
   "universityId": "usamv-cluj",
   "name": "Facultatea de Medicină Veterinară",
+  "short": "FMV",
+  "shortUrl": "https://fmv.usamvcluj.ro/",
   "about": "Aici te pregătești să devii medic veterinar. Studiile durează 6 ani, doar la zi, și se pot face în română, engleză sau franceză. Facultatea are un spital veterinar universitar, cu clinici pentru animale de companie, cai, rumegătoare și animale exotice.",
   "admissionTypes": [
    "bac",
@@ -8511,6 +8781,8 @@
  {
   "universityId": "usv-suceava",
   "name": "Facultatea de Drept și Științe administrative",
+  "short": "FDSA",
+  "shortUrl": "https://fdsa.usv.ro/",
   "about": "Aici studiezi dreptul, dreptul european și internațional, administrația publică sau poliția locală. Facultatea pregătește viitori juriști și oameni care lucrează în instituțiile statului și în primării.",
   "admissionTypes": [
    "bac"
@@ -8531,6 +8803,8 @@
  {
   "universityId": "usv-suceava",
   "name": "Facultatea de Economie, Administrație și Afaceri",
+  "short": "FEAA",
+  "shortUrl": "https://feaa.usv.ro/",
   "about": "Facultatea are programe de economie și afaceri: management, contabilitate, finanțe și bănci, administrarea afacerilor, turism și servicii, afaceri internaționale și informatică economică. Tot aici se studiază matematică informatică și asistență managerială. Facultatea are un laborator de incubare a afacerilor și cluburi studențești, de exemplu Clubul de Marketing.",
   "admissionTypes": [
    "bac"
@@ -8553,6 +8827,8 @@
  {
   "universityId": "usv-suceava",
   "name": "Facultatea de Educație Fizică și Sport",
+  "short": "FEFS",
+  "shortUrl": "https://fefs.usv.ro/",
   "about": "Aici te pregătești să devii profesor de educație fizică, antrenor sau kinetoterapeut. Programele sunt Educație fizică și sportivă, Sport și performanță motrică și Kinetoterapie și motricitate specială.",
   "admissionTypes": [
    "aptitudini",
@@ -8574,6 +8850,8 @@
  {
   "universityId": "usv-suceava",
   "name": "Facultatea de Inginerie Alimentară",
+  "short": "FIA",
+  "shortUrl": "https://fia.usv.ro/",
   "about": "Facultatea pregătește ingineri pentru industria alimentară: cum se fac alimentele, cum li se verifică calitatea și cum sunt protejați consumatorul și mediul. Are și un program de inginerie și management în alimentația publică și agroturism. Studiile de licență durează patru ani.",
   "admissionTypes": [
    "bac",
@@ -8596,6 +8874,8 @@
  {
   "universityId": "usv-suceava",
   "name": "Facultatea de Inginerie Electrică și Știința Calculatoarelor",
+  "short": "FIESC",
+  "shortUrl": "https://fiesc.usv.ro/",
   "about": "Aici studiezi calculatoare, automatică și informatică aplicată, electronică, telecomunicații, sisteme electrice și energetică. Facultatea are laboratoare de cercetare și lucrează cu firme din domeniu. Studiile de inginerie durează patru ani.",
   "admissionTypes": [
    "bac"
@@ -8616,6 +8896,8 @@
  {
   "universityId": "usv-suceava",
   "name": "Facultatea de Inginerie Mecanică, Autovehicule și Robotică",
+  "short": "FIM",
+  "shortUrl": "https://fim.usv.ro/",
   "about": "Facultatea pregătește ingineri în inginerie mecanică, tehnologia construcțiilor de mașini, mecatronică, robotică și autovehicule rutiere. Studiile durează patru ani, iar unele programe se fac și în sistem dual. Studenții au cercuri de mecatronică și robotică și de autovehicule.",
   "admissionTypes": [
    "bac",
@@ -8658,6 +8940,8 @@
  {
   "universityId": "usv-suceava",
   "name": "Facultatea de Litere și Științe ale Comunicării",
+  "short": "FLSC",
+  "shortUrl": "https://flsc.usv.ro/",
   "about": "Facultatea are programe de limbi și literaturi (română, engleză, franceză, germană, italiană, spaniolă, ucraineană), de comunicare și relații publice, media digitală și un program de cinematografie, fotografie și media. Are un centru de scriere creativă și organizează concursuri de traduceri.",
   "admissionTypes": [
    "bac",
@@ -8682,6 +8966,8 @@
  {
   "universityId": "usv-suceava",
   "name": "Facultatea de Medicină și Științe Biologice",
+  "short": "FMSB",
+  "shortUrl": "https://fmsb.usv.ro/",
   "about": "Aici se studiază medicină, asistență medicală generală, balneofiziokinetoterapie și recuperare, nutriție și dietetică, tehnică dentară, biologie și biochimie. Facultatea are laboratoare de simulare, un laborator de anatomie și disecție și un laborator de tehnică dentară cu imprimare 3D.",
   "admissionTypes": [
    "examen",
@@ -8868,6 +9154,8 @@
  {
   "universityId": "utcb",
   "name": "Facultatea de Căi Ferate, Drumuri și Poduri",
+  "short": "FCFDP",
+  "shortUrl": "https://fcfdp.utcb.ro/",
   "about": "Aici devii inginer pentru infrastructura de transport: drumuri, autostrăzi, poduri și căi ferate. Înveți să le proiectezi, să le construiești și să le întreții. Absolvenții lucrează în firme de proiectare, de construcții și de consultanță, iar mulți studenți colaborează cu astfel de firme încă din facultate.",
   "admissionTypes": [
    "bac"
@@ -8889,6 +9177,8 @@
  {
   "universityId": "utcb",
   "name": "Facultatea de Construcții Civile, Industriale și Agricole",
+  "short": "FCCIA",
+  "shortUrl": "https://civile.utcb.ro/",
   "about": "Aici devii inginer constructor de clădiri: înveți să proiectezi structuri, să conduci un șantier și să gestionezi lucrări de construcții. Programele sunt Construcții civile, industriale și agricole, Inginerie urbană și dezvoltare regională și Inginerie și management în construcții. Absolvenții lucrează în proiectare, execuție, management și administrație publică.",
   "admissionTypes": [
    "bac"
@@ -8975,6 +9265,8 @@
  {
   "universityId": "utcb",
   "name": "Facultatea de Inginerie în Limbi Străine",
+  "short": "FILS",
+  "shortUrl": "https://fils.utcb.ro/",
   "about": "Aici studiezi Inginerie civilă cu predare în limba engleză sau în limba franceză. Facultatea are și programul Traducere și interpretare (engleză plus franceză, germană sau spaniolă), unde te pregătești ca traducător și interpret, inclusiv pentru texte tehnice, economice și juridice.",
   "admissionTypes": [
    "bac"
@@ -8998,6 +9290,8 @@
  {
   "universityId": "utcb",
   "name": "Facultatea de Inginerie Mecanică și Robotică în Construcții",
+  "short": "IMRC",
+  "shortUrl": "https://imrc.utcb.ro/",
   "about": "Aici studiezi mașinile și roboții folosiți în construcții. Programele sunt Utilaje tehnologice pentru construcții și Mecatronică, unde mecanica se combină cu automatizarea și programarea. Absolvenții proiectează și întrețin utilaje și sisteme mecatronice.",
   "admissionTypes": [
    "bac"
@@ -9045,6 +9339,8 @@
  {
   "universityId": "utcn",
   "name": "Facultatea de Automatică și Calculatoare",
+  "short": "AC",
+  "shortUrl": "https://ac.utcluj.ro/",
   "about": "Aici înveți programare, calculatoare și sisteme automate. Studiile durează patru ani, în două domenii: Calculatoare și tehnologia informației și Automatică, informatică aplicată și sisteme inteligente. Specializarea se alege din anul al treilea, iar unele programe se fac și în limba engleză.",
   "admissionTypes": [
    "examen",
@@ -9106,6 +9402,8 @@
  {
   "universityId": "utcn",
   "name": "Facultatea de Electronică, Telecomunicații și Tehnologia Informației",
+  "short": "ETTI",
+  "shortUrl": "https://etti.utcluj.ro/",
   "about": "Aici înveți electronică, telecomunicații și microelectronică: cum se proiectează circuitele, aparatele și rețelele prin care comunicăm. Studiile durează patru ani și există și un program de inginerie economică în domeniul electric. Specializarea se alege din anul al treilea.",
   "admissionTypes": [
    "bac"
@@ -9286,6 +9584,8 @@
  {
   "universityId": "utgjiu",
   "name": "Facultatea de Științe ale Educației, Drept și Administrație Publică",
+  "short": "FSEDAP",
+  "shortUrl": "https://edu.utgjiu.ro/",
   "about": "Aici poți studia dreptul (la zi sau la distanță), administrația publică, relațiile internaționale și studiile europene, limba și literatura engleză și română sau pedagogia învățământului primar, pentru cei care vor să devină învățători.",
   "admissionTypes": [
    "dosar",
@@ -9330,6 +9630,8 @@
  {
   "universityId": "utgjiu",
   "name": "Facultatea de Științe Medicale și Comportamentale",
+  "short": "FSMC",
+  "shortUrl": "https://fsmc.utgjiu.ro/",
   "about": "Aici te pregătești pentru meserii din sănătate și sport: asistență medicală generală, asistență de farmacie, kinetoterapie și motricitate specială, educație fizică și sportivă. Pregătirea îmbină cursurile cu practica, iar facultatea are bază sportivă proprie.",
   "admissionTypes": [
    "bac",
@@ -9542,6 +9844,8 @@
  {
   "universityId": "uvt",
   "name": "Facultatea de Arte și Design",
+  "short": "FAD",
+  "shortUrl": "https://arte.uvt.ro/",
   "about": "Aici studiezi arte vizuale și design: pictură, grafică, sculptură, fotografie-video, arte decorative, conservare și restaurare, design ambiental, design de obiect, modă și artă pentru jocuri digitale (în engleză).",
   "admissionTypes": [
    "aptitudini"
@@ -9602,6 +9906,8 @@
  {
   "universityId": "uvt",
   "name": "Facultatea de Economie și de Administrare a Afacerilor",
+  "short": "FEAA",
+  "shortUrl": "https://feaa.uvt.ro/",
   "about": "Facultatea de economie a universității: contabilitate, finanțe și bănci, management, marketing, informatică economică, afaceri internaționale, comerț și turism. Unele programe se pot urma în engleză, germană sau franceză, iar câteva și la distanță.",
   "admissionTypes": [
    "bac",
@@ -9622,6 +9928,8 @@
  {
   "universityId": "uvt",
   "name": "Facultatea de Educație Fizică și Sport",
+  "short": "FEFS",
+  "shortUrl": "https://sport.uvt.ro/",
   "about": "Pregătește profesori de sport, antrenori și kinetoterapeuți. Programele sunt Educație fizică și sportivă, Sport și performanță motrică și Kinetoterapie și motricitate specială (și în engleză).",
   "admissionTypes": [
    "aptitudini",
@@ -9697,6 +10005,8 @@
  {
   "universityId": "uvt",
   "name": "Facultatea de Litere, Istorie, Filosofie și Teologie",
+  "short": "FLIFT",
+  "shortUrl": "https://lift.uvt.ro/",
   "about": "Facultatea de științe umaniste: limbi și literaturi (română, engleză, franceză, germană, rusă, sârbă, limbi clasice și altele), limbi moderne aplicate, istorie, filosofie și teologie ortodoxă pastorală.",
   "admissionTypes": [
    "examen",
@@ -9718,6 +10028,8 @@
  {
   "universityId": "uvt",
   "name": "Facultatea de Muzică și Teatru",
+  "short": "FMT",
+  "shortUrl": "https://fmt.uvt.ro/",
   "about": "Pregătește muzicieni și actori. La muzică sunt programele Interpretare muzicală – instrumente, Interpretare muzicală – canto și Muzică, iar la teatru Artele spectacolului (actorie), în română și în germană.",
   "admissionTypes": [
    "aptitudini",
@@ -9738,6 +10050,8 @@
  {
   "universityId": "uvt",
   "name": "Facultatea de Psihologie și Științe ale Educației",
+  "short": "FPSE",
+  "shortUrl": "https://fpse.uvt.ro/",
   "about": "Studiezi cum gândesc și cum învață oamenii. Programele sunt Psihologie, Psihologie – Științe cognitive (în engleză), Pedagogie, Psihopedagogie specială și Pedagogia învățământului primar.",
   "admissionTypes": [
    "examen",
