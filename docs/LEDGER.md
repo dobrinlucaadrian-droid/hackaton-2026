@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-11-11 — steagurile țărilor pe cărțile poștale din Ghiduri
+- Cerut: pe Ghiduri fiecare țară să aibă steagul ei, ca în machetă (acum era o steluță)
+- Făcut: în timbrul punctat al fiecărei cărți poștale stă steagul adevărat al țării (toate cele 32), cu contur de cerneală; steagurile vin din pachetul gratuit `country-flag-icons` (MIT), desenate direct în pagină, fără alte site-uri; o țară nouă fără steag ar primi steluța
+- Fișiere: `apps/web/components/GuideFinder.tsx`, `apps/web/package.json`, `apps/web/package-lock.json`
+- Poartă: vezi rularea de după schimbare. Văzut local: 1280 px toate cardurile au steag, 375 px fără derulare laterală, fără erori în consolă
+- Urmează: publicare la „salvează și publică”
+
 ### 2026-11-10 — raportul Google: prescurtările facultăților și pozele de distribuire
 - Cerut: citit raportul Google Search Console și reparat ce merită (prescurtări + adresele ciudate ale pozelor)
 - Făcut: (1) 157 de fișe de facultate au acum prescurtarea oficială (FSEGA, CSIE, FEFS …) în titlul paginii și lângă nume, fiecare cu pagina oficială unde apare (câmpurile `short`/`shortUrl`); găsite de 6 ajutoare și reverificate de alte 2, scoase cele care apăreau doar în adresa unei pagini; FGTS (Oradea) nu apare pe site-ul facultății, deci nu e pusă. (2) Pozele de distribuire ale universităților nu se desenau deloc din ziua versiunii în engleză (lipsea limba din lista de poze), așa că WhatsApp nu arăta nicio poză și Google vedea o pagină „noindex”; acum se desenează pentru ambele limbi
@@ -1345,6 +1352,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-11-10 02:05 `43d1d4e` feat: official faculty acronyms in titles and working university share pictures
 - 2026-11-09 04:00 `acce275` docs: ledger entry for publishing the drawn design
 - 2026-11-09 03:51 `ed32bf8` feat: drawn look, step 5: students, account and the remaining pages
 - 2026-11-09 03:45 `ed1c5e1` feat: drawn look, step 4: country guides and the questionnaire
@@ -1374,5 +1382,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-26 13:34 `7cdf543` fix: centre the header buttons on phones
 - 2026-10-26 01:55 `0fc9fd1` chore: add Google Search Console verification file
 - 2026-10-26 01:45 `2362444` feat: English quiz keeps the three study places, without cities
-- 2026-10-26 01:38 `05aab39` feat: English version of the site under /en
 <!-- commits:end -->

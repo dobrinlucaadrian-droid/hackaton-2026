@@ -1,12 +1,32 @@
 "use client";
-// Country guides index body (Romanian pages): a drawn search box that filters the country postcards as you type (diacritics do not matter); each postcard has a dashed stamp with a plane.
+// Country guides index body (Romanian pages): a drawn search box that filters the country postcards as you type (diacritics do not matter); each postcard has a dashed stamp with the country's flag.
 import { useState } from "react";
+import { AT, AU, BE, BG, CA, CH, CY, CZ, DE, DK, EE, ES, FI, FR, GB, GR, HK, IE, IT, KR, LT, LV, MD, MT, NL, NO, PL, PT, SE, SG, SI, US } from "country-flag-icons/react/3x2";
 import { countryName } from "@/lib/i18n-data";
 import { normalize } from "@/lib/labels";
 import { useLang, useT } from "./LangProvider";
 import Link from "./LocalLink";
 
 export type GuideTile = { id: string; country: string; intro: string };
+
+// The real flag of each guide's country (drawn into the page, nothing loaded from elsewhere); a guide without one keeps the star stamp.
+const FLAGS: Record<string, typeof NL> = {
+  olanda: NL, "marea-britanie": GB, germania: DE, danemarca: DK, italia: IT, franta: FR, spania: ES, austria: AT, polonia: PL, sua: US, canada: CA,
+  australia: AU, belgia: BE, irlanda: IE, elvetia: CH, suedia: SE, finlanda: FI, norvegia: NO, cehia: CZ, slovenia: SI, grecia: GR, lituania: LT,
+  letonia: LV, estonia: EE, bulgaria: BG, moldova: MD, cipru: CY, portugalia: PT, malta: MT, "coreea-de-sud": KR, "hong-kong": HK, singapore: SG,
+};
+
+function Flag({ id }: { id: string }) {
+  const Svg = FLAGS[id];
+  if (!Svg) {
+    return (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 12l7-2 3-7 2 7 6 2-6 2-2 7-3-7z" />
+      </svg>
+    );
+  }
+  return <Svg className="block h-7 w-[2.625rem] rounded-[3px] ring-2 ring-ink" />;
+}
 
 export function GuideFinder({ tiles }: { tiles: GuideTile[] }) {
   const lang = useLang();
@@ -49,12 +69,10 @@ export function GuideFinder({ tiles }: { tiles: GuideTile[] }) {
                 href={`/ghiduri/${g.id}`}
                 className={`drawn drawn-link relative flex h-full min-h-40 flex-col rounded-[1.25rem] bg-card p-5 ${i % 3 === 0 ? "-rotate-1" : i % 3 === 1 ? "rotate-[0.8deg]" : ""}`}
               >
-                <span aria-hidden className="absolute right-4 top-4 flex h-12 w-10 items-center justify-center rounded-md border-2 border-dashed border-ink/50">
-                  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M3 12l7-2 3-7 2 7 6 2-6 2-2 7-3-7z" />
-                  </svg>
+                <span aria-hidden className="absolute right-4 top-4 flex items-center justify-center rounded-md border-2 border-dashed border-ink/50 p-1.5">
+                  <Flag id={g.id} />
                 </span>
-                <span className="min-h-12 pr-12 text-xl font-extrabold leading-tight tracking-tight text-ink">{countryName(g.country, lang)}</span>
+                <span className="min-h-12 pr-16 text-xl font-extrabold leading-tight tracking-tight text-ink">{countryName(g.country, lang)}</span>
                 <span className="mt-2 line-clamp-3 text-sm text-ink-soft">{g.intro}</span>
                 <span className="hand mt-auto pt-3 text-xl leading-none text-primary">{t("citește ghidul →", "read the guide →")}</span>
               </Link>

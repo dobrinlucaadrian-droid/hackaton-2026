@@ -91,7 +91,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `README.md` (37) — _no description: add a first-line comment_
 - `eslint.config.mjs` (21) — _no description: add a first-line comment_
 - `next.config.ts` (41) — Next.js configuration: security headers sent with every response (the content security policy itself is added per request in proxy.ts) and redirects for pages that moved.
-- `package.json` (36) — package "web"; scripts: dev, build, start, lint, test
+- `package.json` (37) — package "web"; scripts: dev, build, start, lint, test
 - `postcss.config.mjs` (8) — _no description: add a first-line comment_
 - `proxy.ts` (57) — Runs before every page: on the live site sends other addresses (www, vercel.app) to findmyuni.ro, serves the plain addresses in Romanian and /en in English, adds the content security policy, keeps the sign-in session fresh and sends visitors who are not signed in away from the account and administration pages.. Exports: proxy, config
 - `tsconfig.json` (35) — JSON; keys: compilerOptions, include, exclude
@@ -228,7 +228,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `Drawn.tsx` (38) — Small shared pieces of the drawn look: the gold squiggle under page titles, a section title with a hand-drawn arrow, and the page opening (title and text on the left, a drawing on the right).. Exports: Squiggle, SectionTitle, PageOpening
 - `FacultyPrograms.tsx` (27) — On a faculty sheet: the bachelor programmes of that faculty from the official list. Plain markup: the faculty page gives it the rows (read on the server) and the page language.. Exports: FacultyPrograms
 - `FavoriteButton.tsx` (98) — The heart on a university sheet (or, compact, in the corner of a search result card): adds the university to the student's favourites (shown in "Contul meu") or removes it; without an account it opens the account window and adds it once the student is signed in.. Exports: FavoriteButton
-- `GuideFinder.tsx` (68) — Country guides index body (Romanian pages): a drawn search box that filters the country postcards as you type (diacritics do not matter); each postcard has a dashed stamp with a plane.. Exports: GuideFinder
+- `GuideFinder.tsx` (86) — Country guides index body (Romanian pages): a drawn search box that filters the country postcards as you type (diacritics do not matter); each postcard has a dashed stamp with the country's flag.. Exports: GuideFinder
 - `GuideRomania.tsx` (60) — The English guide "How to apply to a university in Romania": title, intro, sections, official source links and the date it was checked, read from data/en/guide-romania.json.. Exports: romaniaGuide, GuideRomania
 - `HomeScene.tsx` (94) — The big drawing on the home page, in ink outlines: a student walks the road from the high school up to a university on the hill, with clouds, the sun, a paper plane and a cap thrown in the air (labels in the page language).. Exports: HomeScene
 - `Illustrations.tsx` (252) — Flat inline-SVG illustrations in the cool palette: cap, diploma, books, sparkle, three dots, the start-page hero, the broken road of the error page, and the page drawings of Universități, Ghiduri, Specializări, Studenți, Chestionar and "nothing found".. Exports: Cap, Diploma, Books, Sparkle, ThreeDots, PillLine, HeroScene, BrokenPath, …
