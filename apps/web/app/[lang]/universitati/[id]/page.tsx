@@ -313,7 +313,8 @@ export default async function UniversityPage({ params }: Props) {
               })()}
             </Section>
           )}
-          {facultySheets.length > 0 && (
+          {/* Romanian sheets reach the faculty sheets from the programme list below; a separate list would repeat the same faculties. */}
+          {facultySheets.length > 0 && catalog?.cc !== "RO" && (
             <Section title={t("Fișe de facultăți", "Faculty sheets")}>
               <p className="text-sm">
                 {t("Pentru unele facultăți avem fișă proprie: ce studiezi acolo, cum intri și linkurile oficiale.", "For some faculties we have a sheet of their own: what you study there, how you get in and the official links.")}

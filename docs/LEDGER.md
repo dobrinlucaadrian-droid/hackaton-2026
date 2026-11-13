@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-11-13 — fișa universității: facultățile nu mai apar de două ori
+- Cerut: pe fișa universității erau trei liste care se repetau („Ce poți studia aici”, „Fișe de facultăți”, „Facultăți și programe de licență”); echipa a ales să rămână două: domeniile și facultățile cu programe. Schimbările încercate înainte (Programe în meniu, cartonașul de pe Universități, legătura de la Specializări) au fost scoase, la cererea echipei
+- Făcut: pe fișele românești a dispărut lista „Fișe de facultăți”; în „Facultăți și programe de licență” facultățile cu fișă au eticheta „are fișă”, iar când o deschizi primul lucru e butonul „Fișa facultății: ce studiezi, cum intri →”, apoi programele cu mediile
+- Fișiere: `apps/web/app/[lang]/universitati/[id]/page.tsx`, `apps/web/components/ProgramGroups.tsx`
+- Poartă: vezi rularea de după schimbare
+- Urmează: echipa vede demo-ul; publicare la „salvează și publică”
+
 ### 2026-11-11 — steagurile țărilor pe cărțile poștale din Ghiduri
 - Cerut: pe Ghiduri fiecare țară să aibă steagul ei, ca în machetă (acum era o steluță)
 - Făcut: în timbrul punctat al fiecărei cărți poștale stă steagul adevărat al țării (toate cele 32), cu contur de cerneală; steagurile vin din pachetul gratuit `country-flag-icons` (MIT), desenate direct în pagină, fără alte site-uri; o țară nouă fără steag ar primi steluța
@@ -1352,6 +1359,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-11-11 00:04 `3f095fb` feat: real country flags on the country guide postcards
 - 2026-11-10 02:05 `43d1d4e` feat: official faculty acronyms in titles and working university share pictures
 - 2026-11-09 04:00 `acce275` docs: ledger entry for publishing the drawn design
 - 2026-11-09 03:51 `ed32bf8` feat: drawn look, step 5: students, account and the remaining pages
@@ -1381,5 +1389,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-27 02:19 `0f89013` feat: sheets for every university in the student opinions
 - 2026-10-26 13:34 `7cdf543` fix: centre the header buttons on phones
 - 2026-10-26 01:55 `0fc9fd1` chore: add Google Search Console verification file
-- 2026-10-26 01:45 `2362444` feat: English quiz keeps the three study places, without cities
 <!-- commits:end -->

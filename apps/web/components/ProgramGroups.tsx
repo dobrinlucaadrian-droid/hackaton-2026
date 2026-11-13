@@ -44,12 +44,13 @@ export function ProgramGroups({ rows, city, sourceLabel, year, hasCapacity, facu
                 <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 font-bold text-ink [&::-webkit-details-marker]:hidden">
                   <span>{name}</span>
                   <span className="flex shrink-0 items-center gap-2 text-sm font-semibold text-ink-soft">
+                    {byFaculty && facultyLinks[name] && <span className="hidden rounded-full bg-teal-tint px-2.5 py-0.5 text-xs font-bold text-teal-ink sm:inline">{t("are fișă", "has a sheet")}</span>}
                     <span aria-hidden className="text-primary-dark transition-transform group-open:rotate-180">▾</span>
                   </span>
                 </summary>
                 {byFaculty && facultyLinks[name] && (
-                  <Link href={facultyLinks[name]} className="mb-2 inline-flex min-h-11 items-center text-sm font-bold text-primary underline decoration-primary/40 underline-offset-2 hover:text-primary-dark">
-                    {t("Vezi fișa facultății →", "See the faculty sheet →")}
+                  <Link href={facultyLinks[name]} className="mb-3 mt-1 inline-flex min-h-11 items-center rounded-2xl border-2 border-ink bg-card px-4 text-sm font-bold text-ink transition hover:-translate-y-0.5 hover:bg-teal-tint">
+                    {t("Fișa facultății: ce studiezi, cum intri →", "Faculty sheet: what you study, how you get in →")}
                   </Link>
                 )}
                 {byFaculty && elsewhere.length > 0 && <p className="mb-2 text-xs text-ink-soft">{t("Unele cursuri se țin în", "Some courses are taught in")}: {elsewhere.map((c) => cityName(c, lang)).join(", ")}.</p>}

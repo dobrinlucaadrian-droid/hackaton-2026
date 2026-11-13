@@ -195,7 +195,7 @@ _Open only the files listed here; a file's description is its first comment line
 ### apps/web/app/[lang]/universitati/[id]  (2 files)
 
 - `opengraph-image.tsx` (97) — The picture shown when a university's sheet is shared (WhatsApp, Instagram, Facebook …): FindMyUni, the university's name, place and yearly tuition when we have it.. Exports: alt, size, contentType, dynamicParams, generateStaticParams, Image
-- `page.tsx` (424) — Full profile sheet of one university in the page language, statically generated for every university.. Routes: /[lang]/universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
+- `page.tsx` (425) — Full profile sheet of one university in the page language, statically generated for every university.. Routes: /[lang]/universitati/[id]. Exports: generateStaticParams, generateMetadata, UniversityPage
 
 ### apps/web/app/[lang]/universitati  (1 files)
 
@@ -240,7 +240,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `OfficialPrograms.tsx` (17) — On a university sheet outside Romania: every bachelor programme of the institution from its country's official dataset, read from the database (those lists are too large to ship with the pages). Romanian sheets render the same list on the server, from the catalogue file.. Exports: OfficialPrograms
 - `PageScenes.tsx` (202) — The ink drawings of the pages in the drawn look (each on a soft blue blob): study fields, universities, guides, the questionnaire, the result, the students, and the two error drawings (a road ending at a question-mark sign, a broken road).. Exports: FieldsDrawing, UniversitiesDrawing, GuidesDrawing, QuizDrawing, PodiumDrawing, VoicesDrawing, LostRoadDrawing, BrokenRoadDrawing
 - `PhotoPicker.tsx` (148) — Optional face photo on the opinion form (in the page language): the student picks a picture, moves and zooms it inside the same circle the site shows, and keeps a small square JPEG of exactly that view (kept automatically if the form is sent while the circle is still open).. Exports: PhotoPicker
-- `ProgramGroups.tsx` (76) — The list of an institution's bachelor programmes, grouped by faculty (or by field when the source has no faculties). Plain markup, so a page can render it on the server; the page language comes in as `lang`.. Exports: ProgramGroups
+- `ProgramGroups.tsx` (77) — The list of an institution's bachelor programmes, grouped by faculty (or by field when the source has no faculties). Plain markup, so a page can render it on the server; the page language comes in as `lang`.. Exports: ProgramGroups
 - `ProgramRow.tsx` (106) — One bachelor programme from the catalogue, as a compact row: name and the small facts its source gives (language, study form, years, places, status) and, for Romania, the last admission average with its official source.. Exports: FORM_LABEL, ProgramRow
 - `ProgramSearch.tsx` (104) — Search over the bachelor programmes of the catalogue: country, free text, study domain and city; the state lives in the URL so links and Back work.. Exports: ProgramSearch
 - `SaveResult.tsx` (119) — Under the result, in the page language: signed-in students save it with one button; the others see a card with the benefits of an account, which opens the account window on "new account" and saves the result once the account exists.. Exports: SaveResult
