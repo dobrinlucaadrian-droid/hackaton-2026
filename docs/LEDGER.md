@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-11-13 — reparată alerta de siguranță minimatch
+- Cerut: repară problema semnalată de GitHub (Dependabot #11, minimatch, nivel mediu)
+- Făcut: minimatch 10.2.6 (folosit doar de unealta care verifică codul, typescript-eslint; nu ajunge la vizitatori) e înlocuit cu 11.0.3, versiunea reparată, printr-un „override” în package.json, pentru că typescript-eslint încă nu are o versiune nouă cu reparația. Celelalte copii minimatch (3.x) nu sunt afectate
+- Fișiere: `apps/web/package.json`, `apps/web/package-lock.json`
+- Poartă: vezi rularea de după schimbare; `npm run lint` merge fără erori cu versiunea nouă
+- Urmează: când typescript-eslint trece singur la minimatch 11, override-ul se poate scoate
+
 ### 2026-11-13 — păreri: studenții de la aceeași universitate stau împreună, cei mai mulți primii
 - Cerut: cei doi studenți de la ASE nu apăreau unul lângă altul pe pagina Studenți; apoi: universitățile cu doi sau mai mulți studenți să apară primele
 - Făcut: părerile se grupau după cum e scris numele universității („ASE București” la cea pusă de echipă, „Academia de Studii Economice din București” la cea venită prin formular); acum se grupează după fișa universității, iar grupul păstrează primul nume. Universitățile cu mai multe păreri apar primele; cele cu la fel de multe își păstrează ordinea
@@ -1366,6 +1373,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-11-13 15:47 `fb55f59` feat: student opinions grouped by university sheet, fullest groups first
 - 2026-11-13 15:39 `3077a70` feat: one faculty list on the university sheet, with the faculty sheet button inside
 - 2026-11-11 00:04 `3f095fb` feat: real country flags on the country guide postcards
 - 2026-11-10 02:05 `43d1d4e` feat: official faculty acronyms in titles and working university share pictures
@@ -1395,5 +1403,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-27 03:48 `fb729e8` fix: split every multi-city university by city, repair broken links
 - 2026-10-27 03:07 `379a35f` fix: balance the quiz domains and split Politehnica by campus
 - 2026-10-27 02:19 `0f89013` feat: sheets for every university in the student opinions
-- 2026-10-26 13:34 `7cdf543` fix: centre the header buttons on phones
 <!-- commits:end -->

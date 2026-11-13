@@ -91,7 +91,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `README.md` (37) — _no description: add a first-line comment_
 - `eslint.config.mjs` (21) — _no description: add a first-line comment_
 - `next.config.ts` (41) — Next.js configuration: security headers sent with every response (the content security policy itself is added per request in proxy.ts) and redirects for pages that moved.
-- `package.json` (37) — package "web"; scripts: dev, build, start, lint, test
+- `package.json` (42) — package "web"; scripts: dev, build, start, lint, test
 - `postcss.config.mjs` (8) — _no description: add a first-line comment_
 - `proxy.ts` (57) — Runs before every page: on the live site sends other addresses (www, vercel.app) to findmyuni.ro, serves the plain addresses in Romanian and /en in English, adds the content security policy, keeps the sign-in session fresh and sends visitors who are not signed in away from the account and administration pages.. Exports: proxy, config
 - `tsconfig.json` (35) — JSON; keys: compilerOptions, include, exclude
