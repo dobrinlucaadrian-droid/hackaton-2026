@@ -21,6 +21,13 @@ lista de commit-uri de la final se reface singură.
 - Urmează: pasul următor
 -->
 
+### 2026-11-13 — păreri: studenții de la aceeași universitate stau împreună, cei mai mulți primii
+- Cerut: cei doi studenți de la ASE nu apăreau unul lângă altul pe pagina Studenți; apoi: universitățile cu doi sau mai mulți studenți să apară primele
+- Făcut: părerile se grupau după cum e scris numele universității („ASE București” la cea pusă de echipă, „Academia de Studii Economice din București” la cea venită prin formular); acum se grupează după fișa universității, iar grupul păstrează primul nume. Universitățile cu mai multe păreri apar primele; cele cu la fel de multe își păstrează ordinea
+- Fișiere: `apps/web/components/StudentVoices.tsx`
+- Poartă: vezi rularea de după schimbare. Local pagina merge fără erori; baza de dezvoltare nu are părerea de la ASE, așa că gruparea se verifică pe site după publicare
+- Urmează: publicare la „salvează și publică”
+
 ### 2026-11-13 — fișa universității: facultățile nu mai apar de două ori
 - Cerut: pe fișa universității erau trei liste care se repetau („Ce poți studia aici”, „Fișe de facultăți”, „Facultăți și programe de licență”); echipa a ales să rămână două: domeniile și facultățile cu programe. Schimbările încercate înainte (Programe în meniu, cartonașul de pe Universități, legătura de la Specializări) au fost scoase, la cererea echipei
 - Făcut: pe fișele românești a dispărut lista „Fișe de facultăți”; în „Facultăți și programe de licență” facultățile cu fișă au eticheta „are fișă”, iar când o deschizi primul lucru e butonul „Fișa facultății: ce studiezi, cum intri →”, apoi programele cu mediile
@@ -1359,6 +1366,7 @@ lista de commit-uri de la final se reface singură.
 ## Commit-uri (automat)
 
 <!-- commits:start -->
+- 2026-11-13 15:39 `3077a70` feat: one faculty list on the university sheet, with the faculty sheet button inside
 - 2026-11-11 00:04 `3f095fb` feat: real country flags on the country guide postcards
 - 2026-11-10 02:05 `43d1d4e` feat: official faculty acronyms in titles and working university share pictures
 - 2026-11-09 04:00 `acce275` docs: ledger entry for publishing the drawn design
@@ -1388,5 +1396,4 @@ lista de commit-uri de la final se reface singură.
 - 2026-10-27 03:07 `379a35f` fix: balance the quiz domains and split Politehnica by campus
 - 2026-10-27 02:19 `0f89013` feat: sheets for every university in the student opinions
 - 2026-10-26 13:34 `7cdf543` fix: centre the header buttons on phones
-- 2026-10-26 01:55 `0fc9fd1` chore: add Google Search Console verification file
 <!-- commits:end -->

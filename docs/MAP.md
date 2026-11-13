@@ -252,7 +252,7 @@ _Open only the files listed here; a file's description is its first comment line
 - `SocialPhone.tsx` (122) — "Urmărește-ne!" on the home page (in the page language): a drawn, slightly tilted phone with pen doodles around it on the left and, on the right, a short message, two big buttons to our TikTok and Instagram accounts (the phone's app icons open the same accounts and jump when pointed at or tapped).. Exports: SocialPhone
 - `SpecializationsBrowser.tsx` (99) — /specializari body: the page opening (title, text, a drawn search box and the drawing), then a text filter over all categories, domains and specializations (in the page language); without text it shows the drawn category tiles, five to a row, and the interest picker.. Exports: SpecializationsBrowser
 - `StudentCard.tsx` (52) — One student opinion: photo (or initial), name, faculty and their own words. Used on the students page and on university sheets; the opinion stays in its original words, only the photo label is in the page language.. Exports: StudentCard
-- `StudentVoices.tsx` (176) — Student opinions with a search box: type a faculty or university and see every opinion we have from there (the opinions keep their original words; the page around them is in the page language).. Exports: StudentVoices
+- `StudentVoices.tsx` (183) — Student opinions with a search box: type a faculty or university and see every opinion we have from there (the opinions keep their original words; the page around them is in the page language).. Exports: StudentVoices
 - … +14 more
 
 ### apps/web/convex/_generated  (5 files)

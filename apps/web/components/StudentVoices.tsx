@@ -5,6 +5,7 @@ import { Books, Sparkle } from "@/components/Illustrations";
 import { StudentCard } from "@/components/StudentCard";
 import { useT } from "@/components/LangProvider";
 import Link from "@/components/LocalLink";
+import { universityIdOf } from "@/lib/testimonials";
 import { useTestimonials } from "@/lib/useTestimonials";
 import type { Testimonial } from "@/lib/types";
 
@@ -55,16 +56,22 @@ const EN_WORDS: [string, string][] = [
 
 type Group = { university: string; people: Testimonial[] };
 
-/** Groups opinions by university, keeping the order in which each university first appears. */
+/**
+ * Groups opinions by university, the ones with most opinions first, otherwise in the order each university first appears. Opinions sent through the form may name
+ * the university differently ("Academia de Studii Economice din București" next to "ASE București"), so the university sheet decides
+ * the group when there is one; the group keeps the first name seen.
+ */
 function byUniversity(list: Testimonial[]): Group[] {
-  const groups: Group[] = [];
+  const groups: (Group & { key: string })[] = [];
   for (const t of list) {
     const university = t.university ?? t.faculty;
-    const group = groups.find((g) => g.university === university);
+    const key = universityIdOf(t) ?? university;
+    const group = groups.find((g) => g.key === key);
     if (group) group.people.push(t);
-    else groups.push({ university, people: [t] });
+    else groups.push({ key, university, people: [t] });
   }
-  return groups;
+  // Universities with more opinions come first (the team's choice: the page looks fuller); equal ones keep their order.
+  return groups.sort((a, b) => b.people.length - a.people.length);
 }
 
 /** True when every word of the query starts some word of the opinion's university, faculty or the student's name. */
